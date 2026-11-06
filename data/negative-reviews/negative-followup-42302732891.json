@@ -1,0 +1,587 @@
+{
+  "schema_version": 1,
+  "reviewed_at": "2026-11-06T22:24:08.709957+00:00",
+  "reviewer": "Codex media_catalog; actual contact-sheet inspection",
+  "purpose": "Exact-preview follow-up for frozen six negative scenarios; no catalog or scope changes",
+  "independent_from_metadata_matcher": true,
+  "review_method": "Actually displayed the complete nine-tile cloud sheet. Source-specific records corroborate intended identity; captions are not used as substitutes for visible animal morphology. Hashes bind observations to exact files, not families.",
+  "bindings": {
+    "catalog_sha256": "5c90306415ce5e7f36e875c7f57b19a91930aacfeeaeecdf9ad7662770f9a3fe",
+    "sqlite_sha256": "8ece5cdedcb50492528ef76d4944213a2f995464b31a35b636383f987d6bafc7",
+    "benchmark_sha256": "ce0282afeb4afbcee8fdef1c6f937844ef569cabf16ba7909e22bf86b1096e92",
+    "publish_manifest_sha256": "a4fe0424ee8ecc32096090ef295242bdaa04b9ce29ff4f7a80948c95516d5436",
+    "search_core_sha256": "191c4631bb80f36a33ec2580739580ea4289a9726b09dfffb70d022b2a1382e6",
+    "index_version": 9,
+    "index_metadata": {
+      "catalog_version": "5c90306415ce5e7f36e875c7f57b19a91930aacfeeaeecdf9ad7662770f9a3fe",
+      "ranking_version": "shared-search-3.4.3"
+    },
+    "index_build_receipt_sha256": "5bab66d4b16599296348a5f81c30610a32ed625c705e9f1e71377327ad861ea3"
+  },
+  "plan": {
+    "uri": "data/review-plans/negative-followup-20261107.json",
+    "sha256": "fa515bc2ba810a057fbff466253097a2f5e853fa4900fb584616ed50de604b08"
+  },
+  "mapping": {
+    "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/acceptance-20261107/exact-review-42302732891-1.tar.gz",
+    "sha256": "9b325b1e0dca72cc89006ffa67aed7969c1dfb1c9a639f0474f036a43e9278bf",
+    "member": "mapping.json",
+    "member_sha256": "c84e89de572fe75ac71b1d6cbce7832cb68dc113778c532ed9d4caccfaf4dd2f"
+  },
+  "review_pack": {
+    "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/acceptance-20261107/exact-review-42302732891-1.tar.gz",
+    "sha256": "9b325b1e0dca72cc89006ffa67aed7969c1dfb1c9a639f0474f036a43e9278bf",
+    "size_bytes": 714657,
+    "github_asset_digest_verified": true
+  },
+  "review_sheet": {
+    "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/acceptance-20261107/exact-review-42302732891-1.tar.gz",
+    "sha256": "9b325b1e0dca72cc89006ffa67aed7969c1dfb1c9a639f0474f036a43e9278bf",
+    "member": "exact-review-42302732891-1.review.png",
+    "member_sha256": "b9b30a92a1a58f36124a07ab193f5886b8e43353254849a7c00e6bf54c6d7e05"
+  },
+  "archive_verification": [
+    {
+      "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/arcadia-42234366112-1-b0000.tar.gz",
+      "selected_members": 1,
+      "verified": true,
+      "sha256": "e50f610230cbc51f9a379aca8f2c9a0bb83b02a52fe4516ea8798b129b98b4dc",
+      "size_bytes": 89047790,
+      "compressed_bytes_read": 89047790
+    },
+    {
+      "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42251588741-1-b0001.tar.gz",
+      "selected_members": 1,
+      "verified": true,
+      "sha256": "ee7bb191a725a546977f40809c82bb266835551a4cc0cc19e4da0a4baa0d13ab",
+      "size_bytes": 29564903,
+      "compressed_bytes_read": 29564903
+    },
+    {
+      "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/nih-bioart-42236561214-1-b0000.tar.gz",
+      "selected_members": 3,
+      "verified": true,
+      "sha256": "bc400b21ab4c2770ac0eb5d4a6474bdc26357b437cc74c402ff60076ee635c80",
+      "size_bytes": 490613847,
+      "compressed_bytes_read": 490613847
+    },
+    {
+      "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scidraw-42235890704-1-b0000.tar.gz",
+      "selected_members": 3,
+      "verified": true,
+      "sha256": "ccc6253bacba4862a11b5ee40eb0297046a9350bad2a9a09515484c0fa1fcfa6",
+      "size_bytes": 59250378,
+      "compressed_bytes_read": 59250378
+    },
+    {
+      "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42249870031-1-b0001.tar.gz",
+      "selected_members": 1,
+      "verified": true,
+      "sha256": "957c1bfbebbf2f38c81d8210be57559fd62996001b974a55d8f8b7b584f54841",
+      "size_bytes": 414970276,
+      "compressed_bytes_read": 414970276
+    }
+  ],
+  "original_files_downloaded_locally": 0,
+  "items": [
+    {
+      "tile": 1,
+      "source": "scidraw",
+      "source_id": "775e104e-18d4-4c6c-9cd4-1d264df38e48",
+      "title": "mouse running",
+      "source_url": "https://scidraw.io/drawing/mouse-running-66926cd8",
+      "original_sha256": "360b7ff3da6cb90a6cb5dcc03614166f60da16ae8b4d38b2efb3eec4fa91ed49",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scidraw-42235890704-1-b0000.tar.gz",
+        "member": "files/36/360b7ff3da6cb90a6cb5dcc03614166f60da16ae8b4d38b2efb3eec4fa91ed49.svg"
+      },
+      "preview_sha256": "2f7c5580bbfc7f080e52e38417efb4d032d5dcc2975eed9a815ff96882148727",
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scidraw-42235890704-1-b0000.tar.gz",
+        "member": "previews/360b7ff3da6cb90a6cb5dcc03614166f60da16ae8b4d38b2efb3eec4fa91ed49.png"
+      },
+      "actual_inspection": "complete_cloud_contact_sheet",
+      "visual_verdict": "animal_illustration_consistent_with_recorded_source_identity",
+      "observations": "灰色完整鼠形，耳、吻、胡须、足与长尾可见，配简单地面和背景。是生物动物插画，不是电脑鼠标。",
+      "limits": "场景背景存在；仅画面姿态，不能据此证明具体速度或实验处理。",
+      "file_source_records": [
+        {
+          "title": "mouse running",
+          "tags": [
+            "mouse"
+          ],
+          "categories": [],
+          "taxonomy": [
+            "animals"
+          ],
+          "upstream_category": "mouse",
+          "author": "Scidraw ",
+          "distribution_status": "license_recorded",
+          "asset_id": "scidraw-09028a56ce02477d6d8c",
+          "source": "scidraw",
+          "source_id": "775e104e-18d4-4c6c-9cd4-1d264df38e48",
+          "source_url": "https://scidraw.io/drawing/mouse-running-66926cd8",
+          "url": "https://scidraw.io/files/mouse_running.svg",
+          "license": "CC-BY-4.0",
+          "attribution": "mouse running — Scidraw ; https://scidraw.io/drawing/mouse-running-66926cd8; CC-BY-4.0; DOI 10.5281/zenodo.3925913"
+        }
+      ],
+      "native_editability_tested": false,
+      "scientific_assertions_added": false,
+      "public_scope_changed": false
+    },
+    {
+      "tile": 2,
+      "source": "scidraw",
+      "source_id": "2855271a-b8c2-4621-8fde-aedf0ab7d80d",
+      "title": "Mouse",
+      "source_url": "https://scidraw.io/drawing/mouse-2902704e",
+      "original_sha256": "a72dfe89b4b1ab765e8b4e46d5cf3075b23e8f0d04b5333783a011ab5fd2bb5e",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scidraw-42235890704-1-b0000.tar.gz",
+        "member": "files/a7/a72dfe89b4b1ab765e8b4e46d5cf3075b23e8f0d04b5333783a011ab5fd2bb5e.svg"
+      },
+      "preview_sha256": "348fc332959cf1575886a3e883e5e5f532a27c2ca67cc22b2f940318b883ca2a",
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scidraw-42235890704-1-b0000.tar.gz",
+        "member": "previews/a72dfe89b4b1ab765e8b4e46d5cf3075b23e8f0d04b5333783a011ab5fd2bb5e.png"
+      },
+      "actual_inspection": "complete_cloud_contact_sheet",
+      "visual_verdict": "animal_illustration_consistent_with_recorded_source_identity",
+      "observations": "白色卡通鼠呈上方斜视，耳、吻、足和向上延伸的粉色长尾清楚。是动物绘图。",
+      "limits": "风格化斜视，不推断品系、性别或标准解剖投影。",
+      "file_source_records": [
+        {
+          "title": "Mouse",
+          "tags": [
+            "mouse"
+          ],
+          "categories": [],
+          "taxonomy": [
+            "animals"
+          ],
+          "upstream_category": "mouse",
+          "author": "Tom Baden",
+          "distribution_status": "license_recorded",
+          "asset_id": "scidraw-733387d78e296643ef74",
+          "source": "scidraw",
+          "source_id": "2855271a-b8c2-4621-8fde-aedf0ab7d80d",
+          "source_url": "https://scidraw.io/drawing/mouse-2902704e",
+          "url": "https://scidraw.io/files/mouse_7IXbIfC.svg",
+          "license": "CC-BY-4.0",
+          "attribution": "Mouse — Tom Baden; https://scidraw.io/drawing/mouse-2902704e; CC-BY-4.0; DOI 10.5281/zenodo.3926533"
+        }
+      ],
+      "native_editability_tested": false,
+      "scientific_assertions_added": false,
+      "public_scope_changed": false
+    },
+    {
+      "tile": 3,
+      "source": "bioicons",
+      "source_id": "cc-by-3.0/Animals/Servier/rat-adult.svg",
+      "title": "rat adult",
+      "source_url": "https://github.com/duerrsimon/bioicons/blob/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-3.0/Animals/Servier/rat-adult.svg",
+      "original_sha256": "90cf9adc7d330b374a78c5d97be1691c070f3bc9740073a7e469325b1f28b54c",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42251588741-1-b0001.tar.gz",
+        "member": "files/90/90cf9adc7d330b374a78c5d97be1691c070f3bc9740073a7e469325b1f28b54c.svg"
+      },
+      "preview_sha256": "9de23855190f6fb4328c229162f15351f8b506e4cd78556b7291bb3a04897d36",
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42251588741-1-b0001.tar.gz",
+        "member": "previews/90cf9adc7d330b374a78c5d97be1691c070f3bc9740073a7e469325b1f28b54c.png"
+      },
+      "actual_inspection": "complete_cloud_contact_sheet",
+      "visual_verdict": "animal_illustration_consistent_with_recorded_source_identity",
+      "observations": "白色鼠形呈侧前斜视，较尖长的吻部、毛发轮廓、足和长尾可见，与来源 rat adult 的意图相符。",
+      "limits": "来源支持大鼠意图；外观不独立证明物种、成年年龄或品系。",
+      "file_source_records": [
+        {
+          "title": "rat adult",
+          "tags": [
+            "Animals"
+          ],
+          "categories": [],
+          "taxonomy": [
+            "animals"
+          ],
+          "upstream_category": "Animals",
+          "author": "Servier",
+          "distribution_status": "license_recorded",
+          "asset_id": "bioicons-9ec6fdd7852fde425045",
+          "source": "bioicons",
+          "source_id": "cc-by-3.0/Animals/Servier/rat-adult.svg",
+          "source_url": "https://github.com/duerrsimon/bioicons/blob/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-3.0/Animals/Servier/rat-adult.svg",
+          "url": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-3.0/Animals/Servier/rat-adult.svg",
+          "license": "CC-BY-3.0",
+          "attribution": "rat adult — Servier Medical Art by Servier; CC BY 3.0 (https://creativecommons.org/licenses/by/3.0/); fixed source: https://github.com/duerrsimon/bioicons/blob/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-3.0/Animals/Servier/rat-adult.svg; via Bioicons. Historical SVG copy distributed through Bioicons; no new artwork modification by MGA-resource."
+        }
+      ],
+      "native_editability_tested": false,
+      "scientific_assertions_added": false,
+      "public_scope_changed": false
+    },
+    {
+      "tile": 4,
+      "source": "scidraw",
+      "source_id": "e002d3a9-bdf8-4341-be6a-94cea545faa6",
+      "title": "rat silhouette",
+      "source_url": "https://scidraw.io/drawing/rat-silhouette-b1ecf2b5",
+      "original_sha256": "812b36b84ac49991fb02799ce49662fa6a4ac61ccb7bc023d9c308c63368e32d",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scidraw-42235890704-1-b0000.tar.gz",
+        "member": "files/81/812b36b84ac49991fb02799ce49662fa6a4ac61ccb7bc023d9c308c63368e32d.svg"
+      },
+      "preview_sha256": "5f7617f1dadc96618fa6674f9a041fde96a64052db13d84fdc7692668685c70f",
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scidraw-42235890704-1-b0000.tar.gz",
+        "member": "previews/812b36b84ac49991fb02799ce49662fa6a4ac61ccb7bc023d9c308c63368e32d.png"
+      },
+      "actual_inspection": "complete_cloud_contact_sheet",
+      "visual_verdict": "animal_illustration_consistent_with_recorded_source_identity",
+      "observations": "灰色实心啮齿动物剪影，耳、吻、足和右侧较短、末端平直的尾段可见。来源明确为 rat silhouette，画面不是外设。",
+      "limits": "剪影不能独立作分类诊断；不认证完整尾长，也不凭短尾断言原件损坏或裁切。",
+      "file_source_records": [
+        {
+          "title": "rat silhouette",
+          "tags": [
+            "rat"
+          ],
+          "categories": [],
+          "taxonomy": [
+            "animals"
+          ],
+          "upstream_category": "rat",
+          "author": "Scidraw ",
+          "distribution_status": "license_recorded",
+          "asset_id": "scidraw-8834ba00f99447308ee1",
+          "source": "scidraw",
+          "source_id": "e002d3a9-bdf8-4341-be6a-94cea545faa6",
+          "source_url": "https://scidraw.io/drawing/rat-silhouette-b1ecf2b5",
+          "url": "https://scidraw.io/files/rat_silhuette.svg",
+          "license": "CC-BY-4.0",
+          "attribution": "rat silhouette — Scidraw ; https://scidraw.io/drawing/rat-silhouette-b1ecf2b5; CC-BY-4.0; DOI 10.5281/zenodo.3925947"
+        },
+        {
+          "title": "Rat Outline",
+          "tags": [
+            "rat"
+          ],
+          "categories": [],
+          "taxonomy": [
+            "animals"
+          ],
+          "upstream_category": "rat",
+          "author": "Sana ",
+          "distribution_status": "license_recorded",
+          "asset_id": "scidraw-8a25d658004fd8078603",
+          "source": "scidraw",
+          "source_id": "169e343c-d8ff-43e2-8c06-0bf742ecc48c",
+          "source_url": "https://scidraw.io/drawing/rat-outline-0cb53072",
+          "url": "https://scidraw.io/files/rat_silhuette_zyKchtW.svg",
+          "license": "CC-BY-4.0",
+          "attribution": "Rat Outline — Sana ; https://scidraw.io/drawing/rat-outline-0cb53072; CC-BY-4.0; DOI 10.5281/zenodo.7842073"
+        }
+      ],
+      "native_editability_tested": false,
+      "scientific_assertions_added": false,
+      "public_scope_changed": false
+    },
+    {
+      "tile": 5,
+      "source": "arcadia",
+      "source_id": "Tricolor + stroke PNGs/Mus-musculus-tricolorstroke.png",
+      "title": "Mouse (Mus musculus) — tricolor-stroke",
+      "source_url": "https://zenodo.org/records/18395998",
+      "original_sha256": "bd6dd09445b0c9f23e95edd288033eead42db86f6269539124551bea522bee89",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/arcadia-42234366112-1-b0000.tar.gz",
+        "member": "files/bd/bd6dd09445b0c9f23e95edd288033eead42db86f6269539124551bea522bee89.png"
+      },
+      "preview_sha256": "c544d22de34003f1e5fa85fa6774f8e30ad1e46b6a8fb57c0fa5686277d71000",
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/arcadia-42234366112-1-b0000.tar.gz",
+        "member": "previews/bd6dd09445b0c9f23e95edd288033eead42db86f6269539124551bea522bee89.png"
+      },
+      "actual_inspection": "complete_cloud_contact_sheet",
+      "visual_verdict": "animal_illustration_consistent_with_recorded_source_identity",
+      "observations": "灰色鼠体有绘制的毛发短线，粉色耳、足与完整弯曲长尾；实际是栅格插画而不是照片。",
+      "limits": "来源 Mus musculus 支持意图；不从风格标签或 PNG 扩展名推断内容类型。",
+      "file_source_records": [
+        {
+          "title": "Mouse (Mus musculus) — tricolor-stroke",
+          "tags": [
+            "Mouse",
+            "Mus musculus",
+            "tricolor-stroke"
+          ],
+          "categories": [],
+          "taxonomy": [
+            "animals"
+          ],
+          "species": "Mus musculus",
+          "author": "Arcadia Science",
+          "distribution_status": "license_recorded",
+          "asset_id": "arcadia-d73c9bf962ee14902789",
+          "source": "arcadia",
+          "source_id": "Tricolor + stroke PNGs/Mus-musculus-tricolorstroke.png",
+          "source_url": "https://zenodo.org/records/18395998",
+          "url": "https://zenodo.org/records/18395998/files/arcadia-organism-library-v1.2.zip?download=1",
+          "license": "CC0-1.0",
+          "attribution": "Mouse (Mus musculus) — tricolor-stroke — Arcadia Science; https://zenodo.org/records/18395998; CC0-1.0"
+        }
+      ],
+      "native_editability_tested": false,
+      "scientific_assertions_added": false,
+      "public_scope_changed": false
+    },
+    {
+      "tile": 6,
+      "source": "togo",
+      "source_id": "668",
+      "title": "Mouse",
+      "source_url": "https://doi.org/10.7875/togopic.2020.81",
+      "original_sha256": "d9740ce4d39da14309e1148f07eb2d24049c94a40e4cc40842ebda2af9eaf3f9",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42249870031-1-b0001.tar.gz",
+        "member": "files/d9/d9740ce4d39da14309e1148f07eb2d24049c94a40e4cc40842ebda2af9eaf3f9.png"
+      },
+      "preview_sha256": "118691a01159a3a803611986cdb5d207edaf6b5e8808dc0cef779b783a8a36e0",
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42249870031-1-b0001.tar.gz",
+        "member": "previews/d9740ce4d39da14309e1148f07eb2d24049c94a40e4cc40842ebda2af9eaf3f9.png"
+      },
+      "actual_inspection": "complete_cloud_contact_sheet",
+      "visual_verdict": "animal_illustration_consistent_with_recorded_source_identity",
+      "observations": "绿色三角背景上为黑轮廓白色小鼠图标，耳、吻、躯干、腿形和尾部可辨；不是电脑设备。",
+      "limits": "带独立三角背景的图标；不能把它当精确动物解剖图。",
+      "file_source_records": [
+        {
+          "title": "Mouse",
+          "tags": [
+            "Organisms",
+            "Icon",
+            "Biology",
+            "Mammals",
+            "Vertebrates",
+            "Mammalia",
+            "Rodentia",
+            "Mus musculus"
+          ],
+          "categories": [],
+          "taxonomy": [
+            "animals"
+          ],
+          "author": "hiroe mori",
+          "distribution_status": "license_recorded",
+          "asset_id": "togo-9c5be0e539ee940493b8",
+          "source": "togo",
+          "source_id": "668",
+          "source_url": "https://doi.org/10.7875/togopic.2020.81",
+          "url": "https://dbarchive.biosciencedbc.jp/data/togo-pic/image/202003_Model_animal_mouse.png",
+          "license": "CC-BY-4.0",
+          "attribution": "Mouse — hiroe mori; © 2016 DBCLS TogoTV / CC-BY-4.0; https://doi.org/10.7875/togopic.2020.81"
+        }
+      ],
+      "native_editability_tested": false,
+      "scientific_assertions_added": false,
+      "public_scope_changed": false
+    },
+    {
+      "tile": 7,
+      "source": "nih-bioart",
+      "source_id": "279",
+      "title": "Lab Mouse",
+      "source_url": "https://bioart.niaid.nih.gov/bioart/279",
+      "original_sha256": "10f88d4b1750a745c496fd3190db075be10451b7c21d33f71e10d249d92b5cc1",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/nih-bioart-42236561214-1-b0000.tar.gz",
+        "member": "files/10/10f88d4b1750a745c496fd3190db075be10451b7c21d33f71e10d249d92b5cc1.png"
+      },
+      "preview_sha256": "97a3939a7b6da730601307771e2a661fde7ee9761e7544f989d8e160fb83e1f1",
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/nih-bioart-42236561214-1-b0000.tar.gz",
+        "member": "previews/10f88d4b1750a745c496fd3190db075be10451b7c21d33f71e10d249d92b5cc1.png"
+      },
+      "actual_inspection": "complete_cloud_contact_sheet",
+      "visual_verdict": "animal_illustration_consistent_with_recorded_source_identity",
+      "observations": "灰棕色侧前斜视鼠，耳、足、尾和简单平面明暗清楚，是绘制的动物。",
+      "limits": "来源 Lab Mouse 支持意图，不独立判断品系或实验状态。",
+      "file_source_records": [
+        {
+          "title": "Lab Mouse",
+          "description": " Laboratory mouse black brown white grey ",
+          "tags": [
+            "Animals",
+            "Immunity",
+            "Immunology",
+            "Lab",
+            "Mammals",
+            "Vector",
+            "Wild Mammals",
+            "biology",
+            "mouse",
+            "rodent",
+            "science"
+          ],
+          "categories": [],
+          "taxonomy": [
+            "animals"
+          ],
+          "upstream_category": [
+            "Animals",
+            "Bioart Category",
+            "Animals",
+            "Scientific Disciplines And Research Areas",
+            "Image Type"
+          ],
+          "author": "Ryan Kissinger",
+          "distribution_status": "license_recorded",
+          "asset_id": "nih-bioart-8c65324cde38c11789f4",
+          "source": "nih-bioart",
+          "source_id": "279",
+          "source_url": "https://bioart.niaid.nih.gov/bioart/279",
+          "url": "https://bioart.niaid.nih.gov/api/bioarts/279/files/631465",
+          "license": "Public-Domain",
+          "attribution": "Lab Mouse — Ryan Kissinger, NIH BioArt Source; https://bioart.niaid.nih.gov/bioart/279; Public Domain"
+        }
+      ],
+      "native_editability_tested": false,
+      "scientific_assertions_added": false,
+      "public_scope_changed": false
+    },
+    {
+      "tile": 8,
+      "source": "nih-bioart",
+      "source_id": "371",
+      "title": "Mouse Outline",
+      "source_url": "https://bioart.niaid.nih.gov/bioart/371",
+      "original_sha256": "32718a90e3d3431e7fac06b4cf2a92afbb1d8e2690fb6e7e96b13a4b31695534",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/nih-bioart-42236561214-1-b0000.tar.gz",
+        "member": "files/32/32718a90e3d3431e7fac06b4cf2a92afbb1d8e2690fb6e7e96b13a4b31695534.svg"
+      },
+      "preview_sha256": "d1a1fe2445e909c91dc000df2e6653515a2a1b9a121e501bd61fd82ed1dbf934",
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/nih-bioart-42236561214-1-b0000.tar.gz",
+        "member": "previews/32718a90e3d3431e7fac06b4cf2a92afbb1d8e2690fb6e7e96b13a4b31695534.png"
+      },
+      "actual_inspection": "complete_cloud_contact_sheet",
+      "visual_verdict": "animal_illustration_consistent_with_recorded_source_identity",
+      "observations": "灰色轮廓鼠有大胡须、圆身体、足与弯曲长尾，是生物动物插画。",
+      "limits": "SVG 预览不能证明原生 Illustrator 编辑能力；矢量判断另引解析结构证据。",
+      "file_source_records": [
+        {
+          "title": "Mouse Outline",
+          "description": " Grey outline of a mouse ",
+          "tags": [
+            "Animals",
+            "Mammals",
+            "Vector",
+            "Wild Mammals",
+            "animal",
+            "biology",
+            "mammal",
+            "mouse",
+            "outline",
+            "science",
+            "silhouette",
+            "wild"
+          ],
+          "categories": [],
+          "taxonomy": [
+            "animals"
+          ],
+          "upstream_category": [
+            "Bioart Category",
+            "Animals",
+            "Animals",
+            "Image Type"
+          ],
+          "author": "Ryan Kissinger",
+          "distribution_status": "license_recorded",
+          "asset_id": "nih-bioart-7874aa2f690cf80ce90e",
+          "source": "nih-bioart",
+          "source_id": "371",
+          "source_url": "https://bioart.niaid.nih.gov/bioart/371",
+          "url": "https://bioart.niaid.nih.gov/api/bioarts/371/files/632547",
+          "license": "Public-Domain",
+          "attribution": "Mouse Outline — Ryan Kissinger, NIH BioArt Source; https://bioart.niaid.nih.gov/bioart/371; Public Domain"
+        }
+      ],
+      "native_editability_tested": false,
+      "scientific_assertions_added": false,
+      "public_scope_changed": false
+    },
+    {
+      "tile": 9,
+      "source": "nih-bioart",
+      "source_id": "280",
+      "title": "Lab Mouse",
+      "source_url": "https://bioart.niaid.nih.gov/bioart/280",
+      "original_sha256": "a59911d905ee6eb0bcc4a028a1734b167987df99e139570a6ee82c0d05b8e1d5",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/nih-bioart-42236561214-1-b0000.tar.gz",
+        "member": "files/a5/a59911d905ee6eb0bcc4a028a1734b167987df99e139570a6ee82c0d05b8e1d5.svg"
+      },
+      "preview_sha256": "d6f8e54aa0efa207724526290e972b90023fd15ad61a0b47ce518792939d56cb",
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/nih-bioart-42236561214-1-b0000.tar.gz",
+        "member": "previews/a59911d905ee6eb0bcc4a028a1734b167987df99e139570a6ee82c0d05b8e1d5.png"
+      },
+      "actual_inspection": "complete_cloud_contact_sheet",
+      "visual_verdict": "animal_illustration_consistent_with_recorded_source_identity",
+      "observations": "灰鼠呈前上方视角，粉色耳、足和向后延伸的粉色长尾可见，是动物绘图。",
+      "limits": "不能当作标准侧视；不推断品系，原生编辑仍未测试。",
+      "file_source_records": [
+        {
+          "title": "Lab Mouse",
+          "description": " Grey laboratory mouse ",
+          "tags": [
+            "Animals",
+            "Immunity",
+            "Immunology",
+            "Lab",
+            "Mammals",
+            "Vector",
+            "Wild Mammals",
+            "biology",
+            "gray",
+            "grey",
+            "mouse",
+            "science"
+          ],
+          "categories": [],
+          "taxonomy": [
+            "animals"
+          ],
+          "upstream_category": [
+            "Animals",
+            "Bioart Category",
+            "Animals",
+            "Scientific Disciplines And Research Areas",
+            "Image Type"
+          ],
+          "author": "Ryan Kissinger",
+          "distribution_status": "license_recorded",
+          "asset_id": "nih-bioart-46b9f71459d7d965ebca",
+          "source": "nih-bioart",
+          "source_id": "280",
+          "source_url": "https://bioart.niaid.nih.gov/bioart/280",
+          "url": "https://bioart.niaid.nih.gov/api/bioarts/280/files/631486",
+          "license": "Public-Domain",
+          "attribution": "Lab Mouse — Ryan Kissinger, NIH BioArt Source; https://bioart.niaid.nih.gov/bioart/280; Public Domain"
+        }
+      ],
+      "native_editability_tested": false,
+      "scientific_assertions_added": false,
+      "public_scope_changed": false
+    }
+  ],
+  "limits": [
+    "Contact-scale visual recognition plus actual upstream identity is not independent taxonomy, strain, age or clinical validation.",
+    "These observations do not modify scientific metadata, scope disposition or ranking.",
+    "SVG pure-vector structure does not establish native Illustrator editability."
+  ]
+}
