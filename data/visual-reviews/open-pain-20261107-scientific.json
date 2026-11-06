@@ -1,0 +1,92 @@
+{
+  "schema_version": 1,
+  "reviewed_at": "2026-11-06T18:35:30.200084+00:00",
+  "reviewer": "Codex registry_acceptance; direct inspection of exact cloud contact-sheet tiles",
+  "source": "open-pain",
+  "collection_run": "42239403135-1",
+  "collection_commit": "de01d875a27c79bafac5327db6e1302ba3fd37b1",
+  "review_method": "Viewed both exact file-bound tiles. Each visibly shows a full human figure from the front beside the same body outline from the back. Assertions are limited to primary object, species class, views and whole-body extent; no disease/normal-state or detailed anatomical validation is claimed.",
+  "review_sheet_url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/open-pain-42239403135-1-b0000.review.png",
+  "review_sheet_sha256": "5bf53e0db8e06471e4431d1e8dc8c61441cdc0aa0b21f10dc0d5d8cdc5fb1d87",
+  "review_limits": [
+    "Only the two exact originals and their recorded previews are reviewed.",
+    "No unpictured family/color variant inherits these assertions.",
+    "No native-editability or clinical anatomical-accuracy claim."
+  ],
+  "items": [
+    {
+      "tile": 1,
+      "id": "open-pain-f8e5755205f3f9e69b2a",
+      "title": "anatomical illustration",
+      "source_id": "illustration/1.0/anatomical_illustration.svg",
+      "source_url": "https://github.com/DigitalHealthZurich/open-pain-illustration/blob/96d6f379790e39584289bad17a1d6eecc5104bd9/illustration/1.0/anatomical_illustration.svg",
+      "original_sha256": "ca71ade57f448493b7b10dcb8bb55a5547369412167c69305d1b1d9afd11cc30",
+      "preview_sha256": "8fd230b11b34a644c5f29e610b3c488268d59dab569643a96b4dd150feff2492",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/open-pain-42239403135-1-b0000.tar.gz",
+        "member": "files/ca/ca71ade57f448493b7b10dcb8bb55a5547369412167c69305d1b1d9afd11cc30.svg"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/open-pain-42239403135-1-b0000.tar.gz",
+        "member": "previews/ca71ade57f448493b7b10dcb8bb55a5547369412167c69305d1b1d9afd11cc30.png"
+      },
+      "visual_verdict": "usable_as_schematic_component",
+      "observations": "Actual tile viewed: complete human body outlines from head through feet are side by side, with a face/anterior landmarks on one and back-of-head/posterior contour on the other. The colored version additionally divides body areas. No disease or normal-state inference is made.",
+      "scientific_detail_validation": "not_independently_verified",
+      "native_editability_tested": false,
+      "scientific_assertions": {
+        "object": [
+          "human"
+        ],
+        "species": [
+          "human"
+        ],
+        "view": [
+          "anterior",
+          "posterior"
+        ],
+        "role": [
+          "whole_body"
+        ],
+        "depiction_kind": "person"
+      }
+    },
+    {
+      "tile": 2,
+      "id": "open-pain-c66a17e67b2e8111f592",
+      "title": "anatomical illustration colored",
+      "source_id": "illustration/1.0/anatomical_illustration_colored.svg",
+      "source_url": "https://github.com/DigitalHealthZurich/open-pain-illustration/blob/96d6f379790e39584289bad17a1d6eecc5104bd9/illustration/1.0/anatomical_illustration_colored.svg",
+      "original_sha256": "577c2fdde04aa877d7c6366a399a736b2197be010325c75ae602ab660b35b69f",
+      "preview_sha256": "a290e7af8d08ec42165c9bdee668c0a9a19eb10048998fb4b39b2ca4085213b2",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/open-pain-42239403135-1-b0000.tar.gz",
+        "member": "files/57/577c2fdde04aa877d7c6366a399a736b2197be010325c75ae602ab660b35b69f.svg"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/open-pain-42239403135-1-b0000.tar.gz",
+        "member": "previews/577c2fdde04aa877d7c6366a399a736b2197be010325c75ae602ab660b35b69f.png"
+      },
+      "visual_verdict": "usable_as_schematic_component",
+      "observations": "Actual tile viewed: complete human body outlines from head through feet are side by side, with a face/anterior landmarks on one and back-of-head/posterior contour on the other. The colored version additionally divides body areas. No disease or normal-state inference is made.",
+      "scientific_detail_validation": "not_independently_verified",
+      "native_editability_tested": false,
+      "scientific_assertions": {
+        "object": [
+          "human"
+        ],
+        "species": [
+          "human"
+        ],
+        "view": [
+          "anterior",
+          "posterior"
+        ],
+        "role": [
+          "whole_body"
+        ],
+        "depiction_kind": "person"
+      }
+    }
+  ]
+}

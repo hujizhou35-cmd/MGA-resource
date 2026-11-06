@@ -3,8 +3,8 @@
  */
 import vocabulary from './search-vocabulary.mjs';
 
-export const RANKING_VERSION = 'shared-search-3.3.1';
-export const INDEX_VERSION = 7;
+export const RANKING_VERSION = 'shared-search-3.4.0';
+export const INDEX_VERSION = 8;
 export const DEFAULT_CANDIDATE_POOL = 75;
 const unknown = new Set(['', 'unknown', 'unspecified', 'not_reviewed', '待确认']);
 const arr = value => value == null ? [] : Array.isArray(value) ? value : [value];
@@ -29,6 +29,7 @@ const SCIENCE = {
     rat: ['大鼠','实验大鼠','rat','rats','rattus','rattus norvegicus'],
     human: ['人体','人类','human','homo sapiens'], rabbit: ['兔','rabbit','oryctolagus cuniculus'],
     zebrafish: ['斑马鱼','zebrafish','danio rerio'], drosophila: ['果蝇','drosophila','fruit fly'],
+    drosophila_melanogaster: ['黑腹果蝇','drosophila melanogaster'],
   },
   state: {
     normal: ['正常','健康','normal','healthy'], pneumonia: ['肺炎','pneumonia'],
@@ -72,12 +73,16 @@ const extraConcepts = [
   ['细胞分选仪','cell sorter','magnetic cell sorter'],
   ['细胞周期','cell cycle'], ['细胞分选','cell sorting'],
   ['肝吸虫','liver fluke','fasciola'], ['肝小叶','liver lobule','hepatic lobule'],
+  ['黑腹果蝇','drosophila melanogaster'],
 ];
 // Avoid interpreting the unspecific Chinese experimental rodent as a mouse.
 const concepts = [...vocabulary.concepts, ...extraConcepts].map(group => unique(group.map(norm).filter(x => x !== '实验鼠')));
 // A named molecular object followed by its noun class is the same requested
 // object, not a demand that the source redundantly repeat the word molecule.
-for(const group of concepts)for(const name of ['atp','dna','rna','protein','antibody','lipid'])if(group.includes(name))group.push(`${name} molecule`);
+for(const group of concepts){
+  if(group.includes('lung'))group.push('lungs');
+  for(const name of ['atp','dna','rna','protein','antibody','lipid'])if(group.includes(name))group.push(`${name} molecule`,`${name}分子`,`${name} 分子`);
+}
 const qualifiers = Object.entries({...SCIENCE,...APPEARANCE}).flatMap(([key, groups]) => Object.entries(groups).flatMap(([value, terms]) => terms.map(term => ({key,value,term:norm(term)})))).sort((a,b) => b.term.length-a.term.length || cmp(a.term,b.term));
 const animalNames=new Set(Object.values(SCIENCE.species).flat().map(norm));
 const nonBiologicalMouse=value=>['computer mouse','mouse cursor','pointing device','电脑鼠标','鼠标'].some(term=>matches(value,term));
@@ -188,6 +193,8 @@ export function buildQueryPlan(query = '', filters = {}, options = {}) {
   for (const entry of qualifiers) {
     if (!matches(remaining,entry.term)) continue;
     if(entry.key==='species'&&entry.value==='mouse'&&nonBiologicalMouse(remaining))continue;
+    // A requested named species must not become an OR with its broad genus.
+    if(entry.key==='species'&&entry.value==='drosophila'&&SCIENCE.species.drosophila_melanogaster.some(term=>matches(remaining,term)))continue;
     if (entry.key === 'species') {
       // Species also names the requested animal; leave it as an object term.
       if (!explicit.has(entry.key)) requirements[entry.key] = unique([...(requirements[entry.key]||[]),entry.value]);
@@ -258,7 +265,9 @@ function valuesFromMetadata(key, context, file) {
   const explicit = scientificValue(file,key) ?? file[key] ?? context.scientific?.[key] ?? context[key];
   if (explicit != null) {
     const structured=typeof explicit==='object' && !Array.isArray(explicit) ? explicit.values ?? explicit.value : explicit;
-    return unique(arr(structured).map(value=>canonical(key,value)).filter(value=>!unknown.has(norm(value))));
+    const values=unique(arr(structured).map(value=>canonical(key,value)).filter(value=>!unknown.has(norm(value))));
+    if(key==='species'&&values.includes('drosophila_melanogaster'))values.push('drosophila');
+    return unique(values);
   }
   const sourceText = norm([context.title,context.title_zh,context.tags,context.upstream_category]);
   if(key==='species'&&nonBiologicalMouse(norm([context.title,context.title_zh])))return [];

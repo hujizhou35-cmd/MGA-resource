@@ -1,0 +1,55 @@
+{
+  "schema_version": 1,
+  "source": "bioicons",
+  "reviewed_at": "2026-11-06T18:35:30.200084+00:00",
+  "reviewer": "Codex registry_acceptance; direct original/render inspection",
+  "review_sheet_url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scientific-thermometer-20261107.review.png",
+  "review_sheet_sha256": "c45d5b415e8b0ed82fe45403428bab102a6195c05548ccc0430d80b172fac69b",
+  "review_method": "Downloaded only this 7,827-byte fixed-revision SVG, verified the archived original SHA-256, rendered it with the existing media pipeline, and directly viewed the image and single-tile sheet. The rendered PNG differs in byte encoding from the cloud PNG, but its dimensions and RGBA pixel digest exactly match the immutable catalog appearance binding for that cloud preview. Uploaded sheet digest independently checked through GitHub Release API.",
+  "review_limits": [
+    "Equipment appearance and primary-object correction only.",
+    "No temperature range, measurement accuracy, clinical use, material composition or native-editability validation.",
+    "Original title and original artwork bytes are unchanged."
+  ],
+  "render_equivalence": {
+    "original_sha256": "0ff0f512952b51d9f9a58bb133c26a4924debc18da511dc62dfab6e04d323fe1",
+    "archived_preview_sha256": "f6be79923ae8df8a3c6633677d75c0d4e70b4852d001c47f92f55b1f0fb4042d",
+    "local_render_sha256": "751b3906c0e8e848f1b66c2b2d3234b6416a7d2556119c1505afd8cf5402559e",
+    "dimensions": {
+      "width": 10,
+      "height": 512
+    },
+    "rgba_pixels_sha256": "8cb5f8c104f5c181a66d6373bccd4bb7d687263a47ccc265bd3c74df956c90dc",
+    "rgba_hash_algorithm": "sha256(rgba-v1:width:height:+rgba_bytes)",
+    "matches_catalog_binding": true,
+    "catalog_sha256": "479f4e618e7c952bde430bd45fa10062249ff0f12672c86fb64a20c854da1fde",
+    "catalog_url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/assembly-42258625880-1.catalog.jsonl"
+  },
+  "items": [
+    {
+      "tile": 1,
+      "id": "bioicons-d4ee71aaec1c121b1029",
+      "title": "cell cultuure quipment 3",
+      "source_id": "cc-by-3.0/Microbiology/Servier/cell-cultuure-quipment-3.svg",
+      "source_url": "https://github.com/duerrsimon/bioicons/blob/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-3.0/Microbiology/Servier/cell-cultuure-quipment-3.svg",
+      "original_sha256": "0ff0f512952b51d9f9a58bb133c26a4924debc18da511dc62dfab6e04d323fe1",
+      "preview_sha256": "f6be79923ae8df8a3c6633677d75c0d4e70b4852d001c47f92f55b1f0fb4042d",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42251588741-1-b0003.tar.gz",
+        "member": "files/0f/0ff0f512952b51d9f9a58bb133c26a4924debc18da511dc62dfab6e04d323fe1.svg"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42251588741-1-b0003.tar.gz",
+        "member": "previews/0ff0f512952b51d9f9a58bb133c26a4924debc18da511dc62dfab6e04d323fe1.png"
+      },
+      "visual_verdict": "usable_as_schematic_component",
+      "observations": "The actually viewed object is a very slender thermometer: a red liquid bulb/column is visible within a transparent/yellow tube beside graduation marks. It is an isolated laboratory instrument, not a biological cell or a cell-culture action scene. Numeric units, operating range and instrument performance are not established by this image.",
+      "scientific_assertions": {
+        "object": [
+          "thermometer"
+        ],
+        "depiction_kind": "equipment"
+      }
+    }
+  ]
+}

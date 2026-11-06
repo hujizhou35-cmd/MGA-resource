@@ -205,7 +205,7 @@ def test_unknown_filter_and_obsolete_index_fail_explicitly(tmp_path):
         search(db, "mouse", filters={"nonsense": "true"})
     with closing(sqlite3.connect(db)) as conn:
         conn.execute("PRAGMA user_version=1")
-    with pytest.raises(ValueError, match="rebuilt as v7"):
+    with pytest.raises(ValueError, match="rebuilt as v8"):
         search(db, "mouse")
 
 
@@ -386,3 +386,29 @@ def test_internal_catalog_cannot_be_published_and_unreviewed_objects_remain_sear
         finalize([internal],tmp_path/"internal")
     db=database(tmp_path/"public",[item])
     assert len(search(db,"mouse"))==1
+
+
+def test_named_molecule_noun_class_is_equivalent_in_chinese_and_english(tmp_path):
+    db=database(tmp_path,[artwork(1,title="ATP",species=None),artwork(2,title="Protein",species=None)])
+    pages=[search_page(db,q) for q in ("ATP分子结构示意","ATP molecule structure schematic")]
+    assert all([r["title"] for r in p["results"]]==["ATP"] for p in pages)
+    assert all(len(p["query_plan"]["terms"])==1 for p in pages)
+
+
+def test_lungs_plural_is_an_organ_not_a_human_body_request(tmp_path):
+    db=database(tmp_path,[artwork(1,title="Human Lungs",species="human"),artwork(2,title="Human body",species="human")])
+    for query in ("人体肺部插画","human lungs illustration"):
+        page=search_page(db,query)
+        assert [r["title"] for r in page["results"]]==["Human Lungs"]
+        assert "lung" in page["query_plan"]["requirements"]["object"]
+        assert "human" not in page["query_plan"]["requirements"]["object"]
+
+
+def test_named_fruitfly_species_never_relaxes_to_an_unspecified_genus(tmp_path):
+    db=database(tmp_path,[artwork(1,title="Drosophila melanogaster",species=None),
+        artwork(2,title="Drosophila",species=None),
+        artwork(3,title="Drosophila simulans",species="Drosophila simulans",object="drosophila")])
+    pages=[search_page(db,q) for q in ("黑腹果蝇插画","Drosophila melanogaster illustration")]
+    assert all([r["title"] for r in p["results"]]==["Drosophila melanogaster"] for p in pages)
+    assert all(p["query_plan"]["requirements"]["species"]==["drosophila_melanogaster"] for p in pages)
+    assert [r["title"] for r in search(db,"fruit fly",filters={"file_sha256":artwork(1)["files"][0]["sha256"]})]==["Drosophila melanogaster"]
