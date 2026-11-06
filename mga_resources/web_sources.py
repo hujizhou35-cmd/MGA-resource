@@ -10,9 +10,11 @@ from __future__ import annotations
 import hashlib
 import html
 import json
+import os
 import re
 import urllib.parse
 from html.parser import HTMLParser
+from pathlib import PurePosixPath
 
 from .http import SourceAccessError
 from .sources import _base
@@ -158,6 +160,12 @@ def discover_nih(source, client):
                     for file_id in values.split(","):
                         if file_id.strip().isdigit():
                             record["files"].append({"url": f"https://bioart.niaid.nih.gov/api/bioarts/{sid}/files/{file_id.strip()}", "format": fmt})
+            image_types = [key for key, kind in zip(fields.get("ontologykey", []), fields.get("ontologytype", []))
+                           if kind == "Image Type"]
+            record["upstream_image_types"] = image_types
+            if not record["files"] and "Brush" in image_types:
+                record.update(scope_status="excluded", exclusion_reason="brush_without_downloadable_artwork",
+                              scope_note="Official Image Type is Brush; no SVG/PNG artwork is offered. AI brush files and JPG display thumbnails are outside the illustration-image import.")
             # Keep metadata-only entries visible to inventory/coverage, rather
             # than silently treating missing requested formats as a success.
             results.append(record)
@@ -246,3 +254,83 @@ def discover_reactome(source, client):
         for record in items.values():
             record["discovery_warnings"] = ["Invalid UTF-8 symbols replaced in category metadata: " + ", ".join(decoding_warnings)]
     return sorted(items.values(), key=lambda r: r["source_id"])
+
+
+def discover_togo(source, client):
+    """The current official TogoTV API, not the outdated 2018 CSV snapshot."""
+    api = source.get("api_url", "https://togotv-api.dbcls.jp/api/entries")
+    file_base = source.get("file_base_url", "https://dbarchive.biosciencedbc.jp/data/togo-pic/image/")
+    rows_per_page = 200
+    page, expected, results, seen = 1, None, [], set()
+    while True:
+        url = api + "?" + urllib.parse.urlencode({"target": "pictures", "from": page, "rows": rows_per_page})
+        response = client.get_json(url)
+        found = int(response["numfound"])
+        if expected is not None and found != expected:
+            raise SourceAccessError(api, "Togo catalog changed during pagination")
+        expected = found
+        if int(response.get("start", -1)) != (page - 1) * rows_per_page:
+            raise SourceAccessError(url, "unexpected Togo page offset")
+        data = response.get("data", [])
+        if not data and len(seen) < expected:
+            raise SourceAccessError(url, "empty Togo page before declared end")
+        for item in data:
+            sid = str(item["TogoTV_Image_ID"])
+            if sid in seen:
+                raise SourceAccessError(url, "duplicate Togo artwork ID")
+            seen.add(sid)
+            item_url = item.get("id") or source["source_url"]
+            title = item.get("name_en") or item.get("name") or sid
+            record = _base(source, sid, title, item_url, item.get("uploadDate") or "unversioned")
+            license_url = item.get("license")
+            match = re.fullmatch(r"https?://creativecommons.org/licenses/(by(?:-sa)?)/(\d\.\d)/?", license_url or "")
+            if match:
+                license_id = "CC-" + match.group(1).upper() + "-" + match.group(2)
+                record.update(license=license_id, license_url=license_url, license_evidence=item_url)
+            elif license_url and license_url.lower().endswith(".ai"):
+                # Four API rows contain an Illustrator filename in the license
+                # column. Retain that raw value and cite the explicit DBCLS
+                # collection license, rather than inventing a license URI.
+                record["license_evidence"] = source["license_evidence_url"]
+                record["discovery_warnings"] = ["Official API license field contains an .ai filename; explicit DBCLS collection license applies."]
+            else:
+                record.update(license=license_url or None, license_url=None,
+                              distribution_allowed=False, rights_status="pending",
+                              rights_note="Unrecognized item-level license requires resolution.")
+            record.update(author=item.get("author") or item.get("author_str") or None,
+                          license_original=license_url, title_original=item.get("name"),
+                          scientific_name=item.get("scientific_name") if item.get("scientific_name") not in (None, "", "-") else None,
+                          taxonomy_id=str(item["tax_id"]) if item.get("tax_id") not in (None, "", "-") else None,
+                          editor=item.get("editor"), family_hint="togo:" + sid,
+                          metadata_source=api, doi=item.get("id"))
+            record["tags"] = [t.strip() for t in item.get("other_tags_comma_en", "").split(",") if t.strip()]
+            record["tags"] += [item[k] for k in ("taxon1_en", "taxon2_en", "taxon3_en", "scientific_name") if item.get(k) and item[k] != "-"]
+            record["attribution"] = f"{title} — {record['author'] or 'DBCLS'}; © 2016 DBCLS TogoTV / {record['license']}; {item_url}"
+            for fmt in source.get("extensions", ["svg", "png"]):
+                filename = item.get(fmt)
+                if not filename:
+                    continue
+                if PurePosixPath(filename).name != filename:
+                    raise SourceAccessError(api, "unexpected Togo file path")
+                file_url = urllib.parse.urljoin(file_base, urllib.parse.quote(filename, safe=""))
+                if filename.lower().endswith(".zip"):
+                    if os.environ.get("GITHUB_ACTIONS") != "true" and not source.get("allow_archive_download"):
+                        raise SourceAccessError(file_url, "Togo variant archive discovery is cloud-only")
+                    with client.get_archive(file_url) as archive:
+                        members = [m for m in archive.infolist() if not m.is_dir() and not m.filename.startswith("__MACOSX/") and PurePosixPath(m.filename).suffix.lower() == "." + fmt]
+                        if not members:
+                            raise SourceAccessError(file_url, "variant archive contains no declared image format")
+                        for member in sorted(members, key=lambda m: m.filename):
+                            record["files"].append({"url": file_url, "format": fmt, "archive_member": member.filename,
+                                                    "upstream_size": member.file_size})
+                else:
+                    if PurePosixPath(filename).suffix.lower() != "." + fmt:
+                        raise SourceAccessError(file_url, "Togo file extension disagrees with catalog field")
+                    record["files"].append({"url": file_url, "format": fmt})
+            results.append(record)
+        if page >= int(response["last_page"]):
+            break
+        page += 1
+    if len(seen) != expected:
+        raise SourceAccessError(api, f"Togo catalog incomplete: {len(seen)} of {expected}")
+    return sorted(results, key=lambda r: int(r["source_id"]))

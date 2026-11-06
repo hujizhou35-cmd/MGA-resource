@@ -8,6 +8,7 @@ from unittest.mock import patch
 from mga_resources.http import HttpClient, SourceAccessError
 from mga_resources.sources import discover, discover_archive
 from mga_resources.web_sources import parse_rsc
+from mga_resources.archive_metadata import load_arcadia_metadata, enrich_arcadia
 
 
 class FakeClient:
@@ -80,6 +81,36 @@ class SourceTests(unittest.TestCase):
         with patch.dict("os.environ", {"GITHUB_ACTIONS": "false"}):
             with self.assertRaisesRegex(SourceAccessError, "cloud-only"):
                 discover_archive({"archive_url": "https://example.org/library.zip"}, None)
+
+    def test_arcadia_names_credits_and_styles_share_true_family(self):
+        url = "https://example.org/arcadia/"
+        records = [{"sci": "Agaricus bisporus", "common": "White button mushroom",
+                    "notes": "Modified from PhyloPic silhouette, uploaded by T. Michael Keesey.",
+                    "files": [{"name": "Agaricus-bisporus-raster.png"}, {"name": "Agaricus-bisporus-silhouette.svg"}]}]
+        client = FakeClient({url: "window.RECORDS = " + json.dumps(records) + ";"})
+        source = {"source_id": "arcadia", "source_url": "https://zenodo.org/records/18395998", "metadata_url": url,
+                  "filename_aliases": {"Agaricus-bisporis": "Agaricus-bisporus"}}
+        metadata = load_arcadia_metadata(source, client)
+        raster, vector = {}, {}
+        enrich_arcadia(raster, "Tricolor + stroke PNGs/Agaricus-bisporis-tricolorstroke.png", source, metadata)
+        enrich_arcadia(vector, "Silhouette SVGs/Agaricus-bisporus-silhouette.svg", source, metadata)
+        self.assertEqual(raster["family_hint"], vector["family_hint"])
+        self.assertIn("White button mushroom", raster["title"])
+        self.assertIn("T. Michael Keesey", raster["attribution"])
+        self.assertEqual(raster["scientific_name"], "Agaricus bisporus")
+
+    def test_arcadia_body_parts_are_not_merged_into_whole_organism(self):
+        url = "https://example.org/arcadia/"
+        data = [{"sci": "Homo sapiens", "common": "Human", "notes": "", "files": [
+            {"name": "Homo-sapiens-raster.png"}, {"name": "Homo-sapiens-neuron.png"}]}]
+        source = {"source_id": "arcadia", "source_url": url, "metadata_url": url}
+        metadata = load_arcadia_metadata(source, FakeClient({url: "window.RECORDS=" + json.dumps(data) + ";"}))
+        whole, neuron = {}, {}
+        enrich_arcadia(whole, "Raster PNGs/Homo-sapiens-raster.png", source, metadata)
+        enrich_arcadia(neuron, "Raster PNGs/Homo-sapiens-neuron.png", source, metadata)
+        self.assertNotEqual(whole["family_hint"], neuron["family_hint"])
+        self.assertEqual(whole["organism_family"], neuron["organism_family"])
+        self.assertIn("neuron", neuron["title"])
 
     def test_file_validates_git_blob_and_reads_only_member(self):
         payload = b"<svg/>"
@@ -159,6 +190,19 @@ class SourceTests(unittest.TestCase):
         with self.assertRaisesRegex(SourceAccessError, "duplicate"):
             discover({"source_id": "nih-bioart", "adapter": "nih_bioart"}, self.nih_fixture([hit, hit]))
 
+    def test_nih_brush_without_image_is_explicit_scope_exclusion(self):
+        fields = {"id": ["9"], "title": ["Actin Filament Brush"], "license": ["Public Domain"],
+                  "filesinfo": ["All:1,2|AI:1|JPG:2"], "ontologykey": ["Proteins", "Brush"],
+                  "ontologytype": ["Bioart Category", "Image Type"]}
+        source = {"source_id": "nih-bioart", "adapter": "nih_bioart"}
+        record = discover(source, self.nih_fixture([{"fields": fields}]))[0]
+        self.assertEqual(record["scope_status"], "excluded")
+        self.assertEqual(record["exclusion_reason"], "brush_without_downloadable_artwork")
+        fields["ontologykey"] = ["Proteins", "Vector"]
+        record = discover(source, self.nih_fixture([{"fields": fields}]))[0]
+        self.assertNotIn("scope_status", record)
+        self.assertEqual(record["files"], [])
+
     def test_swissbiopics_uses_svg_endpoint_not_thumbnail(self):
         client = FakeClient({"https://www.swissbiopics.org/": '<div class="inj" data-name="Animal_cells" data-title="Animal cell" data-target="name/Animal_cell"></div>'})
         rows = discover({"source_id": "swissbiopics", "adapter": "swissbiopics"}, client)
@@ -184,6 +228,53 @@ class SourceTests(unittest.TestCase):
         client.mapping[client.calls[0]]["next"] = "https://unexpected.example/page=2"
         with self.assertRaisesRegex(SourceAccessError, "host"):
             discover({"source_id": "scidraw", "adapter": "scidraw"}, client)
+
+    def togo_fixture(self, entries):
+        source = {"source_id": "togo", "adapter": "togo", "source_url": "https://togotv.dbcls.jp/en/pics.html",
+                  "license": "CC-BY-4.0", "license_url": "https://creativecommons.org/licenses/by/4.0/",
+                  "license_evidence_url": "https://dbarchive.biosciencedbc.jp/en/togo-pic/lic.html"}
+        url = "https://togotv-api.dbcls.jp/api/entries?target=pictures&from=1&rows=200"
+        client = FakeClient({url: {"data": entries, "numfound": len(entries), "last_page": 1, "start": 0}})
+        return source, client
+
+    def test_togo_keeps_item_author_and_exact_cc_license(self):
+        source, client = self.togo_fixture([{"TogoTV_Image_ID": 12, "name_en": "White mouse", "author": "Artist A",
+            "license": "https://creativecommons.org/licenses/by/4.0/", "png": "White mouse.png", "svg": "White mouse.svg", "scientific_name": "Mus musculus", "tax_id": "10090"}])
+        record = discover(source, client)[0]
+        self.assertEqual(record["author"], "Artist A")
+        self.assertEqual(record["license"], "CC-BY-4.0")
+        self.assertIn("White%20mouse.svg", record["files"][0]["url"])
+        self.assertEqual(len(record["files"]), 2)
+
+    def test_togo_malformed_filename_license_uses_explicit_collection_evidence(self):
+        source, client = self.togo_fixture([{"TogoTV_Image_ID": 42, "name_en": "Tobacco", "license": "202304_Common_tobacco.ai", "png": "tobacco.png"}])
+        record = discover(source, client)[0]
+        self.assertEqual(record["license"], "CC-BY-4.0")
+        self.assertEqual(record["license_original"], "202304_Common_tobacco.ai")
+        self.assertEqual(record["license_evidence"], source["license_evidence_url"])
+        self.assertTrue(record["discovery_warnings"])
+
+    def test_togo_partial_inventory_is_failure(self):
+        source, client = self.togo_fixture([])
+        next(iter(client.mapping.values()))["numfound"] = 1
+        with self.assertRaisesRegex(SourceAccessError, "empty Togo page"):
+            discover(source, client)
+
+    def test_togo_svg_variant_zip_expands_only_in_cloud(self):
+        source, client = self.togo_fixture([{"TogoTV_Image_ID": 99, "name_en": "ChIP icons", "license": "https://creativecommons.org/licenses/by/4.0/", "svg": "icons_svg.zip", "png": "icons.png"}])
+        with patch.dict("os.environ", {"GITHUB_ACTIONS": "false"}):
+            with self.assertRaisesRegex(SourceAccessError, "cloud-only"):
+                discover(source, client)
+        buffer = io.BytesIO()
+        with zipfile.ZipFile(buffer, "w") as archive:
+            archive.writestr("icons/red.svg", b"<svg/>")
+            archive.writestr("icons/blue.svg", b"<svg/>")
+            archive.writestr("README.txt", "not artwork")
+        client.get_archive = lambda url: zipfile.ZipFile(io.BytesIO(buffer.getvalue()))
+        with patch.dict("os.environ", {"GITHUB_ACTIONS": "true"}):
+            record = discover(source, client)[0]
+        self.assertEqual(len(record["files"]), 3)
+        self.assertEqual(record["files"][0]["archive_member"], "icons/blue.svg")
 
 
 if __name__ == "__main__":

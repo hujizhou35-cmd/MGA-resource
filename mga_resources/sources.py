@@ -163,6 +163,10 @@ def discover_archive(source: dict, client: HttpClient) -> list[dict]:
     if os.environ.get("GITHUB_ACTIONS") != "true" and not source.get("allow_archive_download"):
         raise SourceAccessError(source["archive_url"], "bulk archive discovery is cloud-only")
     results = []
+    metadata = None
+    if source.get("metadata_kind") == "arcadia":
+        from .archive_metadata import load_arcadia_metadata
+        metadata = load_arcadia_metadata(source, client)
     revision = source.get("upstream_revision") or source["archive_checksum"]
     with client.get_archive(source["archive_url"], source.get("archive_checksum")) as archive:
         for member in sorted(archive.infolist(), key=lambda x: x.filename):
@@ -173,6 +177,9 @@ def discover_archive(source: dict, client: HttpClient) -> list[dict]:
             record["tags"] = [humanize(x) for x in PurePosixPath(path).parts[:-1] if x.lower() not in ("svg", "png")]
             family = "/".join(x for x in PurePosixPath(path).with_suffix("").parts if x.lower() not in ("svg", "png"))
             record["family_hint"] = source["source_id"] + ":" + family
+            if metadata is not None:
+                from .archive_metadata import enrich_arcadia
+                enrich_arcadia(record, path, source, metadata)
             record["files"] = [{"url": source["archive_url"], "format": PurePosixPath(path).suffix[1:].lower(),
                                  "archive_member": path, "archive_checksum": source.get("archive_checksum"),
                                  "upstream_size": member.file_size}]
@@ -224,12 +231,13 @@ def discover_scidraw(source: dict, client: HttpClient) -> list[dict]:
 
 def discover(source: dict, client: HttpClient) -> list[dict]:
     """Discover a complete source snapshot or fail explicitly (never partial-success)."""
-    from .web_sources import discover_nih, discover_reactome, discover_swissbiopics
+    from .web_sources import discover_nih, discover_reactome, discover_swissbiopics, discover_togo
 
     adapters = {"github_tree": discover_github, "bioicons": discover_bioicons,
                 "archive": discover_archive, "zenodo_archive": discover_archive,
                 "scidraw": discover_scidraw, "nih_bioart": discover_nih,
-                "swissbiopics": discover_swissbiopics, "reactome": discover_reactome}
+                "swissbiopics": discover_swissbiopics, "reactome": discover_reactome,
+                "togo": discover_togo}
     adapter = source.get("adapter", "github_tree")
     if adapter not in adapters:
         raise ValueError(f"Source adapter not yet implemented: {adapter}")

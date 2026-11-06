@@ -108,7 +108,7 @@
         "png"
       ],
       "scope": "medical_and_biomedical_illustrations",
-      "rights_notes": "The official v1.2 record states all images are CC0. Preserve Arcadia attribution and recorded PhyloPic-derived provenance where supplied.",
+      "rights_notes": "The official v1.2 archive states all images are CC0. Preserve Arcadia Science credit and exact PhyloPic derivation/uploader notes from the official gallery. Scientific/common names enrich all styles; archive spelling variants are normalized only for metadata and grouping, never altering originals.",
       "verified_at": "2026-11-06",
       "archive_url": "https://zenodo.org/records/18395998/files/arcadia-organism-library-v1.2.zip?download=1",
       "archive_checksum": "md5:3e6c0eeced4052e75bff3aee0fc34631",
@@ -122,8 +122,16 @@
       ],
       "style_notes": "Organism silhouettes, tricolor-stroke SVG and transparent raster artwork. Species are separate from artwork variants.",
       "evidence_urls": [
-        "https://zenodo.org/records/18395998"
-      ]
+        "https://zenodo.org/records/18395998",
+        "https://arcadia-science.github.io/organism-illustration-library/",
+        "https://thestacks.org/publications/resource-organism-illustration-library"
+      ],
+      "metadata_kind": "arcadia",
+      "metadata_url": "https://arcadia-science.github.io/organism-illustration-library/",
+      "filename_aliases": {
+        "Agaricus-bisporis": "Agaricus-bisporus",
+        "Entamboeba-histolytica": "Entamoeba-histolytica"
+      }
     },
     {
       "source_id": "scisvg",
@@ -364,12 +372,12 @@
     {
       "source_id": "togo",
       "name": "DBCLS Togo Picture Gallery",
-      "enabled": false,
-      "status": "planned_adapter",
+      "enabled": true,
+      "status": "metadata_verified",
       "primary": true,
-      "adapter": null,
+      "adapter": "togo",
       "repository": null,
-      "source_url": "https://dbarchive.biosciencedbc.jp/data/togo-pic/20180629/README_e.html",
+      "source_url": "https://togotv.dbcls.jp/en/pics.html",
       "license": "CC-BY-4.0",
       "license_url": "https://creativecommons.org/licenses/by/4.0/",
       "author": "DBCLS",
@@ -379,7 +387,7 @@
         "png"
       ],
       "scope": "medical_and_biomedical_illustrations",
-      "rights_notes": "Official 2018 archive explicitly permits full/partial acquisition, redistribution and derivative databases. Required credit: Togo Picture Gallery © DBCLS licensed under CC Attribution 4.0 International. Deduplicate overlap with Bioicons.",
+      "rights_notes": "Current official API enumerated 2252 items on 2026-11-06, superseding the 539-item 2018 CSV. Preserve each artist, English/Japanese name, taxonomy, DOI and exact item license. Four API license fields contain .ai filenames; retain the original values and cite the explicit CC BY 4.0 collection license. Required credit: © 2016 DBCLS TogoTV / CC-BY-4.0. Four multi-color SVG variant ZIPs expand only in cloud CI; other originals are fetched directly from the official archive.",
       "verified_at": "2026-11-06",
       "content_types": [
         "illustration",
@@ -388,8 +396,14 @@
       ],
       "style_notes": "Life-science organism, anatomy and apparatus artwork with English/Japanese titles and taxonomy metadata.",
       "evidence_urls": [
-        "https://dbarchive.biosciencedbc.jp/data/togo-pic/20180629/README_e.html"
-      ]
+        "https://togotv.dbcls.jp/en/pics.html",
+        "https://togotv-api.dbcls.jp/api/entries?target=pictures&from=1&rows=40",
+        "https://dbarchive.biosciencedbc.jp/en/togo-pic/lic.html",
+        "https://dbarchive.biosciencedbc.jp/en/togo-pic/download.html"
+      ],
+      "api_url": "https://togotv-api.dbcls.jp/api/entries",
+      "file_base_url": "https://dbarchive.biosciencedbc.jp/data/togo-pic/image/",
+      "license_evidence_url": "https://dbarchive.biosciencedbc.jp/en/togo-pic/lic.html"
     },
     {
       "source_id": "biocartoon",
