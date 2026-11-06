@@ -1,0 +1,2159 @@
+{
+  "schema_version": 1,
+  "tool_version": "preview-composition-qa-1.0.0",
+  "curated_sha256": "32011683c6259d0221e39ac5e6748dc460d451d91ec0af74d6851d8dba1ed78c",
+  "inventory_sha256": "66fa2db2cfbd06310c0163066957a1653303466e7940e9374387f436d6d878c9",
+  "curated_items": 48,
+  "exact_local_previews_reviewed_by_machine": 9,
+  "items": [
+    {
+      "tile": 1,
+      "candidate_id": "scisvg-f66d69a3b51086c174e5:file-0",
+      "title": "Test Tube Rack",
+      "categories": [
+        "lab_equipment"
+      ],
+      "original_sha256": "1696b2dbb14253cd021c2874b368cb48db433bcecfef35eee1320a6f3539c79f",
+      "original_archive": {
+        "member": "files/16/1696b2dbb14253cd021c2874b368cb48db433bcecfef35eee1320a6f3539c79f.svg",
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scisvg-42238985604-1-b0000.tar.gz"
+      },
+      "preview_sha256": "9db678f0d784339bc96b59a7946dd65e283e4e077ad4bb567b45a0142c9c4220",
+      "preview_archive": {
+        "member": "previews/1696b2dbb14253cd021c2874b368cb48db433bcecfef35eee1320a6f3539c79f.png",
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scisvg-42238985604-1-b0000.tar.gz"
+      },
+      "input_preview": "build/appearance-real-review/appearance-review-42255022104-1/previews/1696b2dbb14253cd021c2874b368cb48db433bcecfef35eee1320a6f3539c79f.png",
+      "alpha_statistics": {
+        "width": 512,
+        "height": 512,
+        "decoded_mode": "RGBA",
+        "rgba_conversion_for_display_only": false,
+        "pixels": 262144,
+        "fully_transparent_pixels": 213171,
+        "partial_alpha_pixels": 705,
+        "fully_opaque_pixels": 48268,
+        "nonzero_alpha_bbox": [
+          70,
+          175,
+          442,
+          400
+        ],
+        "source_preview_bytes_unchanged": true
+      },
+      "display_conditions": [
+        {
+          "extent": 256,
+          "rendered_size": [
+            256,
+            256
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "uniform_scale": 0.5,
+          "cropped": false,
+          "background": "white",
+          "sheet": "comparison-01.png",
+          "bounds_xywh": [
+            20,
+            120,
+            256,
+            256
+          ]
+        },
+        {
+          "extent": 256,
+          "rendered_size": [
+            256,
+            256
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "uniform_scale": 0.5,
+          "cropped": false,
+          "background": "dark",
+          "sheet": "comparison-01.png",
+          "bounds_xywh": [
+            300,
+            120,
+            256,
+            256
+          ]
+        },
+        {
+          "extent": 256,
+          "rendered_size": [
+            256,
+            256
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "uniform_scale": 0.5,
+          "cropped": false,
+          "background": "grid",
+          "sheet": "comparison-01.png",
+          "bounds_xywh": [
+            580,
+            120,
+            256,
+            256
+          ]
+        },
+        {
+          "extent": 96,
+          "rendered_size": [
+            96,
+            96
+          ],
+          "offset": [
+            18,
+            80
+          ],
+          "uniform_scale": 0.1875,
+          "cropped": false,
+          "background": "white",
+          "sheet": "comparison-01.png",
+          "bounds_xywh": [
+            860,
+            120,
+            132,
+            256
+          ]
+        },
+        {
+          "extent": 48,
+          "rendered_size": [
+            48,
+            48
+          ],
+          "offset": [
+            42,
+            104
+          ],
+          "uniform_scale": 0.09375,
+          "cropped": false,
+          "background": "white",
+          "sheet": "comparison-01.png",
+          "bounds_xywh": [
+            1016,
+            120,
+            132,
+            256
+          ]
+        },
+        {
+          "extent": 208,
+          "rendered_size": [
+            208,
+            208
+          ],
+          "offset": [
+            0,
+            11
+          ],
+          "uniform_scale": 0.40625,
+          "cropped": false,
+          "background": "white",
+          "sheet": "adjacency.png",
+          "bounds_xywh": [
+            30,
+            102,
+            208,
+            230
+          ]
+        },
+        {
+          "extent": 208,
+          "rendered_size": [
+            208,
+            208
+          ],
+          "offset": [
+            0,
+            11
+          ],
+          "uniform_scale": 0.40625,
+          "cropped": false,
+          "background": "dark",
+          "sheet": "adjacency.png",
+          "bounds_xywh": [
+            750,
+            102,
+            208,
+            230
+          ]
+        }
+      ],
+      "visual_judgment": {
+        "reviewed_by": "Codex media_catalog; displayed all four QA canvases",
+        "reviewed_at": "2026-11-06T23:08:40.433873+00:00",
+        "status": "usable_with_dark_edge_and_size_limits",
+        "transparent_overlay_observation": "外部与管间空隙透明；试管内部白色是可见保留的实色，深底上仍为白色。棋盘与穿越线没有穿透这些白色结构。",
+        "dark_background_observation": "主体可辨，深灰架横梁在深底上对比下降。",
+        "reduction_96px": "架与多支彩色试管可辨，刻画已简化。",
+        "reduction_48px": "仍可作试管架小图标；边线和单管细节很小，不用于细节判读。",
+        "printed_label_readability": "not_covered: no embedded readable labels were observed in these nine displayed previews",
+        "original_scope_or_scientific_assertions_changed": false,
+        "native_editability_tested": false
+      },
+      "source_records": [
+        {
+          "asset_id": "scisvg-f66d69a3b51086c174e5",
+          "attribution": "Test Tube Rack — Saveena Solanki; https://github.com/SaveenaSolanki/SciSVG/blob/b8a2b60a3a5b2d9b717b1065fbcb8de9f1faf72b/assets/laboratory/equipment/test-tube-rack.svg; CC-BY-4.0",
+          "author": "Saveena Solanki",
+          "categories": [],
+          "description": "Test tubes with colored liquids in a laboratory rack.",
+          "distribution_status": "license_recorded",
+          "license": "CC-BY-4.0",
+          "source": "scisvg",
+          "source_id": "assets/laboratory/equipment/test-tube-rack.svg",
+          "source_url": "https://github.com/SaveenaSolanki/SciSVG/blob/b8a2b60a3a5b2d9b717b1065fbcb8de9f1faf72b/assets/laboratory/equipment/test-tube-rack.svg",
+          "tags": [
+            "test",
+            "tube",
+            "rack",
+            "laboratory",
+            "equipment"
+          ],
+          "taxonomy": [
+            "lab_equipment"
+          ],
+          "title": "Test Tube Rack",
+          "upstream_category": "laboratory",
+          "url": "https://raw.githubusercontent.com/SaveenaSolanki/SciSVG/b8a2b60a3a5b2d9b717b1065fbcb8de9f1faf72b/assets/laboratory/equipment/test-tube-rack.svg"
+        }
+      ]
+    },
+    {
+      "tile": 2,
+      "candidate_id": "scidraw-4d621dae7e2ae2e002d4:file-0",
+      "title": "Zebrafish brain outline",
+      "categories": [
+        "organs"
+      ],
+      "original_sha256": "e12c822fb7984e508a8404dfa4ab846ba293f98477422c4c20c86766cef8993c",
+      "original_archive": {
+        "member": "files/e1/e12c822fb7984e508a8404dfa4ab846ba293f98477422c4c20c86766cef8993c.svg",
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scidraw-42235890704-1-b0000.tar.gz"
+      },
+      "preview_sha256": "e10d947b8ff51962e1a4d824c138a52fa5d3a9698035d7ea0aefa497f020fac1",
+      "preview_archive": {
+        "member": "previews/e12c822fb7984e508a8404dfa4ab846ba293f98477422c4c20c86766cef8993c.png",
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scidraw-42235890704-1-b0000.tar.gz"
+      },
+      "input_preview": "build/appearance-real-review/appearance-review-42255022104-1/previews/e12c822fb7984e508a8404dfa4ab846ba293f98477422c4c20c86766cef8993c.png",
+      "alpha_statistics": {
+        "width": 512,
+        "height": 312,
+        "decoded_mode": "RGBA",
+        "rgba_conversion_for_display_only": false,
+        "pixels": 159744,
+        "fully_transparent_pixels": 83895,
+        "partial_alpha_pixels": 56171,
+        "fully_opaque_pixels": 19678,
+        "nonzero_alpha_bbox": [
+          25,
+          25,
+          487,
+          287
+        ],
+        "source_preview_bytes_unchanged": true
+      },
+      "display_conditions": [
+        {
+          "extent": 256,
+          "rendered_size": [
+            256,
+            156
+          ],
+          "offset": [
+            0,
+            50
+          ],
+          "uniform_scale": 0.5,
+          "cropped": false,
+          "background": "white",
+          "sheet": "comparison-01.png",
+          "bounds_xywh": [
+            20,
+            446,
+            256,
+            256
+          ]
+        },
+        {
+          "extent": 256,
+          "rendered_size": [
+            256,
+            156
+          ],
+          "offset": [
+            0,
+            50
+          ],
+          "uniform_scale": 0.5,
+          "cropped": false,
+          "background": "dark",
+          "sheet": "comparison-01.png",
+          "bounds_xywh": [
+            300,
+            446,
+            256,
+            256
+          ]
+        },
+        {
+          "extent": 256,
+          "rendered_size": [
+            256,
+            156
+          ],
+          "offset": [
+            0,
+            50
+          ],
+          "uniform_scale": 0.5,
+          "cropped": false,
+          "background": "grid",
+          "sheet": "comparison-01.png",
+          "bounds_xywh": [
+            580,
+            446,
+            256,
+            256
+          ]
+        },
+        {
+          "extent": 96,
+          "rendered_size": [
+            96,
+            58
+          ],
+          "offset": [
+            18,
+            99
+          ],
+          "uniform_scale": 0.1875,
+          "cropped": false,
+          "background": "white",
+          "sheet": "comparison-01.png",
+          "bounds_xywh": [
+            860,
+            446,
+            132,
+            256
+          ]
+        },
+        {
+          "extent": 48,
+          "rendered_size": [
+            48,
+            29
+          ],
+          "offset": [
+            42,
+            113
+          ],
+          "uniform_scale": 0.09375,
+          "cropped": false,
+          "background": "white",
+          "sheet": "comparison-01.png",
+          "bounds_xywh": [
+            1016,
+            446,
+            132,
+            256
+          ]
+        },
+        {
+          "extent": 208,
+          "rendered_size": [
+            208,
+            127
+          ],
+          "offset": [
+            0,
+            51
+          ],
+          "uniform_scale": 0.40625,
+          "cropped": false,
+          "background": "white",
+          "sheet": "adjacency.png",
+          "bounds_xywh": [
+            250,
+            102,
+            208,
+            230
+          ]
+        },
+        {
+          "extent": 208,
+          "rendered_size": [
+            208,
+            127
+          ],
+          "offset": [
+            0,
+            51
+          ],
+          "uniform_scale": 0.40625,
+          "cropped": false,
+          "background": "dark",
+          "sheet": "adjacency.png",
+          "bounds_xywh": [
+            970,
+            102,
+            208,
+            230
+          ]
+        }
+      ],
+      "visual_judgment": {
+        "reviewed_by": "Codex media_catalog; displayed all four QA canvases",
+        "reviewed_at": "2026-11-06T23:08:40.433873+00:00",
+        "status": "background_sensitive_and_fine_detail_size_limited",
+        "transparent_overlay_observation": "35%左右像素为半透明；灰区在棋盘上明显透出格纹，换深底后变成近黑，白色区域保留。",
+        "dark_background_observation": "背景显著改变明暗分布和外侧轮廓，不宜把白底外观直接套用到深底。",
+        "reduction_96px": "总体脑形仍可见，细分区白线已弱。",
+        "reduction_48px": "细小分区和轮廓线丢失，不能用于细分区表达。",
+        "printed_label_readability": "not_covered: no embedded readable labels were observed in these nine displayed previews",
+        "original_scope_or_scientific_assertions_changed": false,
+        "native_editability_tested": false
+      },
+      "source_records": [
+        {
+          "asset_id": "scidraw-4d621dae7e2ae2e002d4",
+          "attribution": "Zebrafish brain outline — Luigi Petrucco; https://scidraw.io/drawing/zebrafish-brain-outline-85ce2c1a; CC-BY-4.0; DOI 10.5281/zenodo.3926151",
+          "author": "Luigi Petrucco",
+          "categories": [],
+          "distribution_status": "license_recorded",
+          "license": "CC-BY-4.0",
+          "source": "scidraw",
+          "source_id": "524633b1-ecef-42d3-8ef4-4825ec39fb27",
+          "source_url": "https://scidraw.io/drawing/zebrafish-brain-outline-85ce2c1a",
+          "tags": [
+            "fish"
+          ],
+          "taxonomy": [
+            "animals",
+            "organs"
+          ],
+          "title": "Zebrafish brain outline",
+          "upstream_category": "fish",
+          "url": "https://scidraw.io/files/zebrafish_brain_outline.svg"
+        }
+      ]
+    },
+    {
+      "tile": 3,
+      "candidate_id": "nih-bioart-57b76866d5aea134f7b4:file-0",
+      "title": "Group of People",
+      "categories": [
+        "people"
+      ],
+      "original_sha256": "f2cc06c7c8c76c03a1bba830b1670be2d07e1543d0bc49dae3339af880b9e9bc",
+      "original_archive": {
+        "member": "files/f2/f2cc06c7c8c76c03a1bba830b1670be2d07e1543d0bc49dae3339af880b9e9bc.png",
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/nih-bioart-42236561214-1-b0000.tar.gz"
+      },
+      "preview_sha256": "2573d24e1756da011c4b9b23b2681d0f40af83badb052b0c7258cae477fee1c3",
+      "preview_archive": {
+        "member": "previews/f2cc06c7c8c76c03a1bba830b1670be2d07e1543d0bc49dae3339af880b9e9bc.png",
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/nih-bioart-42236561214-1-b0000.tar.gz"
+      },
+      "input_preview": "build/acceptance-preparation/exact-review-42280422940-1/review/previews/f2cc06c7c8c76c03a1bba830b1670be2d07e1543d0bc49dae3339af880b9e9bc.png",
+      "alpha_statistics": {
+        "width": 510,
+        "height": 512,
+        "decoded_mode": "RGBA",
+        "rgba_conversion_for_display_only": false,
+        "pixels": 261120,
+        "fully_transparent_pixels": 101108,
+        "partial_alpha_pixels": 48906,
+        "fully_opaque_pixels": 111106,
+        "nonzero_alpha_bbox": [
+          0,
+          0,
+          510,
+          512
+        ],
+        "source_preview_bytes_unchanged": true
+      },
+      "display_conditions": [
+        {
+          "extent": 256,
+          "rendered_size": [
+            255,
+            256
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "uniform_scale": 0.5,
+          "cropped": false,
+          "background": "white",
+          "sheet": "comparison-01.png",
+          "bounds_xywh": [
+            20,
+            772,
+            256,
+            256
+          ]
+        },
+        {
+          "extent": 256,
+          "rendered_size": [
+            255,
+            256
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "uniform_scale": 0.5,
+          "cropped": false,
+          "background": "dark",
+          "sheet": "comparison-01.png",
+          "bounds_xywh": [
+            300,
+            772,
+            256,
+            256
+          ]
+        },
+        {
+          "extent": 256,
+          "rendered_size": [
+            255,
+            256
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "uniform_scale": 0.5,
+          "cropped": false,
+          "background": "grid",
+          "sheet": "comparison-01.png",
+          "bounds_xywh": [
+            580,
+            772,
+            256,
+            256
+          ]
+        },
+        {
+          "extent": 96,
+          "rendered_size": [
+            96,
+            96
+          ],
+          "offset": [
+            18,
+            80
+          ],
+          "uniform_scale": 0.1875,
+          "cropped": false,
+          "background": "white",
+          "sheet": "comparison-01.png",
+          "bounds_xywh": [
+            860,
+            772,
+            132,
+            256
+          ]
+        },
+        {
+          "extent": 48,
+          "rendered_size": [
+            48,
+            48
+          ],
+          "offset": [
+            42,
+            104
+          ],
+          "uniform_scale": 0.09375,
+          "cropped": false,
+          "background": "white",
+          "sheet": "comparison-01.png",
+          "bounds_xywh": [
+            1016,
+            772,
+            132,
+            256
+          ]
+        },
+        {
+          "extent": 208,
+          "rendered_size": [
+            207,
+            208
+          ],
+          "offset": [
+            0,
+            11
+          ],
+          "uniform_scale": 0.40625,
+          "cropped": false,
+          "background": "white",
+          "sheet": "adjacency.png",
+          "bounds_xywh": [
+            470,
+            102,
+            208,
+            230
+          ]
+        },
+        {
+          "extent": 208,
+          "rendered_size": [
+            207,
+            208
+          ],
+          "offset": [
+            0,
+            11
+          ],
+          "uniform_scale": 0.40625,
+          "cropped": false,
+          "background": "dark",
+          "sheet": "adjacency.png",
+          "bounds_xywh": [
+            1190,
+            102,
+            208,
+            230
+          ]
+        }
+      ],
+      "visual_judgment": {
+        "reviewed_by": "Codex media_catalog; displayed all four QA canvases",
+        "reviewed_at": "2026-11-06T23:08:40.433873+00:00",
+        "status": "usable_with_visible_white_outline_and_detail_limits",
+        "transparent_overlay_observation": "外部空白透明；人物外沿在深底与棋盘上出现清楚白色描边/浅缘，不能自动当背景删除。",
+        "dark_background_observation": "人物可辨，但白色外缘成为额外视觉元素，和白底效果不同。",
+        "reduction_96px": "能辨认人群和大致姿态，脸部、服饰细节显著降低。",
+        "reduction_48px": "仅适合作为人群整体标记；个体特征和身份不可从小图读取。",
+        "printed_label_readability": "not_covered: no embedded readable labels were observed in these nine displayed previews",
+        "original_scope_or_scientific_assertions_changed": false,
+        "native_editability_tested": false
+      },
+      "source_records": [
+        {
+          "asset_id": "nih-bioart-b4b80f03c723ec6ea19c",
+          "attribution": "Group of People — Ryan Kissinger, NIH BioArt Source; https://bioart.niaid.nih.gov/bioart/185; Public Domain",
+          "author": "Ryan Kissinger",
+          "categories": [],
+          "description": " Diverse group of people ",
+          "distribution_status": "license_recorded",
+          "license": "Public-Domain",
+          "source": "nih-bioart",
+          "source_id": "185",
+          "source_url": "https://bioart.niaid.nih.gov/bioart/185",
+          "tags": [
+            "Adult",
+            "Female",
+            "Infant",
+            "Male",
+            "People",
+            "Senior",
+            "Toddler",
+            "Type 1 – Light, Pale White",
+            "Type 2 – Fair",
+            "Type 3 – Medium to Olive",
+            "Type 4 – Olive",
+            "Type 5 – Brown",
+            "Type 6 – Dark Brown to Black",
+            "Vector",
+            "diverse",
+            "group",
+            "human",
+            "people",
+            "population",
+            "representative",
+            "world"
+          ],
+          "taxonomy": [
+            "people",
+            "organs"
+          ],
+          "title": "Group of People",
+          "upstream_category": [
+            "Age (Human)",
+            "Age (Human)",
+            "Age (Human)",
+            "Age (Human)",
+            "Sex (Human)",
+            "Sex (Human)",
+            "Fitzpatrick Skin Tones",
+            "Fitzpatrick Skin Tones",
+            "Fitzpatrick Skin Tones",
+            "Fitzpatrick Skin Tones",
+            "Fitzpatrick Skin Tones",
+            "Fitzpatrick Skin Tones",
+            "Bioart Category",
+            "Image Type"
+          ],
+          "url": "https://bioart.niaid.nih.gov/api/bioarts/185/files/630277"
+        }
+      ]
+    },
+    {
+      "tile": 4,
+      "candidate_id": "nih-bioart-469ab575b90ee2c9d61d:file-1",
+      "title": "Lysosomes",
+      "categories": [
+        "organelles"
+      ],
+      "original_sha256": "201a1b8705c3ffb62dcc0f01b0f851046d63c83ccfaf92ad9dde29ac125c007c",
+      "original_archive": {
+        "member": "files/20/201a1b8705c3ffb62dcc0f01b0f851046d63c83ccfaf92ad9dde29ac125c007c.svg",
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/nih-bioart-42236561214-1-b0000.tar.gz"
+      },
+      "preview_sha256": "667e6c1162fc96f16ccf923a8453fa1f000f826a4dc75851fad72d12ffc9aaa0",
+      "preview_archive": {
+        "member": "previews/201a1b8705c3ffb62dcc0f01b0f851046d63c83ccfaf92ad9dde29ac125c007c.png",
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/nih-bioart-42236561214-1-b0000.tar.gz"
+      },
+      "input_preview": "build/gap-review-final/exact-review-42293672125-1/review/previews/201a1b8705c3ffb62dcc0f01b0f851046d63c83ccfaf92ad9dde29ac125c007c.png",
+      "alpha_statistics": {
+        "width": 505,
+        "height": 512,
+        "decoded_mode": "RGBA",
+        "rgba_conversion_for_display_only": false,
+        "pixels": 258560,
+        "fully_transparent_pixels": 144115,
+        "partial_alpha_pixels": 1437,
+        "fully_opaque_pixels": 113008,
+        "nonzero_alpha_bbox": [
+          80,
+          87,
+          464,
+          471
+        ],
+        "source_preview_bytes_unchanged": true
+      },
+      "display_conditions": [
+        {
+          "extent": 256,
+          "rendered_size": [
+            252,
+            256
+          ],
+          "offset": [
+            2,
+            0
+          ],
+          "uniform_scale": 0.5,
+          "cropped": false,
+          "background": "white",
+          "sheet": "comparison-02.png",
+          "bounds_xywh": [
+            20,
+            120,
+            256,
+            256
+          ]
+        },
+        {
+          "extent": 256,
+          "rendered_size": [
+            252,
+            256
+          ],
+          "offset": [
+            2,
+            0
+          ],
+          "uniform_scale": 0.5,
+          "cropped": false,
+          "background": "dark",
+          "sheet": "comparison-02.png",
+          "bounds_xywh": [
+            300,
+            120,
+            256,
+            256
+          ]
+        },
+        {
+          "extent": 256,
+          "rendered_size": [
+            252,
+            256
+          ],
+          "offset": [
+            2,
+            0
+          ],
+          "uniform_scale": 0.5,
+          "cropped": false,
+          "background": "grid",
+          "sheet": "comparison-02.png",
+          "bounds_xywh": [
+            580,
+            120,
+            256,
+            256
+          ]
+        },
+        {
+          "extent": 96,
+          "rendered_size": [
+            95,
+            96
+          ],
+          "offset": [
+            18,
+            80
+          ],
+          "uniform_scale": 0.1875,
+          "cropped": false,
+          "background": "white",
+          "sheet": "comparison-02.png",
+          "bounds_xywh": [
+            860,
+            120,
+            132,
+            256
+          ]
+        },
+        {
+          "extent": 48,
+          "rendered_size": [
+            47,
+            48
+          ],
+          "offset": [
+            42,
+            104
+          ],
+          "uniform_scale": 0.09375,
+          "cropped": false,
+          "background": "white",
+          "sheet": "comparison-02.png",
+          "bounds_xywh": [
+            1016,
+            120,
+            132,
+            256
+          ]
+        },
+        {
+          "extent": 208,
+          "rendered_size": [
+            205,
+            208
+          ],
+          "offset": [
+            1,
+            11
+          ],
+          "uniform_scale": 0.40625,
+          "cropped": false,
+          "background": "white",
+          "sheet": "adjacency.png",
+          "bounds_xywh": [
+            30,
+            372,
+            208,
+            230
+          ]
+        },
+        {
+          "extent": 208,
+          "rendered_size": [
+            205,
+            208
+          ],
+          "offset": [
+            1,
+            11
+          ],
+          "uniform_scale": 0.40625,
+          "cropped": false,
+          "background": "dark",
+          "sheet": "adjacency.png",
+          "bounds_xywh": [
+            750,
+            372,
+            208,
+            230
+          ]
+        }
+      ],
+      "visual_judgment": {
+        "reviewed_by": "Codex media_catalog; displayed all four QA canvases",
+        "reviewed_at": "2026-11-06T23:08:40.433873+00:00",
+        "status": "usable_general_shape_with_small_detail_limits",
+        "transparent_overlay_observation": "圆形结构及偏右下阴影保留；外部透明，没有矩形白底。",
+        "dark_background_observation": "主体浅绿色结构清楚；阴影与白底时对比不同，不能假定同一光照感。",
+        "reduction_96px": "外环与较大内部颗粒仍可见。",
+        "reduction_48px": "保持细胞器概略形状；小颗粒/内部差异不可靠。",
+        "printed_label_readability": "not_covered: no embedded readable labels were observed in these nine displayed previews",
+        "original_scope_or_scientific_assertions_changed": false,
+        "native_editability_tested": false
+      },
+      "source_records": [
+        {
+          "asset_id": "nih-bioart-5698794fa3297a694510",
+          "attribution": "Lysosomes — Ryan Kissinger, NIH BioArt Source; https://bioart.niaid.nih.gov/bioart/306; Public Domain",
+          "author": "Ryan Kissinger",
+          "categories": [],
+          "description": " lysosome ",
+          "distribution_status": "license_recorded",
+          "license": "Public-Domain",
+          "source": "nih-bioart",
+          "source_id": "306",
+          "source_url": "https://bioart.niaid.nih.gov/bioart/306",
+          "tags": [
+            "Cells and Organelles",
+            "Lysosomes",
+            "Microbiology",
+            "Organelles",
+            "Vector",
+            "biology",
+            "lysosome",
+            "membrane-enclosed",
+            "microbiology",
+            "organelle"
+          ],
+          "taxonomy": [
+            "cells",
+            "organelles",
+            "microbes"
+          ],
+          "title": "Lysosomes",
+          "upstream_category": [
+            "Scientific Disciplines And Research Areas",
+            "Cells and Organelles",
+            "Bioart Category",
+            "Cells and Organelles",
+            "Image Type"
+          ],
+          "url": "https://bioart.niaid.nih.gov/api/bioarts/306/files/631690"
+        }
+      ]
+    },
+    {
+      "tile": 5,
+      "candidate_id": "reactome-61f88d175cb4f15d430d:file-0",
+      "title": "Autolysosome",
+      "categories": [
+        "organelles"
+      ],
+      "original_sha256": "650e62728a0736c1fd5e25c579c928c5843e4b78f280ccec5d8f9db5d41ef345",
+      "original_archive": {
+        "member": "files/65/650e62728a0736c1fd5e25c579c928c5843e4b78f280ccec5d8f9db5d41ef345.svg",
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/reactome-42246331998-1-b0002.tar.gz"
+      },
+      "preview_sha256": "3810499ecef92d348de1732d18537f2b7dace7791b1e04a036c0902bd70abcf6",
+      "preview_archive": {
+        "member": "previews/650e62728a0736c1fd5e25c579c928c5843e4b78f280ccec5d8f9db5d41ef345.png",
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/reactome-42246331998-1-b0002.tar.gz"
+      },
+      "input_preview": "build/gap-review-final/exact-review-42293672125-1/review/previews/650e62728a0736c1fd5e25c579c928c5843e4b78f280ccec5d8f9db5d41ef345.png",
+      "alpha_statistics": {
+        "width": 512,
+        "height": 350,
+        "decoded_mode": "RGBA",
+        "rgba_conversion_for_display_only": false,
+        "pixels": 179200,
+        "fully_transparent_pixels": 56422,
+        "partial_alpha_pixels": 1760,
+        "fully_opaque_pixels": 121018,
+        "nonzero_alpha_bbox": [
+          0,
+          0,
+          512,
+          350
+        ],
+        "source_preview_bytes_unchanged": true
+      },
+      "display_conditions": [
+        {
+          "extent": 256,
+          "rendered_size": [
+            256,
+            175
+          ],
+          "offset": [
+            0,
+            40
+          ],
+          "uniform_scale": 0.5,
+          "cropped": false,
+          "background": "white",
+          "sheet": "comparison-02.png",
+          "bounds_xywh": [
+            20,
+            446,
+            256,
+            256
+          ]
+        },
+        {
+          "extent": 256,
+          "rendered_size": [
+            256,
+            175
+          ],
+          "offset": [
+            0,
+            40
+          ],
+          "uniform_scale": 0.5,
+          "cropped": false,
+          "background": "dark",
+          "sheet": "comparison-02.png",
+          "bounds_xywh": [
+            300,
+            446,
+            256,
+            256
+          ]
+        },
+        {
+          "extent": 256,
+          "rendered_size": [
+            256,
+            175
+          ],
+          "offset": [
+            0,
+            40
+          ],
+          "uniform_scale": 0.5,
+          "cropped": false,
+          "background": "grid",
+          "sheet": "comparison-02.png",
+          "bounds_xywh": [
+            580,
+            446,
+            256,
+            256
+          ]
+        },
+        {
+          "extent": 96,
+          "rendered_size": [
+            96,
+            66
+          ],
+          "offset": [
+            18,
+            95
+          ],
+          "uniform_scale": 0.1875,
+          "cropped": false,
+          "background": "white",
+          "sheet": "comparison-02.png",
+          "bounds_xywh": [
+            860,
+            446,
+            132,
+            256
+          ]
+        },
+        {
+          "extent": 48,
+          "rendered_size": [
+            48,
+            33
+          ],
+          "offset": [
+            42,
+            111
+          ],
+          "uniform_scale": 0.09375,
+          "cropped": false,
+          "background": "white",
+          "sheet": "comparison-02.png",
+          "bounds_xywh": [
+            1016,
+            446,
+            132,
+            256
+          ]
+        },
+        {
+          "extent": 208,
+          "rendered_size": [
+            208,
+            142
+          ],
+          "offset": [
+            0,
+            44
+          ],
+          "uniform_scale": 0.40625,
+          "cropped": false,
+          "background": "white",
+          "sheet": "adjacency.png",
+          "bounds_xywh": [
+            250,
+            372,
+            208,
+            230
+          ]
+        },
+        {
+          "extent": 208,
+          "rendered_size": [
+            208,
+            142
+          ],
+          "offset": [
+            0,
+            44
+          ],
+          "uniform_scale": 0.40625,
+          "cropped": false,
+          "background": "dark",
+          "sheet": "adjacency.png",
+          "bounds_xywh": [
+            970,
+            372,
+            208,
+            230
+          ]
+        }
+      ],
+      "visual_judgment": {
+        "reviewed_by": "Codex media_catalog; displayed all four QA canvases",
+        "reviewed_at": "2026-11-06T23:08:40.433873+00:00",
+        "status": "usable_general_shape_with_connector_detail_limits",
+        "transparent_overlay_observation": "两相连圆形及渐变内部为可见实色，周边透明；棋盘线在主体后被遮挡。",
+        "dark_background_observation": "黄绿主体仍可辨，深绿边缘的局部对比降低。",
+        "reduction_96px": "两圆的形状与连接仍可辨。",
+        "reduction_48px": "仍可见两圆，但细小连接和内部渐变只能作概略符号，不能证明机制细节。",
+        "printed_label_readability": "not_covered: no embedded readable labels were observed in these nine displayed previews",
+        "original_scope_or_scientific_assertions_changed": false,
+        "native_editability_tested": false
+      },
+      "source_records": [
+        {
+          "asset_id": "reactome-22d4338837243248e940",
+          "attribution": "Autolysosome — Reactome (Cold Spring Harbor Laboratory, Ontario Institute for Cancer Research, European Bioinformatics Institute); https://reactome.org/content/detail/R-ICO-013653; CC BY 4.0; original artwork unchanged",
+          "categories": [],
+          "distribution_status": "license_recorded",
+          "license": "CC-BY-4.0",
+          "source": "reactome",
+          "source_id": "R-ICO-013653",
+          "source_url": "https://reactome.org/content/detail/R-ICO-013653",
+          "tags": [
+            "cell element",
+            "Cell element"
+          ],
+          "taxonomy": [
+            "cells"
+          ],
+          "title": "Autolysosome",
+          "url": "https://reactome.org/icon/R-ICO-013653.svg"
+        }
+      ]
+    },
+    {
+      "tile": 6,
+      "candidate_id": "bioicons-a5a17208ccf6a99aa8b0:file-0",
+      "title": "centrifuge user",
+      "categories": [
+        "experimental_actions"
+      ],
+      "original_sha256": "81cef7afa4208873bff2e21089b6cd024b0dc2d5257b289b1b1f5bab18dd0616",
+      "original_archive": {
+        "member": "files/81/81cef7afa4208873bff2e21089b6cd024b0dc2d5257b289b1b1f5bab18dd0616.svg",
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42251588741-1-b0024.tar.gz"
+      },
+      "preview_sha256": "b3ac02c8392176f2b91cacc8e4b6f277644291fcf3fa64813cc4c36008d5d698",
+      "preview_archive": {
+        "member": "previews/81cef7afa4208873bff2e21089b6cd024b0dc2d5257b289b1b1f5bab18dd0616.png",
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42251588741-1-b0024.tar.gz"
+      },
+      "input_preview": "build/acceptance-preparation/exact-review-42280422940-1/review/previews/81cef7afa4208873bff2e21089b6cd024b0dc2d5257b289b1b1f5bab18dd0616.png",
+      "alpha_statistics": {
+        "width": 512,
+        "height": 512,
+        "decoded_mode": "RGBA",
+        "rgba_conversion_for_display_only": false,
+        "pixels": 262144,
+        "fully_transparent_pixels": 171377,
+        "partial_alpha_pixels": 3263,
+        "fully_opaque_pixels": 87504,
+        "nonzero_alpha_bbox": [
+          125,
+          13,
+          387,
+          499
+        ],
+        "source_preview_bytes_unchanged": true
+      },
+      "display_conditions": [
+        {
+          "extent": 256,
+          "rendered_size": [
+            256,
+            256
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "uniform_scale": 0.5,
+          "cropped": false,
+          "background": "white",
+          "sheet": "comparison-02.png",
+          "bounds_xywh": [
+            20,
+            772,
+            256,
+            256
+          ]
+        },
+        {
+          "extent": 256,
+          "rendered_size": [
+            256,
+            256
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "uniform_scale": 0.5,
+          "cropped": false,
+          "background": "dark",
+          "sheet": "comparison-02.png",
+          "bounds_xywh": [
+            300,
+            772,
+            256,
+            256
+          ]
+        },
+        {
+          "extent": 256,
+          "rendered_size": [
+            256,
+            256
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "uniform_scale": 0.5,
+          "cropped": false,
+          "background": "grid",
+          "sheet": "comparison-02.png",
+          "bounds_xywh": [
+            580,
+            772,
+            256,
+            256
+          ]
+        },
+        {
+          "extent": 96,
+          "rendered_size": [
+            96,
+            96
+          ],
+          "offset": [
+            18,
+            80
+          ],
+          "uniform_scale": 0.1875,
+          "cropped": false,
+          "background": "white",
+          "sheet": "comparison-02.png",
+          "bounds_xywh": [
+            860,
+            772,
+            132,
+            256
+          ]
+        },
+        {
+          "extent": 48,
+          "rendered_size": [
+            48,
+            48
+          ],
+          "offset": [
+            42,
+            104
+          ],
+          "uniform_scale": 0.09375,
+          "cropped": false,
+          "background": "white",
+          "sheet": "comparison-02.png",
+          "bounds_xywh": [
+            1016,
+            772,
+            132,
+            256
+          ]
+        },
+        {
+          "extent": 208,
+          "rendered_size": [
+            208,
+            208
+          ],
+          "offset": [
+            0,
+            11
+          ],
+          "uniform_scale": 0.40625,
+          "cropped": false,
+          "background": "white",
+          "sheet": "adjacency.png",
+          "bounds_xywh": [
+            470,
+            372,
+            208,
+            230
+          ]
+        },
+        {
+          "extent": 208,
+          "rendered_size": [
+            208,
+            208
+          ],
+          "offset": [
+            0,
+            11
+          ],
+          "uniform_scale": 0.40625,
+          "cropped": false,
+          "background": "dark",
+          "sheet": "adjacency.png",
+          "bounds_xywh": [
+            1190,
+            372,
+            208,
+            230
+          ]
+        }
+      ],
+      "visual_judgment": {
+        "reviewed_by": "Codex media_catalog; displayed all four QA canvases",
+        "reviewed_at": "2026-11-06T23:08:40.433873+00:00",
+        "status": "operation_requires_larger_display",
+        "transparent_overlay_observation": "机器与人物外部透明；浅灰机器、白大褂和转子结构保持，未出现整体白矩形。",
+        "dark_background_observation": "整个人机轮廓比白底更分明；灰色细结构仍较小。",
+        "reduction_96px": "人、开盖设备仍可辨，但手与样本的接触细节不清。",
+        "reduction_48px": "设备尚可作小图标；人员操作和样本细节不足，不能验为装样动作可读。",
+        "printed_label_readability": "not_covered: no embedded readable labels were observed in these nine displayed previews",
+        "original_scope_or_scientific_assertions_changed": false,
+        "native_editability_tested": false
+      },
+      "source_records": [
+        {
+          "asset_id": "bioicons-a5a17208ccf6a99aa8b0",
+          "attribution": "centrifuge user — DBCLS; https://togotv.dbcls.jp/en/pics.html; CC-BY-4.0; via Bioicons",
+          "author": "DBCLS",
+          "categories": [],
+          "distribution_status": "license_recorded",
+          "license": "CC-BY-4.0",
+          "source": "bioicons",
+          "source_id": "cc-by-4.0/Lab_apparatus/DBCLS/centrifuge-user.svg",
+          "source_url": "https://github.com/duerrsimon/bioicons/blob/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-4.0/Lab_apparatus/DBCLS/centrifuge-user.svg",
+          "tags": [
+            "Lab apparatus"
+          ],
+          "taxonomy": [
+            "lab_equipment"
+          ],
+          "title": "centrifuge user",
+          "upstream_category": "Lab_apparatus",
+          "url": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-4.0/Lab_apparatus/DBCLS/centrifuge-user.svg"
+        }
+      ]
+    },
+    {
+      "tile": 7,
+      "candidate_id": "bioicons-b6733fcf61ab61939b7e:file-0",
+      "title": "Pipetting Female",
+      "categories": [
+        "experimental_actions"
+      ],
+      "original_sha256": "4f7b88869456238099db6b37d7b327ec6ad6ae86ca43361f2146c36803b0de00",
+      "original_archive": {
+        "member": "files/4f/4f7b88869456238099db6b37d7b327ec6ad6ae86ca43361f2146c36803b0de00.svg",
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42251588741-1-b0022.tar.gz"
+      },
+      "preview_sha256": "e72ab6ff3572b8444a3025759a77c6d2dc9fc316defe8ecbc3e5b0ec5eb6410b",
+      "preview_archive": {
+        "member": "previews/4f7b88869456238099db6b37d7b327ec6ad6ae86ca43361f2146c36803b0de00.png",
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42251588741-1-b0022.tar.gz"
+      },
+      "input_preview": "build/acceptance-preparation/exact-review-42280422940-1/review/previews/4f7b88869456238099db6b37d7b327ec6ad6ae86ca43361f2146c36803b0de00.png",
+      "alpha_statistics": {
+        "width": 512,
+        "height": 512,
+        "decoded_mode": "RGBA",
+        "rgba_conversion_for_display_only": false,
+        "pixels": 262144,
+        "fully_transparent_pixels": 194022,
+        "partial_alpha_pixels": 1809,
+        "fully_opaque_pixels": 66313,
+        "nonzero_alpha_bbox": [
+          60,
+          72,
+          452,
+          440
+        ],
+        "source_preview_bytes_unchanged": true
+      },
+      "display_conditions": [
+        {
+          "extent": 256,
+          "rendered_size": [
+            256,
+            256
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "uniform_scale": 0.5,
+          "cropped": false,
+          "background": "white",
+          "sheet": "comparison-03.png",
+          "bounds_xywh": [
+            20,
+            120,
+            256,
+            256
+          ]
+        },
+        {
+          "extent": 256,
+          "rendered_size": [
+            256,
+            256
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "uniform_scale": 0.5,
+          "cropped": false,
+          "background": "dark",
+          "sheet": "comparison-03.png",
+          "bounds_xywh": [
+            300,
+            120,
+            256,
+            256
+          ]
+        },
+        {
+          "extent": 256,
+          "rendered_size": [
+            256,
+            256
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "uniform_scale": 0.5,
+          "cropped": false,
+          "background": "grid",
+          "sheet": "comparison-03.png",
+          "bounds_xywh": [
+            580,
+            120,
+            256,
+            256
+          ]
+        },
+        {
+          "extent": 96,
+          "rendered_size": [
+            96,
+            96
+          ],
+          "offset": [
+            18,
+            80
+          ],
+          "uniform_scale": 0.1875,
+          "cropped": false,
+          "background": "white",
+          "sheet": "comparison-03.png",
+          "bounds_xywh": [
+            860,
+            120,
+            132,
+            256
+          ]
+        },
+        {
+          "extent": 48,
+          "rendered_size": [
+            48,
+            48
+          ],
+          "offset": [
+            42,
+            104
+          ],
+          "uniform_scale": 0.09375,
+          "cropped": false,
+          "background": "white",
+          "sheet": "comparison-03.png",
+          "bounds_xywh": [
+            1016,
+            120,
+            132,
+            256
+          ]
+        },
+        {
+          "extent": 208,
+          "rendered_size": [
+            208,
+            208
+          ],
+          "offset": [
+            0,
+            11
+          ],
+          "uniform_scale": 0.40625,
+          "cropped": false,
+          "background": "white",
+          "sheet": "adjacency.png",
+          "bounds_xywh": [
+            30,
+            642,
+            208,
+            230
+          ]
+        },
+        {
+          "extent": 208,
+          "rendered_size": [
+            208,
+            208
+          ],
+          "offset": [
+            0,
+            11
+          ],
+          "uniform_scale": 0.40625,
+          "cropped": false,
+          "background": "dark",
+          "sheet": "adjacency.png",
+          "bounds_xywh": [
+            750,
+            642,
+            208,
+            230
+          ]
+        }
+      ],
+      "visual_judgment": {
+        "reviewed_by": "Codex media_catalog; displayed all four QA canvases",
+        "reviewed_at": "2026-11-06T23:08:40.433873+00:00",
+        "status": "pipetting_action_requires_larger_display",
+        "transparent_overlay_observation": "人物与斜桌面之外透明；桌面是实色灰面，棋盘线在其后被遮挡，应保留。",
+        "dark_background_observation": "白衣轮廓更突出；台面边界清楚。",
+        "reduction_96px": "人物与工作台仍可辨，移液器/手部细节变小。",
+        "reduction_48px": "移液器与液体接触不可可靠读取，仅剩人员实验场景轮廓。",
+        "printed_label_readability": "not_covered: no embedded readable labels were observed in these nine displayed previews",
+        "original_scope_or_scientific_assertions_changed": false,
+        "native_editability_tested": false
+      },
+      "source_records": [
+        {
+          "asset_id": "bioicons-b6733fcf61ab61939b7e",
+          "attribution": "Pipetting Female — DBCLS; https://togotv.dbcls.jp/en/pics.html; CC-BY-4.0; via Bioicons",
+          "author": "DBCLS",
+          "categories": [],
+          "distribution_status": "license_recorded",
+          "license": "CC-BY-4.0",
+          "source": "bioicons",
+          "source_id": "cc-by-4.0/Lab_apparatus/DBCLS/Pipetting_Female.svg",
+          "source_url": "https://github.com/duerrsimon/bioicons/blob/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-4.0/Lab_apparatus/DBCLS/Pipetting_Female.svg",
+          "tags": [
+            "Lab apparatus"
+          ],
+          "taxonomy": [
+            "lab_equipment",
+            "experimental_actions"
+          ],
+          "title": "Pipetting Female",
+          "upstream_category": "Lab_apparatus",
+          "url": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-4.0/Lab_apparatus/DBCLS/Pipetting_Female.svg"
+        }
+      ]
+    },
+    {
+      "tile": 8,
+      "candidate_id": "scidraw-510d6c34c8ed6f0923a0:file-0",
+      "title": "Tail suspension",
+      "categories": [
+        "experimental_actions"
+      ],
+      "original_sha256": "bb78b1ff5e325ac78a483e1105e76bbb9e9e99a932b1540a268bcd2e8774f7f9",
+      "original_archive": {
+        "member": "files/bb/bb78b1ff5e325ac78a483e1105e76bbb9e9e99a932b1540a268bcd2e8774f7f9.svg",
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scidraw-42235890704-1-b0000.tar.gz"
+      },
+      "preview_sha256": "439c8f2db7a6b2a9715591c915da7f5123a966111640324974776a94ccb21065",
+      "preview_archive": {
+        "member": "previews/bb78b1ff5e325ac78a483e1105e76bbb9e9e99a932b1540a268bcd2e8774f7f9.png",
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scidraw-42235890704-1-b0000.tar.gz"
+      },
+      "input_preview": "build/gap-review-final/exact-review-42293672125-1/review/previews/bb78b1ff5e325ac78a483e1105e76bbb9e9e99a932b1540a268bcd2e8774f7f9.png",
+      "alpha_statistics": {
+        "width": 168,
+        "height": 512,
+        "decoded_mode": "RGBA",
+        "rgba_conversion_for_display_only": false,
+        "pixels": 86016,
+        "fully_transparent_pixels": 60744,
+        "partial_alpha_pixels": 1877,
+        "fully_opaque_pixels": 23395,
+        "nonzero_alpha_bbox": [
+          15,
+          21,
+          139,
+          478
+        ],
+        "source_preview_bytes_unchanged": true
+      },
+      "display_conditions": [
+        {
+          "extent": 256,
+          "rendered_size": [
+            84,
+            256
+          ],
+          "offset": [
+            86,
+            0
+          ],
+          "uniform_scale": 0.5,
+          "cropped": false,
+          "background": "white",
+          "sheet": "comparison-03.png",
+          "bounds_xywh": [
+            20,
+            446,
+            256,
+            256
+          ]
+        },
+        {
+          "extent": 256,
+          "rendered_size": [
+            84,
+            256
+          ],
+          "offset": [
+            86,
+            0
+          ],
+          "uniform_scale": 0.5,
+          "cropped": false,
+          "background": "dark",
+          "sheet": "comparison-03.png",
+          "bounds_xywh": [
+            300,
+            446,
+            256,
+            256
+          ]
+        },
+        {
+          "extent": 256,
+          "rendered_size": [
+            84,
+            256
+          ],
+          "offset": [
+            86,
+            0
+          ],
+          "uniform_scale": 0.5,
+          "cropped": false,
+          "background": "grid",
+          "sheet": "comparison-03.png",
+          "bounds_xywh": [
+            580,
+            446,
+            256,
+            256
+          ]
+        },
+        {
+          "extent": 96,
+          "rendered_size": [
+            32,
+            96
+          ],
+          "offset": [
+            50,
+            80
+          ],
+          "uniform_scale": 0.1875,
+          "cropped": false,
+          "background": "white",
+          "sheet": "comparison-03.png",
+          "bounds_xywh": [
+            860,
+            446,
+            132,
+            256
+          ]
+        },
+        {
+          "extent": 48,
+          "rendered_size": [
+            16,
+            48
+          ],
+          "offset": [
+            58,
+            104
+          ],
+          "uniform_scale": 0.09375,
+          "cropped": false,
+          "background": "white",
+          "sheet": "comparison-03.png",
+          "bounds_xywh": [
+            1016,
+            446,
+            132,
+            256
+          ]
+        },
+        {
+          "extent": 208,
+          "rendered_size": [
+            68,
+            208
+          ],
+          "offset": [
+            70,
+            11
+          ],
+          "uniform_scale": 0.40625,
+          "cropped": false,
+          "background": "white",
+          "sheet": "adjacency.png",
+          "bounds_xywh": [
+            250,
+            642,
+            208,
+            230
+          ]
+        },
+        {
+          "extent": 208,
+          "rendered_size": [
+            68,
+            208
+          ],
+          "offset": [
+            70,
+            11
+          ],
+          "uniform_scale": 0.40625,
+          "cropped": false,
+          "background": "dark",
+          "sheet": "adjacency.png",
+          "bounds_xywh": [
+            970,
+            642,
+            208,
+            230
+          ]
+        }
+      ],
+      "visual_judgment": {
+        "reviewed_by": "Codex media_catalog; displayed all four QA canvases",
+        "reviewed_at": "2026-11-06T23:08:40.433873+00:00",
+        "status": "dark_background_unsuitable_unmodified",
+        "transparent_overlay_observation": "鼠体、尾与悬挂部件外部透明；没有白底残块。",
+        "dark_background_observation": "深灰鼠体、尾和蓝色固定部件边线对比明显不足，原样用于该深底不合适。",
+        "reduction_96px": "白底仍能看出悬挂关系，但鼠体与细尾较小。",
+        "reduction_48px": "纵横比使动物实际宽度很小，耳足等细节不可判读。",
+        "printed_label_readability": "not_covered: no embedded readable labels were observed in these nine displayed previews",
+        "original_scope_or_scientific_assertions_changed": false,
+        "native_editability_tested": false
+      },
+      "source_records": [
+        {
+          "asset_id": "scidraw-510d6c34c8ed6f0923a0",
+          "attribution": "Tail suspension — Long Li; https://scidraw.io/drawing/tail-suspension-5427948d; CC-BY-4.0; DOI 10.5281/zenodo.5496349",
+          "author": "Long Li",
+          "categories": [],
+          "distribution_status": "license_recorded",
+          "license": "CC-BY-4.0",
+          "source": "scidraw",
+          "source_id": "80f4b415-a823-4226-9adc-31a5c5297f8c",
+          "source_url": "https://scidraw.io/drawing/tail-suspension-5427948d",
+          "tags": [
+            "mouse"
+          ],
+          "taxonomy": [
+            "animals"
+          ],
+          "title": "Tail suspension",
+          "upstream_category": "mouse",
+          "url": "https://scidraw.io/files/Tail_suspension.svg"
+        }
+      ]
+    },
+    {
+      "tile": 9,
+      "candidate_id": "scidraw-d92ce948c56aa4a649be:file-0",
+      "title": "restrain",
+      "categories": [
+        "experimental_actions"
+      ],
+      "original_sha256": "2854eba6c1d743ccbdcb5bba86daafc7a5525a6619af374c156ab7c667b38eb5",
+      "original_archive": {
+        "member": "files/28/2854eba6c1d743ccbdcb5bba86daafc7a5525a6619af374c156ab7c667b38eb5.svg",
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scidraw-42235890704-1-b0000.tar.gz"
+      },
+      "preview_sha256": "1c73e2caead94a41c1c4bea851474382f0dfeb881b4d8dc540b36acaad16fbe5",
+      "preview_archive": {
+        "member": "previews/2854eba6c1d743ccbdcb5bba86daafc7a5525a6619af374c156ab7c667b38eb5.png",
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scidraw-42235890704-1-b0000.tar.gz"
+      },
+      "input_preview": "build/gap-review-final/exact-review-42293672125-1/review/previews/2854eba6c1d743ccbdcb5bba86daafc7a5525a6619af374c156ab7c667b38eb5.png",
+      "alpha_statistics": {
+        "width": 512,
+        "height": 196,
+        "decoded_mode": "RGBA",
+        "rgba_conversion_for_display_only": false,
+        "pixels": 100352,
+        "fully_transparent_pixels": 64449,
+        "partial_alpha_pixels": 3260,
+        "fully_opaque_pixels": 32643,
+        "nonzero_alpha_bbox": [
+          12,
+          14,
+          499,
+          190
+        ],
+        "source_preview_bytes_unchanged": true
+      },
+      "display_conditions": [
+        {
+          "extent": 256,
+          "rendered_size": [
+            256,
+            98
+          ],
+          "offset": [
+            0,
+            79
+          ],
+          "uniform_scale": 0.5,
+          "cropped": false,
+          "background": "white",
+          "sheet": "comparison-03.png",
+          "bounds_xywh": [
+            20,
+            772,
+            256,
+            256
+          ]
+        },
+        {
+          "extent": 256,
+          "rendered_size": [
+            256,
+            98
+          ],
+          "offset": [
+            0,
+            79
+          ],
+          "uniform_scale": 0.5,
+          "cropped": false,
+          "background": "dark",
+          "sheet": "comparison-03.png",
+          "bounds_xywh": [
+            300,
+            772,
+            256,
+            256
+          ]
+        },
+        {
+          "extent": 256,
+          "rendered_size": [
+            256,
+            98
+          ],
+          "offset": [
+            0,
+            79
+          ],
+          "uniform_scale": 0.5,
+          "cropped": false,
+          "background": "grid",
+          "sheet": "comparison-03.png",
+          "bounds_xywh": [
+            580,
+            772,
+            256,
+            256
+          ]
+        },
+        {
+          "extent": 96,
+          "rendered_size": [
+            96,
+            37
+          ],
+          "offset": [
+            18,
+            109
+          ],
+          "uniform_scale": 0.1875,
+          "cropped": false,
+          "background": "white",
+          "sheet": "comparison-03.png",
+          "bounds_xywh": [
+            860,
+            772,
+            132,
+            256
+          ]
+        },
+        {
+          "extent": 48,
+          "rendered_size": [
+            48,
+            18
+          ],
+          "offset": [
+            42,
+            119
+          ],
+          "uniform_scale": 0.09375,
+          "cropped": false,
+          "background": "white",
+          "sheet": "comparison-03.png",
+          "bounds_xywh": [
+            1016,
+            772,
+            132,
+            256
+          ]
+        },
+        {
+          "extent": 208,
+          "rendered_size": [
+            208,
+            80
+          ],
+          "offset": [
+            0,
+            75
+          ],
+          "uniform_scale": 0.40625,
+          "cropped": false,
+          "background": "white",
+          "sheet": "adjacency.png",
+          "bounds_xywh": [
+            470,
+            642,
+            208,
+            230
+          ]
+        },
+        {
+          "extent": 208,
+          "rendered_size": [
+            208,
+            80
+          ],
+          "offset": [
+            0,
+            75
+          ],
+          "uniform_scale": 0.40625,
+          "cropped": false,
+          "background": "dark",
+          "sheet": "adjacency.png",
+          "bounds_xywh": [
+            1190,
+            642,
+            208,
+            230
+          ]
+        }
+      ],
+      "visual_judgment": {
+        "reviewed_by": "Codex media_catalog; displayed all four QA canvases",
+        "reviewed_at": "2026-11-06T23:08:40.433873+00:00",
+        "status": "dark_background_unsuitable_unmodified",
+        "transparent_overlay_observation": "保定筒内部空隙透明，穿越线与棋盘可从空隙看到；黄块与灰鼠为实色。",
+        "dark_background_observation": "筒的细灰轮廓、灰鼠及尾与背景接近，边界和保定关系不够清楚。",
+        "reduction_96px": "白底仍能辨识鼠与筒的关系，细线变弱。",
+        "reduction_48px": "仅剩小鼠/容器概略符号，筒结构和足部不可可靠读取。",
+        "printed_label_readability": "not_covered: no embedded readable labels were observed in these nine displayed previews",
+        "original_scope_or_scientific_assertions_changed": false,
+        "native_editability_tested": false
+      },
+      "source_records": [
+        {
+          "asset_id": "scidraw-d92ce948c56aa4a649be",
+          "attribution": "restrain — Long Li; https://scidraw.io/drawing/restrain-a3879bc2; CC-BY-4.0; DOI 10.5281/zenodo.5496347",
+          "author": "Long Li",
+          "categories": [],
+          "distribution_status": "license_recorded",
+          "license": "CC-BY-4.0",
+          "source": "scidraw",
+          "source_id": "4c98346a-52a8-4d18-a1f9-95af550540fa",
+          "source_url": "https://scidraw.io/drawing/restrain-a3879bc2",
+          "tags": [
+            "mouse"
+          ],
+          "taxonomy": [
+            "animals"
+          ],
+          "title": "restrain",
+          "upstream_category": "mouse",
+          "url": "https://scidraw.io/files/restrain.svg"
+        }
+      ]
+    }
+  ],
+  "sheets": [
+    {
+      "path": "comparison-01.png",
+      "sha256": "c231178146fd116167fed6d84da81b2bdb60f30574857fa26059c031ac20984e",
+      "width": 1300,
+      "height": 1080,
+      "purpose": "Background and reduction comparison",
+      "local_evidence_path": "build/curated-overlay-qa/rendered/comparison-01.png",
+      "size_bytes": 320526,
+      "publicly_uploaded": false
+    },
+    {
+      "path": "comparison-02.png",
+      "sha256": "73f430dc6361fd61f68d3b175d75f9381ad8bcfb0a5cae4b059447254b73b091",
+      "width": 1300,
+      "height": 1080,
+      "purpose": "Background and reduction comparison",
+      "local_evidence_path": "build/curated-overlay-qa/rendered/comparison-02.png",
+      "size_bytes": 216632,
+      "publicly_uploaded": false
+    },
+    {
+      "path": "comparison-03.png",
+      "sha256": "b119ad05bff12771436c1f318e1a29c5c0f70021c595dcce8760cd74a034bde8",
+      "width": 1300,
+      "height": 1080,
+      "purpose": "Background and reduction comparison",
+      "local_evidence_path": "build/curated-overlay-qa/rendered/comparison-03.png",
+      "size_bytes": 136441,
+      "publicly_uploaded": false
+    },
+    {
+      "path": "adjacency.png",
+      "sha256": "b4e93e894b73bc58b269ce4dfb98a99b7c154110cef1caad45bd7babfb2e8c5f",
+      "width": 1440,
+      "height": 930,
+      "purpose": "Independent object adjacency; no semantic arrows or sequence",
+      "local_evidence_path": "build/curated-overlay-qa/rendered/adjacency.png",
+      "size_bytes": 312349,
+      "publicly_uploaded": false
+    }
+  ],
+  "input_fetches": 0,
+  "source_originals_modified": false,
+  "preview_bytes_modified": false,
+  "backgrounds": {
+    "white": "#ffffff",
+    "dark": "#182333",
+    "grid_light": "#eef1f5",
+    "grid_dark": "#b7c2d0"
+  },
+  "resize": "Pillow LANCZOS, uniform fit, maximum extent, never upscale or crop",
+  "automatic_visual_acceptance": false,
+  "native_editability_tested": false,
+  "limits": [
+    "Machine rendering is not actual visual acceptance.",
+    "Only exact available local previews are included; contact-sheet crops cannot establish original transparency.",
+    "No actual manuscript composition, style coherence, scientific layout or label cleanup is certified."
+  ],
+  "reviewed_at": "2026-11-06T23:08:40.439710+00:00",
+  "reviewer": "Codex media_catalog; actual display inspection of four generated QA canvases",
+  "independent_from_metadata_matcher": true,
+  "bindings": {
+    "curated_document": {
+      "uri": "data/curated-reviews/selected-object-components-42289434868.json",
+      "sha256": "32011683c6259d0221e39ac5e6748dc460d451d91ec0af74d6851d8dba1ed78c"
+    },
+    "catalog": {
+      "path": "build/final-scope-baseline/assembly-42289434868-1.catalog.jsonl",
+      "sha256": "5c90306415ce5e7f36e875c7f57b19a91930aacfeeaeecdf9ad7662770f9a3fe"
+    },
+    "manifest": {
+      "path": "build/dispositions-final-scope-42289434868/candidate_publish_manifest.json",
+      "sha256": "a4fe0424ee8ecc32096090ef295242bdaa04b9ce29ff4f7a80948c95516d5436",
+      "file_count": 19473,
+      "officially_published": false
+    },
+    "renderer_source_sha256": "eb1172305a6429c1e5ab3e0aa656b6a1dcec96b96696094c2eb0bc7115d5bc6c"
+  },
+  "review_summary": {
+    "status": "bounded_actual_display_review_complete_with_limits",
+    "curated_total": 48,
+    "exact_file_previews_tested": 9,
+    "remaining_without_exact_local_rgba_preview": 39,
+    "label_bearing_artwork_check": "not_covered_by_available_nine",
+    "no_new_downloads_or_cloud_jobs": true,
+    "dark_unmodified_unsuitable_tiles": [
+      8,
+      9
+    ],
+    "background_sensitive_transparency_tiles": [
+      2
+    ],
+    "visible_white_outline_tiles": [
+      3
+    ],
+    "operation_detail_not_reliable_at_48px_tiles": [
+      6,
+      7,
+      8,
+      9
+    ],
+    "native_editing_or_full_curated_acceptance": false
+  },
+  "adjacency_observations": [
+    "同一208px外接尺寸仍产生明显体量差：细长悬尾与横向保定图比圆形细胞器显得小；未自动裁空白或改变比例。",
+    "浅色扁平实验场景、阴影细胞器、渐变双圆、细节人群和灰色鼠剪影并排时，描边、明暗和细节密度不同。此技术摆放不支持统一画风已通过。",
+    "两种背景下没有本工具引入的裁切或项目间相互遮挡；这只是独立格位邻接测试，没有验证真正科研图中的叠压、箭头、语义关系或原生编辑。"
+  ],
+  "local_canvas_evidence_only": true,
+  "adjacency_items": 9,
+  "render_environment": {
+    "pillow_version": "12.3.0",
+    "font": "Arial (C:/Windows/Fonts/arial.ttf)",
+    "font_sha256": "b3658eadae55e682b5f69eb64c439c1ecc8f196c0bb8d4756d145d13bc86476a",
+    "cross_platform_note": "Different installed fonts can change annotation pixels; original preview SHA and display extent remain fixed."
+  }
+}
