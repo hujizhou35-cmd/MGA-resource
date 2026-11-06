@@ -1,0 +1,572 @@
+{
+  "schema_version": 1,
+  "purpose": "Actual preview review before validation-exercise adoption; not a user research project.",
+  "catalog_sha256": "5c90306415ce5e7f36e875c7f57b19a91930aacfeeaeecdf9ad7662770f9a3fe",
+  "search_core_sha256": "8120b1ff2b47b83605c0cc5495b2aa7f12c59b740f7a44f0db376a28808e9049",
+  "ranking_version": "shared-search-3.4.1",
+  "analysis_version": "appearance-1.1.0",
+  "query_scenarios": {
+    "rich": "mouse",
+    "scarce": "Naegleria gruberi"
+  },
+  "raw_scenarios": [
+    {
+      "uri": "build/search-final/assembly-42289434868-1/behavior/raw/rich-projects.json",
+      "sha256": "8942b2642e404240f5f303a55ec8935ccdb580f4b8a055188e40aea49e3db495"
+    },
+    {
+      "uri": "build/search-final/assembly-42289434868-1/behavior/raw/scarce-projects.json",
+      "sha256": "f05ec9d70b8740de412ff74efae8636df6c3f28aecc780909df3d1119d7bb65e"
+    }
+  ],
+  "files": [
+    {
+      "source": "scidraw",
+      "source_id": "23d7d914-fd5c-4495-a830-3b30dc49bdfd",
+      "asset_id": "scidraw-c634e3116d56cb95e3c2",
+      "family_id": "scidraw-c634e3116d56cb95e3c2",
+      "title": "mouse running",
+      "source_url": "https://scidraw.io/drawing/mouse-running-e7a044a4",
+      "format": "svg",
+      "original_sha256": "95b68622e7d1618c71bbfc8c849e9e2ccfe2a32e1ddcb9f79796a8f60d2623ec",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scidraw-42235890704-1-b0000.tar.gz",
+        "member": "files/95/95b68622e7d1618c71bbfc8c849e9e2ccfe2a32e1ddcb9f79796a8f60d2623ec.svg"
+      },
+      "preview": {
+        "sha256": "51ba8a21f6828515ab3fa8a237f24f33a02f6b770e73649c97c4e2e7178cfdf0",
+        "archive": {
+          "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scidraw-42235890704-1-b0000.tar.gz",
+          "member": "previews/95b68622e7d1618c71bbfc8c849e9e2ccfe2a32e1ddcb9f79796a8f60d2623ec.png"
+        }
+      },
+      "project_uses": [
+        {
+          "project_id": "validation-rich-1",
+          "seed": "validation-rich-1",
+          "rank": 1,
+          "case_id": "rich"
+        },
+        {
+          "project_id": "validation-rich-3",
+          "seed": "validation-rich-3",
+          "rank": 4,
+          "case_id": "rich"
+        }
+      ],
+      "review_question": "Confirm actual whole-mouse/Naegleria object relevance, legibility, and reusable depiction from this exact preview; record observed appearance. Final adoption requires an identified reviewer decision for the listed validation-exercise project, never top rank alone.",
+      "limits": "Generic query only: no unrequested side view, disease state, specific action or native editability is assumed."
+    },
+    {
+      "source": "nih-bioart",
+      "source_id": "283",
+      "asset_id": "nih-bioart-da7b71d08e120147c6ce",
+      "family_id": "nih-bioart-da7b71d08e120147c6ce",
+      "title": "Lab Mouse",
+      "source_url": "https://bioart.niaid.nih.gov/bioart/283",
+      "format": "png",
+      "original_sha256": "22f147c050c91e5a611088d648d8a76c6859c3cce8f508603b4aedd77e9626ce",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/nih-bioart-42236561214-1-b0000.tar.gz",
+        "member": "files/22/22f147c050c91e5a611088d648d8a76c6859c3cce8f508603b4aedd77e9626ce.png"
+      },
+      "preview": {
+        "sha256": "2b85b11292b487f2e26a0a54a55f4201fbd0bd0e1e21deea1692ea6c8c4d0e3c",
+        "archive": {
+          "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/nih-bioart-42236561214-1-b0000.tar.gz",
+          "member": "previews/22f147c050c91e5a611088d648d8a76c6859c3cce8f508603b4aedd77e9626ce.png"
+        }
+      },
+      "project_uses": [
+        {
+          "project_id": "validation-rich-1",
+          "seed": "validation-rich-1",
+          "rank": 2,
+          "case_id": "rich"
+        },
+        {
+          "project_id": "validation-rich-5",
+          "seed": "validation-rich-5",
+          "rank": 6,
+          "case_id": "rich"
+        }
+      ],
+      "review_question": "Confirm actual whole-mouse/Naegleria object relevance, legibility, and reusable depiction from this exact preview; record observed appearance. Final adoption requires an identified reviewer decision for the listed validation-exercise project, never top rank alone.",
+      "limits": "Generic query only: no unrequested side view, disease state, specific action or native editability is assumed."
+    },
+    {
+      "source": "scidraw",
+      "source_id": "4267b505-6ebc-486a-808e-7ded79d18e31",
+      "asset_id": "scidraw-23118e8edf87f17d13cc",
+      "family_id": "scidraw-23118e8edf87f17d13cc",
+      "title": "Drinking Mouse",
+      "source_url": "https://scidraw.io/drawing/drinking-mouse-c244f3eb",
+      "format": "svg",
+      "original_sha256": "74de69530dfc2351568da3165bd307daac40bc0054e29051c03a7b7f38632bf2",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scidraw-42235890704-1-b0001.tar.gz",
+        "member": "files/74/74de69530dfc2351568da3165bd307daac40bc0054e29051c03a7b7f38632bf2.svg"
+      },
+      "preview": {
+        "sha256": "39b0e2344f05a9a50e2559eabb305794e59a6382d420bdb059c17ccef1d496f9",
+        "archive": {
+          "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scidraw-42235890704-1-b0001.tar.gz",
+          "member": "previews/74de69530dfc2351568da3165bd307daac40bc0054e29051c03a7b7f38632bf2.png"
+        }
+      },
+      "project_uses": [
+        {
+          "project_id": "validation-rich-1",
+          "seed": "validation-rich-1",
+          "rank": 3,
+          "case_id": "rich"
+        }
+      ],
+      "review_question": "Confirm actual whole-mouse/Naegleria object relevance, legibility, and reusable depiction from this exact preview; record observed appearance. Final adoption requires an identified reviewer decision for the listed validation-exercise project, never top rank alone.",
+      "limits": "Generic query only: no unrequested side view, disease state, specific action or native editability is assumed."
+    },
+    {
+      "source": "scidraw",
+      "source_id": "3fdfb7e1-9994-40f7-b656-e6578c132bc9",
+      "asset_id": "scidraw-82cdc8227d14a71e9810",
+      "family_id": "scidraw-82cdc8227d14a71e9810",
+      "title": "walking mouse",
+      "source_url": "https://scidraw.io/drawing/walking-mouse-3c30783c",
+      "format": "svg",
+      "original_sha256": "5d71d35e74557758e90645827a47b0be95ffb094ae559255db180a9fa0f9f100",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scidraw-42235890704-1-b0000.tar.gz",
+        "member": "files/5d/5d71d35e74557758e90645827a47b0be95ffb094ae559255db180a9fa0f9f100.svg"
+      },
+      "preview": {
+        "sha256": "55b6090f16d84546bb2322526e5c79025f6066a16c56737764ab9840f1c4c066",
+        "archive": {
+          "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scidraw-42235890704-1-b0000.tar.gz",
+          "member": "previews/5d71d35e74557758e90645827a47b0be95ffb094ae559255db180a9fa0f9f100.png"
+        }
+      },
+      "project_uses": [
+        {
+          "project_id": "validation-rich-1",
+          "seed": "validation-rich-1",
+          "rank": 4,
+          "case_id": "rich"
+        },
+        {
+          "project_id": "validation-rich-3",
+          "seed": "validation-rich-3",
+          "rank": 5,
+          "case_id": "rich"
+        }
+      ],
+      "review_question": "Confirm actual whole-mouse/Naegleria object relevance, legibility, and reusable depiction from this exact preview; record observed appearance. Final adoption requires an identified reviewer decision for the listed validation-exercise project, never top rank alone.",
+      "limits": "Generic query only: no unrequested side view, disease state, specific action or native editability is assumed."
+    },
+    {
+      "source": "scidraw",
+      "source_id": "a06bf8f0-3dff-44a8-8cb9-cf242ccea1b9",
+      "asset_id": "scidraw-539e01cb175ea26b6a05",
+      "family_id": "scidraw-539e01cb175ea26b6a05",
+      "title": "Adult mouse",
+      "source_url": "https://scidraw.io/drawing/adult-mouse-284dd297",
+      "format": "svg",
+      "original_sha256": "409bb12d358d4968342567234565d1ce024dda31be04586bc86f3cdd16ec7c4a",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scidraw-42235890704-1-b0000.tar.gz",
+        "member": "files/40/409bb12d358d4968342567234565d1ce024dda31be04586bc86f3cdd16ec7c4a.svg"
+      },
+      "preview": {
+        "sha256": "fc612a99c14a5cd290f70357fca922a8f48816626e96f0915c26eb90ee759ba4",
+        "archive": {
+          "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scidraw-42235890704-1-b0000.tar.gz",
+          "member": "previews/409bb12d358d4968342567234565d1ce024dda31be04586bc86f3cdd16ec7c4a.png"
+        }
+      },
+      "project_uses": [
+        {
+          "project_id": "validation-rich-1",
+          "seed": "validation-rich-1",
+          "rank": 5,
+          "case_id": "rich"
+        },
+        {
+          "project_id": "validation-rich-2",
+          "seed": "validation-rich-2",
+          "rank": 10,
+          "case_id": "rich"
+        },
+        {
+          "project_id": "validation-rich-5",
+          "seed": "validation-rich-5",
+          "rank": 4,
+          "case_id": "rich"
+        }
+      ],
+      "review_question": "Confirm actual whole-mouse/Naegleria object relevance, legibility, and reusable depiction from this exact preview; record observed appearance. Final adoption requires an identified reviewer decision for the listed validation-exercise project, never top rank alone.",
+      "limits": "Generic query only: no unrequested side view, disease state, specific action or native editability is assumed."
+    },
+    {
+      "source": "arcadia",
+      "source_id": "Silhouette SVGs/Mus-musculus-silhouette.svg",
+      "asset_id": "arcadia-d7b465496e3f4ec4a9b6",
+      "family_id": "arcadia-d7b465496e3f4ec4a9b6",
+      "title": "Mouse (Mus musculus) — silhouette",
+      "source_url": "https://zenodo.org/records/18395998",
+      "format": "svg",
+      "original_sha256": "949dd5897ba4c17d93da918ed4bcf71d7ef4f27c31d9aa46c91a238a1c3307c9",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/arcadia-42234366112-1-b0000.tar.gz",
+        "member": "files/94/949dd5897ba4c17d93da918ed4bcf71d7ef4f27c31d9aa46c91a238a1c3307c9.svg"
+      },
+      "preview": {
+        "sha256": "ca4beaabcad6d78bc0ff650bbcfa3059de4c086d5782b3cb5f4fd4586b4b7a1c",
+        "archive": {
+          "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/arcadia-42234366112-1-b0000.tar.gz",
+          "member": "previews/949dd5897ba4c17d93da918ed4bcf71d7ef4f27c31d9aa46c91a238a1c3307c9.png"
+        }
+      },
+      "project_uses": [
+        {
+          "project_id": "validation-rich-1",
+          "seed": "validation-rich-1",
+          "rank": 6,
+          "case_id": "rich"
+        },
+        {
+          "project_id": "validation-rich-5",
+          "seed": "validation-rich-5",
+          "rank": 2,
+          "case_id": "rich"
+        }
+      ],
+      "review_question": "Confirm actual whole-mouse/Naegleria object relevance, legibility, and reusable depiction from this exact preview; record observed appearance. Final adoption requires an identified reviewer decision for the listed validation-exercise project, never top rank alone.",
+      "limits": "Generic query only: no unrequested side view, disease state, specific action or native editability is assumed."
+    },
+    {
+      "source": "nih-bioart",
+      "source_id": "371",
+      "asset_id": "nih-bioart-e86f0ca1e31010f25cc1",
+      "family_id": "nih-bioart-e86f0ca1e31010f25cc1",
+      "title": "Mouse Outline",
+      "source_url": "https://bioart.niaid.nih.gov/bioart/371",
+      "format": "png",
+      "original_sha256": "1c1b41f8294e44582dcc3666174978d007e50379be8ba02a3e9abaca97222e7e",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/nih-bioart-42236561214-1-b0000.tar.gz",
+        "member": "files/1c/1c1b41f8294e44582dcc3666174978d007e50379be8ba02a3e9abaca97222e7e.png"
+      },
+      "preview": {
+        "sha256": "6608f47f7522bf9ca2968d89c87746a0f60d0ea7004b6aca5ddc30c1fdd00ac3",
+        "archive": {
+          "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/nih-bioart-42236561214-1-b0000.tar.gz",
+          "member": "previews/1c1b41f8294e44582dcc3666174978d007e50379be8ba02a3e9abaca97222e7e.png"
+        }
+      },
+      "project_uses": [
+        {
+          "project_id": "validation-rich-1",
+          "seed": "validation-rich-1",
+          "rank": 7,
+          "case_id": "rich"
+        },
+        {
+          "project_id": "validation-rich-2",
+          "seed": "validation-rich-2",
+          "rank": 9,
+          "case_id": "rich"
+        }
+      ],
+      "review_question": "Confirm actual whole-mouse/Naegleria object relevance, legibility, and reusable depiction from this exact preview; record observed appearance. Final adoption requires an identified reviewer decision for the listed validation-exercise project, never top rank alone.",
+      "limits": "Generic query only: no unrequested side view, disease state, specific action or native editability is assumed."
+    },
+    {
+      "source": "scidraw",
+      "source_id": "7b5fb470-fa3b-4776-9b8e-3b645d5fe16f",
+      "asset_id": "scidraw-ff155fd93244527ca746",
+      "family_id": "scidraw-ff155fd93244527ca746",
+      "title": "mouse rearing",
+      "source_url": "https://scidraw.io/drawing/mouse-rearing-78e68e54",
+      "format": "svg",
+      "original_sha256": "54119cffceb2e9d63c48d914a7aa6a820194a200845e2c35dc6a5ed3c3c98bae",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scidraw-42235890704-1-b0000.tar.gz",
+        "member": "files/54/54119cffceb2e9d63c48d914a7aa6a820194a200845e2c35dc6a5ed3c3c98bae.svg"
+      },
+      "preview": {
+        "sha256": "7eccf0df6a6a71f2683938ebb3cd3c79602b6f0ddaec37b05ad3c5f01251a9f4",
+        "archive": {
+          "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scidraw-42235890704-1-b0000.tar.gz",
+          "member": "previews/54119cffceb2e9d63c48d914a7aa6a820194a200845e2c35dc6a5ed3c3c98bae.png"
+        }
+      },
+      "project_uses": [
+        {
+          "project_id": "validation-rich-1",
+          "seed": "validation-rich-1",
+          "rank": 8,
+          "case_id": "rich"
+        },
+        {
+          "project_id": "validation-rich-3",
+          "seed": "validation-rich-3",
+          "rank": 10,
+          "case_id": "rich"
+        },
+        {
+          "project_id": "validation-rich-4",
+          "seed": "validation-rich-4",
+          "rank": 1,
+          "case_id": "rich"
+        },
+        {
+          "project_id": "validation-rich-5",
+          "seed": "validation-rich-5",
+          "rank": 3,
+          "case_id": "rich"
+        }
+      ],
+      "review_question": "Confirm actual whole-mouse/Naegleria object relevance, legibility, and reusable depiction from this exact preview; record observed appearance. Final adoption requires an identified reviewer decision for the listed validation-exercise project, never top rank alone.",
+      "limits": "Generic query only: no unrequested side view, disease state, specific action or native editability is assumed."
+    },
+    {
+      "source": "togo",
+      "source_id": "452",
+      "asset_id": "togo-88aae7232c3e73365305",
+      "family_id": "togo-88aae7232c3e73365305",
+      "title": "Mouse in J-phenome",
+      "source_url": "https://doi.org/10.7875/togopic.2016.14",
+      "format": "svg",
+      "original_sha256": "fb32a50420465cc91f29d766fe7f6e26ed59a5790d5ab101ce1d5ce33aee6341",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42249870031-1-b0000.tar.gz",
+        "member": "files/fb/fb32a50420465cc91f29d766fe7f6e26ed59a5790d5ab101ce1d5ce33aee6341.svg"
+      },
+      "preview": {
+        "sha256": "27d9be14381505570a473349bbc9a69635aec71488ec825021cd44317d2f61ab",
+        "archive": {
+          "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42249870031-1-b0000.tar.gz",
+          "member": "previews/fb32a50420465cc91f29d766fe7f6e26ed59a5790d5ab101ce1d5ce33aee6341.png"
+        }
+      },
+      "project_uses": [
+        {
+          "project_id": "validation-rich-1",
+          "seed": "validation-rich-1",
+          "rank": 9,
+          "case_id": "rich"
+        },
+        {
+          "project_id": "validation-rich-4",
+          "seed": "validation-rich-4",
+          "rank": 7,
+          "case_id": "rich"
+        },
+        {
+          "project_id": "validation-rich-5",
+          "seed": "validation-rich-5",
+          "rank": 5,
+          "case_id": "rich"
+        }
+      ],
+      "review_question": "Confirm actual whole-mouse/Naegleria object relevance, legibility, and reusable depiction from this exact preview; record observed appearance. Final adoption requires an identified reviewer decision for the listed validation-exercise project, never top rank alone.",
+      "limits": "Generic query only: no unrequested side view, disease state, specific action or native editability is assumed."
+    },
+    {
+      "source": "scidraw",
+      "source_id": "968aeaf3-29a5-4ace-97e0-2a10e7f31cda",
+      "asset_id": "scidraw-33cd71340630998212d5",
+      "family_id": "scidraw-33cd71340630998212d5",
+      "title": "Mouse Sleeping",
+      "source_url": "https://scidraw.io/drawing/mouse-sleeping-d9227d94",
+      "format": "png",
+      "original_sha256": "1be2b06588140639cc6a5c074644a7293c8e713fd3ff19c70db1feca80d86b6c",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scidraw-42235890704-1-b0000.tar.gz",
+        "member": "files/1b/1be2b06588140639cc6a5c074644a7293c8e713fd3ff19c70db1feca80d86b6c.png"
+      },
+      "preview": {
+        "sha256": "fc286f4d3b45e203312ef5c746a92377f02004d9affe22fee7b975575e722d76",
+        "archive": {
+          "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scidraw-42235890704-1-b0000.tar.gz",
+          "member": "previews/1be2b06588140639cc6a5c074644a7293c8e713fd3ff19c70db1feca80d86b6c.png"
+        }
+      },
+      "project_uses": [
+        {
+          "project_id": "validation-rich-1",
+          "seed": "validation-rich-1",
+          "rank": 10,
+          "case_id": "rich"
+        },
+        {
+          "project_id": "validation-rich-5",
+          "seed": "validation-rich-5",
+          "rank": 7,
+          "case_id": "rich"
+        }
+      ],
+      "review_question": "Confirm actual whole-mouse/Naegleria object relevance, legibility, and reusable depiction from this exact preview; record observed appearance. Final adoption requires an identified reviewer decision for the listed validation-exercise project, never top rank alone.",
+      "limits": "Generic query only: no unrequested side view, disease state, specific action or native editability is assumed."
+    },
+    {
+      "source": "nih-bioart",
+      "source_id": "372",
+      "asset_id": "nih-bioart-7f98def53b0dfc2c8273",
+      "family_id": "nih-bioart-7f98def53b0dfc2c8273",
+      "title": "Mouse Silhouette",
+      "source_url": "https://bioart.niaid.nih.gov/bioart/372",
+      "format": "png",
+      "original_sha256": "3b68a752aed0e50251b6e3fdf20d444cecea92e1a0012cfac7b6391d583d741a",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/nih-bioart-42236561214-1-b0000.tar.gz",
+        "member": "files/3b/3b68a752aed0e50251b6e3fdf20d444cecea92e1a0012cfac7b6391d583d741a.png"
+      },
+      "preview": {
+        "sha256": "2dc6a41053f4927c4640f7f59e9f832987c9548abdbff02de953c7de2e914688",
+        "archive": {
+          "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/nih-bioart-42236561214-1-b0000.tar.gz",
+          "member": "previews/3b68a752aed0e50251b6e3fdf20d444cecea92e1a0012cfac7b6391d583d741a.png"
+        }
+      },
+      "project_uses": [
+        {
+          "project_id": "validation-rich-2",
+          "seed": "validation-rich-2",
+          "rank": 1,
+          "case_id": "rich"
+        },
+        {
+          "project_id": "validation-rich-3",
+          "seed": "validation-rich-3",
+          "rank": 3,
+          "case_id": "rich"
+        }
+      ],
+      "review_question": "Confirm actual whole-mouse/Naegleria object relevance, legibility, and reusable depiction from this exact preview; record observed appearance. Final adoption requires an identified reviewer decision for the listed validation-exercise project, never top rank alone.",
+      "limits": "Generic query only: no unrequested side view, disease state, specific action or native editability is assumed."
+    },
+    {
+      "source": "nih-bioart",
+      "source_id": "280",
+      "asset_id": "nih-bioart-5b6a907d7740c87cbae2",
+      "family_id": "nih-bioart-5b6a907d7740c87cbae2",
+      "title": "Lab Mouse",
+      "source_url": "https://bioart.niaid.nih.gov/bioart/280",
+      "format": "png",
+      "original_sha256": "79e34e75c4dac112c68f4a188bf66c8fe315d83ed550e812d72d62b8a5bbf22b",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/nih-bioart-42236561214-1-b0000.tar.gz",
+        "member": "files/79/79e34e75c4dac112c68f4a188bf66c8fe315d83ed550e812d72d62b8a5bbf22b.png"
+      },
+      "preview": {
+        "sha256": "2107f1a2f40cc7e0ab66d17a9678cde8db4fb81ba65ddf946360609298a9e642",
+        "archive": {
+          "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/nih-bioart-42236561214-1-b0000.tar.gz",
+          "member": "previews/79e34e75c4dac112c68f4a188bf66c8fe315d83ed550e812d72d62b8a5bbf22b.png"
+        }
+      },
+      "project_uses": [
+        {
+          "project_id": "validation-rich-2",
+          "seed": "validation-rich-2",
+          "rank": 2,
+          "case_id": "rich"
+        },
+        {
+          "project_id": "validation-rich-4",
+          "seed": "validation-rich-4",
+          "rank": 3,
+          "case_id": "rich"
+        }
+      ],
+      "review_question": "Confirm actual whole-mouse/Naegleria object relevance, legibility, and reusable depiction from this exact preview; record observed appearance. Final adoption requires an identified reviewer decision for the listed validation-exercise project, never top rank alone.",
+      "limits": "Generic query only: no unrequested side view, disease state, specific action or native editability is assumed."
+    },
+    {
+      "source": "bioicons",
+      "source_id": "cc-0/Animals/Ben-Murrell/Mouse.svg",
+      "asset_id": "bioicons-e5c2b4d19c935b7ff7a8",
+      "family_id": "bioicons-e5c2b4d19c935b7ff7a8",
+      "title": "Mouse",
+      "source_url": "https://github.com/duerrsimon/bioicons/blob/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-0/Animals/Ben-Murrell/Mouse.svg",
+      "format": "svg",
+      "original_sha256": "6b2f72e787f1947d0bbeaed0bbe3574aef29d7cf1911de61e5fafb10e98454ea",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42239971379-1-b0000.tar.gz",
+        "member": "files/6b/6b2f72e787f1947d0bbeaed0bbe3574aef29d7cf1911de61e5fafb10e98454ea.svg"
+      },
+      "preview": {
+        "sha256": "afd89dd59867196ce56cd29e484860267c2e2f697d8ea088f85880431d0a5d9b",
+        "archive": {
+          "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42239971379-1-b0000.tar.gz",
+          "member": "previews/6b2f72e787f1947d0bbeaed0bbe3574aef29d7cf1911de61e5fafb10e98454ea.png"
+        }
+      },
+      "project_uses": [
+        {
+          "project_id": "validation-rich-2",
+          "seed": "validation-rich-2",
+          "rank": 3,
+          "case_id": "rich"
+        },
+        {
+          "project_id": "validation-rich-3",
+          "seed": "validation-rich-3",
+          "rank": 8,
+          "case_id": "rich"
+        },
+        {
+          "project_id": "validation-rich-4",
+          "seed": "validation-rich-4",
+          "rank": 6,
+          "case_id": "rich"
+        }
+      ],
+      "review_question": "Confirm actual whole-mouse/Naegleria object relevance, legibility, and reusable depiction from this exact preview; record observed appearance. Final adoption requires an identified reviewer decision for the listed validation-exercise project, never top rank alone.",
+      "limits": "Generic query only: no unrequested side view, disease state, specific action or native editability is assumed."
+    },
+    {
+      "source": "bioicons",
+      "source_id": "cc-by-3.0/Animals/Servier/mouse-gray.svg",
+      "asset_id": "bioicons-c04274818e8a26003ce4",
+      "family_id": "bioicons-c04274818e8a26003ce4",
+      "title": "mouse gray",
+      "source_url": "https://github.com/duerrsimon/bioicons/blob/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-3.0/Animals/Servier/mouse-gray.svg",
+      "format": "svg",
+      "original_sha256": "06a18b85a335b215cd0788906f53613ff78ee888948ca905adb82fb0d27f9ef1",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42251588741-1-b0001.tar.gz",
+        "member": "files/06/06a18b85a335b215cd0788906f53613ff78ee888948ca905adb82fb0d27f9ef1.svg"
+      },
+      "preview": {
+        "sha256": "17ca13bec607a2b89181a3e3dfd3dbb11259fd791e18111deef6999af0ed1435",
+        "archive": {
+          "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42251588741-1-b0001.tar.gz",
+          "member": "previews/06a18b85a335b215cd0788906f53613ff78ee888948ca905adb82fb0d27f9ef1.png"
+        }
+      },
+      "project_uses": [
+        {
+          "project_id": "validation-rich-2",
+          "seed": "validation-rich-2",
+          "rank": 4,
+          "case_id": "rich"
+        },
+        {
+          "project_id": "validation-rich-3",
+          "seed": "validation-rich-3",
+          "rank": 2,
+          "case_id": "rich"
+        },
+        {
+          "project_id": "validation-rich-4",
+          "seed": "validation-rich-4",
+          "rank": 5,
+          "case_id": "rich"
+        }
+      ],
+      "review_question": "Confirm actual whole-mouse/Naegleria object relevance, legibility, and reusable depiction from this exact preview; record observed appearance. Final adoption requires an identified reviewer decision for the listed validation-exercise project, never top rank alone.",
+      "limits": "Generic query only: no unrequested side view, disease state, specific action or native editability is assumed."
+    }
+  ]
+}

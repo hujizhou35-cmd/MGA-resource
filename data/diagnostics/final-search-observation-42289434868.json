@@ -1,0 +1,639 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-11-06T20:50:00.645470+00:00",
+  "status": "observed_candidate_availability_and_functional_behavior_not_relevance_or_adoption_acceptance",
+  "bindings": {
+    "catalog_sha256": "5c90306415ce5e7f36e875c7f57b19a91930aacfeeaeecdf9ad7662770f9a3fe",
+    "benchmark_sha256": "ce0282afeb4afbcee8fdef1c6f937844ef569cabf16ba7909e22bf86b1096e92",
+    "search_core_sha256": "8120b1ff2b47b83605c0cc5495b2aa7f12c59b740f7a44f0db376a28808e9049",
+    "ranking_version": "shared-search-3.4.1",
+    "analysis_version": "appearance-1.1.0"
+  },
+  "catalog_prefix": "assembly-42289434868-1",
+  "sqlite_sha256": "a208638f5d2575f7f1abdcdebc3e7848649a7c18dbf8045415c7252225393c90",
+  "sqlite_bytes": 403369984,
+  "index_reused": true,
+  "raw_evidence": [
+    {
+      "uri": "build/search-final/assembly-42289434868-1/diagnostic/search-diagnostic.json",
+      "sha256": "eb59d5d46ec591a3759d3638da546aabdd97ba65134f74a033692847e6fa4e74"
+    },
+    {
+      "uri": "build/search-final/assembly-42289434868-1/diagnostic/retrieval-gaps.json",
+      "sha256": "bd631ad2bb2f626fa3950740c68c4bf31cf84dac619aed240b06a6f6306bfc73"
+    },
+    {
+      "uri": "build/search-final/assembly-42289434868-1/behavior/supplemental-search-evidence.json",
+      "sha256": "88b77560ffc85c1553e741e133cf2cf7f1127dac27df96e87a322b58c6594ee6"
+    }
+  ],
+  "candidate_availability": {
+    "total_queries": 120,
+    "legacy_nonempty": 105,
+    "shared_nonempty": 102,
+    "by_language": {
+      "zh": 51,
+      "en": 51
+    },
+    "category_coverage": {
+      "animals": {
+        "total_queries": 10,
+        "nonempty_queries": 10,
+        "total_concepts": 5,
+        "concepts_nonempty_in_both_languages": 5,
+        "independent_relevance_accepted": null
+      },
+      "cells": {
+        "total_queries": 10,
+        "nonempty_queries": 10,
+        "total_concepts": 5,
+        "concepts_nonempty_in_both_languages": 5,
+        "independent_relevance_accepted": null
+      },
+      "clinical_workflow": {
+        "total_queries": 10,
+        "nonempty_queries": 4,
+        "total_concepts": 5,
+        "concepts_nonempty_in_both_languages": 2,
+        "independent_relevance_accepted": null
+      },
+      "experimental_actions": {
+        "total_queries": 10,
+        "nonempty_queries": 6,
+        "total_concepts": 5,
+        "concepts_nonempty_in_both_languages": 3,
+        "independent_relevance_accepted": null
+      },
+      "lab_equipment": {
+        "total_queries": 10,
+        "nonempty_queries": 10,
+        "total_concepts": 5,
+        "concepts_nonempty_in_both_languages": 5,
+        "independent_relevance_accepted": null
+      },
+      "microbes": {
+        "total_queries": 10,
+        "nonempty_queries": 10,
+        "total_concepts": 5,
+        "concepts_nonempty_in_both_languages": 5,
+        "independent_relevance_accepted": null
+      },
+      "molecules": {
+        "total_queries": 10,
+        "nonempty_queries": 10,
+        "total_concepts": 5,
+        "concepts_nonempty_in_both_languages": 5,
+        "independent_relevance_accepted": null
+      },
+      "omics_data": {
+        "total_queries": 10,
+        "nonempty_queries": 4,
+        "total_concepts": 5,
+        "concepts_nonempty_in_both_languages": 2,
+        "independent_relevance_accepted": null
+      },
+      "organelles": {
+        "total_queries": 10,
+        "nonempty_queries": 8,
+        "total_concepts": 5,
+        "concepts_nonempty_in_both_languages": 4,
+        "independent_relevance_accepted": null
+      },
+      "organs": {
+        "total_queries": 10,
+        "nonempty_queries": 10,
+        "total_concepts": 5,
+        "concepts_nonempty_in_both_languages": 5,
+        "independent_relevance_accepted": null
+      },
+      "people": {
+        "total_queries": 10,
+        "nonempty_queries": 10,
+        "total_concepts": 5,
+        "concepts_nonempty_in_both_languages": 5,
+        "independent_relevance_accepted": null
+      },
+      "tissues_vessels": {
+        "total_queries": 10,
+        "nonempty_queries": 10,
+        "total_concepts": 5,
+        "concepts_nonempty_in_both_languages": 5,
+        "independent_relevance_accepted": null
+      }
+    },
+    "empty_concepts": [
+      {
+        "concept_id": "clinical_workflow-cohort-followup",
+        "category": "clinical_workflow",
+        "missing_languages": [
+          "zh",
+          "en"
+        ],
+        "both_languages_empty": true,
+        "observations": [
+          {
+            "language": "zh",
+            "query": "队列随访流程素材",
+            "text_matched_variants": 0,
+            "unknown_conditions": {},
+            "known_or_unknown_filter_rejections_may_overlap": {},
+            "interpretation": "no_text_candidates_needs_source_or_vocabulary_review"
+          },
+          {
+            "language": "en",
+            "query": "cohort follow up workflow illustration",
+            "text_matched_variants": 0,
+            "unknown_conditions": {},
+            "known_or_unknown_filter_rejections_may_overlap": {},
+            "interpretation": "no_text_candidates_needs_source_or_vocabulary_review"
+          }
+        ]
+      },
+      {
+        "concept_id": "clinical_workflow-randomization",
+        "category": "clinical_workflow",
+        "missing_languages": [
+          "zh",
+          "en"
+        ],
+        "both_languages_empty": true,
+        "observations": [
+          {
+            "language": "zh",
+            "query": "随机分组流程素材",
+            "text_matched_variants": 2,
+            "unknown_conditions": {
+              "unknown:object": 2,
+              "unknown:depiction_kind": 2
+            },
+            "known_or_unknown_filter_rejections_may_overlap": {
+              "hard_filter:object": 2,
+              "hard_filter:depiction_kind": 2
+            },
+            "interpretation": "has_text_candidates_but_scientific_or_appearance_evidence_unknown"
+          },
+          {
+            "language": "en",
+            "query": "randomization two groups workflow diagram",
+            "text_matched_variants": 2,
+            "unknown_conditions": {
+              "unknown:object": 2,
+              "unknown:depiction_kind": 2
+            },
+            "known_or_unknown_filter_rejections_may_overlap": {
+              "hard_filter:object": 2,
+              "hard_filter:depiction_kind": 2
+            },
+            "interpretation": "has_text_candidates_but_scientific_or_appearance_evidence_unknown"
+          }
+        ]
+      },
+      {
+        "concept_id": "clinical_workflow-recruitment",
+        "category": "clinical_workflow",
+        "missing_languages": [
+          "zh",
+          "en"
+        ],
+        "both_languages_empty": true,
+        "observations": [
+          {
+            "language": "zh",
+            "query": "研究参与者招募素材",
+            "text_matched_variants": 0,
+            "unknown_conditions": {},
+            "known_or_unknown_filter_rejections_may_overlap": {},
+            "interpretation": "no_text_candidates_needs_source_or_vocabulary_review"
+          },
+          {
+            "language": "en",
+            "query": "study participant recruitment illustration",
+            "text_matched_variants": 0,
+            "unknown_conditions": {},
+            "known_or_unknown_filter_rejections_may_overlap": {},
+            "interpretation": "no_text_candidates_needs_source_or_vocabulary_review"
+          }
+        ]
+      },
+      {
+        "concept_id": "experimental_actions-centrifugation",
+        "category": "experimental_actions",
+        "missing_languages": [
+          "zh",
+          "en"
+        ],
+        "both_languages_empty": true,
+        "observations": [
+          {
+            "language": "zh",
+            "query": "离心分离步骤示意",
+            "text_matched_variants": 37,
+            "unknown_conditions": {},
+            "known_or_unknown_filter_rejections_may_overlap": {
+              "hard_filter:object": 37,
+              "hard_filter:depiction_kind": 36
+            },
+            "interpretation": "has_text_candidates_but_hard_conditions_not_satisfied"
+          },
+          {
+            "language": "en",
+            "query": "centrifugation separation workflow illustration",
+            "text_matched_variants": 37,
+            "unknown_conditions": {},
+            "known_or_unknown_filter_rejections_may_overlap": {
+              "hard_filter:object": 37,
+              "hard_filter:depiction_kind": 36
+            },
+            "interpretation": "has_text_candidates_but_hard_conditions_not_satisfied"
+          }
+        ]
+      },
+      {
+        "concept_id": "experimental_actions-mouse-injection",
+        "category": "experimental_actions",
+        "missing_languages": [
+          "zh",
+          "en"
+        ],
+        "both_languages_empty": true,
+        "observations": [
+          {
+            "language": "zh",
+            "query": "小鼠注射实验示意",
+            "text_matched_variants": 0,
+            "unknown_conditions": {},
+            "known_or_unknown_filter_rejections_may_overlap": {},
+            "interpretation": "no_text_candidates_needs_source_or_vocabulary_review"
+          },
+          {
+            "language": "en",
+            "query": "mouse injection experiment illustration",
+            "text_matched_variants": 0,
+            "unknown_conditions": {},
+            "known_or_unknown_filter_rejections_may_overlap": {},
+            "interpretation": "no_text_candidates_needs_source_or_vocabulary_review"
+          }
+        ]
+      },
+      {
+        "concept_id": "omics_data-forest-template",
+        "category": "omics_data",
+        "missing_languages": [
+          "zh",
+          "en"
+        ],
+        "both_languages_empty": true,
+        "observations": [
+          {
+            "language": "zh",
+            "query": "森林图通用构件模板",
+            "text_matched_variants": 0,
+            "unknown_conditions": {},
+            "known_or_unknown_filter_rejections_may_overlap": {},
+            "interpretation": "no_text_candidates_needs_source_or_vocabulary_review"
+          },
+          {
+            "language": "en",
+            "query": "forest plot schematic template",
+            "text_matched_variants": 0,
+            "unknown_conditions": {},
+            "known_or_unknown_filter_rejections_may_overlap": {},
+            "interpretation": "no_text_candidates_needs_source_or_vocabulary_review"
+          }
+        ]
+      },
+      {
+        "concept_id": "omics_data-gene-network",
+        "category": "omics_data",
+        "missing_languages": [
+          "zh",
+          "en"
+        ],
+        "both_languages_empty": true,
+        "observations": [
+          {
+            "language": "zh",
+            "query": "基因网络示意素材",
+            "text_matched_variants": 0,
+            "unknown_conditions": {},
+            "known_or_unknown_filter_rejections_may_overlap": {},
+            "interpretation": "no_text_candidates_needs_source_or_vocabulary_review"
+          },
+          {
+            "language": "en",
+            "query": "gene network schematic illustration",
+            "text_matched_variants": 0,
+            "unknown_conditions": {},
+            "known_or_unknown_filter_rejections_may_overlap": {},
+            "interpretation": "no_text_candidates_needs_source_or_vocabulary_review"
+          }
+        ]
+      },
+      {
+        "concept_id": "omics_data-heatmap",
+        "category": "omics_data",
+        "missing_languages": [
+          "zh",
+          "en"
+        ],
+        "both_languages_empty": true,
+        "observations": [
+          {
+            "language": "zh",
+            "query": "基因表达热图示意模板",
+            "text_matched_variants": 50,
+            "unknown_conditions": {
+              "unknown:object": 48
+            },
+            "known_or_unknown_filter_rejections_may_overlap": {
+              "hard_filter:object": 50
+            },
+            "interpretation": "has_text_candidates_but_scientific_or_appearance_evidence_unknown"
+          },
+          {
+            "language": "en",
+            "query": "gene expression heatmap schematic template",
+            "text_matched_variants": 50,
+            "unknown_conditions": {
+              "unknown:object": 48
+            },
+            "known_or_unknown_filter_rejections_may_overlap": {
+              "hard_filter:object": 50
+            },
+            "interpretation": "has_text_candidates_but_scientific_or_appearance_evidence_unknown"
+          }
+        ]
+      },
+      {
+        "concept_id": "organelles-lysosome",
+        "category": "organelles",
+        "missing_languages": [
+          "zh",
+          "en"
+        ],
+        "both_languages_empty": true,
+        "observations": [
+          {
+            "language": "zh",
+            "query": "溶酶体插画",
+            "text_matched_variants": 4,
+            "unknown_conditions": {
+              "unknown:object": 4
+            },
+            "known_or_unknown_filter_rejections_may_overlap": {
+              "hard_filter:object": 4
+            },
+            "interpretation": "has_text_candidates_but_scientific_or_appearance_evidence_unknown"
+          },
+          {
+            "language": "en",
+            "query": "lysosome illustration",
+            "text_matched_variants": 4,
+            "unknown_conditions": {
+              "unknown:object": 4
+            },
+            "known_or_unknown_filter_rejections_may_overlap": {
+              "hard_filter:object": 4
+            },
+            "interpretation": "has_text_candidates_but_scientific_or_appearance_evidence_unknown"
+          }
+        ]
+      }
+    ],
+    "medical_relevance_pass_count": null
+  },
+  "functional_cases": {
+    "variant_before_family": true,
+    "hard_vs_preference": true,
+    "unknown_is_not_match": true,
+    "stable_replay": true,
+    "pagination_no_duplicate": true,
+    "pins_stable": true,
+    "adopted_history_only": true,
+    "modes_scientific_constraints": true,
+    "no_curated_boost": true
+  },
+  "diversity": [
+    {
+      "pool_kind": "rich",
+      "eligible_families": 38,
+      "metrics": {
+        "projects": 5,
+        "old_top_family_ids": {
+          "distinct_families": 10,
+          "total_project_family_choices": 50,
+          "maximum_project_reuse": 5,
+          "mean_pairwise_jaccard": 1.0
+        },
+        "new_top_family_ids": {
+          "distinct_families": 27,
+          "total_project_family_choices": 50,
+          "maximum_project_reuse": 4,
+          "mean_pairwise_jaccard": 0.2049486461251167
+        },
+        "trial_downloaded_family_ids": {
+          "distinct_families": 0,
+          "total_project_family_choices": 0,
+          "maximum_project_reuse": 0,
+          "mean_pairwise_jaccard": 0.0
+        },
+        "adopted_family_ids": {
+          "distinct_families": 0,
+          "total_project_family_choices": 0,
+          "maximum_project_reuse": 0,
+          "mean_pairwise_jaccard": 0.0
+        }
+      },
+      "adoption_status": "pending_actual_preview_review_and_final_decision"
+    },
+    {
+      "pool_kind": "scarce",
+      "eligible_families": 1,
+      "metrics": {
+        "projects": 5,
+        "old_top_family_ids": {
+          "distinct_families": 1,
+          "total_project_family_choices": 5,
+          "maximum_project_reuse": 5,
+          "mean_pairwise_jaccard": 1.0
+        },
+        "new_top_family_ids": {
+          "distinct_families": 1,
+          "total_project_family_choices": 5,
+          "maximum_project_reuse": 5,
+          "mean_pairwise_jaccard": 1.0
+        },
+        "trial_downloaded_family_ids": {
+          "distinct_families": 0,
+          "total_project_family_choices": 0,
+          "maximum_project_reuse": 0,
+          "mean_pairwise_jaccard": 0.0
+        },
+        "adopted_family_ids": {
+          "distinct_families": 0,
+          "total_project_family_choices": 0,
+          "maximum_project_reuse": 0,
+          "mean_pairwise_jaccard": 0.0
+        }
+      },
+      "adoption_status": "pending_actual_preview_review_and_final_decision"
+    }
+  ],
+  "local_performance": {
+    "median_search_adapter_ms": 500.83674999768846,
+    "median_pure_ranking_kernel_ms": 0.8976499999999987,
+    "broad_queries": [
+      {
+        "query": "cell",
+        "qualified_families": 426,
+        "metrics": {
+          "core_milliseconds": 3.1646999999999963,
+          "pure_ranking_kernel": true,
+          "sqlite_wall_milliseconds": 1185.560300029465,
+          "node_process_wall_milliseconds": 462.15160000429023,
+          "search_page_wall_milliseconds": 1668.7173999962397,
+          "returned_results_bytes": 924407
+        },
+        "sqlite_pushdown": {
+          "text_matched_variants": 5915,
+          "payload_variants_loaded": 75,
+          "payload_bytes_loaded": 35163,
+          "selected_detail_variants_loaded": 10,
+          "selected_detail_bytes_loaded": 53633,
+          "rejections_by_condition_may_overlap": {
+            "unavailable_or_rights_unresolved": 0,
+            "hard_filter:object": 4131,
+            "hard_filter:depiction_kind": 4136,
+            "unknown:object": 2436,
+            "unknown:depiction_kind": 2436
+          },
+          "hard_filters_before_payload_load": true,
+          "family_grouping_before_candidate_limit": true,
+          "candidate_limit_before_filters": null
+        }
+      },
+      {
+        "query": "mouse",
+        "qualified_families": 38,
+        "metrics": {
+          "core_milliseconds": 1.9853000000000023,
+          "pure_ranking_kernel": true,
+          "sqlite_wall_milliseconds": 89.83070000977023,
+          "node_process_wall_milliseconds": 454.40949999465374,
+          "search_page_wall_milliseconds": 556.7575000022771,
+          "returned_results_bytes": 277189
+        },
+        "sqlite_pushdown": {
+          "text_matched_variants": 306,
+          "payload_variants_loaded": 38,
+          "payload_bytes_loaded": 18057,
+          "selected_detail_variants_loaded": 10,
+          "selected_detail_bytes_loaded": 51841,
+          "rejections_by_condition_may_overlap": {
+            "unavailable_or_rights_unresolved": 0,
+            "hard_filter:species": 24,
+            "hard_filter:object": 244,
+            "unknown:species": 20,
+            "unknown:object": 177
+          },
+          "hard_filters_before_payload_load": true,
+          "family_grouping_before_candidate_limit": true,
+          "candidate_limit_before_filters": null
+        }
+      },
+      {
+        "query": "liver",
+        "qualified_families": 17,
+        "metrics": {
+          "core_milliseconds": 1.0433000000000021,
+          "pure_ranking_kernel": true,
+          "sqlite_wall_milliseconds": 16.880200018931646,
+          "node_process_wall_milliseconds": 460.9654000014416,
+          "search_page_wall_milliseconds": 488.1623999972362,
+          "returned_results_bytes": 356870
+        },
+        "sqlite_pushdown": {
+          "text_matched_variants": 61,
+          "payload_variants_loaded": 17,
+          "payload_bytes_loaded": 8086,
+          "selected_detail_variants_loaded": 10,
+          "selected_detail_bytes_loaded": 50271,
+          "rejections_by_condition_may_overlap": {
+            "unavailable_or_rights_unresolved": 0,
+            "hard_filter:object": 33,
+            "unknown:object": 13
+          },
+          "hard_filters_before_payload_load": true,
+          "family_grouping_before_candidate_limit": true,
+          "candidate_limit_before_filters": null
+        }
+      },
+      {
+        "query": "",
+        "qualified_families": 7838,
+        "metrics": {
+          "core_milliseconds": 2.1041000000000025,
+          "pure_ranking_kernel": true,
+          "sqlite_wall_milliseconds": 909.0921999886632,
+          "node_process_wall_milliseconds": 463.45270000892924,
+          "search_page_wall_milliseconds": 1386.6150000030757,
+          "returned_results_bytes": 562700
+        },
+        "sqlite_pushdown": {
+          "text_matched_variants": 20130,
+          "payload_variants_loaded": 75,
+          "payload_bytes_loaded": 35021,
+          "selected_detail_variants_loaded": 10,
+          "selected_detail_bytes_loaded": 48126,
+          "rejections_by_condition_may_overlap": {
+            "unavailable_or_rights_unresolved": 1
+          },
+          "hard_filters_before_payload_load": true,
+          "family_grouping_before_candidate_limit": true,
+          "candidate_limit_before_filters": null
+        }
+      },
+      {
+        "query": "彩色小鼠",
+        "qualified_families": 21,
+        "metrics": {
+          "core_milliseconds": 1.1049000000000007,
+          "pure_ranking_kernel": true,
+          "sqlite_wall_milliseconds": 107.91930001141736,
+          "node_process_wall_milliseconds": 474.3582000010065,
+          "search_page_wall_milliseconds": 593.2634999990114,
+          "returned_results_bytes": 319490
+        },
+        "sqlite_pushdown": {
+          "text_matched_variants": 306,
+          "payload_variants_loaded": 21,
+          "payload_bytes_loaded": 9960,
+          "selected_detail_variants_loaded": 10,
+          "selected_detail_bytes_loaded": 49049,
+          "rejections_by_condition_may_overlap": {
+            "unavailable_or_rights_unresolved": 0,
+            "hard_filter:species": 24,
+            "hard_filter:color_mode": 110,
+            "hard_filter:object": 244,
+            "unknown:species": 12,
+            "unknown:color_mode": 56,
+            "unknown:object": 156
+          },
+          "hard_filters_before_payload_load": true,
+          "family_grouping_before_candidate_limit": true,
+          "candidate_limit_before_filters": null
+        }
+      }
+    ]
+  },
+  "open_questions": [
+    "Cohort follow-up/randomization/recruitment workflow requests may require a composition-level acceptance boundary, while the collection admits reusable components. Generic people/arrows are not clinical workflow evidence.",
+    "Forest/heatmap template scope and other outstanding user scope boundaries remain unresolved; the original benchmark and historical result remain unchanged.",
+    "Independent top-10 relevance judgments, final adoption ledgers and appearance evidence merge are still pending.",
+    "Local SQLite and Node wall time is not a Cloudflare Free CPU/D1 deployment measurement. Compatibility full-family result payload is larger than compact variant detail."
+  ],
+  "preview_review_plans": [
+    "data/review-plans/diversity-42289434868-part1.json",
+    "data/review-plans/diversity-42289434868-part2.json"
+  ]
+}
