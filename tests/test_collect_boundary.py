@@ -60,3 +60,11 @@ def test_upload_recognizes_existing_asset_after_first_page(tmp_path, monkeypatch
     collect.upload("release", [asset])
     assert len(calls) == 2
     assert "--paginate" in calls[1]
+
+
+def test_empty_held_batch_has_uploadable_empty_jsonl(tmp_path):
+    receipt = collect.write_batch(tmp_path, "held", [], [], set(), {"release_tag": "test"}, False)
+    payload = (tmp_path / receipt["records_file"]).read_bytes()
+    assert payload == b"\n"
+    assert not [json.loads(line) for line in payload.splitlines() if line.strip()]
+    assert hashlib.sha256(payload).hexdigest() == receipt["records_sha256"]

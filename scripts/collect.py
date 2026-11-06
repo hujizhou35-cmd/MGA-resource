@@ -31,8 +31,14 @@ def dump_json(path: Path, value) -> None:
 def dump_jsonl(path: Path, records) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
     with path.open("w", encoding="utf-8") as out:
+        wrote_record = False
         for record in records:
             out.write(json.dumps(record, ensure_ascii=False) + "\n")
+            wrote_record = True
+        if not wrote_record:
+            # GitHub Releases reject zero-byte uploads. A blank JSONL line is
+            # an empty dataset, not a fabricated record.
+            out.write("\n")
 
 
 def slug(value: str) -> str:
