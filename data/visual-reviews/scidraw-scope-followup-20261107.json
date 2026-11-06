@@ -1,0 +1,214 @@
+{
+  "schema_version": 1,
+  "source": "scidraw",
+  "reviewed_at": "2026-11-06T17:50:23.655613+00:00",
+  "reviewer": "Codex media_catalog; actual visual inspection",
+  "review_method": "Actual inspection of the five unmodified, full-resolution preview PNGs in a previously verified bounded cloud review pack.",
+  "disposition_status": "proposals_for_root_application; no collection files changed",
+  "review_limits": [
+    "Exact file only; do not propagate to family or other formats.",
+    "Preview layout failure does not establish original corruption."
+  ],
+  "items": [
+    {
+      "source": "scidraw",
+      "source_id": "33e57ef4-e9f0-4d29-99ba-0dd6f5927500",
+      "asset_id": "scidraw-fcce9ee947d06f000f67",
+      "title": "zebrafish",
+      "sha256": "220550f8766dbbc25f0963a6a2751a1ff79d0998bd504b18a232454e55106856",
+      "original_sha256": "220550f8766dbbc25f0963a6a2751a1ff79d0998bd504b18a232454e55106856",
+      "preview_sha256": "c44a21e89fe921e7eefe3fbf492a3b8c61e453fad8887dcfcf4e1f80878eb3b2",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scidraw-42235890704-1-b0000.tar.gz",
+        "member": "files/22/220550f8766dbbc25f0963a6a2751a1ff79d0998bd504b18a232454e55106856.svg"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scidraw-42235890704-1-b0000.tar.gz",
+        "member": "previews/220550f8766dbbc25f0963a6a2751a1ff79d0998bd504b18a232454e55106856.png"
+      },
+      "source_url": "https://scidraw.io/drawing/zebrafish-63b13fb2",
+      "reviewed_by": "Codex media_catalog; actual visual inspection",
+      "reviewed_at": "2026-11-06T17:50:23.655613+00:00",
+      "disposition": "quarantine",
+      "scope_status": "preview_layout_needs_review",
+      "visual_verdict": "preview_clipped_pending_original_layout_review",
+      "reason": "The actual 512-pixel preview shows only the head and upper strip of the fish at the bottom edge; the body continues beyond the canvas. The reviewed preview is unsuitable as a whole-animal component. The original SVG was not opened; this does not establish original-file corruption.",
+      "original_opened": false,
+      "native_editability_tested": false,
+      "evidence": [
+        {
+          "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/appearance-review-42255022104-1.tar.gz",
+          "sha256": "8bf06794d44299b21653900b1ceedc4d61cf1c526bb46706993343d3da005897",
+          "member": "previews/220550f8766dbbc25f0963a6a2751a1ff79d0998bd504b18a232454e55106856.png",
+          "member_sha256": "c44a21e89fe921e7eefe3fbf492a3b8c61e453fad8887dcfcf4e1f80878eb3b2"
+        },
+        {
+          "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scidraw-42235890704-1-b0000.tar.gz",
+          "member": "previews/220550f8766dbbc25f0963a6a2751a1ff79d0998bd504b18a232454e55106856.png",
+          "sha256": "c44a21e89fe921e7eefe3fbf492a3b8c61e453fad8887dcfcf4e1f80878eb3b2",
+          "digest_scope": "archive_member"
+        }
+      ]
+    },
+    {
+      "source": "scidraw",
+      "source_id": "892ce934-3ab5-4b96-9705-f854314d8f23",
+      "asset_id": "scidraw-dec8d76322d212d4814b",
+      "title": "Snake silhouette",
+      "sha256": "389516ee971c109a5f99e3beffb47f2187718cfa37ca5bc1add921df2a272179",
+      "original_sha256": "389516ee971c109a5f99e3beffb47f2187718cfa37ca5bc1add921df2a272179",
+      "preview_sha256": "fed45f54bf7c5de6a100f6dc862863175fa6a0ab4cb9a2c050b43335c30baa26",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scidraw-42235890704-1-b0000.tar.gz",
+        "member": "files/38/389516ee971c109a5f99e3beffb47f2187718cfa37ca5bc1add921df2a272179.svg"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scidraw-42235890704-1-b0000.tar.gz",
+        "member": "previews/389516ee971c109a5f99e3beffb47f2187718cfa37ca5bc1add921df2a272179.png"
+      },
+      "source_url": "https://scidraw.io/drawing/snake-silhouette-49452eba",
+      "reviewed_by": "Codex media_catalog; actual visual inspection",
+      "reviewed_at": "2026-11-06T17:50:23.655613+00:00",
+      "disposition": "quarantine",
+      "scope_status": "preview_layout_needs_review",
+      "visual_verdict": "preview_clipped_pending_original_layout_review",
+      "reason": "The actual 512-pixel preview places the snake at the lower-right edge and cuts off the right-hand body. Whole-animal completeness is not verified. The original SVG was not opened; source layout or rendering may be responsible.",
+      "original_opened": false,
+      "native_editability_tested": false,
+      "evidence": [
+        {
+          "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/appearance-review-42255022104-1.tar.gz",
+          "sha256": "8bf06794d44299b21653900b1ceedc4d61cf1c526bb46706993343d3da005897",
+          "member": "previews/389516ee971c109a5f99e3beffb47f2187718cfa37ca5bc1add921df2a272179.png",
+          "member_sha256": "fed45f54bf7c5de6a100f6dc862863175fa6a0ab4cb9a2c050b43335c30baa26"
+        },
+        {
+          "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scidraw-42235890704-1-b0000.tar.gz",
+          "member": "previews/389516ee971c109a5f99e3beffb47f2187718cfa37ca5bc1add921df2a272179.png",
+          "sha256": "fed45f54bf7c5de6a100f6dc862863175fa6a0ab4cb9a2c050b43335c30baa26",
+          "digest_scope": "archive_member"
+        }
+      ]
+    },
+    {
+      "source": "scidraw",
+      "source_id": "82a7e66c-78b6-4444-82df-c9fdbb856799",
+      "asset_id": "scidraw-2fa89435b45544953abf",
+      "title": "Eagle",
+      "sha256": "637cec30c380f8a138fa7c4d1bea80f0d1d174a26eb996ec36edd19e74bc1cd2",
+      "original_sha256": "637cec30c380f8a138fa7c4d1bea80f0d1d174a26eb996ec36edd19e74bc1cd2",
+      "preview_sha256": "18c6f74dea899cd464398fcbc67711e0a6541d9e8c929c09b5e5a9a1b4864804",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scidraw-42235890704-1-b0000.tar.gz",
+        "member": "files/63/637cec30c380f8a138fa7c4d1bea80f0d1d174a26eb996ec36edd19e74bc1cd2.svg"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scidraw-42235890704-1-b0000.tar.gz",
+        "member": "previews/637cec30c380f8a138fa7c4d1bea80f0d1d174a26eb996ec36edd19e74bc1cd2.png"
+      },
+      "source_url": "https://scidraw.io/drawing/eagle-674d8643",
+      "reviewed_by": "Codex media_catalog; actual visual inspection",
+      "reviewed_at": "2026-11-06T17:50:23.655613+00:00",
+      "disposition": "quarantine",
+      "scope_status": "preview_layout_needs_review",
+      "visual_verdict": "preview_clipped_pending_original_layout_review",
+      "reason": "The actual 512-pixel preview cuts the right-hand wing/body of the eagle at the canvas boundary. Whole-animal completeness is not verified. The original SVG was not opened; source layout or rendering may be responsible.",
+      "original_opened": false,
+      "native_editability_tested": false,
+      "evidence": [
+        {
+          "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/appearance-review-42255022104-1.tar.gz",
+          "sha256": "8bf06794d44299b21653900b1ceedc4d61cf1c526bb46706993343d3da005897",
+          "member": "previews/637cec30c380f8a138fa7c4d1bea80f0d1d174a26eb996ec36edd19e74bc1cd2.png",
+          "member_sha256": "18c6f74dea899cd464398fcbc67711e0a6541d9e8c929c09b5e5a9a1b4864804"
+        },
+        {
+          "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scidraw-42235890704-1-b0000.tar.gz",
+          "member": "previews/637cec30c380f8a138fa7c4d1bea80f0d1d174a26eb996ec36edd19e74bc1cd2.png",
+          "sha256": "18c6f74dea899cd464398fcbc67711e0a6541d9e8c929c09b5e5a9a1b4864804",
+          "digest_scope": "archive_member"
+        }
+      ]
+    },
+    {
+      "source": "scidraw",
+      "source_id": "92296bb2-d3ad-4015-97ae-4b1ec3dae7e0",
+      "asset_id": "scidraw-6e2c35bb513674adabbf",
+      "title": "cyber criminal triangle modal",
+      "sha256": "5ca498da05b90591036e23a5fa508c0e98258cadbe707c4a13f2db8723600b85",
+      "original_sha256": "5ca498da05b90591036e23a5fa508c0e98258cadbe707c4a13f2db8723600b85",
+      "preview_sha256": "a2388b6eca61a04f725e43fce3bd156a7b7665a3447ebcdf5879f897b480499d",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scidraw-42235890704-1-b0001.tar.gz",
+        "member": "files/5c/5ca498da05b90591036e23a5fa508c0e98258cadbe707c4a13f2db8723600b85.png"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scidraw-42235890704-1-b0001.tar.gz",
+        "member": "previews/5ca498da05b90591036e23a5fa508c0e98258cadbe707c4a13f2db8723600b85.png"
+      },
+      "source_url": "https://scidraw.io/drawing/cyber-criminal-triangle-modal-6688b840",
+      "reviewed_by": "Codex media_catalog; actual visual inspection",
+      "reviewed_at": "2026-11-06T17:50:23.655613+00:00",
+      "disposition": "exclude_from_v1",
+      "scope_status": "outside_medical_component_scope",
+      "visual_verdict": "not_in_v1_scope",
+      "reason": "The viewed complete diagram concerns cyber crime, conventional crimes, means, motive and opportunity. It is a non-biomedical explanatory figure, outside the first-release medical illustration component scope.",
+      "original_opened": false,
+      "native_editability_tested": false,
+      "evidence": [
+        {
+          "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/appearance-review-42255022104-1.tar.gz",
+          "sha256": "8bf06794d44299b21653900b1ceedc4d61cf1c526bb46706993343d3da005897",
+          "member": "previews/5ca498da05b90591036e23a5fa508c0e98258cadbe707c4a13f2db8723600b85.png",
+          "member_sha256": "a2388b6eca61a04f725e43fce3bd156a7b7665a3447ebcdf5879f897b480499d"
+        },
+        {
+          "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scidraw-42235890704-1-b0001.tar.gz",
+          "member": "previews/5ca498da05b90591036e23a5fa508c0e98258cadbe707c4a13f2db8723600b85.png",
+          "sha256": "a2388b6eca61a04f725e43fce3bd156a7b7665a3447ebcdf5879f897b480499d",
+          "digest_scope": "archive_member"
+        }
+      ]
+    },
+    {
+      "source": "scidraw",
+      "source_id": "6358d959-1f60-49aa-a67e-f076af1c5a84",
+      "asset_id": "scidraw-6b5232722afb08d1b7bc",
+      "title": "啊啊",
+      "sha256": "6a791e01b15d8fd6e8a346f369a86cf7c6f774777918b3801300e34058b24902",
+      "original_sha256": "6a791e01b15d8fd6e8a346f369a86cf7c6f774777918b3801300e34058b24902",
+      "preview_sha256": "874f2d6b26f96a33b8cfc076b417010ce02165114463cda5fe7f3e3894f57492",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scidraw-42235890704-1-b0001.tar.gz",
+        "member": "files/6a/6a791e01b15d8fd6e8a346f369a86cf7c6f774777918b3801300e34058b24902.png"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scidraw-42235890704-1-b0001.tar.gz",
+        "member": "previews/6a791e01b15d8fd6e8a346f369a86cf7c6f774777918b3801300e34058b24902.png"
+      },
+      "source_url": "https://scidraw.io/drawing/drawing-8caf3226",
+      "reviewed_by": "Codex media_catalog; actual visual inspection",
+      "reviewed_at": "2026-11-06T17:50:23.655613+00:00",
+      "disposition": "exclude_from_v1",
+      "scope_status": "outside_medical_component_scope",
+      "visual_verdict": "not_in_v1_scope",
+      "reason": "The viewed figure is a complete generic mathematical/model-training diagram with W weights, D databases, u vectors and delta-L arrows. No biological, medical or omics-specific content is visible. Exclude this exact file from the first-release medical component scope; no claim is made about publication origin.",
+      "original_opened": false,
+      "native_editability_tested": false,
+      "evidence": [
+        {
+          "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/appearance-review-42255022104-1.tar.gz",
+          "sha256": "8bf06794d44299b21653900b1ceedc4d61cf1c526bb46706993343d3da005897",
+          "member": "previews/6a791e01b15d8fd6e8a346f369a86cf7c6f774777918b3801300e34058b24902.png",
+          "member_sha256": "874f2d6b26f96a33b8cfc076b417010ce02165114463cda5fe7f3e3894f57492"
+        },
+        {
+          "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scidraw-42235890704-1-b0001.tar.gz",
+          "member": "previews/6a791e01b15d8fd6e8a346f369a86cf7c6f774777918b3801300e34058b24902.png",
+          "sha256": "874f2d6b26f96a33b8cfc076b417010ce02165114463cda5fe7f3e3894f57492",
+          "digest_scope": "archive_member"
+        }
+      ]
+    }
+  ]
+}

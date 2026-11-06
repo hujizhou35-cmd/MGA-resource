@@ -149,12 +149,14 @@ def apply_scientific_reviews(records, review_paths, release_assets):
             continue
         report["review_documents"].append({"path": label, "sha256": document_digest,
                                             "assertion_items": len(review_items)})
-        doc_error = _validate_document(document, remotes)
         for item in review_items:
             report["assertion_items"] += 1
             key = item.get("original_sha256"), item.get("preview_sha256")
             issue = {"review_document": label, "original_sha256": key[0], "tile": item.get("tile")}
-            error = doc_error or _validate_item(item, remotes)
+            # One review report may cover multiple actual contact sheets. An
+            # explicit per-item sheet binding must be verified independently.
+            bound_document = {**document, **{k: item[k] for k in ("review_sheet_url", "review_sheet_sha256") if k in item}}
+            error = _validate_document(bound_document, remotes) or _validate_item(item, remotes)
             if error:
                 report["invalid_assertion_items"] += 1
                 report["issues"].append({**issue, "status": "invalid", "reason": error})
@@ -168,8 +170,8 @@ def apply_scientific_reviews(records, review_paths, release_assets):
             evidence = {"kind": "manual_visual_review", "original_sha256": key[0], "preview_sha256": key[1],
                 "original_archive": item["original_archive"], "preview_archive": item["preview_archive"],
                 "reviewer": document["reviewer"], "reviewed_at": document["reviewed_at"],
-                "review_method": document["review_method"], "evidence_uri": document["review_sheet_url"],
-                "evidence_sha256": document["review_sheet_sha256"], "tile": item["tile"],
+                "review_method": document["review_method"], "evidence_uri": bound_document["review_sheet_url"],
+                "evidence_sha256": bound_document["review_sheet_sha256"], "tile": item["tile"],
                 "observations": item["observations"], "review_limits": document.get("review_limits", []),
                 "review_document": {"path": label, "sha256": document_digest},
                 "assertions": copy.deepcopy(item["scientific_assertions"])}

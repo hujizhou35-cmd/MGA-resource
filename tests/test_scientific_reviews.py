@@ -156,6 +156,20 @@ def test_prior_conflict_is_not_silently_resolved_by_reapplying_same_review(tmp_p
     assert evidence['conflicts']['species']['status'] == 'pending_independent_review'
 
 
+def test_item_in_second_contact_sheet_has_independent_verified_binding(tmp_path):
+    record, review, path, assets = setup(tmp_path)
+    second = SHEET.replace('batch.review', 'second.review')
+    review['items'][0].update(review_sheet_url=second, review_sheet_sha256='e' * 64)
+    assets['second.review.png'] = {'browser_download_url': second, 'digest': 'sha256:' + 'e' * 64}
+    write(path, review)
+    result, _ = apply_scientific_reviews([record], [path], assets)
+    evidence = result[0]['files'][0]['scientific_review_evidence'][0]
+    assert evidence['evidence_uri'] == second and evidence['evidence_sha256'] == 'e' * 64
+    assets['second.review.png']['digest'] = 'sha256:' + 'f' * 64
+    result, report = apply_scientific_reviews([record], [path], assets)
+    assert result == [record] and report['invalid_assertion_items'] == 1
+
+
 def test_finalize_preserves_exact_file_evidence_with_aliases(tmp_path):
     record, _, path, assets = setup(tmp_path)
     alias = copy.deepcopy(record)

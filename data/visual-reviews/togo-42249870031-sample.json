@@ -1,0 +1,2383 @@
+{
+  "schema_version": 1,
+  "reviewed_at": "2026-11-06T17:29:41.919263+00:00",
+  "reviewer": "Codex independent subagent; direct visual inspection of both actual contact sheets",
+  "source": "togo",
+  "collection_run": "42249870031-1",
+  "collection_commit": "653cf608cbb2e20c2b52a8f498fcbb2dd72d47df",
+  "review_method": "Viewed two original cloud contact sheets. Reproduced collector first-valid-preview-per-record sampling with random seed 20261106; all 60 tile IDs exactly match receipt ordering. SHA-256 and sizes verified against cached paginated GitHub Release asset metadata; original artwork archives were not downloaded.",
+  "review_sheet_url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42249870031-1-b0000.review.png",
+  "review_sheet_sha256": "5ccc96caaebd7a4bbcb082862e586147d3a68cdb81aebb8e9ae1df20b9bb3b3e",
+  "review_sheets": [
+    {
+      "batch": "b0000",
+      "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42249870031-1-b0000.review.png",
+      "sha256": "5ccc96caaebd7a4bbcb082862e586147d3a68cdb81aebb8e9ae1df20b9bb3b3e",
+      "tiles": 30
+    },
+    {
+      "batch": "b0002",
+      "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42249870031-1-b0002.review.png",
+      "sha256": "189a7efddac8b6766d91c89ae70b3b9daa9412223f3c3fe731788dc44f894fc5",
+      "tiles": 30
+    }
+  ],
+  "metadata_bindings": [
+    {
+      "name": "togo-42249870031-1-b0000.receipt.json",
+      "sha256": "f8e088c5bf86444ac01dfa3d9bf1da442d2384f6cd8c7c1f05c527293ded97b1"
+    },
+    {
+      "name": "togo-42249870031-1-b0000.records.jsonl",
+      "sha256": "3b98b9ffdb8c3f5812668f7e42717d2037a8d3ebf0169f55bfb37819bbc69b90"
+    },
+    {
+      "name": "togo-42249870031-1-b0001.receipt.json",
+      "sha256": "a6c5ec3e734ea14e9ef79e998e385bae3b39b9e4069ae4e8464a1ecd8927a8cd"
+    },
+    {
+      "name": "togo-42249870031-1-b0001.records.jsonl",
+      "sha256": "c00adeba6ad96b29b00ef41d84ef57475eb91ea5362f2c1f2b2ae74a0be2240c"
+    },
+    {
+      "name": "togo-42249870031-1-b0002.receipt.json",
+      "sha256": "00c297341bc781be8a0a82f97840d2be65b06a4dd496eafbebad19ed8e4682f9"
+    },
+    {
+      "name": "togo-42249870031-1-b0002.records.jsonl",
+      "sha256": "74507bc4d40e7044cba5da1329c257326bdb234186bf8f926f0d03f35dfe80f8"
+    },
+    {
+      "name": "togo-42249870031-1.report.json",
+      "sha256": "8373fd4a9783b1cf7f7df566809aa05928c92d1d240833e54ae3cd4fbc65d406"
+    }
+  ],
+  "review_limits": [
+    "Contact-scale inspection only, not native editing or full scientific-detail certification.",
+    "Scope pending denotes uncertainty between photographic/microscopic origin and drawn rendition; not a claim of confirmed photo origin.",
+    "No claims are propagated to unviewed formats or variants.",
+    "Only 60 reviewed files from two batches; no whole-source visual pass or representative prevalence estimate.",
+    "Illustrative insect drawings may be detailed or realistic; pure-vector format alone never proves scientific correctness."
+  ],
+  "items": [
+    {
+      "tile": 1,
+      "id": "togo-6d65ff50f3a4b5839383",
+      "title": "mouse brain2",
+      "source_id": "333",
+      "source_url": "https://doi.org/10.7875/togopic.2013.25",
+      "original_sha256": "4fa7ff3a1d9743c958597d924293b57d2259f9aaa2a7db10380d8e5210f325e0",
+      "preview_sha256": "e48560d5b5971d2ec7653210438637e2484dfadf439dfef85e64c513cfe7af50",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42249870031-1-b0000.tar.gz",
+        "member": "files/4f/4fa7ff3a1d9743c958597d924293b57d2259f9aaa2a7db10380d8e5210f325e0.svg"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42249870031-1-b0000.tar.gz",
+        "member": "previews/4fa7ff3a1d9743c958597d924293b57d2259f9aaa2a7db10380d8e5210f325e0.png"
+      },
+      "file_format": "svg",
+      "structure": "embedded_raster",
+      "description": null,
+      "tags": [
+        "Organisms",
+        "Mammals",
+        "Vertebrates",
+        "Comparative anatomy",
+        "Mammalia",
+        "Rodentia",
+        "Mus musculus"
+      ],
+      "scientific_name": "Mus musculus",
+      "batch": "b0000",
+      "review_sheet_url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42249870031-1-b0000.review.png",
+      "review_sheet_sha256": "5ccc96caaebd7a4bbcb082862e586147d3a68cdb81aebb8e9ae1df20b9bb3b3e",
+      "visual_verdict": "usable_as_schematic_component",
+      "observations": "光滑米色三维脑形器官插图；仅确认器官示意外观，SVG实际含位图，不能称纯矢量或独立验证小鼠解剖。",
+      "scientific_detail_validation": "not_independently_verified",
+      "native_editability_tested": false
+    },
+    {
+      "tile": 2,
+      "id": "togo-bbb03375c1d7e8860729",
+      "title": "Indian elephant",
+      "source_id": "25",
+      "source_url": "https://doi.org/10.7875/togopic.2008.25",
+      "original_sha256": "9a9bdcb240c6e9bf00f4ef875346bf8e0b0fcfefbaed22089aa42071d537a2c5",
+      "preview_sha256": "602cdbe378720c909e9e1d6ed64b059d95b285d563622e51ccc5eb7e63b83050",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42249870031-1-b0000.tar.gz",
+        "member": "files/9a/9a9bdcb240c6e9bf00f4ef875346bf8e0b0fcfefbaed22089aa42071d537a2c5.png"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42249870031-1-b0000.tar.gz",
+        "member": "previews/9a9bdcb240c6e9bf00f4ef875346bf8e0b0fcfefbaed22089aa42071d537a2c5.png"
+      },
+      "file_format": "png",
+      "structure": "raster",
+      "description": null,
+      "tags": [
+        "Organisms",
+        "Mammals",
+        "Vertebrates",
+        "Comparative anatomy",
+        "Mammalia",
+        "Proboscidea",
+        "Elephas maximus"
+      ],
+      "scientific_name": "Elephas maximus",
+      "batch": "b0000",
+      "review_sheet_url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42249870031-1-b0000.review.png",
+      "review_sheet_sha256": "5ccc96caaebd7a4bbcb082862e586147d3a68cdb81aebb8e9ae1df20b9bb3b3e",
+      "visual_verdict": "scope_pending",
+      "observations": "大象头部与部分肩躯干的摄影外观裁片；不是完整动物。原始制作方式未确认，建议首版隔离待核范围。",
+      "scientific_detail_validation": "not_independently_verified",
+      "native_editability_tested": false,
+      "recommendation": "quarantine_pending_scope_confirmation"
+    },
+    {
+      "tile": 3,
+      "id": "togo-e0ed6ca8d8a423d60c04",
+      "title": "Anopheles gambiae",
+      "source_id": "46",
+      "source_url": "https://doi.org/10.7875/togopic.2008.46",
+      "original_sha256": "74e12ba3104a9abf4c004548d4dfc1381b7672cab15ebbb78fe6618ddc287530",
+      "preview_sha256": "27be157bfca6f577b7b9f25f53978c91abfcfaca84b2b240d883e88e7592d8e7",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42249870031-1-b0000.tar.gz",
+        "member": "files/74/74e12ba3104a9abf4c004548d4dfc1381b7672cab15ebbb78fe6618ddc287530.png"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42249870031-1-b0000.tar.gz",
+        "member": "previews/74e12ba3104a9abf4c004548d4dfc1381b7672cab15ebbb78fe6618ddc287530.png"
+      },
+      "file_format": "png",
+      "structure": "raster",
+      "description": null,
+      "tags": [
+        "Organisms",
+        "Entomology",
+        "Insects",
+        "Arthropods",
+        "Insect physiology",
+        "Insecta",
+        "Diptera",
+        "Anopheles gambiae"
+      ],
+      "scientific_name": "Anopheles gambiae",
+      "batch": "b0000",
+      "review_sheet_url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42249870031-1-b0000.review.png",
+      "review_sheet_sha256": "5ccc96caaebd7a4bbcb082862e586147d3a68cdb81aebb8e9ae1df20b9bb3b3e",
+      "visual_verdict": "scope_pending",
+      "observations": "具细足与翅的蚊虫侧面，呈低分辨率摄影外观；不能凭图确认冈比亚按蚊物种，建议范围待核。",
+      "scientific_detail_validation": "not_independently_verified",
+      "native_editability_tested": false,
+      "recommendation": "quarantine_pending_scope_confirmation"
+    },
+    {
+      "tile": 4,
+      "id": "togo-4df229f3035479dba19e",
+      "title": "Cyanobacteria",
+      "source_id": "69",
+      "source_url": "https://doi.org/10.7875/togopic.2008.69",
+      "original_sha256": "935e08ec63af3db0d0781efc4e4eda63f0290bd61cc2d8cfa3a40f9251483f4c",
+      "preview_sha256": "4d67499877e64e85425684f9a8450f3e5178911c9969563ffe171505448513b9",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42249870031-1-b0000.tar.gz",
+        "member": "files/93/935e08ec63af3db0d0781efc4e4eda63f0290bd61cc2d8cfa3a40f9251483f4c.png"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42249870031-1-b0000.tar.gz",
+        "member": "previews/935e08ec63af3db0d0781efc4e4eda63f0290bd61cc2d8cfa3a40f9251483f4c.png"
+      },
+      "file_format": "png",
+      "structure": "raster",
+      "description": null,
+      "tags": [
+        "Organisms",
+        "Microbiology",
+        "Bacteriology",
+        "Molecular biology",
+        "Genome",
+        "Taxonomy",
+        "Synechocystis sp.PCC 6803"
+      ],
+      "scientific_name": "Synechocystis sp.PCC 6803",
+      "batch": "b0000",
+      "review_sheet_url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42249870031-1-b0000.review.png",
+      "review_sheet_sha256": "5ccc96caaebd7a4bbcb082862e586147d3a68cdb81aebb8e9ae1df20b9bb3b3e",
+      "visual_verdict": "scope_pending",
+      "observations": "蓝青色带颗粒纹理的圆形细胞簇；缩略图无法区分绘制、渲染或显微图，范围待核。",
+      "scientific_detail_validation": "not_independently_verified",
+      "native_editability_tested": false,
+      "recommendation": "quarantine_pending_scope_confirmation"
+    },
+    {
+      "tile": 5,
+      "id": "togo-656ee5e90412f0710f13",
+      "title": "Trypanosome",
+      "source_id": "121",
+      "source_url": "https://doi.org/10.7875/togopic.2008.121",
+      "original_sha256": "9de9491a4c5876db9b01e52c480d0747736838f45f94fdcbd078530d0790a15c",
+      "preview_sha256": "8ccfd8089d9329e78de7a416b1a4b87026447c9eb08eb5750de474a75caa5d4b",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42249870031-1-b0000.tar.gz",
+        "member": "files/9d/9de9491a4c5876db9b01e52c480d0747736838f45f94fdcbd078530d0790a15c.png"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42249870031-1-b0000.tar.gz",
+        "member": "previews/9de9491a4c5876db9b01e52c480d0747736838f45f94fdcbd078530d0790a15c.png"
+      },
+      "file_format": "png",
+      "structure": "raster",
+      "description": null,
+      "tags": [
+        "Organisms",
+        "Microbiology",
+        "Protists",
+        "Unicellular organisms",
+        "Cell biology",
+        "Taxonomy",
+        "Kinetoplastea",
+        "Trypanosomatida",
+        "Trypanosoma brucei"
+      ],
+      "scientific_name": "Trypanosoma brucei",
+      "batch": "b0000",
+      "review_sheet_url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42249870031-1-b0000.review.png",
+      "review_sheet_sha256": "5ccc96caaebd7a4bbcb082862e586147d3a68cdb81aebb8e9ae1df20b9bb3b3e",
+      "visual_verdict": "usable_as_schematic_component",
+      "observations": "光滑蓝色弯曲鞭毛样微生物示意；看起来是着色插图，可作概念部件，物种细节未独立验证。",
+      "scientific_detail_validation": "not_independently_verified",
+      "native_editability_tested": false
+    },
+    {
+      "tile": 6,
+      "id": "togo-f84444df6d46ba607a6f",
+      "title": "Red fox",
+      "source_id": "4",
+      "source_url": "https://doi.org/10.7875/togopic.2008.4",
+      "original_sha256": "99edaa44b02b58e363744281b4d98d84efc99f9f741b8c3aa0477e70d307607a",
+      "preview_sha256": "817b41679beb4b0a0cd525ca05f552873328e2985315d226ad142ee82c9bb9f8",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42249870031-1-b0000.tar.gz",
+        "member": "files/99/99edaa44b02b58e363744281b4d98d84efc99f9f741b8c3aa0477e70d307607a.png"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42249870031-1-b0000.tar.gz",
+        "member": "previews/99edaa44b02b58e363744281b4d98d84efc99f9f741b8c3aa0477e70d307607a.png"
+      },
+      "file_format": "png",
+      "structure": "raster",
+      "description": null,
+      "tags": [
+        "Organisms",
+        "Mammals",
+        "Vertebrates",
+        "Comparative anatomy",
+        "Mammalia",
+        "Carnivora",
+        "Vulpes vulpes"
+      ],
+      "scientific_name": "Vulpes vulpes",
+      "batch": "b0000",
+      "review_sheet_url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42249870031-1-b0000.review.png",
+      "review_sheet_sha256": "5ccc96caaebd7a4bbcb082862e586147d3a68cdb81aebb8e9ae1df20b9bb3b3e",
+      "visual_verdict": "scope_pending",
+      "observations": "狐狸头部摄影外观裁片；不是全身，首版范围待核。",
+      "scientific_detail_validation": "not_independently_verified",
+      "native_editability_tested": false,
+      "recommendation": "quarantine_pending_scope_confirmation"
+    },
+    {
+      "tile": 7,
+      "id": "togo-c58760ac93063a69b77a",
+      "title": "stem cell",
+      "source_id": "317",
+      "source_url": "https://doi.org/10.7875/togopic.2013.9",
+      "original_sha256": "85f57a26c47f7be13247b4280a4d5e5a3c6f659bc794fb2c8628fcd43d8ca49b",
+      "preview_sha256": "6117dde8b3560ce034f442e2bdc2b9173a9c0b893d35f6f93b9d3b41f7522e2a",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42249870031-1-b0000.tar.gz",
+        "member": "files/85/85f57a26c47f7be13247b4280a4d5e5a3c6f659bc794fb2c8628fcd43d8ca49b.svg"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42249870031-1-b0000.tar.gz",
+        "member": "previews/85f57a26c47f7be13247b4280a4d5e5a3c6f659bc794fb2c8628fcd43d8ca49b.png"
+      },
+      "file_format": "svg",
+      "structure": "mixed",
+      "description": null,
+      "tags": [
+        "Cell",
+        "Cell biology",
+        "Cell culture",
+        "Histology",
+        "Microscope",
+        "Life science"
+      ],
+      "scientific_name": null,
+      "batch": "b0000",
+      "review_sheet_url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42249870031-1-b0000.review.png",
+      "review_sheet_sha256": "5ccc96caaebd7a4bbcb082862e586147d3a68cdb81aebb8e9ae1df20b9bb3b3e",
+      "visual_verdict": "usable_as_schematic_component",
+      "observations": "蓝色圆形细胞及橙黄色核的平面/渐变插图；可作细胞示意，不能从外观认证干细胞状态。",
+      "scientific_detail_validation": "not_independently_verified",
+      "native_editability_tested": false
+    },
+    {
+      "tile": 8,
+      "id": "togo-8753bf31132fe8d4589d",
+      "title": "Tobacco hornworm larvae",
+      "source_id": "436",
+      "source_url": "https://doi.org/10.7875/togopic.2015.12",
+      "original_sha256": "34a827eceaaf1904680e2264ea434d52816f2bccd643aa10f005a0b16aeb26ed",
+      "preview_sha256": "631bd28ae8b482fafb7a9857b069e515ec3e56d6e8b6a46073044b198d653a6b",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42249870031-1-b0000.tar.gz",
+        "member": "files/34/34a827eceaaf1904680e2264ea434d52816f2bccd643aa10f005a0b16aeb26ed.svg"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42249870031-1-b0000.tar.gz",
+        "member": "previews/34a827eceaaf1904680e2264ea434d52816f2bccd643aa10f005a0b16aeb26ed.png"
+      },
+      "file_format": "svg",
+      "structure": "pure_vector",
+      "description": null,
+      "tags": [
+        "Organisms",
+        "Entomology",
+        "Insects",
+        "Arthropods",
+        "Insect physiology",
+        "Insecta",
+        "Lepidoptera",
+        "Manduca sexta"
+      ],
+      "scientific_name": "Manduca sexta",
+      "batch": "b0000",
+      "review_sheet_url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42249870031-1-b0000.review.png",
+      "review_sheet_sha256": "5ccc96caaebd7a4bbcb082862e586147d3a68cdb81aebb8e9ae1df20b9bb3b3e",
+      "visual_verdict": "usable_as_schematic_component",
+      "observations": "绿色有尾角的幼虫完整绘制形象；有自然纹理但云端结构记录为纯矢量，不能只因写实外观就排除。",
+      "scientific_detail_validation": "not_independently_verified",
+      "native_editability_tested": false
+    },
+    {
+      "tile": 9,
+      "id": "togo-0759bb0ba8d79eca3429",
+      "title": "Bactrian camel",
+      "source_id": "167",
+      "source_url": "https://doi.org/10.7875/togopic.2008.167",
+      "original_sha256": "c4f435af65f748c6f20f34619914accda48c75b4e9f885947911a6463be6e240",
+      "preview_sha256": "598367cbb59d85510cc7311ae60fdd8360b50e06396c2c26762f01418c737329",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42249870031-1-b0000.tar.gz",
+        "member": "files/c4/c4f435af65f748c6f20f34619914accda48c75b4e9f885947911a6463be6e240.png"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42249870031-1-b0000.tar.gz",
+        "member": "previews/c4f435af65f748c6f20f34619914accda48c75b4e9f885947911a6463be6e240.png"
+      },
+      "file_format": "png",
+      "structure": "raster",
+      "description": null,
+      "tags": [
+        "Organisms",
+        "Mammals",
+        "Vertebrates",
+        "Veterinary medicine",
+        "Mammalia",
+        "Artiodactyla",
+        "Camelus ferus"
+      ],
+      "scientific_name": "Camelus ferus",
+      "batch": "b0000",
+      "review_sheet_url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42249870031-1-b0000.review.png",
+      "review_sheet_sha256": "5ccc96caaebd7a4bbcb082862e586147d3a68cdb81aebb8e9ae1df20b9bb3b3e",
+      "visual_verdict": "scope_pending",
+      "observations": "双峰骆驼全身摄影外观；动物主体看似完整，但制作方式未确认，首版范围待核。",
+      "scientific_detail_validation": "not_independently_verified",
+      "native_editability_tested": false,
+      "recommendation": "quarantine_pending_scope_confirmation"
+    },
+    {
+      "tile": 10,
+      "id": "togo-ed2274b17370ba17b788",
+      "title": "Rama (llama)",
+      "source_id": "208",
+      "source_url": "https://doi.org/10.7875/togopic.2008.208",
+      "original_sha256": "fc0ba96addfbf809f2adf7502c850bd7396faba420c0b0aa9094aa92b7facdd6",
+      "preview_sha256": "da2f5534b0d4b03887e41034f0b3d35ffa59b25c51194113783f9ecca47e5729",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42249870031-1-b0000.tar.gz",
+        "member": "files/fc/fc0ba96addfbf809f2adf7502c850bd7396faba420c0b0aa9094aa92b7facdd6.png"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42249870031-1-b0000.tar.gz",
+        "member": "previews/fc0ba96addfbf809f2adf7502c850bd7396faba420c0b0aa9094aa92b7facdd6.png"
+      },
+      "file_format": "png",
+      "structure": "raster",
+      "description": null,
+      "tags": [
+        "Organisms",
+        "Mammals",
+        "Vertebrates",
+        "Veterinary medicine",
+        "Mammalia",
+        "Artiodactyla",
+        "Lama glama"
+      ],
+      "scientific_name": "Lama glama",
+      "batch": "b0000",
+      "review_sheet_url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42249870031-1-b0000.review.png",
+      "review_sheet_sha256": "5ccc96caaebd7a4bbcb082862e586147d3a68cdb81aebb8e9ae1df20b9bb3b3e",
+      "visual_verdict": "scope_pending",
+      "observations": "羊驼全身摄影外观；保留来源命名，不由缩略图校正分类，首版范围待核。",
+      "scientific_detail_validation": "not_independently_verified",
+      "native_editability_tested": false,
+      "recommendation": "quarantine_pending_scope_confirmation"
+    },
+    {
+      "tile": 11,
+      "id": "togo-793fc85e63aa0b84ff53",
+      "title": "Gray bombardier Loris",
+      "source_id": "143",
+      "source_url": "https://doi.org/10.7875/togopic.2008.143",
+      "original_sha256": "5be959b649f8aad918022febd767286722b56a2fec24895e483b09bf98c79f2b",
+      "preview_sha256": "c39efddef2b7e24cea56e0060f80551cf2ae55693a0a1a1328b502306da21861",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42249870031-1-b0000.tar.gz",
+        "member": "files/5b/5be959b649f8aad918022febd767286722b56a2fec24895e483b09bf98c79f2b.png"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42249870031-1-b0000.tar.gz",
+        "member": "previews/5be959b649f8aad918022febd767286722b56a2fec24895e483b09bf98c79f2b.png"
+      },
+      "file_format": "png",
+      "structure": "raster",
+      "description": null,
+      "tags": [
+        "Organisms",
+        "Mammals",
+        "Vertebrates",
+        "Comparative anatomy",
+        "Mammalia",
+        "Primates",
+        "Loris lydekkerianus"
+      ],
+      "scientific_name": "Loris lydekkerianus",
+      "batch": "b0000",
+      "review_sheet_url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42249870031-1-b0000.review.png",
+      "review_sheet_sha256": "5ccc96caaebd7a4bbcb082862e586147d3a68cdb81aebb8e9ae1df20b9bb3b3e",
+      "visual_verdict": "scope_pending",
+      "observations": "眼睛突出的灵长类头部摄影外观裁片；不是全身，不独立鉴定物种。",
+      "scientific_detail_validation": "not_independently_verified",
+      "native_editability_tested": false,
+      "recommendation": "quarantine_pending_scope_confirmation"
+    },
+    {
+      "tile": 12,
+      "id": "togo-831699021d07eec68bba",
+      "title": "Mouse in J-phenome",
+      "source_id": "452",
+      "source_url": "https://doi.org/10.7875/togopic.2016.14",
+      "original_sha256": "fb32a50420465cc91f29d766fe7f6e26ed59a5790d5ab101ce1d5ce33aee6341",
+      "preview_sha256": "27d9be14381505570a473349bbc9a69635aec71488ec825021cd44317d2f61ab",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42249870031-1-b0000.tar.gz",
+        "member": "files/fb/fb32a50420465cc91f29d766fe7f6e26ed59a5790d5ab101ce1d5ce33aee6341.svg"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42249870031-1-b0000.tar.gz",
+        "member": "previews/fb32a50420465cc91f29d766fe7f6e26ed59a5790d5ab101ce1d5ce33aee6341.png"
+      },
+      "file_format": "svg",
+      "structure": "pure_vector",
+      "description": null,
+      "tags": [
+        "Organisms",
+        "Mammals",
+        "Vertebrates",
+        "Comparative anatomy",
+        "Mammalia",
+        "Rodentia",
+        "Mus musculus"
+      ],
+      "scientific_name": "Mus musculus",
+      "batch": "b0000",
+      "review_sheet_url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42249870031-1-b0000.review.png",
+      "review_sheet_sha256": "5ccc96caaebd7a4bbcb082862e586147d3a68cdb81aebb8e9ae1df20b9bb3b3e",
+      "visual_verdict": "usable_as_schematic_component",
+      "observations": "黑白细描小鼠，头、躯干、肢体及卷曲长尾均可见；是完整动物绘制示意，身体略带斜视，故不强标精确侧视。",
+      "scientific_detail_validation": "not_independently_verified",
+      "native_editability_tested": false,
+      "scientific_assertions": {
+        "object": [
+          "mouse"
+        ],
+        "species": [
+          "mouse"
+        ],
+        "role": [
+          "whole_body"
+        ],
+        "depiction_kind": "animal"
+      }
+    },
+    {
+      "tile": 13,
+      "id": "togo-ced05b1641401f60f6ad",
+      "title": "table",
+      "source_id": "344",
+      "source_url": "https://doi.org/10.7875/togopic.2013.36",
+      "original_sha256": "c79af34fc44f42472f6293dc429916fafc3d1867a4e69020b6cb783acd664933",
+      "preview_sha256": "d272f30701a8dec10355a95b00f1011321341c378eb055b759dd227997e0bd46",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42249870031-1-b0000.tar.gz",
+        "member": "files/c7/c79af34fc44f42472f6293dc429916fafc3d1867a4e69020b6cb783acd664933.svg"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42249870031-1-b0000.tar.gz",
+        "member": "previews/c79af34fc44f42472f6293dc429916fafc3d1867a4e69020b6cb783acd664933.png"
+      },
+      "file_format": "svg",
+      "structure": "pure_vector",
+      "description": null,
+      "tags": [
+        "Lab apparatus",
+        "Lab instruments",
+        "Lab techniques",
+        "Research support",
+        "Life science",
+        "Biotechnology"
+      ],
+      "scientific_name": null,
+      "batch": "b0000",
+      "review_sheet_url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42249870031-1-b0000.review.png",
+      "review_sheet_sha256": "5ccc96caaebd7a4bbcb082862e586147d3a68cdb81aebb8e9ae1df20b9bb3b3e",
+      "visual_verdict": "usable_as_schematic_component",
+      "observations": "实验工作台及抽屉的完整线面示意；不是某个实验操作。",
+      "scientific_detail_validation": "not_independently_verified",
+      "native_editability_tested": false
+    },
+    {
+      "tile": 14,
+      "id": "togo-917d93f7121b6ca4faee",
+      "title": "Red dragonfly",
+      "source_id": "6",
+      "source_url": "https://doi.org/10.7875/togopic.2008.6",
+      "original_sha256": "2b03d7a6cfbfe6bbbb996b14f2b4d5694693fc7b638b843132c1e5d27e1e84bf",
+      "preview_sha256": "fc752f46cba845cbbff541cc864e3779f9dab78acd21c0e41e11d9dd5fea746f",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42249870031-1-b0000.tar.gz",
+        "member": "files/2b/2b03d7a6cfbfe6bbbb996b14f2b4d5694693fc7b638b843132c1e5d27e1e84bf.png"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42249870031-1-b0000.tar.gz",
+        "member": "previews/2b03d7a6cfbfe6bbbb996b14f2b4d5694693fc7b638b843132c1e5d27e1e84bf.png"
+      },
+      "file_format": "png",
+      "structure": "raster",
+      "description": null,
+      "tags": [
+        "Organisms",
+        "Entomology",
+        "Insects",
+        "Arthropods",
+        "Insect physiology",
+        "Insecta",
+        "Odonata",
+        "Sympetrum frequens"
+      ],
+      "scientific_name": "Sympetrum frequens",
+      "batch": "b0000",
+      "review_sheet_url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42249870031-1-b0000.review.png",
+      "review_sheet_sha256": "5ccc96caaebd7a4bbcb082862e586147d3a68cdb81aebb8e9ae1df20b9bb3b3e",
+      "visual_verdict": "scope_pending",
+      "observations": "红色蜻蜓摄影外观且缩略图细节较模糊；范围待核，不据此验证翅脉。",
+      "scientific_detail_validation": "not_independently_verified",
+      "native_editability_tested": false,
+      "recommendation": "quarantine_pending_scope_confirmation"
+    },
+    {
+      "tile": 15,
+      "id": "togo-5d72b6572ce1f4c2f415",
+      "title": "Amborella trichopoda",
+      "source_id": "13",
+      "source_url": "https://doi.org/10.7875/togopic.2008.13",
+      "original_sha256": "68480d13887f60ef015accd3a3f2ad9813fb987f7dbc1712db4402b50b1aed35",
+      "preview_sha256": "0586c39b3895df135946a01c6ad58b76a30486b6be6bbaead86e798b02578f3d",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42249870031-1-b0000.tar.gz",
+        "member": "files/68/68480d13887f60ef015accd3a3f2ad9813fb987f7dbc1712db4402b50b1aed35.png"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42249870031-1-b0000.tar.gz",
+        "member": "previews/68480d13887f60ef015accd3a3f2ad9813fb987f7dbc1712db4402b50b1aed35.png"
+      },
+      "file_format": "png",
+      "structure": "raster",
+      "description": null,
+      "tags": [
+        "Organisms",
+        "Botany",
+        "Plant taxonomy",
+        "Plant physiology",
+        "Taxonomy",
+        "Angiosperms (Magnoliopsida)",
+        "Amborellaceae",
+        "Amborella trichopoda"
+      ],
+      "scientific_name": "Amborella trichopoda",
+      "batch": "b0000",
+      "review_sheet_url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42249870031-1-b0000.review.png",
+      "review_sheet_sha256": "5ccc96caaebd7a4bbcb082862e586147d3a68cdb81aebb8e9ae1df20b9bb3b3e",
+      "visual_verdict": "scope_pending",
+      "observations": "绿色枝叶的摄影外观；属于植物部件而非完整植株，首版制作方式待核。",
+      "scientific_detail_validation": "not_independently_verified",
+      "native_editability_tested": false,
+      "recommendation": "quarantine_pending_scope_confirmation"
+    },
+    {
+      "tile": 16,
+      "id": "togo-5413bc1724d2fe94118e",
+      "title": "Spider mite",
+      "source_id": "464",
+      "source_url": "https://doi.org/10.7875/togopic.2016.26",
+      "original_sha256": "b9b1b5393c1d0e102c66e950cd01894cd28ab30cb27b79e02a8f5b20fe098bd2",
+      "preview_sha256": "1c2831086dbb9f5c48e8e3d70f897f1b64deb11c9124caa3ecf44da6a586d5d7",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42249870031-1-b0000.tar.gz",
+        "member": "files/b9/b9b1b5393c1d0e102c66e950cd01894cd28ab30cb27b79e02a8f5b20fe098bd2.svg"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42249870031-1-b0000.tar.gz",
+        "member": "previews/b9b1b5393c1d0e102c66e950cd01894cd28ab30cb27b79e02a8f5b20fe098bd2.png"
+      },
+      "file_format": "svg",
+      "structure": "pure_vector",
+      "description": null,
+      "tags": [
+        "Organisms",
+        "Arthropods",
+        "Arachnids",
+        "Invertebrates",
+        "Arachnida",
+        "Tetranychus urticae"
+      ],
+      "scientific_name": "Tetranychus urticae",
+      "batch": "b0000",
+      "review_sheet_url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42249870031-1-b0000.review.png",
+      "review_sheet_sha256": "5ccc96caaebd7a4bbcb082862e586147d3a68cdb81aebb8e9ae1df20b9bb3b3e",
+      "visual_verdict": "usable_as_partial_component",
+      "observations": "红色螨体绘制近景，部分肢端触及/越过可见边界；可作局部身体示意，不作为完整动物候选。",
+      "scientific_detail_validation": "not_independently_verified",
+      "native_editability_tested": false
+    },
+    {
+      "tile": 17,
+      "id": "togo-8db1a54e112448f789ff",
+      "title": "Water bear",
+      "source_id": "58",
+      "source_url": "https://doi.org/10.7875/togopic.2008.58",
+      "original_sha256": "10ae365a11bfe064578ef2932b5ad39366b6bf2f965108bc091bd1477fcc364f",
+      "preview_sha256": "816660977aea46dc881b111b131347ad6ce45a8eed4308f493af0ce1c77de7ff",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42249870031-1-b0000.tar.gz",
+        "member": "files/10/10ae365a11bfe064578ef2932b5ad39366b6bf2f965108bc091bd1477fcc364f.png"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42249870031-1-b0000.tar.gz",
+        "member": "previews/10ae365a11bfe064578ef2932b5ad39366b6bf2f965108bc091bd1477fcc364f.png"
+      },
+      "file_format": "png",
+      "structure": "raster",
+      "description": null,
+      "tags": [
+        "Organisms",
+        "Mammals",
+        "Vertebrates",
+        "Comparative anatomy",
+        "Tardigrada",
+        "Echiniscus"
+      ],
+      "scientific_name": "Echiniscus",
+      "batch": "b0000",
+      "review_sheet_url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42249870031-1-b0000.review.png",
+      "review_sheet_sha256": "5ccc96caaebd7a4bbcb082862e586147d3a68cdb81aebb8e9ae1df20b9bb3b3e",
+      "visual_verdict": "scope_pending",
+      "observations": "蓝灰色水熊表面微细纹理具有显微图外观；无法仅凭联系表证实来源，建议首版隔离待核显微图范围。",
+      "scientific_detail_validation": "not_independently_verified",
+      "native_editability_tested": false,
+      "recommendation": "quarantine_pending_scope_confirmation"
+    },
+    {
+      "tile": 18,
+      "id": "togo-11c93b309a59b79ff731",
+      "title": "Pepper",
+      "source_id": "111",
+      "source_url": "https://doi.org/10.7875/togopic.2008.111",
+      "original_sha256": "89117ff0afd1c62bcf34c06de284b8796b02ac567c5d9a7d35a21711fc0c7c45",
+      "preview_sha256": "774a033a3a8d2f6bfea75c280bb4db1da28adca72c7060ea3fc05b05c3dcb4cd",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42249870031-1-b0000.tar.gz",
+        "member": "files/89/89117ff0afd1c62bcf34c06de284b8796b02ac567c5d9a7d35a21711fc0c7c45.png"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42249870031-1-b0000.tar.gz",
+        "member": "previews/89117ff0afd1c62bcf34c06de284b8796b02ac567c5d9a7d35a21711fc0c7c45.png"
+      },
+      "file_format": "png",
+      "structure": "raster",
+      "description": null,
+      "tags": [
+        "Organisms",
+        "Botany",
+        "Crop science",
+        "Agriculture",
+        "Plant taxonomy",
+        "Angiosperms (Magnoliopsida)",
+        "Solanaceae",
+        "Capsicum annuum"
+      ],
+      "scientific_name": "Capsicum annuum",
+      "batch": "b0000",
+      "review_sheet_url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42249870031-1-b0000.review.png",
+      "review_sheet_sha256": "5ccc96caaebd7a4bbcb082862e586147d3a68cdb81aebb8e9ae1df20b9bb3b3e",
+      "visual_verdict": "scope_pending",
+      "observations": "红辣椒和绿色叶片的摄影外观；食物/植物部件，首版范围待核。",
+      "scientific_detail_validation": "not_independently_verified",
+      "native_editability_tested": false,
+      "recommendation": "quarantine_pending_scope_confirmation"
+    },
+    {
+      "tile": 19,
+      "id": "togo-a4bc5a3e798426e38f57",
+      "title": "Saws spatula fern",
+      "source_id": "140",
+      "source_url": "https://doi.org/10.7875/togopic.2008.140",
+      "original_sha256": "a4056475c02ee8b4cc9dbdbcd3929b346cce8da9841bcb90eee92c6ee268d27f",
+      "preview_sha256": "94be7412ee5a2a8c7a0f145b768b962375eb31ee3d193a9db70194425ccfd023",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42249870031-1-b0000.tar.gz",
+        "member": "files/a4/a4056475c02ee8b4cc9dbdbcd3929b346cce8da9841bcb90eee92c6ee268d27f.png"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42249870031-1-b0000.tar.gz",
+        "member": "previews/a4056475c02ee8b4cc9dbdbcd3929b346cce8da9841bcb90eee92c6ee268d27f.png"
+      },
+      "file_format": "png",
+      "structure": "raster",
+      "description": null,
+      "tags": [
+        "Organisms",
+        "Botany",
+        "Plant taxonomy",
+        "Plant physiology",
+        "Taxonomy",
+        "Polypodiopsida",
+        "Polypodiales",
+        "Diplazium tomitaroanum Masam"
+      ],
+      "scientific_name": "Diplazium tomitaroanum Masam",
+      "batch": "b0000",
+      "review_sheet_url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42249870031-1-b0000.review.png",
+      "review_sheet_sha256": "5ccc96caaebd7a4bbcb082862e586147d3a68cdb81aebb8e9ae1df20b9bb3b3e",
+      "visual_verdict": "scope_pending",
+      "observations": "深绿弯曲分节形状；来源标题是蕨类，但联系表不足以核对植物部位及绘制方式，保留对象不确定，不改称幼虫。",
+      "scientific_detail_validation": "not_independently_verified",
+      "native_editability_tested": false,
+      "recommendation": "quarantine_pending_scope_confirmation"
+    },
+    {
+      "tile": 20,
+      "id": "togo-2bbcfc8f557e00cd98ce",
+      "title": "A scientist at the talk",
+      "source_id": "486",
+      "source_url": "https://doi.org/10.7875/togopic.2017.20",
+      "original_sha256": "e831d0141288a699472ecc51e56592e3a8b67f6a7d886805a8cbeaddfacbfdf1",
+      "preview_sha256": "d6d4d6d347ff5516486448ec3e3466d397da7e5ce394053a95aa7a3c864097d3",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42249870031-1-b0000.tar.gz",
+        "member": "files/e8/e831d0141288a699472ecc51e56592e3a8b67f6a7d886805a8cbeaddfacbfdf1.svg"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42249870031-1-b0000.tar.gz",
+        "member": "previews/e831d0141288a699472ecc51e56592e3a8b67f6a7d886805a8cbeaddfacbfdf1.png"
+      },
+      "file_format": "svg",
+      "structure": "pure_vector",
+      "description": null,
+      "tags": [
+        "Researchers",
+        "Icon",
+        "Research activities",
+        "Life science",
+        "Education",
+        "Healthcare"
+      ],
+      "scientific_name": null,
+      "batch": "b0000",
+      "review_sheet_url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42249870031-1-b0000.review.png",
+      "review_sheet_sha256": "5ccc96caaebd7a4bbcb082862e586147d3a68cdb81aebb8e9ae1df20b9bb3b3e",
+      "visual_verdict": "usable_as_schematic_component",
+      "observations": "带话筒/对话框的讲者与听众圆形场景图；是科研交流概念场景，不是独立医师人体。",
+      "scientific_detail_validation": "not_independently_verified",
+      "native_editability_tested": false
+    },
+    {
+      "tile": 21,
+      "id": "togo-213f3f0f65b0ef4a7a89",
+      "title": "Turkey (Galliformes)",
+      "source_id": "71",
+      "source_url": "https://doi.org/10.7875/togopic.2008.71",
+      "original_sha256": "361387e0d1184aeb91763e9923108fd11985304c4d319fab64b69f320ee8f66f",
+      "preview_sha256": "32657ebb3cb3dfb7c890cdeb2464cae19ad778eeaf61e8a3e31ed5233226bcfd",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42249870031-1-b0000.tar.gz",
+        "member": "files/36/361387e0d1184aeb91763e9923108fd11985304c4d319fab64b69f320ee8f66f.png"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42249870031-1-b0000.tar.gz",
+        "member": "previews/361387e0d1184aeb91763e9923108fd11985304c4d319fab64b69f320ee8f66f.png"
+      },
+      "file_format": "png",
+      "structure": "raster",
+      "description": null,
+      "tags": [
+        "Organisms",
+        "Entomology",
+        "Insects",
+        "Arthropods",
+        "Insect physiology",
+        "Aves",
+        "Phasianidae",
+        "Meleagris gallopavo"
+      ],
+      "scientific_name": "Meleagris gallopavo",
+      "batch": "b0000",
+      "review_sheet_url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42249870031-1-b0000.review.png",
+      "review_sheet_sha256": "5ccc96caaebd7a4bbcb082862e586147d3a68cdb81aebb8e9ae1df20b9bb3b3e",
+      "visual_verdict": "scope_pending",
+      "observations": "火鸡头颈摄影外观裁片；局部身体且来源制作方式待核。",
+      "scientific_detail_validation": "not_independently_verified",
+      "native_editability_tested": false,
+      "recommendation": "quarantine_pending_scope_confirmation"
+    },
+    {
+      "tile": 22,
+      "id": "togo-0e53c19242d8d986ac4a",
+      "title": "European Roh radish",
+      "source_id": "88",
+      "source_url": "https://doi.org/10.7875/togopic.2008.88",
+      "original_sha256": "278662c317d14da43157d8cce97ab273d30dee12c490dde41b4d585e3dfa2bd9",
+      "preview_sha256": "1599089f7299325f2f074f1d8ee59b395f5e108178e5d222b237d40d15a7050a",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42249870031-1-b0000.tar.gz",
+        "member": "files/27/278662c317d14da43157d8cce97ab273d30dee12c490dde41b4d585e3dfa2bd9.png"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42249870031-1-b0000.tar.gz",
+        "member": "previews/278662c317d14da43157d8cce97ab273d30dee12c490dde41b4d585e3dfa2bd9.png"
+      },
+      "file_format": "png",
+      "structure": "raster",
+      "description": null,
+      "tags": [
+        "Organisms",
+        "Botany",
+        "Crop science",
+        "Agriculture",
+        "Plant taxonomy",
+        "Angiosperms (Magnoliopsida)",
+        "Brassicaceae",
+        "Raphanus raphanistrum"
+      ],
+      "scientific_name": "Raphanus raphanistrum",
+      "batch": "b0000",
+      "review_sheet_url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42249870031-1-b0000.review.png",
+      "review_sheet_sha256": "5ccc96caaebd7a4bbcb082862e586147d3a68cdb81aebb8e9ae1df20b9bb3b3e",
+      "visual_verdict": "scope_pending",
+      "observations": "白花与枝茎摄影外观；局部植物，不由图鉴定欧洲野萝卜物种。",
+      "scientific_detail_validation": "not_independently_verified",
+      "native_editability_tested": false,
+      "recommendation": "quarantine_pending_scope_confirmation"
+    },
+    {
+      "tile": 23,
+      "id": "togo-d1e3aa1f4c94d8fb3ac6",
+      "title": "Hydra",
+      "source_id": "159",
+      "source_url": "https://doi.org/10.7875/togopic.2008.159",
+      "original_sha256": "a658037e152819092103a0b34a945c198601ded38e35b0ccc48785e10923ec60",
+      "preview_sha256": "dbe660dde106032e6dc643485c7dc3dcbecb7dafcac00b2c598effcb8f5397ce",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42249870031-1-b0000.tar.gz",
+        "member": "files/a6/a658037e152819092103a0b34a945c198601ded38e35b0ccc48785e10923ec60.png"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42249870031-1-b0000.tar.gz",
+        "member": "previews/a658037e152819092103a0b34a945c198601ded38e35b0ccc48785e10923ec60.png"
+      },
+      "file_format": "png",
+      "structure": "raster",
+      "description": null,
+      "tags": [
+        "Organisms",
+        "Cnidarians",
+        "Invertebrates",
+        "Marine biology",
+        "Hydrozoa",
+        "Anthoathecata",
+        "Hydra magnipapillata"
+      ],
+      "scientific_name": "Hydra magnipapillata",
+      "batch": "b0000",
+      "review_sheet_url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42249870031-1-b0000.review.png",
+      "review_sheet_sha256": "5ccc96caaebd7a4bbcb082862e586147d3a68cdb81aebb8e9ae1df20b9bb3b3e",
+      "visual_verdict": "scope_pending",
+      "observations": "细小灰色水螅轮廓带颗粒/模糊边缘；制作方式与微观细节不可确认，范围待核。",
+      "scientific_detail_validation": "not_independently_verified",
+      "native_editability_tested": false,
+      "recommendation": "quarantine_pending_scope_confirmation"
+    },
+    {
+      "tile": 24,
+      "id": "togo-4f82e7525241f6a8f4e0",
+      "title": "dish",
+      "source_id": "297",
+      "source_url": "https://doi.org/10.7875/togopic.2012.7",
+      "original_sha256": "6e6b1ee373cbf020a6d38bd4f3a072bd187c1949f05a1909607eaf7384fc6b58",
+      "preview_sha256": "80fc586a9663f6dee7477bbf23202db960aa72ac1935b8f1652f427c1a5ac2ae",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42249870031-1-b0000.tar.gz",
+        "member": "files/6e/6e6b1ee373cbf020a6d38bd4f3a072bd187c1949f05a1909607eaf7384fc6b58.svg"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42249870031-1-b0000.tar.gz",
+        "member": "previews/6e6b1ee373cbf020a6d38bd4f3a072bd187c1949f05a1909607eaf7384fc6b58.png"
+      },
+      "file_format": "svg",
+      "structure": "mixed",
+      "description": null,
+      "tags": [
+        "Lab equipment",
+        "Lab instruments",
+        "Lab techniques",
+        "Research support",
+        "Life science",
+        "Biotechnology"
+      ],
+      "scientific_name": null,
+      "batch": "b0000",
+      "review_sheet_url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42249870031-1-b0000.review.png",
+      "review_sheet_sha256": "5ccc96caaebd7a4bbcb082862e586147d3a68cdb81aebb8e9ae1df20b9bb3b3e",
+      "visual_verdict": "usable_as_schematic_component",
+      "observations": "浅色培养皿小图，画布留白较多并含署名标记；可作器材部件，但需尊重署名并在具体排版中检查尺寸。",
+      "scientific_detail_validation": "not_independently_verified",
+      "native_editability_tested": false
+    },
+    {
+      "tile": 25,
+      "id": "togo-a83b01b59ef30b2eb636",
+      "title": "Elk",
+      "source_id": "174",
+      "source_url": "https://doi.org/10.7875/togopic.2008.174",
+      "original_sha256": "384a2a2204ba938272e2a77b1ab4bccb0e62342345b8066c5824f55b674d6b3c",
+      "preview_sha256": "543ca88973f39429a49048333c75e83e30336e207347dadd85b07b56ed1e59d8",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42249870031-1-b0000.tar.gz",
+        "member": "files/38/384a2a2204ba938272e2a77b1ab4bccb0e62342345b8066c5824f55b674d6b3c.png"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42249870031-1-b0000.tar.gz",
+        "member": "previews/384a2a2204ba938272e2a77b1ab4bccb0e62342345b8066c5824f55b674d6b3c.png"
+      },
+      "file_format": "png",
+      "structure": "raster",
+      "description": null,
+      "tags": [
+        "Organisms",
+        "Mammals",
+        "Vertebrates",
+        "Comparative anatomy",
+        "Mammalia",
+        "Artiodactyla",
+        "Alces alces"
+      ],
+      "scientific_name": "Alces alces",
+      "batch": "b0000",
+      "review_sheet_url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42249870031-1-b0000.review.png",
+      "review_sheet_sha256": "5ccc96caaebd7a4bbcb082862e586147d3a68cdb81aebb8e9ae1df20b9bb3b3e",
+      "visual_verdict": "scope_pending",
+      "observations": "鹿角、头颈的摄影外观裁片；不是完整麋鹿动物，首版范围待核。",
+      "scientific_detail_validation": "not_independently_verified",
+      "native_editability_tested": false,
+      "recommendation": "quarantine_pending_scope_confirmation"
+    },
+    {
+      "tile": 26,
+      "id": "togo-1c89776d5c6a14271bf1",
+      "title": "Cyanobacteria in J-phenome",
+      "source_id": "456",
+      "source_url": "https://doi.org/10.7875/togopic.2016.18",
+      "original_sha256": "8171a72639c07f0c4abe7cb88f896d3a47b0aa60212eeb6e4e28be3d4df65744",
+      "preview_sha256": "3cc41268527ed8944724137a3d40305a704706d8295032e24b67b2dd0f0aceae",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42249870031-1-b0000.tar.gz",
+        "member": "files/81/8171a72639c07f0c4abe7cb88f896d3a47b0aa60212eeb6e4e28be3d4df65744.svg"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42249870031-1-b0000.tar.gz",
+        "member": "previews/8171a72639c07f0c4abe7cb88f896d3a47b0aa60212eeb6e4e28be3d4df65744.png"
+      },
+      "file_format": "svg",
+      "structure": "pure_vector",
+      "description": null,
+      "tags": [
+        "Organisms",
+        "Microbiology",
+        "Bacteriology",
+        "Molecular biology",
+        "Genome",
+        "Taxonomy",
+        "Synechocystis sp.PCC 6803"
+      ],
+      "scientific_name": "Synechocystis sp.PCC 6803",
+      "batch": "b0000",
+      "review_sheet_url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42249870031-1-b0000.review.png",
+      "review_sheet_sha256": "5ccc96caaebd7a4bbcb082862e586147d3a68cdb81aebb8e9ae1df20b9bb3b3e",
+      "visual_verdict": "usable_as_schematic_component",
+      "observations": "黑白细描的丝状细胞网络，云端记录为纯矢量；可作微生物群示意，不当成实测显微数据，也不认证每个细胞结构。",
+      "scientific_detail_validation": "not_independently_verified",
+      "native_editability_tested": false
+    },
+    {
+      "tile": 27,
+      "id": "togo-f87b6699e569ddc94122",
+      "title": "mice brain slice2",
+      "source_id": "349",
+      "source_url": "https://doi.org/10.7875/togopic.2013.41",
+      "original_sha256": "5506c563852b990d778e9d085d6e2f0ac4353ed0531b0a9e2b046c9e7bf27864",
+      "preview_sha256": "069e864d0ced8f83b1f026818548a3295ceac7721d4aa71ed42e0b3f9879972a",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42249870031-1-b0000.tar.gz",
+        "member": "files/55/5506c563852b990d778e9d085d6e2f0ac4353ed0531b0a9e2b046c9e7bf27864.svg"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42249870031-1-b0000.tar.gz",
+        "member": "previews/5506c563852b990d778e9d085d6e2f0ac4353ed0531b0a9e2b046c9e7bf27864.png"
+      },
+      "file_format": "svg",
+      "structure": "pure_vector",
+      "description": null,
+      "tags": [
+        "Organs",
+        "Animal experiments",
+        "Mammals",
+        "Neuroscience",
+        "Behavioral experiment",
+        "Mus musculus"
+      ],
+      "scientific_name": "Mus musculus",
+      "batch": "b0000",
+      "review_sheet_url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42249870031-1-b0000.review.png",
+      "review_sheet_sha256": "5ccc96caaebd7a4bbcb082862e586147d3a68cdb81aebb8e9ae1df20b9bb3b3e",
+      "visual_verdict": "usable_as_schematic_component",
+      "observations": "九幅脑切片/区域示意组成的面板；是成组解剖示意，不能当作一个完整脑或单片的独立下载。",
+      "scientific_detail_validation": "not_independently_verified",
+      "native_editability_tested": false
+    },
+    {
+      "tile": 28,
+      "id": "togo-bbe8b0bc578b94879738",
+      "title": "Gray heron",
+      "source_id": "2",
+      "source_url": "https://doi.org/10.7875/togopic.2008.2",
+      "original_sha256": "fa5b33f465fb240d220260dba576183651e587654a2dc770101f1c6098ca88ea",
+      "preview_sha256": "b26b5d7acd6ee6d9883b6f83f8b826976ec79c5cf8877e7ba2ab0be2e7574a3a",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42249870031-1-b0000.tar.gz",
+        "member": "files/fa/fa5b33f465fb240d220260dba576183651e587654a2dc770101f1c6098ca88ea.png"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42249870031-1-b0000.tar.gz",
+        "member": "previews/fa5b33f465fb240d220260dba576183651e587654a2dc770101f1c6098ca88ea.png"
+      },
+      "file_format": "png",
+      "structure": "raster",
+      "description": null,
+      "tags": [
+        "Organisms",
+        "Birds",
+        "Vertebrates",
+        "Ornithology",
+        "Aves",
+        "Ardeidae",
+        "Ardea cinerea"
+      ],
+      "scientific_name": "Ardea cinerea",
+      "batch": "b0000",
+      "review_sheet_url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42249870031-1-b0000.review.png",
+      "review_sheet_sha256": "5ccc96caaebd7a4bbcb082862e586147d3a68cdb81aebb8e9ae1df20b9bb3b3e",
+      "visual_verdict": "scope_pending",
+      "observations": "灰鹭全身摄影外观且细节较软；主体似完整，但制作方式待核。",
+      "scientific_detail_validation": "not_independently_verified",
+      "native_editability_tested": false,
+      "recommendation": "quarantine_pending_scope_confirmation"
+    },
+    {
+      "tile": 29,
+      "id": "togo-6e1ee515a8d1021cf9a3",
+      "title": "Dugesia japonica (planarian)",
+      "source_id": "124",
+      "source_url": "https://doi.org/10.7875/togopic.2008.124",
+      "original_sha256": "0673269cabc23c8719fda5021714553fcaf3c7d2c1b78fad5726f89a72f5901b",
+      "preview_sha256": "2d1a7a8ae7a1281f20ab2d35697d60ef4ec0e77e54ce991828f5b4bfe191a991",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42249870031-1-b0000.tar.gz",
+        "member": "files/06/0673269cabc23c8719fda5021714553fcaf3c7d2c1b78fad5726f89a72f5901b.png"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42249870031-1-b0000.tar.gz",
+        "member": "previews/0673269cabc23c8719fda5021714553fcaf3c7d2c1b78fad5726f89a72f5901b.png"
+      },
+      "file_format": "png",
+      "structure": "raster",
+      "description": null,
+      "tags": [
+        "Organisms",
+        "Flatworms",
+        "Invertebrates",
+        "Regenerative biology",
+        "Rhabditophora",
+        "Dugesia japonica"
+      ],
+      "scientific_name": "Dugesia japonica",
+      "batch": "b0000",
+      "review_sheet_url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42249870031-1-b0000.review.png",
+      "review_sheet_sha256": "5ccc96caaebd7a4bbcb082862e586147d3a68cdb81aebb8e9ae1df20b9bb3b3e",
+      "visual_verdict": "scope_pending",
+      "observations": "米色半透明扁平虫体带模糊内部纹理；联系表不足以排除真实显微/标本图，范围待核，不独立鉴定日本三角涡虫。",
+      "scientific_detail_validation": "not_independently_verified",
+      "native_editability_tested": false,
+      "recommendation": "quarantine_pending_scope_confirmation"
+    },
+    {
+      "tile": 30,
+      "id": "togo-3449c8a11bb771d8dbd0",
+      "title": "testis",
+      "source_id": "366",
+      "source_url": "https://doi.org/10.7875/togopic.2014.17",
+      "original_sha256": "26e8b7b4e4d60172e142ae5bcc94b08023f810b7fd70e8894ec202d929ca5328",
+      "preview_sha256": "d63cd0b5a834599159df007e0c15cb9b3d8a9f61013acc8bc8679d8d220368ab",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42249870031-1-b0000.tar.gz",
+        "member": "files/26/26e8b7b4e4d60172e142ae5bcc94b08023f810b7fd70e8894ec202d929ca5328.png"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42249870031-1-b0000.tar.gz",
+        "member": "previews/26e8b7b4e4d60172e142ae5bcc94b08023f810b7fd70e8894ec202d929ca5328.png"
+      },
+      "file_format": "png",
+      "structure": "raster",
+      "description": null,
+      "tags": [
+        "Organs",
+        "Medicine",
+        "Anatomy",
+        "Histology",
+        "Morphology",
+        "Physiology"
+      ],
+      "scientific_name": null,
+      "batch": "b0000",
+      "review_sheet_url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42249870031-1-b0000.review.png",
+      "review_sheet_sha256": "5ccc96caaebd7a4bbcb082862e586147d3a68cdb81aebb8e9ae1df20b9bb3b3e",
+      "visual_verdict": "usable_as_schematic_component",
+      "observations": "盆腔/阴囊及睾丸的局部解剖平面插图；可作结构关系示意，不是孤立睾丸或完整人体。",
+      "scientific_detail_validation": "not_independently_verified",
+      "native_editability_tested": false
+    },
+    {
+      "tile": 1,
+      "id": "togo-963f2d0ed9f781601f23",
+      "title": "Fruit fly female adult from a overhead view",
+      "source_id": "1333",
+      "source_url": "https://doi.org/10.7875/togopic.2022.369",
+      "original_sha256": "8d6c7e9dd2e492c1059c8fad49fc0b1538931d1e4c3d9b614af0bcd9c4f92f6b",
+      "preview_sha256": "493aa949b666237318602f12ac5c6c25e1b3f25977f9a1be9eb970a3531e093f",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42249870031-1-b0002.tar.gz",
+        "member": "files/8d/8d6c7e9dd2e492c1059c8fad49fc0b1538931d1e4c3d9b614af0bcd9c4f92f6b.svg"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42249870031-1-b0002.tar.gz",
+        "member": "previews/8d6c7e9dd2e492c1059c8fad49fc0b1538931d1e4c3d9b614af0bcd9c4f92f6b.png"
+      },
+      "file_format": "svg",
+      "structure": "pure_vector",
+      "description": null,
+      "tags": [
+        "Organisms",
+        "Icon",
+        "Biology",
+        "Entomology",
+        "Insects",
+        "Arthropods",
+        "Insecta",
+        "Diptera",
+        "Drosophila melanogaster"
+      ],
+      "scientific_name": "Drosophila melanogaster",
+      "batch": "b0002",
+      "review_sheet_url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42249870031-1-b0002.review.png",
+      "review_sheet_sha256": "189a7efddac8b6766d91c89ae70b3b9daa9412223f3c3fe731788dc44f894fc5",
+      "visual_verdict": "usable_as_schematic_component",
+      "observations": "果蝇样昆虫背面俯视完整示意，头胸腹、双翅和足均可见；来源称雌性成虫，但本次不独立验证性别或精确物种。",
+      "scientific_detail_validation": "not_independently_verified",
+      "native_editability_tested": false,
+      "scientific_assertions": {
+        "object": [
+          "fruit fly"
+        ],
+        "role": [
+          "whole_body"
+        ],
+        "depiction_kind": "animal",
+        "view": [
+          "dorsal"
+        ]
+      }
+    },
+    {
+      "tile": 2,
+      "id": "togo-96a634bd554949960f66",
+      "title": "Diplurans",
+      "source_id": "1025",
+      "source_url": "https://doi.org/10.7875/togopic.2022.061",
+      "original_sha256": "581db5d9271da58cbb9a277ce0f27cfd37e5592d7756270edec6e70bed8988bc",
+      "preview_sha256": "f5984d15c2d90b0db817d76e9d893857400eda390dbd1ec9c090da6110d372d0",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42249870031-1-b0002.tar.gz",
+        "member": "files/58/581db5d9271da58cbb9a277ce0f27cfd37e5592d7756270edec6e70bed8988bc.svg"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42249870031-1-b0002.tar.gz",
+        "member": "previews/581db5d9271da58cbb9a277ce0f27cfd37e5592d7756270edec6e70bed8988bc.png"
+      },
+      "file_format": "svg",
+      "structure": "pure_vector",
+      "description": null,
+      "tags": [
+        "Organisms",
+        "Entomology",
+        "Insects",
+        "Arthropods",
+        "Insect physiology",
+        "Insecta",
+        "Dicellurata",
+        "Occasjapyx japonicus"
+      ],
+      "scientific_name": "Occasjapyx japonicus",
+      "batch": "b0002",
+      "review_sheet_url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42249870031-1-b0002.review.png",
+      "review_sheet_sha256": "189a7efddac8b6766d91c89ae70b3b9daa9412223f3c3fe731788dc44f894fc5",
+      "visual_verdict": "usable_as_schematic_component",
+      "observations": "细长节肢动物完整背面绘制图，可见触角、分节躯体与尾端；来源标双尾虫，精确分类细节未核。",
+      "scientific_detail_validation": "not_independently_verified",
+      "native_editability_tested": false
+    },
+    {
+      "tile": 3,
+      "id": "togo-5f75d974a52c08d19aaf",
+      "title": "Peach (white)",
+      "source_id": "1046",
+      "source_url": "https://doi.org/10.7875/togopic.2022.082",
+      "original_sha256": "a3f169bb5196a86b2f6ecbab56c0f348842bee5dd2572c2fee9fbf9e98760ba4",
+      "preview_sha256": "c2705c221e9627f542bbb7a2513bd70c6a33e962effbc73b4adda5fd256b3411",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42249870031-1-b0002.tar.gz",
+        "member": "files/a3/a3f169bb5196a86b2f6ecbab56c0f348842bee5dd2572c2fee9fbf9e98760ba4.svg"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42249870031-1-b0002.tar.gz",
+        "member": "previews/a3f169bb5196a86b2f6ecbab56c0f348842bee5dd2572c2fee9fbf9e98760ba4.png"
+      },
+      "file_format": "svg",
+      "structure": "pure_vector",
+      "description": null,
+      "tags": [
+        "Organisms",
+        "Icon",
+        "Biology",
+        "Botany",
+        "Crop science",
+        "Agriculture",
+        "Angiosperms (Magnoliopsida)",
+        "Rosaceae",
+        "Prunus persica"
+      ],
+      "scientific_name": "Prunus persica",
+      "batch": "b0002",
+      "review_sheet_url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42249870031-1-b0002.review.png",
+      "review_sheet_sha256": "189a7efddac8b6766d91c89ae70b3b9daa9412223f3c3fe731788dc44f894fc5",
+      "visual_verdict": "usable_as_schematic_component",
+      "observations": "桃子平面图标；一般植物/食物研究部件，不是人体器官。",
+      "scientific_detail_validation": "not_independently_verified",
+      "native_editability_tested": false
+    },
+    {
+      "tile": 4,
+      "id": "togo-c82a78f3007103ab4583",
+      "title": "Spray 2 (black)",
+      "source_id": "1069",
+      "source_url": "https://doi.org/10.7875/togopic.2022.105",
+      "original_sha256": "75d4d4e31f81ad35e47cebbca2a0a5835da9a8e3506d2ca0b79a5c6a4dd23fca",
+      "preview_sha256": "d121a0cf124090bfa5cf7aeb7de7505b1f6aa9bb71b6b80908219caae3111fc1",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42249870031-1-b0002.tar.gz",
+        "member": "files/75/75d4d4e31f81ad35e47cebbca2a0a5835da9a8e3506d2ca0b79a5c6a4dd23fca.svg"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42249870031-1-b0002.tar.gz",
+        "member": "previews/75d4d4e31f81ad35e47cebbca2a0a5835da9a8e3506d2ca0b79a5c6a4dd23fca.png"
+      },
+      "file_format": "svg",
+      "structure": "pure_vector",
+      "description": null,
+      "tags": [
+        "Lab equipment",
+        "Icon",
+        "Lab instruments",
+        "Lab techniques",
+        "Research support",
+        "Life science"
+      ],
+      "scientific_name": null,
+      "batch": "b0002",
+      "review_sheet_url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42249870031-1-b0002.review.png",
+      "review_sheet_sha256": "189a7efddac8b6766d91c89ae70b3b9daa9412223f3c3fe731788dc44f894fc5",
+      "visual_verdict": "usable_as_schematic_component",
+      "observations": "带扳机喷头的喷瓶图标；完整器材，不代表已发生喷洒操作。",
+      "scientific_detail_validation": "not_independently_verified",
+      "native_editability_tested": false
+    },
+    {
+      "tile": 5,
+      "id": "togo-adb83821e9be8407bc29",
+      "title": "Green flatid planthopper",
+      "source_id": "1121",
+      "source_url": "https://doi.org/10.7875/togopic.2022.157",
+      "original_sha256": "cf167ccee2b34f4b3a7bb78c7eec4a571dfac184c892384fa6fc0165d16ed0e9",
+      "preview_sha256": "9de5208d193f479bac5912ed65c02913ebf3d10eae62245de6ea4c650a001c60",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42249870031-1-b0002.tar.gz",
+        "member": "files/cf/cf167ccee2b34f4b3a7bb78c7eec4a571dfac184c892384fa6fc0165d16ed0e9.svg"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42249870031-1-b0002.tar.gz",
+        "member": "previews/cf167ccee2b34f4b3a7bb78c7eec4a571dfac184c892384fa6fc0165d16ed0e9.png"
+      },
+      "file_format": "svg",
+      "structure": "pure_vector",
+      "description": null,
+      "tags": [
+        "Organisms",
+        "Entomology",
+        "Insects",
+        "Arthropods",
+        "Insect physiology",
+        "Insecta",
+        "Hemiptera",
+        "Geisha distinctissima"
+      ],
+      "scientific_name": "Geisha distinctissima",
+      "batch": "b0002",
+      "review_sheet_url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42249870031-1-b0002.review.png",
+      "review_sheet_sha256": "189a7efddac8b6766d91c89ae70b3b9daa9412223f3c3fe731788dc44f894fc5",
+      "visual_verdict": "usable_as_schematic_component",
+      "observations": "绿色半透明翅的昆虫侧面绘制图；翅脉属于绘图细节，不独立确认种属。",
+      "scientific_detail_validation": "not_independently_verified",
+      "native_editability_tested": false
+    },
+    {
+      "tile": 6,
+      "id": "togo-fd65f1697c41f83aba22",
+      "title": "Cryogenic Transmission Electron Microscope",
+      "source_id": "1004",
+      "source_url": "https://doi.org/10.7875/togopic.2022.040",
+      "original_sha256": "23fed585403f32a9d337fc4cc6352119c44f0a074062c680d373f81420a3ffe4",
+      "preview_sha256": "e62c0e1d38f43f96cf0fe6029373049aac5fbb73dc31b0f84761a2395690d55d",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42249870031-1-b0002.tar.gz",
+        "member": "files/23/23fed585403f32a9d337fc4cc6352119c44f0a074062c680d373f81420a3ffe4.svg"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42249870031-1-b0002.tar.gz",
+        "member": "previews/23fed585403f32a9d337fc4cc6352119c44f0a074062c680d373f81420a3ffe4.png"
+      },
+      "file_format": "svg",
+      "structure": "pure_vector",
+      "description": null,
+      "tags": [
+        "Lab apparatus",
+        "Icon",
+        "Microscope",
+        "Histology",
+        "Pathology",
+        "Cell observation"
+      ],
+      "scientific_name": null,
+      "batch": "b0002",
+      "review_sheet_url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42249870031-1-b0002.review.png",
+      "review_sheet_sha256": "189a7efddac8b6766d91c89ae70b3b9daa9412223f3c3fe731788dc44f894fc5",
+      "visual_verdict": "usable_as_schematic_component",
+      "observations": "冷冻透射电子显微镜设备和控制台示意；不是显微镜拍摄的数据图。",
+      "scientific_detail_validation": "not_independently_verified",
+      "native_editability_tested": false
+    },
+    {
+      "tile": 7,
+      "id": "togo-28848c9f27cdac2b6a32",
+      "title": "Fruit fly curly wings",
+      "source_id": "1317",
+      "source_url": "https://doi.org/10.7875/togopic.2022.353",
+      "original_sha256": "3cf0c992d8b6dff8a567230154ce27a6223069189f8e320b471142181055b2aa",
+      "preview_sha256": "52fac21741f6e41fb207b8c5b052e7bee1db40c80725020372e4909fd3e39f31",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42249870031-1-b0002.tar.gz",
+        "member": "files/3c/3cf0c992d8b6dff8a567230154ce27a6223069189f8e320b471142181055b2aa.svg"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42249870031-1-b0002.tar.gz",
+        "member": "previews/3cf0c992d8b6dff8a567230154ce27a6223069189f8e320b471142181055b2aa.png"
+      },
+      "file_format": "svg",
+      "structure": "pure_vector",
+      "description": null,
+      "tags": [
+        "Organisms",
+        "Icon",
+        "Biology",
+        "Entomology",
+        "Insects",
+        "Arthropods",
+        "Insecta",
+        "Diptera",
+        "Drosophila melanogaster"
+      ],
+      "scientific_name": "Drosophila melanogaster",
+      "batch": "b0002",
+      "review_sheet_url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42249870031-1-b0002.review.png",
+      "review_sheet_sha256": "189a7efddac8b6766d91c89ae70b3b9daa9412223f3c3fe731788dc44f894fc5",
+      "visual_verdict": "usable_as_schematic_component",
+      "observations": "卷翅果蝇样完整图标；只能描述卷曲翅外观，不单凭图证实基因型。",
+      "scientific_detail_validation": "not_independently_verified",
+      "native_editability_tested": false
+    },
+    {
+      "tile": 8,
+      "id": "togo-edd4b2e86b6d58b17d79",
+      "title": "Atlantic horseshoe crab, adult male, ventral side",
+      "source_id": "1436",
+      "source_url": "https://doi.org/10.7875/togopic.2022.472",
+      "original_sha256": "624f0cb449e0c06fa47c868715dafdd7fff31e9eddc73320486de6770348a092",
+      "preview_sha256": "9221bd8ef37f9d55c37254daec130c860cd49154cd47ef6fc04acf24c1a5c081",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42249870031-1-b0002.tar.gz",
+        "member": "files/62/624f0cb449e0c06fa47c868715dafdd7fff31e9eddc73320486de6770348a092.svg"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42249870031-1-b0002.tar.gz",
+        "member": "previews/624f0cb449e0c06fa47c868715dafdd7fff31e9eddc73320486de6770348a092.png"
+      },
+      "file_format": "svg",
+      "structure": "pure_vector",
+      "description": null,
+      "tags": [
+        "Organisms",
+        "Arthropods",
+        "Crustaceans",
+        "Aquatic biology",
+        "Merostomata",
+        "Xiphosura",
+        "Limulus polyphemus"
+      ],
+      "scientific_name": "Limulus polyphemus",
+      "batch": "b0002",
+      "review_sheet_url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42249870031-1-b0002.review.png",
+      "review_sheet_sha256": "189a7efddac8b6766d91c89ae70b3b9daa9412223f3c3fe731788dc44f894fc5",
+      "visual_verdict": "usable_as_schematic_component",
+      "observations": "鲎样动物腹面完整示意，成对腹面附肢和长尾可见；腹面视角明确，雄性和精确物种沿用来源但不单独认证。",
+      "scientific_detail_validation": "not_independently_verified",
+      "native_editability_tested": false,
+      "scientific_assertions": {
+        "object": [
+          "horseshoe crab"
+        ],
+        "role": [
+          "whole_body"
+        ],
+        "depiction_kind": "animal",
+        "view": [
+          "ventral"
+        ]
+      }
+    },
+    {
+      "tile": 9,
+      "id": "togo-f9cfdc3a27c1dceacbcc",
+      "title": "Chromosomal duplication",
+      "source_id": "1167",
+      "source_url": "https://doi.org/10.7875/togopic.2022.203",
+      "original_sha256": "a055b37c92a76683b21b04324d1a2b99aa78d76947209ea5d8b514a239a61ea9",
+      "preview_sha256": "5bcc2df9286fea4948fce8bc5862658a1dae508aef9c1bdd4c940e25f50162c2",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42249870031-1-b0002.tar.gz",
+        "member": "files/a0/a055b37c92a76683b21b04324d1a2b99aa78d76947209ea5d8b514a239a61ea9.svg"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42249870031-1-b0002.tar.gz",
+        "member": "previews/a055b37c92a76683b21b04324d1a2b99aa78d76947209ea5d8b514a239a61ea9.png"
+      },
+      "file_format": "svg",
+      "structure": "pure_vector",
+      "description": null,
+      "tags": [
+        "Cell structure",
+        "Icon",
+        "Cytogenetics",
+        "Genome",
+        "Nucleus",
+        "Genetics"
+      ],
+      "scientific_name": null,
+      "batch": "b0002",
+      "review_sheet_url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42249870031-1-b0002.review.png",
+      "review_sheet_sha256": "189a7efddac8b6766d91c89ae70b3b9daa9412223f3c3fe731788dc44f894fc5",
+      "visual_verdict": "usable_as_schematic_component",
+      "observations": "两条色带染色体及箭头的重复示意；是遗传概念图，不是染色体实拍或数值数据。",
+      "scientific_detail_validation": "not_independently_verified",
+      "native_editability_tested": false
+    },
+    {
+      "tile": 10,
+      "id": "togo-62416e6f45f8c44f2ee1",
+      "title": "Silkworm dormant egg",
+      "source_id": "1208",
+      "source_url": "https://doi.org/10.7875/togopic.2022.244",
+      "original_sha256": "2f7f8c1b909ba0008bc05f52a6e684c96280c7b6de70997819404fba7e9f1f73",
+      "preview_sha256": "75770b3129aa8dcecf294c54541e691a7f9367bcc2b8362bed25fef267845c52",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42249870031-1-b0002.tar.gz",
+        "member": "files/2f/2f7f8c1b909ba0008bc05f52a6e684c96280c7b6de70997819404fba7e9f1f73.svg"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42249870031-1-b0002.tar.gz",
+        "member": "previews/2f7f8c1b909ba0008bc05f52a6e684c96280c7b6de70997819404fba7e9f1f73.png"
+      },
+      "file_format": "svg",
+      "structure": "pure_vector",
+      "description": null,
+      "tags": [
+        "Organisms",
+        "Entomology",
+        "Insects",
+        "Arthropods",
+        "Sericulture",
+        "Insecta",
+        "Lepidoptera",
+        "Bombyx mori"
+      ],
+      "scientific_name": "Bombyx mori",
+      "batch": "b0002",
+      "review_sheet_url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42249870031-1-b0002.review.png",
+      "review_sheet_sha256": "189a7efddac8b6766d91c89ae70b3b9daa9412223f3c3fe731788dc44f894fc5",
+      "visual_verdict": "usable_as_schematic_component",
+      "observations": "卵形细胞/胚层结构的绘制示意；来源称滞育蚕卵，不独立确认发育阶段细节。",
+      "scientific_detail_validation": "not_independently_verified",
+      "native_editability_tested": false
+    },
+    {
+      "tile": 11,
+      "id": "togo-8840f11e8fa6475c9ea9",
+      "title": "Copidosoma floridanum soldier larva icon",
+      "source_id": "1143",
+      "source_url": "https://doi.org/10.7875/togopic.2022.179",
+      "original_sha256": "9e539da9bab2f9f7ceb606f81c1d0dac7cc1cbb3dbc9712a8a3eba737d0b5f3f",
+      "preview_sha256": "7aad70ca1648c4f961594a2404f58b8dfb7c802b1f3487615b3c205686b330b6",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42249870031-1-b0002.tar.gz",
+        "member": "files/9e/9e539da9bab2f9f7ceb606f81c1d0dac7cc1cbb3dbc9712a8a3eba737d0b5f3f.svg"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42249870031-1-b0002.tar.gz",
+        "member": "previews/9e539da9bab2f9f7ceb606f81c1d0dac7cc1cbb3dbc9712a8a3eba737d0b5f3f.png"
+      },
+      "file_format": "svg",
+      "structure": "pure_vector",
+      "description": null,
+      "tags": [
+        "Organisms",
+        "Icon",
+        "Biology",
+        "Entomology",
+        "Insects",
+        "Arthropods",
+        "Insecta",
+        "Hymenoptera",
+        "Copidosoma floridanum"
+      ],
+      "scientific_name": "Copidosoma floridanum",
+      "batch": "b0002",
+      "review_sheet_url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42249870031-1-b0002.review.png",
+      "review_sheet_sha256": "189a7efddac8b6766d91c89ae70b3b9daa9412223f3c3fe731788dc44f894fc5",
+      "visual_verdict": "usable_as_schematic_component",
+      "observations": "黑色线条简化的兵蚁样幼虫轮廓；完整图标但高度抽象，不独立鉴定寄生蜂种属。",
+      "scientific_detail_validation": "not_independently_verified",
+      "native_editability_tested": false
+    },
+    {
+      "tile": 12,
+      "id": "togo-1dc133733f9015680b02",
+      "title": "Zebrafish sex-determination",
+      "source_id": "1452",
+      "source_url": "https://doi.org/10.7875/togopic.2022.488",
+      "original_sha256": "1002c4fa7babe4937777687f90a4c6c64a722ca887abce29e88aaade81d7f1bb",
+      "preview_sha256": "083471b5a369325dd7f7aee7a3f4ad473100bcf4b8cfdaf4f4b64598cd2024b9",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42249870031-1-b0002.tar.gz",
+        "member": "files/10/1002c4fa7babe4937777687f90a4c6c64a722ca887abce29e88aaade81d7f1bb.svg"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42249870031-1-b0002.tar.gz",
+        "member": "previews/1002c4fa7babe4937777687f90a4c6c64a722ca887abce29e88aaade81d7f1bb.png"
+      },
+      "file_format": "svg",
+      "structure": "pure_vector",
+      "description": null,
+      "tags": [
+        "Organisms",
+        "Fish",
+        "Vertebrates",
+        "Aquatic biology",
+        "Actinopteri",
+        "Danionidae",
+        "Danio rerio"
+      ],
+      "scientific_name": "Danio rerio",
+      "batch": "b0002",
+      "review_sheet_url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42249870031-1-b0002.review.png",
+      "review_sheet_sha256": "189a7efddac8b6766d91c89ae70b3b9daa9412223f3c3fe731788dc44f894fc5",
+      "visual_verdict": "usable_as_schematic_component",
+      "observations": "斑马鱼图标叠加雌雄符号；性别判定概念组合图，不能当作无符号动物主体。",
+      "scientific_detail_validation": "not_independently_verified",
+      "native_editability_tested": false
+    },
+    {
+      "tile": 13,
+      "id": "togo-7872f470f22338af72ec",
+      "title": "Komagome pipette 3",
+      "source_id": "1344",
+      "source_url": "https://doi.org/10.7875/togopic.2022.380",
+      "original_sha256": "c6dab652871113dcf016ac886d341724fc149ddfb6dae15355496ea4d3eb2931",
+      "preview_sha256": "6c3274e638f88b961afc5cb39e7c6177efcb7c690db1e3425ce6f11ebee8088b",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42249870031-1-b0002.tar.gz",
+        "member": "files/c6/c6dab652871113dcf016ac886d341724fc149ddfb6dae15355496ea4d3eb2931.svg"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42249870031-1-b0002.tar.gz",
+        "member": "previews/c6dab652871113dcf016ac886d341724fc149ddfb6dae15355496ea4d3eb2931.png"
+      },
+      "file_format": "svg",
+      "structure": "pure_vector",
+      "description": null,
+      "tags": [
+        "Lab equipment",
+        "Icon",
+        "Lab instruments",
+        "Lab techniques",
+        "Molecular biology",
+        "Cell culture"
+      ],
+      "scientific_name": null,
+      "batch": "b0002",
+      "review_sheet_url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42249870031-1-b0002.review.png",
+      "review_sheet_sha256": "189a7efddac8b6766d91c89ae70b3b9daa9412223f3c3fe731788dc44f894fc5",
+      "visual_verdict": "usable_as_schematic_component",
+      "observations": "滴管及一滴液体的绘制图；器材带滴液情境。",
+      "scientific_detail_validation": "not_independently_verified",
+      "native_editability_tested": false
+    },
+    {
+      "tile": 14,
+      "id": "togo-8da8290f746968b073de",
+      "title": "24 well plate",
+      "source_id": "1006",
+      "source_url": "https://doi.org/10.7875/togopic.2022.042",
+      "original_sha256": "c5b1434f3f541cb7b930cee225611196e75562a88b96e698c4bc6bd27d20904b",
+      "preview_sha256": "b66eb53dd305447f82e69705409fb77a8647095b719f7b994c72a1b62b124853",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42249870031-1-b0002.tar.gz",
+        "member": "files/c5/c5b1434f3f541cb7b930cee225611196e75562a88b96e698c4bc6bd27d20904b.svg"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42249870031-1-b0002.tar.gz",
+        "member": "previews/c5b1434f3f541cb7b930cee225611196e75562a88b96e698c4bc6bd27d20904b.png"
+      },
+      "file_format": "svg",
+      "structure": "pure_vector",
+      "description": null,
+      "tags": [
+        "Lab equipment",
+        "Icon",
+        "Lab instruments",
+        "Lab techniques",
+        "Molecular biology",
+        "Cell culture"
+      ],
+      "scientific_name": null,
+      "batch": "b0002",
+      "review_sheet_url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42249870031-1-b0002.review.png",
+      "review_sheet_sha256": "189a7efddac8b6766d91c89ae70b3b9daa9412223f3c3fe731788dc44f894fc5",
+      "visual_verdict": "usable_as_schematic_component",
+      "observations": "多孔培养板透视插图；来源称24孔板，可作实验器材，孔数及结构仍需目标使用检查。",
+      "scientific_detail_validation": "not_independently_verified",
+      "native_editability_tested": false
+    },
+    {
+      "tile": 15,
+      "id": "togo-6df425484850673324db",
+      "title": "Web spinner",
+      "source_id": "1013",
+      "source_url": "https://doi.org/10.7875/togopic.2022.049",
+      "original_sha256": "999c68bd8561cb1656ac02a4bee9da822789cb5440d55ca6ac9d93e9f2dd25dc",
+      "preview_sha256": "682fd3d19850c76d802da868e74a018a5fa2f7a45c2d7152a0626085135a1c7b",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42249870031-1-b0002.tar.gz",
+        "member": "files/99/999c68bd8561cb1656ac02a4bee9da822789cb5440d55ca6ac9d93e9f2dd25dc.svg"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42249870031-1-b0002.tar.gz",
+        "member": "previews/999c68bd8561cb1656ac02a4bee9da822789cb5440d55ca6ac9d93e9f2dd25dc.png"
+      },
+      "file_format": "svg",
+      "structure": "pure_vector",
+      "description": null,
+      "tags": [
+        "Organisms",
+        "Entomology",
+        "Insects",
+        "Arthropods",
+        "Insect physiology",
+        "Insecta",
+        "Embioptera",
+        "Aposthonia japonica"
+      ],
+      "scientific_name": "Aposthonia japonica",
+      "batch": "b0002",
+      "review_sheet_url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42249870031-1-b0002.review.png",
+      "review_sheet_sha256": "189a7efddac8b6766d91c89ae70b3b9daa9412223f3c3fe731788dc44f894fc5",
+      "visual_verdict": "usable_as_schematic_component",
+      "observations": "细长褐色昆虫背面绘制图，足与触角可见；来源称纺足虫，分类细节未独立验证。",
+      "scientific_detail_validation": "not_independently_verified",
+      "native_editability_tested": false
+    },
+    {
+      "tile": 16,
+      "id": "togo-cb9d3d659703daf08e21",
+      "title": "Zebrafish early embryo",
+      "source_id": "1464",
+      "source_url": "https://doi.org/10.7875/togopic.2022.500",
+      "original_sha256": "ba4ff4ff63d63e11ae626b6c7fd86a3dd85dd2a00c5671b36222bd771ea4160e",
+      "preview_sha256": "f23fb839830864d3fd2198d735fb2296f14f72bc3a5e26d5fcbc0fa7901d0f3f",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42249870031-1-b0002.tar.gz",
+        "member": "files/ba/ba4ff4ff63d63e11ae626b6c7fd86a3dd85dd2a00c5671b36222bd771ea4160e.svg"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42249870031-1-b0002.tar.gz",
+        "member": "previews/ba4ff4ff63d63e11ae626b6c7fd86a3dd85dd2a00c5671b36222bd771ea4160e.png"
+      },
+      "file_format": "svg",
+      "structure": "pure_vector",
+      "description": null,
+      "tags": [
+        "Organisms",
+        "Fish",
+        "Vertebrates",
+        "Aquatic biology",
+        "Actinopteri",
+        "Danionidae",
+        "Danio rerio"
+      ],
+      "scientific_name": "Danio rerio",
+      "batch": "b0002",
+      "review_sheet_url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42249870031-1-b0002.review.png",
+      "review_sheet_sha256": "189a7efddac8b6766d91c89ae70b3b9daa9412223f3c3fe731788dc44f894fc5",
+      "visual_verdict": "usable_as_schematic_component",
+      "observations": "圆形胚胎及卵黄平面示意；可作早期胚胎概念，不推断精确发育小时数。",
+      "scientific_detail_validation": "not_independently_verified",
+      "native_editability_tested": false
+    },
+    {
+      "tile": 17,
+      "id": "togo-e1591dd1bd2008531f26",
+      "title": "Diseased leaf 3",
+      "source_id": "1058",
+      "source_url": "https://doi.org/10.7875/togopic.2022.094",
+      "original_sha256": "021a18fbdcb13eef11ecf951873c4cf82b2968cc13c0db87914fe6c560bbde25",
+      "preview_sha256": "d7608343fb1908a5d28d458e602681e9667ed318323da7c4aea6845dc26b8452",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42249870031-1-b0002.tar.gz",
+        "member": "files/02/021a18fbdcb13eef11ecf951873c4cf82b2968cc13c0db87914fe6c560bbde25.svg"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42249870031-1-b0002.tar.gz",
+        "member": "previews/021a18fbdcb13eef11ecf951873c4cf82b2968cc13c0db87914fe6c560bbde25.png"
+      },
+      "file_format": "svg",
+      "structure": "pure_vector",
+      "description": null,
+      "tags": [
+        "Organisms",
+        "Icon",
+        "Biology",
+        "Botany",
+        "Plant taxonomy",
+        "Plant physiology"
+      ],
+      "scientific_name": null,
+      "batch": "b0002",
+      "review_sheet_url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42249870031-1-b0002.review.png",
+      "review_sheet_sha256": "189a7efddac8b6766d91c89ae70b3b9daa9412223f3c3fe731788dc44f894fc5",
+      "visual_verdict": "usable_as_schematic_component",
+      "observations": "有褐色斑点的叶片图标；可表示病叶概念，不据此诊断病原。",
+      "scientific_detail_validation": "not_independently_verified",
+      "native_editability_tested": false
+    },
+    {
+      "tile": 18,
+      "id": "togo-1a024ed3abb150688841",
+      "title": "silkworm tachina fly",
+      "source_id": "1111",
+      "source_url": "https://doi.org/10.7875/togopic.2022.147",
+      "original_sha256": "23ba3617c1fa2441a708a6ed61190f2fc6600af1fb1f452910b3c2425b7c7ceb",
+      "preview_sha256": "ce26596e8db6e9d87d0c9c82602f6f87eceea5403c36018b34deae46961f8a9f",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42249870031-1-b0002.tar.gz",
+        "member": "files/23/23ba3617c1fa2441a708a6ed61190f2fc6600af1fb1f452910b3c2425b7c7ceb.svg"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42249870031-1-b0002.tar.gz",
+        "member": "previews/23ba3617c1fa2441a708a6ed61190f2fc6600af1fb1f452910b3c2425b7c7ceb.png"
+      },
+      "file_format": "svg",
+      "structure": "pure_vector",
+      "description": null,
+      "tags": [
+        "Organisms",
+        "Entomology",
+        "Insects",
+        "Arthropods",
+        "Sericulture",
+        "Insecta",
+        "Diptera",
+        "Blepharipa zebina"
+      ],
+      "scientific_name": "Blepharipa zebina",
+      "batch": "b0002",
+      "review_sheet_url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42249870031-1-b0002.review.png",
+      "review_sheet_sha256": "189a7efddac8b6766d91c89ae70b3b9daa9412223f3c3fe731788dc44f894fc5",
+      "visual_verdict": "usable_as_schematic_component",
+      "observations": "具透明翅的蝇类绘制图；自然纹理并不等于实拍，云端结构为纯矢量，精确物种未独立核。",
+      "scientific_detail_validation": "not_independently_verified",
+      "native_editability_tested": false
+    },
+    {
+      "tile": 19,
+      "id": "togo-d1b79468bdc67469c21a",
+      "title": "Larva",
+      "source_id": "1140",
+      "source_url": "https://doi.org/10.7875/togopic.2022.176",
+      "original_sha256": "e4c2657d175ad7d038d4de89b825d1b607db8289f5a65769e6e94311512293ac",
+      "preview_sha256": "718a6343dc22aeaeb9e6e876e5cd93b0607c1302ac27e26de80b781fb2439eca",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42249870031-1-b0002.tar.gz",
+        "member": "files/e4/e4c2657d175ad7d038d4de89b825d1b607db8289f5a65769e6e94311512293ac.svg"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42249870031-1-b0002.tar.gz",
+        "member": "previews/e4c2657d175ad7d038d4de89b825d1b607db8289f5a65769e6e94311512293ac.png"
+      },
+      "file_format": "svg",
+      "structure": "pure_vector",
+      "description": null,
+      "tags": [
+        "Icon",
+        "Entomology",
+        "Arthropods",
+        "Developmental biology",
+        "Ecology",
+        "Insecta"
+      ],
+      "scientific_name": null,
+      "batch": "b0002",
+      "review_sheet_url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42249870031-1-b0002.review.png",
+      "review_sheet_sha256": "189a7efddac8b6766d91c89ae70b3b9daa9412223f3c3fe731788dc44f894fc5",
+      "visual_verdict": "usable_as_schematic_component",
+      "observations": "完整黑色轮廓幼虫图标；一般幼虫形态，缺乏物种细节。",
+      "scientific_detail_validation": "not_independently_verified",
+      "native_editability_tested": false
+    },
+    {
+      "tile": 20,
+      "id": "togo-060b11c2c8a84d9cef65",
+      "title": "Nematode long mutant (lon)",
+      "source_id": "1486",
+      "source_url": "https://doi.org/10.7875/togopic.2022.522",
+      "original_sha256": "b06647dceff93585b09bbd4495dc74f83beb01992d7916f9872bf45fba2181d2",
+      "preview_sha256": "71ad5361c776fb1830814d3b59ae2aebf9579ed948cdd2187ba77b7763d726e7",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42249870031-1-b0002.tar.gz",
+        "member": "files/b0/b06647dceff93585b09bbd4495dc74f83beb01992d7916f9872bf45fba2181d2.svg"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42249870031-1-b0002.tar.gz",
+        "member": "previews/b06647dceff93585b09bbd4495dc74f83beb01992d7916f9872bf45fba2181d2.png"
+      },
+      "file_format": "svg",
+      "structure": "pure_vector",
+      "description": null,
+      "tags": [
+        "Organisms",
+        "Nematodes",
+        "Invertebrates",
+        "Parasitology",
+        "Nematoda",
+        "Caenorhabditis elegans"
+      ],
+      "scientific_name": "Caenorhabditis elegans",
+      "batch": "b0002",
+      "review_sheet_url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42249870031-1-b0002.review.png",
+      "review_sheet_sha256": "189a7efddac8b6766d91c89ae70b3b9daa9412223f3c3fe731788dc44f894fc5",
+      "visual_verdict": "usable_as_schematic_component",
+      "observations": "灰黑色细长弯曲线虫完整示意；可确认全身构图，不单凭图证实lon突变型。",
+      "scientific_detail_validation": "not_independently_verified",
+      "native_editability_tested": false,
+      "scientific_assertions": {
+        "object": [
+          "nematode"
+        ],
+        "role": [
+          "whole_body"
+        ],
+        "depiction_kind": "animal"
+      }
+    },
+    {
+      "tile": 21,
+      "id": "togo-05f634eddf78a316e2ff",
+      "title": "Flask 2 (black)",
+      "source_id": "1071",
+      "source_url": "https://doi.org/10.7875/togopic.2022.107",
+      "original_sha256": "0c29f53d6982550c55eb147e431b2c4fbc41b3d5bb74fb31934446797060a9d1",
+      "preview_sha256": "9671afb88636ba65e9cc898a5fec0b79f3adaf2b0350b7dbd2e393d694522a48",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42249870031-1-b0002.tar.gz",
+        "member": "files/0c/0c29f53d6982550c55eb147e431b2c4fbc41b3d5bb74fb31934446797060a9d1.svg"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42249870031-1-b0002.tar.gz",
+        "member": "previews/0c29f53d6982550c55eb147e431b2c4fbc41b3d5bb74fb31934446797060a9d1.png"
+      },
+      "file_format": "svg",
+      "structure": "pure_vector",
+      "description": null,
+      "tags": [
+        "Lab equipment",
+        "Icon",
+        "Lab instruments",
+        "Lab techniques",
+        "Molecular biology",
+        "Cell culture"
+      ],
+      "scientific_name": null,
+      "batch": "b0002",
+      "review_sheet_url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42249870031-1-b0002.review.png",
+      "review_sheet_sha256": "189a7efddac8b6766d91c89ae70b3b9daa9412223f3c3fe731788dc44f894fc5",
+      "visual_verdict": "usable_as_schematic_component",
+      "observations": "带刻度及浅绿色液体的锥形瓶图标；器材部件。",
+      "scientific_detail_validation": "not_independently_verified",
+      "native_editability_tested": false
+    },
+    {
+      "tile": 22,
+      "id": "togo-67ddb9e3e74a6a016d3f",
+      "title": "8-strips PCR tube 1 (Glay)",
+      "source_id": "1088",
+      "source_url": "https://doi.org/10.7875/togopic.2022.124",
+      "original_sha256": "7877220c714dc3a57f67a067827db7cfaa5389efcc733a0a84b8154fc3da4e58",
+      "preview_sha256": "4f4d686df688accac1c01768411c25469ae336cf50c543da7e75c8c40ecb20b6",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42249870031-1-b0002.tar.gz",
+        "member": "files/78/7877220c714dc3a57f67a067827db7cfaa5389efcc733a0a84b8154fc3da4e58.svg"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42249870031-1-b0002.tar.gz",
+        "member": "previews/7877220c714dc3a57f67a067827db7cfaa5389efcc733a0a84b8154fc3da4e58.png"
+      },
+      "file_format": "svg",
+      "structure": "pure_vector",
+      "description": null,
+      "tags": [
+        "Lab equipment",
+        "Icon",
+        "Lab instruments",
+        "Lab techniques",
+        "Molecular biology",
+        "Cell culture"
+      ],
+      "scientific_name": null,
+      "batch": "b0002",
+      "review_sheet_url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42249870031-1-b0002.review.png",
+      "review_sheet_sha256": "189a7efddac8b6766d91c89ae70b3b9daa9412223f3c3fe731788dc44f894fc5",
+      "visual_verdict": "usable_as_schematic_component",
+      "observations": "成排带盖PCR管的图标；来源称8联排，目标使用仍应核对管数和盖形。",
+      "scientific_detail_validation": "not_independently_verified",
+      "native_editability_tested": false
+    },
+    {
+      "tile": 23,
+      "id": "togo-ef58823a437101b1719c",
+      "title": "Genetic counseling 1",
+      "source_id": "1159",
+      "source_url": "https://doi.org/10.7875/togopic.2022.195",
+      "original_sha256": "38c58cf2607827cac8e4b910cd6e3f381743903fb8f06d0c60601e05adb2af73",
+      "preview_sha256": "7678c390c6a60efa68b618c9c4143c8e382f91b60f7a66a2cb3ede637dc4e0a1",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42249870031-1-b0002.tar.gz",
+        "member": "files/38/38c58cf2607827cac8e4b910cd6e3f381743903fb8f06d0c60601e05adb2af73.svg"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42249870031-1-b0002.tar.gz",
+        "member": "previews/38c58cf2607827cac8e4b910cd6e3f381743903fb8f06d0c60601e05adb2af73.png"
+      },
+      "file_format": "svg",
+      "structure": "pure_vector",
+      "description": null,
+      "tags": [
+        "Organisms",
+        "Molecular biology",
+        "Genetics",
+        "Genomics",
+        "Bioinformatics",
+        "Omics",
+        "Mammalia",
+        "Primates",
+        "Homo sapiens"
+      ],
+      "scientific_name": "Homo sapiens",
+      "batch": "b0002",
+      "review_sheet_url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42249870031-1-b0002.review.png",
+      "review_sheet_sha256": "189a7efddac8b6766d91c89ae70b3b9daa9412223f3c3fe731788dc44f894fc5",
+      "visual_verdict": "usable_as_schematic_component",
+      "observations": "三人围桌交谈的咨询场景插图；支持遗传咨询概念，不是独立医师/患者肖像或诊断结论。",
+      "scientific_detail_validation": "not_independently_verified",
+      "native_editability_tested": false
+    },
+    {
+      "tile": 24,
+      "id": "togo-e6d97a4c168282da8086",
+      "title": "Chromosomal structural abnormality translocation icon",
+      "source_id": "1297",
+      "source_url": "https://doi.org/10.7875/togopic.2022.333",
+      "original_sha256": "926c35e0962ac680a630c9c6e82fa3c2bb3769779e8f6f5b581ee7b651525199",
+      "preview_sha256": "d7ea6fed2377becae9d4c5814870828188a0348af480c1772b57ce111be4da20",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42249870031-1-b0002.tar.gz",
+        "member": "files/92/926c35e0962ac680a630c9c6e82fa3c2bb3769779e8f6f5b581ee7b651525199.svg"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42249870031-1-b0002.tar.gz",
+        "member": "previews/926c35e0962ac680a630c9c6e82fa3c2bb3769779e8f6f5b581ee7b651525199.png"
+      },
+      "file_format": "svg",
+      "structure": "pure_vector",
+      "description": null,
+      "tags": [
+        "Cell structure",
+        "Icon",
+        "Cytogenetics",
+        "Genome",
+        "Nucleus",
+        "Genetics"
+      ],
+      "scientific_name": null,
+      "batch": "b0002",
+      "review_sheet_url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42249870031-1-b0002.review.png",
+      "review_sheet_sha256": "189a7efddac8b6766d91c89ae70b3b9daa9412223f3c3fe731788dc44f894fc5",
+      "visual_verdict": "usable_as_schematic_component",
+      "observations": "两段拟人化圆柱及弯箭头的染色体易位概念图标；不是实际核型数据。",
+      "scientific_detail_validation": "not_independently_verified",
+      "native_editability_tested": false
+    },
+    {
+      "tile": 25,
+      "id": "togo-16a1873d107e8a5f53b3",
+      "title": "Yellow fever mosquito",
+      "source_id": "1174",
+      "source_url": "https://doi.org/10.7875/togopic.2022.210",
+      "original_sha256": "d83122dd302039c0c7f05354026a752e360c00454b8586f2ecb6826636299179",
+      "preview_sha256": "62fb8ac0e34c8eab95555414b9b934d4712412238af521167e15b6b7143d7193",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42249870031-1-b0002.tar.gz",
+        "member": "files/d8/d83122dd302039c0c7f05354026a752e360c00454b8586f2ecb6826636299179.svg"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42249870031-1-b0002.tar.gz",
+        "member": "previews/d83122dd302039c0c7f05354026a752e360c00454b8586f2ecb6826636299179.png"
+      },
+      "file_format": "svg",
+      "structure": "pure_vector",
+      "description": null,
+      "tags": [
+        "Organisms",
+        "Entomology",
+        "Insects",
+        "Arthropods",
+        "Insect physiology",
+        "Insecta",
+        "Diptera",
+        "Aedes aegypti "
+      ],
+      "scientific_name": "Aedes aegypti ",
+      "batch": "b0002",
+      "review_sheet_url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42249870031-1-b0002.review.png",
+      "review_sheet_sha256": "189a7efddac8b6766d91c89ae70b3b9daa9412223f3c3fe731788dc44f894fc5",
+      "visual_verdict": "usable_as_schematic_component",
+      "observations": "完整蚊虫绘制示意，头、躯体、翅和细足可见；不由图独立鉴定黄热蚊物种或带毒状态。",
+      "scientific_detail_validation": "not_independently_verified",
+      "native_editability_tested": false,
+      "scientific_assertions": {
+        "object": [
+          "mosquito"
+        ],
+        "role": [
+          "whole_body"
+        ],
+        "depiction_kind": "animal"
+      }
+    },
+    {
+      "tile": 26,
+      "id": "togo-a1c8a5f02f849ed2b588",
+      "title": "Zebrafish skeleton",
+      "source_id": "1456",
+      "source_url": "https://doi.org/10.7875/togopic.2022.492",
+      "original_sha256": "72ec403bd0233a55117181eeda11ef330eb30589586c605476895e78ae71a356",
+      "preview_sha256": "8212e4960d034064279fd7edb0975abd16394abc80522806ec640c7e1eec1e16",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42249870031-1-b0002.tar.gz",
+        "member": "files/72/72ec403bd0233a55117181eeda11ef330eb30589586c605476895e78ae71a356.svg"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42249870031-1-b0002.tar.gz",
+        "member": "previews/72ec403bd0233a55117181eeda11ef330eb30589586c605476895e78ae71a356.png"
+      },
+      "file_format": "svg",
+      "structure": "pure_vector",
+      "description": null,
+      "tags": [
+        "Organisms",
+        "Fish",
+        "Vertebrates",
+        "Aquatic biology",
+        "Actinopteri",
+        "Danionidae",
+        "Danio rerio"
+      ],
+      "scientific_name": "Danio rerio",
+      "batch": "b0002",
+      "review_sheet_url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42249870031-1-b0002.review.png",
+      "review_sheet_sha256": "189a7efddac8b6766d91c89ae70b3b9daa9412223f3c3fe731788dc44f894fc5",
+      "visual_verdict": "usable_as_schematic_component",
+      "observations": "黑底鱼骨架图标；是骨骼/解剖结构示意，不能替代普通斑马鱼全身外观。",
+      "scientific_detail_validation": "not_independently_verified",
+      "native_editability_tested": false
+    },
+    {
+      "tile": 27,
+      "id": "togo-9c1acaa0f8d566fd6ef5",
+      "title": "Scalpel",
+      "source_id": "1349",
+      "source_url": "https://doi.org/10.7875/togopic.2022.385",
+      "original_sha256": "14b0d98d210e31e67aacec0d88d5fd143f4ee63087c48f042fd5fc96e226c160",
+      "preview_sha256": "c4fb60e12e7f993758b56eb894033789d1aea04a83efc703d13a8bb7e6b194fe",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42249870031-1-b0002.tar.gz",
+        "member": "files/14/14b0d98d210e31e67aacec0d88d5fd143f4ee63087c48f042fd5fc96e226c160.svg"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42249870031-1-b0002.tar.gz",
+        "member": "previews/14b0d98d210e31e67aacec0d88d5fd143f4ee63087c48f042fd5fc96e226c160.png"
+      },
+      "file_format": "svg",
+      "structure": "pure_vector",
+      "description": null,
+      "tags": [
+        "Lab equipment",
+        "Icon",
+        "Lab instruments",
+        "Lab techniques",
+        "Molecular biology",
+        "Cell culture"
+      ],
+      "scientific_name": null,
+      "batch": "b0002",
+      "review_sheet_url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42249870031-1-b0002.review.png",
+      "review_sheet_sha256": "189a7efddac8b6766d91c89ae70b3b9daa9412223f3c3fe731788dc44f894fc5",
+      "visual_verdict": "usable_as_schematic_component",
+      "observations": "手术刀完整器材图标；不代表手术过程。",
+      "scientific_detail_validation": "not_independently_verified",
+      "native_editability_tested": false
+    },
+    {
+      "tile": 28,
+      "id": "togo-1acf09c9f8d27af1f135",
+      "title": "Secure genetic information black",
+      "source_id": "1002",
+      "source_url": "https://doi.org/10.7875/togopic.2022.038",
+      "original_sha256": "317280c678a0fcb371a2bd52f70703e83647d3e26fa45d2a2e2bbdfd00d13bef",
+      "preview_sha256": "2c6bfc5aa63f59a85b8c64e24be986d76839e41491ef14169fdff9e0ac6598d9",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42249870031-1-b0002.tar.gz",
+        "member": "files/31/317280c678a0fcb371a2bd52f70703e83647d3e26fa45d2a2e2bbdfd00d13bef.svg"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42249870031-1-b0002.tar.gz",
+        "member": "previews/317280c678a0fcb371a2bd52f70703e83647d3e26fa45d2a2e2bbdfd00d13bef.png"
+      },
+      "file_format": "svg",
+      "structure": "pure_vector",
+      "description": null,
+      "tags": [
+        "Icon",
+        "Computer",
+        "Molecular biology",
+        "Genetics",
+        "Genomics",
+        "Bioinformatics"
+      ],
+      "scientific_name": null,
+      "batch": "b0002",
+      "review_sheet_url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42249870031-1-b0002.review.png",
+      "review_sheet_sha256": "189a7efddac8b6766d91c89ae70b3b9daa9412223f3c3fe731788dc44f894fc5",
+      "visual_verdict": "usable_as_schematic_component",
+      "observations": "带DNA与锁的显示器图标；基因信息保护概念，而非生物体或真实测序数据。",
+      "scientific_detail_validation": "not_independently_verified",
+      "native_editability_tested": false
+    },
+    {
+      "tile": 29,
+      "id": "togo-dcbd1e7e2fde26db1779",
+      "title": "Short-winged white-backed planthopper",
+      "source_id": "1124",
+      "source_url": "https://doi.org/10.7875/togopic.2022.160",
+      "original_sha256": "4a7c3d8239178e9b9226bf0fcf4b9910d868c026dd8a0ece6775e157792746f7",
+      "preview_sha256": "e926f823e04791d0882b5f01f46af0d1d47772b09e4aa29dea77c54ff1b35118",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42249870031-1-b0002.tar.gz",
+        "member": "files/4a/4a7c3d8239178e9b9226bf0fcf4b9910d868c026dd8a0ece6775e157792746f7.svg"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42249870031-1-b0002.tar.gz",
+        "member": "previews/4a7c3d8239178e9b9226bf0fcf4b9910d868c026dd8a0ece6775e157792746f7.png"
+      },
+      "file_format": "svg",
+      "structure": "pure_vector",
+      "description": null,
+      "tags": [
+        "Organisms",
+        "Entomology",
+        "Insects",
+        "Arthropods",
+        "Plant protection",
+        "Insecta",
+        "Hemiptera",
+        "Sogatella furcifera"
+      ],
+      "scientific_name": "Sogatella furcifera",
+      "batch": "b0002",
+      "review_sheet_url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42249870031-1-b0002.review.png",
+      "review_sheet_sha256": "189a7efddac8b6766d91c89ae70b3b9daa9412223f3c3fe731788dc44f894fc5",
+      "visual_verdict": "usable_as_schematic_component",
+      "observations": "完整褐色昆虫背面绘制图，左右躯体/翅面和足可见；背面视角明确，种属与短翅状态不独立认证。",
+      "scientific_detail_validation": "not_independently_verified",
+      "native_editability_tested": false,
+      "scientific_assertions": {
+        "object": [
+          "planthopper"
+        ],
+        "role": [
+          "whole_body"
+        ],
+        "depiction_kind": "animal",
+        "view": [
+          "dorsal"
+        ]
+      }
+    },
+    {
+      "tile": 30,
+      "id": "togo-d12538d7cecc1898b067",
+      "title": "Round bottom flask 3",
+      "source_id": "1366",
+      "source_url": "https://doi.org/10.7875/togopic.2022.402",
+      "original_sha256": "89e2f32a1325a45ada3f0d823cd189ef0425ce7af0dcc2c8dbc69ae142ba8ae0",
+      "preview_sha256": "be38f0c745e7f400d236ee9744e61d2ad76b2724965ae17baa3de325327ec66a",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42249870031-1-b0002.tar.gz",
+        "member": "files/89/89e2f32a1325a45ada3f0d823cd189ef0425ce7af0dcc2c8dbc69ae142ba8ae0.svg"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42249870031-1-b0002.tar.gz",
+        "member": "previews/89e2f32a1325a45ada3f0d823cd189ef0425ce7af0dcc2c8dbc69ae142ba8ae0.png"
+      },
+      "file_format": "svg",
+      "structure": "pure_vector",
+      "description": null,
+      "tags": [
+        "Lab equipment",
+        "Icon",
+        "Lab instruments",
+        "Lab techniques",
+        "Molecular biology",
+        "Cell culture"
+      ],
+      "scientific_name": null,
+      "batch": "b0002",
+      "review_sheet_url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42249870031-1-b0002.review.png",
+      "review_sheet_sha256": "189a7efddac8b6766d91c89ae70b3b9daa9412223f3c3fe731788dc44f894fc5",
+      "visual_verdict": "usable_as_schematic_component",
+      "observations": "带液体和塞子的圆底烧瓶图标；完整实验器材。",
+      "scientific_detail_validation": "not_independently_verified",
+      "native_editability_tested": false
+    }
+  ],
+  "summary": {
+    "reviewed_files": 60,
+    "visual_verdicts": {
+      "usable_as_schematic_component": 41,
+      "scope_pending": 18,
+      "usable_as_partial_component": 1
+    },
+    "scientific_assertion_files": 6,
+    "source_visual_acceptance_passed": false,
+    "original_archives_downloaded_locally": 0
+  }
+}

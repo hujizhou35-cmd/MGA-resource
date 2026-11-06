@@ -1,0 +1,55 @@
+{
+  "schema_version": 1,
+  "source": "nih-bioart",
+  "reviewed_at": "2026-11-06T17:50:23.655613+00:00",
+  "reviewer": "Codex media_catalog; actual visual inspection",
+  "review_method": "Actual contact-sheet inspection of tile 22 plus official item-specific source description and image-type/software fields.",
+  "review_sheet_url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/nih-bioart-42248095929-1-b0000.review.png",
+  "review_sheet_sha256": "83a5a9eb3d356dee7817942e509cfe9984bfe309627f258899942d5490632878",
+  "prior_review_document": {
+    "path": "data/visual-reviews/nih-bioart-42248095929-sample.json",
+    "sha256": "8dbd8567ee3405ab4455348d925eff6e61aa08d73c2a7f05949f60af244eaf51"
+  },
+  "source_evidence": {
+    "url": "https://bioart.niaid.nih.gov/bioart/855",
+    "checked_at": "2026-11-06T17:50:23.655613+00:00",
+    "title": "Computer Screen with Immunofluorescent Neurons",
+    "image_type": "Vector",
+    "illustration_software": "Adobe Illustrator 30.7",
+    "creator": "Alexander Stewart",
+    "category": "Equipment",
+    "description_paraphrase": "An illustrated monitor displays immunofluorescent neurons."
+  },
+  "review_limits": [
+    "Only the exact PNG tile is visually accepted here; other variants were not independently viewed.",
+    "This is a schematic equipment component, not measured experimental microscopy data.",
+    "Source label alone is not sufficient; actual visible line-drawn neuronal network also supports the scope decision."
+  ],
+  "items": [
+    {
+      "tile": 22,
+      "id": "nih-bioart-ec612c0e216a04965455",
+      "title": "Computer Screen",
+      "source_id": "855",
+      "source_url": "https://bioart.niaid.nih.gov/bioart/855",
+      "original_sha256": "b8a83a4393547883ac37743fd8a91629232f2dd7529cacd112c0d3b1461393ca",
+      "preview_sha256": "f926203e052841fe068fba44a30101bdcd5fe3ac99b8113ebea2600f90633f9f",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/nih-bioart-42248095929-1-b0000.tar.gz",
+        "member": "files/b8/b8a83a4393547883ac37743fd8a91629232f2dd7529cacd112c0d3b1461393ca.png"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/nih-bioart-42248095929-1-b0000.tar.gz",
+        "member": "previews/b8a83a4393547883ac37743fd8a91629232f2dd7529cacd112c0d3b1461393ca.png"
+      },
+      "visual_verdict": "usable_as_schematic_component",
+      "observations": "A drawn monitor contains a green branching neuronal network. Visible line-based neuronal shapes and the official item-specific illustration evidence support an equipment/concept illustration rather than a photomicrograph or quantitative experimental data figure. Do not use the screen content as measured microscopy evidence.",
+      "scientific_detail_validation": "not_independently_verified",
+      "native_editability_tested": false,
+      "scope_status": "medical_equipment_concept_illustration",
+      "scope_followup_conclusion": "retain_exact_reviewed_file",
+      "source_evidence_checked": true,
+      "scope_followup_supersedes_prior_uncertainty": true
+    }
+  ]
+}
