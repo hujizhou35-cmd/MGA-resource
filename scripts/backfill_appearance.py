@@ -58,7 +58,7 @@ def write_jsonl(path, rows):
 
 
 def gh(*args):
-    result = subprocess.run(["gh", *args], text=True, capture_output=True, timeout=180)
+    result = subprocess.run(["gh", *args], text=True, encoding="utf-8", capture_output=True, timeout=180)
     if result.returncode:
         raise RuntimeError(result.stderr.strip())
     return result.stdout

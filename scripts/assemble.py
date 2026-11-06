@@ -20,7 +20,7 @@ from mga_resources.reconciliation import receipt_evidence, reconcile_github_snap
 
 
 def gh(*args):
-    result = subprocess.run(["gh", *args], text=True, capture_output=True)
+    result = subprocess.run(["gh", *args], text=True, encoding="utf-8", capture_output=True)
     if result.returncode:
         raise RuntimeError(result.stderr)
     return result.stdout
