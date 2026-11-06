@@ -77,6 +77,8 @@ MGA-Designer 的 `SKILL.md`、`references/reference-library.md`、`references/de
 
 合并证据为 `data/relevance-reviews/frozen-3.4.1-merged-120.json`。3.4.2补齐媒体结构与内容类型过滤，3.4.3修正明确“可编辑矢量”短语被误当普通标题词的问题；两版均实际重放原120条查询，706个排名、家族与原件SHA及硬条件全部不变，因此可复用这批逐图判断。版本摘要见 `data/diagnostics/search-filter-3.4.3-replay.json`。纯矢量结构只表示原件结构检查结果，不等于通过Illustrator原生编辑验证。验收脚本现在强制逐条提供前十项的相关／不相关／待定结论，不能只填查询级“通过”。
 
+原六项防错查询已在3.4.3实际运行并完成返回结果的图审与来源核验：未知对象和照片各返回0项，鼠类消歧、鼠种限定、允许位图、纯矢量真实性四题各返回10项，六项均通过本轮观察。40个返回位置涉及30个不同原件，另用1件真实SVG内嵌位图作独立对照：按embedded_raster能找到，按pure_vector不能找到。31件原件与32条原始来源记录的64个records/receipt摘要均匹配；本轮未重新下载原件。证据见 `data/diagnostics/final-negative-observation-42289434868-post-phrase-3.4.3.json`。3.4.1的参数报错与3.4.2的空结果已保留，不以成功结果覆盖失败历史。这六项不替代原120门槛、发布恢复或原生编辑验收。
+
 9项检索功能检查、8类真实外观案例及实际采用记录已在3.4.1绑定版本通过补充证据核验，`supplement_pass=true`、`missing=[]`；它们不是3.4.3补充验收已完成的证明，收录整体发布仍未通过。实际验证项目里，五轮小鼠候选共出现27个家族，最终按清晰度和复用便利性只采用2个家族、最高复用3/5；稀缺对象只有1个合格家族，五轮均采用它。这些是明确标记的验证练习，不是用户研究采用；也没有编造旧检索的实际采用成绩。采用历史只影响排序，不改变科学条件或合格池。
 
 实际采用记录见 `data/adoption-reviews/final-validation-ledger-42289434868.json`；历史影响见 `data/diagnostics/final-adoption-history-observation-42289434868.json`。合并核验与云端纯元数据证据包的精确哈希记录在 `data/diagnostics/final-supplement-evidence-42289434868.json`，其中没有下载或上传整库原件。
