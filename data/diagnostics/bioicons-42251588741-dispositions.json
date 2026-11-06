@@ -1,0 +1,30 @@
+{
+  "source": "bioicons",
+  "run_id": "42251588741-1",
+  "discovery_sha256": "6e3354582fd6b2c52968dcfe586d4ca029ff7dfc92a4b28e81d5e5a9d1bb3a6e",
+  "processed_incremental_records": 1538,
+  "downloaded_incremental_records": 1537,
+  "already_acquired_records": 1254,
+  "expected_combined_records_before_dedup": 2791,
+  "unchanged_isolated_records": 38,
+  "additional_isolated_records": [
+    {
+      "source": "bioicons",
+      "source_id": "cc-by-4.0/Human_physiology/DBCLS/Anterior_view_of_ligaments_of_pelvis.svg",
+      "source_index": 2326,
+      "url": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-4.0/Human_physiology/DBCLS/Anterior_view_of_ligaments_of_pelvis.svg",
+      "error_type": "MediaValidationError",
+      "error": "SVG XML could not be safely parsed: junk after document element: line 3993, column 0"
+    }
+  ],
+  "failure_evidence": {
+    "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42251588741-1-b0015.failures.json",
+    "sha256": "84ffa0f463ed9e75753c453c28a50bb7335f18c88d40cf1a85e87a41c3bc5df0"
+  },
+  "decision": "Keep the malformed original outside the usable publication subset; retain the pinned source URL and failure evidence. Do not silently truncate the source XML or redownload the other successful files.",
+  "servier_incremental_records": 1375,
+  "servier_failed_records": 0,
+  "visual_acceptance": "pending_new_subset",
+  "reviewed_at": "2026-11-07",
+  "reviewer": "Codex primary agent"
+}
