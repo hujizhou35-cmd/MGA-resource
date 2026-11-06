@@ -713,6 +713,41 @@
         "https://openclipart.org/detail/195847/online-computer-survey",
         "https://openclipart.org/share"
       ]
+    },
+    {
+      "source_id": "commons-gene-network",
+      "name": "Wikimedia Commons (gene-network candidate)",
+      "enabled": true,
+      "status": "candidate_pending_cloud_visual_review",
+      "primary": false,
+      "adapter": "curated_manifest",
+      "repository": null,
+      "source_url": "https://commons.wikimedia.org/wiki/File:Quendiljt_start_schematic_2011.svg",
+      "license": "per-item",
+      "license_url": null,
+      "author": null,
+      "categories": [],
+      "extensions": [
+        "svg"
+      ],
+      "scope": "one_candidate_pending_visual_review",
+      "rights_notes": "One author-created SVG with explicit CC BY-SA3.0 choice and original SHA1/size pins. Actual cloud preview review pending; collection is not publication approval. Preserve specific budding-yeast meaning.",
+      "verified_at": "2026-11-07",
+      "content_types": [
+        "diagram"
+      ],
+      "style_notes": "Unreviewed 2011 Illustrator-created mechanism diagram; no generic-component or editability approval yet.",
+      "evidence_urls": [
+        "https://commons.wikimedia.org/wiki/File:Quendiljt_start_schematic_2011.svg"
+      ],
+      "manifest_path": "data/curated/gene-network-candidate-20261107.json",
+      "manifest_sha256": "6efcea878fdf36f6be14af60bfae3311e29e7fbfdb1cdf6a43eec9acfed836e9",
+      "manifest_version": "gene-network-candidate-20261107-v1",
+      "expected_item_count": 1,
+      "download_hosts": [
+        "upload.wikimedia.org"
+      ],
+      "publication_status": "candidate_pending_visual_review"
     }
   ]
 }

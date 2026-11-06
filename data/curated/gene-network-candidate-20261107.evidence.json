@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "verified_at": "2026-11-07",
+  "verification_method": "Read official Wikimedia Commons file page with the web tool; factual fields transcribed below. This document is not a raw HTML/API capture and its own hash is not an upstream response hash.",
+  "official_page": "https://commons.wikimedia.org/wiki/File:Quendiljt_start_schematic_2011.svg",
+  "page_reported_revision": 1178482463,
+  "original_file_url": "https://upload.wikimedia.org/wikipedia/commons/0/00/Quendiljt_start_schematic_2011.svg",
+  "original_file_sha1": "da8d87d0faacb0c02fbd29b63b7c28b9e5fa18f2",
+  "original_file_size_bytes": 104877,
+  "original_file_timestamp_as_displayed": "05:28, 16 December 2011",
+  "nominal_svg_dimensions": {"width": 413.136, "height": 186.221, "units": "px"},
+  "author": "Quendiljt",
+  "author_creation_claim": "Author states they created the gene network schematic in Illustrator for a presentation on Start regulation; it references the Cln3 article.",
+  "license_options": ["CC-BY-SA-3.0", "GFDL-1.2-or-later"],
+  "selected_license": "CC-BY-SA-3.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+  "license_choice_evidence": "The page expressly permits choosing one of the listed licenses; retain attribution and ShareAlike for derivative work.",
+  "scientific_context": {
+    "linked_page": "https://en.wikipedia.org/wiki/Cln3",
+    "reported_context": "Budding-yeast G1/S cell-cycle regulation; CLN3 in Saccharomyces cerevisiae.",
+    "limitation": "Context identification is not a validation of every edge in the 2011 schematic, a current-model claim, or evidence for a human mechanism. Generic component suitability is unconfirmed until the actual cloud preview is reviewed."
+  },
+  "collection_authorization": "Parent authorized fixed-hash cloud acquisition into the existing candidate workflow followed by bounded Release contact-sheet review. Collection does not imply publication or benchmark acceptance.",
+  "local_source_media_download_performed": false,
+  "prior_local_download_attempt": "Automatic approval rejected the previous local thumbnail/metadata command with blocked by policy; it was not retried or bypassed. Subsequent hidden browser inspection timed out. This candidate is being acquired in the explicitly authorized cloud workflow.",
+  "visual_review": "pending_cloud_contact_sheet"
+}

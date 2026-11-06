@@ -1,0 +1,49 @@
+{
+  "schema_version": 1,
+  "version": "gene-network-candidate-20261107-v1",
+  "reviewed_on": "2026-11-07",
+  "scope": "One metadata-vetted candidate for cloud acquisition and contact-sheet review; no visual acceptance yet.",
+  "items": [
+    {
+      "source": "commons-gene-network",
+      "source_id": "File:Quendiljt start schematic 2011.svg",
+      "title": "Start regulation gene network schematic (budding yeast, 2011)",
+      "title_zh": "出芽酵母 Start 调控基因网络示意（2011）",
+      "original_title": "Quendiljt start schematic 2011.svg",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Quendiljt_start_schematic_2011.svg",
+      "author": "Quendiljt",
+      "license": "CC-BY-SA-3.0",
+      "license_original": "CC BY-SA 3.0 / GFDL; uploader permits choosing one license",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "attribution": "Start regulation gene network schematic (2011) — Quendiljt; CC-BY-SA-3.0; https://commons.wikimedia.org/wiki/File:Quendiljt_start_schematic_2011.svg; original bytes unchanged by MGA-resource. Retain attribution and ShareAlike when adapting.",
+      "rights_evidence": [
+        "https://commons.wikimedia.org/wiki/File:Quendiljt_start_schematic_2011.svg"
+      ],
+      "description": "Author-created gene network schematic for presenting Start regulation, linked by its author to the Cln3 article. This is a specific budding-yeast mechanism diagram, not a generic human gene network or an inferred experimental network.",
+      "scope_notes": "Candidate pending actual cloud-render review. Named yeast relationships must not be relabeled as human mechanisms. It may supply an editable example of activation/inhibition network structure, but it is not a blank generic component and is not automatically a match for every gene-network request. The 2011 mechanistic content is not claimed to be a current exhaustive scientific model.",
+      "categories": ["omics_data"],
+      "tags": ["gene regulatory network", "gene network", "Start regulation", "budding yeast", "Cln3", "cell cycle", "regulation schematic"],
+      "species": "Saccharomyces cerevisiae",
+      "species_evidence": "https://en.wikipedia.org/wiki/Cln3",
+      "species_evidence_note": "Contextual identification from the Cln3 page linked by the Commons author; actual drawing labels still require cloud visual review.",
+      "upstream_revision": "sha1:da8d87d0faacb0c02fbd29b63b7c28b9e5fa18f2",
+      "upstream_timestamp_displayed": "05:28, 16 December 2011",
+      "metadata_evidence": "data/curated/gene-network-candidate-20261107.evidence.json",
+      "publication_status": "candidate_pending_visual_review",
+      "files": [
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/0/00/Quendiljt_start_schematic_2011.svg",
+          "format": "svg",
+          "upstream_hash": "sha1:da8d87d0faacb0c02fbd29b63b7c28b9e5fa18f2",
+          "upstream_size": 104877
+        }
+      ],
+      "thumbnail_review": {
+        "status": "pending_cloud_contact_sheet",
+        "original_download_verified": false,
+        "cloud_render_acceptance": "pending",
+        "observed": null
+      }
+    }
+  ]
+}

@@ -91,10 +91,29 @@ def test_unknown_content_hash_cannot_silently_skip_verification(monkeypatch):
 
 def test_checked_in_sources_are_exact_small_inventories_and_no_network():
     registry = json.loads((curated_sources.ROOT / "data/sources.json").read_text(encoding="utf-8"))
-    sources = [row for row in registry["sources"] if row.get("adapter") == "curated_manifest"]
+    sources = [row for row in registry["sources"] if row.get("adapter") == "curated_manifest" and row["source_id"] in {"commons", "openclipart"}]
     assert {row["source_id"] for row in sources} == {"commons", "openclipart"}
     records = [item for source in sources for item in discover(source, NoNetwork())]
     assert len(records) == 7
     assert all(item["thumbnail_review"]["status"] == "viewed" for item in records)
     assert all(item["thumbnail_review"]["original_download_verified"] is False for item in records if item["source"] == "commons")
     assert not any("forest" in item["title"].lower() for item in records)
+
+
+def test_gene_network_candidate_is_cloud_only_and_keeps_specific_context():
+    registry = json.loads((curated_sources.ROOT / "data/sources.json").read_text(encoding="utf-8"))
+    source = next(row for row in registry["sources"] if row["source_id"] == "commons-gene-network")
+    records = discover(source, NoNetwork())
+    assert len(records) == 1
+    item = records[0]
+    assert item["license"] == "CC-BY-SA-3.0"
+    assert item["files"][0]["upstream_hash"] == "sha1:da8d87d0faacb0c02fbd29b63b7c28b9e5fa18f2"
+    assert item["files"][0]["upstream_size"] == 104877
+    assert item["publication_status"] == "candidate_pending_visual_review"
+    assert item["thumbnail_review"]["status"] == "pending_cloud_contact_sheet"
+    assert item["thumbnail_review"]["observed"] is None
+    assert item["species"] == "Saccharomyces cerevisiae"
+    assert "not a blank generic component" in item["scope_notes"]
+    # A separate inventory leaves the already acquired six Commons originals intact.
+    original = next(row for row in registry["sources"] if row["source_id"] == "commons")
+    assert original["manifest_sha256"] == "26f7fd7c8b66bd49f4a1ea28bac4ad87f6ddd76381f05cfcea87cd4fc07385d1"
