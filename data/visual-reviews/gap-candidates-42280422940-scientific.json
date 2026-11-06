@@ -1,0 +1,180 @@
+{
+  "schema_version": 1,
+  "reviewed_at": "2026-11-06T19:49:07.384912+00:00",
+  "reviewer": "Codex registry_acceptance; direct inspection of all five exact cloud previews",
+  "review_method": "Viewed the complete bounded review sheet generated from the unchanged archived PNG previews. Independently checked the GitHub Release pack digest, sheet digest, each preview byte SHA-256 and the cloud full-archive verification receipts. Titles nominate candidates but do not supply unobserved scientific claims.",
+  "review_sheet_url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/exact-review-42280422940-1.review.png",
+  "review_sheet_sha256": "6ef257142a93d7ecea13018d55a3478418acc2f8eb5d22cfc74f8ab225846970",
+  "review_limits": [
+    "Exact original/preview pairs only; no automatic inheritance to other family/color variants.",
+    "Static culture setup is not a demonstrated culture operation, and centrifuge loading is not a separation result or full step sequence.",
+    "A generic form does not establish questionnaire meaning; a human group does not establish recruitment, follow-up or randomization.",
+    "No performance, dosing, sample identity, native editability or formal retrieval acceptance claim."
+  ],
+  "review_pack": {
+    "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/exact-review-42280422940-1.tar.gz",
+    "sha256": "40e74a6230d10a0f41d5fe0403c301de3c5d6ece05e5687a9085470a6b165b5b",
+    "mapping_sha256": "a79c14d2698d0bd4f031a08681db60608227feccef96077d34d8d358641296f4",
+    "plan_sha256": "d65d88e6d8365dcb2f55a84d65a5381d2fa4d71b5586407b1e46582396d4d5a8"
+  },
+  "items": [
+    {
+      "tile": 1,
+      "id": "bioicons-a5a17208ccf6a99aa8b0",
+      "source": "bioicons",
+      "source_id": "cc-by-4.0/Lab_apparatus/DBCLS/centrifuge-user.svg",
+      "title": "centrifuge user",
+      "source_url": "https://github.com/duerrsimon/bioicons/blob/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-4.0/Lab_apparatus/DBCLS/centrifuge-user.svg",
+      "original_sha256": "81cef7afa4208873bff2e21089b6cd024b0dc2d5257b289b1b1f5bab18dd0616",
+      "preview_sha256": "b3ac02c8392176f2b91cacc8e4b6f277644291fcf3fa64813cc4c36008d5d698",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42251588741-1-b0024.tar.gz",
+        "member": "files/81/81cef7afa4208873bff2e21089b6cd024b0dc2d5257b289b1b1f5bab18dd0616.svg"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42251588741-1-b0024.tar.gz",
+        "member": "previews/81cef7afa4208873bff2e21089b6cd024b0dc2d5257b289b1b1f5bab18dd0616.png"
+      },
+      "visual_verdict": "usable_as_schematic_component",
+      "observations": "Actual exact preview inspected: a laboratory worker stands beside an open centrifuge, with one hand at the sample containers in the rotor and another near the machine controls. The picture supports a centrifuge-loading/equipment-operation scene. It does not show spinning, a separated fraction, a before/after separation sequence, a speed or a duration. The source title corroborates the equipment identity; it is not a single isolated device icon.",
+      "scientific_assertions": {
+        "object": [
+          "centrifuge"
+        ],
+        "depiction_kind": "action",
+        "role": [
+          "equipment_loading"
+        ]
+      },
+      "scientific_detail_validation": "limited_visible_object_action_only",
+      "native_editability_tested": false
+    },
+    {
+      "tile": 2,
+      "id": "bioicons-c29dc0575353ba50501f",
+      "source": "bioicons",
+      "source_id": "cc-0/Cell_culture/Marcel_Tisch/cells_feeder_coculture.svg",
+      "title": "cells feeder coculture",
+      "source_url": "https://github.com/duerrsimon/bioicons/blob/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-0/Cell_culture/Marcel_Tisch/cells_feeder_coculture.svg",
+      "original_sha256": "e4ff3215a1e5b339e1f50e6b609b99be44cbdfd4fc72e32ee782de77716cf82c",
+      "preview_sha256": "b9dd61f92ba7baa9ae4049327f519b9da647e3f51c7e1ea41e8f57f1f8e3a27f",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42239971379-1-b0000.tar.gz",
+        "member": "files/e4/e4ff3215a1e5b339e1f50e6b609b99be44cbdfd4fc72e32ee782de77716cf82c.svg"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42239971379-1-b0000.tar.gz",
+        "member": "previews/e4ff3215a1e5b339e1f50e6b609b99be44cbdfd4fc72e32ee782de77716cf82c.png"
+      },
+      "visual_verdict": "usable_as_schematic_component",
+      "observations": "Actual exact preview inspected: a cutaway culture vessel contains liquid above a yellow adherent lower cell layer and several blue cell clusters. It supports a static cell-culture/co-culture configuration. There is no hand, instrument manipulation or step sequence; cell identities, species, medium composition and culture conditions remain unknown.",
+      "scientific_assertions": {
+        "object": [
+          "cell culture"
+        ],
+        "depiction_kind": "experimental_setup",
+        "role": [
+          "static_setup"
+        ]
+      },
+      "scientific_detail_validation": "limited_visible_object_action_only",
+      "native_editability_tested": false
+    },
+    {
+      "tile": 3,
+      "id": "bioicons-b6733fcf61ab61939b7e",
+      "source": "bioicons",
+      "source_id": "cc-by-4.0/Lab_apparatus/DBCLS/Pipetting_Female.svg",
+      "title": "Pipetting Female",
+      "source_url": "https://github.com/duerrsimon/bioicons/blob/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-4.0/Lab_apparatus/DBCLS/Pipetting_Female.svg",
+      "original_sha256": "4f7b88869456238099db6b37d7b327ec6ad6ae86ca43361f2146c36803b0de00",
+      "preview_sha256": "e72ab6ff3572b8444a3025759a77c6d2dc9fc316defe8ecbc3e5b0ec5eb6410b",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42251588741-1-b0022.tar.gz",
+        "member": "files/4f/4f7b88869456238099db6b37d7b327ec6ad6ae86ca43361f2146c36803b0de00.svg"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42251588741-1-b0022.tar.gz",
+        "member": "previews/4f7b88869456238099db6b37d7b327ec6ad6ae86ca43361f2146c36803b0de00.png"
+      },
+      "visual_verdict": "usable_as_schematic_component",
+      "observations": "Actual exact preview inspected: a laboratory worker holds a micropipette with its tip directed into an open sample vessel, with a reagent bottle nearby. This clearly depicts pipetting/liquid transfer. The graphic does not identify a cell culture, particular sample, volume, species of sample or experimental conditions.",
+      "scientific_assertions": {
+        "object": [
+          "pipetting"
+        ],
+        "depiction_kind": "action",
+        "role": [
+          "liquid_transfer"
+        ]
+      },
+      "scientific_detail_validation": "limited_visible_object_action_only",
+      "native_editability_tested": false
+    },
+    {
+      "tile": 4,
+      "id": "healthicons-4a4d28be7209b7b4b731",
+      "source": "healthicons",
+      "source_id": "public/icons/svg/outline/objects/health-worker_form.svg",
+      "title": "Health Worker Form",
+      "source_url": "https://github.com/resolvetosavelives/healthicons/blob/2080c1b40e4829f2f4217e03bc22908b4e402f6b/public/icons/svg/outline/objects/health-worker_form.svg",
+      "original_sha256": "3e0db9de01c5f1207968f9d6316055ceffda289d02ecaca84a755816a40838ca",
+      "preview_sha256": "951debc92d2161cf799949bd5311b2845d86a072d638a7f1d9c6b5776421095b",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/healthicons-42234355854-1-b0003.tar.gz",
+        "member": "files/3e/3e0db9de01c5f1207968f9d6316055ceffda289d02ecaca84a755816a40838ca.svg"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/healthicons-42234355854-1-b0003.tar.gz",
+        "member": "previews/3e0db9de01c5f1207968f9d6316055ceffda289d02ecaca84a755816a40838ca.png"
+      },
+      "visual_verdict": "usable_as_schematic_component",
+      "observations": "Actual exact preview inspected: a black outline clipboard contains two short horizontal marks, a small empty square and a generic head-and-shoulders pictogram. This is a reusable form/document symbol. No survey questions, interview interaction or actual answered questionnaire are shown; it cannot alone establish questionnaire-survey meaning.",
+      "scientific_assertions": {
+        "object": [
+          "form"
+        ],
+        "depiction_kind": "document_symbol",
+        "role": [
+          "record_form"
+        ]
+      },
+      "scientific_detail_validation": "limited_visible_object_action_only",
+      "native_editability_tested": false
+    },
+    {
+      "tile": 5,
+      "id": "nih-bioart-57b76866d5aea134f7b4",
+      "source": "nih-bioart",
+      "source_id": "185",
+      "title": "Group of People",
+      "source_url": "https://bioart.niaid.nih.gov/bioart/185",
+      "original_sha256": "f2cc06c7c8c76c03a1bba830b1670be2d07e1543d0bc49dae3339af880b9e9bc",
+      "preview_sha256": "2573d24e1756da011c4b9b23b2681d0f40af83badb052b0c7258cae477fee1c3",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/nih-bioart-42236561214-1-b0000.tar.gz",
+        "member": "files/f2/f2cc06c7c8c76c03a1bba830b1670be2d07e1543d0bc49dae3339af880b9e9bc.png"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/nih-bioart-42236561214-1-b0000.tar.gz",
+        "member": "previews/f2cc06c7c8c76c03a1bba830b1670be2d07e1543d0bc49dae3339af880b9e9bc.png"
+      },
+      "visual_verdict": "usable_as_schematic_component",
+      "observations": "Actual exact preview inspected: several illustrated people are grouped together, including smaller and larger figures; some adult figures are cropped at the lower body. This is a reusable human-group illustration. No invitation, enrollment, eligibility check, random assignment or follow-up-time marker is visible; these research roles must not be inferred from the group.",
+      "scientific_assertions": {
+        "object": [
+          "human"
+        ],
+        "species": [
+          "human"
+        ],
+        "depiction_kind": "person_group",
+        "role": [
+          "group"
+        ]
+      },
+      "scientific_detail_validation": "limited_visible_object_action_only",
+      "native_editability_tested": false
+    }
+  ]
+}
