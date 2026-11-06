@@ -1,0 +1,2070 @@
+{
+  "assembly_evidence": {
+    "assembly-42254549321-1.catalog.jsonl": {
+      "sha256": "7111dcbe52f3a59f1b7a52c773950b9c1d6849d05903e169744cacad38a8a94f",
+      "size_bytes": 90082015,
+      "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/assembly-42254549321-1.catalog.jsonl"
+    },
+    "assembly-42254549321-1.report.json": {
+      "sha256": "fb67f299043545c3e50163705a55394be62f09a2e04a85eca483180c54550349",
+      "size_bytes": 2070912,
+      "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/assembly-42254549321-1.report.json"
+    }
+  },
+  "assembly_run": "42254549321-1",
+  "bindings": {
+    "assembly_report_sha256": "fb67f299043545c3e50163705a55394be62f09a2e04a85eca483180c54550349",
+    "benchmark_sha256": "ce0282afeb4afbcee8fdef1c6f937844ef569cabf16ba7909e22bf86b1096e92",
+    "catalog_sha256": "7111dcbe52f3a59f1b7a52c773950b9c1d6849d05903e169744cacad38a8a94f",
+    "mapping_sha256": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356"
+  },
+  "exact_no_file_quarantine": {
+    "bioicons": {
+      "discovery_sha256": "6e3354582fd6b2c52968dcfe586d4ca029ff7dfc92a4b28e81d5e5a9d1bb3a6e",
+      "items": [
+        {
+          "evidence": {
+            "sha256": "5aa011c6a5e703841ba23993db9f02c805035a24161a3bc4af48882386aef097",
+            "size_bytes": 1242,
+            "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42239971379-1-b0000.failures.json"
+          },
+          "reason": "No usable original was acquired; exact failed descriptors are recorded below.",
+          "source_id": "cc-0/Epigenetics/Xi-Chen/single_nucleosome.svg",
+          "source_index": 178,
+          "title": "single nucleosome",
+          "unavailable_files": [
+            {
+              "archive_evidence": {
+                "sha256": "779774611fbf47b05d0175dbfd541e705eb53e9f9f8561b0e8f8d0c485bba4e7",
+                "size_bytes": 36402602,
+                "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42239971379-1-b0000.tar.gz"
+              },
+              "error_type": "MediaValidationError",
+              "evidence": {
+                "sha256": "5aa011c6a5e703841ba23993db9f02c805035a24161a3bc4af48882386aef097",
+                "size_bytes": 1242,
+                "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42239971379-1-b0000.failures.json"
+              },
+              "evidence_reuse": "same_pinned_git_blob",
+              "failure_discovery_sha256": "b03f392be6a524c2ce27e09e60a5884a7ea35964b5ae3c153c58a6ac47349f26",
+              "failure_run_id": "42239971379-1",
+              "format": "svg",
+              "reason": "SVG contains unsupported active element: script",
+              "receipt_evidence": {
+                "embedded_batch": "bioicons-42239971379-1-b0000.records.jsonl",
+                "sha256": "cc357ba54d0dc64760e50dee8cb05b3f2492a9b6e3d2b45b3c58fc349ddd33f4",
+                "size_bytes": 1995293,
+                "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42239971379-1.report.json"
+              },
+              "source_id": "cc-0/Epigenetics/Xi-Chen/single_nucleosome.svg",
+              "source_index": 178,
+              "title": "single nucleosome",
+              "upstream_archive_member": null,
+              "url": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-0/Epigenetics/Xi-Chen/single_nucleosome.svg"
+            }
+          ]
+        },
+        {
+          "evidence": {
+            "sha256": "5aa011c6a5e703841ba23993db9f02c805035a24161a3bc4af48882386aef097",
+            "size_bytes": 1242,
+            "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42239971379-1-b0000.failures.json"
+          },
+          "reason": "No usable original was acquired; exact failed descriptors are recorded below.",
+          "source_id": "cc-0/Epigenetics/Xi-Chen/transcription_machinery.svg",
+          "source_index": 179,
+          "title": "transcription machinery",
+          "unavailable_files": [
+            {
+              "archive_evidence": {
+                "sha256": "779774611fbf47b05d0175dbfd541e705eb53e9f9f8561b0e8f8d0c485bba4e7",
+                "size_bytes": 36402602,
+                "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42239971379-1-b0000.tar.gz"
+              },
+              "error_type": "MediaValidationError",
+              "evidence": {
+                "sha256": "5aa011c6a5e703841ba23993db9f02c805035a24161a3bc4af48882386aef097",
+                "size_bytes": 1242,
+                "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42239971379-1-b0000.failures.json"
+              },
+              "evidence_reuse": "same_pinned_git_blob",
+              "failure_discovery_sha256": "b03f392be6a524c2ce27e09e60a5884a7ea35964b5ae3c153c58a6ac47349f26",
+              "failure_run_id": "42239971379-1",
+              "format": "svg",
+              "reason": "SVG contains unsupported active element: script",
+              "receipt_evidence": {
+                "embedded_batch": "bioicons-42239971379-1-b0000.records.jsonl",
+                "sha256": "cc357ba54d0dc64760e50dee8cb05b3f2492a9b6e3d2b45b3c58fc349ddd33f4",
+                "size_bytes": 1995293,
+                "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42239971379-1.report.json"
+              },
+              "source_id": "cc-0/Epigenetics/Xi-Chen/transcription_machinery.svg",
+              "source_index": 179,
+              "title": "transcription machinery",
+              "upstream_archive_member": null,
+              "url": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-0/Epigenetics/Xi-Chen/transcription_machinery.svg"
+            }
+          ]
+        },
+        {
+          "evidence": {
+            "sha256": "5aa011c6a5e703841ba23993db9f02c805035a24161a3bc4af48882386aef097",
+            "size_bytes": 1242,
+            "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42239971379-1-b0000.failures.json"
+          },
+          "reason": "No usable original was acquired; exact failed descriptors are recorded below.",
+          "source_id": "cc-0/Human_physiology/fang-fangyang/gut_bacteria.svg",
+          "source_index": 235,
+          "title": "gut bacteria",
+          "unavailable_files": [
+            {
+              "archive_evidence": {
+                "sha256": "779774611fbf47b05d0175dbfd541e705eb53e9f9f8561b0e8f8d0c485bba4e7",
+                "size_bytes": 36402602,
+                "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42239971379-1-b0000.tar.gz"
+              },
+              "error_type": "MediaValidationError",
+              "evidence": {
+                "sha256": "5aa011c6a5e703841ba23993db9f02c805035a24161a3bc4af48882386aef097",
+                "size_bytes": 1242,
+                "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42239971379-1-b0000.failures.json"
+              },
+              "evidence_reuse": "same_pinned_git_blob",
+              "failure_discovery_sha256": "b03f392be6a524c2ce27e09e60a5884a7ea35964b5ae3c153c58a6ac47349f26",
+              "failure_run_id": "42239971379-1",
+              "format": "svg",
+              "reason": "Nested SVG image requires recursive validation; quarantined",
+              "receipt_evidence": {
+                "embedded_batch": "bioicons-42239971379-1-b0000.records.jsonl",
+                "sha256": "cc357ba54d0dc64760e50dee8cb05b3f2492a9b6e3d2b45b3c58fc349ddd33f4",
+                "size_bytes": 1995293,
+                "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42239971379-1.report.json"
+              },
+              "source_id": "cc-0/Human_physiology/fang-fangyang/gut_bacteria.svg",
+              "source_index": 235,
+              "title": "gut bacteria",
+              "upstream_archive_member": null,
+              "url": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-0/Human_physiology/fang-fangyang/gut_bacteria.svg"
+            }
+          ]
+        },
+        {
+          "evidence": {
+            "sha256": "84ffa0f463ed9e75753c453c28a50bb7335f18c88d40cf1a85e87a41c3bc5df0",
+            "size_bytes": 496,
+            "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42251588741-1-b0015.failures.json"
+          },
+          "reason": "No usable original was acquired; exact failed descriptors are recorded below.",
+          "source_id": "cc-by-4.0/Human_physiology/DBCLS/Anterior_view_of_ligaments_of_pelvis.svg",
+          "source_index": 2326,
+          "title": "Anterior view of ligaments of pelvis",
+          "unavailable_files": [
+            {
+              "archive_evidence": {
+                "sha256": "7548ccdaab61ac52147158743653747d1fe9374463ee11ed10ef3248e8c08dd8",
+                "size_bytes": 8389891,
+                "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42251588741-1-b0015.tar.gz"
+              },
+              "error_type": "MediaValidationError",
+              "evidence": {
+                "sha256": "84ffa0f463ed9e75753c453c28a50bb7335f18c88d40cf1a85e87a41c3bc5df0",
+                "size_bytes": 496,
+                "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42251588741-1-b0015.failures.json"
+              },
+              "evidence_reuse": "same_inventory",
+              "failure_discovery_sha256": "6e3354582fd6b2c52968dcfe586d4ca029ff7dfc92a4b28e81d5e5a9d1bb3a6e",
+              "failure_run_id": "42251588741-1",
+              "format": "svg",
+              "reason": "SVG XML could not be safely parsed: junk after document element: line 3993, column 0",
+              "receipt_evidence": {
+                "embedded_batch": "bioicons-42251588741-1-b0015.records.jsonl",
+                "sha256": "333d284c1ca9d41c0647fdcf0917a4426f40559ff12a2e437c17dd376ee1ae54",
+                "size_bytes": 480038,
+                "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42251588741-1.report.json"
+              },
+              "source_id": "cc-by-4.0/Human_physiology/DBCLS/Anterior_view_of_ligaments_of_pelvis.svg",
+              "source_index": 2326,
+              "title": "Anterior view of ligaments of pelvis",
+              "upstream_archive_member": null,
+              "url": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-4.0/Human_physiology/DBCLS/Anterior_view_of_ligaments_of_pelvis.svg"
+            }
+          ]
+        },
+        {
+          "evidence": {
+            "sha256": "52d17dd216531453a13b473de103ea61f05635acb5edf069ab8fbbb196a6df2c",
+            "size_bytes": 27970,
+            "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42239971379-1-b0005.failures.json"
+          },
+          "reason": "No usable original was acquired; exact failed descriptors are recorded below.",
+          "source_id": "cc-by-4.0/Microbiology/SwissBioPics/Bacteria2M_coccus.svg",
+          "source_index": 2548,
+          "title": "Bacteria2M coccus",
+          "unavailable_files": [
+            {
+              "archive_evidence": {
+                "sha256": "e5edb62a6d2311c5ad05ef6319559f2fc85915a2574d45d615cc9293a4d53939",
+                "size_bytes": 66530405,
+                "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42239971379-1-b0005.tar.gz"
+              },
+              "error_type": "MediaValidationError",
+              "evidence": {
+                "sha256": "52d17dd216531453a13b473de103ea61f05635acb5edf069ab8fbbb196a6df2c",
+                "size_bytes": 27970,
+                "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42239971379-1-b0005.failures.json"
+              },
+              "evidence_reuse": "same_pinned_git_blob",
+              "failure_discovery_sha256": "b03f392be6a524c2ce27e09e60a5884a7ea35964b5ae3c153c58a6ac47349f26",
+              "failure_run_id": "42239971379-1",
+              "format": "svg",
+              "reason": "SVG loads an external or unsupported resource via image/href",
+              "receipt_evidence": {
+                "embedded_batch": "bioicons-42239971379-1-b0005.records.jsonl",
+                "sha256": "cc357ba54d0dc64760e50dee8cb05b3f2492a9b6e3d2b45b3c58fc349ddd33f4",
+                "size_bytes": 1995293,
+                "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42239971379-1.report.json"
+              },
+              "source_id": "cc-by-4.0/Microbiology/SwissBioPics/Bacteria2M_coccus.svg",
+              "source_index": 2548,
+              "title": "Bacteria2M coccus",
+              "upstream_archive_member": null,
+              "url": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-4.0/Microbiology/SwissBioPics/Bacteria2M_coccus.svg"
+            }
+          ]
+        },
+        {
+          "evidence": {
+            "sha256": "52d17dd216531453a13b473de103ea61f05635acb5edf069ab8fbbb196a6df2c",
+            "size_bytes": 27970,
+            "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42239971379-1-b0005.failures.json"
+          },
+          "reason": "No usable original was acquired; exact failed descriptors are recorded below.",
+          "source_id": "cc-by-4.0/Microbiology/SwissBioPics/Bacteria2M_spiral.svg",
+          "source_index": 2552,
+          "title": "Bacteria2M spiral",
+          "unavailable_files": [
+            {
+              "archive_evidence": {
+                "sha256": "e5edb62a6d2311c5ad05ef6319559f2fc85915a2574d45d615cc9293a4d53939",
+                "size_bytes": 66530405,
+                "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42239971379-1-b0005.tar.gz"
+              },
+              "error_type": "MediaValidationError",
+              "evidence": {
+                "sha256": "52d17dd216531453a13b473de103ea61f05635acb5edf069ab8fbbb196a6df2c",
+                "size_bytes": 27970,
+                "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42239971379-1-b0005.failures.json"
+              },
+              "evidence_reuse": "same_pinned_git_blob",
+              "failure_discovery_sha256": "b03f392be6a524c2ce27e09e60a5884a7ea35964b5ae3c153c58a6ac47349f26",
+              "failure_run_id": "42239971379-1",
+              "format": "svg",
+              "reason": "SVG loads an external or unsupported resource via image/href",
+              "receipt_evidence": {
+                "embedded_batch": "bioicons-42239971379-1-b0005.records.jsonl",
+                "sha256": "cc357ba54d0dc64760e50dee8cb05b3f2492a9b6e3d2b45b3c58fc349ddd33f4",
+                "size_bytes": 1995293,
+                "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42239971379-1.report.json"
+              },
+              "source_id": "cc-by-4.0/Microbiology/SwissBioPics/Bacteria2M_spiral.svg",
+              "source_index": 2552,
+              "title": "Bacteria2M spiral",
+              "upstream_archive_member": null,
+              "url": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-4.0/Microbiology/SwissBioPics/Bacteria2M_spiral.svg"
+            }
+          ]
+        },
+        {
+          "evidence": {
+            "sha256": "52d17dd216531453a13b473de103ea61f05635acb5edf069ab8fbbb196a6df2c",
+            "size_bytes": 27970,
+            "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42239971379-1-b0005.failures.json"
+          },
+          "reason": "No usable original was acquired; exact failed descriptors are recorded below.",
+          "source_id": "cc-by-4.0/Viruses/DBCLS/Polyomaviridae.svg",
+          "source_index": 2748,
+          "title": "Polyomaviridae",
+          "unavailable_files": [
+            {
+              "archive_evidence": {
+                "sha256": "e5edb62a6d2311c5ad05ef6319559f2fc85915a2574d45d615cc9293a4d53939",
+                "size_bytes": 66530405,
+                "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42239971379-1-b0005.tar.gz"
+              },
+              "error_type": "MediaValidationError",
+              "evidence": {
+                "sha256": "52d17dd216531453a13b473de103ea61f05635acb5edf069ab8fbbb196a6df2c",
+                "size_bytes": 27970,
+                "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42239971379-1-b0005.failures.json"
+              },
+              "evidence_reuse": "same_pinned_git_blob",
+              "failure_discovery_sha256": "b03f392be6a524c2ce27e09e60a5884a7ea35964b5ae3c153c58a6ac47349f26",
+              "failure_run_id": "42239971379-1",
+              "format": "svg",
+              "reason": "Source is empty or exceeds the processing byte limit",
+              "receipt_evidence": {
+                "embedded_batch": "bioicons-42239971379-1-b0005.records.jsonl",
+                "sha256": "cc357ba54d0dc64760e50dee8cb05b3f2492a9b6e3d2b45b3c58fc349ddd33f4",
+                "size_bytes": 1995293,
+                "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42239971379-1.report.json"
+              },
+              "source_id": "cc-by-4.0/Viruses/DBCLS/Polyomaviridae.svg",
+              "source_index": 2748,
+              "title": "Polyomaviridae",
+              "upstream_archive_member": null,
+              "url": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-4.0/Viruses/DBCLS/Polyomaviridae.svg"
+            }
+          ]
+        },
+        {
+          "evidence": {
+            "sha256": "52d17dd216531453a13b473de103ea61f05635acb5edf069ab8fbbb196a6df2c",
+            "size_bytes": 27970,
+            "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42239971379-1-b0005.failures.json"
+          },
+          "reason": "No usable original was acquired; exact failed descriptors are recorded below.",
+          "source_id": "cc-by-4.0/Viruses/DBCLS/SARS-CoV-2.svg",
+          "source_index": 2749,
+          "title": "SARS Co V 2",
+          "unavailable_files": [
+            {
+              "archive_evidence": {
+                "sha256": "e5edb62a6d2311c5ad05ef6319559f2fc85915a2574d45d615cc9293a4d53939",
+                "size_bytes": 66530405,
+                "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42239971379-1-b0005.tar.gz"
+              },
+              "error_type": "MediaValidationError",
+              "evidence": {
+                "sha256": "52d17dd216531453a13b473de103ea61f05635acb5edf069ab8fbbb196a6df2c",
+                "size_bytes": 27970,
+                "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42239971379-1-b0005.failures.json"
+              },
+              "evidence_reuse": "same_pinned_git_blob",
+              "failure_discovery_sha256": "b03f392be6a524c2ce27e09e60a5884a7ea35964b5ae3c153c58a6ac47349f26",
+              "failure_run_id": "42239971379-1",
+              "format": "svg",
+              "reason": "Source is empty or exceeds the processing byte limit",
+              "receipt_evidence": {
+                "embedded_batch": "bioicons-42239971379-1-b0005.records.jsonl",
+                "sha256": "cc357ba54d0dc64760e50dee8cb05b3f2492a9b6e3d2b45b3c58fc349ddd33f4",
+                "size_bytes": 1995293,
+                "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42239971379-1.report.json"
+              },
+              "source_id": "cc-by-4.0/Viruses/DBCLS/SARS-CoV-2.svg",
+              "source_index": 2749,
+              "title": "SARS Co V 2",
+              "upstream_archive_member": null,
+              "url": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-4.0/Viruses/DBCLS/SARS-CoV-2.svg"
+            }
+          ]
+        },
+        {
+          "evidence": {
+            "sha256": "52d17dd216531453a13b473de103ea61f05635acb5edf069ab8fbbb196a6df2c",
+            "size_bytes": 27970,
+            "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42239971379-1-b0005.failures.json"
+          },
+          "reason": "No usable original was acquired; exact failed descriptors are recorded below.",
+          "source_id": "cc-by-4.0/Viruses/DBCLS/virus.svg",
+          "source_index": 2751,
+          "title": "virus",
+          "unavailable_files": [
+            {
+              "archive_evidence": {
+                "sha256": "e5edb62a6d2311c5ad05ef6319559f2fc85915a2574d45d615cc9293a4d53939",
+                "size_bytes": 66530405,
+                "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42239971379-1-b0005.tar.gz"
+              },
+              "error_type": "MediaValidationError",
+              "evidence": {
+                "sha256": "52d17dd216531453a13b473de103ea61f05635acb5edf069ab8fbbb196a6df2c",
+                "size_bytes": 27970,
+                "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42239971379-1-b0005.failures.json"
+              },
+              "evidence_reuse": "same_pinned_git_blob",
+              "failure_discovery_sha256": "b03f392be6a524c2ce27e09e60a5884a7ea35964b5ae3c153c58a6ac47349f26",
+              "failure_run_id": "42239971379-1",
+              "format": "svg",
+              "reason": "Source is empty or exceeds the processing byte limit",
+              "receipt_evidence": {
+                "embedded_batch": "bioicons-42239971379-1-b0005.records.jsonl",
+                "sha256": "cc357ba54d0dc64760e50dee8cb05b3f2492a9b6e3d2b45b3c58fc349ddd33f4",
+                "size_bytes": 1995293,
+                "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42239971379-1.report.json"
+              },
+              "source_id": "cc-by-4.0/Viruses/DBCLS/virus.svg",
+              "source_index": 2751,
+              "title": "virus",
+              "upstream_archive_member": null,
+              "url": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-4.0/Viruses/DBCLS/virus.svg"
+            }
+          ]
+        },
+        {
+          "evidence": {
+            "sha256": "52d17dd216531453a13b473de103ea61f05635acb5edf069ab8fbbb196a6df2c",
+            "size_bytes": 27970,
+            "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42239971379-1-b0005.failures.json"
+          },
+          "reason": "No usable original was acquired; exact failed descriptors are recorded below.",
+          "source_id": "mit/Scientific_graphs/dbs-sticky/area.svg",
+          "source_index": 2800,
+          "title": "area",
+          "unavailable_files": [
+            {
+              "archive_evidence": {
+                "sha256": "e5edb62a6d2311c5ad05ef6319559f2fc85915a2574d45d615cc9293a4d53939",
+                "size_bytes": 66530405,
+                "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42239971379-1-b0005.tar.gz"
+              },
+              "error_type": "MediaValidationError",
+              "evidence": {
+                "sha256": "52d17dd216531453a13b473de103ea61f05635acb5edf069ab8fbbb196a6df2c",
+                "size_bytes": 27970,
+                "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42239971379-1-b0005.failures.json"
+              },
+              "evidence_reuse": "same_pinned_git_blob",
+              "failure_discovery_sha256": "b03f392be6a524c2ce27e09e60a5884a7ea35964b5ae3c153c58a6ac47349f26",
+              "failure_run_id": "42239971379-1",
+              "format": "svg",
+              "reason": "SVG CSS loads an external resource",
+              "receipt_evidence": {
+                "embedded_batch": "bioicons-42239971379-1-b0005.records.jsonl",
+                "sha256": "cc357ba54d0dc64760e50dee8cb05b3f2492a9b6e3d2b45b3c58fc349ddd33f4",
+                "size_bytes": 1995293,
+                "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42239971379-1.report.json"
+              },
+              "source_id": "mit/Scientific_graphs/dbs-sticky/area.svg",
+              "source_index": 2800,
+              "title": "area",
+              "upstream_archive_member": null,
+              "url": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/mit/Scientific_graphs/dbs-sticky/area.svg"
+            }
+          ]
+        },
+        {
+          "evidence": {
+            "sha256": "52d17dd216531453a13b473de103ea61f05635acb5edf069ab8fbbb196a6df2c",
+            "size_bytes": 27970,
+            "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42239971379-1-b0005.failures.json"
+          },
+          "reason": "No usable original was acquired; exact failed descriptors are recorded below.",
+          "source_id": "mit/Scientific_graphs/dbs-sticky/bar-grouped.svg",
+          "source_index": 2801,
+          "title": "bar grouped",
+          "unavailable_files": [
+            {
+              "archive_evidence": {
+                "sha256": "e5edb62a6d2311c5ad05ef6319559f2fc85915a2574d45d615cc9293a4d53939",
+                "size_bytes": 66530405,
+                "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42239971379-1-b0005.tar.gz"
+              },
+              "error_type": "MediaValidationError",
+              "evidence": {
+                "sha256": "52d17dd216531453a13b473de103ea61f05635acb5edf069ab8fbbb196a6df2c",
+                "size_bytes": 27970,
+                "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42239971379-1-b0005.failures.json"
+              },
+              "evidence_reuse": "same_pinned_git_blob",
+              "failure_discovery_sha256": "b03f392be6a524c2ce27e09e60a5884a7ea35964b5ae3c153c58a6ac47349f26",
+              "failure_run_id": "42239971379-1",
+              "format": "svg",
+              "reason": "SVG CSS loads an external resource",
+              "receipt_evidence": {
+                "embedded_batch": "bioicons-42239971379-1-b0005.records.jsonl",
+                "sha256": "cc357ba54d0dc64760e50dee8cb05b3f2492a9b6e3d2b45b3c58fc349ddd33f4",
+                "size_bytes": 1995293,
+                "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42239971379-1.report.json"
+              },
+              "source_id": "mit/Scientific_graphs/dbs-sticky/bar-grouped.svg",
+              "source_index": 2801,
+              "title": "bar grouped",
+              "upstream_archive_member": null,
+              "url": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/mit/Scientific_graphs/dbs-sticky/bar-grouped.svg"
+            }
+          ]
+        },
+        {
+          "evidence": {
+            "sha256": "52d17dd216531453a13b473de103ea61f05635acb5edf069ab8fbbb196a6df2c",
+            "size_bytes": 27970,
+            "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42239971379-1-b0005.failures.json"
+          },
+          "reason": "No usable original was acquired; exact failed descriptors are recorded below.",
+          "source_id": "mit/Scientific_graphs/dbs-sticky/bar.svg",
+          "source_index": 2802,
+          "title": "bar",
+          "unavailable_files": [
+            {
+              "archive_evidence": {
+                "sha256": "e5edb62a6d2311c5ad05ef6319559f2fc85915a2574d45d615cc9293a4d53939",
+                "size_bytes": 66530405,
+                "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42239971379-1-b0005.tar.gz"
+              },
+              "error_type": "MediaValidationError",
+              "evidence": {
+                "sha256": "52d17dd216531453a13b473de103ea61f05635acb5edf069ab8fbbb196a6df2c",
+                "size_bytes": 27970,
+                "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42239971379-1-b0005.failures.json"
+              },
+              "evidence_reuse": "same_pinned_git_blob",
+              "failure_discovery_sha256": "b03f392be6a524c2ce27e09e60a5884a7ea35964b5ae3c153c58a6ac47349f26",
+              "failure_run_id": "42239971379-1",
+              "format": "svg",
+              "reason": "SVG CSS loads an external resource",
+              "receipt_evidence": {
+                "embedded_batch": "bioicons-42239971379-1-b0005.records.jsonl",
+                "sha256": "cc357ba54d0dc64760e50dee8cb05b3f2492a9b6e3d2b45b3c58fc349ddd33f4",
+                "size_bytes": 1995293,
+                "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42239971379-1.report.json"
+              },
+              "source_id": "mit/Scientific_graphs/dbs-sticky/bar.svg",
+              "source_index": 2802,
+              "title": "bar",
+              "upstream_archive_member": null,
+              "url": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/mit/Scientific_graphs/dbs-sticky/bar.svg"
+            }
+          ]
+        },
+        {
+          "evidence": {
+            "sha256": "52d17dd216531453a13b473de103ea61f05635acb5edf069ab8fbbb196a6df2c",
+            "size_bytes": 27970,
+            "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42239971379-1-b0005.failures.json"
+          },
+          "reason": "No usable original was acquired; exact failed descriptors are recorded below.",
+          "source_id": "mit/Scientific_graphs/dbs-sticky/box-whisker.svg",
+          "source_index": 2803,
+          "title": "box whisker",
+          "unavailable_files": [
+            {
+              "archive_evidence": {
+                "sha256": "e5edb62a6d2311c5ad05ef6319559f2fc85915a2574d45d615cc9293a4d53939",
+                "size_bytes": 66530405,
+                "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42239971379-1-b0005.tar.gz"
+              },
+              "error_type": "MediaValidationError",
+              "evidence": {
+                "sha256": "52d17dd216531453a13b473de103ea61f05635acb5edf069ab8fbbb196a6df2c",
+                "size_bytes": 27970,
+                "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42239971379-1-b0005.failures.json"
+              },
+              "evidence_reuse": "same_pinned_git_blob",
+              "failure_discovery_sha256": "b03f392be6a524c2ce27e09e60a5884a7ea35964b5ae3c153c58a6ac47349f26",
+              "failure_run_id": "42239971379-1",
+              "format": "svg",
+              "reason": "SVG CSS loads an external resource",
+              "receipt_evidence": {
+                "embedded_batch": "bioicons-42239971379-1-b0005.records.jsonl",
+                "sha256": "cc357ba54d0dc64760e50dee8cb05b3f2492a9b6e3d2b45b3c58fc349ddd33f4",
+                "size_bytes": 1995293,
+                "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42239971379-1.report.json"
+              },
+              "source_id": "mit/Scientific_graphs/dbs-sticky/box-whisker.svg",
+              "source_index": 2803,
+              "title": "box whisker",
+              "upstream_archive_member": null,
+              "url": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/mit/Scientific_graphs/dbs-sticky/box-whisker.svg"
+            }
+          ]
+        },
+        {
+          "evidence": {
+            "sha256": "52d17dd216531453a13b473de103ea61f05635acb5edf069ab8fbbb196a6df2c",
+            "size_bytes": 27970,
+            "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42239971379-1-b0005.failures.json"
+          },
+          "reason": "No usable original was acquired; exact failed descriptors are recorded below.",
+          "source_id": "mit/Scientific_graphs/dbs-sticky/bubble.svg",
+          "source_index": 2804,
+          "title": "bubble",
+          "unavailable_files": [
+            {
+              "archive_evidence": {
+                "sha256": "e5edb62a6d2311c5ad05ef6319559f2fc85915a2574d45d615cc9293a4d53939",
+                "size_bytes": 66530405,
+                "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42239971379-1-b0005.tar.gz"
+              },
+              "error_type": "MediaValidationError",
+              "evidence": {
+                "sha256": "52d17dd216531453a13b473de103ea61f05635acb5edf069ab8fbbb196a6df2c",
+                "size_bytes": 27970,
+                "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42239971379-1-b0005.failures.json"
+              },
+              "evidence_reuse": "same_pinned_git_blob",
+              "failure_discovery_sha256": "b03f392be6a524c2ce27e09e60a5884a7ea35964b5ae3c153c58a6ac47349f26",
+              "failure_run_id": "42239971379-1",
+              "format": "svg",
+              "reason": "SVG CSS loads an external resource",
+              "receipt_evidence": {
+                "embedded_batch": "bioicons-42239971379-1-b0005.records.jsonl",
+                "sha256": "cc357ba54d0dc64760e50dee8cb05b3f2492a9b6e3d2b45b3c58fc349ddd33f4",
+                "size_bytes": 1995293,
+                "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42239971379-1.report.json"
+              },
+              "source_id": "mit/Scientific_graphs/dbs-sticky/bubble.svg",
+              "source_index": 2804,
+              "title": "bubble",
+              "upstream_archive_member": null,
+              "url": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/mit/Scientific_graphs/dbs-sticky/bubble.svg"
+            }
+          ]
+        },
+        {
+          "evidence": {
+            "sha256": "52d17dd216531453a13b473de103ea61f05635acb5edf069ab8fbbb196a6df2c",
+            "size_bytes": 27970,
+            "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42239971379-1-b0005.failures.json"
+          },
+          "reason": "No usable original was acquired; exact failed descriptors are recorded below.",
+          "source_id": "mit/Scientific_graphs/dbs-sticky/calendar-heatmap.svg",
+          "source_index": 2805,
+          "title": "calendar heatmap",
+          "unavailable_files": [
+            {
+              "archive_evidence": {
+                "sha256": "e5edb62a6d2311c5ad05ef6319559f2fc85915a2574d45d615cc9293a4d53939",
+                "size_bytes": 66530405,
+                "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42239971379-1-b0005.tar.gz"
+              },
+              "error_type": "MediaValidationError",
+              "evidence": {
+                "sha256": "52d17dd216531453a13b473de103ea61f05635acb5edf069ab8fbbb196a6df2c",
+                "size_bytes": 27970,
+                "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42239971379-1-b0005.failures.json"
+              },
+              "evidence_reuse": "same_pinned_git_blob",
+              "failure_discovery_sha256": "b03f392be6a524c2ce27e09e60a5884a7ea35964b5ae3c153c58a6ac47349f26",
+              "failure_run_id": "42239971379-1",
+              "format": "svg",
+              "reason": "SVG CSS loads an external resource",
+              "receipt_evidence": {
+                "embedded_batch": "bioicons-42239971379-1-b0005.records.jsonl",
+                "sha256": "cc357ba54d0dc64760e50dee8cb05b3f2492a9b6e3d2b45b3c58fc349ddd33f4",
+                "size_bytes": 1995293,
+                "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42239971379-1.report.json"
+              },
+              "source_id": "mit/Scientific_graphs/dbs-sticky/calendar-heatmap.svg",
+              "source_index": 2805,
+              "title": "calendar heatmap",
+              "upstream_archive_member": null,
+              "url": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/mit/Scientific_graphs/dbs-sticky/calendar-heatmap.svg"
+            }
+          ]
+        },
+        {
+          "evidence": {
+            "sha256": "52d17dd216531453a13b473de103ea61f05635acb5edf069ab8fbbb196a6df2c",
+            "size_bytes": 27970,
+            "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42239971379-1-b0005.failures.json"
+          },
+          "reason": "No usable original was acquired; exact failed descriptors are recorded below.",
+          "source_id": "mit/Scientific_graphs/dbs-sticky/column-grouped.svg",
+          "source_index": 2806,
+          "title": "column grouped",
+          "unavailable_files": [
+            {
+              "archive_evidence": {
+                "sha256": "e5edb62a6d2311c5ad05ef6319559f2fc85915a2574d45d615cc9293a4d53939",
+                "size_bytes": 66530405,
+                "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42239971379-1-b0005.tar.gz"
+              },
+              "error_type": "MediaValidationError",
+              "evidence": {
+                "sha256": "52d17dd216531453a13b473de103ea61f05635acb5edf069ab8fbbb196a6df2c",
+                "size_bytes": 27970,
+                "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42239971379-1-b0005.failures.json"
+              },
+              "evidence_reuse": "same_pinned_git_blob",
+              "failure_discovery_sha256": "b03f392be6a524c2ce27e09e60a5884a7ea35964b5ae3c153c58a6ac47349f26",
+              "failure_run_id": "42239971379-1",
+              "format": "svg",
+              "reason": "SVG CSS loads an external resource",
+              "receipt_evidence": {
+                "embedded_batch": "bioicons-42239971379-1-b0005.records.jsonl",
+                "sha256": "cc357ba54d0dc64760e50dee8cb05b3f2492a9b6e3d2b45b3c58fc349ddd33f4",
+                "size_bytes": 1995293,
+                "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42239971379-1.report.json"
+              },
+              "source_id": "mit/Scientific_graphs/dbs-sticky/column-grouped.svg",
+              "source_index": 2806,
+              "title": "column grouped",
+              "upstream_archive_member": null,
+              "url": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/mit/Scientific_graphs/dbs-sticky/column-grouped.svg"
+            }
+          ]
+        },
+        {
+          "evidence": {
+            "sha256": "52d17dd216531453a13b473de103ea61f05635acb5edf069ab8fbbb196a6df2c",
+            "size_bytes": 27970,
+            "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42239971379-1-b0005.failures.json"
+          },
+          "reason": "No usable original was acquired; exact failed descriptors are recorded below.",
+          "source_id": "mit/Scientific_graphs/dbs-sticky/column-stacked-100.svg",
+          "source_index": 2807,
+          "title": "column stacked 100",
+          "unavailable_files": [
+            {
+              "archive_evidence": {
+                "sha256": "e5edb62a6d2311c5ad05ef6319559f2fc85915a2574d45d615cc9293a4d53939",
+                "size_bytes": 66530405,
+                "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42239971379-1-b0005.tar.gz"
+              },
+              "error_type": "MediaValidationError",
+              "evidence": {
+                "sha256": "52d17dd216531453a13b473de103ea61f05635acb5edf069ab8fbbb196a6df2c",
+                "size_bytes": 27970,
+                "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42239971379-1-b0005.failures.json"
+              },
+              "evidence_reuse": "same_pinned_git_blob",
+              "failure_discovery_sha256": "b03f392be6a524c2ce27e09e60a5884a7ea35964b5ae3c153c58a6ac47349f26",
+              "failure_run_id": "42239971379-1",
+              "format": "svg",
+              "reason": "SVG CSS loads an external resource",
+              "receipt_evidence": {
+                "embedded_batch": "bioicons-42239971379-1-b0005.records.jsonl",
+                "sha256": "cc357ba54d0dc64760e50dee8cb05b3f2492a9b6e3d2b45b3c58fc349ddd33f4",
+                "size_bytes": 1995293,
+                "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42239971379-1.report.json"
+              },
+              "source_id": "mit/Scientific_graphs/dbs-sticky/column-stacked-100.svg",
+              "source_index": 2807,
+              "title": "column stacked 100",
+              "upstream_archive_member": null,
+              "url": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/mit/Scientific_graphs/dbs-sticky/column-stacked-100.svg"
+            }
+          ]
+        },
+        {
+          "evidence": {
+            "sha256": "52d17dd216531453a13b473de103ea61f05635acb5edf069ab8fbbb196a6df2c",
+            "size_bytes": 27970,
+            "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42239971379-1-b0005.failures.json"
+          },
+          "reason": "No usable original was acquired; exact failed descriptors are recorded below.",
+          "source_id": "mit/Scientific_graphs/dbs-sticky/column-stacked.svg",
+          "source_index": 2808,
+          "title": "column stacked",
+          "unavailable_files": [
+            {
+              "archive_evidence": {
+                "sha256": "e5edb62a6d2311c5ad05ef6319559f2fc85915a2574d45d615cc9293a4d53939",
+                "size_bytes": 66530405,
+                "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42239971379-1-b0005.tar.gz"
+              },
+              "error_type": "MediaValidationError",
+              "evidence": {
+                "sha256": "52d17dd216531453a13b473de103ea61f05635acb5edf069ab8fbbb196a6df2c",
+                "size_bytes": 27970,
+                "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42239971379-1-b0005.failures.json"
+              },
+              "evidence_reuse": "same_pinned_git_blob",
+              "failure_discovery_sha256": "b03f392be6a524c2ce27e09e60a5884a7ea35964b5ae3c153c58a6ac47349f26",
+              "failure_run_id": "42239971379-1",
+              "format": "svg",
+              "reason": "SVG CSS loads an external resource",
+              "receipt_evidence": {
+                "embedded_batch": "bioicons-42239971379-1-b0005.records.jsonl",
+                "sha256": "cc357ba54d0dc64760e50dee8cb05b3f2492a9b6e3d2b45b3c58fc349ddd33f4",
+                "size_bytes": 1995293,
+                "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42239971379-1.report.json"
+              },
+              "source_id": "mit/Scientific_graphs/dbs-sticky/column-stacked.svg",
+              "source_index": 2808,
+              "title": "column stacked",
+              "upstream_archive_member": null,
+              "url": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/mit/Scientific_graphs/dbs-sticky/column-stacked.svg"
+            }
+          ]
+        },
+        {
+          "evidence": {
+            "sha256": "52d17dd216531453a13b473de103ea61f05635acb5edf069ab8fbbb196a6df2c",
+            "size_bytes": 27970,
+            "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42239971379-1-b0005.failures.json"
+          },
+          "reason": "No usable original was acquired; exact failed descriptors are recorded below.",
+          "source_id": "mit/Scientific_graphs/dbs-sticky/column.svg",
+          "source_index": 2809,
+          "title": "column",
+          "unavailable_files": [
+            {
+              "archive_evidence": {
+                "sha256": "e5edb62a6d2311c5ad05ef6319559f2fc85915a2574d45d615cc9293a4d53939",
+                "size_bytes": 66530405,
+                "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42239971379-1-b0005.tar.gz"
+              },
+              "error_type": "MediaValidationError",
+              "evidence": {
+                "sha256": "52d17dd216531453a13b473de103ea61f05635acb5edf069ab8fbbb196a6df2c",
+                "size_bytes": 27970,
+                "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42239971379-1-b0005.failures.json"
+              },
+              "evidence_reuse": "same_pinned_git_blob",
+              "failure_discovery_sha256": "b03f392be6a524c2ce27e09e60a5884a7ea35964b5ae3c153c58a6ac47349f26",
+              "failure_run_id": "42239971379-1",
+              "format": "svg",
+              "reason": "SVG CSS loads an external resource",
+              "receipt_evidence": {
+                "embedded_batch": "bioicons-42239971379-1-b0005.records.jsonl",
+                "sha256": "cc357ba54d0dc64760e50dee8cb05b3f2492a9b6e3d2b45b3c58fc349ddd33f4",
+                "size_bytes": 1995293,
+                "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42239971379-1.report.json"
+              },
+              "source_id": "mit/Scientific_graphs/dbs-sticky/column.svg",
+              "source_index": 2809,
+              "title": "column",
+              "upstream_archive_member": null,
+              "url": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/mit/Scientific_graphs/dbs-sticky/column.svg"
+            }
+          ]
+        },
+        {
+          "evidence": {
+            "sha256": "52d17dd216531453a13b473de103ea61f05635acb5edf069ab8fbbb196a6df2c",
+            "size_bytes": 27970,
+            "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42239971379-1-b0005.failures.json"
+          },
+          "reason": "No usable original was acquired; exact failed descriptors are recorded below.",
+          "source_id": "mit/Scientific_graphs/dbs-sticky/coxcomb.svg",
+          "source_index": 2810,
+          "title": "coxcomb",
+          "unavailable_files": [
+            {
+              "archive_evidence": {
+                "sha256": "e5edb62a6d2311c5ad05ef6319559f2fc85915a2574d45d615cc9293a4d53939",
+                "size_bytes": 66530405,
+                "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42239971379-1-b0005.tar.gz"
+              },
+              "error_type": "MediaValidationError",
+              "evidence": {
+                "sha256": "52d17dd216531453a13b473de103ea61f05635acb5edf069ab8fbbb196a6df2c",
+                "size_bytes": 27970,
+                "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42239971379-1-b0005.failures.json"
+              },
+              "evidence_reuse": "same_pinned_git_blob",
+              "failure_discovery_sha256": "b03f392be6a524c2ce27e09e60a5884a7ea35964b5ae3c153c58a6ac47349f26",
+              "failure_run_id": "42239971379-1",
+              "format": "svg",
+              "reason": "SVG CSS loads an external resource",
+              "receipt_evidence": {
+                "embedded_batch": "bioicons-42239971379-1-b0005.records.jsonl",
+                "sha256": "cc357ba54d0dc64760e50dee8cb05b3f2492a9b6e3d2b45b3c58fc349ddd33f4",
+                "size_bytes": 1995293,
+                "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42239971379-1.report.json"
+              },
+              "source_id": "mit/Scientific_graphs/dbs-sticky/coxcomb.svg",
+              "source_index": 2810,
+              "title": "coxcomb",
+              "upstream_archive_member": null,
+              "url": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/mit/Scientific_graphs/dbs-sticky/coxcomb.svg"
+            }
+          ]
+        },
+        {
+          "evidence": {
+            "sha256": "52d17dd216531453a13b473de103ea61f05635acb5edf069ab8fbbb196a6df2c",
+            "size_bytes": 27970,
+            "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42239971379-1-b0005.failures.json"
+          },
+          "reason": "No usable original was acquired; exact failed descriptors are recorded below.",
+          "source_id": "mit/Scientific_graphs/dbs-sticky/density-plot.svg",
+          "source_index": 2811,
+          "title": "density plot",
+          "unavailable_files": [
+            {
+              "archive_evidence": {
+                "sha256": "e5edb62a6d2311c5ad05ef6319559f2fc85915a2574d45d615cc9293a4d53939",
+                "size_bytes": 66530405,
+                "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42239971379-1-b0005.tar.gz"
+              },
+              "error_type": "MediaValidationError",
+              "evidence": {
+                "sha256": "52d17dd216531453a13b473de103ea61f05635acb5edf069ab8fbbb196a6df2c",
+                "size_bytes": 27970,
+                "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42239971379-1-b0005.failures.json"
+              },
+              "evidence_reuse": "same_pinned_git_blob",
+              "failure_discovery_sha256": "b03f392be6a524c2ce27e09e60a5884a7ea35964b5ae3c153c58a6ac47349f26",
+              "failure_run_id": "42239971379-1",
+              "format": "svg",
+              "reason": "SVG CSS loads an external resource",
+              "receipt_evidence": {
+                "embedded_batch": "bioicons-42239971379-1-b0005.records.jsonl",
+                "sha256": "cc357ba54d0dc64760e50dee8cb05b3f2492a9b6e3d2b45b3c58fc349ddd33f4",
+                "size_bytes": 1995293,
+                "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42239971379-1.report.json"
+              },
+              "source_id": "mit/Scientific_graphs/dbs-sticky/density-plot.svg",
+              "source_index": 2811,
+              "title": "density plot",
+              "upstream_archive_member": null,
+              "url": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/mit/Scientific_graphs/dbs-sticky/density-plot.svg"
+            }
+          ]
+        },
+        {
+          "evidence": {
+            "sha256": "52d17dd216531453a13b473de103ea61f05635acb5edf069ab8fbbb196a6df2c",
+            "size_bytes": 27970,
+            "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42239971379-1-b0005.failures.json"
+          },
+          "reason": "No usable original was acquired; exact failed descriptors are recorded below.",
+          "source_id": "mit/Scientific_graphs/dbs-sticky/donut.svg",
+          "source_index": 2812,
+          "title": "donut",
+          "unavailable_files": [
+            {
+              "archive_evidence": {
+                "sha256": "e5edb62a6d2311c5ad05ef6319559f2fc85915a2574d45d615cc9293a4d53939",
+                "size_bytes": 66530405,
+                "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42239971379-1-b0005.tar.gz"
+              },
+              "error_type": "MediaValidationError",
+              "evidence": {
+                "sha256": "52d17dd216531453a13b473de103ea61f05635acb5edf069ab8fbbb196a6df2c",
+                "size_bytes": 27970,
+                "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42239971379-1-b0005.failures.json"
+              },
+              "evidence_reuse": "same_pinned_git_blob",
+              "failure_discovery_sha256": "b03f392be6a524c2ce27e09e60a5884a7ea35964b5ae3c153c58a6ac47349f26",
+              "failure_run_id": "42239971379-1",
+              "format": "svg",
+              "reason": "SVG CSS loads an external resource",
+              "receipt_evidence": {
+                "embedded_batch": "bioicons-42239971379-1-b0005.records.jsonl",
+                "sha256": "cc357ba54d0dc64760e50dee8cb05b3f2492a9b6e3d2b45b3c58fc349ddd33f4",
+                "size_bytes": 1995293,
+                "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42239971379-1.report.json"
+              },
+              "source_id": "mit/Scientific_graphs/dbs-sticky/donut.svg",
+              "source_index": 2812,
+              "title": "donut",
+              "upstream_archive_member": null,
+              "url": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/mit/Scientific_graphs/dbs-sticky/donut.svg"
+            }
+          ]
+        },
+        {
+          "evidence": {
+            "sha256": "52d17dd216531453a13b473de103ea61f05635acb5edf069ab8fbbb196a6df2c",
+            "size_bytes": 27970,
+            "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42239971379-1-b0005.failures.json"
+          },
+          "reason": "No usable original was acquired; exact failed descriptors are recorded below.",
+          "source_id": "mit/Scientific_graphs/dbs-sticky/dot-multi-strip-jitter.svg",
+          "source_index": 2813,
+          "title": "dot multi strip jitter",
+          "unavailable_files": [
+            {
+              "archive_evidence": {
+                "sha256": "e5edb62a6d2311c5ad05ef6319559f2fc85915a2574d45d615cc9293a4d53939",
+                "size_bytes": 66530405,
+                "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42239971379-1-b0005.tar.gz"
+              },
+              "error_type": "MediaValidationError",
+              "evidence": {
+                "sha256": "52d17dd216531453a13b473de103ea61f05635acb5edf069ab8fbbb196a6df2c",
+                "size_bytes": 27970,
+                "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42239971379-1-b0005.failures.json"
+              },
+              "evidence_reuse": "same_pinned_git_blob",
+              "failure_discovery_sha256": "b03f392be6a524c2ce27e09e60a5884a7ea35964b5ae3c153c58a6ac47349f26",
+              "failure_run_id": "42239971379-1",
+              "format": "svg",
+              "reason": "SVG CSS loads an external resource",
+              "receipt_evidence": {
+                "embedded_batch": "bioicons-42239971379-1-b0005.records.jsonl",
+                "sha256": "cc357ba54d0dc64760e50dee8cb05b3f2492a9b6e3d2b45b3c58fc349ddd33f4",
+                "size_bytes": 1995293,
+                "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42239971379-1.report.json"
+              },
+              "source_id": "mit/Scientific_graphs/dbs-sticky/dot-multi-strip-jitter.svg",
+              "source_index": 2813,
+              "title": "dot multi strip jitter",
+              "upstream_archive_member": null,
+              "url": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/mit/Scientific_graphs/dbs-sticky/dot-multi-strip-jitter.svg"
+            }
+          ]
+        },
+        {
+          "evidence": {
+            "sha256": "52d17dd216531453a13b473de103ea61f05635acb5edf069ab8fbbb196a6df2c",
+            "size_bytes": 27970,
+            "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42239971379-1-b0005.failures.json"
+          },
+          "reason": "No usable original was acquired; exact failed descriptors are recorded below.",
+          "source_id": "mit/Scientific_graphs/dbs-sticky/dot-multi-strip.svg",
+          "source_index": 2814,
+          "title": "dot multi strip",
+          "unavailable_files": [
+            {
+              "archive_evidence": {
+                "sha256": "e5edb62a6d2311c5ad05ef6319559f2fc85915a2574d45d615cc9293a4d53939",
+                "size_bytes": 66530405,
+                "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42239971379-1-b0005.tar.gz"
+              },
+              "error_type": "MediaValidationError",
+              "evidence": {
+                "sha256": "52d17dd216531453a13b473de103ea61f05635acb5edf069ab8fbbb196a6df2c",
+                "size_bytes": 27970,
+                "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42239971379-1-b0005.failures.json"
+              },
+              "evidence_reuse": "same_pinned_git_blob",
+              "failure_discovery_sha256": "b03f392be6a524c2ce27e09e60a5884a7ea35964b5ae3c153c58a6ac47349f26",
+              "failure_run_id": "42239971379-1",
+              "format": "svg",
+              "reason": "SVG CSS loads an external resource",
+              "receipt_evidence": {
+                "embedded_batch": "bioicons-42239971379-1-b0005.records.jsonl",
+                "sha256": "cc357ba54d0dc64760e50dee8cb05b3f2492a9b6e3d2b45b3c58fc349ddd33f4",
+                "size_bytes": 1995293,
+                "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42239971379-1.report.json"
+              },
+              "source_id": "mit/Scientific_graphs/dbs-sticky/dot-multi-strip.svg",
+              "source_index": 2814,
+              "title": "dot multi strip",
+              "upstream_archive_member": null,
+              "url": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/mit/Scientific_graphs/dbs-sticky/dot-multi-strip.svg"
+            }
+          ]
+        },
+        {
+          "evidence": {
+            "sha256": "52d17dd216531453a13b473de103ea61f05635acb5edf069ab8fbbb196a6df2c",
+            "size_bytes": 27970,
+            "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42239971379-1-b0005.failures.json"
+          },
+          "reason": "No usable original was acquired; exact failed descriptors are recorded below.",
+          "source_id": "mit/Scientific_graphs/dbs-sticky/dot-strip.svg",
+          "source_index": 2815,
+          "title": "dot strip",
+          "unavailable_files": [
+            {
+              "archive_evidence": {
+                "sha256": "e5edb62a6d2311c5ad05ef6319559f2fc85915a2574d45d615cc9293a4d53939",
+                "size_bytes": 66530405,
+                "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42239971379-1-b0005.tar.gz"
+              },
+              "error_type": "MediaValidationError",
+              "evidence": {
+                "sha256": "52d17dd216531453a13b473de103ea61f05635acb5edf069ab8fbbb196a6df2c",
+                "size_bytes": 27970,
+                "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42239971379-1-b0005.failures.json"
+              },
+              "evidence_reuse": "same_pinned_git_blob",
+              "failure_discovery_sha256": "b03f392be6a524c2ce27e09e60a5884a7ea35964b5ae3c153c58a6ac47349f26",
+              "failure_run_id": "42239971379-1",
+              "format": "svg",
+              "reason": "SVG CSS loads an external resource",
+              "receipt_evidence": {
+                "embedded_batch": "bioicons-42239971379-1-b0005.records.jsonl",
+                "sha256": "cc357ba54d0dc64760e50dee8cb05b3f2492a9b6e3d2b45b3c58fc349ddd33f4",
+                "size_bytes": 1995293,
+                "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42239971379-1.report.json"
+              },
+              "source_id": "mit/Scientific_graphs/dbs-sticky/dot-strip.svg",
+              "source_index": 2815,
+              "title": "dot strip",
+              "upstream_archive_member": null,
+              "url": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/mit/Scientific_graphs/dbs-sticky/dot-strip.svg"
+            }
+          ]
+        },
+        {
+          "evidence": {
+            "sha256": "52d17dd216531453a13b473de103ea61f05635acb5edf069ab8fbbb196a6df2c",
+            "size_bytes": 27970,
+            "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42239971379-1-b0005.failures.json"
+          },
+          "reason": "No usable original was acquired; exact failed descriptors are recorded below.",
+          "source_id": "mit/Scientific_graphs/dbs-sticky/heatmap.svg",
+          "source_index": 2816,
+          "title": "heatmap",
+          "unavailable_files": [
+            {
+              "archive_evidence": {
+                "sha256": "e5edb62a6d2311c5ad05ef6319559f2fc85915a2574d45d615cc9293a4d53939",
+                "size_bytes": 66530405,
+                "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42239971379-1-b0005.tar.gz"
+              },
+              "error_type": "MediaValidationError",
+              "evidence": {
+                "sha256": "52d17dd216531453a13b473de103ea61f05635acb5edf069ab8fbbb196a6df2c",
+                "size_bytes": 27970,
+                "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42239971379-1-b0005.failures.json"
+              },
+              "evidence_reuse": "same_pinned_git_blob",
+              "failure_discovery_sha256": "b03f392be6a524c2ce27e09e60a5884a7ea35964b5ae3c153c58a6ac47349f26",
+              "failure_run_id": "42239971379-1",
+              "format": "svg",
+              "reason": "SVG CSS loads an external resource",
+              "receipt_evidence": {
+                "embedded_batch": "bioicons-42239971379-1-b0005.records.jsonl",
+                "sha256": "cc357ba54d0dc64760e50dee8cb05b3f2492a9b6e3d2b45b3c58fc349ddd33f4",
+                "size_bytes": 1995293,
+                "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42239971379-1.report.json"
+              },
+              "source_id": "mit/Scientific_graphs/dbs-sticky/heatmap.svg",
+              "source_index": 2816,
+              "title": "heatmap",
+              "upstream_archive_member": null,
+              "url": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/mit/Scientific_graphs/dbs-sticky/heatmap.svg"
+            }
+          ]
+        },
+        {
+          "evidence": {
+            "sha256": "52d17dd216531453a13b473de103ea61f05635acb5edf069ab8fbbb196a6df2c",
+            "size_bytes": 27970,
+            "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42239971379-1-b0005.failures.json"
+          },
+          "reason": "No usable original was acquired; exact failed descriptors are recorded below.",
+          "source_id": "mit/Scientific_graphs/dbs-sticky/histogram.svg",
+          "source_index": 2817,
+          "title": "histogram",
+          "unavailable_files": [
+            {
+              "archive_evidence": {
+                "sha256": "e5edb62a6d2311c5ad05ef6319559f2fc85915a2574d45d615cc9293a4d53939",
+                "size_bytes": 66530405,
+                "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42239971379-1-b0005.tar.gz"
+              },
+              "error_type": "MediaValidationError",
+              "evidence": {
+                "sha256": "52d17dd216531453a13b473de103ea61f05635acb5edf069ab8fbbb196a6df2c",
+                "size_bytes": 27970,
+                "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42239971379-1-b0005.failures.json"
+              },
+              "evidence_reuse": "same_pinned_git_blob",
+              "failure_discovery_sha256": "b03f392be6a524c2ce27e09e60a5884a7ea35964b5ae3c153c58a6ac47349f26",
+              "failure_run_id": "42239971379-1",
+              "format": "svg",
+              "reason": "SVG CSS loads an external resource",
+              "receipt_evidence": {
+                "embedded_batch": "bioicons-42239971379-1-b0005.records.jsonl",
+                "sha256": "cc357ba54d0dc64760e50dee8cb05b3f2492a9b6e3d2b45b3c58fc349ddd33f4",
+                "size_bytes": 1995293,
+                "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42239971379-1.report.json"
+              },
+              "source_id": "mit/Scientific_graphs/dbs-sticky/histogram.svg",
+              "source_index": 2817,
+              "title": "histogram",
+              "upstream_archive_member": null,
+              "url": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/mit/Scientific_graphs/dbs-sticky/histogram.svg"
+            }
+          ]
+        },
+        {
+          "evidence": {
+            "sha256": "52d17dd216531453a13b473de103ea61f05635acb5edf069ab8fbbb196a6df2c",
+            "size_bytes": 27970,
+            "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42239971379-1-b0005.failures.json"
+          },
+          "reason": "No usable original was acquired; exact failed descriptors are recorded below.",
+          "source_id": "mit/Scientific_graphs/dbs-sticky/line-dot.svg",
+          "source_index": 2818,
+          "title": "line dot",
+          "unavailable_files": [
+            {
+              "archive_evidence": {
+                "sha256": "e5edb62a6d2311c5ad05ef6319559f2fc85915a2574d45d615cc9293a4d53939",
+                "size_bytes": 66530405,
+                "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42239971379-1-b0005.tar.gz"
+              },
+              "error_type": "MediaValidationError",
+              "evidence": {
+                "sha256": "52d17dd216531453a13b473de103ea61f05635acb5edf069ab8fbbb196a6df2c",
+                "size_bytes": 27970,
+                "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42239971379-1-b0005.failures.json"
+              },
+              "evidence_reuse": "same_pinned_git_blob",
+              "failure_discovery_sha256": "b03f392be6a524c2ce27e09e60a5884a7ea35964b5ae3c153c58a6ac47349f26",
+              "failure_run_id": "42239971379-1",
+              "format": "svg",
+              "reason": "SVG CSS loads an external resource",
+              "receipt_evidence": {
+                "embedded_batch": "bioicons-42239971379-1-b0005.records.jsonl",
+                "sha256": "cc357ba54d0dc64760e50dee8cb05b3f2492a9b6e3d2b45b3c58fc349ddd33f4",
+                "size_bytes": 1995293,
+                "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42239971379-1.report.json"
+              },
+              "source_id": "mit/Scientific_graphs/dbs-sticky/line-dot.svg",
+              "source_index": 2818,
+              "title": "line dot",
+              "upstream_archive_member": null,
+              "url": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/mit/Scientific_graphs/dbs-sticky/line-dot.svg"
+            }
+          ]
+        },
+        {
+          "evidence": {
+            "sha256": "52d17dd216531453a13b473de103ea61f05635acb5edf069ab8fbbb196a6df2c",
+            "size_bytes": 27970,
+            "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42239971379-1-b0005.failures.json"
+          },
+          "reason": "No usable original was acquired; exact failed descriptors are recorded below.",
+          "source_id": "mit/Scientific_graphs/dbs-sticky/line.svg",
+          "source_index": 2819,
+          "title": "line",
+          "unavailable_files": [
+            {
+              "archive_evidence": {
+                "sha256": "e5edb62a6d2311c5ad05ef6319559f2fc85915a2574d45d615cc9293a4d53939",
+                "size_bytes": 66530405,
+                "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42239971379-1-b0005.tar.gz"
+              },
+              "error_type": "MediaValidationError",
+              "evidence": {
+                "sha256": "52d17dd216531453a13b473de103ea61f05635acb5edf069ab8fbbb196a6df2c",
+                "size_bytes": 27970,
+                "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42239971379-1-b0005.failures.json"
+              },
+              "evidence_reuse": "same_pinned_git_blob",
+              "failure_discovery_sha256": "b03f392be6a524c2ce27e09e60a5884a7ea35964b5ae3c153c58a6ac47349f26",
+              "failure_run_id": "42239971379-1",
+              "format": "svg",
+              "reason": "SVG CSS loads an external resource",
+              "receipt_evidence": {
+                "embedded_batch": "bioicons-42239971379-1-b0005.records.jsonl",
+                "sha256": "cc357ba54d0dc64760e50dee8cb05b3f2492a9b6e3d2b45b3c58fc349ddd33f4",
+                "size_bytes": 1995293,
+                "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42239971379-1.report.json"
+              },
+              "source_id": "mit/Scientific_graphs/dbs-sticky/line.svg",
+              "source_index": 2819,
+              "title": "line",
+              "upstream_archive_member": null,
+              "url": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/mit/Scientific_graphs/dbs-sticky/line.svg"
+            }
+          ]
+        },
+        {
+          "evidence": {
+            "sha256": "52d17dd216531453a13b473de103ea61f05635acb5edf069ab8fbbb196a6df2c",
+            "size_bytes": 27970,
+            "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42239971379-1-b0005.failures.json"
+          },
+          "reason": "No usable original was acquired; exact failed descriptors are recorded below.",
+          "source_id": "mit/Scientific_graphs/dbs-sticky/pie.svg",
+          "source_index": 2820,
+          "title": "pie",
+          "unavailable_files": [
+            {
+              "archive_evidence": {
+                "sha256": "e5edb62a6d2311c5ad05ef6319559f2fc85915a2574d45d615cc9293a4d53939",
+                "size_bytes": 66530405,
+                "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42239971379-1-b0005.tar.gz"
+              },
+              "error_type": "MediaValidationError",
+              "evidence": {
+                "sha256": "52d17dd216531453a13b473de103ea61f05635acb5edf069ab8fbbb196a6df2c",
+                "size_bytes": 27970,
+                "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42239971379-1-b0005.failures.json"
+              },
+              "evidence_reuse": "same_pinned_git_blob",
+              "failure_discovery_sha256": "b03f392be6a524c2ce27e09e60a5884a7ea35964b5ae3c153c58a6ac47349f26",
+              "failure_run_id": "42239971379-1",
+              "format": "svg",
+              "reason": "SVG CSS loads an external resource",
+              "receipt_evidence": {
+                "embedded_batch": "bioicons-42239971379-1-b0005.records.jsonl",
+                "sha256": "cc357ba54d0dc64760e50dee8cb05b3f2492a9b6e3d2b45b3c58fc349ddd33f4",
+                "size_bytes": 1995293,
+                "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42239971379-1.report.json"
+              },
+              "source_id": "mit/Scientific_graphs/dbs-sticky/pie.svg",
+              "source_index": 2820,
+              "title": "pie",
+              "upstream_archive_member": null,
+              "url": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/mit/Scientific_graphs/dbs-sticky/pie.svg"
+            }
+          ]
+        },
+        {
+          "evidence": {
+            "sha256": "52d17dd216531453a13b473de103ea61f05635acb5edf069ab8fbbb196a6df2c",
+            "size_bytes": 27970,
+            "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42239971379-1-b0005.failures.json"
+          },
+          "reason": "No usable original was acquired; exact failed descriptors are recorded below.",
+          "source_id": "mit/Scientific_graphs/dbs-sticky/population-pyramid.svg",
+          "source_index": 2821,
+          "title": "population pyramid",
+          "unavailable_files": [
+            {
+              "archive_evidence": {
+                "sha256": "e5edb62a6d2311c5ad05ef6319559f2fc85915a2574d45d615cc9293a4d53939",
+                "size_bytes": 66530405,
+                "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42239971379-1-b0005.tar.gz"
+              },
+              "error_type": "MediaValidationError",
+              "evidence": {
+                "sha256": "52d17dd216531453a13b473de103ea61f05635acb5edf069ab8fbbb196a6df2c",
+                "size_bytes": 27970,
+                "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42239971379-1-b0005.failures.json"
+              },
+              "evidence_reuse": "same_pinned_git_blob",
+              "failure_discovery_sha256": "b03f392be6a524c2ce27e09e60a5884a7ea35964b5ae3c153c58a6ac47349f26",
+              "failure_run_id": "42239971379-1",
+              "format": "svg",
+              "reason": "SVG CSS loads an external resource",
+              "receipt_evidence": {
+                "embedded_batch": "bioicons-42239971379-1-b0005.records.jsonl",
+                "sha256": "cc357ba54d0dc64760e50dee8cb05b3f2492a9b6e3d2b45b3c58fc349ddd33f4",
+                "size_bytes": 1995293,
+                "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42239971379-1.report.json"
+              },
+              "source_id": "mit/Scientific_graphs/dbs-sticky/population-pyramid.svg",
+              "source_index": 2821,
+              "title": "population pyramid",
+              "upstream_archive_member": null,
+              "url": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/mit/Scientific_graphs/dbs-sticky/population-pyramid.svg"
+            }
+          ]
+        },
+        {
+          "evidence": {
+            "sha256": "52d17dd216531453a13b473de103ea61f05635acb5edf069ab8fbbb196a6df2c",
+            "size_bytes": 27970,
+            "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42239971379-1-b0005.failures.json"
+          },
+          "reason": "No usable original was acquired; exact failed descriptors are recorded below.",
+          "source_id": "mit/Scientific_graphs/dbs-sticky/radar.svg",
+          "source_index": 2822,
+          "title": "radar",
+          "unavailable_files": [
+            {
+              "archive_evidence": {
+                "sha256": "e5edb62a6d2311c5ad05ef6319559f2fc85915a2574d45d615cc9293a4d53939",
+                "size_bytes": 66530405,
+                "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42239971379-1-b0005.tar.gz"
+              },
+              "error_type": "MediaValidationError",
+              "evidence": {
+                "sha256": "52d17dd216531453a13b473de103ea61f05635acb5edf069ab8fbbb196a6df2c",
+                "size_bytes": 27970,
+                "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42239971379-1-b0005.failures.json"
+              },
+              "evidence_reuse": "same_pinned_git_blob",
+              "failure_discovery_sha256": "b03f392be6a524c2ce27e09e60a5884a7ea35964b5ae3c153c58a6ac47349f26",
+              "failure_run_id": "42239971379-1",
+              "format": "svg",
+              "reason": "SVG CSS loads an external resource",
+              "receipt_evidence": {
+                "embedded_batch": "bioicons-42239971379-1-b0005.records.jsonl",
+                "sha256": "cc357ba54d0dc64760e50dee8cb05b3f2492a9b6e3d2b45b3c58fc349ddd33f4",
+                "size_bytes": 1995293,
+                "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42239971379-1.report.json"
+              },
+              "source_id": "mit/Scientific_graphs/dbs-sticky/radar.svg",
+              "source_index": 2822,
+              "title": "radar",
+              "upstream_archive_member": null,
+              "url": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/mit/Scientific_graphs/dbs-sticky/radar.svg"
+            }
+          ]
+        },
+        {
+          "evidence": {
+            "sha256": "52d17dd216531453a13b473de103ea61f05635acb5edf069ab8fbbb196a6df2c",
+            "size_bytes": 27970,
+            "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42239971379-1-b0005.failures.json"
+          },
+          "reason": "No usable original was acquired; exact failed descriptors are recorded below.",
+          "source_id": "mit/Scientific_graphs/dbs-sticky/scatter.svg",
+          "source_index": 2823,
+          "title": "scatter",
+          "unavailable_files": [
+            {
+              "archive_evidence": {
+                "sha256": "e5edb62a6d2311c5ad05ef6319559f2fc85915a2574d45d615cc9293a4d53939",
+                "size_bytes": 66530405,
+                "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42239971379-1-b0005.tar.gz"
+              },
+              "error_type": "MediaValidationError",
+              "evidence": {
+                "sha256": "52d17dd216531453a13b473de103ea61f05635acb5edf069ab8fbbb196a6df2c",
+                "size_bytes": 27970,
+                "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42239971379-1-b0005.failures.json"
+              },
+              "evidence_reuse": "same_pinned_git_blob",
+              "failure_discovery_sha256": "b03f392be6a524c2ce27e09e60a5884a7ea35964b5ae3c153c58a6ac47349f26",
+              "failure_run_id": "42239971379-1",
+              "format": "svg",
+              "reason": "SVG CSS loads an external resource",
+              "receipt_evidence": {
+                "embedded_batch": "bioicons-42239971379-1-b0005.records.jsonl",
+                "sha256": "cc357ba54d0dc64760e50dee8cb05b3f2492a9b6e3d2b45b3c58fc349ddd33f4",
+                "size_bytes": 1995293,
+                "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42239971379-1.report.json"
+              },
+              "source_id": "mit/Scientific_graphs/dbs-sticky/scatter.svg",
+              "source_index": 2823,
+              "title": "scatter",
+              "upstream_archive_member": null,
+              "url": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/mit/Scientific_graphs/dbs-sticky/scatter.svg"
+            }
+          ]
+        },
+        {
+          "evidence": {
+            "sha256": "52d17dd216531453a13b473de103ea61f05635acb5edf069ab8fbbb196a6df2c",
+            "size_bytes": 27970,
+            "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42239971379-1-b0005.failures.json"
+          },
+          "reason": "No usable original was acquired; exact failed descriptors are recorded below.",
+          "source_id": "mit/Scientific_graphs/dbs-sticky/stackedbar-100.svg",
+          "source_index": 2824,
+          "title": "stackedbar 100",
+          "unavailable_files": [
+            {
+              "archive_evidence": {
+                "sha256": "e5edb62a6d2311c5ad05ef6319559f2fc85915a2574d45d615cc9293a4d53939",
+                "size_bytes": 66530405,
+                "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42239971379-1-b0005.tar.gz"
+              },
+              "error_type": "MediaValidationError",
+              "evidence": {
+                "sha256": "52d17dd216531453a13b473de103ea61f05635acb5edf069ab8fbbb196a6df2c",
+                "size_bytes": 27970,
+                "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42239971379-1-b0005.failures.json"
+              },
+              "evidence_reuse": "same_pinned_git_blob",
+              "failure_discovery_sha256": "b03f392be6a524c2ce27e09e60a5884a7ea35964b5ae3c153c58a6ac47349f26",
+              "failure_run_id": "42239971379-1",
+              "format": "svg",
+              "reason": "SVG CSS loads an external resource",
+              "receipt_evidence": {
+                "embedded_batch": "bioicons-42239971379-1-b0005.records.jsonl",
+                "sha256": "cc357ba54d0dc64760e50dee8cb05b3f2492a9b6e3d2b45b3c58fc349ddd33f4",
+                "size_bytes": 1995293,
+                "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42239971379-1.report.json"
+              },
+              "source_id": "mit/Scientific_graphs/dbs-sticky/stackedbar-100.svg",
+              "source_index": 2824,
+              "title": "stackedbar 100",
+              "upstream_archive_member": null,
+              "url": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/mit/Scientific_graphs/dbs-sticky/stackedbar-100.svg"
+            }
+          ]
+        },
+        {
+          "evidence": {
+            "sha256": "52d17dd216531453a13b473de103ea61f05635acb5edf069ab8fbbb196a6df2c",
+            "size_bytes": 27970,
+            "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42239971379-1-b0005.failures.json"
+          },
+          "reason": "No usable original was acquired; exact failed descriptors are recorded below.",
+          "source_id": "mit/Scientific_graphs/dbs-sticky/stackedbar.svg",
+          "source_index": 2825,
+          "title": "stackedbar",
+          "unavailable_files": [
+            {
+              "archive_evidence": {
+                "sha256": "e5edb62a6d2311c5ad05ef6319559f2fc85915a2574d45d615cc9293a4d53939",
+                "size_bytes": 66530405,
+                "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42239971379-1-b0005.tar.gz"
+              },
+              "error_type": "MediaValidationError",
+              "evidence": {
+                "sha256": "52d17dd216531453a13b473de103ea61f05635acb5edf069ab8fbbb196a6df2c",
+                "size_bytes": 27970,
+                "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42239971379-1-b0005.failures.json"
+              },
+              "evidence_reuse": "same_pinned_git_blob",
+              "failure_discovery_sha256": "b03f392be6a524c2ce27e09e60a5884a7ea35964b5ae3c153c58a6ac47349f26",
+              "failure_run_id": "42239971379-1",
+              "format": "svg",
+              "reason": "SVG CSS loads an external resource",
+              "receipt_evidence": {
+                "embedded_batch": "bioicons-42239971379-1-b0005.records.jsonl",
+                "sha256": "cc357ba54d0dc64760e50dee8cb05b3f2492a9b6e3d2b45b3c58fc349ddd33f4",
+                "size_bytes": 1995293,
+                "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42239971379-1.report.json"
+              },
+              "source_id": "mit/Scientific_graphs/dbs-sticky/stackedbar.svg",
+              "source_index": 2825,
+              "title": "stackedbar",
+              "upstream_archive_member": null,
+              "url": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/mit/Scientific_graphs/dbs-sticky/stackedbar.svg"
+            }
+          ]
+        },
+        {
+          "evidence": {
+            "sha256": "52d17dd216531453a13b473de103ea61f05635acb5edf069ab8fbbb196a6df2c",
+            "size_bytes": 27970,
+            "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42239971379-1-b0005.failures.json"
+          },
+          "reason": "No usable original was acquired; exact failed descriptors are recorded below.",
+          "source_id": "mit/Scientific_graphs/dbs-sticky/theme-river.svg",
+          "source_index": 2826,
+          "title": "theme river",
+          "unavailable_files": [
+            {
+              "archive_evidence": {
+                "sha256": "e5edb62a6d2311c5ad05ef6319559f2fc85915a2574d45d615cc9293a4d53939",
+                "size_bytes": 66530405,
+                "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42239971379-1-b0005.tar.gz"
+              },
+              "error_type": "MediaValidationError",
+              "evidence": {
+                "sha256": "52d17dd216531453a13b473de103ea61f05635acb5edf069ab8fbbb196a6df2c",
+                "size_bytes": 27970,
+                "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42239971379-1-b0005.failures.json"
+              },
+              "evidence_reuse": "same_pinned_git_blob",
+              "failure_discovery_sha256": "b03f392be6a524c2ce27e09e60a5884a7ea35964b5ae3c153c58a6ac47349f26",
+              "failure_run_id": "42239971379-1",
+              "format": "svg",
+              "reason": "SVG CSS loads an external resource",
+              "receipt_evidence": {
+                "embedded_batch": "bioicons-42239971379-1-b0005.records.jsonl",
+                "sha256": "cc357ba54d0dc64760e50dee8cb05b3f2492a9b6e3d2b45b3c58fc349ddd33f4",
+                "size_bytes": 1995293,
+                "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42239971379-1.report.json"
+              },
+              "source_id": "mit/Scientific_graphs/dbs-sticky/theme-river.svg",
+              "source_index": 2826,
+              "title": "theme river",
+              "upstream_archive_member": null,
+              "url": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/mit/Scientific_graphs/dbs-sticky/theme-river.svg"
+            }
+          ]
+        },
+        {
+          "evidence": {
+            "sha256": "52d17dd216531453a13b473de103ea61f05635acb5edf069ab8fbbb196a6df2c",
+            "size_bytes": 27970,
+            "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42239971379-1-b0005.failures.json"
+          },
+          "reason": "No usable original was acquired; exact failed descriptors are recorded below.",
+          "source_id": "mit/Scientific_graphs/dbs-sticky/tree-map.svg",
+          "source_index": 2827,
+          "title": "tree map",
+          "unavailable_files": [
+            {
+              "archive_evidence": {
+                "sha256": "e5edb62a6d2311c5ad05ef6319559f2fc85915a2574d45d615cc9293a4d53939",
+                "size_bytes": 66530405,
+                "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42239971379-1-b0005.tar.gz"
+              },
+              "error_type": "MediaValidationError",
+              "evidence": {
+                "sha256": "52d17dd216531453a13b473de103ea61f05635acb5edf069ab8fbbb196a6df2c",
+                "size_bytes": 27970,
+                "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42239971379-1-b0005.failures.json"
+              },
+              "evidence_reuse": "same_pinned_git_blob",
+              "failure_discovery_sha256": "b03f392be6a524c2ce27e09e60a5884a7ea35964b5ae3c153c58a6ac47349f26",
+              "failure_run_id": "42239971379-1",
+              "format": "svg",
+              "reason": "SVG CSS loads an external resource",
+              "receipt_evidence": {
+                "embedded_batch": "bioicons-42239971379-1-b0005.records.jsonl",
+                "sha256": "cc357ba54d0dc64760e50dee8cb05b3f2492a9b6e3d2b45b3c58fc349ddd33f4",
+                "size_bytes": 1995293,
+                "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42239971379-1.report.json"
+              },
+              "source_id": "mit/Scientific_graphs/dbs-sticky/tree-map.svg",
+              "source_index": 2827,
+              "title": "tree map",
+              "upstream_archive_member": null,
+              "url": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/mit/Scientific_graphs/dbs-sticky/tree-map.svg"
+            }
+          ]
+        },
+        {
+          "evidence": {
+            "sha256": "52d17dd216531453a13b473de103ea61f05635acb5edf069ab8fbbb196a6df2c",
+            "size_bytes": 27970,
+            "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42239971379-1-b0005.failures.json"
+          },
+          "reason": "No usable original was acquired; exact failed descriptors are recorded below.",
+          "source_id": "mit/Scientific_graphs/dbs-sticky/violin.svg",
+          "source_index": 2828,
+          "title": "violin",
+          "unavailable_files": [
+            {
+              "archive_evidence": {
+                "sha256": "e5edb62a6d2311c5ad05ef6319559f2fc85915a2574d45d615cc9293a4d53939",
+                "size_bytes": 66530405,
+                "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42239971379-1-b0005.tar.gz"
+              },
+              "error_type": "MediaValidationError",
+              "evidence": {
+                "sha256": "52d17dd216531453a13b473de103ea61f05635acb5edf069ab8fbbb196a6df2c",
+                "size_bytes": 27970,
+                "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42239971379-1-b0005.failures.json"
+              },
+              "evidence_reuse": "same_pinned_git_blob",
+              "failure_discovery_sha256": "b03f392be6a524c2ce27e09e60a5884a7ea35964b5ae3c153c58a6ac47349f26",
+              "failure_run_id": "42239971379-1",
+              "format": "svg",
+              "reason": "SVG CSS loads an external resource",
+              "receipt_evidence": {
+                "embedded_batch": "bioicons-42239971379-1-b0005.records.jsonl",
+                "sha256": "cc357ba54d0dc64760e50dee8cb05b3f2492a9b6e3d2b45b3c58fc349ddd33f4",
+                "size_bytes": 1995293,
+                "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42239971379-1.report.json"
+              },
+              "source_id": "mit/Scientific_graphs/dbs-sticky/violin.svg",
+              "source_index": 2828,
+              "title": "violin",
+              "upstream_archive_member": null,
+              "url": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/mit/Scientific_graphs/dbs-sticky/violin.svg"
+            }
+          ]
+        },
+        {
+          "evidence": {
+            "sha256": "52d17dd216531453a13b473de103ea61f05635acb5edf069ab8fbbb196a6df2c",
+            "size_bytes": 27970,
+            "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42239971379-1-b0005.failures.json"
+          },
+          "reason": "No usable original was acquired; exact failed descriptors are recorded below.",
+          "source_id": "mit/Scientific_graphs/dbs-sticky/waterfall.svg",
+          "source_index": 2829,
+          "title": "waterfall",
+          "unavailable_files": [
+            {
+              "archive_evidence": {
+                "sha256": "e5edb62a6d2311c5ad05ef6319559f2fc85915a2574d45d615cc9293a4d53939",
+                "size_bytes": 66530405,
+                "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42239971379-1-b0005.tar.gz"
+              },
+              "error_type": "MediaValidationError",
+              "evidence": {
+                "sha256": "52d17dd216531453a13b473de103ea61f05635acb5edf069ab8fbbb196a6df2c",
+                "size_bytes": 27970,
+                "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42239971379-1-b0005.failures.json"
+              },
+              "evidence_reuse": "same_pinned_git_blob",
+              "failure_discovery_sha256": "b03f392be6a524c2ce27e09e60a5884a7ea35964b5ae3c153c58a6ac47349f26",
+              "failure_run_id": "42239971379-1",
+              "format": "svg",
+              "reason": "SVG CSS loads an external resource",
+              "receipt_evidence": {
+                "embedded_batch": "bioicons-42239971379-1-b0005.records.jsonl",
+                "sha256": "cc357ba54d0dc64760e50dee8cb05b3f2492a9b6e3d2b45b3c58fc349ddd33f4",
+                "size_bytes": 1995293,
+                "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42239971379-1.report.json"
+              },
+              "source_id": "mit/Scientific_graphs/dbs-sticky/waterfall.svg",
+              "source_index": 2829,
+              "title": "waterfall",
+              "upstream_archive_member": null,
+              "url": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/mit/Scientific_graphs/dbs-sticky/waterfall.svg"
+            }
+          ]
+        }
+      ],
+      "schema_version": 1,
+      "source": "bioicons"
+    },
+    "scidraw": {
+      "discovery_sha256": "0eedd165694eb75e107225debfa302c873676e5d23f66934f5e2f0efddea218c",
+      "items": [
+        {
+          "evidence": {
+            "sha256": "c54a7e956b29bc80f1ff4321169522ea9b2c6293a36d996bf395550583edd29c",
+            "size_bytes": 277,
+            "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scidraw-42254407034-1-b0002.failures.json"
+          },
+          "reason": "No usable original was acquired; exact failed descriptors are recorded below.",
+          "source_id": "c01e5845-11d1-4582-9bc3-df240d2e1c0b",
+          "source_index": 21,
+          "title": "Lipid bilayer",
+          "unavailable_files": [
+            {
+              "archive_evidence": {
+                "sha256": "8fde322b7fa7e2160c4495cdb7eb6aa43906e29c83caf03b9d62d7e6de9c9758",
+                "size_bytes": 24885,
+                "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scidraw-42254407034-1-b0002.tar.gz"
+              },
+              "error_type": "MediaValidationError",
+              "evidence": {
+                "sha256": "c54a7e956b29bc80f1ff4321169522ea9b2c6293a36d996bf395550583edd29c",
+                "size_bytes": 277,
+                "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scidraw-42254407034-1-b0002.failures.json"
+              },
+              "evidence_reuse": "same_inventory",
+              "failure_discovery_sha256": "0eedd165694eb75e107225debfa302c873676e5d23f66934f5e2f0efddea218c",
+              "failure_run_id": "42254407034-1",
+              "format": "svg",
+              "reason": "SVG has an unsupported entity declaration",
+              "receipt_evidence": {
+                "embedded_batch": "scidraw-42254407034-1-b0002.records.jsonl",
+                "sha256": "e6c5a58b6a4a16be227bf6d8f57100c9175479280ca4df8ba0884d29ab6ba942",
+                "size_bytes": 65613,
+                "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scidraw-42254407034-1.report.json"
+              },
+              "source_id": "c01e5845-11d1-4582-9bc3-df240d2e1c0b",
+              "source_index": 21,
+              "title": "Lipid bilayer",
+              "upstream_archive_member": null,
+              "url": "https://scidraw.io/files/membrane_c7TXft4.svg"
+            }
+          ]
+        },
+        {
+          "evidence": {
+            "sha256": "89162c67098a3f3122a1269b6ab87ce507d0632a3a310f2042186a10cdf07ef7",
+            "size_bytes": 303,
+            "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scidraw-42254407034-1-b0008.failures.json"
+          },
+          "reason": "No usable original was acquired; exact failed descriptors are recorded below.",
+          "source_id": "1cf4afd9-4174-417b-8210-4829d57a7ecd",
+          "source_index": 97,
+          "title": "ELISA",
+          "unavailable_files": [
+            {
+              "archive_evidence": {
+                "sha256": "90954efd4558d4fe7ca6ac28dae2fec445bf8211e3e6bd19b3d5fc09ee91901c",
+                "size_bytes": 532,
+                "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scidraw-42254407034-1-b0008.tar.gz"
+              },
+              "error_type": "MediaValidationError",
+              "evidence": {
+                "sha256": "89162c67098a3f3122a1269b6ab87ce507d0632a3a310f2042186a10cdf07ef7",
+                "size_bytes": 303,
+                "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scidraw-42254407034-1-b0008.failures.json"
+              },
+              "evidence_reuse": "same_inventory",
+              "failure_discovery_sha256": "0eedd165694eb75e107225debfa302c873676e5d23f66934f5e2f0efddea218c",
+              "failure_run_id": "42254407034-1",
+              "format": "svg",
+              "reason": "SVG loads an external or unsupported resource via image/href",
+              "receipt_evidence": {
+                "embedded_batch": "scidraw-42254407034-1-b0008.records.jsonl",
+                "sha256": "e6c5a58b6a4a16be227bf6d8f57100c9175479280ca4df8ba0884d29ab6ba942",
+                "size_bytes": 65613,
+                "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scidraw-42254407034-1.report.json"
+              },
+              "source_id": "1cf4afd9-4174-417b-8210-4829d57a7ecd",
+              "source_index": 97,
+              "title": "ELISA",
+              "upstream_archive_member": null,
+              "url": "https://scidraw.io/files/ELISA_schematic_JGvqK7A.svg"
+            }
+          ]
+        },
+        {
+          "evidence": {
+            "sha256": "6708dbbb94260e30df494454371b6b49498558c93a8f55a887b85d80d3dd324e",
+            "size_bytes": 296,
+            "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scidraw-42254407034-1-b0011.failures.json"
+          },
+          "reason": "No usable original was acquired; exact failed descriptors are recorded below.",
+          "source_id": "9cf4ec3b-d957-44c2-8b47-71ebab002f38",
+          "source_index": 121,
+          "title": "ELISA",
+          "unavailable_files": [
+            {
+              "archive_evidence": {
+                "sha256": "365c14562d3a62d228770ceefbe87052908c0e943d17ad5850e0a5440f7cbd2b",
+                "size_bytes": 515,
+                "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scidraw-42254407034-1-b0011.tar.gz"
+              },
+              "error_type": "MediaValidationError",
+              "evidence": {
+                "sha256": "6708dbbb94260e30df494454371b6b49498558c93a8f55a887b85d80d3dd324e",
+                "size_bytes": 296,
+                "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scidraw-42254407034-1-b0011.failures.json"
+              },
+              "evidence_reuse": "same_inventory",
+              "failure_discovery_sha256": "0eedd165694eb75e107225debfa302c873676e5d23f66934f5e2f0efddea218c",
+              "failure_run_id": "42254407034-1",
+              "format": "svg",
+              "reason": "SVG loads an external or unsupported resource via image/href",
+              "receipt_evidence": {
+                "embedded_batch": "scidraw-42254407034-1-b0011.records.jsonl",
+                "sha256": "e6c5a58b6a4a16be227bf6d8f57100c9175479280ca4df8ba0884d29ab6ba942",
+                "size_bytes": 65613,
+                "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scidraw-42254407034-1.report.json"
+              },
+              "source_id": "9cf4ec3b-d957-44c2-8b47-71ebab002f38",
+              "source_index": 121,
+              "title": "ELISA",
+              "upstream_archive_member": null,
+              "url": "https://scidraw.io/files/ELISA_schematic.svg"
+            }
+          ]
+        },
+        {
+          "evidence": {
+            "sha256": "563c73ae94afd36ae595cfdb25f55247dd34283c03ad04521b69c825484298f0",
+            "size_bytes": 8494,
+            "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scidraw-42235890704-1-b0000.failures.json"
+          },
+          "reason": "No usable original was acquired; exact failed descriptors are recorded below.",
+          "source_id": "2042cc2c-9fa9-4330-abb8-e5850bf9e479",
+          "source_index": 368,
+          "title": "Sleep_EEG_EMG",
+          "unavailable_files": [
+            {
+              "archive_evidence": {
+                "sha256": "ccc6253bacba4862a11b5ee40eb0297046a9350bad2a9a09515484c0fa1fcfa6",
+                "size_bytes": 59250378,
+                "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scidraw-42235890704-1-b0000.tar.gz"
+              },
+              "error_type": "MediaValidationError",
+              "evidence": {
+                "sha256": "563c73ae94afd36ae595cfdb25f55247dd34283c03ad04521b69c825484298f0",
+                "size_bytes": 8494,
+                "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scidraw-42235890704-1-b0000.failures.json"
+              },
+              "evidence_reuse": "same_inventory",
+              "failure_discovery_sha256": "0eedd165694eb75e107225debfa302c873676e5d23f66934f5e2f0efddea218c",
+              "failure_run_id": "42235890704-1",
+              "format": "svg",
+              "reason": "SVG loads an external or unsupported resource via image/href",
+              "receipt_evidence": {
+                "embedded_batch": "scidraw-42235890704-1-b0000.records.jsonl",
+                "sha256": "12d21741928846310df428d7dd59eb806984628fdae404f657b800455b938864",
+                "size_bytes": 184393,
+                "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scidraw-42235890704-1.report.json"
+              },
+              "source_id": "2042cc2c-9fa9-4330-abb8-e5850bf9e479",
+              "source_index": 368,
+              "title": "Sleep_EEG_EMG",
+              "upstream_archive_member": null,
+              "url": "https://scidraw.io/files/sleep_EEG_EMG.svg"
+            }
+          ]
+        },
+        {
+          "evidence": {
+            "sha256": "563c73ae94afd36ae595cfdb25f55247dd34283c03ad04521b69c825484298f0",
+            "size_bytes": 8494,
+            "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scidraw-42235890704-1-b0000.failures.json"
+          },
+          "reason": "No usable original was acquired; exact failed descriptors are recorded below.",
+          "source_id": "c4b59809-7b67-4c1b-802c-88c844b26a07",
+          "source_index": 434,
+          "title": "Reef fish retina",
+          "unavailable_files": [
+            {
+              "archive_evidence": {
+                "sha256": "ccc6253bacba4862a11b5ee40eb0297046a9350bad2a9a09515484c0fa1fcfa6",
+                "size_bytes": 59250378,
+                "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scidraw-42235890704-1-b0000.tar.gz"
+              },
+              "error_type": "MediaValidationError",
+              "evidence": {
+                "sha256": "563c73ae94afd36ae595cfdb25f55247dd34283c03ad04521b69c825484298f0",
+                "size_bytes": 8494,
+                "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scidraw-42235890704-1-b0000.failures.json"
+              },
+              "evidence_reuse": "same_inventory",
+              "failure_discovery_sha256": "0eedd165694eb75e107225debfa302c873676e5d23f66934f5e2f0efddea218c",
+              "failure_run_id": "42235890704-1",
+              "format": "svg",
+              "reason": "SVG XML could not be safely parsed: junk after document element: line 289, column 6",
+              "receipt_evidence": {
+                "embedded_batch": "scidraw-42235890704-1-b0000.records.jsonl",
+                "sha256": "12d21741928846310df428d7dd59eb806984628fdae404f657b800455b938864",
+                "size_bytes": 184393,
+                "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scidraw-42235890704-1.report.json"
+              },
+              "source_id": "c4b59809-7b67-4c1b-802c-88c844b26a07",
+              "source_index": 434,
+              "title": "Reef fish retina",
+              "upstream_archive_member": null,
+              "url": "https://scidraw.io/files/reef_fish_retina.svg"
+            }
+          ]
+        },
+        {
+          "evidence": {
+            "sha256": "b6032cc628552e6e17b523aa48e1d2c5b6f3fbab9d8d6f6ad0e696372c528e46",
+            "size_bytes": 1171,
+            "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scidraw-42235890704-1-b0001.failures.json"
+          },
+          "reason": "No usable original was acquired; exact failed descriptors are recorded below.",
+          "source_id": "27372785-fec3-4e6f-8c67-cd3f6030928f",
+          "source_index": 518,
+          "title": "Shark retina",
+          "unavailable_files": [
+            {
+              "archive_evidence": {
+                "sha256": "28d93990ea950b4037b20bad218b0b36434255c03c963d11b4164cd7d5316876",
+                "size_bytes": 64143507,
+                "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scidraw-42235890704-1-b0001.tar.gz"
+              },
+              "error_type": "MediaValidationError",
+              "evidence": {
+                "sha256": "b6032cc628552e6e17b523aa48e1d2c5b6f3fbab9d8d6f6ad0e696372c528e46",
+                "size_bytes": 1171,
+                "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scidraw-42235890704-1-b0001.failures.json"
+              },
+              "evidence_reuse": "same_inventory",
+              "failure_discovery_sha256": "0eedd165694eb75e107225debfa302c873676e5d23f66934f5e2f0efddea218c",
+              "failure_run_id": "42235890704-1",
+              "format": "svg",
+              "reason": "SVG XML could not be safely parsed: not well-formed (invalid token): line 9, column 6",
+              "receipt_evidence": {
+                "embedded_batch": "scidraw-42235890704-1-b0001.records.jsonl",
+                "sha256": "12d21741928846310df428d7dd59eb806984628fdae404f657b800455b938864",
+                "size_bytes": 184393,
+                "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scidraw-42235890704-1.report.json"
+              },
+              "source_id": "27372785-fec3-4e6f-8c67-cd3f6030928f",
+              "source_index": 518,
+              "title": "Shark retina",
+              "upstream_archive_member": null,
+              "url": "https://scidraw.io/files/shark_retina.svg"
+            }
+          ]
+        },
+        {
+          "evidence": {
+            "sha256": "b6032cc628552e6e17b523aa48e1d2c5b6f3fbab9d8d6f6ad0e696372c528e46",
+            "size_bytes": 1171,
+            "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scidraw-42235890704-1-b0001.failures.json"
+          },
+          "reason": "No usable original was acquired; exact failed descriptors are recorded below.",
+          "source_id": "92d035d1-66d5-46af-b87c-37d7252c4c77",
+          "source_index": 586,
+          "title": "Neolamprologus pulcher",
+          "unavailable_files": [
+            {
+              "archive_evidence": {
+                "sha256": "28d93990ea950b4037b20bad218b0b36434255c03c963d11b4164cd7d5316876",
+                "size_bytes": 64143507,
+                "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scidraw-42235890704-1-b0001.tar.gz"
+              },
+              "error_type": "MediaValidationError",
+              "evidence": {
+                "sha256": "b6032cc628552e6e17b523aa48e1d2c5b6f3fbab9d8d6f6ad0e696372c528e46",
+                "size_bytes": 1171,
+                "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scidraw-42235890704-1-b0001.failures.json"
+              },
+              "evidence_reuse": "same_inventory",
+              "failure_discovery_sha256": "0eedd165694eb75e107225debfa302c873676e5d23f66934f5e2f0efddea218c",
+              "failure_run_id": "42235890704-1",
+              "format": "svg",
+              "reason": "SVG loads an external or unsupported resource via image/href",
+              "receipt_evidence": {
+                "embedded_batch": "scidraw-42235890704-1-b0001.records.jsonl",
+                "sha256": "12d21741928846310df428d7dd59eb806984628fdae404f657b800455b938864",
+                "size_bytes": 184393,
+                "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scidraw-42235890704-1.report.json"
+              },
+              "source_id": "92d035d1-66d5-46af-b87c-37d7252c4c77",
+              "source_index": 586,
+              "title": "Neolamprologus pulcher",
+              "upstream_archive_member": null,
+              "url": "https://scidraw.io/files/Npulcher.svg"
+            }
+          ]
+        }
+      ],
+      "schema_version": 1,
+      "source": "scidraw"
+    }
+  },
+  "final_acceptance_claimed": false,
+  "inventory_proofs": {
+    "bioicons": {
+      "sha256": "6e3354582fd6b2c52968dcfe586d4ca029ff7dfc92a4b28e81d5e5a9d1bb3a6e",
+      "size_bytes": 6489748,
+      "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42251588741-1.discovery.jsonl"
+    },
+    "nih-bioart": {
+      "sha256": "282b9201bcd1da91999a34ce94fbe20b973ba37bcfa8c67433c8f3efeddfbb01",
+      "size_bytes": 1812496,
+      "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/nih-bioart-42236561214-1.discovery.jsonl"
+    },
+    "reactome": {
+      "sha256": "0f8bc0cda06d8ea7739d7f5df8c4be223df078a950aa9f5005c5e44c3ad6f66c",
+      "size_bytes": 2564860,
+      "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/reactome-42246331998-1.discovery.jsonl"
+    },
+    "scidraw": {
+      "sha256": "0eedd165694eb75e107225debfa302c873676e5d23f66934f5e2f0efddea218c",
+      "size_bytes": 570346,
+      "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scidraw-42235890704-1.discovery.jsonl"
+    },
+    "togo": {
+      "sha256": "2f35e01f966726f8dd1a9aceb321cf59a1feb4c4e2be0bf0eda8f8554b49178f",
+      "size_bytes": 3213741,
+      "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42249870031-1.discovery.jsonl"
+    }
+  },
+  "limitations": [
+    "This assembly predates the final Reactome 48 SVG successes, the completed SciDraw retry, Togo continuation and the seven gapfill additions.",
+    "Later receipt successes are not treated as files present in this older catalog. Rebind against the final assembly.",
+    "Pending entry count includes separate variants and cannot be read as an artwork count.",
+    "No actual microscopy or photography claim was made from a raster extension. Scope-pending review observations remain pending.",
+    "The 120-query benchmark, visual review, Illustrator and cloud restore acceptance are not granted by these decisions."
+  ],
+  "output_artifacts": {
+    "candidate_publish_manifest.json": {
+      "sha256": "86afcc8ee1cfabdc9af8c957bc4391dbe5adeead001368c4fc404db632501e85",
+      "size_bytes": 32836630
+    },
+    "decisions.json": {
+      "sha256": "5a5aca4062945107062f2b61d037d5c1b1c3d46fe877e0812a0688c26323a31b",
+      "size_bytes": 11107
+    },
+    "preparation_report.json": {
+      "sha256": "a573429aa4d620fb4684f9f8420ed8b357fa2bbf136484646cd8cf2f465eaad4",
+      "size_bytes": 1460191
+    },
+    "selections/bioicons.items.quarantine.json": {
+      "sha256": "7f76e90319774474f76d2ba4613d2b3918e0e696f3cbc0cdeb70f50d04970ad7",
+      "size_bytes": 71621
+    },
+    "selections/nih-bioart.items.exclude_from_v1.json": {
+      "sha256": "ae6cee4a26f034fd206290610c168dd1ff46641549a267bf49b38d5a170433fc",
+      "size_bytes": 1993
+    },
+    "selections/nih-bioart.unavailable_variants.quarantine.json": {
+      "sha256": "751bac7031740f253b88a67f37a3804f3908c39738e2c126056019b6371de748",
+      "size_bytes": 2090
+    },
+    "selections/reactome.unavailable_variants.not_acquired.json": {
+      "sha256": "6c5c902aad49c9c03c5b8570c566d26b20009998a1c832513cd388460a45426b",
+      "size_bytes": 4211688
+    },
+    "selections/scidraw.files.quarantine.json": {
+      "sha256": "854912ecd51cd02e5a1be1d1f5dcdc2576b250891d528e0260edaf054bc26333",
+      "size_bytes": 1082
+    },
+    "selections/scidraw.items.quarantine.json": {
+      "sha256": "558bed52734269a74fbda834c5b915cb6be2ebb27e4a8b34cc19d3695f7cba06",
+      "size_bytes": 12076
+    },
+    "selections/togo.unavailable_variants.not_acquired.json": {
+      "sha256": "9f1c3c816e177a85d55d1df3469763fcff45539895809d4c27c6cedd0ae2be03",
+      "size_bytes": 5286
+    },
+    "selections/togo.unavailable_variants.quarantine.json": {
+      "sha256": "7528bca28e9c7ad95f461a185015b53dd5b8e38dc0639efaa2d7d0b670afc54e",
+      "size_bytes": 133905
+    }
+  },
+  "pending_entries": 2658,
+  "pending_entries_by_source": {
+    "reactome": 96,
+    "scidraw": 23,
+    "togo": 2539
+  },
+  "pending_unique_source_items": 1841,
+  "schema_version": 1,
+  "scope_pending_review_files": 18,
+  "selected_counts": {
+    "bioicons/items/quarantine": 39,
+    "nih-bioart/items/exclude_from_v1": 4,
+    "nih-bioart/unavailable_variants/quarantine": 1,
+    "reactome/unavailable_variants/not_acquired": 2523,
+    "scidraw/files/quarantine": 1,
+    "scidraw/items/quarantine": 7,
+    "togo/unavailable_variants/not_acquired": 3,
+    "togo/unavailable_variants/quarantine": 81
+  },
+  "status": "historical_assembly_preparation_checkpoint"
+}
