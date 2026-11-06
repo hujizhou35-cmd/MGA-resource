@@ -7,6 +7,7 @@ from __future__ import annotations
 
 import argparse
 import copy
+from contextlib import closing
 from datetime import datetime, timezone
 import hashlib
 import json
@@ -74,11 +75,16 @@ def attach_ledger(project, ledger, pool, catalog_sha256):
     return result
 
 
-def validate(catalog,assembly_report,output,ledger_path=None,rich_query="mouse",scarce_query="Naegleria gruberi"):
+def validate(catalog,assembly_report,output,ledger_path=None,rich_query="mouse",scarce_query="Naegleria gruberi",index_path=None):
     output.mkdir(parents=True,exist_ok=True)
     catalog_sha=sha(catalog)
-    dbpath=output/"catalog.sqlite"
-    rebuild_search_index(catalog,dbpath)
+    dbpath=index_path or output/"catalog.sqlite"
+    if index_path:
+        with closing(sqlite3.connect(Path(index_path).resolve().as_uri()+"?mode=ro",uri=True)) as index_db:
+            if index_db.execute("SELECT value FROM index_metadata WHERE key='catalog_version'").fetchone()[0]!=catalog_sha:
+                raise ValueError("Reused search index does not bind this exact catalog")
+    else:
+        rebuild_search_index(catalog,dbpath)
     assembly=json.loads(assembly_report.read_text(encoding="utf-8"))
     ledger=json.loads(ledger_path.read_text(encoding="utf-8")) if ledger_path else None
     db=sqlite3.connect(dbpath)
@@ -189,5 +195,6 @@ if __name__=="__main__":
     parser.add_argument("--ledger",type=Path)
     parser.add_argument("--rich-query",default="mouse")
     parser.add_argument("--scarce-query",default="Naegleria gruberi")
+    parser.add_argument("--index",type=Path,help="Reuse an existing index bound to this exact frozen catalog")
     args=parser.parse_args()
-    validate(args.catalog,args.assembly_report,args.output,args.ledger,args.rich_query,args.scarce_query)
+    validate(args.catalog,args.assembly_report,args.output,args.ledger,args.rich_query,args.scarce_query,args.index)

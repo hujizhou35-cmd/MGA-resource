@@ -3,8 +3,8 @@
  */
 import vocabulary from './search-vocabulary.mjs';
 
-export const RANKING_VERSION = 'shared-search-3.1.0';
-export const INDEX_VERSION = 4;
+export const RANKING_VERSION = 'shared-search-3.2.0';
+export const INDEX_VERSION = 5;
 export const DEFAULT_CANDIDATE_POOL = 75;
 const unknown = new Set(['', 'unknown', 'unspecified', 'not_reviewed', '待确认']);
 const arr = value => value == null ? [] : Array.isArray(value) ? value : [value];
@@ -82,6 +82,33 @@ const actionNames=['injection','blood collection','blood sampling','centrifugati
 const equipmentNames=['computer mouse','mouse cursor','syringe','pipette','microscope','centrifuge','tube','flask','beaker','incubator','well plate','microplate','petri dish','culture dish','needle','scissors','cutters','sequencer','machine','instrument','apparatus','voltammetry','electrochemical','electrolytic','battery','solar cell'];
 const actionGroups=concepts.filter(group=>group.some(term=>actionNames.includes(term)));
 const equipmentGroups=concepts.filter(group=>group.some(term=>equipmentNames.includes(term)));
+const cellNames=new Set(['cell','cells','macrophage','neuron','lymphocyte','neutrophil','hepatocyte','erythrocyte','fibroblast','stem cell','t cell','b cell','endothelial cell']);
+const subcellularNames=new Set(['cell membrane','cell nucleus','nucleus','mitochondria','mitochondrion','endoplasmic reticulum','golgi','lysosome','ribosome','cell membrane receptor','membrane receptor','receptor']);
+const organNames=new Set(['heart','brain','liver','lung','kidney','intestine','pancreas','stomach','spleen','thyroid','bladder']);
+function primaryConceptGroups(groups,label='') {
+  let selected=groups.filter(group=>group.some(term=>concepts.some(known=>known.includes(term))));
+  const matching=names=>selected.filter(group=>group.some(term=>names.has(term)));
+  const equipment=selected.filter(group=>equipmentGroups.some(known=>group.some(term=>known.includes(term))));
+  const actions=selected.filter(group=>actionGroups.some(known=>group.some(term=>known.includes(term))));
+  if(equipment.length&&!/\b(?:taking|drawing|collecting|injecting|pipetting|centrifuging|dissecting)\b/.test(label))return equipment;
+  if(actions.length)return actions;
+  if(matching(subcellularNames).length)return matching(subcellularNames);
+  if(matching(cellNames).length)return matching(cellNames);
+  const notAnimals=selected.filter(group=>!group.some(term=>animalNames.has(term)));
+  if(notAnimals.length)selected=notAnimals;
+  // Organs qualify a more specific structure: heart cell is a cell from the
+  // heart, not evidence of a whole heart. Parallel named organs stay parallel.
+  const specific=selected.filter(group=>!group.some(term=>organNames.has(term)));
+  if(specific.length&&selected.some(group=>group.some(term=>organNames.has(term))))selected=specific;
+  return selected;
+}
+function explicitDepictionDescription(value) {
+  // Only an explicit depiction statement may replace a generic title. Broad
+  // keywords, tags, citations and background discussion do not name the object.
+  const description=norm(value);
+  const found=description.match(/(?:^|[.!?]\s+)(?:this\s+)?(?:(?:image|illustration|drawing|diagram|icon)\s+(?:of|depicts|shows)|(?:an?\s+)?(?:illustration|drawing|diagram|icon)\s+of|depicts|shows)\s+([^.!?]{1,180})/);
+  return found?.[1]||'';
+}
 function depictionKind(title,objects,unresolvedAnimal){
   const equipment=equipmentNames.some(term=>matches(title,term));
   const action=actionGroups.some(group=>group.some(term=>matches(title,term)));
@@ -90,7 +117,7 @@ function depictionKind(title,objects,unresolvedAnimal){
   if(equipment&&!activeVerb)return 'equipment';
   if(action)return 'action';
   if(['cell membrane','cell wall','cell nucleus','axon','dendrite','细胞膜','细胞壁','细胞核','轴突','树突'].some(term=>matches(title,term)))return 'subcellular';
-  if(['cell','cells','macrophage','neuron','lymphocyte','neutrophil','hepatocyte','erythrocyte','fibroblast','细胞','神经元'].some(term=>matches(title,term)))return 'cell';
+  if([...cellNames,'细胞','神经元'].some(term=>matches(title,term)))return 'cell';
   if(objects.some(term=>animalNames.has(term))&&!unresolvedAnimal)return 'animal';
   return objects.length?'named_object':'unknown';
 }
@@ -190,6 +217,8 @@ export function buildQueryPlan(query = '', filters = {}, options = {}) {
   if(!explicit.has('object') && groups.length && groups.every(group=>group.some(term=>animalNames.has(term)))) {
     requirements.object=unique(groups.flatMap(group=>group.filter(term=>animalNames.has(term))));
   }
+  const objectGroups=!explicit.has('object')&&!requirements.object?primaryConceptGroups(groups,norm(query)):[];
+  if(objectGroups.length)requirements.object=unique(objectGroups.flat());
   if(!explicit.has('depiction_kind')) {
     if(groups.some(group=>actionGroups.some(action=>group.some(term=>action.includes(term)))))requirements.depiction_kind=['action'];
     else if(groups.length&&groups.every(group=>equipmentGroups.some(equipment=>group.some(term=>equipment.includes(term)))))requirements.depiction_kind=['equipment'];
@@ -197,7 +226,7 @@ export function buildQueryPlan(query = '', filters = {}, options = {}) {
   }
   const fts = groups.map(group=>'('+group.map(term=>'"'+term.replaceAll('"','""')+'"').join(' OR ')+')').join(' AND ');
   const empty = !groups.length && !Object.keys(requirements).length && !Object.keys(preferences).length && Boolean(String(query).trim());
-  return {query:String(query),terms:groups,fts,requirements,all_requirements:allRequirements,preferences,soft_terms:softTerms,empty,parsed_qualifiers:parsed,ranking_version:RANKING_VERSION};
+  return {query:String(query),terms:groups,fts,requirements,all_requirements:allRequirements,object_groups:objectGroups,preferences,soft_terms:softTerms,empty,parsed_qualifiers:parsed,ranking_version:RANKING_VERSION};
 }
 
 function manualEvidence(file,key) {
@@ -279,19 +308,22 @@ export function prepareVariants(records) {
       const rejectedReview=[file.validation?.scientific_review,file.validation?.visual_review,asset.validation?.scientific_review,asset.validation?.visual_review].some(value=>['failed','rejected','unusable'].includes(value));
       const eligible=Boolean(file.sha256 && file.preview && canDownload && ['machine_checked','machine_checked_and_rendered'].includes(file.validation?.status) && rights==='license_recorded' && !rejectedReview);
       const declaredObjects=scientificValue(file,'object') ?? file.object ?? fields.scientific?.object ?? fields.object;
-      const namedConcepts=concepts.filter(group=>group.some(term=>matches(title,term)));
+      const titleConcepts=concepts.filter(group=>group.some(term=>matches(title,term)));
+      const descriptionLabel=titleConcepts.length?'':explicitDepictionDescription(fields.description);
+      const objectLabel=descriptionLabel||title;
+      const namedConcepts=descriptionLabel?concepts.filter(group=>group.some(term=>matches(descriptionLabel,term))):titleConcepts;
       const nonAnimalConcepts=namedConcepts.filter(group=>!group.some(term=>animalNames.has(term)));
       // In explicit compound labels such as mouse brain / mouse cell / mouse
       // syringe, animal words describe species/context rather than the primary
       // depicted object. Unknown titles do not borrow objects from broad tags.
-      const primaryConcepts=nonAnimalConcepts.length?nonAnimalConcepts:namedConcepts;
+      const primaryConcepts=primaryConceptGroups(namedConcepts,objectLabel);
       const declared=arr(declaredObjects).map(norm);
-      const unresolvedAnimalTitle=!nonAnimalConcepts.length&&namedConcepts.some(group=>group.some(term=>animalNames.has(term)))&&Boolean(animalTitleRemainder(title));
+      const unresolvedAnimalTitle=!nonAnimalConcepts.length&&namedConcepts.some(group=>group.some(term=>animalNames.has(term)))&&Boolean(animalTitleRemainder(objectLabel));
       const objects=declaredObjects!=null ? unique(declared.filter(value=>!unknown.has(value)).flatMap(value=>[value,...concepts.filter(group=>group.includes(value)).flat()])) : unresolvedAnimalTitle?[]:unique(primaryConcepts.flat());
-      const kind=scientificValue(file,'depiction_kind')??fields.scientific?.depiction_kind??fields.depiction_kind??depictionKind(title,objects,unresolvedAnimalTitle);
+      const kind=scientificValue(file,'depiction_kind')??fields.scientific?.depiction_kind??fields.depiction_kind??depictionKind(objectLabel,objects,unresolvedAnimalTitle);
       // Named cell types remain discoverable by their biological parent class;
       // this is an explicit ontology relation, not a substring/equipment match.
-      if(kind==='cell')aliases.push('cell','cells','细胞');
+      if(kind==='cell'){aliases.push('cell','cells','细胞');objects.push('cell','cells','细胞');}
       const values={...facts,source:arr(origin.source||asset.source),license:arr(license),distribution_status:arr(rights),category:arr(fields.taxonomy||asset.taxonomy),format:arr(file.format),
         color_mode:arr(appearance.color.mode).filter(v=>!unknown.has(v)),palette_traits:appearance.color.palette_traits||[],representation:appearance.style.representation?.values||[],detail:arr(appearance.style.detail?.value).filter(v=>!unknown.has(v)),realism:arr(appearance.style.realism?.value).filter(v=>!unknown.has(v)),series:(appearance.style.series?.memberships||[]).map(x=>x.id),
         asset_id:unique([asset.id,origin.asset_id].filter(Boolean)),family_id:arr(asset.family_id||asset.id),file_sha256:arr(file.sha256),object:objects,depiction_kind:unknown.has(kind)?[]:[kind],transparent:file.transparency?.has_transparent_pixels!=null ? [String(file.transparency.has_transparent_pixels)] : file.has_transparency!=null ? [String(file.has_transparency)] : []};
@@ -299,7 +331,7 @@ export function prepareVariants(records) {
       selectedFile.appearance=appearance;
       const lexical={title:indexTerms(title),context:indexTerms(contextText)};
       lexical.all=unique([...lexical.title,...lexical.context,...aliases.map(termKey)]).sort(cmp);
-      const row={variant_id:[asset.id,digest,origin.asset_id||origin.source_id||'',originIndex].join(':'),asset_id:asset.id,family_id:asset.family_id||asset.id,title:fields.title||asset.title,source:origin.source||asset.source,source_id:origin.source_id||asset.source_id,author:origin.author||fields.author,attribution:origin.attribution||fields.attribution,values,eligible,facts,primary_object:{terms:objects,depiction_kind:kind,basis:manualEvidence(file,'object').length?'manual_visual_review':declaredObjects!=null&&objects.length?'explicit_source_field':objects.length?'direct_source_title_compound_label':'unknown',evidence:fields.title||null,manual_evidence_indices:manualEvidence(file,'object'),whole_body_verified:manualEvidence(file,'role').length>0&&facts.role.includes('whole_body')},fact_basis:factBasis,search:{title,aliases:aliases.join(' '),context:contextText},lexical,file:selectedFile,validation:asset.validation||{}};
+      const row={variant_id:[asset.id,digest,origin.asset_id||origin.source_id||'',originIndex].join(':'),asset_id:asset.id,family_id:asset.family_id||asset.id,title:fields.title||asset.title,source:origin.source||asset.source,source_id:origin.source_id||asset.source_id,author:origin.author||fields.author,attribution:origin.attribution||fields.attribution,values,eligible,facts,primary_object:{terms:objects,depiction_kind:kind,basis:manualEvidence(file,'object').length?'manual_visual_review':declaredObjects!=null&&objects.length?'explicit_source_field':objects.length?(descriptionLabel?'explicit_source_depiction_statement':'direct_source_title_compound_label'):'unknown',evidence:descriptionLabel||fields.title||null,manual_evidence_indices:manualEvidence(file,'object'),whole_body_verified:manualEvidence(file,'role').length>0&&facts.role.includes('whole_body')},fact_basis:factBasis,search:{title,aliases:aliases.join(' '),context:contextText},lexical,file:selectedFile,validation:asset.validation||{}};
       row.rotation_key=Math.floor(unitHash(row.family_id)*2147483647);
       row.features={signature:[...signature(row)].sort(cmp)};
       result.push(row);
@@ -317,8 +349,11 @@ export function sqlitePlan(plan) {
   const textClauses=plan.fts ? ['file_variants_fts MATCH ?'] : [];
   const textParams=plan.fts ? [plan.fts] : [];
   const conditions=[{code:'unavailable_or_rights_unresolved',sql:'v.eligible=1',params:[]}];
-  for(const [key,values] of Object.entries(plan.requirements)) conditions.push({code:`hard_filter:${key}`,sql:plan.all_requirements?.[key]?`(SELECT COUNT(DISTINCT j.value) FROM json_each(v.values_json, '$.${key}') j WHERE j.value IN (${values.map(()=>'?').join(',')}))=${values.length}`:`EXISTS (SELECT 1 FROM json_each(v.values_json, '$.${key}') j WHERE j.value IN (${values.map(()=>'?').join(',')}))`,params:values,
-    unknown_sql:['species','state','view','role','object','depiction_kind','color_mode','palette_traits','representation','detail','realism','series'].includes(key)?`json_array_length(v.values_json,'$.${key}')=0`:null});
+  for(const [key,values] of Object.entries(plan.requirements)) {
+    const groups=key==='object'&&plan.object_groups?.length?plan.object_groups:null;
+    conditions.push({code:`hard_filter:${key}`,sql:groups?groups.map(group=>`EXISTS (SELECT 1 FROM json_each(v.values_json,'$.object') j WHERE j.value IN (${group.map(()=>'?').join(',')}))`).join(' AND '):plan.all_requirements?.[key]?`(SELECT COUNT(DISTINCT j.value) FROM json_each(v.values_json, '$.${key}') j WHERE j.value IN (${values.map(()=>'?').join(',')}))=${values.length}`:`EXISTS (SELECT 1 FROM json_each(v.values_json, '$.${key}') j WHERE j.value IN (${values.map(()=>'?').join(',')}))`,params:groups?groups.flat():values,
+      unknown_sql:['species','state','view','role','object','depiction_kind','color_mode','palette_traits','representation','detail','realism','series'].includes(key)?`json_array_length(v.values_json,'$.${key}')=0`:null});
+  }
   return {from,text_clauses:textClauses,text_params:textParams,conditions,where:[...textClauses,...conditions.map(c=>c.sql)].join(' AND ')||'1',params:[...textParams,...conditions.flatMap(c=>c.params)]};
 }
 
@@ -338,6 +373,7 @@ export function filterVariant(variant,plan) {
   for(const [key,expected] of Object.entries(plan.requirements)) {
     const actual=variant.values[key]||[];
     if(!actual.length) return {matched:false,reason:`unknown:${key}`};
+    if(key==='object'&&plan.object_groups?.length&&!plan.object_groups.every(group=>group.some(value=>actual.includes(value))))return {matched:false,reason:'hard_filter:object'};
     if(!(plan.all_requirements?.[key]?expected.every(v=>actual.includes(v)):expected.some(v=>actual.includes(v)))) return {matched:false,reason:`hard_filter:${key}`};
   }
   const relevance=lexicalScore(variant,plan);
@@ -457,7 +493,8 @@ export async function prepareWindowSearch(request={}) {
   const from=plan.fts?'file_variants v JOIN file_variants_fts f ON f.variant_id=v.variant_id':'file_variants v';
   if(plan.fts)conditions.push(`file_variants_fts MATCH ${param(plan.fts)}`);
   for(const [key,values] of Object.entries(plan.requirements)) {
-    if(plan.all_requirements?.[key])for(const value of values)conditions.push(member(`json_extract(v.values_json,'$.${key}')`,[value]));
+    if(key==='object'&&plan.object_groups?.length)for(const group of plan.object_groups)conditions.push(member("json_extract(v.values_json,'$.object')",group));
+    else if(plan.all_requirements?.[key])for(const value of values)conditions.push(member(`json_extract(v.values_json,'$.${key}')`,[value]));
     else conditions.push(member(`json_extract(v.values_json,'$.${key}')`,values));
   }
   for(const group of plan.terms)conditions.push(member('v.all_terms',group.map(termKey)));

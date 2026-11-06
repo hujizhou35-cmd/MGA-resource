@@ -311,3 +311,31 @@ def test_biological_cell_query_excludes_electrochemical_cells_and_cell_parts(tmp
     db=database(tmp_path,[artwork(1,title="Animal cell",species=None),artwork(2,title="Cyclic Voltammetry Const Temp Cell",species=None),artwork(3,title="Cell membrane",species=None),artwork(4,title="Macrophage",species=None)])
     rows=search(db,"cell")
     assert {row["title"] for row in rows}=={"Animal cell","Macrophage"}
+
+
+def test_primary_organ_needs_depiction_evidence_not_a_tag_or_a_cell_modifier(tmp_path):
+    records=[artwork(1,title="Heart",species=None),
+        artwork(2,title="Heart cell",species=None),
+        artwork(3,title="Liver",species=None,tags=["heart"]),
+        artwork(4,title="Figure one",species=None,tags=["heart"]),
+        artwork(5,title="Figure two",species=None,description="Illustration of a heart."),
+        artwork(6,title="Figure three",species=None,object=["heart"],tags=["heart"])]
+    db=database(tmp_path,records)
+    page=search_page(db,"heart")
+    assert {r["title"] for r in page["results"]}=={"Heart","Figure two","Figure three"}
+    assert any(r["reason"]=="unknown:object" for r in page["diagnostics"]["uncertain_candidates"])
+    assert [r["title"] for r in search(db,"heart cell")]==["Heart cell"]
+    described=next(r for r in page["results"] if r["title"]=="Figure two")
+    assert described["selected_science"]["primary_object"]["basis"]=="explicit_source_depiction_statement"
+
+
+def test_parallel_requested_organs_require_both_and_match_direct_core(tmp_path):
+    db=database(tmp_path,[artwork(1,title="Heart and liver",species=None),artwork(2,title="Heart",species=None,tags=["liver"]),artwork(3,title="Liver",species=None,tags=["heart"])])
+    with closing(sqlite3.connect(db)) as conn:
+        variants=[json.loads(row[0]) for row in conn.execute("SELECT metadata FROM file_variants")]
+        version=conn.execute("SELECT value FROM index_metadata WHERE key='catalog_version'").fetchone()[0]
+    for query in ("heart liver", "心脏肝脏"):
+        page=search_page(db,query)
+        direct=_search_core({"action":"search","variants":variants,"request":{"query":query,"catalog_version":version}})
+        assert [r["title"] for r in page["results"]]==["Heart and liver"]
+        assert [r["variant_id"] for r in direct["results"]]==[r["variant_id"] for r in page["results"]]
