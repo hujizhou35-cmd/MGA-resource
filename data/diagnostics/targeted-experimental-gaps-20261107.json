@@ -1,0 +1,377 @@
+{
+  "schema_version": 1,
+  "status": "targeted_research_completed_no_new_imports",
+  "reviewed_at": "2026-11-06T22:45:47.476001+00:00",
+  "reviewer": "Codex media_catalog; actual contact-sheet and thumbnail inspection",
+  "purpose": "Investigate mouse injection and centrifugation separation gaps without changing the frozen catalog or search criteria",
+  "bindings": {
+    "catalog_sha256": "5c90306415ce5e7f36e875c7f57b19a91930aacfeeaeecdf9ad7662770f9a3fe",
+    "candidate_manifest_sha256": "a4fe0424ee8ecc32096090ef295242bdaa04b9ce29ff4f7a80948c95516d5436",
+    "prior_mouse_action_gap_review": {
+      "uri": "data/diagnostics/lysosome-mouse-injection-gap-20261107.json",
+      "sha256": "51e70ceaccc3308a5dd23507fc1a25007c4a9dc9cc37104733cd32623c839252"
+    },
+    "prior_centrifuge_user_review": {
+      "uri": "data/visual-reviews/gap-candidates-42280422940-scientific.json",
+      "sha256": "48709a61b6316254d698ce063a78934e1c8628ccfcf22cca73a4b83dcd400018"
+    }
+  },
+  "summary": {
+    "new_import_eligible_items": 0,
+    "mouse_injection_gap": "unresolved",
+    "centrifugation_separation_gap": "unresolved_as_complete_match; existing independent operation and pellet components confirmed",
+    "existing_exact_files_actually_reviewed": 3,
+    "new_external_previews_actually_reviewed": 1,
+    "new_external_preview_bytes": 186746,
+    "new_cloud_jobs": 0,
+    "bulk_original_downloads": 0,
+    "catalog_changes": 0
+  },
+  "existing_components": [
+    {
+      "source": "togo",
+      "source_id": "1571",
+      "source_url": "https://doi.org/10.7875/togopic.2023.007",
+      "title": "Biochemical test using a centrifuge",
+      "original_sha256": "3c5257f8cbf7901e9225a48d54cbe305c691b99669942ed5a4a6b3862449c712",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42261598057-1-b0000.tar.gz",
+        "member": "files/3c/3c5257f8cbf7901e9225a48d54cbe305c691b99669942ed5a4a6b3862449c712.png"
+      },
+      "format": "png",
+      "structure": "raster",
+      "preview_sha256": "9187e35f4b65c231c4d0f5f7558a6f65232e317e180f6892a5f83c1c4ca76d82",
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42261598057-1-b0000.tar.gz",
+        "member": "previews/3c5257f8cbf7901e9225a48d54cbe305c691b99669942ed5a4a6b3862449c712.png"
+      },
+      "license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "attribution": "Biochemical test using a centrifuge — <a href=\"https://erikotoyooka.com/\" target=\"_blank\">erico</a>; © 2016 DBCLS TogoTV / CC-BY-4.0; https://doi.org/10.7875/togopic.2023.007",
+      "file_source_records": [
+        {
+          "title": "Biochemical test using a centrifuge",
+          "tags": [
+            "Medicine",
+            "Biochemistry",
+            "Examination",
+            "Icon",
+            "Cardiology",
+            "Heart",
+            "Mammalia",
+            "Primates",
+            "Homo sapiens"
+          ],
+          "categories": [],
+          "taxonomy": [
+            "organs",
+            "lab_equipment"
+          ],
+          "author": "<a href=\"https://erikotoyooka.com/\" target=\"_blank\">erico</a>",
+          "distribution_status": "license_recorded",
+          "asset_id": "togo-c183271b58952e0151a0",
+          "source": "togo",
+          "source_id": "1571",
+          "source_url": "https://doi.org/10.7875/togopic.2023.007",
+          "url": "https://dbarchive.biosciencedbc.jp/data/togo-pic/image/202301_Biochemical_Test_Using_A_Centrifuge.png",
+          "license": "CC-BY-4.0",
+          "attribution": "Biochemical test using a centrifuge — <a href=\"https://erikotoyooka.com/\" target=\"_blank\">erico</a>; © 2016 DBCLS TogoTV / CC-BY-4.0; https://doi.org/10.7875/togopic.2023.007"
+        }
+      ],
+      "sheet_evidence": {
+        "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/frozen-review-42298772894-1.tar.gz",
+        "sha256": "a4a7e7e6a9e2750472d39ac1d9acbb34e8461d559d6b3afc2141b1ecd76ed196",
+        "member": "concepts/lab_equipment-centrifuge.png",
+        "member_sha256": "31dadbf46b1aacfc2864ea86323cebc8c2190c7b0951b54d00653a8e30bfe932",
+        "tile": 4,
+        "bounds_xywh": [
+          990,
+          150,
+          330,
+          360
+        ],
+        "mapping_sha256": "fd7901163b7dba233b34808253ffe1561eb996020382275a85c1ed2ef0f17222"
+      },
+      "manifest_binding_verified": true,
+      "observed_component_role": "equipment_operation_scene",
+      "visual_observations": "人站在打开的大型离心机旁，手位于转子和样本区域；可表达装样/设备操作。",
+      "limits": "未见旋转过程、分离后的层次或前后比较。",
+      "full_centrifugation_separation_match": false,
+      "recommendation": "existing_independent_component_only",
+      "scientific_assertions_added": false,
+      "catalog_modified": false
+    },
+    {
+      "source": "togo",
+      "source_id": "2012",
+      "source_url": "https://doi.org/10.7875/togopic.2024.171",
+      "title": "Desktop Centrifuge Female",
+      "original_sha256": "afdbbdabac15a059d7182f1821ab6af4e2cd893e1b6f77357308486bd0c2e184",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42271777119-1-b0000.tar.gz",
+        "member": "files/af/afdbbdabac15a059d7182f1821ab6af4e2cd893e1b6f77357308486bd0c2e184.svg"
+      },
+      "format": "svg",
+      "structure": "pure_vector",
+      "preview_sha256": "a5622ed10fb88143794d660f19f4c0d067e144421dc942ff881ae54ad88cec22",
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42271777119-1-b0000.tar.gz",
+        "member": "previews/afdbbdabac15a059d7182f1821ab6af4e2cd893e1b6f77357308486bd0c2e184.png"
+      },
+      "license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "attribution": "Desktop Centrifuge Female — <a href=\"https://erikotoyooka.com/\" target=\"_blank\">erico</a>; © 2016 DBCLS TogoTV / CC-BY-4.0; https://doi.org/10.7875/togopic.2024.171",
+      "file_source_records": [
+        {
+          "title": "Desktop Centrifuge Female",
+          "tags": [
+            "Icon",
+            "Cardiology",
+            "Heart",
+            "Blood vessels",
+            "Physiology",
+            "Anatomy"
+          ],
+          "categories": [],
+          "taxonomy": [
+            "organs",
+            "lab_equipment"
+          ],
+          "author": "<a href=\"https://erikotoyooka.com/\" target=\"_blank\">erico</a>",
+          "distribution_status": "license_recorded",
+          "asset_id": "togo-facf1f48512adb90d3da",
+          "source": "togo",
+          "source_id": "2012",
+          "source_url": "https://doi.org/10.7875/togopic.2024.171",
+          "url": "https://dbarchive.biosciencedbc.jp/data/togo-pic/image/202407_Desktop_Centrifuge_Female.svg",
+          "license": "CC-BY-4.0",
+          "attribution": "Desktop Centrifuge Female — <a href=\"https://erikotoyooka.com/\" target=\"_blank\">erico</a>; © 2016 DBCLS TogoTV / CC-BY-4.0; https://doi.org/10.7875/togopic.2024.171"
+        }
+      ],
+      "sheet_evidence": {
+        "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/frozen-review-42298772894-1.tar.gz",
+        "sha256": "a4a7e7e6a9e2750472d39ac1d9acbb34e8461d559d6b3afc2141b1ecd76ed196",
+        "member": "concepts/lab_equipment-centrifuge.png",
+        "member_sha256": "31dadbf46b1aacfc2864ea86323cebc8c2190c7b0951b54d00653a8e30bfe932",
+        "tile": 8,
+        "bounds_xywh": [
+          660,
+          510,
+          330,
+          360
+        ],
+        "mapping_sha256": "fd7901163b7dba233b34808253ffe1561eb996020382275a85c1ed2ef0f17222"
+      },
+      "manifest_binding_verified": true,
+      "observed_component_role": "sample_handling_near_centrifuge",
+      "visual_observations": "戴手套的人站在打开的台式离心机旁，一手举试管，另一手接近机器。",
+      "limits": "可表达拿取样本/操作；不能从此图证明分离完成或液体层次。",
+      "full_centrifugation_separation_match": false,
+      "recommendation": "existing_independent_component_only",
+      "scientific_assertions_added": false,
+      "catalog_modified": false
+    },
+    {
+      "source": "togo",
+      "source_id": "727",
+      "source_url": "https://doi.org/10.7875/togopic.2020.140",
+      "title": "Centrifuge tube pellet",
+      "original_sha256": "caec5941b3af80886cce32e37191429feece208b6529f73c6dffe06ef0a98b6d",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42249870031-1-b0001.tar.gz",
+        "member": "files/ca/caec5941b3af80886cce32e37191429feece208b6529f73c6dffe06ef0a98b6d.png"
+      },
+      "format": "png",
+      "structure": "raster",
+      "preview_sha256": "524ef61a15a5b3e83a7f5838fcfe697c51755db39dad53d38d343f2ef26deb38",
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42249870031-1-b0001.tar.gz",
+        "member": "previews/caec5941b3af80886cce32e37191429feece208b6529f73c6dffe06ef0a98b6d.png"
+      },
+      "license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "attribution": "Centrifuge tube pellet — <a href=\"https://twitter.com/arabitom\" target=\"_blank\">@arabitom</a>; © 2016 DBCLS TogoTV / CC-BY-4.0; https://doi.org/10.7875/togopic.2020.140",
+      "file_source_records": [
+        {
+          "title": "Centrifuge tube pellet",
+          "tags": [
+            "Lab equipment",
+            "Icon",
+            "Lab instruments",
+            "Lab techniques",
+            "Molecular biology",
+            "Cell culture"
+          ],
+          "categories": [],
+          "taxonomy": [
+            "cells",
+            "lab_equipment",
+            "experimental_actions"
+          ],
+          "author": "<a href=\"https://twitter.com/arabitom\" target=\"_blank\">@arabitom</a>",
+          "distribution_status": "license_recorded",
+          "asset_id": "togo-c253edb69358d57e7e6d",
+          "source": "togo",
+          "source_id": "727",
+          "source_url": "https://doi.org/10.7875/togopic.2020.140",
+          "url": "https://dbarchive.biosciencedbc.jp/data/togo-pic/image/202004_centrifuge_tube_pellet.png",
+          "license": "CC-BY-4.0",
+          "attribution": "Centrifuge tube pellet — <a href=\"https://twitter.com/arabitom\" target=\"_blank\">@arabitom</a>; © 2016 DBCLS TogoTV / CC-BY-4.0; https://doi.org/10.7875/togopic.2020.140"
+        }
+      ],
+      "sheet_evidence": {
+        "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/frozen-review-42298772894-1.tar.gz",
+        "sha256": "a4a7e7e6a9e2750472d39ac1d9acbb34e8461d559d6b3afc2141b1ecd76ed196",
+        "member": "concepts/lab_equipment-centrifuge.png",
+        "member_sha256": "31dadbf46b1aacfc2864ea86323cebc8c2190c7b0951b54d00653a8e30bfe932",
+        "tile": 10,
+        "bounds_xywh": [
+          1320,
+          510,
+          330,
+          360
+        ],
+        "mapping_sha256": "fd7901163b7dba233b34808253ffe1561eb996020382275a85c1ed2ef0f17222"
+      },
+      "manifest_binding_verified": true,
+      "observed_component_role": "pellet_component",
+      "visual_observations": "倾斜的离心管底端可见浅色沉淀块。",
+      "limits": "没有明确上清液界面、前态或离心动作；仅支持沉淀状态部件。",
+      "full_centrifugation_separation_match": false,
+      "recommendation": "existing_independent_component_only",
+      "scientific_assertions_added": false,
+      "catalog_modified": false
+    }
+  ],
+  "external_visual_leads": [
+    {
+      "source": "Explore Biology / Wikimedia Commons",
+      "title": "Equilibrium Density Gradient Centrifugation",
+      "author": "Gb Kim; Explore Biology",
+      "official_source_url": "https://www.flickr.com/photos/204521145@N06/55359353959/",
+      "file_page": "https://commons.wikimedia.org/wiki/File:XBio_illustration_%E2%80%93_Equilibrium_Density_Gradient_Centrifugation.png",
+      "license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_basis": "Commons item license and recorded Flickr review; official Flickr page credits Gb Kim and Explore Biology",
+      "attribution": "Equilibrium Density Gradient Centrifugation — Gb Kim / Explore Biology, via Wikimedia Commons; CC BY 4.0",
+      "upstream_original_sha1_reported": "7424c6213bf6358cdd1294d8ef4a35452626b143",
+      "original_bytes_downloaded": false,
+      "preview": {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/ca/XBio_illustration_%E2%80%93_Equilibrium_Density_Gradient_Centrifugation.png/960px-XBio_illustration_%E2%80%93_Equilibrium_Density_Gradient_Centrifugation.png",
+        "sha256": "5e89d22dab54af7e0c353f2f109e02a83fe759451869519d7fff73f671478ca1",
+        "size_bytes": 186746,
+        "width": 960,
+        "height": 640,
+        "format": "png"
+      },
+      "visual_observations": "实际画面含大标题与手写标注；悬液、配平管转子、旋转姿态和轻重材料分离四阶段，由箭头连成整张教学图。不是静态设备，也不是实际照片。",
+      "scope_status": "pending_complete_teaching_diagram",
+      "import_allowed": false,
+      "reason": "完整教学成图的范围边界尚未获准；不因补缺口自动收录或自动拆图。",
+      "scientific_detail_validation": "not_independently_certified",
+      "catalog_modified": false
+    }
+  ],
+  "not_imported_leads": [
+    {
+      "source_url": "https://sciencefigures.org/figure/8583/rat_restrainer_intravenous_tail_injection/",
+      "title": "Mouse Restrainer Intravenous Tail Injection",
+      "official_license_url": "https://opendesign.fyi/license/",
+      "license_name": "Open Design License 1.1",
+      "license_clause": "2.1.2 Redistribution",
+      "short_exact_condition": "not redistributing in same or similar way",
+      "decision": "not_eligible_for_same_kind_asset_library_without_separate_permission",
+      "identity_uncertainty": "Official page title says Mouse; asset pathname says rat. No exact visual/species review performed.",
+      "original_or_preview_downloaded": false
+    },
+    {
+      "source_url": "https://blog.addgene.org/common-injection-routes-in-mice",
+      "title": "Common Injection Routes in Mice",
+      "decision": "no_component_redistribution_permission_established",
+      "source_evidence": "Official Figure 1 caption identifies creation with BioRender.",
+      "original_or_preview_downloaded": false
+    },
+    {
+      "source_url": "https://commons.wikimedia.org/wiki/File:Tail_vein_injection_01.jpg",
+      "title": "Tail vein injection 01",
+      "decision": "photo_and_rat_not_mouse_illustration",
+      "source_evidence": "Commons description states rat tail-vein injection; photographer, camera EXIF and photograph type are recorded.",
+      "license": "CC-BY-SA-3.0",
+      "original_or_preview_downloaded": false
+    }
+  ],
+  "source_scope": [
+    {
+      "source": "existing catalog",
+      "method": "Reuse prior 11884-source-context mouse/action scan; new bounded nomination for centrifugation/pellet/separation and injection terms",
+      "new_nomination_regex": "centrifug|sediment|pellet|supernatant|density.gradient|注射|injection|intraperitoneal|tail.vein",
+      "new_nomination_source_context_count": 41,
+      "nomination_is_visual_acceptance": false
+    },
+    {
+      "source": "Servier",
+      "urls": [
+        "https://smart.servier.com/",
+        "https://smart.servier.com/category/general-items/animals/rodents/",
+        "https://smart.servier.com/category/general-items/equipment/laboratory-equipment/"
+      ],
+      "finding": "Official descriptions emphasize animal objects and laboratory equipment. Read 21-entry rodent category metadata and first equipment page, not a new exhaustive image audit; no independent mouse-injection component identified."
+    },
+    {
+      "source": "Wikimedia Commons",
+      "urls": [
+        "https://commons.wikimedia.org/wiki/Category:Intraperitoneal_injections",
+        "https://commons.wikimedia.org/wiki/File:Tail_vein_injection_01.jpg"
+      ],
+      "finding": "Focused category/file pages did not identify eligible isolated mouse-injection illustration; photos and video are not promoted to candidate."
+    },
+    {
+      "source": "web and GitHub discovery",
+      "queries": [
+        "site.scidraw.io mouse injection drawing",
+        "site.bioart.niaid.nih.gov centrifugation separation injection mouse",
+        "site.bioicons.com injection centrifugation",
+        "site.smart.servier.com mouse injection",
+        "site.commons.wikimedia.org mouse injection SVG",
+        "mouse injection github svg",
+        "intraperitoneal svg illustration",
+        "tail vein injection Creative Commons illustration",
+        "centrifugation svg github biology illustrations"
+      ],
+      "finding": "Bounded discovery only. Results included computer-mouse input-injection projects, BioRender/stock art, paper results and whole teaching figures; none was treated as an accepted component by keyword."
+    }
+  ],
+  "retrieved_official_html_evidence": [
+    {
+      "uri": "https://togotv.dbcls.jp/togopic.2020.140.html",
+      "retrieved_html_sha256": "392a817804295119a27cefe535fb34959a42628977de06de88585f2385f16623",
+      "size_bytes": 58148,
+      "retrieved_at_date": "2026-11-07"
+    },
+    {
+      "uri": "https://togotv.dbcls.jp/togopic.2023.007.html",
+      "retrieved_html_sha256": "1dba8943de9d35ebe531846295ad3221751b3ab3f71b591ba640d2a1a51cb4e6",
+      "size_bytes": 58591,
+      "retrieved_at_date": "2026-11-07"
+    },
+    {
+      "uri": "https://smart.servier.com/category/general-items/animals/rodents/",
+      "retrieved_html_sha256": "761126a20a8e40f0bf4f363f71d5528c3e72077d398e965875d93ff7fcab3fef",
+      "size_bytes": 79869,
+      "retrieved_at_date": "2026-11-07"
+    },
+    {
+      "uri": "https://opendesign.fyi/license/",
+      "retrieved_html_sha256": "c6ac71a9651343f31b6c37a89342a970a5d4c6c6878bac4bca997bd815e4336c",
+      "size_bytes": 22091,
+      "retrieved_at_date": "2026-11-07"
+    }
+  ],
+  "limitations": [
+    "No exhaustive whole-web search claim. Metadata absence is not visual absence across every unreviewed file.",
+    "Only named exact Togo variants were actually reviewed; no propagation to sibling SVG/PNG variants.",
+    "Existing separate operation/pellet pieces do not establish a completed separation workflow.",
+    "The new XBio image remains an out-of-catalog scope-pending lead; no complete research/study diagram imported.",
+    "No new protocol, numerical speed, time, injection route or dose was invented. No native Illustrator testing."
+  ]
+}
