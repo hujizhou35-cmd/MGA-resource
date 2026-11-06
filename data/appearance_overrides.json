@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "scope": "Exact file and preview bound visual representation observations; no series, detail or realism labels are inferred.",
+  "evidence": [
+    {
+      "kind": "manual_visual_review",
+      "file_sha256": "79d43b1d4619606e4e7daaf17d62aa0d8b3e07accc4707d17a27b2e0e658dfcf",
+      "preview_sha256": "3e022cc5c3b362c0a2dc1f51dbc815c0e532fe61d4f5e83f0eaf36975faaa6eb",
+      "reviewer": "Codex visual review of original archived 512px previews",
+      "reviewed_at": "2026-11-06T16:51:25.435932+00:00",
+      "reference": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/appearance-review-42255022104-1.tar.gz#pale_color.png",
+      "statement": "Actual preview shows dark contour lines and pale flat filled regions. This is a representation observation only; no shared series, detail level or realism claim.",
+      "labels": {
+        "representation": [
+          "line_art",
+          "flat_fill"
+        ]
+      },
+      "visual_evidence": {
+        "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/appearance-review-42255022104-1.tar.gz#pale_color.png",
+        "sha256": "a89c0d347f5f1dd001993ddef745b17304c61e3cce28b7306da3d41457b28d5d",
+        "review_archive_sha256": "8bf06794d44299b21653900b1ceedc4d61cf1c526bb46706993343d3da005897",
+        "review_record": "data/appearance-reviews/appearance-42255022104-baseline.json"
+      }
+    },
+    {
+      "kind": "manual_visual_review",
+      "file_sha256": "9970fcc0cd22aa2a56bb533b915ed18edbb9a1e74d64567361aedd0a7fd2de6c",
+      "preview_sha256": "1c0e0c9ba9ae77ea3cc88988012cbf1a17de3182e2f796013ac0bf5ddc9ab245",
+      "reviewer": "Codex visual review of original archived 512px previews",
+      "reviewed_at": "2026-11-06T16:51:25.435932+00:00",
+      "reference": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/appearance-review-42255022104-1.tar.gz#pale_color.png",
+      "statement": "Actual preview shows dark contour lines and pale flat filled regions. This is a representation observation only; no shared series, detail level or realism claim.",
+      "labels": {
+        "representation": [
+          "line_art",
+          "flat_fill"
+        ]
+      },
+      "visual_evidence": {
+        "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/appearance-review-42255022104-1.tar.gz#pale_color.png",
+        "sha256": "a89c0d347f5f1dd001993ddef745b17304c61e3cce28b7306da3d41457b28d5d",
+        "review_archive_sha256": "8bf06794d44299b21653900b1ceedc4d61cf1c526bb46706993343d3da005897",
+        "review_record": "data/appearance-reviews/appearance-42255022104-baseline.json"
+      }
+    }
+  ]
+}
