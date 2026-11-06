@@ -162,6 +162,30 @@ def test_failed_preview_is_file_quarantine_not_source_redownload():
     assert selected[0]["source_download_requested"] is False
 
 
+def test_internal_scoped_svg_is_acquired_but_not_a_public_counterpart(monkeypatch):
+    monkeypatch.setattr(m, "evaluate_public_scope", lambda *args: {
+        "public_allowed": False, "status": "excluded", "evidence": [proof("review")]})
+    svg = file();item = row([descriptor(), descriptor("png")])
+    groups, pending = m.prepare_source("example", {}, [item], {("example", "one"): [svg]},
+        {0: attempt([failure()])}, proof("inventory"), public_available={}, scope_policy={"test": True})
+    selected = groups["items", "exclude_from_v1"][0]
+    assert selected["acquired_original_sha256"] == [svg["sha256"]]
+    assert selected["source_download_requested"] is False
+    assert not groups.get(("unavailable_variants", "not_acquired")) and not pending
+
+
+def test_partial_scope_uses_only_actual_public_counterpart():
+    excluded_svg, public_png = file(), file("png")
+    missing = {"url": "https://example.invalid/another.svg", "format": "svg"}
+    item = row([descriptor(), descriptor("png"), missing])
+    groups, pending = m.prepare_source("example", {}, [item], {("example", "one"): [excluded_svg, public_png]},
+        {0: attempt([failure("svg", url=missing["url"])])}, proof("inventory"),
+        public_available={("example", "one"): [public_png]})
+    selected = groups["unavailable_variants", "not_acquired"][0]
+    assert selected["available_file_sha256"] == public_png["sha256"]
+    assert selected["retained_file_sha256"] == [public_png["sha256"]] and not pending
+
+
 def test_decisions_and_selection_hashes_bind_exact_files():
     groups = {("example", "items", "quarantine"): [{"source_id": "one", "source_index": 3, "reason": "Bad original", "evidence": proof()}]}
     decisions, selections = m.make_documents(groups, {"example": {"discovery_sha256": "a" * 64}},

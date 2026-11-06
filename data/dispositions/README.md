@@ -19,6 +19,10 @@
 只允许这些 JSON/JSONL，须匹配 GitHub Release 的完整 SHA-256 和文件大小。
 相同内容哈希的已有元数据可复用。访问拒绝不自动重试。
 可用重复的 `--source` 限定本轮分析来源；不写则分析已有的五个主力来源。
+新汇总已经分离公开/内部目录时，还必须传入 `--internal-catalog`
+指向同一 assembly 的 `assembly-<run>.internal-catalog.jsonl`。
+它须匹配汇总和 GitHub 的哈希、大小及数量，用于辨别“已取得但不公开”和“尚未取得”；
+缺失变体只能引用公开目录里仍可用的格式，不能用已排除的名牌或照片充当公开 counterpart。
 
 处置规则：
 

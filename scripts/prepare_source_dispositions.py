@@ -20,6 +20,7 @@ sys.path.insert(0, str(ROOT))
 sys.path.insert(0, str(ROOT / "scripts"))
 from build_publish_pack import GitHubStore
 from accept_release import evaluate_release, json_bytes
+from mga_resources.scope_policy import load_scope_policy, evaluate_public_scope
 
 
 def digest(data):
@@ -239,16 +240,34 @@ def objective_failure(failure):
     return None  # Timeouts/429/5xx and unidentified problems remain pending.
 
 
-def prepare_source(source, snapshot, inventory, available, attempts, inventory_proof):
+def prepare_source(source, snapshot, inventory, available, attempts, inventory_proof,
+                   *, public_available=None, scope_policy=None, scope_evidence=None):
     groups = defaultdict(list)
     pending = []
     for index, item in enumerate(inventory):
         sid = item["source_id"]
         files = available.get((source, sid), [])
+        public_files = files if public_available is None else public_available.get((source, sid), [])
         acquired_keys = {descriptor_key(file) for file in files}
         missing = [f for f in item.get("files", []) if descriptor_key(f) not in acquired_keys]
         common = {"source_id": sid, "source_index": index, "title": item.get("title")}
         attempt = attempts.get(index)
+        if files and not public_files:
+            scopes = [evaluate_public_scope(item, file, scope_policy) for file in files] if scope_policy else []
+            if scopes and all(not value["public_allowed"] for value in scopes):
+                groups["items", "exclude_from_v1"].append({**common,
+                    "reason": "All acquired originals of this exact source item are excluded or deferred by file-bound scope review; no public counterpart remains.",
+                    "evidence": scope_evidence or scopes[0]["evidence"][0],
+                    "acquired_original_sha256": sorted({f["sha256"] for f in files}),
+                    "scope_decisions": scopes,
+                    "unacquired_descriptors": [{"url": f.get("url"), "format": f.get("format"),
+                                                "upstream_archive_member": f.get("archive_member")} for f in missing],
+                    "source_download_requested": False})
+            else:
+                pending.append({**common,
+                    "reason": "Internal acquired files are absent from the public catalog without matching scope evidence; inspect assembly before deciding.",
+                    "acquired_original_sha256": sorted({f["sha256"] for f in files})})
+            continue
         if not item.get("files"):
             if item.get("scope_status") == "excluded":
                 continue  # Already recorded by the collector; do not double count.
@@ -299,10 +318,10 @@ def prepare_source(source, snapshot, inventory, available, attempts, inventory_p
                         "failure_discovery_sha256": attempt["original_discovery_sha256"],
                         "evidence_reuse": attempt["evidence_reuse"]})
             if files:
-                support = sorted(files, key=lambda f: (f.get("validation", {}).get("status") != "machine_checked_and_rendered", f["sha256"]))[0]
+                support = sorted(public_files, key=lambda f: (f.get("validation", {}).get("status") != "machine_checked_and_rendered", f["sha256"]))[0]
                 row["available_file_sha256"] = support["sha256"]
                 row["available_file_archive"] = support.get("archive")
-                row["retained_file_sha256"] = sorted({f["sha256"] for f in files})
+                row["retained_file_sha256"] = sorted({f["sha256"] for f in public_files})
                 groups["unavailable_variants", disposition].append(row)
             else:
                 resolved.append(row)
@@ -400,6 +419,8 @@ def main(argv=None):
     for name in ("catalog", "assembly-report", "assets", "output"):
         parser.add_argument("--" + name, type=Path, required=True)
     parser.add_argument("--metadata-dir", type=Path, action="append", default=[])
+    parser.add_argument("--internal-catalog", type=Path,
+                        help="Required with a scope-filtered assembly; exact full diagnostic catalog, never a public index input")
     parser.add_argument("--fetch-metadata", action="store_true")
     parser.add_argument("--source", action="append", default=[])
     parser.add_argument("--file-review", type=Path, action="append", default=[])
@@ -426,7 +447,26 @@ def main(argv=None):
         if proof["sha256"] != actual_hash or proof["size_bytes"] != path.stat().st_size:
             raise ValueError("Assembly input bytes disagree with GitHub digest/size")
         assembly_proofs[path.name] = proof
-    available = acquired_files(catalog)
+    internal = catalog
+    internal_binding = assembly.get("public_scope", {}).get("internal_catalog")
+    if internal_binding:
+        if not args.internal_catalog:
+            raise ValueError("Scope-filtered assembly requires --internal-catalog to distinguish scope exclusions from missing acquisition")
+        data = args.internal_catalog.read_bytes()
+        internal = [json.loads(line) for line in data.splitlines() if line.strip()]
+        proof = inputs.proof(args.internal_catalog.name)
+        if (digest(data) != internal_binding.get("sha256") or digest(data) != proof["sha256"]
+                or len(data) != internal_binding.get("size_bytes") or len(data) != proof["size_bytes"]
+                or len(internal) != internal_binding.get("records")
+                or any(r.get("catalog_visibility") != "internal_diagnostic" for r in internal)):
+            raise ValueError("Internal catalog identity/count/hash does not match the assembly and GitHub")
+        assembly_proofs[args.internal_catalog.name] = proof
+        hashes["internal_catalog_sha256"] = digest(data)
+    elif args.internal_catalog:
+        raise ValueError("Assembly report does not bind an internal catalog")
+    available = acquired_files(internal)
+    public_available = acquired_files(catalog)
+    scope_policy = load_scope_policy()
     groups, pending, inventory_proofs = defaultdict(list), [], {}
     sources = args.source or [s for s in ("bioicons", "nih-bioart", "reactome", "scidraw", "togo") if s in snapshots]
     for source in sources:
@@ -441,7 +481,9 @@ def main(argv=None):
                 if oldsha != snapshot["discovery_sha256"] and oldsha not in old:
                     old[oldsha] = inputs.inventory(source, oldsha)[0]
         attempts = latest_attempts(source, rows, snapshot["discovery_sha256"], batches, old)
-        selected, unresolved = prepare_source(source, snapshot, rows, available, attempts, proof)
+        selected, unresolved = prepare_source(source, snapshot, rows, available, attempts, proof,
+            public_available=public_available, scope_policy=scope_policy,
+            scope_evidence=assembly_proofs[args.assembly_report.name])
         for (kind, action), items in selected.items():
             groups[source, kind, action].extend(items)
         pending.extend({"source": source, **row} for row in unresolved)
@@ -476,7 +518,8 @@ def main(argv=None):
     manifest, check = evaluate_release(catalog, assembly, read_json(args.benchmark), {}, {},
         hashes=hashes, registry=registry, decisions=decisions, selection_manifests=by_sha)
     decisions["publish_manifest"] = {"uri": "candidate_publish_manifest.json", "sha256": digest(json_bytes(manifest))}
-    invalid = [row for row in check["missing"] if row["code"] in {"decisions.incomplete", "decisions.binding", "benchmark.frozen"}]
+    invalid = [row for row in check["missing"] if row["code"] in {
+        "decisions.incomplete", "decisions.binding", "benchmark.frozen", "scope.policy_binding"}]
     if invalid:
         raise ValueError(f"Generated decisions failed contract: {invalid}")
     args.output.mkdir(parents=True, exist_ok=True)
