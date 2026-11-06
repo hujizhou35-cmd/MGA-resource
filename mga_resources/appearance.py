@@ -16,16 +16,18 @@ import re
 from typing import Any
 
 from defusedxml import ElementTree as SafeET
-from PIL import Image, ImageChops, UnidentifiedImageError
+from PIL import Image, ImageChops, ImageFilter, UnidentifiedImageError
 
-VERSION = "appearance-1.0.0"
+VERSION = "appearance-1.1.0"
 ANALYSIS_VERSION = VERSION
 MAX_PREVIEW_PIXELS = 2048 * 2048
 COLOR_RULES = {"strong_channel_spread": 8, "weak_channel_spread": 3,
                "minimum_chromatic_alpha_weight": 0.25, "white_candidate_min_channel": 248,
                "white_candidate_max_spread": 2, "white_candidate_min_alpha": 250,
                "minimum_white_border_fraction": 0.9, "black_endpoint_max": 48,
-               "white_endpoint_min": 240, "black_white_endpoint_fraction": 0.8}
+               "white_endpoint_min": 240, "black_white_endpoint_fraction": 0.8,
+               "clear_chroma_channel_spread": 20, "pale_chroma_min_channel_max": 200,
+               "minimum_midgray_interior_pixels": 4, "minimum_midgray_interior_fraction": 0.01}
 REPRESENTATIONS = {"line_art", "silhouette", "flat_fill", "shaded", "hand_drawn", "3d_render"}
 DETAILS = {"minimal", "moderate", "detailed"}
 REALISMS = {"schematic", "semi_realistic", "realistic"}
@@ -66,9 +68,10 @@ def _round(value):
 
 def _stats(histogram):
     """Alpha-weighted statistics, always excluding invisible RGB values."""
-    weight = chromatic = weak = dark = middle = white = 0.0
+    weight = chromatic = clear_chromatic = display_chromatic = weak = dark = middle = white = 0.0
     visible = opaque = transparent = 0
     hue_weights = defaultdict(float)
+    display_hue_weights = defaultdict(float)
     palette = defaultdict(float)
     luma_sum = spread_sum = chromatic_luma_sum = 0.0
     for (r, g, b, a), count in histogram.items():
@@ -86,10 +89,20 @@ def _stats(histogram):
         palette[(r, g, b)] += mass
         if spread >= COLOR_RULES["strong_channel_spread"]:
             chromatic += mass
+            clear = spread >= COLOR_RULES["clear_chroma_channel_spread"] or max(r, g, b) >= COLOR_RULES["pale_chroma_min_channel_max"]
+            if clear:
+                clear_chromatic += mass
             chromatic_luma_sum += mass * luma
             hue = colorsys.rgb_to_hsv(r / 255, g / 255, b / 255)[0]
             # Offset the circular bins so red and near-red share the same bin.
-            hue_weights[int((hue * 360 + 15) % 360 // 30)] += mass
+            hue_bin = int((hue * 360 + 15) % 360 // 30)
+            hue_weights[hue_bin] += mass
+            # Unpremultiplication can create saturated RGB in barely visible
+            # antialias pixels. Keep it in raw stats, but require visible channel
+            # separation before treating it as palette evidence.
+            if clear and spread * a / 255 >= COLOR_RULES["strong_channel_spread"]:
+                display_chromatic += mass
+                display_hue_weights[hue_bin] += mass
         elif spread >= COLOR_RULES["weak_channel_spread"]:
             weak += mass
         elif luma <= COLOR_RULES["black_endpoint_max"]:
@@ -102,6 +115,8 @@ def _stats(histogram):
     return {
         "visible_pixel_count": visible, "transparent_pixel_count": transparent, "opaque_pixel_count": opaque,
         "alpha_weight": _round(weight), "chromatic_alpha_weight": _round(chromatic),
+        "clear_chromatic_alpha_weight": _round(clear_chromatic),
+        "display_chromatic_alpha_weight": _round(display_chromatic),
         "weak_chroma_alpha_weight": _round(weak), "dark_neutral_alpha_weight": _round(dark),
         "midtone_neutral_alpha_weight": _round(middle), "white_neutral_alpha_weight": _round(white),
         "nonwhite_ink_alpha_weight": _round(nonwhite_ink),
@@ -111,6 +126,7 @@ def _stats(histogram):
         "chromatic_mean_luma_0_255": _round(chromatic_luma_sum / chromatic) if chromatic else None,
         "mean_channel_spread_0_255": _round(spread_sum / weight) if weight else None,
         "hue_alpha_weights": {str(key): _round(value) for key, value in sorted(hue_weights.items())},
+        "display_hue_alpha_weights": {str(key): _round(value) for key, value in sorted(display_hue_weights.items())},
         "dominant_visible_rgb": [{"rgb": list(rgb), "alpha_weight": _round(mass),
                                    "fraction": _round(mass / weight)}
                                   for rgb, mass in sorted(palette.items(), key=lambda pair: (-pair[1], pair[0]))[:12]],
@@ -200,7 +216,19 @@ def _mode(stats):
     return "black_white"
 
 
-def _measure_color(image):
+def _midgray_interior(image):
+    """Gray 3x3 interiors support shading; isolated edge grays remain ambiguous."""
+    r, g, b, a = image.split()
+    low = ImageChops.darker(r, ImageChops.darker(g, b))
+    high = ImageChops.lighter(r, ImageChops.lighter(g, b))
+    mid = low.point(lambda v: 255 if 48 < v < 240 else 0)
+    neutral = ImageChops.subtract(high, low).point(lambda v: 255 if v < 3 else 0)
+    visible = a.point(lambda v: 255 if v >= 250 else 0)
+    mask = ImageChops.multiply(ImageChops.multiply(mid, neutral), visible)
+    return mask.filter(ImageFilter.MinFilter(3)).histogram()[255]
+
+
+def _measure_color(image, svg_hints=None):
     histogram = Counter({rgba: count for count, rgba in image.getcolors(maxcolors=image.width * image.height)})
     raw = _stats(histogram)
     foreground_hist, background = _white_background_candidate(image, histogram)
@@ -210,6 +238,25 @@ def _measure_color(image):
     mode = _mode(measured)
     uncertainty = list(background["uncertainty"])
     confidence = "high"
+    midgray_interior = _midgray_interior(image) if mode == "grayscale" else None
+    structural_bw = (svg_hints or {}).get("black_white_paint_evidence", {}).get("supported") is True
+    extra_basis = []
+    if mode == "grayscale":
+        if structural_bw:
+            mode = "black_white"
+            extra_basis.append("exact_svg_opaque_black_white_paints_without_complex_paint_effects")
+            uncertainty.append("Preview mid-gray pixels are consistent with antialiasing of this SVG's explicit opaque black/white paints.")
+        elif (midgray_interior < COLOR_RULES["minimum_midgray_interior_pixels"]
+                or midgray_interior / max(1, measured["midtone_neutral_alpha_weight"]) < COLOR_RULES["minimum_midgray_interior_fraction"]):
+            mode, confidence = "unknown", "low"
+            uncertainty.append("Gray occurs mainly on narrow edges; antialiasing and intentional gray strokes cannot be distinguished from this preview alone.")
+    if mode == "color" and measured["clear_chromatic_alpha_weight"] < COLOR_RULES["minimum_chromatic_alpha_weight"]:
+        mode, confidence = "unknown", "low"
+        uncertainty.append("Only weak near-neutral dark/midtone tint is present; intentional color versus rendering noise remains uncertain.")
+    if (mode == "color" and measured["display_chromatic_alpha_weight"] < COLOR_RULES["minimum_chromatic_alpha_weight"]
+            and raw["alpha_weight"] / max(1, raw["visible_pixel_count"]) >= .1):
+        mode, confidence = "unknown", "low"
+        uncertainty.append("Chromatic RGB exists only in barely visible alpha edges; an intentional colored accent is not established.")
     if not raw["visible_pixel_count"]:
         uncertainty.append("No visible pixels; fully transparent RGB is ignored.")
         confidence = "unknown"
@@ -230,17 +277,21 @@ def _measure_color(image):
         confidence = "medium" if confidence == "high" else confidence
         uncertainty.append("Color classification depends on the white-background hypothesis; raw and candidate-foreground results are both retained.")
     traits = []
-    hues = measured["hue_alpha_weights"]
-    chromatic = measured["chromatic_alpha_weight"]
+    hues = measured["display_hue_alpha_weights"] or measured["hue_alpha_weights"]
+    chromatic = sum(hues.values())
     if mode == "color":
         dominant_hue_fraction = max(hues.values(), default=0) / chromatic
-        significant_hues = sum(value / chromatic >= 0.05 for value in hues.values())
-        if dominant_hue_fraction >= 0.85:
+        # Even a tiny true secondary hue prevents claiming the whole palette is
+        # monochrome. Dominant hue and single hue are deliberately independent.
+        significant_hues = sum(value >= COLOR_RULES["minimum_chromatic_alpha_weight"] for value in hues.values())
+        if significant_hues == 1:
             traits.append("monochrome_hue")
         elif significant_hues <= 3:
             traits.append("limited_hues")
         else:
             traits.append("multicolor")
+        if significant_hues > 1 and dominant_hue_fraction >= .85:
+            traits.append("dominant_hue")
         ink_fraction = measured["chromatic_fraction_of_nonwhite_ink"]
         if ink_fraction is not None and ink_fraction <= 0.25:
             traits.append("accent")
@@ -253,10 +304,56 @@ def _measure_color(image):
     return {"mode": mode, "palette_traits": traits, "confidence": confidence,
             "confidence_is_calibrated_probability": False,
             "review_status": "machine_measured_pending_visual_review", "classification_version": VERSION,
-            "basis": ["actual_rgba_preview", "alpha_weighted_visible_pixels", basis],
+            "basis": ["actual_rgba_preview", "alpha_weighted_visible_pixels", basis, *extra_basis],
             "uncertainty": uncertainty, "background": background,
+            "midgray_interior_pixel_count": midgray_interior,
             "raw_statistics": raw, "candidate_foreground_statistics": foreground,
             "thresholds": dict(COLOR_RULES)}
+
+
+def _opaque_bw_paint_evidence(root):
+    """Narrow paint evidence, not a CSS renderer or editability promise."""
+    forbidden_tags = {"style", "image", "foreignobject", "lineargradient", "radialgradient",
+                      "pattern", "filter", "mask", "use", "animate", "animatetransform", "animatecolor", "set"}
+    allowed_paints = {"black", "white", "none", "#000", "#fff", "#000000", "#ffffff",
+                      "rgb(0,0,0)", "rgb(255,255,255)", "rgb(0%,0%,0%)", "rgb(100%,100%,100%)"}
+    paints = set()
+    reason = None
+    for node in root.iter():
+        tag = node.tag.rsplit("}", 1)[-1].lower()
+        if tag in forbidden_tags:
+            reason = "Complex, inherited or raster paint construct: " + tag
+            break
+        attributes = {k.rsplit("}", 1)[-1].lower(): v for k, v in node.attrib.items()}
+        if "class" in attributes or any(k.startswith("on") for k in attributes):
+            reason = "Class or event-dependent presentation is not resolved"
+            break
+        properties = dict(attributes)
+        for declaration in attributes.get("style", "").split(";"):
+            if not declaration.strip():
+                continue
+            if ":" not in declaration or any(t in declaration for t in ("/*", "\\", "!", "var(")):
+                reason = "Complex inline CSS is not resolved"
+                break
+            key, value = declaration.split(":", 1)
+            properties[key.strip().lower()] = value.strip()
+        if reason:
+            break
+        for key, value in properties.items():
+            value = re.sub(r"\s+", "", value).lower()
+            if key in {"fill", "stroke", "color", "stop-color", "flood-color"}:
+                paints.add(value)
+                if value not in allowed_paints:
+                    reason = "A paint is not explicit opaque black/white/none"
+            elif key in {"opacity", "fill-opacity", "stroke-opacity"} and value not in {"1", "1.0", "100%"}:
+                reason = "Non-opaque or unresolved opacity"
+            elif key in {"filter", "mask", "mix-blend-mode", "isolation", "color-profile"} and value not in {"none", "normal", "auto"}:
+                reason = "Paint effect is not resolved"
+        if reason:
+            break
+    return {"supported": reason is None, "basis": "restricted_svg_explicit_opaque_paints_and_default_black_fill",
+            "literal_paints": sorted(paints), "reason": reason,
+            "uniform_recolor_verified": False}
 
 
 def _svg_hints(svg_bytes):
@@ -283,11 +380,14 @@ def _svg_hints(svg_bytes):
         if tag == "style":
             current_color += (node.text or "").lower().count("currentcolor")
     result.update(current_color_references=current_color, literal_paint_values=sorted(paints),
+                  black_white_paint_evidence=_opaque_bw_paint_evidence(root),
                   gradient_count=counts["lineargradient"] + counts["radialgradient"], image_count=counts["image"],
                   stylesheet_count=counts["style"], filter_count=counts["filter"], mask_count=counts["mask"],
                   text_element_count=counts["text"],
                   capability_hint="current_color_present" if current_color else ("fixed_paints_observed" if paints else "unknown"),
                   uncertainty=["No full CSS cascade, paint-server or native-edit test was performed; monochrome pixels do not establish uniform recolorability."])
+    if b"<?xml-stylesheet" in svg_bytes.lower():
+        result["black_white_paint_evidence"].update(supported=False, reason="XML stylesheet processing instruction is not resolved")
     if counts["image"]:
         result["uncertainty"].append("SVG contains image elements; their raster colors are not editable vector paints.")
     return result
@@ -393,9 +493,10 @@ def analyze_appearance(preview: bytes | Image.Image | None, *, file_sha256: str,
         raise TypeError("Preview must be encoded bytes, a PIL image, or None")
     if svg_bytes is not None and _sha(svg_bytes) != file_sha256:
         raise ValueError("SVG hints must come from the exact original file SHA-256")
+    svg_hints = _svg_hints(svg_bytes)
     if image:
         pixel_digest = _sha(f"rgba-v1:{image.width}:{image.height}:".encode() + image.tobytes())
-        color = _measure_color(image)
+        color = _measure_color(image, svg_hints)
     else:
         color = {"mode": "unknown", "palette_traits": [], "confidence": "unknown",
                  "review_status": "not_measured", "classification_version": VERSION,
@@ -406,7 +507,7 @@ def analyze_appearance(preview: bytes | Image.Image | None, *, file_sha256: str,
                "rgba_pixels_sha256": pixel_digest, "rgba_hash_algorithm": "sha256(rgba-v1:width:height:+rgba_bytes)",
                "dimensions": {"width": image.width, "height": image.height} if image else None}
     result = {"schema_version": 1, "classification_version": VERSION, "binding": binding,
-              "color": color, "style": style, "svg_coloring": _svg_hints(svg_bytes),
+              "color": color, "style": style, "svg_coloring": svg_hints,
               "original_modified": False, "preview_modified": False,
               "limitations": ["Preview rendering, color management and resolution can affect measured colors.",
                               "Color, presentation, detail, realism, medical accuracy and native editability are separate dimensions."]}

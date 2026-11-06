@@ -129,6 +129,54 @@ def test_black_white_with_tiny_red_marker_reports_sparse_color():
     assert any('very few' in note for note in result['color']['uncertainty'])
 
 
+def test_dominant_blue_with_one_real_red_pixel_is_not_single_hue():
+    image = Image.new('RGBA', (96, 96), (0, 40, 230, 255))
+    image.putpixel((48, 48), (255, 0, 0, 255))
+    color = analyze_appearance(image, file_sha256=FILE_SHA)['color']
+    assert color['mode'] == 'color'
+    assert 'monochrome_hue' not in color['palette_traits']
+    assert 'dominant_hue' in color['palette_traits'] and 'limited_hues' in color['palette_traits']
+
+
+def test_nearly_invisible_colored_antialias_edges_remain_uncertain():
+    image = Image.new('RGBA', (96, 96), (0, 0, 0, 0))
+    draw = ImageDraw.Draw(image)
+    draw.rectangle((20, 20, 75, 75), outline='black', width=3)
+    draw.line((19, 20, 19, 75), fill=(63, 0, 0, 4))
+    color = analyze_appearance(image, file_sha256=FILE_SHA)['color']
+    assert color['raw_statistics']['chromatic_alpha_weight'] > .25
+    assert color['raw_statistics']['display_chromatic_alpha_weight'] == 0
+    assert color['mode'] == 'unknown'
+    assert any('alpha edges' in note for note in color['uncertainty'])
+
+
+def test_thin_neutral_lines_are_uncertain_without_explicit_svg_paint_evidence():
+    image = Image.new('RGBA', (96, 96), 'white')
+    draw = ImageDraw.Draw(image)
+    draw.line((10, 10, 80, 80), fill=(120, 120, 120, 255), width=2)
+    draw.line((10, 10, 80, 80), fill='black')
+    plain = analyze_appearance(image, file_sha256=FILE_SHA)['color']
+    assert plain['mode'] == 'unknown' and plain['midgray_interior_pixel_count'] == 0
+    svg = b'<svg xmlns="http://www.w3.org/2000/svg"><path fill="white" stroke="black" d="M10 10L80 80"/></svg>'
+    result = analyze_appearance(image, file_sha256=hashlib.sha256(svg).hexdigest(), svg_bytes=svg)
+    assert result['color']['mode'] == 'black_white'
+    assert result['svg_coloring']['black_white_paint_evidence']['supported'] is True
+    assert result['svg_coloring']['uniform_recolor_verified'] is False
+
+
+@pytest.mark.parametrize('contents', [
+    '<path fill="#888"/>', '<path stroke="black" opacity=".5"/>',
+    '<defs><linearGradient id="g"/></defs><path fill="url(#g)"/>',
+    '<style>.x{fill:black}</style><path class="x"/>', '<image href="data:image/png;base64,AA=="/>',
+    '<path style="fill:currentColor"/>', '<path style="filter:blur(2px)"/>',
+])
+def test_complex_or_gray_svg_never_proves_opaque_black_white(contents):
+    svg = ('<svg xmlns="http://www.w3.org/2000/svg">' + contents + '</svg>').encode()
+    result = analyze_appearance(boundary_cases()['grayscale_gradient'], file_sha256=hashlib.sha256(svg).hexdigest(), svg_bytes=svg)
+    assert result['svg_coloring']['black_white_paint_evidence']['supported'] is False
+    assert result['color']['mode'] == 'grayscale'
+
+
 def official(labels, **changes):
     return {'kind': 'official_source_file', 'scope': 'file', 'file_sha256': FILE_SHA,
             'source_url': 'https://example.org/artist/series/file.svg',

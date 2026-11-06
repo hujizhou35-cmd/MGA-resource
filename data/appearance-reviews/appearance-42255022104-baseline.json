@@ -1,0 +1,340 @@
+{
+  "schema_version": 1,
+  "reviewer": "Codex visual review of original archived 512px previews",
+  "reviewed_at": "2026-11-06T16:51:25.435932+00:00",
+  "bindings": {
+    "assembly_prefix": "assembly-42252267798-1",
+    "catalog_sha256": "f0587f4ad6afe1d1ff34387b51973cf3d0d311a7c25707aa34323c2a272dd7eb",
+    "assembly_report_sha256": "a55bfff42e06f40aaf2bba790818697343e5047b36cf1afe25c31c856f0c87dd",
+    "analysis_version": "appearance-1.0.0"
+  },
+  "review_pack": {
+    "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/appearance-review-42255022104-1.tar.gz",
+    "sha256": "8bf06794d44299b21653900b1ceedc4d61cf1c526bb46706993343d3da005897",
+    "bytes": 3375201,
+    "previews": 47,
+    "sheets": 8,
+    "original_files_downloaded": 0
+  },
+  "mapping_sha256": "ec7121421d56f17395f82a3ac7c332b86eeb787f1e2ac070282b8998be29a2c2",
+  "appearance_cases": [
+    {
+      "id": "transparent_rgb",
+      "passed": true,
+      "expected": "Fully transparent RGB is excluded from visible color statistics.",
+      "observed": "Arcadia flagellate is visibly purple with transparent background; 126 invisible pixels retain nonzero neutral RGB. DNA has four such pixels. Black muscle-cell outline and black exclamation point remain black_white.",
+      "notes": "No chromatic hidden RGB occurred among these 47 actual previews; chromatic hidden-RGB stress testing remains the separate synthetic appendix.",
+      "evidence": {
+        "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/appearance-review-42255022104-1.tar.gz#transparent_rgb.png",
+        "sha256": "edbbaf0633376b8278bbc4143738d3ef6c3418dbdd3560e2d64e738e6e84590e"
+      },
+      "real_files": [
+        {
+          "original_sha256": "a3d9bc31d63b736b39f28e48f60c27d1eb77a38a7853392cc15ce44137099eed",
+          "preview_sha256": "6b72e8b52f7ac0e2816a3f79f761382866500205a122bd078da544e0a31ada2c",
+          "source": "arcadia",
+          "title": "Choanoflagellate (Salpingoeca rosetta) — fast swimmer — raster",
+          "observed": "Arcadia flagellate is visibly purple with transparent background; 126 invisible pixels retain nonzero neutral RGB. DNA has four such pixels. Black muscle-cell outline and black exclamation point remain black_white.",
+          "reviewer": "Codex visual review of original archived 512px previews"
+        },
+        {
+          "original_sha256": "b4cbf5cb16e0b2d47c0e8d7571bd4b10dfb78c6d224d085691dbb090ed785f90",
+          "preview_sha256": "499cdd9994c4266af69a7ea03bc22155068dcc33c2d3367faefdb9a8cab5d9e2",
+          "source": "scidraw",
+          "title": "DNA",
+          "observed": "Arcadia flagellate is visibly purple with transparent background; 126 invisible pixels retain nonzero neutral RGB. DNA has four such pixels. Black muscle-cell outline and black exclamation point remain black_white.",
+          "reviewer": "Codex visual review of original archived 512px previews"
+        },
+        {
+          "original_sha256": "6d8ef86303c1ed7d6395f059340d4ff5eb5728abd4c91236c706e295ddebc3ed",
+          "preview_sha256": "3bac98642b288a4b7d4370bc38a02f2591198696ca0af2f27ad4a587df09ed90",
+          "source": "bioicons",
+          "title": "Smooth muscle cell v2",
+          "observed": "Arcadia flagellate is visibly purple with transparent background; 126 invisible pixels retain nonzero neutral RGB. DNA has four such pixels. Black muscle-cell outline and black exclamation point remain black_white.",
+          "reviewer": "Codex visual review of original archived 512px previews"
+        },
+        {
+          "original_sha256": "b228134b60fd8c42e1a63f45c98290b1f771e5c73ad4268d728fbb71c0268590",
+          "preview_sha256": "e392d73a7f8141238fffb3b73778855c1953b3cc8c4fbf4e8e0158096c90320f",
+          "source": "healthicons",
+          "title": "Exclamation Point",
+          "observed": "Arcadia flagellate is visibly purple with transparent background; 126 invisible pixels retain nonzero neutral RGB. DNA has four such pixels. Black muscle-cell outline and black exclamation point remain black_white.",
+          "reviewer": "Codex visual review of original archived 512px previews"
+        }
+      ]
+    },
+    {
+      "id": "small_object_white_background",
+      "passed": true,
+      "expected": "A small colored object remains color despite a large white canvas.",
+      "observed": "SciDraw monkey is a small tan/brown animal surrounded by a large opaque white field. It remains color, with the white candidate used only for statistics.",
+      "notes": "Other selected SciDraw files show artwork clipped at their existing preview boundary; do not interpret this color check as crop/usability approval.",
+      "evidence": {
+        "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/appearance-review-42255022104-1.tar.gz#small_object_white_background.png",
+        "sha256": "6af234e59184d51ae25cf98a428591f23da4a0182184370bfbd898f608afbca8"
+      },
+      "real_files": [
+        {
+          "original_sha256": "ecec6719337b77629ca3f1fb532958c3e29802624fba6927ac76882e45ef2e1a",
+          "preview_sha256": "9191aaccb62b0542adb8476a5ad04257569cff0f5f1f26b5f125bdaab01a7788",
+          "source": "scidraw",
+          "title": "monkey",
+          "observed": "SciDraw monkey is a small tan/brown animal surrounded by a large opaque white field. It remains color, with the white candidate used only for statistics.",
+          "reviewer": "Codex visual review of original archived 512px previews"
+        }
+      ]
+    },
+    {
+      "id": "pale_color",
+      "passed": true,
+      "expected": "Visible pale cream/yellow/blue color must not be erased as white or grayscale.",
+      "observed": "The nematode is pale cream, larva pale yellow, and human anatomy pale blue; all are color with light_palette.",
+      "notes": "This tests pale color only. The Petri Dish in the same sheet exposes a separate false monochrome_hue label.",
+      "evidence": {
+        "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/appearance-review-42255022104-1.tar.gz#pale_color.png",
+        "sha256": "a89c0d347f5f1dd001993ddef745b17304c61e3cce28b7306da3d41457b28d5d"
+      },
+      "real_files": [
+        {
+          "original_sha256": "79d43b1d4619606e4e7daaf17d62aa0d8b3e07accc4707d17a27b2e0e658dfcf",
+          "preview_sha256": "3e022cc5c3b362c0a2dc1f51dbc815c0e532fe61d4f5e83f0eaf36975faaa6eb",
+          "source": "bioicons",
+          "title": "nematode simplified",
+          "observed": "The nematode is pale cream, larva pale yellow, and human anatomy pale blue; all are color with light_palette.",
+          "reviewer": "Codex visual review of original archived 512px previews"
+        },
+        {
+          "original_sha256": "9970fcc0cd22aa2a56bb533b915ed18edbb9a1e74d64567361aedd0a7fd2de6c",
+          "preview_sha256": "1c0e0c9ba9ae77ea3cc88988012cbf1a17de3182e2f796013ac0bf5ddc9ab245",
+          "source": "scidraw",
+          "title": "larva",
+          "observed": "The nematode is pale cream, larva pale yellow, and human anatomy pale blue; all are color with light_palette.",
+          "reviewer": "Codex visual review of original archived 512px previews"
+        },
+        {
+          "original_sha256": "ca71ade57f448493b7b10dcb8bb55a5547369412167c69305d1b1d9afd11cc30",
+          "preview_sha256": "8fd230b11b34a644c5f29e610b3c488268d59dab569643a96b4dd150feff2492",
+          "source": "open-pain",
+          "title": "anatomical illustration",
+          "observed": "The nematode is pale cream, larva pale yellow, and human anatomy pale blue; all are color with light_palette.",
+          "reviewer": "Codex visual review of original archived 512px previews"
+        }
+      ]
+    },
+    {
+      "id": "single_hue_line",
+      "passed": false,
+      "expected": "Single navy line art is color; a dominant hue must not imply all artwork is monochrome.",
+      "observed": "Navy dashed Arrow and Axes correctly retain color. However the same analyzer calls a Petri Dish containing beige, blue, green and brown marks monochrome_hue because beige dominates.",
+      "notes": "Failed negative boundary: monochrome_hue used an 85 percent dominant-color rule. Preserve this failure and revise classification version.",
+      "evidence": {
+        "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/appearance-review-42255022104-1.tar.gz#single_hue_line.png",
+        "sha256": "7c38a0bd0c93dfead751dc6d49534b63dd44d49fd9dbe11768fd195645d78992"
+      },
+      "real_files": [
+        {
+          "original_sha256": "11f2129b25e42dd4210f93d998869480f614f54cb3be74b061b760f62147880c",
+          "preview_sha256": "ad5e16ee894b323e51b136e183c44423953a9b89e544b4fe129d4345a60b2401",
+          "source": "nih-bioart",
+          "title": "Arrow",
+          "observed": "Navy dashed Arrow and Axes correctly retain color. However the same analyzer calls a Petri Dish containing beige, blue, green and brown marks monochrome_hue because beige dominates.",
+          "reviewer": "Codex visual review of original archived 512px previews"
+        },
+        {
+          "original_sha256": "d6663d332faecbf3d1216d9a69302731e56e36b03e8ad80ae85ca2c79adae2d6",
+          "preview_sha256": "19dc6f9234bbb8c6084c6da9ebaff0e7f67d71039fca76eb5fb3883519fa2674",
+          "source": "scisvg",
+          "title": "Axes",
+          "observed": "Navy dashed Arrow and Axes correctly retain color. However the same analyzer calls a Petri Dish containing beige, blue, green and brown marks monochrome_hue because beige dominates.",
+          "reviewer": "Codex visual review of original archived 512px previews"
+        }
+      ]
+    },
+    {
+      "id": "grayscale_shading",
+      "passed": false,
+      "expected": "True gray filled regions are grayscale; thin black line antialiasing alone is not gray shading evidence.",
+      "observed": "The adult nematode, gray brain regions and gray Column Cap have real neutral gray areas. 96well Plate consists of black outlines and white surfaces yet is also grayscale; Rabbit has the same antialias ambiguity.",
+      "notes": "Retain actual gray passes, but this boundary as a whole is not passed until thin-line ambiguity is represented conservatively.",
+      "evidence": {
+        "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/appearance-review-42255022104-1.tar.gz#grayscale_shading.png",
+        "sha256": "a7ecbe24b33719c85f862b895fef26f28112d3aa384d83f3cc61eb0932180697"
+      },
+      "real_files": [
+        {
+          "original_sha256": "e0db7951142889f122507b18baf848137ea1f40e6117a41fa1c56c91b303c5fa",
+          "preview_sha256": "caeb2a6663d9f431a75f7ddaa689be68e2c52f23092165362b24506f74a4e0ae",
+          "source": "bioicons",
+          "title": "nematode adult female",
+          "observed": "The adult nematode, gray brain regions and gray Column Cap have real neutral gray areas. 96well Plate consists of black outlines and white surfaces yet is also grayscale; Rabbit has the same antialias ambiguity.",
+          "reviewer": "Codex visual review of original archived 512px previews"
+        },
+        {
+          "original_sha256": "680b642071b771e30ac730c1572d2561df6a85abd99864881633ad2451a9258a",
+          "preview_sha256": "9b1ebb4150b5e47a6edb269739631be1fdd64995ff749965f8322addc2b73ff5",
+          "source": "lab-equipment",
+          "title": "96well Plate",
+          "observed": "The adult nematode, gray brain regions and gray Column Cap have real neutral gray areas. 96well Plate consists of black outlines and white surfaces yet is also grayscale; Rabbit has the same antialias ambiguity.",
+          "reviewer": "Codex visual review of original archived 512px previews"
+        },
+        {
+          "original_sha256": "e12c822fb7984e508a8404dfa4ab846ba293f98477422c4c20c86766cef8993c",
+          "preview_sha256": "e10d947b8ff51962e1a4d824c138a52fa5d3a9698035d7ea0aefa497f020fac1",
+          "source": "scidraw",
+          "title": "Zebrafish brain outline",
+          "observed": "The adult nematode, gray brain regions and gray Column Cap have real neutral gray areas. 96well Plate consists of black outlines and white surfaces yet is also grayscale; Rabbit has the same antialias ambiguity.",
+          "reviewer": "Codex visual review of original archived 512px previews"
+        },
+        {
+          "original_sha256": "b75ecaac35d70e4048e6115fc961616035bc1db3e682530331b8caff02466ea7",
+          "preview_sha256": "55fcf20368d22dbf1932f76c10b2445912d9372285b067c5c26c31ce6904b5af",
+          "source": "lab-equipment",
+          "title": "Column Cap",
+          "observed": "The adult nematode, gray brain regions and gray Column Cap have real neutral gray areas. 96well Plate consists of black outlines and white surfaces yet is also grayscale; Rabbit has the same antialias ambiguity.",
+          "reviewer": "Codex visual review of original archived 512px previews"
+        }
+      ]
+    },
+    {
+      "id": "black_white_accent",
+      "passed": false,
+      "expected": "Clear small colored accents remain color, while weak near-black tint must not automatically imply an intentional colored accent.",
+      "observed": "Incubator has a clearly visible blue-purple horizontal band and correctly remains color+accent. Mouse Sleeping appears neutral black linework; microscopic weak hue variation produces color+accent. Monkey lever also has a barely visible dark tint.",
+      "notes": "Color mode should preserve strong tiny accents while leaving weak near-neutral tint uncertain. These are observed counterexamples, not proof that source artwork was intentionally black.",
+      "evidence": {
+        "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/appearance-review-42255022104-1.tar.gz#black_white_accent.png",
+        "sha256": "90ad66e281bc918d5c92998c8683bea0683c4c272cd37954df08fb32914e7ec0"
+      },
+      "real_files": [
+        {
+          "original_sha256": "1be2b06588140639cc6a5c074644a7293c8e713fd3ff19c70db1feca80d86b6c",
+          "preview_sha256": "fc286f4d3b45e203312ef5c746a92377f02004d9affe22fee7b975575e722d76",
+          "source": "scidraw",
+          "title": "Mouse Sleeping",
+          "observed": "Incubator has a clearly visible blue-purple horizontal band and correctly remains color+accent. Mouse Sleeping appears neutral black linework; microscopic weak hue variation produces color+accent. Monkey lever also has a barely visible dark tint.",
+          "reviewer": "Codex visual review of original archived 512px previews"
+        },
+        {
+          "original_sha256": "c05a124d270193d7720b6684f23d8ed310a3b23b1d6b4a4d63d6c2ddbb2f8888",
+          "preview_sha256": "53e67d82e5ab6c81b4b20950c5135b484220ad08c1f4de3bf762019e6069a348",
+          "source": "bioicons",
+          "title": "incubator",
+          "observed": "Incubator has a clearly visible blue-purple horizontal band and correctly remains color+accent. Mouse Sleeping appears neutral black linework; microscopic weak hue variation produces color+accent. Monkey lever also has a barely visible dark tint.",
+          "reviewer": "Codex visual review of original archived 512px previews"
+        },
+        {
+          "original_sha256": "b8387bea7d6335bd5736ce9c20f94b1cf1f49706b7f2be898904bb4c91f2afbe",
+          "preview_sha256": "22d2d6d1a215439050fe80886bbd4b1b28470aa48c1c181c778852f7a335bbb4",
+          "source": "scidraw",
+          "title": "monkey with lever",
+          "observed": "Incubator has a clearly visible blue-purple horizontal band and correctly remains color+accent. Mouse Sleeping appears neutral black linework; microscopic weak hue variation produces color+accent. Monkey lever also has a barely visible dark tint.",
+          "reviewer": "Codex visual review of original archived 512px previews"
+        }
+      ]
+    },
+    {
+      "id": "enclosed_white_structure",
+      "passed": true,
+      "expected": "White interiors enclosed by outlines remain visible and counted; a white-background hypothesis never edits pixels.",
+      "observed": "Sheep and Rabbit white bodies and the white outer region of MII Oocyte remain intact. Foreground statistics retain white alpha weights 101913, 63066 and 26483.952941 respectively.",
+      "notes": "The gray classification of Rabbit is recorded separately above. Cybercrime diagram is visibly outside medical-illustration scope and is not a usable example.",
+      "evidence": {
+        "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/appearance-review-42255022104-1.tar.gz#enclosed_white_structure.png",
+        "sha256": "79284fe504fed8ded8d8029672f35376425c0a48369d2bb414d69562091330d7"
+      },
+      "real_files": [
+        {
+          "original_sha256": "f9d935d5e548d1b501003c13283aa469c514da7cd344893a4e8cf3ea820e64e5",
+          "preview_sha256": "a183ba12b7f5cde6923513ab23e46d2a0839cb39211528fcec282025859e4bd7",
+          "source": "scidraw",
+          "title": "Sheep",
+          "observed": "Sheep and Rabbit white bodies and the white outer region of MII Oocyte remain intact. Foreground statistics retain white alpha weights 101913, 63066 and 26483.952941 respectively.",
+          "reviewer": "Codex visual review of original archived 512px previews"
+        },
+        {
+          "original_sha256": "1632ac808122fa9a4003817d60e120ccee3d6903918a5832ea34298a9c6fbd0b",
+          "preview_sha256": "80a6e3ae6d80ca5038cdee5a39bf68f286a782f0608d94df1788c756a474651a",
+          "source": "bioicons",
+          "title": "MII Oocyte",
+          "observed": "Sheep and Rabbit white bodies and the white outer region of MII Oocyte remain intact. Foreground statistics retain white alpha weights 101913, 63066 and 26483.952941 respectively.",
+          "reviewer": "Codex visual review of original archived 512px previews"
+        },
+        {
+          "original_sha256": "28c9c4d55096203f6f21cf8836e88920774154b670ce1c38263224a1038556d6",
+          "preview_sha256": "d6abe478d41c7878352b0f772c80509b9ab37e6ab3eb572013573f497b13ef4e",
+          "source": "scidraw",
+          "title": "Rabbit",
+          "observed": "Sheep and Rabbit white bodies and the white outer region of MII Oocyte remain intact. Foreground statistics retain white alpha weights 101913, 63066 and 26483.952941 respectively.",
+          "reviewer": "Codex visual review of original archived 512px previews"
+        }
+      ]
+    },
+    {
+      "id": "cross_source_style",
+      "passed": true,
+      "expected": "Representation can be reviewed across sources without inventing shared series, detail or realism.",
+      "observed": "Bioicons nematode simplified and SciDraw larva both visibly use dark contour lines with pale flat fills. They can share line_art/flat_fill representation; they are different organisms and no shared series is established.",
+      "notes": "The six syringe/gear examples also show why source or object alone cannot determine style: flat filled HealthIcons silhouette, outlined laboratory syringe, shaded Hamilton syringe and colored NIH/Bioicons differ.",
+      "evidence": {
+        "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/appearance-review-42255022104-1.tar.gz#pale_color.png",
+        "sha256": "a89c0d347f5f1dd001993ddef745b17304c61e3cce28b7306da3d41457b28d5d"
+      },
+      "real_files": [
+        {
+          "original_sha256": "79d43b1d4619606e4e7daaf17d62aa0d8b3e07accc4707d17a27b2e0e658dfcf",
+          "preview_sha256": "3e022cc5c3b362c0a2dc1f51dbc815c0e532fe61d4f5e83f0eaf36975faaa6eb",
+          "source": "bioicons",
+          "title": "nematode simplified",
+          "observed": "Bioicons nematode simplified and SciDraw larva both visibly use dark contour lines with pale flat fills. They can share line_art/flat_fill representation; they are different organisms and no shared series is established.",
+          "reviewer": "Codex visual review of original archived 512px previews"
+        },
+        {
+          "original_sha256": "9970fcc0cd22aa2a56bb533b915ed18edbb9a1e74d64567361aedd0a7fd2de6c",
+          "preview_sha256": "1c0e0c9ba9ae77ea3cc88988012cbf1a17de3182e2f796013ac0bf5ddc9ab245",
+          "source": "scidraw",
+          "title": "larva",
+          "observed": "Bioicons nematode simplified and SciDraw larva both visibly use dark contour lines with pale flat fills. They can share line_art/flat_fill representation; they are different organisms and no shared series is established.",
+          "reviewer": "Codex visual review of original archived 512px previews"
+        }
+      ]
+    }
+  ],
+  "acceptance_passed": false,
+  "review_limitations": [
+    "Visual review concerns the archived preview and appearance metadata, not independent scientific correctness or native Illustrator behavior.",
+    "No source artwork was edited.",
+    "Counterexamples remain recorded even when later analyzer versions repair them."
+  ],
+  "manual_style_evidence_proposals": [
+    {
+      "kind": "manual_visual_review",
+      "file_sha256": "79d43b1d4619606e4e7daaf17d62aa0d8b3e07accc4707d17a27b2e0e658dfcf",
+      "preview_sha256": "3e022cc5c3b362c0a2dc1f51dbc815c0e532fe61d4f5e83f0eaf36975faaa6eb",
+      "reviewer": "Codex visual review of original archived 512px previews",
+      "reviewed_at": "2026-11-06T16:51:25.435932+00:00",
+      "reference": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/appearance-review-42255022104-1.tar.gz#pale_color.png",
+      "statement": "Actual preview shows dark contour lines and pale flat filled regions. This is a representation observation only; no shared series, detail level or realism claim.",
+      "labels": {
+        "representation": [
+          "line_art",
+          "flat_fill"
+        ]
+      }
+    },
+    {
+      "kind": "manual_visual_review",
+      "file_sha256": "9970fcc0cd22aa2a56bb533b915ed18edbb9a1e74d64567361aedd0a7fd2de6c",
+      "preview_sha256": "1c0e0c9ba9ae77ea3cc88988012cbf1a17de3182e2f796013ac0bf5ddc9ab245",
+      "reviewer": "Codex visual review of original archived 512px previews",
+      "reviewed_at": "2026-11-06T16:51:25.435932+00:00",
+      "reference": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/appearance-review-42255022104-1.tar.gz#pale_color.png",
+      "statement": "Actual preview shows dark contour lines and pale flat filled regions. This is a representation observation only; no shared series, detail level or realism claim.",
+      "labels": {
+        "representation": [
+          "line_art",
+          "flat_fill"
+        ]
+      }
+    }
+  ]
+}
