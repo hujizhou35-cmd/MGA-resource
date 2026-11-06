@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "local_only": true,
+  "bundle": {
+    "uri": "build/search-filter-3.4.3/supplement/supplement-evidence-42289434868-3.4.3.tar.gz",
+    "sha256": "0ab9e150b0a98a33fa234874ba4892414a3ee9f78f6791b78a64a1778a559d61",
+    "size_bytes": 2199104
+  },
+  "inventory": {
+    "uri": "build/search-filter-3.4.3/supplement/metadata-evidence-inventory.json",
+    "sha256": "a8cf6bdf577b53fbdb097b83fab0855bf7a920cf3545f9498660796f6bd6ab0b"
+  },
+  "metadata_files": 39,
+  "images": 0,
+  "remote_upload_performed": false,
+  "ranking_version": "shared-search-3.4.3",
+  "search_core_sha256": "191c4631bb80f36a33ec2580739580ea4289a9726b09dfffb70d022b2a1382e6",
+  "report": {
+    "uri": "data/diagnostics/final-supplement-evidence-42289434868-3.4.3.json",
+    "sha256": "f2ff789b767c17781641226d4686287807ab6ed689f5ff5035637c37050ad990"
+  },
+  "supplement_pass": true,
+  "overall_release_allowed": false
+}

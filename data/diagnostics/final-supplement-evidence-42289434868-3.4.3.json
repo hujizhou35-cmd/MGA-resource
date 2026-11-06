@@ -1,0 +1,391 @@
+{
+  "schema_version": 1,
+  "verified_at": "2026-11-06T23:10:05.354432+00:00",
+  "status": "current_core_supplement_revalidated_not_overall_acceptance",
+  "supplement_pass": true,
+  "missing": [],
+  "overall_release_allowed": false,
+  "collection_complete": false,
+  "bindings": {
+    "catalog_sha256": "5c90306415ce5e7f36e875c7f57b19a91930aacfeeaeecdf9ad7662770f9a3fe",
+    "benchmark_sha256": "ce0282afeb4afbcee8fdef1c6f937844ef569cabf16ba7909e22bf86b1096e92",
+    "search_core_sha256": "191c4631bb80f36a33ec2580739580ea4289a9726b09dfffb70d022b2a1382e6",
+    "ranking_version": "shared-search-3.4.3",
+    "analysis_version": "appearance-1.1.0",
+    "candidate_manifest_sha256": "a4fe0424ee8ecc32096090ef295242bdaa04b9ce29ff4f7a80948c95516d5436",
+    "assembly_report_sha256": "cecdab1b3f5162cae569fc51de43d0ec34f33e00f0a81d57d56632964199cacd"
+  },
+  "index": {
+    "uri": "build/search-filter-3.4.3/catalog.sqlite",
+    "path": "build/search-filter-3.4.3/catalog.sqlite",
+    "sha256": "8ece5cdedcb50492528ef76d4944213a2f995464b31a35b636383f987d6bafc7",
+    "size_bytes": 416370688,
+    "schema_version": 9,
+    "build_seconds": 58.59853679999651,
+    "catalog_rewritten": false,
+    "originals_downloaded": 0
+  },
+  "supplemental_evidence": {
+    "uri": "build/search-filter-3.4.3/supplement/supplemental-evidence.json",
+    "sha256": "59def07ac36ee98f6659b7a4fe976a60c429af3e70fa6e77938a10d6956f0a8c"
+  },
+  "candidate_manifest": {
+    "uri": "build/dispositions-final-scope-42289434868/candidate_publish_manifest.json",
+    "sha256": "a4fe0424ee8ecc32096090ef295242bdaa04b9ce29ff4f7a80948c95516d5436",
+    "files": 19473
+  },
+  "evaluation": {
+    "required_bindings": {
+      "catalog_sha256": "5c90306415ce5e7f36e875c7f57b19a91930aacfeeaeecdf9ad7662770f9a3fe",
+      "benchmark_sha256": "ce0282afeb4afbcee8fdef1c6f937844ef569cabf16ba7909e22bf86b1096e92",
+      "search_core_sha256": "191c4631bb80f36a33ec2580739580ea4289a9726b09dfffb70d022b2a1382e6"
+    },
+    "appearance_reviewed_files": 18,
+    "appearance_reviewed_sources": [
+      "arcadia",
+      "bioicons",
+      "lab-equipment",
+      "nih-bioart",
+      "open-pain",
+      "scidraw",
+      "scisvg",
+      "togo"
+    ],
+    "diversity_observations": [
+      {
+        "case_id": "rich-mouse",
+        "pool_kind": "rich",
+        "eligible_families": 38,
+        "metrics": {
+          "projects": 5,
+          "old_top_family_ids": {
+            "distinct_families": 10,
+            "total_project_family_choices": 50,
+            "maximum_project_reuse": 5,
+            "mean_pairwise_jaccard": 1.0
+          },
+          "new_top_family_ids": {
+            "distinct_families": 27,
+            "total_project_family_choices": 50,
+            "maximum_project_reuse": 4,
+            "mean_pairwise_jaccard": 0.2049486461251167
+          },
+          "trial_downloaded_family_ids": {
+            "distinct_families": 0,
+            "total_project_family_choices": 0,
+            "maximum_project_reuse": 0,
+            "mean_pairwise_jaccard": 0.0
+          },
+          "adopted_family_ids": {
+            "distinct_families": 2,
+            "total_project_family_choices": 5,
+            "maximum_project_reuse": 3,
+            "mean_pairwise_jaccard": 0.4
+          }
+        },
+        "review_notes": "Real catalog/source-qualified candidate pool; source labels are not independent visual acceptance. Validation exercise projects only. Final validation-exercise decisions are separately identified and evidence-bound. No user research project adoption is claimed."
+      },
+      {
+        "case_id": "scarce-Naegleria-gruberi",
+        "pool_kind": "scarce",
+        "eligible_families": 1,
+        "metrics": {
+          "projects": 5,
+          "old_top_family_ids": {
+            "distinct_families": 1,
+            "total_project_family_choices": 5,
+            "maximum_project_reuse": 5,
+            "mean_pairwise_jaccard": 1.0
+          },
+          "new_top_family_ids": {
+            "distinct_families": 1,
+            "total_project_family_choices": 5,
+            "maximum_project_reuse": 5,
+            "mean_pairwise_jaccard": 1.0
+          },
+          "trial_downloaded_family_ids": {
+            "distinct_families": 0,
+            "total_project_family_choices": 0,
+            "maximum_project_reuse": 0,
+            "mean_pairwise_jaccard": 0.0
+          },
+          "adopted_family_ids": {
+            "distinct_families": 1,
+            "total_project_family_choices": 5,
+            "maximum_project_reuse": 5,
+            "mean_pairwise_jaccard": 1.0
+          }
+        },
+        "review_notes": "Real catalog/source-qualified candidate pool; source labels are not independent visual acceptance. Validation exercise projects only. Final validation-exercise decisions are separately identified and evidence-bound. No user research project adoption is claimed."
+      }
+    ],
+    "note": "Metrics describe observed runs and final adoption; no arbitrary diversity pass score is inferred.",
+    "missing": []
+  },
+  "functional_cases": {
+    "variant_before_family": true,
+    "hard_vs_preference": true,
+    "unknown_is_not_match": true,
+    "stable_replay": true,
+    "pagination_no_duplicate": true,
+    "pins_stable": true,
+    "adopted_history_only": true,
+    "modes_scientific_constraints": true,
+    "no_curated_boost": true
+  },
+  "appearance_reuse": {
+    "review": {
+      "uri": "data/appearance-reviews/appearance-42289434868-1-v1.1.0-bound-review.json",
+      "sha256": "0637af2df74116abb97877a185de8f2da27be6672d079ae6aa97e4d027816454"
+    },
+    "files": 18,
+    "new_visual_judgments": 0,
+    "search_checks": 75,
+    "exact_binding_and_options": true,
+    "five_unknown_color_files_do_not_match_known_color_filters": true,
+    "raw": {
+      "uri": "build/search-filter-3.4.3/supplement/appearance-filter-replay.json",
+      "sha256": "050342b900ed93923e78367ea2cadc9509dd0fc395e6a6cb4b2771949cd119d9"
+    }
+  },
+  "adoption_history": {
+    "schema_version": 1,
+    "generated_at": "2026-11-06T23:05:50.735787+00:00",
+    "exercise": "validation_exercise",
+    "status": "actual_decision_history_mechanism_observed_not_new_adoption_or_user_study",
+    "bindings": {
+      "catalog_sha256": "5c90306415ce5e7f36e875c7f57b19a91930aacfeeaeecdf9ad7662770f9a3fe",
+      "ledger_sha256": "4227af6fb018c0dd0f62b2c6f6d8c0e93d1f7669e2316261738eae8f892e7d90",
+      "search_core_sha256": "191c4631bb80f36a33ec2580739580ea4289a9726b09dfffb70d022b2a1382e6",
+      "ranking_version": "shared-search-3.4.3",
+      "original_decision_ranking_version": "shared-search-3.4.1",
+      "analysis_version": "appearance-1.1.0",
+      "generator_sha256": "4a1c5608f61656adc8697ff745ca24fdeac15ae7357cb9cbd6be3bb51ef4ad32"
+    },
+    "method": "Replay actual final decisions in explicit project-id order. Each query uses only decisions from earlier exercise projects. Choices remain fixed from the original no-history displays; these later queries are a mechanism observation, not new decisions or a claim about chronological user projects.",
+    "scenarios": [
+      {
+        "pool_kind": "rich",
+        "eligible_families": 38,
+        "projects": 5,
+        "projects_with_changed_top10_order_or_scores": 3,
+        "projects_with_changed_top10_order": 3,
+        "projects_with_changed_top10_membership": 2,
+        "projects_with_changed_first_family": 0,
+        "browsing_only_changes": 0,
+        "scientific_or_eligible_pool_changes": 0,
+        "exact_mode_history_effect": false,
+        "observed_penalties": [
+          {
+            "project_id": "validation-rich-1",
+            "score_deltas": []
+          },
+          {
+            "project_id": "validation-rich-2",
+            "score_deltas": [
+              {
+                "family_id": "nih-bioart-da7b71d08e120147c6ce",
+                "prior_actual_adoption_count": 1,
+                "score_without_history": 2,
+                "score_with_actual_adopted_history": 1.965,
+                "observed_score_reduction": 0.035,
+                "rank_without_history": 13,
+                "rank_with_history": 34
+              }
+            ]
+          },
+          {
+            "project_id": "validation-rich-3",
+            "score_deltas": [
+              {
+                "family_id": "bioicons-c04274818e8a26003ce4",
+                "prior_actual_adoption_count": 1,
+                "score_without_history": 2,
+                "score_with_actual_adopted_history": 1.965,
+                "observed_score_reduction": 0.035,
+                "rank_without_history": 2,
+                "rank_with_history": 9
+              },
+              {
+                "family_id": "nih-bioart-da7b71d08e120147c6ce",
+                "prior_actual_adoption_count": 1,
+                "score_without_history": 2,
+                "score_with_actual_adopted_history": 1.965,
+                "observed_score_reduction": 0.035,
+                "rank_without_history": 34,
+                "rank_with_history": 38
+              }
+            ]
+          },
+          {
+            "project_id": "validation-rich-4",
+            "score_deltas": [
+              {
+                "family_id": "bioicons-c04274818e8a26003ce4",
+                "prior_actual_adoption_count": 2,
+                "score_without_history": 2,
+                "score_with_actual_adopted_history": 1.93,
+                "observed_score_reduction": 0.07,
+                "rank_without_history": 5,
+                "rank_with_history": 36
+              },
+              {
+                "family_id": "nih-bioart-da7b71d08e120147c6ce",
+                "prior_actual_adoption_count": 1,
+                "score_without_history": 2,
+                "score_with_actual_adopted_history": 1.965,
+                "observed_score_reduction": 0.035,
+                "rank_without_history": 14,
+                "rank_with_history": 29
+              }
+            ]
+          },
+          {
+            "project_id": "validation-rich-5",
+            "score_deltas": [
+              {
+                "family_id": "bioicons-c04274818e8a26003ce4",
+                "prior_actual_adoption_count": 3,
+                "score_without_history": 2,
+                "score_with_actual_adopted_history": 1.895,
+                "observed_score_reduction": 0.105,
+                "rank_without_history": 21,
+                "rank_with_history": 38
+              },
+              {
+                "family_id": "nih-bioart-da7b71d08e120147c6ce",
+                "prior_actual_adoption_count": 1,
+                "score_without_history": 2,
+                "score_with_actual_adopted_history": 1.965,
+                "observed_score_reduction": 0.035,
+                "rank_without_history": 6,
+                "rank_with_history": 28
+              }
+            ]
+          }
+        ],
+        "evidence": {
+          "uri": "build/search-filter-3.4.3/supplement/actual-history-replay/rich.json",
+          "sha256": "3e434f65219dac446ff60d494605a8a9dc3a7de5e40877e3eca82fabced00302"
+        }
+      },
+      {
+        "pool_kind": "scarce",
+        "eligible_families": 1,
+        "projects": 5,
+        "projects_with_changed_top10_order_or_scores": 4,
+        "projects_with_changed_top10_order": 0,
+        "projects_with_changed_top10_membership": 0,
+        "projects_with_changed_first_family": 0,
+        "browsing_only_changes": 0,
+        "scientific_or_eligible_pool_changes": 0,
+        "exact_mode_history_effect": false,
+        "observed_penalties": [
+          {
+            "project_id": "validation-scarce-1",
+            "score_deltas": []
+          },
+          {
+            "project_id": "validation-scarce-2",
+            "score_deltas": [
+              {
+                "family_id": "arcadia-80bc9933df93cb7e8cb3",
+                "prior_actual_adoption_count": 1,
+                "score_without_history": 2,
+                "score_with_actual_adopted_history": 1.965,
+                "observed_score_reduction": 0.035,
+                "rank_without_history": 1,
+                "rank_with_history": 1
+              }
+            ]
+          },
+          {
+            "project_id": "validation-scarce-3",
+            "score_deltas": [
+              {
+                "family_id": "arcadia-80bc9933df93cb7e8cb3",
+                "prior_actual_adoption_count": 2,
+                "score_without_history": 2,
+                "score_with_actual_adopted_history": 1.93,
+                "observed_score_reduction": 0.07,
+                "rank_without_history": 1,
+                "rank_with_history": 1
+              }
+            ]
+          },
+          {
+            "project_id": "validation-scarce-4",
+            "score_deltas": [
+              {
+                "family_id": "arcadia-80bc9933df93cb7e8cb3",
+                "prior_actual_adoption_count": 3,
+                "score_without_history": 2,
+                "score_with_actual_adopted_history": 1.895,
+                "observed_score_reduction": 0.105,
+                "rank_without_history": 1,
+                "rank_with_history": 1
+              }
+            ]
+          },
+          {
+            "project_id": "validation-scarce-5",
+            "score_deltas": [
+              {
+                "family_id": "arcadia-80bc9933df93cb7e8cb3",
+                "prior_actual_adoption_count": 4,
+                "score_without_history": 2,
+                "score_with_actual_adopted_history": 1.895,
+                "observed_score_reduction": 0.105,
+                "rank_without_history": 1,
+                "rank_with_history": 1
+              }
+            ]
+          }
+        ],
+        "evidence": {
+          "uri": "build/search-filter-3.4.3/supplement/actual-history-replay/scarce.json",
+          "sha256": "6e69902d9040a6d39a56cb123fff538b1ef9ca62fde905975382fb385d5bcc18"
+        }
+      }
+    ],
+    "legacy_final_adoption_baseline": null,
+    "images_downloaded": 0
+  },
+  "original120": {
+    "rerun_in_this_task": false,
+    "existing_zero_difference_replay": {
+      "uri": "data/diagnostics/search-filter-3.4.3-replay.json",
+      "sha256": "6cca533401cc5839cc6dbf10d30e57318181c4c58f83dc0217f6a40fdd3ea727"
+    },
+    "visual_relevance": {
+      "uri": "data/relevance-reviews/frozen-3.4.1-merged-120.json",
+      "sha256": "382b079338289fa288093846a31f1a477cf14508c7e813ea7536f4128cbcd473"
+    },
+    "formal_acceptance_passed": false
+  },
+  "historical_supplement": {
+    "uri": "data/diagnostics/final-supplement-evidence-42289434868.json",
+    "sha256": "d577ac2e52e5d3c90d8e7e85714db2f85fd4017806c93a0e00821a5ec5313def"
+  },
+  "trial_original_download_arrays_unchanged_empty": true,
+  "unchanged_original_decisions": {
+    "uri": "data/adoption-reviews/final-validation-ledger-42289434868.json",
+    "sha256": "4227af6fb018c0dd0f62b2c6f6d8c0e93d1f7669e2316261738eae8f892e7d90"
+  },
+  "verified_local_evidence_files": 31,
+  "pending_user_scope_decisions": [
+    "Whether complete multistage biological mechanism/teaching scenes belong in the reusable-component library.",
+    "Whether value-free chart templates/analysis icons, including forest plots and heatmaps, belong in the collection.",
+    "Whether unlabeled generic geometric shapes presented as schematic proteins are in scope.",
+    "Whether to add a separate composable-component acceptance exercise for cohort follow-up/randomization/recruitment while preserving the original120 questions/results."
+  ],
+  "limitations": [
+    "This is a current-core appearance/functional/diversity supplement, not publication approval.",
+    "The original120 relevance, curated60, six negative checks and independent clean restore remain separate.",
+    "Five rich exercise projects retain two actual adopted families (maximum reuse3/5), not27 adoptions.",
+    "Five scarce exercise projects retain the only qualified family; no substitute or new adoption is invented.",
+    "No original or preview bytes were downloaded, regenerated or modified. No later scientific corrections were applied."
+  ],
+  "images_downloaded": 0,
+  "original_artwork_files_included": 0
+}
