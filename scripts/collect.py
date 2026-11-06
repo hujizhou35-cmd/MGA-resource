@@ -48,13 +48,15 @@ def slug(value: str) -> str:
     return value[:120]
 
 
-def select_source_rows(discovered, source, *, offset=0, limit=0, plan=None):
+def select_source_rows(discovered, source, *, offset=0, limit=0, plan=None, discovery_sha256=None):
     """Bind an incremental selection to the complete ordered source inventory."""
     if offset < 0 or limit < 0:
         raise ValueError("Selection offset and limit must be non-negative")
     if plan is None:
         indices = list(range(len(discovered)))
     else:
+        if plan.get("expected_discovery_sha256") and plan["expected_discovery_sha256"] != discovery_sha256:
+            raise ValueError("Selection plan full metadata snapshot changed; retain the previous cloud snapshot")
         if plan.get("source") != source or plan.get("inventory_count") != len(discovered):
             raise ValueError("Selection plan source or inventory size changed")
         ids = [row.get("source_id") for row in discovered]
@@ -338,10 +340,14 @@ def main() -> int:
         discovery_file = base / f"{slug(args.source)}-{run_id}.discovery.jsonl"
         dump_jsonl(discovery_file, discovered)
         with discovery_file.open("rb") as stream:
-            publication["discovery_sha256"] = hashlib.file_digest(stream, "sha256").hexdigest()
+            discovered_sha = hashlib.file_digest(stream, "sha256").hexdigest()
+        # Reject source drift before publishing any snapshot identity. A failed
+        # new sparse run must not supersede the last verified complete inventory.
+        selected = select_source_rows(discovered, args.source, offset=args.offset, limit=args.limit,
+                                      plan=selection_plan, discovery_sha256=discovered_sha)
+        publication["discovery_sha256"] = discovered_sha
         if args.publish:
             upload(args.release_tag, [discovery_file])
-        selected = select_source_rows(discovered, args.source, offset=args.offset, limit=args.limit, plan=selection_plan)
         selected_count = len(selected)
         print(json.dumps({"source": args.source, "discovered": discovered_count,
                           "selected": selected_count, "offset": args.offset}), flush=True)

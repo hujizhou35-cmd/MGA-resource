@@ -16,6 +16,7 @@ import sys
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
 from mga_resources.catalog import TAXONOMY, redistribution_status
+from mga_resources.supplemental_acceptance import evaluate_supplement
 
 FROZEN_BENCHMARK_SHA256 = "ce0282afeb4afbcee8fdef1c6f937844ef569cabf16ba7909e22bf86b1096e92"
 SHA = re.compile(r"^[0-9a-f]{64}$")
@@ -58,7 +59,7 @@ def read_json(path):
 def evaluate_release(catalog, assembly, benchmark, mapping, judgments, *, hashes,
                      registry, decisions=None, selection_manifests=None,
                      source_reviews=(), native_evidence=None, review_summary=None,
-                     restore_evidence=None):
+                     restore_evidence=None, supplemental_evidence=None):
     """Return (candidate publication manifest, check report); never infer review."""
     missing = []
     def need(condition, code, detail):
@@ -333,7 +334,8 @@ def evaluate_release(catalog, assembly, benchmark, mapping, judgments, *, hashes
                     and row.get("original_archive") == item["archive"]
                     and row.get("preview_archive") == item["preview"]["archive"]
                     and nonempty(row.get("observations"))
-                    and row.get("visual_verdict") in {"usable_as_general_illustration", "usable_with_limitations", "usable"}):
+                    and row.get("visual_verdict") in {"usable_as_general_illustration", "usable_with_limitations", "usable",
+                                                      "usable_as_schematic_component", "usable_as_detailed_schematic"}):
                 source = review.get("source")
                 if source in item["sources"]:
                     sampled[source].update(item["family_ids"])
@@ -384,6 +386,9 @@ def evaluate_release(catalog, assembly, benchmark, mapping, judgments, *, hashes
                         for p in manifest_files[value]["provenance"])):
             native_matches.append({"sha256": value, "status": "historical_recorded_environment_only",
                                    "environment": history, "fresh_environment_verified": False})
+    supplement = evaluate_supplement(supplemental_evidence, catalog_sha256=hashes["catalog_sha256"],
+                                    benchmark_sha256=hashes["benchmark_sha256"], manifest_files=manifest_files)
+    missing.extend(supplement["missing"])
     report = {
         "schema_version": 1, "collection_release": release, "required_bindings": required_bindings,
         "publish_manifest_sha256": manifest_sha, "publish_files": len(manifest_files),
@@ -395,7 +400,7 @@ def evaluate_release(catalog, assembly, benchmark, mapping, judgments, *, hashes
                       "negative_scenarios_passed": negative_passes},
         "visual": {"curated_families": len(curated), "source_samples": {key: len(value) for key, value in sampled.items()}},
         "native_evidence": native_matches, "native_default": "not_verified",
-        "restore_passed": restore_ok, "missing": missing, "acceptance_passed": not missing,
+        "restore_passed": restore_ok, "supplemental": supplement, "missing": missing, "acceptance_passed": not missing,
         "website_gate": "open_for_implementation" if not missing else "closed_pending_evidence",
         "note": "This evaluator checks evidence consistency; it does not perform visual or Illustrator review.",
     }
@@ -413,6 +418,7 @@ def main():
     parser.add_argument("--source-review", type=Path, action="append", default=[])
     parser.add_argument("--native-evidence", type=Path)
     parser.add_argument("--restore-evidence", type=Path)
+    parser.add_argument("--supplemental-evidence", type=Path)
     parser.add_argument("--output", type=Path, required=True)
     args = parser.parse_args()
     hashes = {key: hashlib.sha256(path.read_bytes()).hexdigest() for key, path in (
@@ -437,7 +443,8 @@ def main():
         source_reviews=[read_json(path) for path in args.source_review],
         native_evidence=read_json(args.native_evidence) if args.native_evidence else None,
         review_summary=read_json(args.review_summary) if args.review_summary else None,
-        restore_evidence=read_json(args.restore_evidence) if args.restore_evidence else None)
+        restore_evidence=read_json(args.restore_evidence) if args.restore_evidence else None,
+        supplemental_evidence=read_json(args.supplemental_evidence) if args.supplemental_evidence else None)
     args.output.mkdir(parents=True, exist_ok=True)
     (args.output / "publish_manifest.json").write_bytes(json_bytes(manifest))
     (args.output / "checkreport.json").write_bytes(json_bytes(report))

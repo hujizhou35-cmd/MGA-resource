@@ -87,6 +87,14 @@ def test_incremental_plan_skips_successes_and_resumes_by_source_index():
     assert [i for i, _ in collect.select_source_rows(rows, "test", offset=3, limit=2)] == [3, 4]
 
 
+def test_non_git_source_plan_rejects_full_metadata_drift_even_with_same_ids():
+    rows, plan = selection_fixture()
+    plan["expected_discovery_sha256"] = "a" * 64
+    with pytest.raises(ValueError, match="full metadata snapshot changed"):
+        collect.select_source_rows(rows, "test", plan=plan, discovery_sha256="b" * 64)
+    assert len(collect.select_source_rows(rows, "test", plan=plan, discovery_sha256="a" * 64)) == 4
+
+
 @pytest.mark.parametrize("mutation", ["order", "source", "revision", "count", "overlap", "bounds", "zero"])
 def test_incremental_plan_rejects_drift_and_ambiguous_ranges(mutation):
     rows, plan = selection_fixture()

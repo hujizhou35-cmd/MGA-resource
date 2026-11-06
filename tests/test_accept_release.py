@@ -6,6 +6,7 @@ import json
 from pathlib import Path
 import subprocess
 import sys
+from mga_resources.supplemental_acceptance import APPEARANCE_CASES, FUNCTIONAL_CASES
 
 ROOT = Path(__file__).resolve().parents[1]
 spec = importlib.util.spec_from_file_location("accept_release", ROOT / "scripts/accept_release.py")
@@ -42,6 +43,9 @@ def fixture():
                                     "source": "example", "sources": ["example"], "original_sha256": original_sha,
                                     "original_archive": file["archive"], "preview": file["preview"],
                                     "preview_status": "viewable", "type": file["structure"]}
+    # A second synthetic source enables the independent cross-source style case.
+    catalog[-1]["source"] = "second-example"
+    candidates["asset-59:file-0"].update(source="second-example", sources=["second-example"])
     mapping = {"benchmark_version": benchmark["benchmark_version"], "candidates": candidates, "queries": []}
     judgments = {"benchmark_version": benchmark["benchmark_version"], "reviewer": "Synthetic independent reviewer",
                  "reviewed_at": "2026-11-06", "independent_from_metadata_matcher": True,
@@ -77,6 +81,31 @@ def fixture():
         "checked_at": "2026-11-06", "bundle_url": archive, "bundle_sha256": h("bundle"),
         "member_sha256": sorted({entry["sha256"] for entry in manifest["files"]} |
                                {entry["preview"]["sha256"] for entry in manifest["files"]})}
+    proof = {"uri": "https://example.invalid/synthetic-evidence.json", "sha256": h("synthetic evidence")}
+    real_files = [{"original_sha256": row["files"][0]["sha256"],
+                   "preview_sha256": row["files"][0]["preview"]["sha256"],
+                   "observed": "Synthetic fixture observation", "reviewer": "Synthetic independent reviewer"}
+                  for row in catalog[-2:]]
+    args["supplemental_evidence"] = {
+        "schema_version": 1, "generated_at": "2026-11-07", "reviewer": "Synthetic independent reviewer",
+        "bindings": {"catalog_sha256": hashes["catalog_sha256"], "benchmark_sha256": hashes["benchmark_sha256"],
+                     "search_core_sha256": hashlib.sha256((ROOT / "mga_resources/search-core.mjs").read_bytes()).hexdigest(),
+                     "ranking_version": "synthetic-test", "analysis_version": "synthetic-test"},
+        "functional_cases": [{"id": key, "passed": True, "input": {"synthetic": True},
+                              "observed": {"fixture_result": "expected"}, "evidence": proof, "notes": "Synthetic fixture only."}
+                             for key in FUNCTIONAL_CASES],
+        "appearance_cases": [{"id": key, "passed": True, "expected": "Synthetic expected appearance",
+                              "observed": "Synthetic observed appearance", "evidence": proof,
+                              "notes": "Synthetic test does not approve real artwork.", "real_files": real_files}
+                             for key in APPEARANCE_CASES],
+        "diversity_scenarios": [{"case_id": kind, "pool_kind": kind, "eligible_family_ids": ["family-58", "family-59"] if kind == "rich" else ["family-58"],
+            "query": {"synthetic": True}, "review_notes": "Synthetic controlled project adoption exercise.", "evidence": proof,
+            "projects": [{"project_id": str(i), "seed": i, "old_top_family_ids": ["family-58"],
+                "new_top_family_ids": ["family-59" if kind == "rich" and i else "family-58"],
+                "trial_downloaded_family_ids": ["family-58"],
+                "adopted_family_ids": ["family-59" if kind == "rich" and i else "family-58"], "ledger_evidence": proof} for i in range(2)]}
+            for kind in ("rich", "scarce")],
+    }
     return args
 
 
@@ -91,6 +120,29 @@ def test_full_synthetic_evidence_opens_gate_without_claiming_native_verification
     assert report["retrieval"]["successful"] == 120
     assert len(manifest["files"]) == 60
     assert report["native_default"] == "not_verified" and report["native_evidence"] == []
+
+
+def test_old_acceptance_alone_does_not_satisfy_supplemental_requirements():
+    args = fixture()
+    args.pop("supplemental_evidence")
+    _, report = accept.evaluate_release(**args)
+    assert not report["acceptance_passed"]
+    assert report["retrieval"]["successful"] == 120
+    assert {"supplement.binding", "supplement.appearance_case", "supplement.rich_and_scarce"} <= codes(report)
+
+
+def test_supplement_rejects_changed_file_and_catalog_and_separates_adoption_metrics():
+    args = fixture()
+    extra = args["supplemental_evidence"]
+    extra["bindings"]["catalog_sha256"] = h("wrong catalog")
+    extra["appearance_cases"][0]["real_files"] = [{"original_sha256": h("unseen")}]
+    _, report = accept.evaluate_release(**args)
+    assert {"supplement.binding", "supplement.appearance_case"} <= codes(report)
+    metric = report["supplemental"]["diversity_observations"][0]["metrics"]
+    assert metric["trial_downloaded_family_ids"]["distinct_families"] == 1
+    assert metric["adopted_family_ids"]["distinct_families"] == 2
+    assert metric["old_top_family_ids"]["maximum_project_reuse"] == 2
+    assert metric["new_top_family_ids"]["maximum_project_reuse"] == 1
 
 
 def test_blank_judgments_and_missing_restore_stay_pending():
