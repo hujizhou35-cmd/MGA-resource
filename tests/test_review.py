@@ -1,5 +1,6 @@
 """Cloud review regression tests use tiny synthetic PNG/tar bytes, no network."""
 import hashlib
+import copy
 import importlib.util
 import io
 import json
@@ -78,6 +79,24 @@ def test_query_union_keeps_both_ranks_and_real_empty_results(tmp_path):
         {"query_id": "mouse-en", "language": "en", "rank": 1}]
     assert plan["concepts"][1]["candidates"] == []
     assert all(row["visual_judgment"] is None for row in plan["queries"])
+
+
+def test_review_uses_the_search_selected_variant_not_the_first_family_file(tmp_path):
+    records, database, _ = fixture_catalog(tmp_path)
+    item = records[0]
+    second_file = copy.deepcopy(item["files"][0])
+    second_file["sha256"] = "c" * 64
+    second_file["preview"]["sha256"] = "d" * 64
+    second_file["preview"]["archive"]["member"] = "previews/color.png"
+    item["files"].append(second_file)
+    selected = {**item, "selected_file": second_file}
+    plan = review.plan_review(records, database, benchmark(), sample_limit=0,
+                             search_fn=lambda *args, **kwargs: [selected])
+    assert all(value["original_sha256"] == "c" * 64 for value in plan["candidates"].values())
+    selected["selected_file"] = {"sha256": "e" * 64}
+    with pytest.raises(ValueError, match="Search-selected file"):
+        review.plan_review(records, database, benchmark(), sample_limit=0,
+                           search_fn=lambda *args, **kwargs: [selected])
 
 
 def test_stream_reads_each_archive_once_and_checks_hash(tmp_path):

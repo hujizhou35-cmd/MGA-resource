@@ -162,7 +162,14 @@ def plan_review(records, database, benchmark, *, sample_limit=240, seed="mga-rev
             if asset_id not in by_id:
                 raise ValueError("Search index and finalized catalog disagree")
             choices = descriptors(by_id[asset_id])
-            candidate = next((item for item in choices if item["preview_key"]), choices[0])
+            selected_file = record.get("selected_file")
+            if selected_file is not None:
+                candidate = next((item for item in choices
+                                  if item.get("original_sha256") == selected_file.get("sha256")), None)
+                if candidate is None:
+                    raise ValueError("Search-selected file is absent from its catalog family")
+            else:
+                candidate = next((item for item in choices if item["preview_key"]), choices[0])
             key = candidate["candidate_id"]
             candidates[key] = candidate
             rows.append({"rank": rank, "asset_id": asset_id, "candidate_id": key,
