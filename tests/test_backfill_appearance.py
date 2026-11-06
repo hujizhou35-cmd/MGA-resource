@@ -226,6 +226,23 @@ def test_merged_arcadia_family_uses_file_tags_with_gallery_binding():
     assert backfill.source_style_evidence(record, file) == []
 
 
+def test_old_catalog_arcadia_exact_official_directory_does_not_require_lost_tags():
+    record, _, _, _ = fixture()
+    record.update(source='arcadia', style='raster', metadata_status='matched_official_gallery',
+                  metadata_source='https://arcadia-science.github.io/organism-illustration-library/')
+    file = record['files'][0]
+    file['archive_member'] = 'Silhouette SVGs/Mus-musculus-silhouette.svg'
+    file['source_records'] = [{'source': 'arcadia', 'source_id': file['archive_member'],
+                               'source_url': 'https://zenodo.org/records/18395998'}]
+    evidence = backfill.source_style_evidence(record, file)
+    assert evidence[0]['labels']['representation'] == ['silhouette']
+    assert evidence[0]['file_sha256'] == file['sha256']
+    file['source_records'][0]['source_id'] = 'Silhouette SVGs/different-silhouette.svg'
+    assert backfill.source_style_evidence(record, file) == []
+    file['source_records'][0]['source_id'] = file['archive_member'] = 'Raster PNGs/Mus-musculus-raster.png'
+    assert backfill.source_style_evidence(record, file) == []
+
+
 def test_empty_cache_is_nonzero_valid_jsonl(tmp_path):
     path = tmp_path / 'empty.appearance.jsonl'
     backfill.write_jsonl(path, [])

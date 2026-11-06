@@ -99,6 +99,8 @@ def source_style_evidence(record, file):
             # A matching official gallery assertion is necessary. Raster is a
             # format label and is deliberately not translated into a style.
             member = file.get("archive_member") or source_id
+            if source_id != member:
+                continue
             filename = PurePosixPath(member).name.lower()
             if "silhouette" in filename:
                 style, labels = "silhouette", {"representation": ["silhouette"]}
@@ -114,6 +116,21 @@ def source_style_evidence(record, file):
             # the family's selected top-level style never supplies this label.
             if (annotated is None and record.get("metadata_status") == "matched_official_gallery"
                     and context.get("source_id") == member and style in (context.get("tags") or [])):
+                annotated = record
+            # Older finalized catalogs retained exact upstream file locators
+            # but dropped per-file tags. The published archive's explicit
+            # style directory plus matching basename supplies file evidence;
+            # the family's selected top-level style still supplies nothing.
+            published_directory = (
+                re.fullmatch(r"Silhouette SVGs/[^/]+-silhouette\.svg", member)
+                if style == "silhouette" else
+                re.fullmatch(r"Tricolor \+ stroke (SVGs|PNGs)/[^/]+-tricolorstroke\.(svg|png)", member))
+            if (annotated is None and published_directory
+                    and context.get("source_id") == member
+                    and context.get("source") == "arcadia"
+                    and str(context.get("source_url", "")).startswith("https://zenodo.org/records/")
+                    and record.get("metadata_status") == "matched_official_gallery"
+                    and record.get("metadata_source") == "https://arcadia-science.github.io/organism-illustration-library/"):
                 annotated = record
             if annotated is None:
                 continue
