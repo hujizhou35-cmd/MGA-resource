@@ -277,6 +277,38 @@ def _complete_discovery(incoming, source, summary, release_assets):
     raise ValueError("No complete discovery asset matches the current snapshot")
 
 
+def _integrated_source_summary(config, inventories, records):
+    """An existing primary source may be delivered through a pinned parent.
+
+    Its exact expected ID set is checked, not inferred from a matching count.
+    This creates a coverage summary only; no artwork records are duplicated.
+    """
+    parent = config["integrated_via"]
+    scope = config["integrated_scope"]
+    inventory, proof = inventories.get(parent, ([], None))
+    expected = {r["source_id"] for r in inventory
+                if r.get("upstream_revision") == scope["pinned_commit"]
+                and len(r["source_id"].split("/")) >= 4
+                and r["source_id"].split("/")[2] in scope["author_directories"]}
+    expected_digest = hashlib.sha256("\n".join(sorted(expected)).encode()).hexdigest()
+    verified = (proof is not None and len(expected) == scope["expected_records"]
+                and expected_digest == scope["source_ids_sha256"])
+    acquired = {r["source_id"]: r for r in records if r.get("source") == parent
+                and r.get("source_id") in expected and r.get("upstream_revision") == scope["pinned_commit"]
+                and r.get("acquisition", {}).get("status") == "acquired"}
+    complete = verified and acquired.keys() == expected
+    machine_complete = complete and all(_machine_checked(record) for record in acquired.values())
+    return {"source": config["source_id"], "integrated_via": parent,
+            "status": "machine_complete_pending_visual" if machine_complete else "integrated_pending_acquisition",
+            "catalog_uses": "reference_existing_parent_records", "expected_records": scope["expected_records"],
+            "discovered": len(expected) if proof else None, "downloaded_records": len(acquired),
+            "scope_identity_verified": verified, "scope_source_ids_sha256": expected_digest,
+            "inventory_evidence": proof, "missing_source_ids": sorted(expected - acquired.keys()) if verified else [],
+            "source_inventory_processed": complete, "acquisition_complete": complete,
+            "machine_validation_complete": machine_complete, "collection_complete": False,
+            "visual_acceptance": "pending", "illustrator_verified": False}
+
+
 def assemble_snapshots(incoming: Path, registry: list, release_assets=None):
     """Pure metadata aggregation, also used by offline synthetic regression tests."""
     groups = defaultdict(lambda: {"reports": [], "receipts": []})
@@ -297,7 +329,7 @@ def assemble_snapshots(incoming: Path, registry: list, release_assets=None):
     by_source = defaultdict(list)
     for (source, digest), group in sorted(groups.items()):
         by_source[source].append(_snapshot(source, digest, group["reports"], group["receipts"], incoming, release_assets))
-    records, summaries = [], []
+    records, summaries, verified_inventories = [], [], {}
     for source, versions in sorted(by_source.items()):
         versions.sort(key=lambda pair: (pair[1]["started_at"], pair[1]["discovery_sha256"]), reverse=True)
         current_records, current, current_states = versions[0]
@@ -306,6 +338,7 @@ def assemble_snapshots(incoming: Path, registry: list, release_assets=None):
                 and source_config.get("repository")):
             try:
                 inventory, inventory_evidence = _complete_discovery(incoming, source, current, release_assets)
+                verified_inventories[source] = (inventory, inventory_evidence)
                 prior = [{"discovery_sha256": summary["discovery_sha256"], "states": states,
                           "metadata_issues": summary["metadata_issues"]}
                          for _, summary, states in versions[1:]]
@@ -324,6 +357,11 @@ def assemble_snapshots(incoming: Path, registry: list, release_assets=None):
         records.extend(current_records)
         summaries.append(current)
     chosen = {item["source"]: item for item in summaries}
+    for config in registry:
+        if config.get("integrated_via") and config.get("integrated_scope"):
+            summary = _integrated_source_summary(config, verified_inventories, records)
+            summaries.append(summary)
+            chosen[config["source_id"]] = summary
     for source in sorted({item["source"] for item in legacy} - chosen.keys()):
         summary = {"source": source, "status": "legacy_pending", "acquisition_complete": False,
                    "machine_validation_complete": False, "collection_complete": False,

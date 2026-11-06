@@ -39,6 +39,8 @@ def _git_tree(source: dict, client: HttpClient) -> tuple[str, list[dict]]:
     ref = source.get("ref") or "HEAD"
     commit = client.get_json(f"https://api.github.com/repos/{repository}/commits/{urllib.parse.quote(ref, safe='')}")
     revision = commit["sha"]
+    if re.fullmatch(r"[0-9a-f]{40}", ref) and revision != ref:
+        raise SourceAccessError(repository, "GitHub response disagrees with the pinned commit")
     tree_sha = commit["commit"]["tree"]["sha"]
     tree_url = f"https://api.github.com/repos/{repository}/git/trees/{tree_sha}?recursive=1"
     tree = client.get_json(tree_url)
@@ -171,7 +173,21 @@ def discover_bioicons(source: dict, client: HttpClient) -> list[dict]:
             record["distribution_allowed"] = False
             record["rights_status"] = "pending"
             record["rights_note"] = "Servier standalone-library redistribution conditions require resolution."
-        if not override or override.get("expected_git_blob_sha1") != item["sha"] or not override.get("attribution"):
+        resolution = next((rule for rule in source.get("author_license_resolutions", [])
+                           if author in rule["author_directories"] and revision == rule["pinned_commit"]
+                           and record["license"] == rule["license"]), None)
+        if resolution:
+            record.update(distribution_allowed=True, rights_status="resolved", license_original=lic,
+                          original_author="Servier Medical Art by Servier",
+                          license_resolution={key: value for key, value in resolution.items() if key != "author_directories"},
+                          rights_note=resolution["decision_note"])
+            modified = author == "ModifiedFrom_Servier"
+            record["modification_status"] = ("Upstream marks this as modified from Servier; individual modifier is not identified in its author directory."
+                                              if modified else "Historical SVG copy distributed through Bioicons; no new artwork modification by MGA-resource.")
+            record["attribution"] = (f"{record['title']} — {'modified from ' if modified else ''}Servier Medical Art by Servier; "
+                                     f"CC BY 3.0 ({record['license_url']}); fixed source: {url}; via Bioicons. "
+                                     + record["modification_status"])
+        elif not override or override.get("expected_git_blob_sha1") != item["sha"] or not override.get("attribution"):
             record["attribution"] = f"{record['title']} — {display_author or 'author not supplied'}; {author_url or url}; {record['license']}; via Bioicons"
         record["files"] = [{"url": _raw(source["repository"], revision, path), "format": "svg",
                              "upstream_hash": "git-blob-sha1:" + item["sha"], "upstream_size": item.get("size")}]

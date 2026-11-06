@@ -38,8 +38,8 @@
         "svg"
       ],
       "scope": "medical_and_biomedical_illustrations",
-      "rights_notes": "Use each license/author directory and authors.json, not the repository code license. Servier-attributed items remain held pending source-specific review.",
-      "verified_at": "2026-11-06",
+      "rights_notes": "Per-artwork licenses and credits apply. Historical Servier copies at the pinned Bioicons commit are included as CC BY 3.0 following the 2026-11-07 user scope decision, with original attribution and the current FAQ standalone-library conflict retained per item.",
+      "verified_at": "2026-11-07",
       "path_prefixes": [
         "static/icons/"
       ],
@@ -49,9 +49,7 @@
         "diagram"
       ],
       "style_notes": "Mixed contributors and styles; detailed artwork and simplified symbols are both present.",
-      "hold_authors": [
-        "Servier"
-      ],
+      "hold_authors": [],
       "evidence_urls": [
         "https://github.com/duerrsimon/bioicons/blob/main/README.md",
         "https://github.com/duerrsimon/bioicons/blob/main/CONTRIBUTING.md"
@@ -76,7 +74,34 @@
           "rights_evidence_url": "https://doi.org/10.7875/togopic.2018.05",
           "rights_resolution_note": "Exact Bioicons blob matched to Togo ID 527 by the same viewBox, three page rectangles and all seven text labels/positions; author and CC BY 4.0 from official API."
         }
-      }
+      },
+      "ref": "d29e766ea7580b8063c4f47b29e872db40a4d979",
+      "author_license_resolutions": [
+        {
+          "decision_id": "servier-pinned-ccby3-20261107",
+          "author_directories": [
+            "Servier",
+            "ModifiedFrom_Servier"
+          ],
+          "pinned_commit": "d29e766ea7580b8063c4f47b29e872db40a4d979",
+          "license": "CC-BY-3.0",
+          "resolved_at": "2026-11-07",
+          "basis": "Existing historical CC BY 3.0 distribution through a fixed Bioicons commit; user explicitly chose inclusion.",
+          "evidence_urls": [
+            "https://github.com/duerrsimon/bioicons/blob/d29e766ea7580b8063c4f47b29e872db40a4d979/README.md",
+            "https://github.com/duerrsimon/bioicons/blob/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-3.0/LICENSE",
+            "https://github.com/duerrsimon/bioicons/blob/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/authors.json",
+            "https://creativecommons.org/licenses/by/3.0/legalcode.en"
+          ],
+          "current_terms_conflict": {
+            "url": "https://smart.servier.com/using-smart-images-what-you-can-do/",
+            "question": "Educational game/app use",
+            "quote": "not marketed as a standalone image library or collection",
+            "assessment": "This is a real restriction stated in the current FAQ and should not be concealed. It conflicts with the general collection/redistribution rights of the standard CC license; it is not a medical-professional-only restriction."
+          },
+          "decision_note": "User explicitly authorized inclusion of these 1,375 pinned historical CC BY 3.0 SVG copies on 2026-11-07 while retaining attribution, fixed provenance and the current FAQ conflict. This is not a new Servier-site collection or a relabeling to CC BY 4.0."
+        }
+      ]
     },
     {
       "source_id": "healthicons",
@@ -464,13 +489,13 @@
       "source_id": "servier",
       "name": "Servier Medical Art",
       "enabled": false,
-      "status": "rights_review",
+      "status": "integrated_via_pinned_bioicons",
       "primary": true,
       "adapter": null,
       "repository": null,
       "source_url": "https://smart.servier.com/",
-      "license": "CC-BY-4.0",
-      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license": "CC-BY-3.0",
+      "license_url": "https://creativecommons.org/licenses/by/3.0/",
       "author": "Servier Medical Art",
       "categories": [],
       "extensions": [
@@ -478,8 +503,8 @@
         "png"
       ],
       "scope": "medical_and_biomedical_illustrations",
-      "rights_notes": "Keep on hold: official conditions on automated collection and standalone image-library distribution require source-specific resolution. Another site's mirror is not proof this use is cleared.",
-      "verified_at": "2026-11-06",
+      "rights_notes": "Per-artwork licenses and credits apply. Historical Servier copies at the pinned Bioicons commit are included as CC BY 3.0 following the 2026-11-07 user scope decision, with original attribution and the current FAQ standalone-library conflict retained per item.",
+      "verified_at": "2026-11-07",
       "content_types": [
         "illustration",
         "diagram"
@@ -488,7 +513,18 @@
       "evidence_urls": [
         "https://smart.servier.com/using-smart-images-what-you-can-do/",
         "https://smart.servier.com/terms-of-use/"
-      ]
+      ],
+      "integrated_via": "bioicons",
+      "integrated_scope": {
+        "pinned_commit": "d29e766ea7580b8063c4f47b29e872db40a4d979",
+        "author_directories": [
+          "Servier",
+          "ModifiedFrom_Servier"
+        ],
+        "expected_records": 1375,
+        "source_ids_sha256": "1bcf98d817f0919da2903e68ac7563528fd867c5e8ba4910b5a76ecc55f877a3",
+        "identity_digest_method": "SHA-256 of sorted source_id strings joined by newline, no trailing newline"
+      }
     },
     {
       "source_id": "ian",

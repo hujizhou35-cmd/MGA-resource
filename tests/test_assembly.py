@@ -416,3 +416,29 @@ def test_duplicate_complete_inventory_is_rejected_even_with_valid_hash(tmp_path)
     records, sources, outstanding, _ = assemble.assemble_snapshots(tmp_path, GITHUB_REGISTRY, assets)
     assert records == [] and outstanding == ["example"]
     assert "duplicate" in sources[0]["metadata_issues"][0]
+
+
+def test_integrated_primary_source_requires_exact_pinned_id_set_and_actual_files():
+    from test_reconciliation import inventory, successful_state, COMMIT
+    import copy
+    items = [inventory("cc-by-3.0/Organs/Servier/heart.svg"),
+             inventory("cc-by-3.0/Organs/ModifiedFrom_Servier/liver.svg")]
+    ids = sorted(item["source_id"] for item in items)
+    config = {"source_id": "servier", "primary": True, "integrated_via": "example", "integrated_scope": {
+        "pinned_commit": COMMIT, "author_directories": ["Servier", "ModifiedFrom_Servier"],
+        "expected_records": 2, "source_ids_sha256": hashlib.sha256("\n".join(ids).encode()).hexdigest()}}
+    records = [successful_state(item, index)["record"] for index, item in enumerate(items)]
+    for record in records:
+        record["acquisition"] = {"status": "acquired"}
+    inventory_proof = {"cloud_digest_verified": True, "sha256": "a" * 64}
+    summary = assemble._integrated_source_summary(config, {"example": (items, inventory_proof)}, records)
+    assert summary["machine_validation_complete"] and summary["downloaded_records"] == 2
+    assert not summary["collection_complete"] and summary["visual_acceptance"] == "pending"
+    missing = assemble._integrated_source_summary(config, {"example": (items, inventory_proof)}, records[:1])
+    assert not missing["machine_validation_complete"] and len(missing["missing_source_ids"]) == 1
+    wrong_inventory = copy.deepcopy(items)
+    wrong_inventory[1]["source_id"] = "cc-by-3.0/Organs/Servier/different.svg"
+    wrong = assemble._integrated_source_summary(config, {"example": (wrong_inventory, inventory_proof)}, records)
+    assert not wrong["scope_identity_verified"] and not wrong["acquisition_complete"]
+    no_proof = assemble._integrated_source_summary(config, {}, records)
+    assert not no_proof["scope_identity_verified"] and not no_proof["acquisition_complete"]

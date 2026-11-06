@@ -1,0 +1,781 @@
+{
+  "source": "bioicons",
+  "pinned_commit": "d29e766ea7580b8063c4f47b29e872db40a4d979",
+  "based_on_verified_run": "42239971379-1",
+  "inventory_count": 2830,
+  "ordered_source_ids_sha256": "955845ff78b0c5d86f97d39028c32cc218a3a5c59285adc61dca986e6959998c",
+  "range_contract": "Zero-based offset and limit against sorted pinned Bioicons discovery. Verify the ordered source_id identity digest before applying; metadata discovery_sha256 may change and must be freshly recorded by CI.",
+  "already_cloud_acquired": 1254,
+  "servier": {
+    "records": 1375,
+    "ranges": [
+      {
+        "offset": 491,
+        "limit": 1103
+      },
+      {
+        "offset": 1595,
+        "limit": 272
+      }
+    ]
+  },
+  "other_rights_resolved": {
+    "records": 4,
+    "ranges": [
+      {
+        "offset": 0,
+        "limit": 3
+      },
+      {
+        "offset": 2292,
+        "limit": 1
+      }
+    ]
+  },
+  "native_svg_repair_candidates": {
+    "records": 159,
+    "ranges": [
+      {
+        "offset": 2170,
+        "limit": 6
+      },
+      {
+        "offset": 2210,
+        "limit": 1
+      },
+      {
+        "offset": 2212,
+        "limit": 1
+      },
+      {
+        "offset": 2217,
+        "limit": 1
+      },
+      {
+        "offset": 2227,
+        "limit": 1
+      },
+      {
+        "offset": 2230,
+        "limit": 2
+      },
+      {
+        "offset": 2253,
+        "limit": 3
+      },
+      {
+        "offset": 2297,
+        "limit": 10
+      },
+      {
+        "offset": 2316,
+        "limit": 1
+      },
+      {
+        "offset": 2322,
+        "limit": 27
+      },
+      {
+        "offset": 2351,
+        "limit": 43
+      },
+      {
+        "offset": 2408,
+        "limit": 2
+      },
+      {
+        "offset": 2426,
+        "limit": 5
+      },
+      {
+        "offset": 2432,
+        "limit": 4
+      },
+      {
+        "offset": 2437,
+        "limit": 2
+      },
+      {
+        "offset": 2442,
+        "limit": 3
+      },
+      {
+        "offset": 2447,
+        "limit": 4
+      },
+      {
+        "offset": 2452,
+        "limit": 2
+      },
+      {
+        "offset": 2456,
+        "limit": 1
+      },
+      {
+        "offset": 2470,
+        "limit": 2
+      },
+      {
+        "offset": 2477,
+        "limit": 1
+      },
+      {
+        "offset": 2479,
+        "limit": 1
+      },
+      {
+        "offset": 2486,
+        "limit": 1
+      },
+      {
+        "offset": 2532,
+        "limit": 2
+      },
+      {
+        "offset": 2583,
+        "limit": 1
+      },
+      {
+        "offset": 2602,
+        "limit": 3
+      },
+      {
+        "offset": 2620,
+        "limit": 26
+      },
+      {
+        "offset": 2651,
+        "limit": 1
+      },
+      {
+        "offset": 2675,
+        "limit": 1
+      },
+      {
+        "offset": 2677,
+        "limit": 1
+      }
+    ]
+  },
+  "recommended_now": {
+    "records": 1538,
+    "ranges": [
+      {
+        "offset": 0,
+        "limit": 3
+      },
+      {
+        "offset": 491,
+        "limit": 1103
+      },
+      {
+        "offset": 1595,
+        "limit": 272
+      },
+      {
+        "offset": 2170,
+        "limit": 6
+      },
+      {
+        "offset": 2210,
+        "limit": 1
+      },
+      {
+        "offset": 2212,
+        "limit": 1
+      },
+      {
+        "offset": 2217,
+        "limit": 1
+      },
+      {
+        "offset": 2227,
+        "limit": 1
+      },
+      {
+        "offset": 2230,
+        "limit": 2
+      },
+      {
+        "offset": 2253,
+        "limit": 3
+      },
+      {
+        "offset": 2292,
+        "limit": 1
+      },
+      {
+        "offset": 2297,
+        "limit": 10
+      },
+      {
+        "offset": 2316,
+        "limit": 1
+      },
+      {
+        "offset": 2322,
+        "limit": 27
+      },
+      {
+        "offset": 2351,
+        "limit": 43
+      },
+      {
+        "offset": 2408,
+        "limit": 2
+      },
+      {
+        "offset": 2426,
+        "limit": 5
+      },
+      {
+        "offset": 2432,
+        "limit": 4
+      },
+      {
+        "offset": 2437,
+        "limit": 2
+      },
+      {
+        "offset": 2442,
+        "limit": 3
+      },
+      {
+        "offset": 2447,
+        "limit": 4
+      },
+      {
+        "offset": 2452,
+        "limit": 2
+      },
+      {
+        "offset": 2456,
+        "limit": 1
+      },
+      {
+        "offset": 2470,
+        "limit": 2
+      },
+      {
+        "offset": 2477,
+        "limit": 1
+      },
+      {
+        "offset": 2479,
+        "limit": 1
+      },
+      {
+        "offset": 2486,
+        "limit": 1
+      },
+      {
+        "offset": 2532,
+        "limit": 2
+      },
+      {
+        "offset": 2583,
+        "limit": 1
+      },
+      {
+        "offset": 2602,
+        "limit": 3
+      },
+      {
+        "offset": 2620,
+        "limit": 26
+      },
+      {
+        "offset": 2651,
+        "limit": 1
+      },
+      {
+        "offset": 2675,
+        "limit": 1
+      },
+      {
+        "offset": 2677,
+        "limit": 1
+      }
+    ],
+    "already_acquired_overlap": 0
+  },
+  "all_not_yet_acquired": {
+    "records": 1576,
+    "ranges": [
+      {
+        "offset": 0,
+        "limit": 3
+      },
+      {
+        "offset": 178,
+        "limit": 2
+      },
+      {
+        "offset": 235,
+        "limit": 1
+      },
+      {
+        "offset": 491,
+        "limit": 1103
+      },
+      {
+        "offset": 1595,
+        "limit": 272
+      },
+      {
+        "offset": 2170,
+        "limit": 6
+      },
+      {
+        "offset": 2210,
+        "limit": 1
+      },
+      {
+        "offset": 2212,
+        "limit": 1
+      },
+      {
+        "offset": 2217,
+        "limit": 1
+      },
+      {
+        "offset": 2227,
+        "limit": 1
+      },
+      {
+        "offset": 2230,
+        "limit": 2
+      },
+      {
+        "offset": 2253,
+        "limit": 3
+      },
+      {
+        "offset": 2292,
+        "limit": 1
+      },
+      {
+        "offset": 2297,
+        "limit": 10
+      },
+      {
+        "offset": 2316,
+        "limit": 1
+      },
+      {
+        "offset": 2322,
+        "limit": 27
+      },
+      {
+        "offset": 2351,
+        "limit": 43
+      },
+      {
+        "offset": 2408,
+        "limit": 2
+      },
+      {
+        "offset": 2426,
+        "limit": 5
+      },
+      {
+        "offset": 2432,
+        "limit": 4
+      },
+      {
+        "offset": 2437,
+        "limit": 2
+      },
+      {
+        "offset": 2442,
+        "limit": 3
+      },
+      {
+        "offset": 2447,
+        "limit": 4
+      },
+      {
+        "offset": 2452,
+        "limit": 2
+      },
+      {
+        "offset": 2456,
+        "limit": 1
+      },
+      {
+        "offset": 2470,
+        "limit": 2
+      },
+      {
+        "offset": 2477,
+        "limit": 1
+      },
+      {
+        "offset": 2479,
+        "limit": 1
+      },
+      {
+        "offset": 2486,
+        "limit": 1
+      },
+      {
+        "offset": 2532,
+        "limit": 2
+      },
+      {
+        "offset": 2548,
+        "limit": 1
+      },
+      {
+        "offset": 2552,
+        "limit": 1
+      },
+      {
+        "offset": 2583,
+        "limit": 1
+      },
+      {
+        "offset": 2602,
+        "limit": 3
+      },
+      {
+        "offset": 2620,
+        "limit": 26
+      },
+      {
+        "offset": 2651,
+        "limit": 1
+      },
+      {
+        "offset": 2675,
+        "limit": 1
+      },
+      {
+        "offset": 2677,
+        "limit": 1
+      },
+      {
+        "offset": 2748,
+        "limit": 2
+      },
+      {
+        "offset": 2751,
+        "limit": 1
+      },
+      {
+        "offset": 2800,
+        "limit": 30
+      }
+    ]
+  },
+  "known_unresolved_quarantine": {
+    "records": 38,
+    "items": [
+      {
+        "source": "bioicons",
+        "source_id": "cc-0/Epigenetics/Xi-Chen/single_nucleosome.svg",
+        "source_index": 178,
+        "url": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-0/Epigenetics/Xi-Chen/single_nucleosome.svg",
+        "error_type": "MediaValidationError",
+        "error": "SVG contains unsupported active element: script"
+      },
+      {
+        "source": "bioicons",
+        "source_id": "cc-0/Epigenetics/Xi-Chen/transcription_machinery.svg",
+        "source_index": 179,
+        "url": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-0/Epigenetics/Xi-Chen/transcription_machinery.svg",
+        "error_type": "MediaValidationError",
+        "error": "SVG contains unsupported active element: script"
+      },
+      {
+        "source": "bioicons",
+        "source_id": "cc-0/Human_physiology/fang-fangyang/gut_bacteria.svg",
+        "source_index": 235,
+        "url": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-0/Human_physiology/fang-fangyang/gut_bacteria.svg",
+        "error_type": "MediaValidationError",
+        "error": "Nested SVG image requires recursive validation; quarantined"
+      },
+      {
+        "source": "bioicons",
+        "source_id": "cc-by-4.0/Microbiology/SwissBioPics/Bacteria2M_coccus.svg",
+        "source_index": 2548,
+        "url": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-4.0/Microbiology/SwissBioPics/Bacteria2M_coccus.svg",
+        "error_type": "MediaValidationError",
+        "error": "SVG loads an external or unsupported resource via image/href"
+      },
+      {
+        "source": "bioicons",
+        "source_id": "cc-by-4.0/Microbiology/SwissBioPics/Bacteria2M_spiral.svg",
+        "source_index": 2552,
+        "url": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-4.0/Microbiology/SwissBioPics/Bacteria2M_spiral.svg",
+        "error_type": "MediaValidationError",
+        "error": "SVG loads an external or unsupported resource via image/href"
+      },
+      {
+        "source": "bioicons",
+        "source_id": "cc-by-4.0/Viruses/DBCLS/Polyomaviridae.svg",
+        "source_index": 2748,
+        "url": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-4.0/Viruses/DBCLS/Polyomaviridae.svg",
+        "error_type": "MediaValidationError",
+        "error": "Source is empty or exceeds the processing byte limit"
+      },
+      {
+        "source": "bioicons",
+        "source_id": "cc-by-4.0/Viruses/DBCLS/SARS-CoV-2.svg",
+        "source_index": 2749,
+        "url": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-4.0/Viruses/DBCLS/SARS-CoV-2.svg",
+        "error_type": "MediaValidationError",
+        "error": "Source is empty or exceeds the processing byte limit"
+      },
+      {
+        "source": "bioicons",
+        "source_id": "cc-by-4.0/Viruses/DBCLS/virus.svg",
+        "source_index": 2751,
+        "url": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-4.0/Viruses/DBCLS/virus.svg",
+        "error_type": "MediaValidationError",
+        "error": "Source is empty or exceeds the processing byte limit"
+      },
+      {
+        "source": "bioicons",
+        "source_id": "mit/Scientific_graphs/dbs-sticky/area.svg",
+        "source_index": 2800,
+        "url": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/mit/Scientific_graphs/dbs-sticky/area.svg",
+        "error_type": "MediaValidationError",
+        "error": "SVG CSS loads an external resource"
+      },
+      {
+        "source": "bioicons",
+        "source_id": "mit/Scientific_graphs/dbs-sticky/bar-grouped.svg",
+        "source_index": 2801,
+        "url": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/mit/Scientific_graphs/dbs-sticky/bar-grouped.svg",
+        "error_type": "MediaValidationError",
+        "error": "SVG CSS loads an external resource"
+      },
+      {
+        "source": "bioicons",
+        "source_id": "mit/Scientific_graphs/dbs-sticky/bar.svg",
+        "source_index": 2802,
+        "url": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/mit/Scientific_graphs/dbs-sticky/bar.svg",
+        "error_type": "MediaValidationError",
+        "error": "SVG CSS loads an external resource"
+      },
+      {
+        "source": "bioicons",
+        "source_id": "mit/Scientific_graphs/dbs-sticky/box-whisker.svg",
+        "source_index": 2803,
+        "url": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/mit/Scientific_graphs/dbs-sticky/box-whisker.svg",
+        "error_type": "MediaValidationError",
+        "error": "SVG CSS loads an external resource"
+      },
+      {
+        "source": "bioicons",
+        "source_id": "mit/Scientific_graphs/dbs-sticky/bubble.svg",
+        "source_index": 2804,
+        "url": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/mit/Scientific_graphs/dbs-sticky/bubble.svg",
+        "error_type": "MediaValidationError",
+        "error": "SVG CSS loads an external resource"
+      },
+      {
+        "source": "bioicons",
+        "source_id": "mit/Scientific_graphs/dbs-sticky/calendar-heatmap.svg",
+        "source_index": 2805,
+        "url": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/mit/Scientific_graphs/dbs-sticky/calendar-heatmap.svg",
+        "error_type": "MediaValidationError",
+        "error": "SVG CSS loads an external resource"
+      },
+      {
+        "source": "bioicons",
+        "source_id": "mit/Scientific_graphs/dbs-sticky/column-grouped.svg",
+        "source_index": 2806,
+        "url": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/mit/Scientific_graphs/dbs-sticky/column-grouped.svg",
+        "error_type": "MediaValidationError",
+        "error": "SVG CSS loads an external resource"
+      },
+      {
+        "source": "bioicons",
+        "source_id": "mit/Scientific_graphs/dbs-sticky/column-stacked-100.svg",
+        "source_index": 2807,
+        "url": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/mit/Scientific_graphs/dbs-sticky/column-stacked-100.svg",
+        "error_type": "MediaValidationError",
+        "error": "SVG CSS loads an external resource"
+      },
+      {
+        "source": "bioicons",
+        "source_id": "mit/Scientific_graphs/dbs-sticky/column-stacked.svg",
+        "source_index": 2808,
+        "url": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/mit/Scientific_graphs/dbs-sticky/column-stacked.svg",
+        "error_type": "MediaValidationError",
+        "error": "SVG CSS loads an external resource"
+      },
+      {
+        "source": "bioicons",
+        "source_id": "mit/Scientific_graphs/dbs-sticky/column.svg",
+        "source_index": 2809,
+        "url": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/mit/Scientific_graphs/dbs-sticky/column.svg",
+        "error_type": "MediaValidationError",
+        "error": "SVG CSS loads an external resource"
+      },
+      {
+        "source": "bioicons",
+        "source_id": "mit/Scientific_graphs/dbs-sticky/coxcomb.svg",
+        "source_index": 2810,
+        "url": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/mit/Scientific_graphs/dbs-sticky/coxcomb.svg",
+        "error_type": "MediaValidationError",
+        "error": "SVG CSS loads an external resource"
+      },
+      {
+        "source": "bioicons",
+        "source_id": "mit/Scientific_graphs/dbs-sticky/density-plot.svg",
+        "source_index": 2811,
+        "url": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/mit/Scientific_graphs/dbs-sticky/density-plot.svg",
+        "error_type": "MediaValidationError",
+        "error": "SVG CSS loads an external resource"
+      },
+      {
+        "source": "bioicons",
+        "source_id": "mit/Scientific_graphs/dbs-sticky/donut.svg",
+        "source_index": 2812,
+        "url": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/mit/Scientific_graphs/dbs-sticky/donut.svg",
+        "error_type": "MediaValidationError",
+        "error": "SVG CSS loads an external resource"
+      },
+      {
+        "source": "bioicons",
+        "source_id": "mit/Scientific_graphs/dbs-sticky/dot-multi-strip-jitter.svg",
+        "source_index": 2813,
+        "url": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/mit/Scientific_graphs/dbs-sticky/dot-multi-strip-jitter.svg",
+        "error_type": "MediaValidationError",
+        "error": "SVG CSS loads an external resource"
+      },
+      {
+        "source": "bioicons",
+        "source_id": "mit/Scientific_graphs/dbs-sticky/dot-multi-strip.svg",
+        "source_index": 2814,
+        "url": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/mit/Scientific_graphs/dbs-sticky/dot-multi-strip.svg",
+        "error_type": "MediaValidationError",
+        "error": "SVG CSS loads an external resource"
+      },
+      {
+        "source": "bioicons",
+        "source_id": "mit/Scientific_graphs/dbs-sticky/dot-strip.svg",
+        "source_index": 2815,
+        "url": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/mit/Scientific_graphs/dbs-sticky/dot-strip.svg",
+        "error_type": "MediaValidationError",
+        "error": "SVG CSS loads an external resource"
+      },
+      {
+        "source": "bioicons",
+        "source_id": "mit/Scientific_graphs/dbs-sticky/heatmap.svg",
+        "source_index": 2816,
+        "url": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/mit/Scientific_graphs/dbs-sticky/heatmap.svg",
+        "error_type": "MediaValidationError",
+        "error": "SVG CSS loads an external resource"
+      },
+      {
+        "source": "bioicons",
+        "source_id": "mit/Scientific_graphs/dbs-sticky/histogram.svg",
+        "source_index": 2817,
+        "url": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/mit/Scientific_graphs/dbs-sticky/histogram.svg",
+        "error_type": "MediaValidationError",
+        "error": "SVG CSS loads an external resource"
+      },
+      {
+        "source": "bioicons",
+        "source_id": "mit/Scientific_graphs/dbs-sticky/line-dot.svg",
+        "source_index": 2818,
+        "url": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/mit/Scientific_graphs/dbs-sticky/line-dot.svg",
+        "error_type": "MediaValidationError",
+        "error": "SVG CSS loads an external resource"
+      },
+      {
+        "source": "bioicons",
+        "source_id": "mit/Scientific_graphs/dbs-sticky/line.svg",
+        "source_index": 2819,
+        "url": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/mit/Scientific_graphs/dbs-sticky/line.svg",
+        "error_type": "MediaValidationError",
+        "error": "SVG CSS loads an external resource"
+      },
+      {
+        "source": "bioicons",
+        "source_id": "mit/Scientific_graphs/dbs-sticky/pie.svg",
+        "source_index": 2820,
+        "url": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/mit/Scientific_graphs/dbs-sticky/pie.svg",
+        "error_type": "MediaValidationError",
+        "error": "SVG CSS loads an external resource"
+      },
+      {
+        "source": "bioicons",
+        "source_id": "mit/Scientific_graphs/dbs-sticky/population-pyramid.svg",
+        "source_index": 2821,
+        "url": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/mit/Scientific_graphs/dbs-sticky/population-pyramid.svg",
+        "error_type": "MediaValidationError",
+        "error": "SVG CSS loads an external resource"
+      },
+      {
+        "source": "bioicons",
+        "source_id": "mit/Scientific_graphs/dbs-sticky/radar.svg",
+        "source_index": 2822,
+        "url": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/mit/Scientific_graphs/dbs-sticky/radar.svg",
+        "error_type": "MediaValidationError",
+        "error": "SVG CSS loads an external resource"
+      },
+      {
+        "source": "bioicons",
+        "source_id": "mit/Scientific_graphs/dbs-sticky/scatter.svg",
+        "source_index": 2823,
+        "url": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/mit/Scientific_graphs/dbs-sticky/scatter.svg",
+        "error_type": "MediaValidationError",
+        "error": "SVG CSS loads an external resource"
+      },
+      {
+        "source": "bioicons",
+        "source_id": "mit/Scientific_graphs/dbs-sticky/stackedbar-100.svg",
+        "source_index": 2824,
+        "url": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/mit/Scientific_graphs/dbs-sticky/stackedbar-100.svg",
+        "error_type": "MediaValidationError",
+        "error": "SVG CSS loads an external resource"
+      },
+      {
+        "source": "bioicons",
+        "source_id": "mit/Scientific_graphs/dbs-sticky/stackedbar.svg",
+        "source_index": 2825,
+        "url": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/mit/Scientific_graphs/dbs-sticky/stackedbar.svg",
+        "error_type": "MediaValidationError",
+        "error": "SVG CSS loads an external resource"
+      },
+      {
+        "source": "bioicons",
+        "source_id": "mit/Scientific_graphs/dbs-sticky/theme-river.svg",
+        "source_index": 2826,
+        "url": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/mit/Scientific_graphs/dbs-sticky/theme-river.svg",
+        "error_type": "MediaValidationError",
+        "error": "SVG CSS loads an external resource"
+      },
+      {
+        "source": "bioicons",
+        "source_id": "mit/Scientific_graphs/dbs-sticky/tree-map.svg",
+        "source_index": 2827,
+        "url": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/mit/Scientific_graphs/dbs-sticky/tree-map.svg",
+        "error_type": "MediaValidationError",
+        "error": "SVG CSS loads an external resource"
+      },
+      {
+        "source": "bioicons",
+        "source_id": "mit/Scientific_graphs/dbs-sticky/violin.svg",
+        "source_index": 2828,
+        "url": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/mit/Scientific_graphs/dbs-sticky/violin.svg",
+        "error_type": "MediaValidationError",
+        "error": "SVG CSS loads an external resource"
+      },
+      {
+        "source": "bioicons",
+        "source_id": "mit/Scientific_graphs/dbs-sticky/waterfall.svg",
+        "source_index": 2829,
+        "url": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/mit/Scientific_graphs/dbs-sticky/waterfall.svg",
+        "error_type": "MediaValidationError",
+        "error": "SVG CSS loads an external resource"
+      }
+    ]
+  },
+  "caution": "No range is a claim of download or rendering success. The 1,375 Servier records remain unacquired until cloud receipts prove delivery; reuse applies only to the existing 1,254 verified successes."
+}

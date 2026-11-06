@@ -152,7 +152,7 @@ class SourceTests(unittest.TestCase):
         from pathlib import Path
         registry = json.loads((Path(__file__).resolve().parents[1] / "data/sources.json").read_text(encoding="utf-8"))
         config = next(s for s in registry["sources"] if s["source_id"] == "bioicons")
-        source = {**config, "repository": "example/art"}
+        source = {**config, "repository": "example/art", "ref": "HEAD"}
         article_id, override = next(iter(source["item_overrides"].items()))
         alias = source["license_aliases"]["bsd"]
         client = self.git_fixture([
@@ -176,6 +176,32 @@ class SourceTests(unittest.TestCase):
         self.assertEqual(changed_logo["license"], "LicenseRef-bsd")
         self.assertFalse(changed_article["distribution_allowed"])
         self.assertIsNone(changed_article["author"])
+
+    def test_pinned_servier_resolution_keeps_ccby3_credit_and_faq_conflict(self):
+        from pathlib import Path
+        registry = json.loads((Path(__file__).resolve().parents[1] / "data/sources.json").read_text(encoding="utf-8"))
+        source = next(s for s in registry["sources"] if s["source_id"] == "bioicons")
+        source.update(repository="example/art", ref="HEAD")
+        source["author_license_resolutions"][0]["pinned_commit"] = "a" * 40
+        client = self.git_fixture([{"path": "static/icons/cc-by-3.0/Organs/" + author + "/heart.svg", "type": "blob", "sha": "c" * 40}
+                                   for author in ("Servier", "ModifiedFrom_Servier")])
+        client.mapping["https://raw.githubusercontent.com/example/art/" + "a" * 40 + "/static/icons/authors.json"] = {}
+        records = discover(source, client)
+        for record in records:
+            self.assertEqual(record["license"], "CC-BY-3.0")
+            self.assertEqual(record["rights_status"], "resolved")
+            self.assertTrue(record["distribution_allowed"])
+            self.assertIn("Servier Medical Art by Servier", record["attribution"])
+            self.assertIn("current_terms_conflict", record["license_resolution"])
+            self.assertEqual(record["license_resolution"]["pinned_commit"], "a" * 40)
+        modified = next(r for r in records if "ModifiedFrom" in r["source_id"])
+        self.assertIn("individual modifier is not identified", modified["modification_status"])
+
+    def test_requested_full_git_commit_cannot_resolve_to_another_commit(self):
+        client = self.git_fixture([])
+        client.mapping["https://api.github.com/repos/example/art/commits/" + "d" * 40] = {"sha": "a" * 40}
+        with self.assertRaisesRegex(SourceAccessError, "pinned commit"):
+            discover({"source_id": "example", "repository": "example/art", "ref": "d" * 40}, client)
 
     def test_rsc_utf8_byte_lengths_and_embedded_newline(self):
         text = "蛋白\nLundström"
