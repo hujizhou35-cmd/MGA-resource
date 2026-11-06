@@ -455,7 +455,9 @@ def _write_sqlite(records: list[dict[str, Any]], path: Path, catalog_version: st
             CREATE TABLE index_metadata (key TEXT PRIMARY KEY, value TEXT NOT NULL);
             CREATE TABLE file_variants (variant_id TEXT PRIMARY KEY, asset_id TEXT NOT NULL,
                 family_id TEXT NOT NULL, file_sha256 TEXT, eligible INTEGER NOT NULL,
-                values_json TEXT NOT NULL, metadata TEXT NOT NULL);
+                values_json TEXT NOT NULL, metadata TEXT NOT NULL,
+                title_terms TEXT NOT NULL, context_terms TEXT NOT NULL, all_terms TEXT NOT NULL,
+                rotation_key INTEGER NOT NULL, features TEXT NOT NULL);
             CREATE INDEX variants_family ON file_variants(family_id);
             CREATE INDEX variants_file ON file_variants(file_sha256);
             CREATE VIRTUAL TABLE file_variants_fts USING fts5(variant_id UNINDEXED, title, aliases, context,
@@ -471,10 +473,14 @@ def _write_sqlite(records: list[dict[str, Any]], path: Path, catalog_version: st
                 _text([item.get("description"), item.get("categories"), item.get("upstream_category"), item.get("taxonomy"), item.get("species"), item.get("anatomy"), item.get("action"), item.get("view"), item.get("style")]),
             ))
         for variant in prepared["variants"]:
-            db.execute("INSERT INTO file_variants VALUES (?, ?, ?, ?, ?, ?, ?)", (
+            db.execute("INSERT INTO file_variants VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)", (
                 variant["variant_id"], variant["asset_id"], variant["family_id"], variant["file"].get("sha256"),
                 int(variant["eligible"]), json.dumps(variant["values"], ensure_ascii=False, separators=(",", ":")),
                 json.dumps(variant, ensure_ascii=False, separators=(",", ":")),
+                json.dumps(variant["lexical"]["title"], ensure_ascii=False, separators=(",", ":")),
+                json.dumps(variant["lexical"]["context"], ensure_ascii=False, separators=(",", ":")),
+                json.dumps(variant["lexical"]["all"], ensure_ascii=False, separators=(",", ":")),
+                variant["rotation_key"], json.dumps(variant["features"], ensure_ascii=False, separators=(",", ":")),
             ))
             db.execute("INSERT INTO file_variants_fts VALUES (?, ?, ?, ?)", (
                 variant["variant_id"], variant["search"]["title"], variant["search"]["aliases"], variant["search"]["context"],
@@ -482,7 +488,7 @@ def _write_sqlite(records: list[dict[str, Any]], path: Path, catalog_version: st
         db.executemany("INSERT INTO index_metadata VALUES (?, ?)", [
             ("catalog_version", catalog_version), ("ranking_version", prepared["ranking_version"]),
         ])
-        db.execute("PRAGMA user_version=2")
+        db.execute("PRAGMA user_version=3")
 
 
 def finalize(records: Iterable[dict[str, Any]], output_dir: str | Path) -> dict[str, Any]:
@@ -517,7 +523,7 @@ def finalize(records: Iterable[dict[str, Any]], output_dir: str | Path) -> dict[
         "catalog_sha256": hashlib.sha256(catalog_path.read_bytes()).hexdigest(),
     }
     _write_sqlite(items, output_dir / "catalog.sqlite", summary["catalog_sha256"])
-    summary["search_index_version"] = 2
+    summary["search_index_version"] = 3
     summary["search_policy"] = "mga_resources/search-core.mjs; old BM25 available as search_legacy"
     (output_dir / "summary.json").write_text(json.dumps(summary, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     return summary
@@ -623,57 +629,70 @@ def search_page(db_path: str | Path, query: str, limit: int = 10,
                 seed: str = "default", history: dict[str, Any] | None = None,
                 project: dict[str, Any] | None = None, cursor: str | None = None,
                 preferences: dict[str, Any] | None = None, candidate_pool: int = 75) -> dict[str, Any]:
-    """SQLite storage adapter for the shared JS policy. No independent ranking.
+    """Execute the shared core's compact SQL plan; no Python ranking policy.
 
-    SQL pushes the core's exact prepared hard values down before reading any
-    candidate payload. There is no coarse LIMIT before filtering or grouping.
-    Diagnostics count unknowns and expose a bounded small uncertainty sample.
+    The database applies ALL medical/file/appearance predicates and selects one
+    representative per family before candidate windows. Only window references
+    and precomputed similarity features enter the ranking kernel. Full metadata
+    is read for the returned selection, never all broad-query matches.
     """
     filters, history, project = filters or {}, history or {}, project or {}
-    prepared = _search_core({"action": "plan", "query": query, "filters": filters,
-                             "options": {"preferences": preferences or {}, "mode": mode, "project": project}})
-    plan, sql = prepared["plan"], prepared["sql"]
     with closing(sqlite3.connect(Path(db_path).resolve().as_uri() + "?mode=ro", uri=True)) as db:
-        version = db.execute("PRAGMA user_version").fetchone()[0]
-        if version != 2:
-            raise ValueError("Search index must be rebuilt as v2 with finalize(); search_legacy() remains available for old indexes")
+        if db.execute("PRAGMA user_version").fetchone()[0] != 3:
+            raise ValueError("Search index must be rebuilt as v3 with finalize(); search_legacy() remains available for old indexes")
         metadata = dict(db.execute("SELECT key, value FROM index_metadata"))
-        if metadata["ranking_version"] != plan["ranking_version"]:
-            raise ValueError("Search policy version changed; rebuild the index with finalize()")
-        base_where = " AND ".join(sql["text_clauses"]) or "1"
-        text_count = db.execute(f"SELECT count(*) FROM {sql['from']} WHERE {base_where}", sql["text_params"]).fetchone()[0] if not plan["empty"] else 0
-        variants, rejected, uncertain, payload_bytes = [], {}, [], 0
-        if not plan["empty"]:
-            for row in db.execute(f"SELECT v.metadata FROM {sql['from']} WHERE {sql['where']} ORDER BY v.variant_id", sql["params"]):
-                payload_bytes += len(row[0].encode("utf-8"))
-                variants.append(json.loads(row[0]))
-            # Rejections can overlap; report this explicitly, never sum as unique.
-            for condition in sql["conditions"]:
-                count = db.execute(f"SELECT count(*) FROM {sql['from']} WHERE {base_where} AND NOT ({condition['sql']})", [*sql["text_params"], *condition["params"]]).fetchone()[0]
-                rejected[condition["code"]] = count
-            for key in plan["requirements"]:
-                path = "$." + key  # core only permits fixed, validated field names
-                rows = db.execute(f"SELECT v.variant_id, v.family_id FROM {sql['from']} WHERE {base_where} AND json_array_length(v.values_json, ?)=0 ORDER BY v.variant_id LIMIT 20", [*sql["text_params"], path]).fetchall()
-                count = db.execute(f"SELECT count(*) FROM {sql['from']} WHERE {base_where} AND json_array_length(v.values_json, ?)=0", [*sql["text_params"], path]).fetchone()[0]
-                rejected["unknown:" + key] = count
-                uncertain.extend({"variant_id": row[0], "family_id": row[1], "reason": "unknown:" + key} for row in rows)
-        page = _search_core({"action": "search", "variants": variants, "request": {
+        prepared = _search_core({"action": "window_plan", "request": {
             "query": query, "filters": filters, "limit": limit, "mode": mode, "seed": seed,
             "history": history, "project": project, "cursor": cursor, "preferences": preferences or {},
             "candidate_pool": candidate_pool, "catalog_version": metadata["catalog_version"],
         }})
+        state, sql, diagnostic_sql = prepared["state"], prepared["sql"], prepared["diagnostic_sql"]
+        plan = state["plan"]
+        if metadata["ranking_version"] != plan["ranking_version"]:
+            raise ValueError("Search policy version changed; rebuild the index with finalize()")
+        count_row = db.execute(sql["counts"], sql["params"]).fetchone()
+        counts = dict(zip(("qualified_variants", "qualified_families"), count_row))
+        rows = []
+        for row in db.execute(sql["window"], sql["params"]):
+            candidate = dict(zip(("variant_id", "asset_id", "family_id", "file_sha256", "features", "relevance", "preference_score", "pinned", "selection_score", "rotation"), row))
+            candidate["features"] = json.loads(candidate["features"])
+            rows.append(candidate)
+        compact_bytes = len(json.dumps(rows, ensure_ascii=False, separators=(",", ":")).encode("utf-8"))
+        page = _search_core({"action": "window_finish", "rows": rows, "counts": counts, "state": state})
+        variants = [json.loads(db.execute("SELECT metadata FROM file_variants WHERE variant_id=?", (row["variant_id"],)).fetchone()[0]) for row in page["selected"]]
+        details_bytes = len(json.dumps(variants, ensure_ascii=False, separators=(",", ":")).encode("utf-8"))
+        materialized = _search_core({"action": "hydrate", "selected": page.pop("selected"), "variants": variants})
         enriched = []
-        for result in page["results"]:
-            row = db.execute("SELECT metadata FROM assets WHERE id=?", (result["asset_id"],)).fetchone()
-            asset = json.loads(row[0])
-            # Preserve existing result fields for assembly/review. Consumers must
-            # use selected_file, never assume family.files[0] is the matched one.
+        for result in materialized["results"]:
+            asset = json.loads(db.execute("SELECT metadata FROM assets WHERE id=?", (result["asset_id"],)).fetchone()[0])
             selected = next(file for file in asset["files"] if file.get("sha256") == result["selected_file"].get("sha256"))
             enriched.append({**asset, **result, "selected_file": selected, "preview": selected.get("preview"), "download": selected.get("archive") or {"url": selected.get("url")}})
         page["results"] = enriched
+        page["diagnostics"]["unavailable_project_pins"] = [
+            {**json.loads(pin), "reason": "selected file no longer satisfies this query, hard filters, availability or catalog"}
+            for pin, available in db.execute(sql["pins"], sql["params"]) if not available
+        ]
+        # Small aggregates/samples explain missing metadata without loading the
+        # rejected artwork records. Condition counts may overlap by design.
+        base_where = " AND ".join(diagnostic_sql["text_clauses"]) or "1"
+        text_count = db.execute(f"SELECT count(*) FROM {diagnostic_sql['from']} WHERE {base_where}", diagnostic_sql["text_params"]).fetchone()[0] if not plan["empty"] else 0
+        rejected, uncertain = {}, []
+        if not plan["empty"]:
+            for condition in diagnostic_sql["conditions"]:
+                count = db.execute(f"SELECT count(*) FROM {diagnostic_sql['from']} WHERE {base_where} AND NOT ({condition['sql']})", [*diagnostic_sql["text_params"], *condition["params"]]).fetchone()[0]
+                rejected[condition["code"]] = count
+            for key in plan["requirements"]:
+                path = "$." + key
+                samples = db.execute(f"SELECT v.variant_id, v.family_id FROM {diagnostic_sql['from']} WHERE {base_where} AND json_array_length(v.values_json, ?)=0 ORDER BY v.variant_id LIMIT 20", [*diagnostic_sql["text_params"], path]).fetchall()
+                count = db.execute(f"SELECT count(*) FROM {diagnostic_sql['from']} WHERE {base_where} AND json_array_length(v.values_json, ?)=0", [*diagnostic_sql["text_params"], path]).fetchone()[0]
+                rejected["unknown:" + key] = count
+                uncertain.extend({"variant_id": row[0], "family_id": row[1], "reason": "unknown:" + key} for row in samples)
     page["diagnostics"]["sqlite_pushdown"] = {"text_matched_variants": text_count,
-        "payload_variants_loaded": len(variants), "payload_bytes_loaded": payload_bytes, "rejections_by_condition_may_overlap": rejected,
-        "hard_filters_before_payload_load": True, "candidate_limit_before_filters": None}
+        "payload_variants_loaded": len(rows), "payload_bytes_loaded": compact_bytes,
+        "selected_detail_variants_loaded": len(variants), "selected_detail_bytes_loaded": details_bytes,
+        "rejections_by_condition_may_overlap": rejected,
+        "hard_filters_before_payload_load": True, "family_grouping_before_candidate_limit": True,
+        "candidate_limit_before_filters": None}
     page["diagnostics"]["uncertain_candidates"] = uncertain[:20]
     return page
 

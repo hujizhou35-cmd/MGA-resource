@@ -3,8 +3,8 @@
  */
 import vocabulary from './search-vocabulary.mjs';
 
-export const RANKING_VERSION = 'shared-search-2.0.0';
-export const INDEX_VERSION = 2;
+export const RANKING_VERSION = 'shared-search-3.0.0';
+export const INDEX_VERSION = 3;
 export const DEFAULT_CANDIDATE_POOL = 75;
 const unknown = new Set(['', 'unknown', 'unspecified', 'not_reviewed', '待确认']);
 const arr = value => value == null ? [] : Array.isArray(value) ? value : [value];
@@ -69,6 +69,12 @@ const concepts = [...vocabulary.concepts, ...extraConcepts].map(group => unique(
 // object, not a demand that the source redundantly repeat the word molecule.
 for(const group of concepts)for(const name of ['atp','dna','rna','protein','antibody','lipid'])if(group.includes(name))group.push(`${name} molecule`);
 const qualifiers = Object.entries({...SCIENCE,...APPEARANCE}).flatMap(([key, groups]) => Object.entries(groups).flatMap(([value, terms]) => terms.map(term => ({key,value,term:norm(term)})))).sort((a,b) => b.term.length-a.term.length || cmp(a.term,b.term));
+const phraseVocabulary=unique([...concepts.flat(),...qualifiers.map(q=>q.term),...Object.values(vocabulary.legacyPresentationTerms).flat()]).filter(term=>term.includes(' ')||term.includes('-')||/[\u3400-\u9fff]/.test(term));
+const termKey=value=>norm(value).replace(/-/g,' ').replace(/\s+/g,' ');
+function indexTerms(value) {
+  const normalized=norm(value);
+  return unique([...(normalized.match(/[\p{L}\p{N}]+/gu)||[]).map(termKey),...phraseVocabulary.filter(term=>matches(normalized,term)).map(termKey)]).sort(cmp);
+}
 const canonical = (key, value) => {
   const v = norm(value);
   for (const [name, aliases] of Object.entries(SCIENCE[key] || APPEARANCE[key] || {})) if (v === name || aliases.some(x => norm(x) === v)) return name;
@@ -204,7 +210,12 @@ export function prepareVariants(records) {
         asset_id:unique([asset.id,origin.asset_id].filter(Boolean)),family_id:arr(asset.family_id||asset.id),file_sha256:arr(file.sha256),object:objects,transparent:file.transparency?.has_transparent_pixels!=null ? [String(file.transparency.has_transparent_pixels)] : file.has_transparency!=null ? [String(file.has_transparency)] : []};
       const selectedFile=Object.fromEntries(['sha256','format','structure','url','archive','preview','validation','width','height','size_bytes','dimensions','transparency'].filter(k=>file[k]!=null).map(k=>[k,file[k]]));
       selectedFile.appearance=appearance;
-      result.push({variant_id:[asset.id,digest,origin.asset_id||origin.source_id||'',originIndex].join(':'),asset_id:asset.id,family_id:asset.family_id||asset.id,title:fields.title||asset.title,source:origin.source||asset.source,source_id:origin.source_id||asset.source_id,author:origin.author||fields.author,attribution:origin.attribution||fields.attribution,values,eligible,facts,fact_basis:'explicit_source_fields_or_direct_source_labels; not independent scientific review',search:{title,aliases:aliases.join(' '),context:contextText},file:selectedFile,validation:asset.validation||{}});
+      const lexical={title:indexTerms(title),context:indexTerms(contextText)};
+      lexical.all=unique([...lexical.title,...lexical.context,...aliases.map(termKey)]).sort(cmp);
+      const row={variant_id:[asset.id,digest,origin.asset_id||origin.source_id||'',originIndex].join(':'),asset_id:asset.id,family_id:asset.family_id||asset.id,title:fields.title||asset.title,source:origin.source||asset.source,source_id:origin.source_id||asset.source_id,author:origin.author||fields.author,attribution:origin.attribution||fields.attribution,values,eligible,facts,fact_basis:'explicit_source_fields_or_direct_source_labels; not independent scientific review',search:{title,aliases:aliases.join(' '),context:contextText},lexical,file:selectedFile,validation:asset.validation||{}};
+      row.rotation_key=Math.floor(unitHash(row.family_id)*2147483647);
+      row.features={signature:[...signature(row)].sort(cmp)};
+      result.push(row);
     }
   }
   return result.sort((a,b)=>cmp(a.variant_id,b.variant_id));
@@ -225,12 +236,12 @@ export function sqlitePlan(plan) {
 
 function termMatch(value,term) { return matches(value,term); }
 function lexicalScore(variant,plan) {
-  const fields=variant.search,all=norm([fields.title,fields.aliases,fields.context]);
+  const fields=variant.lexical;
   let titleHits=0,contextHits=0;
   for(const group of plan.terms) {
-    if(group.some(term=>termMatch(fields.title,term))) titleHits++;
-    else if(group.some(term=>termMatch(fields.context,term))) contextHits++;
-    else if(!group.some(term=>termMatch(all,term))) return null;
+    if(group.some(term=>fields.title.includes(termKey(term)))) titleHits++;
+    else if(group.some(term=>fields.context.includes(termKey(term)))) contextHits++;
+    else if(!group.some(term=>fields.all.includes(termKey(term)))) return null;
   }
   return plan.terms.length ? 1 + (titleHits + contextHits*0.4)/plan.terms.length : 1;
 }
@@ -247,8 +258,7 @@ export function filterVariant(variant,plan) {
 function preferenceScore(variant,plan) {
   let count=0;
   for(const [key,values] of Object.entries(plan.preferences)) if(values.some(value=>(variant.values[key]||[]).includes(value))) count++;
-  const all=norm(variant.search);
-  for(const group of plan.soft_terms) if(group.some(term=>matches(all,term))) count++;
+  for(const group of plan.soft_terms) if(group.some(term=>variant.lexical.all.includes(termKey(term)))) count++;
   return Math.min(count,4)*0.06;
 }
 function pinFor(project,variant) {
@@ -265,6 +275,8 @@ export function groupFamilies(candidates,plan,project={}) {
 }
 // This is deterministic tie rotation, not a cryptographic/authentication hash.
 function unitHash(value) {let h=2166136261;for(const char of value){h^=char.codePointAt(0);h=Math.imul(h,16777619);}return (h>>>0)/4294967296;}
+function rotationParameters(seed){return {step:1+Math.floor(unitHash(`${seed}:step`)*32766),offset:Math.floor(unitHash(`${seed}:offset`)*2147483647)};}
+function rotation(key,seed){const {step,offset}=rotationParameters(seed);return ((key*step+offset)%2147483647)/2147483647*0.075;}
 function signature(row) {
   return new Set([...Object.entries(row.facts).flatMap(([key,values])=>values.map(v=>`${key}:${v}`)),...row.values.representation.map(v=>`style:${v}`),...row.values.series.map(v=>`series:${v}`),...row.search.title.split(/\s+/).filter(v=>v.length>2)]);
 }
@@ -272,6 +284,28 @@ function similarity(a,b) {
   const sa=a._signature,sb=b._signature;
   let intersect=0;for(const value of sa)if(sb.has(value))intersect++;
   return sa.size+sb.size-intersect ? intersect/(sa.size+sb.size-intersect) : 0;
+}
+function rankCompactWindow(rows,mode,needed=rows.length) {
+  if(mode==='exact')return rows.slice(0,needed);
+  const size=rows.length,matrix=new Float64Array(size*size).fill(NaN);
+  const window=rows.map((row,index)=>({...row,_index:index,_signature:row._signature||new Set(row.features.signature)}));
+  const chosen=[];
+  const cachedSimilarity=(a,b)=>{
+    const key=a._index*size+b._index;
+    if(Number.isNaN(matrix[key])){const value=similarity(a,b);matrix[key]=value;matrix[b._index*size+a._index]=value;}
+    return matrix[key];
+  };
+  while(window.length&&chosen.length<needed){
+    let best=0,bestScore=-Infinity;
+    for(let i=0;i<window.length;i++){
+      const row=window[i];let redundancy=0;
+      for(let j=Math.max(0,chosen.length-10);j<chosen.length;j++)redundancy=Math.max(redundancy,cachedSimilarity(row,chosen[j]));
+      const score=row._score+row._rotation-(mode==='explore'?0.075:0.03)*redundancy+(row.pinned?1000:0);
+      if(score>bestScore||score===bestScore&&cmp(row.family_id,window[best].family_id)<0){best=i;bestScore=score;}
+    }
+    chosen.push(window.splice(best,1)[0]);
+  }
+  return chosen;
 }
 export function rankCandidates(candidates,{mode='explore',seed='default',history={},candidate_pool=DEFAULT_CANDIDATE_POOL}={}) {
   if(!['explore','design','exact'].includes(mode))throw new Error('mode must be explore, design or exact');
@@ -281,24 +315,14 @@ export function rankCandidates(candidates,{mode='explore',seed='default',history
     // Browsing and trial downloads never become adoption penalties.
     const uses=adopted.filter(use=>use.family_id===row.family_id && use.status==='adopted').length;
     const score=row.relevance+row.preference_score-(mode==='exact'?0:Math.min(uses,3)*0.035);
-    return {...row,_signature:signature(row),_score:score,_rotation:mode==='exact'?0:unitHash(`${seed}\0${row.family_id}`)*0.075};
+    return {...row,_signature:new Set(row.features.signature),_score:score,_rotation:mode==='exact'?0:rotation(row.rotation_key,seed)};
   }).sort((a,b)=>Number(b.pinned)-Number(a.pinned)||b._score-a._score||b._rotation-a._rotation||cmp(a.family_id,b.family_id));
   if(mode==='exact')return prepared;
   const ranked=[];
   // Bound each MMR working set; later windows are retained for real pagination.
   // Grouping before windows prevents format/color variants consuming the pool.
   while(prepared.length) {
-    const window=prepared.splice(0,candidate_pool);
-    while(window.length) {
-      let best=0,bestScore=-Infinity;
-      for(let i=0;i<window.length;i++) {
-        const row=window[i],recent=ranked.slice(-10);
-        const redundancy=recent.length?Math.max(...recent.map(other=>similarity(row,other))):0;
-        const score=row._score+row._rotation-(mode==='explore'?0.075:0.03)*redundancy+(row.pinned?1000:0);
-        if(score>bestScore || score===bestScore && cmp(row.family_id,window[best].family_id)<0){best=i;bestScore=score;}
-      }
-      ranked.push(window.splice(best,1)[0]);
-    }
+    ranked.push(...rankCompactWindow(prepared.splice(0,candidate_pool),mode));
   }
   return ranked;
 }
@@ -311,20 +335,84 @@ async function sha(value) {const bytes=new TextEncoder().encode(stableStringify(
 const encodeCursor=value=>btoa(JSON.stringify(value)).replaceAll('+','-').replaceAll('/','_').replaceAll('=','');
 const decodeCursor=value=>{try{return JSON.parse(atob(value.replaceAll('-','+').replaceAll('_','/')));}catch{throw new Error('Invalid cursor');}};
 
-export async function searchCandidates(variants,request={}) {
+async function requestState(request={}) {
   const {query='',filters={},limit=10,mode='explore',seed='default',history={},project={},catalog_version,cursor=null,candidate_pool=DEFAULT_CANDIDATE_POOL}=request;
   if(!catalog_version)throw new Error('catalog_version is required for reproducible search');
   if(!Number.isInteger(limit)||limit<1||limit>100)throw new Error('limit must be between 1 and 100');
+  if(!['explore','design','exact'].includes(mode))throw new Error('mode must be explore, design or exact');
+  if(!Number.isInteger(candidate_pool)||candidate_pool<50||candidate_pool>100)throw new Error('candidate_pool must be 50..100');
   const plan=buildQueryPlan(query,filters,request);
   const bindings={catalog_version,ranking_version:RANKING_VERSION,query_plan:plan,mode,seed:String(seed),history_snapshot:await sha(history),project_snapshot:await sha(project),candidate_pool};
   const fingerprint=await sha(bindings);
   let offset=0;
   if(cursor){const decoded=decodeCursor(cursor);if(decoded.fingerprint!==fingerprint)throw new Error('Cursor inputs/version/history do not match');offset=decoded.offset;if(!Number.isSafeInteger(offset)||offset<0)throw new Error('Invalid cursor offset');}
+  return {plan,bindings,fingerprint,offset,limit,mode,seed,history,project,candidate_pool};
+}
+
+/** Generate the complete SQL policy: exact terms and hard predicates apply to
+ * every variant before ROW_NUMBER chooses a family representative and before
+ * LIMIT takes a compact candidate window. Adapters only execute this plan.
+ */
+export async function prepareWindowSearch(request={}) {
+  const state=await requestState(request),{plan,mode,seed,history,project,offset,limit,candidate_pool}=state;
+  const params=[],param=value=>{params.push(value);return `?${params.length}`;};
+  const member=(column,values)=>`EXISTS (SELECT 1 FROM json_each(${column}) term JOIN json_each(${param(JSON.stringify(unique(values)))}) wanted ON term.value=wanted.value)`;
+  const titleHits=plan.terms.map(group=>`CASE WHEN ${member('v.title_terms',group.map(termKey))} THEN 1 ELSE 0 END`);
+  const contextHits=plan.terms.map(group=>`CASE WHEN ${member('v.title_terms',group.map(termKey))} THEN 0 WHEN ${member('v.context_terms',group.map(termKey))} THEN 1 ELSE 0 END`);
+  const relevance=plan.terms.length?`(1.0 + ((${titleHits.join('+')}) + 0.4*(${contextHits.join('+')}))/${plan.terms.length})`:'1.0';
+  const preferred=[...Object.entries(plan.preferences).map(([key,values])=>member(`json_extract(v.values_json,'$.${key}')`,values)),...plan.soft_terms.map(group=>member('v.all_terms',group.map(termKey)))];
+  const preference=preferred.length?`(0.06*MIN(4,${preferred.map(sql=>`CASE WHEN ${sql} THEN 1 ELSE 0 END`).join('+')}))`:'0.0';
+  const pins=param(JSON.stringify(project.selected||[]));
+  const pinned=`EXISTS (SELECT 1 FROM json_each(${pins}) pin WHERE json_extract(pin.value,'$.family_id')=v.family_id AND json_extract(pin.value,'$.file_sha256')=v.file_sha256 AND (json_extract(pin.value,'$.asset_id') IS NULL OR EXISTS (SELECT 1 FROM json_each(v.values_json,'$.asset_id') aid WHERE aid.value=json_extract(pin.value,'$.asset_id'))))`;
+  const conditions=['v.eligible=1'];
+  if(plan.empty)conditions.push('0');
+  const from=plan.fts?'file_variants v JOIN file_variants_fts f ON f.variant_id=v.variant_id':'file_variants v';
+  if(plan.fts)conditions.push(`file_variants_fts MATCH ${param(plan.fts)}`);
+  for(const [key,values] of Object.entries(plan.requirements))conditions.push(member(`json_extract(v.values_json,'$.${key}')`,values));
+  for(const group of plan.terms)conditions.push(member('v.all_terms',group.map(termKey)));
+  const adopted=param(JSON.stringify(history.adopted||[]));
+  const historyPenalty=mode==='exact'?'0.0':`0.035*MIN(3,(SELECT count(*) FROM json_each(${adopted}) used WHERE json_extract(used.value,'$.family_id')=r.family_id AND json_extract(used.value,'$.status')='adopted'))`;
+  const rotate=rotationParameters(seed);
+  const rotationSQL=mode==='exact'?'0.0':`(((r.rotation_key*${rotate.step}+${rotate.offset})%2147483647)/2147483647.0*0.075)`;
+  const cte=`WITH qualified AS (SELECT v.variant_id,v.asset_id,v.family_id,v.file_sha256,v.features,v.rotation_key,v.values_json,${relevance} AS relevance,${preference} AS preference_score,${pinned} AS pinned FROM ${from} WHERE ${conditions.join(' AND ')}), representatives AS (SELECT *,ROW_NUMBER() OVER (PARTITION BY family_id ORDER BY pinned DESC,(relevance+preference_score) DESC,variant_id) AS representative FROM qualified), candidates AS (SELECT r.*,(r.relevance+r.preference_score-${historyPenalty}) AS selection_score,${rotationSQL} AS rotation FROM representatives r WHERE r.representative=1)`;
+  const windowStart=Math.floor(offset/candidate_pool)*candidate_pool;
+  const windowCount=Math.ceil((offset-windowStart+limit)/candidate_pool);
+  const order='pinned DESC,selection_score DESC,rotation DESC,family_id';
+  // Keep even unused exact-mode parameters referenced; numeric placeholders
+  // must have the same bindings for counts and window queries in SQLite/D1.
+  const parameterAnchor=` AND ${adopted} IS NOT NULL`;
+  return {state:{...state,window_start:windowStart,window_count:windowCount},sql:{params,
+    counts:`${cte} SELECT (SELECT count(*) FROM qualified) AS qualified_variants,count(*) AS qualified_families FROM candidates WHERE 1${parameterAnchor}`,
+    pins:`${cte} SELECT pin.value,EXISTS(SELECT 1 FROM qualified q WHERE q.family_id=json_extract(pin.value,'$.family_id') AND q.file_sha256=json_extract(pin.value,'$.file_sha256') AND (json_extract(pin.value,'$.asset_id') IS NULL OR EXISTS(SELECT 1 FROM json_each(q.values_json,'$.asset_id') aid WHERE aid.value=json_extract(pin.value,'$.asset_id')))) FROM json_each(${pins}) pin WHERE 1${parameterAnchor}`,
+    window:`${cte} SELECT variant_id,asset_id,family_id,file_sha256,features,relevance,preference_score,pinned,selection_score,rotation FROM candidates WHERE 1${parameterAnchor} ORDER BY ${order} LIMIT ${windowCount*candidate_pool} OFFSET ${windowStart}`},diagnostic_sql:sqlitePlan(plan)};
+}
+
+/** Small portable ranking kernel. SQL already applied every hard constraint.
+ * It consumes only compact references/similarity features, never family files.
+ * Windows are independent: cursor offsets reproduce them without giant history.
+ */
+export function finishWindowSearch(rows,counts,state) {
+  const ranked=[];
+  for(let start=0;start<rows.length;start+=state.candidate_pool){
+    const window=rows.slice(start,start+state.candidate_pool).map(row=>({...row,_signature:new Set(row.features.signature),_score:row.selection_score,_rotation:row.rotation}));
+    ranked.push(...rankCompactWindow(window,state.mode,Math.min(window.length,state.offset-state.window_start+state.limit-ranked.length)));
+  }
+  const selected=ranked.slice(state.offset-state.window_start,state.offset-state.window_start+state.limit).map(({_signature,_score,_rotation,_index,features,...row})=>row);
+  return {selected,next_cursor:state.offset+selected.length<counts.qualified_families?encodeCursor({fingerprint:state.fingerprint,offset:state.offset+selected.length}):null,bindings:state.bindings,query_plan:state.plan,
+    diagnostics:{qualified_variants:counts.qualified_variants,qualified_families:counts.qualified_families,candidate_pool:state.candidate_pool,rerank_windows:Math.ceil(counts.qualified_families/state.candidate_pool),compact_candidates_loaded:rows.length,window_start:state.window_start,scarcity:counts.qualified_families<state.limit,no_match:!selected.length,acceptance:'not_established_by_search'}};
+}
+
+export function materializeResult(row,variant) {
+  return {asset_id:variant.asset_id,family_id:variant.family_id,variant_id:variant.variant_id,title:variant.title,selected_file:variant.file,selected_source:{source:variant.source,source_id:variant.source_id,attribution:variant.attribution},selected_science:{values:variant.facts,basis:variant.fact_basis},preview:variant.file.preview,download:variant.file.archive||{url:variant.file.url},pinned:Boolean(row.pinned),search_score:row.selection_score??row._score,validation:variant.validation};
+}
+
+export async function searchCandidates(variants,request={}) {
+  const {plan,bindings,fingerprint,offset,limit,mode,seed,history,project,candidate_pool}=await requestState(request);
   const counts={},uncertain=[],qualified=[];
   if(!plan.empty)for(const variant of variants){const match=filterVariant(variant,plan);if(match.matched)qualified.push({...variant,relevance:match.relevance});else{counts[match.reason]=(counts[match.reason]||0)+1;if(match.reason.startsWith('unknown:')&&uncertain.length<20)uncertain.push({variant_id:variant.variant_id,family_id:variant.family_id,reason:match.reason});}}
   const families=groupFamilies(qualified,plan,project);
   const ranked=rankCandidates(families,{mode,seed,history,candidate_pool});
-  const results=ranked.slice(offset,offset+limit).map(row=>({asset_id:row.asset_id,family_id:row.family_id,variant_id:row.variant_id,title:row.title,selected_file:row.file,selected_source:{source:row.source,source_id:row.source_id,attribution:row.attribution},selected_science:{values:row.facts,basis:row.fact_basis},preview:row.file.preview,download:row.file.archive||{url:row.file.url},pinned:row.pinned,search_score:row._score,validation:row.validation}));
+  const results=ranked.slice(offset,offset+limit).map(row=>materializeResult(row,row));
   const unavailablePins=(project.selected||[]).filter(pin=>!qualified.some(row=>pinFor({selected:[pin]},row))).map(pin=>({...pin,reason:'selected file no longer satisfies this query, hard filters, availability or catalog'}));
   return {results,next_cursor:offset+limit<ranked.length?encodeCursor({fingerprint,offset:offset+limit}):null,bindings,query_plan:plan,diagnostics:{input_variants:variants.length,qualified_variants:qualified.length,qualified_families:families.length,candidate_pool,rerank_windows:Math.ceil(families.length/candidate_pool),rejected:counts,uncertain_candidates:uncertain,unavailable_project_pins:unavailablePins,scarcity:families.length<limit,no_match:!results.length,acceptance:'not_established_by_search',resource_note:'All hard constraints precede family grouping and pool truncation. Adapter can use sqlitePlan pushdown; wide-query latency must be measured.'}};
 }

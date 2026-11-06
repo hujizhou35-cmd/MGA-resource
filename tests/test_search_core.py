@@ -188,5 +188,46 @@ def test_unknown_filter_and_obsolete_index_fail_explicitly(tmp_path):
         search(db, "mouse", filters={"nonsense": "true"})
     with closing(sqlite3.connect(db)) as conn:
         conn.execute("PRAGMA user_version=1")
-    with pytest.raises(ValueError, match="rebuilt as v2"):
+    with pytest.raises(ValueError, match="rebuilt as v3"):
         search(db, "mouse")
+
+
+def test_compact_windows_match_direct_core_across_boundaries_history_and_pins(tmp_path):
+    records=[artwork(i, color="color" if i % 3 else "grayscale") for i in range(175)]
+    db=database(tmp_path,records)
+    with closing(sqlite3.connect(db)) as conn:
+        variants=[json.loads(row[0]) for row in conn.execute("SELECT metadata FROM file_variants")]
+        version=conn.execute("SELECT value FROM index_metadata WHERE key='catalog_version'").fetchone()[0]
+    pin={"family_id":variants[-1]["family_id"],"file_sha256":variants[-1]["file"]["sha256"]}
+    history={"adopted":[{"family_id":row["family_id"],"status":"adopted"} for row in variants[:20]]}
+    for mode in ("explore","design","exact"):
+        request={"query":"mouse","catalog_version":version,"mode":mode,"seed":"window-parity","history":history,"project":{"selected":[pin]},"limit":70}
+        cursor=None
+        seen=set()
+        for _ in range(3):
+            direct=_search_core({"action":"search","variants":variants,"request":{**request,"cursor":cursor}})
+            wrapped=search_page(db,"mouse",limit=70,mode=mode,seed=request["seed"],history=history,project=request["project"],cursor=cursor)
+            ids=[row["variant_id"] for row in direct["results"]]
+            assert ids==[row["variant_id"] for row in wrapped["results"]]
+            assert direct["next_cursor"]==wrapped["next_cursor"]
+            assert not seen & set(ids)
+            seen.update(ids)
+            cursor=wrapped["next_cursor"]
+        assert cursor is None and len(seen)==175
+
+
+def test_large_family_never_consumes_the_candidate_window(tmp_path):
+    records=[artwork(i,family="one-work-many-variants") for i in range(100)]
+    records += [artwork(i) for i in range(100,180)]
+    db=database(tmp_path,records)
+    page=search_page(db,"mouse")
+    assert page["diagnostics"]["qualified_families"]==81
+    assert page["diagnostics"]["compact_candidates_loaded"]==75
+    assert len({row["family_id"] for row in page["results"]})==10
+    assert page["diagnostics"]["sqlite_pushdown"]["selected_detail_variants_loaded"]==10
+
+
+def test_chinese_alias_substrings_do_not_turn_equipment_into_an_action(tmp_path):
+    db=database(tmp_path,[artwork(1,title="Centrifuge",species=None),artwork(2,title="Centrifugation",species=None)])
+    for query in ("离心分离步骤示意","centrifugation separation workflow illustration"):
+        assert [row["title"] for row in search(db,query)]==["Centrifugation"]
