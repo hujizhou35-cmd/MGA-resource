@@ -1,0 +1,678 @@
+{
+  "schema_version": 1,
+  "reviewed_at": "2026-11-07",
+  "reviewer": "Codex primary agent; direct visual inspection",
+  "source": "bioicons",
+  "integrated_source": "servier",
+  "collection_run": "42251588741-1",
+  "collection_commit": "f819c2785431e739a3e879072c7294a6de6282d5",
+  "review_method": "Actual cloud-rendered contact sheet viewed; exact original/preview hashes joined to verified metadata. Main object/view/completeness assertions only for individually observed files.",
+  "review_sheet_url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42251588741-1-b0001.review.png",
+  "review_sheet_sha256": "b0754a415b47c0cfc24622966aace37037e2426c9a50c083fa00d770bb7c8cbc",
+  "review_limits": [
+    "Historical Servier CC BY 3.0 source; retain exact source/credit/conflict note.",
+    "Contact-scale recognition only; no molecular, clinical or native-editing certification."
+  ],
+  "items": [
+    {
+      "tile": 1,
+      "id": "bioicons-013c16e4fac21f4dd5e7",
+      "title": "pipette glass",
+      "source_id": "cc-by-3.0/Chemistry/Servier/pipette-glass.svg",
+      "source_url": "https://github.com/duerrsimon/bioicons/blob/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-3.0/Chemistry/Servier/pipette-glass.svg",
+      "original_sha256": "53eca9d98ace6035cbc4abf6978ed50fcb545a1006864a385ef42d0e2aa94e93",
+      "preview_sha256": "059b185b2579c051c0ec20b96eeb293e97fd4c2e475c699d8466390eb75cc797",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42251588741-1-b0001.tar.gz",
+        "member": "files/53/53eca9d98ace6035cbc4abf6978ed50fcb545a1006864a385ef42d0e2aa94e93.svg"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42251588741-1-b0001.tar.gz",
+        "member": "previews/53eca9d98ace6035cbc4abf6978ed50fcb545a1006864a385ef42d0e2aa94e93.png"
+      },
+      "visual_verdict": "usable_as_schematic_component",
+      "observations": "细长玻璃移液管，浅蓝轮廓；不是手持移液器或移液动作。",
+      "scientific_detail_validation": "not_independently_verified",
+      "native_editability_tested": false
+    },
+    {
+      "tile": 2,
+      "id": "bioicons-c04274818e8a26003ce4",
+      "title": "mouse gray",
+      "source_id": "cc-by-3.0/Animals/Servier/mouse-gray.svg",
+      "source_url": "https://github.com/duerrsimon/bioicons/blob/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-3.0/Animals/Servier/mouse-gray.svg",
+      "original_sha256": "06a18b85a335b215cd0788906f53613ff78ee888948ca905adb82fb0d27f9ef1",
+      "preview_sha256": "17ca13bec607a2b89181a3e3dfd3dbb11259fd791e18111deef6999af0ed1435",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42251588741-1-b0001.tar.gz",
+        "member": "files/06/06a18b85a335b215cd0788906f53613ff78ee888948ca905adb82fb0d27f9ef1.svg"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42251588741-1-b0001.tar.gz",
+        "member": "previews/06a18b85a335b215cd0788906f53613ff78ee888948ca905adb82fb0d27f9ef1.png"
+      },
+      "visual_verdict": "usable_as_schematic_component",
+      "observations": "灰色小鼠侧面，头、躯干、肢体与长尾完整；可用于小鼠主体示意，不能推断品系。",
+      "scientific_detail_validation": "not_independently_verified",
+      "native_editability_tested": false,
+      "scientific_assertions": {
+        "object": [
+          "mouse"
+        ],
+        "species": [
+          "mouse"
+        ],
+        "view": [
+          "lateral"
+        ],
+        "role": [
+          "whole_body"
+        ],
+        "depiction_kind": "animal"
+      }
+    },
+    {
+      "tile": 3,
+      "id": "bioicons-2702995134688f232ace",
+      "title": "rat juvenile",
+      "source_id": "cc-by-3.0/Animals/Servier/rat-juvenile.svg",
+      "source_url": "https://github.com/duerrsimon/bioicons/blob/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-3.0/Animals/Servier/rat-juvenile.svg",
+      "original_sha256": "6566c1e6778a6af77d098c00ef0c58459c382d5019367aef31c821a52d5af1f9",
+      "preview_sha256": "5c4bf8dd47167e661a0d07e9e2a7444306c0933557f78378fa1ebe310d755f96",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42251588741-1-b0001.tar.gz",
+        "member": "files/65/6566c1e6778a6af77d098c00ef0c58459c382d5019367aef31c821a52d5af1f9.svg"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42251588741-1-b0001.tar.gz",
+        "member": "previews/6566c1e6778a6af77d098c00ef0c58459c382d5019367aef31c821a52d5af1f9.png"
+      },
+      "visual_verdict": "usable_as_schematic_component",
+      "observations": "来源标注幼年大鼠；完整侧面轮廓，不可改称小鼠。",
+      "scientific_detail_validation": "not_independently_verified",
+      "native_editability_tested": false,
+      "scientific_assertions": {
+        "object": [
+          "rat"
+        ],
+        "species": [
+          "rat"
+        ],
+        "view": [
+          "lateral"
+        ],
+        "role": [
+          "whole_body"
+        ],
+        "depiction_kind": "animal"
+      }
+    },
+    {
+      "tile": 4,
+      "id": "bioicons-b4aa335644697340d17e",
+      "title": "antibody ligand 4",
+      "source_id": "cc-by-3.0/Blood_Immunology/Servier/antibody-ligand-4.svg",
+      "source_url": "https://github.com/duerrsimon/bioicons/blob/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-3.0/Blood_Immunology/Servier/antibody-ligand-4.svg",
+      "original_sha256": "9a6665e74f59ed0f9fd99d9bc0b0120b58d0f4d87a30b09b1cb68e9ff3acb92c",
+      "preview_sha256": "55d6c33b934088abe41dba1f2b832148ed1d3b429b46822325953cdc0bfd6db5",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42251588741-1-b0001.tar.gz",
+        "member": "files/9a/9a6665e74f59ed0f9fd99d9bc0b0120b58d0f4d87a30b09b1cb68e9ff3acb92c.svg"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42251588741-1-b0001.tar.gz",
+        "member": "previews/9a6665e74f59ed0f9fd99d9bc0b0120b58d0f4d87a30b09b1cb68e9ff3acb92c.png"
+      },
+      "visual_verdict": "usable_as_schematic_component",
+      "observations": "三角形配体图标，抽象分子示意，不是真实蛋白构象。",
+      "scientific_detail_validation": "not_independently_verified",
+      "native_editability_tested": false
+    },
+    {
+      "tile": 5,
+      "id": "bioicons-3806679d1943954e984c",
+      "title": "foam cell 4",
+      "source_id": "cc-by-3.0/Blood_Immunology/Servier/foam-cell-4.svg",
+      "source_url": "https://github.com/duerrsimon/bioicons/blob/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-3.0/Blood_Immunology/Servier/foam-cell-4.svg",
+      "original_sha256": "25e51f7ceeca39542586bdd5f6a5a32c6a9aebd80654aa6ce0574dbcabfb8ff4",
+      "preview_sha256": "02ca1087e236e7670e7495d18125301c1297549ede1b35779228694d64536ee1",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42251588741-1-b0001.tar.gz",
+        "member": "files/25/25e51f7ceeca39542586bdd5f6a5a32c6a9aebd80654aa6ce0574dbcabfb8ff4.svg"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42251588741-1-b0001.tar.gz",
+        "member": "previews/25e51f7ceeca39542586bdd5f6a5a32c6a9aebd80654aa6ce0574dbcabfb8ff4.png"
+      },
+      "visual_verdict": "usable_as_schematic_component",
+      "observations": "含黄色脂滴的泡沫细胞示意，不能当正常无脂滴单核细胞。",
+      "scientific_detail_validation": "not_independently_verified",
+      "native_editability_tested": false
+    },
+    {
+      "tile": 6,
+      "id": "bioicons-2dbecafbc7e1aa7e06be",
+      "title": "dog",
+      "source_id": "cc-by-3.0/Animals/Servier/dog.svg",
+      "source_url": "https://github.com/duerrsimon/bioicons/blob/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-3.0/Animals/Servier/dog.svg",
+      "original_sha256": "103b4bcd6b4ce68d608d77ff667a08eb3f21080b70544a1a93baf4bbd5faa79b",
+      "preview_sha256": "a864460d8831f6a5db3d6bbaf2cbbcd7a6da3bc18a52659b06b0bd5e4c8b7c83",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42251588741-1-b0001.tar.gz",
+        "member": "files/10/103b4bcd6b4ce68d608d77ff667a08eb3f21080b70544a1a93baf4bbd5faa79b.svg"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42251588741-1-b0001.tar.gz",
+        "member": "previews/103b4bcd6b4ce68d608d77ff667a08eb3f21080b70544a1a93baf4bbd5faa79b.png"
+      },
+      "visual_verdict": "usable_as_schematic_component",
+      "observations": "完整狗侧面，具体品种不能从本次审阅确认。",
+      "scientific_detail_validation": "not_independently_verified",
+      "native_editability_tested": false
+    },
+    {
+      "tile": 7,
+      "id": "bioicons-3baa533e812d86c53e71",
+      "title": "flask gray",
+      "source_id": "cc-by-3.0/Chemistry/Servier/flask-gray.svg",
+      "source_url": "https://github.com/duerrsimon/bioicons/blob/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-3.0/Chemistry/Servier/flask-gray.svg",
+      "original_sha256": "a66fc15d4f4e4e13b809df15e06e1d273a4ebba90b60951d65442946ebaf900a",
+      "preview_sha256": "f44f644a6d107f76d01bd0fd795d5672feed84fa5871adf5a2d8c5ab2a7aa4bc",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42251588741-1-b0001.tar.gz",
+        "member": "files/a6/a66fc15d4f4e4e13b809df15e06e1d273a4ebba90b60951d65442946ebaf900a.svg"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42251588741-1-b0001.tar.gz",
+        "member": "previews/a66fc15d4f4e4e13b809df15e06e1d273a4ebba90b60951d65442946ebaf900a.png"
+      },
+      "visual_verdict": "usable_as_schematic_component",
+      "observations": "容量瓶样细颈容器，浅色液面清楚；形状不是圆底烧瓶。",
+      "scientific_detail_validation": "not_independently_verified",
+      "native_editability_tested": false
+    },
+    {
+      "tile": 8,
+      "id": "bioicons-1804aead0c5c883765ff",
+      "title": "herb jar 7",
+      "source_id": "cc-by-3.0/General_items/Servier/herb-jar-7.svg",
+      "source_url": "https://github.com/duerrsimon/bioicons/blob/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-3.0/General_items/Servier/herb-jar-7.svg",
+      "original_sha256": "4462a2abbb1f69363c102c517602940062b6246bc057777d694e1b51e050a9f1",
+      "preview_sha256": "e9e2e37a5b0a3f264fe101431d8656b4455680cfdd65af51ba71b0fdba1d12f1",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42251588741-1-b0001.tar.gz",
+        "member": "files/44/4462a2abbb1f69363c102c517602940062b6246bc057777d694e1b51e050a9f1.svg"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42251588741-1-b0001.tar.gz",
+        "member": "previews/4462a2abbb1f69363c102c517602940062b6246bc057777d694e1b51e050a9f1.png"
+      },
+      "visual_verdict": "usable_as_schematic_component",
+      "observations": "标签Bay leaf药草瓶，标签和内容可辨认。",
+      "scientific_detail_validation": "not_independently_verified",
+      "native_editability_tested": false
+    },
+    {
+      "tile": 9,
+      "id": "bioicons-4403782eb5cc91555508",
+      "title": "monocyte 15",
+      "source_id": "cc-by-3.0/Blood_Immunology/Servier/monocyte-15.svg",
+      "source_url": "https://github.com/duerrsimon/bioicons/blob/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-3.0/Blood_Immunology/Servier/monocyte-15.svg",
+      "original_sha256": "065c300588d44f020ab30a12f17c3183070f0a89a9c918ec95133f6b2e838a89",
+      "preview_sha256": "a4b79ed82e2407c1f5eeb65d11aa5fe62b3e2f5ced9578bd8472fed2df44f774",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42251588741-1-b0001.tar.gz",
+        "member": "files/06/065c300588d44f020ab30a12f17c3183070f0a89a9c918ec95133f6b2e838a89.svg"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42251588741-1-b0001.tar.gz",
+        "member": "previews/065c300588d44f020ab30a12f17c3183070f0a89a9c918ec95133f6b2e838a89.png"
+      },
+      "visual_verdict": "usable_as_schematic_component",
+      "observations": "单核细胞示意，轮廓、核和高光清楚，不能凭这些比例证明具体生理状态。",
+      "scientific_detail_validation": "not_independently_verified",
+      "native_editability_tested": false
+    },
+    {
+      "tile": 10,
+      "id": "bioicons-f72e60f8d584ebadd1fe",
+      "title": "vldl 2",
+      "source_id": "cc-by-3.0/Blood_Immunology/Servier/vldl-2.svg",
+      "source_url": "https://github.com/duerrsimon/bioicons/blob/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-3.0/Blood_Immunology/Servier/vldl-2.svg",
+      "original_sha256": "9bf9ba4daf3a22c6d9d99c42363c126ac4b68bd7f3ad61add1d70fe9c6e9744d",
+      "preview_sha256": "7523d8815ab70e2259f55e61da5e21a4a22b67a4c08e4ee0e512386f061a5edd",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42251588741-1-b0001.tar.gz",
+        "member": "files/9b/9bf9ba4daf3a22c6d9d99c42363c126ac4b68bd7f3ad61add1d70fe9c6e9744d.svg"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42251588741-1-b0001.tar.gz",
+        "member": "previews/9bf9ba4daf3a22c6d9d99c42363c126ac4b68bd7f3ad61add1d70fe9c6e9744d.png"
+      },
+      "visual_verdict": "usable_as_schematic_component",
+      "observations": "VLDL符号化脂蛋白颗粒示意，非按比例分子结构。",
+      "scientific_detail_validation": "not_independently_verified",
+      "native_editability_tested": false
+    },
+    {
+      "tile": 11,
+      "id": "bioicons-0b83fac61d9c26d148e7",
+      "title": "ldl 1",
+      "source_id": "cc-by-3.0/Blood_Immunology/Servier/ldl-1.svg",
+      "source_url": "https://github.com/duerrsimon/bioicons/blob/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-3.0/Blood_Immunology/Servier/ldl-1.svg",
+      "original_sha256": "bbe3afe8e017c7c422a9236ebec27eb13e3d3f136679a08772fd2b13d06f1052",
+      "preview_sha256": "f0d3b43791724f5e5fffe0ff119e842ed3f91ef32c00c3ef9af49aed7ec5326c",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42251588741-1-b0001.tar.gz",
+        "member": "files/bb/bbe3afe8e017c7c422a9236ebec27eb13e3d3f136679a08772fd2b13d06f1052.svg"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42251588741-1-b0001.tar.gz",
+        "member": "previews/bbe3afe8e017c7c422a9236ebec27eb13e3d3f136679a08772fd2b13d06f1052.png"
+      },
+      "visual_verdict": "usable_as_schematic_component",
+      "observations": "LDL符号化脂蛋白颗粒，需保留与VLDL/HDL的来源名称区别。",
+      "scientific_detail_validation": "not_independently_verified",
+      "native_editability_tested": false
+    },
+    {
+      "tile": 12,
+      "id": "bioicons-205d6a6197558a03e587",
+      "title": "padlock open",
+      "source_id": "cc-by-3.0/General_items/Servier/padlock-open.svg",
+      "source_url": "https://github.com/duerrsimon/bioicons/blob/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-3.0/General_items/Servier/padlock-open.svg",
+      "original_sha256": "46e54cfe1a46be1edd463d46037738648787473c3f277a1052e664eb17ad2387",
+      "preview_sha256": "a664f060505ae76700236e2e51e289a6b998361562ebbffad128904fc5bef8f4",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42251588741-1-b0001.tar.gz",
+        "member": "files/46/46e54cfe1a46be1edd463d46037738648787473c3f277a1052e664eb17ad2387.svg"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42251588741-1-b0001.tar.gz",
+        "member": "previews/46e54cfe1a46be1edd463d46037738648787473c3f277a1052e664eb17ad2387.png"
+      },
+      "visual_verdict": "usable_as_schematic_component",
+      "observations": "打开的挂锁，概念部件不是医学结构。",
+      "scientific_detail_validation": "not_independently_verified",
+      "native_editability_tested": false
+    },
+    {
+      "tile": 13,
+      "id": "bioicons-5589c944ccfb5d068daa",
+      "title": "tweezer",
+      "source_id": "cc-by-3.0/Chemistry/Servier/tweezer.svg",
+      "source_url": "https://github.com/duerrsimon/bioicons/blob/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-3.0/Chemistry/Servier/tweezer.svg",
+      "original_sha256": "62b3afc57824c35d9414c859a5f8f6f7862931be129f24ed608e0fb7adcc4daf",
+      "preview_sha256": "fae064bbd6861f96ac23e0e60dc86faca5271a069d136439f8e6f8dbf975c5ba",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42251588741-1-b0001.tar.gz",
+        "member": "files/62/62b3afc57824c35d9414c859a5f8f6f7862931be129f24ed608e0fb7adcc4daf.svg"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42251588741-1-b0001.tar.gz",
+        "member": "previews/62b3afc57824c35d9414c859a5f8f6f7862931be129f24ed608e0fb7adcc4daf.png"
+      },
+      "visual_verdict": "usable_as_schematic_component",
+      "observations": "镊子仪器，线条可辨认。",
+      "scientific_detail_validation": "not_independently_verified",
+      "native_editability_tested": false
+    },
+    {
+      "tile": 14,
+      "id": "bioicons-5c39b263f8ec173874eb",
+      "title": "fish 1",
+      "source_id": "cc-by-3.0/Animals/Servier/fish-1.svg",
+      "source_url": "https://github.com/duerrsimon/bioicons/blob/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-3.0/Animals/Servier/fish-1.svg",
+      "original_sha256": "54450c2de727fbd025077ad6ba28de706f6eedb6548e4ac68a003e60a1501b09",
+      "preview_sha256": "e40002f64618403265d8e525e63dac71da8621cd464c379a897d700eaa07e1bc",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42251588741-1-b0001.tar.gz",
+        "member": "files/54/54450c2de727fbd025077ad6ba28de706f6eedb6548e4ac68a003e60a1501b09.svg"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42251588741-1-b0001.tar.gz",
+        "member": "previews/54450c2de727fbd025077ad6ba28de706f6eedb6548e4ac68a003e60a1501b09.png"
+      },
+      "visual_verdict": "usable_as_schematic_component",
+      "observations": "鱼完整侧面，浅蓝轮廓；没有证据指定具体物种。",
+      "scientific_detail_validation": "not_independently_verified",
+      "native_editability_tested": false
+    },
+    {
+      "tile": 15,
+      "id": "bioicons-3d2c22fc07415b75e7c7",
+      "title": "guineapig blue",
+      "source_id": "cc-by-3.0/Animals/Servier/guineapig-blue.svg",
+      "source_url": "https://github.com/duerrsimon/bioicons/blob/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-3.0/Animals/Servier/guineapig-blue.svg",
+      "original_sha256": "1b73e4506880bab63ab8eb4f562e527b8ec3a6c6196d210c63a27de911f413b7",
+      "preview_sha256": "1b5d26280f5cc3054a06e357fe2cde739e746b0133ea98c6ef2affddf15d94a8",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42251588741-1-b0001.tar.gz",
+        "member": "files/1b/1b73e4506880bab63ab8eb4f562e527b8ec3a6c6196d210c63a27de911f413b7.svg"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42251588741-1-b0001.tar.gz",
+        "member": "previews/1b73e4506880bab63ab8eb4f562e527b8ec3a6c6196d210c63a27de911f413b7.png"
+      },
+      "visual_verdict": "usable_as_schematic_component",
+      "observations": "蓝色豚鼠艺术配色，明确不是自然毛色或小鼠。",
+      "scientific_detail_validation": "not_independently_verified",
+      "native_editability_tested": false
+    },
+    {
+      "tile": 16,
+      "id": "bioicons-559c5be459a35f0326a6",
+      "title": "raised leg",
+      "source_id": "cc-by-3.0/General_items/Servier/raised-leg.svg",
+      "source_url": "https://github.com/duerrsimon/bioicons/blob/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-3.0/General_items/Servier/raised-leg.svg",
+      "original_sha256": "b4f44658f1bef47407eac25358a44ef923c03ae39fde6c797cf5c55b7ef7f2fa",
+      "preview_sha256": "2e1d05e2e0b98102a62889e1d6835c331f7e12c45195c2ad7c0c2300d3872816",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42251588741-1-b0001.tar.gz",
+        "member": "files/b4/b4f44658f1bef47407eac25358a44ef923c03ae39fde6c797cf5c55b7ef7f2fa.svg"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42251588741-1-b0001.tar.gz",
+        "member": "previews/b4f44658f1bef47407eac25358a44ef923c03ae39fde6c797cf5c55b7ef7f2fa.png"
+      },
+      "visual_verdict": "usable_as_schematic_component",
+      "observations": "卧床人物抬高下肢的姿势图，不能据此推断诊断或治疗适应证。",
+      "scientific_detail_validation": "not_independently_verified",
+      "native_editability_tested": false
+    },
+    {
+      "tile": 17,
+      "id": "bioicons-37e1d3197d271897f608",
+      "title": "antibody 2",
+      "source_id": "cc-by-3.0/Blood_Immunology/Servier/antibody-2.svg",
+      "source_url": "https://github.com/duerrsimon/bioicons/blob/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-3.0/Blood_Immunology/Servier/antibody-2.svg",
+      "original_sha256": "8eaf3d916f48f4b4133521ae6fa818e915aaf05d236979bfa8e68186f1deb1f8",
+      "preview_sha256": "72e5af36bddc0e9e076ac4705562694ffaac4940c39a6a06998743fe3825244c",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42251588741-1-b0001.tar.gz",
+        "member": "files/8e/8eaf3d916f48f4b4133521ae6fa818e915aaf05d236979bfa8e68186f1deb1f8.svg"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42251588741-1-b0001.tar.gz",
+        "member": "previews/8eaf3d916f48f4b4133521ae6fa818e915aaf05d236979bfa8e68186f1deb1f8.png"
+      },
+      "visual_verdict": "usable_as_schematic_component",
+      "observations": "抗体及黑色星状标记的示意，星号意义应由作者命名/使用说明决定。",
+      "scientific_detail_validation": "not_independently_verified",
+      "native_editability_tested": false
+    },
+    {
+      "tile": 18,
+      "id": "bioicons-137d341cef8c9bde5256",
+      "title": "fibrin 3",
+      "source_id": "cc-by-3.0/Blood_Immunology/Servier/fibrin-3.svg",
+      "source_url": "https://github.com/duerrsimon/bioicons/blob/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-3.0/Blood_Immunology/Servier/fibrin-3.svg",
+      "original_sha256": "c3b5e5f29a24dcb0385c521b2c35deb6aecfeb730850765c64436c2647b55e19",
+      "preview_sha256": "16fd5790994970d4c50320317c79638e7136043469bc36f9bd8b98117e69ac6a",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42251588741-1-b0001.tar.gz",
+        "member": "files/c3/c3b5e5f29a24dcb0385c521b2c35deb6aecfeb730850765c64436c2647b55e19.svg"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42251588741-1-b0001.tar.gz",
+        "member": "previews/c3b5e5f29a24dcb0385c521b2c35deb6aecfeb730850765c64436c2647b55e19.png"
+      },
+      "visual_verdict": "usable_as_schematic_component",
+      "observations": "纤维蛋白单根灰线条部件，不是完整纤维网络。",
+      "scientific_detail_validation": "not_independently_verified",
+      "native_editability_tested": false
+    },
+    {
+      "tile": 19,
+      "id": "bioicons-8018ef21f91d0acfc334",
+      "title": "ig M immunoglobulin",
+      "source_id": "cc-by-3.0/Blood_Immunology/Servier/igM-immunoglobulin.svg",
+      "source_url": "https://github.com/duerrsimon/bioicons/blob/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-3.0/Blood_Immunology/Servier/igM-immunoglobulin.svg",
+      "original_sha256": "ecfe82536d4ee34049bfa6eaf6c2d734bb9c8a0fd8e07fac77f32e313ad0b533",
+      "preview_sha256": "25f4f61d937be9b38fa1e430918729c1156f71bf1e496a99682d5d5c0c5be8eb",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42251588741-1-b0001.tar.gz",
+        "member": "files/ec/ecfe82536d4ee34049bfa6eaf6c2d734bb9c8a0fd8e07fac77f32e313ad0b533.svg"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42251588741-1-b0001.tar.gz",
+        "member": "previews/ecfe82536d4ee34049bfa6eaf6c2d734bb9c8a0fd8e07fac77f32e313ad0b533.png"
+      },
+      "visual_verdict": "usable_as_schematic_component",
+      "observations": "IgM多聚结构符号，清楚表达多臂结构但不验证原子尺度。",
+      "scientific_detail_validation": "not_independently_verified",
+      "native_editability_tested": false
+    },
+    {
+      "tile": 20,
+      "id": "bioicons-62dda2dd90dca3587bda",
+      "title": "sugar",
+      "source_id": "cc-by-3.0/General_items/Servier/sugar.svg",
+      "source_url": "https://github.com/duerrsimon/bioicons/blob/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-3.0/General_items/Servier/sugar.svg",
+      "original_sha256": "e0dfe8662dc1f4649f54aba77fa704623afd5f3a21b84243f52c11f5674974da",
+      "preview_sha256": "9f83c8ae0f752cb0a3bbc6bd13b613ea7d854193594eeaca3afacbf2dedad3b8",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42251588741-1-b0001.tar.gz",
+        "member": "files/e0/e0dfe8662dc1f4649f54aba77fa704623afd5f3a21b84243f52c11f5674974da.svg"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42251588741-1-b0001.tar.gz",
+        "member": "previews/e0dfe8662dc1f4649f54aba77fa704623afd5f3a21b84243f52c11f5674974da.png"
+      },
+      "visual_verdict": "usable_as_schematic_component",
+      "observations": "糖块概念图，不代表化学结构。",
+      "scientific_detail_validation": "not_independently_verified",
+      "native_editability_tested": false
+    },
+    {
+      "tile": 21,
+      "id": "bioicons-bb67fa08f7ca0435e06a",
+      "title": "antibody radio tag 1",
+      "source_id": "cc-by-3.0/Blood_Immunology/Servier/antibody-radio-tag-1.svg",
+      "source_url": "https://github.com/duerrsimon/bioicons/blob/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-3.0/Blood_Immunology/Servier/antibody-radio-tag-1.svg",
+      "original_sha256": "6f4312c1e7bbcf99c7009c6880879e2eec51458045690395636bd331834781c2",
+      "preview_sha256": "0d3cc58972e1ab04b12fec2ce7efa01bf033620f76262d7361894df76735098d",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42251588741-1-b0001.tar.gz",
+        "member": "files/6f/6f4312c1e7bbcf99c7009c6880879e2eec51458045690395636bd331834781c2.svg"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42251588741-1-b0001.tar.gz",
+        "member": "previews/6f4312c1e7bbcf99c7009c6880879e2eec51458045690395636bd331834781c2.png"
+      },
+      "visual_verdict": "usable_as_schematic_component",
+      "observations": "带放射性标志的抗体示意，不能作为无标记普通抗体。",
+      "scientific_detail_validation": "not_independently_verified",
+      "native_editability_tested": false
+    },
+    {
+      "tile": 22,
+      "id": "bioicons-ce5768e330cf3835ddb6",
+      "title": "dendritic cell 2",
+      "source_id": "cc-by-3.0/Blood_Immunology/Servier/dendritic-cell-2.svg",
+      "source_url": "https://github.com/duerrsimon/bioicons/blob/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-3.0/Blood_Immunology/Servier/dendritic-cell-2.svg",
+      "original_sha256": "33b454bb98c7ae05c8bc8ee1ef355d8e4b6c109bc5c0a0cce51bf623bb8fc816",
+      "preview_sha256": "ee2a106a74bc135f0f49466d2b4e61fedc435d7fa317835ba11de5ac81819763",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42251588741-1-b0001.tar.gz",
+        "member": "files/33/33b454bb98c7ae05c8bc8ee1ef355d8e4b6c109bc5c0a0cce51bf623bb8fc816.svg"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42251588741-1-b0001.tar.gz",
+        "member": "previews/33b454bb98c7ae05c8bc8ee1ef355d8e4b6c109bc5c0a0cce51bf623bb8fc816.png"
+      },
+      "visual_verdict": "usable_as_schematic_component",
+      "observations": "树突状细胞的突起、胞体和核可辨认。",
+      "scientific_detail_validation": "not_independently_verified",
+      "native_editability_tested": false
+    },
+    {
+      "tile": 23,
+      "id": "bioicons-23eef8010e3ef819be43",
+      "title": "megakaryocyte",
+      "source_id": "cc-by-3.0/Blood_Immunology/Servier/megakaryocyte.svg",
+      "source_url": "https://github.com/duerrsimon/bioicons/blob/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-3.0/Blood_Immunology/Servier/megakaryocyte.svg",
+      "original_sha256": "0e311e2c16f93854f929b683694490656879c821193b9c926d2a69d99ce603e1",
+      "preview_sha256": "230805c523bd146b78f5a5c7be6b36c0ff8b3421728e6d54be831409b6ce15bb",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42251588741-1-b0001.tar.gz",
+        "member": "files/0e/0e311e2c16f93854f929b683694490656879c821193b9c926d2a69d99ce603e1.svg"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42251588741-1-b0001.tar.gz",
+        "member": "previews/0e311e2c16f93854f929b683694490656879c821193b9c926d2a69d99ce603e1.png"
+      },
+      "visual_verdict": "usable_as_schematic_component",
+      "observations": "巨核细胞的多叶核/胞内颗粒示意。",
+      "scientific_detail_validation": "not_independently_verified",
+      "native_editability_tested": false
+    },
+    {
+      "tile": 24,
+      "id": "bioicons-7a2a1da773e03eb0ab82",
+      "title": "beaker yellow",
+      "source_id": "cc-by-3.0/Chemistry/Servier/beaker-yellow.svg",
+      "source_url": "https://github.com/duerrsimon/bioicons/blob/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-3.0/Chemistry/Servier/beaker-yellow.svg",
+      "original_sha256": "faba74c5b339885d5e707282c233b5d2f40e41ffe37b0f136cb4c500e4e70d98",
+      "preview_sha256": "eb6deab22a42e5f1cfc0a073c0ee98af91014564ac816b0b7b78c05cc6c14ac9",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42251588741-1-b0001.tar.gz",
+        "member": "files/fa/faba74c5b339885d5e707282c233b5d2f40e41ffe37b0f136cb4c500e4e70d98.svg"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42251588741-1-b0001.tar.gz",
+        "member": "previews/faba74c5b339885d5e707282c233b5d2f40e41ffe37b0f136cb4c500e4e70d98.png"
+      },
+      "visual_verdict": "usable_as_schematic_component",
+      "observations": "含黄色液体烧杯，刻度仅为示意，不能读取成实验体积。",
+      "scientific_detail_validation": "not_independently_verified",
+      "native_editability_tested": false
+    },
+    {
+      "tile": 25,
+      "id": "bioicons-f1e4604c898cc09e6c19",
+      "title": "monocyte 21",
+      "source_id": "cc-by-3.0/Blood_Immunology/Servier/monocyte-21.svg",
+      "source_url": "https://github.com/duerrsimon/bioicons/blob/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-3.0/Blood_Immunology/Servier/monocyte-21.svg",
+      "original_sha256": "6f920edeeb0e83294a24494c01d094b97d3c64f4475a872362c1d862e26dd581",
+      "preview_sha256": "ffc82b0df6a57d814466b2906fb5110ed3f0c745156366d45bc1f6971975c858",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42251588741-1-b0001.tar.gz",
+        "member": "files/6f/6f920edeeb0e83294a24494c01d094b97d3c64f4475a872362c1d862e26dd581.svg"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42251588741-1-b0001.tar.gz",
+        "member": "previews/6f920edeeb0e83294a24494c01d094b97d3c64f4475a872362c1d862e26dd581.png"
+      },
+      "visual_verdict": "usable_as_schematic_component",
+      "observations": "另一单核细胞图形，画风相似但不由标题编号推断病理状态。",
+      "scientific_detail_validation": "not_independently_verified",
+      "native_editability_tested": false
+    },
+    {
+      "tile": 26,
+      "id": "bioicons-6d6a265260b231361650",
+      "title": "pepper",
+      "source_id": "cc-by-3.0/General_items/Servier/pepper.svg",
+      "source_url": "https://github.com/duerrsimon/bioicons/blob/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-3.0/General_items/Servier/pepper.svg",
+      "original_sha256": "bddbbd17a0afbccbfcb838ece9e3aea12ec80203191d0c1b8125a713e524c4e5",
+      "preview_sha256": "6998b5e021b7f327a34d54b0d37b2cd20c82469fdccd4ea5b8a73c8e364eddcc",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42251588741-1-b0001.tar.gz",
+        "member": "files/bd/bddbbd17a0afbccbfcb838ece9e3aea12ec80203191d0c1b8125a713e524c4e5.svg"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42251588741-1-b0001.tar.gz",
+        "member": "previews/bddbbd17a0afbccbfcb838ece9e3aea12ec80203191d0c1b8125a713e524c4e5.png"
+      },
+      "visual_verdict": "usable_as_schematic_component",
+      "observations": "胡椒调味瓶，作为饮食概念部件。",
+      "scientific_detail_validation": "not_independently_verified",
+      "native_editability_tested": false
+    },
+    {
+      "tile": 27,
+      "id": "bioicons-0575121308703d2ec7cb",
+      "title": "arrow circular",
+      "source_id": "cc-by-3.0/General_items/Servier/arrow-circular.svg",
+      "source_url": "https://github.com/duerrsimon/bioicons/blob/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-3.0/General_items/Servier/arrow-circular.svg",
+      "original_sha256": "f6db4dbda006e6f1021623186898ee3c9d39e65414774357736a63e0370b238a",
+      "preview_sha256": "e9503ff230b475e950a049834f39ab911a85c7c0a21d88c46700619ac5c03d04",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42251588741-1-b0001.tar.gz",
+        "member": "files/f6/f6db4dbda006e6f1021623186898ee3c9d39e65414774357736a63e0370b238a.svg"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42251588741-1-b0001.tar.gz",
+        "member": "previews/f6db4dbda006e6f1021623186898ee3c9d39e65414774357736a63e0370b238a.png"
+      },
+      "visual_verdict": "usable_as_schematic_component",
+      "observations": "循环关系箭头，不直接等于某一生理循环或随机化。",
+      "scientific_detail_validation": "not_independently_verified",
+      "native_editability_tested": false
+    },
+    {
+      "tile": 28,
+      "id": "bioicons-2277640ddf6354d8f2e4",
+      "title": "bug",
+      "source_id": "cc-by-3.0/Animals/Servier/bug.svg",
+      "source_url": "https://github.com/duerrsimon/bioicons/blob/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-3.0/Animals/Servier/bug.svg",
+      "original_sha256": "cb5db80932fb5348bd554cc20d67cbd310313c51a776bb5e69d897d21f937752",
+      "preview_sha256": "2ac030b9ad3b71ac2525a00a5f7baa8032439df16b988b998dc6fe35a46fcf67",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42251588741-1-b0001.tar.gz",
+        "member": "files/cb/cb5db80932fb5348bd554cc20d67cbd310313c51a776bb5e69d897d21f937752.svg"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42251588741-1-b0001.tar.gz",
+        "member": "previews/cb5db80932fb5348bd554cc20d67cbd310313c51a776bb5e69d897d21f937752.png"
+      },
+      "visual_verdict": "usable_as_schematic_component",
+      "observations": "昆虫整体可辨认，来源只写bug，不能自动指定蚊子/果蝇。",
+      "scientific_detail_validation": "not_independently_verified",
+      "native_editability_tested": false
+    },
+    {
+      "tile": 29,
+      "id": "bioicons-a1e530a59cf5978d84a5",
+      "title": "hdl 2",
+      "source_id": "cc-by-3.0/Blood_Immunology/Servier/hdl-2.svg",
+      "source_url": "https://github.com/duerrsimon/bioicons/blob/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-3.0/Blood_Immunology/Servier/hdl-2.svg",
+      "original_sha256": "5070272dcd755fea6d566a1fb7d4724e19db87fd6f3b8d4720e7f0f21a8739cb",
+      "preview_sha256": "c72340380cc869c324db348dc09418578ca93d5f9353de8bb86e28fcbafb7ff1",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42251588741-1-b0001.tar.gz",
+        "member": "files/50/5070272dcd755fea6d566a1fb7d4724e19db87fd6f3b8d4720e7f0f21a8739cb.svg"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42251588741-1-b0001.tar.gz",
+        "member": "previews/5070272dcd755fea6d566a1fb7d4724e19db87fd6f3b8d4720e7f0f21a8739cb.png"
+      },
+      "visual_verdict": "usable_as_schematic_component",
+      "observations": "HDL脂蛋白颗粒图标，非真实分子比例。",
+      "scientific_detail_validation": "not_independently_verified",
+      "native_editability_tested": false
+    },
+    {
+      "tile": 30,
+      "id": "bioicons-6b61c5060de1fc14c32e",
+      "title": "arrow right curved 3",
+      "source_id": "cc-by-3.0/General_items/Servier/arrow-right-curved-3.svg",
+      "source_url": "https://github.com/duerrsimon/bioicons/blob/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-3.0/General_items/Servier/arrow-right-curved-3.svg",
+      "original_sha256": "502dfdb8fcb8f66c710f8ac5643c19d5478b03c4652c31c168bd0758438a1655",
+      "preview_sha256": "be0c8c65aca7c0f810cc01e0c33707afec562d98a2f5f6101883838de5509c39",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42251588741-1-b0001.tar.gz",
+        "member": "files/50/502dfdb8fcb8f66c710f8ac5643c19d5478b03c4652c31c168bd0758438a1655.svg"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42251588741-1-b0001.tar.gz",
+        "member": "previews/502dfdb8fcb8f66c710f8ac5643c19d5478b03c4652c31c168bd0758438a1655.png"
+      },
+      "visual_verdict": "usable_as_schematic_component",
+      "observations": "右向弯曲箭头，用于连接关系。",
+      "scientific_detail_validation": "not_independently_verified",
+      "native_editability_tested": false
+    }
+  ]
+}

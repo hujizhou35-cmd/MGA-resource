@@ -90,6 +90,37 @@ def run_gh(arguments: list[str], *, check=True):
     return subprocess.run(["gh", *arguments], text=True, capture_output=True, check=check)
 
 
+def load_frozen_discovery(plan, source, tag, base):
+    """Resume an explicitly named, digest-verified historical cloud inventory.
+
+    Dynamic source page markup must not force reacquisition of successful files.
+    This keeps the original metadata snapshot and records the new download run.
+    """
+    name = plan.get("frozen_discovery_asset")
+    expected = plan.get("expected_discovery_sha256")
+    if (not isinstance(name, str) or not re.fullmatch(re.escape(source) + r"-[0-9]+-[0-9]+\.discovery\.jsonl", name)
+            or not isinstance(expected, str) or not re.fullmatch(r"[0-9a-f]{64}", expected)):
+        raise ValueError("Frozen discovery requires an exact source asset name and SHA-256")
+    repository = os.environ["GITHUB_REPOSITORY"]
+    release = json.loads(run_gh(["api", f"repos/{repository}/releases/tags/{tag}"]).stdout)
+    pages = json.loads(run_gh(["api", "--paginate", "--slurp",
+                              f"repos/{repository}/releases/{release['id']}/assets?per_page=100"]).stdout)
+    asset = next((row for page in pages for row in page if row["name"] == name), None)
+    if not asset or asset.get("digest") != "sha256:" + expected:
+        raise ValueError("Frozen discovery cloud digest does not match the reviewed plan")
+    incoming = base / "frozen-metadata"
+    incoming.mkdir(parents=True, exist_ok=True)
+    run_gh(["release", "download", tag, "--repo", repository, "--pattern", name, "--dir", str(incoming)])
+    raw = (incoming / name).read_bytes()
+    if len(raw) != asset["size"] or hashlib.sha256(raw).hexdigest() != expected:
+        raise ValueError("Frozen discovery bytes differ from the cloud asset")
+    rows = [json.loads(line) for line in raw.splitlines() if line.strip()]
+    if any(row.get("source") != source for row in rows):
+        raise ValueError("Frozen discovery contains another source")
+    return rows, {"asset": name, "sha256": expected, "size_bytes": len(raw),
+                  "url": asset["browser_download_url"], "mode": "resume_verified_historical_inventory"}
+
+
 def ensure_release(tag: str) -> None:
     if run_gh(["release", "view", tag], check=False).returncode == 0:
         return
@@ -333,7 +364,11 @@ def main() -> int:
         batch_number += 1
 
     try:
-        discovered = list(discover(source, client))
+        if selection_plan and selection_plan.get("frozen_discovery_asset"):
+            discovered, origin = load_frozen_discovery(selection_plan, args.source, args.release_tag, base)
+            publication["discovery_origin"] = origin
+        else:
+            discovered = list(discover(source, client))
         discovered_count = len(discovered)
         if not discovered:
             raise RuntimeError("Source discovery returned no artwork; cannot verify a complete inventory")

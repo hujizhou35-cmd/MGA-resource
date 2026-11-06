@@ -104,5 +104,7 @@
         "sha256": "c24524f1b748285907af46bbf857a79a74b65498fd04d45bd07452edf4adc897"
       }
     ]
-  }
+  },
+  "frozen_discovery_asset": "reactome-42246331998-1.discovery.jsonl",
+  "snapshot_resume_reason": "2026-11-07 fresh page discovery changed its full metadata digest. Resume the explicitly verified original cloud inventory instead; preserve 2523 successful SVGs and only retry 48 previously empty items. New file bytes retain the new collection timestamp and SHA, not an invented historical byte identity."
 }

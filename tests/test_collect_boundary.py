@@ -95,6 +95,37 @@ def test_non_git_source_plan_rejects_full_metadata_drift_even_with_same_ids():
     assert len(collect.select_source_rows(rows, "test", plan=plan, discovery_sha256="a" * 64)) == 4
 
 
+def test_frozen_discovery_uses_only_exact_verified_release_metadata(tmp_path, monkeypatch):
+    name = "test-42-1.discovery.jsonl"
+    rows = [{"source": "test", "source_id": "one", "files": []}]
+    raw = (json.dumps(rows[0]) + "\n").encode()
+    digest = hashlib.sha256(raw).hexdigest()
+    plan = {"frozen_discovery_asset": name, "expected_discovery_sha256": digest}
+    asset = {"name": name, "size": len(raw), "digest": "sha256:" + digest,
+             "browser_download_url": "https://github.com/example/repo/releases/download/test/" + name}
+    calls = []
+    def fake_gh(arguments, **kwargs):
+        calls.append(arguments)
+        if "--paginate" in arguments:
+            value = [[asset]]
+        elif arguments[:2] == ["release", "download"]:
+            destination = Path(arguments[arguments.index("--dir") + 1])
+            (destination / name).write_bytes(raw)
+            value = {}
+        else:
+            value = {"id": 42}
+        return SimpleNamespace(stdout=json.dumps(value), returncode=0)
+    monkeypatch.setenv("GITHUB_REPOSITORY", "example/repo")
+    monkeypatch.setattr(collect, "run_gh", fake_gh)
+    actual, origin = collect.load_frozen_discovery(plan, "test", "test", tmp_path)
+    assert actual == rows and origin["sha256"] == digest
+    assert len(calls) == 3
+    asset["digest"] = "sha256:" + "0" * 64
+    with pytest.raises(ValueError, match="cloud digest"):
+        collect.load_frozen_discovery(plan, "test", "test", tmp_path)
+    assert len(calls) == 5  # A mismatch is rejected before downloading metadata.
+
+
 @pytest.mark.parametrize("mutation", ["order", "source", "revision", "count", "overlap", "bounds", "zero"])
 def test_incremental_plan_rejects_drift_and_ambiguous_ranges(mutation):
     rows, plan = selection_fixture()
