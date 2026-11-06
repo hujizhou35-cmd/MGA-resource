@@ -375,6 +375,8 @@ def build_review(records, database, benchmark, output, *, font_path=None, sample
                  "instructions": benchmark.get("judging", {}), "acceptance_passed": None,
                  "queries": [{"query_id": query["id"], "query": query["query"], "language": query["language"],
                               "concept_id": query["concept_id"], "pass": None, "selected_candidate_ids": [],
+                              "result_judgments": [{"candidate_id": row["candidate_id"], "verdict": None,
+                                                    "evidence_notes": None} for row in query["candidates"]],
                               "visual_evidence_notes": None, "source_evidence_checked": None,
                               "original_download_checked": None, "license_checked": None,
                               "species_matches": None, "gap_reason": None} for query in plan["queries"]],

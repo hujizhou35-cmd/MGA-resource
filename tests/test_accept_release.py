@@ -55,6 +55,7 @@ def fixture():
         mapping["queries"].append({**query, "candidates": [{"rank": 1, "candidate_id": key,
             "asset_id": candidates[key]["asset_id"], "family_id": candidates[key]["family_id"]}]})
         judgments["queries"].append({"query_id": query["id"], "pass": True, "selected_candidate_ids": [key],
+            "result_judgments": [{"candidate_id": key, "verdict": "relevant", "evidence_notes": "Synthetic per-result visual evidence."}],
             "visual_evidence_notes": "Synthetic fixture: concept and species reviewed.",
             "source_evidence_checked": True, "original_download_checked": True,
             "license_checked": True, "species_matches": True})
@@ -152,6 +153,45 @@ def test_blank_judgments_and_missing_restore_stay_pending():
     _, report = accept.evaluate_release(**args)
     assert not report["acceptance_passed"]
     assert {"queries.count", "review.independent", "restore.pending", "visual.curated"} <= codes(report)
+
+
+def test_query_level_pass_cannot_replace_review_of_every_actual_result():
+    for mutation in ("missing", "duplicate", "unreturned", "no_notes"):
+        args = fixture()
+        row = args["judgments"]["queries"][0]
+        if mutation == "missing":
+            row.pop("result_judgments")
+        elif mutation == "duplicate":
+            row["result_judgments"].append(copy.deepcopy(row["result_judgments"][0]))
+        elif mutation == "unreturned":
+            row["result_judgments"][0]["candidate_id"] = "asset-59:file-0"
+        else:
+            row["result_judgments"][0]["evidence_notes"] = ""
+        _, report = accept.evaluate_release(**args)
+        assert not report["acceptance_passed"], mutation
+        assert "queries.result_reviews" in codes(report), mutation
+        assert report["retrieval"]["successful"] == 119
+
+
+def test_uncertain_or_irrelevant_result_cannot_be_selected_as_success():
+    for verdict in ("uncertain", "irrelevant"):
+        args = fixture()
+        args["judgments"]["queries"][0]["result_judgments"][0]["verdict"] = verdict
+        _, report = accept.evaluate_release(**args)
+        assert not report["acceptance_passed"]
+        assert "queries.evidence" in codes(report)
+        assert report["retrieval"]["successful"] == 119
+
+
+def test_empty_query_can_record_an_evidenced_gap_without_invented_results():
+    args = fixture()
+    args["mapping"]["queries"][0]["candidates"] = []
+    args["judgments"]["queries"][0].update({"pass": False, "selected_candidate_ids": [],
+        "result_judgments": [], "gap_reason": "Synthetic query returned no candidates."})
+    _, report = accept.evaluate_release(**args)
+    assert "queries.result_reviews" not in codes(report)
+    assert "queries.pending" not in codes(report)
+    assert report["retrieval"]["successful"] == 119
 
 
 def test_exact_threshold_passes_but_one_more_failure_cannot_be_waived():

@@ -306,7 +306,18 @@ def evaluate_release(catalog, assembly, benchmark, mapping, judgments, *, hashes
                               and row.get("family_id") == valid_candidates[row["candidate_id"]]["family_id"]
                               for row in rows))
         selected = judgment.get("selected_candidate_ids") or []
-        selection_ok = bool(selected) and all(key in valid_candidates and key in {row.get("candidate_id") for row in rows} for key in selected)
+        result_judgments = judgment.get("result_judgments")
+        result_rows = result_judgments if isinstance(result_judgments, list) else []
+        result_by_id = {row.get("candidate_id"): row for row in result_rows if isinstance(row, dict)}
+        results_ok = (isinstance(result_judgments, list)
+                      and len(result_by_id) == len(result_rows) == len(rows)
+                      and set(result_by_id) == {row.get("candidate_id") for row in rows}
+                      and all(row.get("verdict") in {"relevant", "irrelevant", "uncertain"}
+                              and nonempty(row.get("evidence_notes")) for row in result_by_id.values()))
+        need(results_ok, "queries.result_reviews", f"{qid}: every actual top-10 result needs its own relevant/irrelevant/uncertain judgment and evidence notes.")
+        selection_ok = (bool(selected) and results_ok
+                        and all(key in valid_candidates and result_by_id.get(key, {}).get("verdict") == "relevant"
+                                for key in selected))
         if judgment.get("pass") is True:
             ok = (independent and mapping_ok and selection_ok and nonempty(judgment.get("visual_evidence_notes"))
                   and all(judgment.get(key) is True for key in flags))
@@ -315,7 +326,7 @@ def evaluate_release(catalog, assembly, benchmark, mapping, judgments, *, hashes
                 judged += 1
                 successes.add(qid)
                 language_success[query["language"]] += 1
-        elif judgment.get("pass") is False and nonempty(judgment.get("gap_reason")) and mapping_ok and independent:
+        elif judgment.get("pass") is False and nonempty(judgment.get("gap_reason")) and mapping_ok and results_ok and independent:
             judged += 1
         else:
             need(False, "queries.pending", f"{qid}: record an evidenced pass or a specific gap.")
