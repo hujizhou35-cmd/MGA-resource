@@ -3,8 +3,8 @@
  */
 import vocabulary from './search-vocabulary.mjs';
 
-export const RANKING_VERSION = 'shared-search-3.3.0';
-export const INDEX_VERSION = 6;
+export const RANKING_VERSION = 'shared-search-3.3.1';
+export const INDEX_VERSION = 7;
 export const DEFAULT_CANDIDATE_POOL = 75;
 const unknown = new Set(['', 'unknown', 'unspecified', 'not_reviewed', '待确认']);
 const arr = value => value == null ? [] : Array.isArray(value) ? value : [value];
@@ -312,7 +312,8 @@ export function prepareVariants(records) {
       const rights=origin.distribution_status || (origin.license===asset.license ? asset.distribution_status : 'needs_rights_review');
       const canDownload=Boolean(file.archive?.url && file.archive?.member || /^https?:\/\//.test(file.url||''));
       const rejectedReview=[file.validation?.scientific_review,file.validation?.visual_review,asset.validation?.scientific_review,asset.validation?.visual_review].some(value=>['failed','rejected','unusable'].includes(value));
-      const eligible=Boolean(file.sha256 && file.preview && canDownload && ['machine_checked','machine_checked_and_rendered'].includes(file.validation?.status) && rights==='license_recorded' && !rejectedReview);
+      const publicScopeAllowed=![asset,origin,file].some(item=>item.catalog_visibility==='internal_diagnostic'||item.public_scope?.public_allowed===false||['excluded','pending_review'].includes(item.public_scope?.status)||item.scope_status==='excluded');
+      const eligible=Boolean(publicScopeAllowed && file.sha256 && file.preview && canDownload && ['machine_checked','machine_checked_and_rendered'].includes(file.validation?.status) && rights==='license_recorded' && !rejectedReview);
       const declaredObjects=scientificValue(file,'object') ?? file.object ?? fields.scientific?.object ?? fields.object;
       const titleConcepts=concepts.filter(group=>group.some(term=>matches(title,term)));
       const descriptionLabel=titleConcepts.length?'':explicitDepictionDescription(fields.description);
@@ -333,7 +334,7 @@ export function prepareVariants(records) {
       const values={...facts,source:arr(origin.source||asset.source),license:arr(license),distribution_status:arr(rights),category:arr(fields.taxonomy||asset.taxonomy),format:arr(file.format),
         color_mode:arr(appearance.color.mode).filter(v=>!unknown.has(v)),palette_traits:appearance.color.palette_traits||[],representation:appearance.style.representation?.values||[],detail:arr(appearance.style.detail?.value).filter(v=>!unknown.has(v)),realism:arr(appearance.style.realism?.value).filter(v=>!unknown.has(v)),series:(appearance.style.series?.memberships||[]).map(x=>x.id),
         asset_id:unique([asset.id,origin.asset_id].filter(Boolean)),family_id:arr(asset.family_id||asset.id),file_sha256:arr(file.sha256),object:objects,depiction_kind:unknown.has(kind)?[]:[kind],transparent:file.transparency?.has_transparent_pixels!=null ? [String(file.transparency.has_transparent_pixels)] : file.has_transparency!=null ? [String(file.has_transparency)] : []};
-      const selectedFile=Object.fromEntries(['sha256','format','structure','url','archive','preview','validation','width','height','size_bytes','dimensions','transparency','scientific','scientific_review_evidence','scientific_conflicts'].filter(k=>file[k]!=null).map(k=>[k,file[k]]));
+      const selectedFile=Object.fromEntries(['sha256','format','structure','url','archive','preview','validation','width','height','size_bytes','dimensions','transparency','scientific','scientific_review_evidence','scientific_conflicts','public_scope','text_content'].filter(k=>file[k]!=null).map(k=>[k,file[k]]));
       selectedFile.appearance=appearance;
       const lexical={title:indexTerms(title),context:indexTerms(contextText)};
       lexical.all=unique([...lexical.title,...lexical.context,...aliases.map(termKey)]).sort(cmp);

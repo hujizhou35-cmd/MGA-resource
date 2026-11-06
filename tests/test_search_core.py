@@ -205,7 +205,7 @@ def test_unknown_filter_and_obsolete_index_fail_explicitly(tmp_path):
         search(db, "mouse", filters={"nonsense": "true"})
     with closing(sqlite3.connect(db)) as conn:
         conn.execute("PRAGMA user_version=1")
-    with pytest.raises(ValueError, match="rebuilt as v6"):
+    with pytest.raises(ValueError, match="rebuilt as v7"):
         search(db, "mouse")
 
 
@@ -352,3 +352,37 @@ def test_specific_compound_objects_are_not_generic_cells_or_whole_organs(tmp_pat
     assert [r["title"] for r in search(db,"cell")]==["Macrophage"]
     for query,title in (("cell sorter","Magnetic Cell Sorter"),("cell cycle","Disease Cell Cycle wheel"),("liver fluke","Liver fluke adult"),("liver lobule","Liver Lobule")):
         assert [r["title"] for r in search(db,query)]==[title]
+
+
+def test_scope_decisions_exclude_templates_but_keep_annotated_objects(tmp_path):
+    # Same title: scope follows the reviewed per-file decision, never a title
+    # blacklist or the presence of labels/legends/text boxes.
+    included=artwork(1,title="Bone drawing with labels and legend",species=None)
+    excluded=artwork(2,title=included["title"],species=None)
+    pending=artwork(3,title=included["title"],species=None)
+    for item,status,allowed in ((included,"included",True),(excluded,"excluded",False),(pending,"pending_review",False)):
+        item["files"][0]["public_scope"]={"status":status,"public_allowed":allowed,"decision_id":"fixture-file-scope","reason":"Fixture reviewed scope decision, not a medical judgment","evidence":[{"uri":"fixture-review.json","sha256":"a"*64}],"policy_sha256":"b"*64}
+        item["files"][0]["text_content"]={"status":"present","kinds":["labels","legend"],"editable_text":"unknown"}
+    # prepare expects finalized identities/provenance. Feed normalized records
+    # directly for the common JS guard without producing a public catalog.
+    from mga_resources.catalog import normalize_record
+    prepared=_search_core({"action":"prepare","records":[normalize_record(item) for item in (included,excluded,pending)]})
+    page=_search_core({"action":"search","variants":prepared["variants"],"request":{"query":"bone","catalog_version":"fixture-scope"}})
+    assert [r["selected_file"]["sha256"] for r in page["results"]]==[included["files"][0]["sha256"]]
+    assert page["results"][0]["selected_file"]["text_content"]["editable_text"]=="unknown"
+    for blocked in (excluded,pending):
+        with pytest.raises(ValueError,match="scope-filtered"):
+            finalize([blocked],tmp_path/blocked["source_id"])
+        assert not (tmp_path/blocked["source_id"]/"catalog.jsonl").exists()
+    db=database(tmp_path/"clean",[included])
+    assert search(db,"bone")[0]["selected_file"]["public_scope"]["status"]=="included"
+
+
+def test_internal_catalog_cannot_be_published_and_unreviewed_objects_remain_searchable(tmp_path):
+    item=artwork(1)
+    item["files"][0]["public_scope"]={"status":"unreviewed","public_allowed":True}
+    internal=copy.deepcopy(item);internal["catalog_visibility"]="internal_diagnostic"
+    with pytest.raises(ValueError,match="scope-filtered"):
+        finalize([internal],tmp_path/"internal")
+    db=database(tmp_path/"public",[item])
+    assert len(search(db,"mouse"))==1

@@ -437,7 +437,22 @@ def _search_core(payload: dict[str, Any]) -> dict[str, Any]:
     return json.loads(completed.stdout)
 
 
+def _assert_public_records(records: list[dict[str, Any]]) -> None:
+    """Reject unfiltered internal scope records before writing public artifacts.
+
+    This consumes explicit upstream scope decisions only; it does not classify
+    titles, annotations, typography, templates or scientific artwork.
+    """
+    for record in records:
+        for item in [record, *record.get("files", []), *[origin for file in record.get("files", []) for origin in file.get("source_records", [])]]:
+            scope=item.get("public_scope") or {}
+            if (item.get("catalog_visibility")=="internal_diagnostic" or scope.get("public_allowed") is False
+                    or scope.get("status") in {"excluded", "pending_review"} or item.get("scope_status")=="excluded"):
+                raise ValueError("Public catalog/index requires scope-filtered records; apply filter_public_records() before finalize or rebuild")
+
+
 def _write_sqlite(records: list[dict[str, Any]], path: Path, catalog_version: str) -> None:
+    _assert_public_records(records)
     prepared = _search_core({"action": "prepare", "records": records})
     if path.exists():
         path.unlink()
@@ -489,11 +504,13 @@ def _write_sqlite(records: list[dict[str, Any]], path: Path, catalog_version: st
         db.executemany("INSERT INTO index_metadata VALUES (?, ?)", [
             ("catalog_version", catalog_version), ("ranking_version", prepared["ranking_version"]),
         ])
-        db.execute("PRAGMA user_version=6")
+        db.execute("PRAGMA user_version=7")
 
 
 def finalize(records: Iterable[dict[str, Any]], output_dir: str | Path) -> dict[str, Any]:
     """Write portable indexes and factual counts; do not grant acceptance."""
+    records=list(records)
+    _assert_public_records(records)
     output_dir = Path(output_dir)
     output_dir.mkdir(parents=True, exist_ok=True)
     items, counts = deduplicate(records)
@@ -524,7 +541,7 @@ def finalize(records: Iterable[dict[str, Any]], output_dir: str | Path) -> dict[
         "catalog_sha256": hashlib.sha256(catalog_path.read_bytes()).hexdigest(),
     }
     _write_sqlite(items, output_dir / "catalog.sqlite", summary["catalog_sha256"])
-    summary["search_index_version"] = 6
+    summary["search_index_version"] = 7
     summary["search_policy"] = "mga_resources/search-core.mjs; old BM25 available as search_legacy"
     (output_dir / "summary.json").write_text(json.dumps(summary, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     return summary
@@ -666,8 +683,8 @@ def search_page(db_path: str | Path, query: str, limit: int = 10,
             rows = db.execute(statement, parameters).fetchall()
             sql_seconds += time.perf_counter() - started
             return rows
-        if read_sql("PRAGMA user_version")[0][0] != 6:
-            raise ValueError("Search index must be rebuilt as v6 with rebuild_search_index() or finalize(); search_legacy() remains available for old indexes")
+        if read_sql("PRAGMA user_version")[0][0] != 7:
+            raise ValueError("Search index must be rebuilt as v7 with rebuild_search_index() or finalize(); search_legacy() remains available for old indexes")
         metadata = dict(read_sql("SELECT key, value FROM index_metadata"))
         prepared = invoke_core({"action": "window_plan", "request": {
             "query": query, "filters": filters, "limit": limit, "mode": mode, "seed": seed,

@@ -1,0 +1,585 @@
+{
+  "bindings": {
+    "input_catalog_sha256": "479f4e618e7c952bde430bd45fa10062249ff0f12672c86fb64a20c854da1fde",
+    "benchmark_sha256": "ce0282afeb4afbcee8fdef1c6f937844ef569cabf16ba7909e22bf86b1096e92",
+    "search_core_sha256": "de4c5f58edb2bbad68a7c502f44439c953f42efb235248d12fa9b330927af487",
+    "ranking_version": "shared-search-3.3.0",
+    "search_index_version": 6
+  },
+  "status": "candidate_availability_only_not_relevance_acceptance",
+  "categories": {
+    "animals": {
+      "total_queries": 10,
+      "nonempty_queries": 6,
+      "total_concepts": 5,
+      "concepts_nonempty_in_both_languages": 3,
+      "independent_relevance_accepted": null
+    },
+    "cells": {
+      "total_queries": 10,
+      "nonempty_queries": 10,
+      "total_concepts": 5,
+      "concepts_nonempty_in_both_languages": 5,
+      "independent_relevance_accepted": null
+    },
+    "clinical_workflow": {
+      "total_queries": 10,
+      "nonempty_queries": 2,
+      "total_concepts": 5,
+      "concepts_nonempty_in_both_languages": 1,
+      "independent_relevance_accepted": null
+    },
+    "experimental_actions": {
+      "total_queries": 10,
+      "nonempty_queries": 4,
+      "total_concepts": 5,
+      "concepts_nonempty_in_both_languages": 2,
+      "independent_relevance_accepted": null
+    },
+    "lab_equipment": {
+      "total_queries": 10,
+      "nonempty_queries": 10,
+      "total_concepts": 5,
+      "concepts_nonempty_in_both_languages": 5,
+      "independent_relevance_accepted": null
+    },
+    "microbes": {
+      "total_queries": 10,
+      "nonempty_queries": 10,
+      "total_concepts": 5,
+      "concepts_nonempty_in_both_languages": 5,
+      "independent_relevance_accepted": null
+    },
+    "molecules": {
+      "total_queries": 10,
+      "nonempty_queries": 9,
+      "total_concepts": 5,
+      "concepts_nonempty_in_both_languages": 4,
+      "independent_relevance_accepted": null
+    },
+    "omics_data": {
+      "total_queries": 10,
+      "nonempty_queries": 6,
+      "total_concepts": 5,
+      "concepts_nonempty_in_both_languages": 3,
+      "independent_relevance_accepted": null
+    },
+    "organelles": {
+      "total_queries": 10,
+      "nonempty_queries": 10,
+      "total_concepts": 5,
+      "concepts_nonempty_in_both_languages": 5,
+      "independent_relevance_accepted": null
+    },
+    "organs": {
+      "total_queries": 10,
+      "nonempty_queries": 9,
+      "total_concepts": 5,
+      "concepts_nonempty_in_both_languages": 4,
+      "independent_relevance_accepted": null
+    },
+    "people": {
+      "total_queries": 10,
+      "nonempty_queries": 8,
+      "total_concepts": 5,
+      "concepts_nonempty_in_both_languages": 4,
+      "independent_relevance_accepted": null
+    },
+    "tissues_vessels": {
+      "total_queries": 10,
+      "nonempty_queries": 6,
+      "total_concepts": 5,
+      "concepts_nonempty_in_both_languages": 3,
+      "independent_relevance_accepted": null
+    }
+  },
+  "concepts_with_empty_queries": [
+    {
+      "concept_id": "animals-fruit-fly",
+      "category": "animals",
+      "missing_languages": [
+        "zh",
+        "en"
+      ],
+      "both_languages_empty": true,
+      "observations": [
+        {
+          "language": "zh",
+          "query": "黑腹果蝇插画",
+          "text_matched_variants": 0,
+          "unknown_conditions": {},
+          "known_or_unknown_filter_rejections_may_overlap": {},
+          "interpretation": "no_text_candidates_needs_source_or_vocabulary_review"
+        },
+        {
+          "language": "en",
+          "query": "Drosophila melanogaster illustration",
+          "text_matched_variants": 9,
+          "unknown_conditions": {
+            "unknown:object": 5
+          },
+          "known_or_unknown_filter_rejections_may_overlap": {
+            "hard_filter:species": 4,
+            "hard_filter:object": 9
+          },
+          "interpretation": "has_text_candidates_but_scientific_or_appearance_evidence_unknown"
+        }
+      ]
+    },
+    {
+      "concept_id": "animals-mouse",
+      "category": "animals",
+      "missing_languages": [
+        "zh",
+        "en"
+      ],
+      "both_languages_empty": true,
+      "observations": [
+        {
+          "language": "zh",
+          "query": "实验小鼠侧视插画",
+          "text_matched_variants": 253,
+          "unknown_conditions": {
+            "unknown:species": 20,
+            "unknown:view": 202,
+            "unknown:object": 144
+          },
+          "known_or_unknown_filter_rejections_may_overlap": {
+            "hard_filter:species": 24,
+            "hard_filter:view": 245,
+            "hard_filter:object": 195
+          },
+          "interpretation": "has_text_candidates_but_scientific_or_appearance_evidence_unknown"
+        },
+        {
+          "language": "en",
+          "query": "laboratory mouse side view illustration",
+          "text_matched_variants": 253,
+          "unknown_conditions": {
+            "unknown:view": 202,
+            "unknown:species": 20,
+            "unknown:object": 144
+          },
+          "known_or_unknown_filter_rejections_may_overlap": {
+            "hard_filter:view": 245,
+            "hard_filter:species": 24,
+            "hard_filter:object": 195
+          },
+          "interpretation": "has_text_candidates_but_scientific_or_appearance_evidence_unknown"
+        }
+      ]
+    },
+    {
+      "concept_id": "clinical_workflow-cohort-followup",
+      "category": "clinical_workflow",
+      "missing_languages": [
+        "zh",
+        "en"
+      ],
+      "both_languages_empty": true,
+      "observations": [
+        {
+          "language": "zh",
+          "query": "队列随访流程素材",
+          "text_matched_variants": 0,
+          "unknown_conditions": {},
+          "known_or_unknown_filter_rejections_may_overlap": {},
+          "interpretation": "no_text_candidates_needs_source_or_vocabulary_review"
+        },
+        {
+          "language": "en",
+          "query": "cohort follow up workflow illustration",
+          "text_matched_variants": 0,
+          "unknown_conditions": {},
+          "known_or_unknown_filter_rejections_may_overlap": {},
+          "interpretation": "no_text_candidates_needs_source_or_vocabulary_review"
+        }
+      ]
+    },
+    {
+      "concept_id": "clinical_workflow-questionnaire",
+      "category": "clinical_workflow",
+      "missing_languages": [
+        "zh",
+        "en"
+      ],
+      "both_languages_empty": true,
+      "observations": [
+        {
+          "language": "zh",
+          "query": "问卷调查素材",
+          "text_matched_variants": 0,
+          "unknown_conditions": {},
+          "known_or_unknown_filter_rejections_may_overlap": {},
+          "interpretation": "no_text_candidates_needs_source_or_vocabulary_review"
+        },
+        {
+          "language": "en",
+          "query": "questionnaire survey illustration",
+          "text_matched_variants": 0,
+          "unknown_conditions": {},
+          "known_or_unknown_filter_rejections_may_overlap": {},
+          "interpretation": "no_text_candidates_needs_source_or_vocabulary_review"
+        }
+      ]
+    },
+    {
+      "concept_id": "clinical_workflow-randomization",
+      "category": "clinical_workflow",
+      "missing_languages": [
+        "zh",
+        "en"
+      ],
+      "both_languages_empty": true,
+      "observations": [
+        {
+          "language": "zh",
+          "query": "随机分组流程素材",
+          "text_matched_variants": 1,
+          "unknown_conditions": {},
+          "known_or_unknown_filter_rejections_may_overlap": {
+            "hard_filter:object": 1,
+            "hard_filter:depiction_kind": 1
+          },
+          "interpretation": "has_text_candidates_but_hard_conditions_not_satisfied"
+        },
+        {
+          "language": "en",
+          "query": "randomization two groups workflow diagram",
+          "text_matched_variants": 1,
+          "unknown_conditions": {},
+          "known_or_unknown_filter_rejections_may_overlap": {
+            "hard_filter:object": 1,
+            "hard_filter:depiction_kind": 1
+          },
+          "interpretation": "has_text_candidates_but_hard_conditions_not_satisfied"
+        }
+      ]
+    },
+    {
+      "concept_id": "clinical_workflow-recruitment",
+      "category": "clinical_workflow",
+      "missing_languages": [
+        "zh",
+        "en"
+      ],
+      "both_languages_empty": true,
+      "observations": [
+        {
+          "language": "zh",
+          "query": "研究参与者招募素材",
+          "text_matched_variants": 0,
+          "unknown_conditions": {},
+          "known_or_unknown_filter_rejections_may_overlap": {},
+          "interpretation": "no_text_candidates_needs_source_or_vocabulary_review"
+        },
+        {
+          "language": "en",
+          "query": "study participant recruitment illustration",
+          "text_matched_variants": 0,
+          "unknown_conditions": {},
+          "known_or_unknown_filter_rejections_may_overlap": {},
+          "interpretation": "no_text_candidates_needs_source_or_vocabulary_review"
+        }
+      ]
+    },
+    {
+      "concept_id": "experimental_actions-cell-culture",
+      "category": "experimental_actions",
+      "missing_languages": [
+        "zh",
+        "en"
+      ],
+      "both_languages_empty": true,
+      "observations": [
+        {
+          "language": "zh",
+          "query": "细胞培养操作示意",
+          "text_matched_variants": 251,
+          "unknown_conditions": {
+            "unknown:object": 83,
+            "unknown:depiction_kind": 83
+          },
+          "known_or_unknown_filter_rejections_may_overlap": {
+            "hard_filter:object": 251,
+            "hard_filter:depiction_kind": 247
+          },
+          "interpretation": "has_text_candidates_but_scientific_or_appearance_evidence_unknown"
+        },
+        {
+          "language": "en",
+          "query": "cell culture procedure illustration",
+          "text_matched_variants": 251,
+          "unknown_conditions": {
+            "unknown:object": 83,
+            "unknown:depiction_kind": 83
+          },
+          "known_or_unknown_filter_rejections_may_overlap": {
+            "hard_filter:object": 251,
+            "hard_filter:depiction_kind": 247
+          },
+          "interpretation": "has_text_candidates_but_scientific_or_appearance_evidence_unknown"
+        }
+      ]
+    },
+    {
+      "concept_id": "experimental_actions-centrifugation",
+      "category": "experimental_actions",
+      "missing_languages": [
+        "zh",
+        "en"
+      ],
+      "both_languages_empty": true,
+      "observations": [
+        {
+          "language": "zh",
+          "query": "离心分离步骤示意",
+          "text_matched_variants": 7,
+          "unknown_conditions": {},
+          "known_or_unknown_filter_rejections_may_overlap": {
+            "hard_filter:object": 7,
+            "hard_filter:depiction_kind": 7
+          },
+          "interpretation": "has_text_candidates_but_hard_conditions_not_satisfied"
+        },
+        {
+          "language": "en",
+          "query": "centrifugation separation workflow illustration",
+          "text_matched_variants": 7,
+          "unknown_conditions": {},
+          "known_or_unknown_filter_rejections_may_overlap": {
+            "hard_filter:object": 7,
+            "hard_filter:depiction_kind": 7
+          },
+          "interpretation": "has_text_candidates_but_hard_conditions_not_satisfied"
+        }
+      ]
+    },
+    {
+      "concept_id": "experimental_actions-mouse-injection",
+      "category": "experimental_actions",
+      "missing_languages": [
+        "zh",
+        "en"
+      ],
+      "both_languages_empty": true,
+      "observations": [
+        {
+          "language": "zh",
+          "query": "小鼠注射实验示意",
+          "text_matched_variants": 0,
+          "unknown_conditions": {},
+          "known_or_unknown_filter_rejections_may_overlap": {},
+          "interpretation": "no_text_candidates_needs_source_or_vocabulary_review"
+        },
+        {
+          "language": "en",
+          "query": "mouse injection experiment illustration",
+          "text_matched_variants": 0,
+          "unknown_conditions": {},
+          "known_or_unknown_filter_rejections_may_overlap": {},
+          "interpretation": "no_text_candidates_needs_source_or_vocabulary_review"
+        }
+      ]
+    },
+    {
+      "concept_id": "molecules-atp",
+      "category": "molecules",
+      "missing_languages": [
+        "zh"
+      ],
+      "both_languages_empty": false,
+      "observations": [
+        {
+          "language": "zh",
+          "query": "ATP分子结构示意",
+          "text_matched_variants": 0,
+          "unknown_conditions": {},
+          "known_or_unknown_filter_rejections_may_overlap": {},
+          "interpretation": "no_text_candidates_needs_source_or_vocabulary_review"
+        }
+      ]
+    },
+    {
+      "concept_id": "omics_data-forest-template",
+      "category": "omics_data",
+      "missing_languages": [
+        "zh",
+        "en"
+      ],
+      "both_languages_empty": true,
+      "observations": [
+        {
+          "language": "zh",
+          "query": "森林图通用构件模板",
+          "text_matched_variants": 0,
+          "unknown_conditions": {},
+          "known_or_unknown_filter_rejections_may_overlap": {},
+          "interpretation": "no_text_candidates_needs_source_or_vocabulary_review"
+        },
+        {
+          "language": "en",
+          "query": "forest plot schematic template",
+          "text_matched_variants": 0,
+          "unknown_conditions": {},
+          "known_or_unknown_filter_rejections_may_overlap": {},
+          "interpretation": "no_text_candidates_needs_source_or_vocabulary_review"
+        }
+      ]
+    },
+    {
+      "concept_id": "omics_data-gene-network",
+      "category": "omics_data",
+      "missing_languages": [
+        "zh",
+        "en"
+      ],
+      "both_languages_empty": true,
+      "observations": [
+        {
+          "language": "zh",
+          "query": "基因网络示意素材",
+          "text_matched_variants": 0,
+          "unknown_conditions": {},
+          "known_or_unknown_filter_rejections_may_overlap": {},
+          "interpretation": "no_text_candidates_needs_source_or_vocabulary_review"
+        },
+        {
+          "language": "en",
+          "query": "gene network schematic illustration",
+          "text_matched_variants": 0,
+          "unknown_conditions": {},
+          "known_or_unknown_filter_rejections_may_overlap": {},
+          "interpretation": "no_text_candidates_needs_source_or_vocabulary_review"
+        }
+      ]
+    },
+    {
+      "concept_id": "organs-lungs",
+      "category": "organs",
+      "missing_languages": [
+        "en"
+      ],
+      "both_languages_empty": false,
+      "observations": [
+        {
+          "language": "en",
+          "query": "human lungs illustration",
+          "text_matched_variants": 66,
+          "unknown_conditions": {
+            "unknown:species": 40,
+            "unknown:object": 53
+          },
+          "known_or_unknown_filter_rejections_may_overlap": {
+            "hard_filter:species": 42,
+            "hard_filter:object": 66
+          },
+          "interpretation": "has_text_candidates_but_scientific_or_appearance_evidence_unknown"
+        }
+      ]
+    },
+    {
+      "concept_id": "people-human-body",
+      "category": "people",
+      "missing_languages": [
+        "zh",
+        "en"
+      ],
+      "both_languages_empty": true,
+      "observations": [
+        {
+          "language": "zh",
+          "query": "人体正面与背面示意",
+          "text_matched_variants": 1846,
+          "unknown_conditions": {
+            "unknown:species": 218,
+            "unknown:view": 992,
+            "unknown:object": 969
+          },
+          "known_or_unknown_filter_rejections_may_overlap": {
+            "hard_filter:species": 336,
+            "hard_filter:view": 1846,
+            "hard_filter:object": 1823
+          },
+          "interpretation": "has_text_candidates_but_scientific_or_appearance_evidence_unknown"
+        },
+        {
+          "language": "en",
+          "query": "human body anterior posterior illustration",
+          "text_matched_variants": 1846,
+          "unknown_conditions": {
+            "unknown:view": 992,
+            "unknown:species": 218,
+            "unknown:object": 969
+          },
+          "known_or_unknown_filter_rejections_may_overlap": {
+            "hard_filter:view": 1846,
+            "hard_filter:species": 336,
+            "hard_filter:object": 1823
+          },
+          "interpretation": "has_text_candidates_but_scientific_or_appearance_evidence_unknown"
+        }
+      ]
+    },
+    {
+      "concept_id": "tissues_vessels-bone-section",
+      "category": "tissues_vessels",
+      "missing_languages": [
+        "zh",
+        "en"
+      ],
+      "both_languages_empty": true,
+      "observations": [
+        {
+          "language": "zh",
+          "query": "骨组织截面插画",
+          "text_matched_variants": 0,
+          "unknown_conditions": {},
+          "known_or_unknown_filter_rejections_may_overlap": {},
+          "interpretation": "no_text_candidates_needs_source_or_vocabulary_review"
+        },
+        {
+          "language": "en",
+          "query": "bone tissue cross section illustration",
+          "text_matched_variants": 7,
+          "unknown_conditions": {
+            "unknown:view": 7,
+            "unknown:object": 6
+          },
+          "known_or_unknown_filter_rejections_may_overlap": {
+            "hard_filter:view": 7,
+            "hard_filter:object": 6
+          },
+          "interpretation": "has_text_candidates_but_scientific_or_appearance_evidence_unknown"
+        }
+      ]
+    },
+    {
+      "concept_id": "tissues_vessels-cartilage",
+      "category": "tissues_vessels",
+      "missing_languages": [
+        "zh",
+        "en"
+      ],
+      "both_languages_empty": true,
+      "observations": [
+        {
+          "language": "zh",
+          "query": "软骨组织示意",
+          "text_matched_variants": 0,
+          "unknown_conditions": {},
+          "known_or_unknown_filter_rejections_may_overlap": {},
+          "interpretation": "no_text_candidates_needs_source_or_vocabulary_review"
+        },
+        {
+          "language": "en",
+          "query": "cartilage tissue illustration",
+          "text_matched_variants": 0,
+          "unknown_conditions": {},
+          "known_or_unknown_filter_rejections_may_overlap": {},
+          "interpretation": "no_text_candidates_needs_source_or_vocabulary_review"
+        }
+      ]
+    }
+  ]
+}
