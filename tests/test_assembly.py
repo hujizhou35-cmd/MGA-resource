@@ -6,6 +6,7 @@ import os
 from pathlib import Path
 import subprocess
 import sys
+import pytest
 
 from mga_resources.catalog import finalize
 
@@ -199,6 +200,88 @@ def test_release_assets_include_every_paginated_page(monkeypatch):
     assert set(assemble.list_release_assets("test/library", "test")) == {"first.receipt.json", "second.receipt.json"}
     assert "--slurp" in calls[1]
     assert calls[1][-1].endswith("assets?per_page=100")
+
+
+def test_review_evidence_uses_full_urls_without_replacing_collection_assets(monkeypatch):
+    old = {"same.png": {"browser_download_url": "https://github.com/r/releases/download/old/same.png",
+                        "digest": "sha256:" + "a" * 64, "size": 1}}
+    new = {"same.png": {"browser_download_url": "https://github.com/r/releases/download/new/same.png",
+                        "digest": "sha256:" + "b" * 64, "size": 2}}
+    calls = []
+    monkeypatch.setattr(assemble, "list_release_assets", lambda repo, tag: calls.append(tag) or new)
+    evidence, tags = assemble.review_evidence_assets("r", "old", old, ["new", "old", "new"])
+    assert tags == ["old", "new"] and calls == ["new"]
+    assert len(evidence) == 2 and old["same.png"]["size"] == 1
+    assert evidence[new["same.png"]["browser_download_url"]]["size"] == 2
+    new["same.png"]["browser_download_url"] = old["same.png"]["browser_download_url"]
+    with pytest.raises(ValueError, match="same immutable URL"):
+        assemble.review_evidence_assets("r", "old", old, ["new"])
+
+
+@pytest.mark.parametrize("output_tag", [None, "qa"])
+def test_assemble_cli_keeps_source_downloads_and_routes_only_outputs(tmp_path, monkeypatch, output_tag):
+    import mga_resources.native_evidence as native
+    import mga_resources.scientific_reviews as science
+    import mga_resources.scope_policy as scope
+    data = tmp_path / "data"
+    data.mkdir()
+    (data / "sources.json").write_text('{"sources": []}')
+    (data / "benchmark.json").write_text('{"queries": []}')
+    raw = b'{"fixture": true}\n'
+    digest = hashlib.sha256(raw).hexdigest()
+    def asset(tag, name):
+        return {"name": name, "browser_download_url": f"https://github.com/r/releases/download/{tag}/{name}",
+                "digest": "sha256:" + digest, "size": len(raw)}
+    old = {name: asset("old", name) for name in ("a.receipt.json", "legacy.json", "legacy.tar.gz")}
+    qa = {"a.receipt.json": asset("qa", "a.receipt.json"), "review.png": asset("qa", "review.png")}
+    publication = {key: {"url": old[name]["browser_download_url"], "sha256": digest, "size_bytes": len(raw)}
+                   for key, name in (("manifest", "legacy.json"), ("archive", "legacy.tar.gz"))}
+    (data / "legacy-publication.json").write_text(json.dumps(publication))
+    calls, proof_sets = [], []
+    def fake_gh(*args):
+        calls.append(args)
+        if args[:2] == ("release", "download"):
+            assert args[2] == "old"
+            directory = Path(args[args.index("--dir") + 1])
+            for i, arg in enumerate(args):
+                if arg == "--pattern":
+                    (directory / args[i + 1]).write_bytes(raw)
+        return ""
+    def fake_finalize(records, output):
+        output.mkdir(exist_ok=True, parents=True)
+        (output / "catalog.jsonl").write_text("\n")
+        return {"catalog_sha256": "c" * 64}
+    def fake_snapshots(incoming, registry, assets):
+        assert assets is old
+        assert set(p.name for p in incoming.iterdir()) == {"a.receipt.json"}
+        return [], [], [], []
+    monkeypatch.setattr(assemble, "ROOT", tmp_path)
+    monkeypatch.setattr(assemble, "gh", fake_gh)
+    monkeypatch.setattr(assemble, "list_release_assets", lambda repo, tag: old if tag == "old" else qa)
+    monkeypatch.setattr(assemble, "assemble_snapshots", fake_snapshots)
+    monkeypatch.setattr(assemble, "finalize", fake_finalize)
+    monkeypatch.setattr(native, "attach_native_evidence", lambda records, *args: (records, {}))
+    monkeypatch.setattr(science, "apply_scientific_reviews",
+                        lambda records, paths, assets: proof_sets.append(assets) or (records, {}))
+    monkeypatch.setattr(scope, "load_scope_policy", lambda **kwargs: {})
+    monkeypatch.setattr(scope, "filter_public_records", lambda records, policy: (records, {}))
+    monkeypatch.setenv("GITHUB_ACTIONS", "true")
+    monkeypatch.setenv("GITHUB_REPOSITORY", "r")
+    monkeypatch.setenv("GITHUB_RUN_ID", "99")
+    monkeypatch.setenv("GITHUB_RUN_ATTEMPT", "1")
+    monkeypatch.delenv("GITHUB_STEP_SUMMARY", raising=False)
+    argv = ["assemble", "--release-tag", "old", "--publish"]
+    if output_tag:
+        argv += ["--publish-tag", output_tag]
+    monkeypatch.setattr(sys, "argv", argv)
+    assemble.main()
+    uploads = [call for call in calls if call[:2] == ("release", "upload")]
+    assert len(uploads) == 1 and uploads[0][2] == (output_tag or "old")
+    assert len(proof_sets[0]) == (len(old) + len(qa) if output_tag else len(old))
+    report = json.loads((tmp_path / "build/assembly/99-1/assembly-99-1.report.json").read_text())
+    assert report["collection_release"] == "old"
+    assert report["release_context"]["publish_tag"] == (output_tag or "old")
+    assert report["acceptance_passed"] is False
 
 
 def test_explicit_scope_exclusion_is_processed_without_becoming_a_download_failure(tmp_path):

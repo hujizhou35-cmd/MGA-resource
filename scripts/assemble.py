@@ -37,6 +37,25 @@ def list_release_assets(repository, tag):
     return {item["name"]: item for page in pages for item in page}
 
 
+def review_evidence_assets(repository, collection_tag, collection_assets, evidence_tags=()):
+    """Keep proof lookup separate from the collection's name-keyed checkpoints.
+
+    Review sheets can live in a later Release. Full URLs prevent a same-named
+    asset in that Release from replacing a collection archive or legacy proof.
+    """
+    tags = list(dict.fromkeys([collection_tag, *evidence_tags]))
+    evidence = {}
+    for tag in tags:
+        assets = collection_assets if tag == collection_tag else list_release_assets(repository, tag)
+        for asset in assets.values():
+            url = asset["browser_download_url"]
+            prior = evidence.get(url)
+            if prior is not None and (prior.get("digest"), prior.get("size")) != (asset.get("digest"), asset.get("size")):
+                raise ValueError("Conflicting review evidence for the same immutable URL")
+            evidence[url] = asset
+    return evidence, tags
+
+
 def _archive_links(record, receipt, asset=None):
     expected_url = (asset or {}).get("browser_download_url") or (
         f"https://github.com/{receipt.get('repository')}/releases/download/"
@@ -375,7 +394,10 @@ def assemble_snapshots(incoming: Path, registry: list, release_assets=None):
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--release-tag", required=True)
+    parser.add_argument("--release-tag", required=True, help="Input collection checkpoints and legacy evidence Release")
+    parser.add_argument("--publish-tag", help="Output catalog Release; defaults to --release-tag")
+    parser.add_argument("--evidence-release-tag", action="append", default=[],
+                        help="Additional scientific/scope review evidence Release; repeat as needed")
     parser.add_argument("--publish", action="store_true")
     args = parser.parse_args()
     if os.environ.get("GITHUB_ACTIONS") != "true":
@@ -385,7 +407,10 @@ def main():
     incoming, output = base / "metadata", base / "catalog"
     incoming.mkdir(parents=True, exist_ok=True)
     repository = os.environ["GITHUB_REPOSITORY"]
+    publish_tag = args.publish_tag or args.release_tag
     assets = list_release_assets(repository, args.release_tag)
+    evidence_assets, evidence_tags = review_evidence_assets(
+        repository, args.release_tag, assets, [publish_tag, *args.evidence_release_tag])
     # Fetch metadata only; no tar, original image, preview or review sheet.
     selected = sorted(name for name in assets if not name.startswith("assembly-") and name.endswith(
         (".report.json", ".receipt.json", ".records.jsonl", ".failures.json", ".discovery.jsonl")))
@@ -428,9 +453,9 @@ def main():
         records, ROOT / "data/legacy-illustrator-verification.json", publication_path, incoming / manifest_name)
     from mga_resources.scientific_reviews import apply_scientific_reviews, finalized_scientific_review_counts
     records, scientific_review_report = apply_scientific_reviews(
-        records, (ROOT / "data/visual-reviews").glob("*.json"), assets)
+        records, (ROOT / "data/visual-reviews").glob("*.json"), evidence_assets)
     from mga_resources.scope_policy import load_scope_policy, filter_public_records, write_internal_catalog
-    scope_policy = load_scope_policy(release_assets=assets)
+    scope_policy = load_scope_policy(release_assets=evidence_assets)
     internal_catalog = write_internal_catalog(records, output / "internal-catalog.jsonl")
     public_records, scope_report = filter_public_records(records, scope_policy)
     summary = finalize(public_records, output)
@@ -447,6 +472,8 @@ def main():
     (output / "retrieval-candidates.json").write_text(json.dumps(results, ensure_ascii=False, indent=2), encoding="utf-8")
     report = {"assembled_at": datetime.now(timezone.utc).isoformat(), "run_id": run_id,
               "collection_release": args.release_tag, "summary": summary,
+              "release_context": {"collection_release_tag": args.release_tag,
+                                  "evidence_release_tags": evidence_tags, "publish_tag": publish_tag},
               "source_snapshots": acquisition, "legacy_checkpoints": legacy,
               "metadata_enrichments": enrichments,
               "historical_native_evidence": native_evidence_report,
@@ -463,11 +490,12 @@ def main():
         path.replace(target)
         uploads.append(target)
     if args.publish:
-        gh("release", "upload", args.release_tag, *map(str, uploads))
+        gh("release", "upload", publish_tag, "--repo", repository, *map(str, uploads))
     print(json.dumps(report, ensure_ascii=False), flush=True)
     if os.environ.get("GITHUB_STEP_SUMMARY"):
         with open(os.environ["GITHUB_STEP_SUMMARY"], "a", encoding="utf-8") as stream:
             stream.write("## Global cloud catalog\n\n")
+            stream.write(f"Collection input: {args.release_tag}. Catalog output: {publish_tag}.\n\n")
             stream.write(f"Sources selected: {len(acquisition)}. Retrieval queries prepared: {len(results)}.\n\n")
             stream.write(f"Outstanding primary sources: {', '.join(outstanding) or 'none'}.\n\n")
             stream.write("Visual judgments are pending. The website implementation gate remains closed.\n")

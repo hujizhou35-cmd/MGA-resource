@@ -3,8 +3,16 @@ on:
   workflow_dispatch:
     inputs:
       release_tag:
-        description: Collection release
+        description: Input assembly metadata Release (can differ from the archive Release)
         default: collection-20261106
+        type: string
+      archive_release_tag:
+        description: Existing original/preview archive Release; URLs are preserved
+        default: collection-20261106
+        type: string
+      publish_tag:
+        description: Existing Release for output catalog and resumable caches
+        default: acceptance-20261107
         type: string
       assembly_prefix:
         description: Exact assembly-RUN-ATTEMPT input prefix
@@ -13,7 +21,7 @@ on:
 permissions:
   contents: write
 concurrency:
-  group: appearance-${{ inputs.release_tag }}
+  group: appearance-${{ inputs.publish_tag || inputs.release_tag }}
   cancel-in-progress: false
 jobs:
   appearance:
@@ -32,5 +40,10 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
           COLLECTION_TAG: ${{ inputs.release_tag }}
+          ARCHIVE_TAG: ${{ inputs.archive_release_tag }}
+          PUBLISH_TAG: ${{ inputs.publish_tag }}
           ASSEMBLY_PREFIX: ${{ inputs.assembly_prefix }}
-        run: python scripts/backfill_appearance.py --release-tag "$COLLECTION_TAG" --assembly-prefix "$ASSEMBLY_PREFIX" --budget-minutes 50 --publish
+        run: |
+          extra=()
+          if [ -n "$ARCHIVE_TAG" ]; then extra+=(--archive-release-tag "$ARCHIVE_TAG"); fi
+          python scripts/backfill_appearance.py --release-tag "$COLLECTION_TAG" --publish-tag "$PUBLISH_TAG" "${extra[@]}" --assembly-prefix "$ASSEMBLY_PREFIX" --budget-minutes 50 --publish

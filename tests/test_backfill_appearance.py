@@ -7,6 +7,7 @@ import json
 import os
 from pathlib import Path
 import subprocess
+import sqlite3
 import sys
 import tarfile
 
@@ -271,6 +272,105 @@ def test_verified_aggregate_skips_only_its_own_checkpoint_fallbacks():
         'appearance-10-1-b0000.appearance.jsonl']
 
 
+def test_cache_candidates_keep_same_names_in_different_releases_separate():
+    aggregate, checkpoint = 'appearance-20-1.appearance.jsonl', 'appearance-20-1-b0000.appearance.jsonl'
+    releases = {'old': {aggregate: {'updated_at': '2026-01-01'}, checkpoint: {}},
+                'qa': {aggregate: {'updated_at': '2026-02-01'}, checkpoint: {}}}
+    accepted, skipped = set(), []
+    candidates = backfill.release_cache_candidates(releases, accepted, skipped)
+    tag, name, _, run, final = next(candidates)
+    assert (tag, name, run, final) == ('qa', aggregate, ('qa', 'appearance-20-1'), True)
+    accepted.add(run)
+    remaining = list(candidates)
+    assert [(row[0], row[1]) for row in remaining] == [('old', aggregate), ('old', checkpoint)]
+    assert skipped == [{'release_tag': 'qa', 'asset': checkpoint}]
+
+
+def test_cross_release_context_keeps_archive_urls_and_reuses_output_caches(monkeypatch):
+    monkeypatch.syspath_prepend(str(ROOT / 'scripts'))
+    import assemble as assembly_script
+    def asset(tag, name):
+        return {'browser_download_url': f'https://github.com/r/releases/download/{tag}/{name}',
+                'digest': 'sha256:' + ('a' if tag == 'old' else 'b') * 64, 'size': 1}
+    releases = {'metadata': {'assembly-1-1.catalog.jsonl': asset('metadata', 'assembly-1-1.catalog.jsonl')},
+                'old': {'batch.tar.gz': asset('old', 'batch.tar.gz')},
+                'qa': {'appearance-2-1.appearance.jsonl': asset('qa', 'appearance-2-1.appearance.jsonl')}}
+    calls = []
+    monkeypatch.setattr(assembly_script, 'list_release_assets', lambda repo, tag: calls.append(tag) or releases[tag])
+    metadata, manifest, caches, binding = backfill.load_release_context('r', 'metadata', ['old', 'old'], 'qa')
+    assert metadata is releases['metadata']
+    assert list(manifest) == ['https://github.com/r/releases/download/old/batch.tar.gz']
+    assert calls == ['metadata', 'old', 'qa']
+    assert caches['qa'] is releases['qa'] and binding['publish_tag'] == 'qa'
+    assert binding['archive_release_tags'] == ['metadata', 'old']
+    calls.clear()
+    _, _, _, old_binding = backfill.load_release_context('r', 'old')
+    assert calls == ['old'] and old_binding['publish_tag'] == 'old'
+
+
+@pytest.mark.parametrize('publish_tag', [None, 'qa'])
+def test_backfill_cli_routes_checkpoint_and_final_uploads_only(tmp_path, monkeypatch, publish_tag):
+    monkeypatch.syspath_prepend(str(ROOT / 'scripts'))
+    import assemble as assembly_script
+    raw_catalog = b'\n'
+    digest = backfill.sha(raw_catalog)
+    sqlite_path = tmp_path / 'fixture.sqlite'
+    with sqlite3.connect(sqlite_path) as db:
+        db.execute('CREATE TABLE index_metadata (key TEXT,value TEXT)')
+        db.execute('INSERT INTO index_metadata VALUES (?,?)', ('catalog_version', digest))
+    inputs = {'assembly-1-1.catalog.jsonl': raw_catalog,
+              'assembly-1-1.catalog.sqlite': sqlite_path.read_bytes(),
+              'assembly-1-1.report.json': json.dumps({'summary': {'catalog_sha256': digest},
+                                                     'collection_release': 'old'}).encode()}
+    def asset(tag, name, raw=b'archive-proof-only'):
+        return {'browser_download_url': f'https://github.com/r/releases/download/{tag}/{name}',
+                'size': len(raw), 'digest': 'sha256:' + backfill.sha(raw)}
+    releases = {'metadata': {name: asset('metadata', name, raw) for name, raw in inputs.items()},
+                'old': {'batch.tar.gz': asset('old', 'batch.tar.gz')}, 'qa': {}}
+    calls = []
+    def fake_gh(*args):
+        calls.append(args)
+        if args[:2] == ('release', 'download'):
+            assert args[2] == 'metadata'
+            filename = args[args.index('--pattern') + 1]
+            (Path(args[args.index('--dir') + 1]) / filename).write_bytes(inputs[filename])
+        return ''
+    def fake_backfill(records, manifest, **kwargs):
+        assert list(manifest) == ['https://github.com/r/releases/download/old/batch.tar.gz']
+        kwargs['checkpoint']([], {'pending_jobs': 0, 'status': 'complete'})
+        return [], [], {'measured_file_entries': 0, 'pending_file_entries': 0,
+                        'cache_reused_jobs': 0, 'newly_measured_jobs': 0}
+    def fake_publish(records, output, parent, **kwargs):
+        assert parent['collection_release'] == 'old'
+        assert kwargs['parent_assembly']['release_tag'] == 'metadata'
+        output.mkdir(parents=True, exist_ok=True)
+        report = {**parent, 'release_context': kwargs['release_context'], 'acceptance_passed': False}
+        backfill.write_json(output / 'report.json', report)
+        return report
+    monkeypatch.setattr(backfill, 'ROOT', tmp_path)
+    monkeypatch.setattr(backfill, 'gh', fake_gh)
+    monkeypatch.setattr(backfill, 'run_backfill', fake_backfill)
+    monkeypatch.setattr(backfill, 'publish_catalog', fake_publish)
+    monkeypatch.setattr(backfill, 'load_overrides', lambda path: [])
+    monkeypatch.setattr(assembly_script, 'list_release_assets', lambda repo, tag: releases[tag])
+    monkeypatch.setenv('GITHUB_ACTIONS', 'true')
+    monkeypatch.setenv('GITHUB_REPOSITORY', 'r')
+    monkeypatch.setenv('GITHUB_RUN_ID', '99')
+    monkeypatch.setenv('GITHUB_RUN_ATTEMPT', '1')
+    monkeypatch.delenv('GITHUB_STEP_SUMMARY', raising=False)
+    argv = ['backfill', '--release-tag', 'metadata', '--archive-release-tag', 'old',
+            '--assembly-prefix', 'assembly-1-1', '--publish']
+    if publish_tag:
+        argv += ['--publish-tag', publish_tag]
+    monkeypatch.setattr(sys, 'argv', argv)
+    backfill.main()
+    uploads = [call for call in calls if call[:2] == ('release', 'upload')]
+    assert len(uploads) == 2 and all(call[2] == (publish_tag or 'metadata') for call in uploads)
+    receipt = json.loads((tmp_path / 'build/appearance/99-1/appearance-99-1-b0000.checkpoint.json').read_text())
+    assert receipt['release_context']['archive_release_tags'] == ['metadata', 'old']
+    assert receipt['release_context']['publish_tag'] == (publish_tag or 'metadata')
+
+
 def test_metadata_download_requires_github_digest(tmp_path, monkeypatch):
     raw = b'{"metadata":"fixture"}'
     def fake_gh(*args):
@@ -294,9 +394,11 @@ def test_new_assembly_preserves_source_evidence_and_closes_acceptance(tmp_path):
               'acceptance_passed': True, 'retrieval_pass_rate': 1, 'visually_judged_queries': 120}
     before = copy.deepcopy(parent)
     output = tmp_path / 'catalog'
+    bindings = {'metadata_release_tag': 'metadata', 'archive_release_tags': ['test'], 'publish_tag': 'qa'}
     report = backfill.publish_catalog(records, output, parent, parent_assembly={'prefix': 'assembly-1-1'},
-                                     appearance_summary=summary, run_id='2-1')
+                                     appearance_summary=summary, run_id='2-1', release_context=bindings)
     assert parent == before and report['source_snapshots'] == parent['source_snapshots']
+    assert report['collection_release'] == 'test' and report['release_context'] == bindings
     assert report['historical_native_evidence'] == parent['historical_native_evidence']
     assert report['acceptance_passed'] is False and report['retrieval_pass_rate'] is None
     assert report['visually_judged_queries'] == 0 and report['parent_assembly']['prefix'] == 'assembly-1-1'

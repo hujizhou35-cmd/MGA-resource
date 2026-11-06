@@ -93,6 +93,37 @@ def prior_cache_candidates(assets, verified_aggregates, skipped):
             yield name, asset, run, name == aggregate
 
 
+def release_cache_candidates(releases, verified_aggregates, skipped):
+    """Retain the owning Release when selecting caches with colliding names."""
+    ordered = sorted(releases, key=lambda tag: max(
+        (asset.get("updated_at", "") for name, asset in releases[tag].items()
+         if CACHE_PATTERN.fullmatch(name)), default=""), reverse=True)
+    for tag in ordered:
+        accepted, local_skipped = set(), []
+        for name, asset, run, aggregate in prior_cache_candidates(releases[tag], accepted, local_skipped):
+            yield tag, name, asset, (tag, run), aggregate
+            if (tag, run) in verified_aggregates:
+                accepted.add(run)
+        skipped.extend({"release_tag": tag, "asset": name} for name in local_skipped)
+
+
+def load_release_context(repository, metadata_tag, archive_tags=(), publish_tag=None):
+    """Resolve inputs without moving immutable original or preview URLs."""
+    from assemble import list_release_assets
+    from review_releases import load_review_inputs
+    releases = {}
+    def listing(repo, tag):
+        if tag not in releases:
+            releases[tag] = list_release_assets(repo, tag)
+        return releases[tag]
+    assets, manifest, tags = load_review_inputs(repository, metadata_tag, archive_tags, list_assets=listing)
+    output_tag = publish_tag or metadata_tag
+    listing(repository, output_tag)  # Continuation caches may be in the output Release.
+    bindings = {"metadata_release_tag": metadata_tag, "archive_release_tags": tags,
+                "cache_release_tags": list(releases), "publish_tag": output_tag}
+    return assets, manifest, releases, bindings
+
+
 def source_style_evidence(record, file):
     """Use exact file-level source labels; never label an entire library style."""
     digest = file.get("sha256")
@@ -442,7 +473,8 @@ def download_checked(filename, asset, incoming, repository, release_tag):
     return path
 
 
-def publish_catalog(records, output, parent_report, *, parent_assembly, appearance_summary, run_id):
+def publish_catalog(records, output, parent_report, *, parent_assembly, appearance_summary, run_id,
+                    release_context=None):
     summary = finalize(records, output)
     report = copy.deepcopy(parent_report)
     report.update(assembled_at=datetime.now(timezone.utc).isoformat(), run_id=run_id,
@@ -451,6 +483,8 @@ def publish_catalog(records, output, parent_report, *, parent_assembly, appearan
                   retrieval_pass_rate=None, acceptance_passed=False, collection_complete=False,
                   visual_acceptance="pending_after_appearance_rebuild", illustrator_verified=False,
                   website_gate="closed_pending_collection_and_acceptance")
+    if release_context is not None:
+        report["release_context"] = copy.deepcopy(release_context)
     if isinstance(report.get("public_scope"), dict):
         scope = report["public_scope"]
         scope["parent_public_catalog_sha256"] = scope.get("public_catalog_sha256")
@@ -465,7 +499,12 @@ def publish_catalog(records, output, parent_report, *, parent_assembly, appearan
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--release-tag", required=True)
+    # These imports do not list or download assets; the cloud-only guard below
+    # still runs before any network or filesystem acquisition.
+    sys.path.insert(0, str(Path(__file__).resolve().parent))
+    from review_releases import add_release_options
+    parser.add_argument("--release-tag", required=True, help="Release containing the input assembly metadata")
+    add_release_options(parser)
     parser.add_argument("--assembly-prefix", required=True)
     parser.add_argument("--budget-minutes", type=int, default=50)
     parser.add_argument("--publish", action="store_true")
@@ -476,13 +515,14 @@ def main():
         parser.error("Use exact assembly-RUN-ATTEMPT and a 1–52 minute measurement budget")
     deadline = time.monotonic() + args.budget_minutes * 60
     sys.path.insert(0, str(ROOT / "scripts"))
-    from assemble import list_release_assets
     repository = os.environ["GITHUB_REPOSITORY"]
     run_id = os.environ["GITHUB_RUN_ID"] + "-" + os.environ.get("GITHUB_RUN_ATTEMPT", "1")
     base = ROOT / "build" / "appearance" / run_id
     incoming, output = base / "metadata", base / "catalog"
     incoming.mkdir(parents=True, exist_ok=True)
-    assets = list_release_assets(repository, args.release_tag)
+    assets, manifest, releases, bindings = load_release_context(
+        repository, args.release_tag, args.archive_release_tag, args.publish_tag)
+    publish_tag = bindings["publish_tag"]
     paths = {}
     for suffix in ("catalog.jsonl", "catalog.sqlite", "report.json"):
         name = f"{args.assembly_prefix}.{suffix}"
@@ -500,29 +540,32 @@ def main():
             if not row or row[0] != catalog_digest:
                 raise ValueError("Parent SQLite index and catalog disagree")
     records = read_jsonl(paths["catalog.jsonl"])
-    manifest = {asset["browser_download_url"]: asset for name, asset in assets.items() if name.endswith(".tar.gz")}
     overrides = load_overrides(ROOT / "data/appearance_overrides.json")
     jobs, _, _ = plan_jobs(records, manifest, overrides)
-    cached, cache_assets_read, cache_errors = {}, [], []
+    cached, cache_assets_read, cache_asset_sources, cache_errors = {}, [], [], []
     verified_aggregates, skipped_checkpoints = set(), []
     # A newest aggregate cache often covers everything. Older checkpoint caches
     # are downloaded only while required keys remain unmatched.
-    prior = prior_cache_candidates(assets, verified_aggregates, skipped_checkpoints)
-    for name, asset, cache_run, is_aggregate in prior:
+    prior = release_cache_candidates(releases, verified_aggregates, skipped_checkpoints)
+    for tag, name, asset, cache_run, is_aggregate in prior:
         if len(cached) == len(jobs) or time.monotonic() + 120 >= deadline:
             break
         try:
-            path = download_checked(name, asset, incoming, repository, args.release_tag)
+            cache_dir = incoming / ("cache-" + sha(tag.encode())[:16])
+            cache_dir.mkdir(exist_ok=True)
+            path = download_checked(name, asset, cache_dir, repository, tag)
             cache_input_rows = read_jsonl(path)
             for row in cache_input_rows:
                 job = jobs.get(row.get("cache_key")) if isinstance(row, dict) else None
                 if job and job["cache_key"] not in cached and reusable_cache(row, job, manifest):
                     cached[job["cache_key"]] = row
             cache_assets_read.append(name)
+            cache_asset_sources.append({"release_tag": tag, "asset": name,
+                                        "url": asset["browser_download_url"], "digest": asset["digest"]})
             if is_aggregate:
                 verified_aggregates.add(cache_run)
         except (OSError, ValueError, RuntimeError, subprocess.SubprocessError) as exc:
-            cache_errors.append({"asset": name, "error": str(exc)})
+            cache_errors.append({"release_tag": tag, "asset": name, "error": str(exc)})
     checkpoint_index = 0
     def checkpoint(rows, report):
         nonlocal checkpoint_index
@@ -532,22 +575,24 @@ def main():
         receipt = base / f"{prefix}.checkpoint.json"
         write_jsonl(cache_path, rows)
         write_json(receipt, {"schema_version": 1, "run_id": run_id, "parent_assembly": args.assembly_prefix,
+                            "release_context": bindings,
                             "analysis_version": ANALYSIS_VERSION, "archive": report,
                             "cache_file": cache_path.name, "cache_sha256": sha(cache_path.read_bytes()),
                             "completed_jobs": len(rows), "acceptance_passed": False})
         if args.publish:
-            gh("release", "upload", args.release_tag, "--repo", repository, str(cache_path), str(receipt))
+            gh("release", "upload", publish_tag, "--repo", repository, str(cache_path), str(receipt))
         print(json.dumps({"checkpoint": prefix, "completed": len(rows), "pending": report["pending_jobs"],
                           "status": report["status"]}), flush=True)
     enriched, cache_rows, summary = run_backfill(records, manifest, overrides=overrides,
         cached_rows=cached.values(), deadline=deadline, checkpoint=checkpoint)
-    summary.update(cache_assets_read=cache_assets_read, rejected_cache_assets=cache_errors,
+    summary.update(cache_assets_read=cache_assets_read, cache_asset_sources=cache_asset_sources,
+                   rejected_cache_assets=cache_errors,
                    cache_checkpoints_covered_by_verified_aggregate=skipped_checkpoints,
                    safe_budget_minutes=args.budget_minutes, original_catalog_sha256=catalog_digest)
     parent = {"prefix": args.assembly_prefix, "catalog_sha256": catalog_digest,
               "report_sha256": sha(paths["report.json"].read_bytes()), "release_tag": args.release_tag}
     report = publish_catalog(enriched, output, parent_report, parent_assembly=parent,
-                             appearance_summary=summary, run_id=run_id)
+                             appearance_summary=summary, run_id=run_id, release_context=bindings)
     aggregate = base / f"appearance-{run_id}.appearance.jsonl"
     write_jsonl(aggregate, cache_rows)
     uploads = [aggregate]
@@ -556,12 +601,13 @@ def main():
         path.replace(target)
         uploads.append(target)
     if args.publish:
-        gh("release", "upload", args.release_tag, "--repo", repository, *map(str, uploads))
+        gh("release", "upload", publish_tag, "--repo", repository, *map(str, uploads))
     print(json.dumps({"assembly_prefix": f"assembly-{run_id}", "appearance": summary,
                       "acceptance_passed": report["acceptance_passed"]}, ensure_ascii=False), flush=True)
     if os.environ.get("GITHUB_STEP_SUMMARY"):
         with open(os.environ["GITHUB_STEP_SUMMARY"], "a", encoding="utf-8") as stream:
             stream.write(f"## Appearance backfill\n\nOutput: assembly-{run_id}.\n\n"
+                         f"Metadata input: {args.release_tag}. Output Release: {publish_tag}.\n\n"
                          f"Measured file entries: {summary['measured_file_entries']}; pending: {summary['pending_file_entries']}. "
                          f"Reused jobs: {summary['cache_reused_jobs']}; newly measured: {summary['newly_measured_jobs']}.\n\n"
                          "Archive checkpoints and immutable caches support continuation. Visual acceptance remains pending.\n")

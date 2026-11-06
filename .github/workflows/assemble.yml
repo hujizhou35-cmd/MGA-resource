@@ -3,8 +3,16 @@ on:
   workflow_dispatch:
     inputs:
       release_tag:
-        description: 'Collection release to assemble'
+        description: 'Input collection checkpoints and original archives (not output)'
         default: 'collection-20261106'
+        type: string
+      publish_tag:
+        description: 'Existing Release for new catalog outputs; also checked for review evidence'
+        default: 'acceptance-20261107'
+        type: string
+      evidence_release_tag:
+        description: 'Additional existing scientific/scope review evidence Release'
+        default: 'acceptance-20261107'
         type: string
 permissions:
   contents: write
@@ -28,4 +36,9 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
           COLLECTION_TAG: ${{ inputs.release_tag }}
-        run: python scripts/assemble.py --release-tag "$COLLECTION_TAG" --publish
+          PUBLISH_TAG: ${{ inputs.publish_tag }}
+          EVIDENCE_TAG: ${{ inputs.evidence_release_tag }}
+        run: |
+          extra=()
+          if [ -n "$EVIDENCE_TAG" ]; then extra+=(--evidence-release-tag "$EVIDENCE_TAG"); fi
+          python scripts/assemble.py --release-tag "$COLLECTION_TAG" --publish-tag "$PUBLISH_TAG" "${extra[@]}" --publish
