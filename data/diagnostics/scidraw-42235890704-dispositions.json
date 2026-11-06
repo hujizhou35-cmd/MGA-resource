@@ -1,0 +1,68 @@
+{
+  "source": "scidraw",
+  "run_id": "42235890704-1",
+  "verified_at": "2026-11-07",
+  "metadata_sha256_verified": true,
+  "failed": 35,
+  "repair_candidates": 31,
+  "quarantined": [
+    {
+      "source": "scidraw",
+      "source_id": "2042cc2c-9fa9-4330-abb8-e5850bf9e479",
+      "source_index": 368,
+      "url": "https://scidraw.io/files/sleep_EEG_EMG.svg",
+      "error_type": "MediaValidationError",
+      "error": "SVG loads an external or unsupported resource via image/href",
+      "disposition": "quarantine",
+      "diagnosis": "Missing external PNG dependencies 52BF527C94D97CF0.png and F5A6EC0173BD83DA.png; source is not self-contained.",
+      "single_file_text_inspected": true
+    },
+    {
+      "source": "scidraw",
+      "source_id": "c4b59809-7b67-4c1b-802c-88c844b26a07",
+      "source_index": 434,
+      "url": "https://scidraw.io/files/reef_fish_retina.svg",
+      "error_type": "MediaValidationError",
+      "error": "SVG XML could not be safely parsed: junk after document element: line 289, column 6",
+      "disposition": "quarantine",
+      "diagnosis": "Malformed source has SVG close tag followed by partial path data and a second close tag; do not truncate and claim complete art.",
+      "single_file_text_inspected": true
+    },
+    {
+      "source": "scidraw",
+      "source_id": "27372785-fec3-4e6f-8c67-cd3f6030928f",
+      "source_index": 518,
+      "url": "https://scidraw.io/files/shark_retina.svg",
+      "error_type": "MediaValidationError",
+      "error": "SVG XML could not be safely parsed: not well-formed (invalid token): line 9, column 6",
+      "disposition": "quarantine",
+      "diagnosis": "Malformed source has 29,571 NUL bytes after an initial mostly blank SVG, then orphaned path fragments and another closing SVG tag.",
+      "single_file_text_inspected": true
+    },
+    {
+      "source": "scidraw",
+      "source_id": "92d035d1-66d5-46af-b87c-37d7252c4c77",
+      "source_index": 586,
+      "url": "https://scidraw.io/files/Npulcher.svg",
+      "error_type": "MediaValidationError",
+      "error": "SVG loads an external or unsupported resource via image/href",
+      "disposition": "quarantine",
+      "diagnosis": "References author local Windows path D:\\PhD Roger\\Images\\Transponders\\anatomy.jpg; image not embedded.",
+      "single_file_text_inspected": true
+    }
+  ],
+  "stored_preview_issue": {
+    "source_index": 44,
+    "source_id": "4ac6a744-08db-4f7e-a71e-6d3f199e0b39",
+    "title": "DNA",
+    "sha256": "f3097e6230478dfae5be24d5d6cd21e0e90f7935a7ea5b5d583457dd89f993fc",
+    "archive": {
+      "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scidraw-42235890704-1-b0000.tar.gz",
+      "member": "files/f3/f3097e6230478dfae5be24d5d6cd21e0e90f7935a7ea5b5d583457dd89f993fc.svg"
+    },
+    "issue": "SVG text has null fill-opacity/stroke-opacity/stroke-dasharray attributes that fail CairoSVG numeric parsing.",
+    "action": "Already acquired: reuse this cloud original if preview repair is implemented; exclude from all source-download selections.",
+    "source_download_requested": false
+  },
+  "plan": "data/collection-plans/scidraw-incremental-20261107.json"
+}

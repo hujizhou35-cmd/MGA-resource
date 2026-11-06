@@ -1,0 +1,143 @@
+{
+  "source": "nih-bioart",
+  "verified_at": "2026-11-07",
+  "source_runs": [
+    "42236561214-1",
+    "42248095929-1"
+  ],
+  "expected_discovery_sha256": "282b9201bcd1da91999a34ce94fbe20b973ba37bcfa8c67433c8f3efeddfbb01",
+  "ordered_source_ids_sha256": "bec58b63512fb9c4724d612bf9dd53d40df5fb53e6010251a5f2cf8ea7e5ba56",
+  "inventory_count": 958,
+  "existing_acquired_records": 934,
+  "previously_excluded_brush_records": 20,
+  "proposed_metadata_only_exclusions": [
+    {
+      "source_index": 236,
+      "source_id": "240",
+      "title": "Human Skin Cell Swatch",
+      "upstream_revision": "2024-10-18T20:41:12.87Z",
+      "image_type": "Swatch",
+      "captured_supported_files": [],
+      "proposed_disposition": "excluded",
+      "reason": "swatch_preset_without_svg_or_png_illustration",
+      "evidence_url": "https://bioart.niaid.nih.gov/bioart/240",
+      "action": "Metadata-only scope disposition against this verified existing discovery; do not download a thumbnail or fabricate a successful original."
+    },
+    {
+      "source_index": 253,
+      "source_id": "257",
+      "title": "Insect Saliva Swatch",
+      "upstream_revision": "2024-10-07T20:40:02.87Z",
+      "image_type": "Swatch",
+      "captured_supported_files": [],
+      "proposed_disposition": "excluded",
+      "reason": "swatch_preset_without_svg_or_png_illustration",
+      "evidence_url": "https://bioart.niaid.nih.gov/bioart/257",
+      "action": "Metadata-only scope disposition against this verified existing discovery; do not download a thumbnail or fabricate a successful original."
+    },
+    {
+      "source_index": 493,
+      "source_id": "499",
+      "title": "Squamous Cell Swatch",
+      "upstream_revision": "2024-10-07T20:58:08.933Z",
+      "image_type": "Swatch",
+      "captured_supported_files": [],
+      "proposed_disposition": "excluded",
+      "reason": "swatch_preset_without_svg_or_png_illustration",
+      "evidence_url": "https://bioart.niaid.nih.gov/bioart/499",
+      "action": "Metadata-only scope disposition against this verified existing discovery; do not download a thumbnail or fabricate a successful original."
+    },
+    {
+      "source_index": 633,
+      "source_id": "641",
+      "title": "Scientific Poster",
+      "upstream_revision": "2025-08-01T15:28:28.986Z",
+      "image_type": "Templates",
+      "captured_supported_files": [],
+      "proposed_disposition": "excluded",
+      "reason": "poster_document_template_without_svg_or_png_illustration",
+      "evidence_url": "https://bioart.niaid.nih.gov/bioart/641",
+      "action": "Metadata-only scope disposition against this verified existing discovery; do not download a thumbnail or fabricate a successful original."
+    }
+  ],
+  "missing_variant": {
+    "source_index": 679,
+    "source_id": "689",
+    "title": "Point-of-Care MRI System",
+    "url": "https://bioart.niaid.nih.gov/api/bioarts/689/files/782376",
+    "format": "svg",
+    "cloud_observation": "The bounded download returned an empty source; no usable artwork was obtained.",
+    "current_live_recheck": "Local HTTPS probes failed during TLS handshake; no claim that current bytes were rechecked. This was not an HTTP 403.",
+    "disposition": "quarantine_failed_variant_keep_five_existing_variants",
+    "stored_variants": [
+      {
+        "url": "https://bioart.niaid.nih.gov/api/bioarts/689/files/782366",
+        "format": "png",
+        "sha256": "822d5dd4182b0cd3a3d2dbcc986ebf5b66bda6f851ab87f409f8ded2b3a2e2bc",
+        "size_bytes": 359089,
+        "archive": {
+          "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/nih-bioart-42236561214-1-b0001.tar.gz",
+          "member": "files/82/822d5dd4182b0cd3a3d2dbcc986ebf5b66bda6f851ab87f409f8ded2b3a2e2bc.png"
+        },
+        "validation": "machine_checked_and_rendered"
+      },
+      {
+        "url": "https://bioart.niaid.nih.gov/api/bioarts/689/files/782371",
+        "format": "png",
+        "sha256": "aa6452ee0dff2f2f6c1fdf279826a3b5ab8abe6fb41d296553ae2c007109d468",
+        "size_bytes": 324743,
+        "archive": {
+          "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/nih-bioart-42236561214-1-b0001.tar.gz",
+          "member": "files/aa/aa6452ee0dff2f2f6c1fdf279826a3b5ab8abe6fb41d296553ae2c007109d468.png"
+        },
+        "validation": "machine_checked_and_rendered"
+      },
+      {
+        "url": "https://bioart.niaid.nih.gov/api/bioarts/689/files/782375",
+        "format": "png",
+        "sha256": "cfa97c78e570e893814227f50554ef1135420f08e5fa608d5a07655b70e1005f",
+        "size_bytes": 315233,
+        "archive": {
+          "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/nih-bioart-42236561214-1-b0001.tar.gz",
+          "member": "files/cf/cfa97c78e570e893814227f50554ef1135420f08e5fa608d5a07655b70e1005f.png"
+        },
+        "validation": "machine_checked_and_rendered"
+      },
+      {
+        "url": "https://bioart.niaid.nih.gov/api/bioarts/689/files/782367",
+        "format": "svg",
+        "sha256": "21ca34b9b213f5230e9a4fabb9a1130ed3fecbe1c49a920d558e4df43b877be3",
+        "size_bytes": 131844,
+        "archive": {
+          "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/nih-bioart-42236561214-1-b0001.tar.gz",
+          "member": "files/21/21ca34b9b213f5230e9a4fabb9a1130ed3fecbe1c49a920d558e4df43b877be3.svg"
+        },
+        "validation": "machine_checked_and_rendered"
+      },
+      {
+        "url": "https://bioart.niaid.nih.gov/api/bioarts/689/files/782372",
+        "format": "svg",
+        "sha256": "bca877558cc643d334df473dab0b9884574399f808b5cad3a8ea7c39bc6f9ac7",
+        "size_bytes": 131844,
+        "archive": {
+          "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/nih-bioart-42236561214-1-b0001.tar.gz",
+          "member": "files/bc/bca877558cc643d334df473dab0b9884574399f808b5cad3a8ea7c39bc6f9ac7.svg"
+        },
+        "validation": "machine_checked_and_rendered"
+      }
+    ],
+    "records_file": "nih-bioart-42236561214-1-b0001.records.jsonl",
+    "records_sha256": "1358f7daae256bd5c80a72c270786dd48999d23fa6507fa7742f4e7200343633",
+    "archive_sha256": "d8f41cd8dc16b926bed75c1ef762721b811893448cc8b2e91916e8495b4a7029"
+  },
+  "source_download_recommendation": {
+    "records": 0,
+    "ranges": [],
+    "reason": "No full-item retries: four items need scope-only dispositions and MRI already has five acquired variants. A later check of only file 782376 must not re-download the other five."
+  },
+  "snapshot_preservation": "Do not mutate the NIH discovery adapter for these four classifications until the disposition is applied without replacing the existing verified snapshot. Do not generalize pinned-GitHub reconciliation to mutable NIH file URLs.",
+  "evidence_quality_notes": [
+    "Official captured discovery and failures were verified against cloud report SHA-256. MRI successful variants were verified against the batch records SHA-256.",
+    "A web text response for /bioart/641 identified itself as BIOART-000113 and was discarded. Static page download widgets also reported unavailable files for item689 despite six official catalog descriptors, so widget text was not used to infer file availability."
+  ]
+}

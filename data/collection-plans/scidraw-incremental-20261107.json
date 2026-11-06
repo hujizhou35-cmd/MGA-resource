@@ -1,0 +1,446 @@
+{
+  "source": "scidraw",
+  "based_on_verified_run": "42235890704-1",
+  "inventory_count": 755,
+  "expected_discovery_sha256": "0eedd165694eb75e107225debfa302c873676e5d23f66934f5e2f0efddea218c",
+  "ordered_source_ids_sha256": "06b7575b421312bac27e45b72d24787776964ae0827244c90c73964b1ba74f74",
+  "range_contract": "Zero-based offset and limit in the exact captured complete discovery order. Verify both ordered IDs and complete discovery SHA before publishing a new partial run.",
+  "recommended_now": {
+    "records": 31,
+    "ranges": [
+      {
+        "offset": 2,
+        "limit": 2
+      },
+      {
+        "offset": 15,
+        "limit": 2
+      },
+      {
+        "offset": 20,
+        "limit": 2
+      },
+      {
+        "offset": 30,
+        "limit": 1
+      },
+      {
+        "offset": 36,
+        "limit": 1
+      },
+      {
+        "offset": 74,
+        "limit": 1
+      },
+      {
+        "offset": 82,
+        "limit": 1
+      },
+      {
+        "offset": 91,
+        "limit": 1
+      },
+      {
+        "offset": 97,
+        "limit": 1
+      },
+      {
+        "offset": 104,
+        "limit": 1
+      },
+      {
+        "offset": 114,
+        "limit": 1
+      },
+      {
+        "offset": 121,
+        "limit": 1
+      },
+      {
+        "offset": 126,
+        "limit": 1
+      },
+      {
+        "offset": 139,
+        "limit": 1
+      },
+      {
+        "offset": 158,
+        "limit": 1
+      },
+      {
+        "offset": 166,
+        "limit": 1
+      },
+      {
+        "offset": 169,
+        "limit": 1
+      },
+      {
+        "offset": 172,
+        "limit": 1
+      },
+      {
+        "offset": 186,
+        "limit": 1
+      },
+      {
+        "offset": 200,
+        "limit": 1
+      },
+      {
+        "offset": 212,
+        "limit": 1
+      },
+      {
+        "offset": 219,
+        "limit": 1
+      },
+      {
+        "offset": 237,
+        "limit": 1
+      },
+      {
+        "offset": 261,
+        "limit": 1
+      },
+      {
+        "offset": 301,
+        "limit": 1
+      },
+      {
+        "offset": 439,
+        "limit": 1
+      },
+      {
+        "offset": 536,
+        "limit": 1
+      },
+      {
+        "offset": 547,
+        "limit": 1
+      }
+    ],
+    "already_acquired_overlap": 0
+  },
+  "download_candidates": [
+    {
+      "source": "scidraw",
+      "source_id": "929f395b-0d32-49a0-8bdd-33b710830dc0",
+      "source_index": 2,
+      "url": "https://scidraw.io/files/eppendorf_closed.svg",
+      "error_type": "MediaValidationError",
+      "error": "SVG loads an external or unsupported resource via license/resource"
+    },
+    {
+      "source": "scidraw",
+      "source_id": "bc519a4b-ba46-4104-93e4-4c6643360cbe",
+      "source_index": 3,
+      "url": "https://scidraw.io/files/Falcon_Tube_clip_art.svg",
+      "error_type": "MediaValidationError",
+      "error": "SVG loads an external or unsupported resource via license/resource"
+    },
+    {
+      "source": "scidraw",
+      "source_id": "4337c1cc-ab59-4d5c-8be6-4064543a565b",
+      "source_index": 15,
+      "url": "https://scidraw.io/files/Waterdrop.svg",
+      "error_type": "MediaValidationError",
+      "error": "SVG entity declaration is not allowed"
+    },
+    {
+      "source": "scidraw",
+      "source_id": "3c0e2ccd-0512-4e3e-be29-3053b43c3b83",
+      "source_index": 16,
+      "url": "https://scidraw.io/files/human_brain_9nD0KD3.svg",
+      "error_type": "MediaValidationError",
+      "error": "SVG entity declaration is not allowed"
+    },
+    {
+      "source": "scidraw",
+      "source_id": "ce0f2097-dd0a-41b6-8ffd-de8975d1bb6d",
+      "source_index": 20,
+      "url": "https://scidraw.io/files/1272892186.svg",
+      "error_type": "MediaValidationError",
+      "error": "SVG loads an external or unsupported resource via license/resource"
+    },
+    {
+      "source": "scidraw",
+      "source_id": "c01e5845-11d1-4582-9bc3-df240d2e1c0b",
+      "source_index": 21,
+      "url": "https://scidraw.io/files/membrane_c7TXft4.svg",
+      "error_type": "MediaValidationError",
+      "error": "SVG entity declaration is not allowed"
+    },
+    {
+      "source": "scidraw",
+      "source_id": "0354331e-ae22-4bb6-b273-5a4d3bbbb3ff",
+      "source_index": 30,
+      "url": "https://scidraw.io/files/mouse_nosepoke.svg",
+      "error_type": "MediaValidationError",
+      "error": "SVG entity declaration is not allowed"
+    },
+    {
+      "source": "scidraw",
+      "source_id": "19770c15-7189-4e48-98b8-f3baa6cebbf7",
+      "source_index": 36,
+      "url": "https://scidraw.io/files/synapse.svg",
+      "error_type": "MediaValidationError",
+      "error": "SVG entity declaration is not allowed"
+    },
+    {
+      "source": "scidraw",
+      "source_id": "bff488ed-47cc-41b2-9e3e-33d8c529f4f4",
+      "source_index": 74,
+      "url": "https://scidraw.io/files/mouse_brain_zXp9jfu.svg",
+      "error_type": "MediaValidationError",
+      "error": "SVG entity declaration is not allowed"
+    },
+    {
+      "source": "scidraw",
+      "source_id": "2909a817-334d-4d8c-ab79-9a1619f1a1a4",
+      "source_index": 82,
+      "url": "https://scidraw.io/files/2020_Enzyme_Substrate_Clough.svg",
+      "error_type": "MediaValidationError",
+      "error": "SVG entity declaration is not allowed"
+    },
+    {
+      "source": "scidraw",
+      "source_id": "45ca060c-693f-43aa-81ba-2c4d9febab36",
+      "source_index": 91,
+      "url": "https://scidraw.io/files/head.svg",
+      "error_type": "MediaValidationError",
+      "error": "SVG entity declaration is not allowed"
+    },
+    {
+      "source": "scidraw",
+      "source_id": "1cf4afd9-4174-417b-8210-4829d57a7ecd",
+      "source_index": 97,
+      "url": "https://scidraw.io/files/ELISA_schematic_JGvqK7A.svg",
+      "error_type": "MediaValidationError",
+      "error": "SVG entity declaration is not allowed"
+    },
+    {
+      "source": "scidraw",
+      "source_id": "a8efb365-6470-4698-af43-291d0a5e91db",
+      "source_index": 104,
+      "url": "https://scidraw.io/files/Synapse.svg",
+      "error_type": "MediaValidationError",
+      "error": "SVG entity declaration is not allowed"
+    },
+    {
+      "source": "scidraw",
+      "source_id": "81324e5c-bb6e-4234-bd29-f6e4ecd1c23c",
+      "source_index": 114,
+      "url": "https://scidraw.io/files/silhouette_brain.svg",
+      "error_type": "MediaValidationError",
+      "error": "SVG entity declaration is not allowed"
+    },
+    {
+      "source": "scidraw",
+      "source_id": "9cf4ec3b-d957-44c2-8b47-71ebab002f38",
+      "source_index": 121,
+      "url": "https://scidraw.io/files/ELISA_schematic.svg",
+      "error_type": "MediaValidationError",
+      "error": "SVG entity declaration is not allowed"
+    },
+    {
+      "source": "scidraw",
+      "source_id": "faabd338-cb37-4a2b-ab4d-c872653b9dff",
+      "source_index": 126,
+      "url": "https://scidraw.io/files/mouse_brain_2.svg",
+      "error_type": "MediaValidationError",
+      "error": "SVG entity declaration is not allowed"
+    },
+    {
+      "source": "scidraw",
+      "source_id": "2fd8c494-e81e-4016-aad1-ddcedf556d25",
+      "source_index": 139,
+      "url": "https://scidraw.io/files/gut-like_organ.svg",
+      "error_type": "MediaValidationError",
+      "error": "SVG entity declaration is not allowed"
+    },
+    {
+      "source": "scidraw",
+      "source_id": "88130777-5665-44b0-a104-748d54068ac2",
+      "source_index": 158,
+      "url": "https://scidraw.io/files/silhouette.svg",
+      "error_type": "MediaValidationError",
+      "error": "SVG entity declaration is not allowed"
+    },
+    {
+      "source": "scidraw",
+      "source_id": "833bb666-94af-469d-8b5d-357ca7f1c9e9",
+      "source_index": 166,
+      "url": "https://scidraw.io/files/EEG_1020.svg",
+      "error_type": "MediaValidationError",
+      "error": "SVG entity declaration is not allowed"
+    },
+    {
+      "source": "scidraw",
+      "source_id": "c33c85cb-19b9-43a6-8350-69f0f04b7c2a",
+      "source_index": 169,
+      "url": "https://scidraw.io/files/silhouette_cns_muscle.svg",
+      "error_type": "MediaValidationError",
+      "error": "SVG entity declaration is not allowed"
+    },
+    {
+      "source": "scidraw",
+      "source_id": "f01e8e95-257b-4c16-834a-977b1b1be935",
+      "source_index": 172,
+      "url": "https://scidraw.io/files/Hand_Reaching.svg",
+      "error_type": "MediaValidationError",
+      "error": "SVG entity declaration is not allowed"
+    },
+    {
+      "source": "scidraw",
+      "source_id": "6623bc72-c472-424d-af4e-1d0d1fa8b402",
+      "source_index": 186,
+      "url": "https://scidraw.io/files/silhouette_cns.svg",
+      "error_type": "MediaValidationError",
+      "error": "SVG entity declaration is not allowed"
+    },
+    {
+      "source": "scidraw",
+      "source_id": "3b298a80-d5c7-452b-9ff5-8d47d707d6b1",
+      "source_index": 200,
+      "url": "https://scidraw.io/files/2020_Clough_Sperm_3.svg",
+      "error_type": "MediaValidationError",
+      "error": "SVG entity declaration is not allowed"
+    },
+    {
+      "source": "scidraw",
+      "source_id": "8e64e165-9aab-48aa-bbaa-f78d96aae433",
+      "source_index": 212,
+      "url": "https://scidraw.io/files/silhouette_muscle.svg",
+      "error_type": "MediaValidationError",
+      "error": "SVG entity declaration is not allowed"
+    },
+    {
+      "source": "scidraw",
+      "source_id": "7bf89a3e-aa5b-4595-aab2-14d3412c362e",
+      "source_index": 219,
+      "url": "https://scidraw.io/files/monkey_brain.svg",
+      "error_type": "MediaValidationError",
+      "error": "SVG entity declaration is not allowed"
+    },
+    {
+      "source": "scidraw",
+      "source_id": "1831e2d3-9873-4d98-85c4-15fc5f40d38e",
+      "source_index": 237,
+      "url": "https://scidraw.io/files/looming_hawk.svg",
+      "error_type": "MediaValidationError",
+      "error": "SVG entity declaration is not allowed"
+    },
+    {
+      "source": "scidraw",
+      "source_id": "911d2a7a-d434-41eb-a5f2-c722762c2d58",
+      "source_index": 261,
+      "url": "https://scidraw.io/files/hand.svg",
+      "error_type": "MediaValidationError",
+      "error": "SVG entity declaration is not allowed"
+    },
+    {
+      "source": "scidraw",
+      "source_id": "0a2d0d0d-d9b2-400c-9761-966a78f559af",
+      "source_index": 301,
+      "url": "https://scidraw.io/files/mouse_skull_copy.svg",
+      "error_type": "MediaValidationError",
+      "error": "SVG entity declaration is not allowed"
+    },
+    {
+      "source": "scidraw",
+      "source_id": "4729816f-79e9-407b-825b-0bdda2ff5036",
+      "source_index": 439,
+      "url": "https://scidraw.io/files/monkey_face_PXwzWew.svg",
+      "error_type": "MediaValidationError",
+      "error": "SVG entity declaration is not allowed"
+    },
+    {
+      "source": "scidraw",
+      "source_id": "9164fc6e-931c-460e-b09e-caedc2792738",
+      "source_index": 536,
+      "url": "https://scidraw.io/files/mouse_nosepoke-with-rnn-brain.svg",
+      "error_type": "MediaValidationError",
+      "error": "SVG contains unsupported active element: foreignobject"
+    },
+    {
+      "source": "scidraw",
+      "source_id": "e2ef4e9a-4885-48d7-b4d1-e6b24183ef53",
+      "source_index": 547,
+      "url": "https://scidraw.io/files/dorsal_horn.svg",
+      "error_type": "MediaValidationError",
+      "error": "SVG entity declaration is not allowed"
+    }
+  ],
+  "candidate_basis": {
+    "namespace_entities": 27,
+    "nonloading_license_metadata": 3,
+    "illustrator_native_fallback": 1
+  },
+  "known_unresolved_quarantine": {
+    "records": 4,
+    "items": [
+      {
+        "source": "scidraw",
+        "source_id": "2042cc2c-9fa9-4330-abb8-e5850bf9e479",
+        "source_index": 368,
+        "url": "https://scidraw.io/files/sleep_EEG_EMG.svg",
+        "error_type": "MediaValidationError",
+        "error": "SVG loads an external or unsupported resource via image/href",
+        "disposition": "quarantine",
+        "diagnosis": "Missing external PNG dependencies 52BF527C94D97CF0.png and F5A6EC0173BD83DA.png; source is not self-contained.",
+        "single_file_text_inspected": true
+      },
+      {
+        "source": "scidraw",
+        "source_id": "c4b59809-7b67-4c1b-802c-88c844b26a07",
+        "source_index": 434,
+        "url": "https://scidraw.io/files/reef_fish_retina.svg",
+        "error_type": "MediaValidationError",
+        "error": "SVG XML could not be safely parsed: junk after document element: line 289, column 6",
+        "disposition": "quarantine",
+        "diagnosis": "Malformed source has SVG close tag followed by partial path data and a second close tag; do not truncate and claim complete art.",
+        "single_file_text_inspected": true
+      },
+      {
+        "source": "scidraw",
+        "source_id": "27372785-fec3-4e6f-8c67-cd3f6030928f",
+        "source_index": 518,
+        "url": "https://scidraw.io/files/shark_retina.svg",
+        "error_type": "MediaValidationError",
+        "error": "SVG XML could not be safely parsed: not well-formed (invalid token): line 9, column 6",
+        "disposition": "quarantine",
+        "diagnosis": "Malformed source has 29,571 NUL bytes after an initial mostly blank SVG, then orphaned path fragments and another closing SVG tag.",
+        "single_file_text_inspected": true
+      },
+      {
+        "source": "scidraw",
+        "source_id": "92d035d1-66d5-46af-b87c-37d7252c4c77",
+        "source_index": 586,
+        "url": "https://scidraw.io/files/Npulcher.svg",
+        "error_type": "MediaValidationError",
+        "error": "SVG loads an external or unsupported resource via image/href",
+        "disposition": "quarantine",
+        "diagnosis": "References author local Windows path D:\\PhD Roger\\Images\\Transponders\\anatomy.jpg; image not embedded.",
+        "single_file_text_inspected": true
+      }
+    ]
+  },
+  "stored_original_preview_repair": [
+    {
+      "source_index": 44,
+      "source_id": "4ac6a744-08db-4f7e-a71e-6d3f199e0b39",
+      "title": "DNA",
+      "sha256": "f3097e6230478dfae5be24d5d6cd21e0e90f7935a7ea5b5d583457dd89f993fc",
+      "archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scidraw-42235890704-1-b0000.tar.gz",
+        "member": "files/f3/f3097e6230478dfae5be24d5d6cd21e0e90f7935a7ea5b5d583457dd89f993fc.svg"
+      },
+      "issue": "SVG text has null fill-opacity/stroke-opacity/stroke-dasharray attributes that fail CairoSVG numeric parsing.",
+      "action": "Already acquired: reuse this cloud original if preview repair is implemented; exclude from all source-download selections.",
+      "source_download_requested": false
+    }
+  ],
+  "caution": "31 is a repair-candidate count, not successful acquisition or visual acceptance. Do not re-download the 720 acquired records. Stop if the full discovery hash changes; dynamic source URLs are not covered by the GitHub-only reuse proof."
+}
