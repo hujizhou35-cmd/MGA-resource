@@ -227,6 +227,16 @@ def test_candidate_cannot_invent_family_or_real_media_type():
     assert not report["acceptance_passed"]
 
 
+def test_unselected_top_ten_result_must_also_belong_to_publication_subset():
+    args = fixture()
+    args["mapping"]["queries"][0]["candidates"].append({"rank": 2,
+        "candidate_id": "quarantined:file-0", "asset_id": "quarantined", "family_id": "quarantined-family"})
+    _, report = accept.evaluate_release(**args)
+    assert report["retrieval"]["successful"] == 119
+    assert "queries.evidence" in codes(report)
+    assert not report["acceptance_passed"]
+
+
 def test_incomplete_source_without_accounting_is_not_silently_complete():
     args = fixture()
     args["assembly"]["source_snapshots"][0] = {"source": "example", "discovery_sha256": h("discovery"),

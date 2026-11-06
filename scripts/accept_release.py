@@ -265,7 +265,11 @@ def evaluate_release(catalog, assembly, benchmark, mapping, judgments, *, hashes
         rows = actual.get("candidates") or []
         mapping_ok = (all(actual.get(key) == query.get(key) for key in ("query", "language", "concept_id"))
                       and len(rows) <= 10 and [row.get("rank") for row in rows] == list(range(1, len(rows) + 1))
-                      and len({row.get("family_id") for row in rows}) == len(rows))
+                      and len({row.get("family_id") for row in rows}) == len(rows)
+                      and all(row.get("candidate_id") in valid_candidates
+                              and row.get("asset_id") == valid_candidates[row["candidate_id"]]["asset_id"]
+                              and row.get("family_id") == valid_candidates[row["candidate_id"]]["family_id"]
+                              for row in rows))
         selected = judgment.get("selected_candidate_ids") or []
         selection_ok = bool(selected) and all(key in valid_candidates and key in {row.get("candidate_id") for row in rows} for key in selected)
         if judgment.get("pass") is True:
