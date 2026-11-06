@@ -13,6 +13,7 @@ import re
 import sqlite3
 import unicodedata
 from collections import Counter, defaultdict
+from contextlib import closing
 from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any, Iterable
@@ -409,7 +410,7 @@ def deduplicate(records: Iterable[dict[str, Any]]) -> tuple[list[dict[str, Any]]
 def _write_sqlite(records: list[dict[str, Any]], path: Path) -> None:
     if path.exists():
         path.unlink()
-    with sqlite3.connect(path) as db:
+    with closing(sqlite3.connect(path)) as db, db:
         db.executescript("""
             CREATE TABLE assets (id TEXT PRIMARY KEY, title TEXT NOT NULL, source TEXT NOT NULL,
                 license TEXT, distribution_status TEXT NOT NULL, metadata TEXT NOT NULL);
@@ -551,7 +552,7 @@ def search(db_path: str | Path, query: str, limit: int = 10, filters: dict[str, 
         sql += " WHERE " + " AND ".join(clauses)
     sql += " ORDER BY " + ordering + " LIMIT ?"
     params.append(min(100, max(limit * 5, 50)) if preferences else limit)
-    with sqlite3.connect(Path(db_path).resolve().as_uri() + "?mode=ro", uri=True) as db:
+    with closing(sqlite3.connect(Path(db_path).resolve().as_uri() + "?mode=ro", uri=True)) as db:
         candidates = [(json.loads(row[0]), row[1]) for row in db.execute(sql, params)]
     if preferences:
         def preference_score(candidate):

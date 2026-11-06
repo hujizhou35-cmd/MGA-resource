@@ -1,0 +1,378 @@
+{
+  "schema_version": 1,
+  "integrity_rechecked_at": "2026-11-06T14:28:49.607781+00:00",
+  "purpose": "Preserve hash-bound historical Illustrator evidence for five existing MGA components; this is not a new native test or cross-environment certification.",
+  "evidence_boundary": {
+    "current_checks": [
+      "SHA-256 and byte size of ten original artwork files match their recorded metadata and release catalog",
+      "Original per-component metadata and license notice hashes match released support records"
+    ],
+    "historical_tests": [
+      "Native SVG open",
+      "Cross-document import with isolated patched importer",
+      "AI save, close and reopen",
+      "Native object and embedded image counts",
+      "Local recolor and restoration",
+      "PNG comparison against baseline"
+    ],
+    "cross_document_is_not_cross_environment": true,
+    "no_illustrator_operations_performed": true,
+    "no_artwork_copied_or_uploaded": true,
+    "stock_importer_not_covered": true,
+    "stock_importer_issue": "The recorded unpatched importer duplicated nested paths; its behavior is not covered by the isolated-patch acceptance.",
+    "fresh_environment_rule": "Recheck compatibility before claiming that another Illustrator/MCP installation passes the same operations."
+  },
+  "assets": [
+    {
+      "name": "cell_culture_dish",
+      "legacy_asset_id": "external_github_02",
+      "catalog_match": {
+        "source": "bioicons",
+        "source_id": "cc-0/Cell_culture/Marcel_Tisch/CC_dish.svg",
+        "source_svg_sha256": "934c188015b49dd8bc5d0776033d211b61c44f6aa213f09d4da805e7612d4b9a"
+      },
+      "author": "Marcel Tisch",
+      "source_url": "https://github.com/duerrsimon/bioicons/blob/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-0/Cell_culture/Marcel_Tisch/CC_dish.svg",
+      "source_commit": "d29e766ea7580b8063c4f47b29e872db40a4d979",
+      "license_statement": "CC0 as identified by Bioicons per-asset directory; exact CC0 version not independently established",
+      "license_evidence": [
+        "https://github.com/duerrsimon/bioicons/blob/d29e766ea7580b8063c4f47b29e872db40a4d979/README.md",
+        "https://github.com/duerrsimon/bioicons/blob/d29e766ea7580b8063c4f47b29e872db40a4d979/CONTRIBUTING.md",
+        "https://github.com/duerrsimon/bioicons/blob/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/authors.json",
+        "https://github.com/duerrsimon/bioicons/blob/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-0/Cell_culture/Marcel_Tisch/CC_dish.svg",
+        "https://github.com/duerrsimon/bioicons/commit/1fa2623387bb615d244610d5e5bc72221cf05858"
+      ],
+      "attribution": "Bioicons contributor Marcel Tisch; retain author, fixed source URL, CC0 notice and modifications in library records.",
+      "rights_basis": "Marcel Tisch is credited in fixed project authors metadata and per-asset folder; fixed project per-asset CC0 declaration, no separate personal license statement located.",
+      "scope": "培养皿与细胞培养示意；不代表具体细胞种类。",
+      "species": "unknown",
+      "files": {
+        "source": {
+          "format": "svg",
+          "sha256": "934c188015b49dd8bc5d0776033d211b61c44f6aa213f09d4da805e7612d4b9a",
+          "size_bytes": 1808,
+          "original_bytes_rechecked": true,
+          "matches_original_metadata": true,
+          "matches_original_release_catalog": true,
+          "cloud_upload_status": "not_uploaded_by_this_step",
+          "changes": "Unmodified bytes from source sample."
+        },
+        "native_ai": {
+          "format": "ai",
+          "sha256": "58baae2b05c064e4eb224f99b4ad64ff3fa91958c908b0c6a6563a6f384be638",
+          "size_bytes": 53425,
+          "original_bytes_rechecked": true,
+          "matches_original_metadata": true,
+          "matches_original_release_catalog": true,
+          "cloud_upload_status": "not_uploaded_by_this_step",
+          "modifications": "试验中培养基主体暂改蓝色后恢复；该 AI 是在颜色试验之前保存的原生副本。"
+        }
+      },
+      "original_metadata_sha256": "f655bf583be973ec51777db1cebc2451bd6275b71a8fe148054a5b860f239042",
+      "historical_validation": {
+        "date": "2026-11-06",
+        "status": "validated_in_recorded_environment_only",
+        "illustrator_version": "27.6.0",
+        "mcp_server_version": "1.10.3",
+        "importer_variant": "isolated patched copy",
+        "recorded_importer_module_sha256": "2b21ac7936f82194ed65a9ce476fa7ffd86a350085a3705baca3581fded0c035",
+        "cross_document_path_items": 7,
+        "cross_document_compound_paths": 0,
+        "cross_document_embedded_images": 0,
+        "tested_color_region": "培养基主体填充颜色",
+        "evidence_statement": "Cross-document import, save/reopen, temporary local recoloring and restoration; restoration PNG matches direct-open baseline by RGBA byte equality. Scope is these files under this isolated patch only.",
+        "limitations": "原始 source.svg 优先；隔离补丁跨文档导入用于验证；原版 MCP 导入产生重复路径，不能使用。",
+        "operations_rerun_in_this_step": false,
+        "other_environments_verified": false
+      },
+      "previous_release_decision": {
+        "rights_cleared_for_this_source": true,
+        "bundle_allowed_for_this_source": true,
+        "production_ready_in_original_context": true
+      },
+      "preferred_format": "original_svg"
+    },
+    {
+      "name": "human_liver",
+      "legacy_asset_id": "external_github_07",
+      "catalog_match": {
+        "source": "bioicons",
+        "source_id": "cc-0/Human_physiology/Jan-Clusmann/healthy_liver.svg",
+        "source_svg_sha256": "ef460961abd03b4cbb72d82299736d0d2696c571f990b2be2b3b1db3a7e9012b"
+      },
+      "author": "Jan Clusmann",
+      "source_url": "https://github.com/duerrsimon/bioicons/blob/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-0/Human_physiology/Jan-Clusmann/healthy_liver.svg",
+      "source_commit": "d29e766ea7580b8063c4f47b29e872db40a4d979",
+      "license_statement": "CC0 as identified by Bioicons per-asset directory; exact CC0 version not independently established",
+      "license_evidence": [
+        "https://github.com/duerrsimon/bioicons/blob/d29e766ea7580b8063c4f47b29e872db40a4d979/README.md",
+        "https://github.com/duerrsimon/bioicons/blob/d29e766ea7580b8063c4f47b29e872db40a4d979/CONTRIBUTING.md",
+        "https://github.com/duerrsimon/bioicons/blob/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/authors.json",
+        "https://github.com/duerrsimon/bioicons/blob/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-0/Human_physiology/Jan-Clusmann/healthy_liver.svg",
+        "https://github.com/duerrsimon/bioicons/pull/188"
+      ],
+      "attribution": "Bioicons contributor Jan Clusmann; retain author, fixed source URL, CC0 notice and modifications in library records.",
+      "rights_basis": "Jan Clusmann is credited in project authors metadata and PR 188 identifies @JanClusmann as submitter.",
+      "scope": "通用人肝外形示意；不可直接当作鼠肝或病理标本。",
+      "species": "human (general illustration; verify study context)",
+      "files": {
+        "source": {
+          "format": "svg",
+          "sha256": "ef460961abd03b4cbb72d82299736d0d2696c571f990b2be2b3b1db3a7e9012b",
+          "size_bytes": 10019,
+          "original_bytes_rechecked": true,
+          "matches_original_metadata": true,
+          "matches_original_release_catalog": true,
+          "cloud_upload_status": "not_uploaded_by_this_step",
+          "changes": "Unmodified bytes from source sample."
+        },
+        "native_ai": {
+          "format": "ai",
+          "sha256": "8c7143f1579dc0760cda254c0e1b0002841a8597e80f92146e948c50415e42e1",
+          "size_bytes": 56004,
+          "original_bytes_rechecked": true,
+          "matches_original_metadata": true,
+          "matches_original_release_catalog": true,
+          "cloud_upload_status": "not_uploaded_by_this_step",
+          "modifications": "试验中图中左侧大面积主体暂改蓝色后恢复；该 AI 是在颜色试验之前保存的原生副本。"
+        }
+      },
+      "original_metadata_sha256": "741b91551a59ba9ab4fe7075ca6a3d85a7c5197cb7229c1852622fc1ae9964be",
+      "historical_validation": {
+        "date": "2026-11-06",
+        "status": "validated_in_recorded_environment_only",
+        "illustrator_version": "27.6.0",
+        "mcp_server_version": "1.10.3",
+        "importer_variant": "isolated patched copy",
+        "recorded_importer_module_sha256": "2b21ac7936f82194ed65a9ce476fa7ffd86a350085a3705baca3581fded0c035",
+        "cross_document_path_items": 10,
+        "cross_document_compound_paths": 0,
+        "cross_document_embedded_images": 0,
+        "tested_color_region": "图中左侧大面积肝叶主体填充颜色",
+        "evidence_statement": "Cross-document import, save/reopen, temporary local recoloring and restoration; restoration PNG matches direct-open baseline by RGBA byte equality. Scope is these files under this isolated patch only.",
+        "limitations": "原始 source.svg 优先；SVG 往返导出轮廓变粗，禁止以该往返 SVG 代替源文件。仅通用人肝示意。",
+        "operations_rerun_in_this_step": false,
+        "other_environments_verified": false
+      },
+      "previous_release_decision": {
+        "rights_cleared_for_this_source": true,
+        "bundle_allowed_for_this_source": true,
+        "production_ready_in_original_context": true
+      },
+      "preferred_format": "original_svg"
+    },
+    {
+      "name": "bioreactor",
+      "legacy_asset_id": "external_github_08",
+      "catalog_match": {
+        "source": "bioicons",
+        "source_id": "cc-0/Lab_apparatus/Marcel_Tisch/bioreactor.svg",
+        "source_svg_sha256": "a404c7d4750abe88916817a9d9b6089a3702767f85d8743b3dace326a4460940"
+      },
+      "author": "Marcel Tisch",
+      "source_url": "https://github.com/duerrsimon/bioicons/blob/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-0/Lab_apparatus/Marcel_Tisch/bioreactor.svg",
+      "source_commit": "d29e766ea7580b8063c4f47b29e872db40a4d979",
+      "license_statement": "CC0 as identified by Bioicons per-asset directory; exact CC0 version not independently established",
+      "license_evidence": [
+        "https://github.com/duerrsimon/bioicons/blob/d29e766ea7580b8063c4f47b29e872db40a4d979/README.md",
+        "https://github.com/duerrsimon/bioicons/blob/d29e766ea7580b8063c4f47b29e872db40a4d979/CONTRIBUTING.md",
+        "https://github.com/duerrsimon/bioicons/blob/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/authors.json",
+        "https://github.com/duerrsimon/bioicons/blob/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-0/Lab_apparatus/Marcel_Tisch/bioreactor.svg",
+        "https://github.com/duerrsimon/bioicons/commit/1fa2623387bb615d244610d5e5bc72221cf05858"
+      ],
+      "attribution": "Bioicons contributor Marcel Tisch; retain author, fixed source URL, CC0 notice and modifications in library records.",
+      "rights_basis": "Marcel Tisch is credited in fixed project authors metadata and per-asset folder; fixed project per-asset CC0 declaration, no separate personal license statement located.",
+      "scope": "生物反应器设备示意；不是通用试管图标。",
+      "species": "unknown",
+      "files": {
+        "source": {
+          "format": "svg",
+          "sha256": "a404c7d4750abe88916817a9d9b6089a3702767f85d8743b3dace326a4460940",
+          "size_bytes": 8281,
+          "original_bytes_rechecked": true,
+          "matches_original_metadata": true,
+          "matches_original_release_catalog": true,
+          "cloud_upload_status": "not_uploaded_by_this_step",
+          "changes": "Unmodified bytes from source sample."
+        },
+        "native_ai": {
+          "format": "ai",
+          "sha256": "cd0a28387a777774bfdcca6f22717d92f73c8094e62c9bb05dafd53cdd64aa0d",
+          "size_bytes": 71199,
+          "original_bytes_rechecked": true,
+          "matches_original_metadata": true,
+          "matches_original_release_catalog": true,
+          "cloud_upload_status": "not_uploaded_by_this_step",
+          "modifications": "试验中显示屏暂改黄色后恢复；该 AI 是在颜色试验之前保存的原生副本。"
+        }
+      },
+      "original_metadata_sha256": "f2c3f6e8125982e2d6ded0853646c1c01346089eada9efafcb865af6fd81604b",
+      "historical_validation": {
+        "date": "2026-11-06",
+        "status": "validated_in_recorded_environment_only",
+        "illustrator_version": "27.6.0",
+        "mcp_server_version": "1.10.3",
+        "importer_variant": "isolated patched copy",
+        "recorded_importer_module_sha256": "2b21ac7936f82194ed65a9ce476fa7ffd86a350085a3705baca3581fded0c035",
+        "cross_document_path_items": 31,
+        "cross_document_compound_paths": 1,
+        "cross_document_embedded_images": 0,
+        "tested_color_region": "设备显示屏填充颜色",
+        "evidence_statement": "Cross-document import, save/reopen, temporary local recoloring and restoration; restoration PNG matches direct-open baseline by RGBA byte equality. Scope is these files under this isolated patch only.",
+        "limitations": "原始 source.svg 优先；SVG 导出调用超时，生成文件不作为工具调用成功的证据。设备不是通用试管。",
+        "operations_rerun_in_this_step": false,
+        "other_environments_verified": false
+      },
+      "previous_release_decision": {
+        "rights_cleared_for_this_source": true,
+        "bundle_allowed_for_this_source": true,
+        "production_ready_in_original_context": true
+      },
+      "preferred_format": "original_svg"
+    },
+    {
+      "name": "blood_syringe",
+      "legacy_asset_id": "bioicons_6679f95046ae2ec6fe33",
+      "catalog_match": {
+        "source": "bioicons",
+        "source_id": "cc-0/Human_physiology/va/syringe_with_blood.svg",
+        "source_svg_sha256": "5f5106ae4e1fe29fe70d02ba4a3719f81fe9e87d79f09b6ab5eec9c6b88e939e"
+      },
+      "author": "va",
+      "source_url": "https://github.com/duerrsimon/bioicons/blob/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-0/Human_physiology/va/syringe_with_blood.svg",
+      "source_commit": "d29e766ea7580b8063c4f47b29e872db40a4d979",
+      "license_statement": "CC0 as identified by Bioicons per-asset directory; exact CC0 version not independently established",
+      "license_evidence": [
+        "https://github.com/duerrsimon/bioicons/blob/d29e766ea7580b8063c4f47b29e872db40a4d979/README.md",
+        "https://github.com/duerrsimon/bioicons/blob/d29e766ea7580b8063c4f47b29e872db40a4d979/CONTRIBUTING.md",
+        "https://github.com/duerrsimon/bioicons/blob/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/authors.json",
+        "https://github.com/duerrsimon/bioicons/blob/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-0/Human_physiology/va/syringe_with_blood.svg"
+      ],
+      "attribution": "Bioicons contributor va; retain author, source URL, CC0 notice and modifications in library records.",
+      "rights_basis": "Fixed Bioicons per-asset cc-0 / category / author directory; authors.json lists va with an empty link; real name not inferred.",
+      "scope": "含血样注射器；不指示具体药物或剂量。",
+      "species": "unknown",
+      "files": {
+        "source": {
+          "format": "svg",
+          "sha256": "5f5106ae4e1fe29fe70d02ba4a3719f81fe9e87d79f09b6ab5eec9c6b88e939e",
+          "size_bytes": 15032,
+          "original_bytes_rechecked": true,
+          "matches_original_metadata": true,
+          "matches_original_release_catalog": true,
+          "cloud_upload_status": "not_uploaded_by_this_step",
+          "changes": "Unmodified source bytes."
+        },
+        "native_ai": {
+          "format": "ai",
+          "sha256": "ad396b115e5ed22de4ffa9e189a9bfd5e47f685982b1d9502b772f3c43f17752",
+          "size_bytes": 235263,
+          "original_bytes_rechecked": true,
+          "matches_original_metadata": true,
+          "matches_original_release_catalog": true,
+          "cloud_upload_status": "not_uploaded_by_this_step",
+          "modifications": "AI saved and reopened from isolated cross-document import; local recolor was tested and restored."
+        }
+      },
+      "original_metadata_sha256": "4a6a52a25c28ac6dc2182de7e94098c01e631d60106567a67b1f1bcdd71c68e4",
+      "historical_validation": {
+        "date": "2026-11-06",
+        "status": "validated_in_recorded_environment_only",
+        "illustrator_version": "27.6.0",
+        "mcp_server_version": "1.10.3",
+        "importer_variant": "isolated patched copy",
+        "recorded_importer_module_sha256": "2b21ac7936f82194ed65a9ce476fa7ffd86a350085a3705baca3581fded0c035",
+        "cross_document_path_items": 81,
+        "cross_document_compound_paths": 12,
+        "cross_document_embedded_images": 0,
+        "tested_color_region": "注射器中血液区域填充",
+        "evidence_statement": "Direct open, isolated cross-document import, save/reopen and local recolor/restoration; imported and restored PNG each match native baseline by RGBA byte equality; independent source rendering is visually comparable.",
+        "limitations": "原始SVG优先；首次打开超时，后续出现 SVG Tiny 剪裁警告。遇警告先处理阻塞并核查，不能自动反复重试或堆积调用。",
+        "operations_rerun_in_this_step": false,
+        "other_environments_verified": false
+      },
+      "previous_release_decision": {
+        "rights_cleared_for_this_source": true,
+        "bundle_allowed_for_this_source": true,
+        "production_ready_in_original_context": true
+      },
+      "preferred_format": "original_svg"
+    },
+    {
+      "name": "dna_double_helix",
+      "legacy_asset_id": "bioicons_f185e34331cb2cef54b6",
+      "catalog_match": {
+        "source": "bioicons",
+        "source_id": "cc-0/Nucleic_acids/James-Lloyd/DNA_double_helix.svg",
+        "source_svg_sha256": "8f75f329eb5c1f616df8b0ef68f513e43bcb030fa6f9008ff1e1e0110cc45c3b"
+      },
+      "author": "James-Lloyd",
+      "source_url": "https://github.com/duerrsimon/bioicons/blob/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-0/Nucleic_acids/James-Lloyd/DNA_double_helix.svg",
+      "source_commit": "d29e766ea7580b8063c4f47b29e872db40a4d979",
+      "license_statement": "CC0 as identified by Bioicons per-asset directory; exact CC0 version not independently established",
+      "license_evidence": [
+        "https://github.com/duerrsimon/bioicons/blob/d29e766ea7580b8063c4f47b29e872db40a4d979/README.md",
+        "https://github.com/duerrsimon/bioicons/blob/d29e766ea7580b8063c4f47b29e872db40a4d979/CONTRIBUTING.md",
+        "https://github.com/duerrsimon/bioicons/blob/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/authors.json",
+        "https://github.com/duerrsimon/bioicons/blob/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-0/Nucleic_acids/James-Lloyd/DNA_double_helix.svg"
+      ],
+      "attribution": "Bioicons contributor James-Lloyd; retain author, source URL, CC0 notice and modifications in library records.",
+      "rights_basis": "Fixed Bioicons per-asset cc-0 / category / author directory; authors.json lists James-Lloyd. No contrary license or credit token found in source SVG.",
+      "scope": "通用双螺旋的局部连续示意；端部被原画布裁切，有浅色背景和留白；不代表完整透明分子或测得序列，仅限科学语境适用时使用。",
+      "species": "unknown",
+      "files": {
+        "source": {
+          "format": "svg",
+          "sha256": "8f75f329eb5c1f616df8b0ef68f513e43bcb030fa6f9008ff1e1e0110cc45c3b",
+          "size_bytes": 137552,
+          "original_bytes_rechecked": true,
+          "matches_original_metadata": true,
+          "matches_original_release_catalog": true,
+          "cloud_upload_status": "not_uploaded_by_this_step",
+          "changes": "Unmodified source bytes."
+        },
+        "native_ai": {
+          "format": "ai",
+          "sha256": "0a5fbe148523019a0ea94cf8a9723f3550b2e4d535a7a6216bcaf32c8c283e5a",
+          "size_bytes": 429458,
+          "original_bytes_rechecked": true,
+          "matches_original_metadata": true,
+          "matches_original_release_catalog": true,
+          "cloud_upload_status": "not_uploaded_by_this_step",
+          "modifications": "AI saved and reopened from isolated cross-document import; local recolor was tested and restored."
+        }
+      },
+      "original_metadata_sha256": "48a19cad6b37b8370656d5c836aa6c589a3ff65e124bfa905efe7f95d841ee92",
+      "historical_validation": {
+        "date": "2026-11-06",
+        "status": "validated_in_recorded_environment_only",
+        "illustrator_version": "27.6.0",
+        "mcp_server_version": "1.10.3",
+        "importer_variant": "isolated patched copy",
+        "recorded_importer_module_sha256": "2b21ac7936f82194ed65a9ce476fa7ffd86a350085a3705baca3581fded0c035",
+        "cross_document_path_items": 151,
+        "cross_document_compound_paths": 1,
+        "cross_document_embedded_images": 0,
+        "tested_color_region": "一段蓝色DNA链条填充",
+        "evidence_statement": "Direct open, isolated cross-document import, save/reopen and local recolor/restoration; imported and restored PNG each match native baseline by RGBA byte equality; independent source rendering is visually comparable.",
+        "limitations": "原始SVG优先；端部被原画布裁切并含浅色背景/留白，避免用于需要完整透明分子或实际序列的情境。",
+        "operations_rerun_in_this_step": false,
+        "other_environments_verified": false
+      },
+      "previous_release_decision": {
+        "rights_cleared_for_this_source": true,
+        "bundle_allowed_for_this_source": true,
+        "production_ready_in_original_context": true
+      },
+      "preferred_format": "original_svg"
+    }
+  ],
+  "totals": {
+    "source_svg_bytes": 172692,
+    "native_ai_bytes": 845349,
+    "original_metadata_bytes": 17071,
+    "original_license_bytes": 5682,
+    "artwork_bytes": 1018041,
+    "artwork_and_original_notices_bytes": 1040794
+  }
+}

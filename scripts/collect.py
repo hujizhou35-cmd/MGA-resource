@@ -70,7 +70,12 @@ def upload(tag: str, files: list[Path], *, retry_transient: bool = True) -> None
         release = run_gh(["api", f"repos/{repo}/releases/tags/{tag}"], check=False)
         if release.returncode:
             raise RuntimeError(f"Cannot verify existing release assets: {release.stderr}")
-        existing = {item["name"]: item for item in json.loads(release.stdout)["assets"]}
+        release_id = json.loads(release.stdout)["id"]
+        asset_pages = run_gh(["api", "--paginate", "--slurp",
+                             f"repos/{repo}/releases/{release_id}/assets?per_page=100"], check=False)
+        if asset_pages.returncode:
+            raise RuntimeError(f"Cannot list existing release assets: {asset_pages.stderr}")
+        existing = {item["name"]: item for page in json.loads(asset_pages.stdout) for item in page}
     pending = []
     for path in files:
         remote = existing.get(path.name)
@@ -234,7 +239,7 @@ def main() -> int:
     if args.publish:
         ensure_release(args.release_tag)
     client = HttpClient()
-    all_records, all_failures, held_records, receipts = [], [], [], []
+    all_records, all_failures, held_records, excluded_records, receipts = [], [], [], [], []
     batch_records, batch_failures, batch_assets, batch_dispositions = [], [], set(), []
     batch_input_bytes, batch_number, processed, discovered_count = 0, 0, 0, 0
     batch_start = args.offset
@@ -253,7 +258,9 @@ def main() -> int:
         checkpoint = {**publication, "range_start": batch_start, "range_end": args.offset + processed,
                       "discovered": discovered_count, "dispositions": batch_dispositions,
                       "held_records": [x for x in held_records if batch_start <= x["source_index"] < args.offset + processed],
-                      "held_count": sum(x["status"] == "held" for x in batch_dispositions)}
+                      "excluded_records": [x for x in excluded_records if batch_start <= x["source_index"] < args.offset + processed],
+                      "held_count": sum(x["status"] == "held" for x in batch_dispositions),
+                      "excluded_count": sum(x["status"] == "excluded" for x in batch_dispositions)}
         try:
             receipts.append(write_batch(base, prefix, batch_records, batch_failures,
                                         batch_assets, checkpoint, args.publish))
@@ -293,6 +300,14 @@ def main() -> int:
             processed += 1
             disposition = {"index": item_index, "source_id": item.get("source_id"), "status": "attempting"}
             batch_dispositions.append(disposition)
+            if item.get("scope_status") == "excluded" and item.get("exclusion_reason"):
+                excluded_records.append({"source_id": item.get("source_id"), "source_index": item_index,
+                                         "title": item.get("title"), "source_url": item.get("source_url"),
+                                         "reason": item["exclusion_reason"]})
+                disposition.update(status="excluded", reason=item["exclusion_reason"])
+                if len(batch_dispositions) >= 500:
+                    flush()
+                continue
             allowed_licenses = {"CC0-1.0", "CC-BY-3.0", "CC-BY-4.0", "CC-BY-SA-3.0",
                                 "CC-BY-SA-4.0", "MIT", "BSD-2-Clause", "BSD-3-Clause",
                                 "Public Domain", "public domain", "PD"}
@@ -402,10 +417,12 @@ def main() -> int:
             "discovered": discovered_count, "selected": selected_count, "processed": processed,
             "downloaded_records": len(all_records), "failures": len(all_failures),
             "held_records": held_records, "held_count": len(held_records),
+            "excluded_records": excluded_records, "excluded_count": len(excluded_records),
             "source_inventory_processed": source_complete,
             "acquisition_complete": source_complete and not all_failures and not held_records and fatal is None,
             "machine_acceptance_passed": source_complete and not all_failures and not held_records and fatal is None
-              and all(d.get("machine_checked") for receipt in receipts for d in receipt.get("dispositions", [])),
+              and all(d.get("machine_checked") or d.get("status") == "excluded"
+                      for receipt in receipts for d in receipt.get("dispositions", [])),
             "acceptance_passed": False, "collection_complete": False,
             "illustrator_verified": False, "visual_acceptance": "pending",
             "fatal": fatal, "batches": receipts, "catalog_summary": catalog_summary,

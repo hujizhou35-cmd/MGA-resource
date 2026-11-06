@@ -6,6 +6,8 @@ import subprocess
 import sys
 import tarfile
 import os
+import hashlib
+from types import SimpleNamespace
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -36,3 +38,25 @@ def test_batch_preserves_bytes_credit_and_archive_relative_paths(tmp_path):
         assert metadata["license"] == "CC-BY-4.0"
         assert "local_path" not in metadata["files"][0]
         assert all(not name.startswith("/") for name in archive.getnames())
+
+
+def test_upload_recognizes_existing_asset_after_first_page(tmp_path, monkeypatch):
+    asset = tmp_path / "later.tar.gz"
+    asset.write_bytes(b"already published bytes")
+    digest = "sha256:" + hashlib.sha256(asset.read_bytes()).hexdigest()
+    calls = []
+
+    def fake_gh(arguments, **kwargs):
+        calls.append(arguments)
+        if "--paginate" in arguments:
+            payload = [[{"name": "earlier.tar.gz"}],
+                       [{"name": asset.name, "size": asset.stat().st_size, "digest": digest}]]
+        else:
+            payload = {"id": 123, "assets": [{"name": "earlier.tar.gz"}]}
+        return SimpleNamespace(returncode=0, stdout=json.dumps(payload), stderr="")
+
+    monkeypatch.setenv("GITHUB_REPOSITORY", "owner/repo")
+    monkeypatch.setattr(collect, "run_gh", fake_gh)
+    collect.upload("release", [asset])
+    assert len(calls) == 2
+    assert "--paginate" in calls[1]
