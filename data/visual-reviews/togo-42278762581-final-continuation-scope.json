@@ -1,0 +1,2185 @@
+{
+  "schema_version": 1,
+  "source": "togo",
+  "collection_prefix": "togo-42271777119-1",
+  "reviewed_at": "2026-11-06T19:33:39.231307+00:00",
+  "review_method": "Both Codex media_catalog and root actually displayed and reviewed the complete 32-tile sheet; exact original/preview/archive/member hashes preserved.",
+  "review_packs": [
+    {
+      "prefix": "scope-review-42278762581-1",
+      "pack": {
+        "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scope-review-42278762581-1.tar.gz",
+        "sha256": "6e44a27206c131b568222c82f2513e6052a0399bd137f72e7c399848c49feba8",
+        "size_bytes": 642259
+      },
+      "mapping_sha256": "b222e6c49f4d4340bc6b6ad258b5d077b4a54d41682f330c5dc79be78b250fa7",
+      "reviewed_tile_count": 32,
+      "file_count": 32,
+      "sheets": [
+        {
+          "filename": "scope-01.png",
+          "sha256": "cfa944cea07c5a8a28a206921c9a1f9a8e558dbfb6c90c104c04e75ee726ca9c",
+          "size_bytes": 643213,
+          "width": 1500,
+          "height": 1875,
+          "tile_ids": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23,
+            24,
+            25,
+            26,
+            27,
+            28,
+            29,
+            30,
+            31,
+            32
+          ]
+        }
+      ],
+      "bindings": null,
+      "nomination_report": null,
+      "raw_judgments_sha256": {
+        "media-togo-third-judgments.json": "59d0f20afa3e97397216d196ed89a616bfaaba52df3bb06b7dbc81c86f690e53"
+      }
+    }
+  ],
+  "summary": {
+    "reviewed_file_entries": 32,
+    "unique_original_preview_bindings": 31,
+    "illustration_and_scope_eligible": 17,
+    "media_type_pending": 13,
+    "scientific_attribution_pending_entries": 2,
+    "scientific_attribution_pending_unique_originals": 1,
+    "photography_confirmed": 0,
+    "scope_acceptance_passed": false
+  },
+  "review_limits": [
+    "Source range is the final Togo continuation; previous completed scope review evidence remains separate.",
+    "The same original SHA has conflicting source labels. The duplicate adult moth image is temporarily unavailable publicly until attribution is corrected; no precise species is invented.",
+    "Fine botanical textures at thumbnail size remain pending rather than being classified from SVG/PNG extension.",
+    "No original was downloaded locally or changed; no new native Illustrator test was performed."
+  ],
+  "items": [
+    {
+      "candidate_id": "8041132033423796beb1350296d29fbc3b4e02bebe5e4fef24dab27bfa87ff6e",
+      "tile": 1,
+      "review_pack": "scope-review-42278762581-1",
+      "source": "togo",
+      "source_id": "1917",
+      "id": "togo-bd2baba9978fc362928b",
+      "title": "ATP synthase reverse mode",
+      "source_url": "https://doi.org/10.7875/togopic.2024.076",
+      "original_sha256": "bf2f76f105fb0137739f3d2e41b93c3f628d8b42465911363c78b94b310ae149",
+      "sha256": "bf2f76f105fb0137739f3d2e41b93c3f628d8b42465911363c78b94b310ae149",
+      "preview_sha256": "ab0e046713a8c93d4c801676b4ae798a3a201f54829b023889f8bfd4896b6224",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42271777119-1-b0000.tar.gz",
+        "member": "files/bf/bf2f76f105fb0137739f3d2e41b93c3f628d8b42465911363c78b94b310ae149.png"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42271777119-1-b0000.tar.gz",
+        "member": "previews/bf2f76f105fb0137739f3d2e41b93c3f628d8b42465911363c78b94b310ae149.png"
+      },
+      "format": "png",
+      "structure": "raster",
+      "selection_reason": "only_raster_acquired",
+      "full_preview_rgba_sha256": "88d24851f9e3ac5fec89f27ff88150523d0333afa4f5b7fb689aade52e646a7b",
+      "scope_verdict": "in_scope",
+      "observations": "Clearly rendered molecular structures or cellulose chains; local structural components, not real microscopy or measured data plots.",
+      "reason": "Clearly rendered molecular structures or cellulose chains; local structural components, not real microscopy or measured data plots.",
+      "reviewed_by": "Codex media_catalog; actual inspection of every tile; root independently viewed the same complete sheet",
+      "reviewed_at": "2026-11-06T19:33:39.231307+00:00",
+      "review_history": [
+        {
+          "verdict": "in_scope",
+          "observations": "Clearly rendered molecular structures or cellulose chains; local structural components, not real microscopy or measured data plots.",
+          "reviewed_by": "Codex media_catalog; actual inspection of every tile; root independently viewed the same complete sheet",
+          "reviewed_at": "2026-11-06T19:33:39.231307+00:00"
+        },
+        {
+          "verdict": "in_scope",
+          "observations": "Independent root display review of the full sheet concurred with the listed illustrated/pending categories and the adult-versus-larva metadata conflict.",
+          "reviewed_by": "root; actual independent contact-sheet inspection",
+          "reviewed_at": "2026-11-06T19:33:39.231307+00:00"
+        }
+      ],
+      "evidence": [
+        {
+          "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scope-review-42278762581-1.tar.gz",
+          "sha256": "6e44a27206c131b568222c82f2513e6052a0399bd137f72e7c399848c49feba8",
+          "member": "scope-01.png",
+          "member_sha256": "cfa944cea07c5a8a28a206921c9a1f9a8e558dbfb6c90c104c04e75ee726ca9c"
+        }
+      ],
+      "native_editability_tested": false,
+      "scientific_detail_validation": "not_independently_verified",
+      "text_content": {
+        "status": "unknown",
+        "kinds": [],
+        "cleanup_advice": "unknown",
+        "basis": "not_independently_assessed",
+        "evidence": [],
+        "editable_text": "unknown"
+      },
+      "scope_status": "visually_illustration",
+      "photographic_provenance_independently_verified": false
+    },
+    {
+      "candidate_id": "e50e83f62a3499b290331d648107079598a2f1253d3f3690307ef9b205d71228",
+      "tile": 2,
+      "review_pack": "scope-review-42278762581-1",
+      "source": "togo",
+      "source_id": "1918",
+      "id": "togo-0c635f206caf4fddab6e",
+      "title": "ATP synthase",
+      "source_url": "https://doi.org/10.7875/togopic.2024.077",
+      "original_sha256": "a6a78e482aa49c53eee768ccd902751d062e9b45009701a807c9d680c74ad6b7",
+      "sha256": "a6a78e482aa49c53eee768ccd902751d062e9b45009701a807c9d680c74ad6b7",
+      "preview_sha256": "33a09c7dba67f38b07b82866ee0a9007b6ba5fc680bea45fa478463f574979dd",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42271777119-1-b0000.tar.gz",
+        "member": "files/a6/a6a78e482aa49c53eee768ccd902751d062e9b45009701a807c9d680c74ad6b7.png"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42271777119-1-b0000.tar.gz",
+        "member": "previews/a6a78e482aa49c53eee768ccd902751d062e9b45009701a807c9d680c74ad6b7.png"
+      },
+      "format": "png",
+      "structure": "raster",
+      "selection_reason": "only_raster_acquired",
+      "full_preview_rgba_sha256": "c90e58f8e1b0b8ad03b92b27eac8d734cf274cf307f125fbdde36b3f2ecb955a",
+      "scope_verdict": "in_scope",
+      "observations": "Clearly rendered molecular structures or cellulose chains; local structural components, not real microscopy or measured data plots.",
+      "reason": "Clearly rendered molecular structures or cellulose chains; local structural components, not real microscopy or measured data plots.",
+      "reviewed_by": "Codex media_catalog; actual inspection of every tile; root independently viewed the same complete sheet",
+      "reviewed_at": "2026-11-06T19:33:39.231307+00:00",
+      "review_history": [
+        {
+          "verdict": "in_scope",
+          "observations": "Clearly rendered molecular structures or cellulose chains; local structural components, not real microscopy or measured data plots.",
+          "reviewed_by": "Codex media_catalog; actual inspection of every tile; root independently viewed the same complete sheet",
+          "reviewed_at": "2026-11-06T19:33:39.231307+00:00"
+        },
+        {
+          "verdict": "in_scope",
+          "observations": "Independent root display review of the full sheet concurred with the listed illustrated/pending categories and the adult-versus-larva metadata conflict.",
+          "reviewed_by": "root; actual independent contact-sheet inspection",
+          "reviewed_at": "2026-11-06T19:33:39.231307+00:00"
+        }
+      ],
+      "evidence": [
+        {
+          "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scope-review-42278762581-1.tar.gz",
+          "sha256": "6e44a27206c131b568222c82f2513e6052a0399bd137f72e7c399848c49feba8",
+          "member": "scope-01.png",
+          "member_sha256": "cfa944cea07c5a8a28a206921c9a1f9a8e558dbfb6c90c104c04e75ee726ca9c"
+        }
+      ],
+      "native_editability_tested": false,
+      "scientific_detail_validation": "not_independently_verified",
+      "text_content": {
+        "status": "unknown",
+        "kinds": [],
+        "cleanup_advice": "unknown",
+        "basis": "not_independently_assessed",
+        "evidence": [],
+        "editable_text": "unknown"
+      },
+      "scope_status": "visually_illustration",
+      "photographic_provenance_independently_verified": false
+    },
+    {
+      "candidate_id": "69cfe55e716444ba5179a178a9c8aa5ff9ef0ec9d733d2f7f427aa8b2236748c",
+      "tile": 3,
+      "review_pack": "scope-review-42278762581-1",
+      "source": "togo",
+      "source_id": "1919",
+      "id": "togo-d7a0a476cf6c7bd90588",
+      "title": "Endoglucanase degrades cellulose",
+      "source_url": "https://doi.org/10.7875/togopic.2024.078",
+      "original_sha256": "4ea37c7454d49abbc182b2f60fc3ecd7ae1a9a703953f62e3705258be3f7ed89",
+      "sha256": "4ea37c7454d49abbc182b2f60fc3ecd7ae1a9a703953f62e3705258be3f7ed89",
+      "preview_sha256": "80cc029a6dfd118f4b0998d015d497c93fe5b0e3593d746d83c4e8edb145e0d7",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42271777119-1-b0000.tar.gz",
+        "member": "files/4e/4ea37c7454d49abbc182b2f60fc3ecd7ae1a9a703953f62e3705258be3f7ed89.png"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42271777119-1-b0000.tar.gz",
+        "member": "previews/4ea37c7454d49abbc182b2f60fc3ecd7ae1a9a703953f62e3705258be3f7ed89.png"
+      },
+      "format": "png",
+      "structure": "raster",
+      "selection_reason": "only_raster_acquired",
+      "full_preview_rgba_sha256": "16de1b1328873a2dc75ab8395604614ffaf0f160553abec3efca8aba624b1c5b",
+      "scope_verdict": "in_scope",
+      "observations": "Clearly rendered molecular structures or cellulose chains; local structural components, not real microscopy or measured data plots.",
+      "reason": "Clearly rendered molecular structures or cellulose chains; local structural components, not real microscopy or measured data plots.",
+      "reviewed_by": "Codex media_catalog; actual inspection of every tile; root independently viewed the same complete sheet",
+      "reviewed_at": "2026-11-06T19:33:39.231307+00:00",
+      "review_history": [
+        {
+          "verdict": "in_scope",
+          "observations": "Clearly rendered molecular structures or cellulose chains; local structural components, not real microscopy or measured data plots.",
+          "reviewed_by": "Codex media_catalog; actual inspection of every tile; root independently viewed the same complete sheet",
+          "reviewed_at": "2026-11-06T19:33:39.231307+00:00"
+        },
+        {
+          "verdict": "in_scope",
+          "observations": "Independent root display review of the full sheet concurred with the listed illustrated/pending categories and the adult-versus-larva metadata conflict.",
+          "reviewed_by": "root; actual independent contact-sheet inspection",
+          "reviewed_at": "2026-11-06T19:33:39.231307+00:00"
+        }
+      ],
+      "evidence": [
+        {
+          "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scope-review-42278762581-1.tar.gz",
+          "sha256": "6e44a27206c131b568222c82f2513e6052a0399bd137f72e7c399848c49feba8",
+          "member": "scope-01.png",
+          "member_sha256": "cfa944cea07c5a8a28a206921c9a1f9a8e558dbfb6c90c104c04e75ee726ca9c"
+        }
+      ],
+      "native_editability_tested": false,
+      "scientific_detail_validation": "not_independently_verified",
+      "text_content": {
+        "status": "unknown",
+        "kinds": [],
+        "cleanup_advice": "unknown",
+        "basis": "not_independently_assessed",
+        "evidence": [],
+        "editable_text": "unknown"
+      },
+      "scope_status": "visually_illustration",
+      "photographic_provenance_independently_verified": false
+    },
+    {
+      "candidate_id": "5ae94fa82035cce531ca578c77e31a490e01a13498e8744526819bef70baebf5",
+      "tile": 4,
+      "review_pack": "scope-review-42278762581-1",
+      "source": "togo",
+      "source_id": "1920",
+      "id": "togo-21549d21534ce3e76360",
+      "title": "Human mitochondrial chaperonin",
+      "source_url": "https://doi.org/10.7875/togopic.2024.079",
+      "original_sha256": "bcf46558995a6034d39659cc9f835f0771966f17db2d5ff1e1d6de1b642a9491",
+      "sha256": "bcf46558995a6034d39659cc9f835f0771966f17db2d5ff1e1d6de1b642a9491",
+      "preview_sha256": "fad35a95bfba694978cb8812906eacda16fd0148f1b8b0712841f3206193c9d1",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42271777119-1-b0000.tar.gz",
+        "member": "files/bc/bcf46558995a6034d39659cc9f835f0771966f17db2d5ff1e1d6de1b642a9491.png"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42271777119-1-b0000.tar.gz",
+        "member": "previews/bcf46558995a6034d39659cc9f835f0771966f17db2d5ff1e1d6de1b642a9491.png"
+      },
+      "format": "png",
+      "structure": "raster",
+      "selection_reason": "only_raster_acquired",
+      "full_preview_rgba_sha256": "fe3b41f4fb5cc590928c075917336cfae28757015412c39031c69ce3cd522620",
+      "scope_verdict": "in_scope",
+      "observations": "Clearly rendered molecular structures or cellulose chains; local structural components, not real microscopy or measured data plots.",
+      "reason": "Clearly rendered molecular structures or cellulose chains; local structural components, not real microscopy or measured data plots.",
+      "reviewed_by": "Codex media_catalog; actual inspection of every tile; root independently viewed the same complete sheet",
+      "reviewed_at": "2026-11-06T19:33:39.231307+00:00",
+      "review_history": [
+        {
+          "verdict": "in_scope",
+          "observations": "Clearly rendered molecular structures or cellulose chains; local structural components, not real microscopy or measured data plots.",
+          "reviewed_by": "Codex media_catalog; actual inspection of every tile; root independently viewed the same complete sheet",
+          "reviewed_at": "2026-11-06T19:33:39.231307+00:00"
+        },
+        {
+          "verdict": "in_scope",
+          "observations": "Independent root display review of the full sheet concurred with the listed illustrated/pending categories and the adult-versus-larva metadata conflict.",
+          "reviewed_by": "root; actual independent contact-sheet inspection",
+          "reviewed_at": "2026-11-06T19:33:39.231307+00:00"
+        }
+      ],
+      "evidence": [
+        {
+          "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scope-review-42278762581-1.tar.gz",
+          "sha256": "6e44a27206c131b568222c82f2513e6052a0399bd137f72e7c399848c49feba8",
+          "member": "scope-01.png",
+          "member_sha256": "cfa944cea07c5a8a28a206921c9a1f9a8e558dbfb6c90c104c04e75ee726ca9c"
+        }
+      ],
+      "native_editability_tested": false,
+      "scientific_detail_validation": "not_independently_verified",
+      "text_content": {
+        "status": "unknown",
+        "kinds": [],
+        "cleanup_advice": "unknown",
+        "basis": "not_independently_assessed",
+        "evidence": [],
+        "editable_text": "unknown"
+      },
+      "scope_status": "visually_illustration",
+      "photographic_provenance_independently_verified": false
+    },
+    {
+      "candidate_id": "27c8690b7c232f958a09fc7bd184f830603b724989f938e3419370b1386ad101",
+      "tile": 5,
+      "review_pack": "scope-review-42278762581-1",
+      "source": "togo",
+      "source_id": "2032",
+      "id": "togo-d49be05d166f2bf064ca",
+      "title": "Tomato bug",
+      "source_url": "https://doi.org/10.7875/togopic.2024.191",
+      "original_sha256": "9d61c7b38c29726e42e77f8f6f1b2ca45ffb9318cd2374f3ae8c0d9fa5a47566",
+      "sha256": "9d61c7b38c29726e42e77f8f6f1b2ca45ffb9318cd2374f3ae8c0d9fa5a47566",
+      "preview_sha256": "f2d8836e3daca14fa147bc86cec4e4fe16c1703c3b2cb78beed76e792ce8d193",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42271777119-1-b0000.tar.gz",
+        "member": "files/9d/9d61c7b38c29726e42e77f8f6f1b2ca45ffb9318cd2374f3ae8c0d9fa5a47566.png"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42271777119-1-b0000.tar.gz",
+        "member": "previews/9d61c7b38c29726e42e77f8f6f1b2ca45ffb9318cd2374f3ae8c0d9fa5a47566.png"
+      },
+      "format": "png",
+      "structure": "raster",
+      "selection_reason": "raster_embedded_or_mixed_record_and_sibling_formats",
+      "full_preview_rgba_sha256": "3c2de6b0f2b0924c32a879cc39672da4786bc0138600ef4ac76b1db0f4a0663d",
+      "scope_verdict": "in_scope",
+      "observations": "Drawn whole insect with simplified colored surfaces and visible illustrated outline; no photographic background. Exact species is not independently validated.",
+      "reason": "Drawn whole insect with simplified colored surfaces and visible illustrated outline; no photographic background. Exact species is not independently validated.",
+      "reviewed_by": "Codex media_catalog; actual inspection of every tile; root independently viewed the same complete sheet",
+      "reviewed_at": "2026-11-06T19:33:39.231307+00:00",
+      "review_history": [
+        {
+          "verdict": "in_scope",
+          "observations": "Drawn whole insect with simplified colored surfaces and visible illustrated outline; no photographic background. Exact species is not independently validated.",
+          "reviewed_by": "Codex media_catalog; actual inspection of every tile; root independently viewed the same complete sheet",
+          "reviewed_at": "2026-11-06T19:33:39.231307+00:00"
+        },
+        {
+          "verdict": "in_scope",
+          "observations": "Independent root display review of the full sheet concurred with the listed illustrated/pending categories and the adult-versus-larva metadata conflict.",
+          "reviewed_by": "root; actual independent contact-sheet inspection",
+          "reviewed_at": "2026-11-06T19:33:39.231307+00:00"
+        }
+      ],
+      "evidence": [
+        {
+          "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scope-review-42278762581-1.tar.gz",
+          "sha256": "6e44a27206c131b568222c82f2513e6052a0399bd137f72e7c399848c49feba8",
+          "member": "scope-01.png",
+          "member_sha256": "cfa944cea07c5a8a28a206921c9a1f9a8e558dbfb6c90c104c04e75ee726ca9c"
+        }
+      ],
+      "native_editability_tested": false,
+      "scientific_detail_validation": "not_independently_verified",
+      "text_content": {
+        "status": "unknown",
+        "kinds": [],
+        "cleanup_advice": "unknown",
+        "basis": "not_independently_assessed",
+        "evidence": [],
+        "editable_text": "unknown"
+      },
+      "scope_status": "visually_illustration",
+      "photographic_provenance_independently_verified": false
+    },
+    {
+      "candidate_id": "0277770fc3b0c0a3db0726ae72edb2234666dc43a3185be37482f48696fa319c",
+      "tile": 6,
+      "review_pack": "scope-review-42278762581-1",
+      "source": "togo",
+      "source_id": "2032",
+      "id": "togo-d49be05d166f2bf064ca",
+      "title": "Tomato bug",
+      "source_url": "https://doi.org/10.7875/togopic.2024.191",
+      "original_sha256": "cdeedf2553a5a84284a8e2da330340841a36ad9e3780c535a10d0d4257bffa07",
+      "sha256": "cdeedf2553a5a84284a8e2da330340841a36ad9e3780c535a10d0d4257bffa07",
+      "preview_sha256": "5c158ab0bfd7fbbb87ea66d72040b99530c88e8fcea1aeead13558874d67ac14",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42271777119-1-b0000.tar.gz",
+        "member": "files/cd/cdeedf2553a5a84284a8e2da330340841a36ad9e3780c535a10d0d4257bffa07.svg"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42271777119-1-b0000.tar.gz",
+        "member": "previews/cdeedf2553a5a84284a8e2da330340841a36ad9e3780c535a10d0d4257bffa07.png"
+      },
+      "format": "svg",
+      "structure": "mixed",
+      "selection_reason": "raster_embedded_or_mixed_record_and_sibling_formats",
+      "full_preview_rgba_sha256": "9282ce58c52a4dfac1d93e8cef4a6bae9e534870f93f8f2ab20100380dcd3878",
+      "scope_verdict": "in_scope",
+      "observations": "Drawn whole insect with simplified colored surfaces and visible illustrated outline; no photographic background. Exact species is not independently validated.",
+      "reason": "Drawn whole insect with simplified colored surfaces and visible illustrated outline; no photographic background. Exact species is not independently validated.",
+      "reviewed_by": "Codex media_catalog; actual inspection of every tile; root independently viewed the same complete sheet",
+      "reviewed_at": "2026-11-06T19:33:39.231307+00:00",
+      "review_history": [
+        {
+          "verdict": "in_scope",
+          "observations": "Drawn whole insect with simplified colored surfaces and visible illustrated outline; no photographic background. Exact species is not independently validated.",
+          "reviewed_by": "Codex media_catalog; actual inspection of every tile; root independently viewed the same complete sheet",
+          "reviewed_at": "2026-11-06T19:33:39.231307+00:00"
+        },
+        {
+          "verdict": "in_scope",
+          "observations": "Independent root display review of the full sheet concurred with the listed illustrated/pending categories and the adult-versus-larva metadata conflict.",
+          "reviewed_by": "root; actual independent contact-sheet inspection",
+          "reviewed_at": "2026-11-06T19:33:39.231307+00:00"
+        }
+      ],
+      "evidence": [
+        {
+          "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scope-review-42278762581-1.tar.gz",
+          "sha256": "6e44a27206c131b568222c82f2513e6052a0399bd137f72e7c399848c49feba8",
+          "member": "scope-01.png",
+          "member_sha256": "cfa944cea07c5a8a28a206921c9a1f9a8e558dbfb6c90c104c04e75ee726ca9c"
+        }
+      ],
+      "native_editability_tested": false,
+      "scientific_detail_validation": "not_independently_verified",
+      "text_content": {
+        "status": "unknown",
+        "kinds": [],
+        "cleanup_advice": "unknown",
+        "basis": "not_independently_assessed",
+        "evidence": [],
+        "editable_text": "unknown"
+      },
+      "scope_status": "visually_illustration",
+      "photographic_provenance_independently_verified": false
+    },
+    {
+      "candidate_id": "ae72e0dbb2650459a047a3fea11ee6a61777d57c89955fd8ef91dab5f4302c2c",
+      "tile": 7,
+      "review_pack": "scope-review-42278762581-1",
+      "source": "togo",
+      "source_id": "2052",
+      "id": "togo-08f3ba58c4c3e6e5789f",
+      "title": "Arcte coerula larva",
+      "source_url": "https://doi.org/10.7875/togopic.2024.211",
+      "original_sha256": "6354a30ba36c5a9921b517f9ab81dbede7c55c9b206765e40c72f1d5c3f395e6",
+      "sha256": "6354a30ba36c5a9921b517f9ab81dbede7c55c9b206765e40c72f1d5c3f395e6",
+      "preview_sha256": "60770e17b35ecfa402141445d0a042d6ff6dee5cc83ac20f541fdedf6362216c",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42271777119-1-b0000.tar.gz",
+        "member": "files/63/6354a30ba36c5a9921b517f9ab81dbede7c55c9b206765e40c72f1d5c3f395e6.png"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42271777119-1-b0000.tar.gz",
+        "member": "previews/6354a30ba36c5a9921b517f9ab81dbede7c55c9b206765e40c72f1d5c3f395e6.png"
+      },
+      "format": "png",
+      "structure": "raster",
+      "selection_reason": "only_raster_acquired",
+      "full_preview_rgba_sha256": "a03cd51cbf48db2c10a3204158ba374aa074c1f6b12f82ecd42fdb527a1ed99c",
+      "scope_verdict": "in_scope",
+      "observations": "Drawn whole insect with simplified colored surfaces and visible illustrated outline; no photographic background. Exact species is not independently validated.",
+      "reason": "Drawn whole insect with simplified colored surfaces and visible illustrated outline; no photographic background. Exact species is not independently validated.",
+      "reviewed_by": "Codex media_catalog; actual inspection of every tile; root independently viewed the same complete sheet",
+      "reviewed_at": "2026-11-06T19:33:39.231307+00:00",
+      "review_history": [
+        {
+          "verdict": "in_scope",
+          "observations": "Drawn whole insect with simplified colored surfaces and visible illustrated outline; no photographic background. Exact species is not independently validated.",
+          "reviewed_by": "Codex media_catalog; actual inspection of every tile; root independently viewed the same complete sheet",
+          "reviewed_at": "2026-11-06T19:33:39.231307+00:00"
+        },
+        {
+          "verdict": "in_scope",
+          "observations": "Independent root display review of the full sheet concurred with the listed illustrated/pending categories and the adult-versus-larva metadata conflict.",
+          "reviewed_by": "root; actual independent contact-sheet inspection",
+          "reviewed_at": "2026-11-06T19:33:39.231307+00:00"
+        }
+      ],
+      "evidence": [
+        {
+          "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scope-review-42278762581-1.tar.gz",
+          "sha256": "6e44a27206c131b568222c82f2513e6052a0399bd137f72e7c399848c49feba8",
+          "member": "scope-01.png",
+          "member_sha256": "cfa944cea07c5a8a28a206921c9a1f9a8e558dbfb6c90c104c04e75ee726ca9c"
+        }
+      ],
+      "native_editability_tested": false,
+      "scientific_detail_validation": "not_independently_verified",
+      "text_content": {
+        "status": "unknown",
+        "kinds": [],
+        "cleanup_advice": "unknown",
+        "basis": "not_independently_assessed",
+        "evidence": [],
+        "editable_text": "unknown"
+      },
+      "scope_status": "visually_illustration",
+      "photographic_provenance_independently_verified": false
+    },
+    {
+      "candidate_id": "0cef59aad32ba92f43ec9f062e3b274879511c3123d6deaaf221b88823703a0e",
+      "tile": 8,
+      "review_pack": "scope-review-42278762581-1",
+      "source": "togo",
+      "source_id": "2158",
+      "id": "togo-7db7c19bec0d26f89190",
+      "title": "Mass Spectrometer",
+      "source_url": "https://doi.org/10.7875/togopic.2025.047",
+      "original_sha256": "fd52a1d1029f2499def3cb5ee1a3babd899279a09f0c1556bb447ca1af5c9cbb",
+      "sha256": "fd52a1d1029f2499def3cb5ee1a3babd899279a09f0c1556bb447ca1af5c9cbb",
+      "preview_sha256": "1f164a08bd3fcd54bbf5f2c77105aa617c5daf39c9bdd251fc861fc5677d97d3",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42271777119-1-b0000.tar.gz",
+        "member": "files/fd/fd52a1d1029f2499def3cb5ee1a3babd899279a09f0c1556bb447ca1af5c9cbb.png"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42271777119-1-b0000.tar.gz",
+        "member": "previews/fd52a1d1029f2499def3cb5ee1a3babd899279a09f0c1556bb447ca1af5c9cbb.png"
+      },
+      "format": "png",
+      "structure": "raster",
+      "selection_reason": "raster_embedded_or_mixed_record_and_sibling_formats",
+      "full_preview_rgba_sha256": "07fa26a341e80676ba8d9abaa300201b7ee6eb6edc1ffba751c1ede850ca4d3d",
+      "scope_verdict": "in_scope",
+      "observations": "Drawn mass-spectrometer equipment with outlined panels and tubing; independent laboratory object.",
+      "reason": "Drawn mass-spectrometer equipment with outlined panels and tubing; independent laboratory object.",
+      "reviewed_by": "Codex media_catalog; actual inspection of every tile; root independently viewed the same complete sheet",
+      "reviewed_at": "2026-11-06T19:33:39.231307+00:00",
+      "review_history": [
+        {
+          "verdict": "in_scope",
+          "observations": "Drawn mass-spectrometer equipment with outlined panels and tubing; independent laboratory object.",
+          "reviewed_by": "Codex media_catalog; actual inspection of every tile; root independently viewed the same complete sheet",
+          "reviewed_at": "2026-11-06T19:33:39.231307+00:00"
+        },
+        {
+          "verdict": "in_scope",
+          "observations": "Independent root display review of the full sheet concurred with the listed illustrated/pending categories and the adult-versus-larva metadata conflict.",
+          "reviewed_by": "root; actual independent contact-sheet inspection",
+          "reviewed_at": "2026-11-06T19:33:39.231307+00:00"
+        }
+      ],
+      "evidence": [
+        {
+          "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scope-review-42278762581-1.tar.gz",
+          "sha256": "6e44a27206c131b568222c82f2513e6052a0399bd137f72e7c399848c49feba8",
+          "member": "scope-01.png",
+          "member_sha256": "cfa944cea07c5a8a28a206921c9a1f9a8e558dbfb6c90c104c04e75ee726ca9c"
+        }
+      ],
+      "native_editability_tested": false,
+      "scientific_detail_validation": "not_independently_verified",
+      "text_content": {
+        "status": "unknown",
+        "kinds": [],
+        "cleanup_advice": "unknown",
+        "basis": "not_independently_assessed",
+        "evidence": [],
+        "editable_text": "unknown"
+      },
+      "scope_status": "visually_illustration",
+      "photographic_provenance_independently_verified": false
+    },
+    {
+      "candidate_id": "df3f489012d6a6b5ca907f53026c5751c51a64f68dd27e1e4ad43458dd6f5552",
+      "tile": 9,
+      "review_pack": "scope-review-42278762581-1",
+      "source": "togo",
+      "source_id": "2158",
+      "id": "togo-7db7c19bec0d26f89190",
+      "title": "Mass Spectrometer",
+      "source_url": "https://doi.org/10.7875/togopic.2025.047",
+      "original_sha256": "662159a3a2aef11da1195f85e49ab7e4bfcd3f2f1f440278c045f10974df1bb1",
+      "sha256": "662159a3a2aef11da1195f85e49ab7e4bfcd3f2f1f440278c045f10974df1bb1",
+      "preview_sha256": "10ac8e0d74b869260532f6944a2902e87e52f342845d026ab7b781112e4f674f",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42271777119-1-b0000.tar.gz",
+        "member": "files/66/662159a3a2aef11da1195f85e49ab7e4bfcd3f2f1f440278c045f10974df1bb1.svg"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42271777119-1-b0000.tar.gz",
+        "member": "previews/662159a3a2aef11da1195f85e49ab7e4bfcd3f2f1f440278c045f10974df1bb1.png"
+      },
+      "format": "svg",
+      "structure": "mixed",
+      "selection_reason": "raster_embedded_or_mixed_record_and_sibling_formats",
+      "full_preview_rgba_sha256": "c9551aac90f003a94c2b13c0abc7919c9dbf42460d7c7ba2d65e6f90188a6d91",
+      "scope_verdict": "in_scope",
+      "observations": "Drawn mass-spectrometer equipment with outlined panels and tubing; independent laboratory object.",
+      "reason": "Drawn mass-spectrometer equipment with outlined panels and tubing; independent laboratory object.",
+      "reviewed_by": "Codex media_catalog; actual inspection of every tile; root independently viewed the same complete sheet",
+      "reviewed_at": "2026-11-06T19:33:39.231307+00:00",
+      "review_history": [
+        {
+          "verdict": "in_scope",
+          "observations": "Drawn mass-spectrometer equipment with outlined panels and tubing; independent laboratory object.",
+          "reviewed_by": "Codex media_catalog; actual inspection of every tile; root independently viewed the same complete sheet",
+          "reviewed_at": "2026-11-06T19:33:39.231307+00:00"
+        },
+        {
+          "verdict": "in_scope",
+          "observations": "Independent root display review of the full sheet concurred with the listed illustrated/pending categories and the adult-versus-larva metadata conflict.",
+          "reviewed_by": "root; actual independent contact-sheet inspection",
+          "reviewed_at": "2026-11-06T19:33:39.231307+00:00"
+        }
+      ],
+      "evidence": [
+        {
+          "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scope-review-42278762581-1.tar.gz",
+          "sha256": "6e44a27206c131b568222c82f2513e6052a0399bd137f72e7c399848c49feba8",
+          "member": "scope-01.png",
+          "member_sha256": "cfa944cea07c5a8a28a206921c9a1f9a8e558dbfb6c90c104c04e75ee726ca9c"
+        }
+      ],
+      "native_editability_tested": false,
+      "scientific_detail_validation": "not_independently_verified",
+      "text_content": {
+        "status": "unknown",
+        "kinds": [],
+        "cleanup_advice": "unknown",
+        "basis": "not_independently_assessed",
+        "evidence": [],
+        "editable_text": "unknown"
+      },
+      "scope_status": "visually_illustration",
+      "photographic_provenance_independently_verified": false
+    },
+    {
+      "candidate_id": "e5e95f95d9e33b64a00f2a95b03b33a9397e878039a4c69fe0cf13840e85a4f3",
+      "tile": 10,
+      "review_pack": "scope-review-42278762581-1",
+      "source": "togo",
+      "source_id": "2196",
+      "id": "togo-9ce2d647675a6932b7d1",
+      "title": "Os. Femoris Cranialis",
+      "source_url": "https://doi.org/10.7875/togopic.2025.085",
+      "original_sha256": "847f739ac804617d0fa67ba7b78db8830e386288e12ecedb410f62c3b5f47bce",
+      "sha256": "847f739ac804617d0fa67ba7b78db8830e386288e12ecedb410f62c3b5f47bce",
+      "preview_sha256": "1e12cad5a32d6b4c2181d75f571f1cd483d774ffd1985ea7df5dca10b590cdf0",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42271777119-1-b0001.tar.gz",
+        "member": "files/84/847f739ac804617d0fa67ba7b78db8830e386288e12ecedb410f62c3b5f47bce.png"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42271777119-1-b0001.tar.gz",
+        "member": "previews/847f739ac804617d0fa67ba7b78db8830e386288e12ecedb410f62c3b5f47bce.png"
+      },
+      "format": "png",
+      "structure": "raster",
+      "selection_reason": "only_raster_acquired",
+      "full_preview_rgba_sha256": "bbbee0d1e3f8bb8f12f71a0864906d155e41532fe67e2a9cb3ab33061208a6c4",
+      "scope_verdict": "in_scope",
+      "observations": "Drawn isolated bone with shaded anatomical contours; independent object, species not independently confirmed.",
+      "reason": "Drawn isolated bone with shaded anatomical contours; independent object, species not independently confirmed.",
+      "reviewed_by": "Codex media_catalog; actual inspection of every tile; root independently viewed the same complete sheet",
+      "reviewed_at": "2026-11-06T19:33:39.231307+00:00",
+      "review_history": [
+        {
+          "verdict": "in_scope",
+          "observations": "Drawn isolated bone with shaded anatomical contours; independent object, species not independently confirmed.",
+          "reviewed_by": "Codex media_catalog; actual inspection of every tile; root independently viewed the same complete sheet",
+          "reviewed_at": "2026-11-06T19:33:39.231307+00:00"
+        },
+        {
+          "verdict": "in_scope",
+          "observations": "Independent root display review of the full sheet concurred with the listed illustrated/pending categories and the adult-versus-larva metadata conflict.",
+          "reviewed_by": "root; actual independent contact-sheet inspection",
+          "reviewed_at": "2026-11-06T19:33:39.231307+00:00"
+        }
+      ],
+      "evidence": [
+        {
+          "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scope-review-42278762581-1.tar.gz",
+          "sha256": "6e44a27206c131b568222c82f2513e6052a0399bd137f72e7c399848c49feba8",
+          "member": "scope-01.png",
+          "member_sha256": "cfa944cea07c5a8a28a206921c9a1f9a8e558dbfb6c90c104c04e75ee726ca9c"
+        }
+      ],
+      "native_editability_tested": false,
+      "scientific_detail_validation": "not_independently_verified",
+      "text_content": {
+        "status": "unknown",
+        "kinds": [],
+        "cleanup_advice": "unknown",
+        "basis": "not_independently_assessed",
+        "evidence": [],
+        "editable_text": "unknown"
+      },
+      "scope_status": "visually_illustration",
+      "photographic_provenance_independently_verified": false
+    },
+    {
+      "candidate_id": "9725758d1510b1d10cdc83d045667d1deefe17104c12f514402e89fed2a8c1bb",
+      "tile": 11,
+      "review_pack": "scope-review-42278762581-1",
+      "source": "togo",
+      "source_id": "2197",
+      "id": "togo-f0cd216e88f6b68bc602",
+      "title": "Os. Femoris Caudalis",
+      "source_url": "https://doi.org/10.7875/togopic.2025.086",
+      "original_sha256": "636fe02b88a0919105e4aa3781ff0b3ac333469ff8ef0960edd9b0f6ecc32336",
+      "sha256": "636fe02b88a0919105e4aa3781ff0b3ac333469ff8ef0960edd9b0f6ecc32336",
+      "preview_sha256": "27ff4b05b5334c483813bfab87f51fd69071337d025d95edaf0a4167b9ca14d8",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42271777119-1-b0001.tar.gz",
+        "member": "files/63/636fe02b88a0919105e4aa3781ff0b3ac333469ff8ef0960edd9b0f6ecc32336.png"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42271777119-1-b0001.tar.gz",
+        "member": "previews/636fe02b88a0919105e4aa3781ff0b3ac333469ff8ef0960edd9b0f6ecc32336.png"
+      },
+      "format": "png",
+      "structure": "raster",
+      "selection_reason": "only_raster_acquired",
+      "full_preview_rgba_sha256": "dac95070be7218fd0fac5dd388ae4a2076db87071c9146974b3e3f16f07e9a62",
+      "scope_verdict": "in_scope",
+      "observations": "Drawn isolated bone with shaded anatomical contours; independent object, species not independently confirmed.",
+      "reason": "Drawn isolated bone with shaded anatomical contours; independent object, species not independently confirmed.",
+      "reviewed_by": "Codex media_catalog; actual inspection of every tile; root independently viewed the same complete sheet",
+      "reviewed_at": "2026-11-06T19:33:39.231307+00:00",
+      "review_history": [
+        {
+          "verdict": "in_scope",
+          "observations": "Drawn isolated bone with shaded anatomical contours; independent object, species not independently confirmed.",
+          "reviewed_by": "Codex media_catalog; actual inspection of every tile; root independently viewed the same complete sheet",
+          "reviewed_at": "2026-11-06T19:33:39.231307+00:00"
+        },
+        {
+          "verdict": "in_scope",
+          "observations": "Independent root display review of the full sheet concurred with the listed illustrated/pending categories and the adult-versus-larva metadata conflict.",
+          "reviewed_by": "root; actual independent contact-sheet inspection",
+          "reviewed_at": "2026-11-06T19:33:39.231307+00:00"
+        }
+      ],
+      "evidence": [
+        {
+          "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scope-review-42278762581-1.tar.gz",
+          "sha256": "6e44a27206c131b568222c82f2513e6052a0399bd137f72e7c399848c49feba8",
+          "member": "scope-01.png",
+          "member_sha256": "cfa944cea07c5a8a28a206921c9a1f9a8e558dbfb6c90c104c04e75ee726ca9c"
+        }
+      ],
+      "native_editability_tested": false,
+      "scientific_detail_validation": "not_independently_verified",
+      "text_content": {
+        "status": "unknown",
+        "kinds": [],
+        "cleanup_advice": "unknown",
+        "basis": "not_independently_assessed",
+        "evidence": [],
+        "editable_text": "unknown"
+      },
+      "scope_status": "visually_illustration",
+      "photographic_provenance_independently_verified": false
+    },
+    {
+      "candidate_id": "928a84b3b663664dc0009415fbe9157317476575b784f6da0f946b9dfaa049e3",
+      "tile": 12,
+      "review_pack": "scope-review-42278762581-1",
+      "source": "togo",
+      "source_id": "2212",
+      "id": "togo-ed1eb8027de4f8e120ba",
+      "title": "Flowering dogwood",
+      "source_url": "https://doi.org/10.7875/togopic.2026.004",
+      "original_sha256": "3a1cad02363443fd3a8f3961704694d58b01296cc4ae5c9f24ba97c896ac460f",
+      "sha256": "3a1cad02363443fd3a8f3961704694d58b01296cc4ae5c9f24ba97c896ac460f",
+      "preview_sha256": "27edbe8292da6f1f12372df9cbe766a507ec5c7a5a70e8e84a57f4d95bb832cd",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42271777119-1-b0001.tar.gz",
+        "member": "files/3a/3a1cad02363443fd3a8f3961704694d58b01296cc4ae5c9f24ba97c896ac460f.svg"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42271777119-1-b0001.tar.gz",
+        "member": "previews/3a1cad02363443fd3a8f3961704694d58b01296cc4ae5c9f24ba97c896ac460f.png"
+      },
+      "format": "svg",
+      "structure": "mixed",
+      "selection_reason": "raster_embedded_or_mixed_record_and_sibling_formats",
+      "full_preview_rgba_sha256": "4aed90cdbb5e47ce5d9a6b30b115f89087a9d02c43f0f814333053e68add8776",
+      "scope_verdict": "scope_pending",
+      "observations": "Small isolated botanical leaf/sprig with fine natural surface texture; this contact preview cannot confidently distinguish photographed cutout from digital painting. No photography conclusion is asserted.",
+      "reason": "Small isolated botanical leaf/sprig with fine natural surface texture; this contact preview cannot confidently distinguish photographed cutout from digital painting. No photography conclusion is asserted.",
+      "reviewed_by": "Codex media_catalog; actual inspection of every tile; root independently viewed the same complete sheet",
+      "reviewed_at": "2026-11-06T19:33:39.231307+00:00",
+      "review_history": [
+        {
+          "verdict": "scope_pending",
+          "observations": "Small isolated botanical leaf/sprig with fine natural surface texture; this contact preview cannot confidently distinguish photographed cutout from digital painting. No photography conclusion is asserted.",
+          "reviewed_by": "Codex media_catalog; actual inspection of every tile; root independently viewed the same complete sheet",
+          "reviewed_at": "2026-11-06T19:33:39.231307+00:00"
+        },
+        {
+          "verdict": "scope_pending",
+          "observations": "Independent root display review of the full sheet concurred with the listed illustrated/pending categories and the adult-versus-larva metadata conflict.",
+          "reviewed_by": "root; actual independent contact-sheet inspection",
+          "reviewed_at": "2026-11-06T19:33:39.231307+00:00"
+        }
+      ],
+      "evidence": [
+        {
+          "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scope-review-42278762581-1.tar.gz",
+          "sha256": "6e44a27206c131b568222c82f2513e6052a0399bd137f72e7c399848c49feba8",
+          "member": "scope-01.png",
+          "member_sha256": "cfa944cea07c5a8a28a206921c9a1f9a8e558dbfb6c90c104c04e75ee726ca9c"
+        }
+      ],
+      "native_editability_tested": false,
+      "scientific_detail_validation": "not_independently_verified",
+      "text_content": {
+        "status": "unknown",
+        "kinds": [],
+        "cleanup_advice": "unknown",
+        "basis": "not_independently_assessed",
+        "evidence": [],
+        "editable_text": "unknown"
+      },
+      "scope_status": "scope_pending",
+      "visual_verdict": "scope_pending",
+      "photographic_provenance_independently_verified": false
+    },
+    {
+      "candidate_id": "eb37e8755bd1b0aec68df78c2bbb23bc7b1c962f01b6090351061f4fe4b0a04e",
+      "tile": 13,
+      "review_pack": "scope-review-42278762581-1",
+      "source": "togo",
+      "source_id": "2212",
+      "id": "togo-ed1eb8027de4f8e120ba",
+      "title": "Flowering dogwood",
+      "source_url": "https://doi.org/10.7875/togopic.2026.004",
+      "original_sha256": "f1c13c21d28e3080c151609e9c2f7d05e49aade4c7ceb650061d6434f5f068c5",
+      "sha256": "f1c13c21d28e3080c151609e9c2f7d05e49aade4c7ceb650061d6434f5f068c5",
+      "preview_sha256": "9a934cbad7e30f87266cab7fe95fbcacfcb5817c2f7b1d8733754a2d43d91791",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42271777119-1-b0001.tar.gz",
+        "member": "files/f1/f1c13c21d28e3080c151609e9c2f7d05e49aade4c7ceb650061d6434f5f068c5.png"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42271777119-1-b0001.tar.gz",
+        "member": "previews/f1c13c21d28e3080c151609e9c2f7d05e49aade4c7ceb650061d6434f5f068c5.png"
+      },
+      "format": "png",
+      "structure": "raster",
+      "selection_reason": "raster_embedded_or_mixed_record_and_sibling_formats",
+      "full_preview_rgba_sha256": "a14adf7978ce66d4144f2ba079a4e4199c6622b472d4a50838d861662d178b33",
+      "scope_verdict": "scope_pending",
+      "observations": "Small isolated botanical leaf/sprig with fine natural surface texture; this contact preview cannot confidently distinguish photographed cutout from digital painting. No photography conclusion is asserted.",
+      "reason": "Small isolated botanical leaf/sprig with fine natural surface texture; this contact preview cannot confidently distinguish photographed cutout from digital painting. No photography conclusion is asserted.",
+      "reviewed_by": "Codex media_catalog; actual inspection of every tile; root independently viewed the same complete sheet",
+      "reviewed_at": "2026-11-06T19:33:39.231307+00:00",
+      "review_history": [
+        {
+          "verdict": "scope_pending",
+          "observations": "Small isolated botanical leaf/sprig with fine natural surface texture; this contact preview cannot confidently distinguish photographed cutout from digital painting. No photography conclusion is asserted.",
+          "reviewed_by": "Codex media_catalog; actual inspection of every tile; root independently viewed the same complete sheet",
+          "reviewed_at": "2026-11-06T19:33:39.231307+00:00"
+        },
+        {
+          "verdict": "scope_pending",
+          "observations": "Independent root display review of the full sheet concurred with the listed illustrated/pending categories and the adult-versus-larva metadata conflict.",
+          "reviewed_by": "root; actual independent contact-sheet inspection",
+          "reviewed_at": "2026-11-06T19:33:39.231307+00:00"
+        }
+      ],
+      "evidence": [
+        {
+          "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scope-review-42278762581-1.tar.gz",
+          "sha256": "6e44a27206c131b568222c82f2513e6052a0399bd137f72e7c399848c49feba8",
+          "member": "scope-01.png",
+          "member_sha256": "cfa944cea07c5a8a28a206921c9a1f9a8e558dbfb6c90c104c04e75ee726ca9c"
+        }
+      ],
+      "native_editability_tested": false,
+      "scientific_detail_validation": "not_independently_verified",
+      "text_content": {
+        "status": "unknown",
+        "kinds": [],
+        "cleanup_advice": "unknown",
+        "basis": "not_independently_assessed",
+        "evidence": [],
+        "editable_text": "unknown"
+      },
+      "scope_status": "scope_pending",
+      "visual_verdict": "scope_pending",
+      "photographic_provenance_independently_verified": false
+    },
+    {
+      "candidate_id": "6d92da0864becb2ab938cc6cc9bbba45a250a81289b1633934a633846ed4f6fc",
+      "tile": 14,
+      "review_pack": "scope-review-42278762581-1",
+      "source": "togo",
+      "source_id": "2213",
+      "id": "togo-6f27a41b4fbbeb3667b0",
+      "title": "Chinese elm",
+      "source_url": "https://doi.org/10.7875/togopic.2026.005",
+      "original_sha256": "3632cbe508db10e4412032532f66cb5465fb286714b78bab322fe3fa9fffa582",
+      "sha256": "3632cbe508db10e4412032532f66cb5465fb286714b78bab322fe3fa9fffa582",
+      "preview_sha256": "e830248fb38b751ddab6a989a0d7003ef5586b2160083ba646044a58a5837ddd",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42271777119-1-b0001.tar.gz",
+        "member": "files/36/3632cbe508db10e4412032532f66cb5465fb286714b78bab322fe3fa9fffa582.svg"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42271777119-1-b0001.tar.gz",
+        "member": "previews/3632cbe508db10e4412032532f66cb5465fb286714b78bab322fe3fa9fffa582.png"
+      },
+      "format": "svg",
+      "structure": "mixed",
+      "selection_reason": "raster_embedded_or_mixed_record_and_sibling_formats",
+      "full_preview_rgba_sha256": "1018958f0b561bfca9f4b7d861cd75e53278b063fccf348e5946f42ea6df1227",
+      "scope_verdict": "scope_pending",
+      "observations": "Small isolated botanical leaf/sprig with fine natural surface texture; this contact preview cannot confidently distinguish photographed cutout from digital painting. No photography conclusion is asserted.",
+      "reason": "Small isolated botanical leaf/sprig with fine natural surface texture; this contact preview cannot confidently distinguish photographed cutout from digital painting. No photography conclusion is asserted.",
+      "reviewed_by": "Codex media_catalog; actual inspection of every tile; root independently viewed the same complete sheet",
+      "reviewed_at": "2026-11-06T19:33:39.231307+00:00",
+      "review_history": [
+        {
+          "verdict": "scope_pending",
+          "observations": "Small isolated botanical leaf/sprig with fine natural surface texture; this contact preview cannot confidently distinguish photographed cutout from digital painting. No photography conclusion is asserted.",
+          "reviewed_by": "Codex media_catalog; actual inspection of every tile; root independently viewed the same complete sheet",
+          "reviewed_at": "2026-11-06T19:33:39.231307+00:00"
+        },
+        {
+          "verdict": "scope_pending",
+          "observations": "Independent root display review of the full sheet concurred with the listed illustrated/pending categories and the adult-versus-larva metadata conflict.",
+          "reviewed_by": "root; actual independent contact-sheet inspection",
+          "reviewed_at": "2026-11-06T19:33:39.231307+00:00"
+        }
+      ],
+      "evidence": [
+        {
+          "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scope-review-42278762581-1.tar.gz",
+          "sha256": "6e44a27206c131b568222c82f2513e6052a0399bd137f72e7c399848c49feba8",
+          "member": "scope-01.png",
+          "member_sha256": "cfa944cea07c5a8a28a206921c9a1f9a8e558dbfb6c90c104c04e75ee726ca9c"
+        }
+      ],
+      "native_editability_tested": false,
+      "scientific_detail_validation": "not_independently_verified",
+      "text_content": {
+        "status": "unknown",
+        "kinds": [],
+        "cleanup_advice": "unknown",
+        "basis": "not_independently_assessed",
+        "evidence": [],
+        "editable_text": "unknown"
+      },
+      "scope_status": "scope_pending",
+      "visual_verdict": "scope_pending",
+      "photographic_provenance_independently_verified": false
+    },
+    {
+      "candidate_id": "cc724bd6be538e97975e9f22e6f6ae05f6f7000517b2ad99c3ca65b849721d1a",
+      "tile": 15,
+      "review_pack": "scope-review-42278762581-1",
+      "source": "togo",
+      "source_id": "2213",
+      "id": "togo-6f27a41b4fbbeb3667b0",
+      "title": "Chinese elm",
+      "source_url": "https://doi.org/10.7875/togopic.2026.005",
+      "original_sha256": "09e8dd7eba7da58db0ef071b8d63a7f3f81f5e9e941cf35c3aba2d99681f375a",
+      "sha256": "09e8dd7eba7da58db0ef071b8d63a7f3f81f5e9e941cf35c3aba2d99681f375a",
+      "preview_sha256": "9db5dd35a2df4fa9a2bfad18344e4ab79d51256844fdb5bbd9a7a66df7c3c111",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42271777119-1-b0001.tar.gz",
+        "member": "files/09/09e8dd7eba7da58db0ef071b8d63a7f3f81f5e9e941cf35c3aba2d99681f375a.png"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42271777119-1-b0001.tar.gz",
+        "member": "previews/09e8dd7eba7da58db0ef071b8d63a7f3f81f5e9e941cf35c3aba2d99681f375a.png"
+      },
+      "format": "png",
+      "structure": "raster",
+      "selection_reason": "raster_embedded_or_mixed_record_and_sibling_formats",
+      "full_preview_rgba_sha256": "c77024e550edf42a32c28a9320d33a136179996fbe6d6e2f74db2363e5e8cda7",
+      "scope_verdict": "scope_pending",
+      "observations": "Small isolated botanical leaf/sprig with fine natural surface texture; this contact preview cannot confidently distinguish photographed cutout from digital painting. No photography conclusion is asserted.",
+      "reason": "Small isolated botanical leaf/sprig with fine natural surface texture; this contact preview cannot confidently distinguish photographed cutout from digital painting. No photography conclusion is asserted.",
+      "reviewed_by": "Codex media_catalog; actual inspection of every tile; root independently viewed the same complete sheet",
+      "reviewed_at": "2026-11-06T19:33:39.231307+00:00",
+      "review_history": [
+        {
+          "verdict": "scope_pending",
+          "observations": "Small isolated botanical leaf/sprig with fine natural surface texture; this contact preview cannot confidently distinguish photographed cutout from digital painting. No photography conclusion is asserted.",
+          "reviewed_by": "Codex media_catalog; actual inspection of every tile; root independently viewed the same complete sheet",
+          "reviewed_at": "2026-11-06T19:33:39.231307+00:00"
+        },
+        {
+          "verdict": "scope_pending",
+          "observations": "Independent root display review of the full sheet concurred with the listed illustrated/pending categories and the adult-versus-larva metadata conflict.",
+          "reviewed_by": "root; actual independent contact-sheet inspection",
+          "reviewed_at": "2026-11-06T19:33:39.231307+00:00"
+        }
+      ],
+      "evidence": [
+        {
+          "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scope-review-42278762581-1.tar.gz",
+          "sha256": "6e44a27206c131b568222c82f2513e6052a0399bd137f72e7c399848c49feba8",
+          "member": "scope-01.png",
+          "member_sha256": "cfa944cea07c5a8a28a206921c9a1f9a8e558dbfb6c90c104c04e75ee726ca9c"
+        }
+      ],
+      "native_editability_tested": false,
+      "scientific_detail_validation": "not_independently_verified",
+      "text_content": {
+        "status": "unknown",
+        "kinds": [],
+        "cleanup_advice": "unknown",
+        "basis": "not_independently_assessed",
+        "evidence": [],
+        "editable_text": "unknown"
+      },
+      "scope_status": "scope_pending",
+      "visual_verdict": "scope_pending",
+      "photographic_provenance_independently_verified": false
+    },
+    {
+      "candidate_id": "40ca204b66d507813e6aaf1ed56795c0d1524a57955669b7d55d667f46119e34",
+      "tile": 16,
+      "review_pack": "scope-review-42278762581-1",
+      "source": "togo",
+      "source_id": "2214",
+      "id": "togo-d6ea772366e9969fcc34",
+      "title": "Formosan sweetgum",
+      "source_url": "https://doi.org/10.7875/togopic.2026.006",
+      "original_sha256": "8ce4898f83c8eea18d5e017458bd7ebcef0233756adfd19b4494f2d05cf6e889",
+      "sha256": "8ce4898f83c8eea18d5e017458bd7ebcef0233756adfd19b4494f2d05cf6e889",
+      "preview_sha256": "8272456e375fd05e150f980d79a180473d01dfa6a75f317e48627278dc0ce310",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42271777119-1-b0001.tar.gz",
+        "member": "files/8c/8ce4898f83c8eea18d5e017458bd7ebcef0233756adfd19b4494f2d05cf6e889.png"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42271777119-1-b0001.tar.gz",
+        "member": "previews/8ce4898f83c8eea18d5e017458bd7ebcef0233756adfd19b4494f2d05cf6e889.png"
+      },
+      "format": "png",
+      "structure": "raster",
+      "selection_reason": "raster_embedded_or_mixed_record_and_sibling_formats",
+      "full_preview_rgba_sha256": "b79112a63b6ee5d1275cca11cc9d344202a4f35ed7418713dcbccd4db69607ae",
+      "scope_verdict": "scope_pending",
+      "observations": "Small isolated botanical leaf/sprig with fine natural surface texture; this contact preview cannot confidently distinguish photographed cutout from digital painting. No photography conclusion is asserted.",
+      "reason": "Small isolated botanical leaf/sprig with fine natural surface texture; this contact preview cannot confidently distinguish photographed cutout from digital painting. No photography conclusion is asserted.",
+      "reviewed_by": "Codex media_catalog; actual inspection of every tile; root independently viewed the same complete sheet",
+      "reviewed_at": "2026-11-06T19:33:39.231307+00:00",
+      "review_history": [
+        {
+          "verdict": "scope_pending",
+          "observations": "Small isolated botanical leaf/sprig with fine natural surface texture; this contact preview cannot confidently distinguish photographed cutout from digital painting. No photography conclusion is asserted.",
+          "reviewed_by": "Codex media_catalog; actual inspection of every tile; root independently viewed the same complete sheet",
+          "reviewed_at": "2026-11-06T19:33:39.231307+00:00"
+        },
+        {
+          "verdict": "scope_pending",
+          "observations": "Independent root display review of the full sheet concurred with the listed illustrated/pending categories and the adult-versus-larva metadata conflict.",
+          "reviewed_by": "root; actual independent contact-sheet inspection",
+          "reviewed_at": "2026-11-06T19:33:39.231307+00:00"
+        }
+      ],
+      "evidence": [
+        {
+          "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scope-review-42278762581-1.tar.gz",
+          "sha256": "6e44a27206c131b568222c82f2513e6052a0399bd137f72e7c399848c49feba8",
+          "member": "scope-01.png",
+          "member_sha256": "cfa944cea07c5a8a28a206921c9a1f9a8e558dbfb6c90c104c04e75ee726ca9c"
+        }
+      ],
+      "native_editability_tested": false,
+      "scientific_detail_validation": "not_independently_verified",
+      "text_content": {
+        "status": "unknown",
+        "kinds": [],
+        "cleanup_advice": "unknown",
+        "basis": "not_independently_assessed",
+        "evidence": [],
+        "editable_text": "unknown"
+      },
+      "scope_status": "scope_pending",
+      "visual_verdict": "scope_pending",
+      "photographic_provenance_independently_verified": false
+    },
+    {
+      "candidate_id": "3ade005b855a08e89984e369ad99aabf213fd40cc636ae5e4d31ddf281bd8729",
+      "tile": 17,
+      "review_pack": "scope-review-42278762581-1",
+      "source": "togo",
+      "source_id": "2214",
+      "id": "togo-d6ea772366e9969fcc34",
+      "title": "Formosan sweetgum",
+      "source_url": "https://doi.org/10.7875/togopic.2026.006",
+      "original_sha256": "d7aaf1e37c9a3b59666a8dbd87ca13e1ceabed9f9c4f9d49e845bb8427bfdc18",
+      "sha256": "d7aaf1e37c9a3b59666a8dbd87ca13e1ceabed9f9c4f9d49e845bb8427bfdc18",
+      "preview_sha256": "caaa39b47b9ad664ef5815b0c8626a1c36d70ba7902598423dd795db899ed283",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42271777119-1-b0001.tar.gz",
+        "member": "files/d7/d7aaf1e37c9a3b59666a8dbd87ca13e1ceabed9f9c4f9d49e845bb8427bfdc18.svg"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42271777119-1-b0001.tar.gz",
+        "member": "previews/d7aaf1e37c9a3b59666a8dbd87ca13e1ceabed9f9c4f9d49e845bb8427bfdc18.png"
+      },
+      "format": "svg",
+      "structure": "mixed",
+      "selection_reason": "raster_embedded_or_mixed_record_and_sibling_formats",
+      "full_preview_rgba_sha256": "d5609a29bc2b116101f287c4d17cf1df30b89ddb3fbc538fa2faedd032804c7e",
+      "scope_verdict": "scope_pending",
+      "observations": "Small isolated botanical leaf/sprig with fine natural surface texture; this contact preview cannot confidently distinguish photographed cutout from digital painting. No photography conclusion is asserted.",
+      "reason": "Small isolated botanical leaf/sprig with fine natural surface texture; this contact preview cannot confidently distinguish photographed cutout from digital painting. No photography conclusion is asserted.",
+      "reviewed_by": "Codex media_catalog; actual inspection of every tile; root independently viewed the same complete sheet",
+      "reviewed_at": "2026-11-06T19:33:39.231307+00:00",
+      "review_history": [
+        {
+          "verdict": "scope_pending",
+          "observations": "Small isolated botanical leaf/sprig with fine natural surface texture; this contact preview cannot confidently distinguish photographed cutout from digital painting. No photography conclusion is asserted.",
+          "reviewed_by": "Codex media_catalog; actual inspection of every tile; root independently viewed the same complete sheet",
+          "reviewed_at": "2026-11-06T19:33:39.231307+00:00"
+        },
+        {
+          "verdict": "scope_pending",
+          "observations": "Independent root display review of the full sheet concurred with the listed illustrated/pending categories and the adult-versus-larva metadata conflict.",
+          "reviewed_by": "root; actual independent contact-sheet inspection",
+          "reviewed_at": "2026-11-06T19:33:39.231307+00:00"
+        }
+      ],
+      "evidence": [
+        {
+          "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scope-review-42278762581-1.tar.gz",
+          "sha256": "6e44a27206c131b568222c82f2513e6052a0399bd137f72e7c399848c49feba8",
+          "member": "scope-01.png",
+          "member_sha256": "cfa944cea07c5a8a28a206921c9a1f9a8e558dbfb6c90c104c04e75ee726ca9c"
+        }
+      ],
+      "native_editability_tested": false,
+      "scientific_detail_validation": "not_independently_verified",
+      "text_content": {
+        "status": "unknown",
+        "kinds": [],
+        "cleanup_advice": "unknown",
+        "basis": "not_independently_assessed",
+        "evidence": [],
+        "editable_text": "unknown"
+      },
+      "scope_status": "scope_pending",
+      "visual_verdict": "scope_pending",
+      "photographic_provenance_independently_verified": false
+    },
+    {
+      "candidate_id": "58e5c00d86a0e462a13cb6d04c5b8c90b8a5d83cbbe6ae90b79798642b191511",
+      "tile": 18,
+      "review_pack": "scope-review-42278762581-1",
+      "source": "togo",
+      "source_id": "2215",
+      "id": "togo-c6f7e0ccc43e7172a178",
+      "title": "Bald cypress",
+      "source_url": "https://doi.org/10.7875/togopic.2026.007",
+      "original_sha256": "c7b76f054c3d435f5362d1af40cd712f2dba0a1fefa123ce28d864182fd1f5b9",
+      "sha256": "c7b76f054c3d435f5362d1af40cd712f2dba0a1fefa123ce28d864182fd1f5b9",
+      "preview_sha256": "97fe208420b07b7d9f378c9a801fb3774e2d469aa753c8ecb2e877762954a467",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42271777119-1-b0001.tar.gz",
+        "member": "files/c7/c7b76f054c3d435f5362d1af40cd712f2dba0a1fefa123ce28d864182fd1f5b9.png"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42271777119-1-b0001.tar.gz",
+        "member": "previews/c7b76f054c3d435f5362d1af40cd712f2dba0a1fefa123ce28d864182fd1f5b9.png"
+      },
+      "format": "png",
+      "structure": "raster",
+      "selection_reason": "only_raster_acquired",
+      "full_preview_rgba_sha256": "ba8e24389c21ab4bdf7732f2b62ac373749f3c23ca61ce3ea94b353358102070",
+      "scope_verdict": "scope_pending",
+      "observations": "Small isolated botanical leaf/sprig with fine natural surface texture; this contact preview cannot confidently distinguish photographed cutout from digital painting. No photography conclusion is asserted.",
+      "reason": "Small isolated botanical leaf/sprig with fine natural surface texture; this contact preview cannot confidently distinguish photographed cutout from digital painting. No photography conclusion is asserted.",
+      "reviewed_by": "Codex media_catalog; actual inspection of every tile; root independently viewed the same complete sheet",
+      "reviewed_at": "2026-11-06T19:33:39.231307+00:00",
+      "review_history": [
+        {
+          "verdict": "scope_pending",
+          "observations": "Small isolated botanical leaf/sprig with fine natural surface texture; this contact preview cannot confidently distinguish photographed cutout from digital painting. No photography conclusion is asserted.",
+          "reviewed_by": "Codex media_catalog; actual inspection of every tile; root independently viewed the same complete sheet",
+          "reviewed_at": "2026-11-06T19:33:39.231307+00:00"
+        },
+        {
+          "verdict": "scope_pending",
+          "observations": "Independent root display review of the full sheet concurred with the listed illustrated/pending categories and the adult-versus-larva metadata conflict.",
+          "reviewed_by": "root; actual independent contact-sheet inspection",
+          "reviewed_at": "2026-11-06T19:33:39.231307+00:00"
+        }
+      ],
+      "evidence": [
+        {
+          "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scope-review-42278762581-1.tar.gz",
+          "sha256": "6e44a27206c131b568222c82f2513e6052a0399bd137f72e7c399848c49feba8",
+          "member": "scope-01.png",
+          "member_sha256": "cfa944cea07c5a8a28a206921c9a1f9a8e558dbfb6c90c104c04e75ee726ca9c"
+        }
+      ],
+      "native_editability_tested": false,
+      "scientific_detail_validation": "not_independently_verified",
+      "text_content": {
+        "status": "unknown",
+        "kinds": [],
+        "cleanup_advice": "unknown",
+        "basis": "not_independently_assessed",
+        "evidence": [],
+        "editable_text": "unknown"
+      },
+      "scope_status": "scope_pending",
+      "visual_verdict": "scope_pending",
+      "photographic_provenance_independently_verified": false
+    },
+    {
+      "candidate_id": "b3437d2b932207fb24061e34645511511b1a848766999caa8866d5387d44040c",
+      "tile": 19,
+      "review_pack": "scope-review-42278762581-1",
+      "source": "togo",
+      "source_id": "2216",
+      "id": "togo-78c6d89572811558a4be",
+      "title": "Coast redwood",
+      "source_url": "https://doi.org/10.7875/togopic.2026.008",
+      "original_sha256": "2ee4920bb41fd99f240649b3f85103a34e471dae6278feb7acec6518444605d8",
+      "sha256": "2ee4920bb41fd99f240649b3f85103a34e471dae6278feb7acec6518444605d8",
+      "preview_sha256": "6fad95b9cb6744d0ecc9e831c78e3be60d588b8715b7f3d9fef80f8005329965",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42271777119-1-b0001.tar.gz",
+        "member": "files/2e/2ee4920bb41fd99f240649b3f85103a34e471dae6278feb7acec6518444605d8.svg"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42271777119-1-b0001.tar.gz",
+        "member": "previews/2ee4920bb41fd99f240649b3f85103a34e471dae6278feb7acec6518444605d8.png"
+      },
+      "format": "svg",
+      "structure": "mixed",
+      "selection_reason": "raster_embedded_or_mixed_record_and_sibling_formats",
+      "full_preview_rgba_sha256": "0a4304e216dd644f247ab00279314b7335b0ae83fd6f3c2846b7f1b10597f33d",
+      "scope_verdict": "scope_pending",
+      "observations": "Small isolated botanical leaf/sprig with fine natural surface texture; this contact preview cannot confidently distinguish photographed cutout from digital painting. No photography conclusion is asserted.",
+      "reason": "Small isolated botanical leaf/sprig with fine natural surface texture; this contact preview cannot confidently distinguish photographed cutout from digital painting. No photography conclusion is asserted.",
+      "reviewed_by": "Codex media_catalog; actual inspection of every tile; root independently viewed the same complete sheet",
+      "reviewed_at": "2026-11-06T19:33:39.231307+00:00",
+      "review_history": [
+        {
+          "verdict": "scope_pending",
+          "observations": "Small isolated botanical leaf/sprig with fine natural surface texture; this contact preview cannot confidently distinguish photographed cutout from digital painting. No photography conclusion is asserted.",
+          "reviewed_by": "Codex media_catalog; actual inspection of every tile; root independently viewed the same complete sheet",
+          "reviewed_at": "2026-11-06T19:33:39.231307+00:00"
+        },
+        {
+          "verdict": "scope_pending",
+          "observations": "Independent root display review of the full sheet concurred with the listed illustrated/pending categories and the adult-versus-larva metadata conflict.",
+          "reviewed_by": "root; actual independent contact-sheet inspection",
+          "reviewed_at": "2026-11-06T19:33:39.231307+00:00"
+        }
+      ],
+      "evidence": [
+        {
+          "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scope-review-42278762581-1.tar.gz",
+          "sha256": "6e44a27206c131b568222c82f2513e6052a0399bd137f72e7c399848c49feba8",
+          "member": "scope-01.png",
+          "member_sha256": "cfa944cea07c5a8a28a206921c9a1f9a8e558dbfb6c90c104c04e75ee726ca9c"
+        }
+      ],
+      "native_editability_tested": false,
+      "scientific_detail_validation": "not_independently_verified",
+      "text_content": {
+        "status": "unknown",
+        "kinds": [],
+        "cleanup_advice": "unknown",
+        "basis": "not_independently_assessed",
+        "evidence": [],
+        "editable_text": "unknown"
+      },
+      "scope_status": "scope_pending",
+      "visual_verdict": "scope_pending",
+      "photographic_provenance_independently_verified": false
+    },
+    {
+      "candidate_id": "40373c0817c5786db5a87f6b644877ad864c6d3782a8c0a6afb874a0efcf418b",
+      "tile": 20,
+      "review_pack": "scope-review-42278762581-1",
+      "source": "togo",
+      "source_id": "2216",
+      "id": "togo-78c6d89572811558a4be",
+      "title": "Coast redwood",
+      "source_url": "https://doi.org/10.7875/togopic.2026.008",
+      "original_sha256": "d2ebbb9c96dc6a5d06d4be3b47da80f42a1ce60c6a72ce554d751fe0bb78edf4",
+      "sha256": "d2ebbb9c96dc6a5d06d4be3b47da80f42a1ce60c6a72ce554d751fe0bb78edf4",
+      "preview_sha256": "2afd7c14f88b7a8554240fb87d893479b2c687b20892d2b271952bffa3a16408",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42271777119-1-b0001.tar.gz",
+        "member": "files/d2/d2ebbb9c96dc6a5d06d4be3b47da80f42a1ce60c6a72ce554d751fe0bb78edf4.png"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42271777119-1-b0001.tar.gz",
+        "member": "previews/d2ebbb9c96dc6a5d06d4be3b47da80f42a1ce60c6a72ce554d751fe0bb78edf4.png"
+      },
+      "format": "png",
+      "structure": "raster",
+      "selection_reason": "raster_embedded_or_mixed_record_and_sibling_formats",
+      "full_preview_rgba_sha256": "f8e4c2c590ed5dc1ae1aad47cbed20df1d8a14d94dbfefe2449305a337e21eab",
+      "scope_verdict": "scope_pending",
+      "observations": "Small isolated botanical leaf/sprig with fine natural surface texture; this contact preview cannot confidently distinguish photographed cutout from digital painting. No photography conclusion is asserted.",
+      "reason": "Small isolated botanical leaf/sprig with fine natural surface texture; this contact preview cannot confidently distinguish photographed cutout from digital painting. No photography conclusion is asserted.",
+      "reviewed_by": "Codex media_catalog; actual inspection of every tile; root independently viewed the same complete sheet",
+      "reviewed_at": "2026-11-06T19:33:39.231307+00:00",
+      "review_history": [
+        {
+          "verdict": "scope_pending",
+          "observations": "Small isolated botanical leaf/sprig with fine natural surface texture; this contact preview cannot confidently distinguish photographed cutout from digital painting. No photography conclusion is asserted.",
+          "reviewed_by": "Codex media_catalog; actual inspection of every tile; root independently viewed the same complete sheet",
+          "reviewed_at": "2026-11-06T19:33:39.231307+00:00"
+        },
+        {
+          "verdict": "scope_pending",
+          "observations": "Independent root display review of the full sheet concurred with the listed illustrated/pending categories and the adult-versus-larva metadata conflict.",
+          "reviewed_by": "root; actual independent contact-sheet inspection",
+          "reviewed_at": "2026-11-06T19:33:39.231307+00:00"
+        }
+      ],
+      "evidence": [
+        {
+          "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scope-review-42278762581-1.tar.gz",
+          "sha256": "6e44a27206c131b568222c82f2513e6052a0399bd137f72e7c399848c49feba8",
+          "member": "scope-01.png",
+          "member_sha256": "cfa944cea07c5a8a28a206921c9a1f9a8e558dbfb6c90c104c04e75ee726ca9c"
+        }
+      ],
+      "native_editability_tested": false,
+      "scientific_detail_validation": "not_independently_verified",
+      "text_content": {
+        "status": "unknown",
+        "kinds": [],
+        "cleanup_advice": "unknown",
+        "basis": "not_independently_assessed",
+        "evidence": [],
+        "editable_text": "unknown"
+      },
+      "scope_status": "scope_pending",
+      "visual_verdict": "scope_pending",
+      "photographic_provenance_independently_verified": false
+    },
+    {
+      "candidate_id": "733d23ca1e9cbdecbe83556061c5b8c67e9502de90e009862e6fe3c5fa8a1a96",
+      "tile": 21,
+      "review_pack": "scope-review-42278762581-1",
+      "source": "togo",
+      "source_id": "2217",
+      "id": "togo-94ed66a5ef9dbca8533c",
+      "title": "Dawn redwood",
+      "source_url": "https://doi.org/10.7875/togopic.2026.009",
+      "original_sha256": "c10d46414d91c004a8ad65a6ebea07d67882beebe748635f0c2f6f2a96e5d4b1",
+      "sha256": "c10d46414d91c004a8ad65a6ebea07d67882beebe748635f0c2f6f2a96e5d4b1",
+      "preview_sha256": "b5dfe4fcc274c9918cdd005f0db6598bf01270c8b81851625b9deeeda8723f08",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42271777119-1-b0001.tar.gz",
+        "member": "files/c1/c10d46414d91c004a8ad65a6ebea07d67882beebe748635f0c2f6f2a96e5d4b1.png"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42271777119-1-b0001.tar.gz",
+        "member": "previews/c10d46414d91c004a8ad65a6ebea07d67882beebe748635f0c2f6f2a96e5d4b1.png"
+      },
+      "format": "png",
+      "structure": "raster",
+      "selection_reason": "raster_embedded_or_mixed_record_and_sibling_formats",
+      "full_preview_rgba_sha256": "2f678e23d3f316bb8877f648c71894119c2aac07a031626ce69f3371d72af2ef",
+      "scope_verdict": "scope_pending",
+      "observations": "Small isolated botanical leaf/sprig with fine natural surface texture; this contact preview cannot confidently distinguish photographed cutout from digital painting. No photography conclusion is asserted.",
+      "reason": "Small isolated botanical leaf/sprig with fine natural surface texture; this contact preview cannot confidently distinguish photographed cutout from digital painting. No photography conclusion is asserted.",
+      "reviewed_by": "Codex media_catalog; actual inspection of every tile; root independently viewed the same complete sheet",
+      "reviewed_at": "2026-11-06T19:33:39.231307+00:00",
+      "review_history": [
+        {
+          "verdict": "scope_pending",
+          "observations": "Small isolated botanical leaf/sprig with fine natural surface texture; this contact preview cannot confidently distinguish photographed cutout from digital painting. No photography conclusion is asserted.",
+          "reviewed_by": "Codex media_catalog; actual inspection of every tile; root independently viewed the same complete sheet",
+          "reviewed_at": "2026-11-06T19:33:39.231307+00:00"
+        },
+        {
+          "verdict": "scope_pending",
+          "observations": "Independent root display review of the full sheet concurred with the listed illustrated/pending categories and the adult-versus-larva metadata conflict.",
+          "reviewed_by": "root; actual independent contact-sheet inspection",
+          "reviewed_at": "2026-11-06T19:33:39.231307+00:00"
+        }
+      ],
+      "evidence": [
+        {
+          "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scope-review-42278762581-1.tar.gz",
+          "sha256": "6e44a27206c131b568222c82f2513e6052a0399bd137f72e7c399848c49feba8",
+          "member": "scope-01.png",
+          "member_sha256": "cfa944cea07c5a8a28a206921c9a1f9a8e558dbfb6c90c104c04e75ee726ca9c"
+        }
+      ],
+      "native_editability_tested": false,
+      "scientific_detail_validation": "not_independently_verified",
+      "text_content": {
+        "status": "unknown",
+        "kinds": [],
+        "cleanup_advice": "unknown",
+        "basis": "not_independently_assessed",
+        "evidence": [],
+        "editable_text": "unknown"
+      },
+      "scope_status": "scope_pending",
+      "visual_verdict": "scope_pending",
+      "photographic_provenance_independently_verified": false
+    },
+    {
+      "candidate_id": "ba5eebb99e1e9d988e3f2ec34261e8b7d2196364478f74c66f4937c5e93b61b2",
+      "tile": 22,
+      "review_pack": "scope-review-42278762581-1",
+      "source": "togo",
+      "source_id": "2217",
+      "id": "togo-94ed66a5ef9dbca8533c",
+      "title": "Dawn redwood",
+      "source_url": "https://doi.org/10.7875/togopic.2026.009",
+      "original_sha256": "49f2d5b3370689e19b3864887f2fdea272b99ee7f00dc6ebb76d99fa4f4d1e81",
+      "sha256": "49f2d5b3370689e19b3864887f2fdea272b99ee7f00dc6ebb76d99fa4f4d1e81",
+      "preview_sha256": "3f6cec5b9186e1af64f6017c1a2c021d22bd37695fdcc819f1048def7eba9bdb",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42271777119-1-b0001.tar.gz",
+        "member": "files/49/49f2d5b3370689e19b3864887f2fdea272b99ee7f00dc6ebb76d99fa4f4d1e81.svg"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42271777119-1-b0001.tar.gz",
+        "member": "previews/49f2d5b3370689e19b3864887f2fdea272b99ee7f00dc6ebb76d99fa4f4d1e81.png"
+      },
+      "format": "svg",
+      "structure": "mixed",
+      "selection_reason": "raster_embedded_or_mixed_record_and_sibling_formats",
+      "full_preview_rgba_sha256": "3a6b6ee926f5004a51159a8afd5e11b2a4f9b619ce66538d79f708f4ef85361a",
+      "scope_verdict": "scope_pending",
+      "observations": "Small isolated botanical leaf/sprig with fine natural surface texture; this contact preview cannot confidently distinguish photographed cutout from digital painting. No photography conclusion is asserted.",
+      "reason": "Small isolated botanical leaf/sprig with fine natural surface texture; this contact preview cannot confidently distinguish photographed cutout from digital painting. No photography conclusion is asserted.",
+      "reviewed_by": "Codex media_catalog; actual inspection of every tile; root independently viewed the same complete sheet",
+      "reviewed_at": "2026-11-06T19:33:39.231307+00:00",
+      "review_history": [
+        {
+          "verdict": "scope_pending",
+          "observations": "Small isolated botanical leaf/sprig with fine natural surface texture; this contact preview cannot confidently distinguish photographed cutout from digital painting. No photography conclusion is asserted.",
+          "reviewed_by": "Codex media_catalog; actual inspection of every tile; root independently viewed the same complete sheet",
+          "reviewed_at": "2026-11-06T19:33:39.231307+00:00"
+        },
+        {
+          "verdict": "scope_pending",
+          "observations": "Independent root display review of the full sheet concurred with the listed illustrated/pending categories and the adult-versus-larva metadata conflict.",
+          "reviewed_by": "root; actual independent contact-sheet inspection",
+          "reviewed_at": "2026-11-06T19:33:39.231307+00:00"
+        }
+      ],
+      "evidence": [
+        {
+          "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scope-review-42278762581-1.tar.gz",
+          "sha256": "6e44a27206c131b568222c82f2513e6052a0399bd137f72e7c399848c49feba8",
+          "member": "scope-01.png",
+          "member_sha256": "cfa944cea07c5a8a28a206921c9a1f9a8e558dbfb6c90c104c04e75ee726ca9c"
+        }
+      ],
+      "native_editability_tested": false,
+      "scientific_detail_validation": "not_independently_verified",
+      "text_content": {
+        "status": "unknown",
+        "kinds": [],
+        "cleanup_advice": "unknown",
+        "basis": "not_independently_assessed",
+        "evidence": [],
+        "editable_text": "unknown"
+      },
+      "scope_status": "scope_pending",
+      "visual_verdict": "scope_pending",
+      "photographic_provenance_independently_verified": false
+    },
+    {
+      "candidate_id": "314920340d4a0a7dcab0afd4265131ff6f6e9083aa17719bbbf2a44c9b7dc259",
+      "tile": 23,
+      "review_pack": "scope-review-42278762581-1",
+      "source": "togo",
+      "source_id": "2220",
+      "id": "togo-5b8dffcee8af45db3075",
+      "title": "Chestnut Tiger Butterfly larva ",
+      "source_url": "https://doi.org/10.7875/togopic.2026.012",
+      "original_sha256": "9de94076f863d4af22fe8f623d360aeaae91053acc287dd228b329bcd10895f3",
+      "sha256": "9de94076f863d4af22fe8f623d360aeaae91053acc287dd228b329bcd10895f3",
+      "preview_sha256": "b74236dcf7baccea0620f18f0ec9bc18f22d5822c714989844eb5f66563b41de",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42271777119-1-b0001.tar.gz",
+        "member": "files/9d/9de94076f863d4af22fe8f623d360aeaae91053acc287dd228b329bcd10895f3.png"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42271777119-1-b0001.tar.gz",
+        "member": "previews/9de94076f863d4af22fe8f623d360aeaae91053acc287dd228b329bcd10895f3.png"
+      },
+      "format": "png",
+      "structure": "raster",
+      "selection_reason": "only_raster_acquired",
+      "full_preview_rgba_sha256": "98ad8c7e4ea00fbb7149c2374e1f8f3528783f2d53ac7c78be3099dfe762d335",
+      "scope_verdict": "scope_pending",
+      "observations": "The two source records share exactly the same PNG bytes and depict a fully winged adult moth-like insect. The title Chestnut Tiger Butterfly larva conflicts with the observed adult form and the alternate title Rush Veneer. Image medium appears illustrated; temporarily withhold the shared file for scientific attribution conflict, not for photography. Exact species remains unknown.",
+      "reason": "The two source records share exactly the same PNG bytes and depict a fully winged adult moth-like insect. The title Chestnut Tiger Butterfly larva conflicts with the observed adult form and the alternate title Rush Veneer. Image medium appears illustrated; temporarily withhold the shared file for scientific attribution conflict, not for photography. Exact species remains unknown.",
+      "reviewed_by": "Codex media_catalog; actual inspection of every tile; root independently viewed the same complete sheet",
+      "reviewed_at": "2026-11-06T19:33:39.231307+00:00",
+      "review_history": [
+        {
+          "verdict": "scope_pending",
+          "observations": "The two source records share exactly the same PNG bytes and depict a fully winged adult moth-like insect. The title Chestnut Tiger Butterfly larva conflicts with the observed adult form and the alternate title Rush Veneer. Image medium appears illustrated; temporarily withhold the shared file for scientific attribution conflict, not for photography. Exact species remains unknown.",
+          "reviewed_by": "Codex media_catalog; actual inspection of every tile; root independently viewed the same complete sheet",
+          "reviewed_at": "2026-11-06T19:33:39.231307+00:00"
+        },
+        {
+          "verdict": "scope_pending",
+          "observations": "Independent root display review of the full sheet concurred with the listed illustrated/pending categories and the adult-versus-larva metadata conflict.",
+          "reviewed_by": "root; actual independent contact-sheet inspection",
+          "reviewed_at": "2026-11-06T19:33:39.231307+00:00"
+        }
+      ],
+      "evidence": [
+        {
+          "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scope-review-42278762581-1.tar.gz",
+          "sha256": "6e44a27206c131b568222c82f2513e6052a0399bd137f72e7c399848c49feba8",
+          "member": "scope-01.png",
+          "member_sha256": "cfa944cea07c5a8a28a206921c9a1f9a8e558dbfb6c90c104c04e75ee726ca9c"
+        }
+      ],
+      "native_editability_tested": false,
+      "scientific_detail_validation": "not_independently_verified",
+      "text_content": {
+        "status": "unknown",
+        "kinds": [],
+        "cleanup_advice": "unknown",
+        "basis": "not_independently_assessed",
+        "evidence": [],
+        "editable_text": "unknown"
+      },
+      "scope_status": "pending_review",
+      "visual_verdict": "scope_pending",
+      "photographic_provenance_independently_verified": false,
+      "content_scope_reason": "scientific_attribution_conflict",
+      "media_scope_observation": "illustration",
+      "scientific_metadata_conflicts": {
+        "species": {
+          "status": "unknown",
+          "source_titles": [
+            "Chestnut Tiger Butterfly larva",
+            "Rush Veneer"
+          ],
+          "observed_form": "winged adult moth-like insect",
+          "resolution": "requires upstream attribution correction or independent species evidence"
+        },
+        "state": {
+          "status": "conflict",
+          "observed_form": "adult winged insect",
+          "conflicting_source_label": "larva"
+        }
+      }
+    },
+    {
+      "candidate_id": "a3b415fbc3baf7976e11c35cbb91b776ad49462cb9f3be31bab05cca2afd0ebc",
+      "tile": 24,
+      "review_pack": "scope-review-42278762581-1",
+      "source": "togo",
+      "source_id": "2226",
+      "id": "togo-d332d6669352f9ad9b5f",
+      "title": "Rush Veneer",
+      "source_url": "https://doi.org/10.7875/togopic.2026.018",
+      "original_sha256": "9de94076f863d4af22fe8f623d360aeaae91053acc287dd228b329bcd10895f3",
+      "sha256": "9de94076f863d4af22fe8f623d360aeaae91053acc287dd228b329bcd10895f3",
+      "preview_sha256": "b74236dcf7baccea0620f18f0ec9bc18f22d5822c714989844eb5f66563b41de",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42271777119-1-b0001.tar.gz",
+        "member": "files/9d/9de94076f863d4af22fe8f623d360aeaae91053acc287dd228b329bcd10895f3.png"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42271777119-1-b0001.tar.gz",
+        "member": "previews/9de94076f863d4af22fe8f623d360aeaae91053acc287dd228b329bcd10895f3.png"
+      },
+      "format": "png",
+      "structure": "raster",
+      "selection_reason": "only_raster_acquired",
+      "full_preview_rgba_sha256": "98ad8c7e4ea00fbb7149c2374e1f8f3528783f2d53ac7c78be3099dfe762d335",
+      "scope_verdict": "scope_pending",
+      "observations": "The two source records share exactly the same PNG bytes and depict a fully winged adult moth-like insect. The title Chestnut Tiger Butterfly larva conflicts with the observed adult form and the alternate title Rush Veneer. Image medium appears illustrated; temporarily withhold the shared file for scientific attribution conflict, not for photography. Exact species remains unknown.",
+      "reason": "The two source records share exactly the same PNG bytes and depict a fully winged adult moth-like insect. The title Chestnut Tiger Butterfly larva conflicts with the observed adult form and the alternate title Rush Veneer. Image medium appears illustrated; temporarily withhold the shared file for scientific attribution conflict, not for photography. Exact species remains unknown.",
+      "reviewed_by": "Codex media_catalog; actual inspection of every tile; root independently viewed the same complete sheet",
+      "reviewed_at": "2026-11-06T19:33:39.231307+00:00",
+      "review_history": [
+        {
+          "verdict": "scope_pending",
+          "observations": "The two source records share exactly the same PNG bytes and depict a fully winged adult moth-like insect. The title Chestnut Tiger Butterfly larva conflicts with the observed adult form and the alternate title Rush Veneer. Image medium appears illustrated; temporarily withhold the shared file for scientific attribution conflict, not for photography. Exact species remains unknown.",
+          "reviewed_by": "Codex media_catalog; actual inspection of every tile; root independently viewed the same complete sheet",
+          "reviewed_at": "2026-11-06T19:33:39.231307+00:00"
+        },
+        {
+          "verdict": "scope_pending",
+          "observations": "Independent root display review of the full sheet concurred with the listed illustrated/pending categories and the adult-versus-larva metadata conflict.",
+          "reviewed_by": "root; actual independent contact-sheet inspection",
+          "reviewed_at": "2026-11-06T19:33:39.231307+00:00"
+        }
+      ],
+      "evidence": [
+        {
+          "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scope-review-42278762581-1.tar.gz",
+          "sha256": "6e44a27206c131b568222c82f2513e6052a0399bd137f72e7c399848c49feba8",
+          "member": "scope-01.png",
+          "member_sha256": "cfa944cea07c5a8a28a206921c9a1f9a8e558dbfb6c90c104c04e75ee726ca9c"
+        }
+      ],
+      "native_editability_tested": false,
+      "scientific_detail_validation": "not_independently_verified",
+      "text_content": {
+        "status": "unknown",
+        "kinds": [],
+        "cleanup_advice": "unknown",
+        "basis": "not_independently_assessed",
+        "evidence": [],
+        "editable_text": "unknown"
+      },
+      "scope_status": "pending_review",
+      "visual_verdict": "scope_pending",
+      "photographic_provenance_independently_verified": false,
+      "content_scope_reason": "scientific_attribution_conflict",
+      "media_scope_observation": "illustration",
+      "scientific_metadata_conflicts": {
+        "species": {
+          "status": "unknown",
+          "source_titles": [
+            "Chestnut Tiger Butterfly larva",
+            "Rush Veneer"
+          ],
+          "observed_form": "winged adult moth-like insect",
+          "resolution": "requires upstream attribution correction or independent species evidence"
+        },
+        "state": {
+          "status": "conflict",
+          "observed_form": "adult winged insect",
+          "conflicting_source_label": "larva"
+        }
+      }
+    },
+    {
+      "candidate_id": "7321f8e56abef165038b962620e6d1ab1e734950b34e5f0bc59cd8758066a985",
+      "tile": 25,
+      "review_pack": "scope-review-42278762581-1",
+      "source": "togo",
+      "source_id": "2233",
+      "id": "togo-7f8d224c988c24e7dd75",
+      "title": "Himalayan Cedar Deodar",
+      "source_url": "https://doi.org/10.7875/togopic.2026.025",
+      "original_sha256": "a2a11563304cacd98600b5d66c8e0fd7f8be2a8fc50b1a03300a1cd81679bf21",
+      "sha256": "a2a11563304cacd98600b5d66c8e0fd7f8be2a8fc50b1a03300a1cd81679bf21",
+      "preview_sha256": "d163e4c67d51f7793df9e7e9c7bcf6040baaec6d1ca19de825253d6e4f00a2de",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42271777119-1-b0001.tar.gz",
+        "member": "files/a2/a2a11563304cacd98600b5d66c8e0fd7f8be2a8fc50b1a03300a1cd81679bf21.svg"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42271777119-1-b0001.tar.gz",
+        "member": "previews/a2a11563304cacd98600b5d66c8e0fd7f8be2a8fc50b1a03300a1cd81679bf21.png"
+      },
+      "format": "svg",
+      "structure": "mixed",
+      "selection_reason": "raster_embedded_or_mixed_record_and_sibling_formats",
+      "full_preview_rgba_sha256": "41ff9cc974bbff893ee627f2afdbd62c4b2af20a2ad2ac26e5ac4b31877d5ea5",
+      "scope_verdict": "in_scope",
+      "observations": "Tree trunk and branching form show visible digital painting strokes; independently reusable drawn botanical structure.",
+      "reason": "Tree trunk and branching form show visible digital painting strokes; independently reusable drawn botanical structure.",
+      "reviewed_by": "Codex media_catalog; actual inspection of every tile; root independently viewed the same complete sheet",
+      "reviewed_at": "2026-11-06T19:33:39.231307+00:00",
+      "review_history": [
+        {
+          "verdict": "in_scope",
+          "observations": "Tree trunk and branching form show visible digital painting strokes; independently reusable drawn botanical structure.",
+          "reviewed_by": "Codex media_catalog; actual inspection of every tile; root independently viewed the same complete sheet",
+          "reviewed_at": "2026-11-06T19:33:39.231307+00:00"
+        },
+        {
+          "verdict": "in_scope",
+          "observations": "Independent root display review of the full sheet concurred with the listed illustrated/pending categories and the adult-versus-larva metadata conflict.",
+          "reviewed_by": "root; actual independent contact-sheet inspection",
+          "reviewed_at": "2026-11-06T19:33:39.231307+00:00"
+        }
+      ],
+      "evidence": [
+        {
+          "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scope-review-42278762581-1.tar.gz",
+          "sha256": "6e44a27206c131b568222c82f2513e6052a0399bd137f72e7c399848c49feba8",
+          "member": "scope-01.png",
+          "member_sha256": "cfa944cea07c5a8a28a206921c9a1f9a8e558dbfb6c90c104c04e75ee726ca9c"
+        }
+      ],
+      "native_editability_tested": false,
+      "scientific_detail_validation": "not_independently_verified",
+      "text_content": {
+        "status": "unknown",
+        "kinds": [],
+        "cleanup_advice": "unknown",
+        "basis": "not_independently_assessed",
+        "evidence": [],
+        "editable_text": "unknown"
+      },
+      "scope_status": "visually_illustration",
+      "photographic_provenance_independently_verified": false
+    },
+    {
+      "candidate_id": "396de5524ce56ae82a5670047a4a5453dc5c0e47f99a173151445228ff09889a",
+      "tile": 26,
+      "review_pack": "scope-review-42278762581-1",
+      "source": "togo",
+      "source_id": "2233",
+      "id": "togo-7f8d224c988c24e7dd75",
+      "title": "Himalayan Cedar Deodar",
+      "source_url": "https://doi.org/10.7875/togopic.2026.025",
+      "original_sha256": "85bc35d9c0e98d344edba06232fe18872dd8a8231be22800fb0674c73beeb9ef",
+      "sha256": "85bc35d9c0e98d344edba06232fe18872dd8a8231be22800fb0674c73beeb9ef",
+      "preview_sha256": "f52726c7030c1ba661e98158400aa396e7174ae178736f1725bc8958d0d97d8a",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42271777119-1-b0001.tar.gz",
+        "member": "files/85/85bc35d9c0e98d344edba06232fe18872dd8a8231be22800fb0674c73beeb9ef.png"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42271777119-1-b0001.tar.gz",
+        "member": "previews/85bc35d9c0e98d344edba06232fe18872dd8a8231be22800fb0674c73beeb9ef.png"
+      },
+      "format": "png",
+      "structure": "raster",
+      "selection_reason": "raster_embedded_or_mixed_record_and_sibling_formats",
+      "full_preview_rgba_sha256": "a204ce46d1ca1bfef2b689cd21da0769e050a0e5289123c696cbb1f0fcdf1301",
+      "scope_verdict": "in_scope",
+      "observations": "Tree trunk and branching form show visible digital painting strokes; independently reusable drawn botanical structure.",
+      "reason": "Tree trunk and branching form show visible digital painting strokes; independently reusable drawn botanical structure.",
+      "reviewed_by": "Codex media_catalog; actual inspection of every tile; root independently viewed the same complete sheet",
+      "reviewed_at": "2026-11-06T19:33:39.231307+00:00",
+      "review_history": [
+        {
+          "verdict": "in_scope",
+          "observations": "Tree trunk and branching form show visible digital painting strokes; independently reusable drawn botanical structure.",
+          "reviewed_by": "Codex media_catalog; actual inspection of every tile; root independently viewed the same complete sheet",
+          "reviewed_at": "2026-11-06T19:33:39.231307+00:00"
+        },
+        {
+          "verdict": "in_scope",
+          "observations": "Independent root display review of the full sheet concurred with the listed illustrated/pending categories and the adult-versus-larva metadata conflict.",
+          "reviewed_by": "root; actual independent contact-sheet inspection",
+          "reviewed_at": "2026-11-06T19:33:39.231307+00:00"
+        }
+      ],
+      "evidence": [
+        {
+          "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scope-review-42278762581-1.tar.gz",
+          "sha256": "6e44a27206c131b568222c82f2513e6052a0399bd137f72e7c399848c49feba8",
+          "member": "scope-01.png",
+          "member_sha256": "cfa944cea07c5a8a28a206921c9a1f9a8e558dbfb6c90c104c04e75ee726ca9c"
+        }
+      ],
+      "native_editability_tested": false,
+      "scientific_detail_validation": "not_independently_verified",
+      "text_content": {
+        "status": "unknown",
+        "kinds": [],
+        "cleanup_advice": "unknown",
+        "basis": "not_independently_assessed",
+        "evidence": [],
+        "editable_text": "unknown"
+      },
+      "scope_status": "visually_illustration",
+      "photographic_provenance_independently_verified": false
+    },
+    {
+      "candidate_id": "a89ae3b877f9ee1299970ad407c28022e78aef7c713e11dd7d98a8e97cf31b1b",
+      "tile": 27,
+      "review_pack": "scope-review-42278762581-1",
+      "source": "togo",
+      "source_id": "2240",
+      "id": "togo-10cbd579d432b42f2dcd",
+      "title": "Chinese witch hazel",
+      "source_url": "https://doi.org/10.7875/togopic.2026.032",
+      "original_sha256": "0b34dc87a38d0a9bf1bc8a5a617748a0060ce6b0f82144ab2a3912f7c257d328",
+      "sha256": "0b34dc87a38d0a9bf1bc8a5a617748a0060ce6b0f82144ab2a3912f7c257d328",
+      "preview_sha256": "69343a2a3fa05635c3800d53733d8092a61b674c94aa5b6ccfe6f6e012f0853f",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42271777119-1-b0001.tar.gz",
+        "member": "files/0b/0b34dc87a38d0a9bf1bc8a5a617748a0060ce6b0f82144ab2a3912f7c257d328.svg"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42271777119-1-b0001.tar.gz",
+        "member": "previews/0b34dc87a38d0a9bf1bc8a5a617748a0060ce6b0f82144ab2a3912f7c257d328.png"
+      },
+      "format": "svg",
+      "structure": "mixed",
+      "selection_reason": "raster_embedded_or_mixed_record_and_sibling_formats",
+      "full_preview_rgba_sha256": "a89639ccb2ada1566f8cd8ba3d735c7c1445ce3697552a38a3fb0a7c488c934b",
+      "scope_verdict": "in_scope",
+      "observations": "Twig and narrow flower petals show drawn contours and color fills; independently reusable botanical object.",
+      "reason": "Twig and narrow flower petals show drawn contours and color fills; independently reusable botanical object.",
+      "reviewed_by": "Codex media_catalog; actual inspection of every tile; root independently viewed the same complete sheet",
+      "reviewed_at": "2026-11-06T19:33:39.231307+00:00",
+      "review_history": [
+        {
+          "verdict": "in_scope",
+          "observations": "Twig and narrow flower petals show drawn contours and color fills; independently reusable botanical object.",
+          "reviewed_by": "Codex media_catalog; actual inspection of every tile; root independently viewed the same complete sheet",
+          "reviewed_at": "2026-11-06T19:33:39.231307+00:00"
+        },
+        {
+          "verdict": "in_scope",
+          "observations": "Independent root display review of the full sheet concurred with the listed illustrated/pending categories and the adult-versus-larva metadata conflict.",
+          "reviewed_by": "root; actual independent contact-sheet inspection",
+          "reviewed_at": "2026-11-06T19:33:39.231307+00:00"
+        }
+      ],
+      "evidence": [
+        {
+          "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scope-review-42278762581-1.tar.gz",
+          "sha256": "6e44a27206c131b568222c82f2513e6052a0399bd137f72e7c399848c49feba8",
+          "member": "scope-01.png",
+          "member_sha256": "cfa944cea07c5a8a28a206921c9a1f9a8e558dbfb6c90c104c04e75ee726ca9c"
+        }
+      ],
+      "native_editability_tested": false,
+      "scientific_detail_validation": "not_independently_verified",
+      "text_content": {
+        "status": "unknown",
+        "kinds": [],
+        "cleanup_advice": "unknown",
+        "basis": "not_independently_assessed",
+        "evidence": [],
+        "editable_text": "unknown"
+      },
+      "scope_status": "visually_illustration",
+      "photographic_provenance_independently_verified": false
+    },
+    {
+      "candidate_id": "631bfe821349457fcb1f1fc6c518f193a552b127b6a84451c20e07d737ca3aa1",
+      "tile": 28,
+      "review_pack": "scope-review-42278762581-1",
+      "source": "togo",
+      "source_id": "2240",
+      "id": "togo-10cbd579d432b42f2dcd",
+      "title": "Chinese witch hazel",
+      "source_url": "https://doi.org/10.7875/togopic.2026.032",
+      "original_sha256": "a4536e4bf830ec815c139464c9059aa0e623a601f72975aef326233d3fc1665a",
+      "sha256": "a4536e4bf830ec815c139464c9059aa0e623a601f72975aef326233d3fc1665a",
+      "preview_sha256": "f69b452d8324979fc1c15add7292666855e20d1dedaeb406460e2138a9dbebeb",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42271777119-1-b0001.tar.gz",
+        "member": "files/a4/a4536e4bf830ec815c139464c9059aa0e623a601f72975aef326233d3fc1665a.png"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42271777119-1-b0001.tar.gz",
+        "member": "previews/a4536e4bf830ec815c139464c9059aa0e623a601f72975aef326233d3fc1665a.png"
+      },
+      "format": "png",
+      "structure": "raster",
+      "selection_reason": "raster_embedded_or_mixed_record_and_sibling_formats",
+      "full_preview_rgba_sha256": "ec8c81ab67437364e9d6464fc92232f4e29f9ac248688dbfb0c194afdb99078c",
+      "scope_verdict": "in_scope",
+      "observations": "Twig and narrow flower petals show drawn contours and color fills; independently reusable botanical object.",
+      "reason": "Twig and narrow flower petals show drawn contours and color fills; independently reusable botanical object.",
+      "reviewed_by": "Codex media_catalog; actual inspection of every tile; root independently viewed the same complete sheet",
+      "reviewed_at": "2026-11-06T19:33:39.231307+00:00",
+      "review_history": [
+        {
+          "verdict": "in_scope",
+          "observations": "Twig and narrow flower petals show drawn contours and color fills; independently reusable botanical object.",
+          "reviewed_by": "Codex media_catalog; actual inspection of every tile; root independently viewed the same complete sheet",
+          "reviewed_at": "2026-11-06T19:33:39.231307+00:00"
+        },
+        {
+          "verdict": "in_scope",
+          "observations": "Independent root display review of the full sheet concurred with the listed illustrated/pending categories and the adult-versus-larva metadata conflict.",
+          "reviewed_by": "root; actual independent contact-sheet inspection",
+          "reviewed_at": "2026-11-06T19:33:39.231307+00:00"
+        }
+      ],
+      "evidence": [
+        {
+          "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scope-review-42278762581-1.tar.gz",
+          "sha256": "6e44a27206c131b568222c82f2513e6052a0399bd137f72e7c399848c49feba8",
+          "member": "scope-01.png",
+          "member_sha256": "cfa944cea07c5a8a28a206921c9a1f9a8e558dbfb6c90c104c04e75ee726ca9c"
+        }
+      ],
+      "native_editability_tested": false,
+      "scientific_detail_validation": "not_independently_verified",
+      "text_content": {
+        "status": "unknown",
+        "kinds": [],
+        "cleanup_advice": "unknown",
+        "basis": "not_independently_assessed",
+        "evidence": [],
+        "editable_text": "unknown"
+      },
+      "scope_status": "visually_illustration",
+      "photographic_provenance_independently_verified": false
+    },
+    {
+      "candidate_id": "67dfb3fbc25bcafaff8174b03cf3ba75865ae45f51eec7be4699c4866a28fd1b",
+      "tile": 29,
+      "review_pack": "scope-review-42278762581-1",
+      "source": "togo",
+      "source_id": "2241",
+      "id": "togo-9ea636230a25f5913898",
+      "title": "Flowering dogwood",
+      "source_url": "https://doi.org/10.7875/togopic.2026.033",
+      "original_sha256": "843c391f3a3ff2cdbef8a73bae4d1603f88a22fce07aa8ad7e89a3ff163e1979",
+      "sha256": "843c391f3a3ff2cdbef8a73bae4d1603f88a22fce07aa8ad7e89a3ff163e1979",
+      "preview_sha256": "73654259f29c37262307c6158899edc4db6a312f9abfc0ef3101faecdf031d66",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42271777119-1-b0001.tar.gz",
+        "member": "files/84/843c391f3a3ff2cdbef8a73bae4d1603f88a22fce07aa8ad7e89a3ff163e1979.png"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42271777119-1-b0001.tar.gz",
+        "member": "previews/843c391f3a3ff2cdbef8a73bae4d1603f88a22fce07aa8ad7e89a3ff163e1979.png"
+      },
+      "format": "png",
+      "structure": "raster",
+      "selection_reason": "raster_embedded_or_mixed_record_and_sibling_formats",
+      "full_preview_rgba_sha256": "0a95d1da54f55d4b2392a594a53ffe3eb0d71f53a59c24c6da7dd2deba4e9a72",
+      "scope_verdict": "in_scope",
+      "observations": "White flower has painted tonal washes and outlined petal edges; independently reusable botanical object.",
+      "reason": "White flower has painted tonal washes and outlined petal edges; independently reusable botanical object.",
+      "reviewed_by": "Codex media_catalog; actual inspection of every tile; root independently viewed the same complete sheet",
+      "reviewed_at": "2026-11-06T19:33:39.231307+00:00",
+      "review_history": [
+        {
+          "verdict": "in_scope",
+          "observations": "White flower has painted tonal washes and outlined petal edges; independently reusable botanical object.",
+          "reviewed_by": "Codex media_catalog; actual inspection of every tile; root independently viewed the same complete sheet",
+          "reviewed_at": "2026-11-06T19:33:39.231307+00:00"
+        },
+        {
+          "verdict": "in_scope",
+          "observations": "Independent root display review of the full sheet concurred with the listed illustrated/pending categories and the adult-versus-larva metadata conflict.",
+          "reviewed_by": "root; actual independent contact-sheet inspection",
+          "reviewed_at": "2026-11-06T19:33:39.231307+00:00"
+        }
+      ],
+      "evidence": [
+        {
+          "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scope-review-42278762581-1.tar.gz",
+          "sha256": "6e44a27206c131b568222c82f2513e6052a0399bd137f72e7c399848c49feba8",
+          "member": "scope-01.png",
+          "member_sha256": "cfa944cea07c5a8a28a206921c9a1f9a8e558dbfb6c90c104c04e75ee726ca9c"
+        }
+      ],
+      "native_editability_tested": false,
+      "scientific_detail_validation": "not_independently_verified",
+      "text_content": {
+        "status": "unknown",
+        "kinds": [],
+        "cleanup_advice": "unknown",
+        "basis": "not_independently_assessed",
+        "evidence": [],
+        "editable_text": "unknown"
+      },
+      "scope_status": "visually_illustration",
+      "photographic_provenance_independently_verified": false
+    },
+    {
+      "candidate_id": "75b4a9dce866f521545eb3916237829e9a46d792d37f47279e6f2837c92a23d5",
+      "tile": 30,
+      "review_pack": "scope-review-42278762581-1",
+      "source": "togo",
+      "source_id": "2241",
+      "id": "togo-9ea636230a25f5913898",
+      "title": "Flowering dogwood",
+      "source_url": "https://doi.org/10.7875/togopic.2026.033",
+      "original_sha256": "ef2d4f44d633a0fb8a7e05901da125d1c1e1bab5afe6b902324d472900a0fc84",
+      "sha256": "ef2d4f44d633a0fb8a7e05901da125d1c1e1bab5afe6b902324d472900a0fc84",
+      "preview_sha256": "376be71a088cb5d82d885b9ce4f164a7ba9c7b18d2012d9c4662a8cc7b41bd7e",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42271777119-1-b0001.tar.gz",
+        "member": "files/ef/ef2d4f44d633a0fb8a7e05901da125d1c1e1bab5afe6b902324d472900a0fc84.svg"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42271777119-1-b0001.tar.gz",
+        "member": "previews/ef2d4f44d633a0fb8a7e05901da125d1c1e1bab5afe6b902324d472900a0fc84.png"
+      },
+      "format": "svg",
+      "structure": "embedded_raster",
+      "selection_reason": "raster_embedded_or_mixed_record_and_sibling_formats",
+      "full_preview_rgba_sha256": "9bc727d37be68f4a97e82511ecf7dfca3b7e2c4c5819cc3a3db87cf5acbc1f8f",
+      "scope_verdict": "in_scope",
+      "observations": "White flower has painted tonal washes and outlined petal edges; independently reusable botanical object.",
+      "reason": "White flower has painted tonal washes and outlined petal edges; independently reusable botanical object.",
+      "reviewed_by": "Codex media_catalog; actual inspection of every tile; root independently viewed the same complete sheet",
+      "reviewed_at": "2026-11-06T19:33:39.231307+00:00",
+      "review_history": [
+        {
+          "verdict": "in_scope",
+          "observations": "White flower has painted tonal washes and outlined petal edges; independently reusable botanical object.",
+          "reviewed_by": "Codex media_catalog; actual inspection of every tile; root independently viewed the same complete sheet",
+          "reviewed_at": "2026-11-06T19:33:39.231307+00:00"
+        },
+        {
+          "verdict": "in_scope",
+          "observations": "Independent root display review of the full sheet concurred with the listed illustrated/pending categories and the adult-versus-larva metadata conflict.",
+          "reviewed_by": "root; actual independent contact-sheet inspection",
+          "reviewed_at": "2026-11-06T19:33:39.231307+00:00"
+        }
+      ],
+      "evidence": [
+        {
+          "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scope-review-42278762581-1.tar.gz",
+          "sha256": "6e44a27206c131b568222c82f2513e6052a0399bd137f72e7c399848c49feba8",
+          "member": "scope-01.png",
+          "member_sha256": "cfa944cea07c5a8a28a206921c9a1f9a8e558dbfb6c90c104c04e75ee726ca9c"
+        }
+      ],
+      "native_editability_tested": false,
+      "scientific_detail_validation": "not_independently_verified",
+      "text_content": {
+        "status": "unknown",
+        "kinds": [],
+        "cleanup_advice": "unknown",
+        "basis": "not_independently_assessed",
+        "evidence": [],
+        "editable_text": "unknown"
+      },
+      "scope_status": "visually_illustration",
+      "photographic_provenance_independently_verified": false
+    },
+    {
+      "candidate_id": "b2f1bb34322721b8525cfeb77c6f908c342876178dd720fac66f436c832abeb0",
+      "tile": 31,
+      "review_pack": "scope-review-42278762581-1",
+      "source": "togo",
+      "source_id": "2248",
+      "id": "togo-bb1da324e87286e4b428",
+      "title": "Chinese fringe flower, evergreen witchhazel",
+      "source_url": "https://doi.org/10.7875/togopic.2026.040",
+      "original_sha256": "34cd92763f7b845796781027487d36897574b7250326a15f4bd12e212e8250d3",
+      "sha256": "34cd92763f7b845796781027487d36897574b7250326a15f4bd12e212e8250d3",
+      "preview_sha256": "02353848e9206a3fb10744223de50a9aa5151d75e315e5ead7df620378e77e5a",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42271777119-1-b0001.tar.gz",
+        "member": "files/34/34cd92763f7b845796781027487d36897574b7250326a15f4bd12e212e8250d3.svg"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42271777119-1-b0001.tar.gz",
+        "member": "previews/34cd92763f7b845796781027487d36897574b7250326a15f4bd12e212e8250d3.png"
+      },
+      "format": "svg",
+      "structure": "embedded_raster",
+      "selection_reason": "raster_embedded_or_mixed_record_and_sibling_formats",
+      "full_preview_rgba_sha256": "b0c5f6d111c0d7a06f4bcd60b1b0866a63ca4b6ddefd9c028a9583a7283a44f5",
+      "scope_verdict": "scope_pending",
+      "observations": "Green leaves and small white flowers have fine surface texture unresolved at contact-sheet size; drawing versus photographed cutout remains uncertain.",
+      "reason": "Green leaves and small white flowers have fine surface texture unresolved at contact-sheet size; drawing versus photographed cutout remains uncertain.",
+      "reviewed_by": "Codex media_catalog; actual inspection of every tile; root independently viewed the same complete sheet",
+      "reviewed_at": "2026-11-06T19:33:39.231307+00:00",
+      "review_history": [
+        {
+          "verdict": "scope_pending",
+          "observations": "Green leaves and small white flowers have fine surface texture unresolved at contact-sheet size; drawing versus photographed cutout remains uncertain.",
+          "reviewed_by": "Codex media_catalog; actual inspection of every tile; root independently viewed the same complete sheet",
+          "reviewed_at": "2026-11-06T19:33:39.231307+00:00"
+        },
+        {
+          "verdict": "scope_pending",
+          "observations": "Independent root display review of the full sheet concurred with the listed illustrated/pending categories and the adult-versus-larva metadata conflict.",
+          "reviewed_by": "root; actual independent contact-sheet inspection",
+          "reviewed_at": "2026-11-06T19:33:39.231307+00:00"
+        }
+      ],
+      "evidence": [
+        {
+          "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scope-review-42278762581-1.tar.gz",
+          "sha256": "6e44a27206c131b568222c82f2513e6052a0399bd137f72e7c399848c49feba8",
+          "member": "scope-01.png",
+          "member_sha256": "cfa944cea07c5a8a28a206921c9a1f9a8e558dbfb6c90c104c04e75ee726ca9c"
+        }
+      ],
+      "native_editability_tested": false,
+      "scientific_detail_validation": "not_independently_verified",
+      "text_content": {
+        "status": "unknown",
+        "kinds": [],
+        "cleanup_advice": "unknown",
+        "basis": "not_independently_assessed",
+        "evidence": [],
+        "editable_text": "unknown"
+      },
+      "scope_status": "scope_pending",
+      "visual_verdict": "scope_pending",
+      "photographic_provenance_independently_verified": false
+    },
+    {
+      "candidate_id": "008b8ffb36ae2a5afd7069e1ef508456a988cbd3d825bf732c3059d4c4c1adc4",
+      "tile": 32,
+      "review_pack": "scope-review-42278762581-1",
+      "source": "togo",
+      "source_id": "2248",
+      "id": "togo-bb1da324e87286e4b428",
+      "title": "Chinese fringe flower, evergreen witchhazel",
+      "source_url": "https://doi.org/10.7875/togopic.2026.040",
+      "original_sha256": "d858a8577bd6ac9c7c0d3aacddabe6a1e5073e680ded29f89763e1a2216e5945",
+      "sha256": "d858a8577bd6ac9c7c0d3aacddabe6a1e5073e680ded29f89763e1a2216e5945",
+      "preview_sha256": "da17d778fbb817650331ed1948d521de02c0fd775d9422cc10058149271bebed",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42271777119-1-b0001.tar.gz",
+        "member": "files/d8/d858a8577bd6ac9c7c0d3aacddabe6a1e5073e680ded29f89763e1a2216e5945.png"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42271777119-1-b0001.tar.gz",
+        "member": "previews/d858a8577bd6ac9c7c0d3aacddabe6a1e5073e680ded29f89763e1a2216e5945.png"
+      },
+      "format": "png",
+      "structure": "raster",
+      "selection_reason": "raster_embedded_or_mixed_record_and_sibling_formats",
+      "full_preview_rgba_sha256": "c3437e4c385c023641b73da7e397da6d13230c4e9bab9b0e0ea75ba989af0cbc",
+      "scope_verdict": "scope_pending",
+      "observations": "Green leaves and small white flowers have fine surface texture unresolved at contact-sheet size; drawing versus photographed cutout remains uncertain.",
+      "reason": "Green leaves and small white flowers have fine surface texture unresolved at contact-sheet size; drawing versus photographed cutout remains uncertain.",
+      "reviewed_by": "Codex media_catalog; actual inspection of every tile; root independently viewed the same complete sheet",
+      "reviewed_at": "2026-11-06T19:33:39.231307+00:00",
+      "review_history": [
+        {
+          "verdict": "scope_pending",
+          "observations": "Green leaves and small white flowers have fine surface texture unresolved at contact-sheet size; drawing versus photographed cutout remains uncertain.",
+          "reviewed_by": "Codex media_catalog; actual inspection of every tile; root independently viewed the same complete sheet",
+          "reviewed_at": "2026-11-06T19:33:39.231307+00:00"
+        },
+        {
+          "verdict": "scope_pending",
+          "observations": "Independent root display review of the full sheet concurred with the listed illustrated/pending categories and the adult-versus-larva metadata conflict.",
+          "reviewed_by": "root; actual independent contact-sheet inspection",
+          "reviewed_at": "2026-11-06T19:33:39.231307+00:00"
+        }
+      ],
+      "evidence": [
+        {
+          "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scope-review-42278762581-1.tar.gz",
+          "sha256": "6e44a27206c131b568222c82f2513e6052a0399bd137f72e7c399848c49feba8",
+          "member": "scope-01.png",
+          "member_sha256": "cfa944cea07c5a8a28a206921c9a1f9a8e558dbfb6c90c104c04e75ee726ca9c"
+        }
+      ],
+      "native_editability_tested": false,
+      "scientific_detail_validation": "not_independently_verified",
+      "text_content": {
+        "status": "unknown",
+        "kinds": [],
+        "cleanup_advice": "unknown",
+        "basis": "not_independently_assessed",
+        "evidence": [],
+        "editable_text": "unknown"
+      },
+      "scope_status": "scope_pending",
+      "visual_verdict": "scope_pending",
+      "photographic_provenance_independently_verified": false
+    }
+  ]
+}
