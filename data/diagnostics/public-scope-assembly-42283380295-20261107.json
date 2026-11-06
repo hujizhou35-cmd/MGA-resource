@@ -1,0 +1,369 @@
+{
+  "schema_version": 1,
+  "audit_scope": "Exact file scope only; not full collection, scientific, skill-cleanup or deployment acceptance.",
+  "checked_at": "2026-11-06T20:13:32.989680+00:00",
+  "catalog_sha256": "3e12babad36819c593147f5f2f98929904590ab2171659a898db6900530381b7",
+  "policy_sha256": "f5d1dcd500f0f3e5a04c29783f9e8bde907e521e2453f5257419860ad7fc2233",
+  "scope_end_to_end_passed": false,
+  "failed_checks": [],
+  "pending_checks": [
+    "download_manifest.allowed_exact_variants",
+    "publish_bundle.exact_manifest_members",
+    "publish_bundle.independent_restore"
+  ],
+  "counts": {
+    "public_families": 7839,
+    "public_unique_originals": 19474,
+    "nonpublic_unique_originals": 2294,
+    "nonpublic_by_status": {
+      "pending_review": 631,
+      "excluded": 1663
+    },
+    "nonpublic_by_reason": {
+      "component_suitability": 523,
+      "outside_component_scope": 18,
+      "media_type": 208,
+      "text_only_molecular_nameplate": 1541,
+      "preview_integrity": 3,
+      "scientific_attribution_conflict": 1
+    },
+    "nonpublic_by_source": {
+      "arcadia": {
+        "pending_review": 1
+      },
+      "bioicons": {
+        "excluded": 1,
+        "pending_review": 17
+      },
+      "commons": {
+        "excluded": 2
+      },
+      "healthicons": {
+        "pending_review": 50,
+        "excluded": 2
+      },
+      "nih-bioart": {
+        "excluded": 11,
+        "pending_review": 323
+      },
+      "reactome": {
+        "excluded": 1541,
+        "pending_review": 111
+      },
+      "scidraw": {
+        "pending_review": 9,
+        "excluded": 5
+      },
+      "scisvg": {
+        "pending_review": 3
+      },
+      "togo": {
+        "excluded": 101,
+        "pending_review": 120
+      }
+    },
+    "public_text_attribute_counts": {
+      "unknown": 19439,
+      "present": 35
+    }
+  },
+  "count_note": "Counts use original SHA-256, not titles or merged families. A hash with different reviewed previews may occur in more than one status; status totals are not always additive.",
+  "paired_commons": [
+    {
+      "tile": 1,
+      "title": "Bone cross-section without labels",
+      "sha256": "eb6ab3a919268fcb1864da73b50cf2a63147cc1ec588c280ca04788bbc437fec",
+      "expected_public": true,
+      "catalog": true,
+      "index": true,
+      "download_manifest": null,
+      "supplied_stages_match": true
+    },
+    {
+      "tile": 2,
+      "title": "Transverse section of bone with osteons",
+      "sha256": "a68bc1bcbcfdf7a95015bf99a8b16d02687e0c36c92a805a56dc350a376d6c04",
+      "expected_public": true,
+      "catalog": true,
+      "index": true,
+      "download_manifest": null,
+      "supplied_stages_match": true
+    },
+    {
+      "tile": 3,
+      "title": "Cartilage structure and tissue zones",
+      "sha256": "977c20aa8dd1b9b4c73d3ce3b1eebed3f9558a9b5256517582cb1072edb50c98",
+      "expected_public": true,
+      "catalog": true,
+      "index": true,
+      "download_manifest": null,
+      "supplied_stages_match": true
+    },
+    {
+      "tile": 4,
+      "title": "Hyaline cartilage schematic",
+      "sha256": "62898b9d08c0821a649cb56fc979d1cf32cdc930c0313049ca53bd568e096c5d",
+      "expected_public": true,
+      "catalog": true,
+      "index": true,
+      "download_manifest": null,
+      "supplied_stages_match": true
+    },
+    {
+      "tile": 5,
+      "title": "CONSORT 2010 blank two-group randomized trial flow diagram",
+      "sha256": "dbb739dc66c2fed7c692556534a59d659162e148608c4eb018488fabf30d8ebe",
+      "expected_public": false,
+      "catalog": false,
+      "index": false,
+      "download_manifest": null,
+      "supplied_stages_match": true
+    },
+    {
+      "tile": 6,
+      "title": "Cohort follow-up and case-control study timelines",
+      "sha256": "ebb9a9bd3b53c90cccf842971ca582f91b685cfc4c7d6250e4ddf43083c80190",
+      "expected_public": false,
+      "catalog": false,
+      "index": false,
+      "download_manifest": null,
+      "supplied_stages_match": true
+    }
+  ],
+  "reviewed_component_examples": {
+    "excluded_nameplates": [
+      {
+        "source_id": "R-ICO-012350",
+        "title": "1-methyladenosine",
+        "sha256": "64b58f4827b1fd6dabd0f253f86d2ff57837303154445e81e9f4c3a1f0175c4d",
+        "expected_public": false,
+        "in_public_catalog": false,
+        "decision_id": "reactome-42272507879-full-content-scope:64b58f4827b1fd6d:6ecc727cad79",
+        "reason": "Actual inspection of scope-01.png, tile 2. 实际图面只有字母或分子名称及单个彩色圆/椭圆/多边形外框；没有独立分子结构、受体或细胞形态。"
+      },
+      {
+        "source_id": "R-ICO-012351",
+        "title": "1-methylguanosine",
+        "sha256": "5b01bf450d9f91b918be18576ffd67962f5dd10387350f900e6795786a07a757",
+        "expected_public": false,
+        "in_public_catalog": false,
+        "decision_id": "reactome-42272507879-full-content-scope:5b01bf450d9f91b9:fbf153e6e74c",
+        "reason": "实际查看仅为分子名称/字母加彩色椭圆、圆角框或多边形名牌，未呈现独立医学对象结构；按用户明确规则排除。"
+      },
+      {
+        "source_id": "R-ICO-012352",
+        "title": "1-methylinosine",
+        "sha256": "d7e979c09ed02637ff80afa9988fad702df59e65fd9296bc02c1bc5d3a4851af",
+        "expected_public": false,
+        "in_public_catalog": false,
+        "decision_id": "reactome-42272507879-full-content-scope:d7e979c09ed02637:378dd97bd553",
+        "reason": "Actual inspection of scope-01.png, tile 3. 实际图面只有字母或分子名称及单个彩色圆/椭圆/多边形外框；没有独立分子结构、受体或细胞形态。"
+      },
+      {
+        "source_id": "R-ICO-012353",
+        "title": "1-phosphatidyl-1D-myo-inositol 5-phosphate",
+        "sha256": "4478b94a379715fc8e39139789b8eb4602a179c4fb1d39aa1a61841a50dab8f9",
+        "expected_public": false,
+        "in_public_catalog": false,
+        "decision_id": "reactome-42272507879-full-content-scope:4478b94a379715fc:61598bde0408",
+        "reason": "Actual inspection of scope-01.png, tile 4. 实际图面只有字母或分子名称及单个彩色圆/椭圆/多边形外框；没有独立分子结构、受体或细胞形态。"
+      },
+      {
+        "source_id": "R-ICO-012354",
+        "title": "1-phosphatidyl-1D-myo-inositol 3,4,5-trisphosphate",
+        "sha256": "daa8100367876a06789c4d30180720c87ea2c2789b7edac64738cd91a74c0411",
+        "expected_public": false,
+        "in_public_catalog": false,
+        "decision_id": "reactome-42272507879-full-content-scope:daa8100367876a06:1b7ddf714e01",
+        "reason": "Actual inspection of scope-01.png, tile 5. 实际图面只有字母或分子名称及单个彩色圆/椭圆/多边形外框；没有独立分子结构、受体或细胞形态。"
+      },
+      {
+        "source_id": "R-ICO-012356",
+        "title": "2'-0-ACETYL-ADP-RIBOSE",
+        "sha256": "49f2dd0666a2544b0b9353e9bbda67bdde1749b776aa64c62897d05314838ba2",
+        "expected_public": false,
+        "in_public_catalog": false,
+        "decision_id": "reactome-42272507879-full-content-scope:49f2dd0666a2544b:40d0967564aa",
+        "reason": "Actual inspection of scope-01.png, tile 7. 实际图面只有字母或分子名称及单个彩色圆/椭圆/多边形外框；没有独立分子结构、受体或细胞形态。"
+      }
+    ],
+    "retained_reviewed_reactome_components": [
+      {
+        "source_id": "R-ICO-012337",
+        "title": "No transformation arrow",
+        "sha256": "434ac4d69692b1493eb22044df21e9c613eaf75a616397b6d6291a619dfefb4c",
+        "expected_public": true,
+        "in_public_catalog": true,
+        "decision_id": "reactome-42272507879-full-content-scope:434ac4d69692b149:57a6716f0e7b",
+        "reason": "实际看到可独立复用的结构示意、细胞/器官/人物或机制箭头，不因含有分子标签排除。仅范围审阅，未声明所有微观结构已科学验证。"
+      },
+      {
+        "source_id": "R-ICO-012338",
+        "title": "No inhibition arrow",
+        "sha256": "d7496803dd2c4bad71f80e8f307008f31c6a4cfaa1e83a60f65e6965e3b02e82",
+        "expected_public": true,
+        "in_public_catalog": true,
+        "decision_id": "reactome-42272507879-full-content-scope:d7496803dd2c4bad:04c7c0c0ba56",
+        "reason": "实际看到可独立复用的结构示意、细胞/器官/人物或机制箭头，不因含有分子标签排除。仅范围审阅，未声明所有微观结构已科学验证。"
+      },
+      {
+        "source_id": "R-ICO-012339",
+        "title": "No motion arrow",
+        "sha256": "f165c68812d938436a14a9235bf7a260fa7de9404d8f38fa4de0f6966f6077b9",
+        "expected_public": true,
+        "in_public_catalog": true,
+        "decision_id": "reactome-42272507879-full-content-scope:f165c68812d93843:6efe8b312104",
+        "reason": "Drawn blocked/dashed motion arrow is an independent mechanism connector."
+      },
+      {
+        "source_id": "R-ICO-012340",
+        "title": "No process arrow",
+        "sha256": "99321289c08fdec8e1cee5ddc83635be0ae6cf0079cc8c611e272820158bc113",
+        "expected_public": true,
+        "in_public_catalog": true,
+        "decision_id": "reactome-42272507879-full-content-scope:99321289c08fdec8:b0a73ccb47e4",
+        "reason": "Drawn blocked process arrow is an independent mechanism connector."
+      },
+      {
+        "source_id": "R-ICO-012341",
+        "title": "Disease releated Inhibition arrow",
+        "sha256": "bce4142c6b2a97114e1939168c5cb66a111f36f15914e9273fd3d89141cc07b9",
+        "expected_public": true,
+        "in_public_catalog": true,
+        "decision_id": "reactome-42272507879-full-content-scope:bce4142c6b2a9711:ee6e4335b6b7",
+        "reason": "Drawn inhibitory T-bar connector is a reusable mechanism part."
+      },
+      {
+        "source_id": "R-ICO-012342",
+        "title": "Disease related Motion arrow",
+        "sha256": "463831d482279de530bfc6d81ca755efb758b9f068bd262a8db5d1e896997d16",
+        "expected_public": true,
+        "in_public_catalog": true,
+        "decision_id": "reactome-42272507879-full-content-scope:463831d482279de5:5c5e052a9bde",
+        "reason": "Actual inspection of scope-01.png, tile 1. 可见独立渐变运动箭头（1）、珠链（6）、糖与磷酸结构（12）、分叶/成对受体或膜部件（15/18/20/21/29/35）、细胞（25/34）及多亚基装配（33），不是整张结果/教学流程。"
+      }
+    ]
+  },
+  "skill_cleanup": {
+    "normative_requirements": "recorded separately in MGA-Designer selected-asset-adaptation.md",
+    "bulk_cleanup_run": false,
+    "automatic_cleanup_capability_tested": false
+  },
+  "verified_cloud_metadata": [
+    {
+      "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/assembly-42283380295-1.catalog.jsonl",
+      "sha256": "3e12babad36819c593147f5f2f98929904590ab2171659a898db6900530381b7",
+      "size_bytes": 102223449
+    },
+    {
+      "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/assembly-42283380295-1.report.json",
+      "sha256": "5bbd3d780d9b1c244047fe7cdb23f5f6a163dd442a1bf5f1d4d721abe0462ffd",
+      "size_bytes": 7746969
+    },
+    {
+      "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/assembly-42283380295-1.internal-catalog.jsonl",
+      "sha256": "8d04bf38b1469ca6690972dd0f140f06e76411b96e245efff67f9efa73ee7970",
+      "size_bytes": 69992098
+    },
+    {
+      "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/assembly-42283380295-1.catalog.sqlite",
+      "sha256": "012943a4ff56b13d07479ad641dd092fa79f31121358954c15b25c62710e025a",
+      "size_bytes": 246546432
+    }
+  ],
+  "full_local_audit_report": {
+    "path": "build/public-scope-audit/assembly-42283380295-1.json",
+    "sha256": "c12826e7905b2038f37cc31001436156f33ae352ceb6f395e03844e3c0a4c894"
+  },
+  "source_disposition_preparation": {
+    "report_sha256": "fe1d11afb0a33a031766769d1c1d6ddc05a80774bc6f96d266d1178fbe81586a",
+    "output_directory": "build/dispositions-final-scope-42283380295",
+    "selected": {
+      "bioicons/items/exclude_from_v1": 18,
+      "bioicons/items/quarantine": 39,
+      "nih-bioart/items/exclude_from_v1": 28,
+      "nih-bioart/unavailable_variants/quarantine": 1,
+      "reactome/items/exclude_from_v1": 1652,
+      "reactome/unavailable_variants/not_acquired": 919,
+      "scidraw/files/quarantine": 1,
+      "scidraw/items/exclude_from_v1": 14,
+      "scidraw/items/quarantine": 7,
+      "swissbiopics/items/quarantine": 2,
+      "togo/items/exclude_from_v1": 201,
+      "togo/unavailable_variants/not_acquired": 3,
+      "togo/unavailable_variants/quarantine": 92
+    },
+    "pending_count": 0,
+    "detected_format_corrections": [
+      {
+        "acquired_evidence": {
+          "sha256": "8d04bf38b1469ca6690972dd0f140f06e76411b96e245efff67f9efa73ee7970",
+          "size_bytes": 69992098,
+          "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/assembly-42283380295-1.internal-catalog.jsonl"
+        },
+        "archive_member": null,
+        "declared_format": "png",
+        "detected_format": "jpeg",
+        "inventory_evidence": {
+          "sha256": "0eedd165694eb75e107225debfa302c873676e5d23f66934f5e2f0efddea218c",
+          "size_bytes": 570346,
+          "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scidraw-42235890704-1.discovery.jsonl"
+        },
+        "media_type": "image/jpeg",
+        "note": "Exact acquired bytes retain detected media type; no conversion or source re-download.",
+        "original_sha256": "a2b71654dbf4f1d1ab0c8ea7e8bc30229f24966016c4448aa390ba081c194de3",
+        "source": "scidraw",
+        "source_id": "ead491da-3a26-4136-8aae-49483b350ce8",
+        "url": "https://scidraw.io/files/Nebulizer.png"
+      },
+      {
+        "acquired_evidence": {
+          "sha256": "8d04bf38b1469ca6690972dd0f140f06e76411b96e245efff67f9efa73ee7970",
+          "size_bytes": 69992098,
+          "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/assembly-42283380295-1.internal-catalog.jsonl"
+        },
+        "archive_member": null,
+        "declared_format": "png",
+        "detected_format": "jpeg",
+        "inventory_evidence": {
+          "sha256": "2f35e01f966726f8dd1a9aceb321cf59a1feb4c4e2be0bf0eda8f8554b49178f",
+          "size_bytes": 3213741,
+          "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42249870031-1.discovery.jsonl"
+        },
+        "media_type": "image/jpeg",
+        "note": "Exact acquired bytes retain detected media type; no conversion or source re-download.",
+        "original_sha256": "7267657fb7e1c5816fa325ab147de553f4a2900cc1795d43c0e93fc9509322ef",
+        "source": "togo",
+        "source_id": "2106",
+        "url": "https://dbarchive.biosciencedbc.jp/data/togo-pic/image/202412_Aphananthe_aspera.png"
+      },
+      {
+        "acquired_evidence": {
+          "sha256": "8d04bf38b1469ca6690972dd0f140f06e76411b96e245efff67f9efa73ee7970",
+          "size_bytes": 69992098,
+          "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/assembly-42283380295-1.internal-catalog.jsonl"
+        },
+        "archive_member": null,
+        "declared_format": "png",
+        "detected_format": "jpeg",
+        "inventory_evidence": {
+          "sha256": "2f35e01f966726f8dd1a9aceb321cf59a1feb4c4e2be0bf0eda8f8554b49178f",
+          "size_bytes": 3213741,
+          "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42249870031-1.discovery.jsonl"
+        },
+        "media_type": "image/jpeg",
+        "note": "Exact acquired bytes retain detected media type; no conversion or source re-download.",
+        "original_sha256": "588931498e2571f565796cc8fb317466c00465d87f79dd3a175aace68570938a",
+        "source": "togo",
+        "source_id": "2133",
+        "url": "https://dbarchive.biosciencedbc.jp/data/togo-pic/image/202501_Nandina_domestica.png"
+      }
+    ],
+    "metadata_evidence_count": 119,
+    "candidate_manifest_sha256": "4ea5b57fc230622ef6905bfc59e418b41587e960dc00b9c4ddf1488faca39fea",
+    "candidate_manifest_files": 19473,
+    "final_acceptance_claimed": false,
+    "caveat": "Zero unresolved acquisition/format dispositions does not approve 631 deferred scope originals or establish final publication."
+  },
+  "text_attribute_fix_status": "61a49fc code fix tested; this frozen catalog still has 35 present and 19439 unknown, Commons01 absent restoration awaits next assembly."
+}
