@@ -1,0 +1,857 @@
+{
+  "schema_version": 1,
+  "reviewed_at": "2026-11-07",
+  "reviewer": "Codex primary agent; direct visual inspection",
+  "source": "swissbiopics",
+  "collection_run": "42242170927-1",
+  "collection_commit": "6be838d92cc8a7c87d371793fe815e7d8af3f2a6",
+  "review_method": "Actual cloud-rendered contact sheet viewed with view_image; exact original and preview hashes joined to verified records.",
+  "review_sheet_url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/swissbiopics-42242170927-1-b0000.review.png",
+  "review_sheet_sha256": "7793610fa5796d2892195683942db95ed05f19a2e020648dad0a13f52810e557",
+  "review_limits": [
+    "Contact-sheet-scale appearance and object recognition only; no fine ultrastructure certification.",
+    "One separate Animal Cell native review has a clipping warning; these 30 visual observations do not extend its native validation."
+  ],
+  "items": [
+    {
+      "tile": 1,
+      "id": "swissbiopics-a7ae4b820afe139ddc3f",
+      "title": "Animal cell",
+      "source_id": "Animal_cells",
+      "source_url": "https://www.swissbiopics.org/name/Animal_cell",
+      "original_sha256": "332453c5b22c90c9d155849b5ceb07a40866d9a80e3c45a30c12d096820d5bbd",
+      "preview_sha256": "088f1dff7bc4fcbcf2158b629f4ccde5cf3552dfcf900367949dea5612ccc591",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/swissbiopics-42242170927-1-b0000.tar.gz",
+        "member": "files/33/332453c5b22c90c9d155849b5ceb07a40866d9a80e3c45a30c12d096820d5bbd.svg"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/swissbiopics-42242170927-1-b0000.tar.gz",
+        "member": "previews/332453c5b22c90c9d155849b5ceb07a40866d9a80e3c45a30c12d096820d5bbd.png"
+      },
+      "visual_verdict": "usable_as_detailed_schematic",
+      "observations": "动物细胞剖面结构较密，适合大幅细胞总览，不适合作为极小图标。 浅灰细线在小尺寸下对比偏低，细小文字不宜以本联系表判断可读性。",
+      "appearance_observations": {
+        "color": "grayscale",
+        "detail": "detailed",
+        "realism": "schematic",
+        "confidence": "contact_sheet_observation",
+        "review_required_for_small_scale_use": true
+      },
+      "scientific_detail_validation": "not_independently_verified",
+      "native_editability_tested": false
+    },
+    {
+      "tile": 2,
+      "id": "swissbiopics-266228c774222433fa30",
+      "title": "Animal epithelial cell",
+      "source_id": "Epithelial_cells",
+      "source_url": "https://www.swissbiopics.org/name/Animal_epithelial_cell",
+      "original_sha256": "c818c78e08fd6c5e65a2fab5fb260e2b2bac940679ce832670b68c7c7a2a306d",
+      "preview_sha256": "e04de919697a5b9e36e1ee179841274842d90076e29084111b9e73585d6a0fa4",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/swissbiopics-42242170927-1-b0000.tar.gz",
+        "member": "files/c8/c818c78e08fd6c5e65a2fab5fb260e2b2bac940679ce832670b68c7c7a2a306d.svg"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/swissbiopics-42242170927-1-b0000.tar.gz",
+        "member": "previews/c818c78e08fd6c5e65a2fab5fb260e2b2bac940679ce832670b68c7c7a2a306d.png"
+      },
+      "visual_verdict": "usable_as_detailed_schematic",
+      "observations": "上皮细胞含顶部微绒毛与连接结构，作为上皮细胞剖面示意。 浅灰细线在小尺寸下对比偏低，细小文字不宜以本联系表判断可读性。",
+      "appearance_observations": {
+        "color": "grayscale",
+        "detail": "detailed",
+        "realism": "schematic",
+        "confidence": "contact_sheet_observation",
+        "review_required_for_small_scale_use": true
+      },
+      "scientific_detail_validation": "not_independently_verified",
+      "native_editability_tested": false
+    },
+    {
+      "tile": 3,
+      "id": "swissbiopics-5b2179eb2750f1fb0c10",
+      "title": "Animal muscle cell",
+      "source_id": "Muscle_cells",
+      "source_url": "https://www.swissbiopics.org/name/Animal_muscle_cell",
+      "original_sha256": "17dbdbf3b05513d83f7e4a3e8563ad823c6cf77b04d31ccbbb65cd8058fa50b7",
+      "preview_sha256": "cf9b163c49707a33725a8cea4bd38b74353258b8e2b5333482aec5c3a7c6217a",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/swissbiopics-42242170927-1-b0000.tar.gz",
+        "member": "files/17/17dbdbf3b05513d83f7e4a3e8563ad823c6cf77b04d31ccbbb65cd8058fa50b7.svg"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/swissbiopics-42242170927-1-b0000.tar.gz",
+        "member": "previews/17dbdbf3b05513d83f7e4a3e8563ad823c6cf77b04d31ccbbb65cd8058fa50b7.png"
+      },
+      "visual_verdict": "usable_as_detailed_schematic",
+      "observations": "肌细胞显示重复条纹和细长结构，保留足够画幅才能辨认细节。 浅灰细线在小尺寸下对比偏低，细小文字不宜以本联系表判断可读性。",
+      "appearance_observations": {
+        "color": "grayscale",
+        "detail": "detailed",
+        "realism": "schematic",
+        "confidence": "contact_sheet_observation",
+        "review_required_for_small_scale_use": true
+      },
+      "scientific_detail_validation": "not_independently_verified",
+      "native_editability_tested": false
+    },
+    {
+      "tile": 4,
+      "id": "swissbiopics-b9b010a672857eb34832",
+      "title": "Animal neuron cell",
+      "source_id": "Neuron_cells",
+      "source_url": "https://www.swissbiopics.org/name/Animal_neuronal_cell",
+      "original_sha256": "41ae060eb772db80d68286fd9f16f71da787d9fc778617cdb3d86de1a8227fda",
+      "preview_sha256": "710b690d5882329d0a90e050f71ca22bd96087291b57a86d40b3976e2ef51556",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/swissbiopics-42242170927-1-b0000.tar.gz",
+        "member": "files/41/41ae060eb772db80d68286fd9f16f71da787d9fc778617cdb3d86de1a8227fda.svg"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/swissbiopics-42242170927-1-b0000.tar.gz",
+        "member": "previews/41ae060eb772db80d68286fd9f16f71da787d9fc778617cdb3d86de1a8227fda.png"
+      },
+      "visual_verdict": "usable_as_detailed_schematic",
+      "observations": "神经元和突触放大框同时存在，应作为完整图解使用或另行标注编辑范围。 浅灰细线在小尺寸下对比偏低，细小文字不宜以本联系表判断可读性。",
+      "appearance_observations": {
+        "color": "grayscale",
+        "detail": "detailed",
+        "realism": "schematic",
+        "confidence": "contact_sheet_observation",
+        "review_required_for_small_scale_use": true
+      },
+      "scientific_detail_validation": "not_independently_verified",
+      "native_editability_tested": false
+    },
+    {
+      "tile": 5,
+      "id": "swissbiopics-3d7938e0ebf06a6a3e3d",
+      "title": "Animal photoreceptor cell",
+      "source_id": "Photoreceptor_cell",
+      "source_url": "https://www.swissbiopics.org/name/Animal_photoreceptor_cell",
+      "original_sha256": "ce2a2205a880ca44155b7c1f7aa86e86db4c7c58e0906d22833b610003b2d2e4",
+      "preview_sha256": "d35a375e38a1dd182111fffb522791070446e19e192f3e9c630d479807ecde2a",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/swissbiopics-42242170927-1-b0000.tar.gz",
+        "member": "files/ce/ce2a2205a880ca44155b7c1f7aa86e86db4c7c58e0906d22833b610003b2d2e4.svg"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/swissbiopics-42242170927-1-b0000.tar.gz",
+        "member": "previews/ce2a2205a880ca44155b7c1f7aa86e86db4c7c58e0906d22833b610003b2d2e4.png"
+      },
+      "visual_verdict": "usable_as_detailed_schematic",
+      "observations": "多个感光细胞并列，不能直接当成一个孤立细胞。 浅灰细线在小尺寸下对比偏低，细小文字不宜以本联系表判断可读性。",
+      "appearance_observations": {
+        "color": "grayscale",
+        "detail": "detailed",
+        "realism": "schematic",
+        "confidence": "contact_sheet_observation",
+        "review_required_for_small_scale_use": true
+      },
+      "scientific_detail_validation": "not_independently_verified",
+      "native_editability_tested": false
+    },
+    {
+      "tile": 6,
+      "id": "swissbiopics-bfd988cbc23c01d01e81",
+      "title": "Animal Egg cell",
+      "source_id": "Egg_cell",
+      "source_url": "https://www.swissbiopics.org/name/Animal_egg_cell",
+      "original_sha256": "b5bd9b07f4675b011563da32ce4a41f11c41500d2dfc4382282f3ba3b70fbd3e",
+      "preview_sha256": "3269e47a82253aadd869010650fdb7c8fd277d16f63f238e847a18385df3b489",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/swissbiopics-42242170927-1-b0000.tar.gz",
+        "member": "files/b5/b5bd9b07f4675b011563da32ce4a41f11c41500d2dfc4382282f3ba3b70fbd3e.svg"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/swissbiopics-42242170927-1-b0000.tar.gz",
+        "member": "previews/b5bd9b07f4675b011563da32ce4a41f11c41500d2dfc4382282f3ba3b70fbd3e.png"
+      },
+      "visual_verdict": "usable_as_detailed_schematic",
+      "observations": "卵细胞和周围层次可辨认。 浅灰细线在小尺寸下对比偏低，细小文字不宜以本联系表判断可读性。",
+      "appearance_observations": {
+        "color": "grayscale",
+        "detail": "detailed",
+        "realism": "schematic",
+        "confidence": "contact_sheet_observation",
+        "review_required_for_small_scale_use": true
+      },
+      "scientific_detail_validation": "not_independently_verified",
+      "native_editability_tested": false
+    },
+    {
+      "tile": 7,
+      "id": "swissbiopics-5746f39e073e18c375fa",
+      "title": "Animal Spermatozoa cell",
+      "source_id": "Spermatozoa_cell",
+      "source_url": "https://www.swissbiopics.org/name/Animal_Spermatozoa_cell",
+      "original_sha256": "1e50b9886aa5207eabb9691c529286ed44c526271686b8f6d8ee67fc46dd3ad2",
+      "preview_sha256": "ef88d29794ea1f8612936c86e3def2ed6d735a859067e2b0fa5a1084ebdf6404",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/swissbiopics-42242170927-1-b0000.tar.gz",
+        "member": "files/1e/1e50b9886aa5207eabb9691c529286ed44c526271686b8f6d8ee67fc46dd3ad2.svg"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/swissbiopics-42242170927-1-b0000.tar.gz",
+        "member": "previews/1e50b9886aa5207eabb9691c529286ed44c526271686b8f6d8ee67fc46dd3ad2.png"
+      },
+      "visual_verdict": "usable_as_detailed_schematic",
+      "observations": "精子头部和尾部轮廓完整。 浅灰细线在小尺寸下对比偏低，细小文字不宜以本联系表判断可读性。",
+      "appearance_observations": {
+        "color": "grayscale",
+        "detail": "detailed",
+        "realism": "schematic",
+        "confidence": "contact_sheet_observation",
+        "review_required_for_small_scale_use": true
+      },
+      "scientific_detail_validation": "not_independently_verified",
+      "native_editability_tested": false
+    },
+    {
+      "tile": 8,
+      "id": "swissbiopics-95c55cc9fbebc8e51f49",
+      "title": "Cnidocyte cell",
+      "source_id": "Cnidocyte_cell",
+      "source_url": "https://www.swissbiopics.org/name/Cnidocyte_cell",
+      "original_sha256": "bb13dde7c5281eb676b62adcf766a268bacbb6e3806a38cda8a257b9f8e285f7",
+      "preview_sha256": "92fad9bdd9a864f8acbfa81ba5ae6b0f3e96f0ea40363042796bffdccd0d227d",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/swissbiopics-42242170927-1-b0000.tar.gz",
+        "member": "files/bb/bb13dde7c5281eb676b62adcf766a268bacbb6e3806a38cda8a257b9f8e285f7.svg"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/swissbiopics-42242170927-1-b0000.tar.gz",
+        "member": "previews/bb13dde7c5281eb676b62adcf766a268bacbb6e3806a38cda8a257b9f8e285f7.png"
+      },
+      "visual_verdict": "usable_as_detailed_schematic",
+      "observations": "刺细胞包括多个状态及上方猎物组织示意，不能将整张图标为单一状态。 浅灰细线在小尺寸下对比偏低，细小文字不宜以本联系表判断可读性。",
+      "appearance_observations": {
+        "color": "grayscale",
+        "detail": "detailed",
+        "realism": "schematic",
+        "confidence": "contact_sheet_observation",
+        "review_required_for_small_scale_use": true
+      },
+      "scientific_detail_validation": "not_independently_verified",
+      "native_editability_tested": false
+    },
+    {
+      "tile": 9,
+      "id": "swissbiopics-8b3b361cab174ec3818e",
+      "title": "Trypanosoma cell",
+      "source_id": "Trypanosoma",
+      "source_url": "https://www.swissbiopics.org/name/Trypanosoma_cell",
+      "original_sha256": "f0da1516c9938a24ee81042cf50a9d4fd175fc954c90d2b238308ad57a9e034b",
+      "preview_sha256": "b9e875626b8f5fc48434d1d16afcf08f5f1ee1e0f10ac61bf74c755dff025a89",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/swissbiopics-42242170927-1-b0000.tar.gz",
+        "member": "files/f0/f0da1516c9938a24ee81042cf50a9d4fd175fc954c90d2b238308ad57a9e034b.svg"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/swissbiopics-42242170927-1-b0000.tar.gz",
+        "member": "previews/f0da1516c9938a24ee81042cf50a9d4fd175fc954c90d2b238308ad57a9e034b.png"
+      },
+      "visual_verdict": "usable_as_detailed_schematic",
+      "observations": "锥虫形态和鞭毛可辨认；具体物种不能仅凭轮廓确定。 浅灰细线在小尺寸下对比偏低，细小文字不宜以本联系表判断可读性。",
+      "appearance_observations": {
+        "color": "grayscale",
+        "detail": "detailed",
+        "realism": "schematic",
+        "confidence": "contact_sheet_observation",
+        "review_required_for_small_scale_use": true
+      },
+      "scientific_detail_validation": "not_independently_verified",
+      "native_editability_tested": false
+    },
+    {
+      "tile": 10,
+      "id": "swissbiopics-0043e76fbffc06605fd1",
+      "title": "Apicomplexa cell",
+      "source_id": "Apicomplexa_cells",
+      "source_url": "https://www.swissbiopics.org/name/Apicomplexa_cell",
+      "original_sha256": "0aa886881abb93742bac1187d747510fb118c89839678204206eefcfed49ef46",
+      "preview_sha256": "b858adcec5fc591bb48b84c05ffa0d72f151bc481e62d466b581d17381a0a128",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/swissbiopics-42242170927-1-b0000.tar.gz",
+        "member": "files/0a/0aa886881abb93742bac1187d747510fb118c89839678204206eefcfed49ef46.svg"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/swissbiopics-42242170927-1-b0000.tar.gz",
+        "member": "previews/0aa886881abb93742bac1187d747510fb118c89839678204206eefcfed49ef46.png"
+      },
+      "visual_verdict": "usable_as_detailed_schematic",
+      "observations": "顶复门细胞内部结构较密，灰色背景仍保留。 浅灰细线在小尺寸下对比偏低，细小文字不宜以本联系表判断可读性。",
+      "appearance_observations": {
+        "color": "grayscale",
+        "detail": "detailed",
+        "realism": "schematic",
+        "confidence": "contact_sheet_observation",
+        "review_required_for_small_scale_use": true
+      },
+      "scientific_detail_validation": "not_independently_verified",
+      "native_editability_tested": false
+    },
+    {
+      "tile": 11,
+      "id": "swissbiopics-f30aa03dfe3225d0995f",
+      "title": "Eukaryota cell",
+      "source_id": "Eukaryota_cells",
+      "source_url": "https://www.swissbiopics.org/name/Eukaryota_cell",
+      "original_sha256": "c8ae70ef0389f6030a09572c139576211c9ed094652b5aec6c1e459cf2c9cfa2",
+      "preview_sha256": "63892142e2f47a4771c2455765ff79cb2fd0c011aec3423874d1fa5585dd6d07",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/swissbiopics-42242170927-1-b0000.tar.gz",
+        "member": "files/c8/c8ae70ef0389f6030a09572c139576211c9ed094652b5aec6c1e459cf2c9cfa2.svg"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/swissbiopics-42242170927-1-b0000.tar.gz",
+        "member": "previews/c8ae70ef0389f6030a09572c139576211c9ed094652b5aec6c1e459cf2c9cfa2.png"
+      },
+      "visual_verdict": "usable_as_detailed_schematic",
+      "observations": "真核细胞总览带孢子侧图，不代表所有真核细胞共享全部结构。 浅灰细线在小尺寸下对比偏低，细小文字不宜以本联系表判断可读性。",
+      "appearance_observations": {
+        "color": "grayscale",
+        "detail": "detailed",
+        "realism": "schematic",
+        "confidence": "contact_sheet_observation",
+        "review_required_for_small_scale_use": true
+      },
+      "scientific_detail_validation": "not_independently_verified",
+      "native_editability_tested": false
+    },
+    {
+      "tile": 12,
+      "id": "swissbiopics-010d525a79ad87129597",
+      "title": "Fungal cell",
+      "source_id": "Fungal_cells",
+      "source_url": "https://www.swissbiopics.org/name/Fungal_cell",
+      "original_sha256": "3c04ab9cb1ff895e80aa6226f86c5512800ba5bb80f42acc32140299c7027e63",
+      "preview_sha256": "c301efca123cd91cbe0a598cce105b36941417fb8e0e1f689ccd6c1468ec440c",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/swissbiopics-42242170927-1-b0000.tar.gz",
+        "member": "files/3c/3c04ab9cb1ff895e80aa6226f86c5512800ba5bb80f42acc32140299c7027e63.svg"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/swissbiopics-42242170927-1-b0000.tar.gz",
+        "member": "previews/3c04ab9cb1ff895e80aa6226f86c5512800ba5bb80f42acc32140299c7027e63.png"
+      },
+      "visual_verdict": "usable_as_detailed_schematic",
+      "observations": "真菌细胞与孢子侧图，需保留示意性质。 浅灰细线在小尺寸下对比偏低，细小文字不宜以本联系表判断可读性。",
+      "appearance_observations": {
+        "color": "grayscale",
+        "detail": "detailed",
+        "realism": "schematic",
+        "confidence": "contact_sheet_observation",
+        "review_required_for_small_scale_use": true
+      },
+      "scientific_detail_validation": "not_independently_verified",
+      "native_editability_tested": false
+    },
+    {
+      "tile": 13,
+      "id": "swissbiopics-e31c13e38bd1ea615ae1",
+      "title": "Budding yeast cell",
+      "source_id": "Yeast_cells",
+      "source_url": "https://www.swissbiopics.org/name/Budding_yeast_cell",
+      "original_sha256": "286b6e92daccac6f8166c43711466bf0031133a5e52a846b2d0f9e9cb40f160f",
+      "preview_sha256": "6590727c051f0231c1ff044f1d3c98294f9da97cdff5d82df20c2105e73a4f74",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/swissbiopics-42242170927-1-b0000.tar.gz",
+        "member": "files/28/286b6e92daccac6f8166c43711466bf0031133a5e52a846b2d0f9e9cb40f160f.svg"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/swissbiopics-42242170927-1-b0000.tar.gz",
+        "member": "previews/286b6e92daccac6f8166c43711466bf0031133a5e52a846b2d0f9e9cb40f160f.png"
+      },
+      "visual_verdict": "usable_as_detailed_schematic",
+      "observations": "出芽酵母形态与旁侧孢子状态清楚。 浅灰细线在小尺寸下对比偏低，细小文字不宜以本联系表判断可读性。",
+      "appearance_observations": {
+        "color": "grayscale",
+        "detail": "detailed",
+        "realism": "schematic",
+        "confidence": "contact_sheet_observation",
+        "review_required_for_small_scale_use": true
+      },
+      "scientific_detail_validation": "not_independently_verified",
+      "native_editability_tested": false
+    },
+    {
+      "tile": 14,
+      "id": "swissbiopics-5009b738e920f74a27bf",
+      "title": "Fission yeast cell",
+      "source_id": "Pombe_cells",
+      "source_url": "https://www.swissbiopics.org/name/Fission_yeast_cell",
+      "original_sha256": "ffb4f4085c5837019bd0887a83c47de5301479848f3797ed94ab6fe2769ec971",
+      "preview_sha256": "2aab2aed0c7b28e20f34a0a5e011163a13147b082cd97ffc885d0ba2ca672992",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/swissbiopics-42242170927-1-b0000.tar.gz",
+        "member": "files/ff/ffb4f4085c5837019bd0887a83c47de5301479848f3797ed94ab6fe2769ec971.svg"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/swissbiopics-42242170927-1-b0000.tar.gz",
+        "member": "previews/ffb4f4085c5837019bd0887a83c47de5301479848f3797ed94ab6fe2769ec971.png"
+      },
+      "visual_verdict": "usable_as_detailed_schematic",
+      "observations": "裂殖酵母显示两核/分裂阶段和孢子侧图，不能当作任意静息酵母。 浅灰细线在小尺寸下对比偏低，细小文字不宜以本联系表判断可读性。",
+      "appearance_observations": {
+        "color": "grayscale",
+        "detail": "detailed",
+        "realism": "schematic",
+        "confidence": "contact_sheet_observation",
+        "review_required_for_small_scale_use": true
+      },
+      "scientific_detail_validation": "not_independently_verified",
+      "native_editability_tested": false
+    },
+    {
+      "tile": 15,
+      "id": "swissbiopics-a84b7b684e629fcc55ae",
+      "title": "Plant cell",
+      "source_id": "Plant_cells",
+      "source_url": "https://www.swissbiopics.org/name/Plant_cell",
+      "original_sha256": "65995359b00c9e755779533ac24dc7dd506ab0ef5534c71efb9637f833d657b6",
+      "preview_sha256": "7fa1c85e98b338b31c4de0bac5ccedc35061dd2d02f9fe183b4771076fc523cd",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/swissbiopics-42242170927-1-b0000.tar.gz",
+        "member": "files/65/65995359b00c9e755779533ac24dc7dd506ab0ef5534c71efb9637f833d657b6.svg"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/swissbiopics-42242170927-1-b0000.tar.gz",
+        "member": "previews/65995359b00c9e755779533ac24dc7dd506ab0ef5534c71efb9637f833d657b6.png"
+      },
+      "visual_verdict": "usable_as_detailed_schematic",
+      "observations": "植物细胞壁、液泡与内部细胞器可辨认。 浅灰细线在小尺寸下对比偏低，细小文字不宜以本联系表判断可读性。",
+      "appearance_observations": {
+        "color": "grayscale",
+        "detail": "detailed",
+        "realism": "schematic",
+        "confidence": "contact_sheet_observation",
+        "review_required_for_small_scale_use": true
+      },
+      "scientific_detail_validation": "not_independently_verified",
+      "native_editability_tested": false
+    },
+    {
+      "tile": 16,
+      "id": "swissbiopics-fbc77fb5262f38e38e5e",
+      "title": "Unicellular green algae cell",
+      "source_id": "Chlamydomona_cells",
+      "source_url": "https://www.swissbiopics.org/name/Unicellular_green_algae_cell",
+      "original_sha256": "6b2ba3942c698caf2b3b5a87f6b8fefe6127d1915786d1123eddaa1caaff6e7c",
+      "preview_sha256": "1971cb4fed94499ae936553f199ecd79e0ce37be9e379b616dfff876c76868fa",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/swissbiopics-42242170927-1-b0000.tar.gz",
+        "member": "files/6b/6b2ba3942c698caf2b3b5a87f6b8fefe6127d1915786d1123eddaa1caaff6e7c.svg"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/swissbiopics-42242170927-1-b0000.tar.gz",
+        "member": "previews/6b2ba3942c698caf2b3b5a87f6b8fefe6127d1915786d1123eddaa1caaff6e7c.png"
+      },
+      "visual_verdict": "usable_as_detailed_schematic",
+      "observations": "单细胞绿藻含鞭毛和内部细胞器。 浅灰细线在小尺寸下对比偏低，细小文字不宜以本联系表判断可读性。",
+      "appearance_observations": {
+        "color": "grayscale",
+        "detail": "detailed",
+        "realism": "schematic",
+        "confidence": "contact_sheet_observation",
+        "review_required_for_small_scale_use": true
+      },
+      "scientific_detail_validation": "not_independently_verified",
+      "native_editability_tested": false
+    },
+    {
+      "tile": 17,
+      "id": "swissbiopics-36de657b4e0276b6481a",
+      "title": "Archaeal cell",
+      "source_id": "Archaea_cells",
+      "source_url": "https://www.swissbiopics.org/name/Archaeal_cell",
+      "original_sha256": "6b2805fb5b75ef52d7a55c882bf7e6b79fc15f806677add1319023ab4e95ff5e",
+      "preview_sha256": "f931c6f369502e179a6ce04d079dc5608633718ad4297b4a4519bc6e3acc4a7b",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/swissbiopics-42242170927-1-b0000.tar.gz",
+        "member": "files/6b/6b2805fb5b75ef52d7a55c882bf7e6b79fc15f806677add1319023ab4e95ff5e.svg"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/swissbiopics-42242170927-1-b0000.tar.gz",
+        "member": "previews/6b2805fb5b75ef52d7a55c882bf7e6b79fc15f806677add1319023ab4e95ff5e.png"
+      },
+      "visual_verdict": "usable_as_detailed_schematic",
+      "observations": "古菌简化剖面清楚；不额外推断具体物种。 浅灰细线在小尺寸下对比偏低，细小文字不宜以本联系表判断可读性。",
+      "appearance_observations": {
+        "color": "grayscale",
+        "detail": "detailed",
+        "realism": "schematic",
+        "confidence": "contact_sheet_observation",
+        "review_required_for_small_scale_use": true
+      },
+      "scientific_detail_validation": "not_independently_verified",
+      "native_editability_tested": false
+    },
+    {
+      "tile": 18,
+      "id": "swissbiopics-63a9e85e56e60c723c82",
+      "title": "Rod-shaped bacteria: one membrane (Gram+)",
+      "source_id": "Bacteria1M_rod",
+      "source_url": "https://www.swissbiopics.org/name/Rod-shaped_bacteria:_one_membrane_(Gram+)",
+      "original_sha256": "f92f7145859ecf2fd8bf347a50189166afacee47a93633193ba37e47f7dbc822",
+      "preview_sha256": "6dfbeb3c9ecce21f978097c3e23ae5e204e58a59722c88c074533bb9b9321496",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/swissbiopics-42242170927-1-b0000.tar.gz",
+        "member": "files/f9/f92f7145859ecf2fd8bf347a50189166afacee47a93633193ba37e47f7dbc822.svg"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/swissbiopics-42242170927-1-b0000.tar.gz",
+        "member": "previews/f92f7145859ecf2fd8bf347a50189166afacee47a93633193ba37e47f7dbc822.png"
+      },
+      "visual_verdict": "usable_as_detailed_schematic",
+      "observations": "细菌外形和内部结构可辨认；膜结构与旁侧孢子是示意内容，不证明某一具体物种具备全部结构。 浅灰细线在小尺寸下对比偏低，细小文字不宜以本联系表判断可读性。",
+      "appearance_observations": {
+        "color": "grayscale",
+        "detail": "detailed",
+        "realism": "schematic",
+        "confidence": "contact_sheet_observation",
+        "review_required_for_small_scale_use": true
+      },
+      "scientific_detail_validation": "not_independently_verified",
+      "native_editability_tested": false
+    },
+    {
+      "tile": 19,
+      "id": "swissbiopics-2beb387725446731e026",
+      "title": "Filamentous bacteria: one membrane (Gram+)",
+      "source_id": "Bacteria1M_filamentous",
+      "source_url": "https://www.swissbiopics.org/name/Filamentous_bacteria:_one_membrane_(Gram+)",
+      "original_sha256": "6b0dafd8c98c447ccc323d2eb21738ac9633b174004891d0839fd4d9f7b95a3a",
+      "preview_sha256": "8b4ae26f2f22431c31545d2856b297e02cf2c95bad30aa01d54ae5ca43ab11e2",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/swissbiopics-42242170927-1-b0000.tar.gz",
+        "member": "files/6b/6b0dafd8c98c447ccc323d2eb21738ac9633b174004891d0839fd4d9f7b95a3a.svg"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/swissbiopics-42242170927-1-b0000.tar.gz",
+        "member": "previews/6b0dafd8c98c447ccc323d2eb21738ac9633b174004891d0839fd4d9f7b95a3a.png"
+      },
+      "visual_verdict": "usable_as_detailed_schematic",
+      "observations": "细菌外形和内部结构可辨认；膜结构与旁侧孢子是示意内容，不证明某一具体物种具备全部结构。 浅灰细线在小尺寸下对比偏低，细小文字不宜以本联系表判断可读性。",
+      "appearance_observations": {
+        "color": "grayscale",
+        "detail": "detailed",
+        "realism": "schematic",
+        "confidence": "contact_sheet_observation",
+        "review_required_for_small_scale_use": true
+      },
+      "scientific_detail_validation": "not_independently_verified",
+      "native_editability_tested": false
+    },
+    {
+      "tile": 20,
+      "id": "swissbiopics-ca41f2cf395593d1bfe2",
+      "title": "Coccus bacteria: one membrane (Gram+)",
+      "source_id": "Bacteria1M_coccus",
+      "source_url": "https://www.swissbiopics.org/name/Coccus_bacteria:_one_membrane_(Gram+)",
+      "original_sha256": "a8894a7d7ada3c9e5d12fe0a064d81a05484a8e888559a1da317cb80bfea4170",
+      "preview_sha256": "bfe8b08241b9a67974aecac455c3c241d944be55b94b3aa2381b35b00bfbc8fd",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/swissbiopics-42242170927-1-b0000.tar.gz",
+        "member": "files/a8/a8894a7d7ada3c9e5d12fe0a064d81a05484a8e888559a1da317cb80bfea4170.svg"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/swissbiopics-42242170927-1-b0000.tar.gz",
+        "member": "previews/a8894a7d7ada3c9e5d12fe0a064d81a05484a8e888559a1da317cb80bfea4170.png"
+      },
+      "visual_verdict": "usable_as_detailed_schematic",
+      "observations": "细菌外形和内部结构可辨认；膜结构与旁侧孢子是示意内容，不证明某一具体物种具备全部结构。 浅灰细线在小尺寸下对比偏低，细小文字不宜以本联系表判断可读性。",
+      "appearance_observations": {
+        "color": "grayscale",
+        "detail": "detailed",
+        "realism": "schematic",
+        "confidence": "contact_sheet_observation",
+        "review_required_for_small_scale_use": true
+      },
+      "scientific_detail_validation": "not_independently_verified",
+      "native_editability_tested": false
+    },
+    {
+      "tile": 21,
+      "id": "swissbiopics-20d3ae92040f29331007",
+      "title": "Club rod-shaped bacteria: one membrane (Gram+)",
+      "source_id": "Bacteria1M_clubrod",
+      "source_url": "https://www.swissbiopics.org/name/Club_rod-shaped_bacteria:_one_membrane_(Gram+)",
+      "original_sha256": "9521427899e8faefc06b9ee64beef0ab163f55f800eb4e35015236739550a21f",
+      "preview_sha256": "0c492b185533a6219c5d7dfa9306e9351a217bfb38b7719d4ee41fbfbe249271",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/swissbiopics-42242170927-1-b0000.tar.gz",
+        "member": "files/95/9521427899e8faefc06b9ee64beef0ab163f55f800eb4e35015236739550a21f.svg"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/swissbiopics-42242170927-1-b0000.tar.gz",
+        "member": "previews/9521427899e8faefc06b9ee64beef0ab163f55f800eb4e35015236739550a21f.png"
+      },
+      "visual_verdict": "usable_as_detailed_schematic",
+      "observations": "细菌外形和内部结构可辨认；膜结构与旁侧孢子是示意内容，不证明某一具体物种具备全部结构。 浅灰细线在小尺寸下对比偏低，细小文字不宜以本联系表判断可读性。",
+      "appearance_observations": {
+        "color": "grayscale",
+        "detail": "detailed",
+        "realism": "schematic",
+        "confidence": "contact_sheet_observation",
+        "review_required_for_small_scale_use": true
+      },
+      "scientific_detail_validation": "not_independently_verified",
+      "native_editability_tested": false
+    },
+    {
+      "tile": 22,
+      "id": "swissbiopics-55ff89b9e1db2e9bf1e9",
+      "title": "Diplococci bacteria: one membrane (Gram+)",
+      "source_id": "Bacteria1M_diplococci",
+      "source_url": "https://www.swissbiopics.org/name/Diplococci_bacteria:_one_membrane_(Gram+)",
+      "original_sha256": "109b55cfbd28c3c6457229c5ea2784413f3611d769304c3270c51885d2485280",
+      "preview_sha256": "b2af99956895aae031cb0a286c267b6808f8dd06fd0dacb6ba81f8593972b12a",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/swissbiopics-42242170927-1-b0000.tar.gz",
+        "member": "files/10/109b55cfbd28c3c6457229c5ea2784413f3611d769304c3270c51885d2485280.svg"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/swissbiopics-42242170927-1-b0000.tar.gz",
+        "member": "previews/109b55cfbd28c3c6457229c5ea2784413f3611d769304c3270c51885d2485280.png"
+      },
+      "visual_verdict": "usable_as_detailed_schematic",
+      "observations": "双球菌配对外形可辨认。 浅灰细线在小尺寸下对比偏低，细小文字不宜以本联系表判断可读性。",
+      "appearance_observations": {
+        "color": "grayscale",
+        "detail": "detailed",
+        "realism": "schematic",
+        "confidence": "contact_sheet_observation",
+        "review_required_for_small_scale_use": true
+      },
+      "scientific_detail_validation": "not_independently_verified",
+      "native_editability_tested": false
+    },
+    {
+      "tile": 23,
+      "id": "swissbiopics-6215c5a005daa0c805c0",
+      "title": "Tetrad bacteria: one membrane (Gram+)",
+      "source_id": "Bacteria1M_tetrad",
+      "source_url": "https://www.swissbiopics.org/name/Tetrad_bacteria:_one_membrane_(Gram+)",
+      "original_sha256": "6043806527cb0c0f7c4a7069bec160d46f2dec5579f4cd81c6ad72fc70984ea3",
+      "preview_sha256": "3db9918709d669c50fd41ffb6f51fa1c139315301a0c051714a91c3975c36b8f",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/swissbiopics-42242170927-1-b0000.tar.gz",
+        "member": "files/60/6043806527cb0c0f7c4a7069bec160d46f2dec5579f4cd81c6ad72fc70984ea3.svg"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/swissbiopics-42242170927-1-b0000.tar.gz",
+        "member": "previews/6043806527cb0c0f7c4a7069bec160d46f2dec5579f4cd81c6ad72fc70984ea3.png"
+      },
+      "visual_verdict": "usable_as_detailed_schematic",
+      "observations": "四联球菌排列可辨认。 浅灰细线在小尺寸下对比偏低，细小文字不宜以本联系表判断可读性。",
+      "appearance_observations": {
+        "color": "grayscale",
+        "detail": "detailed",
+        "realism": "schematic",
+        "confidence": "contact_sheet_observation",
+        "review_required_for_small_scale_use": true
+      },
+      "scientific_detail_validation": "not_independently_verified",
+      "native_editability_tested": false
+    },
+    {
+      "tile": 24,
+      "id": "swissbiopics-8f8ecfce49f85d60b7da",
+      "title": "Coryneform bacterias: two membrane (Gram+)",
+      "source_id": "Bacteria1Mplus_rod",
+      "source_url": "https://www.swissbiopics.org/name/Coryneform_bacterias:_two_membrane_(Gram+)",
+      "original_sha256": "be9a5d510dbac497d0e2c5d46f55211f22bf8995e42900933319232ede0c59ad",
+      "preview_sha256": "f458adb50642ef9ae39ea017f177aa6caf47bc3eac0a4da159353ffecb8ddeab",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/swissbiopics-42242170927-1-b0000.tar.gz",
+        "member": "files/be/be9a5d510dbac497d0e2c5d46f55211f22bf8995e42900933319232ede0c59ad.svg"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/swissbiopics-42242170927-1-b0000.tar.gz",
+        "member": "previews/be9a5d510dbac497d0e2c5d46f55211f22bf8995e42900933319232ede0c59ad.png"
+      },
+      "visual_verdict": "usable_as_detailed_schematic",
+      "observations": "细菌外形和内部结构可辨认；膜结构与旁侧孢子是示意内容，不证明某一具体物种具备全部结构。 浅灰细线在小尺寸下对比偏低，细小文字不宜以本联系表判断可读性。",
+      "appearance_observations": {
+        "color": "grayscale",
+        "detail": "detailed",
+        "realism": "schematic",
+        "confidence": "contact_sheet_observation",
+        "review_required_for_small_scale_use": true
+      },
+      "scientific_detail_validation": "not_independently_verified",
+      "native_editability_tested": false
+    },
+    {
+      "tile": 25,
+      "id": "swissbiopics-ef94f3db43c9da8b1fdd",
+      "title": "Rod-shaped bacteria: two membranes (Gram-)",
+      "source_id": "Bacteria2M_rod",
+      "source_url": "https://www.swissbiopics.org/name/Rod-shaped_bacteria:_two_membranes_(Gram-)",
+      "original_sha256": "703c0d19e76ce20c3d747fa10b446f109a700489f13d59b6725c7f9b0a6249b2",
+      "preview_sha256": "49da36a6e20d9a1ea7adbd85cd59e2d4412c6feca2d216ca430126247d83e54f",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/swissbiopics-42242170927-1-b0000.tar.gz",
+        "member": "files/70/703c0d19e76ce20c3d747fa10b446f109a700489f13d59b6725c7f9b0a6249b2.svg"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/swissbiopics-42242170927-1-b0000.tar.gz",
+        "member": "previews/703c0d19e76ce20c3d747fa10b446f109a700489f13d59b6725c7f9b0a6249b2.png"
+      },
+      "visual_verdict": "usable_as_detailed_schematic",
+      "observations": "细菌外形和内部结构可辨认；膜结构与旁侧孢子是示意内容，不证明某一具体物种具备全部结构。 浅灰细线在小尺寸下对比偏低，细小文字不宜以本联系表判断可读性。",
+      "appearance_observations": {
+        "color": "grayscale",
+        "detail": "detailed",
+        "realism": "schematic",
+        "confidence": "contact_sheet_observation",
+        "review_required_for_small_scale_use": true
+      },
+      "scientific_detail_validation": "not_independently_verified",
+      "native_editability_tested": false
+    },
+    {
+      "tile": 26,
+      "id": "swissbiopics-e08058ef3ac4304c57ea",
+      "title": "Rod-coccus bacteria: two membranes (Gram-)",
+      "source_id": "Bacteria2M_rodtococcus",
+      "source_url": "https://www.swissbiopics.org/name/Rod-coccus_bacteria:_two_membranes_(Gram-)",
+      "original_sha256": "4ca257c25afbc0eccc5598211057d1bafffcc380dac55f2e1167f1dc0d2f139c",
+      "preview_sha256": "634730c5a7a30f0fa1419c36eaa798a9eb17ecf735c9f73117460f51445b5b34",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/swissbiopics-42242170927-1-b0000.tar.gz",
+        "member": "files/4c/4ca257c25afbc0eccc5598211057d1bafffcc380dac55f2e1167f1dc0d2f139c.svg"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/swissbiopics-42242170927-1-b0000.tar.gz",
+        "member": "previews/4ca257c25afbc0eccc5598211057d1bafffcc380dac55f2e1167f1dc0d2f139c.png"
+      },
+      "visual_verdict": "usable_as_detailed_schematic",
+      "observations": "细菌外形和内部结构可辨认；膜结构与旁侧孢子是示意内容，不证明某一具体物种具备全部结构。 浅灰细线在小尺寸下对比偏低，细小文字不宜以本联系表判断可读性。",
+      "appearance_observations": {
+        "color": "grayscale",
+        "detail": "detailed",
+        "realism": "schematic",
+        "confidence": "contact_sheet_observation",
+        "review_required_for_small_scale_use": true
+      },
+      "scientific_detail_validation": "not_independently_verified",
+      "native_editability_tested": false
+    },
+    {
+      "tile": 27,
+      "id": "swissbiopics-6efb374679678d347e30",
+      "title": "Comma-shaped bacteria: two membranes (Gram-)",
+      "source_id": "Bacteria2M_comma",
+      "source_url": "https://www.swissbiopics.org/name/Comma-shaped_bacteria:_two_membranes_(Gram-)",
+      "original_sha256": "e1fa47806cf6faec1d820aceb7253917ff9f5bf4d207b4dd8201940eeaebe7a7",
+      "preview_sha256": "acc820b052154cfa4f82df4ac94e2b13d5553853bd90a555eeef928a0d7c4c7f",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/swissbiopics-42242170927-1-b0000.tar.gz",
+        "member": "files/e1/e1fa47806cf6faec1d820aceb7253917ff9f5bf4d207b4dd8201940eeaebe7a7.svg"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/swissbiopics-42242170927-1-b0000.tar.gz",
+        "member": "previews/e1fa47806cf6faec1d820aceb7253917ff9f5bf4d207b4dd8201940eeaebe7a7.png"
+      },
+      "visual_verdict": "usable_as_detailed_schematic",
+      "observations": "细菌外形和内部结构可辨认；膜结构与旁侧孢子是示意内容，不证明某一具体物种具备全部结构。 浅灰细线在小尺寸下对比偏低，细小文字不宜以本联系表判断可读性。",
+      "appearance_observations": {
+        "color": "grayscale",
+        "detail": "detailed",
+        "realism": "schematic",
+        "confidence": "contact_sheet_observation",
+        "review_required_for_small_scale_use": true
+      },
+      "scientific_detail_validation": "not_independently_verified",
+      "native_editability_tested": false
+    },
+    {
+      "tile": 28,
+      "id": "swissbiopics-20d6adc8ab467d7eb5cf",
+      "title": "Bacteria: Trichormus: two membranes (Gram-)",
+      "source_id": "Bacteria2M_trichormus",
+      "source_url": "https://www.swissbiopics.org/name/Bacteria:_Trichormus:_two_membranes_(Gram-)",
+      "original_sha256": "4745952e3f49cbb6c812a9c83b7a32fa66e0e8822879bb09f76e12bbde50abd4",
+      "preview_sha256": "1e485ed1ed035ea8cb8d40863f31c5c1e61785fe3dc25f090c5cf4365d705535",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/swissbiopics-42242170927-1-b0000.tar.gz",
+        "member": "files/47/4745952e3f49cbb6c812a9c83b7a32fa66e0e8822879bb09f76e12bbde50abd4.svg"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/swissbiopics-42242170927-1-b0000.tar.gz",
+        "member": "previews/4745952e3f49cbb6c812a9c83b7a32fa66e0e8822879bb09f76e12bbde50abd4.png"
+      },
+      "visual_verdict": "usable_as_detailed_schematic",
+      "observations": "菌丝连续结构在画幅边缘截断是图解布局，不能当作单个完整独立细菌。 浅灰细线在小尺寸下对比偏低，细小文字不宜以本联系表判断可读性。",
+      "appearance_observations": {
+        "color": "grayscale",
+        "detail": "detailed",
+        "realism": "schematic",
+        "confidence": "contact_sheet_observation",
+        "review_required_for_small_scale_use": true
+      },
+      "scientific_detail_validation": "not_independently_verified",
+      "native_editability_tested": false
+    },
+    {
+      "tile": 29,
+      "id": "swissbiopics-3c4d21897291cc1ad83e",
+      "title": "Nostoc bacteria: two membranes",
+      "source_id": "Bacteria2M_Nostoc",
+      "source_url": "https://www.swissbiopics.org/name/Nostoc_bacteria:_two_membranes",
+      "original_sha256": "86690c959f2a68ea0571e4e5cd5d26db54a5831ac77da0b64ec68a6f33f94cfc",
+      "preview_sha256": "4c73806dfb64b94f117098e5f5761abe9c0b5896944983d3b647fcb2c96a29e1",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/swissbiopics-42242170927-1-b0000.tar.gz",
+        "member": "files/86/86690c959f2a68ea0571e4e5cd5d26db54a5831ac77da0b64ec68a6f33f94cfc.svg"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/swissbiopics-42242170927-1-b0000.tar.gz",
+        "member": "previews/86690c959f2a68ea0571e4e5cd5d26db54a5831ac77da0b64ec68a6f33f94cfc.png"
+      },
+      "visual_verdict": "usable_as_detailed_schematic",
+      "observations": "念珠状连续细胞，边缘有延续布局，需按菌体结构图解使用。 浅灰细线在小尺寸下对比偏低，细小文字不宜以本联系表判断可读性。",
+      "appearance_observations": {
+        "color": "grayscale",
+        "detail": "detailed",
+        "realism": "schematic",
+        "confidence": "contact_sheet_observation",
+        "review_required_for_small_scale_use": true
+      },
+      "scientific_detail_validation": "not_independently_verified",
+      "native_editability_tested": false
+    },
+    {
+      "tile": 30,
+      "id": "swissbiopics-30cce615ffa0d3564995",
+      "title": "Mollicutes cell",
+      "source_id": "Mollicutes_cells",
+      "source_url": "https://www.swissbiopics.org/name/Mollicutes_cell",
+      "original_sha256": "5579ec6fb24dba53f3654d522f70e66d84abf22970ea705393bbdbdca1fe6df6",
+      "preview_sha256": "ad057dc9104d460ca0908f4ebb11a62b524187948c5866990abdddb19958b1d7",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/swissbiopics-42242170927-1-b0000.tar.gz",
+        "member": "files/55/5579ec6fb24dba53f3654d522f70e66d84abf22970ea705393bbdbdca1fe6df6.svg"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/swissbiopics-42242170927-1-b0000.tar.gz",
+        "member": "previews/5579ec6fb24dba53f3654d522f70e66d84abf22970ea705393bbdbdca1fe6df6.png"
+      },
+      "visual_verdict": "usable_as_detailed_schematic",
+      "observations": "支原体样细胞轮廓与极性结构可辨认；具体物种仍以来源为准。 浅灰细线在小尺寸下对比偏低，细小文字不宜以本联系表判断可读性。",
+      "appearance_observations": {
+        "color": "grayscale",
+        "detail": "detailed",
+        "realism": "schematic",
+        "confidence": "contact_sheet_observation",
+        "review_required_for_small_scale_use": true
+      },
+      "scientific_detail_validation": "not_independently_verified",
+      "native_editability_tested": false
+    }
+  ]
+}
