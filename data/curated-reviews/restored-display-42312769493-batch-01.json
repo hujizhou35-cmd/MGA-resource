@@ -1,0 +1,427 @@
+{
+  "schema_version": 1,
+  "reviewer": "Codex registry_acceptance; direct view_image inspection of all six sheets and two exact previews",
+  "reviewed_at": "2026-11-06T23:44:23.718903+00:00",
+  "review_method": "Viewed six complete sheets at their returned resolution, then exact original-size archived previews for ordinals 4 and 12. Notes describe visible background interaction, reduction and adjacent-object display only.",
+  "mapping_path": "build/restored-curated-42312769493/review/mapping.json",
+  "mapping_sha256": "0fcb104d57b430cc4592d7f5123ed4d0fb53cf8c3c17557c161cf4bcd7f5b218",
+  "archive_sha256": "7d00632b110fcf73955522d3e71b7cd572a8d14753a2072b4c286eced32f1d48",
+  "archive_integrity_check": "Archive hash supplied after root verified the bounded cloud pack; this reviewer separately rehashed mapping, six sheets and two exact preview files.",
+  "bindings": {
+    "bundle_sha256": "54b055c631c5fd814a7012f176151eb86d65c66849f8b2c71ea3a53ae44dc3a0",
+    "catalog_sha256": "5c90306415ce5e7f36e875c7f57b19a91930aacfeeaeecdf9ad7662770f9a3fe",
+    "curated_original_catalog_binding": {
+      "path": "build/final-scope-baseline/assembly-42289434868-1.catalog.jsonl",
+      "sha256": "5c90306415ce5e7f36e875c7f57b19a91930aacfeeaeecdf9ad7662770f9a3fe"
+    },
+    "curated_original_manifest_binding": {
+      "file_count": 19473,
+      "officially_published": false,
+      "path": "build/dispositions-final-scope-42289434868/candidate_publish_manifest.json",
+      "sha256": "a4fe0424ee8ecc32096090ef295242bdaa04b9ce29ff4f7a80948c95516d5436"
+    },
+    "curated_sha256": "32011683c6259d0221e39ac5e6748dc460d451d91ec0af74d6851d8dba1ed78c",
+    "publish_manifest_sha256": "a4fe0424ee8ecc32096090ef295242bdaa04b9ce29ff4f7a80948c95516d5436",
+    "restore_evidence_sha256": "bdfdf932d22b6ce2a008de38873ac70ba8dcb1dc3235b474f40f9f8fbc9eb4dd",
+    "restore_evidence_size_bytes": 5199214
+  },
+  "batch": 1,
+  "ordinals": [
+    1,
+    12
+  ],
+  "reviewed_sheets": [
+    {
+      "path": "batches/batch-01/comparison-01.png",
+      "sha256": "1be5c95f1e2e30893b9f46ec4160845c75c2f3077ffb583c4f29655c2782d8f5"
+    },
+    {
+      "path": "batches/batch-01/comparison-02.png",
+      "sha256": "3a465b57a233f3130131e11e9480d85447bbbe09e10813b22649385b433f67e8"
+    },
+    {
+      "path": "batches/batch-01/comparison-03.png",
+      "sha256": "ab2d37e57d84ddedcbe177f093a1030d12b67b6efe79ce2e13a67c6a09757097"
+    },
+    {
+      "path": "batches/batch-01/comparison-04.png",
+      "sha256": "6051ff9bf63b8a7b9914429fc8e3ea97372d7f45ae7f39512cd4e42971a8b2d1"
+    },
+    {
+      "path": "batches/batch-01/adjacency.png",
+      "sha256": "b058991ccb079d9b2808fea2e40d148237203ebdf89b8c0b316bb375af99e61e"
+    },
+    {
+      "path": "batches/batch-01/adjacency-10-12.png",
+      "sha256": "f0dd844c696f5928bd308f89d88a6a8b4c3ee7c2efb6e266b6e98068258ab6d0"
+    }
+  ],
+  "items": [
+    {
+      "ordinal": 1,
+      "candidate_id": "arcadia-1a5ce7548667ba354a8a:file-3",
+      "family_id": "arcadia-1a5ce7548667ba354a8a",
+      "title": "Danio rerio raster",
+      "original_sha256": "f7e6c68cbcb0a6748f6be18b8c9ba8fd5c385508d807c6918c7db78b779c393b",
+      "preview_sha256": "a38c8cd9f0a32cdf70ac71f72803efbca9520aa3aae9329ee34fe70356aeb705",
+      "reviewed_sheets": [
+        {
+          "path": "batches/batch-01/adjacency.png",
+          "sha256": "b058991ccb079d9b2808fea2e40d148237203ebdf89b8c0b316bb375af99e61e"
+        },
+        {
+          "path": "batches/batch-01/comparison-01.png",
+          "sha256": "1be5c95f1e2e30893b9f46ec4160845c75c2f3077ffb583c4f29655c2782d8f5"
+        }
+      ],
+      "observations_zh": "白底和深底上都能辨出鱼体、横向条纹和鱼鳍；棋盘背景能在鱼体外显示，未见整块白色矩形底。96px仍可辨条纹方向与尾鳍，48px主要保留鱼体轮廓，鳞片、头部和鳍内细线已明显合并。并排图中鱼体较扁、周围留白多，主体高度小于同框的小鸡和细胞图。",
+      "display_limits_zh": [
+        "需要表现鳞片、鳍条或头部细节时应增加显示尺寸。",
+        "与同尺寸方形图并排时，需要按可见主体而非画布宽高调整比例；这次没有裁切或重排。"
+      ],
+      "text_observation": "未见素材内部文字。英语名称和编号来自QA页，不属于鱼图。",
+      "visual_display_review_completed": true,
+      "display_verdict": "reviewed_with_display_limits",
+      "scientific_relevance_rejudged": false,
+      "native_editability_tested": false,
+      "scope_decision_changed": false
+    },
+    {
+      "ordinal": 2,
+      "candidate_id": "arcadia-4955af18ad237ed6cd9b:file-3",
+      "family_id": "arcadia-4955af18ad237ed6cd9b",
+      "title": "Macaca mulatta tricolorstroke",
+      "original_sha256": "47be7999412d70b592425317803ec9d4e105a021323fef204a85da0a7585171e",
+      "preview_sha256": "2fe1da833e485b5b54dcffcfbc63692d9c054e2e5df8ec319ecd9ec6667a64df",
+      "reviewed_sheets": [
+        {
+          "path": "batches/batch-01/adjacency.png",
+          "sha256": "b058991ccb079d9b2808fea2e40d148237203ebdf89b8c0b316bb375af99e61e"
+        },
+        {
+          "path": "batches/batch-01/comparison-01.png",
+          "sha256": "1be5c95f1e2e30893b9f46ec4160845c75c2f3077ffb583c4f29655c2782d8f5"
+        }
+      ],
+      "observations_zh": "白底、深底和棋盘上均可辨出棕色躯干、四肢及卷曲长尾，图外背景透出。深底上深棕色手足与尾部外缘的反差低于白底。96px仍可分辨姿态和长尾，48px时脸部、手指与毛发色块趋于合并。并排显示时该图的笔触和棕色色块明显区别于旁边的剪影。",
+      "display_limits_zh": [
+        "小尺寸适合整体姿态，不能依靠脸部细线或手指判断细节。",
+        "深底上需要另行核对手足、尾端的可见度；不能据此宣称与同组其他素材风格一致。"
+      ],
+      "text_observation": "未见素材内部文字；QA标题不属于原图。",
+      "visual_display_review_completed": true,
+      "display_verdict": "reviewed_with_display_limits",
+      "scientific_relevance_rejudged": false,
+      "native_editability_tested": false,
+      "scope_decision_changed": false
+    },
+    {
+      "ordinal": 3,
+      "candidate_id": "scidraw-7bb1531ebd231c987ad7:file-0",
+      "family_id": "scidraw-7bb1531ebd231c987ad7",
+      "title": "mouse alert",
+      "original_sha256": "3897d4fb2788bd6f88f9588cca81ad90fe3bfa5c8854ba710a9394b575697dd4",
+      "preview_sha256": "3138b63f685edbe8e556d6b80f446eaf84eb2b7ea8412a9c9f94a8ca827b78f4",
+      "reviewed_sheets": [
+        {
+          "path": "batches/batch-01/adjacency.png",
+          "sha256": "b058991ccb079d9b2808fea2e40d148237203ebdf89b8c0b316bb375af99e61e"
+        },
+        {
+          "path": "batches/batch-01/comparison-01.png",
+          "sha256": "1be5c95f1e2e30893b9f46ec4160845c75c2f3077ffb583c4f29655c2782d8f5"
+        }
+      ],
+      "observations_zh": "白底和棋盘上深紫色剪影的身体、耳、足与尾可见；深底上身体和尾部明显融入背景，邻接图里同样很暗。96px时整体轮廓仍清楚，48px时脚趾和腹侧小突起合并，细尾的可见度下降。鼻端和尾端靠近原画布左右边缘。",
+      "display_limits_zh": [
+        "不宜在当前深色背景直接作为高对比主体使用。",
+        "48px不能依靠脚趾细节；排版时需给接近画布边缘的鼻和尾额外空间。"
+      ],
+      "text_observation": "素材为无文字剪影；未见内部标签。",
+      "visual_display_review_completed": true,
+      "display_verdict": "reviewed_with_display_limits",
+      "scientific_relevance_rejudged": false,
+      "native_editability_tested": false,
+      "scope_decision_changed": false
+    },
+    {
+      "ordinal": 4,
+      "candidate_id": "scidraw-48c0946bb3161dbcb8d1:file-0",
+      "family_id": "scidraw-48c0946bb3161dbcb8d1",
+      "title": "Adult_Hooded_Rat_Sitting",
+      "original_sha256": "117564adfc168d63190575c41e22a99cf4f1144362485c0a592f14f3ece3c094",
+      "preview_sha256": "f39979799f78a1d65c4a0e4348d25b2760611f4fe9e5f632e88bb11ee4c2a4dd",
+      "reviewed_sheets": [
+        {
+          "path": "batches/batch-01/adjacency.png",
+          "sha256": "b058991ccb079d9b2808fea2e40d148237203ebdf89b8c0b316bb375af99e61e"
+        },
+        {
+          "path": "batches/batch-01/comparison-02.png",
+          "sha256": "3a465b57a233f3130131e11e9480d85447bbbe09e10813b22649385b433f67e8"
+        }
+      ],
+      "observations_zh": "白底上可见深色头肩、浅色背部和粉色尾，深底上浅色背部变暗，棋盘纹理在背部浅色区域透出，说明本预览的外观明显受底色影响。原尺寸预览复看也能辨出细须、尾纹和小趾。96px时整体姿态尚可，48px时细须、足趾、尾纹基本难以辨认；深底头部和黑色眼、须的反差低。",
+      "display_limits_zh": [
+        "浅色身体区域不能按完全不透明白填充处理；组合前要按实际背景复核。",
+        "头部细线、须和尾纹不适合在48px承担信息。这里记录背景依赖，不据此判断原件损坏。"
+      ],
+      "text_observation": "未见素材内部文字或标签。",
+      "visual_display_review_completed": true,
+      "display_verdict": "reviewed_with_display_limits",
+      "scientific_relevance_rejudged": false,
+      "native_editability_tested": false,
+      "scope_decision_changed": false,
+      "reviewed_exact_preview": {
+        "path": "previews/f39979799f78a1d65c4a0e4348d25b2760611f4fe9e5f632e88bb11ee4c2a4dd.png",
+        "sha256": "f39979799f78a1d65c4a0e4348d25b2760611f4fe9e5f632e88bb11ee4c2a4dd"
+      }
+    },
+    {
+      "ordinal": 5,
+      "candidate_id": "scidraw-932ed24fd3990c23a2ee:file-0",
+      "family_id": "scidraw-932ed24fd3990c23a2ee",
+      "title": "Chick",
+      "original_sha256": "0399fb8e43340f1cf0bf950f780d99b6ebe852804fdc37f2b61ed353da75942e",
+      "preview_sha256": "42bdd53776e6e661bb8b76d0aeda36106ecb4e28c35867db38ffdeb638018ca1",
+      "reviewed_sheets": [
+        {
+          "path": "batches/batch-01/adjacency.png",
+          "sha256": "b058991ccb079d9b2808fea2e40d148237203ebdf89b8c0b316bb375af99e61e"
+        },
+        {
+          "path": "batches/batch-01/comparison-02.png",
+          "sha256": "3a465b57a233f3130131e11e9480d85447bbbe09e10813b22649385b433f67e8"
+        }
+      ],
+      "observations_zh": "黄色主体、橙色分区和灰色外轮廓在白底、深底和棋盘上均清楚，图外背景透出。96px下眼、嘴和足的主要形状仍可见；48px下身体和脚仍能区分，眼嘴内部小色块与趾端细节减少。并排图中饱和黄色及较粗描边比旁边写实渐变动物更醒目。",
+      "display_limits_zh": [
+        "48px不适合承载眼嘴内部的小色块信息。",
+        "配成正式组图前需要单独检查饱和度、描边粗细和其他素材是否协调。"
+      ],
+      "text_observation": "未见素材内部文字；QA标题不属于原图。",
+      "visual_display_review_completed": true,
+      "display_verdict": "reviewed_with_display_limits",
+      "scientific_relevance_rejudged": false,
+      "native_editability_tested": false,
+      "scope_decision_changed": false
+    },
+    {
+      "ordinal": 6,
+      "candidate_id": "scisvg-9389f49f66db9e26f8ed:file-0",
+      "family_id": "scisvg-9389f49f66db9e26f8ed",
+      "title": "Animal Cell",
+      "original_sha256": "0f534fc86a753d11dbc9e893a1981b8234af2f6a76809329db1de56f37553806",
+      "preview_sha256": "d2d06ce9e9859cc4533dd4e687cdcd6ad51f3c0da379e16177e0ccfd1b6d1bdd",
+      "reviewed_sheets": [
+        {
+          "path": "batches/batch-01/adjacency.png",
+          "sha256": "b058991ccb079d9b2808fea2e40d148237203ebdf89b8c0b316bb375af99e61e"
+        },
+        {
+          "path": "batches/batch-01/comparison-02.png",
+          "sha256": "3a465b57a233f3130131e11e9480d85447bbbe09e10813b22649385b433f67e8"
+        }
+      ],
+      "observations_zh": "外圈蓝线、浅色核区、橙色圆点及绿色曲线在256px下清楚。深底与棋盘显示细胞内部为白色封闭填充，下层测试线被该区域遮住，只有细胞外背景透出。96px时主要色块可分，48px时细小点和内部曲线明显变细、部分难以区分。",
+      "display_limits_zh": [
+        "白色内部是可见图形填充，不应作为整块透明空白处理。",
+        "小点和细曲线需要较大尺寸，48px只适合概略展示。"
+      ],
+      "text_observation": "素材内部没有可见文字标签；色点和曲线不是文字。",
+      "visual_display_review_completed": true,
+      "display_verdict": "reviewed_with_display_limits",
+      "scientific_relevance_rejudged": false,
+      "native_editability_tested": false,
+      "scope_decision_changed": false
+    },
+    {
+      "ordinal": 7,
+      "candidate_id": "scisvg-372cde5fd4acbdd4abf2:file-0",
+      "family_id": "scisvg-372cde5fd4acbdd4abf2",
+      "title": "Neuron",
+      "original_sha256": "63cd13b461a897431554889908a2306d55a273b8751ee7313e432f53955d09f3",
+      "preview_sha256": "fde234a7bf8b561fa9080ac89a67931d5a6f66283410c9dea2f9d4ca1baf9046",
+      "reviewed_sheets": [
+        {
+          "path": "batches/batch-01/adjacency.png",
+          "sha256": "b058991ccb079d9b2808fea2e40d148237203ebdf89b8c0b316bb375af99e61e"
+        },
+        {
+          "path": "batches/batch-01/comparison-03.png",
+          "sha256": "ab2d37e57d84ddedcbe177f093a1030d12b67b6efe79ce2e13a67c6a09757097"
+        }
+      ],
+      "observations_zh": "白底上蓝色分枝、浅色圆形主体、灰色长线和橙色分段清楚，图外背景透出。深底上蓝色分枝和灰色长线的对比下降，中央浅色主体与橙色段仍明显。96px可见分枝和分段，48px时细分枝、段间间隔和末端小点明显弱化。并排图中细线风格与渐变血细胞差别可见。",
+      "display_limits_zh": [
+        "深底应复核细蓝线和灰线对比；不靠48px图解释分枝或分段细节。",
+        "相邻摆放测试没有验证连接关系或形成科学顺序。"
+      ],
+      "text_observation": "未见素材内部文字标签。",
+      "visual_display_review_completed": true,
+      "display_verdict": "reviewed_with_display_limits",
+      "scientific_relevance_rejudged": false,
+      "native_editability_tested": false,
+      "scope_decision_changed": false
+    },
+    {
+      "ordinal": 8,
+      "candidate_id": "nih-bioart-9884f7994b482964c203:file-0",
+      "family_id": "nih-bioart-9884f7994b482964c203",
+      "title": "Neutrophil",
+      "original_sha256": "d09890ebe02cafe4c2520c9ab4c6c7c29f4fc83700ab87340c9000b39a4bb649",
+      "preview_sha256": "0fe9858ba2656de8a87a592aec08cd535bb57198d14bccbe36668c5e82471281",
+      "reviewed_sheets": [
+        {
+          "path": "batches/batch-01/adjacency.png",
+          "sha256": "b058991ccb079d9b2808fea2e40d148237203ebdf89b8c0b316bb375af99e61e"
+        },
+        {
+          "path": "batches/batch-01/comparison-03.png",
+          "sha256": "ab2d37e57d84ddedcbe177f093a1030d12b67b6efe79ce2e13a67c6a09757097"
+        }
+      ],
+      "observations_zh": "浅色外体、紫色分叶状内部图形和柔和阴影在白底上可见；深底上浅色边缘明显，棋盘上主体遮住下层线，外围柔影与背景混合。96px仍可分辨紫色图形的主要分区，48px保留紫色分区轮廓但细边界减弱。与第9件并排时颜色和渐变相近，整体可区分。",
+      "display_limits_zh": [
+        "外围柔影不是完全透明边界，覆盖其他对象或紧贴线条时需额外检查。",
+        "48px不宜承载内部细结构；这次不据可见分区作细胞鉴定或科学正确性判断。"
+      ],
+      "text_observation": "未见素材内部文字；QA名称不作为图像本身的识别证据。",
+      "visual_display_review_completed": true,
+      "display_verdict": "reviewed_with_display_limits",
+      "scientific_relevance_rejudged": false,
+      "native_editability_tested": false,
+      "scope_decision_changed": false
+    },
+    {
+      "ordinal": 9,
+      "candidate_id": "nih-bioart-715bdabd3087f8e763be:file-0",
+      "family_id": "nih-bioart-715bdabd3087f8e763be",
+      "title": "Monocyte",
+      "original_sha256": "a8bad275f7917310f2f54a6779244c3624fb9602bdefe515ec9e58177e752b1f",
+      "preview_sha256": "90c14665d92325ef349c4d484841145bdcf3eb303ab98a1af5f7ca70a2528f95",
+      "reviewed_sheets": [
+        {
+          "path": "batches/batch-01/adjacency.png",
+          "sha256": "b058991ccb079d9b2808fea2e40d148237203ebdf89b8c0b316bb375af99e61e"
+        },
+        {
+          "path": "batches/batch-01/comparison-03.png",
+          "sha256": "ab2d37e57d84ddedcbe177f093a1030d12b67b6efe79ce2e13a67c6a09757097"
+        }
+      ],
+      "observations_zh": "浅色外体和较大的紫色凹曲内部图形在白底、深底与棋盘上均可辨，主体有渐变，外围有柔影。96px时大紫色区域的形状仍清楚，48px时主要剩下外轮廓和紫色大块，渐变和细边界减弱。并排图中与第8件的内部形状差异仍可看见。",
+      "display_limits_zh": [
+        "柔影会与下层背景混合，紧密叠放前需检查边缘。",
+        "小尺寸适合概略轮廓，不支持细结构阅读；没有据此重新判定科学类型。"
+      ],
+      "text_observation": "未见素材内部文字。",
+      "visual_display_review_completed": true,
+      "display_verdict": "reviewed_with_display_limits",
+      "scientific_relevance_rejudged": false,
+      "native_editability_tested": false,
+      "scope_decision_changed": false
+    },
+    {
+      "ordinal": 10,
+      "candidate_id": "scidraw-d4d42ec9c5d8142c22c1:file-0",
+      "family_id": "scidraw-d4d42ec9c5d8142c22c1",
+      "title": "Ovum",
+      "original_sha256": "90081e667634ad6790388846e530c0b595379ce683ba05e10e63cf480ae04b8c",
+      "preview_sha256": "b60df912d189e735a9b14d2e902d0a4173ef176db51d074b5f6eb0a919ad713f",
+      "reviewed_sheets": [
+        {
+          "path": "batches/batch-01/adjacency-10-12.png",
+          "sha256": "f0dd844c696f5928bd308f89d88a6a8b4c3ee7c2efb6e266b6e98068258ab6d0"
+        },
+        {
+          "path": "batches/batch-01/comparison-04.png",
+          "sha256": "6051ff9bf63b8a7b9914429fc8e3ea97372d7f45ae7f39512cd4e42971a8b2d1"
+        }
+      ],
+      "observations_zh": "粉紫色圆形主体、紫色外环、中心圆及内部弯曲小结构在256px下清楚，白底与深底均能显示淡橙色外缘。棋盘与测试线被圆形主体遮住，外侧背景透出。96px仍能看到主要内部图形，48px时细小圆点和内部弯曲纹理趋于合并。",
+      "display_limits_zh": [
+        "主体为有色填充，不能把浅色圆盘当透明区域。",
+        "需要阅读小圆点或内部弯曲纹理时应增大尺寸。"
+      ],
+      "text_observation": "未见素材内部文字标签。",
+      "visual_display_review_completed": true,
+      "display_verdict": "reviewed_with_display_limits",
+      "scientific_relevance_rejudged": false,
+      "native_editability_tested": false,
+      "scope_decision_changed": false
+    },
+    {
+      "ordinal": 11,
+      "candidate_id": "scisvg-421a5e731abb04ca4dae:file-0",
+      "family_id": "scisvg-421a5e731abb04ca4dae",
+      "title": "Erlenmeyer Flask",
+      "original_sha256": "800454264fe49923c1ada758f4880c765398e78822c47fa99e718a4f4f7b8ac6",
+      "preview_sha256": "c622c643df2a314e48828906bf0e7909e40904bf57280c81e6084a467480ec8b",
+      "reviewed_sheets": [
+        {
+          "path": "batches/batch-01/adjacency-10-12.png",
+          "sha256": "f0dd844c696f5928bd308f89d88a6a8b4c3ee7c2efb6e266b6e98068258ab6d0"
+        },
+        {
+          "path": "batches/batch-01/comparison-04.png",
+          "sha256": "6051ff9bf63b8a7b9914429fc8e3ea97372d7f45ae7f39512cd4e42971a8b2d1"
+        }
+      ],
+      "observations_zh": "蓝色烧瓶外线、瓶颈和底部蓝色液面在三种背景上均可见。深底和棋盘清楚显示瓶内为白色填充，遮住测试线，不能视作可透出下层图形的空瓶区域。96px时轮廓与液面尚可，48px时短刻度和液面小白点难以区分。并排图中烧瓶的主体宽度明显小于圆形和孔板。",
+      "display_limits_zh": [
+        "瓶内白填充会遮挡下层对象；需要真正透明玻璃效果时应另行选择或仅修改工作副本。",
+        "短刻度没有数字，不能由此读出容量；48px不适合读刻度。"
+      ],
+      "text_observation": "未见文字或数字；瓶侧有三条短刻度线，属于无数值图形标记。",
+      "visual_display_review_completed": true,
+      "display_verdict": "reviewed_with_display_limits",
+      "scientific_relevance_rejudged": false,
+      "native_editability_tested": false,
+      "scope_decision_changed": false
+    },
+    {
+      "ordinal": 12,
+      "candidate_id": "scisvg-3bc0eb05944fa777024f:file-0",
+      "family_id": "scisvg-3bc0eb05944fa777024f",
+      "title": "96-Well Plate",
+      "original_sha256": "150908b6a1f898a8a951ee9037d27f9dcc92238c22df9083bc97039120167326",
+      "preview_sha256": "7debbec9b8d0b12f812e643105ff6ee5050ec92a59499d9d5c2332ea4b807cb6",
+      "reviewed_sheets": [
+        {
+          "path": "batches/batch-01/adjacency-10-12.png",
+          "sha256": "f0dd844c696f5928bd308f89d88a6a8b4c3ee7c2efb6e266b6e98068258ab6d0"
+        },
+        {
+          "path": "batches/batch-01/comparison-04.png",
+          "sha256": "6051ff9bf63b8a7b9914429fc8e3ea97372d7f45ae7f39512cd4e42971a8b2d1"
+        }
+      ],
+      "observations_zh": "白色矩形板体、深色边框和蓝绿橙色孔阵列在三种背景上可见，白色板面遮住下层测试线。96px仍能区分阵列的大致颜色分布；48px时浅色空心孔线很淡，小孔与边框细节拥挤。原尺寸预览复看确认最右一列圆孔紧贴并覆盖右侧边线的一部分。",
+      "display_limits_zh": [
+        "浅色孔和细外框在48px下不适合逐孔阅读。",
+        "颜色没有图例，不能把图中配色当成实际实验结果；最右列贴边是本图可见构图特征，不据此判定文件损坏。"
+      ],
+      "text_observation": "未见行列字母、孔号或文字图例；颜色和孔阵列本身没有标注含义。",
+      "visual_display_review_completed": true,
+      "display_verdict": "reviewed_with_display_limits",
+      "scientific_relevance_rejudged": false,
+      "native_editability_tested": false,
+      "scope_decision_changed": false,
+      "reviewed_exact_preview": {
+        "path": "previews/7debbec9b8d0b12f812e643105ff6ee5050ec92a59499d9d5c2332ea4b807cb6.png",
+        "sha256": "7debbec9b8d0b12f812e643105ff6ee5050ec92a59499d9d5c2332ea4b807cb6"
+      }
+    }
+  ],
+  "visual_display_review_completed": true,
+  "full_curated_requirement_passed": false,
+  "original_artwork_modified": false,
+  "scope_decisions_changed": false,
+  "limitations_zh": [
+    "这是12件的显示审阅，不是新增科学适用性或Illustrator原生编辑通过。",
+    "邻接页只把独立对象并排，没有验证科学顺序、正式组图或整套画风一致性。",
+    "恢复目录的精选集合仍为48件，不满足60件门槛。",
+    "背景、缩小和描边局限不自动构成原件损坏或首版排除决定。"
+  ]
+}
