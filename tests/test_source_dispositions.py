@@ -80,6 +80,23 @@ def test_acquired_file_ignores_old_failure_and_later_success_requires_refresh():
     assert not groups and "refresh assembly" in pending[0]["reason"]
 
 
+def test_detected_jpeg_from_png_source_location_is_acquired_without_format_fabrication():
+    png = descriptor("png")
+    stored = {**file("png"), "format": "jpeg", "media_type": "image/jpeg"}
+    groups, pending = prepare(row([png]), [stored], [], status="acquired")
+    assert not groups and not pending
+    assert stored["format"] == "jpeg" and stored["url"].endswith(".png")
+
+
+def test_detected_type_matching_never_collapses_ambiguous_source_variants():
+    png = descriptor("png")
+    svg = {**png, "format": "svg"}
+    stored = {**file("png"), "format": "jpeg", "media_type": "image/jpeg"}
+    assert m.acquired_descriptor(png, [stored], [png, svg]) is None
+    other_member = {**stored, "archive_member": "other.png"}
+    assert m.acquired_descriptor(png, [other_member], [png]) is None
+
+
 def test_partial_unknown_does_not_quarantine_entire_item():
     groups, pending = prepare(row([descriptor(), descriptor("png")]), [], [failure("svg")])
     assert not groups and len(pending) == 2

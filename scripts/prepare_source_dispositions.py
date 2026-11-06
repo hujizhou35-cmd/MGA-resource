@@ -35,6 +35,24 @@ def descriptor_key(file):
     return file.get("url"), file.get("archive_member"), file.get("format")
 
 
+def acquired_descriptor(descriptor, files, inventory_files):
+    """Match the exact source response even when byte sniffing corrects its suffix.
+
+    URL plus ZIP member must identify one descriptor and one acquired original.
+    Two advertised formats sharing a location remain ambiguous, not auto-matched.
+    """
+    exact = [file for file in files if descriptor_key(file) == descriptor_key(descriptor)]
+    if exact:
+        return exact[0]
+    location = lambda file: (file.get("url"), file.get("archive_member"))
+    same = [file for file in files if location(file) == location(descriptor)]
+    if (len(same) == 1 and sum(location(file) == location(descriptor) for file in inventory_files) == 1
+            and same[0].get("sha256") and same[0].get("media_type")
+            and same[0].get("validation", {}).get("status") in {"machine_checked", "machine_checked_and_rendered"}):
+        return same[0]
+    return None
+
+
 class Metadata:
     """Read exact GitHub-digest-bound metadata, optionally fetch missing metadata."""
     def __init__(self, assets, roots, *, repository, tag, cache, fetch=False):
@@ -248,8 +266,7 @@ def prepare_source(source, snapshot, inventory, available, attempts, inventory_p
         sid = item["source_id"]
         files = available.get((source, sid), [])
         public_files = files if public_available is None else public_available.get((source, sid), [])
-        acquired_keys = {descriptor_key(file) for file in files}
-        missing = [f for f in item.get("files", []) if descriptor_key(f) not in acquired_keys]
+        missing = [f for f in item.get("files", []) if acquired_descriptor(f, files, item.get("files", [])) is None]
         common = {"source_id": sid, "source_index": index, "title": item.get("title")}
         attempt = attempts.get(index)
         if files and not public_files:
@@ -467,12 +484,23 @@ def main(argv=None):
     available = acquired_files(internal)
     public_available = acquired_files(catalog)
     scope_policy = load_scope_policy()
-    groups, pending, inventory_proofs = defaultdict(list), [], {}
+    groups, pending, inventory_proofs, detected_format_corrections = defaultdict(list), [], {}, []
     sources = args.source or [s for s in ("bioicons", "nih-bioart", "reactome", "scidraw", "togo") if s in snapshots]
     for source in sources:
         snapshot = snapshots[source]
         rows, proof = inputs.inventory(source, snapshot["discovery_sha256"], snapshot["discovered"])
         inventory_proofs[source] = proof
+        for item in rows:
+            files = available.get((source, item["source_id"]), [])
+            for descriptor in item.get("files", []):
+                stored = acquired_descriptor(descriptor, files, item["files"])
+                if stored is not None and stored.get("format") != descriptor.get("format"):
+                    detected_format_corrections.append({"source": source, "source_id": item["source_id"],
+                        "url": descriptor["url"], "archive_member": descriptor.get("archive_member"),
+                        "declared_format": descriptor.get("format"), "detected_format": stored.get("format"),
+                        "media_type": stored.get("media_type"), "original_sha256": stored["sha256"],
+                        "inventory_evidence": proof, "acquired_evidence": assembly_proofs[args.internal_catalog.name if internal_binding else args.catalog.name],
+                        "note": "Exact acquired bytes retain detected media type; no conversion or source re-download."})
         batches = inputs.batches(source, snapshot["discovery_sha256"], historical=source == "bioicons")
         old = {}
         if source == "bioicons":
@@ -535,6 +563,7 @@ def main(argv=None):
               "assembly_evidence": assembly_proofs,
               "metadata_evidence": inputs.used, "selected": {"/".join(k): len(v) for k, v in groups.items()},
               "ignored_legacy_metadata": inputs.ignored,
+              "detected_format_corrections": detected_format_corrections,
               "pending_count": len(pending), "pending": pending,
               "note": "Re-run after latest sources/Togo assembly. Counts describe dispositions, not scientific or visual acceptance; benchmark is unchanged."}
     (args.output / "preparation_report.json").write_bytes(json_bytes(report))
