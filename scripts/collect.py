@@ -48,6 +48,42 @@ def slug(value: str) -> str:
     return value[:120]
 
 
+def select_source_rows(discovered, source, *, offset=0, limit=0, plan=None):
+    """Bind an incremental selection to the complete ordered source inventory."""
+    if offset < 0 or limit < 0:
+        raise ValueError("Selection offset and limit must be non-negative")
+    if plan is None:
+        indices = list(range(len(discovered)))
+    else:
+        if plan.get("source") != source or plan.get("inventory_count") != len(discovered):
+            raise ValueError("Selection plan source or inventory size changed")
+        ids = [row.get("source_id") for row in discovered]
+        if any(not isinstance(sid, str) or not sid for sid in ids) or len(set(ids)) != len(ids):
+            raise ValueError("Source inventory IDs must be unique non-empty strings")
+        digest = hashlib.sha256("\n".join(ids).encode("utf-8")).hexdigest()
+        if digest != plan.get("ordered_source_ids_sha256"):
+            raise ValueError("Selection plan inventory order/identity changed; rebuild the plan")
+        pinned = plan.get("pinned_commit")
+        if pinned and any(row.get("upstream_revision") != pinned for row in discovered):
+            raise ValueError("Selection plan upstream revision changed")
+        ranges = plan.get("recommended_now", {}).get("ranges", plan.get("ranges"))
+        if not isinstance(ranges, list) or not ranges:
+            raise ValueError("Selection plan has no explicit ranges")
+        indices = []
+        previous_end = 0
+        for item in ranges:
+            start, count = item.get("offset"), item.get("limit")
+            if (type(start) is not int or type(count) is not int or count <= 0
+                    or start < previous_end or start + count > len(discovered)):
+                raise ValueError("Selection ranges must be sorted, disjoint and inside inventory")
+            indices.extend(range(start, start + count))
+            previous_end = start + count
+    indices = [index for index in indices if index >= offset]
+    if limit:
+        indices = indices[:limit]
+    return [(index, discovered[index]) for index in indices]
+
+
 def run_gh(arguments: list[str], *, check=True):
     return subprocess.run(["gh", *arguments], text=True, capture_output=True, check=check)
 
@@ -211,6 +247,7 @@ def main() -> int:
     parser.add_argument("--source", required=True)
     parser.add_argument("--limit", type=int, default=20)
     parser.add_argument("--offset", type=int, default=0)
+    parser.add_argument("--selection-plan", default="", help="Verified incremental plan under data/collection-plans")
     parser.add_argument("--release-tag", default="collection-20261106")
     parser.add_argument("--publish", action="store_true")
     args = parser.parse_args()
@@ -220,6 +257,13 @@ def main() -> int:
         parser.error("limit and offset must be non-negative")
     if not re.fullmatch(r"[A-Za-z0-9][A-Za-z0-9._-]{0,100}", args.release_tag):
         parser.error("Invalid release tag")
+    selection_plan = None
+    selection_path = None
+    if args.selection_plan:
+        selection_path = (ROOT / args.selection_plan).resolve()
+        if not selection_path.is_relative_to((ROOT / "data/collection-plans").resolve()):
+            parser.error("Selection plan must be under data/collection-plans")
+        selection_plan = json.loads(selection_path.read_text(encoding="utf-8"))
 
     from mga_resources.http import HttpClient
     from mga_resources.sources import discover
@@ -242,13 +286,18 @@ def main() -> int:
         "started_at": datetime.now(timezone.utc).isoformat(),
         "run_url": f"https://github.com/{os.environ.get('GITHUB_REPOSITORY')}/actions/runs/{os.environ.get('GITHUB_RUN_ID')}",
     }
+    if selection_path:
+        publication["selection_plan"] = {
+            "path": selection_path.relative_to(ROOT).as_posix(),
+            "sha256": hashlib.sha256(selection_path.read_bytes()).hexdigest(),
+            "ordered_source_ids_sha256": selection_plan.get("ordered_source_ids_sha256"),
+        }
     if args.publish:
         ensure_release(args.release_tag)
     client = HttpClient()
     all_records, all_failures, held_records, excluded_records, receipts = [], [], [], [], []
     batch_records, batch_failures, batch_assets, batch_dispositions = [], [], set(), []
     batch_input_bytes, batch_number, processed, discovered_count = 0, 0, 0, 0
-    batch_start = args.offset
     acquisition_started = time.monotonic()
     flush_failed = False
     fatal = None
@@ -257,14 +306,18 @@ def main() -> int:
 
     def flush():
         nonlocal batch_records, batch_failures, batch_assets, batch_input_bytes, batch_number
-        nonlocal batch_start, batch_dispositions, flush_failed
+        nonlocal batch_dispositions, flush_failed
         if not batch_dispositions:
             return
         prefix = f"{slug(args.source)}-{run_id}-b{batch_number:04d}"
-        checkpoint = {**publication, "range_start": batch_start, "range_end": args.offset + processed,
+        batch_start = batch_dispositions[0]["index"]
+        batch_end = batch_dispositions[-1]["index"] + 1
+        if [entry["index"] for entry in batch_dispositions] != list(range(batch_start, batch_end)):
+            raise ValueError("A batch must cover a contiguous source range")
+        checkpoint = {**publication, "range_start": batch_start, "range_end": batch_end,
                       "discovered": discovered_count, "dispositions": batch_dispositions,
-                      "held_records": [x for x in held_records if batch_start <= x["source_index"] < args.offset + processed],
-                      "excluded_records": [x for x in excluded_records if batch_start <= x["source_index"] < args.offset + processed],
+                      "held_records": [x for x in held_records if batch_start <= x["source_index"] < batch_end],
+                      "excluded_records": [x for x in excluded_records if batch_start <= x["source_index"] < batch_end],
                       "held_count": sum(x["status"] == "held" for x in batch_dispositions),
                       "excluded_count": sum(x["status"] == "excluded" for x in batch_dispositions)}
         try:
@@ -275,7 +328,6 @@ def main() -> int:
             raise
         batch_records, batch_failures, batch_assets, batch_dispositions = [], [], set(), []
         batch_input_bytes = 0
-        batch_start = args.offset + processed
         batch_number += 1
 
     try:
@@ -289,20 +341,21 @@ def main() -> int:
             publication["discovery_sha256"] = hashlib.file_digest(stream, "sha256").hexdigest()
         if args.publish:
             upload(args.release_tag, [discovery_file])
-        selected = discovered[args.offset: args.offset + args.limit if args.limit else None]
+        selected = select_source_rows(discovered, args.source, offset=args.offset, limit=args.limit, plan=selection_plan)
         selected_count = len(selected)
         print(json.dumps({"source": args.source, "discovered": discovered_count,
                           "selected": selected_count, "offset": args.offset}), flush=True)
-        for item in selected:
+        for item_index, item in selected:
+            if batch_dispositions and item_index != batch_dispositions[-1]["index"] + 1:
+                flush()
             # A checkpoint can only be taken between complete logical records.
             if time.monotonic() - acquisition_started > 60 * 60:
                 flush()
-                raise RuntimeError(f"Checkpointed at source offset {args.offset + processed}; continue this snapshot in another cloud job")
+                raise RuntimeError(f"Checkpointed before source offset {item_index}; continue with the same selection plan and this offset")
             if shutil.disk_usage(base).free < 2 * 1024**3:
                 flush()
                 if shutil.disk_usage(base).free < 2 * 1024**3:
                     raise RuntimeError("Cloud runner has less than 2 GiB free disk; checkpointed before stopping")
-            item_index = args.offset + processed
             processed += 1
             disposition = {"index": item_index, "source_id": item.get("source_id"), "status": "attempting"}
             batch_dispositions.append(disposition)
@@ -396,7 +449,7 @@ def main() -> int:
                                   "records": len(all_records), "failures": len(all_failures)}), flush=True)
             if len(batch_dispositions) >= 500 or batch_input_bytes >= 512 * 1024**2:
                 flush()
-        source_complete = args.offset == 0 and processed == discovered_count
+        source_complete = processed == discovered_count and len(selected) == discovered_count
     except Exception as exc:
         fatal = {"error_type": type(exc).__name__, "error": str(exc)[:2400]}
         traceback.print_exc()

@@ -7,6 +7,7 @@ import sys
 import tarfile
 import os
 import hashlib
+import pytest
 from types import SimpleNamespace
 
 
@@ -68,3 +69,69 @@ def test_empty_held_batch_has_uploadable_empty_jsonl(tmp_path):
     assert payload == b"\n"
     assert not [json.loads(line) for line in payload.splitlines() if line.strip()]
     assert hashlib.sha256(payload).hexdigest() == receipt["records_sha256"]
+
+
+def selection_fixture():
+    rows = [{"source_id": str(i), "upstream_revision": "abc"} for i in range(8)]
+    plan = {"source": "test", "inventory_count": 8, "pinned_commit": "abc",
+            "ordered_source_ids_sha256": hashlib.sha256("\n".join(str(i) for i in range(8)).encode()).hexdigest(),
+            "recommended_now": {"ranges": [{"offset": 1, "limit": 2}, {"offset": 6, "limit": 2}]}}
+    return rows, plan
+
+
+def test_incremental_plan_skips_successes_and_resumes_by_source_index():
+    rows, plan = selection_fixture()
+    assert [i for i, _ in collect.select_source_rows(rows, "test", plan=plan)] == [1, 2, 6, 7]
+    assert [i for i, _ in collect.select_source_rows(rows, "test", plan=plan, offset=3)] == [6, 7]
+    assert [i for i, _ in collect.select_source_rows(rows, "test", plan=plan, limit=3)] == [1, 2, 6]
+    assert [i for i, _ in collect.select_source_rows(rows, "test", offset=3, limit=2)] == [3, 4]
+
+
+@pytest.mark.parametrize("mutation", ["order", "source", "revision", "count", "overlap", "bounds", "zero"])
+def test_incremental_plan_rejects_drift_and_ambiguous_ranges(mutation):
+    rows, plan = selection_fixture()
+    if mutation == "order":
+        rows.reverse()
+    elif mutation == "source":
+        plan["source"] = "other"
+    elif mutation == "revision":
+        rows[0]["upstream_revision"] = "new"
+    elif mutation == "count":
+        plan["inventory_count"] = 9
+    elif mutation == "overlap":
+        plan["recommended_now"]["ranges"][1]["offset"] = 2
+    elif mutation == "bounds":
+        plan["recommended_now"]["ranges"][1]["limit"] = 3
+    else:
+        plan["recommended_now"]["ranges"][0]["limit"] = 0
+    with pytest.raises(ValueError):
+        collect.select_source_rows(rows, "test", plan=plan)
+
+
+def test_sparse_collection_flushes_gaps_without_claiming_missing_indices(tmp_path, monkeypatch):
+    from mga_resources import sources, catalog
+    rows, plan = selection_fixture()
+    for row in rows:
+        row.update(source="test", scope_status="excluded", exclusion_reason="Not artwork")
+    (tmp_path / "data/collection-plans").mkdir(parents=True)
+    (tmp_path / "data/sources.json").write_text(json.dumps([{"source_id": "test", "enabled": True}]))
+    (tmp_path / "data/collection-plans/test.json").write_text(json.dumps(plan))
+    monkeypatch.setattr(collect, "ROOT", tmp_path)
+    monkeypatch.setenv("GITHUB_ACTIONS", "true")
+    monkeypatch.setenv("GITHUB_RUN_ID", "42")
+    monkeypatch.setenv("GITHUB_RUN_ATTEMPT", "1")
+    monkeypatch.setattr(sys, "argv", ["collect.py", "--source", "test", "--limit", "0",
+                                     "--selection-plan", "data/collection-plans/test.json"])
+    monkeypatch.setattr(sources, "discover", lambda *a: rows)
+    def empty_finalize(records, output):
+        output.mkdir(parents=True)
+        return {"logical_assets": 0}
+    monkeypatch.setattr(catalog, "finalize", empty_finalize)
+    assert collect.main() == 0
+    report = json.loads((tmp_path / "build/test/42-1/test-42-1.report.json").read_text())
+    assert report["processed"] == 4
+    assert report["source_inventory_processed"] is False
+    assert [(r["range_start"], r["range_end"]) for r in report["batches"]] == [(1, 3), (6, 8)]
+    assert [[d["index"] for d in r["dispositions"]] for r in report["batches"]] == [[1, 2], [6, 7]]
+    assert [[d["source_index"] for d in r["excluded_records"]] for r in report["batches"]] == [[1, 2], [6, 7]]
+    assert report["selection_plan"]["ordered_source_ids_sha256"] == plan["ordered_source_ids_sha256"]

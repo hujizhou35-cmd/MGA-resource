@@ -14,6 +14,10 @@ on:
         description: 'Discovery offset for a bounded continuation'
         default: '0'
         type: string
+      selection_plan:
+        description: 'Optional committed data/collection-plans/...json (set limit=0 for all selected ranges)'
+        default: ''
+        type: string
       release_tag:
         description: 'Cloud collection release tag'
         default: 'collection-20261106'
@@ -43,8 +47,10 @@ jobs:
           SOURCE_ID: ${{ inputs.source }}
           RECORD_LIMIT: ${{ inputs.limit }}
           RECORD_OFFSET: ${{ inputs.offset }}
+          SELECTION_PLAN: ${{ inputs.selection_plan }}
           COLLECTION_TAG: ${{ inputs.release_tag }}
         run: >-
           python scripts/collect.py --source "$SOURCE_ID"
           --limit "$RECORD_LIMIT" --offset "$RECORD_OFFSET"
+          --selection-plan "$SELECTION_PLAN"
           --release-tag "$COLLECTION_TAG" --publish
