@@ -1,0 +1,83 @@
+{
+  "schema_version": 1,
+  "status": "versioned_index_and_original120_replay_not_acceptance",
+  "ranking_version": "shared-search-3.4.3",
+  "core_commit": "f034c7babe9d3be7a0e291b970c51597d9428a1f",
+  "search_core_sha256": "191c4631bb80f36a33ec2580739580ea4289a9726b09dfffb70d022b2a1382e6",
+  "catalog_sha256": "5c90306415ce5e7f36e875c7f57b19a91930aacfeeaeecdf9ad7662770f9a3fe",
+  "benchmark_sha256": "ce0282afeb4afbcee8fdef1c6f937844ef569cabf16ba7909e22bf86b1096e92",
+  "index": {
+    "path": "build/search-filter-3.4.3/catalog.sqlite",
+    "sha256": "8ece5cdedcb50492528ef76d4944213a2f995464b31a35b636383f987d6bafc7",
+    "size_bytes": 416370688,
+    "schema_version": 9,
+    "build_seconds": 58.59853679999651,
+    "catalog_rewritten": false,
+    "originals_downloaded": 0
+  },
+  "original120_replay": {
+    "seed": "diagnostic-fixed-project",
+    "queries": 120,
+    "result_positions": 706,
+    "ordered_family_original_rank_lists_changed": 0,
+    "hard_requirement_sets_changed": 0,
+    "old_nonempty": 102,
+    "new_nonempty": 102,
+    "old_ranking_version": "shared-search-3.4.1",
+    "old_core_sha256": "8120b1ff2b47b83605c0cc5495b2aa7f12c59b740f7a44f0db376a28808e9049",
+    "replay_bindings": {
+      "catalog_sha256": "5c90306415ce5e7f36e875c7f57b19a91930aacfeeaeecdf9ad7662770f9a3fe",
+      "benchmark_sha256": "ce0282afeb4afbcee8fdef1c6f937844ef569cabf16ba7909e22bf86b1096e92",
+      "old_diagnostic_sha256": "eb59d5d46ec591a3759d3638da546aabdd97ba65134f74a033692847e6fa4e74",
+      "new_diagnostic_sha256": "bac84b66470002aca1138150ffcecfb06e8bcfa88db32b75f42f419601edb6fa",
+      "old_core_sha256": "8120b1ff2b47b83605c0cc5495b2aa7f12c59b740f7a44f0db376a28808e9049",
+      "new_core_sha256": "191c4631bb80f36a33ec2580739580ea4289a9726b09dfffb70d022b2a1382e6",
+      "old_ranking_version": "shared-search-3.4.1",
+      "new_ranking_version": "shared-search-3.4.3"
+    }
+  },
+  "evidence": [
+    {
+      "path": "build/search-filter-3.4.3/index-build.json",
+      "sha256": "5bab66d4b16599296348a5f81c30610a32ed625c705e9f1e71377327ad861ea3",
+      "size_bytes": 624
+    },
+    {
+      "path": "build/search-filter-3.4.3/diagnostic/search-diagnostic.json",
+      "sha256": "bac84b66470002aca1138150ffcecfb06e8bcfa88db32b75f42f419601edb6fa",
+      "size_bytes": 916314
+    },
+    {
+      "path": "build/search-filter-3.4.3/diagnostic/retrieval-gaps.json",
+      "sha256": "964df0dbb3f48373322ecf429cdb0ce613620b50243355ce645039531a374be0",
+      "size_bytes": 12252
+    },
+    {
+      "path": "build/search-filter-3.4.3/replay-diff.json",
+      "sha256": "b4e555b644e30484b522b08bda69a0e04cc209da15ce3e6586af85ebc17b2eaa",
+      "size_bytes": 300338
+    }
+  ],
+  "visual_observation_reuse": {
+    "eligible_on_this_replay": true,
+    "condition": "Each observed file and preview remains exactly hash-bound and the original query-specific verdict is retained. Replay identity does not establish medical relevance."
+  },
+  "supplemental_acceptance": {
+    "current_version_accepted": false,
+    "historical_ranking_version": "shared-search-3.4.1",
+    "historical_status": "Prior passing supplemental evidence belongs to shared-search-3.4.1 only; no supplemental acceptance is claimed for 3.4.3."
+  },
+  "formal_query_acceptance_passed": false,
+  "publication_allowed": false,
+  "limitations": [
+    "Nonempty102/120 is candidate availability, not a visual relevance score.",
+    "Original six negative scenarios are separate; preserve 3.4.2 parsing-failure evidence and bind the 3.4.3 post-fix replay independently.",
+    "False fresh-download review flags describe that review event only. Existing verified exact-file acquisition/hash evidence or later clean-restore evidence can satisfy download verification without another needless download."
+  ],
+  "parser_fix": {
+    "explicit_media_phrase_maps_to": "structure=pure_vector",
+    "bare_editable_and_biological_vector_retained": true,
+    "native_editability_not_inferred": true,
+    "original_benchmark_unchanged": true
+  }
+}
