@@ -1,0 +1,647 @@
+{
+  "schema_version": 1,
+  "reviewed_at": "2026-11-07",
+  "reviewer": "Codex primary agent; direct visual inspection",
+  "source": "nih-bioart",
+  "collection_run": "42248095929-1",
+  "collection_commit": "653cf608cbb2e20c2b52a8f498fcbb2dd72d47df",
+  "review_method": "Actual cloud contact sheet viewed via view_image; metadata joined after inspection and records SHA verified.",
+  "review_sheet_url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/nih-bioart-42248095929-1-b0000.review.png",
+  "review_sheet_sha256": "83a5a9eb3d356dee7817942e509cfe9984bfe309627f258899942d5490632878",
+  "review_limits": [
+    "Contact sheet scale; no independent fine scientific structure certification.",
+    "Observed color/style is not propagated to every variant or the whole source."
+  ],
+  "items": [
+    {
+      "tile": 1,
+      "id": "nih-bioart-4288c309d5bf03d63349",
+      "title": "Cryopreservation Melted",
+      "source_id": "837",
+      "source_url": "https://bioart.niaid.nih.gov/bioart/837",
+      "original_sha256": "c5506563c57c2a4c5ffb39e26d56ad089433ad875e329c02481223bde60461da",
+      "preview_sha256": "250da4ba2377625fcf13cb674bd2e88bfd019268caec8fe3e850c96f8fa669e6",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/nih-bioart-42248095929-1-b0000.tar.gz",
+        "member": "files/c5/c5506563c57c2a4c5ffb39e26d56ad089433ad875e329c02481223bde60461da.png"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/nih-bioart-42248095929-1-b0000.tar.gz",
+        "member": "previews/c5506563c57c2a4c5ffb39e26d56ad089433ad875e329c02481223bde60461da.png"
+      },
+      "visual_verdict": "usable_as_schematic_component",
+      "observations": "解冻/融化状态的样品管架，不能标为正常冷冻保存。",
+      "scientific_detail_validation": "not_independently_verified",
+      "native_editability_tested": false
+    },
+    {
+      "tile": 2,
+      "id": "nih-bioart-a77cc16d90ac550e6b59",
+      "title": "Funding",
+      "source_id": "847",
+      "source_url": "https://bioart.niaid.nih.gov/bioart/847",
+      "original_sha256": "a2b7a30209ab74af87104b785bc63c2277a5171e8f79bf2dc24514e5b6b33061",
+      "preview_sha256": "476b4057b52a6b05540c848191f95fbafd551e44c4a03e6647a0143d6e493a98",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/nih-bioart-42248095929-1-b0000.tar.gz",
+        "member": "files/a2/a2b7a30209ab74af87104b785bc63c2277a5171e8f79bf2dc24514e5b6b33061.png"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/nih-bioart-42248095929-1-b0000.tar.gz",
+        "member": "previews/a2b7a30209ab74af87104b785bc63c2277a5171e8f79bf2dc24514e5b6b33061.png"
+      },
+      "visual_verdict": "usable_as_schematic_component",
+      "observations": "经费/资助概念符号，不是临床实体。",
+      "scientific_detail_validation": "not_independently_verified",
+      "native_editability_tested": false
+    },
+    {
+      "tile": 3,
+      "id": "nih-bioart-3f82d7b7db5aa28a0483",
+      "title": "Inhibition Arrow",
+      "source_id": "859",
+      "source_url": "https://bioart.niaid.nih.gov/bioart/859",
+      "original_sha256": "33d2db93cad534e78af737fac7cd673479b111eb1798a07c423bdceebccf4eb7",
+      "preview_sha256": "3da2fe02cd9807f1732a33d0fd69d12360aec56181b2eb819c25ca5519cf05c3",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/nih-bioart-42248095929-1-b0000.tar.gz",
+        "member": "files/33/33d2db93cad534e78af737fac7cd673479b111eb1798a07c423bdceebccf4eb7.svg"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/nih-bioart-42248095929-1-b0000.tar.gz",
+        "member": "previews/33d2db93cad534e78af737fac7cd673479b111eb1798a07c423bdceebccf4eb7.png"
+      },
+      "visual_verdict": "usable_as_schematic_component",
+      "observations": "红色抑制关系符号。",
+      "scientific_detail_validation": "not_independently_verified",
+      "native_editability_tested": false
+    },
+    {
+      "tile": 4,
+      "id": "nih-bioart-8faebd5c26a2f43f25a2",
+      "title": "Membrane Pore",
+      "source_id": "885",
+      "source_url": "https://bioart.niaid.nih.gov/bioart/885",
+      "original_sha256": "4461b052a155a7f30fb2af68e496ca4fe46908ba947c67105ce79bb0341e093e",
+      "preview_sha256": "5760042718384f7273b15c601f26453e1190a87145b07bd18f1c19ef5423124e",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/nih-bioart-42248095929-1-b0000.tar.gz",
+        "member": "files/44/4461b052a155a7f30fb2af68e496ca4fe46908ba947c67105ce79bb0341e093e.png"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/nih-bioart-42248095929-1-b0000.tar.gz",
+        "member": "previews/4461b052a155a7f30fb2af68e496ca4fe46908ba947c67105ce79bb0341e093e.png"
+      },
+      "visual_verdict": "usable_as_schematic_component",
+      "observations": "膜孔/通道的截面示意，具体蛋白由来源和应用标注。",
+      "scientific_detail_validation": "not_independently_verified",
+      "native_editability_tested": false
+    },
+    {
+      "tile": 5,
+      "id": "nih-bioart-c5a86c3a3266fd9962aa",
+      "title": "Coccobacillus",
+      "source_id": "826",
+      "source_url": "https://bioart.niaid.nih.gov/bioart/826",
+      "original_sha256": "5199bcfe1c872c294c4be5ad9acf0ffd11e6e6433973959612d9641d4be7c03b",
+      "preview_sha256": "be0109feafb75c9c5910ce6e52ee89ca3db23c28aaf3c695fb055c31b10d191d",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/nih-bioart-42248095929-1-b0000.tar.gz",
+        "member": "files/51/5199bcfe1c872c294c4be5ad9acf0ffd11e6e6433973959612d9641d4be7c03b.png"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/nih-bioart-42248095929-1-b0000.tar.gz",
+        "member": "previews/5199bcfe1c872c294c4be5ad9acf0ffd11e6e6433973959612d9641d4be7c03b.png"
+      },
+      "visual_verdict": "usable_as_schematic_component",
+      "observations": "球杆菌群的示意，不能由颜色推断具体物种。",
+      "scientific_detail_validation": "not_independently_verified",
+      "native_editability_tested": false
+    },
+    {
+      "tile": 6,
+      "id": "nih-bioart-0021dc1660ba48f18074",
+      "title": "Nerve and Lymphatic Vessel",
+      "source_id": "908",
+      "source_url": "https://bioart.niaid.nih.gov/bioart/908",
+      "original_sha256": "6b1ec458e4fa141fc976eeb49eda6032b9cd30a6824035f30a5afa90d71f75b6",
+      "preview_sha256": "32f413c1374cda2b361df596bb15405313d6a18da5af9eb7faa1f7015dbc271b",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/nih-bioart-42248095929-1-b0000.tar.gz",
+        "member": "files/6b/6b1ec458e4fa141fc976eeb49eda6032b9cd30a6824035f30a5afa90d71f75b6.png"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/nih-bioart-42248095929-1-b0000.tar.gz",
+        "member": "previews/6b1ec458e4fa141fc976eeb49eda6032b9cd30a6824035f30a5afa90d71f75b6.png"
+      },
+      "visual_verdict": "usable_as_schematic_component",
+      "observations": "神经和淋巴管是组合部件，不是单独神经。",
+      "scientific_detail_validation": "not_independently_verified",
+      "native_editability_tested": false
+    },
+    {
+      "tile": 7,
+      "id": "nih-bioart-4114ff6214d8471d4c24",
+      "title": "Platelet",
+      "source_id": "929",
+      "source_url": "https://bioart.niaid.nih.gov/bioart/929",
+      "original_sha256": "ac235a048a325b7ab6de379143bc07d0fcf9bb1c4b8c2c0b8c7732a4cc0661e6",
+      "preview_sha256": "99d2de6e630ed3c4bfebd9cafd25c7284642a922202368c7408af4d257ad4299",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/nih-bioart-42248095929-1-b0000.tar.gz",
+        "member": "files/ac/ac235a048a325b7ab6de379143bc07d0fcf9bb1c4b8c2c0b8c7732a4cc0661e6.png"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/nih-bioart-42248095929-1-b0000.tar.gz",
+        "member": "previews/ac235a048a325b7ab6de379143bc07d0fcf9bb1c4b8c2c0b8c7732a4cc0661e6.png"
+      },
+      "visual_verdict": "usable_as_schematic_component",
+      "observations": "带突起血小板图形，可用于细胞示意；不自动推断活化条件。",
+      "scientific_detail_validation": "not_independently_verified",
+      "native_editability_tested": false
+    },
+    {
+      "tile": 8,
+      "id": "nih-bioart-83bd30c859d453ec2b9b",
+      "title": "Monkeypox Silhouette",
+      "source_id": "896",
+      "source_url": "https://bioart.niaid.nih.gov/bioart/896",
+      "original_sha256": "051f66a9897b46f4c74ae658b5ef828f889dc45665d83c819255650546b0cb47",
+      "preview_sha256": "e8b0aeae2454aa8912dd2715925945cc9e3bdec397eddf8984c6e537e5b40d5d",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/nih-bioart-42248095929-1-b0000.tar.gz",
+        "member": "files/05/051f66a9897b46f4c74ae658b5ef828f889dc45665d83c819255650546b0cb47.png"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/nih-bioart-42248095929-1-b0000.tar.gz",
+        "member": "previews/051f66a9897b46f4c74ae658b5ef828f889dc45665d83c819255650546b0cb47.png"
+      },
+      "visual_verdict": "usable_as_schematic_component",
+      "observations": "单色病毒轮廓；猴痘名称来自来源，剪影本身不保证可与其他病毒区分。",
+      "scientific_detail_validation": "not_independently_verified",
+      "native_editability_tested": false
+    },
+    {
+      "tile": 9,
+      "id": "nih-bioart-6025eb6b34489604f669",
+      "title": "Computer Monitor",
+      "source_id": "827",
+      "source_url": "https://bioart.niaid.nih.gov/bioart/827",
+      "original_sha256": "9349437ae1a2393d0d6533dfaee74de9f1faa29cece77a2cb24c80a2e7d1e000",
+      "preview_sha256": "7c0f3a0a3337d061baa5c1b0fcecfe332e0b94862dfd416cafadd9046631864b",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/nih-bioart-42248095929-1-b0000.tar.gz",
+        "member": "files/93/9349437ae1a2393d0d6533dfaee74de9f1faa29cece77a2cb24c80a2e7d1e000.png"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/nih-bioart-42248095929-1-b0000.tar.gz",
+        "member": "previews/9349437ae1a2393d0d6533dfaee74de9f1faa29cece77a2cb24c80a2e7d1e000.png"
+      },
+      "visual_verdict": "usable_as_schematic_component",
+      "observations": "彩色电脑显示器符号。",
+      "scientific_detail_validation": "not_independently_verified",
+      "native_editability_tested": false
+    },
+    {
+      "tile": 10,
+      "id": "nih-bioart-6a82a3cd0b130a87af69",
+      "title": "Computer Monitor",
+      "source_id": "831",
+      "source_url": "https://bioart.niaid.nih.gov/bioart/831",
+      "original_sha256": "bef1ea223135c54cd57c082142beb04df715a67e4679d9e19ef9c598a8538c63",
+      "preview_sha256": "08d20ff128dae42d03d1c394f3323f5961dc46964440ece456a2a3725fc9ecda",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/nih-bioart-42248095929-1-b0000.tar.gz",
+        "member": "files/be/bef1ea223135c54cd57c082142beb04df715a67e4679d9e19ef9c598a8538c63.png"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/nih-bioart-42248095929-1-b0000.tar.gz",
+        "member": "previews/bef1ea223135c54cd57c082142beb04df715a67e4679d9e19ef9c598a8538c63.png"
+      },
+      "visual_verdict": "usable_as_schematic_component",
+      "observations": "另一配色显示器，不因颜色不同作为独立科学概念。",
+      "scientific_detail_validation": "not_independently_verified",
+      "native_editability_tested": false
+    },
+    {
+      "tile": 11,
+      "id": "nih-bioart-952cd7fa9f5311ef1c5b",
+      "title": "IFNARI and II",
+      "source_id": "853",
+      "source_url": "https://bioart.niaid.nih.gov/bioart/853",
+      "original_sha256": "1a1bcdd9a548d224092cb57a0753c6e2bfdf7e54186d1b02136fc93d80f2a9f5",
+      "preview_sha256": "c5303e73442ecf173cace42b2828c64a71aa8e778341568a3c3e6be9b24c5211",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/nih-bioart-42248095929-1-b0000.tar.gz",
+        "member": "files/1a/1a1bcdd9a548d224092cb57a0753c6e2bfdf7e54186d1b02136fc93d80f2a9f5.png"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/nih-bioart-42248095929-1-b0000.tar.gz",
+        "member": "previews/1a1bcdd9a548d224092cb57a0753c6e2bfdf7e54186d1b02136fc93d80f2a9f5.png"
+      },
+      "visual_verdict": "usable_as_schematic_component",
+      "observations": "双受体符号，具体IFNAR亚型与结合关系须按来源和图中标签使用。",
+      "scientific_detail_validation": "not_independently_verified",
+      "native_editability_tested": false
+    },
+    {
+      "tile": 12,
+      "id": "nih-bioart-d7b4e431c1750609dcf8",
+      "title": "Mast Cell",
+      "source_id": "880",
+      "source_url": "https://bioart.niaid.nih.gov/bioart/880",
+      "original_sha256": "38ea949efb6a8f862c838e0ac553d59ac4ee41aa9d0f1975605cb986b37dde8c",
+      "preview_sha256": "41a448578bc99308b5959bc640e6ce0cc659040db1a995989d3c02c3d6a84a57",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/nih-bioart-42248095929-1-b0000.tar.gz",
+        "member": "files/38/38ea949efb6a8f862c838e0ac553d59ac4ee41aa9d0f1975605cb986b37dde8c.png"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/nih-bioart-42248095929-1-b0000.tar.gz",
+        "member": "previews/38ea949efb6a8f862c838e0ac553d59ac4ee41aa9d0f1975605cb986b37dde8c.png"
+      },
+      "visual_verdict": "usable_as_schematic_component",
+      "observations": "有灰紫色阴影的细胞示意，不能单靠形态确认肥大细胞的全部细节。",
+      "scientific_detail_validation": "not_independently_verified",
+      "native_editability_tested": false
+    },
+    {
+      "tile": 13,
+      "id": "nih-bioart-9728926552293fdc2f0f",
+      "title": "Migrant Worker",
+      "source_id": "894",
+      "source_url": "https://bioart.niaid.nih.gov/bioart/894",
+      "original_sha256": "7e5dad3258b69cd569374a574f52fd5e31f77e4f7bd0aab236945b8e38233d65",
+      "preview_sha256": "b79f1981d287dcbb12faadac35d3e9b1d4fdb0d808557d858ef160ba03979e06",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/nih-bioart-42248095929-1-b0000.tar.gz",
+        "member": "files/7e/7e5dad3258b69cd569374a574f52fd5e31f77e4f7bd0aab236945b8e38233d65.png"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/nih-bioart-42248095929-1-b0000.tar.gz",
+        "member": "previews/7e5dad3258b69cd569374a574f52fd5e31f77e4f7bd0aab236945b8e38233d65.png"
+      },
+      "visual_verdict": "usable_as_schematic_component",
+      "observations": "担物人物剪影用于社会/工作环境，不由外形推断个人身份。",
+      "scientific_detail_validation": "not_independently_verified",
+      "native_editability_tested": false
+    },
+    {
+      "tile": 14,
+      "id": "nih-bioart-fd4dcb61439613543660",
+      "title": "Curved Inhibition Arrow Thin",
+      "source_id": "860",
+      "source_url": "https://bioart.niaid.nih.gov/bioart/860",
+      "original_sha256": "42e7045ec8df0d0629ae34298b92bc1cacf0737f8e59b8986b4f5929fbc1c440",
+      "preview_sha256": "b8f1d0d66bcca60fb8a00a90d3a29ead579836de5bb264988a5eadca5020bbf7",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/nih-bioart-42248095929-1-b0000.tar.gz",
+        "member": "files/42/42e7045ec8df0d0629ae34298b92bc1cacf0737f8e59b8986b4f5929fbc1c440.png"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/nih-bioart-42248095929-1-b0000.tar.gz",
+        "member": "previews/42e7045ec8df0d0629ae34298b92bc1cacf0737f8e59b8986b4f5929fbc1c440.png"
+      },
+      "visual_verdict": "usable_as_schematic_component",
+      "observations": "弯曲抑制线条，线条清楚；单独单色关系部件。",
+      "scientific_detail_validation": "not_independently_verified",
+      "native_editability_tested": false
+    },
+    {
+      "tile": 15,
+      "id": "nih-bioart-fac58b62d46e496dacce",
+      "title": "Lymphatic Vessel",
+      "source_id": "868",
+      "source_url": "https://bioart.niaid.nih.gov/bioart/868",
+      "original_sha256": "89e5906f1693c70003ca735d0c4e191a09061ba09ece6521e3b1a830924578ac",
+      "preview_sha256": "f869eabae03f591548de0e60e5d4a56f38ab65fa37fcca4701a5043233f2c1a6",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/nih-bioart-42248095929-1-b0000.tar.gz",
+        "member": "files/89/89e5906f1693c70003ca735d0c4e191a09061ba09ece6521e3b1a830924578ac.png"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/nih-bioart-42248095929-1-b0000.tar.gz",
+        "member": "previews/89e5906f1693c70003ca735d0c4e191a09061ba09ece6521e3b1a830924578ac.png"
+      },
+      "visual_verdict": "usable_as_schematic_component",
+      "observations": "波状浅色淋巴管，浅色细节需要画布对比支持。",
+      "scientific_detail_validation": "not_independently_verified",
+      "native_editability_tested": false
+    },
+    {
+      "tile": 16,
+      "id": "nih-bioart-af6c9678f8a558ab7d9e",
+      "title": "Mosquito Proboscis",
+      "source_id": "904",
+      "source_url": "https://bioart.niaid.nih.gov/bioart/904",
+      "original_sha256": "940b79610b0f3eb1a70498de379a45f3d92963a7fc6d2384bce3d10b51dbeb50",
+      "preview_sha256": "3d2a5f50718c051c00f420d061783dee0e35ffe91d77641e61d2ae544dbd9097",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/nih-bioart-42248095929-1-b0000.tar.gz",
+        "member": "files/94/940b79610b0f3eb1a70498de379a45f3d92963a7fc6d2384bce3d10b51dbeb50.png"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/nih-bioart-42248095929-1-b0000.tar.gz",
+        "member": "previews/940b79610b0f3eb1a70498de379a45f3d92963a7fc6d2384bce3d10b51dbeb50.png"
+      },
+      "visual_verdict": "usable_as_schematic_component",
+      "observations": "蚊口器局部图；不是完整蚊子。",
+      "scientific_detail_validation": "not_independently_verified",
+      "native_editability_tested": false
+    },
+    {
+      "tile": 17,
+      "id": "nih-bioart-e84c4bd521dced01f518",
+      "title": "VSV Silhouette",
+      "source_id": "969",
+      "source_url": "https://bioart.niaid.nih.gov/bioart/969",
+      "original_sha256": "05eb6bd71f1c21be45a47127b93887b80c9bb88bba7c9d5ee41690d0a0c6ef80",
+      "preview_sha256": "44e6a7e23b8d471c52a7114daa6a28b18ac56847f9362491ae2690913b55378e",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/nih-bioart-42248095929-1-b0000.tar.gz",
+        "member": "files/05/05eb6bd71f1c21be45a47127b93887b80c9bb88bba7c9d5ee41690d0a0c6ef80.png"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/nih-bioart-42248095929-1-b0000.tar.gz",
+        "member": "previews/05eb6bd71f1c21be45a47127b93887b80c9bb88bba7c9d5ee41690d0a0c6ef80.png"
+      },
+      "visual_verdict": "usable_as_schematic_component",
+      "observations": "VSV名称来自来源；剪影只表达概略外形。",
+      "scientific_detail_validation": "not_independently_verified",
+      "native_editability_tested": false
+    },
+    {
+      "tile": 18,
+      "id": "nih-bioart-7c225b6c363fa3038f42",
+      "title": "Trypanosome",
+      "source_id": "955",
+      "source_url": "https://bioart.niaid.nih.gov/bioart/955",
+      "original_sha256": "3fba45fd0a31e135cfd48416c73a466b9ab7418408108c8e2dfa462a8daea289",
+      "preview_sha256": "fa3531bf8c7c1607ef2e54e9c17b122806d40442fd46033068f054025fc50e10",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/nih-bioart-42248095929-1-b0000.tar.gz",
+        "member": "files/3f/3fba45fd0a31e135cfd48416c73a466b9ab7418408108c8e2dfa462a8daea289.png"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/nih-bioart-42248095929-1-b0000.tar.gz",
+        "member": "previews/3fba45fd0a31e135cfd48416c73a466b9ab7418408108c8e2dfa462a8daea289.png"
+      },
+      "visual_verdict": "usable_as_schematic_component",
+      "observations": "锥虫形态和鞭毛可辨认，不额外指定物种。",
+      "scientific_detail_validation": "not_independently_verified",
+      "native_editability_tested": false
+    },
+    {
+      "tile": 19,
+      "id": "nih-bioart-ccd1c7d7d11575af6e98",
+      "title": "Tuft Cell",
+      "source_id": "939",
+      "source_url": "https://bioart.niaid.nih.gov/bioart/939",
+      "original_sha256": "af0bd3a359ea230a2aec18b43c468067f598ab08a2925e2e25a15fe7938d4255",
+      "preview_sha256": "dd0a19a724929a85abbaf8467dc3c44cb7ef5c939e554f25f5c9275389d7d1df",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/nih-bioart-42248095929-1-b0000.tar.gz",
+        "member": "files/af/af0bd3a359ea230a2aec18b43c468067f598ab08a2925e2e25a15fe7938d4255.svg"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/nih-bioart-42248095929-1-b0000.tar.gz",
+        "member": "previews/af0bd3a359ea230a2aec18b43c468067f598ab08a2925e2e25a15fe7938d4255.png"
+      },
+      "visual_verdict": "usable_as_schematic_component",
+      "observations": "有顶端簇状结构的细胞示意，名称来源为簇细胞。",
+      "scientific_detail_validation": "not_independently_verified",
+      "native_editability_tested": false
+    },
+    {
+      "tile": 20,
+      "id": "nih-bioart-693c154e33efbc59f559",
+      "title": "Neutrophil",
+      "source_id": "912",
+      "source_url": "https://bioart.niaid.nih.gov/bioart/912",
+      "original_sha256": "d09890ebe02cafe4c2520c9ab4c6c7c29f4fc83700ab87340c9000b39a4bb649",
+      "preview_sha256": "0fe9858ba2656de8a87a592aec08cd535bb57198d14bccbe36668c5e82471281",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/nih-bioart-42248095929-1-b0000.tar.gz",
+        "member": "files/d0/d09890ebe02cafe4c2520c9ab4c6c7c29f4fc83700ab87340c9000b39a4bb649.png"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/nih-bioart-42248095929-1-b0000.tar.gz",
+        "member": "previews/d09890ebe02cafe4c2520c9ab4c6c7c29f4fc83700ab87340c9000b39a4bb649.png"
+      },
+      "visual_verdict": "usable_as_schematic_component",
+      "observations": "阴影渐变中性粒细胞示意，多叶细胞核可辨认。",
+      "scientific_detail_validation": "not_independently_verified",
+      "native_editability_tested": false
+    },
+    {
+      "tile": 21,
+      "id": "nih-bioart-901ec7a93f02042a8088",
+      "title": "City",
+      "source_id": "825",
+      "source_url": "https://bioart.niaid.nih.gov/bioart/825",
+      "original_sha256": "0b32af6a91d5fc29791682835caaa0dae60c9299b4d7bb83deee5e0a1d6be1f6",
+      "preview_sha256": "6669b16eb8d0b5cebfb75d539127828b0afd094f86568d5bb45787b0d80f0fb7",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/nih-bioart-42248095929-1-b0000.tar.gz",
+        "member": "files/0b/0b32af6a91d5fc29791682835caaa0dae60c9299b4d7bb83deee5e0a1d6be1f6.png"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/nih-bioart-42248095929-1-b0000.tar.gz",
+        "member": "previews/0b32af6a91d5fc29791682835caaa0dae60c9299b4d7bb83deee5e0a1d6be1f6.png"
+      },
+      "visual_verdict": "usable_as_schematic_component",
+      "observations": "城市轮廓与建筑群，作为环境背景部件。",
+      "scientific_detail_validation": "not_independently_verified",
+      "native_editability_tested": false
+    },
+    {
+      "tile": 22,
+      "id": "nih-bioart-ec612c0e216a04965455",
+      "title": "Computer Screen",
+      "source_id": "855",
+      "source_url": "https://bioart.niaid.nih.gov/bioart/855",
+      "original_sha256": "b8a83a4393547883ac37743fd8a91629232f2dd7529cacd112c0d3b1461393ca",
+      "preview_sha256": "f926203e052841fe068fba44a30101bdcd5fe3ac99b8113ebea2600f90633f9f",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/nih-bioart-42248095929-1-b0000.tar.gz",
+        "member": "files/b8/b8a83a4393547883ac37743fd8a91629232f2dd7529cacd112c0d3b1461393ca.png"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/nih-bioart-42248095929-1-b0000.tar.gz",
+        "member": "previews/b8a83a4393547883ac37743fd8a91629232f2dd7529cacd112c0d3b1461393ca.png"
+      },
+      "visual_verdict": "scope_pending",
+      "observations": "显示器内含绿色细胞/神经样图像，需核对内嵌画面是否真实显微图及适用范围；暂不作为已通过首版范围。",
+      "scientific_detail_validation": "not_independently_verified",
+      "native_editability_tested": false
+    },
+    {
+      "tile": 23,
+      "id": "nih-bioart-5136b2bfebb99aaa066a",
+      "title": "Nipah Virus",
+      "source_id": "916",
+      "source_url": "https://bioart.niaid.nih.gov/bioart/916",
+      "original_sha256": "2052e367b8d115dd8cfce906ea425e9cb9068f686f7c4fa29533949df39cb252",
+      "preview_sha256": "4dba4d2a4e1229646dd773415c1b7fcbdf93f40cfa5cbf721dad9cf982a07dca",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/nih-bioart-42248095929-1-b0000.tar.gz",
+        "member": "files/20/2052e367b8d115dd8cfce906ea425e9cb9068f686f7c4fa29533949df39cb252.png"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/nih-bioart-42248095929-1-b0000.tar.gz",
+        "member": "previews/2052e367b8d115dd8cfce906ea425e9cb9068f686f7c4fa29533949df39cb252.png"
+      },
+      "visual_verdict": "usable_as_schematic_component",
+      "observations": "病毒剖面含内部组分示意，具体Nipah结构由来源支持；不能当定量比例。",
+      "scientific_detail_validation": "not_independently_verified",
+      "native_editability_tested": false
+    },
+    {
+      "tile": 24,
+      "id": "nih-bioart-1146ac0e46a3e7265cfc",
+      "title": "Person",
+      "source_id": "924",
+      "source_url": "https://bioart.niaid.nih.gov/bioart/924",
+      "original_sha256": "d542691acf0c34eb0a9807b94ff30e64941b50a43abb88a085628508ed0e8f2e",
+      "preview_sha256": "2142f6f09adcdcaf5abacb61fabe483e7523e66a37c813e879e1d363235667c0",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/nih-bioart-42248095929-1-b0000.tar.gz",
+        "member": "files/d5/d542691acf0c34eb0a9807b94ff30e64941b50a43abb88a085628508ed0e8f2e.png"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/nih-bioart-42248095929-1-b0000.tar.gz",
+        "member": "previews/d542691acf0c34eb0a9807b94ff30e64941b50a43abb88a085628508ed0e8f2e.png"
+      },
+      "visual_verdict": "usable_as_schematic_component",
+      "observations": "穿白衣的人物头像，作为医学人物符号；不推断具体职业资格。",
+      "scientific_detail_validation": "not_independently_verified",
+      "native_editability_tested": false
+    },
+    {
+      "tile": 25,
+      "id": "nih-bioart-df7c9546b33e5db7e479",
+      "title": "Neutrophil",
+      "source_id": "913",
+      "source_url": "https://bioart.niaid.nih.gov/bioart/913",
+      "original_sha256": "15d13aa42310c8c588872b969f4392101f89c54b3da90e012c84d65285a6b5ad",
+      "preview_sha256": "dc0b4d567bedae4b361a1ccf8b07c2ee6630bdafbeb533e3b93c58f42aaeaa93",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/nih-bioart-42248095929-1-b0000.tar.gz",
+        "member": "files/15/15d13aa42310c8c588872b969f4392101f89c54b3da90e012c84d65285a6b5ad.png"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/nih-bioart-42248095929-1-b0000.tar.gz",
+        "member": "previews/15d13aa42310c8c588872b969f4392101f89c54b3da90e012c84d65285a6b5ad.png"
+      },
+      "visual_verdict": "usable_as_schematic_component",
+      "observations": "另一扁平画风中性粒细胞，可辨认多叶核及颗粒。",
+      "scientific_detail_validation": "not_independently_verified",
+      "native_editability_tested": false
+    },
+    {
+      "tile": 26,
+      "id": "nih-bioart-a2c7375da39b073905fb",
+      "title": "Membrane Pore",
+      "source_id": "889",
+      "source_url": "https://bioart.niaid.nih.gov/bioart/889",
+      "original_sha256": "fe5e76d070886c030d58d1618eeca747689495801c6c93f87f53e63b6f44fb12",
+      "preview_sha256": "d7a48f4136d5c0279a0ee959b83498be329cc87b9ad8347fb7cc799ee82c5b1e",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/nih-bioart-42248095929-1-b0000.tar.gz",
+        "member": "files/fe/fe5e76d070886c030d58d1618eeca747689495801c6c93f87f53e63b6f44fb12.png"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/nih-bioart-42248095929-1-b0000.tar.gz",
+        "member": "previews/fe5e76d070886c030d58d1618eeca747689495801c6c93f87f53e63b6f44fb12.png"
+      },
+      "visual_verdict": "usable_as_schematic_component",
+      "observations": "膜孔/通道另一视图，和前面的截面不可互换视角条件。",
+      "scientific_detail_validation": "not_independently_verified",
+      "native_editability_tested": false
+    },
+    {
+      "tile": 27,
+      "id": "nih-bioart-46e07731ceaa6b0299b4",
+      "title": "T Cell",
+      "source_id": "949",
+      "source_url": "https://bioart.niaid.nih.gov/bioart/949",
+      "original_sha256": "6ba07bad98a156a6bf15631e9efb2d566cf79090418ec13c65b31f69e28491f3",
+      "preview_sha256": "d849a302704acffc206d90ae177278cd7d437dcbf82f09dfbbdf127c1e93de67",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/nih-bioart-42248095929-1-b0000.tar.gz",
+        "member": "files/6b/6ba07bad98a156a6bf15631e9efb2d566cf79090418ec13c65b31f69e28491f3.png"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/nih-bioart-42248095929-1-b0000.tar.gz",
+        "member": "previews/6ba07bad98a156a6bf15631e9efb2d566cf79090418ec13c65b31f69e28491f3.png"
+      },
+      "visual_verdict": "usable_as_schematic_component",
+      "observations": "绿色阴影T细胞图，T细胞身份由来源标注而非外观特异性。",
+      "scientific_detail_validation": "not_independently_verified",
+      "native_editability_tested": false
+    },
+    {
+      "tile": 28,
+      "id": "nih-bioart-b8fb6bd2ce377082086e",
+      "title": "Cryo EM Grid Zoom",
+      "source_id": "834",
+      "source_url": "https://bioart.niaid.nih.gov/bioart/834",
+      "original_sha256": "5be75b4021b72c6d01ba202a99ee18e438e81a2c083e8e48f2d48882e6f1c915",
+      "preview_sha256": "48edadd819a24af76c2556cda7112bf65e5bf9e52be79bb17f3cd51d1cd0843e",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/nih-bioart-42248095929-1-b0000.tar.gz",
+        "member": "files/5b/5be75b4021b72c6d01ba202a99ee18e438e81a2c083e8e48f2d48882e6f1c915.png"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/nih-bioart-42248095929-1-b0000.tar.gz",
+        "member": "previews/5be75b4021b72c6d01ba202a99ee18e438e81a2c083e8e48f2d48882e6f1c915.png"
+      },
+      "visual_verdict": "usable_as_schematic_component",
+      "observations": "冷冻电镜载网和逐级放大示意，是图绘式流程部件，未看到真实显微照片。",
+      "scientific_detail_validation": "not_independently_verified",
+      "native_editability_tested": false
+    },
+    {
+      "tile": 29,
+      "id": "nih-bioart-4a1c4d4d1554b17a4d2a",
+      "title": "Monocyte",
+      "source_id": "898",
+      "source_url": "https://bioart.niaid.nih.gov/bioart/898",
+      "original_sha256": "a8bad275f7917310f2f54a6779244c3624fb9602bdefe515ec9e58177e752b1f",
+      "preview_sha256": "90c14665d92325ef349c4d484841145bdcf3eb303ab98a1af5f7ca70a2528f95",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/nih-bioart-42248095929-1-b0000.tar.gz",
+        "member": "files/a8/a8bad275f7917310f2f54a6779244c3624fb9602bdefe515ec9e58177e752b1f.png"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/nih-bioart-42248095929-1-b0000.tar.gz",
+        "member": "previews/a8bad275f7917310f2f54a6779244c3624fb9602bdefe515ec9e58177e752b1f.png"
+      },
+      "visual_verdict": "usable_as_schematic_component",
+      "observations": "单核细胞渐变示意，肾形核可辨认。",
+      "scientific_detail_validation": "not_independently_verified",
+      "native_editability_tested": false
+    },
+    {
+      "tile": 30,
+      "id": "nih-bioart-792f0c5432dea8e7f39f",
+      "title": "Stakeholders",
+      "source_id": "944",
+      "source_url": "https://bioart.niaid.nih.gov/bioart/944",
+      "original_sha256": "0356ced15b2e6827f35fc609e2fff92aa65660911ebccfad4a72f1c6903b8275",
+      "preview_sha256": "76b9b5179e4d693eaa51e733f64adbab286737cc3473497378ed98af12ae435b",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/nih-bioart-42248095929-1-b0000.tar.gz",
+        "member": "files/03/0356ced15b2e6827f35fc609e2fff92aa65660911ebccfad4a72f1c6903b8275.png"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/nih-bioart-42248095929-1-b0000.tar.gz",
+        "member": "previews/0356ced15b2e6827f35fc609e2fff92aa65660911ebccfad4a72f1c6903b8275.png"
+      },
+      "visual_verdict": "usable_as_schematic_component",
+      "observations": "多人交流与医疗人员的概念图，可用于利益相关方/沟通流程。",
+      "scientific_detail_validation": "not_independently_verified",
+      "native_editability_tested": false
+    }
+  ]
+}

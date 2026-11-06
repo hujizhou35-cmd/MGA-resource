@@ -1,0 +1,647 @@
+{
+  "schema_version": 1,
+  "reviewed_at": "2026-11-07",
+  "reviewer": "Codex primary agent; direct visual inspection",
+  "source": "reactome",
+  "collection_run": "42246331998-1",
+  "collection_commit": "57c4d673e9e81172e4aa4d57ac8a46fc97ad9165",
+  "review_method": "Actual cloud contact sheet viewed via view_image; metadata joined after inspection and records SHA verified.",
+  "review_sheet_url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/reactome-42246331998-1-b0000.review.png",
+  "review_sheet_sha256": "12af22b1ca5792ba225f21beb5f0e2adac6595b69d318f3937c7a1440a2e96d4",
+  "review_limits": [
+    "Contact sheet scale; no independent fine scientific structure certification.",
+    "Observed color/style is not propagated to every variant or the whole source."
+  ],
+  "items": [
+    {
+      "tile": 1,
+      "id": "reactome-6b8f56700d786b14a9d6",
+      "title": "EKC",
+      "source_id": "R-ICO-012669",
+      "source_url": "https://reactome.org/content/detail/R-ICO-012669",
+      "original_sha256": "53e9b5954fd81d4654ddea1d24cdfbe7a4581f181a0d1cfb37fe48832f3bae32",
+      "preview_sha256": "96cacd728749e04a7514c32b194da6a6ea8e88e6ec5b346a6be8e60a5219dd3c",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/reactome-42246331998-1-b0000.tar.gz",
+        "member": "files/53/53e9b5954fd81d4654ddea1d24cdfbe7a4581f181a0d1cfb37fe48832f3bae32.svg"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/reactome-42246331998-1-b0000.tar.gz",
+        "member": "previews/53e9b5954fd81d4654ddea1d24cdfbe7a4581f181a0d1cfb37fe48832f3bae32.png"
+      },
+      "visual_verdict": "usable_as_schematic_component",
+      "observations": "带名称的彩色分子/蛋白通路符号，文字清楚；适合命名节点，不代表真实分子形状、结合位点或三维结构。",
+      "scientific_detail_validation": "not_independently_verified",
+      "native_editability_tested": false
+    },
+    {
+      "tile": 2,
+      "id": "reactome-8dd4cda5d65a5e4255db",
+      "title": "2'-o-Methyluridine",
+      "source_id": "R-ICO-012361",
+      "source_url": "https://reactome.org/content/detail/R-ICO-012361",
+      "original_sha256": "65733103d50d1d52fcda5c39ac421326d24b57cf0e02deb0e123c45f43830971",
+      "preview_sha256": "2a06d9471662296c90e7c2d92c3eb3b577b10b75f9ca131705aae71ceecf8bff",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/reactome-42246331998-1-b0000.tar.gz",
+        "member": "files/65/65733103d50d1d52fcda5c39ac421326d24b57cf0e02deb0e123c45f43830971.svg"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/reactome-42246331998-1-b0000.tar.gz",
+        "member": "previews/65733103d50d1d52fcda5c39ac421326d24b57cf0e02deb0e123c45f43830971.png"
+      },
+      "visual_verdict": "usable_as_schematic_component",
+      "observations": "带名称的彩色分子/蛋白通路符号，文字清楚；适合命名节点，不代表真实分子形状、结合位点或三维结构。",
+      "scientific_detail_validation": "not_independently_verified",
+      "native_editability_tested": false
+    },
+    {
+      "tile": 3,
+      "id": "reactome-152b6b37f82bd61cefa7",
+      "title": "ABL1",
+      "source_id": "R-ICO-012382",
+      "source_url": "https://reactome.org/content/detail/R-ICO-012382",
+      "original_sha256": "b8648662802f685adbd231cc9ba2e4a0953fc1548ecca0ff3a655bde8abb6f96",
+      "preview_sha256": "7b79d32a18f5c9bd19d41c31c37866d9112b50bea2502e2c95f8c35439a4e456",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/reactome-42246331998-1-b0000.tar.gz",
+        "member": "files/b8/b8648662802f685adbd231cc9ba2e4a0953fc1548ecca0ff3a655bde8abb6f96.svg"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/reactome-42246331998-1-b0000.tar.gz",
+        "member": "previews/b8648662802f685adbd231cc9ba2e4a0953fc1548ecca0ff3a655bde8abb6f96.png"
+      },
+      "visual_verdict": "usable_as_schematic_component",
+      "observations": "带名称的彩色分子/蛋白通路符号，文字清楚；适合命名节点，不代表真实分子形状、结合位点或三维结构。",
+      "scientific_detail_validation": "not_independently_verified",
+      "native_editability_tested": false
+    },
+    {
+      "tile": 4,
+      "id": "reactome-7732ca550c7298991591",
+      "title": "Adrenaline",
+      "source_id": "R-ICO-012405",
+      "source_url": "https://reactome.org/content/detail/R-ICO-012405",
+      "original_sha256": "2286cce4e2da306078635253ccbf498b88956ba976ba899153b81ff91008571e",
+      "preview_sha256": "21edcf1ad288730b711d97b3a75a49913654259613e9e88b026e39a969e5aff5",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/reactome-42246331998-1-b0000.tar.gz",
+        "member": "files/22/2286cce4e2da306078635253ccbf498b88956ba976ba899153b81ff91008571e.svg"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/reactome-42246331998-1-b0000.tar.gz",
+        "member": "previews/2286cce4e2da306078635253ccbf498b88956ba976ba899153b81ff91008571e.png"
+      },
+      "visual_verdict": "usable_as_schematic_component",
+      "observations": "带名称的彩色分子/蛋白通路符号，文字清楚；适合命名节点，不代表真实分子形状、结合位点或三维结构。",
+      "scientific_detail_validation": "not_independently_verified",
+      "native_editability_tested": false
+    },
+    {
+      "tile": 5,
+      "id": "reactome-fd23679c89c4c89b6b01",
+      "title": "AVPR2",
+      "source_id": "R-ICO-012457",
+      "source_url": "https://reactome.org/content/detail/R-ICO-012457",
+      "original_sha256": "3d0c23101f368cc29c5c380c80863ee931021e310a58eabcc8ab49c7a9fdc22c",
+      "preview_sha256": "b461f2a5b0444664e640cc712e5fdc4cddc1ca5a994aa27f065440e7fe01b8d5",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/reactome-42246331998-1-b0000.tar.gz",
+        "member": "files/3d/3d0c23101f368cc29c5c380c80863ee931021e310a58eabcc8ab49c7a9fdc22c.svg"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/reactome-42246331998-1-b0000.tar.gz",
+        "member": "previews/3d0c23101f368cc29c5c380c80863ee931021e310a58eabcc8ab49c7a9fdc22c.png"
+      },
+      "visual_verdict": "usable_as_schematic_component",
+      "observations": "曲折线条表达跨膜蛋白的简化拓扑，不能当真实三维结构。",
+      "scientific_detail_validation": "not_independently_verified",
+      "native_editability_tested": false
+    },
+    {
+      "tile": 6,
+      "id": "reactome-7e176e7885f1cbead3a3",
+      "title": "No process arrow",
+      "source_id": "R-ICO-012340",
+      "source_url": "https://reactome.org/content/detail/R-ICO-012340",
+      "original_sha256": "99321289c08fdec8e1cee5ddc83635be0ae6cf0079cc8c611e272820158bc113",
+      "preview_sha256": "b0a73ccb47e414690207e9d5e00ec0a7b7197b254fa81c0087e9278042642ad8",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/reactome-42246331998-1-b0000.tar.gz",
+        "member": "files/99/99321289c08fdec8e1cee5ddc83635be0ae6cf0079cc8c611e272820158bc113.svg"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/reactome-42246331998-1-b0000.tar.gz",
+        "member": "previews/99321289c08fdec8e1cee5ddc83635be0ae6cf0079cc8c611e272820158bc113.png"
+      },
+      "visual_verdict": "usable_as_schematic_component",
+      "observations": "带叉的过程箭头，含否定语义，不能作为普通激活箭头。",
+      "scientific_detail_validation": "not_independently_verified",
+      "native_editability_tested": false
+    },
+    {
+      "tile": 7,
+      "id": "reactome-7bf5e9af64cc4c9adf7c",
+      "title": "EFNA",
+      "source_id": "R-ICO-012653",
+      "source_url": "https://reactome.org/content/detail/R-ICO-012653",
+      "original_sha256": "21b8774d48e180676b25ffb8b8dd344cd580ddb90d8f1531f068b50937355da1",
+      "preview_sha256": "8fb27ce857a6ebae231b0cad32035391f3964baa795895c11b8bfc69fd6fba05",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/reactome-42246331998-1-b0000.tar.gz",
+        "member": "files/21/21b8774d48e180676b25ffb8b8dd344cd580ddb90d8f1531f068b50937355da1.svg"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/reactome-42246331998-1-b0000.tar.gz",
+        "member": "previews/21b8774d48e180676b25ffb8b8dd344cd580ddb90d8f1531f068b50937355da1.png"
+      },
+      "visual_verdict": "usable_as_schematic_component",
+      "observations": "膜锚定受体/配体的概略图形，具体EFNA身份靠文字。",
+      "scientific_detail_validation": "not_independently_verified",
+      "native_editability_tested": false
+    },
+    {
+      "tile": 8,
+      "id": "reactome-ebd456311084bc69abcb",
+      "title": "GLP-1",
+      "source_id": "R-ICO-012772",
+      "source_url": "https://reactome.org/content/detail/R-ICO-012772",
+      "original_sha256": "afce3cce64fbd2199c3a63cb8186a69c4caea417b92a35c363644a0f25ddd092",
+      "preview_sha256": "96e4622fdd5b582e90b515c88bb373c61b61856047fced5b1d6050a2b16a018b",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/reactome-42246331998-1-b0000.tar.gz",
+        "member": "files/af/afce3cce64fbd2199c3a63cb8186a69c4caea417b92a35c363644a0f25ddd092.svg"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/reactome-42246331998-1-b0000.tar.gz",
+        "member": "previews/afce3cce64fbd2199c3a63cb8186a69c4caea417b92a35c363644a0f25ddd092.png"
+      },
+      "visual_verdict": "usable_as_schematic_component",
+      "observations": "带名称的彩色分子/蛋白通路符号，文字清楚；适合命名节点，不代表真实分子形状、结合位点或三维结构。",
+      "scientific_detail_validation": "not_independently_verified",
+      "native_editability_tested": false
+    },
+    {
+      "tile": 9,
+      "id": "reactome-175048e473521536d70c",
+      "title": "CALDAG GEFs",
+      "source_id": "R-ICO-012503",
+      "source_url": "https://reactome.org/content/detail/R-ICO-012503",
+      "original_sha256": "8effd53fc7dc2a92b3659042270a5b8e0ac2998b9536875ac5b02305ef96319c",
+      "preview_sha256": "2525720086926c8f9cb01480ce8d13018f28c3c7a6c7ff4d61008bcf02d8c165",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/reactome-42246331998-1-b0000.tar.gz",
+        "member": "files/8e/8effd53fc7dc2a92b3659042270a5b8e0ac2998b9536875ac5b02305ef96319c.svg"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/reactome-42246331998-1-b0000.tar.gz",
+        "member": "previews/8effd53fc7dc2a92b3659042270a5b8e0ac2998b9536875ac5b02305ef96319c.png"
+      },
+      "visual_verdict": "usable_as_schematic_component",
+      "observations": "带名称的彩色分子/蛋白通路符号，文字清楚；适合命名节点，不代表真实分子形状、结合位点或三维结构。",
+      "scientific_detail_validation": "not_independently_verified",
+      "native_editability_tested": false
+    },
+    {
+      "tile": 10,
+      "id": "reactome-d832931c23f0bc821def",
+      "title": "CDKN2A",
+      "source_id": "R-ICO-012544",
+      "source_url": "https://reactome.org/content/detail/R-ICO-012544",
+      "original_sha256": "f53d27a251362c5d37e9e773e5171a142016b88db0c7ea31c7f47ad914042299",
+      "preview_sha256": "635c9c7b77901a1275f18b89c6520781de7a23343bff5ee0bd7816d64eb70ccb",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/reactome-42246331998-1-b0000.tar.gz",
+        "member": "files/f5/f53d27a251362c5d37e9e773e5171a142016b88db0c7ea31c7f47ad914042299.svg"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/reactome-42246331998-1-b0000.tar.gz",
+        "member": "previews/f53d27a251362c5d37e9e773e5171a142016b88db0c7ea31c7f47ad914042299.png"
+      },
+      "visual_verdict": "usable_as_schematic_component",
+      "observations": "带名称的彩色分子/蛋白通路符号，文字清楚；适合命名节点，不代表真实分子形状、结合位点或三维结构。",
+      "scientific_detail_validation": "not_independently_verified",
+      "native_editability_tested": false
+    },
+    {
+      "tile": 11,
+      "id": "reactome-491fed269e3906b9ce41",
+      "title": "BOX C/D snoRNP",
+      "source_id": "R-ICO-012479",
+      "source_url": "https://reactome.org/content/detail/R-ICO-012479",
+      "original_sha256": "0365c280420b675bcace244e1beaaa24e938de34d0287df8ad5de18fa1bcc2c4",
+      "preview_sha256": "f683d7117f86bddc01216db57f1633e722a7b7331b84f302391ecc6e8c02dec8",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/reactome-42246331998-1-b0000.tar.gz",
+        "member": "files/03/0365c280420b675bcace244e1beaaa24e938de34d0287df8ad5de18fa1bcc2c4.svg"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/reactome-42246331998-1-b0000.tar.gz",
+        "member": "previews/0365c280420b675bcace244e1beaaa24e938de34d0287df8ad5de18fa1bcc2c4.png"
+      },
+      "visual_verdict": "usable_as_schematic_component",
+      "observations": "带名称的彩色分子/蛋白通路符号，文字清楚；适合命名节点，不代表真实分子形状、结合位点或三维结构。",
+      "scientific_detail_validation": "not_independently_verified",
+      "native_editability_tested": false
+    },
+    {
+      "tile": 12,
+      "id": "reactome-edbe77ea5e89d8cc78eb",
+      "title": "GPCR CLASS A 1",
+      "source_id": "R-ICO-012788",
+      "source_url": "https://reactome.org/content/detail/R-ICO-012788",
+      "original_sha256": "d39bf6abffc4501fe0ac18eeb3b498ef1b68fc8f2aeae2b3f12af2c7be519a2c",
+      "preview_sha256": "831a9bd885ae2fdca8b4cbeb3301b9bf4c1242da2dfa66c368ef8e35f3ead170",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/reactome-42246331998-1-b0000.tar.gz",
+        "member": "files/d3/d39bf6abffc4501fe0ac18eeb3b498ef1b68fc8f2aeae2b3f12af2c7be519a2c.svg"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/reactome-42246331998-1-b0000.tar.gz",
+        "member": "previews/d39bf6abffc4501fe0ac18eeb3b498ef1b68fc8f2aeae2b3f12af2c7be519a2c.png"
+      },
+      "visual_verdict": "usable_as_schematic_component",
+      "observations": "多次跨膜受体示意，属于结构关系图标，不是原子结构。",
+      "scientific_detail_validation": "not_independently_verified",
+      "native_editability_tested": false
+    },
+    {
+      "tile": 13,
+      "id": "reactome-01b055f3d659072a6eca",
+      "title": "EPO",
+      "source_id": "R-ICO-012680",
+      "source_url": "https://reactome.org/content/detail/R-ICO-012680",
+      "original_sha256": "94356c12f3802aa55ac8ab36fe9f69a2821c87cd77f1cacab5a8cf771a5e35ca",
+      "preview_sha256": "568b761914e1a9e0cc08dd721bda4f31c846c3b9254beeddc8586455e9f24f00",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/reactome-42246331998-1-b0000.tar.gz",
+        "member": "files/94/94356c12f3802aa55ac8ab36fe9f69a2821c87cd77f1cacab5a8cf771a5e35ca.svg"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/reactome-42246331998-1-b0000.tar.gz",
+        "member": "previews/94356c12f3802aa55ac8ab36fe9f69a2821c87cd77f1cacab5a8cf771a5e35ca.png"
+      },
+      "visual_verdict": "usable_as_schematic_component",
+      "observations": "带名称的彩色分子/蛋白通路符号，文字清楚；适合命名节点，不代表真实分子形状、结合位点或三维结构。",
+      "scientific_detail_validation": "not_independently_verified",
+      "native_editability_tested": false
+    },
+    {
+      "tile": 14,
+      "id": "reactome-6c107f9562e313e69887",
+      "title": "Disease related Motion arrow",
+      "source_id": "R-ICO-012342",
+      "source_url": "https://reactome.org/content/detail/R-ICO-012342",
+      "original_sha256": "463831d482279de530bfc6d81ca755efb758b9f068bd262a8db5d1e896997d16",
+      "preview_sha256": "5c5e052a9bde3a295bcfa62bb61df88401f007d6f73b424bb318b27254c91abc",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/reactome-42246331998-1-b0000.tar.gz",
+        "member": "files/46/463831d482279de530bfc6d81ca755efb758b9f068bd262a8db5d1e896997d16.svg"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/reactome-42246331998-1-b0000.tar.gz",
+        "member": "previews/463831d482279de530bfc6d81ca755efb758b9f068bd262a8db5d1e896997d16.png"
+      },
+      "visual_verdict": "usable_as_schematic_component",
+      "observations": "虚实变化的疾病相关运动箭头，应保留其语义。",
+      "scientific_detail_validation": "not_independently_verified",
+      "native_editability_tested": false
+    },
+    {
+      "tile": 15,
+      "id": "reactome-6b94fcaddb6e0c51be7f",
+      "title": "Transformation arrow",
+      "source_id": "R-ICO-012349",
+      "source_url": "https://reactome.org/content/detail/R-ICO-012349",
+      "original_sha256": "eca89350a21bdacdd542f4119b3ca27bf0cc9b3d95cb43481c8160014e451390",
+      "preview_sha256": "9db198b2805f6d24c99868f9829386db0ebb9b422a3b7e98696dbd090eb42fae",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/reactome-42246331998-1-b0000.tar.gz",
+        "member": "files/ec/eca89350a21bdacdd542f4119b3ca27bf0cc9b3d95cb43481c8160014e451390.svg"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/reactome-42246331998-1-b0000.tar.gz",
+        "member": "previews/eca89350a21bdacdd542f4119b3ca27bf0cc9b3d95cb43481c8160014e451390.png"
+      },
+      "visual_verdict": "usable_as_schematic_component",
+      "observations": "形态转换箭头，供关系示意。",
+      "scientific_detail_validation": "not_independently_verified",
+      "native_editability_tested": false
+    },
+    {
+      "tile": 16,
+      "id": "reactome-1d686c6534e923808e07",
+      "title": "Growth Hormone",
+      "source_id": "R-ICO-012800",
+      "source_url": "https://reactome.org/content/detail/R-ICO-012800",
+      "original_sha256": "43242103299a1256e58065a6176a836275b48c4d522c1677b3a5cb1ade7b14b6",
+      "preview_sha256": "33b3012b65ee22d0a11f6424cd5763c05abba5955074d962e46cd89d939d7c44",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/reactome-42246331998-1-b0000.tar.gz",
+        "member": "files/43/43242103299a1256e58065a6176a836275b48c4d522c1677b3a5cb1ade7b14b6.svg"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/reactome-42246331998-1-b0000.tar.gz",
+        "member": "previews/43242103299a1256e58065a6176a836275b48c4d522c1677b3a5cb1ade7b14b6.png"
+      },
+      "visual_verdict": "usable_as_schematic_component",
+      "observations": "带名称的彩色分子/蛋白通路符号，文字清楚；适合命名节点，不代表真实分子形状、结合位点或三维结构。",
+      "scientific_detail_validation": "not_independently_verified",
+      "native_editability_tested": false
+    },
+    {
+      "tile": 17,
+      "id": "reactome-a65445d7f01c4fe46410",
+      "title": "ADAT2",
+      "source_id": "R-ICO-012394",
+      "source_url": "https://reactome.org/content/detail/R-ICO-012394",
+      "original_sha256": "2061129bcd48cf47f7d4a8eab95c82802071c8bcc487e5126f433a6c1d04c957",
+      "preview_sha256": "1a5fdf139edbb0a5e788e5c016f289a75066359fd760b482f800a690ec5536e9",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/reactome-42246331998-1-b0000.tar.gz",
+        "member": "files/20/2061129bcd48cf47f7d4a8eab95c82802071c8bcc487e5126f433a6c1d04c957.svg"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/reactome-42246331998-1-b0000.tar.gz",
+        "member": "previews/2061129bcd48cf47f7d4a8eab95c82802071c8bcc487e5126f433a6c1d04c957.png"
+      },
+      "visual_verdict": "usable_as_schematic_component",
+      "observations": "带名称的彩色分子/蛋白通路符号，文字清楚；适合命名节点，不代表真实分子形状、结合位点或三维结构。",
+      "scientific_detail_validation": "not_independently_verified",
+      "native_editability_tested": false
+    },
+    {
+      "tile": 18,
+      "id": "reactome-5a70d5120762f40013f3",
+      "title": "ARAF,BRAF,RAF1",
+      "source_id": "R-ICO-012447",
+      "source_url": "https://reactome.org/content/detail/R-ICO-012447",
+      "original_sha256": "2c552868a0d4c9e4b0652f4fb0528315589fded2f87241cab17a912f036b7aa1",
+      "preview_sha256": "9a32b864d0ac82a71973cf590e263271021dd0cd607ac23e935cb72417b852b2",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/reactome-42246331998-1-b0000.tar.gz",
+        "member": "files/2c/2c552868a0d4c9e4b0652f4fb0528315589fded2f87241cab17a912f036b7aa1.svg"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/reactome-42246331998-1-b0000.tar.gz",
+        "member": "previews/2c552868a0d4c9e4b0652f4fb0528315589fded2f87241cab17a912f036b7aa1.png"
+      },
+      "visual_verdict": "usable_as_schematic_component",
+      "observations": "带名称的彩色分子/蛋白通路符号，文字清楚；适合命名节点，不代表真实分子形状、结合位点或三维结构。",
+      "scientific_detail_validation": "not_independently_verified",
+      "native_editability_tested": false
+    },
+    {
+      "tile": 19,
+      "id": "reactome-444f54e66c3cf09d2367",
+      "title": "BMPR",
+      "source_id": "R-ICO-012476",
+      "source_url": "https://reactome.org/content/detail/R-ICO-012476",
+      "original_sha256": "581a12252fcdaf32b1ec2c69a1494d300c0cdb59a7e8b737ffac8a5f68ff47bd",
+      "preview_sha256": "ce8397eb6def9b6931351b6ac23004251c7c3af201fa7615b15e7d670ced5540",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/reactome-42246331998-1-b0000.tar.gz",
+        "member": "files/58/581a12252fcdaf32b1ec2c69a1494d300c0cdb59a7e8b737ffac8a5f68ff47bd.svg"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/reactome-42246331998-1-b0000.tar.gz",
+        "member": "previews/581a12252fcdaf32b1ec2c69a1494d300c0cdb59a7e8b737ffac8a5f68ff47bd.png"
+      },
+      "visual_verdict": "usable_as_schematic_component",
+      "observations": "两部分受体图形，具体BMP受体身份来自来源，形状不等于实验结构。",
+      "scientific_detail_validation": "not_independently_verified",
+      "native_editability_tested": false
+    },
+    {
+      "tile": 20,
+      "id": "reactome-d750712d6f0bf856e368",
+      "title": "HHAT",
+      "source_id": "R-ICO-012822",
+      "source_url": "https://reactome.org/content/detail/R-ICO-012822",
+      "original_sha256": "b12fd0ed21d7a8d472f216bffdff64e08a84c24b18707232d4d39b359479412a",
+      "preview_sha256": "5fadc346e6d67ba41c827ff7e05186356563f76b9125fc8a2c57ea7361e588f5",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/reactome-42246331998-1-b0000.tar.gz",
+        "member": "files/b1/b12fd0ed21d7a8d472f216bffdff64e08a84c24b18707232d4d39b359479412a.svg"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/reactome-42246331998-1-b0000.tar.gz",
+        "member": "previews/b12fd0ed21d7a8d472f216bffdff64e08a84c24b18707232d4d39b359479412a.png"
+      },
+      "visual_verdict": "usable_as_schematic_component",
+      "observations": "带名称的彩色分子/蛋白通路符号，文字清楚；适合命名节点，不代表真实分子形状、结合位点或三维结构。",
+      "scientific_detail_validation": "not_independently_verified",
+      "native_editability_tested": false
+    },
+    {
+      "tile": 21,
+      "id": "reactome-a330ed8e26b4a27a2064",
+      "title": "AGO2",
+      "source_id": "R-ICO-012407",
+      "source_url": "https://reactome.org/content/detail/R-ICO-012407",
+      "original_sha256": "af4bef52da8aa10b53c14284e6cb0c416ad160a5ac2298fffae820d4c7ccd3c8",
+      "preview_sha256": "2107ca3bf19898870bc930dec6067ed3a45902c3cd0a77e946320e94dd8289b5",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/reactome-42246331998-1-b0000.tar.gz",
+        "member": "files/af/af4bef52da8aa10b53c14284e6cb0c416ad160a5ac2298fffae820d4c7ccd3c8.svg"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/reactome-42246331998-1-b0000.tar.gz",
+        "member": "previews/af4bef52da8aa10b53c14284e6cb0c416ad160a5ac2298fffae820d4c7ccd3c8.png"
+      },
+      "visual_verdict": "usable_as_schematic_component",
+      "observations": "带名称的彩色分子/蛋白通路符号，文字清楚；适合命名节点，不代表真实分子形状、结合位点或三维结构。",
+      "scientific_detail_validation": "not_independently_verified",
+      "native_editability_tested": false
+    },
+    {
+      "tile": 22,
+      "id": "reactome-0f25cdcfd110df84fb50",
+      "title": "ANK1,2,3",
+      "source_id": "R-ICO-012424",
+      "source_url": "https://reactome.org/content/detail/R-ICO-012424",
+      "original_sha256": "7b8b7ae84770f336c3cf008af1060072f1d0fa97de8b025cf2faaacfdb201bce",
+      "preview_sha256": "eff7e402ff38b2d8bf2e6b597b99dbc165436ed933701beea8c859b3f7ee97c7",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/reactome-42246331998-1-b0000.tar.gz",
+        "member": "files/7b/7b8b7ae84770f336c3cf008af1060072f1d0fa97de8b025cf2faaacfdb201bce.svg"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/reactome-42246331998-1-b0000.tar.gz",
+        "member": "previews/7b8b7ae84770f336c3cf008af1060072f1d0fa97de8b025cf2faaacfdb201bce.png"
+      },
+      "visual_verdict": "usable_as_schematic_component",
+      "observations": "带名称的彩色分子/蛋白通路符号，文字清楚；适合命名节点，不代表真实分子形状、结合位点或三维结构。",
+      "scientific_detail_validation": "not_independently_verified",
+      "native_editability_tested": false
+    },
+    {
+      "tile": 23,
+      "id": "reactome-1ac7f8f2ecb9cda03f2c",
+      "title": "CA4",
+      "source_id": "R-ICO-012495",
+      "source_url": "https://reactome.org/content/detail/R-ICO-012495",
+      "original_sha256": "63e68c70f1f2a919cd91ffddb05430c023a81097c343331164c8e0af1eeb7dfb",
+      "preview_sha256": "850ef561091bc08e82bfe2db195e387deb05370fc19e612235cee1cb392023db",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/reactome-42246331998-1-b0000.tar.gz",
+        "member": "files/63/63e68c70f1f2a919cd91ffddb05430c023a81097c343331164c8e0af1eeb7dfb.svg"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/reactome-42246331998-1-b0000.tar.gz",
+        "member": "previews/63e68c70f1f2a919cd91ffddb05430c023a81097c343331164c8e0af1eeb7dfb.png"
+      },
+      "visual_verdict": "usable_as_schematic_component",
+      "observations": "带名称的彩色分子/蛋白通路符号，文字清楚；适合命名节点，不代表真实分子形状、结合位点或三维结构。",
+      "scientific_detail_validation": "not_independently_verified",
+      "native_editability_tested": false
+    },
+    {
+      "tile": 24,
+      "id": "reactome-65a17dd19f11a750caeb",
+      "title": "DNA GLYCOSYLASE",
+      "source_id": "R-ICO-012633",
+      "source_url": "https://reactome.org/content/detail/R-ICO-012633",
+      "original_sha256": "f5e336f7eb195fcc6c2d68863c9723909d90fb10f76dd8fd4b15c2f78143d2f2",
+      "preview_sha256": "8abc9601d85d629e14df07cd2504861409897043a4d79fa0c4a2e2636d98ec71",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/reactome-42246331998-1-b0000.tar.gz",
+        "member": "files/f5/f5e336f7eb195fcc6c2d68863c9723909d90fb10f76dd8fd4b15c2f78143d2f2.svg"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/reactome-42246331998-1-b0000.tar.gz",
+        "member": "previews/f5e336f7eb195fcc6c2d68863c9723909d90fb10f76dd8fd4b15c2f78143d2f2.png"
+      },
+      "visual_verdict": "usable_as_schematic_component",
+      "observations": "带名称的彩色分子/蛋白通路符号，文字清楚；适合命名节点，不代表真实分子形状、结合位点或三维结构。",
+      "scientific_detail_validation": "not_independently_verified",
+      "native_editability_tested": false
+    },
+    {
+      "tile": 25,
+      "id": "reactome-2eb49e56993f6780a6e4",
+      "title": "CASK",
+      "source_id": "R-ICO-012510",
+      "source_url": "https://reactome.org/content/detail/R-ICO-012510",
+      "original_sha256": "44e18955eb45d05da4df4b8b634fcccab9572fe50f441bdb5e4bf7bb3d7ad9f0",
+      "preview_sha256": "3c744593c945b93674478b6e402e7f5f1e5ec9bf8634ae91a0566294397db16e",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/reactome-42246331998-1-b0000.tar.gz",
+        "member": "files/44/44e18955eb45d05da4df4b8b634fcccab9572fe50f441bdb5e4bf7bb3d7ad9f0.svg"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/reactome-42246331998-1-b0000.tar.gz",
+        "member": "previews/44e18955eb45d05da4df4b8b634fcccab9572fe50f441bdb5e4bf7bb3d7ad9f0.png"
+      },
+      "visual_verdict": "usable_as_schematic_component",
+      "observations": "带名称的彩色分子/蛋白通路符号，文字清楚；适合命名节点，不代表真实分子形状、结合位点或三维结构。",
+      "scientific_detail_validation": "not_independently_verified",
+      "native_editability_tested": false
+    },
+    {
+      "tile": 26,
+      "id": "reactome-fe87e7d5379363041d54",
+      "title": "GPI TRANSAMIDASE",
+      "source_id": "R-ICO-012792",
+      "source_url": "https://reactome.org/content/detail/R-ICO-012792",
+      "original_sha256": "bae80b466d4f268520167b78cf5cbca993624a2ca2f71d31550230b6bca35b29",
+      "preview_sha256": "5fe858f5a1c95cb06f1c375650cd2365dbddf2fe739e05ba0d56ee8c3183a5cd",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/reactome-42246331998-1-b0000.tar.gz",
+        "member": "files/ba/bae80b466d4f268520167b78cf5cbca993624a2ca2f71d31550230b6bca35b29.svg"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/reactome-42246331998-1-b0000.tar.gz",
+        "member": "previews/bae80b466d4f268520167b78cf5cbca993624a2ca2f71d31550230b6bca35b29.png"
+      },
+      "visual_verdict": "usable_as_schematic_component",
+      "observations": "带名称的彩色分子/蛋白通路符号，文字清楚；适合命名节点，不代表真实分子形状、结合位点或三维结构。",
+      "scientific_detail_validation": "not_independently_verified",
+      "native_editability_tested": false
+    },
+    {
+      "tile": 27,
+      "id": "reactome-e55bd0a162a6e7fe75c1",
+      "title": "ERCC6",
+      "source_id": "R-ICO-012685",
+      "source_url": "https://reactome.org/content/detail/R-ICO-012685",
+      "original_sha256": "e49f6f59992a4aefbfcc89ef955985dd0e6cd046b05ab42aba054f5c999f5ff0",
+      "preview_sha256": "cc4eca98a5b619b271073607cc33ebf401e6d9e6cf7eba41c4676771fc1c772d",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/reactome-42246331998-1-b0000.tar.gz",
+        "member": "files/e4/e49f6f59992a4aefbfcc89ef955985dd0e6cd046b05ab42aba054f5c999f5ff0.svg"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/reactome-42246331998-1-b0000.tar.gz",
+        "member": "previews/e49f6f59992a4aefbfcc89ef955985dd0e6cd046b05ab42aba054f5c999f5ff0.png"
+      },
+      "visual_verdict": "usable_as_schematic_component",
+      "observations": "带名称的彩色分子/蛋白通路符号，文字清楚；适合命名节点，不代表真实分子形状、结合位点或三维结构。",
+      "scientific_detail_validation": "not_independently_verified",
+      "native_editability_tested": false
+    },
+    {
+      "tile": 28,
+      "id": "reactome-c0cc41b97c522f0380b6",
+      "title": "No inhibition arrow",
+      "source_id": "R-ICO-012338",
+      "source_url": "https://reactome.org/content/detail/R-ICO-012338",
+      "original_sha256": "d7496803dd2c4bad71f80e8f307008f31c6a4cfaa1e83a60f65e6965e3b02e82",
+      "preview_sha256": "04c7c0c0ba56f09a156bc286fd8aaca251263ae6a80110ad443526087a7941d3",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/reactome-42246331998-1-b0000.tar.gz",
+        "member": "files/d7/d7496803dd2c4bad71f80e8f307008f31c6a4cfaa1e83a60f65e6965e3b02e82.svg"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/reactome-42246331998-1-b0000.tar.gz",
+        "member": "previews/d7496803dd2c4bad71f80e8f307008f31c6a4cfaa1e83a60f65e6965e3b02e82.png"
+      },
+      "visual_verdict": "usable_as_schematic_component",
+      "observations": "带叉的抑制关系箭头，否定语义须保留。",
+      "scientific_detail_validation": "not_independently_verified",
+      "native_editability_tested": false
+    },
+    {
+      "tile": 29,
+      "id": "reactome-be9f68d117933a0bfd0d",
+      "title": "B cell",
+      "source_id": "R-ICO-012460",
+      "source_url": "https://reactome.org/content/detail/R-ICO-012460",
+      "original_sha256": "6d1efbdf8e1186b8f1d4b20a4315f3c685b14fee6f001ef2d1943a57a3223601",
+      "preview_sha256": "86938972ed3cb7472ce12985b3587521d378dba82ab7c21a3cbc396dffacdde1",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/reactome-42246331998-1-b0000.tar.gz",
+        "member": "files/6d/6d1efbdf8e1186b8f1d4b20a4315f3c685b14fee6f001ef2d1943a57a3223601.svg"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/reactome-42246331998-1-b0000.tar.gz",
+        "member": "previews/6d1efbdf8e1186b8f1d4b20a4315f3c685b14fee6f001ef2d1943a57a3223601.png"
+      },
+      "visual_verdict": "usable_as_schematic_component",
+      "observations": "B细胞示意核可辨认，颜色和轮廓不构成物种或病理条件证明。",
+      "scientific_detail_validation": "not_independently_verified",
+      "native_editability_tested": false
+    },
+    {
+      "tile": 30,
+      "id": "reactome-29f12eb7f9bceb45cadb",
+      "title": "Fanconi anemia",
+      "source_id": "R-ICO-012702",
+      "source_url": "https://reactome.org/content/detail/R-ICO-012702",
+      "original_sha256": "08dd9d2416a0bec6c8af6d3bfe8de3a50d1f3aba6cd7c5edcd9732eff47c4250",
+      "preview_sha256": "59aeb2badea4d6702562532d75253fdfacbbe456dd4ee3078d26857163d91629",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/reactome-42246331998-1-b0000.tar.gz",
+        "member": "files/08/08dd9d2416a0bec6c8af6d3bfe8de3a50d1f3aba6cd7c5edcd9732eff47c4250.svg"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/reactome-42246331998-1-b0000.tar.gz",
+        "member": "previews/08dd9d2416a0bec6c8af6d3bfe8de3a50d1f3aba6cd7c5edcd9732eff47c4250.png"
+      },
+      "visual_verdict": "usable_with_limitations",
+      "observations": "细长多色线束被来源命名为Fanconi anemia；单独图形不能充分表达该疾病，需与文字/通路语境一起使用。",
+      "scientific_detail_validation": "not_independently_verified",
+      "native_editability_tested": false
+    }
+  ]
+}
