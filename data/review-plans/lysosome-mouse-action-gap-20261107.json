@@ -1,0 +1,202 @@
+{
+  "schema_version": 1,
+  "purpose": "Minimal exact-file review of remaining lysosome and mouse-injection evidence gaps; nomination only, not benchmark success.",
+  "catalog_prefix": "assembly-42289434868-1",
+  "catalog_sha256": "5c90306415ce5e7f36e875c7f57b19a91930aacfeeaeecdf9ad7662770f9a3fe",
+  "scope_constraints": [
+    "All existing exclusions and pending component decisions remain effective.",
+    "No new originals or sources are collected; only original archived preview bytes are extracted in cloud.",
+    "The generic Reactome Lysosome sphere previously judged pending is intentionally not selected to reverse that decision."
+  ],
+  "files": [
+    {
+      "source": "nih-bioart",
+      "source_id": "306",
+      "asset_id": "nih-bioart-469ab575b90ee2c9d61d",
+      "title": "Lysosomes",
+      "source_url": "https://bioart.niaid.nih.gov/bioart/306",
+      "original_sha256": "7687ce9bf458eac26b31005e13a80e21cd9cf79a4ee3b244538141a38575e302",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/nih-bioart-42236561214-1-b0000.tar.gz",
+        "member": "files/76/7687ce9bf458eac26b31005e13a80e21cd9cf79a4ee3b244538141a38575e302.png"
+      },
+      "format": "png",
+      "structure": "raster",
+      "preview": {
+        "path": "previews/7687ce9bf458eac26b31005e13a80e21cd9cf79a4ee3b244538141a38575e302.png",
+        "format": "png",
+        "width": 512,
+        "height": 512,
+        "sha256": "bc0e72aea87311bd819272d5d5895d83f93cce8eb28ae52d28f21e20ad541643",
+        "size_bytes": 132622,
+        "archive": {
+          "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/nih-bioart-42236561214-1-b0000.tar.gz",
+          "member": "previews/7687ce9bf458eac26b31005e13a80e21cd9cf79a4ee3b244538141a38575e302.png"
+        }
+      },
+      "review_question": "Does this exact preview show an independently reusable membrane-bound organelle or an entire information product? With the official item identity, can an object observation be supported without calling any generic vesicle a lysosome? Autolysosome must retain its distinct source identity."
+    },
+    {
+      "source": "nih-bioart",
+      "source_id": "306",
+      "asset_id": "nih-bioart-469ab575b90ee2c9d61d",
+      "title": "Lysosomes",
+      "source_url": "https://bioart.niaid.nih.gov/bioart/306",
+      "original_sha256": "201a1b8705c3ffb62dcc0f01b0f851046d63c83ccfaf92ad9dde29ac125c007c",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/nih-bioart-42236561214-1-b0000.tar.gz",
+        "member": "files/20/201a1b8705c3ffb62dcc0f01b0f851046d63c83ccfaf92ad9dde29ac125c007c.svg"
+      },
+      "format": "svg",
+      "structure": "mixed",
+      "preview": {
+        "path": "previews/201a1b8705c3ffb62dcc0f01b0f851046d63c83ccfaf92ad9dde29ac125c007c.png",
+        "format": "png",
+        "width": 505,
+        "height": 512,
+        "sha256": "667e6c1162fc96f16ccf923a8453fa1f000f826a4dc75851fad72d12ffc9aaa0",
+        "size_bytes": 39814,
+        "archive": {
+          "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/nih-bioart-42236561214-1-b0000.tar.gz",
+          "member": "previews/201a1b8705c3ffb62dcc0f01b0f851046d63c83ccfaf92ad9dde29ac125c007c.png"
+        }
+      },
+      "review_question": "Does this exact preview show an independently reusable membrane-bound organelle or an entire information product? With the official item identity, can an object observation be supported without calling any generic vesicle a lysosome? Autolysosome must retain its distinct source identity."
+    },
+    {
+      "source": "reactome",
+      "source_id": "R-ICO-013653",
+      "asset_id": "reactome-61f88d175cb4f15d430d",
+      "title": "Autolysosome",
+      "source_url": "https://reactome.org/content/detail/R-ICO-013653",
+      "original_sha256": "650e62728a0736c1fd5e25c579c928c5843e4b78f280ccec5d8f9db5d41ef345",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/reactome-42246331998-1-b0002.tar.gz",
+        "member": "files/65/650e62728a0736c1fd5e25c579c928c5843e4b78f280ccec5d8f9db5d41ef345.svg"
+      },
+      "format": "svg",
+      "structure": "pure_vector",
+      "preview": {
+        "path": "previews/650e62728a0736c1fd5e25c579c928c5843e4b78f280ccec5d8f9db5d41ef345.png",
+        "format": "png",
+        "width": 512,
+        "height": 350,
+        "sha256": "3810499ecef92d348de1732d18537f2b7dace7791b1e04a036c0902bd70abcf6",
+        "size_bytes": 65607,
+        "archive": {
+          "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/reactome-42246331998-1-b0002.tar.gz",
+          "member": "previews/650e62728a0736c1fd5e25c579c928c5843e4b78f280ccec5d8f9db5d41ef345.png"
+        }
+      },
+      "review_question": "Does this exact preview show an independently reusable membrane-bound organelle or an entire information product? With the official item identity, can an object observation be supported without calling any generic vesicle a lysosome? Autolysosome must retain its distinct source identity."
+    },
+    {
+      "source": "togo",
+      "source_id": "2203",
+      "asset_id": "togo-759d6c1a90e4adc82316",
+      "title": "Lysosomal Storage Disorders",
+      "source_url": "https://doi.org/10.7875/togopic.2025.092",
+      "original_sha256": "252a376fcfb8e7551cff2bab1ec5b145d941249ccee63fe882e1b9dc1b10efb6",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42271777119-1-b0001.tar.gz",
+        "member": "files/25/252a376fcfb8e7551cff2bab1ec5b145d941249ccee63fe882e1b9dc1b10efb6.svg"
+      },
+      "format": "svg",
+      "structure": "pure_vector",
+      "preview": {
+        "path": "previews/252a376fcfb8e7551cff2bab1ec5b145d941249ccee63fe882e1b9dc1b10efb6.png",
+        "format": "png",
+        "width": 512,
+        "height": 512,
+        "sha256": "3f08f8f4a8b056a98e18f9ccb4557dc5e3da2002189754a20afdeb87f6e7fb56",
+        "size_bytes": 121676,
+        "archive": {
+          "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42271777119-1-b0001.tar.gz",
+          "member": "previews/252a376fcfb8e7551cff2bab1ec5b145d941249ccee63fe882e1b9dc1b10efb6.png"
+        }
+      },
+      "review_question": "Does this exact preview show an independently reusable membrane-bound organelle or an entire information product? With the official item identity, can an object observation be supported without calling any generic vesicle a lysosome? Autolysosome must retain its distinct source identity."
+    },
+    {
+      "source": "togo",
+      "source_id": "2203",
+      "asset_id": "togo-759d6c1a90e4adc82316",
+      "title": "Lysosomal Storage Disorders",
+      "source_url": "https://doi.org/10.7875/togopic.2025.092",
+      "original_sha256": "770efbda359d5b58942ab9837ce13d454785be38bb45a6ef5f621d93e7d4d8ee",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42271777119-1-b0001.tar.gz",
+        "member": "files/77/770efbda359d5b58942ab9837ce13d454785be38bb45a6ef5f621d93e7d4d8ee.png"
+      },
+      "format": "png",
+      "structure": "raster",
+      "preview": {
+        "path": "previews/770efbda359d5b58942ab9837ce13d454785be38bb45a6ef5f621d93e7d4d8ee.png",
+        "format": "png",
+        "width": 400,
+        "height": 400,
+        "sha256": "ed70e59190872ccf408cb0c9c9ea73b47582559b74f563e6580504d5c8c108d5",
+        "size_bytes": 68667,
+        "archive": {
+          "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42271777119-1-b0001.tar.gz",
+          "member": "previews/770efbda359d5b58942ab9837ce13d454785be38bb45a6ef5f621d93e7d4d8ee.png"
+        }
+      },
+      "review_question": "Does this exact preview show an independently reusable membrane-bound organelle or an entire information product? With the official item identity, can an object observation be supported without calling any generic vesicle a lysosome? Autolysosome must retain its distinct source identity."
+    },
+    {
+      "source": "scidraw",
+      "source_id": "80f4b415-a823-4226-9adc-31a5c5297f8c",
+      "asset_id": "scidraw-510d6c34c8ed6f0923a0",
+      "title": "Tail suspension",
+      "source_url": "https://scidraw.io/drawing/tail-suspension-5427948d",
+      "original_sha256": "bb78b1ff5e325ac78a483e1105e76bbb9e9e99a932b1540a268bcd2e8774f7f9",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scidraw-42235890704-1-b0000.tar.gz",
+        "member": "files/bb/bb78b1ff5e325ac78a483e1105e76bbb9e9e99a932b1540a268bcd2e8774f7f9.svg"
+      },
+      "format": "svg",
+      "structure": "pure_vector",
+      "preview": {
+        "path": "previews/bb78b1ff5e325ac78a483e1105e76bbb9e9e99a932b1540a268bcd2e8774f7f9.png",
+        "format": "png",
+        "width": 168,
+        "height": 512,
+        "sha256": "439c8f2db7a6b2a9715591c915da7f5123a966111640324974776a94ccb21065",
+        "size_bytes": 14737,
+        "archive": {
+          "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scidraw-42235890704-1-b0000.tar.gz",
+          "member": "previews/bb78b1ff5e325ac78a483e1105e76bbb9e9e99a932b1540a268bcd2e8774f7f9.png"
+        }
+      },
+      "review_question": "Actually inspect the mouse-related handling scene. Is a syringe/needle contacting the animal visible, or only restraint/tail suspension? Do not infer injection from a generic experimental scene."
+    },
+    {
+      "source": "scidraw",
+      "source_id": "4c98346a-52a8-4d18-a1f9-95af550540fa",
+      "asset_id": "scidraw-d92ce948c56aa4a649be",
+      "title": "restrain",
+      "source_url": "https://scidraw.io/drawing/restrain-a3879bc2",
+      "original_sha256": "2854eba6c1d743ccbdcb5bba86daafc7a5525a6619af374c156ab7c667b38eb5",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scidraw-42235890704-1-b0000.tar.gz",
+        "member": "files/28/2854eba6c1d743ccbdcb5bba86daafc7a5525a6619af374c156ab7c667b38eb5.svg"
+      },
+      "format": "svg",
+      "structure": "pure_vector",
+      "preview": {
+        "path": "previews/2854eba6c1d743ccbdcb5bba86daafc7a5525a6619af374c156ab7c667b38eb5.png",
+        "format": "png",
+        "width": 512,
+        "height": 196,
+        "sha256": "1c73e2caead94a41c1c4bea851474382f0dfeb881b4d8dc540b36acaad16fbe5",
+        "size_bytes": 14650,
+        "archive": {
+          "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scidraw-42235890704-1-b0000.tar.gz",
+          "member": "previews/2854eba6c1d743ccbdcb5bba86daafc7a5525a6619af374c156ab7c667b38eb5.png"
+        }
+      },
+      "review_question": "Actually inspect the mouse-related handling scene. Is a syringe/needle contacting the animal visible, or only restraint/tail suspension? Do not infer injection from a generic experimental scene."
+    }
+  ]
+}
