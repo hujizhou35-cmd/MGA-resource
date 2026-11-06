@@ -55,7 +55,28 @@
       "evidence_urls": [
         "https://github.com/duerrsimon/bioicons/blob/main/README.md",
         "https://github.com/duerrsimon/bioicons/blob/main/CONTRIBUTING.md"
-      ]
+      ],
+      "license_aliases": {
+        "bsd": {
+          "license": "BSD-3-Clause",
+          "license_url": "https://opensource.org/license/bsd-3-clause",
+          "notice_path": "static/icons/bsd/LICENSE",
+          "notice_git_blob_sha1": "2ea9b001005965332ee7889c93b4303f5e70aa9d",
+          "notice_text": "Copyright 2021 The name of the copyright holder is the foldername that contains the svg files\n\nRedistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:\n\n1. Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.\n\n2. Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.\n\n3. Neither the name of the copyright holder nor the names of its contributors may be used to endorse or promote products derived from this software without specific prior written permission.\n\nTHIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS \"AS IS\" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.",
+          "evidence_url": "https://github.com/duerrsimon/bioicons/blob/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/bsd/LICENSE"
+        }
+      },
+      "item_overrides": {
+        "cc-by-4.0/General_items/scientific-article.svg": {
+          "expected_git_blob_sha1": "6ab51916742a88abd3f0ccf8637839bc5acdf0a9",
+          "author": "Natsuko O. Shinozaki",
+          "attribution": "Natsuko O. Shinozaki / DBCLS TogoTV, An article (2018), CC BY 4.0; SVG optimized by Bioicons. https://doi.org/10.7875/togopic.2018.05",
+          "original_source_url": "https://doi.org/10.7875/togopic.2018.05",
+          "original_file_url": "https://dbarchive.biosciencedbc.jp/data/togo-pic/image/201805_article.svg",
+          "rights_evidence_url": "https://doi.org/10.7875/togopic.2018.05",
+          "rights_resolution_note": "Exact Bioicons blob matched to Togo ID 527 by the same viewBox, three page rectangles and all seven text labels/positions; author and CC BY 4.0 from official API."
+        }
+      }
     },
     {
       "source_id": "healthicons",

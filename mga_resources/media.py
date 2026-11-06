@@ -45,6 +45,11 @@ RASTER_DATA_URI = re.compile(r"^data:image/(png|jpeg|jpg|webp);base64,", re.I)
 STATIC_HTML_TAGS = {"div", "span", "p", "br", "b", "strong", "i", "em", "font", "sub", "sup"}
 COLOR_ATTRIBUTES = {"style", "fill", "stroke", "color", "stop-color", "flood-color", "lighting-color"}
 ADOBE_AI_NS = "http://ns.adobe.com/AdobeIllustrator/10.0/"
+ADOBE_NATIVE_REF_TAGS = {
+    "{" + namespace + "}" + tag
+    for namespace in (ADOBE_AI_NS, "&ns_ai;")
+    for tag in ("pgfRef", "aipgfRef")
+}
 ADOBE_NAMESPACE_ENTITIES = {
     b"ns_extend": b"http://ns.adobe.com/Extensibility/1.0/",
     b"ns_ai": ADOBE_AI_NS.encode(),
@@ -152,7 +157,10 @@ def _foreign_fallbacks(root) -> list[tuple]:
         if foreign.get("requiredExtensions") == ADOBE_AI_NS:
             children = list(foreign)
             valid_ref = not children or (len(children) == 1
-                and children[0].tag in {"{" + ADOBE_AI_NS + "}pgfRef", "{" + ADOBE_AI_NS + "}aipgfRef"}
+                # Some Inkscape resaves retain the literal xmlns:i="&amp;ns_ai;"
+                # alias. The requiredExtensions, 1px native-data reference and
+                # following complete SVG group still define the same fallback.
+                and children[0].tag in ADOBE_NATIVE_REF_TAGS
                 and not list(children[0])
                 and (children[0].get("href") or children[0].get(XLINK_HREF) or "").startswith("#"))
             if (not valid_ref or "".join(foreign.itertext()).strip()

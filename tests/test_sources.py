@@ -141,6 +141,42 @@ class SourceTests(unittest.TestCase):
         self.assertIsNone(records[0]["author"])
         self.assertFalse(records[0]["distribution_allowed"])
 
+    def test_authorless_cc0_record_does_not_invent_an_attribution_requirement(self):
+        client = self.git_fixture([{"path": "static/icons/cc-0/General_items/article.svg", "type": "blob", "sha": "c" * 40}])
+        client.mapping["https://raw.githubusercontent.com/example/art/" + "a" * 40 + "/static/icons/authors.json"] = {}
+        record = discover({"source_id": "bioicons", "repository": "example/art", "adapter": "bioicons"}, client)[0]
+        self.assertIsNone(record["author"])
+        self.assertIsNot(record.get("distribution_allowed"), False)
+
+    def test_bioicons_exact_blob_author_resolution_and_bsd_notice(self):
+        from pathlib import Path
+        registry = json.loads((Path(__file__).resolve().parents[1] / "data/sources.json").read_text(encoding="utf-8"))
+        config = next(s for s in registry["sources"] if s["source_id"] == "bioicons")
+        source = {**config, "repository": "example/art"}
+        article_id, override = next(iter(source["item_overrides"].items()))
+        alias = source["license_aliases"]["bsd"]
+        client = self.git_fixture([
+            {"path": "static/icons/" + article_id, "type": "blob", "sha": override["expected_git_blob_sha1"]},
+            {"path": "static/icons/bsd/Machine_Learning/Jupyter/Jupyter.svg", "type": "blob", "sha": "c" * 40},
+            {"path": alias["notice_path"], "type": "blob", "sha": alias["notice_git_blob_sha1"]},
+        ])
+        client.mapping["https://raw.githubusercontent.com/example/art/" + "a" * 40 + "/static/icons/authors.json"] = {}
+        records = discover(source, client)
+        logo, article = records
+        self.assertEqual(logo["license"], "BSD-3-Clause")
+        self.assertIn("Redistribution and use", logo["license_notice"])
+        self.assertEqual(article["author"], "Natsuko O. Shinozaki")
+        self.assertIsNot(article.get("distribution_allowed"), False)
+        self.assertIn("2018.05", article["original_source_url"])
+        tree = client.mapping["https://api.github.com/repos/example/art/git/trees/" + "b" * 40 + "?recursive=1"]["tree"]
+        tree[0]["sha"] = "d" * 40
+        tree[2]["sha"] = "e" * 40
+        changed_logo, changed_article = discover(source, client)
+        self.assertFalse(changed_logo["distribution_allowed"])
+        self.assertEqual(changed_logo["license"], "LicenseRef-bsd")
+        self.assertFalse(changed_article["distribution_allowed"])
+        self.assertIsNone(changed_article["author"])
+
     def test_rsc_utf8_byte_lengths_and_embedded_newline(self):
         text = "蛋白\nLundström"
         stream = f'0:{{"a":"$@1"}}\n2:T{len(text.encode()):x},{text}1:{{"description":"$2"}}\n'
@@ -261,6 +297,20 @@ class SourceTests(unittest.TestCase):
         next(iter(client.mapping.values()))["numfound"] = 1
         with self.assertRaisesRegex(SourceAccessError, "empty Togo page"):
             discover(source, client)
+
+    def test_togo_svg_field_pointing_to_png_preserves_actual_format_and_full_inventory(self):
+        source, client = self.togo_fixture([
+            {"TogoTV_Image_ID": 42, "name_en": "Arcte coerula", "license": "https://creativecommons.org/licenses/by/4.0/",
+             "svg": "202410_Arcte_coerula.png", "png": "202410_Arcte_coerula.png"},
+            {"TogoTV_Image_ID": 43, "name_en": "Another item", "license": "https://creativecommons.org/licenses/by/4.0/", "svg": "valid.svg"},
+        ])
+        records = discover(source, client)
+        self.assertEqual(len(records), 2)
+        self.assertEqual(len(records[0]["files"]), 1)
+        self.assertEqual(records[0]["files"][0]["format"], "png")
+        self.assertEqual(records[0]["files"][0]["declared_fields"], ["svg", "png"])
+        self.assertIn("actual-byte validation", records[0]["files"][0]["format_discovery_note"])
+        self.assertEqual(records[1]["files"][0]["format"], "svg")
 
     def test_togo_svg_variant_zip_expands_only_in_cloud(self):
         source, client = self.togo_fixture([{"TogoTV_Image_ID": 99, "name_en": "ChIP icons", "license": "https://creativecommons.org/licenses/by/4.0/", "svg": "icons_svg.zip", "png": "icons.png"}])

@@ -6,6 +6,7 @@ tracking and file delivery are independently implemented for cloud CI.
 """
 from __future__ import annotations
 
+import hashlib
 import os
 import re
 import urllib.parse
@@ -123,6 +124,7 @@ def discover_github(source: dict, client: HttpClient) -> list[dict]:
 
 def discover_bioicons(source: dict, client: HttpClient) -> list[dict]:
     revision, tree = _git_tree(source, client)
+    tree_blobs = {item["path"]: item.get("sha") for item in tree if item["type"] == "blob"}
     authors = client.get_json(_raw(source["repository"], revision, "static/icons/authors.json"))
     results = []
     for item in sorted(tree, key=lambda x: x["path"]):
@@ -142,17 +144,35 @@ def discover_bioicons(source: dict, client: HttpClient) -> list[dict]:
         record.update(author=display_author, license=license_id, license_url=license_url,
                       author_url=author_url or None, upstream_category=category,
                       tags=[humanize(category)], license_evidence=url)
-        if not author:
+        alias = source.get("license_aliases", {}).get(lic)
+        if alias:
+            notice = alias["notice_text"].encode("utf-8")
+            notice_hash = hashlib.sha1(b"blob " + str(len(notice)).encode() + b"\0" + notice).hexdigest()
+            if notice_hash == alias["notice_git_blob_sha1"] == tree_blobs.get(alias["notice_path"]):
+                record.update(license=alias["license"], license_url=alias["license_url"], license_original=lic,
+                              license_evidence=alias["evidence_url"], license_notice=alias["notice_text"],
+                              license_notice_git_blob_sha1=notice_hash)
+            else:
+                record.update(distribution_allowed=False, rights_status="pending",
+                              rights_note="The upstream license notice changed; the pinned license alias does not apply.")
+        override = source.get("item_overrides", {}).get(record["source_id"])
+        if override and override["expected_git_blob_sha1"] == item["sha"]:
+            for key in ("author", "author_url", "attribution", "original_source_url", "original_file_url", "rights_evidence_url", "rights_resolution_note"):
+                if key in override:
+                    record[key] = override[key]
+            display_author = record["author"]
+        if not display_author and record["license"] not in {"CC0-1.0", "Public Domain", "PD"}:
             record["distribution_allowed"] = False
             record["rights_status"] = "pending"
             record["rights_note"] = "Author attribution missing from source path; requires item-level resolution."
-        elif any(held.casefold() in author.casefold() for held in source.get("hold_authors", ["Servier"])):
+        elif display_author and any(held.casefold() in display_author.casefold() for held in source.get("hold_authors", ["Servier"])):
             # Preserve the declared license, but do not silently mirror through
             # an aggregator while the standalone-library question is unresolved.
             record["distribution_allowed"] = False
             record["rights_status"] = "pending"
             record["rights_note"] = "Servier standalone-library redistribution conditions require resolution."
-        record["attribution"] = f"{record['title']} — {display_author}; {author_url or url}; {license_id}; via Bioicons"
+        if not override or override.get("expected_git_blob_sha1") != item["sha"] or not override.get("attribution"):
+            record["attribution"] = f"{record['title']} — {display_author or 'author not supplied'}; {author_url or url}; {record['license']}; via Bioicons"
         record["files"] = [{"url": _raw(source["repository"], revision, path), "format": "svg",
                              "upstream_hash": "git-blob-sha1:" + item["sha"], "upstream_size": item.get("size")}]
         results.append(record)

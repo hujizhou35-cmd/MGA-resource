@@ -1,0 +1,2030 @@
+{
+  "source": "bioicons",
+  "run_id": "42239971379-1",
+  "inspected_at": "2026-11-06",
+  "original_counts": {
+    "processed": 2830,
+    "downloaded_records": 1254,
+    "failed_records": 197,
+    "held_records": 1379
+  },
+  "metadata_integrity": "All six records.jsonl/failures.json pairs checked against receipt/report SHA-256; no artwork archives downloaded.",
+  "candidate_reprocess_count": 159,
+  "remaining_explicit_issues": 38,
+  "caution": "Candidate reprocessing counts are not successful acquisitions or visual acceptance. Only named bounded samples were downloaded and rendered locally.",
+  "held_breakdown": {
+    "Servier_CC_BY_3_0": 1374,
+    "ModifiedFrom_Servier_CC_BY_3_0": 1,
+    "BSD_version_now_resolved": 3,
+    "CC_BY_4_author_now_resolved": 1
+  },
+  "groups": [
+    {
+      "classification": "illustrator_namespace_candidate",
+      "count": 146,
+      "recommendation": "Reprocess in cloud with dfdcee7. IgA and gut-like_organ samples rendered; remaining 144 must still be tested."
+    },
+    {
+      "classification": "illustrator_native_fallback_candidate",
+      "count": 13,
+      "recommendation": "Reprocess with literal Adobe namespace-alias support. IgD sample identified and validated; all 13 require cloud results."
+    },
+    {
+      "classification": "external_css_dependency",
+      "count": 30,
+      "recommendation": "Keep isolated. area/scatter samples contain remote Excalidraw Virgil/Cascadia fonts and live chart labels. Check remaining items in cloud; do not silently substitute fonts and claim full fidelity."
+    },
+    {
+      "classification": "active_mesh_gradient_polyfill",
+      "count": 2,
+      "recommendation": "Keep isolated. Both Xi-Chen examples contain executable mesh-gradient polyfill scripts; do not remove scripts silently."
+    },
+    {
+      "classification": "missing_external_raster",
+      "count": 2,
+      "recommendation": "Keep isolated. Coccus references DA34F080.jpg; spiral references 7444463B.jpg. Neither image is embedded."
+    },
+    {
+      "classification": "empty_upstream_blob",
+      "count": 3,
+      "recommendation": "Keep isolated. All three SVG entries are confirmed size=0 in the pinned official Git tree."
+    },
+    {
+      "classification": "nested_embedded_svg_unsupported",
+      "count": 1,
+      "recommendation": "Keep isolated pending recursive resource validation and faithful preview support. This is unsupported structure, not a malware finding."
+    }
+  ],
+  "items": [
+    {
+      "source": "bioicons",
+      "source_id": "cc-0/Epigenetics/Xi-Chen/single_nucleosome.svg",
+      "source_index": 178,
+      "url": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-0/Epigenetics/Xi-Chen/single_nucleosome.svg",
+      "error_type": "MediaValidationError",
+      "error": "SVG contains unsupported active element: script",
+      "classification": "active_mesh_gradient_polyfill",
+      "recommended_disposition": "Keep isolated. Both Xi-Chen examples contain executable mesh-gradient polyfill scripts; do not remove scripts silently."
+    },
+    {
+      "source": "bioicons",
+      "source_id": "cc-0/Epigenetics/Xi-Chen/transcription_machinery.svg",
+      "source_index": 179,
+      "url": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-0/Epigenetics/Xi-Chen/transcription_machinery.svg",
+      "error_type": "MediaValidationError",
+      "error": "SVG contains unsupported active element: script",
+      "classification": "active_mesh_gradient_polyfill",
+      "recommended_disposition": "Keep isolated. Both Xi-Chen examples contain executable mesh-gradient polyfill scripts; do not remove scripts silently."
+    },
+    {
+      "source": "bioicons",
+      "source_id": "cc-0/Human_physiology/fang-fangyang/gut_bacteria.svg",
+      "source_index": 235,
+      "url": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-0/Human_physiology/fang-fangyang/gut_bacteria.svg",
+      "error_type": "MediaValidationError",
+      "error": "Nested SVG image requires recursive validation; quarantined",
+      "classification": "nested_embedded_svg_unsupported",
+      "recommended_disposition": "Keep isolated pending recursive resource validation and faithful preview support. This is unsupported structure, not a malware finding."
+    },
+    {
+      "source": "bioicons",
+      "source_id": "cc-by-4.0/Blood_Immunology/DBCLS/IgA.svg",
+      "source_index": 2170,
+      "url": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-4.0/Blood_Immunology/DBCLS/IgA.svg",
+      "error_type": "MediaValidationError",
+      "error": "SVG entity declaration is not allowed",
+      "classification": "illustrator_namespace_candidate",
+      "recommended_disposition": "Reprocess in cloud with dfdcee7. IgA and gut-like_organ samples rendered; remaining 144 must still be tested."
+    },
+    {
+      "source": "bioicons",
+      "source_id": "cc-by-4.0/Blood_Immunology/DBCLS/IgD.svg",
+      "source_index": 2171,
+      "url": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-4.0/Blood_Immunology/DBCLS/IgD.svg",
+      "error_type": "MediaValidationError",
+      "error": "SVG foreignObject has no supported explicit fallback; quarantined to avoid missing labels",
+      "classification": "illustrator_native_fallback_candidate",
+      "recommended_disposition": "Reprocess with literal Adobe namespace-alias support. IgD sample identified and validated; all 13 require cloud results."
+    },
+    {
+      "source": "bioicons",
+      "source_id": "cc-by-4.0/Blood_Immunology/DBCLS/IgE.svg",
+      "source_index": 2172,
+      "url": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-4.0/Blood_Immunology/DBCLS/IgE.svg",
+      "error_type": "MediaValidationError",
+      "error": "SVG foreignObject has no supported explicit fallback; quarantined to avoid missing labels",
+      "classification": "illustrator_native_fallback_candidate",
+      "recommended_disposition": "Reprocess with literal Adobe namespace-alias support. IgD sample identified and validated; all 13 require cloud results."
+    },
+    {
+      "source": "bioicons",
+      "source_id": "cc-by-4.0/Blood_Immunology/DBCLS/IgG.svg",
+      "source_index": 2173,
+      "url": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-4.0/Blood_Immunology/DBCLS/IgG.svg",
+      "error_type": "MediaValidationError",
+      "error": "SVG entity declaration is not allowed",
+      "classification": "illustrator_namespace_candidate",
+      "recommended_disposition": "Reprocess in cloud with dfdcee7. IgA and gut-like_organ samples rendered; remaining 144 must still be tested."
+    },
+    {
+      "source": "bioicons",
+      "source_id": "cc-by-4.0/Blood_Immunology/DBCLS/IgM.svg",
+      "source_index": 2174,
+      "url": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-4.0/Blood_Immunology/DBCLS/IgM.svg",
+      "error_type": "MediaValidationError",
+      "error": "SVG foreignObject has no supported explicit fallback; quarantined to avoid missing labels",
+      "classification": "illustrator_native_fallback_candidate",
+      "recommended_disposition": "Reprocess with literal Adobe namespace-alias support. IgD sample identified and validated; all 13 require cloud results."
+    },
+    {
+      "source": "bioicons",
+      "source_id": "cc-by-4.0/Blood_Immunology/DBCLS/immunoglobulin-2.svg",
+      "source_index": 2175,
+      "url": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-4.0/Blood_Immunology/DBCLS/immunoglobulin-2.svg",
+      "error_type": "MediaValidationError",
+      "error": "SVG foreignObject has no supported explicit fallback; quarantined to avoid missing labels",
+      "classification": "illustrator_native_fallback_candidate",
+      "recommended_disposition": "Reprocess with literal Adobe namespace-alias support. IgD sample identified and validated; all 13 require cloud results."
+    },
+    {
+      "source": "bioicons",
+      "source_id": "cc-by-4.0/Cell_culture/DBCLS/4_cell_stage.svg",
+      "source_index": 2210,
+      "url": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-4.0/Cell_culture/DBCLS/4_cell_stage.svg",
+      "error_type": "MediaValidationError",
+      "error": "SVG foreignObject has no supported explicit fallback; quarantined to avoid missing labels",
+      "classification": "illustrator_native_fallback_candidate",
+      "recommended_disposition": "Reprocess with literal Adobe namespace-alias support. IgD sample identified and validated; all 13 require cloud results."
+    },
+    {
+      "source": "bioicons",
+      "source_id": "cc-by-4.0/Cell_culture/DBCLS/8_cell_stage.svg",
+      "source_index": 2212,
+      "url": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-4.0/Cell_culture/DBCLS/8_cell_stage.svg",
+      "error_type": "MediaValidationError",
+      "error": "SVG foreignObject has no supported explicit fallback; quarantined to avoid missing labels",
+      "classification": "illustrator_native_fallback_candidate",
+      "recommended_disposition": "Reprocess with literal Adobe namespace-alias support. IgD sample identified and validated; all 13 require cloud results."
+    },
+    {
+      "source": "bioicons",
+      "source_id": "cc-by-4.0/Cell_culture/DBCLS/blastcyst.svg",
+      "source_index": 2217,
+      "url": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-4.0/Cell_culture/DBCLS/blastcyst.svg",
+      "error_type": "MediaValidationError",
+      "error": "SVG foreignObject has no supported explicit fallback; quarantined to avoid missing labels",
+      "classification": "illustrator_native_fallback_candidate",
+      "recommended_disposition": "Reprocess with literal Adobe namespace-alias support. IgD sample identified and validated; all 13 require cloud results."
+    },
+    {
+      "source": "bioicons",
+      "source_id": "cc-by-4.0/Cell_culture/DBCLS/gastrula.svg",
+      "source_index": 2227,
+      "url": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-4.0/Cell_culture/DBCLS/gastrula.svg",
+      "error_type": "MediaValidationError",
+      "error": "SVG foreignObject has no supported explicit fallback; quarantined to avoid missing labels",
+      "classification": "illustrator_native_fallback_candidate",
+      "recommended_disposition": "Reprocess with literal Adobe namespace-alias support. IgD sample identified and validated; all 13 require cloud results."
+    },
+    {
+      "source": "bioicons",
+      "source_id": "cc-by-4.0/Cell_culture/DBCLS/sperm.svg",
+      "source_index": 2230,
+      "url": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-4.0/Cell_culture/DBCLS/sperm.svg",
+      "error_type": "MediaValidationError",
+      "error": "SVG foreignObject has no supported explicit fallback; quarantined to avoid missing labels",
+      "classification": "illustrator_native_fallback_candidate",
+      "recommended_disposition": "Reprocess with literal Adobe namespace-alias support. IgD sample identified and validated; all 13 require cloud results."
+    },
+    {
+      "source": "bioicons",
+      "source_id": "cc-by-4.0/Cell_culture/DBCLS/stem_cell.svg",
+      "source_index": 2231,
+      "url": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-4.0/Cell_culture/DBCLS/stem_cell.svg",
+      "error_type": "MediaValidationError",
+      "error": "SVG foreignObject has no supported explicit fallback; quarantined to avoid missing labels",
+      "classification": "illustrator_native_fallback_candidate",
+      "recommended_disposition": "Reprocess with literal Adobe namespace-alias support. IgD sample identified and validated; all 13 require cloud results."
+    },
+    {
+      "source": "bioicons",
+      "source_id": "cc-by-4.0/Cell_types/DBCLS/Lymphocyte.svg",
+      "source_index": 2253,
+      "url": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-4.0/Cell_types/DBCLS/Lymphocyte.svg",
+      "error_type": "MediaValidationError",
+      "error": "SVG entity declaration is not allowed",
+      "classification": "illustrator_namespace_candidate",
+      "recommended_disposition": "Reprocess in cloud with dfdcee7. IgA and gut-like_organ samples rendered; remaining 144 must still be tested."
+    },
+    {
+      "source": "bioicons",
+      "source_id": "cc-by-4.0/Cell_types/DBCLS/Myelocyte.svg",
+      "source_index": 2254,
+      "url": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-4.0/Cell_types/DBCLS/Myelocyte.svg",
+      "error_type": "MediaValidationError",
+      "error": "SVG entity declaration is not allowed",
+      "classification": "illustrator_namespace_candidate",
+      "recommended_disposition": "Reprocess in cloud with dfdcee7. IgA and gut-like_organ samples rendered; remaining 144 must still be tested."
+    },
+    {
+      "source": "bioicons",
+      "source_id": "cc-by-4.0/Cell_types/DBCLS/Promyelocyte.svg",
+      "source_index": 2255,
+      "url": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-4.0/Cell_types/DBCLS/Promyelocyte.svg",
+      "error_type": "MediaValidationError",
+      "error": "SVG entity declaration is not allowed",
+      "classification": "illustrator_namespace_candidate",
+      "recommended_disposition": "Reprocess in cloud with dfdcee7. IgA and gut-like_organ samples rendered; remaining 144 must still be tested."
+    },
+    {
+      "source": "bioicons",
+      "source_id": "cc-by-4.0/Genetics/DBCLS/Chromosome.svg",
+      "source_index": 2297,
+      "url": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-4.0/Genetics/DBCLS/Chromosome.svg",
+      "error_type": "MediaValidationError",
+      "error": "SVG entity declaration is not allowed",
+      "classification": "illustrator_namespace_candidate",
+      "recommended_disposition": "Reprocess in cloud with dfdcee7. IgA and gut-like_organ samples rendered; remaining 144 must still be tested."
+    },
+    {
+      "source": "bioicons",
+      "source_id": "cc-by-4.0/Genetics/DBCLS/Comparative_Genome_Hybridization_Tumor.svg",
+      "source_index": 2298,
+      "url": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-4.0/Genetics/DBCLS/Comparative_Genome_Hybridization_Tumor.svg",
+      "error_type": "MediaValidationError",
+      "error": "SVG entity declaration is not allowed",
+      "classification": "illustrator_namespace_candidate",
+      "recommended_disposition": "Reprocess in cloud with dfdcee7. IgA and gut-like_organ samples rendered; remaining 144 must still be tested."
+    },
+    {
+      "source": "bioicons",
+      "source_id": "cc-by-4.0/Genetics/DBCLS/Comparative_Genome_Hybridization_congenital-anomaly.svg",
+      "source_index": 2299,
+      "url": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-4.0/Genetics/DBCLS/Comparative_Genome_Hybridization_congenital-anomaly.svg",
+      "error_type": "MediaValidationError",
+      "error": "SVG entity declaration is not allowed",
+      "classification": "illustrator_namespace_candidate",
+      "recommended_disposition": "Reprocess in cloud with dfdcee7. IgA and gut-like_organ samples rendered; remaining 144 must still be tested."
+    },
+    {
+      "source": "bioicons",
+      "source_id": "cc-by-4.0/Genetics/DBCLS/Duplication.svg",
+      "source_index": 2300,
+      "url": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-4.0/Genetics/DBCLS/Duplication.svg",
+      "error_type": "MediaValidationError",
+      "error": "SVG entity declaration is not allowed",
+      "classification": "illustrator_namespace_candidate",
+      "recommended_disposition": "Reprocess in cloud with dfdcee7. IgA and gut-like_organ samples rendered; remaining 144 must still be tested."
+    },
+    {
+      "source": "bioicons",
+      "source_id": "cc-by-4.0/Genetics/DBCLS/Insertion.svg",
+      "source_index": 2301,
+      "url": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-4.0/Genetics/DBCLS/Insertion.svg",
+      "error_type": "MediaValidationError",
+      "error": "SVG entity declaration is not allowed",
+      "classification": "illustrator_namespace_candidate",
+      "recommended_disposition": "Reprocess in cloud with dfdcee7. IgA and gut-like_organ samples rendered; remaining 144 must still be tested."
+    },
+    {
+      "source": "bioicons",
+      "source_id": "cc-by-4.0/Genetics/DBCLS/Inversion.svg",
+      "source_index": 2302,
+      "url": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-4.0/Genetics/DBCLS/Inversion.svg",
+      "error_type": "MediaValidationError",
+      "error": "SVG entity declaration is not allowed",
+      "classification": "illustrator_namespace_candidate",
+      "recommended_disposition": "Reprocess in cloud with dfdcee7. IgA and gut-like_organ samples rendered; remaining 144 must still be tested."
+    },
+    {
+      "source": "bioicons",
+      "source_id": "cc-by-4.0/Genetics/DBCLS/Isochromosome.svg",
+      "source_index": 2303,
+      "url": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-4.0/Genetics/DBCLS/Isochromosome.svg",
+      "error_type": "MediaValidationError",
+      "error": "SVG entity declaration is not allowed",
+      "classification": "illustrator_namespace_candidate",
+      "recommended_disposition": "Reprocess in cloud with dfdcee7. IgA and gut-like_organ samples rendered; remaining 144 must still be tested."
+    },
+    {
+      "source": "bioicons",
+      "source_id": "cc-by-4.0/Genetics/DBCLS/Karyotype.svg",
+      "source_index": 2304,
+      "url": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-4.0/Genetics/DBCLS/Karyotype.svg",
+      "error_type": "MediaValidationError",
+      "error": "SVG entity declaration is not allowed",
+      "classification": "illustrator_namespace_candidate",
+      "recommended_disposition": "Reprocess in cloud with dfdcee7. IgA and gut-like_organ samples rendered; remaining 144 must still be tested."
+    },
+    {
+      "source": "bioicons",
+      "source_id": "cc-by-4.0/Genetics/DBCLS/deletion.svg",
+      "source_index": 2305,
+      "url": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-4.0/Genetics/DBCLS/deletion.svg",
+      "error_type": "MediaValidationError",
+      "error": "SVG entity declaration is not allowed",
+      "classification": "illustrator_namespace_candidate",
+      "recommended_disposition": "Reprocess in cloud with dfdcee7. IgA and gut-like_organ samples rendered; remaining 144 must still be tested."
+    },
+    {
+      "source": "bioicons",
+      "source_id": "cc-by-4.0/Genetics/DBCLS/translocation.svg",
+      "source_index": 2306,
+      "url": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-4.0/Genetics/DBCLS/translocation.svg",
+      "error_type": "MediaValidationError",
+      "error": "SVG entity declaration is not allowed",
+      "classification": "illustrator_namespace_candidate",
+      "recommended_disposition": "Reprocess in cloud with dfdcee7. IgA and gut-like_organ samples rendered; remaining 144 must still be tested."
+    },
+    {
+      "source": "bioicons",
+      "source_id": "cc-by-4.0/Genetics/hukun/gut-like_organ.svg",
+      "source_index": 2316,
+      "url": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-4.0/Genetics/hukun/gut-like_organ.svg",
+      "error_type": "MediaValidationError",
+      "error": "SVG entity declaration is not allowed",
+      "classification": "illustrator_namespace_candidate",
+      "recommended_disposition": "Reprocess in cloud with dfdcee7. IgA and gut-like_organ samples rendered; remaining 144 must still be tested."
+    },
+    {
+      "source": "bioicons",
+      "source_id": "cc-by-4.0/Human_physiology/DBCLS/Adenomatous_Polyposis_07_Metastasis.svg",
+      "source_index": 2322,
+      "url": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-4.0/Human_physiology/DBCLS/Adenomatous_Polyposis_07_Metastasis.svg",
+      "error_type": "MediaValidationError",
+      "error": "SVG entity declaration is not allowed",
+      "classification": "illustrator_namespace_candidate",
+      "recommended_disposition": "Reprocess in cloud with dfdcee7. IgA and gut-like_organ samples rendered; remaining 144 must still be tested."
+    },
+    {
+      "source": "bioicons",
+      "source_id": "cc-by-4.0/Human_physiology/DBCLS/Anterior_view_of_bones_of_right_hand.svg",
+      "source_index": 2323,
+      "url": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-4.0/Human_physiology/DBCLS/Anterior_view_of_bones_of_right_hand.svg",
+      "error_type": "MediaValidationError",
+      "error": "SVG entity declaration is not allowed",
+      "classification": "illustrator_namespace_candidate",
+      "recommended_disposition": "Reprocess in cloud with dfdcee7. IgA and gut-like_organ samples rendered; remaining 144 must still be tested."
+    },
+    {
+      "source": "bioicons",
+      "source_id": "cc-by-4.0/Human_physiology/DBCLS/Anterior_view_of_female_pelvis.svg",
+      "source_index": 2324,
+      "url": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-4.0/Human_physiology/DBCLS/Anterior_view_of_female_pelvis.svg",
+      "error_type": "MediaValidationError",
+      "error": "SVG entity declaration is not allowed",
+      "classification": "illustrator_namespace_candidate",
+      "recommended_disposition": "Reprocess in cloud with dfdcee7. IgA and gut-like_organ samples rendered; remaining 144 must still be tested."
+    },
+    {
+      "source": "bioicons",
+      "source_id": "cc-by-4.0/Human_physiology/DBCLS/Anterior_view_of_knee_joint.svg",
+      "source_index": 2325,
+      "url": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-4.0/Human_physiology/DBCLS/Anterior_view_of_knee_joint.svg",
+      "error_type": "MediaValidationError",
+      "error": "SVG entity declaration is not allowed",
+      "classification": "illustrator_namespace_candidate",
+      "recommended_disposition": "Reprocess in cloud with dfdcee7. IgA and gut-like_organ samples rendered; remaining 144 must still be tested."
+    },
+    {
+      "source": "bioicons",
+      "source_id": "cc-by-4.0/Human_physiology/DBCLS/Anterior_view_of_ligaments_of_pelvis.svg",
+      "source_index": 2326,
+      "url": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-4.0/Human_physiology/DBCLS/Anterior_view_of_ligaments_of_pelvis.svg",
+      "error_type": "MediaValidationError",
+      "error": "SVG entity declaration is not allowed",
+      "classification": "illustrator_namespace_candidate",
+      "recommended_disposition": "Reprocess in cloud with dfdcee7. IgA and gut-like_organ samples rendered; remaining 144 must still be tested."
+    },
+    {
+      "source": "bioicons",
+      "source_id": "cc-by-4.0/Human_physiology/DBCLS/Anterior_view_of_ligaments_of_right_foot.svg",
+      "source_index": 2327,
+      "url": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-4.0/Human_physiology/DBCLS/Anterior_view_of_ligaments_of_right_foot.svg",
+      "error_type": "MediaValidationError",
+      "error": "SVG entity declaration is not allowed",
+      "classification": "illustrator_namespace_candidate",
+      "recommended_disposition": "Reprocess in cloud with dfdcee7. IgA and gut-like_organ samples rendered; remaining 144 must still be tested."
+    },
+    {
+      "source": "bioicons",
+      "source_id": "cc-by-4.0/Human_physiology/DBCLS/Anterior_view_of_ligaments_of_right_hand.svg",
+      "source_index": 2328,
+      "url": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-4.0/Human_physiology/DBCLS/Anterior_view_of_ligaments_of_right_hand.svg",
+      "error_type": "MediaValidationError",
+      "error": "SVG entity declaration is not allowed",
+      "classification": "illustrator_namespace_candidate",
+      "recommended_disposition": "Reprocess in cloud with dfdcee7. IgA and gut-like_organ samples rendered; remaining 144 must still be tested."
+    },
+    {
+      "source": "bioicons",
+      "source_id": "cc-by-4.0/Human_physiology/DBCLS/Anterior_view_of_male_pelvis.svg",
+      "source_index": 2329,
+      "url": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-4.0/Human_physiology/DBCLS/Anterior_view_of_male_pelvis.svg",
+      "error_type": "MediaValidationError",
+      "error": "SVG entity declaration is not allowed",
+      "classification": "illustrator_namespace_candidate",
+      "recommended_disposition": "Reprocess in cloud with dfdcee7. IgA and gut-like_organ samples rendered; remaining 144 must still be tested."
+    },
+    {
+      "source": "bioicons",
+      "source_id": "cc-by-4.0/Human_physiology/DBCLS/Anterior_view_of_right_radius_and_ulna_in_pronation.svg",
+      "source_index": 2330,
+      "url": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-4.0/Human_physiology/DBCLS/Anterior_view_of_right_radius_and_ulna_in_pronation.svg",
+      "error_type": "MediaValidationError",
+      "error": "SVG entity declaration is not allowed",
+      "classification": "illustrator_namespace_candidate",
+      "recommended_disposition": "Reprocess in cloud with dfdcee7. IgA and gut-like_organ samples rendered; remaining 144 must still be tested."
+    },
+    {
+      "source": "bioicons",
+      "source_id": "cc-by-4.0/Human_physiology/DBCLS/Anterior_view_of_right_radius_and_ulna_in_supination.svg",
+      "source_index": 2331,
+      "url": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-4.0/Human_physiology/DBCLS/Anterior_view_of_right_radius_and_ulna_in_supination.svg",
+      "error_type": "MediaValidationError",
+      "error": "SVG entity declaration is not allowed",
+      "classification": "illustrator_namespace_candidate",
+      "recommended_disposition": "Reprocess in cloud with dfdcee7. IgA and gut-like_organ samples rendered; remaining 144 must still be tested."
+    },
+    {
+      "source": "bioicons",
+      "source_id": "cc-by-4.0/Human_physiology/DBCLS/Anterior_view_of_sternoclavicular_joint.svg",
+      "source_index": 2332,
+      "url": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-4.0/Human_physiology/DBCLS/Anterior_view_of_sternoclavicular_joint.svg",
+      "error_type": "MediaValidationError",
+      "error": "SVG entity declaration is not allowed",
+      "classification": "illustrator_namespace_candidate",
+      "recommended_disposition": "Reprocess in cloud with dfdcee7. IgA and gut-like_organ samples rendered; remaining 144 must still be tested."
+    },
+    {
+      "source": "bioicons",
+      "source_id": "cc-by-4.0/Human_physiology/DBCLS/Anterior_view_of_the_elbow_joint.svg",
+      "source_index": 2333,
+      "url": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-4.0/Human_physiology/DBCLS/Anterior_view_of_the_elbow_joint.svg",
+      "error_type": "MediaValidationError",
+      "error": "SVG entity declaration is not allowed",
+      "classification": "illustrator_namespace_candidate",
+      "recommended_disposition": "Reprocess in cloud with dfdcee7. IgA and gut-like_organ samples rendered; remaining 144 must still be tested."
+    },
+    {
+      "source": "bioicons",
+      "source_id": "cc-by-4.0/Human_physiology/DBCLS/Anterior_view_of_the_shoulder_joint.svg",
+      "source_index": 2334,
+      "url": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-4.0/Human_physiology/DBCLS/Anterior_view_of_the_shoulder_joint.svg",
+      "error_type": "MediaValidationError",
+      "error": "SVG entity declaration is not allowed",
+      "classification": "illustrator_namespace_candidate",
+      "recommended_disposition": "Reprocess in cloud with dfdcee7. IgA and gut-like_organ samples rendered; remaining 144 must still be tested."
+    },
+    {
+      "source": "bioicons",
+      "source_id": "cc-by-4.0/Human_physiology/DBCLS/Arteries_and_veins.svg",
+      "source_index": 2335,
+      "url": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-4.0/Human_physiology/DBCLS/Arteries_and_veins.svg",
+      "error_type": "MediaValidationError",
+      "error": "SVG entity declaration is not allowed",
+      "classification": "illustrator_namespace_candidate",
+      "recommended_disposition": "Reprocess in cloud with dfdcee7. IgA and gut-like_organ samples rendered; remaining 144 must still be tested."
+    },
+    {
+      "source": "bioicons",
+      "source_id": "cc-by-4.0/Human_physiology/DBCLS/Cerebellum_dorsal_view.svg",
+      "source_index": 2336,
+      "url": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-4.0/Human_physiology/DBCLS/Cerebellum_dorsal_view.svg",
+      "error_type": "MediaValidationError",
+      "error": "SVG entity declaration is not allowed",
+      "classification": "illustrator_namespace_candidate",
+      "recommended_disposition": "Reprocess in cloud with dfdcee7. IgA and gut-like_organ samples rendered; remaining 144 must still be tested."
+    },
+    {
+      "source": "bioicons",
+      "source_id": "cc-by-4.0/Human_physiology/DBCLS/Continuous_capillary.svg",
+      "source_index": 2337,
+      "url": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-4.0/Human_physiology/DBCLS/Continuous_capillary.svg",
+      "error_type": "MediaValidationError",
+      "error": "SVG entity declaration is not allowed",
+      "classification": "illustrator_namespace_candidate",
+      "recommended_disposition": "Reprocess in cloud with dfdcee7. IgA and gut-like_organ samples rendered; remaining 144 must still be tested."
+    },
+    {
+      "source": "bioicons",
+      "source_id": "cc-by-4.0/Human_physiology/DBCLS/Coronal_section_of_the_shoulder_joint.svg",
+      "source_index": 2338,
+      "url": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-4.0/Human_physiology/DBCLS/Coronal_section_of_the_shoulder_joint.svg",
+      "error_type": "MediaValidationError",
+      "error": "SVG entity declaration is not allowed",
+      "classification": "illustrator_namespace_candidate",
+      "recommended_disposition": "Reprocess in cloud with dfdcee7. IgA and gut-like_organ samples rendered; remaining 144 must still be tested."
+    },
+    {
+      "source": "bioicons",
+      "source_id": "cc-by-4.0/Human_physiology/DBCLS/Corticobulbar_tract.svg",
+      "source_index": 2339,
+      "url": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-4.0/Human_physiology/DBCLS/Corticobulbar_tract.svg",
+      "error_type": "MediaValidationError",
+      "error": "SVG entity declaration is not allowed",
+      "classification": "illustrator_namespace_candidate",
+      "recommended_disposition": "Reprocess in cloud with dfdcee7. IgA and gut-like_organ samples rendered; remaining 144 must still be tested."
+    },
+    {
+      "source": "bioicons",
+      "source_id": "cc-by-4.0/Human_physiology/DBCLS/Corticospinal_tract.svg",
+      "source_index": 2340,
+      "url": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-4.0/Human_physiology/DBCLS/Corticospinal_tract.svg",
+      "error_type": "MediaValidationError",
+      "error": "SVG entity declaration is not allowed",
+      "classification": "illustrator_namespace_candidate",
+      "recommended_disposition": "Reprocess in cloud with dfdcee7. IgA and gut-like_organ samples rendered; remaining 144 must still be tested."
+    },
+    {
+      "source": "bioicons",
+      "source_id": "cc-by-4.0/Human_physiology/DBCLS/Division_of_the_cerebellum.svg",
+      "source_index": 2341,
+      "url": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-4.0/Human_physiology/DBCLS/Division_of_the_cerebellum.svg",
+      "error_type": "MediaValidationError",
+      "error": "SVG entity declaration is not allowed",
+      "classification": "illustrator_namespace_candidate",
+      "recommended_disposition": "Reprocess in cloud with dfdcee7. IgA and gut-like_organ samples rendered; remaining 144 must still be tested."
+    },
+    {
+      "source": "bioicons",
+      "source_id": "cc-by-4.0/Human_physiology/DBCLS/Dorsal_view_of_bones_of_right_foot.svg",
+      "source_index": 2342,
+      "url": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-4.0/Human_physiology/DBCLS/Dorsal_view_of_bones_of_right_foot.svg",
+      "error_type": "MediaValidationError",
+      "error": "SVG entity declaration is not allowed",
+      "classification": "illustrator_namespace_candidate",
+      "recommended_disposition": "Reprocess in cloud with dfdcee7. IgA and gut-like_organ samples rendered; remaining 144 must still be tested."
+    },
+    {
+      "source": "bioicons",
+      "source_id": "cc-by-4.0/Human_physiology/DBCLS/Ear_structure.svg",
+      "source_index": 2343,
+      "url": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-4.0/Human_physiology/DBCLS/Ear_structure.svg",
+      "error_type": "MediaValidationError",
+      "error": "SVG entity declaration is not allowed",
+      "classification": "illustrator_namespace_candidate",
+      "recommended_disposition": "Reprocess in cloud with dfdcee7. IgA and gut-like_organ samples rendered; remaining 144 must still be tested."
+    },
+    {
+      "source": "bioicons",
+      "source_id": "cc-by-4.0/Human_physiology/DBCLS/Fenestrated_capillary.svg",
+      "source_index": 2344,
+      "url": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-4.0/Human_physiology/DBCLS/Fenestrated_capillary.svg",
+      "error_type": "MediaValidationError",
+      "error": "SVG entity declaration is not allowed",
+      "classification": "illustrator_namespace_candidate",
+      "recommended_disposition": "Reprocess in cloud with dfdcee7. IgA and gut-like_organ samples rendered; remaining 144 must still be tested."
+    },
+    {
+      "source": "bioicons",
+      "source_id": "cc-by-4.0/Human_physiology/DBCLS/Frontal_plane_of_the_brain_amygdala.svg",
+      "source_index": 2345,
+      "url": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-4.0/Human_physiology/DBCLS/Frontal_plane_of_the_brain_amygdala.svg",
+      "error_type": "MediaValidationError",
+      "error": "SVG entity declaration is not allowed",
+      "classification": "illustrator_namespace_candidate",
+      "recommended_disposition": "Reprocess in cloud with dfdcee7. IgA and gut-like_organ samples rendered; remaining 144 must still be tested."
+    },
+    {
+      "source": "bioicons",
+      "source_id": "cc-by-4.0/Human_physiology/DBCLS/Frontal_plane_of_the_brain_hippocampus.svg",
+      "source_index": 2346,
+      "url": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-4.0/Human_physiology/DBCLS/Frontal_plane_of_the_brain_hippocampus.svg",
+      "error_type": "MediaValidationError",
+      "error": "SVG entity declaration is not allowed",
+      "classification": "illustrator_namespace_candidate",
+      "recommended_disposition": "Reprocess in cloud with dfdcee7. IgA and gut-like_organ samples rendered; remaining 144 must still be tested."
+    },
+    {
+      "source": "bioicons",
+      "source_id": "cc-by-4.0/Human_physiology/DBCLS/Horizontal_plane_of_the_brain.svg",
+      "source_index": 2347,
+      "url": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-4.0/Human_physiology/DBCLS/Horizontal_plane_of_the_brain.svg",
+      "error_type": "MediaValidationError",
+      "error": "SVG entity declaration is not allowed",
+      "classification": "illustrator_namespace_candidate",
+      "recommended_disposition": "Reprocess in cloud with dfdcee7. IgA and gut-like_organ samples rendered; remaining 144 must still be tested."
+    },
+    {
+      "source": "bioicons",
+      "source_id": "cc-by-4.0/Human_physiology/DBCLS/Horizontal_section_of_tracheal.svg",
+      "source_index": 2348,
+      "url": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-4.0/Human_physiology/DBCLS/Horizontal_section_of_tracheal.svg",
+      "error_type": "MediaValidationError",
+      "error": "SVG entity declaration is not allowed",
+      "classification": "illustrator_namespace_candidate",
+      "recommended_disposition": "Reprocess in cloud with dfdcee7. IgA and gut-like_organ samples rendered; remaining 144 must still be tested."
+    },
+    {
+      "source": "bioicons",
+      "source_id": "cc-by-4.0/Human_physiology/DBCLS/Interneuron.svg",
+      "source_index": 2351,
+      "url": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-4.0/Human_physiology/DBCLS/Interneuron.svg",
+      "error_type": "MediaValidationError",
+      "error": "SVG entity declaration is not allowed",
+      "classification": "illustrator_namespace_candidate",
+      "recommended_disposition": "Reprocess in cloud with dfdcee7. IgA and gut-like_organ samples rendered; remaining 144 must still be tested."
+    },
+    {
+      "source": "bioicons",
+      "source_id": "cc-by-4.0/Human_physiology/DBCLS/Lateral_view_of_bones_of_right_foot.svg",
+      "source_index": 2352,
+      "url": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-4.0/Human_physiology/DBCLS/Lateral_view_of_bones_of_right_foot.svg",
+      "error_type": "MediaValidationError",
+      "error": "SVG entity declaration is not allowed",
+      "classification": "illustrator_namespace_candidate",
+      "recommended_disposition": "Reprocess in cloud with dfdcee7. IgA and gut-like_organ samples rendered; remaining 144 must still be tested."
+    },
+    {
+      "source": "bioicons",
+      "source_id": "cc-by-4.0/Human_physiology/DBCLS/Lateral_view_of_bones_of_right_hand.svg",
+      "source_index": 2353,
+      "url": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-4.0/Human_physiology/DBCLS/Lateral_view_of_bones_of_right_hand.svg",
+      "error_type": "MediaValidationError",
+      "error": "SVG entity declaration is not allowed",
+      "classification": "illustrator_namespace_candidate",
+      "recommended_disposition": "Reprocess in cloud with dfdcee7. IgA and gut-like_organ samples rendered; remaining 144 must still be tested."
+    },
+    {
+      "source": "bioicons",
+      "source_id": "cc-by-4.0/Human_physiology/DBCLS/Lateral_view_of_knee_joint.svg",
+      "source_index": 2354,
+      "url": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-4.0/Human_physiology/DBCLS/Lateral_view_of_knee_joint.svg",
+      "error_type": "MediaValidationError",
+      "error": "SVG entity declaration is not allowed",
+      "classification": "illustrator_namespace_candidate",
+      "recommended_disposition": "Reprocess in cloud with dfdcee7. IgA and gut-like_organ samples rendered; remaining 144 must still be tested."
+    },
+    {
+      "source": "bioicons",
+      "source_id": "cc-by-4.0/Human_physiology/DBCLS/Lateral_view_of_ligaments_of_pelvis.svg",
+      "source_index": 2355,
+      "url": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-4.0/Human_physiology/DBCLS/Lateral_view_of_ligaments_of_pelvis.svg",
+      "error_type": "MediaValidationError",
+      "error": "SVG entity declaration is not allowed",
+      "classification": "illustrator_namespace_candidate",
+      "recommended_disposition": "Reprocess in cloud with dfdcee7. IgA and gut-like_organ samples rendered; remaining 144 must still be tested."
+    },
+    {
+      "source": "bioicons",
+      "source_id": "cc-by-4.0/Human_physiology/DBCLS/Lateral_view_of_right_hip_bone.svg",
+      "source_index": 2356,
+      "url": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-4.0/Human_physiology/DBCLS/Lateral_view_of_right_hip_bone.svg",
+      "error_type": "MediaValidationError",
+      "error": "SVG entity declaration is not allowed",
+      "classification": "illustrator_namespace_candidate",
+      "recommended_disposition": "Reprocess in cloud with dfdcee7. IgA and gut-like_organ samples rendered; remaining 144 must still be tested."
+    },
+    {
+      "source": "bioicons",
+      "source_id": "cc-by-4.0/Human_physiology/DBCLS/Ligament_of_the_shoulder_joint.svg",
+      "source_index": 2357,
+      "url": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-4.0/Human_physiology/DBCLS/Ligament_of_the_shoulder_joint.svg",
+      "error_type": "MediaValidationError",
+      "error": "SVG entity declaration is not allowed",
+      "classification": "illustrator_namespace_candidate",
+      "recommended_disposition": "Reprocess in cloud with dfdcee7. IgA and gut-like_organ samples rendered; remaining 144 must still be tested."
+    },
+    {
+      "source": "bioicons",
+      "source_id": "cc-by-4.0/Human_physiology/DBCLS/Medial_view_of_bones_of_right_foot.svg",
+      "source_index": 2358,
+      "url": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-4.0/Human_physiology/DBCLS/Medial_view_of_bones_of_right_foot.svg",
+      "error_type": "MediaValidationError",
+      "error": "SVG entity declaration is not allowed",
+      "classification": "illustrator_namespace_candidate",
+      "recommended_disposition": "Reprocess in cloud with dfdcee7. IgA and gut-like_organ samples rendered; remaining 144 must still be tested."
+    },
+    {
+      "source": "bioicons",
+      "source_id": "cc-by-4.0/Human_physiology/DBCLS/Medial_view_of_ligaments_of_right_foot.svg",
+      "source_index": 2359,
+      "url": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-4.0/Human_physiology/DBCLS/Medial_view_of_ligaments_of_right_foot.svg",
+      "error_type": "MediaValidationError",
+      "error": "SVG entity declaration is not allowed",
+      "classification": "illustrator_namespace_candidate",
+      "recommended_disposition": "Reprocess in cloud with dfdcee7. IgA and gut-like_organ samples rendered; remaining 144 must still be tested."
+    },
+    {
+      "source": "bioicons",
+      "source_id": "cc-by-4.0/Human_physiology/DBCLS/Medial_view_of_right_hip_bone.svg",
+      "source_index": 2360,
+      "url": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-4.0/Human_physiology/DBCLS/Medial_view_of_right_hip_bone.svg",
+      "error_type": "MediaValidationError",
+      "error": "SVG entity declaration is not allowed",
+      "classification": "illustrator_namespace_candidate",
+      "recommended_disposition": "Reprocess in cloud with dfdcee7. IgA and gut-like_organ samples rendered; remaining 144 must still be tested."
+    },
+    {
+      "source": "bioicons",
+      "source_id": "cc-by-4.0/Human_physiology/DBCLS/Motor_neuron.svg",
+      "source_index": 2361,
+      "url": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-4.0/Human_physiology/DBCLS/Motor_neuron.svg",
+      "error_type": "MediaValidationError",
+      "error": "SVG entity declaration is not allowed",
+      "classification": "illustrator_namespace_candidate",
+      "recommended_disposition": "Reprocess in cloud with dfdcee7. IgA and gut-like_organ samples rendered; remaining 144 must still be tested."
+    },
+    {
+      "source": "bioicons",
+      "source_id": "cc-by-4.0/Human_physiology/DBCLS/Plantar_view_of_bones_of_right_foot.svg",
+      "source_index": 2362,
+      "url": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-4.0/Human_physiology/DBCLS/Plantar_view_of_bones_of_right_foot.svg",
+      "error_type": "MediaValidationError",
+      "error": "SVG entity declaration is not allowed",
+      "classification": "illustrator_namespace_candidate",
+      "recommended_disposition": "Reprocess in cloud with dfdcee7. IgA and gut-like_organ samples rendered; remaining 144 must still be tested."
+    },
+    {
+      "source": "bioicons",
+      "source_id": "cc-by-4.0/Human_physiology/DBCLS/Posterior_view_of_bones_of_right_foot.svg",
+      "source_index": 2363,
+      "url": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-4.0/Human_physiology/DBCLS/Posterior_view_of_bones_of_right_foot.svg",
+      "error_type": "MediaValidationError",
+      "error": "SVG entity declaration is not allowed",
+      "classification": "illustrator_namespace_candidate",
+      "recommended_disposition": "Reprocess in cloud with dfdcee7. IgA and gut-like_organ samples rendered; remaining 144 must still be tested."
+    },
+    {
+      "source": "bioicons",
+      "source_id": "cc-by-4.0/Human_physiology/DBCLS/Posterior_view_of_bones_of_right_hand.svg",
+      "source_index": 2364,
+      "url": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-4.0/Human_physiology/DBCLS/Posterior_view_of_bones_of_right_hand.svg",
+      "error_type": "MediaValidationError",
+      "error": "SVG entity declaration is not allowed",
+      "classification": "illustrator_namespace_candidate",
+      "recommended_disposition": "Reprocess in cloud with dfdcee7. IgA and gut-like_organ samples rendered; remaining 144 must still be tested."
+    },
+    {
+      "source": "bioicons",
+      "source_id": "cc-by-4.0/Human_physiology/DBCLS/Posterior_view_of_coronal_section_of_right_hand.svg",
+      "source_index": 2365,
+      "url": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-4.0/Human_physiology/DBCLS/Posterior_view_of_coronal_section_of_right_hand.svg",
+      "error_type": "MediaValidationError",
+      "error": "SVG entity declaration is not allowed",
+      "classification": "illustrator_namespace_candidate",
+      "recommended_disposition": "Reprocess in cloud with dfdcee7. IgA and gut-like_organ samples rendered; remaining 144 must still be tested."
+    },
+    {
+      "source": "bioicons",
+      "source_id": "cc-by-4.0/Human_physiology/DBCLS/Posterior_view_of_female_pelvis.svg",
+      "source_index": 2366,
+      "url": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-4.0/Human_physiology/DBCLS/Posterior_view_of_female_pelvis.svg",
+      "error_type": "MediaValidationError",
+      "error": "SVG entity declaration is not allowed",
+      "classification": "illustrator_namespace_candidate",
+      "recommended_disposition": "Reprocess in cloud with dfdcee7. IgA and gut-like_organ samples rendered; remaining 144 must still be tested."
+    },
+    {
+      "source": "bioicons",
+      "source_id": "cc-by-4.0/Human_physiology/DBCLS/Posterior_view_of_knee_joint.svg",
+      "source_index": 2367,
+      "url": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-4.0/Human_physiology/DBCLS/Posterior_view_of_knee_joint.svg",
+      "error_type": "MediaValidationError",
+      "error": "SVG entity declaration is not allowed",
+      "classification": "illustrator_namespace_candidate",
+      "recommended_disposition": "Reprocess in cloud with dfdcee7. IgA and gut-like_organ samples rendered; remaining 144 must still be tested."
+    },
+    {
+      "source": "bioicons",
+      "source_id": "cc-by-4.0/Human_physiology/DBCLS/Posterior_view_of_ligaments_of_pelvis.svg",
+      "source_index": 2368,
+      "url": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-4.0/Human_physiology/DBCLS/Posterior_view_of_ligaments_of_pelvis.svg",
+      "error_type": "MediaValidationError",
+      "error": "SVG entity declaration is not allowed",
+      "classification": "illustrator_namespace_candidate",
+      "recommended_disposition": "Reprocess in cloud with dfdcee7. IgA and gut-like_organ samples rendered; remaining 144 must still be tested."
+    },
+    {
+      "source": "bioicons",
+      "source_id": "cc-by-4.0/Human_physiology/DBCLS/Posterior_view_of_ligaments_of_right_hand.svg",
+      "source_index": 2369,
+      "url": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-4.0/Human_physiology/DBCLS/Posterior_view_of_ligaments_of_right_hand.svg",
+      "error_type": "MediaValidationError",
+      "error": "SVG entity declaration is not allowed",
+      "classification": "illustrator_namespace_candidate",
+      "recommended_disposition": "Reprocess in cloud with dfdcee7. IgA and gut-like_organ samples rendered; remaining 144 must still be tested."
+    },
+    {
+      "source": "bioicons",
+      "source_id": "cc-by-4.0/Human_physiology/DBCLS/Posterior_view_of_male_pelvis.svg",
+      "source_index": 2370,
+      "url": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-4.0/Human_physiology/DBCLS/Posterior_view_of_male_pelvis.svg",
+      "error_type": "MediaValidationError",
+      "error": "SVG entity declaration is not allowed",
+      "classification": "illustrator_namespace_candidate",
+      "recommended_disposition": "Reprocess in cloud with dfdcee7. IgA and gut-like_organ samples rendered; remaining 144 must still be tested."
+    },
+    {
+      "source": "bioicons",
+      "source_id": "cc-by-4.0/Human_physiology/DBCLS/Posterior_view_of_the_elbow_joint.svg",
+      "source_index": 2371,
+      "url": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-4.0/Human_physiology/DBCLS/Posterior_view_of_the_elbow_joint.svg",
+      "error_type": "MediaValidationError",
+      "error": "SVG entity declaration is not allowed",
+      "classification": "illustrator_namespace_candidate",
+      "recommended_disposition": "Reprocess in cloud with dfdcee7. IgA and gut-like_organ samples rendered; remaining 144 must still be tested."
+    },
+    {
+      "source": "bioicons",
+      "source_id": "cc-by-4.0/Human_physiology/DBCLS/Reticulospinal_tract.svg",
+      "source_index": 2372,
+      "url": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-4.0/Human_physiology/DBCLS/Reticulospinal_tract.svg",
+      "error_type": "MediaValidationError",
+      "error": "SVG entity declaration is not allowed",
+      "classification": "illustrator_namespace_candidate",
+      "recommended_disposition": "Reprocess in cloud with dfdcee7. IgA and gut-like_organ samples rendered; remaining 144 must still be tested."
+    },
+    {
+      "source": "bioicons",
+      "source_id": "cc-by-4.0/Human_physiology/DBCLS/Rubrospinal_tract.svg",
+      "source_index": 2373,
+      "url": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-4.0/Human_physiology/DBCLS/Rubrospinal_tract.svg",
+      "error_type": "MediaValidationError",
+      "error": "SVG entity declaration is not allowed",
+      "classification": "illustrator_namespace_candidate",
+      "recommended_disposition": "Reprocess in cloud with dfdcee7. IgA and gut-like_organ samples rendered; remaining 144 must still be tested."
+    },
+    {
+      "source": "bioicons",
+      "source_id": "cc-by-4.0/Human_physiology/DBCLS/Sagittal_section_through_knee_joint.svg",
+      "source_index": 2374,
+      "url": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-4.0/Human_physiology/DBCLS/Sagittal_section_through_knee_joint.svg",
+      "error_type": "MediaValidationError",
+      "error": "SVG entity declaration is not allowed",
+      "classification": "illustrator_namespace_candidate",
+      "recommended_disposition": "Reprocess in cloud with dfdcee7. IgA and gut-like_organ samples rendered; remaining 144 must still be tested."
+    },
+    {
+      "source": "bioicons",
+      "source_id": "cc-by-4.0/Human_physiology/DBCLS/Sagittal_section_through_the_elbow_joint.svg",
+      "source_index": 2375,
+      "url": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-4.0/Human_physiology/DBCLS/Sagittal_section_through_the_elbow_joint.svg",
+      "error_type": "MediaValidationError",
+      "error": "SVG entity declaration is not allowed",
+      "classification": "illustrator_namespace_candidate",
+      "recommended_disposition": "Reprocess in cloud with dfdcee7. IgA and gut-like_organ samples rendered; remaining 144 must still be tested."
+    },
+    {
+      "source": "bioicons",
+      "source_id": "cc-by-4.0/Human_physiology/DBCLS/Sensory_neuron.svg",
+      "source_index": 2376,
+      "url": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-4.0/Human_physiology/DBCLS/Sensory_neuron.svg",
+      "error_type": "MediaValidationError",
+      "error": "SVG entity declaration is not allowed",
+      "classification": "illustrator_namespace_candidate",
+      "recommended_disposition": "Reprocess in cloud with dfdcee7. IgA and gut-like_organ samples rendered; remaining 144 must still be tested."
+    },
+    {
+      "source": "bioicons",
+      "source_id": "cc-by-4.0/Human_physiology/DBCLS/Sinusoidal_capillary.svg",
+      "source_index": 2377,
+      "url": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-4.0/Human_physiology/DBCLS/Sinusoidal_capillary.svg",
+      "error_type": "MediaValidationError",
+      "error": "SVG entity declaration is not allowed",
+      "classification": "illustrator_namespace_candidate",
+      "recommended_disposition": "Reprocess in cloud with dfdcee7. IgA and gut-like_organ samples rendered; remaining 144 must still be tested."
+    },
+    {
+      "source": "bioicons",
+      "source_id": "cc-by-4.0/Human_physiology/DBCLS/Structure_of_lymph_nodes.svg",
+      "source_index": 2378,
+      "url": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-4.0/Human_physiology/DBCLS/Structure_of_lymph_nodes.svg",
+      "error_type": "MediaValidationError",
+      "error": "SVG entity declaration is not allowed",
+      "classification": "illustrator_namespace_candidate",
+      "recommended_disposition": "Reprocess in cloud with dfdcee7. IgA and gut-like_organ samples rendered; remaining 144 must still be tested."
+    },
+    {
+      "source": "bioicons",
+      "source_id": "cc-by-4.0/Human_physiology/DBCLS/Superior_view_of_female_pelvis.svg",
+      "source_index": 2379,
+      "url": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-4.0/Human_physiology/DBCLS/Superior_view_of_female_pelvis.svg",
+      "error_type": "MediaValidationError",
+      "error": "SVG entity declaration is not allowed",
+      "classification": "illustrator_namespace_candidate",
+      "recommended_disposition": "Reprocess in cloud with dfdcee7. IgA and gut-like_organ samples rendered; remaining 144 must still be tested."
+    },
+    {
+      "source": "bioicons",
+      "source_id": "cc-by-4.0/Human_physiology/DBCLS/Superior_view_of_male_pelvis.svg",
+      "source_index": 2380,
+      "url": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-4.0/Human_physiology/DBCLS/Superior_view_of_male_pelvis.svg",
+      "error_type": "MediaValidationError",
+      "error": "SVG entity declaration is not allowed",
+      "classification": "illustrator_namespace_candidate",
+      "recommended_disposition": "Reprocess in cloud with dfdcee7. IgA and gut-like_organ samples rendered; remaining 144 must still be tested."
+    },
+    {
+      "source": "bioicons",
+      "source_id": "cc-by-4.0/Human_physiology/DBCLS/Tectospinal_tract.svg",
+      "source_index": 2381,
+      "url": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-4.0/Human_physiology/DBCLS/Tectospinal_tract.svg",
+      "error_type": "MediaValidationError",
+      "error": "SVG entity declaration is not allowed",
+      "classification": "illustrator_namespace_candidate",
+      "recommended_disposition": "Reprocess in cloud with dfdcee7. IgA and gut-like_organ samples rendered; remaining 144 must still be tested."
+    },
+    {
+      "source": "bioicons",
+      "source_id": "cc-by-4.0/Human_physiology/DBCLS/Three_types_of_neurons.svg",
+      "source_index": 2382,
+      "url": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-4.0/Human_physiology/DBCLS/Three_types_of_neurons.svg",
+      "error_type": "MediaValidationError",
+      "error": "SVG entity declaration is not allowed",
+      "classification": "illustrator_namespace_candidate",
+      "recommended_disposition": "Reprocess in cloud with dfdcee7. IgA and gut-like_organ samples rendered; remaining 144 must still be tested."
+    },
+    {
+      "source": "bioicons",
+      "source_id": "cc-by-4.0/Human_physiology/DBCLS/Type1.svg",
+      "source_index": 2383,
+      "url": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-4.0/Human_physiology/DBCLS/Type1.svg",
+      "error_type": "MediaValidationError",
+      "error": "SVG entity declaration is not allowed",
+      "classification": "illustrator_namespace_candidate",
+      "recommended_disposition": "Reprocess in cloud with dfdcee7. IgA and gut-like_organ samples rendered; remaining 144 must still be tested."
+    },
+    {
+      "source": "bioicons",
+      "source_id": "cc-by-4.0/Human_physiology/DBCLS/Vestibulsospinal_tract.svg",
+      "source_index": 2384,
+      "url": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-4.0/Human_physiology/DBCLS/Vestibulsospinal_tract.svg",
+      "error_type": "MediaValidationError",
+      "error": "SVG entity declaration is not allowed",
+      "classification": "illustrator_namespace_candidate",
+      "recommended_disposition": "Reprocess in cloud with dfdcee7. IgA and gut-like_organ samples rendered; remaining 144 must still be tested."
+    },
+    {
+      "source": "bioicons",
+      "source_id": "cc-by-4.0/Human_physiology/DBCLS/anterior_view_of_hip_joint.svg",
+      "source_index": 2385,
+      "url": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-4.0/Human_physiology/DBCLS/anterior_view_of_hip_joint.svg",
+      "error_type": "MediaValidationError",
+      "error": "SVG entity declaration is not allowed",
+      "classification": "illustrator_namespace_candidate",
+      "recommended_disposition": "Reprocess in cloud with dfdcee7. IgA and gut-like_organ samples rendered; remaining 144 must still be tested."
+    },
+    {
+      "source": "bioicons",
+      "source_id": "cc-by-4.0/Human_physiology/DBCLS/anterior_view_of_hip_joint_ligament.svg",
+      "source_index": 2386,
+      "url": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-4.0/Human_physiology/DBCLS/anterior_view_of_hip_joint_ligament.svg",
+      "error_type": "MediaValidationError",
+      "error": "SVG entity declaration is not allowed",
+      "classification": "illustrator_namespace_candidate",
+      "recommended_disposition": "Reprocess in cloud with dfdcee7. IgA and gut-like_organ samples rendered; remaining 144 must still be tested."
+    },
+    {
+      "source": "bioicons",
+      "source_id": "cc-by-4.0/Human_physiology/DBCLS/duct.svg",
+      "source_index": 2387,
+      "url": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-4.0/Human_physiology/DBCLS/duct.svg",
+      "error_type": "MediaValidationError",
+      "error": "SVG entity declaration is not allowed",
+      "classification": "illustrator_namespace_candidate",
+      "recommended_disposition": "Reprocess in cloud with dfdcee7. IgA and gut-like_organ samples rendered; remaining 144 must still be tested."
+    },
+    {
+      "source": "bioicons",
+      "source_id": "cc-by-4.0/Human_physiology/DBCLS/frontal_section_through_hip_joint.svg",
+      "source_index": 2388,
+      "url": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-4.0/Human_physiology/DBCLS/frontal_section_through_hip_joint.svg",
+      "error_type": "MediaValidationError",
+      "error": "SVG entity declaration is not allowed",
+      "classification": "illustrator_namespace_candidate",
+      "recommended_disposition": "Reprocess in cloud with dfdcee7. IgA and gut-like_organ samples rendered; remaining 144 must still be tested."
+    },
+    {
+      "source": "bioicons",
+      "source_id": "cc-by-4.0/Human_physiology/DBCLS/posterior_view_of_hip_joint.svg",
+      "source_index": 2389,
+      "url": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-4.0/Human_physiology/DBCLS/posterior_view_of_hip_joint.svg",
+      "error_type": "MediaValidationError",
+      "error": "SVG entity declaration is not allowed",
+      "classification": "illustrator_namespace_candidate",
+      "recommended_disposition": "Reprocess in cloud with dfdcee7. IgA and gut-like_organ samples rendered; remaining 144 must still be tested."
+    },
+    {
+      "source": "bioicons",
+      "source_id": "cc-by-4.0/Human_physiology/DBCLS/posterior_view_of_hip_joint_ligament.svg",
+      "source_index": 2390,
+      "url": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-4.0/Human_physiology/DBCLS/posterior_view_of_hip_joint_ligament.svg",
+      "error_type": "MediaValidationError",
+      "error": "SVG entity declaration is not allowed",
+      "classification": "illustrator_namespace_candidate",
+      "recommended_disposition": "Reprocess in cloud with dfdcee7. IgA and gut-like_organ samples rendered; remaining 144 must still be tested."
+    },
+    {
+      "source": "bioicons",
+      "source_id": "cc-by-4.0/Human_physiology/DBCLS/spinal-cord_anterior-horn-cells_motor-nerves_muscles.svg",
+      "source_index": 2391,
+      "url": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-4.0/Human_physiology/DBCLS/spinal-cord_anterior-horn-cells_motor-nerves_muscles.svg",
+      "error_type": "MediaValidationError",
+      "error": "SVG entity declaration is not allowed",
+      "classification": "illustrator_namespace_candidate",
+      "recommended_disposition": "Reprocess in cloud with dfdcee7. IgA and gut-like_organ samples rendered; remaining 144 must still be tested."
+    },
+    {
+      "source": "bioicons",
+      "source_id": "cc-by-4.0/Human_physiology/DBCLS/vascularis.svg",
+      "source_index": 2392,
+      "url": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-4.0/Human_physiology/DBCLS/vascularis.svg",
+      "error_type": "MediaValidationError",
+      "error": "SVG entity declaration is not allowed",
+      "classification": "illustrator_namespace_candidate",
+      "recommended_disposition": "Reprocess in cloud with dfdcee7. IgA and gut-like_organ samples rendered; remaining 144 must still be tested."
+    },
+    {
+      "source": "bioicons",
+      "source_id": "cc-by-4.0/Human_physiology/DBCLS/view_of_thoracic_skelton.svg",
+      "source_index": 2393,
+      "url": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-4.0/Human_physiology/DBCLS/view_of_thoracic_skelton.svg",
+      "error_type": "MediaValidationError",
+      "error": "SVG entity declaration is not allowed",
+      "classification": "illustrator_namespace_candidate",
+      "recommended_disposition": "Reprocess in cloud with dfdcee7. IgA and gut-like_organ samples rendered; remaining 144 must still be tested."
+    },
+    {
+      "source": "bioicons",
+      "source_id": "cc-by-4.0/Intracellular_components/DBCLS/mitochondria-grey.svg",
+      "source_index": 2408,
+      "url": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-4.0/Intracellular_components/DBCLS/mitochondria-grey.svg",
+      "error_type": "MediaValidationError",
+      "error": "SVG entity declaration is not allowed",
+      "classification": "illustrator_namespace_candidate",
+      "recommended_disposition": "Reprocess in cloud with dfdcee7. IgA and gut-like_organ samples rendered; remaining 144 must still be tested."
+    },
+    {
+      "source": "bioicons",
+      "source_id": "cc-by-4.0/Intracellular_components/DBCLS/protein-link.svg",
+      "source_index": 2409,
+      "url": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-4.0/Intracellular_components/DBCLS/protein-link.svg",
+      "error_type": "MediaValidationError",
+      "error": "SVG entity declaration is not allowed",
+      "classification": "illustrator_namespace_candidate",
+      "recommended_disposition": "Reprocess in cloud with dfdcee7. IgA and gut-like_organ samples rendered; remaining 144 must still be tested."
+    },
+    {
+      "source": "bioicons",
+      "source_id": "cc-by-4.0/Lab_apparatus/DBCLS/24-well_plate.svg",
+      "source_index": 2426,
+      "url": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-4.0/Lab_apparatus/DBCLS/24-well_plate.svg",
+      "error_type": "MediaValidationError",
+      "error": "SVG entity declaration is not allowed",
+      "classification": "illustrator_namespace_candidate",
+      "recommended_disposition": "Reprocess in cloud with dfdcee7. IgA and gut-like_organ samples rendered; remaining 144 must still be tested."
+    },
+    {
+      "source": "bioicons",
+      "source_id": "cc-by-4.0/Lab_apparatus/DBCLS/Bench_Female.svg",
+      "source_index": 2427,
+      "url": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-4.0/Lab_apparatus/DBCLS/Bench_Female.svg",
+      "error_type": "MediaValidationError",
+      "error": "SVG entity declaration is not allowed",
+      "classification": "illustrator_namespace_candidate",
+      "recommended_disposition": "Reprocess in cloud with dfdcee7. IgA and gut-like_organ samples rendered; remaining 144 must still be tested."
+    },
+    {
+      "source": "bioicons",
+      "source_id": "cc-by-4.0/Lab_apparatus/DBCLS/Bench_Male.svg",
+      "source_index": 2428,
+      "url": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-4.0/Lab_apparatus/DBCLS/Bench_Male.svg",
+      "error_type": "MediaValidationError",
+      "error": "SVG entity declaration is not allowed",
+      "classification": "illustrator_namespace_candidate",
+      "recommended_disposition": "Reprocess in cloud with dfdcee7. IgA and gut-like_organ samples rendered; remaining 144 must still be tested."
+    },
+    {
+      "source": "bioicons",
+      "source_id": "cc-by-4.0/Lab_apparatus/DBCLS/Child.svg",
+      "source_index": 2429,
+      "url": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-4.0/Lab_apparatus/DBCLS/Child.svg",
+      "error_type": "MediaValidationError",
+      "error": "SVG entity declaration is not allowed",
+      "classification": "illustrator_namespace_candidate",
+      "recommended_disposition": "Reprocess in cloud with dfdcee7. IgA and gut-like_organ samples rendered; remaining 144 must still be tested."
+    },
+    {
+      "source": "bioicons",
+      "source_id": "cc-by-4.0/Lab_apparatus/DBCLS/Colonoscopy.svg",
+      "source_index": 2430,
+      "url": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-4.0/Lab_apparatus/DBCLS/Colonoscopy.svg",
+      "error_type": "MediaValidationError",
+      "error": "SVG entity declaration is not allowed",
+      "classification": "illustrator_namespace_candidate",
+      "recommended_disposition": "Reprocess in cloud with dfdcee7. IgA and gut-like_organ samples rendered; remaining 144 must still be tested."
+    },
+    {
+      "source": "bioicons",
+      "source_id": "cc-by-4.0/Lab_apparatus/DBCLS/Echocardiography.svg",
+      "source_index": 2432,
+      "url": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-4.0/Lab_apparatus/DBCLS/Echocardiography.svg",
+      "error_type": "MediaValidationError",
+      "error": "SVG entity declaration is not allowed",
+      "classification": "illustrator_namespace_candidate",
+      "recommended_disposition": "Reprocess in cloud with dfdcee7. IgA and gut-like_organ samples rendered; remaining 144 must still be tested."
+    },
+    {
+      "source": "bioicons",
+      "source_id": "cc-by-4.0/Lab_apparatus/DBCLS/Endoscopy_Female.svg",
+      "source_index": 2433,
+      "url": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-4.0/Lab_apparatus/DBCLS/Endoscopy_Female.svg",
+      "error_type": "MediaValidationError",
+      "error": "SVG entity declaration is not allowed",
+      "classification": "illustrator_namespace_candidate",
+      "recommended_disposition": "Reprocess in cloud with dfdcee7. IgA and gut-like_organ samples rendered; remaining 144 must still be tested."
+    },
+    {
+      "source": "bioicons",
+      "source_id": "cc-by-4.0/Lab_apparatus/DBCLS/Endoscopy_Male.svg",
+      "source_index": 2434,
+      "url": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-4.0/Lab_apparatus/DBCLS/Endoscopy_Male.svg",
+      "error_type": "MediaValidationError",
+      "error": "SVG entity declaration is not allowed",
+      "classification": "illustrator_namespace_candidate",
+      "recommended_disposition": "Reprocess in cloud with dfdcee7. IgA and gut-like_organ samples rendered; remaining 144 must still be tested."
+    },
+    {
+      "source": "bioicons",
+      "source_id": "cc-by-4.0/Lab_apparatus/DBCLS/Female.svg",
+      "source_index": 2435,
+      "url": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-4.0/Lab_apparatus/DBCLS/Female.svg",
+      "error_type": "MediaValidationError",
+      "error": "SVG entity declaration is not allowed",
+      "classification": "illustrator_namespace_candidate",
+      "recommended_disposition": "Reprocess in cloud with dfdcee7. IgA and gut-like_organ samples rendered; remaining 144 must still be tested."
+    },
+    {
+      "source": "bioicons",
+      "source_id": "cc-by-4.0/Lab_apparatus/DBCLS/Incubator_Female.svg",
+      "source_index": 2437,
+      "url": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-4.0/Lab_apparatus/DBCLS/Incubator_Female.svg",
+      "error_type": "MediaValidationError",
+      "error": "SVG entity declaration is not allowed",
+      "classification": "illustrator_namespace_candidate",
+      "recommended_disposition": "Reprocess in cloud with dfdcee7. IgA and gut-like_organ samples rendered; remaining 144 must still be tested."
+    },
+    {
+      "source": "bioicons",
+      "source_id": "cc-by-4.0/Lab_apparatus/DBCLS/Incubator_Male.svg",
+      "source_index": 2438,
+      "url": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-4.0/Lab_apparatus/DBCLS/Incubator_Male.svg",
+      "error_type": "MediaValidationError",
+      "error": "SVG entity declaration is not allowed",
+      "classification": "illustrator_namespace_candidate",
+      "recommended_disposition": "Reprocess in cloud with dfdcee7. IgA and gut-like_organ samples rendered; remaining 144 must still be tested."
+    },
+    {
+      "source": "bioicons",
+      "source_id": "cc-by-4.0/Lab_apparatus/DBCLS/Microarray_1x.svg",
+      "source_index": 2442,
+      "url": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-4.0/Lab_apparatus/DBCLS/Microarray_1x.svg",
+      "error_type": "MediaValidationError",
+      "error": "SVG entity declaration is not allowed",
+      "classification": "illustrator_namespace_candidate",
+      "recommended_disposition": "Reprocess in cloud with dfdcee7. IgA and gut-like_organ samples rendered; remaining 144 must still be tested."
+    },
+    {
+      "source": "bioicons",
+      "source_id": "cc-by-4.0/Lab_apparatus/DBCLS/Microarray_2x.svg",
+      "source_index": 2443,
+      "url": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-4.0/Lab_apparatus/DBCLS/Microarray_2x.svg",
+      "error_type": "MediaValidationError",
+      "error": "SVG entity declaration is not allowed",
+      "classification": "illustrator_namespace_candidate",
+      "recommended_disposition": "Reprocess in cloud with dfdcee7. IgA and gut-like_organ samples rendered; remaining 144 must still be tested."
+    },
+    {
+      "source": "bioicons",
+      "source_id": "cc-by-4.0/Lab_apparatus/DBCLS/Microarray_4x.svg",
+      "source_index": 2444,
+      "url": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-4.0/Lab_apparatus/DBCLS/Microarray_4x.svg",
+      "error_type": "MediaValidationError",
+      "error": "SVG entity declaration is not allowed",
+      "classification": "illustrator_namespace_candidate",
+      "recommended_disposition": "Reprocess in cloud with dfdcee7. IgA and gut-like_organ samples rendered; remaining 144 must still be tested."
+    },
+    {
+      "source": "bioicons",
+      "source_id": "cc-by-4.0/Lab_apparatus/DBCLS/Pipetting_Female.svg",
+      "source_index": 2447,
+      "url": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-4.0/Lab_apparatus/DBCLS/Pipetting_Female.svg",
+      "error_type": "MediaValidationError",
+      "error": "SVG entity declaration is not allowed",
+      "classification": "illustrator_namespace_candidate",
+      "recommended_disposition": "Reprocess in cloud with dfdcee7. IgA and gut-like_organ samples rendered; remaining 144 must still be tested."
+    },
+    {
+      "source": "bioicons",
+      "source_id": "cc-by-4.0/Lab_apparatus/DBCLS/Pipetting_Male.svg",
+      "source_index": 2448,
+      "url": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-4.0/Lab_apparatus/DBCLS/Pipetting_Male.svg",
+      "error_type": "MediaValidationError",
+      "error": "SVG entity declaration is not allowed",
+      "classification": "illustrator_namespace_candidate",
+      "recommended_disposition": "Reprocess in cloud with dfdcee7. IgA and gut-like_organ samples rendered; remaining 144 must still be tested."
+    },
+    {
+      "source": "bioicons",
+      "source_id": "cc-by-4.0/Lab_apparatus/DBCLS/Scale_Female.svg",
+      "source_index": 2449,
+      "url": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-4.0/Lab_apparatus/DBCLS/Scale_Female.svg",
+      "error_type": "MediaValidationError",
+      "error": "SVG entity declaration is not allowed",
+      "classification": "illustrator_namespace_candidate",
+      "recommended_disposition": "Reprocess in cloud with dfdcee7. IgA and gut-like_organ samples rendered; remaining 144 must still be tested."
+    },
+    {
+      "source": "bioicons",
+      "source_id": "cc-by-4.0/Lab_apparatus/DBCLS/Scale_Male.svg",
+      "source_index": 2450,
+      "url": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-4.0/Lab_apparatus/DBCLS/Scale_Male.svg",
+      "error_type": "MediaValidationError",
+      "error": "SVG entity declaration is not allowed",
+      "classification": "illustrator_namespace_candidate",
+      "recommended_disposition": "Reprocess in cloud with dfdcee7. IgA and gut-like_organ samples rendered; remaining 144 must still be tested."
+    },
+    {
+      "source": "bioicons",
+      "source_id": "cc-by-4.0/Lab_apparatus/DBCLS/X-ray_Female.svg",
+      "source_index": 2452,
+      "url": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-4.0/Lab_apparatus/DBCLS/X-ray_Female.svg",
+      "error_type": "MediaValidationError",
+      "error": "SVG entity declaration is not allowed",
+      "classification": "illustrator_namespace_candidate",
+      "recommended_disposition": "Reprocess in cloud with dfdcee7. IgA and gut-like_organ samples rendered; remaining 144 must still be tested."
+    },
+    {
+      "source": "bioicons",
+      "source_id": "cc-by-4.0/Lab_apparatus/DBCLS/X-ray_Male.svg",
+      "source_index": 2453,
+      "url": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-4.0/Lab_apparatus/DBCLS/X-ray_Male.svg",
+      "error_type": "MediaValidationError",
+      "error": "SVG entity declaration is not allowed",
+      "classification": "illustrator_namespace_candidate",
+      "recommended_disposition": "Reprocess in cloud with dfdcee7. IgA and gut-like_organ samples rendered; remaining 144 must still be tested."
+    },
+    {
+      "source": "bioicons",
+      "source_id": "cc-by-4.0/Lab_apparatus/DBCLS/centrifuge-user.svg",
+      "source_index": 2456,
+      "url": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-4.0/Lab_apparatus/DBCLS/centrifuge-user.svg",
+      "error_type": "MediaValidationError",
+      "error": "SVG entity declaration is not allowed",
+      "classification": "illustrator_namespace_candidate",
+      "recommended_disposition": "Reprocess in cloud with dfdcee7. IgA and gut-like_organ samples rendered; remaining 144 must still be tested."
+    },
+    {
+      "source": "bioicons",
+      "source_id": "cc-by-4.0/Lab_apparatus/DBCLS/light-microscope-male.svg",
+      "source_index": 2470,
+      "url": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-4.0/Lab_apparatus/DBCLS/light-microscope-male.svg",
+      "error_type": "MediaValidationError",
+      "error": "SVG entity declaration is not allowed",
+      "classification": "illustrator_namespace_candidate",
+      "recommended_disposition": "Reprocess in cloud with dfdcee7. IgA and gut-like_organ samples rendered; remaining 144 must still be tested."
+    },
+    {
+      "source": "bioicons",
+      "source_id": "cc-by-4.0/Lab_apparatus/DBCLS/ligt-microscope-female.svg",
+      "source_index": 2471,
+      "url": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-4.0/Lab_apparatus/DBCLS/ligt-microscope-female.svg",
+      "error_type": "MediaValidationError",
+      "error": "SVG entity declaration is not allowed",
+      "classification": "illustrator_namespace_candidate",
+      "recommended_disposition": "Reprocess in cloud with dfdcee7. IgA and gut-like_organ samples rendered; remaining 144 must still be tested."
+    },
+    {
+      "source": "bioicons",
+      "source_id": "cc-by-4.0/Lab_apparatus/DBCLS/pipette-stand.svg",
+      "source_index": 2477,
+      "url": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-4.0/Lab_apparatus/DBCLS/pipette-stand.svg",
+      "error_type": "MediaValidationError",
+      "error": "SVG entity declaration is not allowed",
+      "classification": "illustrator_namespace_candidate",
+      "recommended_disposition": "Reprocess in cloud with dfdcee7. IgA and gut-like_organ samples rendered; remaining 144 must still be tested."
+    },
+    {
+      "source": "bioicons",
+      "source_id": "cc-by-4.0/Lab_apparatus/DBCLS/plate-reader.svg",
+      "source_index": 2479,
+      "url": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-4.0/Lab_apparatus/DBCLS/plate-reader.svg",
+      "error_type": "MediaValidationError",
+      "error": "SVG entity declaration is not allowed",
+      "classification": "illustrator_namespace_candidate",
+      "recommended_disposition": "Reprocess in cloud with dfdcee7. IgA and gut-like_organ samples rendered; remaining 144 must still be tested."
+    },
+    {
+      "source": "bioicons",
+      "source_id": "cc-by-4.0/Lab_apparatus/DBCLS/tube-rack.svg",
+      "source_index": 2486,
+      "url": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-4.0/Lab_apparatus/DBCLS/tube-rack.svg",
+      "error_type": "MediaValidationError",
+      "error": "SVG entity declaration is not allowed",
+      "classification": "illustrator_namespace_candidate",
+      "recommended_disposition": "Reprocess in cloud with dfdcee7. IgA and gut-like_organ samples rendered; remaining 144 must still be tested."
+    },
+    {
+      "source": "bioicons",
+      "source_id": "cc-by-4.0/Microbiology/DBCLS/Negative_Bacteria.svg",
+      "source_index": 2532,
+      "url": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-4.0/Microbiology/DBCLS/Negative_Bacteria.svg",
+      "error_type": "MediaValidationError",
+      "error": "SVG entity declaration is not allowed",
+      "classification": "illustrator_namespace_candidate",
+      "recommended_disposition": "Reprocess in cloud with dfdcee7. IgA and gut-like_organ samples rendered; remaining 144 must still be tested."
+    },
+    {
+      "source": "bioicons",
+      "source_id": "cc-by-4.0/Microbiology/DBCLS/Positive_Bacteria.svg",
+      "source_index": 2533,
+      "url": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-4.0/Microbiology/DBCLS/Positive_Bacteria.svg",
+      "error_type": "MediaValidationError",
+      "error": "SVG entity declaration is not allowed",
+      "classification": "illustrator_namespace_candidate",
+      "recommended_disposition": "Reprocess in cloud with dfdcee7. IgA and gut-like_organ samples rendered; remaining 144 must still be tested."
+    },
+    {
+      "source": "bioicons",
+      "source_id": "cc-by-4.0/Microbiology/SwissBioPics/Bacteria2M_coccus.svg",
+      "source_index": 2548,
+      "url": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-4.0/Microbiology/SwissBioPics/Bacteria2M_coccus.svg",
+      "error_type": "MediaValidationError",
+      "error": "SVG loads an external or unsupported resource via image/href",
+      "classification": "missing_external_raster",
+      "recommended_disposition": "Keep isolated. Coccus references DA34F080.jpg; spiral references 7444463B.jpg. Neither image is embedded."
+    },
+    {
+      "source": "bioicons",
+      "source_id": "cc-by-4.0/Microbiology/SwissBioPics/Bacteria2M_spiral.svg",
+      "source_index": 2552,
+      "url": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-4.0/Microbiology/SwissBioPics/Bacteria2M_spiral.svg",
+      "error_type": "MediaValidationError",
+      "error": "SVG loads an external or unsupported resource via image/href",
+      "classification": "missing_external_raster",
+      "recommended_disposition": "Keep isolated. Coccus references DA34F080.jpg; spiral references 7444463B.jpg. Neither image is embedded."
+    },
+    {
+      "source": "bioicons",
+      "source_id": "cc-by-4.0/Nucleic_acids/DBCLS/dna-earthcolor.svg",
+      "source_index": 2583,
+      "url": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-4.0/Nucleic_acids/DBCLS/dna-earthcolor.svg",
+      "error_type": "MediaValidationError",
+      "error": "SVG entity declaration is not allowed",
+      "classification": "illustrator_namespace_candidate",
+      "recommended_disposition": "Reprocess in cloud with dfdcee7. IgA and gut-like_organ samples rendered; remaining 144 must still be tested."
+    },
+    {
+      "source": "bioicons",
+      "source_id": "cc-by-4.0/Oncology/DBCLS/Adenomatous_Polyposis_01_Normal_Colonic_Epithelium.svg",
+      "source_index": 2602,
+      "url": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-4.0/Oncology/DBCLS/Adenomatous_Polyposis_01_Normal_Colonic_Epithelium.svg",
+      "error_type": "MediaValidationError",
+      "error": "SVG entity declaration is not allowed",
+      "classification": "illustrator_namespace_candidate",
+      "recommended_disposition": "Reprocess in cloud with dfdcee7. IgA and gut-like_organ samples rendered; remaining 144 must still be tested."
+    },
+    {
+      "source": "bioicons",
+      "source_id": "cc-by-4.0/Oncology/DBCLS/Adenomatous_Polyposis_02_Small_Adenoma.svg",
+      "source_index": 2603,
+      "url": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-4.0/Oncology/DBCLS/Adenomatous_Polyposis_02_Small_Adenoma.svg",
+      "error_type": "MediaValidationError",
+      "error": "SVG entity declaration is not allowed",
+      "classification": "illustrator_namespace_candidate",
+      "recommended_disposition": "Reprocess in cloud with dfdcee7. IgA and gut-like_organ samples rendered; remaining 144 must still be tested."
+    },
+    {
+      "source": "bioicons",
+      "source_id": "cc-by-4.0/Oncology/DBCLS/Adenomatous_Polyposis_03_Large_Adenoma.svg",
+      "source_index": 2604,
+      "url": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-4.0/Oncology/DBCLS/Adenomatous_Polyposis_03_Large_Adenoma.svg",
+      "error_type": "MediaValidationError",
+      "error": "SVG entity declaration is not allowed",
+      "classification": "illustrator_namespace_candidate",
+      "recommended_disposition": "Reprocess in cloud with dfdcee7. IgA and gut-like_organ samples rendered; remaining 144 must still be tested."
+    },
+    {
+      "source": "bioicons",
+      "source_id": "cc-by-4.0/People-Other/DBCLS/Examination_Man.svg",
+      "source_index": 2620,
+      "url": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-4.0/People-Other/DBCLS/Examination_Man.svg",
+      "error_type": "MediaValidationError",
+      "error": "SVG entity declaration is not allowed",
+      "classification": "illustrator_namespace_candidate",
+      "recommended_disposition": "Reprocess in cloud with dfdcee7. IgA and gut-like_organ samples rendered; remaining 144 must still be tested."
+    },
+    {
+      "source": "bioicons",
+      "source_id": "cc-by-4.0/People-Other/DBCLS/Examination_Woman.svg",
+      "source_index": 2621,
+      "url": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-4.0/People-Other/DBCLS/Examination_Woman.svg",
+      "error_type": "MediaValidationError",
+      "error": "SVG entity declaration is not allowed",
+      "classification": "illustrator_namespace_candidate",
+      "recommended_disposition": "Reprocess in cloud with dfdcee7. IgA and gut-like_organ samples rendered; remaining 144 must still be tested."
+    },
+    {
+      "source": "bioicons",
+      "source_id": "cc-by-4.0/People-Other/DBCLS/Examination_child.svg",
+      "source_index": 2622,
+      "url": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-4.0/People-Other/DBCLS/Examination_child.svg",
+      "error_type": "MediaValidationError",
+      "error": "SVG entity declaration is not allowed",
+      "classification": "illustrator_namespace_candidate",
+      "recommended_disposition": "Reprocess in cloud with dfdcee7. IgA and gut-like_organ samples rendered; remaining 144 must still be tested."
+    },
+    {
+      "source": "bioicons",
+      "source_id": "cc-by-4.0/People-Other/DBCLS/Genetic_Counseling01.svg",
+      "source_index": 2623,
+      "url": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-4.0/People-Other/DBCLS/Genetic_Counseling01.svg",
+      "error_type": "MediaValidationError",
+      "error": "SVG entity declaration is not allowed",
+      "classification": "illustrator_namespace_candidate",
+      "recommended_disposition": "Reprocess in cloud with dfdcee7. IgA and gut-like_organ samples rendered; remaining 144 must still be tested."
+    },
+    {
+      "source": "bioicons",
+      "source_id": "cc-by-4.0/People-Other/DBCLS/Genetic_Counseling02.svg",
+      "source_index": 2624,
+      "url": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-4.0/People-Other/DBCLS/Genetic_Counseling02.svg",
+      "error_type": "MediaValidationError",
+      "error": "SVG entity declaration is not allowed",
+      "classification": "illustrator_namespace_candidate",
+      "recommended_disposition": "Reprocess in cloud with dfdcee7. IgA and gut-like_organ samples rendered; remaining 144 must still be tested."
+    },
+    {
+      "source": "bioicons",
+      "source_id": "cc-by-4.0/People-Other/DBCLS/Genetic_Counseling03.svg",
+      "source_index": 2625,
+      "url": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-4.0/People-Other/DBCLS/Genetic_Counseling03.svg",
+      "error_type": "MediaValidationError",
+      "error": "SVG entity declaration is not allowed",
+      "classification": "illustrator_namespace_candidate",
+      "recommended_disposition": "Reprocess in cloud with dfdcee7. IgA and gut-like_organ samples rendered; remaining 144 must still be tested."
+    },
+    {
+      "source": "bioicons",
+      "source_id": "cc-by-4.0/People-Other/DBCLS/Genetic_Counseling04.svg",
+      "source_index": 2626,
+      "url": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-4.0/People-Other/DBCLS/Genetic_Counseling04.svg",
+      "error_type": "MediaValidationError",
+      "error": "SVG entity declaration is not allowed",
+      "classification": "illustrator_namespace_candidate",
+      "recommended_disposition": "Reprocess in cloud with dfdcee7. IgA and gut-like_organ samples rendered; remaining 144 must still be tested."
+    },
+    {
+      "source": "bioicons",
+      "source_id": "cc-by-4.0/People-Other/DBCLS/Genetic_Counseling05.svg",
+      "source_index": 2627,
+      "url": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-4.0/People-Other/DBCLS/Genetic_Counseling05.svg",
+      "error_type": "MediaValidationError",
+      "error": "SVG entity declaration is not allowed",
+      "classification": "illustrator_namespace_candidate",
+      "recommended_disposition": "Reprocess in cloud with dfdcee7. IgA and gut-like_organ samples rendered; remaining 144 must still be tested."
+    },
+    {
+      "source": "bioicons",
+      "source_id": "cc-by-4.0/People-Other/DBCLS/Genetic_Counseling06.svg",
+      "source_index": 2628,
+      "url": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-4.0/People-Other/DBCLS/Genetic_Counseling06.svg",
+      "error_type": "MediaValidationError",
+      "error": "SVG entity declaration is not allowed",
+      "classification": "illustrator_namespace_candidate",
+      "recommended_disposition": "Reprocess in cloud with dfdcee7. IgA and gut-like_organ samples rendered; remaining 144 must still be tested."
+    },
+    {
+      "source": "bioicons",
+      "source_id": "cc-by-4.0/People-Other/DBCLS/Genetic_Counseling07.svg",
+      "source_index": 2629,
+      "url": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-4.0/People-Other/DBCLS/Genetic_Counseling07.svg",
+      "error_type": "MediaValidationError",
+      "error": "SVG entity declaration is not allowed",
+      "classification": "illustrator_namespace_candidate",
+      "recommended_disposition": "Reprocess in cloud with dfdcee7. IgA and gut-like_organ samples rendered; remaining 144 must still be tested."
+    },
+    {
+      "source": "bioicons",
+      "source_id": "cc-by-4.0/People-Other/DBCLS/Genetic_Counseling08.svg",
+      "source_index": 2630,
+      "url": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-4.0/People-Other/DBCLS/Genetic_Counseling08.svg",
+      "error_type": "MediaValidationError",
+      "error": "SVG entity declaration is not allowed",
+      "classification": "illustrator_namespace_candidate",
+      "recommended_disposition": "Reprocess in cloud with dfdcee7. IgA and gut-like_organ samples rendered; remaining 144 must still be tested."
+    },
+    {
+      "source": "bioicons",
+      "source_id": "cc-by-4.0/People-Other/DBCLS/Meeting.svg",
+      "source_index": 2631,
+      "url": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-4.0/People-Other/DBCLS/Meeting.svg",
+      "error_type": "MediaValidationError",
+      "error": "SVG entity declaration is not allowed",
+      "classification": "illustrator_namespace_candidate",
+      "recommended_disposition": "Reprocess in cloud with dfdcee7. IgA and gut-like_organ samples rendered; remaining 144 must still be tested."
+    },
+    {
+      "source": "bioicons",
+      "source_id": "cc-by-4.0/People-Other/DBCLS/Teaching_classroom.svg",
+      "source_index": 2632,
+      "url": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-4.0/People-Other/DBCLS/Teaching_classroom.svg",
+      "error_type": "MediaValidationError",
+      "error": "SVG entity declaration is not allowed",
+      "classification": "illustrator_namespace_candidate",
+      "recommended_disposition": "Reprocess in cloud with dfdcee7. IgA and gut-like_organ samples rendered; remaining 144 must still be tested."
+    },
+    {
+      "source": "bioicons",
+      "source_id": "cc-by-4.0/People-Other/DBCLS/counseling01.svg",
+      "source_index": 2633,
+      "url": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-4.0/People-Other/DBCLS/counseling01.svg",
+      "error_type": "MediaValidationError",
+      "error": "SVG entity declaration is not allowed",
+      "classification": "illustrator_namespace_candidate",
+      "recommended_disposition": "Reprocess in cloud with dfdcee7. IgA and gut-like_organ samples rendered; remaining 144 must still be tested."
+    },
+    {
+      "source": "bioicons",
+      "source_id": "cc-by-4.0/People-Other/DBCLS/counseling02.svg",
+      "source_index": 2634,
+      "url": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-4.0/People-Other/DBCLS/counseling02.svg",
+      "error_type": "MediaValidationError",
+      "error": "SVG entity declaration is not allowed",
+      "classification": "illustrator_namespace_candidate",
+      "recommended_disposition": "Reprocess in cloud with dfdcee7. IgA and gut-like_organ samples rendered; remaining 144 must still be tested."
+    },
+    {
+      "source": "bioicons",
+      "source_id": "cc-by-4.0/People-Other/DBCLS/counseling03.svg",
+      "source_index": 2635,
+      "url": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-4.0/People-Other/DBCLS/counseling03.svg",
+      "error_type": "MediaValidationError",
+      "error": "SVG entity declaration is not allowed",
+      "classification": "illustrator_namespace_candidate",
+      "recommended_disposition": "Reprocess in cloud with dfdcee7. IgA and gut-like_organ samples rendered; remaining 144 must still be tested."
+    },
+    {
+      "source": "bioicons",
+      "source_id": "cc-by-4.0/People-Other/DBCLS/counseling04.svg",
+      "source_index": 2636,
+      "url": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-4.0/People-Other/DBCLS/counseling04.svg",
+      "error_type": "MediaValidationError",
+      "error": "SVG entity declaration is not allowed",
+      "classification": "illustrator_namespace_candidate",
+      "recommended_disposition": "Reprocess in cloud with dfdcee7. IgA and gut-like_organ samples rendered; remaining 144 must still be tested."
+    },
+    {
+      "source": "bioicons",
+      "source_id": "cc-by-4.0/People-Other/DBCLS/counseling05.svg",
+      "source_index": 2637,
+      "url": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-4.0/People-Other/DBCLS/counseling05.svg",
+      "error_type": "MediaValidationError",
+      "error": "SVG entity declaration is not allowed",
+      "classification": "illustrator_namespace_candidate",
+      "recommended_disposition": "Reprocess in cloud with dfdcee7. IgA and gut-like_organ samples rendered; remaining 144 must still be tested."
+    },
+    {
+      "source": "bioicons",
+      "source_id": "cc-by-4.0/People-Other/DBCLS/drip_iv_treatment.svg",
+      "source_index": 2638,
+      "url": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-4.0/People-Other/DBCLS/drip_iv_treatment.svg",
+      "error_type": "MediaValidationError",
+      "error": "SVG entity declaration is not allowed",
+      "classification": "illustrator_namespace_candidate",
+      "recommended_disposition": "Reprocess in cloud with dfdcee7. IgA and gut-like_organ samples rendered; remaining 144 must still be tested."
+    },
+    {
+      "source": "bioicons",
+      "source_id": "cc-by-4.0/People-Other/DBCLS/precounseling01.svg",
+      "source_index": 2639,
+      "url": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-4.0/People-Other/DBCLS/precounseling01.svg",
+      "error_type": "MediaValidationError",
+      "error": "SVG entity declaration is not allowed",
+      "classification": "illustrator_namespace_candidate",
+      "recommended_disposition": "Reprocess in cloud with dfdcee7. IgA and gut-like_organ samples rendered; remaining 144 must still be tested."
+    },
+    {
+      "source": "bioicons",
+      "source_id": "cc-by-4.0/People-Other/DBCLS/precounseling02.svg",
+      "source_index": 2640,
+      "url": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-4.0/People-Other/DBCLS/precounseling02.svg",
+      "error_type": "MediaValidationError",
+      "error": "SVG entity declaration is not allowed",
+      "classification": "illustrator_namespace_candidate",
+      "recommended_disposition": "Reprocess in cloud with dfdcee7. IgA and gut-like_organ samples rendered; remaining 144 must still be tested."
+    },
+    {
+      "source": "bioicons",
+      "source_id": "cc-by-4.0/People-Other/DBCLS/precounseling03.svg",
+      "source_index": 2641,
+      "url": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-4.0/People-Other/DBCLS/precounseling03.svg",
+      "error_type": "MediaValidationError",
+      "error": "SVG entity declaration is not allowed",
+      "classification": "illustrator_namespace_candidate",
+      "recommended_disposition": "Reprocess in cloud with dfdcee7. IgA and gut-like_organ samples rendered; remaining 144 must still be tested."
+    },
+    {
+      "source": "bioicons",
+      "source_id": "cc-by-4.0/People-Other/DBCLS/presentation_female.svg",
+      "source_index": 2642,
+      "url": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-4.0/People-Other/DBCLS/presentation_female.svg",
+      "error_type": "MediaValidationError",
+      "error": "SVG entity declaration is not allowed",
+      "classification": "illustrator_namespace_candidate",
+      "recommended_disposition": "Reprocess in cloud with dfdcee7. IgA and gut-like_organ samples rendered; remaining 144 must still be tested."
+    },
+    {
+      "source": "bioicons",
+      "source_id": "cc-by-4.0/People-Other/DBCLS/presentation_male.svg",
+      "source_index": 2643,
+      "url": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-4.0/People-Other/DBCLS/presentation_male.svg",
+      "error_type": "MediaValidationError",
+      "error": "SVG entity declaration is not allowed",
+      "classification": "illustrator_namespace_candidate",
+      "recommended_disposition": "Reprocess in cloud with dfdcee7. IgA and gut-like_organ samples rendered; remaining 144 must still be tested."
+    },
+    {
+      "source": "bioicons",
+      "source_id": "cc-by-4.0/People-Other/DBCLS/taking-blood-sample.svg",
+      "source_index": 2644,
+      "url": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-4.0/People-Other/DBCLS/taking-blood-sample.svg",
+      "error_type": "MediaValidationError",
+      "error": "SVG entity declaration is not allowed",
+      "classification": "illustrator_namespace_candidate",
+      "recommended_disposition": "Reprocess in cloud with dfdcee7. IgA and gut-like_organ samples rendered; remaining 144 must still be tested."
+    },
+    {
+      "source": "bioicons",
+      "source_id": "cc-by-4.0/People-Other/DBCLS/ultrasonic-examination.svg",
+      "source_index": 2645,
+      "url": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-4.0/People-Other/DBCLS/ultrasonic-examination.svg",
+      "error_type": "MediaValidationError",
+      "error": "SVG entity declaration is not allowed",
+      "classification": "illustrator_namespace_candidate",
+      "recommended_disposition": "Reprocess in cloud with dfdcee7. IgA and gut-like_organ samples rendered; remaining 144 must still be tested."
+    },
+    {
+      "source": "bioicons",
+      "source_id": "cc-by-4.0/Plants_Algae/DBCLS/Cyanobacteria.svg",
+      "source_index": 2651,
+      "url": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-4.0/Plants_Algae/DBCLS/Cyanobacteria.svg",
+      "error_type": "MediaValidationError",
+      "error": "SVG foreignObject has no supported explicit fallback; quarantined to avoid missing labels",
+      "classification": "illustrator_native_fallback_candidate",
+      "recommended_disposition": "Reprocess with literal Adobe namespace-alias support. IgD sample identified and validated; all 13 require cloud results."
+    },
+    {
+      "source": "bioicons",
+      "source_id": "cc-by-4.0/Plants_Algae/DBCLS/tobacco.svg",
+      "source_index": 2675,
+      "url": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-4.0/Plants_Algae/DBCLS/tobacco.svg",
+      "error_type": "MediaValidationError",
+      "error": "SVG foreignObject has no supported explicit fallback; quarantined to avoid missing labels",
+      "classification": "illustrator_native_fallback_candidate",
+      "recommended_disposition": "Reprocess with literal Adobe namespace-alias support. IgD sample identified and validated; all 13 require cloud results."
+    },
+    {
+      "source": "bioicons",
+      "source_id": "cc-by-4.0/Plants_Algae/DBCLS/wheat.svg",
+      "source_index": 2677,
+      "url": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-4.0/Plants_Algae/DBCLS/wheat.svg",
+      "error_type": "MediaValidationError",
+      "error": "SVG foreignObject has no supported explicit fallback; quarantined to avoid missing labels",
+      "classification": "illustrator_native_fallback_candidate",
+      "recommended_disposition": "Reprocess with literal Adobe namespace-alias support. IgD sample identified and validated; all 13 require cloud results."
+    },
+    {
+      "source": "bioicons",
+      "source_id": "cc-by-4.0/Viruses/DBCLS/Polyomaviridae.svg",
+      "source_index": 2748,
+      "url": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-4.0/Viruses/DBCLS/Polyomaviridae.svg",
+      "error_type": "MediaValidationError",
+      "error": "Source is empty or exceeds the processing byte limit",
+      "classification": "empty_upstream_blob",
+      "recommended_disposition": "Keep isolated. The pinned official Git tree reports size=0 for this SVG; no artwork bytes exist at this path."
+    },
+    {
+      "source": "bioicons",
+      "source_id": "cc-by-4.0/Viruses/DBCLS/SARS-CoV-2.svg",
+      "source_index": 2749,
+      "url": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-4.0/Viruses/DBCLS/SARS-CoV-2.svg",
+      "error_type": "MediaValidationError",
+      "error": "Source is empty or exceeds the processing byte limit",
+      "classification": "empty_upstream_blob",
+      "recommended_disposition": "Keep isolated. The pinned official Git tree reports size=0 for this SVG; no artwork bytes exist at this path."
+    },
+    {
+      "source": "bioicons",
+      "source_id": "cc-by-4.0/Viruses/DBCLS/virus.svg",
+      "source_index": 2751,
+      "url": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-4.0/Viruses/DBCLS/virus.svg",
+      "error_type": "MediaValidationError",
+      "error": "Source is empty or exceeds the processing byte limit",
+      "classification": "empty_upstream_blob",
+      "recommended_disposition": "Keep isolated. The pinned official Git tree reports size=0 for this SVG; no artwork bytes exist at this path."
+    },
+    {
+      "source": "bioicons",
+      "source_id": "mit/Scientific_graphs/dbs-sticky/area.svg",
+      "source_index": 2800,
+      "url": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/mit/Scientific_graphs/dbs-sticky/area.svg",
+      "error_type": "MediaValidationError",
+      "error": "SVG CSS loads an external resource",
+      "classification": "external_css_dependency",
+      "recommended_disposition": "Keep isolated. area/scatter samples contain remote Excalidraw Virgil/Cascadia fonts and live chart labels. Check remaining items in cloud; do not silently substitute fonts and claim full fidelity."
+    },
+    {
+      "source": "bioicons",
+      "source_id": "mit/Scientific_graphs/dbs-sticky/bar-grouped.svg",
+      "source_index": 2801,
+      "url": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/mit/Scientific_graphs/dbs-sticky/bar-grouped.svg",
+      "error_type": "MediaValidationError",
+      "error": "SVG CSS loads an external resource",
+      "classification": "external_css_dependency",
+      "recommended_disposition": "Keep isolated. area/scatter samples contain remote Excalidraw Virgil/Cascadia fonts and live chart labels. Check remaining items in cloud; do not silently substitute fonts and claim full fidelity."
+    },
+    {
+      "source": "bioicons",
+      "source_id": "mit/Scientific_graphs/dbs-sticky/bar.svg",
+      "source_index": 2802,
+      "url": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/mit/Scientific_graphs/dbs-sticky/bar.svg",
+      "error_type": "MediaValidationError",
+      "error": "SVG CSS loads an external resource",
+      "classification": "external_css_dependency",
+      "recommended_disposition": "Keep isolated. area/scatter samples contain remote Excalidraw Virgil/Cascadia fonts and live chart labels. Check remaining items in cloud; do not silently substitute fonts and claim full fidelity."
+    },
+    {
+      "source": "bioicons",
+      "source_id": "mit/Scientific_graphs/dbs-sticky/box-whisker.svg",
+      "source_index": 2803,
+      "url": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/mit/Scientific_graphs/dbs-sticky/box-whisker.svg",
+      "error_type": "MediaValidationError",
+      "error": "SVG CSS loads an external resource",
+      "classification": "external_css_dependency",
+      "recommended_disposition": "Keep isolated. area/scatter samples contain remote Excalidraw Virgil/Cascadia fonts and live chart labels. Check remaining items in cloud; do not silently substitute fonts and claim full fidelity."
+    },
+    {
+      "source": "bioicons",
+      "source_id": "mit/Scientific_graphs/dbs-sticky/bubble.svg",
+      "source_index": 2804,
+      "url": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/mit/Scientific_graphs/dbs-sticky/bubble.svg",
+      "error_type": "MediaValidationError",
+      "error": "SVG CSS loads an external resource",
+      "classification": "external_css_dependency",
+      "recommended_disposition": "Keep isolated. area/scatter samples contain remote Excalidraw Virgil/Cascadia fonts and live chart labels. Check remaining items in cloud; do not silently substitute fonts and claim full fidelity."
+    },
+    {
+      "source": "bioicons",
+      "source_id": "mit/Scientific_graphs/dbs-sticky/calendar-heatmap.svg",
+      "source_index": 2805,
+      "url": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/mit/Scientific_graphs/dbs-sticky/calendar-heatmap.svg",
+      "error_type": "MediaValidationError",
+      "error": "SVG CSS loads an external resource",
+      "classification": "external_css_dependency",
+      "recommended_disposition": "Keep isolated. area/scatter samples contain remote Excalidraw Virgil/Cascadia fonts and live chart labels. Check remaining items in cloud; do not silently substitute fonts and claim full fidelity."
+    },
+    {
+      "source": "bioicons",
+      "source_id": "mit/Scientific_graphs/dbs-sticky/column-grouped.svg",
+      "source_index": 2806,
+      "url": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/mit/Scientific_graphs/dbs-sticky/column-grouped.svg",
+      "error_type": "MediaValidationError",
+      "error": "SVG CSS loads an external resource",
+      "classification": "external_css_dependency",
+      "recommended_disposition": "Keep isolated. area/scatter samples contain remote Excalidraw Virgil/Cascadia fonts and live chart labels. Check remaining items in cloud; do not silently substitute fonts and claim full fidelity."
+    },
+    {
+      "source": "bioicons",
+      "source_id": "mit/Scientific_graphs/dbs-sticky/column-stacked-100.svg",
+      "source_index": 2807,
+      "url": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/mit/Scientific_graphs/dbs-sticky/column-stacked-100.svg",
+      "error_type": "MediaValidationError",
+      "error": "SVG CSS loads an external resource",
+      "classification": "external_css_dependency",
+      "recommended_disposition": "Keep isolated. area/scatter samples contain remote Excalidraw Virgil/Cascadia fonts and live chart labels. Check remaining items in cloud; do not silently substitute fonts and claim full fidelity."
+    },
+    {
+      "source": "bioicons",
+      "source_id": "mit/Scientific_graphs/dbs-sticky/column-stacked.svg",
+      "source_index": 2808,
+      "url": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/mit/Scientific_graphs/dbs-sticky/column-stacked.svg",
+      "error_type": "MediaValidationError",
+      "error": "SVG CSS loads an external resource",
+      "classification": "external_css_dependency",
+      "recommended_disposition": "Keep isolated. area/scatter samples contain remote Excalidraw Virgil/Cascadia fonts and live chart labels. Check remaining items in cloud; do not silently substitute fonts and claim full fidelity."
+    },
+    {
+      "source": "bioicons",
+      "source_id": "mit/Scientific_graphs/dbs-sticky/column.svg",
+      "source_index": 2809,
+      "url": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/mit/Scientific_graphs/dbs-sticky/column.svg",
+      "error_type": "MediaValidationError",
+      "error": "SVG CSS loads an external resource",
+      "classification": "external_css_dependency",
+      "recommended_disposition": "Keep isolated. area/scatter samples contain remote Excalidraw Virgil/Cascadia fonts and live chart labels. Check remaining items in cloud; do not silently substitute fonts and claim full fidelity."
+    },
+    {
+      "source": "bioicons",
+      "source_id": "mit/Scientific_graphs/dbs-sticky/coxcomb.svg",
+      "source_index": 2810,
+      "url": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/mit/Scientific_graphs/dbs-sticky/coxcomb.svg",
+      "error_type": "MediaValidationError",
+      "error": "SVG CSS loads an external resource",
+      "classification": "external_css_dependency",
+      "recommended_disposition": "Keep isolated. area/scatter samples contain remote Excalidraw Virgil/Cascadia fonts and live chart labels. Check remaining items in cloud; do not silently substitute fonts and claim full fidelity."
+    },
+    {
+      "source": "bioicons",
+      "source_id": "mit/Scientific_graphs/dbs-sticky/density-plot.svg",
+      "source_index": 2811,
+      "url": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/mit/Scientific_graphs/dbs-sticky/density-plot.svg",
+      "error_type": "MediaValidationError",
+      "error": "SVG CSS loads an external resource",
+      "classification": "external_css_dependency",
+      "recommended_disposition": "Keep isolated. area/scatter samples contain remote Excalidraw Virgil/Cascadia fonts and live chart labels. Check remaining items in cloud; do not silently substitute fonts and claim full fidelity."
+    },
+    {
+      "source": "bioicons",
+      "source_id": "mit/Scientific_graphs/dbs-sticky/donut.svg",
+      "source_index": 2812,
+      "url": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/mit/Scientific_graphs/dbs-sticky/donut.svg",
+      "error_type": "MediaValidationError",
+      "error": "SVG CSS loads an external resource",
+      "classification": "external_css_dependency",
+      "recommended_disposition": "Keep isolated. area/scatter samples contain remote Excalidraw Virgil/Cascadia fonts and live chart labels. Check remaining items in cloud; do not silently substitute fonts and claim full fidelity."
+    },
+    {
+      "source": "bioicons",
+      "source_id": "mit/Scientific_graphs/dbs-sticky/dot-multi-strip-jitter.svg",
+      "source_index": 2813,
+      "url": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/mit/Scientific_graphs/dbs-sticky/dot-multi-strip-jitter.svg",
+      "error_type": "MediaValidationError",
+      "error": "SVG CSS loads an external resource",
+      "classification": "external_css_dependency",
+      "recommended_disposition": "Keep isolated. area/scatter samples contain remote Excalidraw Virgil/Cascadia fonts and live chart labels. Check remaining items in cloud; do not silently substitute fonts and claim full fidelity."
+    },
+    {
+      "source": "bioicons",
+      "source_id": "mit/Scientific_graphs/dbs-sticky/dot-multi-strip.svg",
+      "source_index": 2814,
+      "url": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/mit/Scientific_graphs/dbs-sticky/dot-multi-strip.svg",
+      "error_type": "MediaValidationError",
+      "error": "SVG CSS loads an external resource",
+      "classification": "external_css_dependency",
+      "recommended_disposition": "Keep isolated. area/scatter samples contain remote Excalidraw Virgil/Cascadia fonts and live chart labels. Check remaining items in cloud; do not silently substitute fonts and claim full fidelity."
+    },
+    {
+      "source": "bioicons",
+      "source_id": "mit/Scientific_graphs/dbs-sticky/dot-strip.svg",
+      "source_index": 2815,
+      "url": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/mit/Scientific_graphs/dbs-sticky/dot-strip.svg",
+      "error_type": "MediaValidationError",
+      "error": "SVG CSS loads an external resource",
+      "classification": "external_css_dependency",
+      "recommended_disposition": "Keep isolated. area/scatter samples contain remote Excalidraw Virgil/Cascadia fonts and live chart labels. Check remaining items in cloud; do not silently substitute fonts and claim full fidelity."
+    },
+    {
+      "source": "bioicons",
+      "source_id": "mit/Scientific_graphs/dbs-sticky/heatmap.svg",
+      "source_index": 2816,
+      "url": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/mit/Scientific_graphs/dbs-sticky/heatmap.svg",
+      "error_type": "MediaValidationError",
+      "error": "SVG CSS loads an external resource",
+      "classification": "external_css_dependency",
+      "recommended_disposition": "Keep isolated. area/scatter samples contain remote Excalidraw Virgil/Cascadia fonts and live chart labels. Check remaining items in cloud; do not silently substitute fonts and claim full fidelity."
+    },
+    {
+      "source": "bioicons",
+      "source_id": "mit/Scientific_graphs/dbs-sticky/histogram.svg",
+      "source_index": 2817,
+      "url": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/mit/Scientific_graphs/dbs-sticky/histogram.svg",
+      "error_type": "MediaValidationError",
+      "error": "SVG CSS loads an external resource",
+      "classification": "external_css_dependency",
+      "recommended_disposition": "Keep isolated. area/scatter samples contain remote Excalidraw Virgil/Cascadia fonts and live chart labels. Check remaining items in cloud; do not silently substitute fonts and claim full fidelity."
+    },
+    {
+      "source": "bioicons",
+      "source_id": "mit/Scientific_graphs/dbs-sticky/line-dot.svg",
+      "source_index": 2818,
+      "url": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/mit/Scientific_graphs/dbs-sticky/line-dot.svg",
+      "error_type": "MediaValidationError",
+      "error": "SVG CSS loads an external resource",
+      "classification": "external_css_dependency",
+      "recommended_disposition": "Keep isolated. area/scatter samples contain remote Excalidraw Virgil/Cascadia fonts and live chart labels. Check remaining items in cloud; do not silently substitute fonts and claim full fidelity."
+    },
+    {
+      "source": "bioicons",
+      "source_id": "mit/Scientific_graphs/dbs-sticky/line.svg",
+      "source_index": 2819,
+      "url": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/mit/Scientific_graphs/dbs-sticky/line.svg",
+      "error_type": "MediaValidationError",
+      "error": "SVG CSS loads an external resource",
+      "classification": "external_css_dependency",
+      "recommended_disposition": "Keep isolated. area/scatter samples contain remote Excalidraw Virgil/Cascadia fonts and live chart labels. Check remaining items in cloud; do not silently substitute fonts and claim full fidelity."
+    },
+    {
+      "source": "bioicons",
+      "source_id": "mit/Scientific_graphs/dbs-sticky/pie.svg",
+      "source_index": 2820,
+      "url": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/mit/Scientific_graphs/dbs-sticky/pie.svg",
+      "error_type": "MediaValidationError",
+      "error": "SVG CSS loads an external resource",
+      "classification": "external_css_dependency",
+      "recommended_disposition": "Keep isolated. area/scatter samples contain remote Excalidraw Virgil/Cascadia fonts and live chart labels. Check remaining items in cloud; do not silently substitute fonts and claim full fidelity."
+    },
+    {
+      "source": "bioicons",
+      "source_id": "mit/Scientific_graphs/dbs-sticky/population-pyramid.svg",
+      "source_index": 2821,
+      "url": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/mit/Scientific_graphs/dbs-sticky/population-pyramid.svg",
+      "error_type": "MediaValidationError",
+      "error": "SVG CSS loads an external resource",
+      "classification": "external_css_dependency",
+      "recommended_disposition": "Keep isolated. area/scatter samples contain remote Excalidraw Virgil/Cascadia fonts and live chart labels. Check remaining items in cloud; do not silently substitute fonts and claim full fidelity."
+    },
+    {
+      "source": "bioicons",
+      "source_id": "mit/Scientific_graphs/dbs-sticky/radar.svg",
+      "source_index": 2822,
+      "url": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/mit/Scientific_graphs/dbs-sticky/radar.svg",
+      "error_type": "MediaValidationError",
+      "error": "SVG CSS loads an external resource",
+      "classification": "external_css_dependency",
+      "recommended_disposition": "Keep isolated. area/scatter samples contain remote Excalidraw Virgil/Cascadia fonts and live chart labels. Check remaining items in cloud; do not silently substitute fonts and claim full fidelity."
+    },
+    {
+      "source": "bioicons",
+      "source_id": "mit/Scientific_graphs/dbs-sticky/scatter.svg",
+      "source_index": 2823,
+      "url": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/mit/Scientific_graphs/dbs-sticky/scatter.svg",
+      "error_type": "MediaValidationError",
+      "error": "SVG CSS loads an external resource",
+      "classification": "external_css_dependency",
+      "recommended_disposition": "Keep isolated. area/scatter samples contain remote Excalidraw Virgil/Cascadia fonts and live chart labels. Check remaining items in cloud; do not silently substitute fonts and claim full fidelity."
+    },
+    {
+      "source": "bioicons",
+      "source_id": "mit/Scientific_graphs/dbs-sticky/stackedbar-100.svg",
+      "source_index": 2824,
+      "url": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/mit/Scientific_graphs/dbs-sticky/stackedbar-100.svg",
+      "error_type": "MediaValidationError",
+      "error": "SVG CSS loads an external resource",
+      "classification": "external_css_dependency",
+      "recommended_disposition": "Keep isolated. area/scatter samples contain remote Excalidraw Virgil/Cascadia fonts and live chart labels. Check remaining items in cloud; do not silently substitute fonts and claim full fidelity."
+    },
+    {
+      "source": "bioicons",
+      "source_id": "mit/Scientific_graphs/dbs-sticky/stackedbar.svg",
+      "source_index": 2825,
+      "url": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/mit/Scientific_graphs/dbs-sticky/stackedbar.svg",
+      "error_type": "MediaValidationError",
+      "error": "SVG CSS loads an external resource",
+      "classification": "external_css_dependency",
+      "recommended_disposition": "Keep isolated. area/scatter samples contain remote Excalidraw Virgil/Cascadia fonts and live chart labels. Check remaining items in cloud; do not silently substitute fonts and claim full fidelity."
+    },
+    {
+      "source": "bioicons",
+      "source_id": "mit/Scientific_graphs/dbs-sticky/theme-river.svg",
+      "source_index": 2826,
+      "url": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/mit/Scientific_graphs/dbs-sticky/theme-river.svg",
+      "error_type": "MediaValidationError",
+      "error": "SVG CSS loads an external resource",
+      "classification": "external_css_dependency",
+      "recommended_disposition": "Keep isolated. area/scatter samples contain remote Excalidraw Virgil/Cascadia fonts and live chart labels. Check remaining items in cloud; do not silently substitute fonts and claim full fidelity."
+    },
+    {
+      "source": "bioicons",
+      "source_id": "mit/Scientific_graphs/dbs-sticky/tree-map.svg",
+      "source_index": 2827,
+      "url": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/mit/Scientific_graphs/dbs-sticky/tree-map.svg",
+      "error_type": "MediaValidationError",
+      "error": "SVG CSS loads an external resource",
+      "classification": "external_css_dependency",
+      "recommended_disposition": "Keep isolated. area/scatter samples contain remote Excalidraw Virgil/Cascadia fonts and live chart labels. Check remaining items in cloud; do not silently substitute fonts and claim full fidelity."
+    },
+    {
+      "source": "bioicons",
+      "source_id": "mit/Scientific_graphs/dbs-sticky/violin.svg",
+      "source_index": 2828,
+      "url": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/mit/Scientific_graphs/dbs-sticky/violin.svg",
+      "error_type": "MediaValidationError",
+      "error": "SVG CSS loads an external resource",
+      "classification": "external_css_dependency",
+      "recommended_disposition": "Keep isolated. area/scatter samples contain remote Excalidraw Virgil/Cascadia fonts and live chart labels. Check remaining items in cloud; do not silently substitute fonts and claim full fidelity."
+    },
+    {
+      "source": "bioicons",
+      "source_id": "mit/Scientific_graphs/dbs-sticky/waterfall.svg",
+      "source_index": 2829,
+      "url": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/mit/Scientific_graphs/dbs-sticky/waterfall.svg",
+      "error_type": "MediaValidationError",
+      "error": "SVG CSS loads an external resource",
+      "classification": "external_css_dependency",
+      "recommended_disposition": "Keep isolated. area/scatter samples contain remote Excalidraw Virgil/Cascadia fonts and live chart labels. Check remaining items in cloud; do not silently substitute fonts and claim full fidelity."
+    }
+  ]
+}

@@ -322,11 +322,23 @@ def discover_togo(source, client):
                             raise SourceAccessError(file_url, "variant archive contains no declared image format")
                         for member in sorted(members, key=lambda m: m.filename):
                             record["files"].append({"url": file_url, "format": fmt, "archive_member": member.filename,
-                                                    "upstream_size": member.file_size})
+                                                    "upstream_size": member.file_size, "declared_fields": [fmt]})
                 else:
-                    if PurePosixPath(filename).suffix.lower() != "." + fmt:
-                        raise SourceAccessError(file_url, "Togo file extension disagrees with catalog field")
-                    record["files"].append({"url": file_url, "format": fmt})
+                    actual_format = PurePosixPath(filename).suffix.lower().lstrip(".")
+                    if actual_format not in source.get("extensions", ["svg", "png"]):
+                        record.setdefault("unsupported_file_references", []).append({"declared_field": fmt, "url": file_url,
+                                                                                      "format": actual_format})
+                        record.setdefault("discovery_warnings", []).append(f"Official {fmt} field points to unsupported .{actual_format}; reference retained without pretending it is {fmt}.")
+                        continue
+                    descriptor = next((f for f in record["files"] if f["url"] == file_url and not f.get("archive_member")), None)
+                    if descriptor is None:
+                        descriptor = {"url": file_url, "format": actual_format, "declared_fields": []}
+                        record["files"].append(descriptor)
+                    descriptor["declared_fields"].append(fmt)
+                    if actual_format != fmt:
+                        note = f"Official {fmt} field points to .{actual_format}; URL extension used pending actual-byte validation."
+                        descriptor["format_discovery_note"] = note
+                        record.setdefault("discovery_warnings", []).append(note)
             results.append(record)
         if page >= int(response["last_page"]):
             break

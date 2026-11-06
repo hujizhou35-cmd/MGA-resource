@@ -102,6 +102,16 @@ def test_only_known_nonrecursive_illustrator_entities_are_allowed(declaration):
         inspect_media(original)
 
 
+def test_inkscape_literal_illustrator_namespace_alias_uses_native_fallback(tmp_path):
+    original = illustrator_svg().replace(b'xmlns:i="&ns_ai;"', b'xmlns:i="&amp;ns_ai;"')
+    path = tmp_path / "resaved.svg"
+    path.write_bytes(original)
+    result = process_file(path, tmp_path / "previews", 64)
+    assert result["validation"]["status"] == "machine_checked_and_rendered"
+    assert result["foreign_object_fallbacks"][0]["kind"] == "illustrator_svg_fallback"
+    assert path.read_bytes() == original
+
+
 def test_illustrator_entity_expansion_is_bounded(monkeypatch):
     monkeypatch.setattr("mga_resources.media.MAX_SOURCE_BYTES", 550)
     with pytest.raises(MediaValidationError, match="expansion exceeds"):

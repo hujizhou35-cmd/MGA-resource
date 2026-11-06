@@ -1,0 +1,108 @@
+{
+  "verified_at": "2026-11-06",
+  "source_id": "cc-by-4.0/General_items/scientific-article.svg",
+  "bioicons_commit": "d29e766ea7580b8063c4f47b29e872db40a4d979",
+  "bioicons_blob_sha": "6ab51916742a88abd3f0ccf8637839bc5acdf0a9",
+  "bioicons_url": "https://github.com/duerrsimon/bioicons/blob/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-4.0/General_items/scientific-article.svg",
+  "bioicons_original_size": 3007,
+  "bioicons_added_commit": "https://github.com/duerrsimon/bioicons/commit/978274dd9bf0f6bf13f0a0fd80b5779a7059d5e0",
+  "official_api_endpoint": "https://togotv-api.dbcls.jp/api/entries?target=pictures&from=1&rows=3000",
+  "official_api_item": {
+    "TogoTV_Image_ID": 527,
+    "ai": "201805_article.ai",
+    "author": "Natsuko O. Shinozaki",
+    "author_str": "Natsuko O. Shinozaki",
+    "editor": "<a href=\"https://researchmap.jp/hiromasaono\" target=\"_blank\" rel=\"noopener\">小野 浩雅(ONO, Hiromasa)</a>",
+    "id": "https://doi.org/10.7875/togopic.2018.05",
+    "license": "https://creativecommons.org/licenses/by/4.0/",
+    "name": "論文",
+    "name_en": "An article",
+    "old_tag": "模式図",
+    "other_tag1": "書類",
+    "other_tags": "書類",
+    "other_tags_comma": "書類,バイオインフォマティクス,研究データ,データベース,FAIR原則,生命科学",
+    "other_tags_comma_en": "Documents, Bioinformatics, Research data, Database, FAIR principles, Life science",
+    "other_tags_comma_old": "書類",
+    "other_tags_en": "Documents",
+    "png": "201805_article.png",
+    "publisher": "DBCLS",
+    "scientific_name": "-",
+    "svg": "201805_article.svg",
+    "tax_id": "-",
+    "togopic_id": 307,
+    "uploadDate": "2018-05-01"
+  },
+  "original_url": "https://dbarchive.biosciencedbc.jp/data/togo-pic/image/201805_article.svg",
+  "original_size": 6957,
+  "original_sha256": "f497b5995ed494f16af0250d70c0edbbfa67ea9d00a8d45ed3127b76ba722baa",
+  "author": "Natsuko O. Shinozaki",
+  "publisher": "DBCLS",
+  "license": "CC-BY-4.0",
+  "recommended_attribution": "Natsuko O. Shinozaki / DBCLS TogoTV, An article (2018), CC BY 4.0; SVG optimized by Bioicons.",
+  "match_method": "Manual XML geometry and text comparison of official original and Bioicons optimized SVG, not an exact-byte match.",
+  "match_summary": {
+    "same_viewBox": "0 0 161.95 222.14",
+    "same_page_rectangles": [
+      {
+        "x": "12.75",
+        "y": "11.29",
+        "width": "148.82",
+        "height": "210.47",
+        "rx": "0.46",
+        "ry": "0.46"
+      },
+      {
+        "x": "6.7",
+        "y": "6.25",
+        "width": "148.82",
+        "height": "210.47",
+        "rx": "0.46",
+        "ry": "0.46"
+      },
+      {
+        "x": "0.38",
+        "y": "0.38",
+        "width": "148.82",
+        "height": "210.47",
+        "rx": "0.46",
+        "ry": "0.46"
+      }
+    ],
+    "same_all_7_text_elements": [
+      {
+        "text": "ARTICLE",
+        "transform": "translate(3.04 20.05)"
+      },
+      {
+        "text": "Abstract",
+        "transform": "translate(10.15 70.31)"
+      },
+      {
+        "text": ",",
+        "transform": "translate(22.37 53.08)"
+      },
+      {
+        "text": ",",
+        "transform": "translate(38.8 53.07)"
+      },
+      {
+        "text": ",",
+        "transform": "translate(55.69 53.07)"
+      },
+      {
+        "text": ",",
+        "transform": "translate(72.01 53.07)"
+      },
+      {
+        "text": "Introduction",
+        "transform": "translate(10 123.08)"
+      }
+    ],
+    "same_article_header_rectangle": "x=1.08,y=11.82,width=147.4,height=10.47; converted to equivalent path by Bioicons",
+    "nearby_candidate_rejected": {
+      "id": 528,
+      "filename": "201805_articles.svg",
+      "reason": "different viewBox 0 0 180.31 118.03 and different geometry; do not attribute to this DOI"
+    }
+  }
+}

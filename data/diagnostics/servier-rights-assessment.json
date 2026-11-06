@@ -1,0 +1,31 @@
+{
+  "verified_at": "2026-11-06",
+  "scope": "Bioicons pinned historical CC BY 3.0 SVG copies, not a new download of the Servier website or its database",
+  "counts": {"Servier": 1374, "ModifiedFrom_Servier": 1, "total": 1375},
+  "bioicons_commit": "d29e766ea7580b8063c4f47b29e872db40a4d979",
+  "declared_item_license": "CC-BY-3.0",
+  "fixed_source_evidence": [
+    "https://github.com/duerrsimon/bioicons/blob/d29e766ea7580b8063c4f47b29e872db40a4d979/README.md",
+    "https://github.com/duerrsimon/bioicons/blob/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-3.0/LICENSE",
+    "https://github.com/duerrsimon/bioicons/blob/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/authors.json"
+  ],
+  "cc_license_evidence": {
+    "url": "https://creativecommons.org/licenses/by/3.0/legalcode.en",
+    "section_3_a_and_c": "Allows reproduction in collections and distribution of the work including in collections.",
+    "section_7_b": "Offering other terms later or stopping distribution does not withdraw an already granted license.",
+    "section_8_a": "Downstream recipients receive the license from the original licensor."
+  },
+  "current_official_terms": {
+    "url": "https://smart.servier.com/terms-of-use/",
+    "section_3": "Distinguishes proprietary Site Content (layout, navigation, databases and site structure) from Medical Images, which are expressly under CC BY 4.0 with redistribution and adaptation allowed.",
+    "automation_clause_scope": "The automated-access clause expressly refers to Site Content. It should not be generalized into a ban on public GitHub copies obtained through an existing CC license."
+  },
+  "actual_conflicting_statement": {
+    "url": "https://smart.servier.com/using-smart-images-what-you-can-do/",
+    "question": "Educational game/app use",
+    "quote": "not marketed as a standalone image library or collection",
+    "assessment": "This is a real restriction stated in the current FAQ and should not be concealed. It conflicts with the general collection/redistribution rights of the standard CC license; it is not a medical-professional-only restriction."
+  },
+  "recommendation": "Resolve the blanket author hold for the existing pinned Bioicons CC BY 3.0 distribution chain, retain attribution and modification status, retain this conflict note, and do not relabel old SVG files CC BY 4.0 solely because the current website changed. This is a source-based licensing assessment, not a guarantee that the site's conflicting FAQ has no possible legal effect.",
+  "alternative_if_project_defers": "Describe the narrow reason as the current standalone-library FAQ conflict, not unknown license, missing author, or an assumed medical-professional restriction."
+}
