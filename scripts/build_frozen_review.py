@@ -65,6 +65,7 @@ def main():
     parser.add_argument("--release-tag", required=True)
     parser.add_argument("--assembly-prefix", required=True)
     parser.add_argument("--plan", required=True)
+    parser.add_argument("--publish-tag", help="Separate evidence Release; source archives stay in --release-tag")
     parser.add_argument("--publish", action="store_true")
     args = parser.parse_args()
     if os.environ.get("GITHUB_ACTIONS") != "true":
@@ -117,7 +118,7 @@ def main():
     report = base / ("frozen-review-" + run + ".summary.json")
     report.write_text(json.dumps(summary, ensure_ascii=False, indent=2)+"\n", encoding="utf-8")
     if args.publish:
-        gh("release", "upload", args.release_tag, str(archive), str(report), "--repo", repository)
+        gh("release", "upload", args.publish_tag or args.release_tag, str(archive), str(report), "--repo", repository)
     print(json.dumps({key: summary[key] for key in ("query_count", "unique_candidate_files", "candidates_without_preview", "bundle", "bundle_bytes")}))
 
 

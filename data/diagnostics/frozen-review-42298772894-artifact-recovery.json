@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "status": "verified_preview_artifact_from_partial_upload_failure_not_acceptance",
+  "workflow_run": 42298772894,
+  "workflow_conclusion": "failure",
+  "failure_reason": "GitHub Release rejected external summary upload: file_count limited to 1000 assets per release",
+  "bundle": {
+    "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/frozen-review-42298772894-1.tar.gz",
+    "github_asset_id": 718661947,
+    "sha256": "a4a7e7e6a9e2750472d39ac1d9acbb34e8461d559d6b3afc2141b1ecd76ed196",
+    "size_bytes": 13430022,
+    "github_digest_and_local_bytes_verified": true
+  },
+  "bindings": {
+    "catalog_sha256": "5c90306415ce5e7f36e875c7f57b19a91930aacfeeaeecdf9ad7662770f9a3fe",
+    "benchmark_sha256": "ce0282afeb4afbcee8fdef1c6f937844ef569cabf16ba7909e22bf86b1096e92",
+    "search_core_sha256": "8120b1ff2b47b83605c0cc5495b2aa7f12c59b740f7a44f0db376a28808e9049",
+    "ranking_version": "shared-search-3.4.1",
+    "search_index_version": 9,
+    "diagnostic_sha256": "eb59d5d46ec591a3759d3638da546aabdd97ba65134f74a033692847e6fa4e74",
+    "candidate_manifest_raw_sha256": "a4fe0424ee8ecc32096090ef295242bdaa04b9ce29ff4f7a80948c95516d5436"
+  },
+  "frozen_plan_sha256": "c9d781c23ebe07062b00a4d575b20220971e916743a050028670bc7feb584d5a",
+  "mapping_sha256": "fd7901163b7dba233b34808253ffe1561eb996020382275a85c1ed2ef0f17222",
+  "embedded_summary_sha256": "0d3069a1b021480c539d6aa42c30ed091b013844a47b09342423aa37eebc3714",
+  "query_count": 120,
+  "unique_candidate_files": 355,
+  "unique_previews_loaded": 355,
+  "candidates_without_preview": 0,
+  "cloud_compressed_archive_bytes_read": 3641362722,
+  "original_files_persisted": 0,
+  "searches_executed": 0,
+  "review_acceptance_passed": false,
+  "later_evidence_release": "acceptance-20261107"
+}

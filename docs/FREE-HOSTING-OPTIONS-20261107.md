@@ -88,3 +88,9 @@ D1 Free 每库 500 MB、每天 500 万行读取和 10 万行写入；索引会�
 部署阶段应先用小批量读取远端 `meta.rows_written`、`meta.rows_read` 和数据库大小，再确定分批导入预算与恢复点；必要时跨 UTC 午夜分日完成，保留每日余量和账户其他用量。FTS/JSON 筛选、计数与宽查询必须单独测量，返回少量结果不代表只读取少量行。远端 CPU 也要实际测量；本机 wall time 不是 Cloudflare CPU，SQLite `total_changes` 不是 D1 计费行数。[D1 返回 metadata](https://developers.cloudflare.com/d1/worker-api/return-object/)、[Workers CPU 定义](https://developers.cloudflare.com/workers/platform/limits/#cpu-time)
 
 仍未验证的事项：当前账户实际是否为 Free 套餐；远端部署权限最终写入结果；CI 凭据；D1 导入和查询实际读写量；远端 CPU；最终静态发布清单与三个超大件交付；用户范围和素材验收。以上准备不启动网站建设，也不声称线上吞吐已达标。
+# 采集归档附件上限的实际记录
+
+2026-11-07，`collection-20261106` 达到 GitHub Release 的附件数量上限；运行 `42298772894` 上传外部汇总 JSON 时收到 `file_count limited to 1000 assets per release`。同次 13,430,022 字节的冻结检索预览包已成功上传，经 GitHub digest、本地字节和 60 张联系表逐项哈希核验可用，不能把该运行的失败状态改写为成功。
+
+旧归档及其引用保留，后续验收证据使用 `acceptance-20261107`。云端读取来源归档的 tag 与输出证据的 tag 分开；不为腾位置删除旧来源，也不把所有后续文件塞进单一 Release。恢复记录见 `data/diagnostics/frozen-review-42298772894-artifact-recovery.json`。本次仅下载有界预览包和元数据，没有下载原图库，也未开始网站部署。
+

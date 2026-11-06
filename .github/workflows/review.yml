@@ -14,6 +14,10 @@ on:
         description: Optional committed plan to replay observed results without searching again
         default: ''
         type: string
+      evidence_release_tag:
+        description: Separate output Release for frozen review evidence
+        default: acceptance-20261107
+        type: string
 permissions:
   contents: write
 concurrency:
@@ -40,9 +44,10 @@ jobs:
           COLLECTION_TAG: ${{ inputs.release_tag }}
           ASSEMBLY_PREFIX: ${{ inputs.assembly_prefix }}
           FROZEN_PLAN: ${{ inputs.frozen_plan }}
+          EVIDENCE_TAG: ${{ inputs.evidence_release_tag }}
         run: |
           if [ -n "$FROZEN_PLAN" ]; then
-            python scripts/build_frozen_review.py --release-tag "$COLLECTION_TAG" --assembly-prefix "$ASSEMBLY_PREFIX" --plan "$FROZEN_PLAN" --publish
+            python scripts/build_frozen_review.py --release-tag "$COLLECTION_TAG" --assembly-prefix "$ASSEMBLY_PREFIX" --plan "$FROZEN_PLAN" --publish-tag "$EVIDENCE_TAG" --publish
           else
             python scripts/build_review.py --release-tag "$COLLECTION_TAG" --assembly-prefix "$ASSEMBLY_PREFIX" --publish
           fi
