@@ -328,10 +328,11 @@ def main() -> int:
             files = []
             item_assets = set()
             item_failures = 0
-            for descriptor in item.get("files", []):
+            for descriptor, content, download_error in client.iter_files(item.get("files", []), workers=4):
                 url = descriptor.get("url")
                 try:
-                    content = client.get_file(descriptor)
+                    if download_error is not None:
+                        raise download_error
                     digest = hashlib.sha256(content).hexdigest()
                     suffix = re.sub(r"[^a-z0-9]", "", str(descriptor.get("format", "bin")).lower()) or "bin"
                     relative = Path("files") / digest[:2] / f"{digest}.{suffix}"
