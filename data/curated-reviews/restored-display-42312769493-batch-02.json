@@ -1,0 +1,448 @@
+{
+  "schema_version": 1,
+  "reviewer": {
+    "kind": "agent",
+    "id": "Codex / scope_publication_check"
+  },
+  "reviewed_at": "2026-11-06T23:47:04.106307+00:00",
+  "mapping_sha256": "0fcb104d57b430cc4592d7f5123ed4d0fb53cf8c3c17557c161cf4bcd7f5b218",
+  "archive_sha256": "7d00632b110fcf73955522d3e71b7cd572a8d14753a2072b4c286eced32f1d48",
+  "archive_binding_basis": "Parent-verified bounded cloud review archive; this reviewer rehashed mapping.json and all six extracted batch-02 PNG sheets.",
+  "review_scope_zh": "实际查看恢复后预览生成的六张 PNG：四张白/深/棋盘及 96/48 px 比较页，两张相邻摆放页。没有清理、重着色、裁切或编辑原件；不作损坏排除、科学准确性、原生编辑或完整精选验收结论。",
+  "visual_display_review_completed": true,
+  "full_curated_requirement_passed": false,
+  "items": [
+    {
+      "ordinal": 13,
+      "candidate_id": "scisvg-519891a4c033306eccbb:file-0",
+      "original_sha256": "eb51703468824613cebafacea70c08cb8cbb5c78b192d421c995e1af9d27a1c4",
+      "preview_sha256": "858cb9870dd0ca7c354312af33390896d2956aa182a37aaa959b0062d1a7513d",
+      "title": "Micropipette",
+      "reviewed_sheets": [
+        {
+          "path": "batches/batch-02/adjacency.png",
+          "sha256": "9d30fa848c9ee551918da5551ffa964033d3c4606d485deff78d5f2b3ecd94b6"
+        },
+        {
+          "path": "batches/batch-02/comparison-01.png",
+          "sha256": "0a61ddbd75cd43866ee5d060175204829661bd4affa770f90a3be9a17c1253ac"
+        }
+      ],
+      "observations_zh": [
+        "白底可辨蓝色器身、绿色顶部与液滴，显示窗和右侧短刻线在 256 px 下可见。",
+        "深底上器身浅色填充仍清楚，蓝色吸头及绿色液滴的对比比白底弱；未见包围对象的整块白底。",
+        "棋盘与横向测试线可穿过器身外围；器身浅色填充遮住其后的测试线。",
+        "96 px 仍能区分器身、细尖与下方液滴；48 px 主要保留细长轮廓，显示窗小块和刻线已很难区分。",
+        "相邻摆放中对象宽度明显小于同一网格里的显微镜、试管架，原预览留白得到保留。"
+      ],
+      "display_limits_zh": [
+        "小尺寸不能承担显示数值或精细刻度表达。",
+        "深底使用时需再核对细尖与液滴对比；等尺寸外框不意味着实际对象有同等视觉大小。"
+      ],
+      "text_observation": {
+        "visible_text_in_artwork": "symbol_like_marks_not_readable_as_text",
+        "notes_zh": "器身小窗有深色块状标记，右侧有短刻线，本次不能读取为具体数值或字母。缩小后这些标记更难区分；不能据此批量删去小窗或刻线。测试页标题不属于素材标签，原件文字可编辑性仍未知。",
+        "editable_text": "unknown",
+        "catalog_text_status_unchanged": "unknown"
+      },
+      "visual_display_review_completed": true,
+      "full_curated_requirement_passed": false
+    },
+    {
+      "ordinal": 14,
+      "candidate_id": "scisvg-a0aab22945ecaba6892e:file-0",
+      "original_sha256": "2b15e9a5bef7bbd946352abd737d6c116f37599081b999602b363a509fe9f35d",
+      "preview_sha256": "df6ee40c4259637ea8e182e352a865e63456f33d591ab158b0e83ffcd17fd669",
+      "title": "Microscope",
+      "reviewed_sheets": [
+        {
+          "path": "batches/batch-02/adjacency.png",
+          "sha256": "9d30fa848c9ee551918da5551ffa964033d3c4606d485deff78d5f2b3ecd94b6"
+        },
+        {
+          "path": "batches/batch-02/comparison-01.png",
+          "sha256": "0a61ddbd75cd43866ee5d060175204829661bd4affa770f90a3be9a17c1253ac"
+        }
+      ],
+      "observations_zh": [
+        "白底可见蓝色支架、倾斜镜筒、台面及底部圆形部件，轮廓分离。",
+        "深底仍能识别整体轮廓；深灰台面、底座比浅底更弱，橙色和绿色小部件仍可见。",
+        "棋盘与测试线出现在支架之间的空隙，未见整体矩形底色。",
+        "96 px 保留镜筒、支架与台面关系；48 px 仍有显微镜轮廓，但小旋钮、台面细件与下方细线不再适合细看。",
+        "相邻白/深底排列中部件未与邻项相接。"
+      ],
+      "display_limits_zh": [
+        "缩小使用主要表达设备轮廓；细部示意宜使用较大展示尺寸。",
+        "深底排版需留意底座、台面及细连接线的对比。"
+      ],
+      "text_observation": {
+        "visible_text_in_artwork": "none_observed_at_reviewed_sizes",
+        "notes_zh": "本次展示中未见素材自身的可读文字标签；测试页上的标题和编号属于 QA 排版，不计为原素材标签。此观察不改变目录中未知的文字属性，也不证明原件没有隐藏文字或路径化文字。",
+        "editable_text": "unknown",
+        "catalog_text_status_unchanged": "unknown"
+      },
+      "visual_display_review_completed": true,
+      "full_curated_requirement_passed": false
+    },
+    {
+      "ordinal": 15,
+      "candidate_id": "scisvg-f66d69a3b51086c174e5:file-0",
+      "original_sha256": "1696b2dbb14253cd021c2874b368cb48db433bcecfef35eee1320a6f3539c79f",
+      "preview_sha256": "9db678f0d784339bc96b59a7946dd65e283e4e077ad4bb567b45a0142c9c4220",
+      "title": "Test Tube Rack",
+      "reviewed_sheets": [
+        {
+          "path": "batches/batch-02/adjacency.png",
+          "sha256": "9d30fa848c9ee551918da5551ffa964033d3c4606d485deff78d5f2b3ecd94b6"
+        },
+        {
+          "path": "batches/batch-02/comparison-01.png",
+          "sha256": "0a61ddbd75cd43866ee5d060175204829661bd4affa770f90a3be9a17c1253ac"
+        }
+      ],
+      "observations_zh": [
+        "白底可辨五支管和不同颜色液体，架体及管壁为细线配合深色横杆。",
+        "深底上管内白色填充很明显，试管架深灰横杆的对比下降。",
+        "棋盘与测试线可见于管间空隙，但不原样穿过管内白色区域；这些白色区域属于图形内部填充。",
+        "96 px 可分清五管和液体颜色分布；48 px 仍有五管架的整体形状，细管壁、管口与少量液体高度差变得很小。",
+        "相邻摆放时架体横向展开，保持独立间隔。"
+      ],
+      "display_limits_zh": [
+        "不能因外部透明就假定每支管内部也透明；叠加背景时需接受或按任务处理内部白色填充。",
+        "48 px 不宜用于比较细小液位或管口细节。"
+      ],
+      "text_observation": {
+        "visible_text_in_artwork": "none_observed_at_reviewed_sizes",
+        "notes_zh": "本次展示中未见素材自身的可读文字标签；测试页上的标题和编号属于 QA 排版，不计为原素材标签。此观察不改变目录中未知的文字属性，也不证明原件没有隐藏文字或路径化文字。",
+        "editable_text": "unknown",
+        "catalog_text_status_unchanged": "unknown"
+      },
+      "visual_display_review_completed": true,
+      "full_curated_requirement_passed": false
+    },
+    {
+      "ordinal": 16,
+      "candidate_id": "arcadia-cee1b6647882ce12b663:file-2",
+      "original_sha256": "61e214cda16f1f782484db9b9ba6970eb584503b7b1620097ed89c3ba325740d",
+      "preview_sha256": "35ee0c60dcc6e237930825670d2cdd4f46e9e444c3156cafb8f171218b51efcc",
+      "title": "Candida albicans raster",
+      "reviewed_sheets": [
+        {
+          "path": "batches/batch-02/adjacency.png",
+          "sha256": "9d30fa848c9ee551918da5551ffa964033d3c4606d485deff78d5f2b3ecd94b6"
+        },
+        {
+          "path": "batches/batch-02/comparison-02.png",
+          "sha256": "f3029f975aafa47ddf302f2e6752b7d32393a4b72630aae7bbaba3cf871d6eb4"
+        }
+      ],
+      "observations_zh": [
+        "白底显示金黄色分枝与圆形末端，256 px 可见明暗纹理。",
+        "深底上金色外形和亮部仍分明，外围没有整块白色矩形底。",
+        "棋盘与测试线通过分枝间空隙，金色实体遮住其后的背景。",
+        "96 px 尚可分辨分枝和圆形末端；48 px 保留分枝姿态，内部斑点及明暗纹理明显简化。",
+        "相邻排列中这一件的纹理较细腻，与旁边扁平线条图有明显画风差异；本次仅记录差异。"
+      ],
+      "display_limits_zh": [
+        "小图使用只能保留分枝/圆形外观，不能依靠内部微小纹理表达信息。",
+        "与扁平图混排前需另行决定是否接受这种画风差异；本次未作统一风格处理。"
+      ],
+      "text_observation": {
+        "visible_text_in_artwork": "none_observed_at_reviewed_sizes",
+        "notes_zh": "本次展示中未见素材自身的可读文字标签；测试页上的标题和编号属于 QA 排版，不计为原素材标签。此观察不改变目录中未知的文字属性，也不证明原件没有隐藏文字或路径化文字。",
+        "editable_text": "unknown",
+        "catalog_text_status_unchanged": "unknown"
+      },
+      "visual_display_review_completed": true,
+      "full_curated_requirement_passed": false
+    },
+    {
+      "ordinal": 17,
+      "candidate_id": "arcadia-c3a49a3a6cfdafdecc0d:file-1",
+      "original_sha256": "73dda46e5ec98d9073693e764bad6c78c42a7fcc0332f31e04892a8b49ae4408",
+      "preview_sha256": "9854472fd8171baf810446bd1984a64dd62ead3c93e0e24e486bc09c6325dcc5",
+      "title": "Penicillium chrysogenum raster",
+      "reviewed_sheets": [
+        {
+          "path": "batches/batch-02/adjacency.png",
+          "sha256": "9d30fa848c9ee551918da5551ffa964033d3c4606d485deff78d5f2b3ecd94b6"
+        },
+        {
+          "path": "batches/batch-02/comparison-02.png",
+          "sha256": "f3029f975aafa47ddf302f2e6752b7d32393a4b72630aae7bbaba3cf871d6eb4"
+        }
+      ],
+      "observations_zh": [
+        "白底可见绿色主干、分枝及密集末端小点，细部数量较多。",
+        "深底上浅绿分枝和小点仍可见，未见矩形底板。",
+        "棋盘能穿过枝条间隙，密集末端在格纹上更易与背景竞争。",
+        "96 px 仍能辨认几处分枝簇；48 px 末端小点和细枝趋于聚合，主要剩下整体分枝轮廓。",
+        "相邻白/深底排列均可区分本项与邻项，没有把细枝越界当作连线。"
+      ],
+      "display_limits_zh": [
+        "需要展示密集末端细节时不宜使用 48 px 缩略图。",
+        "复杂背景会干扰细枝；实际排版宜留足单独空间并核对对比。"
+      ],
+      "text_observation": {
+        "visible_text_in_artwork": "none_observed_at_reviewed_sizes",
+        "notes_zh": "本次展示中未见素材自身的可读文字标签；测试页上的标题和编号属于 QA 排版，不计为原素材标签。此观察不改变目录中未知的文字属性，也不证明原件没有隐藏文字或路径化文字。",
+        "editable_text": "unknown",
+        "catalog_text_status_unchanged": "unknown"
+      },
+      "visual_display_review_completed": true,
+      "full_curated_requirement_passed": false
+    },
+    {
+      "ordinal": 18,
+      "candidate_id": "arcadia-2e37e792decdbbd34575:file-0",
+      "original_sha256": "a250456c1a72fd884b6e920e399a82c96f02034a035d5ba7e30a41ef95666452",
+      "preview_sha256": "e0fa944e18a9feacbe59ee608bd84182f3f97b23730000e168563b2d635c97d1",
+      "title": "Human immunodeficiency virus tricolorstroke",
+      "reviewed_sheets": [
+        {
+          "path": "batches/batch-02/adjacency.png",
+          "sha256": "9d30fa848c9ee551918da5551ffa964033d3c4606d485deff78d5f2b3ecd94b6"
+        },
+        {
+          "path": "batches/batch-02/comparison-02.png",
+          "sha256": "f3029f975aafa47ddf302f2e6752b7d32393a4b72630aae7bbaba3cf871d6eb4"
+        }
+      ],
+      "observations_zh": [
+        "白底可辨外圈、周边突出部与内部粉紫线条，部分淡色细节对比偏轻。",
+        "深底增强了淡蓝、浅粉外形的对比，内部空隙随深色背景显示。",
+        "棋盘和横线可穿过若干内部空隙，图中不是整片实心白色圆盘。",
+        "96 px 仍可见外圈和内部线条的大形；48 px 周边重复小部件及内部细线较密，不能逐一可靠区分。",
+        "相邻排列中浅色线条的视觉分量比旁边粗描边的圆形图轻。"
+      ],
+      "display_limits_zh": [
+        "内部透明空隙会露出下方内容，叠在复杂图层上时需要检查干扰。",
+        "48 px 适合概览轮廓，不适合传达内部细部；本次不据图确认病毒结构或物种准确性。"
+      ],
+      "text_observation": {
+        "visible_text_in_artwork": "none_observed_at_reviewed_sizes",
+        "notes_zh": "本次展示中未见素材自身的可读文字标签；测试页上的标题和编号属于 QA 排版，不计为原素材标签。此观察不改变目录中未知的文字属性，也不证明原件没有隐藏文字或路径化文字。",
+        "editable_text": "unknown",
+        "catalog_text_status_unchanged": "unknown"
+      },
+      "visual_display_review_completed": true,
+      "full_curated_requirement_passed": false
+    },
+    {
+      "ordinal": 19,
+      "candidate_id": "nih-bioart-c9a85bdb9c5145e09761:file-0",
+      "original_sha256": "3fba45fd0a31e135cfd48416c73a466b9ab7418408108c8e2dfa462a8daea289",
+      "preview_sha256": "fa3531bf8c7c1607ef2e54e9c17b122806d40442fd46033068f054025fc50e10",
+      "title": "Trypanosome",
+      "reviewed_sheets": [
+        {
+          "path": "batches/batch-02/adjacency.png",
+          "sha256": "9d30fa848c9ee551918da5551ffa964033d3c4606d485deff78d5f2b3ecd94b6"
+        },
+        {
+          "path": "batches/batch-02/comparison-03.png",
+          "sha256": "09aa68cde3d0f26a9913824524147d90c6a3cba4932cdbff66dcf17a76fedfe5"
+        }
+      ],
+      "observations_zh": [
+        "白底显示浅桃色长体、紫色椭圆和细长外缘线；主体及细线接近画布边界。",
+        "深底上浅色主体仍清晰，细线为较亮的暖色轮廓；外围背景可透出。",
+        "棋盘通过主体外部和细线环绕的空隙，实体浅桃色区域遮住后方测试线。",
+        "96 px 保留弯曲主体和紫色小块；48 px 仍可见长形姿态，贴近主体的细线间隔不易分辨。",
+        "相邻网格中本项占据较大面积，右上细丝仍接近自身显示范围边缘；未据此认定文件损坏。"
+      ],
+      "display_limits_zh": [
+        "使用时可在工作副本或排版容器增加安全留白，避免画布贴边影响组合。",
+        "小图不宜依赖细丝与主体之间的精细间隔表达结构关系。"
+      ],
+      "text_observation": {
+        "visible_text_in_artwork": "none_observed_at_reviewed_sizes",
+        "notes_zh": "本次展示中未见素材自身的可读文字标签；测试页上的标题和编号属于 QA 排版，不计为原素材标签。此观察不改变目录中未知的文字属性，也不证明原件没有隐藏文字或路径化文字。",
+        "editable_text": "unknown",
+        "catalog_text_status_unchanged": "unknown"
+      },
+      "visual_display_review_completed": true,
+      "full_curated_requirement_passed": false
+    },
+    {
+      "ordinal": 20,
+      "candidate_id": "nih-bioart-768a2f15ee3675717ef5:file-0",
+      "original_sha256": "2052e367b8d115dd8cfce906ea425e9cb9068f686f7c4fa29533949df39cb252",
+      "preview_sha256": "4dba4d2a4e1229646dd773415c1b7fcbdf93f40cfa5cbf721dad9cf982a07dca",
+      "title": "Nipah Virus",
+      "reviewed_sheets": [
+        {
+          "path": "batches/batch-02/adjacency.png",
+          "sha256": "9d30fa848c9ee551918da5551ffa964033d3c4606d485deff78d5f2b3ecd94b6"
+        },
+        {
+          "path": "batches/batch-02/comparison-03.png",
+          "sha256": "09aa68cde3d0f26a9913824524147d90c6a3cba4932cdbff66dcf17a76fedfe5"
+        }
+      ],
+      "observations_zh": [
+        "白底上粗描边外圈、蓝色突出部、浅色内部区域和红色卷曲条带可辨。",
+        "深底仍可辨外圈和红色内部图形，内部浅色填充继续存在。",
+        "棋盘出现在外围间隙；浅色内部区域遮挡测试横线，不能当成完全透明空洞。",
+        "96 px 可见外圈及内部红色卷曲大形；48 px 外圈小圆、重复突出部及内部细分隔已很密。",
+        "相邻排列中本项几乎占满显示格，视觉分量明显大于相同外框下的简线 DNA 图。"
+      ],
+      "display_limits_zh": [
+        "组合时应按实际可见主体调整视觉大小，不能只统一预览外框。",
+        "48 px 不适合逐个阅读周边小部件或内部线段；内部浅色填充与深底的反差需按任务接受。"
+      ],
+      "text_observation": {
+        "visible_text_in_artwork": "none_observed_at_reviewed_sizes",
+        "notes_zh": "本次展示中未见素材自身的可读文字标签；测试页上的标题和编号属于 QA 排版，不计为原素材标签。此观察不改变目录中未知的文字属性，也不证明原件没有隐藏文字或路径化文字。",
+        "editable_text": "unknown",
+        "catalog_text_status_unchanged": "unknown"
+      },
+      "visual_display_review_completed": true,
+      "full_curated_requirement_passed": false
+    },
+    {
+      "ordinal": 21,
+      "candidate_id": "scisvg-f17c9a0be6f7b611fc18:file-0",
+      "original_sha256": "f49612e45d3410d733d44ffe58f4df3f1120923d2041352218655d5901e433c8",
+      "preview_sha256": "d050e7af80b415aa1a7bd42be51845aa2a8a42e685b903754736cbc26f470b0b",
+      "title": "DNA Double Helix",
+      "reviewed_sheets": [
+        {
+          "path": "batches/batch-02/adjacency.png",
+          "sha256": "9d30fa848c9ee551918da5551ffa964033d3c4606d485deff78d5f2b3ecd94b6"
+        },
+        {
+          "path": "batches/batch-02/comparison-03.png",
+          "sha256": "09aa68cde3d0f26a9913824524147d90c6a3cba4932cdbff66dcf17a76fedfe5"
+        }
+      ],
+      "observations_zh": [
+        "白底可辨两条弯曲侧线与多条横杆，蓝/绿及橙/灰颜色分段存在。",
+        "深底上蓝绿侧线和灰色横杆的对比较白底弱，整体仍可见。",
+        "棋盘和测试线能通过所有线条之间的空隙，未见整体白色底片。",
+        "96 px 仍能看出两侧线及横杆排列；48 px 细横杆与颜色分段变弱，端点也很小。",
+        "相邻排列中这一简线图比旁边大面积填色圆形图轻，深底时差异更明显。"
+      ],
+      "display_limits_zh": [
+        "小尺寸或深色背景下需要复查线条对比与横杆间隔。",
+        "这里未见可读碱基字母、方向标签或刻度，不据简化外形赋予序列信息。"
+      ],
+      "text_observation": {
+        "visible_text_in_artwork": "none_observed_at_reviewed_sizes",
+        "notes_zh": "本次展示中未见素材自身的可读文字标签；测试页上的标题和编号属于 QA 排版，不计为原素材标签。此观察不改变目录中未知的文字属性，也不证明原件没有隐藏文字或路径化文字。",
+        "editable_text": "unknown",
+        "catalog_text_status_unchanged": "unknown"
+      },
+      "visual_display_review_completed": true,
+      "full_curated_requirement_passed": false
+    },
+    {
+      "ordinal": 22,
+      "candidate_id": "scisvg-c5c68f4b10a681cb7ff6:file-0",
+      "original_sha256": "4080c12d3f6c2c42458ceb5e341226679a3d92218bfa1d1cc6c6131ddbc725be",
+      "preview_sha256": "978a0058d3a8b1d35c7af08e81387cb0b043e918eebce33562db2a102c2511fc",
+      "title": "Benzene Ring",
+      "reviewed_sheets": [
+        {
+          "path": "batches/batch-02/adjacency-10-12.png",
+          "sha256": "81e5a2c9e68a992675e4b77c3ab29b9feb9531ee28d168901061eba895b4d7c9"
+        },
+        {
+          "path": "batches/batch-02/comparison-04.png",
+          "sha256": "b9319797f140fcf0dfffc29a8c5dafb282ea590fc0b069d326154db823020a1a"
+        }
+      ],
+      "observations_zh": [
+        "白底显示深灰六边外轮廓与绿色内圆。",
+        "深底使六边形内部的白色实心填充明显显现，内部不是透明孔。",
+        "棋盘和横线在外部可见，穿过六边形时被白色填充遮住。",
+        "96 px 和 48 px 均可辨外六边形与内圆，48 px 线条较细且整体实际占位很小。",
+        "相邻排列中白色六边形在深底上形成明显块面；白底上则主要呈线形。"
+      ],
+      "display_limits_zh": [
+        "叠在有色或有内容的背景上时，必须保留或按当前任务处理内部白色填充，不能假定图形整体镂空。",
+        "不得把内圆作为无关标注删除；它属于当前符号的组成部分。"
+      ],
+      "text_observation": {
+        "visible_text_in_artwork": "none_observed_at_reviewed_sizes",
+        "notes_zh": "本次展示中未见素材自身的可读文字标签；测试页上的标题和编号属于 QA 排版，不计为原素材标签。此观察不改变目录中未知的文字属性，也不证明原件没有隐藏文字或路径化文字。",
+        "editable_text": "unknown",
+        "catalog_text_status_unchanged": "unknown"
+      },
+      "visual_display_review_completed": true,
+      "full_curated_requirement_passed": false
+    },
+    {
+      "ordinal": 23,
+      "candidate_id": "scidraw-e8ccc43ff71d83f820d1:file-0",
+      "original_sha256": "dfee687f6cfb71e99555344b538a79f3cf29260e1f72fe7d98c592e30646bda2",
+      "preview_sha256": "3287740f02211aa38cd5a361b643e20a1da6b48bfb5f1992b04d7f9c27214f56",
+      "title": "Ion channel",
+      "reviewed_sheets": [
+        {
+          "path": "batches/batch-02/adjacency-10-12.png",
+          "sha256": "81e5a2c9e68a992675e4b77c3ab29b9feb9531ee28d168901061eba895b4d7c9"
+        },
+        {
+          "path": "batches/batch-02/comparison-04.png",
+          "sha256": "b9319797f140fcf0dfffc29a8c5dafb282ea590fc0b069d326154db823020a1a"
+        }
+      ],
+      "observations_zh": [
+        "白底可见两侧绿色块体与中间浅色渐变区，顶部和底部轮廓分离。",
+        "深底上绿色两侧和浅色中间区仍清楚，外部没有整块矩形底色。",
+        "棋盘在外围可透出，中部浅色渐变并非完全挖空，测试横线没有原样穿过该区域。",
+        "96 px 仍能区分两侧与中部；48 px 保留狭长双侧外形，渐变与细轮廓弱化。",
+        "相邻白/深底排列中该对象为平滑大色块，与旁边线形符号和有阴影图不同。"
+      ],
+      "display_limits_zh": [
+        "中间浅色区的叠加效果需结合实际背景查看，不能把它当作任意底色下完全透明的通孔。",
+        "48 px 仅适合概览外形，本次不据展示效果确认通道状态或机制。"
+      ],
+      "text_observation": {
+        "visible_text_in_artwork": "none_observed_at_reviewed_sizes",
+        "notes_zh": "本次展示中未见素材自身的可读文字标签；测试页上的标题和编号属于 QA 排版，不计为原素材标签。此观察不改变目录中未知的文字属性，也不证明原件没有隐藏文字或路径化文字。",
+        "editable_text": "unknown",
+        "catalog_text_status_unchanged": "unknown"
+      },
+      "visual_display_review_completed": true,
+      "full_curated_requirement_passed": false
+    },
+    {
+      "ordinal": 24,
+      "candidate_id": "scidraw-f17570e6f1a3f72f0be1:file-0",
+      "original_sha256": "6a9e5bd4dda595253fa06d9e587b71ef0325fe2bc17880539f61bb10c1529045",
+      "preview_sha256": "84a8aea2301a414fa9f543adebdf39a854dd654a9c8250b542fca78f719c6b79",
+      "title": "Kinesin",
+      "reviewed_sheets": [
+        {
+          "path": "batches/batch-02/adjacency-10-12.png",
+          "sha256": "81e5a2c9e68a992675e4b77c3ab29b9feb9531ee28d168901061eba895b4d7c9"
+        },
+        {
+          "path": "batches/batch-02/comparison-04.png",
+          "sha256": "b9319797f140fcf0dfffc29a8c5dafb282ea590fc0b069d326154db823020a1a"
+        }
+      ],
+      "observations_zh": [
+        "白底可辨红色长柄、黄色连接段、两个紫色末端及其灰色阴影。",
+        "深底仍能区分红、黄、紫色部件，灰色阴影较弱；外围没有矩形白底。",
+        "棋盘及测试线可穿过连接段间隙，紫色末端下的阴影仍会覆盖部分背景。",
+        "96 px 保留主要红黄紫部件；48 px 连接段和小范围高光趋于合并，末端细节很少。",
+        "对象在原预览上沿与下沿附近占满空间，相邻排列时仍独立；这是当前构图观察，不作为损坏判定。"
+      ],
+      "display_limits_zh": [
+        "组合时宜增加安全留白，并检查已有灰色阴影是否适合新背景。",
+        "不应因缩略图细节少而直接删掉连接段、末端或阴影；任何工作副本修改需按任务再看图。"
+      ],
+      "text_observation": {
+        "visible_text_in_artwork": "none_observed_at_reviewed_sizes",
+        "notes_zh": "本次展示中未见素材自身的可读文字标签；测试页上的标题和编号属于 QA 排版，不计为原素材标签。此观察不改变目录中未知的文字属性，也不证明原件没有隐藏文字或路径化文字。",
+        "editable_text": "unknown",
+        "catalog_text_status_unchanged": "unknown"
+      },
+      "visual_display_review_completed": true,
+      "full_curated_requirement_passed": false
+    }
+  ]
+}
