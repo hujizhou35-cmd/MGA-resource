@@ -35,6 +35,29 @@ def write_json(path, value):
     path.write_text(json.dumps(value, ensure_ascii=False, indent=2) + "\n", encoding="utf-8", newline="\n")
 
 
+def describe_review_files(record):
+    """Format-independent descriptors with exact original/preview bindings."""
+    selected = {}
+    for file in record.get("files", []):
+        preview = file.get("preview") or {}
+        digest, preview_sha = file.get("sha256"), preview.get("sha256")
+        if not all(isinstance(v, str) and re.fullmatch(r"[a-f0-9]{64}", v) for v in (digest, preview_sha)):
+            raise ValueError("Scope candidates need exact original and preview SHA-256")
+        archive = preview.get("archive") or {}
+        member = archive.get("member", "")
+        if (not member.startswith("previews/") or "\\" in member or ":" in member
+                or any(p in {"", ".", ".."} for p in member.split("/"))):
+            raise ValueError("Unsafe preview member")
+        key = sha((record["source"] + "\0" + str(record["source_id"]) + "\0" + digest + "\0" + preview_sha).encode())
+        selected[key] = {"candidate_id": key, "source": record["source"], "source_id": str(record["source_id"]),
+            "asset_id": record["id"], "title": record.get("title"), "source_url": record.get("source_url"),
+            "source_declared_scientific_name": record.get("scientific_name"), "tags": record.get("tags", []),
+            "original_sha256": digest, "original_archive": file.get("archive"), "format": file.get("format"),
+            "structure": file.get("structure"), "preview": preview,
+            "selection_reason": "explicit_review_candidate", "scope_verdict": None}
+    return selected
+
+
 def scope_candidates(records):
     """Select uncertain content groups, not all PNGs and not alleged photos."""
     selected = {}
@@ -46,26 +69,10 @@ def scope_candidates(records):
         packaged_raster = any(f.get("structure") in {"mixed", "embedded_raster"} for f in files)
         if not only_raster and not packaged_raster:
             continue
-        # Include sibling formats: a pure-vector/PNG sibling cannot inherit
-        # another variant's verdict without comparing actual preview content.
-        for file in files:
-            preview = file.get("preview") or {}
-            digest, preview_sha = file.get("sha256"), preview.get("sha256")
-            if not all(isinstance(v, str) and re.fullmatch(r"[a-f0-9]{64}", v) for v in (digest, preview_sha)):
-                raise ValueError("Scope candidates need exact original and preview SHA-256")
-            archive = preview.get("archive") or {}
-            member = archive.get("member", "")
-            if (not member.startswith("previews/") or "\\" in member or ":" in member
-                    or any(p in {"", ".", ".."} for p in member.split("/"))):
-                raise ValueError("Unsafe preview member")
-            key = sha((record["source"] + "\0" + record["source_id"] + "\0" + digest + "\0" + preview_sha).encode())
-            selected[key] = {"candidate_id": key, "source": record["source"], "source_id": record["source_id"],
-                "asset_id": record["id"], "title": record.get("title"), "source_url": record.get("source_url"),
-                "source_declared_scientific_name": record.get("scientific_name"), "tags": record.get("tags", []),
-                "original_sha256": digest, "original_archive": file.get("archive"), "format": file.get("format"),
-                "structure": file.get("structure"), "preview": preview,
-                "selection_reason": "only_raster_acquired" if only_raster else "raster_embedded_or_mixed_record_and_sibling_formats",
-                "scope_verdict": None}
+        # Every sibling keeps its own exact file/preview descriptor.
+        for key, row in describe_review_files(record).items():
+            row["selection_reason"] = "only_raster_acquired" if only_raster else "raster_embedded_or_mixed_record_and_sibling_formats"
+            selected[key] = row
     if len(selected) > MAX_FILES:
         raise ValueError("Scope review exceeds the 1000-file bound; split the input collection ranges")
     return selected
@@ -150,12 +157,12 @@ def group_exact_content(candidates, pixel_hashes):
     return tiles
 
 
-def render_sheet(path, tiles, candidates, images, *, font_path):
+def render_sheet(path, tiles, candidates, images, *, font_path, heading=None):
     width, height = 1500, 55 + max(1, math.ceil(len(tiles) / 5)) * 260
     sheet = Image.new("RGB", (width, height), "#e4e8ed")
     draw = ImageDraw.Draw(sheet)
     font = ImageFont.truetype(font_path, 14)
-    draw.text((12, 12), "Togo scope candidates / photography or illustration must be visually judged", font=font, fill="black")
+    draw.text((12, 12), heading or "Togo scope candidates / photography or illustration must be visually judged", font=font, fill="black")
     for index, tile in enumerate(tiles):
         key = tile["file_ids"][0]
         row = candidates[key]
@@ -176,8 +183,10 @@ def render_sheet(path, tiles, candidates, images, *, font_path):
             "width": width, "height": height, "tile_ids": [t["tile_id"] for t in tiles]}
 
 
-def build_review(records, manifest, output, *, font_path, opener=None):
-    candidates = scope_candidates(records)
+def build_review(records, manifest, output, *, font_path, opener=None, selected_candidates=None, heading=None):
+    candidates = scope_candidates(records) if selected_candidates is None else selected_candidates
+    if len(candidates) > MAX_FILES:
+        raise ValueError("Scope review exceeds the 1000-file bound")
     images, pixels, reports, errors = fetch_previews(candidates, manifest, opener=opener)
     tiles = group_exact_content(candidates, pixels)
     if math.ceil(len(tiles) / PER_SHEET) > MAX_SHEETS:
@@ -186,7 +195,7 @@ def build_review(records, manifest, output, *, font_path, opener=None):
     sheets = []
     for offset in range(0, len(tiles), PER_SHEET):
         name = f"scope-{offset // PER_SHEET + 1:02d}.png"
-        sheet = render_sheet(output / name, tiles[offset:offset + PER_SHEET], candidates, images, font_path=font_path)
+        sheet = render_sheet(output / name, tiles[offset:offset + PER_SHEET], candidates, images, font_path=font_path, heading=heading)
         sheets.append(sheet)
         for tile in tiles[offset:offset + PER_SHEET]:
             tile["sheet"] = name
