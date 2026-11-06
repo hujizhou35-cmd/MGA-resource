@@ -13,8 +13,10 @@ import io
 import math
 import re
 import warnings
+from urllib.parse import urlsplit
 from pathlib import Path
 from typing import Any
+from xml.etree import ElementTree as ET
 
 from defusedxml import ElementTree as SafeET
 from PIL import Image, ImageDraw, ImageOps
@@ -30,12 +32,18 @@ SVG_NS = "http://www.w3.org/2000/svg"
 NONLOADING_NAMESPACES = (
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
     "http://creativecommons.org/ns#",
+    "http://web.resource.org/cc/",
     "http://purl.org/dc/",
     "http://www.inkscape.org/namespaces/inkscape",
     "http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd",
 )
 VECTOR_TAGS = {"path", "rect", "circle", "ellipse", "line", "polyline", "polygon", "text", "use"}
-ACTIVE_TAGS = {"script", "foreignobject", "animate", "animatetransform", "animatemotion", "set"}
+ACTIVE_TAGS = {"script", "animate", "animatetransform", "animatemotion", "set"}
+XHTML_NS = "http://www.w3.org/1999/xhtml"
+XLINK_HREF = "{http://www.w3.org/1999/xlink}href"
+RASTER_DATA_URI = re.compile(r"^data:image/(png|jpeg|jpg|webp);base64,", re.I)
+STATIC_HTML_TAGS = {"div", "span", "p", "br", "b", "strong", "i", "em", "font", "sub", "sup"}
+COLOR_ATTRIBUTES = {"style", "fill", "stroke", "color", "stop-color", "flood-color", "lighting-color"}
 MIME_TYPES = {
     "svg": "image/svg+xml", "png": "image/png", "jpeg": "image/jpeg",
     "webp": "image/webp", "gif": "image/gif", "tiff": "image/tiff",
@@ -60,6 +68,116 @@ def _length(value: str | None) -> float | None:
         return None
     number *= {None: 1, "px": 1, "pt": 96 / 72, "pc": 16, "mm": 96 / 25.4, "cm": 96 / 2.54, "in": 96}[match.group(2)]
     return number if math.isfinite(number) and number > 0 else None
+
+
+def _data_payload(value: str) -> bytes:
+    return base64.b64decode(re.sub(r"\s+", "", value.split(",", 1)[1]), validate=True)
+
+
+def _embedded_only_fetcher(url: str, resource_type: str) -> bytes:
+    """CairoSVG may read embedded raster data, never network or local files."""
+    if not RASTER_DATA_URI.match(url):
+        raise MediaValidationError("Preview attempted to load a non-embedded resource")
+    payload = _data_payload(url)
+    if len(payload) > MAX_SOURCE_BYTES:
+        raise MediaValidationError("Embedded preview resource exceeds byte limit")
+    return payload
+
+
+def _foreign_fallbacks(root) -> list[tuple]:
+    """Recognize draw.io's explicit static label fallback, preserving its art.
+
+    Arbitrary XHTML is not rendered or silently dropped. Only exporter-provided
+    SVG text with the same words, or an embedded image fallback, is used.
+    """
+    parents = {child: parent for parent in root.iter() for child in parent}
+    result = []
+    for foreign in root.iter():
+        if _tag(foreign.tag) != "foreignobject":
+            continue
+        parent = parents.get(foreign)
+        if (parent is None or parent.tag != "{" + SVG_NS + "}switch"
+                or foreign.get("requiredFeatures") != "http://www.w3.org/TR/SVG11/feature#Extensibility"):
+            raise MediaValidationError("SVG foreignObject has no supported explicit fallback; quarantined to avoid missing labels")
+        for child in foreign.iter():
+            if child is foreign:
+                continue
+            if not child.tag.startswith("{" + XHTML_NS + "}") or _tag(child.tag) not in STATIC_HTML_TAGS:
+                raise MediaValidationError("SVG foreignObject has non-text HTML; quarantined")
+        label = " ".join("".join(foreign.itertext()).split())
+        siblings = list(parent)
+        # Conditional selection must match the exported switch's ordering.
+        if not label or len(siblings) != 2 or siblings[0] is not foreign:
+            raise MediaValidationError("SVG foreignObject fallback is ambiguous; quarantined")
+        fallback = siblings[1]
+        if fallback.tag == "{" + SVG_NS + "}text":
+            if " ".join("".join(fallback.itertext()).split()) != label:
+                raise MediaValidationError("SVG foreignObject text fallback differs from its label; quarantined")
+            kind = "matching_svg_text"
+        elif fallback.tag == "{" + SVG_NS + "}image":
+            href = fallback.get("href") or fallback.get(XLINK_HREF) or ""
+            if not RASTER_DATA_URI.match(href):
+                raise MediaValidationError("SVG foreignObject image fallback is not embedded; quarantined")
+            image, info = _decode_raster(_data_payload(href))
+            image.close()
+            if info["transparency"]["fully_transparent"]:
+                raise MediaValidationError("SVG foreignObject image fallback is invisible; quarantined")
+            kind = "exporter_embedded_raster"
+        else:
+            raise MediaValidationError("SVG foreignObject has no supported image/text fallback; quarantined")
+        if fallback.get("requiredFeatures") or fallback.get("systemLanguage"):
+            raise MediaValidationError("SVG foreignObject fallback is conditional; quarantined")
+        result.append((parent, foreign, fallback, {"label": label, "kind": kind}))
+    return result
+
+
+def _svg_preview_bytes(data: bytes) -> bytes:
+    """Choose the original exporter's fallback only in the preview copy."""
+    root = SafeET.fromstring(data, forbid_dtd=False, forbid_entities=True, forbid_external=True)
+    fallbacks = _foreign_fallbacks(root)
+    changed = bool(fallbacks)
+    for parent, foreign, fallback, _ in fallbacks:
+        parent.remove(foreign)
+        parent.tag = "{" + SVG_NS + "}g"
+    for element in root.iter():
+        for attr, value in list(element.attrib.items()):
+            if _tag(attr) in COLOR_ATTRIBUTES and "light-dark(" in value.lower():
+                element.set(attr, _light_mode_css(value))
+                changed = True
+        if _tag(element.tag) == "style" and "light-dark(" in (element.text or "").lower():
+            element.text = _light_mode_css(element.text)
+            changed = True
+    return ET.tostring(root, encoding="utf-8") if changed else data
+
+
+def _light_mode_css(value: str) -> str:
+    """Choose the authored light branch of CSS Color 5 light-dark().
+
+    CairoSVG already depends on tinycss2; its balanced function tokens preserve
+    nested rgb()/var() arguments and quoted strings without ad-hoc splitting.
+    """
+    import tinycss2
+
+    def rewrite(tokens):
+        output = []
+        for token in tokens:
+            if token.type == "function":
+                if token.lower_name == "light-dark":
+                    commas = [i for i, child in enumerate(token.arguments) if child.type == "literal" and child.value == ","]
+                    if len(commas) != 1:
+                        raise MediaValidationError("Invalid light-dark() color arguments")
+                    light, dark = token.arguments[:commas[0]], token.arguments[commas[0] + 1:]
+                    if not tinycss2.serialize(light).strip() or not tinycss2.serialize(dark).strip():
+                        raise MediaValidationError("Empty light-dark() color argument")
+                    output.extend(rewrite(light))
+                    continue
+                token.arguments = rewrite(token.arguments)
+            elif hasattr(token, "content"):
+                token.content = rewrite(token.content)
+            output.append(token)
+        return output
+
+    return tinycss2.serialize(rewrite(tinycss2.parse_component_value_list(value)))
 
 
 def _decode_raster(data: bytes) -> tuple[Image.Image, dict[str, Any]]:
@@ -115,6 +233,9 @@ def _inspect_svg(data: bytes) -> dict[str, Any]:
     counts: dict[str, int] = {}
     embedded_images = []
     findings = []
+    foreign_fallbacks = [item[3] for item in _foreign_fallbacks(root)]
+    embedded_color_profiles = 0
+    has_theme_colors = False
     css_urls = re.compile(r"url\(\s*['\"]?\s*([^)'\"\s]+)", re.I)
 
     def inspect_css(value: str) -> None:
@@ -137,29 +258,47 @@ def _inspect_svg(data: bytes) -> dict[str, Any]:
             raise MediaValidationError(f"SVG contains unsupported active element: {tag}")
         if tag == "style" and element.text:
             inspect_css(element.text)
+            has_theme_colors |= "light-dark(" in element.text.lower()
         for attr, raw in element.attrib.items():
             key = _tag(attr)
             value = raw.strip()
+            if key in COLOR_ATTRIBUTES:
+                has_theme_colors |= "light-dark(" in value.lower()
             if key.startswith("on") and key != "only_selected":
                 raise MediaValidationError("SVG contains an event handler")
             inspect_css(value)
-            if key not in {"href", "src", "resource", "base"} or value.startswith("#"):
+            # resource is an RDFa/editor provenance attribute, not a browser
+            # fetch attribute (including draw.io's unqualified svg/resource).
+            if key not in {"href", "src", "base"} or value.startswith("#"):
                 continue
             # References inside source/author/license metadata do not fetch art.
             if any(element.tag.startswith("{" + ns) for ns in NONLOADING_NAMESPACES):
                 continue
-            if tag == "a" and re.match(r"^(https?://|mailto:)", value, re.I):
+            # Anchors (including empty SwissBioPics placeholders and relative
+            # links) do not automatically fetch content while rendering.
+            if tag == "a" and urlsplit(value).scheme.lower() in {"", "http", "https", "mailto"}:
                 continue
-            if tag == "image" and re.match(r"^data:image/(png|jpeg|jpg|webp);base64,", value, re.I):
+            if tag == "color-profile" and re.match(r"^data:application/vnd\.iccprofile;base64,", value, re.I):
                 try:
-                    encoded = value.split(",", 1)[1]
-                    payload = base64.b64decode(re.sub(r"\s+", "", encoded), validate=True)
+                    profile = _data_payload(value)
+                    if (not 128 <= len(profile) <= 1024 * 1024 or profile[36:40] != b"acsp"
+                            or int.from_bytes(profile[:4], "big") != len(profile)):
+                        raise ValueError("invalid ICC header/size")
+                except Exception as exc:
+                    raise MediaValidationError(f"SVG embedded ICC profile is invalid: {exc}") from exc
+                embedded_color_profiles += 1
+                continue
+            if tag == "image" and RASTER_DATA_URI.match(value):
+                try:
+                    payload = _data_payload(value)
                     image, details = _decode_raster(payload)
                     image.close()
                     embedded_images.append(details)
                 except Exception as exc:
                     raise MediaValidationError(f"SVG embedded image is invalid: {exc}") from exc
                 continue
+            if tag == "image" and value.lower().startswith("data:image/svg+xml"):
+                raise MediaValidationError("Nested SVG image requires recursive validation; quarantined")
             raise MediaValidationError(f"SVG loads an external or unsupported resource via {tag}/{key}")
     width, height = _length(root.get("width")), _length(root.get("height"))
     viewbox = None
@@ -192,12 +331,21 @@ def _inspect_svg(data: bytes) -> dict[str, Any]:
         findings.append("Contains live text; appearance can depend on installed fonts")
     if counts.get("filter", 0):
         findings.append("Contains SVG filters; Illustrator compatibility is untested")
+    if embedded_color_profiles:
+        findings.append("Embedded ICC profiles retained; preview uses the renderer's SVG color handling")
+    if foreign_fallbacks:
+        findings.append("Static foreignObject labels use the exporter's explicit SVG text or embedded image fallback in the preview; original XHTML is preserved")
+    if has_theme_colors:
+        findings.append("Preview selects the authored light color-scheme values; the original retains both themes")
     return {
         "format": "svg", "media_type": MIME_TYPES["svg"], "structure": structure,
         "dimensions": {"width": width, "height": height, "unit": "css_px", "viewbox": viewbox},
         "transparency": {"has_transparent_pixels": None, "has_fully_transparent_pixels": None, "fully_transparent": None},
         "element_counts": counts, "vector_element_count": shape_count,
         "embedded_images": embedded_images, "findings": findings,
+        "embedded_color_profile_count": embedded_color_profiles,
+        "foreign_object_fallbacks": foreign_fallbacks,
+        "preview_color_scheme": "light" if has_theme_colors else None,
     }
 
 
@@ -255,13 +403,14 @@ def process_file(path: str | Path, preview_dir: str | Path | None = None, previe
     preview_dir.mkdir(parents=True, exist_ok=True)
     try:
         if result["format"] == "svg":
-            import cairosvg
+            from cairosvg.surface import PNGSurface
             dimensions = result["dimensions"]
             width = dimensions["width"] or preview_size
             height = dimensions["height"] or preview_size
             scale = min(preview_size / width, preview_size / height)
-            png = cairosvg.svg2png(
-                bytestring=data, output_width=max(1, round(width * scale)),
+            png = PNGSurface.convert(
+                bytestring=_svg_preview_bytes(data), url_fetcher=_embedded_only_fetcher,
+                output_width=max(1, round(width * scale)),
                 output_height=max(1, round(height * scale)),
                 parent_width=width, parent_height=height,
             )
