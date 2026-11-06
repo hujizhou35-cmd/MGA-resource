@@ -17,6 +17,7 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
 from mga_resources.catalog import TAXONOMY, redistribution_status
 from mga_resources.supplemental_acceptance import evaluate_supplement
+from mga_resources.scope_policy import load_scope_policy, evaluate_public_scope
 
 FROZEN_BENCHMARK_SHA256 = "ce0282afeb4afbcee8fdef1c6f937844ef569cabf16ba7909e22bf86b1096e92"
 SHA = re.compile(r"^[0-9a-f]{64}$")
@@ -59,7 +60,7 @@ def read_json(path):
 def evaluate_release(catalog, assembly, benchmark, mapping, judgments, *, hashes,
                      registry, decisions=None, selection_manifests=None,
                      source_reviews=(), native_evidence=None, review_summary=None,
-                     restore_evidence=None, supplemental_evidence=None):
+                     restore_evidence=None, supplemental_evidence=None, scope_policy=None):
     """Return (candidate publication manifest, check report); never infer review."""
     missing = []
     def need(condition, code, detail):
@@ -73,6 +74,10 @@ def evaluate_release(catalog, assembly, benchmark, mapping, judgments, *, hashes
     mapping = mapping or {}
     review_summary = review_summary or {}
     restore_evidence = restore_evidence or {}
+    scope_policy = scope_policy if scope_policy is not None else load_scope_policy()
+    if assembly.get("public_scope"):
+        need(assembly["public_scope"].get("policy_sha256") == scope_policy["sha256"],
+             "scope.policy_binding", "Public catalog must use the current file-bound scope-review policy.")
     release = assembly.get("collection_release")
     need(nonempty(release), "assembly.release", "Assembly collection_release is missing.")
     need(assembly.get("summary", {}).get("catalog_sha256") == hashes["catalog_sha256"],
@@ -179,6 +184,10 @@ def evaluate_release(catalog, assembly, benchmark, mapping, judgments, *, hashes
         origins = record.get("provenance") or [record]
         for item in record.get("files") or []:
             original_sha = item.get("sha256")
+            scope = evaluate_public_scope(record, item, scope_policy)
+            if not scope["public_allowed"]:
+                need(False, "scope.forbidden_public_file", f"{original_sha}: scope-excluded/pending file remains in public input catalog.")
+                continue
             file_origins = item.get("source_records") or origins
             eligible_origins = [origin for origin in file_origins
                                 if origin.get("source") not in excluded_sources
@@ -204,6 +213,7 @@ def evaluate_release(catalog, assembly, benchmark, mapping, judgments, *, hashes
             entry = manifest_files.setdefault(original_sha, {
                 "sha256": original_sha, "size_bytes": item["size_bytes"], "format": item.get("format"),
                 "structure": item.get("structure"), "archive": item["archive"], "preview": preview,
+                "public_scope": scope, "text_content": item.get("text_content"),
                 "asset_ids": [], "family_ids": [], "sources": [], "provenance": [],
             })
             entry["asset_ids"] = sorted(set(entry["asset_ids"]) | {record["id"]})

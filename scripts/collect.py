@@ -304,12 +304,15 @@ def main() -> int:
     from mga_resources.sources import discover
     from mga_resources.media import process_file
     from mga_resources.catalog import normalize_record, finalize
+    from mga_resources.scope_policy import (load_scope_policy, partition_acquisition_descriptors,
+                                            filter_public_records, write_internal_catalog)
 
     registry = json.loads((ROOT / "data/sources.json").read_text(encoding="utf-8"))
     sources = registry["sources"] if isinstance(registry, dict) else registry
     source = next((item for item in sources if item["source_id"] == args.source), None)
     if source is None or not source.get("enabled", False):
         parser.error("Source is missing or not enabled in the source registry")
+    scope_policy = load_scope_policy()
     run_id = slug(os.environ.get("GITHUB_RUN_ID", "unknown") + "-" + os.environ.get("GITHUB_RUN_ATTEMPT", "1"))
     base = ROOT / "build" / slug(args.source) / run_id
     base.mkdir(parents=True, exist_ok=True)
@@ -320,6 +323,7 @@ def main() -> int:
         "tooling_commit": os.environ.get("GITHUB_SHA"),
         "started_at": datetime.now(timezone.utc).isoformat(),
         "run_url": f"https://github.com/{os.environ.get('GITHUB_REPOSITORY')}/actions/runs/{os.environ.get('GITHUB_RUN_ID')}",
+        "scope_policy_sha256": scope_policy["sha256"],
     }
     if selection_path:
         publication["selection_plan"] = {
@@ -402,6 +406,16 @@ def main() -> int:
             processed += 1
             disposition = {"index": item_index, "source_id": item.get("source_id"), "status": "attempting"}
             batch_dispositions.append(disposition)
+            acquisition_descriptors, scope_excluded = partition_acquisition_descriptors(item, scope_policy)
+            if scope_excluded and not acquisition_descriptors:
+                reason = "All original descriptors match exact previously reviewed scope exclusions."
+                excluded_records.append({"source_id": item.get("source_id"), "source_index": item_index,
+                    "title": item.get("title"), "source_url": item.get("source_url"), "reason": reason,
+                    "scope_excluded_variants": scope_excluded})
+                disposition.update(status="excluded", reason=reason, scope_excluded_variants=scope_excluded)
+                if len(batch_dispositions) >= 500:
+                    flush()
+                continue
             if item.get("scope_status") == "excluded" and item.get("exclusion_reason"):
                 excluded_records.append({"source_id": item.get("source_id"), "source_index": item_index,
                                          "title": item.get("title"), "source_url": item.get("source_url"),
@@ -424,7 +438,7 @@ def main() -> int:
             files = []
             item_assets = set()
             item_failures = 0
-            for descriptor, content, download_error in client.iter_files(item.get("files", []), workers=4):
+            for descriptor, content, download_error in client.iter_files(acquisition_descriptors, workers=4):
                 url = descriptor.get("url")
                 try:
                     if download_error is not None:
@@ -475,6 +489,8 @@ def main() -> int:
             if files:
                 record = normalize_record(item, processed_files=files)
                 record["source_index"] = item_index
+                if scope_excluded:
+                    record["scope_excluded_variants"] = scope_excluded
                 record = public_paths(record, base)
                 all_records.append(record)
                 batch_records.append(record)
@@ -489,6 +505,8 @@ def main() -> int:
                                            {"machine_checked", "machine_checked_and_rendered"} for f in files)
             disposition.update(status="acquired" if files and not item_failures else "failed",
                                files=len(files), file_failures=item_failures, machine_checked=machine_ok)
+            if scope_excluded:
+                disposition["scope_excluded_variants"] = scope_excluded
             if processed % 25 == 0:
                 print(json.dumps({"processed": processed, "selected": selected_count,
                                   "records": len(all_records), "failures": len(all_failures)}), flush=True)
@@ -510,7 +528,11 @@ def main() -> int:
         if not flush_failed:
             flush()
         catalog_dir = base / "catalog"
-        catalog_summary = finalize(all_records, catalog_dir)
+        internal_catalog = write_internal_catalog(all_records, catalog_dir / "internal-catalog.jsonl")
+        public_records, scope_report = filter_public_records(all_records, scope_policy)
+        catalog_summary = finalize(public_records, catalog_dir)
+        scope_report.update(internal_catalog=internal_catalog, public_catalog_sha256=catalog_summary["catalog_sha256"])
+        dump_json(catalog_dir / "scope-report.json", scope_report)
         renamed = []
         for path in catalog_dir.iterdir():
             if path.is_file():
@@ -531,6 +553,7 @@ def main() -> int:
             "acceptance_passed": False, "collection_complete": False,
             "illustrator_verified": False, "visual_acceptance": "pending",
             "fatal": fatal, "batches": receipts, "catalog_summary": catalog_summary,
+            "public_scope": scope_report,
         }
         report_file = base / f"{slug(args.source)}-{run_id}.report.json"
         dump_json(report_file, report)

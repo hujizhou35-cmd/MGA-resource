@@ -41,3 +41,26 @@
 报告中的 `pending_count` 是待处理记录条数，可能包含同件多个格式，不是独立素材数量。
 演练摘要保留输入和结果哈希及无文件的精确条目，完整结果在上述 build 输出目录；
 复现必须使用相同输入字节。验收工具仍要求原来的 120 条检索、视觉审阅、恢复证据等条件。
+
+## 公开范围的一致过滤
+
+`mga_resources/scope_policy.py` 直接消费相同 `file-review` 证据格式，
+默认读取 `data/visual-reviews/` 和 registry 的 `public_scope_review_paths`，
+不另建一套批准记录。实际审阅的 `exclude_from_v1`、`quarantine` 及明确待复核决定
+按原件 SHA 生效；预览完整性问题另绑定预览 SHA。文字属性未知、文件标题命中某个词
+或是 PNG/SVG 格式本身，都不是排除依据。
+
+采集器保留完整 discovery、内部 records 和 receipts；只有固定上游内容哈希、URL、
+格式及大小都吻合的既有范围排除，才可以在再次取件前跳过。
+汇总先保存 `internal-catalog.jsonl`，再物理过滤公开 `catalog.jsonl`、SQLite 及检索候选。
+`scope-report.json` 保留范围理由、审阅文件哈希、原件 SHA 与原始归档位置。
+内部诊断记录带 `catalog_visibility=internal_diagnostic`，不能直接用作公开索引。
+来源采集/机器状态仍按内部完整 inventory 计算，不因公开数量减少而伪装采集失败。
+
+验收和 clean publish pack 都消费同一范围模块，阻止已排除或明确待复核文件重新进入
+公开下载清单和恢复包。晚于旧疑点的实际媒体类型审阅可以解决疑点，但不能覆盖独立的
+“完整信息成品”排除或预览完整性问题。源码原件和旧审阅历史仍留在云端。
+
+Commons 6 件实际云元数据的针对性检查见
+`commons-component-scope-check-20261107.json`：01–04 保留，05–06 排除；
+公开索引和下载规划均只有 4 个原件。该检查不是全库验收或云端重打包/恢复完成声明。

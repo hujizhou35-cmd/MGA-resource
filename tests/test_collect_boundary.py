@@ -168,8 +168,9 @@ def test_sparse_collection_flushes_gaps_without_claiming_missing_indices(tmp_pat
                                      "--selection-plan", "data/collection-plans/test.json"])
     monkeypatch.setattr(sources, "discover", lambda *a: rows)
     def empty_finalize(records, output):
-        output.mkdir(parents=True)
-        return {"logical_assets": 0}
+        output.mkdir(parents=True, exist_ok=True)
+        (output / "catalog.jsonl").write_bytes(b"\n")
+        return {"logical_assets": 0, "catalog_sha256": hashlib.sha256(b"\n").hexdigest()}
     monkeypatch.setattr(catalog, "finalize", empty_finalize)
     assert collect.main() == 0
     report = json.loads((tmp_path / "build/test/42-1/test-42-1.report.json").read_text())

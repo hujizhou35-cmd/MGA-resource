@@ -628,7 +628,7 @@
         "svg",
         "jpg"
       ],
-      "scope": "targeted_gaps",
+      "scope": "medical_illustration_components",
       "rights_notes": "Six exact original-file identities with individual CC BY/CC BY-SA attribution and Commons SHA1/size pins; all six thumbnails viewed, cloud original/render checks pending. No whole-site coverage claim.",
       "verified_at": "2026-11-07",
       "content_types": [
@@ -646,7 +646,8 @@
       "expected_item_count": 6,
       "download_hosts": [
         "upload.wikimedia.org"
-      ]
+      ],
+      "scope_notes": "Retain the four object-centered bone/cartilage drawings, including useful labels. Exclude the two complete research-design teaching diagrams by exact file scope review; raw acquisition remains in cloud provenance."
     },
     {
       "source_id": "sciglyph",
@@ -717,8 +718,8 @@
     {
       "source_id": "commons-gene-network",
       "name": "Wikimedia Commons (gene-network candidate)",
-      "enabled": true,
-      "status": "candidate_pending_cloud_visual_review",
+      "enabled": false,
+      "status": "paused_pending_component_scope_review",
       "primary": false,
       "adapter": "curated_manifest",
       "repository": null,
@@ -747,7 +748,12 @@
       "download_hosts": [
         "upload.wikimedia.org"
       ],
-      "publication_status": "candidate_pending_visual_review"
+      "publication_status": "candidate_pending_scope_and_visual_review"
     }
-  ]
+  ],
+  "public_scope_review_paths": [
+    "data/source-diagnostics/togo-42264980918-scope-disposition-proposals.json"
+  ],
+  "public_scope_policy_document": "docs/COLLECTION-SCOPE-20261107.md",
+  "public_scope_review_application": "Explicit per-file decisions apply to public artifacts only; source archives and receipts remain internal. Pending scope is deferred, not asserted to be photography. Unknown attributes do not imply exclusion."
 }

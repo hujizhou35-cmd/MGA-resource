@@ -19,10 +19,14 @@ from pathlib import Path
 import re
 import shutil
 import subprocess
+import sys
 import tarfile
 import tempfile
 from urllib.parse import quote, unquote, urlsplit
 from urllib.request import urlopen
+
+sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
+from mga_resources.scope_policy import load_scope_policy, evaluate_public_scope
 
 
 CHUNK = 1024 * 1024
@@ -94,10 +98,13 @@ def parse_manifest(data, expected_sha):
     return manifest
 
 
-def plan_manifest(manifest):
+def plan_manifest(manifest, scope_policy=None):
     """Deduplicate bytes, while verifying every exact archive/member reference."""
     objects, archives, originals = {}, {}, set()
+    scope_policy = scope_policy if scope_policy is not None else load_scope_policy()
     for item in manifest["files"]:
+        if not evaluate_public_scope({}, item, scope_policy)["public_allowed"]:
+            raise ValueError("Publication manifest contains a scope-excluded or pending-review file")
         if item.get("sha256") in originals:
             raise ValueError("Duplicate original in publication manifest")
         originals.add(item.get("sha256"))

@@ -1,0 +1,93 @@
+{
+  "source": "commons",
+  "collection_run": "42260711756-1",
+  "input_records_sha256": "baf47a7cf67d9a7fe66983be97bf541ca640f953e6b11f91b6b6277a220d1f44",
+  "input_records": 6,
+  "public_records": 4,
+  "public_index_unique_files": 4,
+  "excluded_sha256": [
+    "dbb739dc66c2fed7c692556534a59d659162e148608c4eb018488fabf30d8ebe",
+    "ebb9a9bd3b53c90cccf842971ca582f91b685cfc4c7d6250e4ddf43083c80190"
+  ],
+  "index_contains_excluded_files": false,
+  "public_catalog_sha256": "238f9ebdfef8d955ad3441e1b9da6d13abbfbd7a0a00998d94ae15713c90fe33",
+  "policy_sha256": "c7d1a5c8c6023819b755ab228117281ad1371d209034071cd11f2cc72659099e",
+  "public_original_sha256": [
+    "62898b9d08c0821a649cb56fc979d1cf32cdc930c0313049ca53bd568e096c5d",
+    "977c20aa8dd1b9b4c73d3ce3b1eebed3f9558a9b5256517582cb1072edb50c98",
+    "a68bc1bcbcfdf7a95015bf99a8b16d02687e0c36c92a805a56dc350a376d6c04",
+    "eb6ab3a919268fcb1864da73b50cf2a63147cc1ec588c280ca04788bbc437fec"
+  ],
+  "text_content": {
+    "File:Bone cross-section no text.svg": {
+      "status": "absent",
+      "kinds": [],
+      "cleanup_advice": "none_observed",
+      "editable_text": "unknown",
+      "basis": "Direct inspection of the original artwork area in the cloud contact-sheet tile; collector captions outside the artwork are not counted.",
+      "evidence": [
+        {
+          "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/commons-42260711756-1-b0000.review.png",
+          "sha256": "7882d49647b83664b62138770424dc844e6ace018f8a19b55f26ca51ebb201f8"
+        }
+      ]
+    },
+    "File:Transverse section of bone en.svg": {
+      "status": "present",
+      "kinds": [
+        "labels"
+      ],
+      "cleanup_advice": "task_dependent",
+      "editable_text": "unknown",
+      "basis": "Direct inspection of the original artwork area in the cloud contact-sheet tile; collector captions outside the artwork are not counted.",
+      "evidence": [
+        {
+          "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/commons-42260711756-1-b0000.review.png",
+          "sha256": "7882d49647b83664b62138770424dc844e6ace018f8a19b55f26ca51ebb201f8"
+        }
+      ],
+      "cleanup_note": "SVG annotation presence does not prove that lettering is native editable text; inspect original structure before a task-specific derivative."
+    },
+    "File:Cartilage Structure.jpg": {
+      "status": "present",
+      "kinds": [
+        "labels",
+        "legend"
+      ],
+      "cleanup_advice": "task_dependent",
+      "editable_text": "unknown",
+      "basis": "Direct inspection of the original artwork area in the cloud contact-sheet tile; collector captions outside the artwork are not counted.",
+      "evidence": [
+        {
+          "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/commons-42260711756-1-b0000.review.png",
+          "sha256": "7882d49647b83664b62138770424dc844e6ace018f8a19b55f26ca51ebb201f8"
+        }
+      ],
+      "cleanup_note": "JPEG labels are raster pixels. Do not claim selectable/editable text; preserve the original and assess a separate task-specific derivative if labels need removal."
+    },
+    "File:Cartoon Hyaline Cartilage.jpg": {
+      "status": "present",
+      "kinds": [
+        "labels"
+      ],
+      "cleanup_advice": "task_dependent",
+      "editable_text": "unknown",
+      "basis": "Direct inspection of the original artwork area in the cloud contact-sheet tile; collector captions outside the artwork are not counted.",
+      "evidence": [
+        {
+          "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/commons-42260711756-1-b0000.review.png",
+          "sha256": "7882d49647b83664b62138770424dc844e6ace018f8a19b55f26ca51ebb201f8"
+        }
+      ],
+      "cleanup_note": "JPEG labels are raster pixels. Do not claim selectable/editable text; preserve the original and assess a separate task-specific derivative if labels need removal."
+    }
+  },
+  "scope_proof": "Actual collected metadata + prior cloud contact-sheet review; no new image or artwork package download.",
+  "cloud_repack_or_restore_passed": false,
+  "full_library_acceptance_claimed": false,
+  "generated_at": "2026-11-06T18:26:54.844507+00:00",
+  "download_manifest_originals": 4,
+  "download_manifest_objects_including_previews": 8,
+  "download_manifest_excluded_hashes_present": false,
+  "original_archive_receipt_sha256": "b6e8531d10f436c3703291b629167c1339a854699f2a4e87355289eb95d1e10e"
+}

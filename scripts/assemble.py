@@ -429,7 +429,13 @@ def main():
     from mga_resources.scientific_reviews import apply_scientific_reviews, finalized_scientific_review_counts
     records, scientific_review_report = apply_scientific_reviews(
         records, (ROOT / "data/visual-reviews").glob("*.json"), assets)
-    summary = finalize(records, output)
+    from mga_resources.scope_policy import load_scope_policy, filter_public_records, write_internal_catalog
+    scope_policy = load_scope_policy(release_assets=assets)
+    internal_catalog = write_internal_catalog(records, output / "internal-catalog.jsonl")
+    public_records, scope_report = filter_public_records(records, scope_policy)
+    summary = finalize(public_records, output)
+    scope_report.update(internal_catalog=internal_catalog, public_catalog_sha256=summary["catalog_sha256"])
+    (output / "scope-report.json").write_text(json.dumps(scope_report, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     scientific_review_report["retained_after_finalize"] = finalized_scientific_review_counts(
         read_lines(output / "catalog.jsonl"))
     benchmark = json.loads((ROOT / "data/benchmark.json").read_text(encoding="utf-8"))
@@ -445,6 +451,7 @@ def main():
               "metadata_enrichments": enrichments,
               "historical_native_evidence": native_evidence_report,
               "scientific_visual_reviews": scientific_review_report,
+              "public_scope": scope_report,
               "outstanding_primary_sources": outstanding,
               "benchmark_queries": len(results), "visually_judged_queries": 0,
               "retrieval_pass_rate": None, "acceptance_passed": False,
