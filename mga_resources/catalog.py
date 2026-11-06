@@ -444,6 +444,8 @@ def finalize(records: Iterable[dict[str, Any]], output_dir: str | Path) -> dict[
     with catalog_path.open("w", encoding="utf-8", newline="\n") as handle:
         for item in items:
             handle.write(json.dumps(item, ensure_ascii=False, separators=(",", ":")) + "\n")
+        if not items:
+            handle.write("\n")
     unique_files = {}
     for item in items:
         for file in item["files"]:

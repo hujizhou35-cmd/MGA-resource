@@ -3,6 +3,13 @@ import json
 from mga_resources.catalog import deduplicate, finalize, normalize_record, search
 
 
+def test_empty_catalog_remains_uploadable_and_searchable(tmp_path):
+    summary = finalize([], tmp_path)
+    assert (tmp_path / "catalog.jsonl").read_bytes() == b"\n"
+    assert summary["logical_assets"] == 0
+    assert search(tmp_path / "catalog.sqlite", "mouse") == []
+
+
 def record(title="Mouse liver", source="source-a", source_id="liver", digest="a" * 64, license="CC BY 4.0"):
     return {
         "source": source, "source_id": source_id, "title": title,
