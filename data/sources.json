@@ -614,10 +614,10 @@
     {
       "source_id": "commons",
       "name": "Wikimedia Commons",
-      "enabled": false,
-      "status": "planned_adapter",
+      "enabled": true,
+      "status": "curated_manifest_ready_for_cloud_acquisition",
       "primary": false,
-      "adapter": null,
+      "adapter": "curated_manifest",
       "repository": null,
       "source_url": "https://commons.wikimedia.org/",
       "license": "per-item",
@@ -626,11 +626,11 @@
       "categories": [],
       "extensions": [
         "svg",
-        "png"
+        "jpg"
       ],
       "scope": "targeted_gaps",
-      "rights_notes": "Inspect exact file page, original source, creator, license and derivative conditions. Photos and study data figures are outside v1.",
-      "verified_at": "2026-11-06",
+      "rights_notes": "Six exact original-file identities with individual CC BY/CC BY-SA attribution and Commons SHA1/size pins; all six thumbnails viewed, cloud original/render checks pending. No whole-site coverage claim.",
+      "verified_at": "2026-11-07",
       "content_types": [
         "illustration",
         "diagram",
@@ -639,6 +639,13 @@
       "style_notes": "Mixed styles and quality; targeted discovery fills specific anatomy and procedure gaps.",
       "evidence_urls": [
         "https://commons.wikimedia.org/wiki/Commons:Reusing_content_outside_Wikimedia"
+      ],
+      "manifest_path": "data/curated/gapfill-20261107.json",
+      "manifest_sha256": "26f7fd7c8b66bd49f4a1ea28bac4ad87f6ddd76381f05cfcea87cd4fc07385d1",
+      "manifest_version": "gapfill-20261107-v1",
+      "expected_item_count": 6,
+      "download_hosts": [
+        "upload.wikimedia.org"
       ]
     },
     {
@@ -670,6 +677,41 @@
       "evidence_urls": [
         "https://github.com/ZengZichao/SciGlyph",
         "https://github.com/ZengZichao/SciGlyph-MCP"
+      ]
+    },
+    {
+      "enabled": true,
+      "status": "curated_manifest_ready_for_cloud_acquisition",
+      "adapter": "curated_manifest",
+      "primary": false,
+      "manifest_path": "data/curated/gapfill-20261107.json",
+      "manifest_sha256": "26f7fd7c8b66bd49f4a1ea28bac4ad87f6ddd76381f05cfcea87cd4fc07385d1",
+      "manifest_version": "gapfill-20261107-v1",
+      "verified_at": "2026-11-07",
+      "scope": "targeted_gaps",
+      "license": "per-item",
+      "license_url": null,
+      "author": null,
+      "categories": [],
+      "source_id": "openclipart",
+      "name": "Openclipart (curated questionnaire)",
+      "repository": null,
+      "source_url": "https://openclipart.org/",
+      "expected_item_count": 1,
+      "download_hosts": [
+        "openclipart.org"
+      ],
+      "extensions": [
+        "svg"
+      ],
+      "content_types": [
+        "icon"
+      ],
+      "style_notes": "One blue/white interface illustration by Dustwin.",
+      "rights_notes": "One directly traced original, CC0 upload-policy evidence and exact SVG SHA256; not a mirror-only license inference.",
+      "evidence_urls": [
+        "https://openclipart.org/detail/195847/online-computer-survey",
+        "https://openclipart.org/share"
       ]
     }
   ]

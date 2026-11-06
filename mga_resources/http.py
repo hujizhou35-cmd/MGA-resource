@@ -240,8 +240,18 @@ class HttpClient:
         else:
             data = self.get_bytes(descriptor["url"])
         expected = descriptor.get("upstream_hash")
-        if expected and expected.startswith("git-blob-sha1:"):
-            observed = hashlib.sha1(b"blob " + str(len(data)).encode() + b"\0" + data).hexdigest()
-            if observed != expected.split(":", 1)[1]:
-                raise SourceAccessError(descriptor["url"], "pinned Git blob hash mismatch")
+        if expected:
+            algorithm, separator, digest = expected.partition(":")
+            if not separator or algorithm not in {"git-blob-sha1", "sha1", "sha256"}:
+                raise SourceAccessError(descriptor["url"], "unsupported pinned content hash algorithm")
+            if algorithm == "git-blob-sha1":
+                observed = hashlib.sha1(b"blob " + str(len(data)).encode() + b"\0" + data).hexdigest()
+            else:
+                observed = hashlib.new(algorithm, data).hexdigest()
+            if observed != digest:
+                label = "Git blob" if algorithm == "git-blob-sha1" else "original content"
+                raise SourceAccessError(descriptor["url"], f"pinned {label} hash mismatch")
+        expected_size = descriptor.get("upstream_size")
+        if expected_size is not None and len(data) != expected_size:
+            raise SourceAccessError(descriptor["url"], "pinned original size mismatch")
         return data

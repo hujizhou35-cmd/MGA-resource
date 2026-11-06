@@ -1,0 +1,374 @@
+{
+  "schema_version": 1,
+  "version": "gapfill-20261107-v1",
+  "reviewed_on": "2026-11-07",
+  "scope": "Seven explicitly selected illustrations; not a Commons/Openclipart bulk collection. Originals acquired by cloud collector.",
+  "items": [
+    {
+      "source": "commons",
+      "source_id": "File:Bone cross-section no text.svg",
+      "title": "Bone cross-section without labels",
+      "title_zh": "无文字骨组织剖面",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Bone_cross-section_no_text.svg",
+      "author": "Pbroks13; no-text version uploaded by Menglk1988",
+      "license": "CC-BY-3.0",
+      "license_url": "https://creativecommons.org/licenses/by/3.0/",
+      "license_original": "CC BY 3.0",
+      "attribution": "Bone cross-section without labels — Pbroks13; no-text version uploaded by Menglk1988; CC-BY-3.0; https://commons.wikimedia.org/wiki/File:Bone_cross-section_no_text.svg; original bytes unchanged by MGA-resource.",
+      "rights_evidence": [
+        "https://commons.wikimedia.org/wiki/File:Bone_cross-section_no_text.svg",
+        "https://commons.wikimedia.org/wiki/File:Bone_cross-section.svg"
+      ],
+      "description": "Illustrated long-bone cutaway without labels; visible cortical shell, trabecular interior and marrow cavity.",
+      "scope_notes": "No numerical study data or disease grading.",
+      "categories": [
+        "tissues_vessels"
+      ],
+      "tags": [
+        "bone",
+        "cross section",
+        "compact bone",
+        "spongy bone",
+        "marrow",
+        "periosteum"
+      ],
+      "species": null,
+      "upstream_revision": "sha1:61e272e8e4de817bd5699e0b0371e31bd764875c",
+      "upstream_timestamp": "2022-06-10T08:50:53Z",
+      "metadata_evidence": "data/curated/gapfill-20261107.evidence.json",
+      "files": [
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/4/4c/Bone_cross-section_no_text.svg",
+          "format": "svg",
+          "upstream_hash": "sha1:61e272e8e4de817bd5699e0b0371e31bd764875c",
+          "upstream_size": 213732,
+          "upstream_timestamp": "2022-06-10T08:50:53Z"
+        }
+      ],
+      "thumbnail_review": {
+        "status": "viewed",
+        "reviewed_on": "2026-11-07",
+        "reviewer": "MGA-resource ingestion agent",
+        "review_image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4c/Bone_cross-section_no_text.svg/500px-Bone_cross-section_no_text.svg.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "review_image_sha256": "883dcd4b0a998f63694957aa4e2c19ca3e7dc04be208f16af055a074fac3786a",
+        "observed": "Illustrated long-bone cutaway without labels; visible cortical shell, trabecular interior and marrow cavity.",
+        "original_download_verified": false,
+        "cloud_render_acceptance": "pending"
+      }
+    },
+    {
+      "source": "commons",
+      "source_id": "File:Transverse section of bone en.svg",
+      "title": "Transverse section of bone with osteons",
+      "title_zh": "含骨单位的骨组织横断面",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Transverse_section_of_bone_en.svg",
+      "author": "Nyq (vector); BDB (digital source); Gray's Anatomy 1918 (original anatomy drawing)",
+      "license": "CC-BY-SA-4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "license_original": "CC BY-SA 4.0",
+      "attribution": "Transverse section of bone with osteons — Nyq (vector); BDB (digital source); Gray's Anatomy 1918 (original anatomy drawing); CC-BY-SA-4.0; https://commons.wikimedia.org/wiki/File:Transverse_section_of_bone_en.svg; original bytes unchanged by MGA-resource.",
+      "rights_evidence": [
+        "https://commons.wikimedia.org/wiki/File:Transverse_section_of_bone_en.svg",
+        "https://commons.wikimedia.org/wiki/File:Transverse_Section_Of_Bone.png"
+      ],
+      "description": "Labeled bone tissue diagram with osteons, Haversian canals, osteocytes and canaliculi.",
+      "scope_notes": "Vector recreation of historical anatomy artwork; preserve the stated derivative credits.",
+      "categories": [
+        "tissues_vessels"
+      ],
+      "tags": [
+        "bone",
+        "cross section",
+        "transverse section",
+        "osteon",
+        "Haversian canal",
+        "osteocyte",
+        "canaliculi"
+      ],
+      "species": null,
+      "upstream_revision": "sha1:e47aa208d4517642d6024582a54e00e7be2f4748",
+      "upstream_timestamp": "2016-07-10T20:55:27Z",
+      "metadata_evidence": "data/curated/gapfill-20261107.evidence.json",
+      "files": [
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/9/98/Transverse_section_of_bone_en.svg",
+          "format": "svg",
+          "upstream_hash": "sha1:e47aa208d4517642d6024582a54e00e7be2f4748",
+          "upstream_size": 306632,
+          "upstream_timestamp": "2016-07-10T20:55:27Z"
+        }
+      ],
+      "thumbnail_review": {
+        "status": "viewed",
+        "reviewed_on": "2026-11-07",
+        "reviewer": "MGA-resource ingestion agent",
+        "review_image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/98/Transverse_section_of_bone_en.svg/500px-Transverse_section_of_bone_en.svg.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "review_image_sha256": "c2f2a8171da7f4ed3f952297aac935391939fdc35676332fad31c3990524d6e6",
+        "observed": "Labeled bone tissue diagram with osteons, Haversian canals, osteocytes and canaliculi.",
+        "original_download_verified": false,
+        "cloud_render_acceptance": "pending"
+      }
+    },
+    {
+      "source": "commons",
+      "source_id": "File:Cartilage Structure.jpg",
+      "title": "Cartilage structure and tissue zones",
+      "title_zh": "软骨组织结构与分层示意",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Cartilage_Structure.jpg",
+      "author": "Kassidy Veasaw",
+      "license": "CC-BY-SA-4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "license_original": "CC BY-SA 4.0",
+      "attribution": "Cartilage structure and tissue zones — Kassidy Veasaw; CC-BY-SA-4.0; https://commons.wikimedia.org/wiki/File:Cartilage_Structure.jpg; original bytes unchanged by MGA-resource.",
+      "rights_evidence": [
+        "https://commons.wikimedia.org/wiki/File:Cartilage_Structure.jpg"
+      ],
+      "description": "Hand-drawn cartilage illustration with superficial, middle and deep zones and a chondrocyte/collagen key.",
+      "scope_notes": "Raster drawing, not a microscopy photograph or an editable vector.",
+      "categories": [
+        "tissues_vessels"
+      ],
+      "tags": [
+        "cartilage",
+        "chondrocyte",
+        "collagen",
+        "tissue zones"
+      ],
+      "species": null,
+      "upstream_revision": "sha1:8bd4fbd8bf195d86e3f3ad5957b9a7c31ec69299",
+      "upstream_timestamp": "2018-05-01T21:49:29Z",
+      "metadata_evidence": "data/curated/gapfill-20261107.evidence.json",
+      "files": [
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/f/ff/Cartilage_Structure.jpg",
+          "format": "jpg",
+          "upstream_hash": "sha1:8bd4fbd8bf195d86e3f3ad5957b9a7c31ec69299",
+          "upstream_size": 97936,
+          "upstream_timestamp": "2018-05-01T21:49:29Z"
+        }
+      ],
+      "thumbnail_review": {
+        "status": "viewed",
+        "reviewed_on": "2026-11-07",
+        "reviewer": "MGA-resource ingestion agent",
+        "review_image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/ff/Cartilage_Structure.jpg/500px-Cartilage_Structure.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "review_image_sha256": "400ffb22bf043dc45e127dc3a38fa6f406f7201b70d7c9f7348b6cd9f9a58689",
+        "observed": "Hand-drawn cartilage illustration with superficial, middle and deep zones and a chondrocyte/collagen key.",
+        "original_download_verified": false,
+        "cloud_render_acceptance": "pending"
+      }
+    },
+    {
+      "source": "commons",
+      "source_id": "File:Cartoon Hyaline Cartilage.jpg",
+      "title": "Hyaline cartilage schematic",
+      "title_zh": "透明软骨组织示意",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Cartoon_Hyaline_Cartilage.jpg",
+      "author": "Hwill016",
+      "license": "CC-BY-SA-4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "license_original": "CC BY-SA 4.0",
+      "attribution": "Hyaline cartilage schematic — Hwill016; CC-BY-SA-4.0; https://commons.wikimedia.org/wiki/File:Cartoon_Hyaline_Cartilage.jpg; original bytes unchanged by MGA-resource.",
+      "rights_evidence": [
+        "https://commons.wikimedia.org/wiki/File:Cartoon_Hyaline_Cartilage.jpg"
+      ],
+      "description": "Cartoon tissue diagram labels chondrocytes, lacunae, nucleus, isogenous groups, territorial and interterritorial matrix.",
+      "scope_notes": "Raster schematic; no numerical disease grade.",
+      "categories": [
+        "tissues_vessels"
+      ],
+      "tags": [
+        "cartilage",
+        "hyaline cartilage",
+        "chondrocytes",
+        "lacunae",
+        "matrix",
+        "isogenous groups"
+      ],
+      "species": null,
+      "upstream_revision": "sha1:899ed1526450b8f3280c43317432f8e3687f1f4f",
+      "upstream_timestamp": "2021-11-11T00:11:26Z",
+      "metadata_evidence": "data/curated/gapfill-20261107.evidence.json",
+      "files": [
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/3/34/Cartoon_Hyaline_Cartilage.jpg",
+          "format": "jpg",
+          "upstream_hash": "sha1:899ed1526450b8f3280c43317432f8e3687f1f4f",
+          "upstream_size": 179894,
+          "upstream_timestamp": "2021-11-11T00:11:26Z"
+        }
+      ],
+      "thumbnail_review": {
+        "status": "viewed",
+        "reviewed_on": "2026-11-07",
+        "reviewer": "MGA-resource ingestion agent",
+        "review_image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/34/Cartoon_Hyaline_Cartilage.jpg/500px-Cartoon_Hyaline_Cartilage.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "review_image_sha256": "733ea51c4ba7afb036b5f6274aca506abb1a2380555da5e4beab73f4d4985b8e",
+        "observed": "Cartoon tissue diagram labels chondrocytes, lacunae, nucleus, isogenous groups, territorial and interterritorial matrix.",
+        "original_download_verified": false,
+        "cloud_render_acceptance": "pending"
+      }
+    },
+    {
+      "source": "commons",
+      "source_id": "File:CONSORT 2010 flow diagram for a two-group parallel randomized trial.svg",
+      "title": "CONSORT 2010 blank two-group randomized trial flow diagram",
+      "title_zh": "CONSORT 2010双组随机试验空白流程模板",
+      "source_url": "https://commons.wikimedia.org/wiki/File:CONSORT_2010_flow_diagram_for_a_two-group_parallel_randomized_trial.svg",
+      "author": "Derek Jansen, Grad Coach",
+      "license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_original": "CC BY 4.0",
+      "attribution": "CONSORT 2010 blank two-group randomized trial flow diagram — Derek Jansen, Grad Coach; CC-BY-4.0; https://commons.wikimedia.org/wiki/File:CONSORT_2010_flow_diagram_for_a_two-group_parallel_randomized_trial.svg; original bytes unchanged by MGA-resource.",
+      "rights_evidence": [
+        "https://commons.wikimedia.org/wiki/File:CONSORT_2010_flow_diagram_for_a_two-group_parallel_randomized_trial.svg"
+      ],
+      "description": "Two-arm randomized trial template with enrollment, allocation, follow-up and analysis. All participant counts are blank n= placeholders.",
+      "scope_notes": "Historical CONSORT 2010 template, not the revised CONSORT 2025 reporting standard; no real participant counts or treatment results.",
+      "categories": [
+        "clinical_workflow"
+      ],
+      "tags": [
+        "clinical workflow",
+        "participant recruitment",
+        "enrollment",
+        "eligibility",
+        "randomization",
+        "two groups",
+        "allocation",
+        "follow up",
+        "analysis",
+        "blank template"
+      ],
+      "species": "human",
+      "upstream_revision": "sha1:ce1c00785162808de7229802749476a1fd1d7597",
+      "upstream_timestamp": "2026-10-21T13:46:33Z",
+      "metadata_evidence": "data/curated/gapfill-20261107.evidence.json",
+      "files": [
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/7/7a/CONSORT_2010_flow_diagram_for_a_two-group_parallel_randomized_trial.svg",
+          "format": "svg",
+          "upstream_hash": "sha1:ce1c00785162808de7229802749476a1fd1d7597",
+          "upstream_size": 5588,
+          "upstream_timestamp": "2026-10-21T13:46:33Z"
+        }
+      ],
+      "thumbnail_review": {
+        "status": "viewed",
+        "reviewed_on": "2026-11-07",
+        "reviewer": "MGA-resource ingestion agent",
+        "review_image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7a/CONSORT_2010_flow_diagram_for_a_two-group_parallel_randomized_trial.svg/500px-CONSORT_2010_flow_diagram_for_a_two-group_parallel_randomized_trial.svg.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "review_image_sha256": "77e2304cac7f629331c64f56bcacc2035184990996d601ba09641418f0a98054",
+        "observed": "Two-arm randomized trial template with enrollment, allocation, follow-up and analysis. All participant counts are blank n= placeholders.",
+        "original_download_verified": false,
+        "cloud_render_acceptance": "pending"
+      }
+    },
+    {
+      "source": "commons",
+      "source_id": "File:Cohort and case-control study timelines for smoking and lung cancer.svg",
+      "title": "Cohort follow-up and case-control study timelines",
+      "title_zh": "队列随访与病例对照研究时间线示意",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Cohort_and_case-control_study_timelines_for_smoking_and_lung_cancer.svg",
+      "author": "Derek Jansen, Grad Coach",
+      "license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_original": "CC BY 4.0",
+      "attribution": "Cohort follow-up and case-control study timelines — Derek Jansen, Grad Coach; CC-BY-4.0; https://commons.wikimedia.org/wiki/File:Cohort_and_case-control_study_timelines_for_smoking_and_lung_cancer.svg; original bytes unchanged by MGA-resource.",
+      "rights_evidence": [
+        "https://commons.wikimedia.org/wiki/File:Cohort_and_case-control_study_timelines_for_smoking_and_lung_cancer.svg"
+      ],
+      "description": "Educational comparison of cohort follow-up and case-control inquiry using smoking and lung cancer labels.",
+      "scope_notes": "The source explicitly states that its 20-year span is illustrative, not a particular study; do not reuse that span as a real study duration. No sample sizes or effect estimates.",
+      "categories": [
+        "clinical_workflow"
+      ],
+      "tags": [
+        "clinical workflow",
+        "cohort",
+        "prospective cohort",
+        "retrospective cohort",
+        "follow up",
+        "case control",
+        "timeline",
+        "exposure",
+        "outcome"
+      ],
+      "species": "human",
+      "upstream_revision": "sha1:8fce5d6fd4ed8a8805a5ce5a50c2d4ee05bb2219",
+      "upstream_timestamp": "2026-10-22T12:37:30Z",
+      "metadata_evidence": "data/curated/gapfill-20261107.evidence.json",
+      "files": [
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/b/bd/Cohort_and_case-control_study_timelines_for_smoking_and_lung_cancer.svg",
+          "format": "svg",
+          "upstream_hash": "sha1:8fce5d6fd4ed8a8805a5ce5a50c2d4ee05bb2219",
+          "upstream_size": 5875,
+          "upstream_timestamp": "2026-10-22T12:37:30Z"
+        }
+      ],
+      "thumbnail_review": {
+        "status": "viewed",
+        "reviewed_on": "2026-11-07",
+        "reviewer": "MGA-resource ingestion agent",
+        "review_image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bd/Cohort_and_case-control_study_timelines_for_smoking_and_lung_cancer.svg/960px-Cohort_and_case-control_study_timelines_for_smoking_and_lung_cancer.svg.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "review_image_sha256": "6b957d7eda7944f9ec3bef5514ea5dd3108ca0e9921614479fb358c284b296b8",
+        "observed": "Educational comparison of cohort follow-up and case-control inquiry using smoking and lung cancer labels.",
+        "original_download_verified": false,
+        "cloud_render_acceptance": "pending"
+      }
+    },
+    {
+      "source": "openclipart",
+      "source_id": "195847",
+      "title": "Online computer survey",
+      "title_zh": "在线问卷调查图标",
+      "source_url": "https://openclipart.org/detail/195847/online-computer-survey",
+      "author": "Dustwin",
+      "license": "CC0-1.0",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "license_original": "Openclipart CC0 upload policy; SVG also contains its legacy publicdomain declaration",
+      "attribution": "Online Computer Survey — Dustwin, uploaded 2014-08-02, Openclipart #195847, CC0 1.0. https://openclipart.org/detail/195847/online-computer-survey",
+      "rights_evidence": [
+        "https://openclipart.org/detail/195847/online-computer-survey",
+        "https://openclipart.org/share"
+      ],
+      "description": "Blue and white online survey interface with multiple choice rows and a pointer; no personal answers or patient identifiers.",
+      "scope_notes": "Neutral human questionnaire interface component; no depicted biological species or real participant record.",
+      "categories": [
+        "clinical_workflow"
+      ],
+      "tags": [
+        "questionnaire",
+        "survey",
+        "online survey",
+        "multiple choice",
+        "computer",
+        "clinical workflow"
+      ],
+      "species": null,
+      "upstream_revision": "sha256:1b741a83f5fad9a6fdfbdf255d4455878ae2e400bf5e944c7271d4605fa4723f",
+      "upstream_timestamp": "2014-08-02",
+      "metadata_evidence": "data/curated/gapfill-20261107.evidence.json",
+      "files": [
+        {
+          "url": "https://openclipart.org/download/195847/Online-Survey-Icon-or-logo.svg",
+          "format": "svg",
+          "upstream_hash": "sha256:1b741a83f5fad9a6fdfbdf255d4455878ae2e400bf5e944c7271d4605fa4723f",
+          "upstream_size": 12750
+        }
+      ],
+      "thumbnail_review": {
+        "status": "viewed",
+        "reviewed_on": "2026-11-07",
+        "reviewer": "MGA-resource ingestion agent",
+        "review_image_url": "https://openclipart.org/image/800px/195847",
+        "review_image_sha256": "5415388728c6e95b9df0185c5df79cecd5e0333c6e4007bde6676fe3532a36e9",
+        "observed": "Online SURVEY panel with choice rows and pointer, matching the original author description.",
+        "original_download_verified": true,
+        "cloud_render_acceptance": "pending"
+      }
+    }
+  ],
+  "metadata_evidence_sha256": "8fd0e4b328839f9b8f289dc83a57379c94afeb12a532864b77aaf6a120365fbf"
+}

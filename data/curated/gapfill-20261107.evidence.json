@@ -1,0 +1,910 @@
+{
+  "schema_version": 1,
+  "reviewed_on": "2026-11-07",
+  "commons_api_response": {
+    "batchcomplete": "",
+    "query": {
+      "pages": {
+        "119132109": {
+          "pageid": 119132109,
+          "ns": 6,
+          "title": "File:Bone cross-section no text.svg",
+          "imagerepository": "local",
+          "imageinfo": [
+            {
+              "timestamp": "2022-06-10T08:50:53Z",
+              "size": 213732,
+              "width": 512,
+              "height": 256,
+              "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4c/Bone_cross-section_no_text.svg/500px-Bone_cross-section_no_text.svg.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+              "thumbwidth": 500,
+              "thumbheight": 250,
+              "responsiveUrls": {
+                "2": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4c/Bone_cross-section_no_text.svg/1280px-Bone_cross-section_no_text.svg.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+              },
+              "thumbattribs": {
+                "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4c/Bone_cross-section_no_text.svg/500px-Bone_cross-section_no_text.svg.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+                "decoding": "async",
+                "loading": "lazy",
+                "width": 500,
+                "height": 250,
+                "srcset": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4c/Bone_cross-section_no_text.svg/1280px-Bone_cross-section_no_text.svg.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail 2x"
+              },
+              "url": "https://upload.wikimedia.org/wikipedia/commons/4/4c/Bone_cross-section_no_text.svg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+              "descriptionurl": "https://commons.wikimedia.org/wiki/File:Bone_cross-section_no_text.svg",
+              "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=119132109",
+              "sha1": "61e272e8e4de817bd5699e0b0371e31bd764875c",
+              "extmetadata": {
+                "DateTime": {
+                  "value": "2022-06-10 08:50:53",
+                  "source": "mediawiki-metadata",
+                  "hidden": ""
+                },
+                "ObjectName": {
+                  "value": "Bone cross-section no text",
+                  "source": "mediawiki-metadata"
+                },
+                "CommonsMetadataExtension": {
+                  "value": 1.2,
+                  "source": "extension",
+                  "hidden": ""
+                },
+                "Categories": {
+                  "value": "SVG histology of bones",
+                  "source": "commons-categories",
+                  "hidden": ""
+                },
+                "Assessments": {
+                  "value": "",
+                  "source": "commons-categories",
+                  "hidden": ""
+                },
+                "ImageDescription": {
+                  "value": "Bone cross-section no text",
+                  "source": "commons-desc-page"
+                },
+                "DateTimeOriginal": {
+                  "value": "2022-06-10",
+                  "source": "commons-desc-page"
+                },
+                "Credit": {
+                  "value": "<a class=\"external free\" href=\"https://upload.wikimedia.org/wikipedia/commons/1/12/Bone_cross-section.svg\">https://upload.wikimedia.org/wikipedia/commons/1/12/Bone_cross-section.svg</a>",
+                  "source": "commons-desc-page"
+                },
+                "Artist": {
+                  "value": "Pbroks13",
+                  "source": "commons-desc-page"
+                },
+                "LicenseShortName": {
+                  "value": "CC BY 3.0",
+                  "source": "commons-desc-page",
+                  "hidden": ""
+                },
+                "UsageTerms": {
+                  "value": "Creative Commons Attribution 3.0",
+                  "source": "commons-desc-page"
+                },
+                "AttributionRequired": {
+                  "value": "true",
+                  "source": "commons-desc-page",
+                  "hidden": ""
+                },
+                "LicenseUrl": {
+                  "value": "https://creativecommons.org/licenses/by/3.0",
+                  "source": "commons-desc-page"
+                },
+                "Copyrighted": {
+                  "value": "True",
+                  "source": "commons-desc-page",
+                  "hidden": ""
+                },
+                "Restrictions": {
+                  "value": "",
+                  "source": "commons-desc-page",
+                  "hidden": ""
+                },
+                "License": {
+                  "value": "cc-by-3.0",
+                  "source": "commons-templates",
+                  "hidden": ""
+                }
+              }
+            }
+          ]
+        },
+        "201924435": {
+          "pageid": 201924435,
+          "ns": 6,
+          "title": "File:CONSORT 2010 flow diagram for a two-group parallel randomized trial.svg",
+          "imagerepository": "local",
+          "imageinfo": [
+            {
+              "timestamp": "2026-10-21T13:46:33Z",
+              "size": 5588,
+              "width": 1080,
+              "height": 898,
+              "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7a/CONSORT_2010_flow_diagram_for_a_two-group_parallel_randomized_trial.svg/500px-CONSORT_2010_flow_diagram_for_a_two-group_parallel_randomized_trial.svg.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+              "thumbwidth": 500,
+              "thumbheight": 416,
+              "responsiveUrls": {
+                "2": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7a/CONSORT_2010_flow_diagram_for_a_two-group_parallel_randomized_trial.svg/1280px-CONSORT_2010_flow_diagram_for_a_two-group_parallel_randomized_trial.svg.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+              },
+              "thumbattribs": {
+                "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7a/CONSORT_2010_flow_diagram_for_a_two-group_parallel_randomized_trial.svg/500px-CONSORT_2010_flow_diagram_for_a_two-group_parallel_randomized_trial.svg.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+                "decoding": "async",
+                "loading": "lazy",
+                "width": 500,
+                "height": 416,
+                "srcset": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7a/CONSORT_2010_flow_diagram_for_a_two-group_parallel_randomized_trial.svg/1280px-CONSORT_2010_flow_diagram_for_a_two-group_parallel_randomized_trial.svg.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail 2x"
+              },
+              "url": "https://upload.wikimedia.org/wikipedia/commons/7/7a/CONSORT_2010_flow_diagram_for_a_two-group_parallel_randomized_trial.svg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+              "descriptionurl": "https://commons.wikimedia.org/wiki/File:CONSORT_2010_flow_diagram_for_a_two-group_parallel_randomized_trial.svg",
+              "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=201924435",
+              "sha1": "ce1c00785162808de7229802749476a1fd1d7597",
+              "extmetadata": {
+                "DateTime": {
+                  "value": "2026-10-21 13:46:33",
+                  "source": "mediawiki-metadata",
+                  "hidden": ""
+                },
+                "ObjectName": {
+                  "value": "CONSORT 2010 flow diagram for a two-group parallel randomized trial",
+                  "source": "mediawiki-metadata"
+                },
+                "CommonsMetadataExtension": {
+                  "value": 1.2,
+                  "source": "extension",
+                  "hidden": ""
+                },
+                "Categories": {
+                  "value": "Medical research|Self-published work|English-language SVG diagrams|SVG flow charts|SVG clinical trials",
+                  "source": "commons-categories",
+                  "hidden": ""
+                },
+                "Assessments": {
+                  "value": "",
+                  "source": "commons-categories",
+                  "hidden": ""
+                },
+                "ImageDescription": {
+                  "value": "Flow diagram showing how participants move through the four stages of a two-group parallel randomized trial: enrollment, allocation, follow-up and analysis. It is redrawn from the CONSORT 2010 flow diagram template and keeps the template's wording and spellings (\"Enrollment\", \"Randomized\", \"Analysed\"). Both arms read \"Allocated to intervention\" because the template does not name the arms; in a controlled trial, one of them is the comparator. The counts are blank (\"n= \") so that a trial report can fill them in.\n<p>Enrollment: Assessed for eligibility (n= ); Excluded (n= ): Not meeting inclusion criteria (n= ), Declined to participate (n= ), Other reasons (n= ); Randomized (n= ).\nAllocation (each arm): Allocated to intervention (n= ): Received allocated intervention (n= ), Did not receive allocated intervention (give reasons) (n= ).\nFollow-Up (each arm): Lost to follow-up (give reasons) (n= ); Discontinued intervention (give reasons) (n= ).\nAnalysis (each arm): Analysed (n= ): Excluded from analysis (give reasons) (n= ).\n</p>\nCONSORT 2025 (Hopewell et al. 2025) changed the diagram. Follow-up now lists \"Discontinued intervention\" first and counts \"Lost to follow-up for primary outcome\", and analysis reads \"Analysed for primary outcome\". This file shows the 2010 version.",
+                  "source": "commons-desc-page"
+                },
+                "DateTimeOriginal": {
+                  "value": "2026-10-18",
+                  "source": "commons-desc-page"
+                },
+                "Credit": {
+                  "value": "<span class=\"int-own-work\" lang=\"en\">Own work</span>, based on the CONSORT 2010 flow diagram (Schulz, Altman and Moher 2010, Figure 1)",
+                  "source": "commons-desc-page"
+                },
+                "Artist": {
+                  "value": "<a href=\"//commons.wikimedia.org/wiki/User:ResearchExplainers\" title=\"User:ResearchExplainers\">Derek Jansen</a>",
+                  "source": "commons-desc-page"
+                },
+                "LicenseShortName": {
+                  "value": "CC BY 4.0",
+                  "source": "commons-desc-page",
+                  "hidden": ""
+                },
+                "UsageTerms": {
+                  "value": "Creative Commons Attribution 4.0",
+                  "source": "commons-desc-page"
+                },
+                "AttributionRequired": {
+                  "value": "true",
+                  "source": "commons-desc-page",
+                  "hidden": ""
+                },
+                "Attribution": {
+                  "value": "Derek Jansen, Grad Coach",
+                  "source": "commons-desc-page",
+                  "hidden": ""
+                },
+                "LicenseUrl": {
+                  "value": "https://creativecommons.org/licenses/by/4.0",
+                  "source": "commons-desc-page"
+                },
+                "Copyrighted": {
+                  "value": "True",
+                  "source": "commons-desc-page",
+                  "hidden": ""
+                },
+                "Restrictions": {
+                  "value": "",
+                  "source": "commons-desc-page",
+                  "hidden": ""
+                },
+                "License": {
+                  "value": "cc-by-4.0",
+                  "source": "commons-templates",
+                  "hidden": ""
+                }
+              }
+            }
+          ]
+        },
+        "68712167": {
+          "pageid": 68712167,
+          "ns": 6,
+          "title": "File:Cartilage Structure.jpg",
+          "imagerepository": "local",
+          "imageinfo": [
+            {
+              "timestamp": "2018-05-01T21:49:29Z",
+              "size": 97936,
+              "width": 873,
+              "height": 529,
+              "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/ff/Cartilage_Structure.jpg/500px-Cartilage_Structure.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+              "thumbwidth": 500,
+              "thumbheight": 303,
+              "responsiveUrls": {
+                "2": "https://upload.wikimedia.org/wikipedia/commons/f/ff/Cartilage_Structure.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
+              },
+              "thumbattribs": {
+                "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/ff/Cartilage_Structure.jpg/500px-Cartilage_Structure.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+                "decoding": "async",
+                "loading": "lazy",
+                "width": 500,
+                "height": 303,
+                "srcset": "https://upload.wikimedia.org/wikipedia/commons/f/ff/Cartilage_Structure.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled 2x"
+              },
+              "url": "https://upload.wikimedia.org/wikipedia/commons/f/ff/Cartilage_Structure.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+              "descriptionurl": "https://commons.wikimedia.org/wiki/File:Cartilage_Structure.jpg",
+              "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=68712167",
+              "sha1": "8bd4fbd8bf195d86e3f3ad5957b9a7c31ec69299",
+              "extmetadata": {
+                "DateTime": {
+                  "value": "2018-05-01 21:49:29",
+                  "source": "mediawiki-metadata",
+                  "hidden": ""
+                },
+                "ObjectName": {
+                  "value": "Cartilage Structure",
+                  "source": "mediawiki-metadata"
+                },
+                "CommonsMetadataExtension": {
+                  "value": 1.2,
+                  "source": "extension",
+                  "hidden": ""
+                },
+                "Categories": {
+                  "value": "Self-published work|Histology of cartilage",
+                  "source": "commons-categories",
+                  "hidden": ""
+                },
+                "Assessments": {
+                  "value": "",
+                  "source": "commons-categories",
+                  "hidden": ""
+                },
+                "ImageDescription": {
+                  "value": "Structure of Cartilage with collagen and chondrocyte arrangement.",
+                  "source": "commons-desc-page"
+                },
+                "DateTimeOriginal": {
+                  "value": "2018-04-18",
+                  "source": "commons-desc-page"
+                },
+                "Credit": {
+                  "value": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+                  "source": "commons-desc-page"
+                },
+                "Artist": {
+                  "value": "<a href=\"//commons.wikimedia.org/w/index.php?title=User:Kassidy_Veasaw&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:Kassidy Veasaw (page does not exist)\">Kassidy Veasaw</a>",
+                  "source": "commons-desc-page"
+                },
+                "LicenseShortName": {
+                  "value": "CC BY-SA 4.0",
+                  "source": "commons-desc-page",
+                  "hidden": ""
+                },
+                "UsageTerms": {
+                  "value": "Creative Commons Attribution-Share Alike 4.0",
+                  "source": "commons-desc-page"
+                },
+                "AttributionRequired": {
+                  "value": "true",
+                  "source": "commons-desc-page",
+                  "hidden": ""
+                },
+                "LicenseUrl": {
+                  "value": "https://creativecommons.org/licenses/by-sa/4.0",
+                  "source": "commons-desc-page"
+                },
+                "Copyrighted": {
+                  "value": "True",
+                  "source": "commons-desc-page",
+                  "hidden": ""
+                },
+                "Restrictions": {
+                  "value": "",
+                  "source": "commons-desc-page",
+                  "hidden": ""
+                },
+                "License": {
+                  "value": "cc-by-sa-4.0",
+                  "source": "commons-templates",
+                  "hidden": ""
+                }
+              }
+            }
+          ]
+        },
+        "112426686": {
+          "pageid": 112426686,
+          "ns": 6,
+          "title": "File:Cartoon Hyaline Cartilage.jpg",
+          "imagerepository": "local",
+          "imageinfo": [
+            {
+              "timestamp": "2021-11-11T00:11:26Z",
+              "size": 179894,
+              "width": 2049,
+              "height": 1600,
+              "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/34/Cartoon_Hyaline_Cartilage.jpg/500px-Cartoon_Hyaline_Cartilage.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+              "thumbwidth": 500,
+              "thumbheight": 390,
+              "responsiveUrls": {
+                "2": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/34/Cartoon_Hyaline_Cartilage.jpg/1280px-Cartoon_Hyaline_Cartilage.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+              },
+              "thumbattribs": {
+                "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/34/Cartoon_Hyaline_Cartilage.jpg/500px-Cartoon_Hyaline_Cartilage.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+                "decoding": "async",
+                "loading": "lazy",
+                "width": 500,
+                "height": 390,
+                "srcset": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/34/Cartoon_Hyaline_Cartilage.jpg/1280px-Cartoon_Hyaline_Cartilage.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail 2x"
+              },
+              "url": "https://upload.wikimedia.org/wikipedia/commons/3/34/Cartoon_Hyaline_Cartilage.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+              "descriptionurl": "https://commons.wikimedia.org/wiki/File:Cartoon_Hyaline_Cartilage.jpg",
+              "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=112426686",
+              "sha1": "899ed1526450b8f3280c43317432f8e3687f1f4f",
+              "extmetadata": {
+                "DateTime": {
+                  "value": "2021-11-11 00:11:26",
+                  "source": "mediawiki-metadata",
+                  "hidden": ""
+                },
+                "ObjectName": {
+                  "value": "Cartoon Hyaline Cartilage",
+                  "source": "mediawiki-metadata"
+                },
+                "CommonsMetadataExtension": {
+                  "value": 1.2,
+                  "source": "extension",
+                  "hidden": ""
+                },
+                "Categories": {
+                  "value": "Histology|Cartilage|Hyaline cartilage|Chondrocytes|Self-published work|Isogenous group",
+                  "source": "commons-categories",
+                  "hidden": ""
+                },
+                "Assessments": {
+                  "value": "",
+                  "source": "commons-categories",
+                  "hidden": ""
+                },
+                "ImageDescription": {
+                  "value": "Cartoon representation of a hyaline cartilage sample with labeled components.",
+                  "source": "commons-desc-page"
+                },
+                "DateTimeOriginal": {
+                  "value": "2021-11-10",
+                  "source": "commons-desc-page"
+                },
+                "Credit": {
+                  "value": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+                  "source": "commons-desc-page"
+                },
+                "Artist": {
+                  "value": "<a href=\"//commons.wikimedia.org/w/index.php?title=User:Hwill016&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:Hwill016 (page does not exist)\">Hwill016</a>",
+                  "source": "commons-desc-page"
+                },
+                "LicenseShortName": {
+                  "value": "CC BY-SA 4.0",
+                  "source": "commons-desc-page",
+                  "hidden": ""
+                },
+                "UsageTerms": {
+                  "value": "Creative Commons Attribution-Share Alike 4.0",
+                  "source": "commons-desc-page"
+                },
+                "AttributionRequired": {
+                  "value": "true",
+                  "source": "commons-desc-page",
+                  "hidden": ""
+                },
+                "LicenseUrl": {
+                  "value": "https://creativecommons.org/licenses/by-sa/4.0",
+                  "source": "commons-desc-page"
+                },
+                "Copyrighted": {
+                  "value": "True",
+                  "source": "commons-desc-page",
+                  "hidden": ""
+                },
+                "Restrictions": {
+                  "value": "",
+                  "source": "commons-desc-page",
+                  "hidden": ""
+                },
+                "License": {
+                  "value": "cc-by-sa-4.0",
+                  "source": "commons-templates",
+                  "hidden": ""
+                }
+              }
+            }
+          ]
+        },
+        "75663040": {
+          "pageid": 75663040,
+          "ns": 6,
+          "title": "File:ExplainingCaseControlSJW-en.svg",
+          "imagerepository": "local",
+          "imageinfo": [
+            {
+              "timestamp": "2019-01-08T08:46:40Z",
+              "size": 689418,
+              "width": 724,
+              "height": 940,
+              "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/14/ExplainingCaseControlSJW-en.svg/500px-ExplainingCaseControlSJW-en.svg.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+              "thumbwidth": 500,
+              "thumbheight": 649,
+              "responsiveUrls": {
+                "2": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/14/ExplainingCaseControlSJW-en.svg/1280px-ExplainingCaseControlSJW-en.svg.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+              },
+              "thumbattribs": {
+                "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/14/ExplainingCaseControlSJW-en.svg/500px-ExplainingCaseControlSJW-en.svg.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+                "decoding": "async",
+                "loading": "lazy",
+                "width": 500,
+                "height": 649,
+                "srcset": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/14/ExplainingCaseControlSJW-en.svg/1280px-ExplainingCaseControlSJW-en.svg.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail 2x"
+              },
+              "url": "https://upload.wikimedia.org/wikipedia/commons/1/14/ExplainingCaseControlSJW-en.svg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+              "descriptionurl": "https://commons.wikimedia.org/wiki/File:ExplainingCaseControlSJW-en.svg",
+              "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=75663040",
+              "sha1": "69c91eb493203fec7ab6c9da1d5b4c90b31c17eb",
+              "extmetadata": {
+                "DateTime": {
+                  "value": "2019-01-08 08:46:40",
+                  "source": "mediawiki-metadata",
+                  "hidden": ""
+                },
+                "ObjectName": {
+                  "value": "ExplainingCaseControlSJW-en",
+                  "source": "mediawiki-metadata"
+                },
+                "CommonsMetadataExtension": {
+                  "value": 1.2,
+                  "source": "extension",
+                  "hidden": ""
+                },
+                "Categories": {
+                  "value": "Self-published work|Path text SVG|Invalid SVG created with Inkscape|Translation possible - SVG|SVG epidemiology",
+                  "source": "commons-categories",
+                  "hidden": ""
+                },
+                "Assessments": {
+                  "value": "",
+                  "source": "commons-categories",
+                  "hidden": ""
+                },
+                "ImageDescription": {
+                  "value": "Observational Study Designs: Case Control vs Chort",
+                  "source": "commons-desc-page"
+                },
+                "DateTimeOriginal": {
+                  "value": "2019-01-07",
+                  "source": "commons-desc-page"
+                },
+                "Credit": {
+                  "value": "Own work based on: <a href=\"//commons.wikimedia.org/wiki/File:ExplainingCaseControlSJW.jpg\" title=\"File:ExplainingCaseControlSJW.jpg\">ExplainingCaseControlSJW.jpg</a>",
+                  "source": "commons-desc-page"
+                },
+                "Artist": {
+                  "value": "<a href=\"//commons.wikimedia.org/wiki/User:Jmarchn\" title=\"User:Jmarchn\">Jmarchn</a>",
+                  "source": "commons-desc-page"
+                },
+                "LicenseShortName": {
+                  "value": "CC BY-SA 3.0",
+                  "source": "commons-desc-page",
+                  "hidden": ""
+                },
+                "UsageTerms": {
+                  "value": "Creative Commons Attribution-Share Alike 3.0",
+                  "source": "commons-desc-page"
+                },
+                "AttributionRequired": {
+                  "value": "true",
+                  "source": "commons-desc-page",
+                  "hidden": ""
+                },
+                "Attribution": {
+                  "value": "<a href=\"//commons.wikimedia.org/wiki/User:Jmarchn\" title=\"User:Jmarchn\">Jmarchn</a>",
+                  "source": "commons-desc-page",
+                  "hidden": ""
+                },
+                "LicenseUrl": {
+                  "value": "https://creativecommons.org/licenses/by-sa/3.0",
+                  "source": "commons-desc-page"
+                },
+                "Copyrighted": {
+                  "value": "True",
+                  "source": "commons-desc-page",
+                  "hidden": ""
+                },
+                "Restrictions": {
+                  "value": "",
+                  "source": "commons-desc-page",
+                  "hidden": ""
+                },
+                "License": {
+                  "value": "cc-by-sa-3.0",
+                  "source": "commons-templates",
+                  "hidden": ""
+                }
+              }
+            }
+          ]
+        },
+        "40173049": {
+          "pageid": 40173049,
+          "ns": 6,
+          "title": "File:Health joint.png",
+          "imagerepository": "local",
+          "imageinfo": [
+            {
+              "timestamp": "2015-05-13T04:39:48Z",
+              "size": 63225,
+              "width": 530,
+              "height": 331,
+              "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9a/Health_joint.png/500px-Health_joint.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+              "thumbwidth": 500,
+              "thumbheight": 312,
+              "responsiveUrls": {
+                "2": "https://upload.wikimedia.org/wikipedia/commons/9/9a/Health_joint.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
+              },
+              "thumbattribs": {
+                "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9a/Health_joint.png/500px-Health_joint.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+                "decoding": "async",
+                "loading": "lazy",
+                "width": 500,
+                "height": 312,
+                "srcset": "https://upload.wikimedia.org/wikipedia/commons/9/9a/Health_joint.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled 2x"
+              },
+              "url": "https://upload.wikimedia.org/wikipedia/commons/9/9a/Health_joint.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+              "descriptionurl": "https://commons.wikimedia.org/wiki/File:Health_joint.png",
+              "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=40173049",
+              "sha1": "d5d584c3baf44848b3d96e5d30b4e863c2e6ef2a",
+              "extmetadata": {
+                "DateTime": {
+                  "value": "2015-05-13 04:39:48",
+                  "source": "mediawiki-metadata",
+                  "hidden": ""
+                },
+                "ObjectName": {
+                  "value": "Health joint",
+                  "source": "mediawiki-metadata"
+                },
+                "CommonsMetadataExtension": {
+                  "value": 1.2,
+                  "source": "extension",
+                  "hidden": ""
+                },
+                "Categories": {
+                  "value": "Joints|PD US Government|CC-PD-Mark",
+                  "source": "commons-categories",
+                  "hidden": ""
+                },
+                "Assessments": {
+                  "value": "",
+                  "source": "commons-categories",
+                  "hidden": ""
+                },
+                "ImageDescription": {
+                  "value": "In a healthy joint, the ends of bones are encased in smooth cartilage. Together, they are protected by a joint capsule lined with a synovial membrane that produces synovial fluid. The capsule and fluid protect the cartilage, muscles, and connective tissues.",
+                  "source": "commons-desc-page"
+                },
+                "DateTimeOriginal": {
+                  "value": "2015-04",
+                  "source": "commons-desc-page"
+                },
+                "Credit": {
+                  "value": "<a rel=\"nofollow\" class=\"external free\" href=\"https://www.niams.nih.gov/health_info/Osteoarthritis/default.asp\">https://www.niams.nih.gov/health_info/Osteoarthritis/default.asp</a>",
+                  "source": "commons-desc-page"
+                },
+                "Artist": {
+                  "value": "US federal government",
+                  "source": "commons-desc-page"
+                },
+                "LicenseShortName": {
+                  "value": "Public domain",
+                  "source": "commons-desc-page",
+                  "hidden": ""
+                },
+                "UsageTerms": {
+                  "value": "Public domain",
+                  "source": "commons-desc-page"
+                },
+                "AttributionRequired": {
+                  "value": "false",
+                  "source": "commons-desc-page",
+                  "hidden": ""
+                },
+                "Copyrighted": {
+                  "value": "False",
+                  "source": "commons-desc-page",
+                  "hidden": ""
+                },
+                "Restrictions": {
+                  "value": "",
+                  "source": "commons-desc-page",
+                  "hidden": ""
+                },
+                "License": {
+                  "value": "pd",
+                  "source": "commons-templates",
+                  "hidden": ""
+                }
+              }
+            }
+          ]
+        },
+        "50064939": {
+          "pageid": 50064939,
+          "ns": 6,
+          "title": "File:Transverse section of bone en.svg",
+          "imagerepository": "local",
+          "imageinfo": [
+            {
+              "timestamp": "2016-07-10T20:55:27Z",
+              "size": 306632,
+              "width": 567,
+              "height": 496,
+              "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/98/Transverse_section_of_bone_en.svg/500px-Transverse_section_of_bone_en.svg.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+              "thumbwidth": 500,
+              "thumbheight": 437,
+              "responsiveUrls": {
+                "2": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/98/Transverse_section_of_bone_en.svg/1280px-Transverse_section_of_bone_en.svg.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+              },
+              "thumbattribs": {
+                "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/98/Transverse_section_of_bone_en.svg/500px-Transverse_section_of_bone_en.svg.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+                "decoding": "async",
+                "loading": "lazy",
+                "width": 500,
+                "height": 437,
+                "srcset": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/98/Transverse_section_of_bone_en.svg/1280px-Transverse_section_of_bone_en.svg.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail 2x"
+              },
+              "url": "https://upload.wikimedia.org/wikipedia/commons/9/98/Transverse_section_of_bone_en.svg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+              "descriptionurl": "https://commons.wikimedia.org/wiki/File:Transverse_section_of_bone_en.svg",
+              "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=50064939",
+              "sha1": "e47aa208d4517642d6024582a54e00e7be2f4748",
+              "extmetadata": {
+                "DateTime": {
+                  "value": "2016-07-10 20:55:27",
+                  "source": "mediawiki-metadata",
+                  "hidden": ""
+                },
+                "ObjectName": {
+                  "value": "Transverse section of bone en",
+                  "source": "mediawiki-metadata"
+                },
+                "CommonsMetadataExtension": {
+                  "value": 1.2,
+                  "source": "extension",
+                  "hidden": ""
+                },
+                "Categories": {
+                  "value": "Self-published work|Translation possible - SVG|1910s diagrams|Histological schematic of osteons|SVG histology of bones",
+                  "source": "commons-categories",
+                  "hidden": ""
+                },
+                "Assessments": {
+                  "value": "",
+                  "source": "commons-categories",
+                  "hidden": ""
+                },
+                "ImageDescription": {
+                  "value": "Diagram depicting transverse section of the fibula (decalcified) at a magnification of x250 (vectorized version)",
+                  "source": "commons-desc-page"
+                },
+                "DateTimeOriginal": {
+                  "value": "2016-07-10",
+                  "source": "commons-desc-page"
+                },
+                "Credit": {
+                  "value": "<ul><li>Original analog graphics: Gray’s Anatomy of the Human Body from the classic 1918 publication available online at <a rel=\"nofollow\" class=\"external text\" href=\"http://www.bartleby.com/107/illus77.html\">Bartleby.com</a>.</li>\n<li>Digital bitmap graphics: <a href=\"//commons.wikimedia.org/wiki/File:Transverse_Section_Of_Bone.png\" title=\"File:Transverse Section Of Bone.png\">Transverse Section Of Bone.png</a></li>\n<li>Recreated in vector format: <span class=\"int-own-work\" lang=\"en\">Own work</span></li></ul>",
+                  "source": "commons-desc-page"
+                },
+                "Artist": {
+                  "value": "<ul><li>Source digital bitmap graphics: <a href=\"//commons.wikimedia.org/wiki/User:Bduttabaruah\" title=\"User:Bduttabaruah\">BDB</a></li>\n<li>Recreated in vector format: <a href=\"//commons.wikimedia.org/wiki/User:Nyq\" title=\"User:Nyq\">Nyq</a></li></ul>",
+                  "source": "commons-desc-page"
+                },
+                "LicenseShortName": {
+                  "value": "CC BY-SA 4.0",
+                  "source": "commons-desc-page",
+                  "hidden": ""
+                },
+                "UsageTerms": {
+                  "value": "Creative Commons Attribution-Share Alike 4.0",
+                  "source": "commons-desc-page"
+                },
+                "AttributionRequired": {
+                  "value": "true",
+                  "source": "commons-desc-page",
+                  "hidden": ""
+                },
+                "LicenseUrl": {
+                  "value": "https://creativecommons.org/licenses/by-sa/4.0",
+                  "source": "commons-desc-page"
+                },
+                "Copyrighted": {
+                  "value": "True",
+                  "source": "commons-desc-page",
+                  "hidden": ""
+                },
+                "Restrictions": {
+                  "value": "",
+                  "source": "commons-desc-page",
+                  "hidden": ""
+                },
+                "License": {
+                  "value": "cc-by-sa-4.0",
+                  "source": "commons-templates",
+                  "hidden": ""
+                }
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  "cohort_api_response": {
+    "batchcomplete": "",
+    "query": {
+      "pages": {
+        "202120926": {
+          "pageid": 202120926,
+          "ns": 6,
+          "title": "File:Cohort and case-control study timelines for smoking and lung cancer.svg",
+          "imagerepository": "local",
+          "imageinfo": [
+            {
+              "timestamp": "2026-10-22T12:37:30Z",
+              "size": 5875,
+              "width": 1260,
+              "height": 730,
+              "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bd/Cohort_and_case-control_study_timelines_for_smoking_and_lung_cancer.svg/960px-Cohort_and_case-control_study_timelines_for_smoking_and_lung_cancer.svg.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+              "thumbwidth": 800,
+              "thumbheight": 463,
+              "responsiveUrls": {
+                "2": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bd/Cohort_and_case-control_study_timelines_for_smoking_and_lung_cancer.svg/1920px-Cohort_and_case-control_study_timelines_for_smoking_and_lung_cancer.svg.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+              },
+              "thumbattribs": {
+                "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bd/Cohort_and_case-control_study_timelines_for_smoking_and_lung_cancer.svg/960px-Cohort_and_case-control_study_timelines_for_smoking_and_lung_cancer.svg.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+                "decoding": "async",
+                "loading": "lazy",
+                "width": 800,
+                "height": 463,
+                "srcset": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bd/Cohort_and_case-control_study_timelines_for_smoking_and_lung_cancer.svg/1920px-Cohort_and_case-control_study_timelines_for_smoking_and_lung_cancer.svg.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail 2x"
+              },
+              "url": "https://upload.wikimedia.org/wikipedia/commons/b/bd/Cohort_and_case-control_study_timelines_for_smoking_and_lung_cancer.svg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+              "descriptionurl": "https://commons.wikimedia.org/wiki/File:Cohort_and_case-control_study_timelines_for_smoking_and_lung_cancer.svg",
+              "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=202120926",
+              "sha1": "8fce5d6fd4ed8a8805a5ce5a50c2d4ee05bb2219",
+              "extmetadata": {
+                "DateTime": {
+                  "value": "2026-10-22 12:37:30",
+                  "source": "mediawiki-metadata",
+                  "hidden": ""
+                },
+                "ObjectName": {
+                  "value": "Cohort and case-control study timelines for smoking and lung cancer",
+                  "source": "mediawiki-metadata"
+                },
+                "CommonsMetadataExtension": {
+                  "value": 1.2,
+                  "source": "extension",
+                  "hidden": ""
+                },
+                "Categories": {
+                  "value": "Epidemiology|Timelines|Cohort studies|Self-published work|English-language SVG diagrams|Case-control studies",
+                  "source": "commons-categories",
+                  "hidden": ""
+                },
+                "Assessments": {
+                  "value": "",
+                  "source": "commons-categories",
+                  "hidden": ""
+                },
+                "ImageDescription": {
+                  "value": "Timeline diagram comparing a prospective cohort study, a retrospective cohort study and a case-control study, with smoking as the exposure and lung cancer as the outcome. The horizontal axis is years from the start of the study, from −20 to +20, and the dashed vertical line at 0 marks the start of the study. In each row an orange arrow shows the direction of inquiry: it leaves the groups the study starts with and points to what the study then measures. Gray boxes are exposure groups (smokers and nonsmokers). White boxes are outcome groups (lung cancer and no lung cancer).\n<ul><li>Prospective cohort: the study starts at year 0 with smokers and nonsmokers and follows them up for 20 years to see who develops lung cancer. It compares the outcome in the two groups, with the risk ratio or the odds ratio.</li>\n<li>Retrospective cohort: the study starts from records of smokers and nonsmokers made 20 years earlier and follows them up in past records to the start of the study. It compares the outcome in the two groups, with the risk ratio or the odds ratio.</li>\n<li>Case-control: the study starts at year 0 with cases (people with lung cancer) and controls (people without lung cancer) and looks back at their smoking history. It compares exposure, using the odds ratio.</li></ul>\nThe 20-year span is illustrative and does not come from a particular study.",
+                  "source": "commons-desc-page"
+                },
+                "DateTimeOriginal": {
+                  "value": "2026-10-19",
+                  "source": "commons-desc-page"
+                },
+                "Credit": {
+                  "value": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+                  "source": "commons-desc-page"
+                },
+                "Artist": {
+                  "value": "<a href=\"//commons.wikimedia.org/wiki/User:ResearchExplainers\" title=\"User:ResearchExplainers\">Derek Jansen</a>",
+                  "source": "commons-desc-page"
+                },
+                "LicenseShortName": {
+                  "value": "CC BY 4.0",
+                  "source": "commons-desc-page",
+                  "hidden": ""
+                },
+                "UsageTerms": {
+                  "value": "Creative Commons Attribution 4.0",
+                  "source": "commons-desc-page"
+                },
+                "AttributionRequired": {
+                  "value": "true",
+                  "source": "commons-desc-page",
+                  "hidden": ""
+                },
+                "Attribution": {
+                  "value": "Derek Jansen, Grad Coach",
+                  "source": "commons-desc-page",
+                  "hidden": ""
+                },
+                "LicenseUrl": {
+                  "value": "https://creativecommons.org/licenses/by/4.0",
+                  "source": "commons-desc-page"
+                },
+                "Copyrighted": {
+                  "value": "True",
+                  "source": "commons-desc-page",
+                  "hidden": ""
+                },
+                "Restrictions": {
+                  "value": "",
+                  "source": "commons-desc-page",
+                  "hidden": ""
+                },
+                "License": {
+                  "value": "cc-by-4.0",
+                  "source": "commons-templates",
+                  "hidden": ""
+                }
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  "openclipart_content": {
+    "url": "https://openclipart.org/download/195847",
+    "resolved_url": "https://openclipart.org/download/195847/Online-Survey-Icon-or-logo.svg",
+    "sha256": "1b741a83f5fad9a6fdfbdf255d4455878ae2e400bf5e944c7271d4605fa4723f",
+    "sha1": "3e75a301900c937f8cf396ac466d5fd3e76fa912",
+    "bytes": 12750
+  },
+  "openclipart_author_page": "https://openclipart.org/detail/195847/online-computer-survey",
+  "openclipart_license_policy": "https://openclipart.org/share",
+  "review_note": "Nine bounded official thumbnails were visually inspected. Seven selected. No whole library downloaded; one 12750-byte textual Openclipart SVG inspected for a strong content pin.",
+  "excluded_candidates": [
+    {
+      "title": "Health joint.png",
+      "reason": "Commons labels it US-government public domain, but the cited NIAMS source does not establish this particular image's creator; NIAMS disclaimer distinguishes copyrighted purchased illustrations. Two independently authored cartilage illustrations selected instead.",
+      "evidence_url": "https://www.niams.nih.gov/disclaimer"
+    },
+    {
+      "title": "ExplainingCaseControlSJW-en.svg",
+      "reason": "Not selected: dense methodological commentary and older artwork; clearer explicitly illustrative cohort timeline chosen."
+    },
+    {
+      "title": "Generic forest plot.png",
+      "reason": "Not selected: source describes a generic forest plot with odds ratios and confidence intervals; this has not been verified as a blank reusable template. Forest-template gap remains."
+    }
+  ]
+}

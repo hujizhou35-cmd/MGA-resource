@@ -268,12 +268,13 @@ def discover_scidraw(source: dict, client: HttpClient) -> list[dict]:
 def discover(source: dict, client: HttpClient) -> list[dict]:
     """Discover a complete source snapshot or fail explicitly (never partial-success)."""
     from .web_sources import discover_nih, discover_reactome, discover_swissbiopics, discover_togo
+    from .curated_sources import discover_curated
 
     adapters = {"github_tree": discover_github, "bioicons": discover_bioicons,
                 "archive": discover_archive, "zenodo_archive": discover_archive,
                 "scidraw": discover_scidraw, "nih_bioart": discover_nih,
                 "swissbiopics": discover_swissbiopics, "reactome": discover_reactome,
-                "togo": discover_togo}
+                "togo": discover_togo, "curated_manifest": discover_curated}
     adapter = source.get("adapter", "github_tree")
     if adapter not in adapters:
         raise ValueError(f"Source adapter not yet implemented: {adapter}")
