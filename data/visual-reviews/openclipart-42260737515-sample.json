@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "reviewed_at": "2026-11-07",
+  "reviewer": "Codex primary agent; direct visual inspection",
+  "source": "openclipart",
+  "collection_run": "42260737515-1",
+  "collection_commit": "5bb716a67fdfca0c850837f2341818d904b407d0",
+  "review_method": "All cloud-rendered contact-sheet items actually viewed; original/preview SHA joined from verified cloud records.",
+  "review_sheet_url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/openclipart-42260737515-1-b0000.review.png",
+  "review_sheet_sha256": "afc7d63e2320abf6efea10fd9b1b83420655b49246233269ac3948c2cbcec89a",
+  "review_limits": [
+    "Source license/attribution remains per item; ShareAlike artwork is not relicensed MIT.",
+    "Contact-sheet review does not establish native editing or guideline compliance."
+  ],
+  "items": [
+    {
+      "tile": 1,
+      "id": "openclipart-a5aa73baaf6bb27558a2",
+      "title": "Online computer survey",
+      "source_id": "195847",
+      "source_url": "https://openclipart.org/detail/195847/online-computer-survey",
+      "original_sha256": "1b741a83f5fad9a6fdfbdf255d4455878ae2e400bf5e944c7271d4605fa4723f",
+      "preview_sha256": "af4cf34f6c966f3c91bede0d6f62c62efec828f8a6aa4ed8f8fab0b891f7cccd",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/openclipart-42260737515-1-b0000.tar.gz",
+        "member": "files/1b/1b741a83f5fad9a6fdfbdf255d4455878ae2e400bf5e944c7271d4605fa4723f.svg"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/openclipart-42260737515-1-b0000.tar.gz",
+        "member": "previews/1b741a83f5fad9a6fdfbdf255d4455878ae2e400bf5e944c7271d4605fa4723f.png"
+      },
+      "visual_verdict": "usable_as_schematic_component",
+      "observations": "屏幕明确写SURVEY并显示空白题目列表，问卷调查含义清楚，没有个人已填答卷或具体调查结果；可作在线问卷部件。",
+      "scientific_detail_validation": "schematic_scope_reviewed_not_clinical_or_quantitative_validation",
+      "native_editability_tested": false
+    }
+  ]
+}

@@ -1,0 +1,143 @@
+{
+  "schema_version": 1,
+  "reviewed_at": "2026-11-07",
+  "reviewer": "Codex primary agent; direct visual inspection",
+  "source": "commons",
+  "collection_run": "42260711756-1",
+  "collection_commit": "5bb716a67fdfca0c850837f2341818d904b407d0",
+  "review_method": "All cloud-rendered contact-sheet items actually viewed; original/preview SHA joined from verified cloud records.",
+  "review_sheet_url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/commons-42260711756-1-b0000.review.png",
+  "review_sheet_sha256": "7882d49647b83664b62138770424dc844e6ace018f8a19b55f26ca51ebb201f8",
+  "review_limits": [
+    "Source license/attribution remains per item; ShareAlike artwork is not relicensed MIT.",
+    "Contact-sheet review does not establish native editing or guideline compliance."
+  ],
+  "items": [
+    {
+      "tile": 1,
+      "id": "commons-f611e542369567fb884b",
+      "title": "Bone cross-section without labels",
+      "source_id": "File:Bone cross-section no text.svg",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Bone_cross-section_no_text.svg",
+      "original_sha256": "eb6ab3a919268fcb1864da73b50cf2a63147cc1ec588c280ca04788bbc437fec",
+      "preview_sha256": "97da6d31081ff955dd3736d4c786af1340e4b6609932fb93f180fa2e7a363058",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/commons-42260711756-1-b0000.tar.gz",
+        "member": "files/eb/eb6ab3a919268fcb1864da73b50cf2a63147cc1ec588c280ca04788bbc437fec.svg"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/commons-42260711756-1-b0000.tar.gz",
+        "member": "previews/eb6ab3a919268fcb1864da73b50cf2a63147cc1ec588c280ca04788bbc437fec.png"
+      },
+      "visual_verdict": "usable_as_schematic_component",
+      "observations": "无文字骨剖面，皮质、松质结构和血管示意可辨认；不是实际组织摄影。",
+      "scientific_detail_validation": "schematic_scope_reviewed_not_clinical_or_quantitative_validation",
+      "native_editability_tested": false
+    },
+    {
+      "tile": 2,
+      "id": "commons-315279fb0328ace303fa",
+      "title": "Transverse section of bone with osteons",
+      "source_id": "File:Transverse section of bone en.svg",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Transverse_section_of_bone_en.svg",
+      "original_sha256": "a68bc1bcbcfdf7a95015bf99a8b16d02687e0c36c92a805a56dc350a376d6c04",
+      "preview_sha256": "4b7288de9ec81968ce9020fa7df61874e0879c31cb3e6588c085b0d3eeeda9d9",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/commons-42260711756-1-b0000.tar.gz",
+        "member": "files/a6/a68bc1bcbcfdf7a95015bf99a8b16d02687e0c36c92a805a56dc350a376d6c04.svg"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/commons-42260711756-1-b0000.tar.gz",
+        "member": "previews/a68bc1bcbcfdf7a95015bf99a8b16d02687e0c36c92a805a56dc350a376d6c04.png"
+      },
+      "visual_verdict": "usable_as_schematic_component",
+      "observations": "骨组织横断面含骨单位、哈弗管、骨细胞和骨小管标签，适合结构示意；缩小时标签需要放大检查。",
+      "scientific_detail_validation": "schematic_scope_reviewed_not_clinical_or_quantitative_validation",
+      "native_editability_tested": false
+    },
+    {
+      "tile": 3,
+      "id": "commons-b50bbb02638ee0ba4875",
+      "title": "Cartilage structure and tissue zones",
+      "source_id": "File:Cartilage Structure.jpg",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Cartilage_Structure.jpg",
+      "original_sha256": "977c20aa8dd1b9b4c73d3ce3b1eebed3f9558a9b5256517582cb1072edb50c98",
+      "preview_sha256": "3783a951e750cb23a951535639488c7708875836a56e46f32622209bb545976c",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/commons-42260711756-1-b0000.tar.gz",
+        "member": "files/97/977c20aa8dd1b9b4c73d3ce3b1eebed3f9558a9b5256517582cb1072edb50c98.jpg"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/commons-42260711756-1-b0000.tar.gz",
+        "member": "previews/977c20aa8dd1b9b4c73d3ce3b1eebed3f9558a9b5256517582cb1072edb50c98.png"
+      },
+      "visual_verdict": "usable_as_schematic_component",
+      "observations": "软骨浅/中/深层及细胞/胶原示意，层次清楚；不是实际显微图或定量比例。",
+      "scientific_detail_validation": "schematic_scope_reviewed_not_clinical_or_quantitative_validation",
+      "native_editability_tested": false
+    },
+    {
+      "tile": 4,
+      "id": "commons-f0034fbb07e87ca88eec",
+      "title": "Hyaline cartilage schematic",
+      "source_id": "File:Cartoon Hyaline Cartilage.jpg",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Cartoon_Hyaline_Cartilage.jpg",
+      "original_sha256": "62898b9d08c0821a649cb56fc979d1cf32cdc930c0313049ca53bd568e096c5d",
+      "preview_sha256": "b30535f5c91ef5a959d3dae5ab9a283abdb215eeca8ba5e269694d2ffab02312",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/commons-42260711756-1-b0000.tar.gz",
+        "member": "files/62/62898b9d08c0821a649cb56fc979d1cf32cdc930c0313049ca53bd568e096c5d.jpg"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/commons-42260711756-1-b0000.tar.gz",
+        "member": "previews/62898b9d08c0821a649cb56fc979d1cf32cdc930c0313049ca53bd568e096c5d.png"
+      },
+      "visual_verdict": "usable_as_schematic_component",
+      "observations": "透明软骨细胞、陷窝和基质的平面教学示意；不用于病理分级。",
+      "scientific_detail_validation": "schematic_scope_reviewed_not_clinical_or_quantitative_validation",
+      "native_editability_tested": false
+    },
+    {
+      "tile": 5,
+      "id": "commons-3a8b15bbbbfb2c568942",
+      "title": "CONSORT 2010 blank two-group randomized trial flow diagram",
+      "source_id": "File:CONSORT 2010 flow diagram for a two-group parallel randomized trial.svg",
+      "source_url": "https://commons.wikimedia.org/wiki/File:CONSORT_2010_flow_diagram_for_a_two-group_parallel_randomized_trial.svg",
+      "original_sha256": "dbb739dc66c2fed7c692556534a59d659162e148608c4eb018488fabf30d8ebe",
+      "preview_sha256": "1b8ad53c668b4337253d4c8f953520180cdd9cf05d54ef2e7c0ec1ab5310bfa3",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/commons-42260711756-1-b0000.tar.gz",
+        "member": "files/db/dbb739dc66c2fed7c692556534a59d659162e148608c4eb018488fabf30d8ebe.svg"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/commons-42260711756-1-b0000.tar.gz",
+        "member": "previews/dbb739dc66c2fed7c692556534a59d659162e148608c4eb018488fabf30d8ebe.png"
+      },
+      "visual_verdict": "usable_with_limitations",
+      "observations": "CONSORT 2010两组空白流程，n=字段未填；可作研究流程构件，必须标明2010模板，不能声称符合最新CONSORT，也不能直接证明某项研究实施了随机化。",
+      "scientific_detail_validation": "schematic_scope_reviewed_not_clinical_or_quantitative_validation",
+      "native_editability_tested": false
+    },
+    {
+      "tile": 6,
+      "id": "commons-a31749d037ff60f2be48",
+      "title": "Cohort follow-up and case-control study timelines",
+      "source_id": "File:Cohort and case-control study timelines for smoking and lung cancer.svg",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Cohort_and_case-control_study_timelines_for_smoking_and_lung_cancer.svg",
+      "original_sha256": "ebb9a9bd3b53c90cccf842971ca582f91b685cfc4c7d6250e4ddf43083c80190",
+      "preview_sha256": "52d091dccc2c22fdba1590e8769327b4579040bcad0154883d5905585d7f6f85",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/commons-42260711756-1-b0000.tar.gz",
+        "member": "files/eb/ebb9a9bd3b53c90cccf842971ca582f91b685cfc4c7d6250e4ddf43083c80190.svg"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/commons-42260711756-1-b0000.tar.gz",
+        "member": "previews/ebb9a9bd3b53c90cccf842971ca582f91b685cfc4c7d6250e4ddf43083c80190.png"
+      },
+      "visual_verdict": "usable_with_limitations",
+      "observations": "对比前瞻队列、回顾队列和病例对照的教学时间线；20年、吸烟者/肺癌均为图解设定，不能移用为用户研究的实际随访期或结果。若作项目图需按真实研究改写。",
+      "scientific_detail_validation": "schematic_scope_reviewed_not_clinical_or_quantitative_validation",
+      "native_editability_tested": false
+    }
+  ]
+}
