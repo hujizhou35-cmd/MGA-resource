@@ -783,6 +783,9 @@ def search_page(db_path: str | Path, query: str, limit: int = 10,
         for result in materialized["results"]:
             asset = json.loads(read_sql("SELECT metadata FROM assets WHERE id=?", (result["asset_id"],))[0][0])
             selected = next(file for file in asset["files"] if file.get("sha256") == result["selected_file"].get("sha256"))
+            # Keep the core's file-bound content classification and evidence;
+            # this adapter only hydrates details and must not reclassify it.
+            selected = {**selected, "content_type": result["selected_file"]["content_type"]}
             enriched.append({**asset, **result, "selected_file": selected, "preview": selected.get("preview"), "download": selected.get("archive") or {"url": selected.get("url")}})
         page["results"] = enriched
         page["diagnostics"]["unavailable_project_pins"] = [

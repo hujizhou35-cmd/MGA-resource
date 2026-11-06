@@ -3,7 +3,7 @@
  */
 import vocabulary from './search-vocabulary.mjs';
 
-export const RANKING_VERSION = 'shared-search-3.4.1';
+export const RANKING_VERSION = 'shared-search-3.4.2';
 export const INDEX_VERSION = 9;
 export const DEFAULT_CANDIDATE_POOL = 75;
 const unknown = new Set(['', 'unknown', 'unspecified', 'not_reviewed', '待确认']);
@@ -54,8 +54,12 @@ const APPEARANCE = {
   detail: {minimal:['极简','minimal','minimalist'], moderate:['适中细节','moderate detail'], detailed:['精细','detailed']},
   realism: {schematic:['示意风格','schematic style'], semi_realistic:['半写实','semi realistic','semi-realistic'], realistic:['写实','realistic']},
 };
-const FILTER_KEYS = new Set(['source','license','distribution_status','category','format','species','state','view','role','object','depiction_kind','color_mode','palette_traits','representation','detail','realism','series','asset_id','family_id','file_sha256','transparent']);
-const ALIASES = {color:'color_mode',colorMode:'color_mode',palette:'palette_traits'};
+const STRUCTURES = new Set(['raster','pure_vector','mixed','embedded_raster']);
+const CONTENT_TYPES = new Set(['illustration','photograph','micrograph','photograph_or_real_micrograph']);
+const FILTER_KEYS = new Set(['source','license','distribution_status','category','format','structure','content_type','species','state','view','role','object','depiction_kind','color_mode','palette_traits','representation','detail','realism','series','asset_id','family_id','file_sha256','transparent']);
+// The API's historical media_type filter means visual file structure. The
+// file.media_type metadata is a MIME string and must never supply this value.
+const ALIASES = {color:'color_mode',colorMode:'color_mode',palette:'palette_traits',media_type:'structure'};
 const extraConcepts = [
   ['脾脏','脾','spleen','splenic'], ['胃','stomach','gastric'], ['甲状腺','thyroid'],
   ['脂质双层','细胞膜','lipid bilayer','cell membrane'], ['脂质','lipid','lipids'],
@@ -153,6 +157,7 @@ function indexTerms(value) {
 }
 const canonical = (key, value) => {
   const v = norm(value);
+  if(key==='structure'||key==='content_type')return v.replace(/\s+/g,'_');
   for (const [name, aliases] of Object.entries(SCIENCE[key] || APPEARANCE[key] || {})) if (v === name || aliases.some(x => norm(x) === v)) return name;
   return String(value).trim();
 };
@@ -171,7 +176,13 @@ function normalizeFilters(filters = {}) {
     if (!FILTER_KEYS.has(key)) throw new Error(`Unknown filter: ${original}`);
     const values = unique(arr(input).map(v => key === 'transparent' ? String(v) : canonical(key,v)).filter(v => !unknown.has(v)));
     if (!values.length && input != null) throw new Error(`Filter ${key} must specify a known value`);
-    if (values.length) result[key] = values;
+    const allowed=key==='structure'?STRUCTURES:key==='content_type'?CONTENT_TYPES:null;
+    if(allowed&&values.some(value=>!allowed.has(value)))throw new Error(`Unsupported ${key} filter value; expected ${[...allowed].join(', ')}`);
+    if (values.length) {
+      const combined=result[key]?result[key].filter(value=>values.includes(value)):values;
+      if(!combined.length)throw new Error(`Conflicting aliases for filter: ${key}`);
+      result[key]=combined;
+    }
   }
   return result;
 }
@@ -300,6 +311,39 @@ function compactAppearance(file) {
     style:{representation:safeAxis('representation',true),detail:safeAxis('detail'),realism:safeAxis('realism'),series:series.basis_evidence_indices?.length&&!unresolvedStatus.has(series.review_status)&&series.confidence!=='unknown' ? series : {memberships:[]}}};
 }
 
+function compactContentType(file) {
+  const binding={file_sha256:file.sha256,preview_sha256:file.preview?.sha256};
+  const unknownContent=(reason)=>({value:'unknown',review_status:'not_established',binding,basis:reason,evidence:[]});
+  const validDigest=value=>typeof value==='string'&&/^[a-f0-9]{64}$/.test(value);
+  const validProof=e=>e&&typeof e.uri==='string'&&Boolean(e.uri.trim())&&validDigest(e.sha256);
+  const scope=file.public_scope||{};
+  // A component-suitability decision is a different review dimension. Even
+  // an aggregate media_type=included flag cannot borrow its other proof.
+  const scopeIllustration=scope.scope_dimension==='media_type'&&scope.status==='included'
+    &&scope.reviewed_dimensions?.media_type==='included'
+    &&scope.evidence_original_sha256===file.sha256&&validDigest(file.sha256)
+    &&scope.evidence_preview_sha256===file.preview?.sha256&&validDigest(file.preview?.sha256)
+    &&Boolean(String(scope.reviewed_by||'').trim()&&String(scope.reviewed_at||'').trim())
+    &&Array.isArray(scope.evidence)&&scope.evidence.some(validProof);
+  const claim=file.content_type;
+  if(claim!=null) {
+    if(typeof claim!=='object'||Array.isArray(claim))return unknownContent('Content label lacks a file-bound typed evidence record.');
+    const value=canonical('content_type',claim.value??'unknown');
+    const exact=claim.binding?.file_sha256===file.sha256&&validDigest(file.sha256)
+      &&claim.binding?.preview_sha256===file.preview?.sha256&&validDigest(file.preview?.sha256);
+    const proof=arr(claim.evidence).filter(e=>validProof(e)&&(
+      e.kind==='manual_visual_review'&&claim.review_status==='visual_reviewed'&&Boolean(String(e.reviewer||claim.reviewer||'').trim())
+      ||e.kind==='official_source_file'&&claim.review_status==='official_file_label'));
+    if(!exact||!CONTENT_TYPES.has(value)||!proof.length)return unknownContent('Content type is unknown, unresolved, or its evidence does not bind this file and preview.');
+    if(scopeIllustration&&value!=='illustration')return unknownContent('Explicit content type conflicts with this file\'s visual media review.');
+    return {value,review_status:claim.review_status,binding,basis:'explicit_file_content_type',evidence:proof};
+  }
+  if(scopeIllustration)return {value:'illustration',review_status:'visual_reviewed',binding,
+    basis:'file_bound_scope_media_type_review',decision_id:scope.decision_id,
+    reviewer:scope.reviewed_by,reviewed_at:scope.reviewed_at,evidence:scope.evidence.filter(validProof)};
+  return unknownContent('No explicit file-bound content-type evidence. Format, MIME and public eligibility do not establish image content.');
+}
+
 /** One row per physical file and original scientific context, never union
  * family colors/species onto every file. Rows are compact retrieval metadata.
  */
@@ -318,6 +362,7 @@ export function prepareVariants(records) {
       const facts=Object.fromEntries(Object.keys(SCIENCE).map(key=>[key,valuesFromMetadata(key,fields,file)]));
       const factBasis=Object.fromEntries(Object.keys(facts).map(key=>[key,(file.scientific_conflicts||[]).includes(key)?{kind:'conflict_pending'}:!facts[key].length?{kind:'unknown'}:manualEvidence(file,key).length?{kind:'manual_visual_review',evidence_indices:manualEvidence(file,key)}:{kind:(file.scientific?.[key]??file[key]??fields.scientific?.[key]??fields[key])!=null?'explicit_source_field':'direct_source_label',evidence:fields.title||null}]));
       const appearance=compactAppearance(file);
+      const contentType=compactContentType(file);
       const title=norm([fields.title,fields.title_zh]);
       const contextText=norm([fields.description,fields.tags,fields.upstream_category,fields.categories,fields.anatomy,fields.action,scientificValue(file,'object')??file.object??fields.object,...Object.values(facts)]);
       const descriptive=title+' '+contextText;
@@ -346,10 +391,12 @@ export function prepareVariants(records) {
       // this is an explicit ontology relation, not a substring/equipment match.
       if(kind==='cell'){aliases.push('cell','cells','细胞');objects.push('cell','cells','细胞');}
       const values={...facts,source:arr(origin.source||asset.source),license:arr(license),distribution_status:arr(rights),category:arr(fields.taxonomy||asset.taxonomy),format:arr(file.format),
+        structure:STRUCTURES.has(file.structure)?[file.structure]:[],content_type:CONTENT_TYPES.has(contentType.value)?[contentType.value]:[],
         color_mode:arr(appearance.color.mode).filter(v=>!unknown.has(v)),palette_traits:appearance.color.palette_traits||[],representation:appearance.style.representation?.values||[],detail:arr(appearance.style.detail?.value).filter(v=>!unknown.has(v)),realism:arr(appearance.style.realism?.value).filter(v=>!unknown.has(v)),series:(appearance.style.series?.memberships||[]).map(x=>x.id),
         asset_id:unique([asset.id,origin.asset_id].filter(Boolean)),family_id:arr(asset.family_id||asset.id),file_sha256:arr(file.sha256),object:objects,depiction_kind:unknown.has(kind)?[]:[kind],transparent:file.transparency?.has_transparent_pixels!=null ? [String(file.transparency.has_transparent_pixels)] : file.has_transparency!=null ? [String(file.has_transparency)] : []};
       const selectedFile=Object.fromEntries(['sha256','format','structure','url','archive','preview','validation','width','height','size_bytes','dimensions','transparency','scientific','scientific_review_evidence','scientific_conflicts','public_scope','text_content'].filter(k=>file[k]!=null).map(k=>[k,file[k]]));
       selectedFile.appearance=appearance;
+      selectedFile.content_type=contentType;
       const lexical={title:indexTerms(title),context:indexTerms(contextText)};
       lexical.all=unique([...lexical.title,...lexical.context,...aliases.map(termKey)]).sort(cmp);
       const row={variant_id:[asset.id,digest,origin.asset_id||origin.source_id||'',originIndex].join(':'),asset_id:asset.id,family_id:asset.family_id||asset.id,title:fields.title||asset.title,source:origin.source||asset.source,source_id:origin.source_id||asset.source_id,author:origin.author||fields.author,attribution:origin.attribution||fields.attribution,values,eligible,facts,primary_object:{terms:objects,depiction_kind:kind,basis:manualEvidence(file,'object').length?'manual_visual_review':declaredObjects!=null&&objects.length?'explicit_source_field':objects.length?(descriptionLabel?'explicit_source_depiction_statement':'direct_source_title_compound_label'):'unknown',evidence:descriptionLabel||fields.title||null,manual_evidence_indices:manualEvidence(file,'object'),whole_body_verified:manualEvidence(file,'role').length>0&&facts.role.includes('whole_body')},fact_basis:factBasis,search:{title,aliases:aliases.join(' '),context:contextText},lexical,file:selectedFile,validation:asset.validation||{}};
@@ -373,7 +420,7 @@ export function sqlitePlan(plan) {
   for(const [key,values] of Object.entries(plan.requirements)) {
     const groups=key==='object'&&plan.object_groups?.length?plan.object_groups:null;
     conditions.push({code:`hard_filter:${key}`,sql:groups?groups.map(group=>`EXISTS (SELECT 1 FROM json_each(v.values_json,'$.object') j WHERE j.value IN (${group.map(()=>'?').join(',')}))`).join(' AND '):plan.all_requirements?.[key]?`(SELECT COUNT(DISTINCT j.value) FROM json_each(v.values_json, '$.${key}') j WHERE j.value IN (${values.map(()=>'?').join(',')}))=${values.length}`:`EXISTS (SELECT 1 FROM json_each(v.values_json, '$.${key}') j WHERE j.value IN (${values.map(()=>'?').join(',')}))`,params:groups?groups.flat():values,
-      unknown_sql:['species','state','view','role','object','depiction_kind','color_mode','palette_traits','representation','detail','realism','series'].includes(key)?`json_array_length(v.values_json,'$.${key}')=0`:null});
+      unknown_sql:['species','state','view','role','object','depiction_kind','color_mode','palette_traits','representation','detail','realism','series','structure','content_type'].includes(key)?`json_array_length(v.values_json,'$.${key}')=0`:null});
   }
   return {from,text_clauses:textClauses,text_params:textParams,conditions,where:[...textClauses,...conditions.map(c=>c.sql)].join(' AND ')||'1',params:[...textParams,...conditions.flatMap(c=>c.params)]};
 }

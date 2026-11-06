@@ -440,3 +440,118 @@ def test_named_fruitfly_species_never_relaxes_to_an_unspecified_genus(tmp_path):
     assert all([r["title"] for r in p["results"]]==["Drosophila melanogaster"] for p in pages)
     assert all(p["query_plan"]["requirements"]["species"]==["drosophila_melanogaster"] for p in pages)
     assert [r["title"] for r in search(db,"fruit fly",filters={"file_sha256":artwork(1)["files"][0]["sha256"]})]==["Drosophila melanogaster"]
+
+
+def content_claim(file, value, *, official=False):
+    return {"value": value, "review_status": "official_file_label" if official else "visual_reviewed",
+            "binding": {"file_sha256": file["sha256"], "preview_sha256": file["preview"]["sha256"]},
+            "evidence": [{"kind": "official_source_file" if official else "manual_visual_review",
+                          "uri": "https://example.invalid/content-review.json", "sha256": "a" * 64,
+                          "reviewer": "Fixture reviewer; synthetic filter mechanics only"}]}
+
+
+def test_media_type_alias_uses_structure_before_family_and_candidate_window(tmp_path):
+    vector = [artwork(i) for i in range(150)]
+    vector[0]["family_hint"] = "two_formats"
+    raster = artwork(900, family="two_formats")
+    raster["files"][0].update(format="png", structure="raster", media_type="image/png")
+    # A misleading MIME metadata value cannot override the actual structure.
+    vector[1]["files"][0]["media_type"] = "raster"
+    db = database(tmp_path, [*vector, raster])
+    page = search_page(db, "mouse", filters={"media_type": "raster"})
+    canonical = search_page(db, "mouse", filters={"structure": "raster"})
+    assert page["bindings"] == canonical["bindings"]
+    assert len(page["results"]) == 1
+    result = page["results"][0]
+    assert result["selected_file"]["sha256"] == raster["files"][0]["sha256"]
+    assert result["preview"] == raster["files"][0]["preview"]
+    assert result["download"] == raster["files"][0]["archive"]
+    assert page["diagnostics"]["sqlite_pushdown"]["text_matched_variants"] == 151
+    assert page["diagnostics"]["sqlite_pushdown"]["payload_variants_loaded"] == 1
+    with pytest.raises(ValueError, match="Conflicting aliases"):
+        search(db, "mouse", filters={"media_type": "raster", "structure": "pure_vector"})
+    with pytest.raises(ValueError, match="Unsupported structure"):
+        search(db, "mouse", filters={"media_type": "image/png"})
+
+
+def test_structure_filters_are_honest_about_mixed_and_embedded_svg(tmp_path):
+    structures = ["pure_vector", "raster", "mixed", "embedded_raster"]
+    records = [artwork(i) for i in range(4)]
+    for item, structure in zip(records, structures):
+        item["files"][0].update(structure=structure, format="png" if structure == "raster" else "svg")
+    unknown = artwork(10)
+    unknown["files"][0].pop("structure")
+    unknown["files"][0]["media_type"] = "pure_vector"
+    db = database(tmp_path, [*records, unknown])
+    for structure, expected in zip(structures, records):
+        page = search_page(db, "mouse", filters={"media_type": structure})
+        assert [r["selected_file"]["sha256"] for r in page["results"]] == [expected["files"][0]["sha256"]]
+        assert page["diagnostics"]["sqlite_pushdown"]["rejections_by_condition_may_overlap"]["unknown:structure"] == 1
+    assert len(search(db, "mouse", filters={"format": "svg"})) == 4
+
+
+def test_content_type_requires_exact_evidence_and_keeps_unknowns_separate(tmp_path):
+    drawn, photo, micrograph, ambiguous = [artwork(i, family="shared" if i < 2 else None) for i in range(4)]
+    known = [(drawn, "illustration"), (photo, "photograph"), (micrograph, "micrograph"),
+             (ambiguous, "photograph_or_real_micrograph")]
+    for item, value in known:
+        item["files"][0]["content_type"] = content_claim(item["files"][0], value, official=value == "micrograph")
+    bare, wrong_file, wrong_preview, pending, unreviewed = [artwork(i) for i in range(10, 15)]
+    bare["files"][0]["content_type"] = "illustration"
+    for item in (wrong_file, wrong_preview, pending):
+        item["files"][0]["content_type"] = content_claim(item["files"][0], "illustration")
+    wrong_file["files"][0]["content_type"]["binding"]["file_sha256"] = "b" * 64
+    wrong_preview["files"][0]["content_type"]["binding"]["preview_sha256"] = "c" * 64
+    pending["files"][0]["content_type"]["review_status"] = "needs_review"
+    unreviewed["files"][0].update(format="png", structure="raster", media_type="image/png",
+                                  public_scope={"status": "unreviewed", "public_allowed": True})
+    db = database(tmp_path, [*(r for r, _ in known), bare, wrong_file, wrong_preview, pending, unreviewed])
+    with closing(sqlite3.connect(db)) as conn:
+        variants = [json.loads(row[0]) for row in conn.execute("SELECT metadata FROM file_variants")]
+        version = conn.execute("SELECT value FROM index_metadata WHERE key='catalog_version'").fetchone()[0]
+    for item, content in known:
+        filters = {"content_type": content}
+        page = search_page(db, "mouse", filters=filters, seed="content-parity")
+        direct = _search_core({"action": "search", "variants": variants, "request": {
+            "query": "mouse", "filters": filters, "seed": "content-parity", "catalog_version": version}})
+        assert [r["variant_id"] for r in direct["results"]] == [r["variant_id"] for r in page["results"]]
+        assert [r["selected_file"]["sha256"] for r in page["results"]] == [item["files"][0]["sha256"]]
+        proof = page["results"][0]["selected_file"]["content_type"]
+        assert proof["value"] == content and proof["evidence"]
+        assert proof["binding"]["file_sha256"] == item["files"][0]["sha256"]
+        assert page["diagnostics"]["sqlite_pushdown"]["rejections_by_condition_may_overlap"]["unknown:content_type"] == 5
+    # Broad search keeps uncertain content eligible, without mislabeling it.
+    broad = search(db, "mouse", filters={"file_sha256": unreviewed["files"][0]["sha256"]})
+    assert broad[0]["selected_file"]["content_type"]["value"] == "unknown"
+
+
+def test_content_type_scope_projection_uses_only_bound_media_dimension(tmp_path):
+    good, suitability, aggregate_only, bad_hash, no_proof, conflict = [artwork(i) for i in range(6)]
+    for item in (good, suitability, aggregate_only, bad_hash, no_proof, conflict):
+        f = item["files"][0]
+        f["public_scope"] = {"status": "included", "public_allowed": True, "scope_dimension": "media_type",
+                             "reviewed_dimensions": {"media_type": "included"}, "decision_id": "fixture-media-review",
+                             "evidence_original_sha256": f["sha256"], "evidence_preview_sha256": f["preview"]["sha256"],
+                             "reviewed_by": "Fixture visual reviewer", "reviewed_at": "2026-11-07",
+                             "evidence": [{"uri": "fixture-review.json", "sha256": "a" * 64}]}
+    suitability["files"][0]["public_scope"].update(scope_dimension="component_suitability", reviewed_dimensions={"component_suitability": "included"})
+    aggregate_only["files"][0]["public_scope"]["scope_dimension"] = "component_suitability"
+    bad_hash["files"][0]["public_scope"]["evidence_preview_sha256"] = "f" * 64
+    no_proof["files"][0]["public_scope"]["evidence"] = []
+    conflict["files"][0]["content_type"] = content_claim(conflict["files"][0], "photograph")
+    db = database(tmp_path, [good, suitability, aggregate_only, bad_hash, no_proof, conflict])
+    page = search_page(db, "mouse", filters={"content_type": "illustration"})
+    assert [r["selected_file"]["sha256"] for r in page["results"]] == [good["files"][0]["sha256"]]
+    assert page["results"][0]["selected_file"]["content_type"]["basis"] == "file_bound_scope_media_type_review"
+    assert page["diagnostics"]["sqlite_pushdown"]["rejections_by_condition_may_overlap"]["unknown:content_type"] == 5
+    assert search(db, "mouse", filters={"content_type": "photograph"}) == []
+
+
+def test_old_ranking_index_is_rejected_even_with_unchanged_sql_schema(tmp_path):
+    db = database(tmp_path, [artwork(1)])
+    with closing(sqlite3.connect(db)) as conn, conn:
+        assert conn.execute("PRAGMA user_version").fetchone()[0] == 9
+        assert conn.execute("SELECT value FROM index_metadata WHERE key='ranking_version'").fetchone()[0] == "shared-search-3.4.2"
+        conn.execute("UPDATE index_metadata SET value='shared-search-3.4.1' WHERE key='ranking_version'")
+    with pytest.raises(ValueError, match="policy version changed; rebuild"):
+        search(db, "mouse", filters={"media_type": "raster"})
