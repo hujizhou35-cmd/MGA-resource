@@ -1,0 +1,36 @@
+name: Backfill cloud appearance metadata
+on:
+  workflow_dispatch:
+    inputs:
+      release_tag:
+        description: Collection release
+        default: collection-20261106
+        type: string
+      assembly_prefix:
+        description: Exact assembly-RUN-ATTEMPT input prefix
+        required: true
+        type: string
+permissions:
+  contents: write
+concurrency:
+  group: appearance-${{ inputs.release_tag }}
+  cancel-in-progress: false
+jobs:
+  appearance:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install -e .
+      - name: Measure existing archived previews with safe checkpoints
+        env:
+          GH_TOKEN: ${{ github.token }}
+          COLLECTION_TAG: ${{ inputs.release_tag }}
+          ASSEMBLY_PREFIX: ${{ inputs.assembly_prefix }}
+        run: python scripts/backfill_appearance.py --release-tag "$COLLECTION_TAG" --assembly-prefix "$ASSEMBLY_PREFIX" --budget-minutes 50 --publish
