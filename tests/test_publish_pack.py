@@ -19,6 +19,12 @@ REPO = "test/library"
 SOURCE = pack.release_url(REPO, "collection-1", "source.tar.gz")
 
 
+def run_identity(run_id="1", attempt="1"):
+    return {"repository": REPO, "run_id": run_id, "run_attempt": attempt, "commit_sha": "a" * 40,
+            "workflow_ref": REPO + "/.github/workflows/publish-pack.yml@refs/heads/main",
+            "url": f"https://github.com/{REPO}/actions/runs/{run_id}"}
+
+
 def tar_bytes(rows):
     output = io.BytesIO()
     with tarfile.open(fileobj=output, mode="w") as archive:
@@ -60,7 +66,7 @@ def build(tmp_path, *, manifest=None, streams=None, **kwargs):
     data = pack.json_bytes(manifest)
     index, index_path = pack.build_bundle(data, pack.sha(data), repository=REPO, version="v1",
          archive_proofs={url: {"sha256": pack.sha(value), "size_bytes": len(value)} for url, value in streams.items()},
-         opener=opener, output=tmp_path / "build", **kwargs)
+         opener=opener, output=tmp_path / "build", build_run=run_identity(), **kwargs)
     return index, index_path, calls
 
 
@@ -235,26 +241,34 @@ def test_only_current_repository_release_assets_are_allowed(url):
         pack.release_location(url, REPO)
 
 
-def test_publication_is_receipt_last_and_evidence_matches_acceptance_contract(tmp_path):
+def test_build_publication_is_receipt_last_but_never_claims_independent_restore(tmp_path):
     manifest, _ = fixture()
     index, index_path, _ = build(tmp_path)
     store = MemoryStore()
-    result = pack.publish_bundle(index, index_path, index_path.parent, store, run_id="123-1", checked_by={"kind": "agent", "id": "synthetic-test"})
+    result = pack.publish_bundle(index, index_path, index_path.parent, store, run_id="1-1", checked_by={"kind": "agent", "id": "synthetic-test"})
     assert store.events[-1][1].endswith(".receipt.json")
     receipt = json.loads(store.values[result["url"]])
-    evidence = json.loads(store.values[receipt["restore_evidence"]["url"]])
-    assert evidence["passed"] is True and evidence["published_subset_only"] is True
+    evidence = json.loads(store.values[receipt["build_evidence"]["url"]])
+    assert "restore_evidence" not in receipt
+    assert receipt["status"] == "build_complete_restore_pending"
+    assert evidence["operation"] == "build_verification" and evidence.get("passed") is not True
+    assert not evidence["independent_remote_restore_verified"]
+    assert not store.calls  # GitHub digest verification is not a remote re-read.
     assert evidence["publish_manifest_sha256"] == pack.sha(pack.json_bytes(manifest))
     assert evidence["bundle_sha256"] == pack.sha(index_path.read_bytes())
     assert set(evidence["artwork_member_sha256"]) == set(pack.plan_manifest(manifest)[0])
     assert all(item["github_digest_verified"] for item in receipt["published_assets"])
+    evidence["passed"] = True  # Adding only a pass flag cannot upgrade a build.
+    with pytest.raises(ValueError, match="build-only"):
+        pack.validate_remote_restore(evidence, index, manifest,
+            manifest_sha256=index["publish_manifest"]["sha256"], bundle_sha256=pack.sha(index_path.read_bytes()))
 
 
 def test_failed_upload_never_publishes_completion_receipt(tmp_path):
     index, index_path, _ = build(tmp_path)
     class BrokenStore(MemoryStore):
         def upload_checked(self, tag, path):
-            if path.name.endswith(".restore_evidence.json"):
+            if path.name.endswith(".build_evidence.json"):
                 raise RuntimeError("HTTP 403")
             return super().upload_checked(tag, path)
     store = BrokenStore()
@@ -287,13 +301,116 @@ def test_independent_restore_from_index_needs_no_website_or_collection_archive(t
     result = pack.publish_bundle(index, index_path, index_path.parent, store, run_id="1-1", checked_by="test")
     receipt = json.loads(store.values[result["url"]])
     output = tmp_path / "restored"
-    evidence = pack.restore_bundle(receipt["bundle_url"], receipt["bundle_sha256"], store=store, output=output, checked_by="test-restore")
+    evidence = pack.restore_bundle(receipt["bundle_url"], receipt["bundle_sha256"], store=store, output=output,
+                                   checked_by="test-restore", restore_run=run_identity("2"))
     assert evidence["passed"]
     assert len(list((output / "objects").iterdir())) == 3
     assert store.calls == {part["url"]: 1 for part in index["packs"]}
+    assert pack.validate_remote_restore(evidence, index, fixture()[0],
+        manifest_sha256=index["publish_manifest"]["sha256"], bundle_sha256=receipt["bundle_sha256"])
     for part in index["packs"]:
         for obj in part["members"]:
             assert pack.file_proof(output / obj["path"])["sha256"] == obj["sha256"]
+
+
+def restored_fixture(tmp_path):
+    index, index_path, _ = build(tmp_path)
+    store = MemoryStore()
+    published = pack.publish_bundle(index, index_path, index_path.parent, store, run_id="1-1", checked_by="test")
+    receipt = json.loads(store.values[published["url"]])
+    output = tmp_path / "restored"
+    evidence = pack.restore_bundle(receipt["bundle_url"], receipt["bundle_sha256"], store=store, output=output,
+                                   checked_by="test-restore", restore_run=run_identity("2"))
+    return index, receipt, store, output, evidence
+
+
+@pytest.mark.parametrize("mutation", ["old_schema", "build_only", "same_run", "missing_build_run", "missing_reads", "malformed_reads",
+    "missing_pack", "extra_pack", "pack_sha", "pack_size", "pack_member", "incomplete_stream", "index_read",
+    "manifest_read", "bundle_hash", "manifest_hash", "duplicate_member", "different_build_run"])
+def test_remote_restore_evidence_requires_exact_read_chain_not_a_pass_flag(tmp_path, mutation):
+    index, receipt, _, _, evidence = restored_fixture(tmp_path)
+    if mutation == "old_schema": evidence["schema_version"] = 1
+    elif mutation == "build_only": evidence["operation"] = "build_verification"
+    elif mutation == "same_run": evidence["restore_run"] = run_identity("1", "2")
+    elif mutation == "missing_build_run": index.pop("build_run")
+    elif mutation == "missing_reads": evidence.pop("remote_reads")
+    elif mutation == "malformed_reads": evidence["remote_reads"] = ["not a read-evidence object"]
+    elif mutation == "missing_pack": evidence["remote_reads"]["packs"].pop()
+    elif mutation == "extra_pack": evidence["remote_reads"]["packs"].append(evidence["remote_reads"]["packs"][0])
+    elif mutation == "pack_sha": evidence["remote_reads"]["packs"][0]["sha256"] = "0" * 64
+    elif mutation == "pack_size": evidence["remote_reads"]["packs"][0]["size_bytes"] += 1
+    elif mutation == "pack_member": evidence["remote_reads"]["packs"][0]["member_sha256"][0] = "0" * 64
+    elif mutation == "incomplete_stream": evidence["remote_reads"]["packs"][0]["complete_stream_verified"] = False
+    elif mutation == "index_read": evidence["remote_reads"]["index"]["sha256"] = "0" * 64
+    elif mutation == "manifest_read": evidence["remote_reads"]["manifest"]["size_bytes"] += 1
+    elif mutation == "bundle_hash": evidence["bundle_sha256"] = "0" * 64
+    elif mutation == "manifest_hash": evidence["publish_manifest_sha256"] = "0" * 64
+    elif mutation == "duplicate_member": evidence["artwork_member_sha256"].append(evidence["artwork_member_sha256"][0])
+    else: evidence["build_run"] = run_identity("3")
+    evidence["passed"] = True
+    with pytest.raises(ValueError):
+        pack.validate_remote_restore(evidence, index, fixture()[0],
+            manifest_sha256=index["publish_manifest"]["sha256"], bundle_sha256=receipt["bundle_sha256"])
+
+
+@pytest.mark.parametrize("legacy", [False, True])
+def test_same_run_or_unbound_legacy_bundle_stops_before_artwork_reads(tmp_path, legacy):
+    index, index_path, _ = build(tmp_path)
+    store = MemoryStore()
+    result = pack.publish_bundle(index, index_path, index_path.parent, store, run_id="1-1", checked_by="test")
+    receipt = json.loads(store.values[result["url"]])
+    if legacy:
+        index.pop("build_run")
+        store.values[receipt["bundle_url"]] = pack.json_bytes(index)
+        receipt["bundle_sha256"] = pack.sha(pack.json_bytes(index))
+    with pytest.raises(ValueError, match="run"):
+        pack.restore_bundle(receipt["bundle_url"], receipt["bundle_sha256"], store=store,
+            output=tmp_path / "restored", checked_by="test", restore_run=run_identity("2" if legacy else "1", "2"))
+    assert not store.calls
+    assert not (tmp_path / "restored/restore_evidence.json").exists()
+
+
+def test_remote_corruption_never_writes_successful_restore_evidence(tmp_path):
+    index, index_path, _ = build(tmp_path)
+    store = MemoryStore()
+    result = pack.publish_bundle(index, index_path, index_path.parent, store, run_id="1-1", checked_by="test")
+    receipt = json.loads(store.values[result["url"]])
+    store.values[index["packs"][0]["url"]] = b"changed remote bytes"
+    with pytest.raises(ValueError, match="digest"):
+        pack.restore_bundle(receipt["bundle_url"], receipt["bundle_sha256"], store=store,
+            output=tmp_path / "restored", checked_by="test", restore_run=run_identity("2"))
+    assert not (tmp_path / "restored/restore_evidence.json").exists()
+
+
+def test_real_restore_persists_only_small_proof_to_separate_release(tmp_path):
+    _, _, store, output, evidence = restored_fixture(tmp_path)
+    before = len(store.events)
+    receipt = pack.publish_restore_evidence(output, store)
+    assert receipt["url"].endswith("/acceptance-20261107/v1-2-1.restore_evidence.json")
+    assert json.loads(store.values[receipt["url"]]) == evidence
+    assert store.events[before:] == [("release", "acceptance-20261107"), ("upload", "v1-2-1.restore_evidence.json")]
+    assert json.loads((output / "restore_receipt.json").read_bytes()) == receipt
+    with pytest.raises(ValueError, match="separate"):
+        pack.publish_restore_evidence(output, store, tag="collection-20261106")
+
+
+def test_restore_proof_upload_failure_preserves_local_artifact_fallback(tmp_path):
+    _, _, store, output, evidence = restored_fixture(tmp_path)
+    def denied(*args, **kwargs):
+        raise RuntimeError("HTTP 403")
+    store.upload_checked = denied
+    with pytest.raises(RuntimeError, match="403"):
+        pack.publish_restore_evidence(output, store)
+    assert json.loads((output / "restore_evidence.json").read_bytes()) == evidence
+    assert not (output / "restore_receipt.json").exists()
+
+
+@pytest.mark.parametrize("status", ["excluded", "pending_review"])
+def test_manifest_with_explicit_forbidden_scope_is_rejected_before_streaming(tmp_path, status):
+    manifest, _ = fixture()
+    manifest["files"][0]["public_scope"] = {"status": status, "public_allowed": False}
+    with pytest.raises(ValueError, match="scope-excluded or pending-review"):
+        build(tmp_path, manifest=manifest, streams={})
 
 
 @pytest.mark.parametrize("mutation", ["missing", "extra", "duplicate", "large_static", "manifest", "path", "role"])

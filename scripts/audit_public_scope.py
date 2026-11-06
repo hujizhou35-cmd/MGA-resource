@@ -18,7 +18,7 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
 sys.path.insert(0, str(ROOT / "scripts"))
 from mga_resources.scope_policy import load_scope_policy, evaluate_public_scope
-from build_publish_pack import validate_index
+from build_publish_pack import validate_index, validate_remote_restore
 
 
 def read_json(path):
@@ -142,13 +142,15 @@ def audit(catalog, assembly, *, catalog_sha256, policy, internal=None,
     if restore is None or bundle is None or manifest is None:
         check("publish_bundle.independent_restore", None, "Cloud restore receipt still required; a written rule or bundle plan is not a successful restore.")
     else:
-        expected_objects = set(manifest_files) | {(f.get("preview") or {}).get("sha256") for f in manifest_files.values()}
-        passed = (restore.get("passed") is True and restore.get("published_subset_only") is True
-            and restore.get("publish_manifest_sha256") == manifest_sha256 and restore.get("bundle_sha256") == bundle_sha256
-            and restore.get("exact_member_sets_verified") is True and restore.get("all_member_sha256_verified") is True
-            and restore.get("all_compressed_sha256_and_sizes_verified") is True
-            and set(restore.get("artwork_member_sha256", [])) == expected_objects)
-        check("publish_bundle.independent_restore", passed, {"member_count": len(restore.get("artwork_member_sha256", [])), "checked_by": restore.get("checked_by"), "checked_at": restore.get("checked_at")})
+        try:
+            validate_remote_restore(restore, bundle, manifest,
+                                    manifest_sha256=manifest_sha256, bundle_sha256=bundle_sha256)
+            check("publish_bundle.independent_restore", True,
+                  {"member_count": restore["artwork_member_count"], "build_run": restore["build_run"],
+                   "restore_run": restore["restore_run"], "checked_at": restore["checked_at"]})
+        except (ValueError, KeyError, TypeError) as error:
+            legacy_or_build = not isinstance(restore, dict) or restore.get("schema_version") != 2 or restore.get("operation") != "independent_remote_restore"
+            check("publish_bundle.independent_restore", None if legacy_or_build else False, str(error))
 
     paired = []
     for item in (paired_review or {}).get("items", []):

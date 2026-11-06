@@ -209,7 +209,11 @@ def extract_selected(opener, url, proof, wanted, staging, *, exact=False):
         verified = reader.finish()
     if seen != set(wanted):
         raise ValueError("Selected members missing from archive")
-    return {"url": url, **verified, "selected_member_count": len(seen), "complete_stream_verified": True}
+    result = {"url": url, **verified, "selected_member_count": len(seen), "complete_stream_verified": True}
+    if exact:
+        result.update(exact_member_set_verified=True,
+                      member_sha256=sorted({wanted[name]["sha256"] for name in seen}))
+    return result
 
 
 def partition(objects, *, file_limit=STATIC_FILE_LIMIT, count_limit=STATIC_COUNT_LIMIT, pack_bytes=PACK_BYTES):
@@ -251,10 +255,33 @@ def verify_pack(path, objects):
     return {key: evidence[key] for key in ("sha256", "size_bytes")}
 
 
-def restore_evidence(index, index_sha, bundle_url, *, checked_by, checked_at=None):
+def validate_run(run, repository):
+    """A runner identity, bound inside the immutable index or restore evidence."""
+    if (not isinstance(repository, str) or not isinstance(run, dict) or run.get("repository") != repository
+            or not re.fullmatch(r"[1-9][0-9]*", str(run.get("run_id", "")))
+            or not re.fullmatch(r"[1-9][0-9]*", str(run.get("run_attempt", "")))
+            or not re.fullmatch(r"[0-9a-f]{40}", str(run.get("commit_sha", "")))
+            or not isinstance(run.get("workflow_ref"), str)
+            or run.get("workflow_ref", "").split("@", 1)[0] != repository + "/.github/workflows/publish-pack.yml"
+            or not run.get("workflow_ref", "").partition("@")[2]
+            or run.get("url") != f"https://github.com/{repository}/actions/runs/{run.get('run_id')}"):
+        raise ValueError("Missing or invalid publication workflow run identity")
+
+
+def actions_run(repository):
+    run = {"repository": repository, "run_id": os.environ.get("GITHUB_RUN_ID"),
+           "run_attempt": os.environ.get("GITHUB_RUN_ATTEMPT"), "commit_sha": os.environ.get("GITHUB_SHA"),
+           "workflow_ref": os.environ.get("GITHUB_WORKFLOW_REF"),
+           "url": f"https://github.com/{repository}/actions/runs/{os.environ.get('GITHUB_RUN_ID')}"}
+    validate_run(run, repository)
+    return run
+
+
+def verification_binding(index, index_sha, bundle_url, *, checked_by, checked_at=None):
+    """Shared binding only; this helper never grants successful recovery."""
     members = sorted({obj["sha256"] for part in index["packs"] for obj in part["members"]})
-    return {"schema_version": 1, "publish_manifest_sha256": index["publish_manifest"]["sha256"],
-            "passed": True, "published_subset_only": True, "checked_by": checked_by,
+    return {"schema_version": 2, "publish_manifest_sha256": index["publish_manifest"]["sha256"],
+            "published_subset_only": True, "checked_by": checked_by, "build_run": index.get("build_run"),
             "checked_at": checked_at or datetime.now(timezone.utc).isoformat(),
             "bundle_url": bundle_url, "bundle_sha256": index_sha, "bundle_type": "multipart-index",
             "artwork_member_sha256": members, "artwork_member_count": len(members),
@@ -263,11 +290,69 @@ def restore_evidence(index, index_sha, bundle_url, *, checked_by, checked_at=Non
             "acceptance_scope": "Storage recovery only; scientific and Illustrator acceptance are separate."}
 
 
+def validate_remote_restore(evidence, index, manifest, *, manifest_sha256, bundle_sha256):
+    """Validate detailed remote-read evidence, not a caller's `passed` boolean.
+
+    Offline consumers verify the supplied evidence chain. They do not claim a
+    new download or authenticate a manually supplied JSON as a GitHub run.
+    The cloud command produces these observations only after reading all bytes.
+    Legacy evidence remains readable, but cannot satisfy this stronger gate.
+    """
+    if not isinstance(index, dict) or not isinstance(evidence, dict):
+        raise ValueError("Independent restore needs its bundle index and evidence")
+    repository = index.get("repository")
+    validate_index(index, manifest, repository)
+    if (not valid_sha(manifest_sha256) or manifest_sha256 != sha(json_bytes(manifest))
+            or not valid_sha(bundle_sha256) or bundle_sha256 != sha(json_bytes(index))):
+        raise ValueError("Restore inputs differ from the bound manifest or bundle bytes")
+    if (evidence.get("schema_version") != 2 or evidence.get("operation") != "independent_remote_restore"
+            or evidence.get("passed") is not True):
+        raise ValueError("Legacy or build-only evidence is not an independent remote restore")
+    build_run, restore_run = index.get("build_run"), evidence.get("restore_run")
+    validate_run(build_run, repository)
+    validate_run(restore_run, repository)
+    if evidence.get("build_run") != build_run or str(build_run["run_id"]) == str(restore_run["run_id"]):
+        raise ValueError("Restore must use a different workflow run, not a build job or retry")
+    bundle_url = release_url(repository, index["release_tag"], f"{index['version']}.bundle.json")
+    members = sorted({obj["sha256"] for part in index["packs"] for obj in part["members"]})
+    required = {"publish_manifest_sha256": manifest_sha256, "bundle_sha256": bundle_sha256,
+                "bundle_url": bundle_url, "published_subset_only": True,
+                "artwork_member_sha256": members, "artwork_member_count": len(members),
+                "pack_count": len(index["packs"]), "exact_member_sets_verified": True,
+                "all_member_sha256_verified": True, "all_compressed_sha256_and_sizes_verified": True}
+    if any(evidence.get(key) != value for key, value in required.items()):
+        raise ValueError("Restore evidence differs from the exact manifest/bundle binding")
+    checker = evidence.get("checked_by")
+    if not ((isinstance(checker, str) and checker.strip()) or
+            (isinstance(checker, dict) and checker.get("kind") in {"agent", "human"}
+             and isinstance(checker.get("id"), str) and checker["id"].strip())):
+        raise ValueError("Restore checker identity is missing")
+    if not isinstance(evidence.get("checked_at"), str) or not evidence["checked_at"].strip():
+        raise ValueError("Restore observation time is missing")
+    reads = evidence.get("remote_reads") or {}
+    if not isinstance(reads, dict):
+        raise ValueError("Remote-read evidence must be an object")
+    expected_metadata = {"index": {"url": bundle_url, "sha256": bundle_sha256, "size_bytes": len(json_bytes(index))},
+                         "manifest": {key: index["publish_manifest"][key] for key in ("url", "sha256", "size_bytes")}}
+    if any(reads.get(key) != value for key, value in expected_metadata.items()):
+        raise ValueError("Remote index/manifest read evidence is missing or mismatched")
+    observed = reads.get("packs")
+    expected = [{"url": part["url"], "sha256": part["sha256"], "size_bytes": part["size_bytes"],
+                 "selected_member_count": len(part["members"]), "complete_stream_verified": True,
+                 "exact_member_set_verified": True,
+                 "member_sha256": sorted(obj["sha256"] for obj in part["members"])} for part in index["packs"]]
+    if (not isinstance(observed, list) or any(not isinstance(row, dict) for row in observed)
+            or sorted(observed, key=lambda row: str(row.get("url"))) != sorted(expected, key=lambda row: row["url"])):
+        raise ValueError("Remote pack reads must prove every exact compressed stream and member set")
+    return True
+
+
 def build_bundle(manifest_data, expected_sha, *, repository, version, archive_proofs, opener, output,
-                 file_limit=STATIC_FILE_LIMIT, count_limit=STATIC_COUNT_LIMIT, pack_bytes=PACK_BYTES):
+                 build_run, file_limit=STATIC_FILE_LIMIT, count_limit=STATIC_COUNT_LIMIT, pack_bytes=PACK_BYTES):
     """Build from one explicit manifest. Tests supply in-memory synthetic streams."""
     if not VERSION.fullmatch(version):
         raise ValueError("Invalid publication version")
+    validate_run(build_run, repository)
     manifest = parse_manifest(manifest_data, expected_sha)
     objects, archives = plan_manifest(manifest)
     for url in archives:
@@ -281,12 +366,13 @@ def build_bundle(manifest_data, expected_sha, *, repository, version, archive_pr
     tag = f"publish-{version}"
     index = {"schema_version": 1, "bundle_type": "multipart-index", "version": version,
              "repository": repository, "release_tag": tag, "collection_release": manifest["collection_release"],
+             "build_run": build_run,
              "published_subset_only": True, "artwork_object_count": len(objects),
              "static_limits": {"max_files_per_pack": count_limit, "file_size_strictly_less_than": file_limit},
              "large_files_retained_in_download_packs": True, "source_archives": [], "packs": [],
              "recovery": {"website_required": False, "original_bytes_unchanged": True,
                           "tool": "scripts/build_publish_pack.py restore --bundle-url URL --bundle-sha256 SHA256",
-                          "tool_revision": "clean-publish-pack-v1", "artwork_layout": "objects/<sha256>.<format>",
+                          "tool_revision": "clean-publish-pack-v2", "artwork_layout": "objects/<sha256>.<format>",
                           "rights_and_source_credit": "Full selected provenance is retained in publish_manifest.json.",
                           "instructions": ["Obtain this index URL and SHA-256 from the final receipt.",
                               "Verify the index and the referenced publication manifest.",
@@ -455,6 +541,9 @@ def publish_bundle(index, index_path, output, store, *, run_id, checked_by):
     """All data and proof assets precede the final, remotely verified receipt."""
     if not NAME.fullmatch(run_id) or len(run_id) > 40:
         raise ValueError("Invalid run identity")
+    validate_run(index.get("build_run"), store.repository)
+    if run_id != f"{index['build_run']['run_id']}-{index['build_run']['run_attempt']}":
+        raise ValueError("Build publication run differs from the immutable bundle")
     if index_path.read_bytes() != json_bytes(index):
         raise ValueError("Bundle index changed after restore verification")
     for reference in [*index["packs"], index["publish_manifest"]]:
@@ -468,17 +557,18 @@ def publish_bundle(index, index_path, output, store, *, run_id, checked_by):
     published = []
     for path in paths:
         published.append(store.upload_checked(tag, path))
-    evidence = restore_evidence(index, file_proof(index_path)["sha256"],
-                                release_url(index["repository"], tag, index_path.name), checked_by=checked_by)
-    evidence["published_assets_remote_digests_verified"] = True
+    evidence = verification_binding(index, file_proof(index_path)["sha256"],
+                                    release_url(index["repository"], tag, index_path.name), checked_by=checked_by)
+    evidence.update(operation="build_verification", build_verified=True,
+                    independent_remote_restore_verified=False, published_assets_remote_digests_verified=True)
     prefix = f"{index['version']}-{run_id}"
-    evidence_path = output / f"{prefix}.restore_evidence.json"
+    evidence_path = output / f"{prefix}.build_evidence.json"
     evidence_path.write_bytes(json_bytes(evidence))
     published.append(store.upload_checked(tag, evidence_path))
-    receipt = {"schema_version": 1, "status": "complete", "version": index["version"],
+    receipt = {"schema_version": 2, "status": "build_complete_restore_pending", "version": index["version"],
                "publish_manifest_sha256": index["publish_manifest"]["sha256"],
                "bundle_url": evidence["bundle_url"], "bundle_sha256": evidence["bundle_sha256"],
-               "restore_evidence": published[-1], "published_assets": published,
+               "build_evidence": published[-1], "published_assets": published,
                "publication_order": "Receipt uploaded last, after every listed asset's remote SHA-256/size matched",
                "checked_at": evidence["checked_at"], "run_id": run_id}
     receipt_path = output / f"{prefix}.receipt.json"
@@ -486,38 +576,73 @@ def publish_bundle(index, index_path, output, store, *, run_id, checked_by):
     return store.upload_checked(tag, receipt_path)
 
 
-def restore_bundle(bundle_url, expected_sha, *, store, output, checked_by):
+def restore_bundle(bundle_url, expected_sha, *, store, output, checked_by, restore_run):
     """Independently restore the published data using only its index and hashes."""
     data = store.metadata(bundle_url, expected_sha)
     index = json.loads(data)
     if data != json_bytes(index):
         raise ValueError("Bundle index is not canonical JSON")
+    if release_location(bundle_url, store.repository) != (index["release_tag"], f"{index['version']}.bundle.json"):
+        raise ValueError("Bundle URL differs from the immutable publication location")
     manifest_ref = index["publish_manifest"]
     manifest_data = store.metadata(manifest_ref["url"], manifest_ref["sha256"])
     if len(manifest_data) != manifest_ref["size_bytes"]:
         raise ValueError("Restored manifest size mismatch")
     manifest = parse_manifest(manifest_data, manifest_ref["sha256"])
     validate_index(index, manifest, store.repository)
+    validate_run(index.get("build_run"), store.repository)
+    validate_run(restore_run, store.repository)
+    if str(index["build_run"]["run_id"]) == str(restore_run["run_id"]):
+        raise ValueError("Restore must use a different workflow run, not a build job or retry")
     output = Path(output)
     output.mkdir(parents=True, exist_ok=True)
     if any(output.iterdir()):
         raise ValueError("Restore output must be empty")
+    pack_reads = []
     with tempfile.TemporaryDirectory(prefix="mga-restore-") as folder:
         staging = Path(folder)
         for part in index["packs"]:
             proof = {key: part[key] for key in ("sha256", "size_bytes")}
             if store.proof(part["url"]) != proof:
                 raise ValueError("Remote clean pack digest differs from bundle index")
-            extract_selected(store.open, part["url"], proof, {obj["path"]: obj for obj in part["members"]}, staging, exact=True)
+            pack_reads.append(extract_selected(store.open, part["url"], proof,
+                              {obj["path"]: obj for obj in part["members"]}, staging, exact=True))
         (output / "objects").mkdir()
         for part in index["packs"]:
             for obj in part["members"]:
                 shutil.move(str(staging / obj["sha256"]), str(output / obj["path"]))
     (output / "publish_manifest.json").write_bytes(manifest_data)
     (output / "bundle.json").write_bytes(data)
-    evidence = restore_evidence(index, expected_sha, bundle_url, checked_by=checked_by)
+    evidence = verification_binding(index, expected_sha, bundle_url, checked_by=checked_by)
+    evidence.update(operation="independent_remote_restore", passed=True, restore_run=restore_run,
+                    remote_reads={"index": {"url": bundle_url, "sha256": sha(data), "size_bytes": len(data)},
+                                  "manifest": {"url": manifest_ref["url"], "sha256": sha(manifest_data), "size_bytes": len(manifest_data)},
+                                  "packs": pack_reads})
+    validate_remote_restore(evidence, index, manifest, manifest_sha256=manifest_ref["sha256"], bundle_sha256=expected_sha)
     (output / "restore_evidence.json").write_bytes(json_bytes(evidence))
     return evidence
+
+
+def publish_restore_evidence(output, store, *, tag="acceptance-20261107"):
+    """Persist only the small successful remote-restore evidence, never artwork."""
+    index = json.loads((output / "bundle.json").read_bytes())
+    manifest = json.loads((output / "publish_manifest.json").read_bytes())
+    evidence = json.loads((output / "restore_evidence.json").read_bytes())
+    if index.get("repository") != store.repository:
+        raise ValueError("Restore evidence must stay in the bundle's repository")
+    validate_remote_restore(evidence, index, manifest,
+                            manifest_sha256=file_proof(output / "publish_manifest.json")["sha256"],
+                            bundle_sha256=file_proof(output / "bundle.json")["sha256"])
+    if not VERSION.fullmatch(tag) or tag.startswith("collection-") or tag == index["collection_release"]:
+        raise ValueError("Restore evidence requires a separate evidence/publication Release")
+    run = evidence["restore_run"]
+    path = output / f"{index['version']}-{run['run_id']}-{run['run_attempt']}.restore_evidence.json"
+    path.write_bytes(json_bytes(evidence))
+    store.ensure_release(tag)
+    store.preflight(tag, [path])
+    receipt = store.upload_checked(tag, path)
+    (output / "restore_receipt.json").write_bytes(json_bytes(receipt))
+    return receipt
 
 
 def main(argv=None):
@@ -532,15 +657,20 @@ def main(argv=None):
     restore = commands.add_parser("restore")
     restore.add_argument("--bundle-url", required=True)
     restore.add_argument("--bundle-sha256", required=True)
+    restore.add_argument("--publish-evidence", action="store_true")
+    restore.add_argument("--evidence-tag", default="acceptance-20261107")
     restore.add_argument("--output", type=Path, default=Path("build/restored-publication"))
     args = parser.parse_args(argv)
     if os.environ.get("GITHUB_ACTIONS") != "true":
         parser.error("Bulk build/restore is cloud-only. Local work is limited to synthetic unit tests.")
     store = GitHubStore(os.environ.get("GITHUB_REPOSITORY", ""))
+    run = actions_run(store.repository)
     identity = {"kind": "agent", "id": "MGA-resource/build_publish_pack.py@" + os.environ.get("GITHUB_SHA", "unknown")}
     if args.command == "restore":
-        evidence = restore_bundle(args.bundle_url, args.bundle_sha256, store=store, output=args.output, checked_by=identity)
-        print(json.dumps({"restored": evidence["artwork_member_count"], "output": str(args.output)}))
+        evidence = restore_bundle(args.bundle_url, args.bundle_sha256, store=store, output=args.output,
+                                  checked_by=identity, restore_run=run)
+        receipt = publish_restore_evidence(args.output, store, tag=args.evidence_tag) if args.publish_evidence else None
+        print(json.dumps({"restored": evidence["artwork_member_count"], "output": str(args.output), "restore_receipt": receipt}))
         return 0
     _, manifest_name = release_location(args.manifest_url, store.repository)
     if not manifest_name.endswith("publish_manifest.json"):
@@ -552,7 +682,8 @@ def main(argv=None):
     print(json.dumps({"phase": "verified-inputs", "selected_originals": len(manifest["files"]),
                       "source_archives": len(proofs), "compressed_source_bytes": sum(value["size_bytes"] for value in proofs.values())}), flush=True)
     index, index_path = build_bundle(manifest_data, args.manifest_sha256, repository=store.repository,
-                                    version=args.version, archive_proofs=proofs, opener=store.open, output=args.output)
+                                    version=args.version, archive_proofs=proofs, opener=store.open, output=args.output,
+                                    build_run=run)
     if args.publish:
         receipt = publish_bundle(index, index_path, args.output, store,
                                  run_id=os.environ["GITHUB_RUN_ID"] + "-" + os.environ["GITHUB_RUN_ATTEMPT"], checked_by=identity)

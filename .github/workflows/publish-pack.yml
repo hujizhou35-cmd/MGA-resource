@@ -22,6 +22,10 @@ on:
       bundle_sha256:
         description: Expected bundle index SHA-256 (restore only)
         type: string
+      evidence_tag:
+        description: Separate Release for the small successful restore receipt
+        type: string
+        default: acceptance-20261107
 permissions:
   contents: write
 concurrency:
@@ -44,6 +48,7 @@ jobs:
           MANIFEST_SHA: ${{ inputs.manifest_sha256 }}
           BUNDLE_URL: ${{ inputs.bundle_url }}
           BUNDLE_SHA: ${{ inputs.bundle_sha256 }}
+          EVIDENCE_TAG: ${{ inputs.evidence_tag }}
         run: |
           python - <<'PY'
           import os, re
@@ -54,6 +59,8 @@ jobs:
           digest = os.environ['MANIFEST_SHA' if mode == 'build' else 'BUNDLE_SHA']
           if not re.fullmatch(r'[0-9a-f]{64}', digest):
               raise SystemExit('SHA-256 must be 64 lowercase hexadecimal characters.')
+          if mode == 'restore' and (not os.environ.get('EVIDENCE_TAG') or os.environ['EVIDENCE_TAG'].startswith('collection-')):
+              raise SystemExit('Restore proof must use a separate evidence Release, not a collection Release.')
           PY
       - name: Run synthetic recovery tests
         run: |
@@ -68,11 +75,12 @@ jobs:
           MANIFEST_SHA: ${{ inputs.manifest_sha256 }}
           BUNDLE_URL: ${{ inputs.bundle_url }}
           BUNDLE_SHA: ${{ inputs.bundle_sha256 }}
+          EVIDENCE_TAG: ${{ inputs.evidence_tag }}
         run: |
           if [ "$OPERATION" = build ]; then
             python scripts/build_publish_pack.py build --manifest-url "$MANIFEST_URL" --manifest-sha256 "$MANIFEST_SHA" --version "$VERSION" --publish
           else
-            python scripts/build_publish_pack.py restore --bundle-url "$BUNDLE_URL" --bundle-sha256 "$BUNDLE_SHA"
+            python scripts/build_publish_pack.py restore --bundle-url "$BUNDLE_URL" --bundle-sha256 "$BUNDLE_SHA" --publish-evidence --evidence-tag "$EVIDENCE_TAG"
           fi
       - name: Preserve small recovery proofs
         if: always()
@@ -83,7 +91,9 @@ jobs:
           retention-days: 7
           path: |
             build/publish-pack/*.bundle.json
+            build/publish-pack/*.build_evidence.json
             build/publish-pack/*.restore_evidence.json
             build/publish-pack/*.receipt.json
             build/restored-publication/bundle.json
             build/restored-publication/restore_evidence.json
+            build/restored-publication/restore_receipt.json

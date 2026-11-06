@@ -80,3 +80,29 @@ def test_paired_labels_remain_while_nameplate_is_absent(tmp_path):
     args["catalog"][0]["files"][0]["text_content"]={"status":"unknown"}
     result=audit_module.audit(**args)
     assert "paired_commons.observed_text_preserved" in result["failed_checks"]
+
+
+def test_scope_audit_requires_independent_remote_reads_not_build_or_legacy_flags(tmp_path):
+    from test_publish_pack import restored_fixture, fixture as pack_fixture, pack
+    bundle, receipt, _, _, evidence = restored_fixture(tmp_path)
+    args = fixture(tmp_path)
+    args.update(bundle=bundle, bundle_sha256=receipt["bundle_sha256"], restore=evidence,
+                manifest=pack_fixture()[0], manifest_sha256=bundle["publish_manifest"]["sha256"])
+    def status():
+        result = audit_module.audit(**args)
+        return next(row["status"] for row in result["checks"] if row["check"] == "publish_bundle.independent_restore")
+    assert status() == "passed"
+    for change in ({"schema_version": 1}, {"operation": "build_verification"}):
+        args["restore"] = {**evidence, **change, "passed": True}
+        assert status() == "pending"
+    args["restore"] = copy.deepcopy(evidence)
+    args["restore"]["remote_reads"]["packs"][0]["sha256"] = "0" * 64
+    assert status() == "failed"
+    args["restore"] = copy.deepcopy(evidence)
+    args["restore"]["restore_run"] = evidence["build_run"]
+    assert status() == "failed"
+    args["restore"] = evidence
+    args["bundle"] = copy.deepcopy(bundle)
+    args["bundle"].pop("build_run")
+    args["bundle_sha256"] = pack.sha(pack.json_bytes(args["bundle"]))
+    assert status() == "failed"

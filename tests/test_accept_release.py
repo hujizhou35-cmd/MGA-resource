@@ -12,10 +12,47 @@ ROOT = Path(__file__).resolve().parents[1]
 spec = importlib.util.spec_from_file_location("accept_release", ROOT / "scripts/accept_release.py")
 accept = importlib.util.module_from_spec(spec)
 spec.loader.exec_module(accept)
+import build_publish_pack as pack
 
 
 def h(value):
     return hashlib.sha256(value.encode()).hexdigest()
+
+
+def bind_synthetic_restore(args, manifest):
+    """Fabricated metadata for gate unit tests only, never real recovery proof."""
+    repository, version = "fixture/library", "synthetic"
+    tag = "publish-" + version
+    def run(run_id):
+        return {"repository": repository, "run_id": run_id, "run_attempt": "1", "commit_sha": "a" * 40,
+                "workflow_ref": repository + "/.github/workflows/publish-pack.yml@refs/heads/main",
+                "url": f"https://github.com/{repository}/actions/runs/{run_id}"}
+    objects, _ = pack.plan_manifest(manifest)
+    members = list(objects.values())
+    manifest_data = pack.json_bytes(manifest)
+    index = {"schema_version": 1, "bundle_type": "multipart-index", "version": version,
+             "repository": repository, "release_tag": tag, "collection_release": manifest["collection_release"],
+             "published_subset_only": True, "build_run": run("1"), "artwork_object_count": len(members),
+             "static_limits": {"max_files_per_pack": pack.STATIC_COUNT_LIMIT, "file_size_strictly_less_than": pack.STATIC_FILE_LIMIT},
+             "publish_manifest": {"name": version + ".publish_manifest.json",
+                 "url": pack.release_url(repository, tag, version + ".publish_manifest.json"),
+                 "sha256": pack.sha(manifest_data), "size_bytes": len(manifest_data)},
+             "packs": [{"name": "synthetic.tar.gz", "url": pack.release_url(repository, tag, "synthetic.tar.gz"),
+                        "sha256": h("synthetic packed bytes"), "size_bytes": 123, "kind": "static",
+                        "members": members, "member_count": len(members),
+                        "uncompressed_bytes": sum(row["size_bytes"] for row in members)}]}
+    bundle_sha = pack.sha(pack.json_bytes(index))
+    bundle_url = pack.release_url(repository, tag, version + ".bundle.json")
+    evidence = pack.verification_binding(index, bundle_sha, bundle_url, checked_by="Synthetic restore test")
+    part = index["packs"][0]
+    evidence.update(operation="independent_remote_restore", passed=True, restore_run=run("2"),
+        remote_reads={"index": {"url": bundle_url, "sha256": bundle_sha, "size_bytes": len(pack.json_bytes(index))},
+                      "manifest": {key: index["publish_manifest"][key] for key in ("url", "sha256", "size_bytes")},
+                      "packs": [{"url": part["url"], "sha256": part["sha256"], "size_bytes": part["size_bytes"],
+                                 "selected_member_count": len(members), "complete_stream_verified": True,
+                                 "exact_member_set_verified": True, "member_sha256": sorted(objects)}]})
+    args.update(bundle_index=index, restore_evidence=evidence)
+    args["hashes"]["bundle_index_sha256"] = bundle_sha
 
 
 def fixture():
@@ -77,11 +114,7 @@ def fixture():
                                "assembly_prefix": "assembly-1-1"}}
     manifest, report = accept.evaluate_release(**args)
     judgments["bindings"] = report["required_bindings"]
-    args["restore_evidence"] = {"publish_manifest_sha256": report["publish_manifest_sha256"],
-        "passed": True, "published_subset_only": True, "checked_by": "Synthetic restore test",
-        "checked_at": "2026-11-06", "bundle_url": archive, "bundle_sha256": h("bundle"),
-        "member_sha256": sorted({entry["sha256"] for entry in manifest["files"]} |
-                               {entry["preview"]["sha256"] for entry in manifest["files"]})}
+    bind_synthetic_restore(args, manifest)
     proof = {"uri": "https://example.invalid/synthetic-evidence.json", "sha256": h("synthetic evidence")}
     real_files = [{"original_sha256": row["files"][0]["sha256"],
                    "preview_sha256": row["files"][0]["preview"]["sha256"],
@@ -303,10 +336,26 @@ def test_legacy_native_claim_matches_only_exact_original_and_environment():
 
 def test_restored_pack_must_not_include_quarantined_or_unlisted_bytes():
     args = fixture()
-    args["restore_evidence"]["member_sha256"].append(h("unlisted bad file"))
+    args["restore_evidence"]["artwork_member_sha256"].append(h("unlisted bad file"))
     _, report = accept.evaluate_release(**args)
     assert not report["restore_passed"]
     assert "restore.pending" in codes(report)
+
+
+def test_legacy_build_only_or_incomplete_restore_proofs_never_pass_acceptance():
+    for mutation in ("legacy", "build_only", "same_run", "no_index", "no_index_hash", "no_reads", "wrong_pack"):
+        args = fixture()
+        evidence = args["restore_evidence"]
+        if mutation == "legacy": evidence["schema_version"] = 1
+        elif mutation == "build_only": evidence["operation"] = "build_verification"
+        elif mutation == "same_run": evidence["restore_run"] = copy.deepcopy(evidence["build_run"])
+        elif mutation == "no_index": args.pop("bundle_index")
+        elif mutation == "no_index_hash": args["hashes"].pop("bundle_index_sha256")
+        elif mutation == "no_reads": evidence.pop("remote_reads")
+        else: evidence["remote_reads"]["packs"][0]["sha256"] = "0" * 64
+        evidence["passed"] = True
+        _, report = accept.evaluate_release(**args)
+        assert not report["restore_passed"] and "restore.pending" in codes(report), mutation
 
 
 def test_candidate_cannot_invent_family_or_real_media_type():
@@ -358,7 +407,7 @@ def test_missing_optional_variant_keeps_verified_original_and_exposes_gap():
     manifest, report = accept.evaluate_release(**args)
     args["judgments"]["bindings"] = report["required_bindings"]
     args["decisions"]["publish_manifest"]["sha256"] = report["publish_manifest_sha256"]
-    args["restore_evidence"]["publish_manifest_sha256"] = report["publish_manifest_sha256"]
+    bind_synthetic_restore(args, manifest)
     manifest, report = accept.evaluate_release(**args)
     assert report["acceptance_passed"], report["missing"]
     assert len(manifest["files"]) == 60
@@ -374,7 +423,7 @@ def test_missing_optional_variant_keeps_verified_original_and_exposes_gap():
     manifest, report = accept.evaluate_release(**args)
     args["judgments"]["bindings"] = report["required_bindings"]
     args["decisions"]["publish_manifest"]["sha256"] = report["publish_manifest_sha256"]
-    args["restore_evidence"]["publish_manifest_sha256"] = report["publish_manifest_sha256"]
+    bind_synthetic_restore(args, manifest)
     manifest, report = accept.evaluate_release(**args)
     assert report["acceptance_passed"], report["missing"]
     selected["items"][0]["upstream_archive_member"] = "good.svg"

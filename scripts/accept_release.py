@@ -15,9 +15,11 @@ import sys
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
+sys.path.insert(0, str(ROOT / "scripts"))
 from mga_resources.catalog import TAXONOMY, redistribution_status
 from mga_resources.supplemental_acceptance import evaluate_supplement
 from mga_resources.scope_policy import load_scope_policy, evaluate_public_scope
+from build_publish_pack import validate_remote_restore
 
 FROZEN_BENCHMARK_SHA256 = "ce0282afeb4afbcee8fdef1c6f937844ef569cabf16ba7909e22bf86b1096e92"
 SHA = re.compile(r"^[0-9a-f]{64}$")
@@ -60,7 +62,7 @@ def read_json(path):
 def evaluate_release(catalog, assembly, benchmark, mapping, judgments, *, hashes,
                      registry, decisions=None, selection_manifests=None,
                      source_reviews=(), native_evidence=None, review_summary=None,
-                     restore_evidence=None, supplemental_evidence=None, scope_policy=None):
+                     restore_evidence=None, bundle_index=None, supplemental_evidence=None, scope_policy=None):
     """Return (candidate publication manifest, check report); never infer review."""
     missing = []
     def need(condition, code, detail):
@@ -230,7 +232,10 @@ def evaluate_release(catalog, assembly, benchmark, mapping, judgments, *, hashes
                 "files": [manifest_files[key] for key in sorted(manifest_files)]}
     manifest_sha = hashlib.sha256(json_bytes(manifest)).hexdigest()
     need(bool(manifest_files), "files.empty", "The publication subset contains no eligible artwork.")
-    required_bindings = {**hashes, "publish_manifest_sha256": manifest_sha}
+    # Recovery happens after visual/source review; its index is not a new
+    # scientific-review input and must not create a circular binding.
+    required_bindings = {**{key: value for key, value in hashes.items() if key != "bundle_index_sha256"},
+                         "publish_manifest_sha256": manifest_sha}
     for key, value in required_bindings.items():
         need(judgments.get("bindings", {}).get(key) == value, "judgments.binding", f"Judgments must bind {key}={value}.")
     if decisions and valid_decisions:
@@ -408,14 +413,14 @@ def evaluate_release(catalog, assembly, benchmark, mapping, judgments, *, hashes
 
     # A clean publication recovery pack is separately attested. A collection
     # checkpoint containing quarantined files is not automatically a public pack.
-    expected_members = set(manifest_files) | {item["preview"]["sha256"] for item in manifest_files.values()}
-    restored = restore_evidence.get("artwork_member_sha256", restore_evidence.get("member_sha256"))
-    restore_ok = (restore_evidence.get("publish_manifest_sha256") == manifest_sha
-                  and restore_evidence.get("passed") is True and restore_evidence.get("published_subset_only") is True
-                  and identity(restore_evidence.get("checked_by")) and nonempty(restore_evidence.get("checked_at"))
-                  and nonempty(restore_evidence.get("bundle_url")) and sha(restore_evidence.get("bundle_sha256"))
-                  and isinstance(restored, list) and set(restored) == expected_members)
-    need(restore_ok, "restore.pending", "Provide a hash-bound successful restore of a clean publication pack containing exactly the selected original/preview hashes.")
+    restore_ok = False
+    restore_detail = ""
+    try:
+        restore_ok = validate_remote_restore(restore_evidence, bundle_index, manifest,
+            manifest_sha256=manifest_sha, bundle_sha256=hashes.get("bundle_index_sha256"))
+    except (ValueError, KeyError, TypeError) as error:
+        restore_detail = str(error)
+    need(restore_ok, "restore.pending", "Provide the bound bundle index and a different cloud run's complete remote-read evidence. " + restore_detail)
 
     native_matches = []
     for asset in (native_evidence or {}).get("assets", []):
@@ -464,12 +469,15 @@ def main():
     parser.add_argument("--source-review", type=Path, action="append", default=[])
     parser.add_argument("--native-evidence", type=Path)
     parser.add_argument("--restore-evidence", type=Path)
+    parser.add_argument("--bundle-index", type=Path)
     parser.add_argument("--supplemental-evidence", type=Path)
     parser.add_argument("--output", type=Path, required=True)
     args = parser.parse_args()
     hashes = {key: hashlib.sha256(path.read_bytes()).hexdigest() for key, path in (
         ("assembly_report_sha256", args.assembly_report), ("catalog_sha256", args.catalog),
         ("benchmark_sha256", args.benchmark), ("mapping_sha256", args.mapping))}
+    if args.bundle_index:
+        hashes["bundle_index_sha256"] = hashlib.sha256(args.bundle_index.read_bytes()).hexdigest()
     decisions = read_json(args.decisions) if args.decisions else {}
     selections = {}
     for decision in decisions.get("decisions", []):
@@ -490,6 +498,7 @@ def main():
         native_evidence=read_json(args.native_evidence) if args.native_evidence else None,
         review_summary=read_json(args.review_summary) if args.review_summary else None,
         restore_evidence=read_json(args.restore_evidence) if args.restore_evidence else None,
+        bundle_index=read_json(args.bundle_index) if args.bundle_index else None,
         supplemental_evidence=read_json(args.supplemental_evidence) if args.supplemental_evidence else None)
     args.output.mkdir(parents=True, exist_ok=True)
     (args.output / "publish_manifest.json").write_bytes(json_bytes(manifest))
