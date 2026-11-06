@@ -80,3 +80,7 @@ Node 本机耗时不等于 Cloudflare CPU 用量。宽泛查询可能仍有大�
 v3.4 修复已观察的正常语言表达：已知分子名后的“分子”与英文 molecule 一致，lungs 作为 lung 复数，黑腹果蝇和 Drosophila melanogaster 绑定精确物种；未指定种的 Drosophila 及其他种不会满足该精确请求。这些解析修复不生成任何文件视角、状态或用途断言。
 
 v3.4.1 将 bone tissue/骨组织、cartilage tissue/软骨组织分别规范到对应对象，保留显式截面硬条件。组织/tissue 不是全局停用词：lung tissue/肺组织作为比完整肺更具体的对象，完整肺的宽泛 tissue 标签不能证明它是肺组织图，肺组织图也不自动满足完整肺对象请求。
+
+主题分类另用 `source-topic-1.0.0` 记录版本，不改变排名规则或医学硬条件。它仅接入已按原件哈希完成范围审阅的 Reactome 官方 Transporter/Compound 类，以及 SciDraw 的官方 bird 类。原始标签保持不变；`source_subject_facets` 留下来源记录、目录字段、版本及 Reactome 文件范围证据，并明确 `scientific_assertion=false`。分类在原始来源记录层完成，不从合并家族的标签集合补到其他来源。它可用于主题筛选，但不能证明对象、物种、视角、状态或动作。
+
+这次没有扩展 NIH/Togo 分类：NIH 的 Animals 类包含 Fried Egg，Togo 也存在同一条目同时标 Mammals 与 Insecta 的源数据矛盾。未分类不等于素材不可用，不能为清零而硬套类别。针对现有 109 件候选的真实元数据对照中，科学特征变化为零；正式目录及其哈希仍须由下一次装配固定。

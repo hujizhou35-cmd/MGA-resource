@@ -1,0 +1,1163 @@
+{
+  "schema_version": 1,
+  "status": "targeted_metadata_mapping_check_not_formal_relevance_acceptance",
+  "generated_at": "2026-11-06T20:19:04.448517+00:00",
+  "mapping_version": "source-topic-1.0.0",
+  "bindings": {
+    "catalog_sha256": "3e12babad36819c593147f5f2f98929904590ab2171659a898db6900530381b7",
+    "core_sha256": "8120b1ff2b47b83605c0cc5495b2aa7f12c59b740f7a44f0db376a28808e9049",
+    "catalog_module_sha256": "a4877456069de8f97776bd95b796f7fa7778eaf73c5c3414b2ef614135ea060a"
+  },
+  "method": "Reconstructed each of 109 existing unclassified candidates from its exact archived raw source record and already-public original-SHA-bound scope decision. Compared only new topic helper enabled/disabled; no image fetched or old catalog rewritten.",
+  "newly_classified_families": 109,
+  "source_counts": {
+    "reactome": 85,
+    "scidraw": 24
+  },
+  "file_origin_variants_compared": 109,
+  "scientific_feature_differences": 0,
+  "counterexamples": [
+    {
+      "source": "nih-bioart",
+      "source_id": "625",
+      "title": "Fried Egg",
+      "source_tags": [
+        "Animals",
+        "Birds",
+        "Food",
+        "Shaded",
+        "Vector",
+        "chicken",
+        "egg",
+        "fried"
+      ],
+      "upstream_category": [
+        "Bioart Category",
+        "Image Style",
+        "Image Type",
+        "Animals"
+      ],
+      "taxonomy_after": [],
+      "no_new_animal_topic": true
+    },
+    {
+      "source": "togo",
+      "source_id": "2111",
+      "title": "Harmonia axyridis (polymorphic form)",
+      "source_tags": [
+        "Organisms",
+        "Mammals",
+        "Vertebrates",
+        "Comparative anatomy",
+        "Insecta",
+        "Coleoptera",
+        "Harmonia axyridis"
+      ],
+      "upstream_category": null,
+      "taxonomy_after": [],
+      "no_new_animal_topic": true
+    }
+  ],
+  "checks": [
+    {
+      "source": "reactome",
+      "source_id": "R-ICO-014122",
+      "file_sha256": "90b063b6b6ee71bd90233c79c8afacf6892686f48c2a65ee04564035a77e809c",
+      "topic_before": [],
+      "topic_after": [
+        "molecules"
+      ],
+      "scientific_feature_difference": false
+    },
+    {
+      "source": "reactome",
+      "source_id": "R-ICO-014853",
+      "file_sha256": "1635a03e775d9a09ae01db83ac5881009da58c1ad92c3e050d15ad722c37cfac",
+      "topic_before": [],
+      "topic_after": [
+        "molecules"
+      ],
+      "scientific_feature_difference": false
+    },
+    {
+      "source": "reactome",
+      "source_id": "R-ICO-014860",
+      "file_sha256": "f5bf578e07f2824e7d42493fa1d97b9c05a7efd1e052ac8216248d1e9ac16a21",
+      "topic_before": [],
+      "topic_after": [
+        "molecules"
+      ],
+      "scientific_feature_difference": false
+    },
+    {
+      "source": "reactome",
+      "source_id": "R-ICO-012419",
+      "file_sha256": "dbc9dcd36c6daf9b5a3f06e67147fbdbc0da9d1f222462f97f224c70e3c2b593",
+      "topic_before": [],
+      "topic_after": [
+        "molecules"
+      ],
+      "scientific_feature_difference": false
+    },
+    {
+      "source": "reactome",
+      "source_id": "R-ICO-014776",
+      "file_sha256": "7610502f57643d3575e52dc3cc129abde7d7950d219c300fb56cbc8f7154d2da",
+      "topic_before": [],
+      "topic_after": [
+        "molecules"
+      ],
+      "scientific_feature_difference": false
+    },
+    {
+      "source": "reactome",
+      "source_id": "R-ICO-014140",
+      "file_sha256": "0fb208eb267393071a665f43c5e5916968b27eece1c8832bb3a7f904413b9d85",
+      "topic_before": [],
+      "topic_after": [
+        "molecules"
+      ],
+      "scientific_feature_difference": false
+    },
+    {
+      "source": "reactome",
+      "source_id": "R-ICO-013251",
+      "file_sha256": "487b9e34ec32c8a528cfdd54e89d9df95a7af894a11413cf6b0091504952d0fc",
+      "topic_before": [],
+      "topic_after": [
+        "molecules"
+      ],
+      "scientific_feature_difference": false
+    },
+    {
+      "source": "reactome",
+      "source_id": "R-ICO-012583",
+      "file_sha256": "aab6ee94d80837fa79b927c4c143878fedcc95b1894a4bc994bf768bc044a325",
+      "topic_before": [],
+      "topic_after": [
+        "molecules"
+      ],
+      "scientific_feature_difference": false
+    },
+    {
+      "source": "reactome",
+      "source_id": "R-ICO-012816",
+      "file_sha256": "043c122759e6e5f1507c6328468dfedecb17da444e01b3c3609af598042b2c50",
+      "topic_before": [],
+      "topic_after": [
+        "molecules"
+      ],
+      "scientific_feature_difference": false
+    },
+    {
+      "source": "reactome",
+      "source_id": "R-ICO-012621",
+      "file_sha256": "5c362fecbde0b37b519c6e79aa64653e8ed041b16f703d4253a4377fdb0abdc7",
+      "topic_before": [],
+      "topic_after": [
+        "molecules"
+      ],
+      "scientific_feature_difference": false
+    },
+    {
+      "source": "reactome",
+      "source_id": "R-ICO-013579",
+      "file_sha256": "629d2a6035ad326c3e379ecd6a9db8769c529c90a9e75e49d5cef680f939c7af",
+      "topic_before": [],
+      "topic_after": [
+        "molecules"
+      ],
+      "scientific_feature_difference": false
+    },
+    {
+      "source": "reactome",
+      "source_id": "R-ICO-012731",
+      "file_sha256": "a819e23f287bd8a8c6cd6d4afad211729cdbc48deee712c9a4ba333458fb60f2",
+      "topic_before": [],
+      "topic_after": [
+        "molecules"
+      ],
+      "scientific_feature_difference": false
+    },
+    {
+      "source": "reactome",
+      "source_id": "R-ICO-014022",
+      "file_sha256": "5cba998a4231ab44445e23c458476382f03f051cc91ac3419a418b659abcbcfa",
+      "topic_before": [],
+      "topic_after": [
+        "molecules"
+      ],
+      "scientific_feature_difference": false
+    },
+    {
+      "source": "reactome",
+      "source_id": "R-ICO-013582",
+      "file_sha256": "8e654ee1a0c620c148664d00976955041826d8526c763b8884399fc88cdd3a20",
+      "topic_before": [],
+      "topic_after": [
+        "molecules"
+      ],
+      "scientific_feature_difference": false
+    },
+    {
+      "source": "reactome",
+      "source_id": "R-ICO-012445",
+      "file_sha256": "552057c09726ae0e2c6544426b959589f91ce5145cca340788fca60b860a1919",
+      "topic_before": [],
+      "topic_after": [
+        "molecules"
+      ],
+      "scientific_feature_difference": false
+    },
+    {
+      "source": "reactome",
+      "source_id": "R-ICO-012942",
+      "file_sha256": "507cba87e5358e9b7484d74e59cec53c05416c972f675d677c49530fb4b10d67",
+      "topic_before": [],
+      "topic_after": [
+        "molecules"
+      ],
+      "scientific_feature_difference": false
+    },
+    {
+      "source": "reactome",
+      "source_id": "R-ICO-013839",
+      "file_sha256": "b4e568ca6e0f831f7daca3e5d5e980175cd1374e952f4e381c1a24294f1e5dbb",
+      "topic_before": [],
+      "topic_after": [
+        "molecules"
+      ],
+      "scientific_feature_difference": false
+    },
+    {
+      "source": "reactome",
+      "source_id": "R-ICO-014806",
+      "file_sha256": "573025a9730e4bedaa28c1090d1f6dca4384977d83c5eee94bde44e0785525d9",
+      "topic_before": [],
+      "topic_after": [
+        "molecules"
+      ],
+      "scientific_feature_difference": false
+    },
+    {
+      "source": "reactome",
+      "source_id": "R-ICO-013458",
+      "file_sha256": "34bb3cebcd4339e749bc211b8cd93b3c8c2677dce15e1404c3eb2d6a3029b4c8",
+      "topic_before": [],
+      "topic_after": [
+        "molecules"
+      ],
+      "scientific_feature_difference": false
+    },
+    {
+      "source": "reactome",
+      "source_id": "R-ICO-013419",
+      "file_sha256": "4cc1a36e70ff0c05fa34e89c3249e99f8ce51e5b6ccf6518670f7f8f63c5f7ea",
+      "topic_before": [],
+      "topic_after": [
+        "molecules"
+      ],
+      "scientific_feature_difference": false
+    },
+    {
+      "source": "reactome",
+      "source_id": "R-ICO-014115",
+      "file_sha256": "21cdc6f0934b4c525a674cd95f113bafbd9997f66230fbcf4b6da6b8f7c7ade9",
+      "topic_before": [],
+      "topic_after": [
+        "molecules"
+      ],
+      "scientific_feature_difference": false
+    },
+    {
+      "source": "reactome",
+      "source_id": "R-ICO-012967",
+      "file_sha256": "3307240f12b579c1e650382caf5005d5582d25cd7ed54483bb8ea9410ecc4e13",
+      "topic_before": [],
+      "topic_after": [
+        "molecules"
+      ],
+      "scientific_feature_difference": false
+    },
+    {
+      "source": "reactome",
+      "source_id": "R-ICO-013768",
+      "file_sha256": "4bd198e18c24257fc9785014352ea9bb3d41346eb430a17cdd7e6dd62ea5ac6e",
+      "topic_before": [],
+      "topic_after": [
+        "molecules"
+      ],
+      "scientific_feature_difference": false
+    },
+    {
+      "source": "reactome",
+      "source_id": "R-ICO-013511",
+      "file_sha256": "c199060bfc12e2a169f80a0bbd3c2305845720b5b088788762a7631423f024dc",
+      "topic_before": [],
+      "topic_after": [
+        "molecules"
+      ],
+      "scientific_feature_difference": false
+    },
+    {
+      "source": "reactome",
+      "source_id": "R-ICO-013543",
+      "file_sha256": "5f892ef3a8f42312f2967f8b63406d3410b66b1d3d7d90dcd1ac448ee5b7932a",
+      "topic_before": [],
+      "topic_after": [
+        "molecules"
+      ],
+      "scientific_feature_difference": false
+    },
+    {
+      "source": "reactome",
+      "source_id": "R-ICO-013837",
+      "file_sha256": "792e35e50f8e6dcfbf2e894a6a7d6bc9a83b3092ce5d32a4618f2d273ce11289",
+      "topic_before": [],
+      "topic_after": [
+        "molecules"
+      ],
+      "scientific_feature_difference": false
+    },
+    {
+      "source": "reactome",
+      "source_id": "R-ICO-014831",
+      "file_sha256": "46a0919d1e67da870539a3167ec8316bf52cae1681a24941331c04ae723ea7bf",
+      "topic_before": [],
+      "topic_after": [
+        "molecules"
+      ],
+      "scientific_feature_difference": false
+    },
+    {
+      "source": "reactome",
+      "source_id": "R-ICO-014099",
+      "file_sha256": "6a9eab7f44c25b338de49f853d0d44aee70f5e36c6ef3ced1e9d1c0338fbaa12",
+      "topic_before": [],
+      "topic_after": [
+        "molecules"
+      ],
+      "scientific_feature_difference": false
+    },
+    {
+      "source": "reactome",
+      "source_id": "R-ICO-013949",
+      "file_sha256": "5229e2610796afed3ff273d73c42f26d08ffeb56d098b2424d66954c9861fe57",
+      "topic_before": [],
+      "topic_after": [
+        "molecules"
+      ],
+      "scientific_feature_difference": false
+    },
+    {
+      "source": "reactome",
+      "source_id": "R-ICO-014120",
+      "file_sha256": "106847f96edf7b3f38254bd65e303e5faf44ceab6a9935762e546f20097abf8a",
+      "topic_before": [],
+      "topic_after": [
+        "molecules"
+      ],
+      "scientific_feature_difference": false
+    },
+    {
+      "source": "reactome",
+      "source_id": "R-ICO-013821",
+      "file_sha256": "ef9726cd7887071dee3c8af042abe66d585be0626379d913c54cd0fd68da5156",
+      "topic_before": [],
+      "topic_after": [
+        "molecules"
+      ],
+      "scientific_feature_difference": false
+    },
+    {
+      "source": "reactome",
+      "source_id": "R-ICO-013547",
+      "file_sha256": "6ef7ab87e25e2e22f0819526fb718b50096452b5dddc1de842c511ed3fc601c5",
+      "topic_before": [],
+      "topic_after": [
+        "molecules"
+      ],
+      "scientific_feature_difference": false
+    },
+    {
+      "source": "reactome",
+      "source_id": "R-ICO-014085",
+      "file_sha256": "5da958b71adb92ff04a561cd2cb6beda266e1a14a10b3275b165ac2f8fe15ca0",
+      "topic_before": [],
+      "topic_after": [
+        "molecules"
+      ],
+      "scientific_feature_difference": false
+    },
+    {
+      "source": "reactome",
+      "source_id": "R-ICO-013580",
+      "file_sha256": "b5fe93f033eb735c1639cf851f6c35f97ec3ad120d607cf4b856d2cc675b2688",
+      "topic_before": [],
+      "topic_after": [
+        "molecules"
+      ],
+      "scientific_feature_difference": false
+    },
+    {
+      "source": "reactome",
+      "source_id": "R-ICO-014130",
+      "file_sha256": "affe01004bb7fc5359dae574c58746bae66f896028efa17fcaafcebc7997c1e7",
+      "topic_before": [],
+      "topic_after": [
+        "molecules"
+      ],
+      "scientific_feature_difference": false
+    },
+    {
+      "source": "reactome",
+      "source_id": "R-ICO-012626",
+      "file_sha256": "959fb1a77f9006e4dff6ace87e0b151deee3e27205461f805c11170e9d4f3940",
+      "topic_before": [],
+      "topic_after": [
+        "molecules"
+      ],
+      "scientific_feature_difference": false
+    },
+    {
+      "source": "reactome",
+      "source_id": "R-ICO-013764",
+      "file_sha256": "cff2da65a0de9cb66a0032c5123c7aa105ca50baa138a2ffc78b6476d125e036",
+      "topic_before": [],
+      "topic_after": [
+        "molecules"
+      ],
+      "scientific_feature_difference": false
+    },
+    {
+      "source": "reactome",
+      "source_id": "R-ICO-014432",
+      "file_sha256": "29bc8bff7837c1b201d968a0ab72421cc2c68c74bdf6c448896554fb58a96806",
+      "topic_before": [],
+      "topic_after": [
+        "molecules"
+      ],
+      "scientific_feature_difference": false
+    },
+    {
+      "source": "reactome",
+      "source_id": "R-ICO-013951",
+      "file_sha256": "b972b6551d02749593edd64df7744d9157ea18cfee947e1357a0e8cb7386f964",
+      "topic_before": [],
+      "topic_after": [
+        "molecules"
+      ],
+      "scientific_feature_difference": false
+    },
+    {
+      "source": "reactome",
+      "source_id": "R-ICO-013565",
+      "file_sha256": "180df30a04294688c984bf3ea3897d28defaae2b74ed17389909f1f485ee7074",
+      "topic_before": [],
+      "topic_after": [
+        "molecules"
+      ],
+      "scientific_feature_difference": false
+    },
+    {
+      "source": "reactome",
+      "source_id": "R-ICO-013564",
+      "file_sha256": "01df5c57d8ab1a4fb6cce6c258e09a55d09ba13dc4ff14125fe4d69418c367cd",
+      "topic_before": [],
+      "topic_after": [
+        "molecules"
+      ],
+      "scientific_feature_difference": false
+    },
+    {
+      "source": "reactome",
+      "source_id": "R-ICO-014102",
+      "file_sha256": "b172a17157c906121803d1985cd08f76b48fd4d68339e9187f83dd95fb8388a9",
+      "topic_before": [],
+      "topic_after": [
+        "molecules"
+      ],
+      "scientific_feature_difference": false
+    },
+    {
+      "source": "reactome",
+      "source_id": "R-ICO-012605",
+      "file_sha256": "9da2d6edb00b2784c55327ab308f8cf8d3ccb6b57bb489c221575795cde5126f",
+      "topic_before": [],
+      "topic_after": [
+        "molecules"
+      ],
+      "scientific_feature_difference": false
+    },
+    {
+      "source": "reactome",
+      "source_id": "R-ICO-012372",
+      "file_sha256": "4fcaf7a1519785787599c1f8f3c4f37c8bf5cf6fc3b544cae3280d7ac8606719",
+      "topic_before": [],
+      "topic_after": [
+        "molecules"
+      ],
+      "scientific_feature_difference": false
+    },
+    {
+      "source": "reactome",
+      "source_id": "R-ICO-012431",
+      "file_sha256": "c6002d0ce3e4ebbc7cd9fa1c3d954f459f7b5483c0289e578f8406f4564932b4",
+      "topic_before": [],
+      "topic_after": [
+        "molecules"
+      ],
+      "scientific_feature_difference": false
+    },
+    {
+      "source": "reactome",
+      "source_id": "R-ICO-013305",
+      "file_sha256": "6b9dfbc0a1266d0d12b628e7c183c72c8dee7782fb3c6523c61a56b573add8c2",
+      "topic_before": [],
+      "topic_after": [
+        "molecules"
+      ],
+      "scientific_feature_difference": false
+    },
+    {
+      "source": "reactome",
+      "source_id": "R-ICO-013843",
+      "file_sha256": "3462d2bf37485c75a47c9cabf16d52308bb4ca4afee5391434fead2160ec0427",
+      "topic_before": [],
+      "topic_after": [
+        "molecules"
+      ],
+      "scientific_feature_difference": false
+    },
+    {
+      "source": "reactome",
+      "source_id": "R-ICO-014114",
+      "file_sha256": "ea53ebdace953d4373c6b45526800018617bbe9035d810d10c7b0be100a35e98",
+      "topic_before": [],
+      "topic_after": [
+        "molecules"
+      ],
+      "scientific_feature_difference": false
+    },
+    {
+      "source": "reactome",
+      "source_id": "R-ICO-013934",
+      "file_sha256": "21eab56ffdaa5b050c5e10bb7db84e518436f11e7b38c88000aa94f06b96b4c6",
+      "topic_before": [],
+      "topic_after": [
+        "molecules"
+      ],
+      "scientific_feature_difference": false
+    },
+    {
+      "source": "reactome",
+      "source_id": "R-ICO-012607",
+      "file_sha256": "14b8a2ee5dc16cc8bfe905381e2e3871c27116d5e5767531b13f550b8c5f1f33",
+      "topic_before": [],
+      "topic_after": [
+        "molecules"
+      ],
+      "scientific_feature_difference": false
+    },
+    {
+      "source": "reactome",
+      "source_id": "R-ICO-013212",
+      "file_sha256": "9b72c5105112189e0c5c08bc77e840cac3f5cbb9acf14ad001bf1ba1ff8e967a",
+      "topic_before": [],
+      "topic_after": [
+        "molecules"
+      ],
+      "scientific_feature_difference": false
+    },
+    {
+      "source": "reactome",
+      "source_id": "R-ICO-013043",
+      "file_sha256": "8fd10373108b3c7953dee94b2249b744b9970c9406345493928ae9936ca55f9e",
+      "topic_before": [],
+      "topic_after": [
+        "molecules"
+      ],
+      "scientific_feature_difference": false
+    },
+    {
+      "source": "reactome",
+      "source_id": "R-ICO-013410",
+      "file_sha256": "0f4d284e0ac4e6450615735c25be9c074f864d413e3597f4c9356b5ae1b5ece6",
+      "topic_before": [],
+      "topic_after": [
+        "molecules"
+      ],
+      "scientific_feature_difference": false
+    },
+    {
+      "source": "reactome",
+      "source_id": "R-ICO-014016",
+      "file_sha256": "e4cea898da3a3a0729985c4e437a8de0e112d4be81e27e9573bb8caf70c14892",
+      "topic_before": [],
+      "topic_after": [
+        "molecules"
+      ],
+      "scientific_feature_difference": false
+    },
+    {
+      "source": "reactome",
+      "source_id": "R-ICO-014601",
+      "file_sha256": "2f98c9a3a8d6148197101fb213a0e887547c8af06eb456b2e68e870fb019cd80",
+      "topic_before": [],
+      "topic_after": [
+        "molecules"
+      ],
+      "scientific_feature_difference": false
+    },
+    {
+      "source": "reactome",
+      "source_id": "R-ICO-014195",
+      "file_sha256": "1b2c7a2c8bbff7d1c6cbcd10f80f2d6bc85dbabc00eb364a1b7fe8abe86c9720",
+      "topic_before": [],
+      "topic_after": [
+        "molecules"
+      ],
+      "scientific_feature_difference": false
+    },
+    {
+      "source": "reactome",
+      "source_id": "R-ICO-014090",
+      "file_sha256": "c24119ae5e5078763332514dbea7c41775082c26b18949cab594b46bf7362710",
+      "topic_before": [],
+      "topic_after": [
+        "molecules"
+      ],
+      "scientific_feature_difference": false
+    },
+    {
+      "source": "reactome",
+      "source_id": "R-ICO-012914",
+      "file_sha256": "f5c77aaf255fabb490920613059a48a9135fe7cf4c93aeabe51f655b2f1b23d8",
+      "topic_before": [],
+      "topic_after": [
+        "molecules"
+      ],
+      "scientific_feature_difference": false
+    },
+    {
+      "source": "reactome",
+      "source_id": "R-ICO-013058",
+      "file_sha256": "5ad0c90bcb91762a5e6fb3c23708e769bd33cca623abada0a68cef53154e6a34",
+      "topic_before": [],
+      "topic_after": [
+        "molecules"
+      ],
+      "scientific_feature_difference": false
+    },
+    {
+      "source": "reactome",
+      "source_id": "R-ICO-013991",
+      "file_sha256": "64d34e16fa76232f9061b4bbbcceebb6bb200a527b26b64f24aa5d013684c1ad",
+      "topic_before": [],
+      "topic_after": [
+        "molecules"
+      ],
+      "scientific_feature_difference": false
+    },
+    {
+      "source": "reactome",
+      "source_id": "R-ICO-014131",
+      "file_sha256": "b115e79f0f352d67576b28bbf32e888dfc6607654c2302829936cca99333fb6c",
+      "topic_before": [],
+      "topic_after": [
+        "molecules"
+      ],
+      "scientific_feature_difference": false
+    },
+    {
+      "source": "reactome",
+      "source_id": "R-ICO-012599",
+      "file_sha256": "dc86c4d161ac1efeaaeebdd0d22e51599129dcc88d0a818365784aad04c541e5",
+      "topic_before": [],
+      "topic_after": [
+        "molecules"
+      ],
+      "scientific_feature_difference": false
+    },
+    {
+      "source": "reactome",
+      "source_id": "R-ICO-013801",
+      "file_sha256": "94877fcbf5d6a08ab13e9a00e9a49f33dc2ea0ea8cd30eb3e48d21467209cc29",
+      "topic_before": [],
+      "topic_after": [
+        "molecules"
+      ],
+      "scientific_feature_difference": false
+    },
+    {
+      "source": "reactome",
+      "source_id": "R-ICO-014116",
+      "file_sha256": "fa462ed483a34ad4c70b54f01a073ba653b76319f8d5675f02b47c7be8698a2f",
+      "topic_before": [],
+      "topic_after": [
+        "molecules"
+      ],
+      "scientific_feature_difference": false
+    },
+    {
+      "source": "reactome",
+      "source_id": "R-ICO-014051",
+      "file_sha256": "3d0946c537e59b7622a6435b2ec7bd716569362596261f267f58b8bdc0d1550a",
+      "topic_before": [],
+      "topic_after": [
+        "molecules"
+      ],
+      "scientific_feature_difference": false
+    },
+    {
+      "source": "reactome",
+      "source_id": "R-ICO-013085",
+      "file_sha256": "68f8137906d61bd13c4329267c8c8c95b0d2e040515d34df4924827fe184296b",
+      "topic_before": [],
+      "topic_after": [
+        "molecules"
+      ],
+      "scientific_feature_difference": false
+    },
+    {
+      "source": "reactome",
+      "source_id": "R-ICO-012924",
+      "file_sha256": "d7dee06f7d8a22ef000cc9ceb0a1fc0b215316611ecd594af1447f2be1348eab",
+      "topic_before": [],
+      "topic_after": [
+        "molecules"
+      ],
+      "scientific_feature_difference": false
+    },
+    {
+      "source": "reactome",
+      "source_id": "R-ICO-014168",
+      "file_sha256": "a5849e31018d3d741f6bb7df913a3696826e8cb72bff44aea526960bd7151e39",
+      "topic_before": [],
+      "topic_after": [
+        "molecules"
+      ],
+      "scientific_feature_difference": false
+    },
+    {
+      "source": "reactome",
+      "source_id": "R-ICO-014133",
+      "file_sha256": "bee0cb1b14b8b36c3ee0018d42674e3652cf0a81a80e366ca7844a78ad0b6c85",
+      "topic_before": [],
+      "topic_after": [
+        "molecules"
+      ],
+      "scientific_feature_difference": false
+    },
+    {
+      "source": "reactome",
+      "source_id": "R-ICO-012907",
+      "file_sha256": "bce2d5f397057419ac5e34c9659def62d62bb18be9bcbb977e6fd7135261c614",
+      "topic_before": [],
+      "topic_after": [
+        "molecules"
+      ],
+      "scientific_feature_difference": false
+    },
+    {
+      "source": "reactome",
+      "source_id": "R-ICO-014241",
+      "file_sha256": "f7007909eb65d0ff8ac0cb539c4a2258dea3e68ca9c2b94f374e2fdc1b97915c",
+      "topic_before": [],
+      "topic_after": [
+        "molecules"
+      ],
+      "scientific_feature_difference": false
+    },
+    {
+      "source": "reactome",
+      "source_id": "R-ICO-014175",
+      "file_sha256": "e67dbb2e12e8eb764d1b42a9cb10accaefbc1809489223792b6c3f35bb4d6098",
+      "topic_before": [],
+      "topic_after": [
+        "molecules"
+      ],
+      "scientific_feature_difference": false
+    },
+    {
+      "source": "reactome",
+      "source_id": "R-ICO-013581",
+      "file_sha256": "954063117684454d36ee8113b25482812ee4a389175cba90fc9e795b6a6dcede",
+      "topic_before": [],
+      "topic_after": [
+        "molecules"
+      ],
+      "scientific_feature_difference": false
+    },
+    {
+      "source": "reactome",
+      "source_id": "R-ICO-013209",
+      "file_sha256": "a3386f613761dfcba98942a0b5eef2cfa8a7875e869d3cf0829fe2a158cc86c6",
+      "topic_before": [],
+      "topic_after": [
+        "molecules"
+      ],
+      "scientific_feature_difference": false
+    },
+    {
+      "source": "reactome",
+      "source_id": "R-ICO-012454",
+      "file_sha256": "3daac6d2351aeee296b2b58607c03d54c0928443035ed683b9adae1734b50ca2",
+      "topic_before": [],
+      "topic_after": [
+        "molecules"
+      ],
+      "scientific_feature_difference": false
+    },
+    {
+      "source": "reactome",
+      "source_id": "R-ICO-013150",
+      "file_sha256": "6651db1cdd85f00cc1bac78afae8685777b330767d11315f43af41d1a88c1e9c",
+      "topic_before": [],
+      "topic_after": [
+        "molecules"
+      ],
+      "scientific_feature_difference": false
+    },
+    {
+      "source": "reactome",
+      "source_id": "R-ICO-014245",
+      "file_sha256": "b1949a34ce4ec96059a2c7690441ecf4126fa381c111c127b6ee5d6b4dff89ac",
+      "topic_before": [],
+      "topic_after": [
+        "molecules"
+      ],
+      "scientific_feature_difference": false
+    },
+    {
+      "source": "reactome",
+      "source_id": "R-ICO-013049",
+      "file_sha256": "ca894915ba91eca34a6df8b2cc16946c1525737da0c86d30c988eefc2e2061ff",
+      "topic_before": [],
+      "topic_after": [
+        "molecules"
+      ],
+      "scientific_feature_difference": false
+    },
+    {
+      "source": "reactome",
+      "source_id": "R-ICO-012602",
+      "file_sha256": "d0d3627982c1dcbacb3f316af61abadd39a87281445c203f73318d476dff0b8a",
+      "topic_before": [],
+      "topic_after": [
+        "molecules"
+      ],
+      "scientific_feature_difference": false
+    },
+    {
+      "source": "reactome",
+      "source_id": "R-ICO-013207",
+      "file_sha256": "a28e03f7529eeb22369194ff7944995342753c87de8c8513238a806d2ba80db5",
+      "topic_before": [],
+      "topic_after": [
+        "molecules"
+      ],
+      "scientific_feature_difference": false
+    },
+    {
+      "source": "reactome",
+      "source_id": "R-ICO-014096",
+      "file_sha256": "a03bf0b0b4365ce8d40a806f94844a7cf729a8de48e121e34b2d7d6fb4a868c5",
+      "topic_before": [],
+      "topic_after": [
+        "molecules"
+      ],
+      "scientific_feature_difference": false
+    },
+    {
+      "source": "reactome",
+      "source_id": "R-ICO-012502",
+      "file_sha256": "434f7a6dac00b67c2149ba76b0c92138a26275f220b8d9f58d22eaf3267a8472",
+      "topic_before": [],
+      "topic_after": [
+        "molecules"
+      ],
+      "scientific_feature_difference": false
+    },
+    {
+      "source": "reactome",
+      "source_id": "R-ICO-014674",
+      "file_sha256": "42082204ab212eae134e9cd70d90234d6698e8cc2cb414f920bdd676edbc2ae3",
+      "topic_before": [],
+      "topic_after": [
+        "molecules"
+      ],
+      "scientific_feature_difference": false
+    },
+    {
+      "source": "reactome",
+      "source_id": "R-ICO-012381",
+      "file_sha256": "236524a6b521fae5e37a9cb60ba1ae9f772d7887b014715ef4f415e0085a1766",
+      "topic_before": [],
+      "topic_after": [
+        "molecules"
+      ],
+      "scientific_feature_difference": false
+    },
+    {
+      "source": "reactome",
+      "source_id": "R-ICO-013912",
+      "file_sha256": "ab7154ae181513fd686f3b46bf7bb678f1f278fe75bfc7aee5a7ee3616da9ac7",
+      "topic_before": [],
+      "topic_after": [
+        "molecules"
+      ],
+      "scientific_feature_difference": false
+    },
+    {
+      "source": "scidraw",
+      "source_id": "c2bc4521-30c7-4ee9-a0bf-8ee75eca7b4e",
+      "file_sha256": "098026ca99aa3b0f96cd69860189068fe37947599c02762acef0f7dbaee90375",
+      "topic_before": [],
+      "topic_after": [
+        "animals"
+      ],
+      "scientific_feature_difference": false
+    },
+    {
+      "source": "scidraw",
+      "source_id": "bcadbf17-9410-42b4-ad60-7e8c0c902666",
+      "file_sha256": "1635a6c2b30c7afabd0d7fc4a2a53cdcaa50a2b2c359f86fe05c7e31515610bf",
+      "topic_before": [],
+      "topic_after": [
+        "animals"
+      ],
+      "scientific_feature_difference": false
+    },
+    {
+      "source": "scidraw",
+      "source_id": "3bc4c095-c4b6-4952-af4a-9863de045a7b",
+      "file_sha256": "c423cd172e65dd9b783c15a793c7a7544773050a8d2a0febbbfe52e8b3f6ef0b",
+      "topic_before": [],
+      "topic_after": [
+        "animals"
+      ],
+      "scientific_feature_difference": false
+    },
+    {
+      "source": "scidraw",
+      "source_id": "152ee0f6-8f0d-4b42-8b9a-ec7500ef8e03",
+      "file_sha256": "b87b1fc899620558fd57910453e72af8a2008d25df9b34dea4c5a0e7fa49ebf7",
+      "topic_before": [],
+      "topic_after": [
+        "animals"
+      ],
+      "scientific_feature_difference": false
+    },
+    {
+      "source": "scidraw",
+      "source_id": "64da5894-5e5a-48fa-93ed-b9dc643c97f6",
+      "file_sha256": "adead9ab477ef0c2e00f55da68b0484d51cefb34e641aa39d981acfc855b68b0",
+      "topic_before": [],
+      "topic_after": [
+        "animals"
+      ],
+      "scientific_feature_difference": false
+    },
+    {
+      "source": "scidraw",
+      "source_id": "1304d350-201c-460d-998b-6c1cccbecb31",
+      "file_sha256": "749859749acc964afcc80e6c1b7418a0ffeeee7027497afb693f6fe5a588e48e",
+      "topic_before": [],
+      "topic_after": [
+        "animals"
+      ],
+      "scientific_feature_difference": false
+    },
+    {
+      "source": "scidraw",
+      "source_id": "f347d94c-25cd-4adf-98e7-2b326207e9b9",
+      "file_sha256": "50a7705d8221bb5f99db4bd87d6ffdb2ec0342b715a3a0649fb22cd52dbb8ebb",
+      "topic_before": [],
+      "topic_after": [
+        "animals"
+      ],
+      "scientific_feature_difference": false
+    },
+    {
+      "source": "scidraw",
+      "source_id": "58644345-e835-410d-ac6b-47eedf68c9d3",
+      "file_sha256": "c77f66caeceb5808e572e87c811cec5a80faa88fbd269f93c14cd9e14ea80c37",
+      "topic_before": [],
+      "topic_after": [
+        "animals"
+      ],
+      "scientific_feature_difference": false
+    },
+    {
+      "source": "scidraw",
+      "source_id": "5acb7cd9-23af-474a-a151-171d46a851eb",
+      "file_sha256": "c2d53acda9d4bda16a116596c634e594e4ee8a44cde1f1348ca39733e019f5f1",
+      "topic_before": [],
+      "topic_after": [
+        "animals"
+      ],
+      "scientific_feature_difference": false
+    },
+    {
+      "source": "scidraw",
+      "source_id": "65d4a207-5ef0-4a0b-ab74-27d630973206",
+      "file_sha256": "00b3427a2a5adc74d6054b8963553137831c57ec8218c683cc00f3b08ef649fd",
+      "topic_before": [],
+      "topic_after": [
+        "animals"
+      ],
+      "scientific_feature_difference": false
+    },
+    {
+      "source": "scidraw",
+      "source_id": "89f2eed7-4afc-4ae0-9608-1ddb8a221fba",
+      "file_sha256": "99428b5139c0c3b1a7a2a2c1d29fea1f4e6152d724cbe33b9d72f52a6574983b",
+      "topic_before": [],
+      "topic_after": [
+        "animals"
+      ],
+      "scientific_feature_difference": false
+    },
+    {
+      "source": "scidraw",
+      "source_id": "e7a9532f-6abc-45e9-950e-02f14e639a4c",
+      "file_sha256": "47e6d322a420d5ff4743c22b8001b810e303a00e74e1a43cf258c853d5089427",
+      "topic_before": [],
+      "topic_after": [
+        "animals"
+      ],
+      "scientific_feature_difference": false
+    },
+    {
+      "source": "scidraw",
+      "source_id": "1fa41b66-1a56-4a33-b129-197d75aa9407",
+      "file_sha256": "bc7bc93f274014204907db3be3dd1338ec5c42bf71cc3cb6b240c02ba01cee06",
+      "topic_before": [],
+      "topic_after": [
+        "animals"
+      ],
+      "scientific_feature_difference": false
+    },
+    {
+      "source": "scidraw",
+      "source_id": "b6d29346-a376-48d4-9027-fd1c2f4503e7",
+      "file_sha256": "125f30e59d3500342af8d12f821119224d862700a783d9923869d5f0bd8be018",
+      "topic_before": [],
+      "topic_after": [
+        "animals"
+      ],
+      "scientific_feature_difference": false
+    },
+    {
+      "source": "scidraw",
+      "source_id": "b9dfb090-8f24-4c71-86f0-ee4a226bc236",
+      "file_sha256": "f6ae6520337f4a71526fd9d85438c3bdbc26298956a8c39a00d7bd087d1db2d4",
+      "topic_before": [],
+      "topic_after": [
+        "animals"
+      ],
+      "scientific_feature_difference": false
+    },
+    {
+      "source": "scidraw",
+      "source_id": "1831e2d3-9873-4d98-85c4-15fc5f40d38e",
+      "file_sha256": "339db87862ffc47d0e7fc7433dc93f964cd41c0eb34b6ef56fa2566ba6e99950",
+      "topic_before": [],
+      "topic_after": [
+        "animals"
+      ],
+      "scientific_feature_difference": false
+    },
+    {
+      "source": "scidraw",
+      "source_id": "d8cc1f30-cc96-40d3-8d78-e48e538f6c3d",
+      "file_sha256": "0399fb8e43340f1cf0bf950f780d99b6ebe852804fdc37f2b61ed353da75942e",
+      "topic_before": [],
+      "topic_after": [
+        "animals"
+      ],
+      "scientific_feature_difference": false
+    },
+    {
+      "source": "scidraw",
+      "source_id": "b983ed1b-b8fb-488d-b41a-12b94b03e204",
+      "file_sha256": "0a28ce4a6a2b239bcf8180aa272a6d06b1843a9d054d80d8756bda308232a057",
+      "topic_before": [],
+      "topic_after": [
+        "animals"
+      ],
+      "scientific_feature_difference": false
+    },
+    {
+      "source": "scidraw",
+      "source_id": "d0839a31-7a3f-444a-a130-701de1013a91",
+      "file_sha256": "bc4a9654d8f3c79de92ae58f1e2d36d869d432a42f7623c5c7b0585d53427633",
+      "topic_before": [],
+      "topic_after": [
+        "animals"
+      ],
+      "scientific_feature_difference": false
+    },
+    {
+      "source": "scidraw",
+      "source_id": "e9c02b9a-445d-49b1-8a15-1b1d7d0eb959",
+      "file_sha256": "4e8fb57becc32da185b63dcdfa30ccacbc0daeed72f9851aebed0aa533185f40",
+      "topic_before": [],
+      "topic_after": [
+        "animals"
+      ],
+      "scientific_feature_difference": false
+    },
+    {
+      "source": "scidraw",
+      "source_id": "b1178954-735c-4524-b5e4-9ec97ad1a4de",
+      "file_sha256": "07158d986701f2b6413b6ec39395cc4566d69f6f252a7dfca0810b6a6ae09538",
+      "topic_before": [],
+      "topic_after": [
+        "animals"
+      ],
+      "scientific_feature_difference": false
+    },
+    {
+      "source": "scidraw",
+      "source_id": "3198ca03-843a-49c1-86e0-fbe362c2599a",
+      "file_sha256": "0435d22df0d3e93ca73596a3a83a17ce124b1f73d8b4cbfa15e040f80905895f",
+      "topic_before": [],
+      "topic_after": [
+        "animals"
+      ],
+      "scientific_feature_difference": false
+    },
+    {
+      "source": "scidraw",
+      "source_id": "d8cc1b59-4ae7-43cd-881a-002b09bb9f25",
+      "file_sha256": "659ef2262455b5a3976a42ea8ac6387d890d076fe7fbaad4d7e660f513b9c5ad",
+      "topic_before": [],
+      "topic_after": [
+        "animals"
+      ],
+      "scientific_feature_difference": false
+    },
+    {
+      "source": "scidraw",
+      "source_id": "a81f4334-2134-4c2a-bc30-bf72498441ba",
+      "file_sha256": "9a3db3517536c7faf347698b8fe9e58a171ce349a32d09d6cff08380b2a7a2c0",
+      "topic_before": [],
+      "topic_after": [
+        "animals"
+      ],
+      "scientific_feature_difference": false
+    }
+  ],
+  "limits": [
+    "No view/state/species/object assertion was added.",
+    "No claim of extra benchmark hits or visual acceptance.",
+    "New all-source assembly remains required; historic catalog bytes and results are preserved."
+  ],
+  "validation": {
+    "command": ".venv/Scripts/python.exe -m pytest tests/test_catalog.py tests/test_search_core.py -q",
+    "passed": 48,
+    "scope": "catalog and shared retrieval regressions; synthetic tests do not substitute actual visual acceptance"
+  }
+}

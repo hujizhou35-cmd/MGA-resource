@@ -1,6 +1,7 @@
+import copy
 import json
 
-from mga_resources.catalog import deduplicate, finalize, normalize_record, search, search_legacy
+from mga_resources.catalog import _search_core, deduplicate, finalize, normalize_record, search, search_legacy
 
 
 def test_empty_catalog_remains_uploadable_and_searchable(tmp_path):
@@ -159,3 +160,110 @@ def test_actual_source_categories_classify_molecules_and_clinical_symbols():
     assert "lab_equipment" in normalize_record(record("Blood Bag"))["taxonomy"]
     assert "people" in normalize_record(record("Arm"))["taxonomy"]
     assert "tissues_vessels" in normalize_record(record("Blood Drop"))["taxonomy"]
+
+
+def reviewed_reactome(title="SLC25A15", source_id="R-ICO-014806", label="Transporter"):
+    # Actual source labels from the frozen 42283380295 catalog; the file and
+    # review binding below are synthetic mechanics fixtures, not visual proof.
+    item = record(title, source="reactome", source_id=source_id)
+    item["tags"] = [label]
+    item["files"][0]["public_scope"] = {
+        "status": "included", "public_allowed": True,
+        "evidence_original_sha256": item["files"][0]["sha256"],
+        "decision_id": "fixture-exact-file-review", "reviewed_by": "Fixture reviewer",
+        "evidence": [{"uri": "https://example.invalid/review", "sha256": "c" * 64}],
+    }
+    return item
+
+
+def test_narrow_official_topics_preserve_source_labels_and_scope_bindings():
+    items = [reviewed_reactome(), reviewed_reactome("Diglyceride", "R-ICO-012621", "Compound")]
+    bird = record("bird silhouette", source="scidraw", source_id="c2bc4521-30c7-4ee9-a0bf-8ee75eca7b4e")
+    bird.update(upstream_category="bird", tags=["bird"])
+    items.append(bird)
+    for item, topic in zip(items, ["molecules", "molecules", "animals"]):
+        original = copy.deepcopy(item)
+        normalized = normalize_record(item)
+        assert item == original
+        assert normalized["taxonomy"] == [topic]
+        assert normalized["tags"] == original["tags"]
+        assert normalized.get("upstream_category") == original.get("upstream_category")
+        facet = normalized["source_subject_facets"][0]
+        assert facet["taxonomy"] == topic and facet["scientific_assertion"] is False
+        assert facet["source_id"] == item["source_id"]
+        assert facet["source_url"] == item["source_url"]
+        assert facet["upstream_revision"] == item["upstream_revision"]
+        if item["source"] == "reactome":
+            assert facet["scope_review_bindings"][0]["file_sha256"] == item["files"][0]["sha256"]
+        assert any(value.startswith("source_subject:") for value in normalized["taxonomy_evidence"][topic])
+
+
+def test_topic_mapping_does_not_trust_other_sources_or_unreviewed_reactome():
+    for mutation in ("other_source", "unreviewed", "wrong_hash", "blocked"):
+        item = reviewed_reactome()
+        if mutation == "other_source":
+            item["source"] = "unrelated-source"
+        elif mutation == "unreviewed":
+            item["files"][0].pop("public_scope")
+        elif mutation == "wrong_hash":
+            item["files"][0]["public_scope"]["evidence_original_sha256"] = "b" * 64
+        else:
+            item["files"][0]["public_scope"].update(status="pending_review", public_allowed=False)
+        assert normalize_record(item)["taxonomy"] == []
+    generic_tag = record("Silhouette", source="scidraw")
+    generic_tag["tags"] = ["bird"]  # Only the official category_name field qualifies.
+    assert normalize_record(generic_tag)["taxonomy"] == []
+
+
+def test_actual_fried_egg_and_conflicting_togo_tags_do_not_become_animals():
+    egg = record("Fried Egg", source="nih-bioart", source_id="625")
+    egg.update(upstream_category=["Bioart Category", "Image Style", "Image Type", "Animals"],
+               tags=["Animals", "Birds", "Food", "Shaded", "Vector", "chicken", "egg", "fried"])
+    beetle = record("Harmonia axyridis (polymorphic form)", source="togo", source_id="2111")
+    beetle.update(tags=["Organisms", "Mammals", "Vertebrates", "Comparative anatomy", "Insecta", "Coleoptera", "Harmonia axyridis"],
+                  scientific_name="Harmonia axyridis", taxonomy_id="115357")
+    adrenal = record("Adrenal gland", source="scidraw")
+    adrenal.update(upstream_category="human", tags=["human"])
+    for item in (egg, beetle, adrenal):
+        normalized = normalize_record(item)
+        assert "animals" not in normalized["taxonomy"]
+        assert "people" not in normalized["taxonomy"]
+        assert "source_subject_facets" not in normalized
+        for key in ("species", "object", "view", "state", "role", "scientific"):
+            assert normalized.get(key) == item.get(key)
+
+
+def test_topic_mapping_keeps_scientific_features_identical(monkeypatch):
+    from mga_resources import catalog
+    bird = record("bird silhouette", source="scidraw", digest="b" * 64)
+    bird.update(upstream_category="bird", tags=["bird"])
+    inputs = [reviewed_reactome(), bird]
+    mapped, _ = deduplicate(inputs)
+    with monkeypatch.context() as isolated:
+        isolated.setattr(catalog, "_narrow_source_topics", lambda item: [])
+        baseline, _ = deduplicate(inputs)
+    before = _search_core({"action": "prepare", "records": baseline})["variants"]
+    after = _search_core({"action": "prepare", "records": mapped})["variants"]
+    for old, new in zip(before, after):
+        assert old["variant_id"] == new["variant_id"]
+        assert old["values"]["category"] == [] and new["values"]["category"]
+        for key in ("facts", "fact_basis", "primary_object", "search", "lexical", "file"):
+            assert old[key] == new[key]
+        for key in ("object", "species", "view", "state", "role", "depiction_kind"):
+            assert old["values"][key] == new["values"][key]
+
+
+def test_source_topics_do_not_spread_across_duplicate_origins():
+    bird = record("Silhouette", source="scidraw", source_id="bird")
+    bird.update(upstream_category="bird", tags=["bird"])
+    mirror = record("Silhouette", source="mirror", source_id="generic-copy")
+    merged, _ = deduplicate([bird, mirror])
+    assert len(merged) == 1
+    for origin in merged[0]["files"][0]["source_records"]:
+        assert origin["taxonomy"] == (["animals"] if origin["source"] == "scidraw" else [])
+        assert bool(origin.get("source_subject_facets")) == (origin["source"] == "scidraw")
+    rows = _search_core({"action": "prepare", "records": merged})["variants"]
+    assert {row["source"]: row["values"]["category"] for row in rows} == {"scidraw": ["animals"], "mirror": []}
+    again, _ = deduplicate(merged)
+    assert again[0]["variants"] == merged[0]["variants"]
+    assert again[0]["files"][0]["source_records"] == merged[0]["files"][0]["source_records"]

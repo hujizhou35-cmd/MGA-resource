@@ -56,6 +56,68 @@ SOURCE_CATEGORY_MAP = {
     "body": ["people"], "healthcare workers": ["people"],
     "diagnostics": ["clinical_workflow"], "medical specialties": ["clinical_workflow"],
 }
+SOURCE_TOPIC_MAPPING_VERSION = "source-topic-1.0.0"
+
+
+def _narrow_source_topics(item: dict[str, Any]) -> list[dict[str, Any]]:
+    """Map reviewed source subject buckets, never scientific object facts.
+
+    Reactome's adapter stores only official category-page labels in tags;
+    SciDraw preserves category_name as upstream_category. Do not apply this
+    rule to a deduplicated family's union of tags or inherit other origins.
+    NIH ontologytype arrays and Togo mixed taxon/subject tags are deliberately
+    outside this mapping, including their known conflicting source labels.
+    """
+    if item.get("variants") or any(file.get("source_records") for file in item.get("files", [])):
+        return []
+    source = item.get("source")
+    if source == "reactome":
+        files = item.get("files") or []
+        reviewed = all(
+            file.get("public_scope", {}).get("status") == "included"
+            and file["public_scope"].get("public_allowed") is True
+            and file["public_scope"].get("evidence_original_sha256") == file.get("sha256")
+            and file.get("sha256")
+            and file["public_scope"].get("evidence")
+            and file["public_scope"].get("reviewed_by")
+            for file in files
+        )
+        if not files or not reviewed:
+            return []
+        labels = item.get("tags", [])
+        mapping = {"transporter": "molecules", "compound": "molecules"}
+        upstream_field = "tags"
+        basis = "official_category_page_label_preserved_by_reactome_adapter"
+    elif source == "scidraw":
+        labels = [item.get("upstream_category")]
+        mapping = {"bird": "animals"}
+        upstream_field = "upstream_category"
+        basis = "official_category_name_preserved_by_scidraw_adapter"
+    else:
+        return []
+    facets = []
+    for label in dict.fromkeys(value for value in labels if isinstance(value, str)):
+        topic = mapping.get(label.casefold().strip())
+        if topic:
+            facet = {
+                "source": source, "source_id": item["source_id"],
+                "kind": "official_catalog_subject", "label": label,
+                "taxonomy": topic, "upstream_field": upstream_field,
+                "source_url": item.get("source_url"),
+                "upstream_revision": item.get("upstream_revision"),
+                "basis": basis, "mapping_version": SOURCE_TOPIC_MAPPING_VERSION,
+                "scientific_assertion": False,
+            }
+            if source == "reactome":
+                facet["scope_review_bindings"] = [{
+                    "file_sha256": file["sha256"],
+                    "decision_id": file["public_scope"].get("decision_id"),
+                    "evidence": copy.deepcopy(file["public_scope"]["evidence"]),
+                } for file in item["files"]]
+            facets.append(facet)
+    return facets
+
+
 TAXONOMY["molecules"]["terms"] += [
     "amino acid", "amino acids", "alanine", "arginine", "asparagine", "aspartic acid",
     "cysteine", "glutamine", "glutamic acid", "glycine", "histidine", "isoleucine",
@@ -286,6 +348,14 @@ def normalize_record(record: dict[str, Any], processed_files: list[dict[str, Any
         normalized = re.sub(r"[^a-z0-9]+", " ", _text(upstream_category).lower()).strip()
         for key in SOURCE_CATEGORY_MAP.get(normalized, []):
             evidence.setdefault(key, []).append(f"source_category:{upstream_category}")
+    facets = _narrow_source_topics(item)
+    if facets:
+        item["source_subject_facets"] = facets
+        item["topic_mapping_version"] = SOURCE_TOPIC_MAPPING_VERSION
+        for facet in facets:
+            evidence.setdefault(facet["taxonomy"], []).append(
+                f"source_subject:{source}:{facet['upstream_field']}:{facet['label']}"
+            )
     item["taxonomy"] = list(dict.fromkeys(existing + list(evidence)))
     item["taxonomy_evidence"] = evidence
     item["classification_method"] = "source_metadata_and_keyword_rules; not_visual_review"
@@ -321,6 +391,7 @@ def _search_context(item: dict[str, Any]) -> dict[str, Any]:
     benchmark, a filename extension, the parent family or another variant.
     """
     keys = ("title", "title_zh", "description", "tags", "categories", "taxonomy",
+            "source_subject_facets", "topic_mapping_version",
             "upstream_category", "species", "state", "view", "role", "object",
             "anatomy", "action", "depiction_kind", "scientific", "author", "distribution_status")
     return {key: copy.deepcopy(item[key]) for key in keys if item.get(key) is not None}
@@ -536,6 +607,7 @@ def finalize(records: Iterable[dict[str, Any]], output_dir: str | Path) -> dict[
         "validation_status": dict(Counter(x.get("validation", {}).get("status", "not_checked") for x in unique_files.values())),
         "taxonomy": {key: {"label_zh": definition["label_zh"], "assets": sum(key in item["taxonomy"] for item in items)} for key, definition in TAXONOMY.items()},
         "unclassified_assets": sum(not item["taxonomy"] for item in items),
+        "topic_mapping_version": SOURCE_TOPIC_MAPPING_VERSION,
         "missing_preview_files": sum(not x.get("preview") for x in unique_files.values()),
         "acceptance": {"scientific_coverage": "not_accepted", "visual_review": "not_completed", "illustrator_editability": "not_established_by_this_pipeline"},
         "catalog_sha256": hashlib.sha256(catalog_path.read_bytes()).hexdigest(),
