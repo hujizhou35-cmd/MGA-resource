@@ -1,0 +1,31 @@
+name: Build bounded exact-file scientific review
+on:
+  workflow_dispatch:
+    inputs:
+      release_tag:
+        description: Existing collection release
+        default: collection-20261106
+        type: string
+      plan:
+        description: Repository data/review-plans JSON with at most 20 exact files
+        default: data/review-plans/gap-candidates-20261107.json
+        type: string
+permissions:
+  contents: write
+jobs:
+  review:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install -e .
+      - run: sudo apt-get update -qq && sudo apt-get install -y fonts-noto-cjk
+      - name: Extract only exact original preview bytes in cloud
+        env:
+          GH_TOKEN: ${{ github.token }}
+          COLLECTION_TAG: ${{ inputs.release_tag }}
+          REVIEW_PLAN: ${{ inputs.plan }}
+        run: python scripts/build_exact_review.py --release-tag "$COLLECTION_TAG" --plan "$REVIEW_PLAN" --publish

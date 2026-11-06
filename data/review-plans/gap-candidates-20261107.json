@@ -1,0 +1,117 @@
+{
+  "schema_version": 1,
+  "purpose": "Bounded actual scientific object/action review; title nomination is not acceptance.",
+  "historical_catalog_sha256": "479f4e618e7c952bde430bd45fa10062249ff0f12672c86fb64a20c854da1fde",
+  "files": [
+    {
+      "source": "bioicons",
+      "source_id": "cc-by-4.0/Lab_apparatus/DBCLS/centrifuge-user.svg",
+      "asset_id": "bioicons-a5a17208ccf6a99aa8b0",
+      "title": "centrifuge user",
+      "source_url": "https://github.com/duerrsimon/bioicons/blob/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-4.0/Lab_apparatus/DBCLS/centrifuge-user.svg",
+      "format": "svg",
+      "original_sha256": "81cef7afa4208873bff2e21089b6cd024b0dc2d5257b289b1b1f5bab18dd0616",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42251588741-1-b0024.tar.gz",
+        "member": "files/81/81cef7afa4208873bff2e21089b6cd024b0dc2d5257b289b1b1f5bab18dd0616.svg"
+      },
+      "preview": {
+        "sha256": "b3ac02c8392176f2b91cacc8e4b6f277644291fcf3fa64813cc4c36008d5d698",
+        "archive": {
+          "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42251588741-1-b0024.tar.gz",
+          "member": "previews/81cef7afa4208873bff2e21089b6cd024b0dc2d5257b289b1b1f5bab18dd0616.png"
+        }
+      },
+      "review_question": "确认是否有人实际操作离心机，还是仅设备；如无样品分离步骤则不能声明 separation workflow。",
+      "limits": "标题仅用于提名，尚无对应实际图审。"
+    },
+    {
+      "source": "bioicons",
+      "source_id": "cc-0/Cell_culture/Marcel_Tisch/cells_feeder_coculture.svg",
+      "asset_id": "bioicons-c29dc0575353ba50501f",
+      "title": "cells feeder coculture",
+      "source_url": "https://github.com/duerrsimon/bioicons/blob/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-0/Cell_culture/Marcel_Tisch/cells_feeder_coculture.svg",
+      "format": "svg",
+      "original_sha256": "e4ff3215a1e5b339e1f50e6b609b99be44cbdfd4fc72e32ee782de77716cf82c",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42239971379-1-b0000.tar.gz",
+        "member": "files/e4/e4ff3215a1e5b339e1f50e6b609b99be44cbdfd4fc72e32ee782de77716cf82c.svg"
+      },
+      "preview": {
+        "sha256": "b9dd61f92ba7baa9ae4049327f519b9da647e3f51c7e1ea41e8f57f1f8e3a27f",
+        "archive": {
+          "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42239971379-1-b0000.tar.gz",
+          "member": "previews/e4ff3215a1e5b339e1f50e6b609b99be44cbdfd4fc72e32ee782de77716cf82c.png"
+        }
+      },
+      "review_question": "确认共培养结构、细胞与容器可见关系；区分静态组成与实际培养操作。",
+      "limits": "不能据标题补细胞系、培养条件或实验步骤。"
+    },
+    {
+      "source": "bioicons",
+      "source_id": "cc-by-4.0/Lab_apparatus/DBCLS/Pipetting_Female.svg",
+      "asset_id": "bioicons-b6733fcf61ab61939b7e",
+      "title": "Pipetting Female",
+      "source_url": "https://github.com/duerrsimon/bioicons/blob/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-4.0/Lab_apparatus/DBCLS/Pipetting_Female.svg",
+      "format": "svg",
+      "original_sha256": "4f7b88869456238099db6b37d7b327ec6ad6ae86ca43361f2146c36803b0de00",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42251588741-1-b0022.tar.gz",
+        "member": "files/4f/4f7b88869456238099db6b37d7b327ec6ad6ae86ca43361f2146c36803b0de00.svg"
+      },
+      "preview": {
+        "sha256": "e72ab6ff3572b8444a3025759a77c6d2dc9fc316defe8ecbc3e5b0ec5eb6410b",
+        "archive": {
+          "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42251588741-1-b0022.tar.gz",
+          "member": "previews/4f7b88869456238099db6b37d7b327ec6ad6ae86ca43361f2146c36803b0de00.png"
+        }
+      },
+      "review_question": "确认人物、移液器、容器的实际动作关系；判断能否作为培养操作组合部件。",
+      "limits": "仅移液不证明细胞培养；优先只看一个人物变体。"
+    },
+    {
+      "source": "healthicons",
+      "source_id": "public/icons/svg/outline/objects/health-worker_form.svg",
+      "asset_id": "healthicons-4a4d28be7209b7b4b731",
+      "title": "Health Worker Form",
+      "source_url": "https://github.com/resolvetosavelives/healthicons/blob/2080c1b40e4829f2f4217e03bc22908b4e402f6b/public/icons/svg/outline/objects/health-worker_form.svg",
+      "format": "svg",
+      "original_sha256": "3e0db9de01c5f1207968f9d6316055ceffda289d02ecaca84a755816a40838ca",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/healthicons-42234355854-1-b0003.tar.gz",
+        "member": "files/3e/3e0db9de01c5f1207968f9d6316055ceffda289d02ecaca84a755816a40838ca.svg"
+      },
+      "preview": {
+        "sha256": "951debc92d2161cf799949bd5311b2845d86a072d638a7f1d9c6b5776421095b",
+        "archive": {
+          "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/healthicons-42234355854-1-b0003.tar.gz",
+          "member": "previews/3e0db9de01c5f1207968f9d6316055ceffda289d02ecaca84a755816a40838ca.png"
+        }
+      },
+      "review_question": "确认画面表达的是问答/访谈、空白表单还是普通病历；不要把健康工作者表单等同调查问卷。",
+      "limits": "先看一个 outline 文件，不能把其断言自动应用到其他变体。"
+    },
+    {
+      "source": "nih-bioart",
+      "source_id": "185",
+      "asset_id": "nih-bioart-57b76866d5aea134f7b4",
+      "title": "Group of People",
+      "source_url": "https://bioart.niaid.nih.gov/bioart/185",
+      "format": "png",
+      "original_sha256": "f2cc06c7c8c76c03a1bba830b1670be2d07e1543d0bc49dae3339af880b9e9bc",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/nih-bioart-42236561214-1-b0000.tar.gz",
+        "member": "files/f2/f2cc06c7c8c76c03a1bba830b1670be2d07e1543d0bc49dae3339af880b9e9bc.png"
+      },
+      "preview": {
+        "sha256": "2573d24e1756da011c4b9b23b2681d0f40af83badb052b0c7258cae477fee1c3",
+        "archive": {
+          "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/nih-bioart-42236561214-1-b0000.tar.gz",
+          "member": "previews/f2cc06c7c8c76c03a1bba830b1670be2d07e1543d0bc49dae3339af880b9e9bc.png"
+        }
+      },
+      "review_question": "确认中性人群是否完整且可作为参与者组合部件；单张图不能证明招募、纳入或随访。",
+      "limits": "只判断可复用对象，不给人物研究身份或样本量。"
+    }
+  ]
+}
