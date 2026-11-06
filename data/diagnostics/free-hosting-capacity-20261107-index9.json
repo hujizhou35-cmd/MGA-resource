@@ -1,0 +1,191 @@
+{
+  "schema_version": 1,
+  "measured_at": "2026-11-06T21:19:59.799016+00:00",
+  "measurement_kind": "read_only_frozen_metadata_and_in_memory_projection",
+  "assembly_run_id": "42289434868-1",
+  "catalog_sha256": "5c90306415ce5e7f36e875c7f57b19a91930aacfeeaeecdf9ad7662770f9a3fe",
+  "scope_policy_sha256": "f5d1dcd500f0f3e5a04c29783f9e8bde907e521e2453f5257419860ad7fc2233",
+  "source_files": {
+    "catalog.sqlite": {
+      "path": "build/final-scope-baseline/assembly-42289434868-1.catalog.sqlite",
+      "size_bytes": 403369984,
+      "sha256": "a208638f5d2575f7f1abdcdebc3e7848649a7c18dbf8045415c7252225393c90"
+    },
+    "catalog.jsonl": {
+      "path": "build/final-scope-baseline/assembly-42289434868-1.catalog.jsonl",
+      "size_bytes": 231179408,
+      "sha256": "5c90306415ce5e7f36e875c7f57b19a91930aacfeeaeecdf9ad7662770f9a3fe"
+    },
+    "summary.json": {
+      "path": "build/final-scope-baseline/assembly-42289434868-1.summary.json",
+      "size_bytes": 2527,
+      "sha256": "66b627cd9ad72ee867b36bed9bf85c83abf28d555f8db433212a37cca79e1e94"
+    },
+    "scope-report.json": {
+      "path": "build/final-scope-baseline/assembly-42289434868-1.scope-report.json",
+      "size_bytes": 5472726,
+      "sha256": "385ba374848f56ff6fd2ad6cfd554953a54cc73f2d4b3b440048efdc21535055"
+    },
+    "report.json": {
+      "path": "build/final-scope-baseline/assembly-42289434868-1.report.json",
+      "size_bytes": 7750696,
+      "sha256": "cecdab1b3f5162cae569fc51de43d0ec34f33e00f0a81d57d56632964199cacd"
+    }
+  },
+  "versions": {
+    "index": 9,
+    "ranking": "shared-search-3.4.1",
+    "appearance": "appearance-1.1.0",
+    "python": "3.14.5",
+    "sqlite": "3.50.4"
+  },
+  "catalog": {
+    "logical_families": 7839,
+    "file_entries": 19474,
+    "file_variant_rows": 20130,
+    "eligible_file_variant_rows": 20129,
+    "originals": {
+      "unique_sha256_count": 19474,
+      "known_size_bytes": 4165979500,
+      "missing_size_count": 0,
+      "over_24_MiB_count": 3,
+      "over_25_MiB_count": 3
+    },
+    "previews": {
+      "unique_sha256_count": 19275,
+      "known_size_bytes": 975915983,
+      "missing_size_count": 0,
+      "over_24_MiB_count": 0,
+      "over_25_MiB_count": 0
+    },
+    "distinct_existing_preview_paths": 19473,
+    "missing_previews": [
+      {
+        "sha256": "f3097e6230478dfae5be24d5d6cd21e0e90f7935a7ea5b5d583457dd89f993fc",
+        "asset_id": "scidraw-41062f2822dd0acc2897",
+        "title": "DNA",
+        "validation_status": "preview_failed"
+      }
+    ]
+  },
+  "static_assets": {
+    "proposed_soft_files_per_shard": 18000,
+    "proposed_soft_file_bytes": 25165824,
+    "platform_file_bytes": 26214400,
+    "conservative_original_plus_unique_preview_entries": 38749,
+    "cross_role_content_deduplication_assumed": false,
+    "minimum_shards_by_file_count_before_oversize_handling": 3,
+    "known_within_soft_size_entries": 38746,
+    "minimum_shards_by_file_count_within_soft_size": 3,
+    "oversized_files": [
+      {
+        "kind": "original",
+        "sha256": "7a2d4f80f978511343976d85d9159a57ee013b5ab25cd0bf5fc372b64dca8ea2",
+        "size_bytes": 31405223,
+        "size_MiB": 29.9504,
+        "over_platform_25_MiB": true,
+        "format": "svg",
+        "asset_id": "togo-21cd0d4d27e43165038f",
+        "title": "Extracellular matrix (ECM)",
+        "source": "togo",
+        "archive": {
+          "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42249870031-1-b0000.tar.gz",
+          "member": "files/7a/7a2d4f80f978511343976d85d9159a57ee013b5ab25cd0bf5fc372b64dca8ea2.svg"
+        }
+      },
+      {
+        "kind": "original",
+        "sha256": "1f36bb4591a15fdb13feb392fac0b8df3b9a8176ba874e4fb16d5b10e255c63e",
+        "size_bytes": 29020348,
+        "size_MiB": 27.676,
+        "over_platform_25_MiB": true,
+        "format": "svg",
+        "asset_id": "scidraw-437f957daae8beb97653",
+        "title": "Lipid Bilayer",
+        "source": "scidraw",
+        "archive": {
+          "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scidraw-42235890704-1-b0001.tar.gz",
+          "member": "files/1f/1f36bb4591a15fdb13feb392fac0b8df3b9a8176ba874e4fb16d5b10e255c63e.svg"
+        }
+      },
+      {
+        "kind": "original",
+        "sha256": "0563a36334f47cf5dc01c257260019bc2d7388dbc96b99a637f22d9880eb59c4",
+        "size_bytes": 28826010,
+        "size_MiB": 27.4906,
+        "over_platform_25_MiB": true,
+        "format": "svg",
+        "asset_id": "togo-da4d86291518475de694",
+        "title": "Structure of skeletal muscle",
+        "source": "togo",
+        "archive": {
+          "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42249870031-1-b0001.tar.gz",
+          "member": "files/05/0563a36334f47cf5dc01c257260019bc2d7388dbc96b99a637f22d9880eb59c4.svg"
+        }
+      }
+    ],
+    "extra_frontend_catalog_manifest_files_included": false,
+    "final_cloud_publish_manifest_validated": false
+  },
+  "minimum_d1_projection": {
+    "kept_tables": [
+      "file_variants",
+      "index_metadata",
+      "file_variants_fts"
+    ],
+    "kept_indexes": [
+      "variants_family",
+      "variants_file"
+    ],
+    "implicit_primary_key_and_fts_shadow_tables_included": true,
+    "omitted_legacy_tables": [
+      "assets",
+      "assets_fts",
+      "asset_taxonomy",
+      "asset_formats"
+    ],
+    "rows": {
+      "file_variants": 20130,
+      "index_metadata": 2,
+      "file_variants_fts": 20130
+    },
+    "schema_sql_sha256": "d79d772dfe3ff891f8eb7cb42833d23a4a1f5921388aa4916574d1764beb5432",
+    "sqlite_bytes": 160133120,
+    "sqlite_MiB": 152.714844,
+    "sqlite_sha256": "a9a1b5abf20fc32f34d74b2ab4cdb924f9e2a23b0280d6ff4e0e5277fda4ae97",
+    "gzip_level": 6,
+    "gzip_mtime": 0,
+    "gzip_bytes": 12914303,
+    "gzip_MiB": 12.316039,
+    "gzip_sha256": "3a35ae22d4e93253aa45f824f48828fb13fcbf669873516bc1963bd03a8661b4",
+    "within_500_000_000_byte_capacity": true,
+    "gzip_within_24_MiB_static_file_size": true,
+    "source_and_projection_row_counts_match": true,
+    "quick_check": "ok",
+    "projection_artifact_written": false
+  },
+  "historical_reference_not_overwritten": {
+    "description": "Earlier diagnostic-v33 historical index 6 / shared-search-3.3.0 projection; not this scope snapshot",
+    "sqlite_bytes": 130822144,
+    "gzip_bytes": 11421876
+  },
+  "boundaries": {
+    "originals_or_previews_downloaded": false,
+    "cloud_resources_created": false,
+    "remote_d1_imported": false,
+    "remote_rows_read_or_written_measured": false,
+    "remote_worker_cpu_measured": false,
+    "current_cloudflare_subscription_verified_free": false,
+    "github_actions_cloudflare_credentials_configured": false,
+    "website_implemented": false,
+    "website_gate": "closed_pending_collection_and_acceptance",
+    "user_scope_acceptance_complete": false
+  },
+  "notes": [
+    "Counts and media sizes come from frozen catalog metadata, not a new download of original media.",
+    "Static shard lower bounds exclude frontend/catalog/manifest files and do not include runner disk requirements.",
+    "The D1 projection is a local capacity measurement; local SQLite total_changes and wall time are not D1 billing rows or Workers CPU.",
+    "A compressed metadata download can be an offline client fallback; its size does not establish browser memory or search acceptance.",
+    "The report still has one missing preview; appearance and user scope acceptance are not complete."
+  ]
+}
