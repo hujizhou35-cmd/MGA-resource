@@ -72,7 +72,11 @@ def test_pending_review_is_counted_separately_from_confirmed_exclusion(tmp_path)
 
 def test_paired_labels_remain_while_nameplate_is_absent(tmp_path):
     args=fixture(tmp_path)
-    args["paired_review"]={"items":[{"tile":i,"title":str(i),"original_sha256":"a"*64 if i<5 else "b"*64,"scope_status":"in_scope" if i<5 else "out_of_scope"} for i in range(1,7)]}
+    args["paired_review"]={"items":[{"tile":i,"title":str(i),"original_sha256":"a"*64 if i<5 else "b"*64,"scope_status":"in_scope" if i<5 else "out_of_scope", "text_content":{"status":"present"}} for i in range(1,7)]}
     result=audit_module.audit(**args)
     assert all(item["supplied_stages_match"] for item in result["paired_commons"])
+    assert "paired_commons.observed_text_preserved" not in result["failed_checks"]
     assert not result["scope_end_to_end_passed"]
+    args["catalog"][0]["files"][0]["text_content"]={"status":"unknown"}
+    result=audit_module.audit(**args)
+    assert "paired_commons.observed_text_preserved" in result["failed_checks"]

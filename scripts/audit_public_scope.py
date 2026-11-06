@@ -157,10 +157,16 @@ def audit(catalog, assembly, *, catalog_sha256, policy, internal=None,
         row = {"tile": item.get("tile"), "title": item.get("title"), "sha256": sha, "expected_public": wanted,
                "catalog": sha in public, "index": None if index_hashes is None else sha in index_hashes,
                "download_manifest": None if manifest_files is None else sha in manifest_files}
+        if wanted:
+            row["expected_text_status"] = (item.get("text_content") or {}).get("status", "unknown")
+            row["catalog_text_status"] = sorted({(file.get("text_content") or {}).get("status", "unknown") for file in public.get(sha, [])})
+            row["text_attribute_matches"] = row["catalog_text_status"] == [row["expected_text_status"]]
         row["supplied_stages_match"] = all(value == wanted for key,value in row.items() if key in {"catalog", "index", "download_manifest"} and value is not None)
         paired.append(row)
     if paired_review:
         check("paired_commons.keep_01_to_04_exclude_05_06", len(paired)==6 and all(r["supplied_stages_match"] for r in paired), paired)
+        check("paired_commons.observed_text_preserved", all(r.get("text_attribute_matches", True) for r in paired),
+              [{k:r[k] for k in ("tile", "expected_text_status", "catalog_text_status", "text_attribute_matches")} for r in paired if r["expected_public"]])
 
     by_status = defaultdict(set)
     by_reason = defaultdict(set)
