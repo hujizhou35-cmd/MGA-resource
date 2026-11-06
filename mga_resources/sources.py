@@ -16,6 +16,7 @@ from .http import HttpClient, SourceAccessError
 LICENSES = {
     "cc-0": ("CC0-1.0", "https://creativecommons.org/publicdomain/zero/1.0/"),
     "cc0": ("CC0-1.0", "https://creativecommons.org/publicdomain/zero/1.0/"),
+    "cc0-1.0": ("CC0-1.0", "https://creativecommons.org/publicdomain/zero/1.0/"),
     "cc-by-3.0": ("CC-BY-3.0", "https://creativecommons.org/licenses/by/3.0/"),
     "cc-by-4.0": ("CC-BY-4.0", "https://creativecommons.org/licenses/by/4.0/"),
     "cc-by-sa-3.0": ("CC-BY-SA-3.0", "https://creativecommons.org/licenses/by-sa/3.0/"),
@@ -199,9 +200,17 @@ def discover_scidraw(source: dict, client: HttpClient) -> list[dict]:
             raw_license = item.get("license", "")
             key = raw_license.lower().replace(" ", "-")
             license_id, license_url = LICENSES.get(key, (raw_license or None, None))
+            alias = source.get("license_aliases", {}).get(key)
+            if alias:
+                license_id, license_url = alias["license"], alias["license_url"]
             record.update(license=license_id, license_url=license_url,
+                          license_original=raw_license,
+                          license_evidence=alias.get("evidence_url") if alias else page,
                           author=(item.get("primary_author") or {}).get("full_name"),
                           upstream_category=item.get("category_name"), doi=item.get("doi"))
+            if key in ("cc-by", "ccby") and not alias:
+                record.update(distribution_allowed=False, rights_status="pending",
+                              rights_note="SciDraw API declares CC-BY without its version; exact license needs verification.")
             record["tags"] = [item["category_name"]] if item.get("category_name") else []
             record["attribution"] = f"{record['title']} — {record['author'] or 'author not supplied'}; {page}; {license_id}; DOI {item.get('doi') or 'not supplied'}"
             record["files"] = [{"url": image_url, "format": ext}]
@@ -209,15 +218,18 @@ def discover_scidraw(source: dict, client: HttpClient) -> list[dict]:
         next_url = response.get("next")
         if next_url and urllib.parse.urlsplit(next_url).hostname != "scidraw.io":
             raise SourceAccessError(url, "unexpected next-page host")
-        url = next_url
+        url = next_url.replace("http://", "https://", 1) if next_url else None
     return results
 
 
 def discover(source: dict, client: HttpClient) -> list[dict]:
     """Discover a complete source snapshot or fail explicitly (never partial-success)."""
+    from .web_sources import discover_nih, discover_reactome, discover_swissbiopics
+
     adapters = {"github_tree": discover_github, "bioicons": discover_bioicons,
                 "archive": discover_archive, "zenodo_archive": discover_archive,
-                "scidraw": discover_scidraw}
+                "scidraw": discover_scidraw, "nih_bioart": discover_nih,
+                "swissbiopics": discover_swissbiopics, "reactome": discover_reactome}
     adapter = source.get("adapter", "github_tree")
     if adapter not in adapters:
         raise ValueError(f"Source adapter not yet implemented: {adapter}")

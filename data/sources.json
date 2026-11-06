@@ -231,10 +231,10 @@
     {
       "source_id": "nih-bioart",
       "name": "NIH BioArt Source",
-      "enabled": false,
-      "status": "planned_adapter",
+      "enabled": true,
+      "status": "metadata_verified",
       "primary": true,
-      "adapter": null,
+      "adapter": "nih_bioart",
       "repository": null,
       "source_url": "https://bioart.niaid.nih.gov/",
       "license": "per-item",
@@ -246,7 +246,7 @@
         "png"
       ],
       "scope": "medical_and_biomedical_illustrations",
-      "rights_notes": "FAQ permits free reuse; Public Domain and attribution licenses occur. Record the exact item license and creator. Collection API and complete item retrieval still require implementation verification.",
+      "rights_notes": "Official discover catalog enumerated 958 artworks, 930 Public Domain and 28 CC-BY abbreviations on 2026-11-06. The adapter reads exact Creative Commons version URIs from the 28 item Licensing anchors; only genuinely unresolved entries are held. Preserve creators and original license labels. Variants remain grouped by artwork ID; image downloads run in cloud CI.",
       "verified_at": "2026-11-06",
       "content_types": [
         "illustration",
@@ -255,16 +255,17 @@
       ],
       "style_notes": "Professional medical illustration with organs, animals, cells, equipment and molecular or cellular processes.",
       "evidence_urls": [
-        "https://bioart.niaid.nih.gov/faqs"
+        "https://bioart.niaid.nih.gov/faqs",
+        "https://bioart.niaid.nih.gov/discover"
       ]
     },
     {
       "source_id": "reactome",
       "name": "Reactome Icon Library",
-      "enabled": false,
-      "status": "planned_adapter",
+      "enabled": true,
+      "status": "metadata_verified",
       "primary": true,
-      "adapter": null,
+      "adapter": "reactome",
       "repository": null,
       "source_url": "https://reactome.org/icon-lib",
       "license": "CC-BY-4.0",
@@ -276,7 +277,7 @@
         "png"
       ],
       "scope": "medical_and_biomedical_illustrations",
-      "rights_notes": "Keep individual creators and Reactome credit. Official bulk SVG link returned 404 during research; do not report a successful bulk import before it actually runs.",
+      "rights_notes": "Official category pagination enumerated all 2571 declared unique icons in 112 metadata pages on 2026-11-06. Graphical material is CC BY 4.0; retain Reactome institutional credit. Category pages do not give individual designers: author remains unknown, not invented. Direct SVG/PNG validation runs in cloud CI. The obsolete bulk TGZ endpoint is unused.",
       "verified_at": "2026-11-06",
       "content_types": [
         "illustration",
@@ -292,10 +293,10 @@
     {
       "source_id": "scidraw",
       "name": "SciDraw",
-      "enabled": false,
-      "status": "planned_adapter",
+      "enabled": true,
+      "status": "metadata_verified",
       "primary": true,
-      "adapter": null,
+      "adapter": "scidraw",
       "repository": null,
       "source_url": "https://scidraw.io/",
       "license": "per-item",
@@ -307,7 +308,7 @@
         "png"
       ],
       "scope": "medical_and_biomedical_illustrations",
-      "rights_notes": "Determine each item's license, author and DOI. Do not infer one license from the whole website.",
+      "rights_notes": "Official API enumerated 755 SVG/PNG drawings: 142 CC0 and 613 cc-by. Official licensing page, upload selector and per-drawing attribution UI explicitly define cc-by as CC BY 4.0. Preserve per-item overrides, author, DOI and original label.",
       "verified_at": "2026-11-06",
       "content_types": [
         "illustration",
@@ -316,15 +317,25 @@
       "style_notes": "Contributor drawings with useful animals, organs, cell types and experimental setups; quality and style vary.",
       "evidence_urls": [
         "https://scidraw.io/licensing"
-      ]
+      ],
+      "api_url": "https://scidraw.io/api/v1/drawings/?page=1",
+      "license_aliases": {
+        "cc-by": {
+          "license": "CC-BY-4.0",
+          "license_url": "https://creativecommons.org/licenses/by/4.0/",
+          "evidence_url": "https://scidraw.io/licensing",
+          "evidence_code_url": "https://scidraw.io/assets/index-D9dpmeAh.js",
+          "verified_at": "2026-11-06"
+        }
+      }
     },
     {
       "source_id": "swissbiopics",
       "name": "SwissBioPics",
-      "enabled": false,
-      "status": "planned_adapter",
+      "enabled": true,
+      "status": "metadata_verified",
       "primary": true,
-      "adapter": null,
+      "adapter": "swissbiopics",
       "repository": null,
       "source_url": "https://www.swissbiopics.org/",
       "license": "CC-BY-4.0",
@@ -335,11 +346,10 @@
         "organelles"
       ],
       "extensions": [
-        "svg",
-        "png"
+        "svg"
       ],
       "scope": "medical_and_biomedical_illustrations",
-      "rights_notes": "Official help permits copying, redistribution and commercial use with attribution. Use the documented API; item-level scientific fit still needs review.",
+      "rights_notes": "Official help permits copying, redistribution and commercial use with attribution. Homepage inventory yielded 32 cells; file endpoints follow official cellzone.js api/image mapping. Actual images still require cloud validation.",
       "verified_at": "2026-11-06",
       "content_types": [
         "diagram",
@@ -347,7 +357,8 @@
       ],
       "style_notes": "Biological cell drawings with named subcellular locations and organism-aware structure.",
       "evidence_urls": [
-        "https://www.swissbiopics.org/help"
+        "https://www.swissbiopics.org/help",
+        "https://www.swissbiopics.org/resources/js/cellzone.js"
       ]
     },
     {

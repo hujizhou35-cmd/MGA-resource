@@ -49,6 +49,19 @@ class HttpClient:
         self.events: list[dict] = []
 
     def get_bytes(self, url: str, *, max_bytes: int | None = None) -> bytes:
+        return self._request(url, max_bytes=max_bytes)
+
+    def post_text(self, url: str, payload: str, *, headers: dict[str, str],
+                  max_bytes: int = 16 * 1024 * 1024) -> str:
+        """Bounded read-only website search action; never used to mutate a source."""
+        permitted = {"accept", "content-type", "next-action"}
+        if any(key.lower() not in permitted for key in headers):
+            raise ValueError("Unexpected search-action header")
+        return self._request(url, data=payload.encode("utf-8"), extra_headers=headers,
+                             max_bytes=max_bytes).decode("utf-8")
+
+    def _request(self, url: str, *, max_bytes: int | None = None,
+                 data: bytes | None = None, extra_headers: dict[str, str] | None = None) -> bytes:
         if url in self._blocked:
             raise SourceAccessError(url, "access previously denied; no automatic retry", 403)
         parsed = urllib.parse.urlsplit(url)
@@ -56,6 +69,7 @@ class HttpClient:
             raise SourceAccessError(url, "only absolute HTTPS source URLs are accepted")
         limit = self.max_file_bytes if max_bytes is None else max_bytes
         headers = {"User-Agent": "MGA-resource/0.1 (+https://github.com/hujizhou35-cmd/MGA-resource)"}
+        headers.update(extra_headers or {})
         if parsed.hostname == "api.github.com":
             headers["Accept"] = "application/vnd.github+json"
             headers["X-GitHub-Api-Version"] = "2022-11-28"
@@ -67,16 +81,16 @@ class HttpClient:
                 time.sleep(pause)
             self._last_request = time.monotonic()
             try:
-                request = urllib.request.Request(url, headers=headers)
+                request = urllib.request.Request(url, headers=headers, data=data)
                 with self.opener.open(request, timeout=self.timeout) as response:
                     length = response.headers.get("Content-Length")
                     if length and int(length) > limit:
                         raise SourceAccessError(url, f"response exceeds {limit} byte limit")
-                    data = response.read(limit + 1)
-                    if len(data) > limit:
+                    response_data = response.read(limit + 1)
+                    if len(response_data) > limit:
                         raise SourceAccessError(url, f"response exceeds {limit} byte limit")
-                    self.events.append({"url": url, "status": response.status, "bytes": len(data)})
-                    return data
+                    self.events.append({"url": url, "status": response.status, "bytes": len(response_data)})
+                    return response_data
             except urllib.error.HTTPError as exc:
                 self.events.append({"url": url, "status": exc.code})
                 if exc.code in (401, 403, 451):

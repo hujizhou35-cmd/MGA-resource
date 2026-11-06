@@ -8,15 +8,17 @@ license, attribution, source version and modification information. Public-domain
 and CC0 status are recorded per source/item; CC BY and CC BY-SA obligations remain
 attached to the relevant material.
 
-Upstream projects consulted for data models and interface conventions:
+Upstream projects reused or consulted for data models and interface conventions:
 - BioCartoon database/CLI: https://github.com/josephrich98/biocartoon (BSD-2-Clause).
+  Source-adapter field mappings are adapted; the full copyright/license notice,
+  exact inspected revision and source paths are in docs/upstream-biocartoon-license.txt.
 - Iconify API: https://github.com/iconify/api (MIT).
 - Bioicons website code: https://github.com/duerrsimon/bioicons (MIT; artwork varies).
 - SciGlyph MCP: https://github.com/ZengZichao/SciGlyph-MCP (MIT; artwork CC BY 4.0).
 
-These notices identify consulted projects; they do not assert that their source
-files have been copied. Any vendored or adapted source file must carry its actual
-upstream copyright/license notice and a precise version/path record.
+The other projects are consulted references, not wholesale copies. Any vendored
+or adapted source file must carry its actual upstream copyright/license notice
+and a precise version/path record.
 
 Source-specific artwork notices include:
 - Health Icons: Resolve to Save Lives and contributors, CC0.

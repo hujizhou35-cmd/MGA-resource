@@ -16,6 +16,7 @@ import shutil
 import subprocess
 import sys
 import tarfile
+import time
 import traceback
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -60,10 +61,32 @@ def ensure_release(tag: str) -> None:
         raise RuntimeError(f"Could not create cloud checkpoint: {result.stderr}")
 
 
-def upload(tag: str, files: list[Path]) -> None:
-    if files:
-        result = run_gh(["release", "upload", tag, *map(str, files)], check=False)
+def upload(tag: str, files: list[Path], *, retry_transient: bool = True) -> None:
+    if not files:
+        return
+    repo = os.environ.get("GITHUB_REPOSITORY")
+    existing = {}
+    if repo:
+        release = run_gh(["api", f"repos/{repo}/releases/tags/{tag}"], check=False)
+        if release.returncode:
+            raise RuntimeError(f"Cannot verify existing release assets: {release.stderr}")
+        existing = {item["name"]: item for item in json.loads(release.stdout)["assets"]}
+    pending = []
+    for path in files:
+        remote = existing.get(path.name)
+        if remote is None:
+            pending.append(path)
+            continue
+        with path.open("rb") as stream:
+            expected = "sha256:" + hashlib.file_digest(stream, "sha256").hexdigest()
+        if remote.get("digest") != expected or remote.get("size") != path.stat().st_size:
+            raise RuntimeError(f"Existing immutable cloud asset differs: {path.name}")
+    if pending:
+        result = run_gh(["release", "upload", tag, *map(str, pending)], check=False)
         if result.returncode:
+            if retry_transient and re.search(r"timeout|timed out|connection reset|unexpected EOF|HTTP 50[0234]", result.stderr, re.I):
+                time.sleep(3)
+                return upload(tag, files, retry_transient=False)
             raise RuntimeError(f"Cloud checkpoint upload failed: {result.stderr}")
 
 
@@ -88,9 +111,21 @@ def write_batch(base: Path, prefix: str, records: list, failures: list,
     index = base / f"{prefix}.records.jsonl"
     failure_file = base / f"{prefix}.failures.json"
     archive = base / f"{prefix}.tar.gz"
+    archive_url = f"https://github.com/{publication.get('repository')}/releases/download/{publication['release_tag']}/{archive.name}"
+    for record in records:
+        record["collection_run"] = publication.get("run_id")
+        for item in record.get("files", []):
+            item["archive"] = {"url": archive_url, "member": item.get("storage_path")}
+            preview = item.get("preview")
+            if isinstance(preview, dict) and preview.get("path"):
+                preview["archive"] = {"url": archive_url, "member": preview["path"]}
     cleaned = [public_paths(record, base) for record in records]
     dump_jsonl(index, cleaned)
     dump_json(failure_file, failures)
+    with index.open("rb") as stream:
+        records_sha = hashlib.file_digest(stream, "sha256").hexdigest()
+    with failure_file.open("rb") as stream:
+        failures_sha = hashlib.file_digest(stream, "sha256").hexdigest()
     review_image, review_records = make_review_sheet(base, prefix, cleaned)
     with tarfile.open(archive, "w:gz", compresslevel=3) as tar:
         tar.add(index, arcname="records.jsonl")
@@ -102,17 +137,21 @@ def write_batch(base: Path, prefix: str, records: list, failures: list,
         sha = hashlib.file_digest(stream, "sha256").hexdigest()
     receipt = {
         **publication, "records": len(records), "failures": len(failures),
+        "finished_at": datetime.now(timezone.utc).isoformat(), "status": "checkpoint",
         "files": len(assets), "archive": archive.name,
         "archive_bytes": archive.stat().st_size, "sha256": sha,
         "records_file": index.name, "failures_file": failure_file.name,
+        "records_sha256": records_sha, "failures_sha256": failures_sha,
         "review_sheet": review_image.name if review_image else None, "review_tiles": review_records,
         "license_notice": "Per-record artwork licenses and credits apply; not project MIT.",
     }
     receipt_file = base / f"{prefix}.receipt.json"
     dump_json(receipt_file, receipt)
     if publish:
-        upload(publication["release_tag"], [archive, index, failure_file, receipt_file,
+        # Publish the receipt last: its presence is proof the batch files exist.
+        upload(publication["release_tag"], [archive, index, failure_file,
                                           *([review_image] if review_image else [])])
+        upload(publication["release_tag"], [receipt_file])
         for path in assets:
             if path.is_file():
                 path.unlink()
@@ -196,28 +235,45 @@ def main() -> int:
         ensure_release(args.release_tag)
     client = HttpClient()
     all_records, all_failures, held_records, receipts = [], [], [], []
-    batch_records, batch_failures, batch_assets = [], [], set()
+    batch_records, batch_failures, batch_assets, batch_dispositions = [], [], set(), []
     batch_input_bytes, batch_number, processed, discovered_count = 0, 0, 0, 0
+    batch_start = args.offset
+    acquisition_started = time.monotonic()
+    flush_failed = False
     fatal = None
     source_complete = False
     selected_count = 0
 
     def flush():
         nonlocal batch_records, batch_failures, batch_assets, batch_input_bytes, batch_number
-        if not batch_records and not batch_failures:
+        nonlocal batch_start, batch_dispositions, flush_failed
+        if not batch_dispositions:
             return
         prefix = f"{slug(args.source)}-{run_id}-b{batch_number:04d}"
-        receipts.append(write_batch(base, prefix, batch_records, batch_failures,
-                                    batch_assets, publication, args.publish))
-        batch_records, batch_failures, batch_assets = [], [], set()
+        checkpoint = {**publication, "range_start": batch_start, "range_end": args.offset + processed,
+                      "discovered": discovered_count, "dispositions": batch_dispositions,
+                      "held_records": [x for x in held_records if batch_start <= x["source_index"] < args.offset + processed],
+                      "held_count": sum(x["status"] == "held" for x in batch_dispositions)}
+        try:
+            receipts.append(write_batch(base, prefix, batch_records, batch_failures,
+                                        batch_assets, checkpoint, args.publish))
+        except Exception:
+            flush_failed = True
+            raise
+        batch_records, batch_failures, batch_assets, batch_dispositions = [], [], set(), []
         batch_input_bytes = 0
+        batch_start = args.offset + processed
         batch_number += 1
 
     try:
         discovered = list(discover(source, client))
         discovered_count = len(discovered)
+        if not discovered:
+            raise RuntimeError("Source discovery returned no artwork; cannot verify a complete inventory")
         discovery_file = base / f"{slug(args.source)}-{run_id}.discovery.jsonl"
         dump_jsonl(discovery_file, discovered)
+        with discovery_file.open("rb") as stream:
+            publication["discovery_sha256"] = hashlib.file_digest(stream, "sha256").hexdigest()
         if args.publish:
             upload(args.release_tag, [discovery_file])
         selected = discovered[args.offset: args.offset + args.limit if args.limit else None]
@@ -225,23 +281,35 @@ def main() -> int:
         print(json.dumps({"source": args.source, "discovered": discovered_count,
                           "selected": selected_count, "offset": args.offset}), flush=True)
         for item in selected:
+            # A checkpoint can only be taken between complete logical records.
+            if time.monotonic() - acquisition_started > 60 * 60:
+                flush()
+                raise RuntimeError(f"Checkpointed at source offset {args.offset + processed}; continue this snapshot in another cloud job")
+            if shutil.disk_usage(base).free < 2 * 1024**3:
+                flush()
+                if shutil.disk_usage(base).free < 2 * 1024**3:
+                    raise RuntimeError("Cloud runner has less than 2 GiB free disk; checkpointed before stopping")
+            item_index = args.offset + processed
+            processed += 1
+            disposition = {"index": item_index, "source_id": item.get("source_id"), "status": "attempting"}
+            batch_dispositions.append(disposition)
             allowed_licenses = {"CC0-1.0", "CC-BY-3.0", "CC-BY-4.0", "CC-BY-SA-3.0",
                                 "CC-BY-SA-4.0", "MIT", "BSD-2-Clause", "BSD-3-Clause",
                                 "Public Domain", "public domain", "PD"}
             if item.get("distribution_allowed") is False or item.get("license") not in allowed_licenses:
-                held_records.append({"source_id": item.get("source_id"), "title": item.get("title"),
+                held_records.append({"source_id": item.get("source_id"), "source_index": item_index, "title": item.get("title"),
                                      "source_url": item.get("source_url"), "license": item.get("license"),
                                      "reason": item.get("rights_note") or "Item redistribution license needs review"})
-                processed += 1
+                disposition.update(status="held", reason=held_records[-1]["reason"])
+                if len(batch_dispositions) >= 500:
+                    flush()
                 continue
             files = []
+            item_assets = set()
+            item_failures = 0
             for descriptor in item.get("files", []):
                 url = descriptor.get("url")
                 try:
-                    if shutil.disk_usage(base).free < 2 * 1024**3:
-                        flush()
-                        if shutil.disk_usage(base).free < 2 * 1024**3:
-                            raise RuntimeError("Cloud runner has less than 2 GiB free disk; checkpointed before stopping")
                     content = client.get_file(descriptor)
                     digest = hashlib.sha256(content).hexdigest()
                     suffix = re.sub(r"[^a-z0-9]", "", str(descriptor.get("format", "bin")).lower()) or "bin"
@@ -254,7 +322,7 @@ def main() -> int:
                     inspected = process_file(path, preview_dir=base / "previews")
                     file_record = {**descriptor, **inspected, "storage_path": relative.as_posix()}
                     file_record = public_paths(file_record, base)
-                    batch_assets.add(path)
+                    item_assets.add(path)
                     preview = inspected.get("preview")
                     if isinstance(preview, dict):
                         for key in ("path", "file", "local_path"):
@@ -266,39 +334,61 @@ def main() -> int:
                                     if not candidate_path.is_file():
                                         candidate_path = base / "previews" / Path(candidate).name
                                 if candidate_path.is_file() and candidate_path.is_relative_to(base):
-                                    batch_assets.add(candidate_path)
+                                    item_assets.add(candidate_path)
                                     file_record["preview"]["path"] = candidate_path.relative_to(base).as_posix()
                     elif isinstance(preview, str):
                         candidate_path = Path(preview)
                         if candidate_path.is_file() and candidate_path.is_relative_to(base):
-                            batch_assets.add(candidate_path)
+                            item_assets.add(candidate_path)
                     files.append(file_record)
                 except Exception as exc:
-                    failure = {"source": args.source, "source_id": item.get("source_id"),
+                    item_failures += 1
+                    failure = {"source": args.source, "source_id": item.get("source_id"), "source_index": item_index,
                                "url": url, "error_type": type(exc).__name__, "error": str(exc)[:1200]}
                     batch_failures.append(failure)
                     all_failures.append(failure)
                     print(json.dumps({"failure": failure}, ensure_ascii=False), flush=True)
                     # Access denials stop acquisition for the source, with a durable checkpoint.
                     if getattr(exc, "status", None) in {401, 403, 451} or getattr(exc, "status_code", None) in {401, 403, 451}:
+                        disposition.update(status="failed", reason=str(exc)[:1200])
                         raise
             if files:
                 record = normalize_record(item, processed_files=files)
+                record["source_index"] = item_index
                 record = public_paths(record, base)
                 all_records.append(record)
                 batch_records.append(record)
-            processed += 1
+                batch_assets.update(item_assets)
+            elif not item_failures:
+                failure = {"source": args.source, "source_id": item.get("source_id"), "source_index": item_index,
+                           "error_type": "MissingArtwork", "error": "No original file was acquired for this item"}
+                batch_failures.append(failure)
+                all_failures.append(failure)
+                item_failures += 1
+            machine_ok = bool(files) and all(f.get("validation", {}).get("status") in
+                                           {"machine_checked", "machine_checked_and_rendered"} for f in files)
+            disposition.update(status="acquired" if files and not item_failures else "failed",
+                               files=len(files), file_failures=item_failures, machine_checked=machine_ok)
             if processed % 25 == 0:
                 print(json.dumps({"processed": processed, "selected": selected_count,
                                   "records": len(all_records), "failures": len(all_failures)}), flush=True)
-            if len(batch_records) >= 500 or batch_input_bytes >= 512 * 1024**2:
+            if len(batch_dispositions) >= 500 or batch_input_bytes >= 512 * 1024**2:
                 flush()
         source_complete = args.offset == 0 and processed == discovered_count
     except Exception as exc:
         fatal = {"error_type": type(exc).__name__, "error": str(exc)[:2400]}
         traceback.print_exc()
     finally:
-        flush()
+        for disposition in batch_dispositions:
+            if disposition["status"] == "attempting":
+                disposition.update(status="failed", reason=(fatal or {}).get("error", "Item processing interrupted"))
+                failure = {"source": args.source, "source_id": disposition["source_id"],
+                           "source_index": disposition["index"], "error_type": "InterruptedItem",
+                           "error": disposition["reason"]}
+                batch_failures.append(failure)
+                all_failures.append(failure)
+        if not flush_failed:
+            flush()
         catalog_dir = base / "catalog"
         catalog_summary = finalize(all_records, catalog_dir)
         renamed = []
@@ -308,12 +398,15 @@ def main() -> int:
                 path.replace(destination)
                 renamed.append(destination)
         report = {
-            **publication, "finished_at": datetime.now(timezone.utc).isoformat(),
+            **publication, "finished_at": datetime.now(timezone.utc).isoformat(), "status": "final",
             "discovered": discovered_count, "selected": selected_count, "processed": processed,
             "downloaded_records": len(all_records), "failures": len(all_failures),
             "held_records": held_records, "held_count": len(held_records),
             "source_inventory_processed": source_complete,
-            "collection_complete": source_complete and not all_failures and not held_records and fatal is None,
+            "acquisition_complete": source_complete and not all_failures and not held_records and fatal is None,
+            "machine_acceptance_passed": source_complete and not all_failures and not held_records and fatal is None
+              and all(d.get("machine_checked") for receipt in receipts for d in receipt.get("dispositions", [])),
+            "acceptance_passed": False, "collection_complete": False,
             "illustrator_verified": False, "visual_acceptance": "pending",
             "fatal": fatal, "batches": receipts, "catalog_summary": catalog_summary,
         }

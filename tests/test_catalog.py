@@ -27,10 +27,14 @@ def test_exact_duplicate_merges_with_all_provenance_and_formats():
     assert len(result[0]["provenance"]) == 2
     assert len(result[0]["files"]) == 2
     assert set(result[0]["formats"]) == {"png", "svg"}
+    assert result[0]["validation"]["status"] == "incomplete"  # The extra PNG has not been checked.
     assert len(next(file for file in result[0]["files"] if file["sha256"] == "a" * 64)["source_records"]) == 2
     repeated, _ = deduplicate(result)
     assert len(repeated[0]["provenance"]) == 2
     assert len(next(file for file in repeated[0]["files"] if file["sha256"] == "a" * 64)["source_records"]) == 2
+    assert repeated[0]["sources"] == result[0]["sources"]
+    assert repeated[0]["variants"] == result[0]["variants"]
+    assert repeated[0]["alternate_ids"] == result[0]["alternate_ids"]
 
 
 def test_matching_titles_do_not_merge_different_drawings():
@@ -77,6 +81,10 @@ def test_explicit_family_merges_variants_without_losing_files_or_credits():
     assert len(result[0]["files"]) == 2
     assert len(result[0]["variants"]) == 2
     assert {entry["author"] for entry in result[0]["provenance"]} == {"An Artist", "Another Artist"}
+    repeated, repeat_stats = deduplicate(result)
+    assert repeat_stats["variant_records"] == 2
+    assert repeated[0]["variants"] == result[0]["variants"]
+    assert repeated[0]["id"] == result[0]["id"]
 
 
 def test_local_paths_removed_and_no_visual_acceptance_inferred():
@@ -117,3 +125,29 @@ def test_filters_apply_without_unrelated_fallback(tmp_path):
     assert len(search(tmp_path / "catalog.sqlite", "", filters={"category": "cells"})) == 1
     assert search(tmp_path / "catalog.sqlite", "liver", filters={"category": "cells"}) == []
     assert search(tmp_path / "catalog.sqlite", "liver", filters={"format": "png"}) == []
+
+
+def test_full_queries_keep_objects_hard_and_rank_view_preferences(tmp_path):
+    lateral = record("Mouse lateral view", source_id="mouse-side", digest="a" * 64)
+    other_mouse = record("Mouse head", source_id="mouse-head", digest="b" * 64)
+    rat = record("Rat lateral view", source_id="rat", digest="c" * 64)
+    human_liver = record("Liver", source_id="human-liver", digest="d" * 64)
+    human_liver["upstream_category"] = "Human_physiology"
+    finalize([lateral, other_mouse, rat, human_liver], tmp_path)
+    for query in ("实验小鼠侧视插画", "laboratory mouse side view illustration"):
+        results = search(tmp_path / "catalog.sqlite", query)
+        assert results[0]["title"] == "Mouse lateral view"
+        assert {item["title"] for item in results} == {"Mouse lateral view", "Mouse head"}
+    assert [item["title"] for item in search(tmp_path / "catalog.sqlite", "人体肝脏插画")] == ["Liver"]
+    assert search(tmp_path / "catalog.sqlite", "mouse unobtainium illustration") == []
+
+
+def test_actual_source_categories_classify_molecules_and_clinical_symbols():
+    amino = record("alanine")
+    amino["upstream_category"] = "Amino-Acids"
+    assert "molecules" in normalize_record(amino)["taxonomy"]
+    for title in ("Blood Type AB+", "Blood Bag"):
+        assert "clinical_workflow" in normalize_record(record(title))["taxonomy"]
+    assert "lab_equipment" in normalize_record(record("Blood Bag"))["taxonomy"]
+    assert "people" in normalize_record(record("Arm"))["taxonomy"]
+    assert "tissues_vessels" in normalize_record(record("Blood Drop"))["taxonomy"]
