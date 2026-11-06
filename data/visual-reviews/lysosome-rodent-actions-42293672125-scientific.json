@@ -1,0 +1,312 @@
+{
+  "schema_version": 1,
+  "reviewer": "Codex media_catalog; direct inspection of all seven exact previews",
+  "reviewed_at": "2026-11-06T21:09:25.493247+00:00",
+  "review_method": "Directly displayed and inspected the seven-tile cloud contact sheet; additionally displayed the original 512-pixel NIH SVG and Togo SVG preview bytes. Exact original/preview SHA and both archive members were checked against the nominated frozen public catalog. Official NIH item identity corroborates lysosome; visible structure and file-level source records corroborate the remaining observations. Metadata terms nominated candidates only.",
+  "review_sheet_url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/exact-review-42293672125-1.review.png",
+  "review_sheet_sha256": "6142da54e282946c7ce416b4b294f07e85ac143ee01d6ac20847c7c11fe51d20",
+  "review_limits": [
+    "Only limited visible object/action attributes are established; this is not independent anatomical, physiological or experimental-protocol validation.",
+    "NIH PNG and SVG are visually different renderings and were individually viewed. No observation is propagated to other variants or families.",
+    "Autolysosome remains a distinct object; Togo paired cells are not substituted for an isolated lysosome.",
+    "No mouse injection scene was observed in the two reviewed neighboring actions. Absence of a metadata match is not proof that every unreviewed image lacks injection.",
+    "No native Illustrator test, SVG text editability test, clinical-use acceptance or final release acceptance is established.",
+    "Existing excluded or pending files remain unchanged; the generic unlabelled Reactome Lysosome sphere was not reopened."
+  ],
+  "catalog_binding": {
+    "prefix": "assembly-42289434868-1",
+    "sha256": "5c90306415ce5e7f36e875c7f57b19a91930aacfeeaeecdf9ad7662770f9a3fe"
+  },
+  "review_pack": {
+    "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/exact-review-42293672125-1.tar.gz",
+    "sha256": "bb94785fb2976d6f5cd44f02a83fa0425502389875ccde38defbd9d4342b9f88",
+    "size_bytes": 921591,
+    "mapping_sha256": "e1183c5bb93802c13cf499412bbeda3bbfdac736a8a4374c3801d6a93018e884",
+    "plan_path": "data/review-plans/lysosome-mouse-action-gap-20261107.json",
+    "plan_sha256": "1bf7dad0d435ebd439d74eca4840fc118eea25b6a4bf11bd81938f4b52a51d88",
+    "archive_verification": [
+      {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/nih-bioart-42236561214-1-b0000.tar.gz",
+        "selected_members": 2,
+        "verified": true,
+        "sha256": "bc400b21ab4c2770ac0eb5d4a6474bdc26357b437cc74c402ff60076ee635c80",
+        "size_bytes": 490613847,
+        "compressed_bytes_read": 490613847
+      },
+      {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/reactome-42246331998-1-b0002.tar.gz",
+        "selected_members": 1,
+        "verified": true,
+        "sha256": "45c8f85173a5cf1ba23974846e01feb1cbbe0d3401f5f0aedcc15808b83073ca",
+        "size_bytes": 13672965,
+        "compressed_bytes_read": 13672965
+      },
+      {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scidraw-42235890704-1-b0000.tar.gz",
+        "selected_members": 2,
+        "verified": true,
+        "sha256": "ccc6253bacba4862a11b5ee40eb0297046a9350bad2a9a09515484c0fa1fcfa6",
+        "size_bytes": 59250378,
+        "compressed_bytes_read": 59250378
+      },
+      {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42271777119-1-b0001.tar.gz",
+        "selected_members": 2,
+        "verified": true,
+        "sha256": "b77932eb134a91841976e97afbf787b4deb8705d00e2980f7fef611c9abdeaba",
+        "size_bytes": 162221483,
+        "compressed_bytes_read": 162221483
+      }
+    ]
+  },
+  "official_source_corroboration": [
+    {
+      "source": "nih-bioart",
+      "source_id": "306",
+      "url": "https://bioart.niaid.nih.gov/bioart/306",
+      "title": "Lysosomes",
+      "description": "lysosome",
+      "official_keywords": [
+        "lysosome",
+        "membrane-enclosed",
+        "organelle"
+      ],
+      "retrieved_at": "2026-11-07",
+      "limitation": "The exact archived preview was independently viewed; source naming alone does not establish all visual properties or native editing."
+    }
+  ],
+  "items": [
+    {
+      "tile": 1,
+      "source": "nih-bioart",
+      "source_id": "306",
+      "asset_id": "nih-bioart-469ab575b90ee2c9d61d",
+      "title": "Lysosomes",
+      "source_url": "https://bioart.niaid.nih.gov/bioart/306",
+      "original_sha256": "7687ce9bf458eac26b31005e13a80e21cd9cf79a4ee3b244538141a38575e302",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/nih-bioart-42236561214-1-b0000.tar.gz",
+        "member": "files/76/7687ce9bf458eac26b31005e13a80e21cd9cf79a4ee3b244538141a38575e302.png"
+      },
+      "preview_sha256": "bc0e72aea87311bd819272d5d5895d83f93cce8eb28ae52d28f21e20ad541643",
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/nih-bioart-42236561214-1-b0000.tar.gz",
+        "member": "previews/7687ce9bf458eac26b31005e13a80e21cd9cf79a4ee3b244538141a38575e302.png"
+      },
+      "visual_verdict": "usable_as_schematic_component",
+      "observations": "Actually viewed exact tile: one independently reusable circular membrane-enclosed organelle with multiple irregular internal particles and shaded contents. This is an object illustration, not a complete workflow, result chart or text nameplate. NIH BioArt item 306 explicitly identifies the artwork as lysosome; that official identity corroborates the visible organelle. The identity is not inferred from a generic circle alone. The PNG has soft shading and shadow; this file was reviewed separately from the SVG.",
+      "scientific_assertions": {
+        "object": [
+          "lysosome"
+        ],
+        "depiction_kind": "organelle"
+      },
+      "native_editability_tested": false
+    },
+    {
+      "tile": 2,
+      "source": "nih-bioart",
+      "source_id": "306",
+      "asset_id": "nih-bioart-469ab575b90ee2c9d61d",
+      "title": "Lysosomes",
+      "source_url": "https://bioart.niaid.nih.gov/bioart/306",
+      "original_sha256": "201a1b8705c3ffb62dcc0f01b0f851046d63c83ccfaf92ad9dde29ac125c007c",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/nih-bioart-42236561214-1-b0000.tar.gz",
+        "member": "files/20/201a1b8705c3ffb62dcc0f01b0f851046d63c83ccfaf92ad9dde29ac125c007c.svg"
+      },
+      "preview_sha256": "667e6c1162fc96f16ccf923a8453fa1f000f826a4dc75851fad72d12ffc9aaa0",
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/nih-bioart-42236561214-1-b0000.tar.gz",
+        "member": "previews/201a1b8705c3ffb62dcc0f01b0f851046d63c83ccfaf92ad9dde29ac125c007c.png"
+      },
+      "visual_verdict": "usable_as_schematic_component",
+      "observations": "Actually viewed exact tile and full 512-pixel preview: one membrane-enclosed organelle with irregular granular contents. Official NIH BioArt item 306 names and describes a lysosome. This supports lysosome as the primary object together with the actual visible structure. The SVG preview has a hard-edged highlight and shadow and was individually reviewed; no native editability, disease state or measured size is asserted.",
+      "scientific_assertions": {
+        "object": [
+          "lysosome"
+        ],
+        "depiction_kind": "organelle"
+      },
+      "native_editability_tested": false
+    },
+    {
+      "tile": 3,
+      "source": "reactome",
+      "source_id": "R-ICO-013653",
+      "asset_id": "reactome-61f88d175cb4f15d430d",
+      "title": "Autolysosome",
+      "source_url": "https://reactome.org/content/detail/R-ICO-013653",
+      "original_sha256": "650e62728a0736c1fd5e25c579c928c5843e4b78f280ccec5d8f9db5d41ef345",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/reactome-42246331998-1-b0002.tar.gz",
+        "member": "files/65/650e62728a0736c1fd5e25c579c928c5843e4b78f280ccec5d8f9db5d41ef345.svg"
+      },
+      "preview_sha256": "3810499ecef92d348de1732d18537f2b7dace7791b1e04a036c0902bd70abcf6",
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/reactome-42246331998-1-b0002.tar.gz",
+        "member": "previews/650e62728a0736c1fd5e25c579c928c5843e4b78f280ccec5d8f9db5d41ef345.png"
+      },
+      "visual_verdict": "usable_as_schematic_component",
+      "observations": "Actually viewed exact tile: two connected rounded membrane compartments with a joining neck. The official source identifies this independently reusable structure as Autolysosome. Retain that distinct identity; do not relabel it as an ordinary lysosome or infer a validated dynamic fusion mechanism from this static component.",
+      "scientific_assertions": {
+        "object": [
+          "autolysosome"
+        ],
+        "depiction_kind": "organelle"
+      },
+      "native_editability_tested": false
+    },
+    {
+      "tile": 4,
+      "source": "togo",
+      "source_id": "2203",
+      "asset_id": "togo-759d6c1a90e4adc82316",
+      "title": "Lysosomal Storage Disorders",
+      "source_url": "https://doi.org/10.7875/togopic.2025.092",
+      "original_sha256": "252a376fcfb8e7551cff2bab1ec5b145d941249ccee63fe882e1b9dc1b10efb6",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42271777119-1-b0001.tar.gz",
+        "member": "files/25/252a376fcfb8e7551cff2bab1ec5b145d941249ccee63fe882e1b9dc1b10efb6.svg"
+      },
+      "preview_sha256": "3f08f8f4a8b056a98e18f9ccb4557dc5e3da2002189754a20afdeb87f6e7fb56",
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42271777119-1-b0001.tar.gz",
+        "member": "previews/252a376fcfb8e7551cff2bab1ec5b145d941249ccee63fe882e1b9dc1b10efb6.png"
+      },
+      "visual_verdict": "usable_as_schematic_component",
+      "observations": "Actually viewed exact tile and full 512-pixel preview: two labeled whole-cell cutaway drawings, one with many distinguishable organelles and one with large red granular storage regions surrounding a nucleus. Labels read Healthy Cell and Lysosomal Storage Disorders. The primary depicted objects are cells in a comparison, not a standalone lysosome. Labeled cell illustrations remain independently recognizable after removing their captions. No disease accuracy, species, route, quantitative area or standalone lysosome identity is inferred.",
+      "scientific_assertions": {
+        "object": [
+          "cell"
+        ],
+        "depiction_kind": "cell"
+      },
+      "native_editability_tested": false,
+      "text_content": {
+        "status": "present",
+        "kinds": [
+          "labels"
+        ],
+        "cleanup_advice": "task_dependent",
+        "basis": "exact_preview_manual_visual_review",
+        "evidence": [
+          {
+            "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/exact-review-42293672125-1.review.png",
+            "sha256": "6142da54e282946c7ce416b4b294f07e85ac143ee01d6ac20847c7c11fe51d20"
+          }
+        ],
+        "editable_text": "unknown"
+      }
+    },
+    {
+      "tile": 5,
+      "source": "togo",
+      "source_id": "2203",
+      "asset_id": "togo-759d6c1a90e4adc82316",
+      "title": "Lysosomal Storage Disorders",
+      "source_url": "https://doi.org/10.7875/togopic.2025.092",
+      "original_sha256": "770efbda359d5b58942ab9837ce13d454785be38bb45a6ef5f621d93e7d4d8ee",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42271777119-1-b0001.tar.gz",
+        "member": "files/77/770efbda359d5b58942ab9837ce13d454785be38bb45a6ef5f621d93e7d4d8ee.png"
+      },
+      "preview_sha256": "ed70e59190872ccf408cb0c9c9ea73b47582559b74f563e6580504d5c8c108d5",
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42271777119-1-b0001.tar.gz",
+        "member": "previews/770efbda359d5b58942ab9837ce13d454785be38bb45a6ef5f621d93e7d4d8ee.png"
+      },
+      "visual_verdict": "usable_as_schematic_component",
+      "observations": "Actually viewed this PNG separately: the same two-cell comparison is visible with Healthy Cell and Lysosomal Storage Disorders captions, at a different scale and rendering from the SVG preview. Cells are the primary objects. It does not satisfy a request for an isolated lysosome component. Do not transfer the disorder title to every internal circle or claim quantitative morphology.",
+      "scientific_assertions": {
+        "object": [
+          "cell"
+        ],
+        "depiction_kind": "cell"
+      },
+      "native_editability_tested": false,
+      "text_content": {
+        "status": "present",
+        "kinds": [
+          "labels"
+        ],
+        "cleanup_advice": "task_dependent",
+        "basis": "exact_preview_manual_visual_review",
+        "evidence": [
+          {
+            "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/exact-review-42293672125-1.review.png",
+            "sha256": "6142da54e282946c7ce416b4b294f07e85ac143ee01d6ac20847c7c11fe51d20"
+          }
+        ],
+        "editable_text": "unknown"
+      }
+    },
+    {
+      "tile": 6,
+      "source": "scidraw",
+      "source_id": "80f4b415-a823-4226-9adc-31a5c5297f8c",
+      "asset_id": "scidraw-510d6c34c8ed6f0923a0",
+      "title": "Tail suspension",
+      "source_url": "https://scidraw.io/drawing/tail-suspension-5427948d",
+      "original_sha256": "bb78b1ff5e325ac78a483e1105e76bbb9e9e99a932b1540a268bcd2e8774f7f9",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scidraw-42235890704-1-b0000.tar.gz",
+        "member": "files/bb/bb78b1ff5e325ac78a483e1105e76bbb9e9e99a932b1540a268bcd2e8774f7f9.svg"
+      },
+      "preview_sha256": "439c8f2db7a6b2a9715591c915da7f5123a966111640324974776a94ccb21065",
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scidraw-42235890704-1-b0000.tar.gz",
+        "member": "previews/bb78b1ff5e325ac78a483e1105e76bbb9e9e99a932b1540a268bcd2e8774f7f9.png"
+      },
+      "visual_verdict": "usable_as_schematic_component",
+      "observations": "Actually viewed exact tile: a mouse-shaped animal hangs head-down by its tail from an overhead blue attachment. The source tags explicitly identify mouse and the title identifies Tail suspension. The actual action is tail suspension. No syringe, needle or injection contact is visible; this image cannot supply the mouse-injection gap. No strain, dose, administration route or validated experimental protocol is asserted.",
+      "scientific_assertions": {
+        "object": [
+          "tail suspension"
+        ],
+        "species": [
+          "mouse"
+        ],
+        "depiction_kind": "action",
+        "role": [
+          "experimental_scene"
+        ]
+      },
+      "native_editability_tested": false
+    },
+    {
+      "tile": 7,
+      "source": "scidraw",
+      "source_id": "4c98346a-52a8-4d18-a1f9-95af550540fa",
+      "asset_id": "scidraw-d92ce948c56aa4a649be",
+      "title": "restrain",
+      "source_url": "https://scidraw.io/drawing/restrain-a3879bc2",
+      "original_sha256": "2854eba6c1d743ccbdcb5bba86daafc7a5525a6619af374c156ab7c667b38eb5",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scidraw-42235890704-1-b0000.tar.gz",
+        "member": "files/28/2854eba6c1d743ccbdcb5bba86daafc7a5525a6619af374c156ab7c667b38eb5.svg"
+      },
+      "preview_sha256": "1c73e2caead94a41c1c4bea851474382f0dfeb881b4d8dc540b36acaad16fbe5",
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scidraw-42235890704-1-b0000.tar.gz",
+        "member": "previews/2854eba6c1d743ccbdcb5bba86daafc7a5525a6619af374c156ab7c667b38eb5.png"
+      },
+      "visual_verdict": "usable_as_schematic_component",
+      "observations": "Actually viewed exact tile: a mouse-shaped animal is inside a narrow outlined restraining tube, with its tail extending out behind a block. The source tags identify mouse and the title is restrain. This depicts a restraint setup/scene. No syringe, needle or injection contact is visible, and a static restraint setup must not be relabeled an injection action. No strain, dose, administration route or protocol validity is asserted.",
+      "scientific_assertions": {
+        "object": [
+          "restraint"
+        ],
+        "species": [
+          "mouse"
+        ],
+        "depiction_kind": "scene",
+        "role": [
+          "experimental_scene"
+        ]
+      },
+      "native_editability_tested": false
+    }
+  ],
+  "overall_acceptance_passed": false
+}

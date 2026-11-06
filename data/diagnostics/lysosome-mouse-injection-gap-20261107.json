@@ -1,0 +1,1489 @@
+{
+  "schema_version": 1,
+  "reviewed_at": "2026-11-06T21:13:23.768729+00:00",
+  "reviewer": "Codex media_catalog",
+  "status": "bounded_actual_visual_review_completed; full assembly not rerun",
+  "catalog_prefix": "assembly-42289434868-1",
+  "catalog_sha256": "5c90306415ce5e7f36e875c7f57b19a91930aacfeeaeecdf9ad7662770f9a3fe",
+  "baseline_diagnostic": {
+    "sha256": "eb59d5d46ec591a3759d3638da546aabdd97ba65134f74a033692847e6fa4e74",
+    "lysosome_text_candidates": 4,
+    "lysosome_candidates_with_known_object": 0,
+    "mouse_injection_text_candidates": 0
+  },
+  "summary_zh": {
+    "lysosome": "NIH BioArt306的PNG和SVG均逐件实际看过；膜包围的颗粒性细胞器结构与官方明确lysosome身份相符，可补object=lysosome。两格式属于一个家族，不按两个独立概念计数。",
+    "different_objects": "Togo2203两件是带标签的细胞对照，主对象cell；Reactome R-ICO-013653保留不同对象autolysosome。均不拿来补普通溶酶体缺口。",
+    "mouse_injection": "公共及内部元数据均未提名到同来源上下文内的鼠注射场景。实际看过的SciDraw悬尾和保定筒不含针筒/针头接触，不能替代注射。现有证据下仍为空缺。",
+    "scope": "没有变更公开范围；已有待定的无标识Reactome球没有重新纳入。没有用完整流程、研究设计或数据图填补缺口。",
+    "limits": "本次只有7个精确原件的小预览审核和5家族元数据查询证明，不是全库相关性通过或正式发布。"
+  },
+  "review_document": {
+    "path": "data/visual-reviews/lysosome-rodent-actions-42293672125-scientific.json",
+    "sha256": "09b52f0ad8e3d1afcfac5be3b7568d57c65608a543b7123320bee88850b11a72"
+  },
+  "review_pack": {
+    "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/exact-review-42293672125-1.tar.gz",
+    "sha256": "bb94785fb2976d6f5cd44f02a83fa0425502389875ccde38defbd9d4342b9f88",
+    "size_bytes": 921591,
+    "mapping_sha256": "e1183c5bb93802c13cf499412bbeda3bbfdac736a8a4374c3801d6a93018e884",
+    "plan_path": "data/review-plans/lysosome-mouse-action-gap-20261107.json",
+    "plan_sha256": "1bf7dad0d435ebd439d74eca4840fc118eea25b6a4bf11bd81938f4b52a51d88",
+    "archive_verification": [
+      {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/nih-bioart-42236561214-1-b0000.tar.gz",
+        "selected_members": 2,
+        "verified": true,
+        "sha256": "bc400b21ab4c2770ac0eb5d4a6474bdc26357b437cc74c402ff60076ee635c80",
+        "size_bytes": 490613847,
+        "compressed_bytes_read": 490613847
+      },
+      {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/reactome-42246331998-1-b0002.tar.gz",
+        "selected_members": 1,
+        "verified": true,
+        "sha256": "45c8f85173a5cf1ba23974846e01feb1cbbe0d3401f5f0aedcc15808b83073ca",
+        "size_bytes": 13672965,
+        "compressed_bytes_read": 13672965
+      },
+      {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scidraw-42235890704-1-b0000.tar.gz",
+        "selected_members": 2,
+        "verified": true,
+        "sha256": "ccc6253bacba4862a11b5ee40eb0297046a9350bad2a9a09515484c0fa1fcfa6",
+        "size_bytes": 59250378,
+        "compressed_bytes_read": 59250378
+      },
+      {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42271777119-1-b0001.tar.gz",
+        "selected_members": 2,
+        "verified": true,
+        "sha256": "b77932eb134a91841976e97afbf787b4deb8705d00e2980f7fef611c9abdeaba",
+        "size_bytes": 162221483,
+        "compressed_bytes_read": 162221483
+      }
+    ]
+  },
+  "visual_items": [
+    {
+      "source": "nih-bioart",
+      "source_id": "306",
+      "original_sha256": "7687ce9bf458eac26b31005e13a80e21cd9cf79a4ee3b244538141a38575e302",
+      "preview_sha256": "bc0e72aea87311bd819272d5d5895d83f93cce8eb28ae52d28f21e20ad541643",
+      "tile": 1,
+      "scientific_assertions": {
+        "object": [
+          "lysosome"
+        ],
+        "depiction_kind": "organelle"
+      }
+    },
+    {
+      "source": "nih-bioart",
+      "source_id": "306",
+      "original_sha256": "201a1b8705c3ffb62dcc0f01b0f851046d63c83ccfaf92ad9dde29ac125c007c",
+      "preview_sha256": "667e6c1162fc96f16ccf923a8453fa1f000f826a4dc75851fad72d12ffc9aaa0",
+      "tile": 2,
+      "scientific_assertions": {
+        "object": [
+          "lysosome"
+        ],
+        "depiction_kind": "organelle"
+      }
+    },
+    {
+      "source": "reactome",
+      "source_id": "R-ICO-013653",
+      "original_sha256": "650e62728a0736c1fd5e25c579c928c5843e4b78f280ccec5d8f9db5d41ef345",
+      "preview_sha256": "3810499ecef92d348de1732d18537f2b7dace7791b1e04a036c0902bd70abcf6",
+      "tile": 3,
+      "scientific_assertions": {
+        "object": [
+          "autolysosome"
+        ],
+        "depiction_kind": "organelle"
+      }
+    },
+    {
+      "source": "togo",
+      "source_id": "2203",
+      "original_sha256": "252a376fcfb8e7551cff2bab1ec5b145d941249ccee63fe882e1b9dc1b10efb6",
+      "preview_sha256": "3f08f8f4a8b056a98e18f9ccb4557dc5e3da2002189754a20afdeb87f6e7fb56",
+      "tile": 4,
+      "scientific_assertions": {
+        "object": [
+          "cell"
+        ],
+        "depiction_kind": "cell"
+      }
+    },
+    {
+      "source": "togo",
+      "source_id": "2203",
+      "original_sha256": "770efbda359d5b58942ab9837ce13d454785be38bb45a6ef5f621d93e7d4d8ee",
+      "preview_sha256": "ed70e59190872ccf408cb0c9c9ea73b47582559b74f563e6580504d5c8c108d5",
+      "tile": 5,
+      "scientific_assertions": {
+        "object": [
+          "cell"
+        ],
+        "depiction_kind": "cell"
+      }
+    },
+    {
+      "source": "scidraw",
+      "source_id": "80f4b415-a823-4226-9adc-31a5c5297f8c",
+      "original_sha256": "bb78b1ff5e325ac78a483e1105e76bbb9e9e99a932b1540a268bcd2e8774f7f9",
+      "preview_sha256": "439c8f2db7a6b2a9715591c915da7f5123a966111640324974776a94ccb21065",
+      "tile": 6,
+      "scientific_assertions": {
+        "object": [
+          "tail suspension"
+        ],
+        "species": [
+          "mouse"
+        ],
+        "depiction_kind": "action",
+        "role": [
+          "experimental_scene"
+        ]
+      }
+    },
+    {
+      "source": "scidraw",
+      "source_id": "4c98346a-52a8-4d18-a1f9-95af550540fa",
+      "original_sha256": "2854eba6c1d743ccbdcb5bba86daafc7a5525a6619af374c156ab7c667b38eb5",
+      "preview_sha256": "1c73e2caead94a41c1c4bea851474382f0dfeb881b4d8dc540b36acaad16fbe5",
+      "tile": 7,
+      "scientific_assertions": {
+        "object": [
+          "restraint"
+        ],
+        "species": [
+          "mouse"
+        ],
+        "depiction_kind": "scene",
+        "role": [
+          "experimental_scene"
+        ]
+      }
+    }
+  ],
+  "source_metadata_scan": {
+    "inputs": [
+      {
+        "name": "assembly-42289434868-1.catalog.jsonl",
+        "sha256": "5c90306415ce5e7f36e875c7f57b19a91930aacfeeaeecdf9ad7662770f9a3fe"
+      },
+      {
+        "name": "assembly-42283380295-1.internal-catalog.jsonl",
+        "sha256": "8d04bf38b1469ca6690972dd0f140f06e76411b96e245efff67f9efa73ee7970"
+      }
+    ],
+    "fields": [
+      "source",
+      "source_id",
+      "title",
+      "description",
+      "categories",
+      "tags"
+    ],
+    "rodent_pattern": "\\b(mouse|mice|rat|rats|rodent|murine)\\b|小鼠|大鼠",
+    "procedure_pattern": "inject|inoculat|intraperitone|intra.peritone|tail.?vein|syringe|immuniz|vaccin|subcut|intraven|intramuscul|retro.?orbital|gavage|注射",
+    "unique_source_contexts": 11884,
+    "injection_related_nominations": 81,
+    "same_source_context_rodent_and_injection": [],
+    "whole_record_serialized_cooccurrence": [],
+    "caution": "Metadata nomination only; zero matches does not prove visual absence in every unreviewed file."
+  },
+  "injection_related_nominations": [
+    {
+      "source": "bioicons",
+      "source_id": "cc-by-4.0/Animals/DBCLS/cricket_egg_injection.svg",
+      "title": "cricket egg injection"
+    },
+    {
+      "source": "togo",
+      "source_id": "1604",
+      "title": "two-spotted cricket egg injection"
+    },
+    {
+      "source": "bioicons",
+      "source_id": "cc-by-3.0/Human_physiology/Servier/syringe.svg",
+      "title": "syringe"
+    },
+    {
+      "source": "bioicons",
+      "source_id": "cc-by-4.0/Lab_apparatus/DBCLS/Vaccine_bottle.svg",
+      "title": "Vaccine bottle"
+    },
+    {
+      "source": "bioicons",
+      "source_id": "cc-by-4.0/Nucleic_acids/DBCLS/mRNA_vaccine-vector.svg",
+      "title": "m RNA vaccine vector"
+    },
+    {
+      "source": "bioicons",
+      "source_id": "cc-by-4.0/Animals/DBCLS/larva_injection.svg",
+      "title": "larva injection"
+    },
+    {
+      "source": "togo",
+      "source_id": "1176",
+      "title": "Silkworm larva injection"
+    },
+    {
+      "source": "bioicons",
+      "source_id": "cc-by-4.0/Cell_culture/DBCLS/embryo_gene-injection.svg",
+      "title": "embryo gene injection"
+    },
+    {
+      "source": "togo",
+      "source_id": "1451",
+      "title": "Zebrafish embryo gene-injection"
+    },
+    {
+      "source": "bioicons",
+      "source_id": "cc-0/Human_physiology/va/syringe_with_blood.svg",
+      "title": "syringe with blood"
+    },
+    {
+      "source": "bioicons",
+      "source_id": "cc-0/Lab_apparatus/Derek-Croote/simple-syringe-cartoon.svg",
+      "title": "simple syringe cartoon"
+    },
+    {
+      "source": "bioicons",
+      "source_id": "cc-by-3.0/Human_physiology/Servier/injectable.svg",
+      "title": "injectable"
+    },
+    {
+      "source": "healthicons",
+      "source_id": "public/icons/svg/outline/symbols/virus-shield.svg",
+      "title": "Shield Virus"
+    },
+    {
+      "source": "healthicons",
+      "source_id": "public/icons/svg/filled/symbols/virus-shield.svg",
+      "title": "Shield Virus"
+    },
+    {
+      "source": "healthicons",
+      "source_id": "public/icons/svg/filled/devices/virus-lab_research_syringe.svg",
+      "title": "Virus Lab Research"
+    },
+    {
+      "source": "healthicons",
+      "source_id": "public/icons/svg/outline/devices/virus-lab_research_syringe.svg",
+      "title": "Virus Lab Research"
+    },
+    {
+      "source": "healthicons",
+      "source_id": "public/icons/svg/filled/people/pwid.svg",
+      "title": "People Who Inject Drugs"
+    },
+    {
+      "source": "healthicons",
+      "source_id": "public/icons/svg/outline/people/pwid.svg",
+      "title": "People Who Inject Drugs"
+    },
+    {
+      "source": "healthicons",
+      "source_id": "public/icons/svg/outline/devices/hospitalized.svg",
+      "title": "Hospital Bed"
+    },
+    {
+      "source": "healthicons",
+      "source_id": "public/icons/svg/filled-24px/devices/hospitalized.svg",
+      "title": "Hospital Bed"
+    },
+    {
+      "source": "healthicons",
+      "source_id": "public/icons/svg/outline-24px/devices/hospitalized.svg",
+      "title": "Hospital Bed"
+    },
+    {
+      "source": "healthicons",
+      "source_id": "public/icons/svg/filled/devices/hospitalized.svg",
+      "title": "Hospital Bed"
+    },
+    {
+      "source": "healthicons",
+      "source_id": "public/icons/svg/filled/symbols/blood-transfusion.svg",
+      "title": "Blood transfusion"
+    },
+    {
+      "source": "healthicons",
+      "source_id": "public/icons/svg/outline/symbols/blood-transfusion.svg",
+      "title": "Blood transfusion"
+    },
+    {
+      "source": "healthicons",
+      "source_id": "public/icons/svg/filled/devices/intravenous-bag.svg",
+      "title": "Intravenous Bag"
+    },
+    {
+      "source": "healthicons",
+      "source_id": "public/icons/svg/outline-24px/devices/intravenous-bag.svg",
+      "title": "Intravenous Bag"
+    },
+    {
+      "source": "healthicons",
+      "source_id": "public/icons/svg/filled-24px/devices/intravenous-bag.svg",
+      "title": "Intravenous Bag"
+    },
+    {
+      "source": "healthicons",
+      "source_id": "public/icons/svg/outline/devices/intravenous-bag.svg",
+      "title": "Intravenous Bag"
+    },
+    {
+      "source": "healthicons",
+      "source_id": "public/icons/svg/filled/contraceptives/contraceptive-injection.svg",
+      "title": "Contraceptive Injection"
+    },
+    {
+      "source": "healthicons",
+      "source_id": "public/icons/svg/outline-24px/contraceptives/contraceptive-injection.svg",
+      "title": "Contraceptive Injection"
+    },
+    {
+      "source": "healthicons",
+      "source_id": "public/icons/svg/outline/contraceptives/contraceptive-injection.svg",
+      "title": "Contraceptive Injection"
+    },
+    {
+      "source": "healthicons",
+      "source_id": "public/icons/svg/filled-24px/contraceptives/contraceptive-injection.svg",
+      "title": "Contraceptive Injection"
+    },
+    {
+      "source": "healthicons",
+      "source_id": "public/icons/svg/filled-24px/devices/syringe.svg",
+      "title": "Syringe"
+    },
+    {
+      "source": "healthicons",
+      "source_id": "public/icons/svg/outline-24px/devices/syringe.svg",
+      "title": "Syringe"
+    },
+    {
+      "source": "healthicons",
+      "source_id": "public/icons/svg/filled/devices/syringe.svg",
+      "title": "Syringe"
+    },
+    {
+      "source": "healthicons",
+      "source_id": "public/icons/svg/outline/devices/syringe.svg",
+      "title": "Syringe"
+    },
+    {
+      "source": "healthicons",
+      "source_id": "public/icons/svg/outline/devices/intravenous-drip.svg",
+      "title": "Intravenous Drip"
+    },
+    {
+      "source": "healthicons",
+      "source_id": "public/icons/svg/filled/devices/intravenous-drip.svg",
+      "title": "Intravenous Drip"
+    },
+    {
+      "source": "healthicons",
+      "source_id": "public/icons/svg/outline/devices/syringe-vaccine.svg",
+      "title": "Syringe Vaccine"
+    },
+    {
+      "source": "healthicons",
+      "source_id": "public/icons/svg/filled/devices/syringe-vaccine.svg",
+      "title": "Syringe Vaccine"
+    },
+    {
+      "source": "lab-equipment",
+      "source_id": "svg/PlasticSyringe.svg",
+      "title": "Plastic Syringe"
+    },
+    {
+      "source": "lab-equipment",
+      "source_id": "svg/PlasticSyringeWithNeedle.svg",
+      "title": "Plastic Syringe With Needle"
+    },
+    {
+      "source": "lab-equipment",
+      "source_id": "svg/GlassSyringeBarrel.svg",
+      "title": "Glass Syringe Barrel"
+    },
+    {
+      "source": "lab-equipment",
+      "source_id": "svg/PlasticSyringeBarrel.svg",
+      "title": "Plastic Syringe Barrel"
+    },
+    {
+      "source": "lab-equipment",
+      "source_id": "svg/GlassSyringeNeedle.svg",
+      "title": "Glass Syringe Needle"
+    },
+    {
+      "source": "lab-equipment",
+      "source_id": "svg/PlasticSyringePull.svg",
+      "title": "Plastic Syringe Pull"
+    },
+    {
+      "source": "lab-equipment",
+      "source_id": "svg/PlasticSyringePlunger.svg",
+      "title": "Plastic Syringe Plunger"
+    },
+    {
+      "source": "lab-equipment",
+      "source_id": "svg/GlassSyringe.svg",
+      "title": "Glass Syringe"
+    },
+    {
+      "source": "lab-equipment",
+      "source_id": "svg/GlassSyringePlunger.svg",
+      "title": "Glass Syringe Plunger"
+    },
+    {
+      "source": "lab-equipment",
+      "source_id": "svg/GlassSyringePull.svg",
+      "title": "Glass Syringe Pull"
+    },
+    {
+      "source": "lab-equipment",
+      "source_id": "svg/PlasticSyringeNeedle.svg",
+      "title": "Plastic Syringe Needle"
+    },
+    {
+      "source": "nih-bioart",
+      "source_id": "544",
+      "title": "VSV"
+    },
+    {
+      "source": "nih-bioart",
+      "source_id": "571",
+      "title": "Dermal Papilla"
+    },
+    {
+      "source": "nih-bioart",
+      "source_id": "506",
+      "title": "Syringe"
+    },
+    {
+      "source": "nih-bioart",
+      "source_id": "505",
+      "title": "Syringe"
+    },
+    {
+      "source": "nih-bioart",
+      "source_id": "893",
+      "title": "Micro Needles"
+    },
+    {
+      "source": "nih-bioart",
+      "source_id": "534",
+      "title": "Vaccine Vial"
+    },
+    {
+      "source": "nih-bioart",
+      "source_id": "536",
+      "title": "Vaccine Vial"
+    },
+    {
+      "source": "nih-bioart",
+      "source_id": "545",
+      "title": "VSV"
+    },
+    {
+      "source": "nih-bioart",
+      "source_id": "966",
+      "title": "Prescription Vaccine Vial"
+    },
+    {
+      "source": "nih-bioart",
+      "source_id": "535",
+      "title": "Vaccine Vial"
+    },
+    {
+      "source": "scidraw",
+      "source_id": "200532bc-f6c0-4ed5-b46b-1cdf78649ae0",
+      "title": "1ml syringe with 25G needle"
+    },
+    {
+      "source": "scidraw",
+      "source_id": "253d208c-3a1c-4fa8-a728-e731b66ce9d8",
+      "title": "syringe"
+    },
+    {
+      "source": "scidraw",
+      "source_id": "3e26cb77-afc2-4d02-be41-fd2e5403b819",
+      "title": "Hamilton Syringe"
+    },
+    {
+      "source": "scidraw",
+      "source_id": "14f503fb-aec8-4760-8cf3-09f6ccedb7c1",
+      "title": "syringe"
+    },
+    {
+      "source": "scidraw",
+      "source_id": "2c3ec261-4af0-4fc9-be41-b2eca18281be",
+      "title": "syringe"
+    },
+    {
+      "source": "togo",
+      "source_id": "1910",
+      "title": "A man using an intravenous drip stand"
+    },
+    {
+      "source": "togo",
+      "source_id": "2103",
+      "title": "Vaccine"
+    },
+    {
+      "source": "togo",
+      "source_id": "760",
+      "title": "A patient receiving an intravenous drip"
+    },
+    {
+      "source": "togo",
+      "source_id": "708",
+      "title": "Leaf drop inoculation"
+    },
+    {
+      "source": "togo",
+      "source_id": "867",
+      "title": "Vaccine bottle"
+    },
+    {
+      "source": "togo",
+      "source_id": "651",
+      "title": "Syringe (mono)"
+    },
+    {
+      "source": "togo",
+      "source_id": "325",
+      "title": "syringe"
+    },
+    {
+      "source": "togo",
+      "source_id": "329",
+      "title": "needle syringe"
+    },
+    {
+      "source": "togo",
+      "source_id": "845",
+      "title": "mRNA vaccine"
+    },
+    {
+      "source": "togo",
+      "source_id": "720",
+      "title": "Syringe"
+    },
+    {
+      "source": "togo",
+      "source_id": "719",
+      "title": "Leaf syringe inoculation infiltration"
+    },
+    {
+      "source": "togo",
+      "source_id": "1969",
+      "title": "A woman using an intravenous drip stand"
+    },
+    {
+      "source": "togo",
+      "source_id": "1425",
+      "title": "Intravenous drip"
+    },
+    {
+      "source": "togo",
+      "source_id": "652",
+      "title": "Syringe"
+    },
+    {
+      "source": "togo",
+      "source_id": "762",
+      "title": "A patient receiving an intravenous drip (Illustration)"
+    }
+  ],
+  "existing_scope_not_reopened": [
+    {
+      "source": "reactome",
+      "source_id": "R-ICO-012966",
+      "original_sha256": "2157e2aef523251fd68f967b3308c68f85fee1b37d2dd7313abb0257cbd600b5",
+      "status": "pending_review",
+      "reason": "Previously actually reviewed unlabelled shaded sphere; distinguishing organelle structure unresolved. Not included in the new exact pack or scientific assertions."
+    }
+  ],
+  "bounded_query_proof": {
+    "schema_version": 1,
+    "method": "Actual shared-core v9 SQLite query before/after exact visual scientific evidence on five existing public families only; this is a bounded integration proof, not a new full-library benchmark or publication.",
+    "input_public_catalog_sha256": "5c90306415ce5e7f36e875c7f57b19a91930aacfeeaeecdf9ad7662770f9a3fe",
+    "review_document": {
+      "path": "data/visual-reviews/lysosome-rodent-actions-42293672125-scientific.json",
+      "sha256": "09b52f0ad8e3d1afcfac5be3b7568d57c65608a543b7123320bee88850b11a72"
+    },
+    "families_in_subset": 5,
+    "unique_files_in_subset": 7,
+    "scientific_application": {
+      "schema_version": 1,
+      "method": "exact_original_preview_and_review_archive_anchor",
+      "review_documents": [
+        {
+          "path": "data/visual-reviews/lysosome-rodent-actions-42293672125-scientific.json",
+          "sha256": "09b52f0ad8e3d1afcfac5be3b7568d57c65608a543b7123320bee88850b11a72",
+          "assertion_items": 7
+        }
+      ],
+      "assertion_items": 7,
+      "matched_assertion_items": 7,
+      "unmatched_assertion_items": 0,
+      "invalid_assertion_items": 0,
+      "applied_unique_files": 7,
+      "applied_file_entries": 7,
+      "conflicting_unique_files": 0,
+      "conflicting_fields": 0,
+      "issues": [],
+      "artwork_modified": false,
+      "overall_scientific_acceptance": "not_established_by_limited_visual_attributes"
+    },
+    "queries": [
+      {
+        "stage": "before",
+        "query_id": "lysosome-zh",
+        "query": "溶酶体插画",
+        "filters": {},
+        "requirements": {
+          "object": [
+            "溶酶体",
+            "lysosome"
+          ]
+        },
+        "selected_files": [],
+        "diagnostics": {
+          "qualified_variants": 0,
+          "qualified_families": 0,
+          "candidate_pool": 75,
+          "rerank_windows": 0,
+          "compact_candidates_loaded": 0,
+          "window_start": 0,
+          "scarcity": true,
+          "no_match": true,
+          "acceptance": "not_established_by_search",
+          "unavailable_project_pins": [],
+          "sqlite_pushdown": {
+            "text_matched_variants": 4,
+            "payload_variants_loaded": 0,
+            "payload_bytes_loaded": 2,
+            "selected_detail_variants_loaded": 0,
+            "selected_detail_bytes_loaded": 2,
+            "rejections_by_condition_may_overlap": {
+              "unavailable_or_rights_unresolved": 0,
+              "hard_filter:object": 4,
+              "unknown:object": 4
+            },
+            "hard_filters_before_payload_load": true,
+            "family_grouping_before_candidate_limit": true,
+            "candidate_limit_before_filters": null
+          },
+          "uncertain_candidates": [
+            {
+              "variant_id": "nih-bioart-469ab575b90ee2c9d61d:201a1b8705c3ffb62dcc0f01b0f851046d63c83ccfaf92ad9dde29ac125c007c:nih-bioart-5698794fa3297a694510:0",
+              "family_id": "nih-bioart-469ab575b90ee2c9d61d",
+              "reason": "unknown:object"
+            },
+            {
+              "variant_id": "nih-bioart-469ab575b90ee2c9d61d:7687ce9bf458eac26b31005e13a80e21cd9cf79a4ee3b244538141a38575e302:nih-bioart-5698794fa3297a694510:0",
+              "family_id": "nih-bioart-469ab575b90ee2c9d61d",
+              "reason": "unknown:object"
+            },
+            {
+              "variant_id": "togo-759d6c1a90e4adc82316:252a376fcfb8e7551cff2bab1ec5b145d941249ccee63fe882e1b9dc1b10efb6:togo-b1e6acf8d23ed2618e5d:0",
+              "family_id": "togo-759d6c1a90e4adc82316",
+              "reason": "unknown:object"
+            },
+            {
+              "variant_id": "togo-759d6c1a90e4adc82316:770efbda359d5b58942ab9837ce13d454785be38bb45a6ef5f621d93e7d4d8ee:togo-b1e6acf8d23ed2618e5d:0",
+              "family_id": "togo-759d6c1a90e4adc82316",
+              "reason": "unknown:object"
+            }
+          ]
+        }
+      },
+      {
+        "stage": "before",
+        "query_id": "lysosome-en",
+        "query": "lysosome illustration",
+        "filters": {},
+        "requirements": {
+          "object": [
+            "lysosome",
+            "溶酶体"
+          ]
+        },
+        "selected_files": [],
+        "diagnostics": {
+          "qualified_variants": 0,
+          "qualified_families": 0,
+          "candidate_pool": 75,
+          "rerank_windows": 0,
+          "compact_candidates_loaded": 0,
+          "window_start": 0,
+          "scarcity": true,
+          "no_match": true,
+          "acceptance": "not_established_by_search",
+          "unavailable_project_pins": [],
+          "sqlite_pushdown": {
+            "text_matched_variants": 4,
+            "payload_variants_loaded": 0,
+            "payload_bytes_loaded": 2,
+            "selected_detail_variants_loaded": 0,
+            "selected_detail_bytes_loaded": 2,
+            "rejections_by_condition_may_overlap": {
+              "unavailable_or_rights_unresolved": 0,
+              "hard_filter:object": 4,
+              "unknown:object": 4
+            },
+            "hard_filters_before_payload_load": true,
+            "family_grouping_before_candidate_limit": true,
+            "candidate_limit_before_filters": null
+          },
+          "uncertain_candidates": [
+            {
+              "variant_id": "nih-bioart-469ab575b90ee2c9d61d:201a1b8705c3ffb62dcc0f01b0f851046d63c83ccfaf92ad9dde29ac125c007c:nih-bioart-5698794fa3297a694510:0",
+              "family_id": "nih-bioart-469ab575b90ee2c9d61d",
+              "reason": "unknown:object"
+            },
+            {
+              "variant_id": "nih-bioart-469ab575b90ee2c9d61d:7687ce9bf458eac26b31005e13a80e21cd9cf79a4ee3b244538141a38575e302:nih-bioart-5698794fa3297a694510:0",
+              "family_id": "nih-bioart-469ab575b90ee2c9d61d",
+              "reason": "unknown:object"
+            },
+            {
+              "variant_id": "togo-759d6c1a90e4adc82316:252a376fcfb8e7551cff2bab1ec5b145d941249ccee63fe882e1b9dc1b10efb6:togo-b1e6acf8d23ed2618e5d:0",
+              "family_id": "togo-759d6c1a90e4adc82316",
+              "reason": "unknown:object"
+            },
+            {
+              "variant_id": "togo-759d6c1a90e4adc82316:770efbda359d5b58942ab9837ce13d454785be38bb45a6ef5f621d93e7d4d8ee:togo-b1e6acf8d23ed2618e5d:0",
+              "family_id": "togo-759d6c1a90e4adc82316",
+              "reason": "unknown:object"
+            }
+          ]
+        }
+      },
+      {
+        "stage": "before",
+        "query_id": "lysosome-png",
+        "query": "lysosome illustration",
+        "filters": {
+          "format": "png"
+        },
+        "requirements": {
+          "format": [
+            "png"
+          ],
+          "object": [
+            "lysosome",
+            "溶酶体"
+          ]
+        },
+        "selected_files": [],
+        "diagnostics": {
+          "qualified_variants": 0,
+          "qualified_families": 0,
+          "candidate_pool": 75,
+          "rerank_windows": 0,
+          "compact_candidates_loaded": 0,
+          "window_start": 0,
+          "scarcity": true,
+          "no_match": true,
+          "acceptance": "not_established_by_search",
+          "unavailable_project_pins": [],
+          "sqlite_pushdown": {
+            "text_matched_variants": 4,
+            "payload_variants_loaded": 0,
+            "payload_bytes_loaded": 2,
+            "selected_detail_variants_loaded": 0,
+            "selected_detail_bytes_loaded": 2,
+            "rejections_by_condition_may_overlap": {
+              "unavailable_or_rights_unresolved": 0,
+              "hard_filter:format": 2,
+              "hard_filter:object": 4,
+              "unknown:format": 0,
+              "unknown:object": 2
+            },
+            "hard_filters_before_payload_load": true,
+            "family_grouping_before_candidate_limit": true,
+            "candidate_limit_before_filters": null
+          },
+          "uncertain_candidates": [
+            {
+              "variant_id": "nih-bioart-469ab575b90ee2c9d61d:7687ce9bf458eac26b31005e13a80e21cd9cf79a4ee3b244538141a38575e302:nih-bioart-5698794fa3297a694510:0",
+              "family_id": "nih-bioart-469ab575b90ee2c9d61d",
+              "reason": "unknown:object"
+            },
+            {
+              "variant_id": "togo-759d6c1a90e4adc82316:770efbda359d5b58942ab9837ce13d454785be38bb45a6ef5f621d93e7d4d8ee:togo-b1e6acf8d23ed2618e5d:0",
+              "family_id": "togo-759d6c1a90e4adc82316",
+              "reason": "unknown:object"
+            }
+          ]
+        }
+      },
+      {
+        "stage": "before",
+        "query_id": "lysosome-svg",
+        "query": "lysosome illustration",
+        "filters": {
+          "format": "svg"
+        },
+        "requirements": {
+          "format": [
+            "svg"
+          ],
+          "object": [
+            "lysosome",
+            "溶酶体"
+          ]
+        },
+        "selected_files": [],
+        "diagnostics": {
+          "qualified_variants": 0,
+          "qualified_families": 0,
+          "candidate_pool": 75,
+          "rerank_windows": 0,
+          "compact_candidates_loaded": 0,
+          "window_start": 0,
+          "scarcity": true,
+          "no_match": true,
+          "acceptance": "not_established_by_search",
+          "unavailable_project_pins": [],
+          "sqlite_pushdown": {
+            "text_matched_variants": 4,
+            "payload_variants_loaded": 0,
+            "payload_bytes_loaded": 2,
+            "selected_detail_variants_loaded": 0,
+            "selected_detail_bytes_loaded": 2,
+            "rejections_by_condition_may_overlap": {
+              "unavailable_or_rights_unresolved": 0,
+              "hard_filter:format": 2,
+              "hard_filter:object": 4,
+              "unknown:format": 0,
+              "unknown:object": 2
+            },
+            "hard_filters_before_payload_load": true,
+            "family_grouping_before_candidate_limit": true,
+            "candidate_limit_before_filters": null
+          },
+          "uncertain_candidates": [
+            {
+              "variant_id": "nih-bioart-469ab575b90ee2c9d61d:201a1b8705c3ffb62dcc0f01b0f851046d63c83ccfaf92ad9dde29ac125c007c:nih-bioart-5698794fa3297a694510:0",
+              "family_id": "nih-bioart-469ab575b90ee2c9d61d",
+              "reason": "unknown:object"
+            },
+            {
+              "variant_id": "togo-759d6c1a90e4adc82316:252a376fcfb8e7551cff2bab1ec5b145d941249ccee63fe882e1b9dc1b10efb6:togo-b1e6acf8d23ed2618e5d:0",
+              "family_id": "togo-759d6c1a90e4adc82316",
+              "reason": "unknown:object"
+            }
+          ]
+        }
+      },
+      {
+        "stage": "before",
+        "query_id": "mouse-injection-zh",
+        "query": "小鼠注射实验示意",
+        "filters": {},
+        "requirements": {
+          "species": [
+            "mouse"
+          ],
+          "object": [
+            "注射",
+            "injection",
+            "inject"
+          ],
+          "depiction_kind": [
+            "action"
+          ]
+        },
+        "selected_files": [],
+        "diagnostics": {
+          "qualified_variants": 0,
+          "qualified_families": 0,
+          "candidate_pool": 75,
+          "rerank_windows": 0,
+          "compact_candidates_loaded": 0,
+          "window_start": 0,
+          "scarcity": true,
+          "no_match": true,
+          "acceptance": "not_established_by_search",
+          "unavailable_project_pins": [],
+          "sqlite_pushdown": {
+            "text_matched_variants": 0,
+            "payload_variants_loaded": 0,
+            "payload_bytes_loaded": 2,
+            "selected_detail_variants_loaded": 0,
+            "selected_detail_bytes_loaded": 2,
+            "rejections_by_condition_may_overlap": {
+              "unavailable_or_rights_unresolved": 0,
+              "hard_filter:species": 0,
+              "hard_filter:object": 0,
+              "hard_filter:depiction_kind": 0,
+              "unknown:species": 0,
+              "unknown:object": 0,
+              "unknown:depiction_kind": 0
+            },
+            "hard_filters_before_payload_load": true,
+            "family_grouping_before_candidate_limit": true,
+            "candidate_limit_before_filters": null
+          },
+          "uncertain_candidates": []
+        }
+      },
+      {
+        "stage": "before",
+        "query_id": "mouse-injection-en",
+        "query": "mouse injection experiment illustration",
+        "filters": {},
+        "requirements": {
+          "species": [
+            "mouse"
+          ],
+          "object": [
+            "injection",
+            "注射",
+            "inject"
+          ],
+          "depiction_kind": [
+            "action"
+          ]
+        },
+        "selected_files": [],
+        "diagnostics": {
+          "qualified_variants": 0,
+          "qualified_families": 0,
+          "candidate_pool": 75,
+          "rerank_windows": 0,
+          "compact_candidates_loaded": 0,
+          "window_start": 0,
+          "scarcity": true,
+          "no_match": true,
+          "acceptance": "not_established_by_search",
+          "unavailable_project_pins": [],
+          "sqlite_pushdown": {
+            "text_matched_variants": 0,
+            "payload_variants_loaded": 0,
+            "payload_bytes_loaded": 2,
+            "selected_detail_variants_loaded": 0,
+            "selected_detail_bytes_loaded": 2,
+            "rejections_by_condition_may_overlap": {
+              "unavailable_or_rights_unresolved": 0,
+              "hard_filter:species": 0,
+              "hard_filter:object": 0,
+              "hard_filter:depiction_kind": 0,
+              "unknown:species": 0,
+              "unknown:object": 0,
+              "unknown:depiction_kind": 0
+            },
+            "hard_filters_before_payload_load": true,
+            "family_grouping_before_candidate_limit": true,
+            "candidate_limit_before_filters": null
+          },
+          "uncertain_candidates": []
+        }
+      },
+      {
+        "stage": "after",
+        "query_id": "lysosome-zh",
+        "query": "溶酶体插画",
+        "filters": {},
+        "requirements": {
+          "object": [
+            "溶酶体",
+            "lysosome"
+          ]
+        },
+        "selected_files": [
+          {
+            "asset_id": "nih-bioart-469ab575b90ee2c9d61d",
+            "title": "Lysosomes",
+            "sha256": "201a1b8705c3ffb62dcc0f01b0f851046d63c83ccfaf92ad9dde29ac125c007c",
+            "scientific": {
+              "object": [
+                "lysosome"
+              ],
+              "depiction_kind": "organelle"
+            },
+            "original_archive": {
+              "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/nih-bioart-42236561214-1-b0000.tar.gz",
+              "member": "files/20/201a1b8705c3ffb62dcc0f01b0f851046d63c83ccfaf92ad9dde29ac125c007c.svg"
+            },
+            "selected_science": {
+              "values": {
+                "species": [],
+                "state": [],
+                "view": [],
+                "role": []
+              },
+              "primary_object": {
+                "terms": [
+                  "lysosome",
+                  "溶酶体"
+                ],
+                "depiction_kind": "organelle",
+                "basis": "manual_visual_review",
+                "evidence": "Lysosomes",
+                "manual_evidence_indices": [
+                  0
+                ],
+                "whole_body_verified": false
+              },
+              "basis": {
+                "species": {
+                  "kind": "unknown"
+                },
+                "state": {
+                  "kind": "unknown"
+                },
+                "view": {
+                  "kind": "unknown"
+                },
+                "role": {
+                  "kind": "unknown"
+                }
+              }
+            }
+          }
+        ],
+        "diagnostics": {
+          "qualified_variants": 2,
+          "qualified_families": 1,
+          "candidate_pool": 75,
+          "rerank_windows": 1,
+          "compact_candidates_loaded": 1,
+          "window_start": 0,
+          "scarcity": true,
+          "no_match": false,
+          "acceptance": "not_established_by_search",
+          "unavailable_project_pins": [],
+          "sqlite_pushdown": {
+            "text_matched_variants": 4,
+            "payload_variants_loaded": 1,
+            "payload_bytes_loaded": 464,
+            "selected_detail_variants_loaded": 1,
+            "selected_detail_bytes_loaded": 8781,
+            "rejections_by_condition_may_overlap": {
+              "unavailable_or_rights_unresolved": 0,
+              "hard_filter:object": 2,
+              "unknown:object": 0
+            },
+            "hard_filters_before_payload_load": true,
+            "family_grouping_before_candidate_limit": true,
+            "candidate_limit_before_filters": null
+          },
+          "uncertain_candidates": []
+        }
+      },
+      {
+        "stage": "after",
+        "query_id": "lysosome-en",
+        "query": "lysosome illustration",
+        "filters": {},
+        "requirements": {
+          "object": [
+            "lysosome",
+            "溶酶体"
+          ]
+        },
+        "selected_files": [
+          {
+            "asset_id": "nih-bioart-469ab575b90ee2c9d61d",
+            "title": "Lysosomes",
+            "sha256": "201a1b8705c3ffb62dcc0f01b0f851046d63c83ccfaf92ad9dde29ac125c007c",
+            "scientific": {
+              "object": [
+                "lysosome"
+              ],
+              "depiction_kind": "organelle"
+            },
+            "original_archive": {
+              "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/nih-bioart-42236561214-1-b0000.tar.gz",
+              "member": "files/20/201a1b8705c3ffb62dcc0f01b0f851046d63c83ccfaf92ad9dde29ac125c007c.svg"
+            },
+            "selected_science": {
+              "values": {
+                "species": [],
+                "state": [],
+                "view": [],
+                "role": []
+              },
+              "primary_object": {
+                "terms": [
+                  "lysosome",
+                  "溶酶体"
+                ],
+                "depiction_kind": "organelle",
+                "basis": "manual_visual_review",
+                "evidence": "Lysosomes",
+                "manual_evidence_indices": [
+                  0
+                ],
+                "whole_body_verified": false
+              },
+              "basis": {
+                "species": {
+                  "kind": "unknown"
+                },
+                "state": {
+                  "kind": "unknown"
+                },
+                "view": {
+                  "kind": "unknown"
+                },
+                "role": {
+                  "kind": "unknown"
+                }
+              }
+            }
+          }
+        ],
+        "diagnostics": {
+          "qualified_variants": 2,
+          "qualified_families": 1,
+          "candidate_pool": 75,
+          "rerank_windows": 1,
+          "compact_candidates_loaded": 1,
+          "window_start": 0,
+          "scarcity": true,
+          "no_match": false,
+          "acceptance": "not_established_by_search",
+          "unavailable_project_pins": [],
+          "sqlite_pushdown": {
+            "text_matched_variants": 4,
+            "payload_variants_loaded": 1,
+            "payload_bytes_loaded": 464,
+            "selected_detail_variants_loaded": 1,
+            "selected_detail_bytes_loaded": 8781,
+            "rejections_by_condition_may_overlap": {
+              "unavailable_or_rights_unresolved": 0,
+              "hard_filter:object": 2,
+              "unknown:object": 0
+            },
+            "hard_filters_before_payload_load": true,
+            "family_grouping_before_candidate_limit": true,
+            "candidate_limit_before_filters": null
+          },
+          "uncertain_candidates": []
+        }
+      },
+      {
+        "stage": "after",
+        "query_id": "lysosome-png",
+        "query": "lysosome illustration",
+        "filters": {
+          "format": "png"
+        },
+        "requirements": {
+          "format": [
+            "png"
+          ],
+          "object": [
+            "lysosome",
+            "溶酶体"
+          ]
+        },
+        "selected_files": [
+          {
+            "asset_id": "nih-bioart-469ab575b90ee2c9d61d",
+            "title": "Lysosomes",
+            "sha256": "7687ce9bf458eac26b31005e13a80e21cd9cf79a4ee3b244538141a38575e302",
+            "scientific": {
+              "object": [
+                "lysosome"
+              ],
+              "depiction_kind": "organelle"
+            },
+            "original_archive": {
+              "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/nih-bioart-42236561214-1-b0000.tar.gz",
+              "member": "files/76/7687ce9bf458eac26b31005e13a80e21cd9cf79a4ee3b244538141a38575e302.png"
+            },
+            "selected_science": {
+              "values": {
+                "species": [],
+                "state": [],
+                "view": [],
+                "role": []
+              },
+              "primary_object": {
+                "terms": [
+                  "lysosome",
+                  "溶酶体"
+                ],
+                "depiction_kind": "organelle",
+                "basis": "manual_visual_review",
+                "evidence": "Lysosomes",
+                "manual_evidence_indices": [
+                  0
+                ],
+                "whole_body_verified": false
+              },
+              "basis": {
+                "species": {
+                  "kind": "unknown"
+                },
+                "state": {
+                  "kind": "unknown"
+                },
+                "view": {
+                  "kind": "unknown"
+                },
+                "role": {
+                  "kind": "unknown"
+                }
+              }
+            }
+          }
+        ],
+        "diagnostics": {
+          "qualified_variants": 1,
+          "qualified_families": 1,
+          "candidate_pool": 75,
+          "rerank_windows": 1,
+          "compact_candidates_loaded": 1,
+          "window_start": 0,
+          "scarcity": true,
+          "no_match": false,
+          "acceptance": "not_established_by_search",
+          "unavailable_project_pins": [],
+          "sqlite_pushdown": {
+            "text_matched_variants": 4,
+            "payload_variants_loaded": 1,
+            "payload_bytes_loaded": 464,
+            "selected_detail_variants_loaded": 1,
+            "selected_detail_bytes_loaded": 8832,
+            "rejections_by_condition_may_overlap": {
+              "unavailable_or_rights_unresolved": 0,
+              "hard_filter:format": 2,
+              "hard_filter:object": 2,
+              "unknown:format": 0,
+              "unknown:object": 0
+            },
+            "hard_filters_before_payload_load": true,
+            "family_grouping_before_candidate_limit": true,
+            "candidate_limit_before_filters": null
+          },
+          "uncertain_candidates": []
+        }
+      },
+      {
+        "stage": "after",
+        "query_id": "lysosome-svg",
+        "query": "lysosome illustration",
+        "filters": {
+          "format": "svg"
+        },
+        "requirements": {
+          "format": [
+            "svg"
+          ],
+          "object": [
+            "lysosome",
+            "溶酶体"
+          ]
+        },
+        "selected_files": [
+          {
+            "asset_id": "nih-bioart-469ab575b90ee2c9d61d",
+            "title": "Lysosomes",
+            "sha256": "201a1b8705c3ffb62dcc0f01b0f851046d63c83ccfaf92ad9dde29ac125c007c",
+            "scientific": {
+              "object": [
+                "lysosome"
+              ],
+              "depiction_kind": "organelle"
+            },
+            "original_archive": {
+              "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/nih-bioart-42236561214-1-b0000.tar.gz",
+              "member": "files/20/201a1b8705c3ffb62dcc0f01b0f851046d63c83ccfaf92ad9dde29ac125c007c.svg"
+            },
+            "selected_science": {
+              "values": {
+                "species": [],
+                "state": [],
+                "view": [],
+                "role": []
+              },
+              "primary_object": {
+                "terms": [
+                  "lysosome",
+                  "溶酶体"
+                ],
+                "depiction_kind": "organelle",
+                "basis": "manual_visual_review",
+                "evidence": "Lysosomes",
+                "manual_evidence_indices": [
+                  0
+                ],
+                "whole_body_verified": false
+              },
+              "basis": {
+                "species": {
+                  "kind": "unknown"
+                },
+                "state": {
+                  "kind": "unknown"
+                },
+                "view": {
+                  "kind": "unknown"
+                },
+                "role": {
+                  "kind": "unknown"
+                }
+              }
+            }
+          }
+        ],
+        "diagnostics": {
+          "qualified_variants": 1,
+          "qualified_families": 1,
+          "candidate_pool": 75,
+          "rerank_windows": 1,
+          "compact_candidates_loaded": 1,
+          "window_start": 0,
+          "scarcity": true,
+          "no_match": false,
+          "acceptance": "not_established_by_search",
+          "unavailable_project_pins": [],
+          "sqlite_pushdown": {
+            "text_matched_variants": 4,
+            "payload_variants_loaded": 1,
+            "payload_bytes_loaded": 464,
+            "selected_detail_variants_loaded": 1,
+            "selected_detail_bytes_loaded": 8781,
+            "rejections_by_condition_may_overlap": {
+              "unavailable_or_rights_unresolved": 0,
+              "hard_filter:format": 2,
+              "hard_filter:object": 2,
+              "unknown:format": 0,
+              "unknown:object": 0
+            },
+            "hard_filters_before_payload_load": true,
+            "family_grouping_before_candidate_limit": true,
+            "candidate_limit_before_filters": null
+          },
+          "uncertain_candidates": []
+        }
+      },
+      {
+        "stage": "after",
+        "query_id": "mouse-injection-zh",
+        "query": "小鼠注射实验示意",
+        "filters": {},
+        "requirements": {
+          "species": [
+            "mouse"
+          ],
+          "object": [
+            "注射",
+            "injection",
+            "inject"
+          ],
+          "depiction_kind": [
+            "action"
+          ]
+        },
+        "selected_files": [],
+        "diagnostics": {
+          "qualified_variants": 0,
+          "qualified_families": 0,
+          "candidate_pool": 75,
+          "rerank_windows": 0,
+          "compact_candidates_loaded": 0,
+          "window_start": 0,
+          "scarcity": true,
+          "no_match": true,
+          "acceptance": "not_established_by_search",
+          "unavailable_project_pins": [],
+          "sqlite_pushdown": {
+            "text_matched_variants": 0,
+            "payload_variants_loaded": 0,
+            "payload_bytes_loaded": 2,
+            "selected_detail_variants_loaded": 0,
+            "selected_detail_bytes_loaded": 2,
+            "rejections_by_condition_may_overlap": {
+              "unavailable_or_rights_unresolved": 0,
+              "hard_filter:species": 0,
+              "hard_filter:object": 0,
+              "hard_filter:depiction_kind": 0,
+              "unknown:species": 0,
+              "unknown:object": 0,
+              "unknown:depiction_kind": 0
+            },
+            "hard_filters_before_payload_load": true,
+            "family_grouping_before_candidate_limit": true,
+            "candidate_limit_before_filters": null
+          },
+          "uncertain_candidates": []
+        }
+      },
+      {
+        "stage": "after",
+        "query_id": "mouse-injection-en",
+        "query": "mouse injection experiment illustration",
+        "filters": {},
+        "requirements": {
+          "species": [
+            "mouse"
+          ],
+          "object": [
+            "injection",
+            "注射",
+            "inject"
+          ],
+          "depiction_kind": [
+            "action"
+          ]
+        },
+        "selected_files": [],
+        "diagnostics": {
+          "qualified_variants": 0,
+          "qualified_families": 0,
+          "candidate_pool": 75,
+          "rerank_windows": 0,
+          "compact_candidates_loaded": 0,
+          "window_start": 0,
+          "scarcity": true,
+          "no_match": true,
+          "acceptance": "not_established_by_search",
+          "unavailable_project_pins": [],
+          "sqlite_pushdown": {
+            "text_matched_variants": 0,
+            "payload_variants_loaded": 0,
+            "payload_bytes_loaded": 2,
+            "selected_detail_variants_loaded": 0,
+            "selected_detail_bytes_loaded": 2,
+            "rejections_by_condition_may_overlap": {
+              "unavailable_or_rights_unresolved": 0,
+              "hard_filter:species": 0,
+              "hard_filter:object": 0,
+              "hard_filter:depiction_kind": 0,
+              "unknown:species": 0,
+              "unknown:object": 0,
+              "unknown:depiction_kind": 0
+            },
+            "hard_filters_before_payload_load": true,
+            "family_grouping_before_candidate_limit": true,
+            "candidate_limit_before_filters": null
+          },
+          "uncertain_candidates": []
+        }
+      }
+    ],
+    "public_scope_changed": false,
+    "originals_downloaded_locally": 0,
+    "full_library_acceptance_passed": false
+  },
+  "full_library_recomputed": false,
+  "source_websites_recollected": false,
+  "original_artwork_modified": false,
+  "overall_acceptance_passed": false
+}
