@@ -1,0 +1,102 @@
+{
+  "schema_version": 1,
+  "source": "commons",
+  "reviewed_at": "2026-11-06T19:29:16.924735+00:00",
+  "reviewer": "Codex registry_acceptance; direct inspection of exact cloud-rendered source sheet tiles 02–04",
+  "review_method": "Directly viewed the original existing cloud contact sheet and checked its exact SHA-256. Primary objects and the bone transverse-section view are based on actual visible tissue structures, with the official source titles and source review retained as corroboration. No assertions are transferred to unviewed variants.",
+  "review_sheet_url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/commons-42260711756-1-b0000.review.png",
+  "review_sheet_sha256": "7882d49647b83664b62138770424dc844e6ace018f8a19b55f26ca51ebb201f8",
+  "review_limits": [
+    "Limited scientific object and visible view attributes only; not independent clinical/anatomical accuracy validation.",
+    "Cartilage orientation, species and disease state remain unknown.",
+    "Original labels remain intact; visible lettering does not establish native editable text.",
+    "No native Illustrator or publication-use acceptance is established by this review."
+  ],
+  "source_review": {
+    "path": "data/visual-reviews/commons-42260711756-component-scope.json",
+    "sha256": "c3995c6d578fe5e13cc84b8a825db0e767eaca9bdecf6dc918e79b65fa2dabc2"
+  },
+  "items": [
+    {
+      "tile": 2,
+      "id": "commons-315279fb0328ace303fa",
+      "title": "Transverse section of bone with osteons",
+      "source_id": "File:Transverse section of bone en.svg",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Transverse_section_of_bone_en.svg",
+      "original_sha256": "a68bc1bcbcfdf7a95015bf99a8b16d02687e0c36c92a805a56dc350a376d6c04",
+      "preview_sha256": "4b7288de9ec81968ce9020fa7df61874e0879c31cb3e6588c085b0d3eeeda9d9",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/commons-42260711756-1-b0000.tar.gz",
+        "member": "files/a6/a68bc1bcbcfdf7a95015bf99a8b16d02687e0c36c92a805a56dc350a376d6c04.svg"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/commons-42260711756-1-b0000.tar.gz",
+        "member": "previews/a68bc1bcbcfdf7a95015bf99a8b16d02687e0c36c92a805a56dc350a376d6c04.png"
+      },
+      "visual_verdict": "usable_as_schematic_component",
+      "observations": "Actual exact tile inspected: concentric osteons are seen in transverse section, with central Haversian canals, osteocytes and radiating canaliculi. This depicts bone tissue in cross-section, not a whole long bone silhouette. The visible labels annotate the tissue; no human species, quantitative dimensions or pathological state is established.",
+      "native_editability_tested": false,
+      "scientific_assertions": {
+        "object": [
+          "bone"
+        ],
+        "depiction_kind": "tissue",
+        "view": [
+          "cross_section"
+        ]
+      }
+    },
+    {
+      "tile": 3,
+      "id": "commons-b50bbb02638ee0ba4875",
+      "title": "Cartilage structure and tissue zones",
+      "source_id": "File:Cartilage Structure.jpg",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Cartilage_Structure.jpg",
+      "original_sha256": "977c20aa8dd1b9b4c73d3ce3b1eebed3f9558a9b5256517582cb1072edb50c98",
+      "preview_sha256": "3783a951e750cb23a951535639488c7708875836a56e46f32622209bb545976c",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/commons-42260711756-1-b0000.tar.gz",
+        "member": "files/97/977c20aa8dd1b9b4c73d3ce3b1eebed3f9558a9b5256517582cb1072edb50c98.jpg"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/commons-42260711756-1-b0000.tar.gz",
+        "member": "previews/977c20aa8dd1b9b4c73d3ce3b1eebed3f9558a9b5256517582cb1072edb50c98.png"
+      },
+      "visual_verdict": "usable_as_schematic_component",
+      "observations": "Actual exact tile inspected: a drawn cartilage tissue segment shows superficial, transitional and deep layers, with chondrocytes and collagen indicated by a small legend. Cartilage is the primary object. No formal viewing orientation, species, disease state or measured zonal proportion is asserted from this schematic.",
+      "native_editability_tested": false,
+      "scientific_assertions": {
+        "object": [
+          "cartilage"
+        ],
+        "depiction_kind": "tissue"
+      }
+    },
+    {
+      "tile": 4,
+      "id": "commons-f0034fbb07e87ca88eec",
+      "title": "Hyaline cartilage schematic",
+      "source_id": "File:Cartoon Hyaline Cartilage.jpg",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Cartoon_Hyaline_Cartilage.jpg",
+      "original_sha256": "62898b9d08c0821a649cb56fc979d1cf32cdc930c0313049ca53bd568e096c5d",
+      "preview_sha256": "b30535f5c91ef5a959d3dae5ab9a283abdb215eeca8ba5e269694d2ffab02312",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/commons-42260711756-1-b0000.tar.gz",
+        "member": "files/62/62898b9d08c0821a649cb56fc979d1cf32cdc930c0313049ca53bd568e096c5d.jpg"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/commons-42260711756-1-b0000.tar.gz",
+        "member": "previews/62898b9d08c0821a649cb56fc979d1cf32cdc930c0313049ca53bd568e096c5d.png"
+      },
+      "visual_verdict": "usable_as_schematic_component",
+      "observations": "Actual exact tile inspected: a pink matrix contains chondrocytes in lacunae, including grouped cells, with anatomical labels. The primary object is cartilage tissue. This is a labeled drawing, not a photomicrograph; no species, pathological grade or precise viewing orientation is established.",
+      "native_editability_tested": false,
+      "scientific_assertions": {
+        "object": [
+          "cartilage"
+        ],
+        "depiction_kind": "tissue"
+      }
+    }
+  ]
+}
