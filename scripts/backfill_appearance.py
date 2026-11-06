@@ -43,7 +43,7 @@ def valid_sha(value):
 
 
 def write_json(path, value):
-    path.write_text(json.dumps(value, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    path.write_text(json.dumps(value, ensure_ascii=False, indent=2) + "\n", encoding="utf-8", newline="\n")
 
 
 def write_jsonl(path, rows):
@@ -66,6 +66,31 @@ def gh(*args):
 
 def read_jsonl(path):
     return [json.loads(line) for line in path.read_text(encoding="utf-8").splitlines() if line.strip()]
+
+
+def prior_cache_candidates(assets, verified_aggregates, skipped):
+    """Try each run's final cache first; retain checkpoints as failure fallback.
+
+    A final aggregate contains all accepted rows from that run's checkpoints.
+    The caller marks an aggregate only after its whole asset digest and JSONL
+    parse pass. A missing or rejected aggregate never suppresses checkpoints.
+    """
+    groups = defaultdict(list)
+    for name, asset in assets.items():
+        if CACHE_PATTERN.fullmatch(name):
+            run = name.removesuffix(".appearance.jsonl").split("-b", 1)[0]
+            groups[run].append((name, asset))
+    ordered = sorted(groups, key=lambda run: max(
+        (asset.get("updated_at", ""), name) for name, asset in groups[run]), reverse=True)
+    for run in ordered:
+        aggregate = run + ".appearance.jsonl"
+        entries = sorted(groups[run], key=lambda pair: (
+            pair[0] == aggregate, pair[1].get("updated_at", ""), pair[0]), reverse=True)
+        for name, asset in entries:
+            if name != aggregate and run in verified_aggregates:
+                skipped.append(name)
+                continue
+            yield name, asset, run, name == aggregate
 
 
 def source_style_evidence(record, file):
@@ -479,20 +504,23 @@ def main():
     overrides = load_overrides(ROOT / "data/appearance_overrides.json")
     jobs, _, _ = plan_jobs(records, manifest, overrides)
     cached, cache_assets_read, cache_errors = {}, [], []
+    verified_aggregates, skipped_checkpoints = set(), []
     # A newest aggregate cache often covers everything. Older checkpoint caches
     # are downloaded only while required keys remain unmatched.
-    prior = sorted(((name, value) for name, value in assets.items() if CACHE_PATTERN.fullmatch(name)),
-                   key=lambda pair: (pair[1].get("updated_at", ""), pair[0]), reverse=True)
-    for name, asset in prior:
+    prior = prior_cache_candidates(assets, verified_aggregates, skipped_checkpoints)
+    for name, asset, cache_run, is_aggregate in prior:
         if len(cached) == len(jobs) or time.monotonic() + 120 >= deadline:
             break
         try:
             path = download_checked(name, asset, incoming, repository, args.release_tag)
-            for row in read_jsonl(path):
+            cache_input_rows = read_jsonl(path)
+            for row in cache_input_rows:
                 job = jobs.get(row.get("cache_key")) if isinstance(row, dict) else None
                 if job and job["cache_key"] not in cached and reusable_cache(row, job, manifest):
                     cached[job["cache_key"]] = row
             cache_assets_read.append(name)
+            if is_aggregate:
+                verified_aggregates.add(cache_run)
         except (OSError, ValueError, RuntimeError, subprocess.SubprocessError) as exc:
             cache_errors.append({"asset": name, "error": str(exc)})
     checkpoint_index = 0
@@ -514,6 +542,7 @@ def main():
     enriched, cache_rows, summary = run_backfill(records, manifest, overrides=overrides,
         cached_rows=cached.values(), deadline=deadline, checkpoint=checkpoint)
     summary.update(cache_assets_read=cache_assets_read, rejected_cache_assets=cache_errors,
+                   cache_checkpoints_covered_by_verified_aggregate=skipped_checkpoints,
                    safe_budget_minutes=args.budget_minutes, original_catalog_sha256=catalog_digest)
     parent = {"prefix": args.assembly_prefix, "catalog_sha256": catalog_digest,
               "report_sha256": sha(paths["report.json"].read_bytes()), "release_tag": args.release_tag}

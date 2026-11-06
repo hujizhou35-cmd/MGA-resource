@@ -249,6 +249,28 @@ def test_empty_cache_is_nonzero_valid_jsonl(tmp_path):
     assert path.read_bytes() == b'\n' and backfill.read_jsonl(path) == []
 
 
+def test_verified_aggregate_skips_only_its_own_checkpoint_fallbacks():
+    assets = {
+        'appearance-20-1.appearance.jsonl': {'updated_at': '2026-02-01'},
+        # Even a reordered timestamp must not force the duplicate fragment first.
+        'appearance-20-1-b0000.appearance.jsonl': {'updated_at': '2026-02-02'},
+        'appearance-10-1-b0000.appearance.jsonl': {'updated_at': '2026-01-01'},
+        'unrelated.json': {'updated_at': '2026-12-01'},
+    }
+    accepted, skipped = set(), []
+    candidates = backfill.prior_cache_candidates(assets, accepted, skipped)
+    name, _, run, aggregate = next(candidates)
+    assert name == 'appearance-20-1.appearance.jsonl' and aggregate
+    accepted.add(run)  # Whole asset digest and JSONL successfully checked.
+    assert [entry[0] for entry in candidates] == ['appearance-10-1-b0000.appearance.jsonl']
+    assert skipped == ['appearance-20-1-b0000.appearance.jsonl']
+    # If aggregate download/digest/parse failed, its checkpoints remain available.
+    fallback = list(backfill.prior_cache_candidates(assets, set(), []))
+    assert [entry[0] for entry in fallback] == [
+        'appearance-20-1.appearance.jsonl', 'appearance-20-1-b0000.appearance.jsonl',
+        'appearance-10-1-b0000.appearance.jsonl']
+
+
 def test_metadata_download_requires_github_digest(tmp_path, monkeypatch):
     raw = b'{"metadata":"fixture"}'
     def fake_gh(*args):
