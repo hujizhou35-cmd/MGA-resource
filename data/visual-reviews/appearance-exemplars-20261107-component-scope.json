@@ -1,0 +1,597 @@
+{
+  "schema_version": 1,
+  "reviewer": "Codex media_catalog; actual archived-preview visual inspection",
+  "reviewed_at": "2026-11-06T19:43:04.583321+00:00",
+  "review_method": "Re-displayed all 18 previously collected preview images in two bounded local contact sheets; every original archived PNG byte SHA was rechecked. Scope applies only to these exact variants.",
+  "review_pack": {
+    "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/appearance-review-42255022104-1.tar.gz",
+    "sha256": "8bf06794d44299b21653900b1ceedc4d61cf1c526bb46706993343d3da005897"
+  },
+  "summary": {
+    "actual_files_re_viewed": 18,
+    "in_scope": 18,
+    "whole_library_visual_acceptance": false
+  },
+  "review_limits": [
+    "This confirms reusable illustration/component scope, not exact species, anatomy, editability, or final acceptance.",
+    "Axes is deliberately omitted from the renewed appearance exemplars while the chart/icon boundary remains pending."
+  ],
+  "items": [
+    {
+      "source": "arcadia",
+      "source_id": "Raster PNGs/Salpingoeca-rosetta-fast-swimmer-raster.png",
+      "title": "Choanoflagellate (Salpingoeca rosetta) — fast swimmer — raster",
+      "original_sha256": "a3d9bc31d63b736b39f28e48f60c27d1eb77a38a7853392cc15ce44137099eed",
+      "sha256": "a3d9bc31d63b736b39f28e48f60c27d1eb77a38a7853392cc15ce44137099eed",
+      "preview_sha256": "6b72e8b52f7ac0e2816a3f79f761382866500205a122bd078da544e0a31ada2c",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/arcadia-42234366112-1-b0000.tar.gz",
+        "member": "files/a3/a3d9bc31d63b736b39f28e48f60c27d1eb77a38a7853392cc15ce44137099eed.png"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/arcadia-42234366112-1-b0000.tar.gz",
+        "member": "previews/a3d9bc31d63b736b39f28e48f60c27d1eb77a38a7853392cc15ce44137099eed.png"
+      },
+      "scope_status": "in_scope",
+      "scope_verdict": "in_scope",
+      "observations": "Actually re-viewed the archived preview: an independently reusable drawn animal, anatomical structure, laboratory object, cell, or molecular structure; no complete table, report, research design, measured-result figure, or text-only nameplate.",
+      "reason": "Actually re-viewed the archived preview: an independently reusable drawn animal, anatomical structure, laboratory object, cell, or molecular structure; no complete table, report, research design, measured-result figure, or text-only nameplate.",
+      "reviewed_by": "Codex media_catalog; actual archived-preview visual inspection",
+      "reviewed_at": "2026-11-06T19:43:04.583321+00:00",
+      "evidence": [
+        {
+          "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/appearance-review-42255022104-1.tar.gz",
+          "sha256": "8bf06794d44299b21653900b1ceedc4d61cf1c526bb46706993343d3da005897",
+          "member": "previews/a3d9bc31d63b736b39f28e48f60c27d1eb77a38a7853392cc15ce44137099eed.png",
+          "member_sha256": "6b72e8b52f7ac0e2816a3f79f761382866500205a122bd078da544e0a31ada2c"
+        }
+      ],
+      "native_editability_tested": false,
+      "scientific_detail_validation": "not_independently_verified"
+    },
+    {
+      "source": "scidraw",
+      "source_id": "f6f76633-6121-4641-a513-5627dc6b1fe1",
+      "title": "DNA",
+      "original_sha256": "b4cbf5cb16e0b2d47c0e8d7571bd4b10dfb78c6d224d085691dbb090ed785f90",
+      "sha256": "b4cbf5cb16e0b2d47c0e8d7571bd4b10dfb78c6d224d085691dbb090ed785f90",
+      "preview_sha256": "499cdd9994c4266af69a7ea03bc22155068dcc33c2d3367faefdb9a8cab5d9e2",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scidraw-42235890704-1-b0000.tar.gz",
+        "member": "files/b4/b4cbf5cb16e0b2d47c0e8d7571bd4b10dfb78c6d224d085691dbb090ed785f90.png"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scidraw-42235890704-1-b0000.tar.gz",
+        "member": "previews/b4cbf5cb16e0b2d47c0e8d7571bd4b10dfb78c6d224d085691dbb090ed785f90.png"
+      },
+      "scope_status": "in_scope",
+      "scope_verdict": "in_scope",
+      "observations": "Actually re-viewed the archived preview: an independently reusable drawn animal, anatomical structure, laboratory object, cell, or molecular structure; no complete table, report, research design, measured-result figure, or text-only nameplate.",
+      "reason": "Actually re-viewed the archived preview: an independently reusable drawn animal, anatomical structure, laboratory object, cell, or molecular structure; no complete table, report, research design, measured-result figure, or text-only nameplate.",
+      "reviewed_by": "Codex media_catalog; actual archived-preview visual inspection",
+      "reviewed_at": "2026-11-06T19:43:04.583321+00:00",
+      "evidence": [
+        {
+          "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/appearance-review-42255022104-1.tar.gz",
+          "sha256": "8bf06794d44299b21653900b1ceedc4d61cf1c526bb46706993343d3da005897",
+          "member": "previews/b4cbf5cb16e0b2d47c0e8d7571bd4b10dfb78c6d224d085691dbb090ed785f90.png",
+          "member_sha256": "499cdd9994c4266af69a7ea03bc22155068dcc33c2d3367faefdb9a8cab5d9e2"
+        }
+      ],
+      "native_editability_tested": false,
+      "scientific_detail_validation": "not_independently_verified"
+    },
+    {
+      "source": "scidraw",
+      "source_id": "ba69f66a-5664-413c-b270-05972a0a132a",
+      "title": "monkey",
+      "original_sha256": "ecec6719337b77629ca3f1fb532958c3e29802624fba6927ac76882e45ef2e1a",
+      "sha256": "ecec6719337b77629ca3f1fb532958c3e29802624fba6927ac76882e45ef2e1a",
+      "preview_sha256": "9191aaccb62b0542adb8476a5ad04257569cff0f5f1f26b5f125bdaab01a7788",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scidraw-42235890704-1-b0000.tar.gz",
+        "member": "files/ec/ecec6719337b77629ca3f1fb532958c3e29802624fba6927ac76882e45ef2e1a.svg"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scidraw-42235890704-1-b0000.tar.gz",
+        "member": "previews/ecec6719337b77629ca3f1fb532958c3e29802624fba6927ac76882e45ef2e1a.png"
+      },
+      "scope_status": "in_scope",
+      "scope_verdict": "in_scope",
+      "observations": "Actually re-viewed the archived preview: an independently reusable drawn animal, anatomical structure, laboratory object, cell, or molecular structure; no complete table, report, research design, measured-result figure, or text-only nameplate.",
+      "reason": "Actually re-viewed the archived preview: an independently reusable drawn animal, anatomical structure, laboratory object, cell, or molecular structure; no complete table, report, research design, measured-result figure, or text-only nameplate.",
+      "reviewed_by": "Codex media_catalog; actual archived-preview visual inspection",
+      "reviewed_at": "2026-11-06T19:43:04.583321+00:00",
+      "evidence": [
+        {
+          "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/appearance-review-42255022104-1.tar.gz",
+          "sha256": "8bf06794d44299b21653900b1ceedc4d61cf1c526bb46706993343d3da005897",
+          "member": "previews/ecec6719337b77629ca3f1fb532958c3e29802624fba6927ac76882e45ef2e1a.png",
+          "member_sha256": "9191aaccb62b0542adb8476a5ad04257569cff0f5f1f26b5f125bdaab01a7788"
+        }
+      ],
+      "native_editability_tested": false,
+      "scientific_detail_validation": "not_independently_verified"
+    },
+    {
+      "source": "bioicons",
+      "source_id": "cc-by-4.0/Animals/DBCLS/nematode_simplified.svg",
+      "title": "nematode simplified",
+      "original_sha256": "79d43b1d4619606e4e7daaf17d62aa0d8b3e07accc4707d17a27b2e0e658dfcf",
+      "sha256": "79d43b1d4619606e4e7daaf17d62aa0d8b3e07accc4707d17a27b2e0e658dfcf",
+      "preview_sha256": "3e022cc5c3b362c0a2dc1f51dbc815c0e532fe61d4f5e83f0eaf36975faaa6eb",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42239971379-1-b0004.tar.gz",
+        "member": "files/79/79d43b1d4619606e4e7daaf17d62aa0d8b3e07accc4707d17a27b2e0e658dfcf.svg"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42239971379-1-b0004.tar.gz",
+        "member": "previews/79d43b1d4619606e4e7daaf17d62aa0d8b3e07accc4707d17a27b2e0e658dfcf.png"
+      },
+      "scope_status": "in_scope",
+      "scope_verdict": "in_scope",
+      "observations": "Actually re-viewed the archived preview: an independently reusable drawn animal, anatomical structure, laboratory object, cell, or molecular structure; no complete table, report, research design, measured-result figure, or text-only nameplate.",
+      "reason": "Actually re-viewed the archived preview: an independently reusable drawn animal, anatomical structure, laboratory object, cell, or molecular structure; no complete table, report, research design, measured-result figure, or text-only nameplate.",
+      "reviewed_by": "Codex media_catalog; actual archived-preview visual inspection",
+      "reviewed_at": "2026-11-06T19:43:04.583321+00:00",
+      "evidence": [
+        {
+          "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/appearance-review-42255022104-1.tar.gz",
+          "sha256": "8bf06794d44299b21653900b1ceedc4d61cf1c526bb46706993343d3da005897",
+          "member": "previews/79d43b1d4619606e4e7daaf17d62aa0d8b3e07accc4707d17a27b2e0e658dfcf.png",
+          "member_sha256": "3e022cc5c3b362c0a2dc1f51dbc815c0e532fe61d4f5e83f0eaf36975faaa6eb"
+        }
+      ],
+      "native_editability_tested": false,
+      "scientific_detail_validation": "not_independently_verified"
+    },
+    {
+      "source": "scidraw",
+      "source_id": "78763c38-4132-4d5f-b63a-6fc3b9262f1d",
+      "title": "larva",
+      "original_sha256": "9970fcc0cd22aa2a56bb533b915ed18edbb9a1e74d64567361aedd0a7fd2de6c",
+      "sha256": "9970fcc0cd22aa2a56bb533b915ed18edbb9a1e74d64567361aedd0a7fd2de6c",
+      "preview_sha256": "1c0e0c9ba9ae77ea3cc88988012cbf1a17de3182e2f796013ac0bf5ddc9ab245",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scidraw-42235890704-1-b0000.tar.gz",
+        "member": "files/99/9970fcc0cd22aa2a56bb533b915ed18edbb9a1e74d64567361aedd0a7fd2de6c.svg"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scidraw-42235890704-1-b0000.tar.gz",
+        "member": "previews/9970fcc0cd22aa2a56bb533b915ed18edbb9a1e74d64567361aedd0a7fd2de6c.png"
+      },
+      "scope_status": "in_scope",
+      "scope_verdict": "in_scope",
+      "observations": "Actually re-viewed the archived preview: an independently reusable drawn animal, anatomical structure, laboratory object, cell, or molecular structure; no complete table, report, research design, measured-result figure, or text-only nameplate.",
+      "reason": "Actually re-viewed the archived preview: an independently reusable drawn animal, anatomical structure, laboratory object, cell, or molecular structure; no complete table, report, research design, measured-result figure, or text-only nameplate.",
+      "reviewed_by": "Codex media_catalog; actual archived-preview visual inspection",
+      "reviewed_at": "2026-11-06T19:43:04.583321+00:00",
+      "evidence": [
+        {
+          "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/appearance-review-42255022104-1.tar.gz",
+          "sha256": "8bf06794d44299b21653900b1ceedc4d61cf1c526bb46706993343d3da005897",
+          "member": "previews/9970fcc0cd22aa2a56bb533b915ed18edbb9a1e74d64567361aedd0a7fd2de6c.png",
+          "member_sha256": "1c0e0c9ba9ae77ea3cc88988012cbf1a17de3182e2f796013ac0bf5ddc9ab245"
+        }
+      ],
+      "native_editability_tested": false,
+      "scientific_detail_validation": "not_independently_verified"
+    },
+    {
+      "source": "open-pain",
+      "source_id": "illustration/1.0/anatomical_illustration.svg",
+      "title": "anatomical illustration",
+      "original_sha256": "ca71ade57f448493b7b10dcb8bb55a5547369412167c69305d1b1d9afd11cc30",
+      "sha256": "ca71ade57f448493b7b10dcb8bb55a5547369412167c69305d1b1d9afd11cc30",
+      "preview_sha256": "8fd230b11b34a644c5f29e610b3c488268d59dab569643a96b4dd150feff2492",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/open-pain-42239403135-1-b0000.tar.gz",
+        "member": "files/ca/ca71ade57f448493b7b10dcb8bb55a5547369412167c69305d1b1d9afd11cc30.svg"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/open-pain-42239403135-1-b0000.tar.gz",
+        "member": "previews/ca71ade57f448493b7b10dcb8bb55a5547369412167c69305d1b1d9afd11cc30.png"
+      },
+      "scope_status": "in_scope",
+      "scope_verdict": "in_scope",
+      "observations": "Actually re-viewed the archived preview: an independently reusable drawn animal, anatomical structure, laboratory object, cell, or molecular structure; no complete table, report, research design, measured-result figure, or text-only nameplate.",
+      "reason": "Actually re-viewed the archived preview: an independently reusable drawn animal, anatomical structure, laboratory object, cell, or molecular structure; no complete table, report, research design, measured-result figure, or text-only nameplate.",
+      "reviewed_by": "Codex media_catalog; actual archived-preview visual inspection",
+      "reviewed_at": "2026-11-06T19:43:04.583321+00:00",
+      "evidence": [
+        {
+          "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/appearance-review-42255022104-1.tar.gz",
+          "sha256": "8bf06794d44299b21653900b1ceedc4d61cf1c526bb46706993343d3da005897",
+          "member": "previews/ca71ade57f448493b7b10dcb8bb55a5547369412167c69305d1b1d9afd11cc30.png",
+          "member_sha256": "8fd230b11b34a644c5f29e610b3c488268d59dab569643a96b4dd150feff2492"
+        }
+      ],
+      "native_editability_tested": false,
+      "scientific_detail_validation": "not_independently_verified"
+    },
+    {
+      "source": "nih-bioart",
+      "source_id": "29",
+      "title": "Arrow",
+      "original_sha256": "11f2129b25e42dd4210f93d998869480f614f54cb3be74b061b760f62147880c",
+      "sha256": "11f2129b25e42dd4210f93d998869480f614f54cb3be74b061b760f62147880c",
+      "preview_sha256": "ad5e16ee894b323e51b136e183c44423953a9b89e544b4fe129d4345a60b2401",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/nih-bioart-42236561214-1-b0000.tar.gz",
+        "member": "files/11/11f2129b25e42dd4210f93d998869480f614f54cb3be74b061b760f62147880c.svg"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/nih-bioart-42236561214-1-b0000.tar.gz",
+        "member": "previews/11f2129b25e42dd4210f93d998869480f614f54cb3be74b061b760f62147880c.png"
+      },
+      "scope_status": "in_scope",
+      "scope_verdict": "in_scope",
+      "observations": "Actually re-viewed a standalone navy dashed direction arrow. This is an isolated composable connector for mechanism/experimental diagrams, with no complete flowchart or analytical chart.",
+      "reason": "Actually re-viewed a standalone navy dashed direction arrow. This is an isolated composable connector for mechanism/experimental diagrams, with no complete flowchart or analytical chart.",
+      "reviewed_by": "Codex media_catalog; actual archived-preview visual inspection",
+      "reviewed_at": "2026-11-06T19:43:04.583321+00:00",
+      "evidence": [
+        {
+          "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/appearance-review-42255022104-1.tar.gz",
+          "sha256": "8bf06794d44299b21653900b1ceedc4d61cf1c526bb46706993343d3da005897",
+          "member": "previews/11f2129b25e42dd4210f93d998869480f614f54cb3be74b061b760f62147880c.png",
+          "member_sha256": "ad5e16ee894b323e51b136e183c44423953a9b89e544b4fe129d4345a60b2401"
+        }
+      ],
+      "native_editability_tested": false,
+      "scientific_detail_validation": "not_independently_verified"
+    },
+    {
+      "source": "scisvg",
+      "source_id": "assets/laboratory/consumables/petri-dish.svg",
+      "title": "Petri Dish",
+      "original_sha256": "1954e595fcc663566690d8a2e12c448874552306d064cf20385e275f5bc77113",
+      "sha256": "1954e595fcc663566690d8a2e12c448874552306d064cf20385e275f5bc77113",
+      "preview_sha256": "34d4fd1a725842f7f5203c08cc30b802823fbb74f81e62fd17f6a1dc3b4810f5",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scisvg-42238985604-1-b0000.tar.gz",
+        "member": "files/19/1954e595fcc663566690d8a2e12c448874552306d064cf20385e275f5bc77113.svg"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scisvg-42238985604-1-b0000.tar.gz",
+        "member": "previews/1954e595fcc663566690d8a2e12c448874552306d064cf20385e275f5bc77113.png"
+      },
+      "scope_status": "in_scope",
+      "scope_verdict": "in_scope",
+      "observations": "Actually re-viewed the archived preview: an independently reusable drawn animal, anatomical structure, laboratory object, cell, or molecular structure; no complete table, report, research design, measured-result figure, or text-only nameplate.",
+      "reason": "Actually re-viewed the archived preview: an independently reusable drawn animal, anatomical structure, laboratory object, cell, or molecular structure; no complete table, report, research design, measured-result figure, or text-only nameplate.",
+      "reviewed_by": "Codex media_catalog; actual archived-preview visual inspection",
+      "reviewed_at": "2026-11-06T19:43:04.583321+00:00",
+      "evidence": [
+        {
+          "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/appearance-review-42255022104-1.tar.gz",
+          "sha256": "8bf06794d44299b21653900b1ceedc4d61cf1c526bb46706993343d3da005897",
+          "member": "previews/1954e595fcc663566690d8a2e12c448874552306d064cf20385e275f5bc77113.png",
+          "member_sha256": "34d4fd1a725842f7f5203c08cc30b802823fbb74f81e62fd17f6a1dc3b4810f5"
+        }
+      ],
+      "native_editability_tested": false,
+      "scientific_detail_validation": "not_independently_verified"
+    },
+    {
+      "source": "bioicons",
+      "source_id": "cc-by-4.0/Animals/DBCLS/nematode_adult_female.svg",
+      "title": "nematode adult female",
+      "original_sha256": "e0db7951142889f122507b18baf848137ea1f40e6117a41fa1c56c91b303c5fa",
+      "sha256": "e0db7951142889f122507b18baf848137ea1f40e6117a41fa1c56c91b303c5fa",
+      "preview_sha256": "caeb2a6663d9f431a75f7ddaa689be68e2c52f23092165362b24506f74a4e0ae",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42239971379-1-b0004.tar.gz",
+        "member": "files/e0/e0db7951142889f122507b18baf848137ea1f40e6117a41fa1c56c91b303c5fa.svg"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42239971379-1-b0004.tar.gz",
+        "member": "previews/e0db7951142889f122507b18baf848137ea1f40e6117a41fa1c56c91b303c5fa.png"
+      },
+      "scope_status": "in_scope",
+      "scope_verdict": "in_scope",
+      "observations": "Actually re-viewed the archived preview: an independently reusable drawn animal, anatomical structure, laboratory object, cell, or molecular structure; no complete table, report, research design, measured-result figure, or text-only nameplate.",
+      "reason": "Actually re-viewed the archived preview: an independently reusable drawn animal, anatomical structure, laboratory object, cell, or molecular structure; no complete table, report, research design, measured-result figure, or text-only nameplate.",
+      "reviewed_by": "Codex media_catalog; actual archived-preview visual inspection",
+      "reviewed_at": "2026-11-06T19:43:04.583321+00:00",
+      "evidence": [
+        {
+          "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/appearance-review-42255022104-1.tar.gz",
+          "sha256": "8bf06794d44299b21653900b1ceedc4d61cf1c526bb46706993343d3da005897",
+          "member": "previews/e0db7951142889f122507b18baf848137ea1f40e6117a41fa1c56c91b303c5fa.png",
+          "member_sha256": "caeb2a6663d9f431a75f7ddaa689be68e2c52f23092165362b24506f74a4e0ae"
+        }
+      ],
+      "native_editability_tested": false,
+      "scientific_detail_validation": "not_independently_verified"
+    },
+    {
+      "source": "scidraw",
+      "source_id": "524633b1-ecef-42d3-8ef4-4825ec39fb27",
+      "title": "Zebrafish brain outline",
+      "original_sha256": "e12c822fb7984e508a8404dfa4ab846ba293f98477422c4c20c86766cef8993c",
+      "sha256": "e12c822fb7984e508a8404dfa4ab846ba293f98477422c4c20c86766cef8993c",
+      "preview_sha256": "e10d947b8ff51962e1a4d824c138a52fa5d3a9698035d7ea0aefa497f020fac1",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scidraw-42235890704-1-b0000.tar.gz",
+        "member": "files/e1/e12c822fb7984e508a8404dfa4ab846ba293f98477422c4c20c86766cef8993c.svg"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scidraw-42235890704-1-b0000.tar.gz",
+        "member": "previews/e12c822fb7984e508a8404dfa4ab846ba293f98477422c4c20c86766cef8993c.png"
+      },
+      "scope_status": "in_scope",
+      "scope_verdict": "in_scope",
+      "observations": "Actually re-viewed the archived preview: an independently reusable drawn animal, anatomical structure, laboratory object, cell, or molecular structure; no complete table, report, research design, measured-result figure, or text-only nameplate.",
+      "reason": "Actually re-viewed the archived preview: an independently reusable drawn animal, anatomical structure, laboratory object, cell, or molecular structure; no complete table, report, research design, measured-result figure, or text-only nameplate.",
+      "reviewed_by": "Codex media_catalog; actual archived-preview visual inspection",
+      "reviewed_at": "2026-11-06T19:43:04.583321+00:00",
+      "evidence": [
+        {
+          "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/appearance-review-42255022104-1.tar.gz",
+          "sha256": "8bf06794d44299b21653900b1ceedc4d61cf1c526bb46706993343d3da005897",
+          "member": "previews/e12c822fb7984e508a8404dfa4ab846ba293f98477422c4c20c86766cef8993c.png",
+          "member_sha256": "e10d947b8ff51962e1a4d824c138a52fa5d3a9698035d7ea0aefa497f020fac1"
+        }
+      ],
+      "native_editability_tested": false,
+      "scientific_detail_validation": "not_independently_verified"
+    },
+    {
+      "source": "lab-equipment",
+      "source_id": "svg/ColumnCap.svg",
+      "title": "Column Cap",
+      "original_sha256": "b75ecaac35d70e4048e6115fc961616035bc1db3e682530331b8caff02466ea7",
+      "sha256": "b75ecaac35d70e4048e6115fc961616035bc1db3e682530331b8caff02466ea7",
+      "preview_sha256": "55fcf20368d22dbf1932f76c10b2445912d9372285b067c5c26c31ce6904b5af",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/lab-equipment-42237927278-1-b0000.tar.gz",
+        "member": "files/b7/b75ecaac35d70e4048e6115fc961616035bc1db3e682530331b8caff02466ea7.svg"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/lab-equipment-42237927278-1-b0000.tar.gz",
+        "member": "previews/b75ecaac35d70e4048e6115fc961616035bc1db3e682530331b8caff02466ea7.png"
+      },
+      "scope_status": "in_scope",
+      "scope_verdict": "in_scope",
+      "observations": "Actually re-viewed the archived preview: an independently reusable drawn animal, anatomical structure, laboratory object, cell, or molecular structure; no complete table, report, research design, measured-result figure, or text-only nameplate.",
+      "reason": "Actually re-viewed the archived preview: an independently reusable drawn animal, anatomical structure, laboratory object, cell, or molecular structure; no complete table, report, research design, measured-result figure, or text-only nameplate.",
+      "reviewed_by": "Codex media_catalog; actual archived-preview visual inspection",
+      "reviewed_at": "2026-11-06T19:43:04.583321+00:00",
+      "evidence": [
+        {
+          "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/appearance-review-42255022104-1.tar.gz",
+          "sha256": "8bf06794d44299b21653900b1ceedc4d61cf1c526bb46706993343d3da005897",
+          "member": "previews/b75ecaac35d70e4048e6115fc961616035bc1db3e682530331b8caff02466ea7.png",
+          "member_sha256": "55fcf20368d22dbf1932f76c10b2445912d9372285b067c5c26c31ce6904b5af"
+        }
+      ],
+      "native_editability_tested": false,
+      "scientific_detail_validation": "not_independently_verified"
+    },
+    {
+      "source": "lab-equipment",
+      "source_id": "svg/96wellPlate.svg",
+      "title": "96well Plate",
+      "original_sha256": "680b642071b771e30ac730c1572d2561df6a85abd99864881633ad2451a9258a",
+      "sha256": "680b642071b771e30ac730c1572d2561df6a85abd99864881633ad2451a9258a",
+      "preview_sha256": "9b1ebb4150b5e47a6edb269739631be1fdd64995ff749965f8322addc2b73ff5",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/lab-equipment-42237927278-1-b0000.tar.gz",
+        "member": "files/68/680b642071b771e30ac730c1572d2561df6a85abd99864881633ad2451a9258a.svg"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/lab-equipment-42237927278-1-b0000.tar.gz",
+        "member": "previews/680b642071b771e30ac730c1572d2561df6a85abd99864881633ad2451a9258a.png"
+      },
+      "scope_status": "in_scope",
+      "scope_verdict": "in_scope",
+      "observations": "Actually re-viewed the archived preview: an independently reusable drawn animal, anatomical structure, laboratory object, cell, or molecular structure; no complete table, report, research design, measured-result figure, or text-only nameplate.",
+      "reason": "Actually re-viewed the archived preview: an independently reusable drawn animal, anatomical structure, laboratory object, cell, or molecular structure; no complete table, report, research design, measured-result figure, or text-only nameplate.",
+      "reviewed_by": "Codex media_catalog; actual archived-preview visual inspection",
+      "reviewed_at": "2026-11-06T19:43:04.583321+00:00",
+      "evidence": [
+        {
+          "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/appearance-review-42255022104-1.tar.gz",
+          "sha256": "8bf06794d44299b21653900b1ceedc4d61cf1c526bb46706993343d3da005897",
+          "member": "previews/680b642071b771e30ac730c1572d2561df6a85abd99864881633ad2451a9258a.png",
+          "member_sha256": "9b1ebb4150b5e47a6edb269739631be1fdd64995ff749965f8322addc2b73ff5"
+        }
+      ],
+      "native_editability_tested": false,
+      "scientific_detail_validation": "not_independently_verified"
+    },
+    {
+      "source": "scidraw",
+      "source_id": "42563c47-b6b7-4934-b263-f11b466abc86",
+      "title": "Rabbit",
+      "original_sha256": "28c9c4d55096203f6f21cf8836e88920774154b670ce1c38263224a1038556d6",
+      "sha256": "28c9c4d55096203f6f21cf8836e88920774154b670ce1c38263224a1038556d6",
+      "preview_sha256": "d6abe478d41c7878352b0f772c80509b9ab37e6ab3eb572013573f497b13ef4e",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scidraw-42235890704-1-b0000.tar.gz",
+        "member": "files/28/28c9c4d55096203f6f21cf8836e88920774154b670ce1c38263224a1038556d6.svg"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scidraw-42235890704-1-b0000.tar.gz",
+        "member": "previews/28c9c4d55096203f6f21cf8836e88920774154b670ce1c38263224a1038556d6.png"
+      },
+      "scope_status": "in_scope",
+      "scope_verdict": "in_scope",
+      "observations": "Actually re-viewed the archived preview: an independently reusable drawn animal, anatomical structure, laboratory object, cell, or molecular structure; no complete table, report, research design, measured-result figure, or text-only nameplate.",
+      "reason": "Actually re-viewed the archived preview: an independently reusable drawn animal, anatomical structure, laboratory object, cell, or molecular structure; no complete table, report, research design, measured-result figure, or text-only nameplate.",
+      "reviewed_by": "Codex media_catalog; actual archived-preview visual inspection",
+      "reviewed_at": "2026-11-06T19:43:04.583321+00:00",
+      "evidence": [
+        {
+          "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/appearance-review-42255022104-1.tar.gz",
+          "sha256": "8bf06794d44299b21653900b1ceedc4d61cf1c526bb46706993343d3da005897",
+          "member": "previews/28c9c4d55096203f6f21cf8836e88920774154b670ce1c38263224a1038556d6.png",
+          "member_sha256": "d6abe478d41c7878352b0f772c80509b9ab37e6ab3eb572013573f497b13ef4e"
+        }
+      ],
+      "native_editability_tested": false,
+      "scientific_detail_validation": "not_independently_verified"
+    },
+    {
+      "source": "bioicons",
+      "source_id": "cc-0/Lab_apparatus/KeHan/incubator.svg",
+      "title": "incubator",
+      "original_sha256": "c05a124d270193d7720b6684f23d8ed310a3b23b1d6b4a4d63d6c2ddbb2f8888",
+      "sha256": "c05a124d270193d7720b6684f23d8ed310a3b23b1d6b4a4d63d6c2ddbb2f8888",
+      "preview_sha256": "53e67d82e5ab6c81b4b20950c5135b484220ad08c1f4de3bf762019e6069a348",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42239971379-1-b0000.tar.gz",
+        "member": "files/c0/c05a124d270193d7720b6684f23d8ed310a3b23b1d6b4a4d63d6c2ddbb2f8888.svg"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42239971379-1-b0000.tar.gz",
+        "member": "previews/c05a124d270193d7720b6684f23d8ed310a3b23b1d6b4a4d63d6c2ddbb2f8888.png"
+      },
+      "scope_status": "in_scope",
+      "scope_verdict": "in_scope",
+      "observations": "Actually re-viewed the archived preview: an independently reusable drawn animal, anatomical structure, laboratory object, cell, or molecular structure; no complete table, report, research design, measured-result figure, or text-only nameplate.",
+      "reason": "Actually re-viewed the archived preview: an independently reusable drawn animal, anatomical structure, laboratory object, cell, or molecular structure; no complete table, report, research design, measured-result figure, or text-only nameplate.",
+      "reviewed_by": "Codex media_catalog; actual archived-preview visual inspection",
+      "reviewed_at": "2026-11-06T19:43:04.583321+00:00",
+      "evidence": [
+        {
+          "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/appearance-review-42255022104-1.tar.gz",
+          "sha256": "8bf06794d44299b21653900b1ceedc4d61cf1c526bb46706993343d3da005897",
+          "member": "previews/c05a124d270193d7720b6684f23d8ed310a3b23b1d6b4a4d63d6c2ddbb2f8888.png",
+          "member_sha256": "53e67d82e5ab6c81b4b20950c5135b484220ad08c1f4de3bf762019e6069a348"
+        }
+      ],
+      "native_editability_tested": false,
+      "scientific_detail_validation": "not_independently_verified"
+    },
+    {
+      "source": "scidraw",
+      "source_id": "968aeaf3-29a5-4ace-97e0-2a10e7f31cda",
+      "title": "Mouse Sleeping",
+      "original_sha256": "1be2b06588140639cc6a5c074644a7293c8e713fd3ff19c70db1feca80d86b6c",
+      "sha256": "1be2b06588140639cc6a5c074644a7293c8e713fd3ff19c70db1feca80d86b6c",
+      "preview_sha256": "fc286f4d3b45e203312ef5c746a92377f02004d9affe22fee7b975575e722d76",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scidraw-42235890704-1-b0000.tar.gz",
+        "member": "files/1b/1be2b06588140639cc6a5c074644a7293c8e713fd3ff19c70db1feca80d86b6c.png"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scidraw-42235890704-1-b0000.tar.gz",
+        "member": "previews/1be2b06588140639cc6a5c074644a7293c8e713fd3ff19c70db1feca80d86b6c.png"
+      },
+      "scope_status": "in_scope",
+      "scope_verdict": "in_scope",
+      "observations": "Actually re-viewed the archived preview: an independently reusable drawn animal, anatomical structure, laboratory object, cell, or molecular structure; no complete table, report, research design, measured-result figure, or text-only nameplate.",
+      "reason": "Actually re-viewed the archived preview: an independently reusable drawn animal, anatomical structure, laboratory object, cell, or molecular structure; no complete table, report, research design, measured-result figure, or text-only nameplate.",
+      "reviewed_by": "Codex media_catalog; actual archived-preview visual inspection",
+      "reviewed_at": "2026-11-06T19:43:04.583321+00:00",
+      "evidence": [
+        {
+          "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/appearance-review-42255022104-1.tar.gz",
+          "sha256": "8bf06794d44299b21653900b1ceedc4d61cf1c526bb46706993343d3da005897",
+          "member": "previews/1be2b06588140639cc6a5c074644a7293c8e713fd3ff19c70db1feca80d86b6c.png",
+          "member_sha256": "fc286f4d3b45e203312ef5c746a92377f02004d9affe22fee7b975575e722d76"
+        }
+      ],
+      "native_editability_tested": false,
+      "scientific_detail_validation": "not_independently_verified"
+    },
+    {
+      "source": "nih-bioart",
+      "source_id": "425",
+      "title": "Pyridazinones",
+      "original_sha256": "dd63b4b9796d0f76f67b7deb01c5c7b25d0eaf52a3d8de4c71cc05ffea3fab2f",
+      "sha256": "dd63b4b9796d0f76f67b7deb01c5c7b25d0eaf52a3d8de4c71cc05ffea3fab2f",
+      "preview_sha256": "75612ec5ae2b79430e8820d6f0ead401b4e67b7224bf96339b72b0296dc16209",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/nih-bioart-42236561214-1-b0000.tar.gz",
+        "member": "files/dd/dd63b4b9796d0f76f67b7deb01c5c7b25d0eaf52a3d8de4c71cc05ffea3fab2f.svg"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/nih-bioart-42236561214-1-b0000.tar.gz",
+        "member": "previews/dd63b4b9796d0f76f67b7deb01c5c7b25d0eaf52a3d8de4c71cc05ffea3fab2f.png"
+      },
+      "scope_status": "in_scope",
+      "scope_verdict": "in_scope",
+      "observations": "Actually re-viewed the archived preview: an independently reusable drawn animal, anatomical structure, laboratory object, cell, or molecular structure; no complete table, report, research design, measured-result figure, or text-only nameplate.",
+      "reason": "Actually re-viewed the archived preview: an independently reusable drawn animal, anatomical structure, laboratory object, cell, or molecular structure; no complete table, report, research design, measured-result figure, or text-only nameplate.",
+      "reviewed_by": "Codex media_catalog; actual archived-preview visual inspection",
+      "reviewed_at": "2026-11-06T19:43:04.583321+00:00",
+      "evidence": [
+        {
+          "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/appearance-review-42255022104-1.tar.gz",
+          "sha256": "8bf06794d44299b21653900b1ceedc4d61cf1c526bb46706993343d3da005897",
+          "member": "previews/dd63b4b9796d0f76f67b7deb01c5c7b25d0eaf52a3d8de4c71cc05ffea3fab2f.png",
+          "member_sha256": "75612ec5ae2b79430e8820d6f0ead401b4e67b7224bf96339b72b0296dc16209"
+        }
+      ],
+      "native_editability_tested": false,
+      "scientific_detail_validation": "not_independently_verified"
+    },
+    {
+      "source": "scidraw",
+      "source_id": "9ab57392-8cb7-4cea-b30b-476ae0c497d7",
+      "title": "Sheep",
+      "original_sha256": "f9d935d5e548d1b501003c13283aa469c514da7cd344893a4e8cf3ea820e64e5",
+      "sha256": "f9d935d5e548d1b501003c13283aa469c514da7cd344893a4e8cf3ea820e64e5",
+      "preview_sha256": "a183ba12b7f5cde6923513ab23e46d2a0839cb39211528fcec282025859e4bd7",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scidraw-42235890704-1-b0000.tar.gz",
+        "member": "files/f9/f9d935d5e548d1b501003c13283aa469c514da7cd344893a4e8cf3ea820e64e5.png"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scidraw-42235890704-1-b0000.tar.gz",
+        "member": "previews/f9d935d5e548d1b501003c13283aa469c514da7cd344893a4e8cf3ea820e64e5.png"
+      },
+      "scope_status": "in_scope",
+      "scope_verdict": "in_scope",
+      "observations": "Actually re-viewed the archived preview: an independently reusable drawn animal, anatomical structure, laboratory object, cell, or molecular structure; no complete table, report, research design, measured-result figure, or text-only nameplate.",
+      "reason": "Actually re-viewed the archived preview: an independently reusable drawn animal, anatomical structure, laboratory object, cell, or molecular structure; no complete table, report, research design, measured-result figure, or text-only nameplate.",
+      "reviewed_by": "Codex media_catalog; actual archived-preview visual inspection",
+      "reviewed_at": "2026-11-06T19:43:04.583321+00:00",
+      "evidence": [
+        {
+          "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/appearance-review-42255022104-1.tar.gz",
+          "sha256": "8bf06794d44299b21653900b1ceedc4d61cf1c526bb46706993343d3da005897",
+          "member": "previews/f9d935d5e548d1b501003c13283aa469c514da7cd344893a4e8cf3ea820e64e5.png",
+          "member_sha256": "a183ba12b7f5cde6923513ab23e46d2a0839cb39211528fcec282025859e4bd7"
+        }
+      ],
+      "native_editability_tested": false,
+      "scientific_detail_validation": "not_independently_verified"
+    },
+    {
+      "source": "bioicons",
+      "source_id": "cc-0/Cell_types/Xi-Chen/MII_Oocyte.svg",
+      "title": "MII Oocyte",
+      "original_sha256": "1632ac808122fa9a4003817d60e120ccee3d6903918a5832ea34298a9c6fbd0b",
+      "sha256": "1632ac808122fa9a4003817d60e120ccee3d6903918a5832ea34298a9c6fbd0b",
+      "preview_sha256": "80a6e3ae6d80ca5038cdee5a39bf68f286a782f0608d94df1788c756a474651a",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42239971379-1-b0000.tar.gz",
+        "member": "files/16/1632ac808122fa9a4003817d60e120ccee3d6903918a5832ea34298a9c6fbd0b.svg"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42239971379-1-b0000.tar.gz",
+        "member": "previews/1632ac808122fa9a4003817d60e120ccee3d6903918a5832ea34298a9c6fbd0b.png"
+      },
+      "scope_status": "in_scope",
+      "scope_verdict": "in_scope",
+      "observations": "Actually re-viewed the archived preview: an independently reusable drawn animal, anatomical structure, laboratory object, cell, or molecular structure; no complete table, report, research design, measured-result figure, or text-only nameplate.",
+      "reason": "Actually re-viewed the archived preview: an independently reusable drawn animal, anatomical structure, laboratory object, cell, or molecular structure; no complete table, report, research design, measured-result figure, or text-only nameplate.",
+      "reviewed_by": "Codex media_catalog; actual archived-preview visual inspection",
+      "reviewed_at": "2026-11-06T19:43:04.583321+00:00",
+      "evidence": [
+        {
+          "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/appearance-review-42255022104-1.tar.gz",
+          "sha256": "8bf06794d44299b21653900b1ceedc4d61cf1c526bb46706993343d3da005897",
+          "member": "previews/1632ac808122fa9a4003817d60e120ccee3d6903918a5832ea34298a9c6fbd0b.png",
+          "member_sha256": "80a6e3ae6d80ca5038cdee5a39bf68f286a782f0608d94df1788c756a474651a"
+        }
+      ],
+      "native_editability_tested": false,
+      "scientific_detail_validation": "not_independently_verified"
+    }
+  ]
+}
