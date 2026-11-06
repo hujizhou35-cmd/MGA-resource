@@ -1,6 +1,6 @@
 import json
 
-from mga_resources.catalog import deduplicate, finalize, normalize_record, search
+from mga_resources.catalog import deduplicate, finalize, normalize_record, search, search_legacy
 
 
 def test_empty_catalog_remains_uploadable_and_searchable(tmp_path):
@@ -134,7 +134,7 @@ def test_filters_apply_without_unrelated_fallback(tmp_path):
     assert search(tmp_path / "catalog.sqlite", "liver", filters={"format": "png"}) == []
 
 
-def test_full_queries_keep_objects_hard_and_rank_view_preferences(tmp_path):
+def test_full_queries_enforce_views_and_preserve_legacy_comparison(tmp_path):
     lateral = record("Mouse lateral view", source_id="mouse-side", digest="a" * 64)
     other_mouse = record("Mouse head", source_id="mouse-head", digest="b" * 64)
     rat = record("Rat lateral view", source_id="rat", digest="c" * 64)
@@ -144,7 +144,8 @@ def test_full_queries_keep_objects_hard_and_rank_view_preferences(tmp_path):
     for query in ("实验小鼠侧视插画", "laboratory mouse side view illustration"):
         results = search(tmp_path / "catalog.sqlite", query)
         assert results[0]["title"] == "Mouse lateral view"
-        assert {item["title"] for item in results} == {"Mouse lateral view", "Mouse head"}
+        assert {item["title"] for item in results} == {"Mouse lateral view"}
+        assert {item["title"] for item in search_legacy(tmp_path / "catalog.sqlite", query)} == {"Mouse lateral view", "Mouse head"}
     assert [item["title"] for item in search(tmp_path / "catalog.sqlite", "人体肝脏插画")] == ["Liver"]
     assert search(tmp_path / "catalog.sqlite", "mouse unobtainium illustration") == []
 

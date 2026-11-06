@@ -11,6 +11,7 @@ import hashlib
 import json
 import re
 import sqlite3
+import subprocess
 import unicodedata
 from collections import Counter, defaultdict
 from contextlib import closing
@@ -312,6 +313,18 @@ def _provenance(item: dict[str, Any]) -> dict[str, Any]:
     return {key: item.get(key) for key in keys}
 
 
+def _search_context(item: dict[str, Any]) -> dict[str, Any]:
+    """Preserve an upstream variant's facts before the family union of tags.
+
+    Unknown attributes stay absent. This does not assign medical facts from a
+    benchmark, a filename extension, the parent family or another variant.
+    """
+    keys = ("title", "title_zh", "description", "tags", "categories", "taxonomy",
+            "upstream_category", "species", "state", "view", "role", "object",
+            "anatomy", "action", "scientific", "author", "distribution_status")
+    return {key: copy.deepcopy(item[key]) for key in keys if item.get(key) is not None}
+
+
 def deduplicate(records: Iterable[dict[str, Any]]) -> tuple[list[dict[str, Any]], dict[str, int]]:
     """Merge exact original-file duplicates and repeated source identities.
 
@@ -356,6 +369,7 @@ def deduplicate(records: Iterable[dict[str, Any]]) -> tuple[list[dict[str, Any]]
         variants = {}
         for entry in group:
             for variant in entry.get("variants") or [{
+                **_search_context(entry),
                 "id": entry["id"], "source": entry["source"], "source_id": entry["source_id"],
                 "title": entry.get("title"), "variant_hint": entry.get("variant_hint"),
                 "files": [{key: file.get(key) for key in ("sha256", "format", "url", "storage_path") if file.get(key) is not None} for file in entry["files"]],
@@ -385,7 +399,7 @@ def deduplicate(records: Iterable[dict[str, Any]]) -> tuple[list[dict[str, Any]]
                 if key not in files:
                     files[key] = copy.deepcopy(source_file)
                     files[key]["source_records"] = []
-                existing_origins = source_file.get("source_records") or [{"asset_id": entry["id"], "source": entry["source"], "source_id": entry["source_id"], "title": entry.get("title"), "source_url": entry.get("source_url"), "url": source_file.get("url"), "license": entry.get("license"), "attribution": entry.get("attribution")}]
+                existing_origins = source_file.get("source_records") or [{**_search_context(entry), "asset_id": entry["id"], "source": entry["source"], "source_id": entry["source_id"], "title": entry.get("title"), "source_url": entry.get("source_url"), "url": source_file.get("url"), "license": entry.get("license"), "attribution": entry.get("attribution")}]
                 for origin in existing_origins:
                     if origin not in files[key]["source_records"]:
                         files[key]["source_records"].append(origin)
@@ -407,7 +421,23 @@ def deduplicate(records: Iterable[dict[str, Any]]) -> tuple[list[dict[str, Any]]
     return sorted(result, key=lambda x: x["id"]), {"input_records": len(items), "logical_assets": len(result), "logical_families": len(result), "variant_records": len(variant_ids), "merged_records": len(items) - len(result)}
 
 
-def _write_sqlite(records: list[dict[str, Any]], path: Path) -> None:
+def _search_core(payload: dict[str, Any]) -> dict[str, Any]:
+    """Process boundary only. Query/ranking policy is exclusively JavaScript."""
+    entrypoint = Path(__file__).with_name("search-cli.mjs")
+    try:
+        completed = subprocess.run(
+            ["node", str(entrypoint)], input=json.dumps(payload, ensure_ascii=False).encode("utf-8"),
+            stdout=subprocess.PIPE, stderr=subprocess.PIPE, check=False, timeout=120,
+        )
+    except FileNotFoundError as exc:
+        raise RuntimeError("Shared search requires Node.js 22 or later; install Node before rebuilding/searching") from exc
+    if completed.returncode:
+        raise ValueError(completed.stderr.decode("utf-8", errors="replace").strip())
+    return json.loads(completed.stdout)
+
+
+def _write_sqlite(records: list[dict[str, Any]], path: Path, catalog_version: str) -> None:
+    prepared = _search_core({"action": "prepare", "records": records})
     if path.exists():
         path.unlink()
     with closing(sqlite3.connect(path)) as db, db:
@@ -422,6 +452,14 @@ def _write_sqlite(records: list[dict[str, Any]], path: Path) -> None:
             CREATE INDEX formats_format ON asset_formats(format, asset_id);
             CREATE VIRTUAL TABLE assets_fts USING fts5(id UNINDEXED, title, aliases, context,
                 tokenize='porter unicode61');
+            CREATE TABLE index_metadata (key TEXT PRIMARY KEY, value TEXT NOT NULL);
+            CREATE TABLE file_variants (variant_id TEXT PRIMARY KEY, asset_id TEXT NOT NULL,
+                family_id TEXT NOT NULL, file_sha256 TEXT, eligible INTEGER NOT NULL,
+                values_json TEXT NOT NULL, metadata TEXT NOT NULL);
+            CREATE INDEX variants_family ON file_variants(family_id);
+            CREATE INDEX variants_file ON file_variants(file_sha256);
+            CREATE VIRTUAL TABLE file_variants_fts USING fts5(variant_id UNINDEXED, title, aliases, context,
+                tokenize='porter unicode61');
         """)
         for item in records:
             db.execute("INSERT INTO assets VALUES (?, ?, ?, ?, ?, ?)", (item["id"], _text(item.get("title")), item["source"], item.get("license"), item["distribution_status"], json.dumps(item, ensure_ascii=False, separators=(",", ":"))))
@@ -432,7 +470,19 @@ def _write_sqlite(records: list[dict[str, Any]], path: Path) -> None:
                 _text([item.get("search_terms"), item.get("titles"), item.get("tags")]),
                 _text([item.get("description"), item.get("categories"), item.get("upstream_category"), item.get("taxonomy"), item.get("species"), item.get("anatomy"), item.get("action"), item.get("view"), item.get("style")]),
             ))
-        db.execute("PRAGMA user_version=1")
+        for variant in prepared["variants"]:
+            db.execute("INSERT INTO file_variants VALUES (?, ?, ?, ?, ?, ?, ?)", (
+                variant["variant_id"], variant["asset_id"], variant["family_id"], variant["file"].get("sha256"),
+                int(variant["eligible"]), json.dumps(variant["values"], ensure_ascii=False, separators=(",", ":")),
+                json.dumps(variant, ensure_ascii=False, separators=(",", ":")),
+            ))
+            db.execute("INSERT INTO file_variants_fts VALUES (?, ?, ?, ?)", (
+                variant["variant_id"], variant["search"]["title"], variant["search"]["aliases"], variant["search"]["context"],
+            ))
+        db.executemany("INSERT INTO index_metadata VALUES (?, ?)", [
+            ("catalog_version", catalog_version), ("ranking_version", prepared["ranking_version"]),
+        ])
+        db.execute("PRAGMA user_version=2")
 
 
 def finalize(records: Iterable[dict[str, Any]], output_dir: str | Path) -> dict[str, Any]:
@@ -466,7 +516,9 @@ def finalize(records: Iterable[dict[str, Any]], output_dir: str | Path) -> dict[
         "acceptance": {"scientific_coverage": "not_accepted", "visual_review": "not_completed", "illustrator_editability": "not_established_by_this_pipeline"},
         "catalog_sha256": hashlib.sha256(catalog_path.read_bytes()).hexdigest(),
     }
-    _write_sqlite(items, output_dir / "catalog.sqlite")
+    _write_sqlite(items, output_dir / "catalog.sqlite", summary["catalog_sha256"])
+    summary["search_index_version"] = 2
+    summary["search_policy"] = "mga_resources/search-core.mjs; old BM25 available as search_legacy"
     (output_dir / "summary.json").write_text(json.dumps(summary, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     return summary
 
@@ -524,7 +576,7 @@ def _fts_query(query: str) -> str:
     return _query_plan(query)[0]
 
 
-def search(db_path: str | Path, query: str, limit: int = 10, filters: dict[str, Any] | None = None) -> list[dict[str, Any]]:
+def search_legacy(db_path: str | Path, query: str, limit: int = 10, filters: dict[str, Any] | None = None) -> list[dict[str, Any]]:
     """Search a cached index; empty results are real, never arbitrary fallback."""
     if not 1 <= limit <= 100:
         raise ValueError("limit must be between 1 and 100")
@@ -564,3 +616,68 @@ def search(db_path: str | Path, query: str, limit: int = 10, filters: dict[str, 
             return (-matched, relevance, item["id"])
         candidates.sort(key=preference_score)
     return [item for item, _ in candidates[:limit]]
+
+
+def search_page(db_path: str | Path, query: str, limit: int = 10,
+                filters: dict[str, Any] | None = None, *, mode: str = "explore",
+                seed: str = "default", history: dict[str, Any] | None = None,
+                project: dict[str, Any] | None = None, cursor: str | None = None,
+                preferences: dict[str, Any] | None = None, candidate_pool: int = 75) -> dict[str, Any]:
+    """SQLite storage adapter for the shared JS policy. No independent ranking.
+
+    SQL pushes the core's exact prepared hard values down before reading any
+    candidate payload. There is no coarse LIMIT before filtering or grouping.
+    Diagnostics count unknowns and expose a bounded small uncertainty sample.
+    """
+    filters, history, project = filters or {}, history or {}, project or {}
+    prepared = _search_core({"action": "plan", "query": query, "filters": filters,
+                             "options": {"preferences": preferences or {}, "mode": mode, "project": project}})
+    plan, sql = prepared["plan"], prepared["sql"]
+    with closing(sqlite3.connect(Path(db_path).resolve().as_uri() + "?mode=ro", uri=True)) as db:
+        version = db.execute("PRAGMA user_version").fetchone()[0]
+        if version != 2:
+            raise ValueError("Search index must be rebuilt as v2 with finalize(); search_legacy() remains available for old indexes")
+        metadata = dict(db.execute("SELECT key, value FROM index_metadata"))
+        if metadata["ranking_version"] != plan["ranking_version"]:
+            raise ValueError("Search policy version changed; rebuild the index with finalize()")
+        base_where = " AND ".join(sql["text_clauses"]) or "1"
+        text_count = db.execute(f"SELECT count(*) FROM {sql['from']} WHERE {base_where}", sql["text_params"]).fetchone()[0] if not plan["empty"] else 0
+        variants, rejected, uncertain, payload_bytes = [], {}, [], 0
+        if not plan["empty"]:
+            for row in db.execute(f"SELECT v.metadata FROM {sql['from']} WHERE {sql['where']} ORDER BY v.variant_id", sql["params"]):
+                payload_bytes += len(row[0].encode("utf-8"))
+                variants.append(json.loads(row[0]))
+            # Rejections can overlap; report this explicitly, never sum as unique.
+            for condition in sql["conditions"]:
+                count = db.execute(f"SELECT count(*) FROM {sql['from']} WHERE {base_where} AND NOT ({condition['sql']})", [*sql["text_params"], *condition["params"]]).fetchone()[0]
+                rejected[condition["code"]] = count
+            for key in plan["requirements"]:
+                path = "$." + key  # core only permits fixed, validated field names
+                rows = db.execute(f"SELECT v.variant_id, v.family_id FROM {sql['from']} WHERE {base_where} AND json_array_length(v.values_json, ?)=0 ORDER BY v.variant_id LIMIT 20", [*sql["text_params"], path]).fetchall()
+                count = db.execute(f"SELECT count(*) FROM {sql['from']} WHERE {base_where} AND json_array_length(v.values_json, ?)=0", [*sql["text_params"], path]).fetchone()[0]
+                rejected["unknown:" + key] = count
+                uncertain.extend({"variant_id": row[0], "family_id": row[1], "reason": "unknown:" + key} for row in rows)
+        page = _search_core({"action": "search", "variants": variants, "request": {
+            "query": query, "filters": filters, "limit": limit, "mode": mode, "seed": seed,
+            "history": history, "project": project, "cursor": cursor, "preferences": preferences or {},
+            "candidate_pool": candidate_pool, "catalog_version": metadata["catalog_version"],
+        }})
+        enriched = []
+        for result in page["results"]:
+            row = db.execute("SELECT metadata FROM assets WHERE id=?", (result["asset_id"],)).fetchone()
+            asset = json.loads(row[0])
+            # Preserve existing result fields for assembly/review. Consumers must
+            # use selected_file, never assume family.files[0] is the matched one.
+            selected = next(file for file in asset["files"] if file.get("sha256") == result["selected_file"].get("sha256"))
+            enriched.append({**asset, **result, "selected_file": selected, "preview": selected.get("preview"), "download": selected.get("archive") or {"url": selected.get("url")}})
+        page["results"] = enriched
+    page["diagnostics"]["sqlite_pushdown"] = {"text_matched_variants": text_count,
+        "payload_variants_loaded": len(variants), "payload_bytes_loaded": payload_bytes, "rejections_by_condition_may_overlap": rejected,
+        "hard_filters_before_payload_load": True, "candidate_limit_before_filters": None}
+    page["diagnostics"]["uncertain_candidates"] = uncertain[:20]
+    return page
+
+
+def search(db_path: str | Path, query: str, limit: int = 10, filters: dict[str, Any] | None = None) -> list[dict[str, Any]]:
+    """Backwards compatible list API, backed by the shared JS search policy."""
+    return search_page(db_path, query, limit, filters)["results"]

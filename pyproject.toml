@@ -15,5 +15,8 @@ test = ["pytest>=8,<10"]
 [tool.setuptools.packages.find]
 include = ["mga_resources*"]
 
+[tool.setuptools.package-data]
+mga_resources = ["*.mjs"]
+
 [tool.pytest.ini_options]
 testpaths = ["tests"]
