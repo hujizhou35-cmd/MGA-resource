@@ -1,0 +1,579 @@
+{
+  "schema_version": 1,
+  "reviewer": "Codex registry_acceptance: actual contact-sheet and all 14 individual preview inspection",
+  "reviewed_at": "2026-11-06T20:58:06.720566+00:00",
+  "exercise": "validation_exercise",
+  "status": "actual_visual_review_complete_final_adoption_decisions_pending",
+  "bindings": {
+    "catalog_sha256": "5c90306415ce5e7f36e875c7f57b19a91930aacfeeaeecdf9ad7662770f9a3fe",
+    "plan_sha256": "628ad6152411befe553eb1e5f9a27a5269867116828c4d384a489820b530511c",
+    "mapping_sha256": "f8663eca9b9e9b7c6bf4728f07a1496db1d7f5d8d77f550edc418987624d1a5f"
+  },
+  "review_sheet": {
+    "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/exact-review-42291874562-1.review.png",
+    "sha256": "ce7fa1509b22788bb615cfbe2998738a56ac1bb63fe334cd9f42468d3a57960d"
+  },
+  "review_pack": {
+    "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/exact-review-42291874562-1.tar.gz",
+    "sha256": "6f068fd7565800c2afc5ef4c10eb66c079f12b4a3d9b323ecfe8a0f4bffa3adb"
+  },
+  "items": [
+    {
+      "tile": 1,
+      "family_id": "scidraw-841c6964e17b1fc40d30",
+      "source": "scidraw",
+      "source_id": "713d6163-458b-4aa6-a539-78c1f16ee3f4",
+      "title": "Mouse Sleeping",
+      "original_sha256": "203ee4ec31ee318064c81ee6954c60ae4ca2bba5cac33201a3bf84a94f9b689c",
+      "preview_sha256": "0951d2e935c11ef7285119af8dfd50a2938837b2d069c58bedb7cc7541f66764",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scidraw-42235890704-1-b0000.tar.gz",
+        "member": "files/20/203ee4ec31ee318064c81ee6954c60ae4ca2bba5cac33201a3bf84a94f9b689c.svg"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scidraw-42235890704-1-b0000.tar.gz",
+        "member": "previews/203ee4ec31ee318064c81ee6954c60ae4ca2bba5cac33201a3bf84a94f9b689c.png"
+      },
+      "review_preview_member": "previews/203ee4ec31ee318064c81ee6954c60ae4ca2bba5cac33201a3bf84a94f9b689c.png",
+      "project_uses": [
+        {
+          "project_id": "validation-rich-2",
+          "seed": "validation-rich-2",
+          "rank": 5,
+          "case_id": "rich"
+        }
+      ],
+      "query_relevance": "visually_consistent_with_source_labeled_generic_mouse",
+      "visual_verdict": "usable_with_noted_limits",
+      "observations": "Small curled mouse drawn with thin dark outline, closed/resting head and tail curled around the body. The image is a recognizable whole-mouse resting depiction on the white contact sheet; the original preview leaves a large transparent margin.",
+      "limits": "Usable for a resting-mouse component after deliberate framing; very small default object and fine strokes reduce readability at thumbnail scale. No sleep stage, strain or normal-health state is proven.",
+      "actual_inspection": [
+        "cloud_rendered_white_contact_sheet",
+        "individual_original_preview_png"
+      ],
+      "scientific_assertions_added": false,
+      "native_editability_tested": false
+    },
+    {
+      "tile": 2,
+      "family_id": "scidraw-3d3bd0158506079bb7ab",
+      "source": "scidraw",
+      "source_id": "833177c5-0563-48c0-92e4-b248dd6c29ae",
+      "title": "mouse grooming",
+      "original_sha256": "3c0d0da7b235a2b01a98a8a9258f972593166b6e405efda3ce1b98a65dec7e98",
+      "preview_sha256": "76a1ac1b1390b908ef73778a0dfcfec34ac045d579db93a7db9c90f6ed00236b",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scidraw-42235890704-1-b0000.tar.gz",
+        "member": "files/3c/3c0d0da7b235a2b01a98a8a9258f972593166b6e405efda3ce1b98a65dec7e98.svg"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scidraw-42235890704-1-b0000.tar.gz",
+        "member": "previews/3c0d0da7b235a2b01a98a8a9258f972593166b6e405efda3ce1b98a65dec7e98.png"
+      },
+      "review_preview_member": "previews/3c0d0da7b235a2b01a98a8a9258f972593166b6e405efda3ce1b98a65dec7e98.png",
+      "project_uses": [
+        {
+          "project_id": "validation-rich-2",
+          "seed": "validation-rich-2",
+          "rank": 6,
+          "case_id": "rich"
+        },
+        {
+          "project_id": "validation-rich-3",
+          "seed": "validation-rich-3",
+          "rank": 6,
+          "case_id": "rich"
+        },
+        {
+          "project_id": "validation-rich-4",
+          "seed": "validation-rich-4",
+          "rank": 9,
+          "case_id": "rich"
+        },
+        {
+          "project_id": "validation-rich-5",
+          "seed": "validation-rich-5",
+          "rank": 10,
+          "case_id": "rich"
+        }
+      ],
+      "query_relevance": "visually_consistent_with_source_labeled_generic_mouse",
+      "visual_verdict": "usable_with_noted_limits",
+      "observations": "Rounded cartoon mouse with visible head, ear, feet and long tail; a forepaw is raised close to its mouth/face. Bold dark line drawing without a surrounding scene.",
+      "limits": "Usable as a simplified whole-mouse behavior component. The source calls it grooming; the image supports a forepaw-at-face pose, not a measured behavioral endpoint.",
+      "actual_inspection": [
+        "cloud_rendered_white_contact_sheet",
+        "individual_original_preview_png"
+      ],
+      "scientific_assertions_added": false,
+      "native_editability_tested": false
+    },
+    {
+      "tile": 3,
+      "family_id": "scidraw-d395b3d32f51b095a0b1",
+      "source": "scidraw",
+      "source_id": "46bff190-b055-4135-8266-f9f0e68b2bf3",
+      "title": "Mouse Running",
+      "original_sha256": "45e357ca128d60836cdcfb2ac6e438df29255b2a62800c42b1d5dd32f02cfade",
+      "preview_sha256": "8840aae5479bd98b0af2ba3c0f68f9f7e20f86b856c25e9e85fc712bf6651622",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scidraw-42235890704-1-b0001.tar.gz",
+        "member": "files/45/45e357ca128d60836cdcfb2ac6e438df29255b2a62800c42b1d5dd32f02cfade.svg"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scidraw-42235890704-1-b0001.tar.gz",
+        "member": "previews/45e357ca128d60836cdcfb2ac6e438df29255b2a62800c42b1d5dd32f02cfade.png"
+      },
+      "review_preview_member": "previews/45e357ca128d60836cdcfb2ac6e438df29255b2a62800c42b1d5dd32f02cfade.png",
+      "project_uses": [
+        {
+          "project_id": "validation-rich-2",
+          "seed": "validation-rich-2",
+          "rank": 7,
+          "case_id": "rich"
+        }
+      ],
+      "query_relevance": "visually_consistent_with_source_labeled_generic_mouse",
+      "visual_verdict": "usable_with_noted_limits",
+      "observations": "Dark gray/black mouse with pink ears, feet and long raised pink tail; visible lateral body, limbs and forward motion posture. Color fills and body shading are clear.",
+      "limits": "Usable as an active-mouse component. The pose differs from neutral standing; no running speed or strain is inferred.",
+      "actual_inspection": [
+        "cloud_rendered_white_contact_sheet",
+        "individual_original_preview_png"
+      ],
+      "scientific_assertions_added": false,
+      "native_editability_tested": false
+    },
+    {
+      "tile": 4,
+      "family_id": "scidraw-4df6adc82c37b6666506",
+      "source": "scidraw",
+      "source_id": "1aa16999-6491-4521-9e09-ff45a4e7377f",
+      "title": "mouse drinking",
+      "original_sha256": "35ddc9ffce2ca5dbb11e7f99f468d83b8bb40b345ce044b334b2612238e1243c",
+      "preview_sha256": "6e602af510cc377a217d007cf26e6ffb82d93a438bc4a5f8aaaaa79c27d0a275",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scidraw-42235890704-1-b0000.tar.gz",
+        "member": "files/35/35ddc9ffce2ca5dbb11e7f99f468d83b8bb40b345ce044b334b2612238e1243c.svg"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scidraw-42235890704-1-b0000.tar.gz",
+        "member": "previews/35ddc9ffce2ca5dbb11e7f99f468d83b8bb40b345ce044b334b2612238e1243c.png"
+      },
+      "review_preview_member": "previews/35ddc9ffce2ca5dbb11e7f99f468d83b8bb40b345ce044b334b2612238e1243c.png",
+      "project_uses": [
+        {
+          "project_id": "validation-rich-2",
+          "seed": "validation-rich-2",
+          "rank": 8,
+          "case_id": "rich"
+        }
+      ],
+      "query_relevance": "visually_consistent_with_source_labeled_generic_mouse",
+      "visual_verdict": "usable_with_noted_limits",
+      "observations": "Outline mouse contacts the end of a bent drinking tube with its mouth; body, feet, ear and long tail are visible.",
+      "limits": "Usable as a drinking-interaction scene. No liquid volume, intake or treatment state is visible; the tube is part of this candidate rather than an isolated mouse symbol.",
+      "actual_inspection": [
+        "cloud_rendered_white_contact_sheet",
+        "individual_original_preview_png"
+      ],
+      "scientific_assertions_added": false,
+      "native_editability_tested": false
+    },
+    {
+      "tile": 5,
+      "family_id": "nih-bioart-6d343b769c06bbfd6b80",
+      "source": "nih-bioart",
+      "source_id": "282",
+      "title": "Lab Mouse",
+      "original_sha256": "3a0ed0dd377ca2acb033e7040defea9bfa1aa3414f00d425756fce450d099e0e",
+      "preview_sha256": "67501a42ef47aa3d17f5d27eeb5919dc47cbedb340e1f8f1e819d09d672a9809",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/nih-bioart-42236561214-1-b0000.tar.gz",
+        "member": "files/3a/3a0ed0dd377ca2acb033e7040defea9bfa1aa3414f00d425756fce450d099e0e.png"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/nih-bioart-42236561214-1-b0000.tar.gz",
+        "member": "previews/3a0ed0dd377ca2acb033e7040defea9bfa1aa3414f00d425756fce450d099e0e.png"
+      },
+      "review_preview_member": "previews/3a0ed0dd377ca2acb033e7040defea9bfa1aa3414f00d425756fce450d099e0e.png",
+      "project_uses": [
+        {
+          "project_id": "validation-rich-3",
+          "seed": "validation-rich-3",
+          "rank": 1,
+          "case_id": "rich"
+        }
+      ],
+      "query_relevance": "visually_consistent_with_source_labeled_generic_mouse",
+      "visual_verdict": "usable_with_noted_limits",
+      "observations": "Flat muted gray-brown mouse viewed obliquely, with pink ears/paws/tail, visible eyes and whiskers. The body and sweeping tail occupy almost the whole canvas.",
+      "limits": "Usable for a compact colored mouse component, but the left contour/tail root is very close to the canvas edge and framing should be inspected on a working copy. Do not claim exact view terminology, age or native editing.",
+      "actual_inspection": [
+        "cloud_rendered_white_contact_sheet",
+        "individual_original_preview_png"
+      ],
+      "scientific_assertions_added": false,
+      "native_editability_tested": false
+    },
+    {
+      "tile": 6,
+      "family_id": "scidraw-b7d4b31b28a56c302886",
+      "source": "scidraw",
+      "source_id": "c9333169-6f87-4fac-a9ca-ff21da89cb54",
+      "title": "mouse eating",
+      "original_sha256": "641fe3d778d116828071d5b6fb79927976b30bad2c9345d6a8b2376af4ee9526",
+      "preview_sha256": "6028dc7bba301926021f1450ec3b590437513d6d8687cebf5e079e27a02710fc",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scidraw-42235890704-1-b0000.tar.gz",
+        "member": "files/64/641fe3d778d116828071d5b6fb79927976b30bad2c9345d6a8b2376af4ee9526.svg"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scidraw-42235890704-1-b0000.tar.gz",
+        "member": "previews/641fe3d778d116828071d5b6fb79927976b30bad2c9345d6a8b2376af4ee9526.png"
+      },
+      "review_preview_member": "previews/641fe3d778d116828071d5b6fb79927976b30bad2c9345d6a8b2376af4ee9526.png",
+      "project_uses": [
+        {
+          "project_id": "validation-rich-3",
+          "seed": "validation-rich-3",
+          "rank": 7,
+          "case_id": "rich"
+        }
+      ],
+      "query_relevance": "visually_consistent_with_source_labeled_generic_mouse",
+      "visual_verdict": "usable_with_noted_limits",
+      "observations": "Bold outline cartoon mouse with a small brown object held at the mouth between its forepaws; full rounded body and tail are visible.",
+      "limits": "Usable as a feeding-related mouse component. The brown object is not identified as a particular diet/drug, and no intake value is implied.",
+      "actual_inspection": [
+        "cloud_rendered_white_contact_sheet",
+        "individual_original_preview_png"
+      ],
+      "scientific_assertions_added": false,
+      "native_editability_tested": false
+    },
+    {
+      "tile": 7,
+      "family_id": "scidraw-12f9e66645cc45d9f5cc",
+      "source": "scidraw",
+      "source_id": "00adc464-c52c-465b-942f-26d57106f297",
+      "title": "mouse sleeping",
+      "original_sha256": "95bfdf0793a5d2b23866f30bd18bc5a123c777695a5e3c3d52b2f1c4cc3313fb",
+      "preview_sha256": "a33c3e922fc70b2e51cf04c760599472a1feea78af9a634e39352306b0e3e8a1",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scidraw-42235890704-1-b0000.tar.gz",
+        "member": "files/95/95bfdf0793a5d2b23866f30bd18bc5a123c777695a5e3c3d52b2f1c4cc3313fb.svg"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scidraw-42235890704-1-b0000.tar.gz",
+        "member": "previews/95bfdf0793a5d2b23866f30bd18bc5a123c777695a5e3c3d52b2f1c4cc3313fb.png"
+      },
+      "review_preview_member": "previews/95bfdf0793a5d2b23866f30bd18bc5a123c777695a5e3c3d52b2f1c4cc3313fb.png",
+      "project_uses": [
+        {
+          "project_id": "validation-rich-3",
+          "seed": "validation-rich-3",
+          "rank": 9,
+          "case_id": "rich"
+        }
+      ],
+      "query_relevance": "visually_consistent_with_source_labeled_generic_mouse",
+      "visual_verdict": "usable_with_noted_limits",
+      "observations": "Thin outline mouse lies low with closed eye, body, ear, feet and curling tail visible. The source title agrees with the resting pose.",
+      "limits": "Usable for a resting-mouse depiction on a light background. Fine strokes require adequate display size; no anesthesia or sleep stage is inferred.",
+      "actual_inspection": [
+        "cloud_rendered_white_contact_sheet",
+        "individual_original_preview_png"
+      ],
+      "scientific_assertions_added": false,
+      "native_editability_tested": false
+    },
+    {
+      "tile": 8,
+      "family_id": "bioicons-ff58605f7d592e96069c",
+      "source": "bioicons",
+      "source_id": "cc-by-3.0/Animals/Servier/mouse-juvenile.svg",
+      "title": "mouse juvenile",
+      "original_sha256": "c061a2dc0338efd78c63bda9a127131f7891c36ce31617e6e3f6b1ed9d5bf251",
+      "preview_sha256": "560acdc9f537abb4cd607b7fdb830eceb52784f17387d5f71d0ba3adc841ceb6",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42251588741-1-b0001.tar.gz",
+        "member": "files/c0/c061a2dc0338efd78c63bda9a127131f7891c36ce31617e6e3f6b1ed9d5bf251.svg"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42251588741-1-b0001.tar.gz",
+        "member": "previews/c061a2dc0338efd78c63bda9a127131f7891c36ce31617e6e3f6b1ed9d5bf251.png"
+      },
+      "review_preview_member": "previews/c061a2dc0338efd78c63bda9a127131f7891c36ce31617e6e3f6b1ed9d5bf251.png",
+      "project_uses": [
+        {
+          "project_id": "validation-rich-4",
+          "seed": "validation-rich-4",
+          "rank": 2,
+          "case_id": "rich"
+        },
+        {
+          "project_id": "validation-rich-5",
+          "seed": "validation-rich-5",
+          "rank": 1,
+          "case_id": "rich"
+        }
+      ],
+      "query_relevance": "visually_consistent_with_source_labeled_generic_mouse",
+      "visual_verdict": "usable_with_noted_limits",
+      "observations": "Gray shaded small rodent in lateral view, with visible ears, snout, long tail and four legs, isolated against transparency.",
+      "limits": "Usable as the source-labeled juvenile mouse component, not a default adult mouse. Preview morphology is consistent with a rodent; species and age are carried from the source label rather than independently diagnosed from the drawing. Nose/whiskers lie close to the right edge.",
+      "actual_inspection": [
+        "cloud_rendered_white_contact_sheet",
+        "individual_original_preview_png"
+      ],
+      "scientific_assertions_added": false,
+      "native_editability_tested": false
+    },
+    {
+      "tile": 9,
+      "family_id": "scidraw-1f3b34491bd407a00036",
+      "source": "scidraw",
+      "source_id": "823b7f58-46c8-4a44-a270-c278470b000d",
+      "title": "mouse running",
+      "original_sha256": "278d14cd80c07ade66e51e4d225ceade5b0d6d11e54dcb74f774ffd9c4350fb2",
+      "preview_sha256": "8e417cb98a8566e51ea4603e9743324e1097ae5c0d1b9c37c73be922f03067e6",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scidraw-42235890704-1-b0000.tar.gz",
+        "member": "files/27/278d14cd80c07ade66e51e4d225ceade5b0d6d11e54dcb74f774ffd9c4350fb2.svg"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scidraw-42235890704-1-b0000.tar.gz",
+        "member": "previews/278d14cd80c07ade66e51e4d225ceade5b0d6d11e54dcb74f774ffd9c4350fb2.png"
+      },
+      "review_preview_member": "previews/278d14cd80c07ade66e51e4d225ceade5b0d6d11e54dcb74f774ffd9c4350fb2.png",
+      "project_uses": [
+        {
+          "project_id": "validation-rich-4",
+          "seed": "validation-rich-4",
+          "rank": 4,
+          "case_id": "rich"
+        }
+      ],
+      "query_relevance": "visually_consistent_with_source_labeled_generic_mouse",
+      "visual_verdict": "usable_with_noted_limits",
+      "observations": "Very thin line drawing of a mouse stretched forward with long tail and horizontal motion lines behind the body.",
+      "limits": "Usable for an active-mouse scene at sufficient size. Fine strokes and motion lines make it less suitable as a neutral small icon; no speed claim.",
+      "actual_inspection": [
+        "cloud_rendered_white_contact_sheet",
+        "individual_original_preview_png"
+      ],
+      "scientific_assertions_added": false,
+      "native_editability_tested": false
+    },
+    {
+      "tile": 10,
+      "family_id": "scidraw-b9c6cd186bf00ba62d7e",
+      "source": "scidraw",
+      "source_id": "639ae9ea-9832-4e05-a2b8-1d3dfe2fafd7",
+      "title": "Black Mouse",
+      "original_sha256": "084c28e77b318756785fc27e0a6ba0a404ed22c6e27bb9578e26014da6712322",
+      "preview_sha256": "658c900860206a199273c714795d74c75cb14fd116d43b526bbf6869f9f026f3",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scidraw-42235890704-1-b0000.tar.gz",
+        "member": "files/08/084c28e77b318756785fc27e0a6ba0a404ed22c6e27bb9578e26014da6712322.svg"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scidraw-42235890704-1-b0000.tar.gz",
+        "member": "previews/084c28e77b318756785fc27e0a6ba0a404ed22c6e27bb9578e26014da6712322.png"
+      },
+      "review_preview_member": "previews/084c28e77b318756785fc27e0a6ba0a404ed22c6e27bb9578e26014da6712322.png",
+      "project_uses": [
+        {
+          "project_id": "validation-rich-4",
+          "seed": "validation-rich-4",
+          "rank": 8,
+          "case_id": "rich"
+        }
+      ],
+      "query_relevance": "visually_consistent_with_source_labeled_generic_mouse",
+      "visual_verdict": "usable_with_noted_limits",
+      "observations": "Black filled mouse body with gray ear interiors, a white eye, visible feet and tail; clearly legible against the white contact sheet.",
+      "limits": "Usable as a compact mouse symbol on a contrasting light background. It is intentionally simplified and not detailed anatomy or a claim about strain.",
+      "actual_inspection": [
+        "cloud_rendered_white_contact_sheet",
+        "individual_original_preview_png"
+      ],
+      "scientific_assertions_added": false,
+      "native_editability_tested": false
+    },
+    {
+      "tile": 11,
+      "family_id": "bioicons-c5dadfe445701b0ad13b",
+      "source": "togo",
+      "source_id": "812",
+      "title": "Mouse",
+      "original_sha256": "d2dcbc24653c096c837801befe8a65a024836d83001e645709ca4ae85919caf4",
+      "preview_sha256": "1bb0ca5fa2f099120b573032cf49c4d2652596b2e8da1cfb042793930873f051",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42249870031-1-b0001.tar.gz",
+        "member": "files/d2/d2dcbc24653c096c837801befe8a65a024836d83001e645709ca4ae85919caf4.png"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42249870031-1-b0001.tar.gz",
+        "member": "previews/d2dcbc24653c096c837801befe8a65a024836d83001e645709ca4ae85919caf4.png"
+      },
+      "review_preview_member": "previews/d2dcbc24653c096c837801befe8a65a024836d83001e645709ca4ae85919caf4.png",
+      "project_uses": [
+        {
+          "project_id": "validation-rich-4",
+          "seed": "validation-rich-4",
+          "rank": 10,
+          "case_id": "rich"
+        }
+      ],
+      "query_relevance": "visually_consistent_with_source_labeled_generic_mouse",
+      "visual_verdict": "usable_with_noted_limits",
+      "observations": "Detailed white-furred mouse with reddish eyes/ears and a long curved brown-pink tail, rendered as an isolated realistic-looking illustration with visible fur texture.",
+      "limits": "Usable for a detailed mouse illustration. The visible pigmentation should be retained as a depiction rather than identifying a particular strain or genotype. Raster preview does not prove vector editability.",
+      "actual_inspection": [
+        "cloud_rendered_white_contact_sheet",
+        "individual_original_preview_png"
+      ],
+      "scientific_assertions_added": false,
+      "native_editability_tested": false
+    },
+    {
+      "tile": 12,
+      "family_id": "scidraw-a48a0b1f38f3f510303b",
+      "source": "scidraw",
+      "source_id": "81f0e581-0323-4527-89b9-67e8ccac8686",
+      "title": "mouse silhouette",
+      "original_sha256": "8f513273a0947c230621ff86e052096aba6b0f59587ac737ccda0a066acc8f51",
+      "preview_sha256": "f835ab75eeb2178fa3ac0657f61c8365fb1e104216e6326bef0db5ac982738e8",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scidraw-42235890704-1-b0000.tar.gz",
+        "member": "files/8f/8f513273a0947c230621ff86e052096aba6b0f59587ac737ccda0a066acc8f51.svg"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scidraw-42235890704-1-b0000.tar.gz",
+        "member": "previews/8f513273a0947c230621ff86e052096aba6b0f59587ac737ccda0a066acc8f51.png"
+      },
+      "review_preview_member": "previews/8f513273a0947c230621ff86e052096aba6b0f59587ac737ccda0a066acc8f51.png",
+      "project_uses": [
+        {
+          "project_id": "validation-rich-5",
+          "seed": "validation-rich-5",
+          "rank": 8,
+          "case_id": "rich"
+        }
+      ],
+      "query_relevance": "visually_consistent_with_source_labeled_generic_mouse",
+      "visual_verdict": "usable_with_noted_limits",
+      "observations": "Solid slate-gray mouse silhouette with curled tail, splayed legs, eye opening and an inner-ear cutout; body is angled diagonally in the frame.",
+      "limits": "Usable as a stylized whole-mouse silhouette. Orientation is unconventional for a neutral lateral diagram, and exact view/action is not added as a scientific assertion.",
+      "actual_inspection": [
+        "cloud_rendered_white_contact_sheet",
+        "individual_original_preview_png"
+      ],
+      "scientific_assertions_added": false,
+      "native_editability_tested": false
+    },
+    {
+      "tile": 13,
+      "family_id": "scidraw-91c9980d0963b2696246",
+      "source": "scidraw",
+      "source_id": "0dd48af5-947a-4a43-8e5e-1d42e2bd265f",
+      "title": "mouse running",
+      "original_sha256": "2d4b2ecc1b708c945a9901e97489d3cf17cf400fbb983648433711f7afb80499",
+      "preview_sha256": "e9c565451e33b9e2083382a928adcd8dae833fb4009920712167d3b803bca36d",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scidraw-42235890704-1-b0000.tar.gz",
+        "member": "files/2d/2d4b2ecc1b708c945a9901e97489d3cf17cf400fbb983648433711f7afb80499.svg"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scidraw-42235890704-1-b0000.tar.gz",
+        "member": "previews/2d4b2ecc1b708c945a9901e97489d3cf17cf400fbb983648433711f7afb80499.png"
+      },
+      "review_preview_member": "previews/2d4b2ecc1b708c945a9901e97489d3cf17cf400fbb983648433711f7afb80499.png",
+      "project_uses": [
+        {
+          "project_id": "validation-rich-5",
+          "seed": "validation-rich-5",
+          "rank": 9,
+          "case_id": "rich"
+        }
+      ],
+      "query_relevance": "visually_consistent_with_source_labeled_generic_mouse",
+      "visual_verdict": "usable_with_noted_limits",
+      "observations": "Dark filled lateral mouse with small feet, ear, eye, whiskers and a long extended tail, in a horizontal active posture.",
+      "limits": "Usable as a simple active-mouse silhouette. Tail and lower extremities are tightly framed, so check layout margins; no speed or health state claim.",
+      "actual_inspection": [
+        "cloud_rendered_white_contact_sheet",
+        "individual_original_preview_png"
+      ],
+      "scientific_assertions_added": false,
+      "native_editability_tested": false
+    },
+    {
+      "tile": 14,
+      "family_id": "arcadia-80bc9933df93cb7e8cb3",
+      "source": "arcadia",
+      "source_id": "Silhouette SVGs/Naegleria-gruberi-silhouette.svg",
+      "title": "Amoeboflagellate (Naegleria gruberi) — silhouette",
+      "original_sha256": "05470087bdf7617189a282ea6474aafac7d1efeb0a03fbb05fa7abb7df0a0b1a",
+      "preview_sha256": "403f3ab715bcc022375440c7f666fa0f079fd4f4655eee56eac12eb20e908fb4",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/arcadia-42234366112-1-b0000.tar.gz",
+        "member": "files/05/05470087bdf7617189a282ea6474aafac7d1efeb0a03fbb05fa7abb7df0a0b1a.svg"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/arcadia-42234366112-1-b0000.tar.gz",
+        "member": "previews/05470087bdf7617189a282ea6474aafac7d1efeb0a03fbb05fa7abb7df0a0b1a.png"
+      },
+      "review_preview_member": "previews/05470087bdf7617189a282ea6474aafac7d1efeb0a03fbb05fa7abb7df0a0b1a.png",
+      "project_uses": [
+        {
+          "project_id": "validation-scarce-1",
+          "seed": "validation-scarce-1",
+          "rank": 1,
+          "case_id": "scarce"
+        },
+        {
+          "project_id": "validation-scarce-2",
+          "seed": "validation-scarce-2",
+          "rank": 1,
+          "case_id": "scarce"
+        },
+        {
+          "project_id": "validation-scarce-3",
+          "seed": "validation-scarce-3",
+          "rank": 1,
+          "case_id": "scarce"
+        },
+        {
+          "project_id": "validation-scarce-4",
+          "seed": "validation-scarce-4",
+          "rank": 1,
+          "case_id": "scarce"
+        },
+        {
+          "project_id": "validation-scarce-5",
+          "seed": "validation-scarce-5",
+          "rank": 1,
+          "case_id": "scarce"
+        }
+      ],
+      "query_relevance": "amoeboid_depiction_consistent_with_source_labeled_Naegleria",
+      "visual_verdict": "usable_with_noted_limits",
+      "observations": "A single gray irregular amoeboid outline with pointed protrusions and several internal round/oval negative spaces, including one large ring.",
+      "limits": "Usable as a schematic amoeboid-organism component for the source-labeled Naegleria gruberi query. The silhouette alone cannot independently establish species or organelle identity. No flagellated stage or infection mechanism is claimed.",
+      "actual_inspection": [
+        "cloud_rendered_white_contact_sheet",
+        "individual_original_preview_png"
+      ],
+      "scientific_assertions_added": false,
+      "native_editability_tested": false
+    }
+  ],
+  "decision_limits": [
+    "This records real preview inspection, not automatic adoption or an independent species diagnosis.",
+    "Only generic mouse/Naegleria candidate relevance was reviewed; no new side-view/state/action assertions are injected into the catalog.",
+    "Final project choices may repeat and must not be forced to meet a diversity target or source quota."
+  ]
+}
