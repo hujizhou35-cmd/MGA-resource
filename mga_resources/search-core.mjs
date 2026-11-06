@@ -3,7 +3,7 @@
  */
 import vocabulary from './search-vocabulary.mjs';
 
-export const RANKING_VERSION = 'shared-search-3.4.2';
+export const RANKING_VERSION = 'shared-search-3.4.3';
 export const INDEX_VERSION = 9;
 export const DEFAULT_CANDIDATE_POOL = 75;
 const unknown = new Set(['', 'unknown', 'unspecified', 'not_reviewed', '待确认']);
@@ -200,6 +200,17 @@ export function buildQueryPlan(query = '', filters = {}, options = {}) {
   let remaining = norm(query);
   const requirements = normalizeFilters(filters), preferences = normalizeFilters({...filters.preferences,...options.preferences});
   const explicit = new Set(Object.keys(requirements));
+  const mediaPhrases=[];
+  // These phrases request a file representation, not medical object words.
+  // Do not strip bare "vector": viral/expression vectors are real subjects.
+  // Pure vector is a machine structure finding, never an Illustrator claim.
+  for(const phrase of ['可编辑的矢量图','可编辑矢量图','可编辑的矢量','可编辑矢量','editable vector graphics','editable vector image','editable vector','editable svg','可编辑svg','可编辑 svg']) {
+    if(!matches(remaining,phrase))continue;
+    if(requirements.structure&&!requirements.structure.includes('pure_vector'))throw new Error('Query requests editable vector structure but conflicts with explicit structure filter');
+    requirements.structure=['pure_vector'];
+    remaining=removeTerm(remaining,phrase);
+    mediaPhrases.push(phrase);
+  }
   const wholeRole=contextualWholeRole(remaining);
   if(wholeRole&&!explicit.has('role')){requirements.role=[wholeRole];for(const term of ['完整','整个','whole','complete'])remaining=removeTerm(remaining,term);}
   const preferVisual = /偏好|优先|prefer(?:red)?|if possible/.test(remaining);
@@ -255,7 +266,8 @@ export function buildQueryPlan(query = '', filters = {}, options = {}) {
   }
   const fts = groups.map(group=>'('+group.map(term=>'"'+term.replaceAll('"','""')+'"').join(' OR ')+')').join(' AND ');
   const empty = !groups.length && !Object.keys(requirements).length && !Object.keys(preferences).length && Boolean(String(query).trim());
-  return {query:String(query),terms:groups,fts,requirements,all_requirements:allRequirements,object_groups:objectGroups,preferences,soft_terms:softTerms,empty,parsed_qualifiers:parsed,ranking_version:RANKING_VERSION};
+  return {query:String(query),terms:groups,fts,requirements,all_requirements:allRequirements,object_groups:objectGroups,preferences,soft_terms:softTerms,empty,parsed_qualifiers:parsed,ranking_version:RANKING_VERSION,
+    ...(mediaPhrases.length?{media_interpretation:{phrases:mediaPhrases,structure:'pure_vector',basis:'explicit_query_media_phrase',native_editability_verified:false,limitation:'Pure vector describes machine-inspected file structure; native application editing/import remains separately unverified.'}}:{})};
 }
 
 function manualEvidence(file,key) {

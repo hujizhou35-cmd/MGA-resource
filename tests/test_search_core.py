@@ -551,7 +551,46 @@ def test_old_ranking_index_is_rejected_even_with_unchanged_sql_schema(tmp_path):
     db = database(tmp_path, [artwork(1)])
     with closing(sqlite3.connect(db)) as conn, conn:
         assert conn.execute("PRAGMA user_version").fetchone()[0] == 9
-        assert conn.execute("SELECT value FROM index_metadata WHERE key='ranking_version'").fetchone()[0] == "shared-search-3.4.2"
-        conn.execute("UPDATE index_metadata SET value='shared-search-3.4.1' WHERE key='ranking_version'")
+        assert conn.execute("SELECT value FROM index_metadata WHERE key='ranking_version'").fetchone()[0] == "shared-search-3.4.3"
+        conn.execute("UPDATE index_metadata SET value='shared-search-3.4.2' WHERE key='ranking_version'")
     with pytest.raises(ValueError, match="policy version changed; rebuild"):
         search(db, "mouse", filters={"media_type": "raster"})
+
+
+def test_explicit_editable_vector_phrase_is_structure_not_an_fts_object(tmp_path):
+    records = [artwork(i) for i in range(4)]
+    for item, structure in zip(records, ["pure_vector", "mixed", "embedded_raster", "raster"]):
+        item["files"][0].update(structure=structure, format="png" if structure == "raster" else "svg")
+    rat = artwork(10, title="Rat", species="rat")
+    db = database(tmp_path, [*records, rat])
+    for query in ("editable vector mouse", "可编辑矢量小鼠", "可编辑的矢量图小鼠", "editable SVG mouse"):
+        for filters in ({}, {"media_type": "pure_vector"}):
+            page = search_page(db, query, filters=filters)
+            assert [r["selected_file"]["sha256"] for r in page["results"]] == [records[0]["files"][0]["sha256"]]
+            plan = page["query_plan"]
+            assert len(plan["terms"]) == 1 and "mouse" in plan["terms"][0]
+            assert plan["requirements"]["structure"] == ["pure_vector"]
+            assert plan["requirements"]["species"] == ["mouse"]
+            assert plan["media_interpretation"]["native_editability_verified"] is False
+            assert page["results"][0]["preview"] == records[0]["files"][0]["preview"]
+    with pytest.raises(ValueError, match="conflicts with explicit structure"):
+        search(db, "editable vector mouse", filters={"media_type": "raster"})
+    narrowed = search_page(db, "editable vector mouse", filters={"structure": ["raster", "pure_vector"]})
+    assert narrowed["query_plan"]["requirements"]["structure"] == ["pure_vector"]
+
+
+def test_biological_vector_and_bare_editable_are_not_discarded():
+    for query in ("viral vector mouse", "expression vector", "editable mouse"):
+        plan = _search_core({"action": "plan", "query": query})["plan"]
+        assert "structure" not in plan["requirements"]
+        assert "media_interpretation" not in plan
+        preserved = "editable" if query == "editable mouse" else "vector"
+        assert any(preserved in terms for terms in plan["terms"])
+
+
+def test_appearance_aliases_intersect_without_silently_widening_hard_filters():
+    filters = {"color": ["color", "grayscale"], "color_mode": "grayscale"}
+    plan = _search_core({"action": "plan", "query": "mouse", "filters": filters})["plan"]
+    assert plan["requirements"]["color_mode"] == ["grayscale"]
+    with pytest.raises(ValueError, match="Conflicting aliases"):
+        _search_core({"action": "plan", "query": "mouse", "filters": {"color": "color", "color_mode": "grayscale"}})
