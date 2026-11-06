@@ -1,0 +1,180 @@
+{
+  "schema_version": 1,
+  "review_id": "scisvg-animal-cell-20261106",
+  "reviewed_at_utc": "2026-11-06T15:39:05Z",
+  "reviewer": "Codex agent; tool-observed native operations and direct image inspection",
+  "source": {
+    "source": "scisvg",
+    "source_id": "assets/biology/cells/animal-cell.svg",
+    "title": "Animal cell",
+    "source_url": "https://github.com/SaveenaSolanki/SciSVG/blob/b8a2b60a3a5b2d9b717b1065fbcb8de9f1faf72b/assets/biology/cells/animal-cell.svg",
+    "download_url": "https://raw.githubusercontent.com/SaveenaSolanki/SciSVG/b8a2b60a3a5b2d9b717b1065fbcb8de9f1faf72b/assets/biology/cells/animal-cell.svg",
+    "upstream_revision": "b8a2b60a3a5b2d9b717b1065fbcb8de9f1faf72b"
+  },
+  "catalog_binding": {
+    "method": "exact_source_and_source_id_and_original_sha256",
+    "source_svg_sha256": "0f534fc86a753d11dbc9e893a1981b8234af2f6a76809329db1de56f37553806",
+    "applies_to_other_assets": false
+  },
+  "environment": {
+    "application": "Adobe Illustrator",
+    "illustrator_version": "27.6.0",
+    "os": "Windows",
+    "mcp_server_package": "illustrator-mcp-server",
+    "mcp_server_version": "1.10.3",
+    "mcp_package_manifest_sha256": "e70df26e8ed9b09c2bb3526f1760bca7fe80cdd230e38a2cfaac85d4968d887b",
+    "version_limit": "MCP warns its verified baseline is Illustrator 28 or later. This review reports observed behavior in 27.6.0 only."
+  },
+  "document_safety": {
+    "initial_state": "no_document_open",
+    "existing_user_documents_changed": false,
+    "opened_only_review_samples": true,
+    "final_state": "no_document_open",
+    "source_svg_bytes_unchanged": true,
+    "bulk_download": false
+  },
+  "files": {
+    "source": {
+      "filename": "scisvg-animal-cell.svg",
+      "sha256": "0f534fc86a753d11dbc9e893a1981b8234af2f6a76809329db1de56f37553806",
+      "size_bytes": 2537
+    },
+    "ai": {
+      "filename": "scisvg-animal-cell.ai",
+      "sha256": "8947e14786d76f4dc03a14519ac27797658778d4ad7a6ec72fee0c6563d12265",
+      "size_bytes": 65315
+    },
+    "before": {
+      "filename": "scisvg-before.png",
+      "sha256": "82fbbd412ebf225183239a3177174320c568ad1624e007cd63e125118a8d46e5",
+      "size_bytes": 35545,
+      "width": 683,
+      "height": 683,
+      "mode": "RGBA"
+    },
+    "reopened": {
+      "filename": "scisvg-reopened.png",
+      "sha256": "82fbbd412ebf225183239a3177174320c568ad1624e007cd63e125118a8d46e5",
+      "size_bytes": 35545,
+      "width": 683,
+      "height": 683,
+      "mode": "RGBA"
+    },
+    "modified": {
+      "filename": "scisvg-modified.png",
+      "sha256": "e36d3ee7b465a91ac17bc4afff081083a7e2d920f27153d010931a291b0ce69a",
+      "size_bytes": 35709,
+      "width": 683,
+      "height": 683,
+      "mode": "RGBA"
+    },
+    "restored": {
+      "filename": "scisvg-restored.png",
+      "sha256": "82fbbd412ebf225183239a3177174320c568ad1624e007cd63e125118a8d46e5",
+      "size_bytes": 35545,
+      "width": 683,
+      "height": 683,
+      "mode": "RGBA"
+    }
+  },
+  "artifact_storage": {
+    "local_only": true,
+    "relative_directory": "build/native-review/20261106",
+    "published_by_this_review": false,
+    "ai_role": "review derivative, not replacement source"
+  },
+  "native_operations": {
+    "open_method": "direct open_document of SVG, not import_svg_as_editable",
+    "direct_svg_open": "passed",
+    "save_independent_ai": "passed",
+    "close_and_reopen_ai": "passed",
+    "object_counts_before": {
+      "group": 8,
+      "path": 32
+    },
+    "object_counts_after_reopen": {
+      "group": 8,
+      "path": 32
+    },
+    "image_object_count": 0,
+    "image_check_method": "Illustrator MCP find_objects(type=image)",
+    "artboards": 1,
+    "artboard_dimensions_pt": [
+      512,
+      512
+    ],
+    "color_space": "RGB",
+    "path_edit": {
+      "target": "Cell membrane group's filled interior path; bounds x44/y86/w424/h344 pt.",
+      "identification": "Exact native UUID and bounds checked; original white RGB fill confirmed with exact-color lookup.",
+      "uuid_in_test": "1fcd1acd-acd3-4831-98af-a6087fb0dbf6",
+      "temporary_fill": {
+        "type": "rgb",
+        "r": 180,
+        "g": 240,
+        "b": 220
+      },
+      "restored_fill": {
+        "type": "rgb",
+        "r": 255,
+        "g": 255,
+        "b": 255
+      },
+      "edit_changed_objects": 1,
+      "restore_changed_objects": 1,
+      "edit_readback_verified": true,
+      "restore_readback_verified": true
+    },
+    "save_restored_ai": "passed",
+    "close_review_document_without_discard": "passed",
+    "cross_document_import": "not_tested"
+  },
+  "render_checks": {
+    "export": {
+      "format": "PNG",
+      "dpi": 96,
+      "background": "transparent",
+      "target": "artboard:0"
+    },
+    "comparison_tool": "Pillow 12.3.0 RGBA pixel comparison",
+    "comparisons_to_before": {
+      "reopened": {
+        "same_dimensions": true,
+        "rgba_equal": true,
+        "changed_pixels": 0,
+        "total_pixels": 466489,
+        "max_channel_delta": 0
+      },
+      "modified": {
+        "same_dimensions": true,
+        "rgba_equal": false,
+        "changed_pixels": 142157,
+        "total_pixels": 466489,
+        "max_channel_delta": 75
+      },
+      "restored": {
+        "same_dimensions": true,
+        "rgba_equal": true,
+        "changed_pixels": 0,
+        "total_pixels": 466489,
+        "max_channel_delta": 0
+      }
+    },
+    "images_directly_inspected": [
+      "before",
+      "modified",
+      "restored"
+    ],
+    "visual_observation": "Simple blue-outline animal cell with pink nucleus and organelle shapes remained visible. Temporary mint cell interior was visible. Restored export visually matched the original Illustrator export."
+  },
+  "import_warnings": [],
+  "conclusion": {
+    "native_edit_save_reopen": "validated_in_recorded_environment_only",
+    "source_svg_rendering_fidelity": "not_independently_compared_to_upstream_reference",
+    "ai_roundtrip_rendering": "pixel_identical_to_initial_Illustrator_export",
+    "fill_restoration_rendering": "pixel_identical_to_initial_Illustrator_export",
+    "library_wide_acceptance": false,
+    "anatomical_validation": "not_performed",
+    "cross_document_import_validated": false
+  }
+}
