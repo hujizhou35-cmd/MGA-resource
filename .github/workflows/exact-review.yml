@@ -6,6 +6,10 @@ on:
         description: Existing collection release
         default: collection-20261106
         type: string
+      publish_tag:
+        description: Existing evidence release for the review pack, sheet and summary
+        default: acceptance-20261107
+        type: string
       plan:
         description: Repository data/review-plans JSON with at most 20 exact files
         default: data/review-plans/gap-candidates-20261107.json
@@ -27,5 +31,6 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
           COLLECTION_TAG: ${{ inputs.release_tag }}
+          PUBLISH_TAG: ${{ inputs.publish_tag }}
           REVIEW_PLAN: ${{ inputs.plan }}
-        run: python scripts/build_exact_review.py --release-tag "$COLLECTION_TAG" --plan "$REVIEW_PLAN" --publish
+        run: python scripts/build_exact_review.py --release-tag "$COLLECTION_TAG" --publish-tag "$PUBLISH_TAG" --plan "$REVIEW_PLAN" --publish

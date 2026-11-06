@@ -78,6 +78,7 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--plan", required=True)
     parser.add_argument("--release-tag", required=True)
+    parser.add_argument("--publish-tag", help="Separate evidence Release; source archives stay in --release-tag")
     parser.add_argument("--publish", action="store_true")
     args = parser.parse_args()
     if os.environ.get("GITHUB_ACTIONS") != "true":
@@ -107,6 +108,7 @@ def main():
     name = "exact-review-" + run
     sheet = render_sheet(list(candidates.values()), payloads, output / (name+".review.png"), "/usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc")
     mapping = {"schema_version": 1, "generated_at": datetime.now(timezone.utc).isoformat(),
+        "source_release_tag": args.release_tag, "publish_tag": args.publish_tag or args.release_tag,
         "plan_path": args.plan, "plan_sha256": sha(raw), "candidates": candidates,
         "archive_verification": transfers, "preview_errors": errors, "sheet": sheet,
         "original_files_downloaded": 0, "source_websites_requested": 0, "scientific_acceptance_passed": False}
@@ -121,11 +123,12 @@ def main():
     if archive.stat().st_size > MAX_PACK_BYTES:
         raise ValueError("Bounded exact review pack exceeds 24 MiB")
     summary = {"files": len(candidates), "plan_sha256": sha(raw), "sheet": sheet,
+               "source_release_tag": args.release_tag, "publish_tag": args.publish_tag or args.release_tag,
                "preview_errors": errors, "archive": {"name": archive.name, "size_bytes": archive.stat().st_size, "sha256": sha(archive.read_bytes())}}
     summary_path = base / (name+".summary.json")
     summary_path.write_text(json.dumps(summary, indent=2)+"\n", encoding="utf-8")
     if args.publish:
-        gh("release", "upload", args.release_tag, str(archive), str(output / sheet["path"]), str(summary_path), "--repo", repository)
+        gh("release", "upload", args.publish_tag or args.release_tag, str(archive), str(output / sheet["path"]), str(summary_path), "--repo", repository)
     print(json.dumps(summary))
 
 
