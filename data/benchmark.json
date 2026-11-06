@@ -1,0 +1,2970 @@
+{
+  "schema_version": 1,
+  "benchmark_version": "2026-11-06.v1",
+  "purpose": "Independent medical illustration retrieval and coverage acceptance; not a self-label matching test.",
+  "frozen_before_collection": true,
+  "counts": {
+    "categories": 12,
+    "concepts": 60,
+    "queries": 120
+  },
+  "thresholds": {
+    "top_k": 10,
+    "overall_success_rate": 0.9,
+    "minimum_successful_queries": 108,
+    "minimum_successful_queries_per_language": 54,
+    "minimum_covered_concepts_per_category": 4,
+    "invalid_or_unreadable_downloads": 0
+  },
+  "judging": {
+    "success_definition": "At least one top-10 result has a viewable illustration or usable component that genuinely satisfies the requested object, role and required species, with a working file and recorded license; inspect actual preview and source evidence.",
+    "independent_reviewer_required": true,
+    "reviewer_may_be": "human or agent distinct from automated metadata matcher",
+    "metadata_match_is_not_visual_acceptance": true,
+    "do_not_change_queries_to_fit_results": true,
+    "gaps_must_be_reported": true,
+    "variant_family_counts_once": true
+  },
+  "categories": [
+    {
+      "id": "animals",
+      "label_zh": "动物",
+      "label_en": "Animals"
+    },
+    {
+      "id": "people",
+      "label_zh": "人体与临床人物",
+      "label_en": "People and clinical figures"
+    },
+    {
+      "id": "organs",
+      "label_zh": "器官",
+      "label_en": "Organs"
+    },
+    {
+      "id": "tissues_vessels",
+      "label_zh": "组织与血管",
+      "label_en": "Tissues and vessels"
+    },
+    {
+      "id": "cells",
+      "label_zh": "细胞",
+      "label_en": "Cells"
+    },
+    {
+      "id": "organelles",
+      "label_zh": "细胞器",
+      "label_en": "Organelles"
+    },
+    {
+      "id": "molecules",
+      "label_zh": "分子",
+      "label_en": "Molecules"
+    },
+    {
+      "id": "microbes",
+      "label_zh": "微生物",
+      "label_en": "Microbes"
+    },
+    {
+      "id": "lab_equipment",
+      "label_zh": "实验器材",
+      "label_en": "Laboratory equipment"
+    },
+    {
+      "id": "experimental_actions",
+      "label_zh": "实验操作",
+      "label_en": "Experimental actions"
+    },
+    {
+      "id": "clinical_workflow",
+      "label_zh": "临床流程",
+      "label_en": "Clinical workflows"
+    },
+    {
+      "id": "omics_data",
+      "label_zh": "组学与数据流程",
+      "label_en": "Omics and data workflows"
+    }
+  ],
+  "concepts": [
+    {
+      "id": "animals-mouse",
+      "category": "animals",
+      "label_zh": "实验小鼠侧视插画",
+      "label_en": "laboratory mouse side view illustration",
+      "expected_concepts": [
+        "mouse"
+      ],
+      "required_species": "mouse",
+      "visual_requirements": "完整身体与尾巴，适合实验动物示意；不要把大鼠或电脑鼠标算作匹配。",
+      "exclude_matches": [
+        "rat",
+        "computer mouse",
+        "photograph"
+      ]
+    },
+    {
+      "id": "animals-rat",
+      "category": "animals",
+      "label_zh": "实验大鼠插画",
+      "label_en": "laboratory rat illustration",
+      "expected_concepts": [
+        "rat"
+      ],
+      "required_species": "rat",
+      "visual_requirements": "能识别为大鼠，保留尾部和肢体结构；不凭通用鼠形图推断品系。",
+      "exclude_matches": [
+        "mouse",
+        "photograph"
+      ]
+    },
+    {
+      "id": "animals-zebrafish",
+      "category": "animals",
+      "label_zh": "斑马鱼插画",
+      "label_en": "zebrafish illustration",
+      "expected_concepts": [
+        "zebrafish",
+        "Danio rerio"
+      ],
+      "required_species": "Danio rerio",
+      "visual_requirements": "具有可识别的斑马鱼形态；成体或幼体需明确标注。",
+      "exclude_matches": [
+        "generic fish without species evidence"
+      ]
+    },
+    {
+      "id": "animals-fruit-fly",
+      "category": "animals",
+      "label_zh": "黑腹果蝇插画",
+      "label_en": "Drosophila melanogaster illustration",
+      "expected_concepts": [
+        "fruit fly",
+        "Drosophila"
+      ],
+      "required_species": "Drosophila melanogaster",
+      "visual_requirements": "果蝇形态清楚，身体和翅膀完整；不能用蚊子或蜜蜂替代。",
+      "exclude_matches": [
+        "mosquito",
+        "bee"
+      ]
+    },
+    {
+      "id": "animals-rabbit",
+      "category": "animals",
+      "label_zh": "实验兔插画",
+      "label_en": "laboratory rabbit illustration",
+      "expected_concepts": [
+        "rabbit"
+      ],
+      "required_species": "rabbit",
+      "visual_requirements": "兔的全身轮廓清晰，无需假定具体品种、疾病或实验处理。",
+      "exclude_matches": [
+        "hare without identification",
+        "photograph"
+      ]
+    },
+    {
+      "id": "people-patient",
+      "category": "people",
+      "label_zh": "患者人物插画",
+      "label_en": "patient person illustration",
+      "expected_concepts": [
+        "patient",
+        "person"
+      ],
+      "required_species": "human",
+      "visual_requirements": "适合表示参与者或患者的中性人物；不要求推断病种。",
+      "exclude_matches": [
+        "animal",
+        "photograph"
+      ]
+    },
+    {
+      "id": "people-older-adult",
+      "category": "people",
+      "label_zh": "老年人插画",
+      "label_en": "older adult illustration",
+      "expected_concepts": [
+        "older adult",
+        "elderly"
+      ],
+      "required_species": "human",
+      "visual_requirements": "清楚表达老年人而不依赖一段解释文字；避免把轮椅等同所有老年人。",
+      "exclude_matches": [
+        "child",
+        "age inferred from metadata only"
+      ]
+    },
+    {
+      "id": "people-clinician",
+      "category": "people",
+      "label_zh": "医生人物插画",
+      "label_en": "doctor clinician illustration",
+      "expected_concepts": [
+        "doctor",
+        "clinician"
+      ],
+      "required_species": "human",
+      "visual_requirements": "人物具有临床工作角色的明确视觉线索。",
+      "exclude_matches": [
+        "scientist without clinical context"
+      ]
+    },
+    {
+      "id": "people-scientist",
+      "category": "people",
+      "label_zh": "实验室科研人员插画",
+      "label_en": "laboratory scientist illustration",
+      "expected_concepts": [
+        "scientist",
+        "laboratory researcher"
+      ],
+      "required_species": "human",
+      "visual_requirements": "适合实验方法流程中的研究人员形象，不要求具体机构身份。",
+      "exclude_matches": [
+        "corporate person without lab context"
+      ]
+    },
+    {
+      "id": "people-human-body",
+      "category": "people",
+      "label_zh": "人体正面与背面示意",
+      "label_en": "human body anterior posterior illustration",
+      "expected_concepts": [
+        "human body",
+        "front",
+        "back"
+      ],
+      "required_species": "human",
+      "visual_requirements": "能取得标注视角的人体轮廓或解剖示意，不能把前后视图混淆。",
+      "exclude_matches": [
+        "animal anatomy",
+        "clinical photograph"
+      ]
+    },
+    {
+      "id": "organs-liver",
+      "category": "organs",
+      "label_zh": "人体肝脏插画",
+      "label_en": "human liver illustration",
+      "expected_concepts": [
+        "liver"
+      ],
+      "required_species": "human",
+      "visual_requirements": "肝脏轮廓可识别、比例清楚，不把动物肝或病变图默认为健康人肝。",
+      "exclude_matches": [
+        "mouse liver unless explicitly requested",
+        "histology"
+      ]
+    },
+    {
+      "id": "organs-heart",
+      "category": "organs",
+      "label_zh": "人体心脏解剖插画",
+      "label_en": "human anatomical heart illustration",
+      "expected_concepts": [
+        "heart",
+        "anatomical"
+      ],
+      "required_species": "human",
+      "visual_requirements": "有解剖形态，不是情感爱心符号；视角和病理状态不被误称。",
+      "exclude_matches": [
+        "love heart symbol"
+      ]
+    },
+    {
+      "id": "organs-lungs",
+      "category": "organs",
+      "label_zh": "人体双肺插画",
+      "label_en": "human lungs illustration",
+      "expected_concepts": [
+        "lungs"
+      ],
+      "required_species": "human",
+      "visual_requirements": "双肺或明确标注单肺的解剖形态，气道结构清楚。",
+      "exclude_matches": [
+        "tree-shaped generic symbol"
+      ]
+    },
+    {
+      "id": "organs-brain",
+      "category": "organs",
+      "label_zh": "人体大脑插画",
+      "label_en": "human brain illustration",
+      "expected_concepts": [
+        "brain"
+      ],
+      "required_species": "human",
+      "visual_requirements": "可识别脑形态和视角；不把神经网络图当作大脑。",
+      "exclude_matches": [
+        "neural network graph"
+      ]
+    },
+    {
+      "id": "organs-kidney",
+      "category": "organs",
+      "label_zh": "人体肾脏插画",
+      "label_en": "human kidney illustration",
+      "expected_concepts": [
+        "kidney"
+      ],
+      "required_species": "human",
+      "visual_requirements": "肾脏形态清楚，外观或剖面准确标注；不混淆肾上腺。",
+      "exclude_matches": [
+        "adrenal gland alone"
+      ]
+    },
+    {
+      "id": "tissues_vessels-vessel-section",
+      "category": "tissues_vessels",
+      "label_zh": "血管横截面示意",
+      "label_en": "blood vessel cross section illustration",
+      "expected_concepts": [
+        "blood vessel",
+        "cross section"
+      ],
+      "required_species": null,
+      "visual_requirements": "血管壁和管腔可区分；动脉、静脉或通用示意需如实标注。",
+      "exclude_matches": [
+        "cylinder unrelated to vessels"
+      ]
+    },
+    {
+      "id": "tissues_vessels-endothelium",
+      "category": "tissues_vessels",
+      "label_zh": "血管内皮细胞层示意",
+      "label_en": "vascular endothelium layer illustration",
+      "expected_concepts": [
+        "endothelium",
+        "endothelial"
+      ],
+      "required_species": null,
+      "visual_requirements": "可表达血管内表面的细胞层，不能仅把普通上皮图改名。",
+      "exclude_matches": [
+        "generic epithelium without vascular context"
+      ]
+    },
+    {
+      "id": "tissues_vessels-skin-layers",
+      "category": "tissues_vessels",
+      "label_zh": "皮肤分层结构示意",
+      "label_en": "skin layers illustration",
+      "expected_concepts": [
+        "skin",
+        "layers"
+      ],
+      "required_species": "human",
+      "visual_requirements": "层次清楚，能够分辨表皮与真皮；风格化允许但不能捏造层次。",
+      "exclude_matches": [
+        "skin photograph"
+      ]
+    },
+    {
+      "id": "tissues_vessels-bone-section",
+      "category": "tissues_vessels",
+      "label_zh": "骨组织截面插画",
+      "label_en": "bone tissue cross section illustration",
+      "expected_concepts": [
+        "bone",
+        "cross section"
+      ],
+      "required_species": null,
+      "visual_requirements": "适合介绍骨组织，皮质骨/松质骨等结构以源图实际内容为准。",
+      "exclude_matches": [
+        "x-ray photograph"
+      ]
+    },
+    {
+      "id": "tissues_vessels-cartilage",
+      "category": "tissues_vessels",
+      "label_zh": "软骨组织示意",
+      "label_en": "cartilage tissue illustration",
+      "expected_concepts": [
+        "cartilage"
+      ],
+      "required_species": null,
+      "visual_requirements": "软骨结构或关节软骨可识别；不凭色块声称具体分级。",
+      "exclude_matches": [
+        "histology photograph",
+        "numeric disease grading without evidence"
+      ]
+    },
+    {
+      "id": "cells-t-cell",
+      "category": "cells",
+      "label_zh": "T淋巴细胞插画",
+      "label_en": "T lymphocyte illustration",
+      "expected_concepts": [
+        "T cell",
+        "T lymphocyte"
+      ],
+      "required_species": null,
+      "visual_requirements": "来源明确支持T细胞身份；仅圆形细胞不足以独立证明该身份。",
+      "exclude_matches": [
+        "B cell",
+        "generic sphere renamed"
+      ]
+    },
+    {
+      "id": "cells-neuron",
+      "category": "cells",
+      "label_zh": "神经元插画",
+      "label_en": "neuron illustration",
+      "expected_concepts": [
+        "neuron"
+      ],
+      "required_species": null,
+      "visual_requirements": "胞体、突起结构清晰，复杂与简化风格均可，视图适合科研排版。",
+      "exclude_matches": [
+        "brain organ alone"
+      ]
+    },
+    {
+      "id": "cells-macrophage",
+      "category": "cells",
+      "label_zh": "巨噬细胞插画",
+      "label_en": "macrophage illustration",
+      "expected_concepts": [
+        "macrophage"
+      ],
+      "required_species": null,
+      "visual_requirements": "来源标识与形态支持巨噬细胞，不宣称未显示的极化状态。",
+      "exclude_matches": [
+        "neutrophil",
+        "unsupported M1/M2 state"
+      ]
+    },
+    {
+      "id": "cells-red-blood-cell",
+      "category": "cells",
+      "label_zh": "红细胞插画",
+      "label_en": "red blood cell erythrocyte illustration",
+      "expected_concepts": [
+        "red blood cell",
+        "erythrocyte"
+      ],
+      "required_species": null,
+      "visual_requirements": "红细胞形态清楚；若是有核物种红细胞，应明确标注。",
+      "exclude_matches": [
+        "platelet",
+        "unlabeled species mismatch"
+      ]
+    },
+    {
+      "id": "cells-hepatocyte",
+      "category": "cells",
+      "label_zh": "肝细胞插画",
+      "label_en": "hepatocyte illustration",
+      "expected_concepts": [
+        "hepatocyte"
+      ],
+      "required_species": null,
+      "visual_requirements": "来源支持肝细胞身份，不能以完整肝脏器官代替。",
+      "exclude_matches": [
+        "whole liver organ",
+        "generic cell renamed"
+      ]
+    },
+    {
+      "id": "organelles-mitochondrion",
+      "category": "organelles",
+      "label_zh": "线粒体插画",
+      "label_en": "mitochondrion illustration",
+      "expected_concepts": [
+        "mitochondrion",
+        "mitochondria"
+      ],
+      "required_species": null,
+      "visual_requirements": "结构与来源匹配；剖面若出现嵴，应具有清楚的内膜结构。",
+      "exclude_matches": [
+        "bacterium"
+      ]
+    },
+    {
+      "id": "organelles-nucleus",
+      "category": "organelles",
+      "label_zh": "细胞核插画",
+      "label_en": "cell nucleus illustration",
+      "expected_concepts": [
+        "nucleus"
+      ],
+      "required_species": null,
+      "visual_requirements": "细胞核可独立取用，核膜/核仁等结构以实际图示为准。",
+      "exclude_matches": [
+        "atomic nucleus"
+      ]
+    },
+    {
+      "id": "organelles-endoplasmic-reticulum",
+      "category": "organelles",
+      "label_zh": "内质网插画",
+      "label_en": "endoplasmic reticulum illustration",
+      "expected_concepts": [
+        "endoplasmic reticulum"
+      ],
+      "required_species": null,
+      "visual_requirements": "来源注明内质网；粗面和滑面不能无证据互换。",
+      "exclude_matches": [
+        "Golgi apparatus"
+      ]
+    },
+    {
+      "id": "organelles-golgi",
+      "category": "organelles",
+      "label_zh": "高尔基体插画",
+      "label_en": "Golgi apparatus illustration",
+      "expected_concepts": [
+        "Golgi apparatus"
+      ],
+      "required_species": null,
+      "visual_requirements": "层叠膜囊形态可识别，适合细胞过程说明。",
+      "exclude_matches": [
+        "endoplasmic reticulum"
+      ]
+    },
+    {
+      "id": "organelles-lysosome",
+      "category": "organelles",
+      "label_zh": "溶酶体插画",
+      "label_en": "lysosome illustration",
+      "expected_concepts": [
+        "lysosome"
+      ],
+      "required_species": null,
+      "visual_requirements": "来源支持溶酶体身份；不能把任何小囊泡统一认定为溶酶体。",
+      "exclude_matches": [
+        "generic vesicle with unsupported identity"
+      ]
+    },
+    {
+      "id": "molecules-dna",
+      "category": "molecules",
+      "label_zh": "DNA双螺旋插画",
+      "label_en": "DNA double helix illustration",
+      "expected_concepts": [
+        "DNA",
+        "double helix"
+      ],
+      "required_species": null,
+      "visual_requirements": "双链螺旋形态清楚；装饰性配色不能被解释为真实序列。",
+      "exclude_matches": [
+        "single-stranded RNA",
+        "invented measured sequence"
+      ]
+    },
+    {
+      "id": "molecules-rna",
+      "category": "molecules",
+      "label_zh": "单链RNA示意",
+      "label_en": "single stranded RNA illustration",
+      "expected_concepts": [
+        "RNA",
+        "single strand"
+      ],
+      "required_species": null,
+      "visual_requirements": "单链表达清楚，来源支持RNA而非DNA；不要求具体序列。",
+      "exclude_matches": [
+        "DNA double helix"
+      ]
+    },
+    {
+      "id": "molecules-antibody",
+      "category": "molecules",
+      "label_zh": "Y形抗体插画",
+      "label_en": "Y shaped antibody illustration",
+      "expected_concepts": [
+        "antibody",
+        "immunoglobulin"
+      ],
+      "required_species": null,
+      "visual_requirements": "整体Y形和部件关系适合示意，具体同型或靶点只按来源标注。",
+      "exclude_matches": [
+        "generic Y icon without molecular context"
+      ]
+    },
+    {
+      "id": "molecules-membrane-receptor",
+      "category": "molecules",
+      "label_zh": "细胞膜受体示意",
+      "label_en": "cell membrane receptor illustration",
+      "expected_concepts": [
+        "membrane receptor"
+      ],
+      "required_species": null,
+      "visual_requirements": "能表示跨膜受体及膜内外关系；具体受体名称不靠猜测。",
+      "exclude_matches": [
+        "free-floating unrelated protein"
+      ]
+    },
+    {
+      "id": "molecules-atp",
+      "category": "molecules",
+      "label_zh": "ATP分子结构示意",
+      "label_en": "ATP molecule structure diagram",
+      "expected_concepts": [
+        "ATP",
+        "adenosine triphosphate"
+      ],
+      "required_species": null,
+      "visual_requirements": "若展示化学结构，需正确表达ATP而非ADP或AMP；视觉可读。",
+      "exclude_matches": [
+        "ADP",
+        "AMP",
+        "chemically incorrect structure"
+      ]
+    },
+    {
+      "id": "microbes-rod-bacterium",
+      "category": "microbes",
+      "label_zh": "杆状细菌插画",
+      "label_en": "rod shaped bacterium illustration",
+      "expected_concepts": [
+        "bacterium",
+        "rod"
+      ],
+      "required_species": null,
+      "visual_requirements": "杆菌形态明确；不根据通用图推断菌种或革兰染色性质。",
+      "exclude_matches": [
+        "virus",
+        "unsupported named species"
+      ]
+    },
+    {
+      "id": "microbes-coccus",
+      "category": "microbes",
+      "label_zh": "球菌插画",
+      "label_en": "coccus bacteria illustration",
+      "expected_concepts": [
+        "coccus",
+        "bacteria"
+      ],
+      "required_species": null,
+      "visual_requirements": "球菌形态和排列可识别，单个/链状/簇状以源图为准。",
+      "exclude_matches": [
+        "generic mammalian cell"
+      ]
+    },
+    {
+      "id": "microbes-coronavirus",
+      "category": "microbes",
+      "label_zh": "冠状病毒颗粒示意",
+      "label_en": "coronavirus particle illustration",
+      "expected_concepts": [
+        "coronavirus"
+      ],
+      "required_species": null,
+      "visual_requirements": "来源支持冠状病毒颗粒，表面结构可识别；不推断具体毒株。",
+      "exclude_matches": [
+        "bacteriophage",
+        "unsupported variant"
+      ]
+    },
+    {
+      "id": "microbes-bacteriophage",
+      "category": "microbes",
+      "label_zh": "噬菌体插画",
+      "label_en": "bacteriophage illustration",
+      "expected_concepts": [
+        "bacteriophage"
+      ],
+      "required_species": null,
+      "visual_requirements": "病毒头部/尾部等源图结构清晰，不把冠状病毒当噬菌体。",
+      "exclude_matches": [
+        "coronavirus"
+      ]
+    },
+    {
+      "id": "microbes-yeast",
+      "category": "microbes",
+      "label_zh": "酵母细胞出芽示意",
+      "label_en": "budding yeast cell illustration",
+      "expected_concepts": [
+        "yeast",
+        "budding"
+      ],
+      "required_species": null,
+      "visual_requirements": "可识别酵母及出芽现象；不把任意两相连圆形当已验证酵母。",
+      "exclude_matches": [
+        "coccus",
+        "species assigned without source"
+      ]
+    },
+    {
+      "id": "lab_equipment-pipette",
+      "category": "lab_equipment",
+      "label_zh": "移液器插画",
+      "label_en": "micropipette illustration",
+      "expected_concepts": [
+        "micropipette",
+        "pipette"
+      ],
+      "required_species": null,
+      "visual_requirements": "移液器与枪头可识别，部件或完整器具均须明确。",
+      "exclude_matches": [
+        "glass dropper when micropipette requested"
+      ]
+    },
+    {
+      "id": "lab_equipment-microscope",
+      "category": "lab_equipment",
+      "label_zh": "光学显微镜插画",
+      "label_en": "light microscope illustration",
+      "expected_concepts": [
+        "light microscope"
+      ],
+      "required_species": null,
+      "visual_requirements": "显微镜类型和工作部件可识别；不能把电镜当光学显微镜。",
+      "exclude_matches": [
+        "electron microscope"
+      ]
+    },
+    {
+      "id": "lab_equipment-well-plate",
+      "category": "lab_equipment",
+      "label_zh": "96孔板插画",
+      "label_en": "96 well microplate illustration",
+      "expected_concepts": [
+        "96 well plate"
+      ],
+      "required_species": null,
+      "visual_requirements": "来源和孔布局支持96孔板，不能将6/24孔板直接改名。",
+      "exclude_matches": [
+        "6 well plate",
+        "24 well plate"
+      ]
+    },
+    {
+      "id": "lab_equipment-petri-dish",
+      "category": "lab_equipment",
+      "label_zh": "细胞培养皿插画",
+      "label_en": "cell culture petri dish illustration",
+      "expected_concepts": [
+        "petri dish",
+        "culture dish"
+      ],
+      "required_species": null,
+      "visual_requirements": "培养皿形态清楚；培养基/细胞等只按源图实际内容说明。",
+      "exclude_matches": [
+        "beaker"
+      ]
+    },
+    {
+      "id": "lab_equipment-centrifuge",
+      "category": "lab_equipment",
+      "label_zh": "实验室离心机插画",
+      "label_en": "laboratory centrifuge illustration",
+      "expected_concepts": [
+        "centrifuge"
+      ],
+      "required_species": null,
+      "visual_requirements": "设备可识别为实验室离心机，不能仅以旋转箭头替代器材。",
+      "exclude_matches": [
+        "washing machine"
+      ]
+    },
+    {
+      "id": "experimental_actions-blood-collection",
+      "category": "experimental_actions",
+      "label_zh": "采血操作示意",
+      "label_en": "blood collection procedure illustration",
+      "expected_concepts": [
+        "blood collection",
+        "venipuncture"
+      ],
+      "required_species": null,
+      "visual_requirements": "可用于表达采血步骤的动作或组合部件，取样部位不得被误写。",
+      "exclude_matches": [
+        "drug administration without blood collection"
+      ]
+    },
+    {
+      "id": "experimental_actions-mouse-injection",
+      "category": "experimental_actions",
+      "label_zh": "小鼠注射实验示意",
+      "label_en": "mouse injection experiment illustration",
+      "expected_concepts": [
+        "mouse",
+        "injection"
+      ],
+      "required_species": "mouse",
+      "visual_requirements": "能表达对小鼠注射，具体途径和剂量必须由图与来源支持。",
+      "exclude_matches": [
+        "rat",
+        "unsupported route or dose"
+      ]
+    },
+    {
+      "id": "experimental_actions-cell-culture",
+      "category": "experimental_actions",
+      "label_zh": "细胞培养操作示意",
+      "label_en": "cell culture procedure illustration",
+      "expected_concepts": [
+        "cell culture"
+      ],
+      "required_species": null,
+      "visual_requirements": "适合说明细胞培养操作；不把任意器皿断言为某种培养条件。",
+      "exclude_matches": [
+        "specific cell line without evidence"
+      ]
+    },
+    {
+      "id": "experimental_actions-centrifugation",
+      "category": "experimental_actions",
+      "label_zh": "离心分离步骤示意",
+      "label_en": "centrifugation separation workflow illustration",
+      "expected_concepts": [
+        "centrifugation",
+        "separation"
+      ],
+      "required_species": null,
+      "visual_requirements": "能表达离心与分离，箭头及上下层含义清晰；不伪造转速或时长。",
+      "exclude_matches": [
+        "unsupported rpm or duration"
+      ]
+    },
+    {
+      "id": "experimental_actions-pipetting",
+      "category": "experimental_actions",
+      "label_zh": "移液操作示意",
+      "label_en": "pipetting liquid transfer illustration",
+      "expected_concepts": [
+        "pipetting",
+        "liquid transfer"
+      ],
+      "required_species": null,
+      "visual_requirements": "清楚表达移液动作或可组合部件，液体方向与器材关系合理。",
+      "exclude_matches": [
+        "unrelated pouring action"
+      ]
+    },
+    {
+      "id": "clinical_workflow-cohort-followup",
+      "category": "clinical_workflow",
+      "label_zh": "队列随访流程素材",
+      "label_en": "cohort follow up workflow illustration",
+      "expected_concepts": [
+        "cohort",
+        "follow up"
+      ],
+      "required_species": "human",
+      "visual_requirements": "可表达参与者随时间随访的图形或组合部件，不含虚构研究人数或结论。",
+      "exclude_matches": [
+        "published study data figure",
+        "invented sample size"
+      ]
+    },
+    {
+      "id": "clinical_workflow-randomization",
+      "category": "clinical_workflow",
+      "label_zh": "随机分组流程素材",
+      "label_en": "randomization two groups workflow diagram",
+      "expected_concepts": [
+        "randomization",
+        "groups"
+      ],
+      "required_species": "human",
+      "visual_requirements": "能表达分组步骤，不能把普通分支箭头直接宣称已证明随机化。",
+      "exclude_matches": [
+        "specific trial outcomes"
+      ]
+    },
+    {
+      "id": "clinical_workflow-recruitment",
+      "category": "clinical_workflow",
+      "label_zh": "研究参与者招募素材",
+      "label_en": "study participant recruitment illustration",
+      "expected_concepts": [
+        "participant",
+        "recruitment"
+      ],
+      "required_species": "human",
+      "visual_requirements": "适合招募/纳入步骤的中性科研插画或图标，不携带虚构纳排标准。",
+      "exclude_matches": [
+        "specific patient data"
+      ]
+    },
+    {
+      "id": "clinical_workflow-questionnaire",
+      "category": "clinical_workflow",
+      "label_zh": "问卷调查素材",
+      "label_en": "questionnaire survey illustration",
+      "expected_concepts": [
+        "questionnaire",
+        "survey"
+      ],
+      "required_species": "human",
+      "visual_requirements": "问卷或访谈含义清楚；不是将真实个人答卷作为素材。",
+      "exclude_matches": [
+        "filled identifiable medical record"
+      ]
+    },
+    {
+      "id": "clinical_workflow-blood-pressure",
+      "category": "clinical_workflow",
+      "label_zh": "血压测量操作插画",
+      "label_en": "blood pressure measurement illustration",
+      "expected_concepts": [
+        "blood pressure",
+        "measurement"
+      ],
+      "required_species": "human",
+      "visual_requirements": "测量器具和动作合理，不将显示值当研究测量结果。",
+      "exclude_matches": [
+        "unsupported study BP value"
+      ]
+    },
+    {
+      "id": "omics_data-rnaseq",
+      "category": "omics_data",
+      "label_zh": "RNA测序流程示意素材",
+      "label_en": "RNA sequencing workflow illustration",
+      "expected_concepts": [
+        "RNA sequencing",
+        "RNA-seq"
+      ],
+      "required_species": null,
+      "visual_requirements": "可用于表达RNA测序方法步骤，不把DNA测序标签或示意读数当实测数据。",
+      "exclude_matches": [
+        "published experimental results"
+      ]
+    },
+    {
+      "id": "omics_data-heatmap",
+      "category": "omics_data",
+      "label_zh": "基因表达热图示意模板",
+      "label_en": "gene expression heatmap schematic template",
+      "expected_concepts": [
+        "gene expression",
+        "heatmap"
+      ],
+      "required_species": null,
+      "visual_requirements": "必须是示意模板或空白构件；不得将别人的实际表达矩阵或结果图作为素材。",
+      "exclude_matches": [
+        "real study heatmap",
+        "unlabeled fabricated data"
+      ]
+    },
+    {
+      "id": "omics_data-sequencer",
+      "category": "omics_data",
+      "label_zh": "测序仪设备插画",
+      "label_en": "sequencing instrument illustration",
+      "expected_concepts": [
+        "sequencer",
+        "sequencing instrument"
+      ],
+      "required_species": null,
+      "visual_requirements": "设备用途有来源支持，商用品牌和型号不得凭外观推断。",
+      "exclude_matches": [
+        "unsupported brand or model"
+      ]
+    },
+    {
+      "id": "omics_data-gene-network",
+      "category": "omics_data",
+      "label_zh": "基因网络示意素材",
+      "label_en": "gene network schematic illustration",
+      "expected_concepts": [
+        "gene network"
+      ],
+      "required_species": null,
+      "visual_requirements": "通用网络构件可用；特定边或调控关系必须明确为示意，不能冒充实证。",
+      "exclude_matches": [
+        "published gene interaction findings"
+      ]
+    },
+    {
+      "id": "omics_data-forest-template",
+      "category": "omics_data",
+      "label_zh": "森林图通用构件模板",
+      "label_en": "forest plot schematic template",
+      "expected_concepts": [
+        "forest plot",
+        "template"
+      ],
+      "required_species": null,
+      "visual_requirements": "只接受空白或明确示意构件，避免把具体效应值、置信区间当成通用素材。",
+      "exclude_matches": [
+        "published meta-analysis data",
+        "unlabeled fabricated estimates"
+      ]
+    }
+  ],
+  "queries": [
+    {
+      "id": "animals-mouse-zh",
+      "concept_id": "animals-mouse",
+      "category": "animals",
+      "language": "zh",
+      "query": "实验小鼠侧视插画",
+      "expected_concepts": [
+        "mouse"
+      ],
+      "required_species": "mouse",
+      "visual_requirements": "完整身体与尾巴，适合实验动物示意；不要把大鼠或电脑鼠标算作匹配。",
+      "exclude_matches": [
+        "rat",
+        "computer mouse",
+        "photograph"
+      ]
+    },
+    {
+      "id": "animals-mouse-en",
+      "concept_id": "animals-mouse",
+      "category": "animals",
+      "language": "en",
+      "query": "laboratory mouse side view illustration",
+      "expected_concepts": [
+        "mouse"
+      ],
+      "required_species": "mouse",
+      "visual_requirements": "完整身体与尾巴，适合实验动物示意；不要把大鼠或电脑鼠标算作匹配。",
+      "exclude_matches": [
+        "rat",
+        "computer mouse",
+        "photograph"
+      ]
+    },
+    {
+      "id": "animals-rat-zh",
+      "concept_id": "animals-rat",
+      "category": "animals",
+      "language": "zh",
+      "query": "实验大鼠插画",
+      "expected_concepts": [
+        "rat"
+      ],
+      "required_species": "rat",
+      "visual_requirements": "能识别为大鼠，保留尾部和肢体结构；不凭通用鼠形图推断品系。",
+      "exclude_matches": [
+        "mouse",
+        "photograph"
+      ]
+    },
+    {
+      "id": "animals-rat-en",
+      "concept_id": "animals-rat",
+      "category": "animals",
+      "language": "en",
+      "query": "laboratory rat illustration",
+      "expected_concepts": [
+        "rat"
+      ],
+      "required_species": "rat",
+      "visual_requirements": "能识别为大鼠，保留尾部和肢体结构；不凭通用鼠形图推断品系。",
+      "exclude_matches": [
+        "mouse",
+        "photograph"
+      ]
+    },
+    {
+      "id": "animals-zebrafish-zh",
+      "concept_id": "animals-zebrafish",
+      "category": "animals",
+      "language": "zh",
+      "query": "斑马鱼插画",
+      "expected_concepts": [
+        "zebrafish",
+        "Danio rerio"
+      ],
+      "required_species": "Danio rerio",
+      "visual_requirements": "具有可识别的斑马鱼形态；成体或幼体需明确标注。",
+      "exclude_matches": [
+        "generic fish without species evidence"
+      ]
+    },
+    {
+      "id": "animals-zebrafish-en",
+      "concept_id": "animals-zebrafish",
+      "category": "animals",
+      "language": "en",
+      "query": "zebrafish illustration",
+      "expected_concepts": [
+        "zebrafish",
+        "Danio rerio"
+      ],
+      "required_species": "Danio rerio",
+      "visual_requirements": "具有可识别的斑马鱼形态；成体或幼体需明确标注。",
+      "exclude_matches": [
+        "generic fish without species evidence"
+      ]
+    },
+    {
+      "id": "animals-fruit-fly-zh",
+      "concept_id": "animals-fruit-fly",
+      "category": "animals",
+      "language": "zh",
+      "query": "黑腹果蝇插画",
+      "expected_concepts": [
+        "fruit fly",
+        "Drosophila"
+      ],
+      "required_species": "Drosophila melanogaster",
+      "visual_requirements": "果蝇形态清楚，身体和翅膀完整；不能用蚊子或蜜蜂替代。",
+      "exclude_matches": [
+        "mosquito",
+        "bee"
+      ]
+    },
+    {
+      "id": "animals-fruit-fly-en",
+      "concept_id": "animals-fruit-fly",
+      "category": "animals",
+      "language": "en",
+      "query": "Drosophila melanogaster illustration",
+      "expected_concepts": [
+        "fruit fly",
+        "Drosophila"
+      ],
+      "required_species": "Drosophila melanogaster",
+      "visual_requirements": "果蝇形态清楚，身体和翅膀完整；不能用蚊子或蜜蜂替代。",
+      "exclude_matches": [
+        "mosquito",
+        "bee"
+      ]
+    },
+    {
+      "id": "animals-rabbit-zh",
+      "concept_id": "animals-rabbit",
+      "category": "animals",
+      "language": "zh",
+      "query": "实验兔插画",
+      "expected_concepts": [
+        "rabbit"
+      ],
+      "required_species": "rabbit",
+      "visual_requirements": "兔的全身轮廓清晰，无需假定具体品种、疾病或实验处理。",
+      "exclude_matches": [
+        "hare without identification",
+        "photograph"
+      ]
+    },
+    {
+      "id": "animals-rabbit-en",
+      "concept_id": "animals-rabbit",
+      "category": "animals",
+      "language": "en",
+      "query": "laboratory rabbit illustration",
+      "expected_concepts": [
+        "rabbit"
+      ],
+      "required_species": "rabbit",
+      "visual_requirements": "兔的全身轮廓清晰，无需假定具体品种、疾病或实验处理。",
+      "exclude_matches": [
+        "hare without identification",
+        "photograph"
+      ]
+    },
+    {
+      "id": "people-patient-zh",
+      "concept_id": "people-patient",
+      "category": "people",
+      "language": "zh",
+      "query": "患者人物插画",
+      "expected_concepts": [
+        "patient",
+        "person"
+      ],
+      "required_species": "human",
+      "visual_requirements": "适合表示参与者或患者的中性人物；不要求推断病种。",
+      "exclude_matches": [
+        "animal",
+        "photograph"
+      ]
+    },
+    {
+      "id": "people-patient-en",
+      "concept_id": "people-patient",
+      "category": "people",
+      "language": "en",
+      "query": "patient person illustration",
+      "expected_concepts": [
+        "patient",
+        "person"
+      ],
+      "required_species": "human",
+      "visual_requirements": "适合表示参与者或患者的中性人物；不要求推断病种。",
+      "exclude_matches": [
+        "animal",
+        "photograph"
+      ]
+    },
+    {
+      "id": "people-older-adult-zh",
+      "concept_id": "people-older-adult",
+      "category": "people",
+      "language": "zh",
+      "query": "老年人插画",
+      "expected_concepts": [
+        "older adult",
+        "elderly"
+      ],
+      "required_species": "human",
+      "visual_requirements": "清楚表达老年人而不依赖一段解释文字；避免把轮椅等同所有老年人。",
+      "exclude_matches": [
+        "child",
+        "age inferred from metadata only"
+      ]
+    },
+    {
+      "id": "people-older-adult-en",
+      "concept_id": "people-older-adult",
+      "category": "people",
+      "language": "en",
+      "query": "older adult illustration",
+      "expected_concepts": [
+        "older adult",
+        "elderly"
+      ],
+      "required_species": "human",
+      "visual_requirements": "清楚表达老年人而不依赖一段解释文字；避免把轮椅等同所有老年人。",
+      "exclude_matches": [
+        "child",
+        "age inferred from metadata only"
+      ]
+    },
+    {
+      "id": "people-clinician-zh",
+      "concept_id": "people-clinician",
+      "category": "people",
+      "language": "zh",
+      "query": "医生人物插画",
+      "expected_concepts": [
+        "doctor",
+        "clinician"
+      ],
+      "required_species": "human",
+      "visual_requirements": "人物具有临床工作角色的明确视觉线索。",
+      "exclude_matches": [
+        "scientist without clinical context"
+      ]
+    },
+    {
+      "id": "people-clinician-en",
+      "concept_id": "people-clinician",
+      "category": "people",
+      "language": "en",
+      "query": "doctor clinician illustration",
+      "expected_concepts": [
+        "doctor",
+        "clinician"
+      ],
+      "required_species": "human",
+      "visual_requirements": "人物具有临床工作角色的明确视觉线索。",
+      "exclude_matches": [
+        "scientist without clinical context"
+      ]
+    },
+    {
+      "id": "people-scientist-zh",
+      "concept_id": "people-scientist",
+      "category": "people",
+      "language": "zh",
+      "query": "实验室科研人员插画",
+      "expected_concepts": [
+        "scientist",
+        "laboratory researcher"
+      ],
+      "required_species": "human",
+      "visual_requirements": "适合实验方法流程中的研究人员形象，不要求具体机构身份。",
+      "exclude_matches": [
+        "corporate person without lab context"
+      ]
+    },
+    {
+      "id": "people-scientist-en",
+      "concept_id": "people-scientist",
+      "category": "people",
+      "language": "en",
+      "query": "laboratory scientist illustration",
+      "expected_concepts": [
+        "scientist",
+        "laboratory researcher"
+      ],
+      "required_species": "human",
+      "visual_requirements": "适合实验方法流程中的研究人员形象，不要求具体机构身份。",
+      "exclude_matches": [
+        "corporate person without lab context"
+      ]
+    },
+    {
+      "id": "people-human-body-zh",
+      "concept_id": "people-human-body",
+      "category": "people",
+      "language": "zh",
+      "query": "人体正面与背面示意",
+      "expected_concepts": [
+        "human body",
+        "front",
+        "back"
+      ],
+      "required_species": "human",
+      "visual_requirements": "能取得标注视角的人体轮廓或解剖示意，不能把前后视图混淆。",
+      "exclude_matches": [
+        "animal anatomy",
+        "clinical photograph"
+      ]
+    },
+    {
+      "id": "people-human-body-en",
+      "concept_id": "people-human-body",
+      "category": "people",
+      "language": "en",
+      "query": "human body anterior posterior illustration",
+      "expected_concepts": [
+        "human body",
+        "front",
+        "back"
+      ],
+      "required_species": "human",
+      "visual_requirements": "能取得标注视角的人体轮廓或解剖示意，不能把前后视图混淆。",
+      "exclude_matches": [
+        "animal anatomy",
+        "clinical photograph"
+      ]
+    },
+    {
+      "id": "organs-liver-zh",
+      "concept_id": "organs-liver",
+      "category": "organs",
+      "language": "zh",
+      "query": "人体肝脏插画",
+      "expected_concepts": [
+        "liver"
+      ],
+      "required_species": "human",
+      "visual_requirements": "肝脏轮廓可识别、比例清楚，不把动物肝或病变图默认为健康人肝。",
+      "exclude_matches": [
+        "mouse liver unless explicitly requested",
+        "histology"
+      ]
+    },
+    {
+      "id": "organs-liver-en",
+      "concept_id": "organs-liver",
+      "category": "organs",
+      "language": "en",
+      "query": "human liver illustration",
+      "expected_concepts": [
+        "liver"
+      ],
+      "required_species": "human",
+      "visual_requirements": "肝脏轮廓可识别、比例清楚，不把动物肝或病变图默认为健康人肝。",
+      "exclude_matches": [
+        "mouse liver unless explicitly requested",
+        "histology"
+      ]
+    },
+    {
+      "id": "organs-heart-zh",
+      "concept_id": "organs-heart",
+      "category": "organs",
+      "language": "zh",
+      "query": "人体心脏解剖插画",
+      "expected_concepts": [
+        "heart",
+        "anatomical"
+      ],
+      "required_species": "human",
+      "visual_requirements": "有解剖形态，不是情感爱心符号；视角和病理状态不被误称。",
+      "exclude_matches": [
+        "love heart symbol"
+      ]
+    },
+    {
+      "id": "organs-heart-en",
+      "concept_id": "organs-heart",
+      "category": "organs",
+      "language": "en",
+      "query": "human anatomical heart illustration",
+      "expected_concepts": [
+        "heart",
+        "anatomical"
+      ],
+      "required_species": "human",
+      "visual_requirements": "有解剖形态，不是情感爱心符号；视角和病理状态不被误称。",
+      "exclude_matches": [
+        "love heart symbol"
+      ]
+    },
+    {
+      "id": "organs-lungs-zh",
+      "concept_id": "organs-lungs",
+      "category": "organs",
+      "language": "zh",
+      "query": "人体双肺插画",
+      "expected_concepts": [
+        "lungs"
+      ],
+      "required_species": "human",
+      "visual_requirements": "双肺或明确标注单肺的解剖形态，气道结构清楚。",
+      "exclude_matches": [
+        "tree-shaped generic symbol"
+      ]
+    },
+    {
+      "id": "organs-lungs-en",
+      "concept_id": "organs-lungs",
+      "category": "organs",
+      "language": "en",
+      "query": "human lungs illustration",
+      "expected_concepts": [
+        "lungs"
+      ],
+      "required_species": "human",
+      "visual_requirements": "双肺或明确标注单肺的解剖形态，气道结构清楚。",
+      "exclude_matches": [
+        "tree-shaped generic symbol"
+      ]
+    },
+    {
+      "id": "organs-brain-zh",
+      "concept_id": "organs-brain",
+      "category": "organs",
+      "language": "zh",
+      "query": "人体大脑插画",
+      "expected_concepts": [
+        "brain"
+      ],
+      "required_species": "human",
+      "visual_requirements": "可识别脑形态和视角；不把神经网络图当作大脑。",
+      "exclude_matches": [
+        "neural network graph"
+      ]
+    },
+    {
+      "id": "organs-brain-en",
+      "concept_id": "organs-brain",
+      "category": "organs",
+      "language": "en",
+      "query": "human brain illustration",
+      "expected_concepts": [
+        "brain"
+      ],
+      "required_species": "human",
+      "visual_requirements": "可识别脑形态和视角；不把神经网络图当作大脑。",
+      "exclude_matches": [
+        "neural network graph"
+      ]
+    },
+    {
+      "id": "organs-kidney-zh",
+      "concept_id": "organs-kidney",
+      "category": "organs",
+      "language": "zh",
+      "query": "人体肾脏插画",
+      "expected_concepts": [
+        "kidney"
+      ],
+      "required_species": "human",
+      "visual_requirements": "肾脏形态清楚，外观或剖面准确标注；不混淆肾上腺。",
+      "exclude_matches": [
+        "adrenal gland alone"
+      ]
+    },
+    {
+      "id": "organs-kidney-en",
+      "concept_id": "organs-kidney",
+      "category": "organs",
+      "language": "en",
+      "query": "human kidney illustration",
+      "expected_concepts": [
+        "kidney"
+      ],
+      "required_species": "human",
+      "visual_requirements": "肾脏形态清楚，外观或剖面准确标注；不混淆肾上腺。",
+      "exclude_matches": [
+        "adrenal gland alone"
+      ]
+    },
+    {
+      "id": "tissues_vessels-vessel-section-zh",
+      "concept_id": "tissues_vessels-vessel-section",
+      "category": "tissues_vessels",
+      "language": "zh",
+      "query": "血管横截面示意",
+      "expected_concepts": [
+        "blood vessel",
+        "cross section"
+      ],
+      "required_species": null,
+      "visual_requirements": "血管壁和管腔可区分；动脉、静脉或通用示意需如实标注。",
+      "exclude_matches": [
+        "cylinder unrelated to vessels"
+      ]
+    },
+    {
+      "id": "tissues_vessels-vessel-section-en",
+      "concept_id": "tissues_vessels-vessel-section",
+      "category": "tissues_vessels",
+      "language": "en",
+      "query": "blood vessel cross section illustration",
+      "expected_concepts": [
+        "blood vessel",
+        "cross section"
+      ],
+      "required_species": null,
+      "visual_requirements": "血管壁和管腔可区分；动脉、静脉或通用示意需如实标注。",
+      "exclude_matches": [
+        "cylinder unrelated to vessels"
+      ]
+    },
+    {
+      "id": "tissues_vessels-endothelium-zh",
+      "concept_id": "tissues_vessels-endothelium",
+      "category": "tissues_vessels",
+      "language": "zh",
+      "query": "血管内皮细胞层示意",
+      "expected_concepts": [
+        "endothelium",
+        "endothelial"
+      ],
+      "required_species": null,
+      "visual_requirements": "可表达血管内表面的细胞层，不能仅把普通上皮图改名。",
+      "exclude_matches": [
+        "generic epithelium without vascular context"
+      ]
+    },
+    {
+      "id": "tissues_vessels-endothelium-en",
+      "concept_id": "tissues_vessels-endothelium",
+      "category": "tissues_vessels",
+      "language": "en",
+      "query": "vascular endothelium layer illustration",
+      "expected_concepts": [
+        "endothelium",
+        "endothelial"
+      ],
+      "required_species": null,
+      "visual_requirements": "可表达血管内表面的细胞层，不能仅把普通上皮图改名。",
+      "exclude_matches": [
+        "generic epithelium without vascular context"
+      ]
+    },
+    {
+      "id": "tissues_vessels-skin-layers-zh",
+      "concept_id": "tissues_vessels-skin-layers",
+      "category": "tissues_vessels",
+      "language": "zh",
+      "query": "皮肤分层结构示意",
+      "expected_concepts": [
+        "skin",
+        "layers"
+      ],
+      "required_species": "human",
+      "visual_requirements": "层次清楚，能够分辨表皮与真皮；风格化允许但不能捏造层次。",
+      "exclude_matches": [
+        "skin photograph"
+      ]
+    },
+    {
+      "id": "tissues_vessels-skin-layers-en",
+      "concept_id": "tissues_vessels-skin-layers",
+      "category": "tissues_vessels",
+      "language": "en",
+      "query": "skin layers illustration",
+      "expected_concepts": [
+        "skin",
+        "layers"
+      ],
+      "required_species": "human",
+      "visual_requirements": "层次清楚，能够分辨表皮与真皮；风格化允许但不能捏造层次。",
+      "exclude_matches": [
+        "skin photograph"
+      ]
+    },
+    {
+      "id": "tissues_vessels-bone-section-zh",
+      "concept_id": "tissues_vessels-bone-section",
+      "category": "tissues_vessels",
+      "language": "zh",
+      "query": "骨组织截面插画",
+      "expected_concepts": [
+        "bone",
+        "cross section"
+      ],
+      "required_species": null,
+      "visual_requirements": "适合介绍骨组织，皮质骨/松质骨等结构以源图实际内容为准。",
+      "exclude_matches": [
+        "x-ray photograph"
+      ]
+    },
+    {
+      "id": "tissues_vessels-bone-section-en",
+      "concept_id": "tissues_vessels-bone-section",
+      "category": "tissues_vessels",
+      "language": "en",
+      "query": "bone tissue cross section illustration",
+      "expected_concepts": [
+        "bone",
+        "cross section"
+      ],
+      "required_species": null,
+      "visual_requirements": "适合介绍骨组织，皮质骨/松质骨等结构以源图实际内容为准。",
+      "exclude_matches": [
+        "x-ray photograph"
+      ]
+    },
+    {
+      "id": "tissues_vessels-cartilage-zh",
+      "concept_id": "tissues_vessels-cartilage",
+      "category": "tissues_vessels",
+      "language": "zh",
+      "query": "软骨组织示意",
+      "expected_concepts": [
+        "cartilage"
+      ],
+      "required_species": null,
+      "visual_requirements": "软骨结构或关节软骨可识别；不凭色块声称具体分级。",
+      "exclude_matches": [
+        "histology photograph",
+        "numeric disease grading without evidence"
+      ]
+    },
+    {
+      "id": "tissues_vessels-cartilage-en",
+      "concept_id": "tissues_vessels-cartilage",
+      "category": "tissues_vessels",
+      "language": "en",
+      "query": "cartilage tissue illustration",
+      "expected_concepts": [
+        "cartilage"
+      ],
+      "required_species": null,
+      "visual_requirements": "软骨结构或关节软骨可识别；不凭色块声称具体分级。",
+      "exclude_matches": [
+        "histology photograph",
+        "numeric disease grading without evidence"
+      ]
+    },
+    {
+      "id": "cells-t-cell-zh",
+      "concept_id": "cells-t-cell",
+      "category": "cells",
+      "language": "zh",
+      "query": "T淋巴细胞插画",
+      "expected_concepts": [
+        "T cell",
+        "T lymphocyte"
+      ],
+      "required_species": null,
+      "visual_requirements": "来源明确支持T细胞身份；仅圆形细胞不足以独立证明该身份。",
+      "exclude_matches": [
+        "B cell",
+        "generic sphere renamed"
+      ]
+    },
+    {
+      "id": "cells-t-cell-en",
+      "concept_id": "cells-t-cell",
+      "category": "cells",
+      "language": "en",
+      "query": "T lymphocyte illustration",
+      "expected_concepts": [
+        "T cell",
+        "T lymphocyte"
+      ],
+      "required_species": null,
+      "visual_requirements": "来源明确支持T细胞身份；仅圆形细胞不足以独立证明该身份。",
+      "exclude_matches": [
+        "B cell",
+        "generic sphere renamed"
+      ]
+    },
+    {
+      "id": "cells-neuron-zh",
+      "concept_id": "cells-neuron",
+      "category": "cells",
+      "language": "zh",
+      "query": "神经元插画",
+      "expected_concepts": [
+        "neuron"
+      ],
+      "required_species": null,
+      "visual_requirements": "胞体、突起结构清晰，复杂与简化风格均可，视图适合科研排版。",
+      "exclude_matches": [
+        "brain organ alone"
+      ]
+    },
+    {
+      "id": "cells-neuron-en",
+      "concept_id": "cells-neuron",
+      "category": "cells",
+      "language": "en",
+      "query": "neuron illustration",
+      "expected_concepts": [
+        "neuron"
+      ],
+      "required_species": null,
+      "visual_requirements": "胞体、突起结构清晰，复杂与简化风格均可，视图适合科研排版。",
+      "exclude_matches": [
+        "brain organ alone"
+      ]
+    },
+    {
+      "id": "cells-macrophage-zh",
+      "concept_id": "cells-macrophage",
+      "category": "cells",
+      "language": "zh",
+      "query": "巨噬细胞插画",
+      "expected_concepts": [
+        "macrophage"
+      ],
+      "required_species": null,
+      "visual_requirements": "来源标识与形态支持巨噬细胞，不宣称未显示的极化状态。",
+      "exclude_matches": [
+        "neutrophil",
+        "unsupported M1/M2 state"
+      ]
+    },
+    {
+      "id": "cells-macrophage-en",
+      "concept_id": "cells-macrophage",
+      "category": "cells",
+      "language": "en",
+      "query": "macrophage illustration",
+      "expected_concepts": [
+        "macrophage"
+      ],
+      "required_species": null,
+      "visual_requirements": "来源标识与形态支持巨噬细胞，不宣称未显示的极化状态。",
+      "exclude_matches": [
+        "neutrophil",
+        "unsupported M1/M2 state"
+      ]
+    },
+    {
+      "id": "cells-red-blood-cell-zh",
+      "concept_id": "cells-red-blood-cell",
+      "category": "cells",
+      "language": "zh",
+      "query": "红细胞插画",
+      "expected_concepts": [
+        "red blood cell",
+        "erythrocyte"
+      ],
+      "required_species": null,
+      "visual_requirements": "红细胞形态清楚；若是有核物种红细胞，应明确标注。",
+      "exclude_matches": [
+        "platelet",
+        "unlabeled species mismatch"
+      ]
+    },
+    {
+      "id": "cells-red-blood-cell-en",
+      "concept_id": "cells-red-blood-cell",
+      "category": "cells",
+      "language": "en",
+      "query": "red blood cell erythrocyte illustration",
+      "expected_concepts": [
+        "red blood cell",
+        "erythrocyte"
+      ],
+      "required_species": null,
+      "visual_requirements": "红细胞形态清楚；若是有核物种红细胞，应明确标注。",
+      "exclude_matches": [
+        "platelet",
+        "unlabeled species mismatch"
+      ]
+    },
+    {
+      "id": "cells-hepatocyte-zh",
+      "concept_id": "cells-hepatocyte",
+      "category": "cells",
+      "language": "zh",
+      "query": "肝细胞插画",
+      "expected_concepts": [
+        "hepatocyte"
+      ],
+      "required_species": null,
+      "visual_requirements": "来源支持肝细胞身份，不能以完整肝脏器官代替。",
+      "exclude_matches": [
+        "whole liver organ",
+        "generic cell renamed"
+      ]
+    },
+    {
+      "id": "cells-hepatocyte-en",
+      "concept_id": "cells-hepatocyte",
+      "category": "cells",
+      "language": "en",
+      "query": "hepatocyte illustration",
+      "expected_concepts": [
+        "hepatocyte"
+      ],
+      "required_species": null,
+      "visual_requirements": "来源支持肝细胞身份，不能以完整肝脏器官代替。",
+      "exclude_matches": [
+        "whole liver organ",
+        "generic cell renamed"
+      ]
+    },
+    {
+      "id": "organelles-mitochondrion-zh",
+      "concept_id": "organelles-mitochondrion",
+      "category": "organelles",
+      "language": "zh",
+      "query": "线粒体插画",
+      "expected_concepts": [
+        "mitochondrion",
+        "mitochondria"
+      ],
+      "required_species": null,
+      "visual_requirements": "结构与来源匹配；剖面若出现嵴，应具有清楚的内膜结构。",
+      "exclude_matches": [
+        "bacterium"
+      ]
+    },
+    {
+      "id": "organelles-mitochondrion-en",
+      "concept_id": "organelles-mitochondrion",
+      "category": "organelles",
+      "language": "en",
+      "query": "mitochondrion illustration",
+      "expected_concepts": [
+        "mitochondrion",
+        "mitochondria"
+      ],
+      "required_species": null,
+      "visual_requirements": "结构与来源匹配；剖面若出现嵴，应具有清楚的内膜结构。",
+      "exclude_matches": [
+        "bacterium"
+      ]
+    },
+    {
+      "id": "organelles-nucleus-zh",
+      "concept_id": "organelles-nucleus",
+      "category": "organelles",
+      "language": "zh",
+      "query": "细胞核插画",
+      "expected_concepts": [
+        "nucleus"
+      ],
+      "required_species": null,
+      "visual_requirements": "细胞核可独立取用，核膜/核仁等结构以实际图示为准。",
+      "exclude_matches": [
+        "atomic nucleus"
+      ]
+    },
+    {
+      "id": "organelles-nucleus-en",
+      "concept_id": "organelles-nucleus",
+      "category": "organelles",
+      "language": "en",
+      "query": "cell nucleus illustration",
+      "expected_concepts": [
+        "nucleus"
+      ],
+      "required_species": null,
+      "visual_requirements": "细胞核可独立取用，核膜/核仁等结构以实际图示为准。",
+      "exclude_matches": [
+        "atomic nucleus"
+      ]
+    },
+    {
+      "id": "organelles-endoplasmic-reticulum-zh",
+      "concept_id": "organelles-endoplasmic-reticulum",
+      "category": "organelles",
+      "language": "zh",
+      "query": "内质网插画",
+      "expected_concepts": [
+        "endoplasmic reticulum"
+      ],
+      "required_species": null,
+      "visual_requirements": "来源注明内质网；粗面和滑面不能无证据互换。",
+      "exclude_matches": [
+        "Golgi apparatus"
+      ]
+    },
+    {
+      "id": "organelles-endoplasmic-reticulum-en",
+      "concept_id": "organelles-endoplasmic-reticulum",
+      "category": "organelles",
+      "language": "en",
+      "query": "endoplasmic reticulum illustration",
+      "expected_concepts": [
+        "endoplasmic reticulum"
+      ],
+      "required_species": null,
+      "visual_requirements": "来源注明内质网；粗面和滑面不能无证据互换。",
+      "exclude_matches": [
+        "Golgi apparatus"
+      ]
+    },
+    {
+      "id": "organelles-golgi-zh",
+      "concept_id": "organelles-golgi",
+      "category": "organelles",
+      "language": "zh",
+      "query": "高尔基体插画",
+      "expected_concepts": [
+        "Golgi apparatus"
+      ],
+      "required_species": null,
+      "visual_requirements": "层叠膜囊形态可识别，适合细胞过程说明。",
+      "exclude_matches": [
+        "endoplasmic reticulum"
+      ]
+    },
+    {
+      "id": "organelles-golgi-en",
+      "concept_id": "organelles-golgi",
+      "category": "organelles",
+      "language": "en",
+      "query": "Golgi apparatus illustration",
+      "expected_concepts": [
+        "Golgi apparatus"
+      ],
+      "required_species": null,
+      "visual_requirements": "层叠膜囊形态可识别，适合细胞过程说明。",
+      "exclude_matches": [
+        "endoplasmic reticulum"
+      ]
+    },
+    {
+      "id": "organelles-lysosome-zh",
+      "concept_id": "organelles-lysosome",
+      "category": "organelles",
+      "language": "zh",
+      "query": "溶酶体插画",
+      "expected_concepts": [
+        "lysosome"
+      ],
+      "required_species": null,
+      "visual_requirements": "来源支持溶酶体身份；不能把任何小囊泡统一认定为溶酶体。",
+      "exclude_matches": [
+        "generic vesicle with unsupported identity"
+      ]
+    },
+    {
+      "id": "organelles-lysosome-en",
+      "concept_id": "organelles-lysosome",
+      "category": "organelles",
+      "language": "en",
+      "query": "lysosome illustration",
+      "expected_concepts": [
+        "lysosome"
+      ],
+      "required_species": null,
+      "visual_requirements": "来源支持溶酶体身份；不能把任何小囊泡统一认定为溶酶体。",
+      "exclude_matches": [
+        "generic vesicle with unsupported identity"
+      ]
+    },
+    {
+      "id": "molecules-dna-zh",
+      "concept_id": "molecules-dna",
+      "category": "molecules",
+      "language": "zh",
+      "query": "DNA双螺旋插画",
+      "expected_concepts": [
+        "DNA",
+        "double helix"
+      ],
+      "required_species": null,
+      "visual_requirements": "双链螺旋形态清楚；装饰性配色不能被解释为真实序列。",
+      "exclude_matches": [
+        "single-stranded RNA",
+        "invented measured sequence"
+      ]
+    },
+    {
+      "id": "molecules-dna-en",
+      "concept_id": "molecules-dna",
+      "category": "molecules",
+      "language": "en",
+      "query": "DNA double helix illustration",
+      "expected_concepts": [
+        "DNA",
+        "double helix"
+      ],
+      "required_species": null,
+      "visual_requirements": "双链螺旋形态清楚；装饰性配色不能被解释为真实序列。",
+      "exclude_matches": [
+        "single-stranded RNA",
+        "invented measured sequence"
+      ]
+    },
+    {
+      "id": "molecules-rna-zh",
+      "concept_id": "molecules-rna",
+      "category": "molecules",
+      "language": "zh",
+      "query": "单链RNA示意",
+      "expected_concepts": [
+        "RNA",
+        "single strand"
+      ],
+      "required_species": null,
+      "visual_requirements": "单链表达清楚，来源支持RNA而非DNA；不要求具体序列。",
+      "exclude_matches": [
+        "DNA double helix"
+      ]
+    },
+    {
+      "id": "molecules-rna-en",
+      "concept_id": "molecules-rna",
+      "category": "molecules",
+      "language": "en",
+      "query": "single stranded RNA illustration",
+      "expected_concepts": [
+        "RNA",
+        "single strand"
+      ],
+      "required_species": null,
+      "visual_requirements": "单链表达清楚，来源支持RNA而非DNA；不要求具体序列。",
+      "exclude_matches": [
+        "DNA double helix"
+      ]
+    },
+    {
+      "id": "molecules-antibody-zh",
+      "concept_id": "molecules-antibody",
+      "category": "molecules",
+      "language": "zh",
+      "query": "Y形抗体插画",
+      "expected_concepts": [
+        "antibody",
+        "immunoglobulin"
+      ],
+      "required_species": null,
+      "visual_requirements": "整体Y形和部件关系适合示意，具体同型或靶点只按来源标注。",
+      "exclude_matches": [
+        "generic Y icon without molecular context"
+      ]
+    },
+    {
+      "id": "molecules-antibody-en",
+      "concept_id": "molecules-antibody",
+      "category": "molecules",
+      "language": "en",
+      "query": "Y shaped antibody illustration",
+      "expected_concepts": [
+        "antibody",
+        "immunoglobulin"
+      ],
+      "required_species": null,
+      "visual_requirements": "整体Y形和部件关系适合示意，具体同型或靶点只按来源标注。",
+      "exclude_matches": [
+        "generic Y icon without molecular context"
+      ]
+    },
+    {
+      "id": "molecules-membrane-receptor-zh",
+      "concept_id": "molecules-membrane-receptor",
+      "category": "molecules",
+      "language": "zh",
+      "query": "细胞膜受体示意",
+      "expected_concepts": [
+        "membrane receptor"
+      ],
+      "required_species": null,
+      "visual_requirements": "能表示跨膜受体及膜内外关系；具体受体名称不靠猜测。",
+      "exclude_matches": [
+        "free-floating unrelated protein"
+      ]
+    },
+    {
+      "id": "molecules-membrane-receptor-en",
+      "concept_id": "molecules-membrane-receptor",
+      "category": "molecules",
+      "language": "en",
+      "query": "cell membrane receptor illustration",
+      "expected_concepts": [
+        "membrane receptor"
+      ],
+      "required_species": null,
+      "visual_requirements": "能表示跨膜受体及膜内外关系；具体受体名称不靠猜测。",
+      "exclude_matches": [
+        "free-floating unrelated protein"
+      ]
+    },
+    {
+      "id": "molecules-atp-zh",
+      "concept_id": "molecules-atp",
+      "category": "molecules",
+      "language": "zh",
+      "query": "ATP分子结构示意",
+      "expected_concepts": [
+        "ATP",
+        "adenosine triphosphate"
+      ],
+      "required_species": null,
+      "visual_requirements": "若展示化学结构，需正确表达ATP而非ADP或AMP；视觉可读。",
+      "exclude_matches": [
+        "ADP",
+        "AMP",
+        "chemically incorrect structure"
+      ]
+    },
+    {
+      "id": "molecules-atp-en",
+      "concept_id": "molecules-atp",
+      "category": "molecules",
+      "language": "en",
+      "query": "ATP molecule structure diagram",
+      "expected_concepts": [
+        "ATP",
+        "adenosine triphosphate"
+      ],
+      "required_species": null,
+      "visual_requirements": "若展示化学结构，需正确表达ATP而非ADP或AMP；视觉可读。",
+      "exclude_matches": [
+        "ADP",
+        "AMP",
+        "chemically incorrect structure"
+      ]
+    },
+    {
+      "id": "microbes-rod-bacterium-zh",
+      "concept_id": "microbes-rod-bacterium",
+      "category": "microbes",
+      "language": "zh",
+      "query": "杆状细菌插画",
+      "expected_concepts": [
+        "bacterium",
+        "rod"
+      ],
+      "required_species": null,
+      "visual_requirements": "杆菌形态明确；不根据通用图推断菌种或革兰染色性质。",
+      "exclude_matches": [
+        "virus",
+        "unsupported named species"
+      ]
+    },
+    {
+      "id": "microbes-rod-bacterium-en",
+      "concept_id": "microbes-rod-bacterium",
+      "category": "microbes",
+      "language": "en",
+      "query": "rod shaped bacterium illustration",
+      "expected_concepts": [
+        "bacterium",
+        "rod"
+      ],
+      "required_species": null,
+      "visual_requirements": "杆菌形态明确；不根据通用图推断菌种或革兰染色性质。",
+      "exclude_matches": [
+        "virus",
+        "unsupported named species"
+      ]
+    },
+    {
+      "id": "microbes-coccus-zh",
+      "concept_id": "microbes-coccus",
+      "category": "microbes",
+      "language": "zh",
+      "query": "球菌插画",
+      "expected_concepts": [
+        "coccus",
+        "bacteria"
+      ],
+      "required_species": null,
+      "visual_requirements": "球菌形态和排列可识别，单个/链状/簇状以源图为准。",
+      "exclude_matches": [
+        "generic mammalian cell"
+      ]
+    },
+    {
+      "id": "microbes-coccus-en",
+      "concept_id": "microbes-coccus",
+      "category": "microbes",
+      "language": "en",
+      "query": "coccus bacteria illustration",
+      "expected_concepts": [
+        "coccus",
+        "bacteria"
+      ],
+      "required_species": null,
+      "visual_requirements": "球菌形态和排列可识别，单个/链状/簇状以源图为准。",
+      "exclude_matches": [
+        "generic mammalian cell"
+      ]
+    },
+    {
+      "id": "microbes-coronavirus-zh",
+      "concept_id": "microbes-coronavirus",
+      "category": "microbes",
+      "language": "zh",
+      "query": "冠状病毒颗粒示意",
+      "expected_concepts": [
+        "coronavirus"
+      ],
+      "required_species": null,
+      "visual_requirements": "来源支持冠状病毒颗粒，表面结构可识别；不推断具体毒株。",
+      "exclude_matches": [
+        "bacteriophage",
+        "unsupported variant"
+      ]
+    },
+    {
+      "id": "microbes-coronavirus-en",
+      "concept_id": "microbes-coronavirus",
+      "category": "microbes",
+      "language": "en",
+      "query": "coronavirus particle illustration",
+      "expected_concepts": [
+        "coronavirus"
+      ],
+      "required_species": null,
+      "visual_requirements": "来源支持冠状病毒颗粒，表面结构可识别；不推断具体毒株。",
+      "exclude_matches": [
+        "bacteriophage",
+        "unsupported variant"
+      ]
+    },
+    {
+      "id": "microbes-bacteriophage-zh",
+      "concept_id": "microbes-bacteriophage",
+      "category": "microbes",
+      "language": "zh",
+      "query": "噬菌体插画",
+      "expected_concepts": [
+        "bacteriophage"
+      ],
+      "required_species": null,
+      "visual_requirements": "病毒头部/尾部等源图结构清晰，不把冠状病毒当噬菌体。",
+      "exclude_matches": [
+        "coronavirus"
+      ]
+    },
+    {
+      "id": "microbes-bacteriophage-en",
+      "concept_id": "microbes-bacteriophage",
+      "category": "microbes",
+      "language": "en",
+      "query": "bacteriophage illustration",
+      "expected_concepts": [
+        "bacteriophage"
+      ],
+      "required_species": null,
+      "visual_requirements": "病毒头部/尾部等源图结构清晰，不把冠状病毒当噬菌体。",
+      "exclude_matches": [
+        "coronavirus"
+      ]
+    },
+    {
+      "id": "microbes-yeast-zh",
+      "concept_id": "microbes-yeast",
+      "category": "microbes",
+      "language": "zh",
+      "query": "酵母细胞出芽示意",
+      "expected_concepts": [
+        "yeast",
+        "budding"
+      ],
+      "required_species": null,
+      "visual_requirements": "可识别酵母及出芽现象；不把任意两相连圆形当已验证酵母。",
+      "exclude_matches": [
+        "coccus",
+        "species assigned without source"
+      ]
+    },
+    {
+      "id": "microbes-yeast-en",
+      "concept_id": "microbes-yeast",
+      "category": "microbes",
+      "language": "en",
+      "query": "budding yeast cell illustration",
+      "expected_concepts": [
+        "yeast",
+        "budding"
+      ],
+      "required_species": null,
+      "visual_requirements": "可识别酵母及出芽现象；不把任意两相连圆形当已验证酵母。",
+      "exclude_matches": [
+        "coccus",
+        "species assigned without source"
+      ]
+    },
+    {
+      "id": "lab_equipment-pipette-zh",
+      "concept_id": "lab_equipment-pipette",
+      "category": "lab_equipment",
+      "language": "zh",
+      "query": "移液器插画",
+      "expected_concepts": [
+        "micropipette",
+        "pipette"
+      ],
+      "required_species": null,
+      "visual_requirements": "移液器与枪头可识别，部件或完整器具均须明确。",
+      "exclude_matches": [
+        "glass dropper when micropipette requested"
+      ]
+    },
+    {
+      "id": "lab_equipment-pipette-en",
+      "concept_id": "lab_equipment-pipette",
+      "category": "lab_equipment",
+      "language": "en",
+      "query": "micropipette illustration",
+      "expected_concepts": [
+        "micropipette",
+        "pipette"
+      ],
+      "required_species": null,
+      "visual_requirements": "移液器与枪头可识别，部件或完整器具均须明确。",
+      "exclude_matches": [
+        "glass dropper when micropipette requested"
+      ]
+    },
+    {
+      "id": "lab_equipment-microscope-zh",
+      "concept_id": "lab_equipment-microscope",
+      "category": "lab_equipment",
+      "language": "zh",
+      "query": "光学显微镜插画",
+      "expected_concepts": [
+        "light microscope"
+      ],
+      "required_species": null,
+      "visual_requirements": "显微镜类型和工作部件可识别；不能把电镜当光学显微镜。",
+      "exclude_matches": [
+        "electron microscope"
+      ]
+    },
+    {
+      "id": "lab_equipment-microscope-en",
+      "concept_id": "lab_equipment-microscope",
+      "category": "lab_equipment",
+      "language": "en",
+      "query": "light microscope illustration",
+      "expected_concepts": [
+        "light microscope"
+      ],
+      "required_species": null,
+      "visual_requirements": "显微镜类型和工作部件可识别；不能把电镜当光学显微镜。",
+      "exclude_matches": [
+        "electron microscope"
+      ]
+    },
+    {
+      "id": "lab_equipment-well-plate-zh",
+      "concept_id": "lab_equipment-well-plate",
+      "category": "lab_equipment",
+      "language": "zh",
+      "query": "96孔板插画",
+      "expected_concepts": [
+        "96 well plate"
+      ],
+      "required_species": null,
+      "visual_requirements": "来源和孔布局支持96孔板，不能将6/24孔板直接改名。",
+      "exclude_matches": [
+        "6 well plate",
+        "24 well plate"
+      ]
+    },
+    {
+      "id": "lab_equipment-well-plate-en",
+      "concept_id": "lab_equipment-well-plate",
+      "category": "lab_equipment",
+      "language": "en",
+      "query": "96 well microplate illustration",
+      "expected_concepts": [
+        "96 well plate"
+      ],
+      "required_species": null,
+      "visual_requirements": "来源和孔布局支持96孔板，不能将6/24孔板直接改名。",
+      "exclude_matches": [
+        "6 well plate",
+        "24 well plate"
+      ]
+    },
+    {
+      "id": "lab_equipment-petri-dish-zh",
+      "concept_id": "lab_equipment-petri-dish",
+      "category": "lab_equipment",
+      "language": "zh",
+      "query": "细胞培养皿插画",
+      "expected_concepts": [
+        "petri dish",
+        "culture dish"
+      ],
+      "required_species": null,
+      "visual_requirements": "培养皿形态清楚；培养基/细胞等只按源图实际内容说明。",
+      "exclude_matches": [
+        "beaker"
+      ]
+    },
+    {
+      "id": "lab_equipment-petri-dish-en",
+      "concept_id": "lab_equipment-petri-dish",
+      "category": "lab_equipment",
+      "language": "en",
+      "query": "cell culture petri dish illustration",
+      "expected_concepts": [
+        "petri dish",
+        "culture dish"
+      ],
+      "required_species": null,
+      "visual_requirements": "培养皿形态清楚；培养基/细胞等只按源图实际内容说明。",
+      "exclude_matches": [
+        "beaker"
+      ]
+    },
+    {
+      "id": "lab_equipment-centrifuge-zh",
+      "concept_id": "lab_equipment-centrifuge",
+      "category": "lab_equipment",
+      "language": "zh",
+      "query": "实验室离心机插画",
+      "expected_concepts": [
+        "centrifuge"
+      ],
+      "required_species": null,
+      "visual_requirements": "设备可识别为实验室离心机，不能仅以旋转箭头替代器材。",
+      "exclude_matches": [
+        "washing machine"
+      ]
+    },
+    {
+      "id": "lab_equipment-centrifuge-en",
+      "concept_id": "lab_equipment-centrifuge",
+      "category": "lab_equipment",
+      "language": "en",
+      "query": "laboratory centrifuge illustration",
+      "expected_concepts": [
+        "centrifuge"
+      ],
+      "required_species": null,
+      "visual_requirements": "设备可识别为实验室离心机，不能仅以旋转箭头替代器材。",
+      "exclude_matches": [
+        "washing machine"
+      ]
+    },
+    {
+      "id": "experimental_actions-blood-collection-zh",
+      "concept_id": "experimental_actions-blood-collection",
+      "category": "experimental_actions",
+      "language": "zh",
+      "query": "采血操作示意",
+      "expected_concepts": [
+        "blood collection",
+        "venipuncture"
+      ],
+      "required_species": null,
+      "visual_requirements": "可用于表达采血步骤的动作或组合部件，取样部位不得被误写。",
+      "exclude_matches": [
+        "drug administration without blood collection"
+      ]
+    },
+    {
+      "id": "experimental_actions-blood-collection-en",
+      "concept_id": "experimental_actions-blood-collection",
+      "category": "experimental_actions",
+      "language": "en",
+      "query": "blood collection procedure illustration",
+      "expected_concepts": [
+        "blood collection",
+        "venipuncture"
+      ],
+      "required_species": null,
+      "visual_requirements": "可用于表达采血步骤的动作或组合部件，取样部位不得被误写。",
+      "exclude_matches": [
+        "drug administration without blood collection"
+      ]
+    },
+    {
+      "id": "experimental_actions-mouse-injection-zh",
+      "concept_id": "experimental_actions-mouse-injection",
+      "category": "experimental_actions",
+      "language": "zh",
+      "query": "小鼠注射实验示意",
+      "expected_concepts": [
+        "mouse",
+        "injection"
+      ],
+      "required_species": "mouse",
+      "visual_requirements": "能表达对小鼠注射，具体途径和剂量必须由图与来源支持。",
+      "exclude_matches": [
+        "rat",
+        "unsupported route or dose"
+      ]
+    },
+    {
+      "id": "experimental_actions-mouse-injection-en",
+      "concept_id": "experimental_actions-mouse-injection",
+      "category": "experimental_actions",
+      "language": "en",
+      "query": "mouse injection experiment illustration",
+      "expected_concepts": [
+        "mouse",
+        "injection"
+      ],
+      "required_species": "mouse",
+      "visual_requirements": "能表达对小鼠注射，具体途径和剂量必须由图与来源支持。",
+      "exclude_matches": [
+        "rat",
+        "unsupported route or dose"
+      ]
+    },
+    {
+      "id": "experimental_actions-cell-culture-zh",
+      "concept_id": "experimental_actions-cell-culture",
+      "category": "experimental_actions",
+      "language": "zh",
+      "query": "细胞培养操作示意",
+      "expected_concepts": [
+        "cell culture"
+      ],
+      "required_species": null,
+      "visual_requirements": "适合说明细胞培养操作；不把任意器皿断言为某种培养条件。",
+      "exclude_matches": [
+        "specific cell line without evidence"
+      ]
+    },
+    {
+      "id": "experimental_actions-cell-culture-en",
+      "concept_id": "experimental_actions-cell-culture",
+      "category": "experimental_actions",
+      "language": "en",
+      "query": "cell culture procedure illustration",
+      "expected_concepts": [
+        "cell culture"
+      ],
+      "required_species": null,
+      "visual_requirements": "适合说明细胞培养操作；不把任意器皿断言为某种培养条件。",
+      "exclude_matches": [
+        "specific cell line without evidence"
+      ]
+    },
+    {
+      "id": "experimental_actions-centrifugation-zh",
+      "concept_id": "experimental_actions-centrifugation",
+      "category": "experimental_actions",
+      "language": "zh",
+      "query": "离心分离步骤示意",
+      "expected_concepts": [
+        "centrifugation",
+        "separation"
+      ],
+      "required_species": null,
+      "visual_requirements": "能表达离心与分离，箭头及上下层含义清晰；不伪造转速或时长。",
+      "exclude_matches": [
+        "unsupported rpm or duration"
+      ]
+    },
+    {
+      "id": "experimental_actions-centrifugation-en",
+      "concept_id": "experimental_actions-centrifugation",
+      "category": "experimental_actions",
+      "language": "en",
+      "query": "centrifugation separation workflow illustration",
+      "expected_concepts": [
+        "centrifugation",
+        "separation"
+      ],
+      "required_species": null,
+      "visual_requirements": "能表达离心与分离，箭头及上下层含义清晰；不伪造转速或时长。",
+      "exclude_matches": [
+        "unsupported rpm or duration"
+      ]
+    },
+    {
+      "id": "experimental_actions-pipetting-zh",
+      "concept_id": "experimental_actions-pipetting",
+      "category": "experimental_actions",
+      "language": "zh",
+      "query": "移液操作示意",
+      "expected_concepts": [
+        "pipetting",
+        "liquid transfer"
+      ],
+      "required_species": null,
+      "visual_requirements": "清楚表达移液动作或可组合部件，液体方向与器材关系合理。",
+      "exclude_matches": [
+        "unrelated pouring action"
+      ]
+    },
+    {
+      "id": "experimental_actions-pipetting-en",
+      "concept_id": "experimental_actions-pipetting",
+      "category": "experimental_actions",
+      "language": "en",
+      "query": "pipetting liquid transfer illustration",
+      "expected_concepts": [
+        "pipetting",
+        "liquid transfer"
+      ],
+      "required_species": null,
+      "visual_requirements": "清楚表达移液动作或可组合部件，液体方向与器材关系合理。",
+      "exclude_matches": [
+        "unrelated pouring action"
+      ]
+    },
+    {
+      "id": "clinical_workflow-cohort-followup-zh",
+      "concept_id": "clinical_workflow-cohort-followup",
+      "category": "clinical_workflow",
+      "language": "zh",
+      "query": "队列随访流程素材",
+      "expected_concepts": [
+        "cohort",
+        "follow up"
+      ],
+      "required_species": "human",
+      "visual_requirements": "可表达参与者随时间随访的图形或组合部件，不含虚构研究人数或结论。",
+      "exclude_matches": [
+        "published study data figure",
+        "invented sample size"
+      ]
+    },
+    {
+      "id": "clinical_workflow-cohort-followup-en",
+      "concept_id": "clinical_workflow-cohort-followup",
+      "category": "clinical_workflow",
+      "language": "en",
+      "query": "cohort follow up workflow illustration",
+      "expected_concepts": [
+        "cohort",
+        "follow up"
+      ],
+      "required_species": "human",
+      "visual_requirements": "可表达参与者随时间随访的图形或组合部件，不含虚构研究人数或结论。",
+      "exclude_matches": [
+        "published study data figure",
+        "invented sample size"
+      ]
+    },
+    {
+      "id": "clinical_workflow-randomization-zh",
+      "concept_id": "clinical_workflow-randomization",
+      "category": "clinical_workflow",
+      "language": "zh",
+      "query": "随机分组流程素材",
+      "expected_concepts": [
+        "randomization",
+        "groups"
+      ],
+      "required_species": "human",
+      "visual_requirements": "能表达分组步骤，不能把普通分支箭头直接宣称已证明随机化。",
+      "exclude_matches": [
+        "specific trial outcomes"
+      ]
+    },
+    {
+      "id": "clinical_workflow-randomization-en",
+      "concept_id": "clinical_workflow-randomization",
+      "category": "clinical_workflow",
+      "language": "en",
+      "query": "randomization two groups workflow diagram",
+      "expected_concepts": [
+        "randomization",
+        "groups"
+      ],
+      "required_species": "human",
+      "visual_requirements": "能表达分组步骤，不能把普通分支箭头直接宣称已证明随机化。",
+      "exclude_matches": [
+        "specific trial outcomes"
+      ]
+    },
+    {
+      "id": "clinical_workflow-recruitment-zh",
+      "concept_id": "clinical_workflow-recruitment",
+      "category": "clinical_workflow",
+      "language": "zh",
+      "query": "研究参与者招募素材",
+      "expected_concepts": [
+        "participant",
+        "recruitment"
+      ],
+      "required_species": "human",
+      "visual_requirements": "适合招募/纳入步骤的中性科研插画或图标，不携带虚构纳排标准。",
+      "exclude_matches": [
+        "specific patient data"
+      ]
+    },
+    {
+      "id": "clinical_workflow-recruitment-en",
+      "concept_id": "clinical_workflow-recruitment",
+      "category": "clinical_workflow",
+      "language": "en",
+      "query": "study participant recruitment illustration",
+      "expected_concepts": [
+        "participant",
+        "recruitment"
+      ],
+      "required_species": "human",
+      "visual_requirements": "适合招募/纳入步骤的中性科研插画或图标，不携带虚构纳排标准。",
+      "exclude_matches": [
+        "specific patient data"
+      ]
+    },
+    {
+      "id": "clinical_workflow-questionnaire-zh",
+      "concept_id": "clinical_workflow-questionnaire",
+      "category": "clinical_workflow",
+      "language": "zh",
+      "query": "问卷调查素材",
+      "expected_concepts": [
+        "questionnaire",
+        "survey"
+      ],
+      "required_species": "human",
+      "visual_requirements": "问卷或访谈含义清楚；不是将真实个人答卷作为素材。",
+      "exclude_matches": [
+        "filled identifiable medical record"
+      ]
+    },
+    {
+      "id": "clinical_workflow-questionnaire-en",
+      "concept_id": "clinical_workflow-questionnaire",
+      "category": "clinical_workflow",
+      "language": "en",
+      "query": "questionnaire survey illustration",
+      "expected_concepts": [
+        "questionnaire",
+        "survey"
+      ],
+      "required_species": "human",
+      "visual_requirements": "问卷或访谈含义清楚；不是将真实个人答卷作为素材。",
+      "exclude_matches": [
+        "filled identifiable medical record"
+      ]
+    },
+    {
+      "id": "clinical_workflow-blood-pressure-zh",
+      "concept_id": "clinical_workflow-blood-pressure",
+      "category": "clinical_workflow",
+      "language": "zh",
+      "query": "血压测量操作插画",
+      "expected_concepts": [
+        "blood pressure",
+        "measurement"
+      ],
+      "required_species": "human",
+      "visual_requirements": "测量器具和动作合理，不将显示值当研究测量结果。",
+      "exclude_matches": [
+        "unsupported study BP value"
+      ]
+    },
+    {
+      "id": "clinical_workflow-blood-pressure-en",
+      "concept_id": "clinical_workflow-blood-pressure",
+      "category": "clinical_workflow",
+      "language": "en",
+      "query": "blood pressure measurement illustration",
+      "expected_concepts": [
+        "blood pressure",
+        "measurement"
+      ],
+      "required_species": "human",
+      "visual_requirements": "测量器具和动作合理，不将显示值当研究测量结果。",
+      "exclude_matches": [
+        "unsupported study BP value"
+      ]
+    },
+    {
+      "id": "omics_data-rnaseq-zh",
+      "concept_id": "omics_data-rnaseq",
+      "category": "omics_data",
+      "language": "zh",
+      "query": "RNA测序流程示意素材",
+      "expected_concepts": [
+        "RNA sequencing",
+        "RNA-seq"
+      ],
+      "required_species": null,
+      "visual_requirements": "可用于表达RNA测序方法步骤，不把DNA测序标签或示意读数当实测数据。",
+      "exclude_matches": [
+        "published experimental results"
+      ]
+    },
+    {
+      "id": "omics_data-rnaseq-en",
+      "concept_id": "omics_data-rnaseq",
+      "category": "omics_data",
+      "language": "en",
+      "query": "RNA sequencing workflow illustration",
+      "expected_concepts": [
+        "RNA sequencing",
+        "RNA-seq"
+      ],
+      "required_species": null,
+      "visual_requirements": "可用于表达RNA测序方法步骤，不把DNA测序标签或示意读数当实测数据。",
+      "exclude_matches": [
+        "published experimental results"
+      ]
+    },
+    {
+      "id": "omics_data-heatmap-zh",
+      "concept_id": "omics_data-heatmap",
+      "category": "omics_data",
+      "language": "zh",
+      "query": "基因表达热图示意模板",
+      "expected_concepts": [
+        "gene expression",
+        "heatmap"
+      ],
+      "required_species": null,
+      "visual_requirements": "必须是示意模板或空白构件；不得将别人的实际表达矩阵或结果图作为素材。",
+      "exclude_matches": [
+        "real study heatmap",
+        "unlabeled fabricated data"
+      ]
+    },
+    {
+      "id": "omics_data-heatmap-en",
+      "concept_id": "omics_data-heatmap",
+      "category": "omics_data",
+      "language": "en",
+      "query": "gene expression heatmap schematic template",
+      "expected_concepts": [
+        "gene expression",
+        "heatmap"
+      ],
+      "required_species": null,
+      "visual_requirements": "必须是示意模板或空白构件；不得将别人的实际表达矩阵或结果图作为素材。",
+      "exclude_matches": [
+        "real study heatmap",
+        "unlabeled fabricated data"
+      ]
+    },
+    {
+      "id": "omics_data-sequencer-zh",
+      "concept_id": "omics_data-sequencer",
+      "category": "omics_data",
+      "language": "zh",
+      "query": "测序仪设备插画",
+      "expected_concepts": [
+        "sequencer",
+        "sequencing instrument"
+      ],
+      "required_species": null,
+      "visual_requirements": "设备用途有来源支持，商用品牌和型号不得凭外观推断。",
+      "exclude_matches": [
+        "unsupported brand or model"
+      ]
+    },
+    {
+      "id": "omics_data-sequencer-en",
+      "concept_id": "omics_data-sequencer",
+      "category": "omics_data",
+      "language": "en",
+      "query": "sequencing instrument illustration",
+      "expected_concepts": [
+        "sequencer",
+        "sequencing instrument"
+      ],
+      "required_species": null,
+      "visual_requirements": "设备用途有来源支持，商用品牌和型号不得凭外观推断。",
+      "exclude_matches": [
+        "unsupported brand or model"
+      ]
+    },
+    {
+      "id": "omics_data-gene-network-zh",
+      "concept_id": "omics_data-gene-network",
+      "category": "omics_data",
+      "language": "zh",
+      "query": "基因网络示意素材",
+      "expected_concepts": [
+        "gene network"
+      ],
+      "required_species": null,
+      "visual_requirements": "通用网络构件可用；特定边或调控关系必须明确为示意，不能冒充实证。",
+      "exclude_matches": [
+        "published gene interaction findings"
+      ]
+    },
+    {
+      "id": "omics_data-gene-network-en",
+      "concept_id": "omics_data-gene-network",
+      "category": "omics_data",
+      "language": "en",
+      "query": "gene network schematic illustration",
+      "expected_concepts": [
+        "gene network"
+      ],
+      "required_species": null,
+      "visual_requirements": "通用网络构件可用；特定边或调控关系必须明确为示意，不能冒充实证。",
+      "exclude_matches": [
+        "published gene interaction findings"
+      ]
+    },
+    {
+      "id": "omics_data-forest-template-zh",
+      "concept_id": "omics_data-forest-template",
+      "category": "omics_data",
+      "language": "zh",
+      "query": "森林图通用构件模板",
+      "expected_concepts": [
+        "forest plot",
+        "template"
+      ],
+      "required_species": null,
+      "visual_requirements": "只接受空白或明确示意构件，避免把具体效应值、置信区间当成通用素材。",
+      "exclude_matches": [
+        "published meta-analysis data",
+        "unlabeled fabricated estimates"
+      ]
+    },
+    {
+      "id": "omics_data-forest-template-en",
+      "concept_id": "omics_data-forest-template",
+      "category": "omics_data",
+      "language": "en",
+      "query": "forest plot schematic template",
+      "expected_concepts": [
+        "forest plot",
+        "template"
+      ],
+      "required_species": null,
+      "visual_requirements": "只接受空白或明确示意构件，避免把具体效应值、置信区间当成通用素材。",
+      "exclude_matches": [
+        "published meta-analysis data",
+        "unlabeled fabricated estimates"
+      ]
+    }
+  ],
+  "negative_scenarios": [
+    {
+      "id": "no-such-object",
+      "query": "不存在的量子龙肝脏细胞专用器官",
+      "expected": "no plausible invented medical match"
+    },
+    {
+      "id": "photo-excluded",
+      "query": "human liver histology photograph",
+      "filters": {
+        "content_type": "photograph"
+      },
+      "expected": "no in-scope photo; offer clearly marked illustration alternatives only if requested"
+    },
+    {
+      "id": "mouse-disambiguation",
+      "query": "mouse",
+      "filters": {
+        "category": "animals"
+      },
+      "expected": "animal results; no computer mouse"
+    },
+    {
+      "id": "species-conflict",
+      "query": "rat",
+      "filters": {
+        "species": "rat"
+      },
+      "expected": "no mouse labeled as rat"
+    },
+    {
+      "id": "raster-is-allowed",
+      "query": "mouse illustration",
+      "filters": {
+        "media_type": "raster"
+      },
+      "expected": "valid raster illustrations remain eligible"
+    },
+    {
+      "id": "vector-honesty",
+      "query": "editable vector mouse",
+      "filters": {
+        "media_type": "pure_vector"
+      },
+      "expected": "exclude SVG wrappers containing only raster image"
+    }
+  ]
+}

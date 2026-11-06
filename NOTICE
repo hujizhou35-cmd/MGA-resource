@@ -1,0 +1,35 @@
+MGA-resource · mainly-for-agent
+
+This project aggregates independently licensed scientific artwork.
+The software license for this repository does not relicense artwork.
+
+Each redistributed artwork must retain its recorded creator, original source,
+license, attribution, source version and modification information. Public-domain
+and CC0 status are recorded per source/item; CC BY and CC BY-SA obligations remain
+attached to the relevant material.
+
+Upstream projects consulted for data models and interface conventions:
+- BioCartoon database/CLI: https://github.com/josephrich98/biocartoon (BSD-2-Clause).
+- Iconify API: https://github.com/iconify/api (MIT).
+- Bioicons website code: https://github.com/duerrsimon/bioicons (MIT; artwork varies).
+- SciGlyph MCP: https://github.com/ZengZichao/SciGlyph-MCP (MIT; artwork CC BY 4.0).
+
+These notices identify consulted projects; they do not assert that their source
+files have been copied. Any vendored or adapted source file must carry its actual
+upstream copyright/license notice and a precise version/path record.
+
+Source-specific artwork notices include:
+- Health Icons: Resolve to Save Lives and contributors, CC0.
+- Arcadia Science organism illustration library, CC0 as declared in its official
+  Zenodo record; preserve supplied contributor and PhyloPic provenance.
+- SciSVG: Saveena Solanki and recorded contributors, CC BY 4.0 unless an item says
+  otherwise; https://github.com/SaveenaSolanki/SciSVG.
+- KYU49 SVG Collection of Lab Equipment, CC BY 4.0.
+- Open Pain Illustration: Yanick X. Lukic et al., CC BY 4.0; retain paper citation.
+- DBCLS Togo: Togo Picture Gallery © DBCLS licensed under CC Attribution 4.0
+  International.
+- SwissBioPics / Swiss-Prot group, SIB Swiss Institute of Bioinformatics,
+  CC BY 4.0.
+
+Sources not yet acquired, rights-cleared or verified are not thereby included in
+a public release. See data/sources.json and the actual cloud release manifests.

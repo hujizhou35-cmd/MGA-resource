@@ -1,0 +1,594 @@
+{
+  "schema_version": 1,
+  "verified_at": "2026-11-06",
+  "stage": "collection",
+  "defaults": {
+    "bulk_execution": "github_actions_only",
+    "allowed_media": [
+      "svg",
+      "png",
+      "webp",
+      "ai",
+      "eps",
+      "pdf"
+    ],
+    "excluded_content": [
+      "photographs",
+      "microscopy_images",
+      "published_study_data_figures",
+      "raw_3d_models"
+    ],
+    "source_status_is_not_asset_acceptance": true
+  },
+  "sources": [
+    {
+      "source_id": "bioicons",
+      "name": "Bioicons",
+      "enabled": true,
+      "status": "configured",
+      "primary": true,
+      "adapter": "bioicons",
+      "repository": "duerrsimon/bioicons",
+      "source_url": "https://bioicons.com/",
+      "license": "per-item",
+      "license_url": null,
+      "author": null,
+      "categories": [],
+      "extensions": [
+        "svg"
+      ],
+      "scope": "medical_and_biomedical_illustrations",
+      "rights_notes": "Use each license/author directory and authors.json, not the repository code license. Servier-attributed items remain held pending source-specific review.",
+      "verified_at": "2026-11-06",
+      "path_prefixes": [
+        "static/icons/"
+      ],
+      "content_types": [
+        "illustration",
+        "icon",
+        "diagram"
+      ],
+      "style_notes": "Mixed contributors and styles; detailed artwork and simplified symbols are both present.",
+      "hold_authors": [
+        "Servier"
+      ],
+      "evidence_urls": [
+        "https://github.com/duerrsimon/bioicons/blob/main/README.md",
+        "https://github.com/duerrsimon/bioicons/blob/main/CONTRIBUTING.md"
+      ]
+    },
+    {
+      "source_id": "healthicons",
+      "name": "Health Icons",
+      "enabled": true,
+      "status": "configured",
+      "primary": true,
+      "adapter": "github_tree",
+      "repository": "resolvetosavelives/healthicons",
+      "source_url": "https://healthicons.org/",
+      "license": "CC0-1.0",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "author": "Resolve to Save Lives / Health Icons contributors",
+      "categories": [],
+      "extensions": [
+        "svg"
+      ],
+      "scope": "medical_and_biomedical_illustrations",
+      "rights_notes": "Preserve item authorship, source, license and modifications; source inclusion is not item acceptance.",
+      "verified_at": "2026-11-06",
+      "path_prefixes": [
+        "public/icons/svg/"
+      ],
+      "metadata_path": "public/icons/meta-data.json",
+      "metadata_kind": "healthicons",
+      "content_types": [
+        "icon"
+      ],
+      "style_notes": "Outline and filled health pictograms, including 24px variants; suited to clinical and population workflows.",
+      "evidence_urls": [
+        "https://github.com/resolvetosavelives/healthicons/blob/main/README.md",
+        "https://healthicons.org/how-to-use"
+      ]
+    },
+    {
+      "source_id": "arcadia",
+      "name": "Arcadia organism illustration library",
+      "enabled": true,
+      "status": "configured",
+      "primary": true,
+      "adapter": "archive",
+      "repository": null,
+      "source_url": "https://zenodo.org/records/18395998",
+      "license": "CC0-1.0",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "author": "Arcadia Science",
+      "categories": [],
+      "extensions": [
+        "svg",
+        "png"
+      ],
+      "scope": "medical_and_biomedical_illustrations",
+      "rights_notes": "The official v1.2 record states all images are CC0. Preserve Arcadia attribution and recorded PhyloPic-derived provenance where supplied.",
+      "verified_at": "2026-11-06",
+      "archive_url": "https://zenodo.org/records/18395998/files/arcadia-organism-library-v1.2.zip?download=1",
+      "archive_checksum": "md5:3e6c0eeced4052e75bff3aee0fc34631",
+      "upstream_revision": "v1.2 / Zenodo 18395998",
+      "path_prefixes": [
+        ""
+      ],
+      "content_types": [
+        "illustration",
+        "silhouette"
+      ],
+      "style_notes": "Organism silhouettes, tricolor-stroke SVG and transparent raster artwork. Species are separate from artwork variants.",
+      "evidence_urls": [
+        "https://zenodo.org/records/18395998"
+      ]
+    },
+    {
+      "source_id": "scisvg",
+      "name": "SciSVG",
+      "enabled": true,
+      "status": "configured",
+      "primary": true,
+      "adapter": "github_tree",
+      "repository": "SaveenaSolanki/SciSVG",
+      "source_url": "https://saveenasolanki.github.io/SciSVG/",
+      "license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "author": "Saveena Solanki / SciSVG contributors",
+      "categories": [],
+      "extensions": [
+        "svg"
+      ],
+      "scope": "medical_and_biomedical_illustrations",
+      "rights_notes": "Artwork under assets/ is CC BY 4.0 unless a file says otherwise; code is MIT. Preserve per-item attribution from metadata.",
+      "verified_at": "2026-11-06",
+      "path_prefixes": [
+        "assets/"
+      ],
+      "metadata_path": "metadata/assets.json",
+      "metadata_kind": "scisvg",
+      "content_types": [
+        "illustration",
+        "diagram",
+        "icon"
+      ],
+      "style_notes": "Small collection of structured flat vectors for cell biology, laboratory methods and bioinformatics.",
+      "evidence_urls": [
+        "https://github.com/SaveenaSolanki/SciSVG/blob/main/README.md",
+        "https://github.com/SaveenaSolanki/SciSVG/blob/main/LICENSE-ASSETS"
+      ]
+    },
+    {
+      "source_id": "lab-equipment",
+      "name": "KYU49 SVG Collection of Lab Equipment",
+      "enabled": true,
+      "status": "configured",
+      "primary": true,
+      "adapter": "github_tree",
+      "repository": "KYU49/SvgCollectionOfLabEquipment",
+      "source_url": "https://github.com/KYU49/SvgCollectionOfLabEquipment",
+      "license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "author": "KYU49",
+      "categories": [
+        "lab_equipment"
+      ],
+      "extensions": [
+        "svg"
+      ],
+      "scope": "medical_and_biomedical_illustrations",
+      "rights_notes": "CC BY 4.0. The author additionally waives credit for specified scientific uses; this library still retains credit. Component/state files are variants, not independent equipment counts.",
+      "verified_at": "2026-11-06",
+      "path_prefixes": [
+        "svg/"
+      ],
+      "exclude_regex": "(?:^|/)Summary\\.svg$",
+      "content_types": [
+        "illustration",
+        "diagram"
+      ],
+      "style_notes": "Technical illustrations of chemical and biochemical apparatus, including components and open/closed/full states.",
+      "evidence_urls": [
+        "https://github.com/KYU49/SvgCollectionOfLabEquipment/blob/main/README.md"
+      ]
+    },
+    {
+      "source_id": "open-pain",
+      "name": "Open Pain Illustration",
+      "enabled": true,
+      "status": "configured",
+      "primary": true,
+      "adapter": "github_tree",
+      "repository": "DigitalHealthZurich/open-pain-illustration",
+      "source_url": "https://github.com/DigitalHealthZurich/open-pain-illustration",
+      "license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "author": "Yanick X. Lukic et al.",
+      "categories": [
+        "people",
+        "tissues_vessels"
+      ],
+      "extensions": [
+        "svg"
+      ],
+      "scope": "medical_and_biomedical_illustrations",
+      "rights_notes": "Collect illustrations only. Keep paper citation and CC BY 4.0 attribution; SNOMED mappings/software are outside this artwork import.",
+      "verified_at": "2026-11-06",
+      "path_prefixes": [
+        "illustration/"
+      ],
+      "content_types": [
+        "illustration",
+        "diagram"
+      ],
+      "style_notes": "Anterior/posterior anatomical body illustrations and region-colored variants for pain-location communication.",
+      "evidence_urls": [
+        "https://github.com/DigitalHealthZurich/open-pain-illustration/blob/main/README.md"
+      ]
+    },
+    {
+      "source_id": "nih-bioart",
+      "name": "NIH BioArt Source",
+      "enabled": false,
+      "status": "planned_adapter",
+      "primary": true,
+      "adapter": null,
+      "repository": null,
+      "source_url": "https://bioart.niaid.nih.gov/",
+      "license": "per-item",
+      "license_url": null,
+      "author": null,
+      "categories": [],
+      "extensions": [
+        "svg",
+        "png"
+      ],
+      "scope": "medical_and_biomedical_illustrations",
+      "rights_notes": "FAQ permits free reuse; Public Domain and attribution licenses occur. Record the exact item license and creator. Collection API and complete item retrieval still require implementation verification.",
+      "verified_at": "2026-11-06",
+      "content_types": [
+        "illustration",
+        "icon",
+        "rendered_3d"
+      ],
+      "style_notes": "Professional medical illustration with organs, animals, cells, equipment and molecular or cellular processes.",
+      "evidence_urls": [
+        "https://bioart.niaid.nih.gov/faqs"
+      ]
+    },
+    {
+      "source_id": "reactome",
+      "name": "Reactome Icon Library",
+      "enabled": false,
+      "status": "planned_adapter",
+      "primary": true,
+      "adapter": null,
+      "repository": null,
+      "source_url": "https://reactome.org/icon-lib",
+      "license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "author": "Reactome; individual designers and curators",
+      "categories": [],
+      "extensions": [
+        "svg",
+        "png"
+      ],
+      "scope": "medical_and_biomedical_illustrations",
+      "rights_notes": "Keep individual creators and Reactome credit. Official bulk SVG link returned 404 during research; do not report a successful bulk import before it actually runs.",
+      "verified_at": "2026-11-06",
+      "content_types": [
+        "illustration",
+        "diagram",
+        "icon"
+      ],
+      "style_notes": "Cellular and molecular pathway components, receptors, organelles and some organ/anatomy artwork.",
+      "evidence_urls": [
+        "https://reactome.org/license",
+        "https://reactome.org/icon-info/icons-guidelines"
+      ]
+    },
+    {
+      "source_id": "scidraw",
+      "name": "SciDraw",
+      "enabled": false,
+      "status": "planned_adapter",
+      "primary": true,
+      "adapter": null,
+      "repository": null,
+      "source_url": "https://scidraw.io/",
+      "license": "per-item",
+      "license_url": null,
+      "author": null,
+      "categories": [],
+      "extensions": [
+        "svg",
+        "png"
+      ],
+      "scope": "medical_and_biomedical_illustrations",
+      "rights_notes": "Determine each item's license, author and DOI. Do not infer one license from the whole website.",
+      "verified_at": "2026-11-06",
+      "content_types": [
+        "illustration",
+        "diagram"
+      ],
+      "style_notes": "Contributor drawings with useful animals, organs, cell types and experimental setups; quality and style vary.",
+      "evidence_urls": [
+        "https://scidraw.io/licensing"
+      ]
+    },
+    {
+      "source_id": "swissbiopics",
+      "name": "SwissBioPics",
+      "enabled": false,
+      "status": "planned_adapter",
+      "primary": true,
+      "adapter": null,
+      "repository": null,
+      "source_url": "https://www.swissbiopics.org/",
+      "license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "author": "SwissBioPics / Swiss-Prot group, SIB Swiss Institute of Bioinformatics",
+      "categories": [
+        "cells",
+        "organelles"
+      ],
+      "extensions": [
+        "svg",
+        "png"
+      ],
+      "scope": "medical_and_biomedical_illustrations",
+      "rights_notes": "Official help permits copying, redistribution and commercial use with attribution. Use the documented API; item-level scientific fit still needs review.",
+      "verified_at": "2026-11-06",
+      "content_types": [
+        "diagram",
+        "illustration"
+      ],
+      "style_notes": "Biological cell drawings with named subcellular locations and organism-aware structure.",
+      "evidence_urls": [
+        "https://www.swissbiopics.org/help"
+      ]
+    },
+    {
+      "source_id": "togo",
+      "name": "DBCLS Togo Picture Gallery",
+      "enabled": false,
+      "status": "planned_adapter",
+      "primary": true,
+      "adapter": null,
+      "repository": null,
+      "source_url": "https://dbarchive.biosciencedbc.jp/data/togo-pic/20180629/README_e.html",
+      "license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "author": "DBCLS",
+      "categories": [],
+      "extensions": [
+        "svg",
+        "png"
+      ],
+      "scope": "medical_and_biomedical_illustrations",
+      "rights_notes": "Official 2018 archive explicitly permits full/partial acquisition, redistribution and derivative databases. Required credit: Togo Picture Gallery © DBCLS licensed under CC Attribution 4.0 International. Deduplicate overlap with Bioicons.",
+      "verified_at": "2026-11-06",
+      "content_types": [
+        "illustration",
+        "diagram",
+        "icon"
+      ],
+      "style_notes": "Life-science organism, anatomy and apparatus artwork with English/Japanese titles and taxonomy metadata.",
+      "evidence_urls": [
+        "https://dbarchive.biosciencedbc.jp/data/togo-pic/20180629/README_e.html"
+      ]
+    },
+    {
+      "source_id": "biocartoon",
+      "name": "BioCartoon",
+      "enabled": false,
+      "status": "blocked_access",
+      "primary": true,
+      "adapter": null,
+      "repository": "josephrich98/biocartoon",
+      "source_url": "https://www.biocartoon.com/",
+      "license": "per-item",
+      "license_url": null,
+      "author": null,
+      "categories": [],
+      "extensions": [
+        "svg",
+        "png"
+      ],
+      "scope": "medical_and_biomedical_illustrations",
+      "rights_notes": "The catalog URL returned HTTP 403 after an earlier read. Do not retry or route around the blocked catalog. Database/CLI code BSD-2-Clause does not relicense constituent images. Existing source research can guide independent original-source adapters.",
+      "verified_at": "2026-11-06",
+      "content_types": [
+        "illustration",
+        "diagram",
+        "icon"
+      ],
+      "style_notes": "Multi-source scientific artwork aggregator plus own and contributor drawings; both genuine vectors and raster images are present.",
+      "blocked_urls": [
+        "https://assets.biocartoon.com/catalog/assets.sqlite.gz"
+      ],
+      "evidence_urls": [
+        "https://github.com/josephrich98/biocartoon",
+        "https://www.biocartoon.com/"
+      ]
+    },
+    {
+      "source_id": "servier",
+      "name": "Servier Medical Art",
+      "enabled": false,
+      "status": "rights_review",
+      "primary": true,
+      "adapter": null,
+      "repository": null,
+      "source_url": "https://smart.servier.com/",
+      "license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "author": "Servier Medical Art",
+      "categories": [],
+      "extensions": [
+        "svg",
+        "png"
+      ],
+      "scope": "medical_and_biomedical_illustrations",
+      "rights_notes": "Keep on hold: official conditions on automated collection and standalone image-library distribution require source-specific resolution. Another site's mirror is not proof this use is cleared.",
+      "verified_at": "2026-11-06",
+      "content_types": [
+        "illustration",
+        "diagram"
+      ],
+      "style_notes": "Consistent medical and anatomical illustrations, including editable PowerPoint artwork and PNG.",
+      "evidence_urls": [
+        "https://smart.servier.com/using-smart-images-what-you-can-do/",
+        "https://smart.servier.com/terms-of-use/"
+      ]
+    },
+    {
+      "source_id": "ian",
+      "name": "IAN/UMCES Symbols",
+      "enabled": false,
+      "status": "planned_adapter",
+      "primary": false,
+      "adapter": null,
+      "repository": null,
+      "source_url": "https://ian.umces.edu/media-library/symbols/",
+      "license": "CC-BY-SA-4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "author": "IAN/UMCES and individual artists",
+      "categories": [],
+      "extensions": [
+        "svg",
+        "png"
+      ],
+      "scope": "targeted_gaps",
+      "rights_notes": "Collect relevant illustrations only and preserve artist attribution and share-alike requirements.",
+      "verified_at": "2026-11-06",
+      "content_types": [
+        "illustration",
+        "diagram"
+      ],
+      "style_notes": "Ecology, environment, plants, animals and process artwork; useful for exposure and environmental-health topics.",
+      "evidence_urls": [
+        "https://ian.umces.edu/media-library/symbols/"
+      ]
+    },
+    {
+      "source_id": "phylopic",
+      "name": "PhyloPic",
+      "enabled": false,
+      "status": "planned_adapter",
+      "primary": false,
+      "adapter": null,
+      "repository": null,
+      "source_url": "https://www.phylopic.org/",
+      "license": "per-item",
+      "license_url": null,
+      "author": null,
+      "categories": [],
+      "extensions": [
+        "svg",
+        "png"
+      ],
+      "scope": "targeted_gaps",
+      "rights_notes": "Licenses differ by image; select redistributable items and retain artist/phylogeny provenance.",
+      "verified_at": "2026-11-06",
+      "content_types": [
+        "silhouette"
+      ],
+      "style_notes": "Taxonomically organized organism silhouettes; good for species and cohort diagrams, not anatomical detail.",
+      "evidence_urls": [
+        "https://www.phylopic.org/"
+      ]
+    },
+    {
+      "source_id": "openmoji",
+      "name": "OpenMoji",
+      "enabled": false,
+      "status": "planned_adapter",
+      "primary": false,
+      "adapter": null,
+      "repository": "hfg-gmuend/openmoji",
+      "source_url": "https://openmoji.org/",
+      "license": "CC-BY-SA-4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "author": "OpenMoji contributors",
+      "categories": [],
+      "extensions": [
+        "svg",
+        "png"
+      ],
+      "scope": "targeted_gaps",
+      "rights_notes": "Preserve item authorship, source, license and modifications; source inclusion is not item acceptance.",
+      "verified_at": "2026-11-06",
+      "content_types": [
+        "icon"
+      ],
+      "style_notes": "General pictograms; select medical, people, diet and lifestyle illustrations only.",
+      "evidence_urls": [
+        "https://github.com/hfg-gmuend/openmoji"
+      ]
+    },
+    {
+      "source_id": "commons",
+      "name": "Wikimedia Commons",
+      "enabled": false,
+      "status": "planned_adapter",
+      "primary": false,
+      "adapter": null,
+      "repository": null,
+      "source_url": "https://commons.wikimedia.org/",
+      "license": "per-item",
+      "license_url": null,
+      "author": null,
+      "categories": [],
+      "extensions": [
+        "svg",
+        "png"
+      ],
+      "scope": "targeted_gaps",
+      "rights_notes": "Inspect exact file page, original source, creator, license and derivative conditions. Photos and study data figures are outside v1.",
+      "verified_at": "2026-11-06",
+      "content_types": [
+        "illustration",
+        "diagram",
+        "icon"
+      ],
+      "style_notes": "Mixed styles and quality; targeted discovery fills specific anatomy and procedure gaps.",
+      "evidence_urls": [
+        "https://commons.wikimedia.org/wiki/Commons:Reusing_content_outside_Wikimedia"
+      ]
+    },
+    {
+      "source_id": "sciglyph",
+      "name": "SciGlyph",
+      "enabled": false,
+      "status": "planned_adapter",
+      "primary": false,
+      "adapter": null,
+      "repository": "ZengZichao/SciGlyph",
+      "source_url": "https://zengzichao.github.io/SciGlyph/",
+      "license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "author": "ZengZichao",
+      "categories": [],
+      "extensions": [
+        "svg",
+        "png"
+      ],
+      "scope": "targeted_gaps",
+      "rights_notes": "Artwork CC BY 4.0, code MIT. Mark declared AI-assisted origin and inspect scientific content. Its MCP sampleAssets implementation is not proof of complete library search.",
+      "verified_at": "2026-11-06",
+      "content_types": [
+        "illustration",
+        "diagram",
+        "icon"
+      ],
+      "style_notes": "AI-assisted and human-reviewed structured scientific SVGs with bilingual labels and multiple visual series.",
+      "evidence_urls": [
+        "https://github.com/ZengZichao/SciGlyph",
+        "https://github.com/ZengZichao/SciGlyph-MCP"
+      ]
+    }
+  ]
+}

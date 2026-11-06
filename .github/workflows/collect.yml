@@ -1,0 +1,47 @@
+name: Collect source
+on:
+  workflow_dispatch:
+    inputs:
+      source:
+        description: 'Source ID from data/sources.json'
+        required: true
+        type: string
+      limit:
+        description: 'Maximum logical records (0 = all eligible records)'
+        default: '20'
+        type: string
+      offset:
+        description: 'Discovery offset for a bounded continuation'
+        default: '0'
+        type: string
+      release_tag:
+        description: 'Cloud collection release tag'
+        default: 'collection-20261106'
+        type: string
+permissions:
+  contents: write
+concurrency:
+  group: collect-${{ inputs.source }}
+  cancel-in-progress: false
+jobs:
+  collect:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install -e .
+      - name: Collect, inspect and archive in the cloud
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+          GH_TOKEN: ${{ github.token }}
+          SOURCE_ID: ${{ inputs.source }}
+          RECORD_LIMIT: ${{ inputs.limit }}
+          RECORD_OFFSET: ${{ inputs.offset }}
+          COLLECTION_TAG: ${{ inputs.release_tag }}
+        run: >-
+          python scripts/collect.py --source "$SOURCE_ID"
+          --limit "$RECORD_LIMIT" --offset "$RECORD_OFFSET"
+          --release-tag "$COLLECTION_TAG" --publish
