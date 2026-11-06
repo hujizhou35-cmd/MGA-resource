@@ -1,0 +1,88 @@
+{
+  "schema_version": 1,
+  "status": "prepared_not_executed_waiting_final_appearance_catalog",
+  "prepared_at": "2026-11-06T20:10:51.562579+00:00",
+  "basis_catalog_sha256": "3e12babad36819c593147f5f2f98929904590ab2171659a898db6900530381b7",
+  "benchmark_path": "data/benchmark.json",
+  "benchmark_sha256": "ce0282afeb4afbcee8fdef1c6f937844ef569cabf16ba7909e22bf86b1096e92",
+  "search_core_sha256": "8120b1ff2b47b83605c0cc5495b2aa7f12c59b740f7a44f0db376a28808e9049",
+  "search_vocabulary_sha256": "2e245b34636c39228fc9f9b0ae6342cdc6bc4529a25fa5c1c2d89b81940b3a24",
+  "ranking_version": "shared-search-3.4.1",
+  "search_index_version": 9,
+  "expected_appearance_analysis_version": "appearance-1.1.0",
+  "freeze_requirements": [
+    "Root identifies final catalog/report pair after appearance 1.1 processing.",
+    "Catalog SHA equals assembly summary catalog_sha256; reused SQLite catalog_version must equal it.",
+    "Original benchmark remains byte-identical; unresolved scope questions are disclosed, not rewritten.",
+    "Use a fresh prefix-named output directory; retain historical diagnostic versions."
+  ],
+  "commands": [
+    {
+      "program": ".venv/Scripts/python.exe",
+      "arguments": [
+        "scripts/diagnose_search.py",
+        "--catalog",
+        "<FINAL_CATALOG_JSONL>",
+        "--benchmark",
+        "data/benchmark.json",
+        "--output",
+        "build/search-final/<FINAL_PREFIX>/diagnostic"
+      ]
+    },
+    {
+      "program": ".venv/Scripts/python.exe",
+      "arguments": [
+        "scripts/validate_search_behavior.py",
+        "--catalog",
+        "<FINAL_CATALOG_JSONL>",
+        "--assembly-report",
+        "<FINAL_ASSEMBLY_REPORT>",
+        "--output",
+        "build/search-final/<FINAL_PREFIX>/behavior",
+        "--index",
+        "build/search-final/<FINAL_PREFIX>/diagnostic/catalog.sqlite",
+        "--rich-query",
+        "mouse",
+        "--scarce-query",
+        "Naegleria gruberi"
+      ]
+    }
+  ],
+  "functional_case_ids": [
+    "variant_before_family",
+    "hard_vs_preference",
+    "unknown_is_not_match",
+    "stable_replay",
+    "pagination_no_duplicate",
+    "pins_stable",
+    "adopted_history_only",
+    "modes_scientific_constraints",
+    "no_curated_boost"
+  ],
+  "seed_plan": {
+    "rich": [
+      "validation-rich-1",
+      "validation-rich-2",
+      "validation-rich-3",
+      "validation-rich-4",
+      "validation-rich-5"
+    ],
+    "scarce": [
+      "validation-scarce-1",
+      "validation-scarce-2",
+      "validation-scarce-3",
+      "validation-scarce-4",
+      "validation-scarce-5"
+    ],
+    "benchmark": "diagnostic-fixed-project",
+    "pagination": "behavior-pages"
+  },
+  "review_protocol": [
+    "Nonempty top10 is candidate availability, not relevance acceptance.",
+    "Confirm eligible mouse pool is the requested primary whole-animal object; file scientific unknown remains non-match.",
+    "Final adopted families must come from an actual identified reviewer decision after seeing exact previews; no top-ranked/autodownload-as-adoption rule.",
+    "Label all example projects validation_exercise; do not claim real user research adoption.",
+    "Attach final reviewer adoption ledger with exact catalog SHA and evidence URI/SHA, then rerun behavior tool with --ledger <LEDGER_PATH>.",
+    "Merge exact catalog-bound real appearance cases separately; this script never pretends its empty appearance_cases passed."
+  ]
+}

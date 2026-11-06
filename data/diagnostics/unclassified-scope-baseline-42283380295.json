@@ -1,0 +1,5299 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-11-06T20:10:51.363663+00:00",
+  "reviewer": "Codex registry_acceptance: read-only source metadata and adapter inspection",
+  "status": "diagnostic_only_no_labels_modified",
+  "bindings": {
+    "catalog_path": "build/final-scope-baseline/assembly-42283380295-1.catalog.jsonl",
+    "catalog_sha256": "3e12babad36819c593147f5f2f98929904590ab2171659a898db6900530381b7",
+    "summary_sha256": "2d887d714e5939d2d1f673928700ab8ab427f172391fb5588244e7a5dd98bdcb",
+    "catalog_module_sha256": "b1f58be6924e9a05f923c7f6aa20a5c57571c4ad8ad148880112be5d7c6a46f9",
+    "source_adapter_sha256": "b62e81a7641b74392df98997a125604638da12d79917776972d40385270a58e5",
+    "web_source_adapter_sha256": "9f773dd13b1b15f56f9f10df664b90d19e4b23f7a9267a853e1cba8b0a51d9a7"
+  },
+  "counts": {
+    "families": 7839,
+    "unclassified_families": 2358,
+    "unclassified_percentage": 30.08,
+    "unclassified_with_empty_categories": 2358,
+    "primary_source_counts_sum": 2358,
+    "source_presence_counts_are_not_additive": true
+  },
+  "sources": {
+    "bioicons": {
+      "unclassified_primary_families": 821,
+      "unclassified_families_with_source_as_primary_or_variant": 821,
+      "upstream_category_counts": [
+        {
+          "value": "Human_physiology",
+          "count": 276
+        },
+        {
+          "value": "General_items",
+          "count": 175
+        },
+        {
+          "value": "Blood_Immunology",
+          "count": 131
+        },
+        {
+          "value": "Plants_Algae",
+          "count": 95
+        },
+        {
+          "value": "Parasites",
+          "count": 64
+        },
+        {
+          "value": "Safety_symbols",
+          "count": 43
+        },
+        {
+          "value": "Oncology",
+          "count": 20
+        },
+        {
+          "value": "Imaging",
+          "count": 13
+        },
+        {
+          "value": "Nanotechnology",
+          "count": 4
+        }
+      ],
+      "most_frequent_source_tags": [
+        {
+          "tag": "Human physiology",
+          "count": 276
+        },
+        {
+          "tag": "General items",
+          "count": 175
+        },
+        {
+          "tag": "Blood Immunology",
+          "count": 131
+        },
+        {
+          "tag": "Plants Algae",
+          "count": 95
+        },
+        {
+          "tag": "Parasites",
+          "count": 64
+        },
+        {
+          "tag": "Safety symbols",
+          "count": 43
+        },
+        {
+          "tag": "Organisms",
+          "count": 25
+        },
+        {
+          "tag": "Botany",
+          "count": 22
+        },
+        {
+          "tag": "Oncology",
+          "count": 20
+        },
+        {
+          "tag": "Physcomitrella patens",
+          "count": 14
+        },
+        {
+          "tag": "Bryopsida",
+          "count": 14
+        },
+        {
+          "tag": "Funariales",
+          "count": 14
+        },
+        {
+          "tag": "Imaging",
+          "count": 13
+        },
+        {
+          "tag": "Plant taxonomy",
+          "count": 12
+        },
+        {
+          "tag": "Plant physiology",
+          "count": 11
+        },
+        {
+          "tag": "Plant morphology",
+          "count": 10
+        },
+        {
+          "tag": "Plant developmental biology",
+          "count": 10
+        },
+        {
+          "tag": "Developmental biology",
+          "count": 10
+        },
+        {
+          "tag": "Taxonomy",
+          "count": 10
+        },
+        {
+          "tag": "Angiosperms (Magnoliopsida)",
+          "count": 7
+        },
+        {
+          "tag": "Dioscorea tokoro",
+          "count": 5
+        },
+        {
+          "tag": "Dioscoreaceae",
+          "count": 5
+        },
+        {
+          "tag": "Nanotechnology",
+          "count": 4
+        },
+        {
+          "tag": "Arthropods",
+          "count": 3
+        },
+        {
+          "tag": "Entomology",
+          "count": 3
+        }
+      ],
+      "representative_records": [
+        {
+          "id": "bioicons-0056b2d6a8292850738f",
+          "source_id": "cc-by-3.0/Human_physiology/Servier/drug-tablet-3.svg",
+          "title": "drug tablet 3",
+          "source_url": "https://github.com/duerrsimon/bioicons/blob/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-3.0/Human_physiology/Servier/drug-tablet-3.svg",
+          "upstream_category": "Human_physiology",
+          "tags": [
+            "Human physiology"
+          ],
+          "scientific_name": null,
+          "taxonomy_id": null,
+          "metadata_source": null,
+          "upstream_revision": "d29e766ea7580b8063c4f47b29e872db40a4d979"
+        },
+        {
+          "id": "bioicons-00fb631609853df10acf",
+          "source_id": "cc-by-3.0/Parasites/Servier/echinococcus_granulosus-adult.svg",
+          "title": "echinococcus granulosus adult",
+          "source_url": "https://github.com/duerrsimon/bioicons/blob/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-3.0/Parasites/Servier/echinococcus_granulosus-adult.svg",
+          "upstream_category": "Parasites",
+          "tags": [
+            "Parasites"
+          ],
+          "scientific_name": null,
+          "taxonomy_id": null,
+          "metadata_source": null,
+          "upstream_revision": "d29e766ea7580b8063c4f47b29e872db40a4d979"
+        },
+        {
+          "id": "bioicons-019948e82d6a17d00e88",
+          "source_id": "cc-by-4.0/Blood_Immunology/Helicase_11/MHC2.svg",
+          "title": "MHC2",
+          "source_url": "https://github.com/duerrsimon/bioicons/blob/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-4.0/Blood_Immunology/Helicase_11/MHC2.svg",
+          "upstream_category": "Blood_Immunology",
+          "tags": [
+            "Blood Immunology"
+          ],
+          "scientific_name": null,
+          "taxonomy_id": null,
+          "metadata_source": null,
+          "upstream_revision": "d29e766ea7580b8063c4f47b29e872db40a4d979"
+        },
+        {
+          "id": "bioicons-02957b1d620dc5302a9c",
+          "source_id": "cc-by-3.0/General_items/Servier/arrow-zigzag-up.svg",
+          "title": "arrow zigzag up",
+          "source_url": "https://github.com/duerrsimon/bioicons/blob/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-3.0/General_items/Servier/arrow-zigzag-up.svg",
+          "upstream_category": "General_items",
+          "tags": [
+            "General items"
+          ],
+          "scientific_name": null,
+          "taxonomy_id": null,
+          "metadata_source": null,
+          "upstream_revision": "d29e766ea7580b8063c4f47b29e872db40a4d979"
+        },
+        {
+          "id": "bioicons-02be9133fd43e9ad8746",
+          "source_id": "cc-by-3.0/Human_physiology/Servier/excess-weight-male-naked.svg",
+          "title": "excess weight male naked",
+          "source_url": "https://github.com/duerrsimon/bioicons/blob/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-3.0/Human_physiology/Servier/excess-weight-male-naked.svg",
+          "upstream_category": "Human_physiology",
+          "tags": [
+            "Human physiology"
+          ],
+          "scientific_name": null,
+          "taxonomy_id": null,
+          "metadata_source": null,
+          "upstream_revision": "d29e766ea7580b8063c4f47b29e872db40a4d979"
+        },
+        {
+          "id": "bioicons-04113e5ada86a5ffa262",
+          "source_id": "cc-0/Imaging/Spectral-Instruments/spectral_lago.svg",
+          "title": "spectral lago",
+          "source_url": "https://github.com/duerrsimon/bioicons/blob/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-0/Imaging/Spectral-Instruments/spectral_lago.svg",
+          "upstream_category": "Imaging",
+          "tags": [
+            "Imaging"
+          ],
+          "scientific_name": null,
+          "taxonomy_id": null,
+          "metadata_source": null,
+          "upstream_revision": "d29e766ea7580b8063c4f47b29e872db40a4d979"
+        }
+      ]
+    },
+    "togo": {
+      "unclassified_primary_families": 676,
+      "unclassified_families_with_source_as_primary_or_variant": 701,
+      "upstream_category_counts": [
+        {
+          "value": null,
+          "count": 676
+        }
+      ],
+      "most_frequent_source_tags": [
+        {
+          "tag": "Organisms",
+          "count": 525
+        },
+        {
+          "tag": "Arthropods",
+          "count": 163
+        },
+        {
+          "tag": "Entomology",
+          "count": 151
+        },
+        {
+          "tag": "Insects",
+          "count": 150
+        },
+        {
+          "tag": "Icon",
+          "count": 150
+        },
+        {
+          "tag": "Botany",
+          "count": 146
+        },
+        {
+          "tag": "Insecta",
+          "count": 143
+        },
+        {
+          "tag": "Vertebrates",
+          "count": 139
+        },
+        {
+          "tag": "Mammalia",
+          "count": 139
+        },
+        {
+          "tag": "Angiosperms (Magnoliopsida)",
+          "count": 137
+        },
+        {
+          "tag": "Biology",
+          "count": 120
+        },
+        {
+          "tag": "Mammals",
+          "count": 94
+        },
+        {
+          "tag": "Insect physiology",
+          "count": 92
+        },
+        {
+          "tag": "Agriculture",
+          "count": 92
+        },
+        {
+          "tag": "Crop science",
+          "count": 90
+        },
+        {
+          "tag": "Plant taxonomy",
+          "count": 84
+        },
+        {
+          "tag": "Lepidoptera",
+          "count": 72
+        },
+        {
+          "tag": "Primates",
+          "count": 60
+        },
+        {
+          "tag": "Organs",
+          "count": 59
+        },
+        {
+          "tag": "Evolutionary biology",
+          "count": 59
+        },
+        {
+          "tag": "Medicine",
+          "count": 58
+        },
+        {
+          "tag": "Poaceae",
+          "count": 58
+        },
+        {
+          "tag": "Anatomy",
+          "count": 51
+        },
+        {
+          "tag": "Taxonomy",
+          "count": 48
+        },
+        {
+          "tag": "Comparative anatomy",
+          "count": 47
+        }
+      ],
+      "representative_records": [
+        {
+          "id": "togo-0077a4c481343edefa03",
+          "source_id": "632",
+          "title": "Orangutan",
+          "source_url": "https://doi.org/10.7875/togopic.2020.45",
+          "upstream_category": null,
+          "tags": [
+            "Organisms",
+            "Mammals",
+            "Vertebrates",
+            "Primatology",
+            "Mammalia",
+            "Primates",
+            "Pongo pygmaeus"
+          ],
+          "scientific_name": "Pongo pygmaeus",
+          "taxonomy_id": "9600",
+          "metadata_source": "https://togotv-api.dbcls.jp/api/entries",
+          "upstream_revision": "2020-03-01"
+        },
+        {
+          "id": "togo-00b97d950d9513ab733f",
+          "source_id": "1206",
+          "title": "Plain silkworm",
+          "source_url": "https://doi.org/10.7875/togopic.2022.242",
+          "upstream_category": null,
+          "tags": [
+            "Organisms",
+            "Entomology",
+            "Insects",
+            "Arthropods",
+            "Sericulture",
+            "Insecta",
+            "Lepidoptera",
+            "Bombyx mori"
+          ],
+          "scientific_name": "Bombyx mori",
+          "taxonomy_id": "7091",
+          "metadata_source": "https://togotv-api.dbcls.jp/api/entries",
+          "upstream_revision": "2022-06-01"
+        },
+        {
+          "id": "togo-010082ac06f6b4963ae7",
+          "source_id": "1825",
+          "title": "dissected oriental armyworm larva",
+          "source_url": "https://doi.org/10.7875/togopic.2023.261",
+          "upstream_category": null,
+          "tags": [
+            "Organisms",
+            "Entomology",
+            "Insects",
+            "Arthropods",
+            "Plant protection",
+            "Insecta",
+            "Lepidoptera",
+            "Mythimna separata"
+          ],
+          "scientific_name": "Mythimna separata",
+          "taxonomy_id": "271217",
+          "metadata_source": "https://togotv-api.dbcls.jp/api/entries",
+          "upstream_revision": "2023-12-01"
+        },
+        {
+          "id": "togo-0114752b8bc278ecc202",
+          "source_id": "584",
+          "title": "Donkey",
+          "source_url": "https://doi.org/10.7875/togopic.2019.32",
+          "upstream_category": null,
+          "tags": [
+            "Organisms",
+            "Mammals",
+            "Vertebrates",
+            "Veterinary medicine",
+            "Mammalia",
+            "Perissodactyla",
+            "Equus asinus"
+          ],
+          "scientific_name": "Equus asinus",
+          "taxonomy_id": "9793",
+          "metadata_source": "https://togotv-api.dbcls.jp/api/entries",
+          "upstream_revision": "2019-10-01"
+        },
+        {
+          "id": "togo-012dc9694ff33104fcff",
+          "source_id": "1136",
+          "title": "Extracellular stress",
+          "source_url": "https://doi.org/10.7875/togopic.2022.172",
+          "upstream_category": null,
+          "tags": [
+            "Medicine",
+            "Psychiatry",
+            "Simple",
+            "Abstract",
+            "Life science",
+            "Biology"
+          ],
+          "scientific_name": null,
+          "taxonomy_id": null,
+          "metadata_source": "https://togotv-api.dbcls.jp/api/entries",
+          "upstream_revision": "2022-05-01"
+        },
+        {
+          "id": "togo-01407df1536bcd8120b1",
+          "source_id": "2170",
+          "title": "Walking Stick",
+          "source_url": "https://doi.org/10.7875/togopic.2025.059",
+          "upstream_category": null,
+          "tags": [
+            "Organisms",
+            "Entomology",
+            "Insects",
+            "Arthropods",
+            "Insect physiology",
+            "Insecta",
+            "Phasmatodea"
+          ],
+          "scientific_name": "Phasmatodea",
+          "taxonomy_id": "7020",
+          "metadata_source": "https://togotv-api.dbcls.jp/api/entries",
+          "upstream_revision": "2025-03-01"
+        }
+      ]
+    },
+    "healthicons": {
+      "unclassified_primary_families": 373,
+      "unclassified_families_with_source_as_primary_or_variant": 373,
+      "upstream_category_counts": [
+        {
+          "value": "symbols",
+          "count": 102
+        },
+        {
+          "value": "typography",
+          "count": 47
+        },
+        {
+          "value": "devices",
+          "count": 41
+        },
+        {
+          "value": "specialties",
+          "count": 24
+        },
+        {
+          "value": "emotions",
+          "count": 24
+        },
+        {
+          "value": "objects",
+          "count": 22
+        },
+        {
+          "value": "nutrition",
+          "count": 18
+        },
+        {
+          "value": "places",
+          "count": 16
+        },
+        {
+          "value": "shapes",
+          "count": 16
+        },
+        {
+          "value": "contraceptives",
+          "count": 14
+        },
+        {
+          "value": "medications",
+          "count": 14
+        },
+        {
+          "value": "ppe",
+          "count": 11
+        },
+        {
+          "value": "vehicles",
+          "count": 10
+        },
+        {
+          "value": "conditions",
+          "count": 9
+        },
+        {
+          "value": "exercise",
+          "count": 3
+        },
+        {
+          "value": "zoonoses",
+          "count": 2
+        }
+      ],
+      "most_frequent_source_tags": [
+        {
+          "tag": "filled",
+          "count": 373
+        },
+        {
+          "tag": "outline",
+          "count": 373
+        },
+        {
+          "tag": "filled-24px",
+          "count": 121
+        },
+        {
+          "tag": "outline-24px",
+          "count": 121
+        },
+        {
+          "tag": "symbols",
+          "count": 102
+        },
+        {
+          "tag": "typography",
+          "count": 47
+        },
+        {
+          "tag": "devices",
+          "count": 41
+        },
+        {
+          "tag": "Letter",
+          "count": 31
+        },
+        {
+          "tag": "Face",
+          "count": 25
+        },
+        {
+          "tag": "specialties",
+          "count": 24
+        },
+        {
+          "tag": "emotions",
+          "count": 24
+        },
+        {
+          "tag": "Emotion",
+          "count": 24
+        },
+        {
+          "tag": "Emoticon",
+          "count": 24
+        },
+        {
+          "tag": "Emoji",
+          "count": 24
+        },
+        {
+          "tag": "Department",
+          "count": 23
+        },
+        {
+          "tag": "objects",
+          "count": 22
+        },
+        {
+          "tag": "Pharmacy",
+          "count": 21
+        },
+        {
+          "tag": "Food",
+          "count": 18
+        },
+        {
+          "tag": "nutrition",
+          "count": 18
+        },
+        {
+          "tag": "Shape",
+          "count": 17
+        },
+        {
+          "tag": "Medication",
+          "count": 17
+        },
+        {
+          "tag": "places",
+          "count": 16
+        },
+        {
+          "tag": "shapes",
+          "count": 16
+        },
+        {
+          "tag": "Nutrition",
+          "count": 15
+        },
+        {
+          "tag": "Speciality",
+          "count": 15
+        }
+      ],
+      "representative_records": [
+        {
+          "id": "healthicons-0059f30d62d568c06030",
+          "source_id": "public/icons/svg/filled/contraceptives/iud.svg",
+          "title": "Intrauterine Device",
+          "source_url": "https://github.com/resolvetosavelives/healthicons/blob/2080c1b40e4829f2f4217e03bc22908b4e402f6b/public/icons/svg/filled/contraceptives/iud.svg",
+          "upstream_category": "contraceptives",
+          "tags": [
+            "Contraceptive",
+            "Family Planning",
+            "IUD",
+            "Intrauterine Device",
+            "filled",
+            "contraceptives",
+            "outline",
+            "filled-24px",
+            "outline-24px"
+          ],
+          "scientific_name": null,
+          "taxonomy_id": null,
+          "metadata_source": null,
+          "upstream_revision": "2080c1b40e4829f2f4217e03bc22908b4e402f6b"
+        },
+        {
+          "id": "healthicons-008b14b74320030483d6",
+          "source_id": "public/icons/svg/outline/symbols/yes.svg",
+          "title": "Checkmark",
+          "source_url": "https://github.com/resolvetosavelives/healthicons/blob/2080c1b40e4829f2f4217e03bc22908b4e402f6b/public/icons/svg/outline/symbols/yes.svg",
+          "upstream_category": "symbols",
+          "tags": [
+            "Approved",
+            "Circle",
+            "Success",
+            "Yes",
+            "outline",
+            "symbols",
+            "filled"
+          ],
+          "scientific_name": null,
+          "taxonomy_id": null,
+          "metadata_source": null,
+          "upstream_revision": "2080c1b40e4829f2f4217e03bc22908b4e402f6b"
+        },
+        {
+          "id": "healthicons-00d1087cde1b035ba45f",
+          "source_id": "public/icons/svg/filled/symbols/loinc.svg",
+          "title": "LOINC",
+          "source_url": "https://github.com/resolvetosavelives/healthicons/blob/2080c1b40e4829f2f4217e03bc22908b4e402f6b/public/icons/svg/filled/symbols/loinc.svg",
+          "upstream_category": "symbols",
+          "tags": [
+            "Classification",
+            "Code",
+            "Informatics",
+            "Lab",
+            "Standard",
+            "Terminology",
+            "filled",
+            "symbols",
+            "outline"
+          ],
+          "scientific_name": null,
+          "taxonomy_id": null,
+          "metadata_source": null,
+          "upstream_revision": "2080c1b40e4829f2f4217e03bc22908b4e402f6b"
+        },
+        {
+          "id": "healthicons-012e9f90a80a103a9e05",
+          "source_id": "public/icons/svg/outline/symbols/cholera.svg",
+          "title": "Cholera",
+          "source_url": "https://github.com/resolvetosavelives/healthicons/blob/2080c1b40e4829f2f4217e03bc22908b4e402f6b/public/icons/svg/outline/symbols/cholera.svg",
+          "upstream_category": "symbols",
+          "tags": [
+            "Disease",
+            "Tap",
+            "Water",
+            "Water Borne Disease",
+            "outline",
+            "symbols",
+            "filled"
+          ],
+          "scientific_name": null,
+          "taxonomy_id": null,
+          "metadata_source": null,
+          "upstream_revision": "2080c1b40e4829f2f4217e03bc22908b4e402f6b"
+        },
+        {
+          "id": "healthicons-01b4465b454d1897abca",
+          "source_id": "public/icons/svg/outline/symbols/low-income-level.svg",
+          "title": "Low income",
+          "source_url": "https://github.com/resolvetosavelives/healthicons/blob/2080c1b40e4829f2f4217e03bc22908b4e402f6b/public/icons/svg/outline/symbols/low-income-level.svg",
+          "upstream_category": "symbols",
+          "tags": [
+            "Arrow",
+            "Finance",
+            "Financial",
+            "Income",
+            "Low income",
+            "Money",
+            "Poor",
+            "Poverty",
+            "outline",
+            "symbols",
+            "filled-24px",
+            "filled",
+            "outline-24px"
+          ],
+          "scientific_name": null,
+          "taxonomy_id": null,
+          "metadata_source": null,
+          "upstream_revision": "2080c1b40e4829f2f4217e03bc22908b4e402f6b"
+        },
+        {
+          "id": "healthicons-030d78931d09d1b2f305",
+          "source_id": "public/icons/svg/outline-24px/contraceptives/female-condom.svg",
+          "title": "Female Condom",
+          "source_url": "https://github.com/resolvetosavelives/healthicons/blob/2080c1b40e4829f2f4217e03bc22908b4e402f6b/public/icons/svg/outline-24px/contraceptives/female-condom.svg",
+          "upstream_category": "contraceptives",
+          "tags": [
+            "Condom",
+            "Contraceptive",
+            "Family Planning",
+            "outline-24px",
+            "contraceptives",
+            "outline",
+            "filled-24px",
+            "filled"
+          ],
+          "scientific_name": null,
+          "taxonomy_id": null,
+          "metadata_source": null,
+          "upstream_revision": "2080c1b40e4829f2f4217e03bc22908b4e402f6b"
+        }
+      ]
+    },
+    "nih-bioart": {
+      "unclassified_primary_families": 180,
+      "unclassified_families_with_source_as_primary_or_variant": 180,
+      "upstream_category_counts": [
+        {
+          "value": [
+            "Bioart Category",
+            "Image Type"
+          ],
+          "count": 52
+        },
+        {
+          "value": [
+            "Bioart Category",
+            "Arthropods",
+            "Arthropods",
+            "Image Type"
+          ],
+          "count": 14
+        },
+        {
+          "value": [
+            "Bioart Category",
+            "Animals",
+            "Image Type"
+          ],
+          "count": 13
+        },
+        {
+          "value": [
+            "Image Type",
+            "Bioart Category"
+          ],
+          "count": 8
+        },
+        {
+          "value": [
+            "Bioart Category",
+            "Image Style",
+            "Image Type"
+          ],
+          "count": 7
+        },
+        {
+          "value": [
+            "Bioart Category"
+          ],
+          "count": 6
+        },
+        {
+          "value": [
+            "Bioart Category",
+            "Anatomy",
+            "Arthropods",
+            "Image Type",
+            "Arthropods"
+          ],
+          "count": 6
+        },
+        {
+          "value": [
+            "Bioart Category",
+            "Arthropods",
+            "Image Type",
+            "Arthropods",
+            "Arthropods"
+          ],
+          "count": 6
+        },
+        {
+          "value": [
+            "Image Type",
+            "Arthropods",
+            "Bioart Category",
+            "Arthropods"
+          ],
+          "count": 4
+        },
+        {
+          "value": [
+            "Bioart Category",
+            "Arthropods",
+            "Image Type"
+          ],
+          "count": 4
+        },
+        {
+          "value": [
+            "Bioart Category",
+            "Bioart Category",
+            "Image Type"
+          ],
+          "count": 3
+        },
+        {
+          "value": [
+            "Bioart Category",
+            "Bioart Category",
+            "Arthropods",
+            "Arthropods"
+          ],
+          "count": 3
+        },
+        {
+          "value": [
+            "Bioart Category",
+            "Image Style",
+            "Image Type",
+            "Animals",
+            "Animals"
+          ],
+          "count": 3
+        },
+        {
+          "value": [
+            "Bioart Category",
+            "Animals",
+            "Animals",
+            "Image Type"
+          ],
+          "count": 2
+        },
+        {
+          "value": [
+            "Animals",
+            "Bioart Category",
+            "Animals",
+            "Image Type"
+          ],
+          "count": 2
+        },
+        {
+          "value": [
+            "Bioart Category",
+            "Image Style",
+            "Image Type",
+            "Animals"
+          ],
+          "count": 2
+        },
+        {
+          "value": [
+            "Bioart Category",
+            "Animals",
+            "Animals",
+            "Scientific Disciplines And Research Areas",
+            "Image Type"
+          ],
+          "count": 2
+        },
+        {
+          "value": [
+            "Bioart Category",
+            "Image Type",
+            "Animals",
+            "Animals"
+          ],
+          "count": 2
+        },
+        {
+          "value": [
+            "Bioart Category",
+            "Animals",
+            "Animals",
+            "Animals",
+            "Animals",
+            "Image Type"
+          ],
+          "count": 2
+        },
+        {
+          "value": [
+            "Bioart Category",
+            "Bioart Category"
+          ],
+          "count": 2
+        },
+        {
+          "value": [
+            "Bioart Category",
+            "Image Style",
+            "Image Type",
+            "Arthropods",
+            "Arthropods"
+          ],
+          "count": 2
+        },
+        {
+          "value": [
+            "Image Type",
+            "Bioart Category",
+            "Animals"
+          ],
+          "count": 1
+        },
+        {
+          "value": [
+            "Image Type",
+            "Bioart Category",
+            "Bioart Category"
+          ],
+          "count": 1
+        },
+        {
+          "value": [
+            "Image Style",
+            "Bioart Category",
+            "Animals",
+            "Animals",
+            "Animals",
+            "Image Type"
+          ],
+          "count": 1
+        },
+        {
+          "value": [
+            "Image Style",
+            "Bioart Category",
+            "Anatomy",
+            "Arthropods",
+            "Age (Human)",
+            "Image Type",
+            "Scientific Disciplines And Research Areas",
+            "Anatomy",
+            "Arthropods"
+          ],
+          "count": 1
+        },
+        {
+          "value": [
+            "Image Type",
+            "Bioart Category",
+            "Animals",
+            "Animals"
+          ],
+          "count": 1
+        },
+        {
+          "value": [
+            "Bioart Category",
+            "Image Style",
+            "Animals",
+            "Image Type"
+          ],
+          "count": 1
+        },
+        {
+          "value": [
+            "Anatomy",
+            "Bioart Category",
+            "Image Type",
+            "Anatomy",
+            "Anatomy",
+            "Anatomy"
+          ],
+          "count": 1
+        },
+        {
+          "value": [
+            "Bioart Category",
+            "Arthropods",
+            "Image Type",
+            "Arthropods",
+            "Arthropods",
+            "Image Style"
+          ],
+          "count": 1
+        },
+        {
+          "value": [
+            "Bioart Category",
+            "Animals",
+            "Animals",
+            "Animals",
+            "Image Style",
+            "Image Type"
+          ],
+          "count": 1
+        },
+        {
+          "value": [
+            "Image Style",
+            "Image Type",
+            "Bioart Category",
+            "Arthropods",
+            "Arthropods"
+          ],
+          "count": 1
+        },
+        {
+          "value": [
+            "Bioart Category",
+            "Bioart Category",
+            "Arthropods",
+            "Arthropods",
+            "Image Style",
+            "Image Type"
+          ],
+          "count": 1
+        },
+        {
+          "value": [
+            "Image Type",
+            "Anatomy",
+            "Bioart Category",
+            "Arthropods",
+            "Arthropods"
+          ],
+          "count": 1
+        },
+        {
+          "value": [
+            "Bioart Category",
+            "Arthropods",
+            "Image Style",
+            "Image Type"
+          ],
+          "count": 1
+        },
+        {
+          "value": [
+            "Image Style",
+            "Bioart Category",
+            "Arthropods",
+            "Arthropods",
+            "Image Type"
+          ],
+          "count": 1
+        },
+        {
+          "value": [
+            "Bioart Category",
+            "Image Type",
+            "Arthropods",
+            "Arthropods",
+            "Image Style"
+          ],
+          "count": 1
+        },
+        {
+          "value": [
+            "Bioart Category",
+            "Anatomy",
+            "Image Type",
+            "Arthropods",
+            "Image Style",
+            "Arthropods"
+          ],
+          "count": 1
+        },
+        {
+          "value": [
+            "Image Type",
+            "Bioart Category",
+            "Arthropods"
+          ],
+          "count": 1
+        },
+        {
+          "value": [
+            "Bioart Category",
+            "Anatomy",
+            "Image Type",
+            "Arthropods",
+            "Arthropods"
+          ],
+          "count": 1
+        },
+        {
+          "value": [
+            "Bioart Category",
+            "Animals",
+            "Image Type",
+            "Animals"
+          ],
+          "count": 1
+        },
+        {
+          "value": [
+            "Anatomy",
+            "Anatomy",
+            "Anatomy",
+            "Anatomy",
+            "Anatomy",
+            "Anatomy",
+            "Bioart Category",
+            "Image Type"
+          ],
+          "count": 1
+        },
+        {
+          "value": [
+            "Arthropods",
+            "Bioart Category",
+            "Sex (Human)",
+            "Image Type",
+            "Arthropods"
+          ],
+          "count": 1
+        },
+        {
+          "value": [
+            "Arthropods",
+            "Bioart Category",
+            "Arthropods",
+            "Age (Human)",
+            "Image Type"
+          ],
+          "count": 1
+        },
+        {
+          "value": [
+            "Animals",
+            "Bioart Category",
+            "Animals",
+            "Animals",
+            "Image Type"
+          ],
+          "count": 1
+        },
+        {
+          "value": [
+            "Bioart Category",
+            "Arthropods",
+            "Anatomy",
+            "Arthropods",
+            "Image Type"
+          ],
+          "count": 1
+        },
+        {
+          "value": [
+            "Bioart Category",
+            "Arthropods",
+            "Image Type",
+            "Image Style",
+            "Arthropods"
+          ],
+          "count": 1
+        },
+        {
+          "value": [
+            "Bioart Category",
+            "Arthropods",
+            "Arthropods",
+            "Sex (Human)",
+            "Image Type"
+          ],
+          "count": 1
+        },
+        {
+          "value": [
+            "Bioart Category",
+            "Anatomy",
+            "Image Type"
+          ],
+          "count": 1
+        },
+        {
+          "value": [
+            "Bioart Category",
+            "Image Style",
+            "Image Type",
+            "Scientific Disciplines And Research Areas",
+            "Animals",
+            "Animals",
+            "Animals",
+            "Animals"
+          ],
+          "count": 1
+        },
+        {
+          "value": [
+            "Arthropods",
+            "Bioart Category",
+            "Anatomy",
+            "Arthropods",
+            "Age (Human)",
+            "Image Type"
+          ],
+          "count": 1
+        },
+        {
+          "value": [
+            "Bioart Category",
+            "Image Style",
+            "Image Type",
+            "Scientific Disciplines And Research Areas",
+            "Scientific Disciplines And Research Areas",
+            "Scientific Disciplines And Research Areas",
+            "Scientific Disciplines And Research Areas",
+            "Arthropods",
+            "Arthropods"
+          ],
+          "count": 1
+        },
+        {
+          "value": [
+            "Bioart Category",
+            "Image Style",
+            "Image Type",
+            "Scientific Disciplines And Research Areas",
+            "Scientific Disciplines And Research Areas",
+            "Animals"
+          ],
+          "count": 1
+        },
+        {
+          "value": [
+            "Animals",
+            "Bioart Category",
+            "Image Type",
+            "Animals"
+          ],
+          "count": 1
+        },
+        {
+          "value": [
+            "Bioart Category",
+            "Animals",
+            "Animals",
+            "Animals"
+          ],
+          "count": 1
+        },
+        {
+          "value": [
+            "Bioart Category",
+            "Image Type",
+            "Bioart Category"
+          ],
+          "count": 1
+        },
+        {
+          "value": [
+            "Bioart Category",
+            "Molecules",
+            "Bioart Category",
+            "Image Type"
+          ],
+          "count": 1
+        }
+      ],
+      "most_frequent_source_tags": [
+        {
+          "tag": "Vector",
+          "count": 168
+        },
+        {
+          "tag": "Arthropods",
+          "count": 62
+        },
+        {
+          "tag": "Animals",
+          "count": 52
+        },
+        {
+          "tag": "Ticks",
+          "count": 35
+        },
+        {
+          "tag": "Hard Ticks",
+          "count": 28
+        },
+        {
+          "tag": "vector",
+          "count": 27
+        },
+        {
+          "tag": "animals",
+          "count": 27
+        },
+        {
+          "tag": "Shapes",
+          "count": 26
+        },
+        {
+          "tag": "tick",
+          "count": 24
+        },
+        {
+          "tag": "Mammals",
+          "count": 23
+        },
+        {
+          "tag": "feeding",
+          "count": 23
+        },
+        {
+          "tag": "Insects",
+          "count": 22
+        },
+        {
+          "tag": "biology",
+          "count": 20
+        },
+        {
+          "tag": "arthropod",
+          "count": 20
+        },
+        {
+          "tag": "science",
+          "count": 17
+        },
+        {
+          "tag": "bite",
+          "count": 17
+        },
+        {
+          "tag": "Parasites",
+          "count": 16
+        },
+        {
+          "tag": "Shaded",
+          "count": 16
+        },
+        {
+          "tag": "ixodes",
+          "count": 16
+        },
+        {
+          "tag": "Wild Mammals",
+          "count": 15
+        },
+        {
+          "tag": "scapularis",
+          "count": 15
+        },
+        {
+          "tag": "arthropods",
+          "count": 15
+        },
+        {
+          "tag": "arrow",
+          "count": 15
+        },
+        {
+          "tag": "silhouette",
+          "count": 14
+        },
+        {
+          "tag": "shapes",
+          "count": 14
+        }
+      ],
+      "representative_records": [
+        {
+          "id": "nih-bioart-0212b908296cee2ee40a",
+          "source_id": "414",
+          "title": "Plasmodium",
+          "source_url": "https://bioart.niaid.nih.gov/bioart/414",
+          "upstream_category": [
+            "Bioart Category",
+            "Image Type"
+          ],
+          "tags": [
+            "Infection",
+            "Malaria",
+            "Parasites",
+            "Plasmodium",
+            "Protozoan",
+            "Unicellular",
+            "Vector",
+            "biology",
+            "science"
+          ],
+          "scientific_name": null,
+          "taxonomy_id": null,
+          "metadata_source": null,
+          "upstream_revision": "2024-10-07T20:50:16.695Z"
+        },
+        {
+          "id": "nih-bioart-044a901a424508a75e5c",
+          "source_id": "296",
+          "title": "Leishmania Retroleptomonad",
+          "source_url": "https://bioart.niaid.nih.gov/bioart/296",
+          "upstream_category": [
+            "Bioart Category",
+            "Image Type"
+          ],
+          "tags": [
+            "Flagellated",
+            "Intracellular parasite",
+            "Leishmania",
+            "Leishmania retroleptomonad",
+            "Motile",
+            "Obligate intracellular parasites",
+            "Parasites",
+            "Retroleptomonad",
+            "Sand fly",
+            "Vector"
+          ],
+          "scientific_name": null,
+          "taxonomy_id": null,
+          "metadata_source": null,
+          "upstream_revision": "2024-10-07T20:41:41.704Z"
+        },
+        {
+          "id": "nih-bioart-046a91edb12ba80fd829",
+          "source_id": "683",
+          "title": "Toxoplasma gondii Tachyzoite",
+          "source_url": "https://bioart.niaid.nih.gov/bioart/683",
+          "upstream_category": [
+            "Bioart Category"
+          ],
+          "tags": [
+            "Parasites",
+            "toxoplasmosis"
+          ],
+          "scientific_name": null,
+          "taxonomy_id": null,
+          "metadata_source": null,
+          "upstream_revision": "2026-06-01T22:05:02.014Z"
+        },
+        {
+          "id": "nih-bioart-05243b136fc6fd7d5d7c",
+          "source_id": "183",
+          "title": "Grey Fox",
+          "source_url": "https://bioart.niaid.nih.gov/bioart/183",
+          "upstream_category": [
+            "Bioart Category",
+            "Animals",
+            "Image Type"
+          ],
+          "tags": [
+            "Animals",
+            "Mammals",
+            "Vector",
+            "canidae",
+            "distemper",
+            "fox",
+            "heartworm",
+            "omnivore",
+            "parvo",
+            "parvovirus",
+            "urocyon"
+          ],
+          "scientific_name": null,
+          "taxonomy_id": null,
+          "metadata_source": null,
+          "upstream_revision": "2024-12-13T22:54:32.356Z"
+        },
+        {
+          "id": "nih-bioart-0591401999ab1bc5ba3e",
+          "source_id": "293",
+          "title": "Leishmania Metacyclic",
+          "source_url": "https://bioart.niaid.nih.gov/bioart/293",
+          "upstream_category": [
+            "Bioart Category",
+            "Image Type"
+          ],
+          "tags": [
+            "Intracellular parasite",
+            "Leishmania",
+            "Leishmania metacyclic",
+            "Metacyclic",
+            "Obligate intracellular parasites",
+            "Parasites",
+            "Vector",
+            "Virulent"
+          ],
+          "scientific_name": null,
+          "taxonomy_id": null,
+          "metadata_source": null,
+          "upstream_revision": "2024-10-07T20:41:37.519Z"
+        },
+        {
+          "id": "nih-bioart-05d368ea24c5ede99f49",
+          "source_id": "131",
+          "title": "Domestic Chicken",
+          "source_url": "https://bioart.niaid.nih.gov/bioart/131",
+          "upstream_category": [
+            "Image Type",
+            "Bioart Category",
+            "Animals"
+          ],
+          "tags": [
+            "Animals",
+            "Birds",
+            "Domestic",
+            "Vector",
+            "biology",
+            "chicken",
+            "disease",
+            "host",
+            "infectious",
+            "influenza",
+            "science",
+            "vector"
+          ],
+          "scientific_name": null,
+          "taxonomy_id": null,
+          "metadata_source": null,
+          "upstream_revision": "2025-01-30T22:35:20.865Z"
+        }
+      ]
+    },
+    "scidraw": {
+      "unclassified_primary_families": 155,
+      "unclassified_families_with_source_as_primary_or_variant": 176,
+      "upstream_category_counts": [
+        {
+          "value": "other",
+          "count": 108
+        },
+        {
+          "value": "bird",
+          "count": 24
+        },
+        {
+          "value": "human",
+          "count": 23
+        }
+      ],
+      "most_frequent_source_tags": [
+        {
+          "tag": "other",
+          "count": 108
+        },
+        {
+          "tag": "bird",
+          "count": 24
+        },
+        {
+          "tag": "human",
+          "count": 23
+        }
+      ],
+      "representative_records": [
+        {
+          "id": "scidraw-002097e0be1619da4098",
+          "source_id": "1da5d4bd-6422-4db9-98e5-9547cfb3da42",
+          "title": "Frog jumping",
+          "source_url": "https://scidraw.io/drawing/frog-jumping-0904a213",
+          "upstream_category": "other",
+          "tags": [
+            "other"
+          ],
+          "scientific_name": null,
+          "taxonomy_id": null,
+          "metadata_source": null,
+          "upstream_revision": "10.5281/zenodo.3926293"
+        },
+        {
+          "id": "scidraw-00581442f8c28531e648",
+          "source_id": "ee7a0ec2-349a-4cee-82d7-905817f3fe74",
+          "title": "Chameleon",
+          "source_url": "https://scidraw.io/drawing/chameleon-45a6eeee",
+          "upstream_category": "other",
+          "tags": [
+            "other"
+          ],
+          "scientific_name": null,
+          "taxonomy_id": null,
+          "metadata_source": null,
+          "upstream_revision": "10.5281/zenodo.3926541"
+        },
+        {
+          "id": "scidraw-017212f5ee97d9ff9e39",
+          "source_id": "93538534-dc23-4d34-b0d4-b0d917af2b84",
+          "title": "ssTEM",
+          "source_url": "https://scidraw.io/drawing/sstem-166313c1",
+          "upstream_category": "other",
+          "tags": [
+            "other"
+          ],
+          "scientific_name": null,
+          "taxonomy_id": null,
+          "metadata_source": null,
+          "upstream_revision": "10.5281/zenodo.4421191"
+        },
+        {
+          "id": "scidraw-039c666acd30b70d7dcd",
+          "source_id": "c2bc4521-30c7-4ee9-a0bf-8ee75eca7b4e",
+          "title": "bird silhouette",
+          "source_url": "https://scidraw.io/drawing/bird-silhouette-b98882ac",
+          "upstream_category": "bird",
+          "tags": [
+            "bird"
+          ],
+          "scientific_name": null,
+          "taxonomy_id": null,
+          "metadata_source": null,
+          "upstream_revision": "10.5281/zenodo.3926253"
+        },
+        {
+          "id": "scidraw-03d833c93da3c00174c4",
+          "source_id": "cb07d90d-0ade-4665-a112-620d332f1b12",
+          "title": "16 channel Neuronexus electrode",
+          "source_url": "https://scidraw.io/drawing/16-channel-neuronexus-electrode-82f4e006",
+          "upstream_category": "other",
+          "tags": [
+            "other"
+          ],
+          "scientific_name": null,
+          "taxonomy_id": null,
+          "metadata_source": null,
+          "upstream_revision": "10.5281/zenodo.7679040"
+        },
+        {
+          "id": "scidraw-042c3aeb8c42980432db",
+          "source_id": "6a018e89-084a-42ee-a477-47c571eb0d80",
+          "title": "Adrenal gland",
+          "source_url": "https://scidraw.io/drawing/adrenal-gland-9999e96a",
+          "upstream_category": "human",
+          "tags": [
+            "human"
+          ],
+          "scientific_name": null,
+          "taxonomy_id": null,
+          "metadata_source": null,
+          "upstream_revision": "10.5281/zenodo.3926338"
+        }
+      ]
+    },
+    "reactome": {
+      "unclassified_primary_families": 114,
+      "unclassified_families_with_source_as_primary_or_variant": 114,
+      "upstream_category_counts": [
+        {
+          "value": null,
+          "count": 114
+        }
+      ],
+      "most_frequent_source_tags": [
+        {
+          "tag": "Transporter",
+          "count": 54
+        },
+        {
+          "tag": "Compound",
+          "count": 31
+        },
+        {
+          "tag": "transporter",
+          "count": 22
+        },
+        {
+          "tag": "Background",
+          "count": 16
+        },
+        {
+          "tag": "arrow",
+          "count": 13
+        },
+        {
+          "tag": "background",
+          "count": 8
+        }
+      ],
+      "representative_records": [
+        {
+          "id": "reactome-01454d9b2fb5db2d806e",
+          "source_id": "R-ICO-012349",
+          "title": "Transformation arrow",
+          "source_url": "https://reactome.org/content/detail/R-ICO-012349",
+          "upstream_category": null,
+          "tags": [
+            "arrow"
+          ],
+          "scientific_name": null,
+          "taxonomy_id": null,
+          "metadata_source": null,
+          "upstream_revision": "catalog-sha256:93212b956a2ed67cc9d9a37acc4bf9e50979b14f763499be437b51a4b069f3c6"
+        },
+        {
+          "id": "reactome-03b7da4b4e3b9ef3f7c7",
+          "source_id": "R-ICO-014806",
+          "title": "SLC25A15",
+          "source_url": "https://reactome.org/content/detail/R-ICO-014806",
+          "upstream_category": null,
+          "tags": [
+            "Transporter"
+          ],
+          "scientific_name": null,
+          "taxonomy_id": null,
+          "metadata_source": null,
+          "upstream_revision": "catalog-sha256:93212b956a2ed67cc9d9a37acc4bf9e50979b14f763499be437b51a4b069f3c6"
+        },
+        {
+          "id": "reactome-04046971fe0e655ab55e",
+          "source_id": "R-ICO-012621",
+          "title": "Diglyceride",
+          "source_url": "https://reactome.org/content/detail/R-ICO-012621",
+          "upstream_category": null,
+          "tags": [
+            "Compound"
+          ],
+          "scientific_name": null,
+          "taxonomy_id": null,
+          "metadata_source": null,
+          "upstream_revision": "catalog-sha256:93212b956a2ed67cc9d9a37acc4bf9e50979b14f763499be437b51a4b069f3c6"
+        },
+        {
+          "id": "reactome-071ab932593a98f8eeef",
+          "source_id": "R-ICO-014936",
+          "title": "Tumorigenesis",
+          "source_url": "https://reactome.org/content/detail/R-ICO-014936",
+          "upstream_category": null,
+          "tags": [
+            "Background"
+          ],
+          "scientific_name": null,
+          "taxonomy_id": null,
+          "metadata_source": null,
+          "upstream_revision": "catalog-sha256:93212b956a2ed67cc9d9a37acc4bf9e50979b14f763499be437b51a4b069f3c6"
+        },
+        {
+          "id": "reactome-0a11d1b7515209ce9a2e",
+          "source_id": "R-ICO-014432",
+          "title": "ABCC1",
+          "source_url": "https://reactome.org/content/detail/R-ICO-014432",
+          "upstream_category": null,
+          "tags": [
+            "transporter",
+            "Transporter"
+          ],
+          "scientific_name": null,
+          "taxonomy_id": null,
+          "metadata_source": null,
+          "upstream_revision": "catalog-sha256:93212b956a2ed67cc9d9a37acc4bf9e50979b14f763499be437b51a4b069f3c6"
+        },
+        {
+          "id": "reactome-0b6e549fc97d2b6195ac",
+          "source_id": "R-ICO-014085",
+          "title": "ABCB4",
+          "source_url": "https://reactome.org/content/detail/R-ICO-014085",
+          "upstream_category": null,
+          "tags": [
+            "transporter",
+            "Transporter"
+          ],
+          "scientific_name": null,
+          "taxonomy_id": null,
+          "metadata_source": null,
+          "upstream_revision": "catalog-sha256:93212b956a2ed67cc9d9a37acc4bf9e50979b14f763499be437b51a4b069f3c6"
+        }
+      ]
+    },
+    "arcadia": {
+      "unclassified_primary_families": 35,
+      "unclassified_families_with_source_as_primary_or_variant": 35,
+      "upstream_category_counts": [
+        {
+          "value": null,
+          "count": 35
+        }
+      ],
+      "most_frequent_source_tags": [
+        {
+          "tag": "raster",
+          "count": 35
+        },
+        {
+          "tag": "silhouette",
+          "count": 24
+        },
+        {
+          "tag": "tricolor-stroke",
+          "count": 24
+        },
+        {
+          "tag": "other",
+          "count": 19
+        },
+        {
+          "tag": "Ciona intestinalis",
+          "count": 6
+        },
+        {
+          "tag": "Sea squirt",
+          "count": 6
+        },
+        {
+          "tag": "Choanoflagellate",
+          "count": 4
+        },
+        {
+          "tag": "Salpingoeca rosetta",
+          "count": 4
+        },
+        {
+          "tag": "Gallus gallus domesticus",
+          "count": 2
+        },
+        {
+          "tag": "bird",
+          "count": 2
+        },
+        {
+          "tag": "Chicken",
+          "count": 2
+        },
+        {
+          "tag": "Clytia hemisphaerica",
+          "count": 1
+        },
+        {
+          "tag": "Hydrozoan",
+          "count": 1
+        },
+        {
+          "tag": "Green alga",
+          "count": 1
+        },
+        {
+          "tag": "Volvox carteri",
+          "count": 1
+        },
+        {
+          "tag": "Nematostella vectensis",
+          "count": 1
+        },
+        {
+          "tag": "Starlet sea anemone",
+          "count": 1
+        },
+        {
+          "tag": "Tardigrade",
+          "count": 1
+        },
+        {
+          "tag": "Hypsibius dujardini",
+          "count": 1
+        },
+        {
+          "tag": "Neurospora crassa",
+          "count": 1
+        },
+        {
+          "tag": "Red bread mold",
+          "count": 1
+        },
+        {
+          "tag": "Pale anemone",
+          "count": 1
+        },
+        {
+          "tag": "Exaiptasia diaphana",
+          "count": 1
+        },
+        {
+          "tag": "Callithrix jacchus",
+          "count": 1
+        },
+        {
+          "tag": "Common marmoset",
+          "count": 1
+        }
+      ],
+      "representative_records": [
+        {
+          "id": "arcadia-0045536359cf981eab99",
+          "source_id": "Silhouette SVGs/Clytia-hemisphaerica-silhouette.svg",
+          "title": "Hydrozoan (Clytia hemisphaerica) — silhouette",
+          "source_url": "https://zenodo.org/records/18395998",
+          "upstream_category": null,
+          "tags": [
+            "Hydrozoan",
+            "Clytia hemisphaerica",
+            "silhouette",
+            "tricolor-stroke",
+            "raster",
+            "other"
+          ],
+          "scientific_name": "Clytia hemisphaerica",
+          "taxonomy_id": null,
+          "metadata_source": "https://arcadia-science.github.io/organism-illustration-library/",
+          "upstream_revision": "v1.2 / Zenodo 18395998"
+        },
+        {
+          "id": "arcadia-1f2c95f322c3fbff11fa",
+          "source_id": "Tricolor + stroke PNGs/Volvox-carteri-tricolorstroke.png",
+          "title": "Green alga (Volvox carteri) — tricolor-stroke",
+          "source_url": "https://zenodo.org/records/18395998",
+          "upstream_category": null,
+          "tags": [
+            "Green alga",
+            "Volvox carteri",
+            "tricolor-stroke",
+            "raster",
+            "silhouette",
+            "other"
+          ],
+          "scientific_name": "Volvox carteri",
+          "taxonomy_id": null,
+          "metadata_source": "https://arcadia-science.github.io/organism-illustration-library/",
+          "upstream_revision": "v1.2 / Zenodo 18395998"
+        },
+        {
+          "id": "arcadia-24760880363fbbf598a4",
+          "source_id": "Raster PNGs/Nematostella-vectensis-raster.png",
+          "title": "Starlet sea anemone (Nematostella vectensis) — raster",
+          "source_url": "https://zenodo.org/records/18395998",
+          "upstream_category": null,
+          "tags": [
+            "Starlet sea anemone",
+            "Nematostella vectensis",
+            "raster",
+            "tricolor-stroke",
+            "silhouette",
+            "other"
+          ],
+          "scientific_name": "Nematostella vectensis",
+          "taxonomy_id": null,
+          "metadata_source": "https://arcadia-science.github.io/organism-illustration-library/",
+          "upstream_revision": "v1.2 / Zenodo 18395998"
+        },
+        {
+          "id": "arcadia-2791b9bf688431f680d0",
+          "source_id": "Raster PNGs/Hypsibius-dujardini-raster.png",
+          "title": "Tardigrade (Hypsibius dujardini) — raster",
+          "source_url": "https://zenodo.org/records/18395998",
+          "upstream_category": null,
+          "tags": [
+            "Tardigrade",
+            "Hypsibius dujardini",
+            "raster",
+            "tricolor-stroke",
+            "silhouette",
+            "other"
+          ],
+          "scientific_name": "Hypsibius dujardini",
+          "taxonomy_id": null,
+          "metadata_source": "https://arcadia-science.github.io/organism-illustration-library/",
+          "upstream_revision": "v1.2 / Zenodo 18395998"
+        },
+        {
+          "id": "arcadia-3115a233d7c4ffda85c0",
+          "source_id": "Raster PNGs/Neurospora-crassa-raster.png",
+          "title": "Red bread mold (Neurospora crassa) — raster",
+          "source_url": "https://zenodo.org/records/18395998",
+          "upstream_category": null,
+          "tags": [
+            "Red bread mold",
+            "Neurospora crassa",
+            "raster",
+            "tricolor-stroke",
+            "silhouette"
+          ],
+          "scientific_name": "Neurospora crassa",
+          "taxonomy_id": null,
+          "metadata_source": "https://arcadia-science.github.io/organism-illustration-library/",
+          "upstream_revision": "v1.2 / Zenodo 18395998"
+        },
+        {
+          "id": "arcadia-3521952ad84b9d0024b4",
+          "source_id": "Silhouette SVGs/Exaiptasia-diaphana-silhouette.svg",
+          "title": "Pale anemone (Exaiptasia diaphana) — silhouette",
+          "source_url": "https://zenodo.org/records/18395998",
+          "upstream_category": null,
+          "tags": [
+            "Pale anemone",
+            "Exaiptasia diaphana",
+            "silhouette",
+            "tricolor-stroke",
+            "raster",
+            "other"
+          ],
+          "scientific_name": "Exaiptasia diaphana",
+          "taxonomy_id": null,
+          "metadata_source": "https://arcadia-science.github.io/organism-illustration-library/",
+          "upstream_revision": "v1.2 / Zenodo 18395998"
+        }
+      ]
+    },
+    "scisvg": {
+      "unclassified_primary_families": 4,
+      "unclassified_families_with_source_as_primary_or_variant": 4,
+      "upstream_category_counts": [
+        {
+          "value": "general-science",
+          "count": 4
+        }
+      ],
+      "most_frequent_source_tags": [
+        {
+          "tag": "general-science",
+          "count": 4
+        },
+        {
+          "tag": "arrow",
+          "count": 2
+        },
+        {
+          "tag": "axes",
+          "count": 1
+        },
+        {
+          "tag": "curved",
+          "count": 1
+        },
+        {
+          "tag": "layers",
+          "count": 1
+        },
+        {
+          "tag": "right",
+          "count": 1
+        }
+      ],
+      "representative_records": [
+        {
+          "id": "scisvg-023a4aa2d07c9e86534d",
+          "source_id": "assets/general-science/axes.svg",
+          "title": "Axes",
+          "source_url": "https://github.com/SaveenaSolanki/SciSVG/blob/b8a2b60a3a5b2d9b717b1065fbcb8de9f1faf72b/assets/general-science/axes.svg",
+          "upstream_category": "general-science",
+          "tags": [
+            "axes",
+            "general-science"
+          ],
+          "scientific_name": null,
+          "taxonomy_id": null,
+          "metadata_source": null,
+          "upstream_revision": "b8a2b60a3a5b2d9b717b1065fbcb8de9f1faf72b"
+        },
+        {
+          "id": "scisvg-32b7557083496405f23e",
+          "source_id": "assets/general-science/curved-arrow.svg",
+          "title": "Curved Arrow",
+          "source_url": "https://github.com/SaveenaSolanki/SciSVG/blob/b8a2b60a3a5b2d9b717b1065fbcb8de9f1faf72b/assets/general-science/curved-arrow.svg",
+          "upstream_category": "general-science",
+          "tags": [
+            "curved",
+            "arrow",
+            "general-science"
+          ],
+          "scientific_name": null,
+          "taxonomy_id": null,
+          "metadata_source": null,
+          "upstream_revision": "b8a2b60a3a5b2d9b717b1065fbcb8de9f1faf72b"
+        },
+        {
+          "id": "scisvg-635057fa417ec6f063e0",
+          "source_id": "assets/general-science/layers.svg",
+          "title": "Layers",
+          "source_url": "https://github.com/SaveenaSolanki/SciSVG/blob/b8a2b60a3a5b2d9b717b1065fbcb8de9f1faf72b/assets/general-science/layers.svg",
+          "upstream_category": "general-science",
+          "tags": [
+            "layers",
+            "general-science"
+          ],
+          "scientific_name": null,
+          "taxonomy_id": null,
+          "metadata_source": null,
+          "upstream_revision": "b8a2b60a3a5b2d9b717b1065fbcb8de9f1faf72b"
+        },
+        {
+          "id": "scisvg-831534a8c5727920ab07",
+          "source_id": "assets/general-science/arrow-right.svg",
+          "title": "Arrow Right",
+          "source_url": "https://github.com/SaveenaSolanki/SciSVG/blob/b8a2b60a3a5b2d9b717b1065fbcb8de9f1faf72b/assets/general-science/arrow-right.svg",
+          "upstream_category": "general-science",
+          "tags": [
+            "arrow",
+            "right",
+            "general-science"
+          ],
+          "scientific_name": null,
+          "taxonomy_id": null,
+          "metadata_source": null,
+          "upstream_revision": "b8a2b60a3a5b2d9b717b1065fbcb8de9f1faf72b"
+        }
+      ]
+    }
+  },
+  "findings": [
+    {
+      "id": "nih_category_array_and_ontology_pairing",
+      "kind": "metadata_route_defect_with_unsafe_blind_fix",
+      "observation": "NIH ontologytype is an array; normalize_record passes the whole array to SOURCE_CATEGORY_MAP instead of each value. 39 currently unclassified primary families contain Animals. ontologytype is a facet/group name, not necessarily an object value; ontologykey and free keywords are also merged into tags, losing their pairing.",
+      "candidate_records": [
+        {
+          "id": "nih-bioart-05243b136fc6fd7d5d7c",
+          "source_id": "183",
+          "title": "Grey Fox",
+          "source_url": "https://bioart.niaid.nih.gov/bioart/183",
+          "upstream_category": [
+            "Bioart Category",
+            "Animals",
+            "Image Type"
+          ],
+          "tags": [
+            "Animals",
+            "Mammals",
+            "Vector",
+            "canidae",
+            "distemper",
+            "fox",
+            "heartworm",
+            "omnivore",
+            "parvo",
+            "parvovirus",
+            "urocyon"
+          ],
+          "scientific_name": null,
+          "taxonomy_id": null,
+          "metadata_source": null,
+          "upstream_revision": "2024-12-13T22:54:32.356Z"
+        },
+        {
+          "id": "nih-bioart-05d368ea24c5ede99f49",
+          "source_id": "131",
+          "title": "Domestic Chicken",
+          "source_url": "https://bioart.niaid.nih.gov/bioart/131",
+          "upstream_category": [
+            "Image Type",
+            "Bioart Category",
+            "Animals"
+          ],
+          "tags": [
+            "Animals",
+            "Birds",
+            "Domestic",
+            "Vector",
+            "biology",
+            "chicken",
+            "disease",
+            "host",
+            "infectious",
+            "influenza",
+            "science",
+            "vector"
+          ],
+          "scientific_name": null,
+          "taxonomy_id": null,
+          "metadata_source": null,
+          "upstream_revision": "2025-01-30T22:35:20.865Z"
+        },
+        {
+          "id": "nih-bioart-0d2d721d6e4721977083",
+          "source_id": "178",
+          "title": "Gorilla",
+          "source_url": "https://bioart.niaid.nih.gov/bioart/178",
+          "upstream_category": [
+            "Bioart Category",
+            "Animals",
+            "Animals",
+            "Image Type"
+          ],
+          "tags": [
+            "Animals",
+            "Gorilla",
+            "Mammals",
+            "Vector",
+            "Wild Mammals",
+            "animals",
+            "large",
+            "looking",
+            "mammals",
+            "nhp",
+            "primate",
+            "sitting",
+            "wild mammals"
+          ],
+          "scientific_name": null,
+          "taxonomy_id": null,
+          "metadata_source": null,
+          "upstream_revision": "2024-12-13T22:53:54.842Z"
+        },
+        {
+          "id": "nih-bioart-0fd36f7048c6b777492d",
+          "source_id": "184",
+          "title": "Grizzly Bear Silhouette",
+          "source_url": "https://bioart.niaid.nih.gov/bioart/184",
+          "upstream_category": [
+            "Animals",
+            "Bioart Category",
+            "Animals",
+            "Image Type"
+          ],
+          "tags": [
+            "Animals",
+            "Mammals",
+            "Vector",
+            "Wild Mammals",
+            "animals",
+            "bear",
+            "grizzly",
+            "grizzly bear",
+            "silhouette",
+            "wild mammals"
+          ],
+          "scientific_name": null,
+          "taxonomy_id": null,
+          "metadata_source": null,
+          "upstream_revision": "2024-12-13T23:12:43.166Z"
+        },
+        {
+          "id": "nih-bioart-1277e8ffc5446ac2b029",
+          "source_id": "428",
+          "title": "Raptor Silhouette",
+          "source_url": "https://bioart.niaid.nih.gov/bioart/428",
+          "upstream_category": [
+            "Bioart Category",
+            "Animals",
+            "Image Type"
+          ],
+          "tags": [
+            "Animals",
+            "Birds",
+            "Vector",
+            "animals",
+            "birds",
+            "flight",
+            "raptor"
+          ],
+          "scientific_name": null,
+          "taxonomy_id": null,
+          "metadata_source": null,
+          "upstream_revision": "2025-01-31T15:50:57.001Z"
+        },
+        {
+          "id": "nih-bioart-15be1cd69d0790c2239d",
+          "source_id": "137",
+          "title": "Elk",
+          "source_url": "https://bioart.niaid.nih.gov/bioart/137",
+          "upstream_category": [
+            "Bioart Category",
+            "Animals",
+            "Image Type"
+          ],
+          "tags": [
+            "Animals",
+            "Mammals",
+            "Vector",
+            "antler",
+            "antlers",
+            "biology",
+            "cervidae",
+            "chronic wasting disease",
+            "cwd",
+            "disease",
+            "elk",
+            "mammal",
+            "tailed"
+          ],
+          "scientific_name": null,
+          "taxonomy_id": null,
+          "metadata_source": null,
+          "upstream_revision": "2024-12-13T22:43:30.395Z"
+        },
+        {
+          "id": "nih-bioart-162054140433815b4fc0",
+          "source_id": "625",
+          "title": "Fried Egg",
+          "source_url": "https://bioart.niaid.nih.gov/bioart/625",
+          "upstream_category": [
+            "Bioart Category",
+            "Image Style",
+            "Image Type",
+            "Animals"
+          ],
+          "tags": [
+            "Animals",
+            "Birds",
+            "Food",
+            "Shaded",
+            "Vector",
+            "chicken",
+            "egg",
+            "fried"
+          ],
+          "scientific_name": null,
+          "taxonomy_id": null,
+          "metadata_source": null,
+          "upstream_revision": "2025-03-28T22:06:03.009Z"
+        },
+        {
+          "id": "nih-bioart-162cb41e24edbc0c45a6",
+          "source_id": "150",
+          "title": "Ferret",
+          "source_url": "https://bioart.niaid.nih.gov/bioart/150",
+          "upstream_category": [
+            "Image Style",
+            "Bioart Category",
+            "Animals",
+            "Animals",
+            "Animals",
+            "Image Type"
+          ],
+          "tags": [
+            "Animals",
+            "Domestic Mammals",
+            "Lab",
+            "Mammals",
+            "Shaded",
+            "Vector",
+            "Wild Mammals",
+            "animals",
+            "biology",
+            "domestic mammals",
+            "ferret",
+            "mammals",
+            "science",
+            "weasels",
+            "wild mammals"
+          ],
+          "scientific_name": null,
+          "taxonomy_id": null,
+          "metadata_source": null,
+          "upstream_revision": "2024-12-13T22:46:38.186Z"
+        },
+        {
+          "id": "nih-bioart-1a9691b8ecf61647c10a",
+          "source_id": "133",
+          "title": "Domestic Chicken Silhouette",
+          "source_url": "https://bioart.niaid.nih.gov/bioart/133",
+          "upstream_category": [
+            "Bioart Category",
+            "Animals",
+            "Image Type"
+          ],
+          "tags": [
+            "Animals",
+            "Birds",
+            "Domestic",
+            "Vector",
+            "animals",
+            "bird",
+            "chicken",
+            "hen",
+            "rooster",
+            "silhouette"
+          ],
+          "scientific_name": null,
+          "taxonomy_id": null,
+          "metadata_source": null,
+          "upstream_revision": "2025-01-30T23:19:51.258Z"
+        },
+        {
+          "id": "nih-bioart-1bda3667dd0131b45192",
+          "source_id": "796",
+          "title": "Black Angus Cow",
+          "source_url": "https://bioart.niaid.nih.gov/bioart/796",
+          "upstream_category": [
+            "Image Type",
+            "Bioart Category",
+            "Animals",
+            "Animals"
+          ],
+          "tags": [
+            "Aberdeen Angus",
+            "Angus Doddie",
+            "Animals",
+            "Buchan Humlie",
+            "Domestic Mammals",
+            "Mammals",
+            "Vector",
+            "beef cattle"
+          ],
+          "scientific_name": null,
+          "taxonomy_id": null,
+          "metadata_source": null,
+          "upstream_revision": "2026-09-11T18:37:40.309Z"
+        },
+        {
+          "id": "nih-bioart-1e66aa444dcb5bc76f0e",
+          "source_id": "427",
+          "title": "Raccoon",
+          "source_url": "https://bioart.niaid.nih.gov/bioart/427",
+          "upstream_category": [
+            "Bioart Category",
+            "Image Style",
+            "Animals",
+            "Image Type"
+          ],
+          "tags": [
+            "Animals",
+            "Greyscale",
+            "Mammals",
+            "Procyon",
+            "Procyon lotor",
+            "Vector",
+            "northern",
+            "omnivore",
+            "procyonid",
+            "racoon",
+            "ringtail",
+            "trash bandit",
+            "trash panda"
+          ],
+          "scientific_name": null,
+          "taxonomy_id": null,
+          "metadata_source": null,
+          "upstream_revision": "2024-12-13T23:17:18.237Z"
+        },
+        {
+          "id": "nih-bioart-2609f426ced9e5569c43",
+          "source_id": "166",
+          "title": "Fruitbat",
+          "source_url": "https://bioart.niaid.nih.gov/bioart/166",
+          "upstream_category": [
+            "Bioart Category",
+            "Animals",
+            "Animals",
+            "Scientific Disciplines And Research Areas",
+            "Image Type"
+          ],
+          "tags": [
+            "Animals",
+            "Mammals",
+            "Pathology",
+            "Vector",
+            "Wild Mammals",
+            "animals",
+            "bat",
+            "disease",
+            "flying",
+            "fruit",
+            "mammal",
+            "pathology",
+            "wild",
+            "winged"
+          ],
+          "scientific_name": null,
+          "taxonomy_id": null,
+          "metadata_source": null,
+          "upstream_revision": "2024-12-13T22:50:27.252Z"
+        },
+        {
+          "id": "nih-bioart-311373b7012743320cc3",
+          "source_id": "550",
+          "title": "Woodchuck",
+          "source_url": "https://bioart.niaid.nih.gov/bioart/550",
+          "upstream_category": [
+            "Bioart Category",
+            "Animals",
+            "Animals",
+            "Animals",
+            "Image Style",
+            "Image Type"
+          ],
+          "tags": [
+            "Animals",
+            "Greyscale",
+            "Ground squirrel",
+            "Mammals",
+            "Rodents",
+            "Vector",
+            "Wild Mammals",
+            "groundhog",
+            "land beaver",
+            "marmot",
+            "red monk",
+            "rodent",
+            "siffleux",
+            "thickwood badger",
+            "weenusk",
+            "whistlepig"
+          ],
+          "scientific_name": null,
+          "taxonomy_id": null,
+          "metadata_source": null,
+          "upstream_revision": "2024-12-13T22:35:54.528Z"
+        },
+        {
+          "id": "nih-bioart-32bc5a5546736ec70725",
+          "source_id": "100",
+          "title": "Dairy Cow Silhouette",
+          "source_url": "https://bioart.niaid.nih.gov/bioart/100",
+          "upstream_category": [
+            "Bioart Category",
+            "Image Type",
+            "Animals",
+            "Animals"
+          ],
+          "tags": [
+            "Animals",
+            "Bos taurus",
+            "Dairy",
+            "Domestic",
+            "Domestic Mammals",
+            "Domesticated mammal",
+            "Friesian",
+            "Halter",
+            "Holstein",
+            "Mammals",
+            "Vector",
+            "animals",
+            "host",
+            "standing"
+          ],
+          "scientific_name": null,
+          "taxonomy_id": null,
+          "metadata_source": null,
+          "upstream_revision": "2024-12-13T22:02:09.304Z"
+        },
+        {
+          "id": "nih-bioart-418eb0317c8fa69c08a9",
+          "source_id": "417",
+          "title": "Prairie Dog Black Tailed",
+          "source_url": "https://bioart.niaid.nih.gov/bioart/417",
+          "upstream_category": [
+            "Bioart Category",
+            "Animals",
+            "Image Type"
+          ],
+          "tags": [
+            "Animals",
+            "Ground squirrel",
+            "Herbivore",
+            "Prairie dog",
+            "Rodents",
+            "Vector",
+            "animals",
+            "host",
+            "mammals",
+            "rodents",
+            "standing",
+            "tailed"
+          ],
+          "scientific_name": null,
+          "taxonomy_id": null,
+          "metadata_source": null,
+          "upstream_revision": "2024-12-13T23:15:54.226Z"
+        },
+        {
+          "id": "nih-bioart-45929866ed3dd601ddf0",
+          "source_id": "278",
+          "title": "Lab Hamster",
+          "source_url": "https://bioart.niaid.nih.gov/bioart/278",
+          "upstream_category": [
+            "Bioart Category",
+            "Animals",
+            "Animals",
+            "Animals",
+            "Animals",
+            "Image Type"
+          ],
+          "tags": [
+            "Animals",
+            "Domestic Mammals",
+            "Lab",
+            "Mammals",
+            "Rodents",
+            "Vector",
+            "Wild Mammals",
+            "animals",
+            "domestic mammals",
+            "experiment",
+            "hamster",
+            "laboratory",
+            "mammals",
+            "rodents"
+          ],
+          "scientific_name": null,
+          "taxonomy_id": null,
+          "metadata_source": null,
+          "upstream_revision": "2024-12-13T22:07:57.02Z"
+        },
+        {
+          "id": "nih-bioart-4636f7122c9f8fe3e0a8",
+          "source_id": "851",
+          "title": "Heron Silhouette ",
+          "source_url": "https://bioart.niaid.nih.gov/bioart/851",
+          "upstream_category": [
+            "Bioart Category",
+            "Animals",
+            "Image Type"
+          ],
+          "tags": [
+            "Animals",
+            "Ardeidae",
+            "Aves",
+            "Birds",
+            "Botaurus",
+            "Vector",
+            "Zebrilus",
+            "bird"
+          ],
+          "scientific_name": null,
+          "taxonomy_id": null,
+          "metadata_source": null,
+          "upstream_revision": "2026-09-11T18:50:55.834Z"
+        },
+        {
+          "id": "nih-bioart-4e523d3e5538da626c57",
+          "source_id": "99",
+          "title": "Dairy Cow",
+          "source_url": "https://bioart.niaid.nih.gov/bioart/99",
+          "upstream_category": [
+            "Bioart Category",
+            "Image Type",
+            "Animals",
+            "Animals"
+          ],
+          "tags": [
+            "Animals",
+            "Bos taurus",
+            "Dairy",
+            "Domestic",
+            "Domestic Mammals",
+            "Domesticated mammal",
+            "Friesian",
+            "Halter",
+            "Holstein",
+            "Mammals",
+            "Spots",
+            "Vector",
+            "host",
+            "standing"
+          ],
+          "scientific_name": null,
+          "taxonomy_id": null,
+          "metadata_source": null,
+          "upstream_revision": "2024-12-13T22:00:05.041Z"
+        },
+        {
+          "id": "nih-bioart-4f5c96a3bdeb4ffb57be",
+          "source_id": "418",
+          "title": "Prairie Dog Black Tailed",
+          "source_url": "https://bioart.niaid.nih.gov/bioart/418",
+          "upstream_category": [
+            "Bioart Category",
+            "Animals",
+            "Image Type"
+          ],
+          "tags": [
+            "Animals",
+            "Ground squirrel",
+            "Herbivore",
+            "Prairie dog",
+            "Rodents",
+            "Vector",
+            "animals",
+            "biology",
+            "host",
+            "mammals",
+            "rodents",
+            "standing",
+            "tailed"
+          ],
+          "scientific_name": null,
+          "taxonomy_id": null,
+          "metadata_source": null,
+          "upstream_revision": "2024-12-13T23:14:05.969Z"
+        },
+        {
+          "id": "nih-bioart-64396570a19a04813d12",
+          "source_id": "190",
+          "title": "Hamster Side View",
+          "source_url": "https://bioart.niaid.nih.gov/bioart/190",
+          "upstream_category": [
+            "Animals",
+            "Bioart Category",
+            "Animals",
+            "Image Type"
+          ],
+          "tags": [
+            "Animals",
+            "Mammals",
+            "Vector",
+            "Wild Mammals",
+            "animals",
+            "hamster",
+            "healthy",
+            "side",
+            "syrian",
+            "tan"
+          ],
+          "scientific_name": null,
+          "taxonomy_id": null,
+          "metadata_source": null,
+          "upstream_revision": "2025-01-31T15:49:55.666Z"
+        },
+        {
+          "id": "nih-bioart-6e74afa460e371ce2568",
+          "source_id": "132",
+          "title": "Domestic Chicken Outline",
+          "source_url": "https://bioart.niaid.nih.gov/bioart/132",
+          "upstream_category": [
+            "Bioart Category",
+            "Animals",
+            "Image Type"
+          ],
+          "tags": [
+            "Animals",
+            "Birds",
+            "Domestic",
+            "Vector",
+            "bird",
+            "chicken",
+            "hen",
+            "outline",
+            "rooster",
+            "silhouette"
+          ],
+          "scientific_name": null,
+          "taxonomy_id": null,
+          "metadata_source": null,
+          "upstream_revision": "2025-01-31T17:41:27.899Z"
+        },
+        {
+          "id": "nih-bioart-762bd4c50542ccc1ac04",
+          "source_id": "359",
+          "title": "Moose",
+          "source_url": "https://bioart.niaid.nih.gov/bioart/359",
+          "upstream_category": [
+            "Bioart Category",
+            "Animals",
+            "Animals",
+            "Image Type"
+          ],
+          "tags": [
+            "Animals",
+            "Bull",
+            "Male",
+            "Mammals",
+            "Moose",
+            "Vector",
+            "Walking",
+            "Wild Mammals",
+            "antlers",
+            "biology",
+            "mammal"
+          ],
+          "scientific_name": null,
+          "taxonomy_id": null,
+          "metadata_source": null,
+          "upstream_revision": "2024-12-13T21:09:48.035Z"
+        },
+        {
+          "id": "nih-bioart-7c4652dbabb678d478ea",
+          "source_id": "186",
+          "title": "Guinea Fowl",
+          "source_url": "https://bioart.niaid.nih.gov/bioart/186",
+          "upstream_category": [
+            "Bioart Category",
+            "Animals",
+            "Image Type"
+          ],
+          "tags": [
+            "Africa",
+            "Animals",
+            "Birds",
+            "Vector",
+            "avian",
+            "bird",
+            "coccidiosis",
+            "feather",
+            "galliformes",
+            "numididae",
+            "winged"
+          ],
+          "scientific_name": null,
+          "taxonomy_id": null,
+          "metadata_source": null,
+          "upstream_revision": "2024-12-13T23:12:10.458Z"
+        },
+        {
+          "id": "nih-bioart-7e18e56667b98f1639e2",
+          "source_id": "39",
+          "title": "Artibeus Fruitbat",
+          "source_url": "https://bioart.niaid.nih.gov/bioart/39",
+          "upstream_category": [
+            "Bioart Category",
+            "Animals",
+            "Animals",
+            "Scientific Disciplines And Research Areas",
+            "Image Type"
+          ],
+          "tags": [
+            "Animals",
+            "Mammals",
+            "Pathology",
+            "Vector",
+            "Wild Mammals",
+            "animals",
+            "artibeus",
+            "bat",
+            "disease",
+            "flying",
+            "fruit",
+            "jamaica",
+            "mammal",
+            "winged"
+          ],
+          "scientific_name": null,
+          "taxonomy_id": null,
+          "metadata_source": null,
+          "upstream_revision": "2024-12-13T21:53:35.53Z"
+        },
+        {
+          "id": "nih-bioart-83c1ea55e8a836615982",
+          "source_id": "622",
+          "title": "Egg",
+          "source_url": "https://bioart.niaid.nih.gov/bioart/622",
+          "upstream_category": [
+            "Bioart Category",
+            "Image Style",
+            "Image Type",
+            "Animals",
+            "Animals"
+          ],
+          "tags": [
+            "Animals",
+            "Birds",
+            "Food",
+            "Reptiles",
+            "Shaded",
+            "Vector",
+            "animals",
+            "bird",
+            "egg",
+            "reptile"
+          ],
+          "scientific_name": null,
+          "taxonomy_id": null,
+          "metadata_source": null,
+          "upstream_revision": "2025-03-28T16:17:56.31Z"
+        },
+        {
+          "id": "nih-bioart-890ed1c7af9f78df71af",
+          "source_id": "49",
+          "title": "Bat Silhouette",
+          "source_url": "https://bioart.niaid.nih.gov/bioart/49",
+          "upstream_category": [
+            "Bioart Category",
+            "Animals",
+            "Image Type",
+            "Animals"
+          ],
+          "tags": [
+            "Animals",
+            "Mammals",
+            "Vector",
+            "Wild Mammals",
+            "animals",
+            "bat",
+            "flight",
+            "silhouette"
+          ],
+          "scientific_name": null,
+          "taxonomy_id": null,
+          "metadata_source": null,
+          "upstream_revision": "2024-12-13T21:51:34.98Z"
+        },
+        {
+          "id": "nih-bioart-918544777138398672cd",
+          "source_id": "621",
+          "title": "Cracked Egg",
+          "source_url": "https://bioart.niaid.nih.gov/bioart/621",
+          "upstream_category": [
+            "Bioart Category",
+            "Image Style",
+            "Image Type",
+            "Animals",
+            "Animals"
+          ],
+          "tags": [
+            "Animals",
+            "Birds",
+            "Reptiles",
+            "Shaded",
+            "Vector",
+            "cracked",
+            "egg"
+          ],
+          "scientific_name": null,
+          "taxonomy_id": null,
+          "metadata_source": null,
+          "upstream_revision": "2025-03-28T15:35:19.388Z"
+        },
+        {
+          "id": "nih-bioart-a9dde5feac9e0a72e295",
+          "source_id": "195",
+          "title": "Hare Silhouette",
+          "source_url": "https://bioart.niaid.nih.gov/bioart/195",
+          "upstream_category": [
+            "Animals",
+            "Bioart Category",
+            "Animals",
+            "Animals",
+            "Image Type"
+          ],
+          "tags": [
+            "Animals",
+            "Domestic",
+            "Domestic Mammals",
+            "Mammals",
+            "Vector",
+            "Wild Mammals",
+            "genus Lepus",
+            "jackrabbit",
+            "mammal",
+            "wild"
+          ],
+          "scientific_name": null,
+          "taxonomy_id": null,
+          "metadata_source": null,
+          "upstream_revision": "2025-01-31T17:39:50.505Z"
+        },
+        {
+          "id": "nih-bioart-b03eb8e7e89beb6ee0ae",
+          "source_id": "629",
+          "title": "Sea Lion",
+          "source_url": "https://bioart.niaid.nih.gov/bioart/629",
+          "upstream_category": [
+            "Bioart Category",
+            "Image Style",
+            "Image Type",
+            "Animals",
+            "Animals"
+          ],
+          "tags": [
+            "Animals",
+            "Mammals",
+            "Shaded",
+            "Vector",
+            "Wild Mammals",
+            "otariidae",
+            "pinniped",
+            "seal"
+          ],
+          "scientific_name": null,
+          "taxonomy_id": null,
+          "metadata_source": null,
+          "upstream_revision": "2025-04-02T22:38:48.785Z"
+        },
+        {
+          "id": "nih-bioart-b4bd99b6f88fb7a1d8a8",
+          "source_id": "188",
+          "title": "Hamster Front View",
+          "source_url": "https://bioart.niaid.nih.gov/bioart/188",
+          "upstream_category": [
+            "Bioart Category",
+            "Animals",
+            "Animals",
+            "Animals",
+            "Animals",
+            "Image Type"
+          ],
+          "tags": [
+            "Animals",
+            "Domestic Mammals",
+            "Mammals",
+            "Rodents",
+            "Vector",
+            "Wild Mammals",
+            "animals",
+            "domestic mammals",
+            "front",
+            "hamster",
+            "mammals",
+            "rodents",
+            "syrian",
+            "tan"
+          ],
+          "scientific_name": null,
+          "taxonomy_id": null,
+          "metadata_source": null,
+          "upstream_revision": "2025-01-31T17:33:42.677Z"
+        },
+        {
+          "id": "nih-bioart-ba66c7ccf526122e4273",
+          "source_id": "135",
+          "title": "Duck Silhouette",
+          "source_url": "https://bioart.niaid.nih.gov/bioart/135",
+          "upstream_category": [
+            "Bioart Category",
+            "Animals",
+            "Image Type"
+          ],
+          "tags": [
+            "Animals",
+            "Birds",
+            "Vector",
+            "animals",
+            "bird",
+            "duck",
+            "duck silhouette",
+            "silhouette"
+          ],
+          "scientific_name": null,
+          "taxonomy_id": null,
+          "metadata_source": null,
+          "upstream_revision": "2024-12-13T22:42:53.14Z"
+        },
+        {
+          "id": "nih-bioart-caf263e86d222613471d",
+          "source_id": "643",
+          "title": "Fire-Footed Rope Squirrel",
+          "source_url": "https://bioart.niaid.nih.gov/bioart/643",
+          "upstream_category": [
+            "Bioart Category",
+            "Image Style",
+            "Image Type",
+            "Scientific Disciplines And Research Areas",
+            "Animals",
+            "Animals",
+            "Animals",
+            "Animals"
+          ],
+          "tags": [
+            "Animals",
+            "Domestic Mammals",
+            "Ecology",
+            "Mammals",
+            "Rodents",
+            "Sciuridae",
+            "Shaded",
+            "Squirrel",
+            "Vector",
+            "Wild Mammals",
+            "african",
+            "mammal",
+            "mpox",
+            "rodent",
+            "tree dwelling"
+          ],
+          "scientific_name": null,
+          "taxonomy_id": null,
+          "metadata_source": null,
+          "upstream_revision": "2025-05-02T16:32:30.763Z"
+        },
+        {
+          "id": "nih-bioart-d0858376d4e5b8ff3800",
+          "source_id": "419",
+          "title": "Prairie Dog Silhouette",
+          "source_url": "https://bioart.niaid.nih.gov/bioart/419",
+          "upstream_category": [
+            "Bioart Category",
+            "Animals",
+            "Image Type"
+          ],
+          "tags": [
+            "Animals",
+            "Ground squirrel",
+            "Herbivore",
+            "Prairie dog",
+            "Rodents",
+            "Vector",
+            "animals",
+            "host",
+            "mammals",
+            "rodents",
+            "standing",
+            "tailed"
+          ],
+          "scientific_name": null,
+          "taxonomy_id": null,
+          "metadata_source": null,
+          "upstream_revision": "2024-12-13T23:14:50.623Z"
+        },
+        {
+          "id": "nih-bioart-d25799e1ddd4a1d6166d",
+          "source_id": "498",
+          "title": "Spotted Skunk",
+          "source_url": "https://bioart.niaid.nih.gov/bioart/498",
+          "upstream_category": [
+            "Bioart Category",
+            "Animals",
+            "Image Type"
+          ],
+          "tags": [
+            "Animals",
+            "Mammals",
+            "Vector",
+            "mammal",
+            "spotted skunk",
+            "tailed",
+            "wild"
+          ],
+          "scientific_name": null,
+          "taxonomy_id": null,
+          "metadata_source": null,
+          "upstream_revision": "2025-01-31T17:40:55.165Z"
+        },
+        {
+          "id": "nih-bioart-dbb4d9fe744a6cbabf75",
+          "source_id": "585",
+          "title": "Black Tailed Prairie Dog Laying on Back",
+          "source_url": "https://bioart.niaid.nih.gov/bioart/585",
+          "upstream_category": [
+            "Bioart Category",
+            "Image Style",
+            "Image Type",
+            "Animals"
+          ],
+          "tags": [
+            "Animals",
+            "Flat",
+            "Rodents",
+            "Squirrel",
+            "Vector",
+            "grey",
+            "rodent"
+          ],
+          "scientific_name": null,
+          "taxonomy_id": null,
+          "metadata_source": null,
+          "upstream_revision": "2025-03-13T21:14:53.371Z"
+        },
+        {
+          "id": "nih-bioart-e50ebb9bd719e83c6539",
+          "source_id": "553",
+          "title": "Mastomys",
+          "source_url": "https://bioart.niaid.nih.gov/bioart/553",
+          "upstream_category": [
+            "Bioart Category",
+            "Image Style",
+            "Image Type",
+            "Scientific Disciplines And Research Areas",
+            "Scientific Disciplines And Research Areas",
+            "Animals"
+          ],
+          "tags": [
+            "Animals",
+            "Flat",
+            "Immunology",
+            "Rodents",
+            "Vector",
+            "Virology",
+            "mammal",
+            "multimammate",
+            "rodent"
+          ],
+          "scientific_name": null,
+          "taxonomy_id": null,
+          "metadata_source": null,
+          "upstream_revision": "2025-01-31T15:54:23.208Z"
+        },
+        {
+          "id": "nih-bioart-eac8e63adba193d040cb",
+          "source_id": "500",
+          "title": "Squirrel",
+          "source_url": "https://bioart.niaid.nih.gov/bioart/500",
+          "upstream_category": [
+            "Bioart Category",
+            "Animals",
+            "Image Type"
+          ],
+          "tags": [
+            "Animals",
+            "Rodents",
+            "Squirrel",
+            "Vector",
+            "animals",
+            "rodents"
+          ],
+          "scientific_name": null,
+          "taxonomy_id": null,
+          "metadata_source": null,
+          "upstream_revision": "2025-01-31T17:46:17.985Z"
+        },
+        {
+          "id": "nih-bioart-eb0c334f7b4bbb58c070",
+          "source_id": "12",
+          "title": "African Cattle Silhouette",
+          "source_url": "https://bioart.niaid.nih.gov/bioart/12",
+          "upstream_category": [
+            "Animals",
+            "Bioart Category",
+            "Image Type",
+            "Animals"
+          ],
+          "tags": [
+            "Animals",
+            "Ankole-Watusi",
+            "Domestic Mammals",
+            "Mammals",
+            "Vector",
+            "animals",
+            "bovine",
+            "cattle",
+            "silhouette"
+          ],
+          "scientific_name": null,
+          "taxonomy_id": null,
+          "metadata_source": null,
+          "upstream_revision": "2024-12-13T21:47:45.477Z"
+        },
+        {
+          "id": "nih-bioart-f173fb974fbb9fe987dd",
+          "source_id": "607",
+          "title": "Pigs",
+          "source_url": "https://bioart.niaid.nih.gov/bioart/607",
+          "upstream_category": [
+            "Bioart Category",
+            "Animals",
+            "Animals",
+            "Animals"
+          ],
+          "tags": [
+            "Animals",
+            "Domestic Mammals",
+            "Mammals",
+            "Wild Mammals",
+            "animals",
+            "pigs",
+            "transmission"
+          ],
+          "scientific_name": null,
+          "taxonomy_id": null,
+          "metadata_source": null,
+          "upstream_revision": "2025-03-24T18:48:25.365Z"
+        }
+      ],
+      "counterexamples": [
+        "NIH 625 Fried Egg is under Animals/Birds/Food; NIH 622 Egg and 621 Cracked Egg are also not proof of a whole animal."
+      ],
+      "recommendation": "Preserve official ontologykey/ontologytype pairs before defining narrow source-specific classification. Do not flatten Animals and call all 39 scientifically correct animals.",
+      "implementation_evidence": [
+        "mga_resources/web_sources.py:137",
+        "mga_resources/web_sources.py:138",
+        "mga_resources/catalog.py:284"
+      ]
+    },
+    {
+      "id": "reactome_category_stored_as_tags",
+      "kind": "narrow_official_category_mapping_candidate",
+      "observation": "Official category-page names are preserved only as tags. Among the unclassified Reactome families, 54 have Transporter and 31 Compound; these 85 disjoint families have usable molecule-category evidence. 13 arrow and 16 Background remain broad or outside the current scientific taxonomy.",
+      "candidate_records": [
+        {
+          "id": "reactome-03b7da4b4e3b9ef3f7c7",
+          "source_id": "R-ICO-014806",
+          "title": "SLC25A15",
+          "source_url": "https://reactome.org/content/detail/R-ICO-014806",
+          "upstream_category": null,
+          "tags": [
+            "Transporter"
+          ],
+          "scientific_name": null,
+          "taxonomy_id": null,
+          "metadata_source": null,
+          "upstream_revision": "catalog-sha256:93212b956a2ed67cc9d9a37acc4bf9e50979b14f763499be437b51a4b069f3c6"
+        },
+        {
+          "id": "reactome-04046971fe0e655ab55e",
+          "source_id": "R-ICO-012621",
+          "title": "Diglyceride",
+          "source_url": "https://reactome.org/content/detail/R-ICO-012621",
+          "upstream_category": null,
+          "tags": [
+            "Compound"
+          ],
+          "scientific_name": null,
+          "taxonomy_id": null,
+          "metadata_source": null,
+          "upstream_revision": "catalog-sha256:93212b956a2ed67cc9d9a37acc4bf9e50979b14f763499be437b51a4b069f3c6"
+        },
+        {
+          "id": "reactome-0a11d1b7515209ce9a2e",
+          "source_id": "R-ICO-014432",
+          "title": "ABCC1",
+          "source_url": "https://reactome.org/content/detail/R-ICO-014432",
+          "upstream_category": null,
+          "tags": [
+            "transporter",
+            "Transporter"
+          ],
+          "scientific_name": null,
+          "taxonomy_id": null,
+          "metadata_source": null,
+          "upstream_revision": "catalog-sha256:93212b956a2ed67cc9d9a37acc4bf9e50979b14f763499be437b51a4b069f3c6"
+        },
+        {
+          "id": "reactome-0b6e549fc97d2b6195ac",
+          "source_id": "R-ICO-014085",
+          "title": "ABCB4",
+          "source_url": "https://reactome.org/content/detail/R-ICO-014085",
+          "upstream_category": null,
+          "tags": [
+            "transporter",
+            "Transporter"
+          ],
+          "scientific_name": null,
+          "taxonomy_id": null,
+          "metadata_source": null,
+          "upstream_revision": "catalog-sha256:93212b956a2ed67cc9d9a37acc4bf9e50979b14f763499be437b51a4b069f3c6"
+        },
+        {
+          "id": "reactome-11dc400acecf98bacc51",
+          "source_id": "R-ICO-012816",
+          "title": "Heparan sulfate",
+          "source_url": "https://reactome.org/content/detail/R-ICO-012816",
+          "upstream_category": null,
+          "tags": [
+            "Compound"
+          ],
+          "scientific_name": null,
+          "taxonomy_id": null,
+          "metadata_source": null,
+          "upstream_revision": "catalog-sha256:93212b956a2ed67cc9d9a37acc4bf9e50979b14f763499be437b51a4b069f3c6"
+        },
+        {
+          "id": "reactome-14a434ddf510e0369a28",
+          "source_id": "R-ICO-014776",
+          "title": "ANO6",
+          "source_url": "https://reactome.org/content/detail/R-ICO-014776",
+          "upstream_category": null,
+          "tags": [
+            "transporter",
+            "Transporter"
+          ],
+          "scientific_name": null,
+          "taxonomy_id": null,
+          "metadata_source": null,
+          "upstream_revision": "catalog-sha256:93212b956a2ed67cc9d9a37acc4bf9e50979b14f763499be437b51a4b069f3c6"
+        },
+        {
+          "id": "reactome-14b5352255702aaef078",
+          "source_id": "R-ICO-013565",
+          "title": "Uniporter 02",
+          "source_url": "https://reactome.org/content/detail/R-ICO-013565",
+          "upstream_category": null,
+          "tags": [
+            "Transporter"
+          ],
+          "scientific_name": null,
+          "taxonomy_id": null,
+          "metadata_source": null,
+          "upstream_revision": "catalog-sha256:93212b956a2ed67cc9d9a37acc4bf9e50979b14f763499be437b51a4b069f3c6"
+        },
+        {
+          "id": "reactome-168949f9fd7b61a9c7d7",
+          "source_id": "R-ICO-013547",
+          "title": "Uniporter 04",
+          "source_url": "https://reactome.org/content/detail/R-ICO-013547",
+          "upstream_category": null,
+          "tags": [
+            "Transporter"
+          ],
+          "scientific_name": null,
+          "taxonomy_id": null,
+          "metadata_source": null,
+          "upstream_revision": "catalog-sha256:93212b956a2ed67cc9d9a37acc4bf9e50979b14f763499be437b51a4b069f3c6"
+        },
+        {
+          "id": "reactome-1838dac555afb32c7dd6",
+          "source_id": "R-ICO-014175",
+          "title": "CNG channel",
+          "source_url": "https://reactome.org/content/detail/R-ICO-014175",
+          "upstream_category": null,
+          "tags": [
+            "Transporter"
+          ],
+          "scientific_name": null,
+          "taxonomy_id": null,
+          "metadata_source": null,
+          "upstream_revision": "catalog-sha256:93212b956a2ed67cc9d9a37acc4bf9e50979b14f763499be437b51a4b069f3c6"
+        },
+        {
+          "id": "reactome-1fcbb8842af650539beb",
+          "source_id": "R-ICO-014099",
+          "title": "ABCD4",
+          "source_url": "https://reactome.org/content/detail/R-ICO-014099",
+          "upstream_category": null,
+          "tags": [
+            "transporter",
+            "Transporter"
+          ],
+          "scientific_name": null,
+          "taxonomy_id": null,
+          "metadata_source": null,
+          "upstream_revision": "catalog-sha256:93212b956a2ed67cc9d9a37acc4bf9e50979b14f763499be437b51a4b069f3c6"
+        },
+        {
+          "id": "reactome-2059245e4d0550c4982a",
+          "source_id": "R-ICO-013912",
+          "title": "Pentose phosphate",
+          "source_url": "https://reactome.org/content/detail/R-ICO-013912",
+          "upstream_category": null,
+          "tags": [
+            "Compound"
+          ],
+          "scientific_name": null,
+          "taxonomy_id": null,
+          "metadata_source": null,
+          "upstream_revision": "catalog-sha256:93212b956a2ed67cc9d9a37acc4bf9e50979b14f763499be437b51a4b069f3c6"
+        },
+        {
+          "id": "reactome-2231c5571b437f0607a0",
+          "source_id": "R-ICO-014131",
+          "title": "ABCA1",
+          "source_url": "https://reactome.org/content/detail/R-ICO-014131",
+          "upstream_category": null,
+          "tags": [
+            "transporter",
+            "Transporter"
+          ],
+          "scientific_name": null,
+          "taxonomy_id": null,
+          "metadata_source": null,
+          "upstream_revision": "catalog-sha256:93212b956a2ed67cc9d9a37acc4bf9e50979b14f763499be437b51a4b069f3c6"
+        },
+        {
+          "id": "reactome-2ba6a14aaf10e56d82e2",
+          "source_id": "R-ICO-013212",
+          "title": "Potassium channel",
+          "source_url": "https://reactome.org/content/detail/R-ICO-013212",
+          "upstream_category": null,
+          "tags": [
+            "Transporter"
+          ],
+          "scientific_name": null,
+          "taxonomy_id": null,
+          "metadata_source": null,
+          "upstream_revision": "catalog-sha256:93212b956a2ed67cc9d9a37acc4bf9e50979b14f763499be437b51a4b069f3c6"
+        },
+        {
+          "id": "reactome-2f4a57c39feaea7a3882",
+          "source_id": "R-ICO-014114",
+          "title": "ABCA3",
+          "source_url": "https://reactome.org/content/detail/R-ICO-014114",
+          "upstream_category": null,
+          "tags": [
+            "transporter",
+            "Transporter"
+          ],
+          "scientific_name": null,
+          "taxonomy_id": null,
+          "metadata_source": null,
+          "upstream_revision": "catalog-sha256:93212b956a2ed67cc9d9a37acc4bf9e50979b14f763499be437b51a4b069f3c6"
+        },
+        {
+          "id": "reactome-31b8cba66f435741e8b7",
+          "source_id": "R-ICO-013511",
+          "title": "Uniporter 01",
+          "source_url": "https://reactome.org/content/detail/R-ICO-013511",
+          "upstream_category": null,
+          "tags": [
+            "Transporter"
+          ],
+          "scientific_name": null,
+          "taxonomy_id": null,
+          "metadata_source": null,
+          "upstream_revision": "catalog-sha256:93212b956a2ed67cc9d9a37acc4bf9e50979b14f763499be437b51a4b069f3c6"
+        },
+        {
+          "id": "reactome-380b0c9fa02dbb445643",
+          "source_id": "R-ICO-012445",
+          "title": "Aquaporin",
+          "source_url": "https://reactome.org/content/detail/R-ICO-012445",
+          "upstream_category": null,
+          "tags": [
+            "transporter",
+            "Transporter"
+          ],
+          "scientific_name": null,
+          "taxonomy_id": null,
+          "metadata_source": null,
+          "upstream_revision": "catalog-sha256:93212b956a2ed67cc9d9a37acc4bf9e50979b14f763499be437b51a4b069f3c6"
+        },
+        {
+          "id": "reactome-394a58a763eacc43d83d",
+          "source_id": "R-ICO-013150",
+          "title": "Palmitic acid",
+          "source_url": "https://reactome.org/content/detail/R-ICO-013150",
+          "upstream_category": null,
+          "tags": [
+            "Compound"
+          ],
+          "scientific_name": null,
+          "taxonomy_id": null,
+          "metadata_source": null,
+          "upstream_revision": "catalog-sha256:93212b956a2ed67cc9d9a37acc4bf9e50979b14f763499be437b51a4b069f3c6"
+        },
+        {
+          "id": "reactome-3e4bdb6b168ba58a18b6",
+          "source_id": "R-ICO-013821",
+          "title": "SLC22A5",
+          "source_url": "https://reactome.org/content/detail/R-ICO-013821",
+          "upstream_category": null,
+          "tags": [
+            "Transporter"
+          ],
+          "scientific_name": null,
+          "taxonomy_id": null,
+          "metadata_source": null,
+          "upstream_revision": "catalog-sha256:93212b956a2ed67cc9d9a37acc4bf9e50979b14f763499be437b51a4b069f3c6"
+        },
+        {
+          "id": "reactome-4019745c3b7697b76ece",
+          "source_id": "R-ICO-013580",
+          "title": "Antiporter 02",
+          "source_url": "https://reactome.org/content/detail/R-ICO-013580",
+          "upstream_category": null,
+          "tags": [
+            "transporter",
+            "Transporter"
+          ],
+          "scientific_name": null,
+          "taxonomy_id": null,
+          "metadata_source": null,
+          "upstream_revision": "catalog-sha256:93212b956a2ed67cc9d9a37acc4bf9e50979b14f763499be437b51a4b069f3c6"
+        },
+        {
+          "id": "reactome-40af47deca9f2c21a358",
+          "source_id": "R-ICO-012907",
+          "title": "Ion channel",
+          "source_url": "https://reactome.org/content/detail/R-ICO-012907",
+          "upstream_category": null,
+          "tags": [
+            "Transporter"
+          ],
+          "scientific_name": null,
+          "taxonomy_id": null,
+          "metadata_source": null,
+          "upstream_revision": "catalog-sha256:93212b956a2ed67cc9d9a37acc4bf9e50979b14f763499be437b51a4b069f3c6"
+        },
+        {
+          "id": "reactome-43753611b39cf19b0abc",
+          "source_id": "R-ICO-013251",
+          "title": "Proton channel",
+          "source_url": "https://reactome.org/content/detail/R-ICO-013251",
+          "upstream_category": null,
+          "tags": [
+            "Transporter"
+          ],
+          "scientific_name": null,
+          "taxonomy_id": null,
+          "metadata_source": null,
+          "upstream_revision": "catalog-sha256:93212b956a2ed67cc9d9a37acc4bf9e50979b14f763499be437b51a4b069f3c6"
+        },
+        {
+          "id": "reactome-483a44132344e3ed056e",
+          "source_id": "R-ICO-013209",
+          "title": "Polysaccharides",
+          "source_url": "https://reactome.org/content/detail/R-ICO-013209",
+          "upstream_category": null,
+          "tags": [
+            "Compound"
+          ],
+          "scientific_name": null,
+          "taxonomy_id": null,
+          "metadata_source": null,
+          "upstream_revision": "catalog-sha256:93212b956a2ed67cc9d9a37acc4bf9e50979b14f763499be437b51a4b069f3c6"
+        },
+        {
+          "id": "reactome-499b6b1d05150abc9800",
+          "source_id": "R-ICO-013951",
+          "title": "Pro-Inflammatory mediators",
+          "source_url": "https://reactome.org/content/detail/R-ICO-013951",
+          "upstream_category": null,
+          "tags": [
+            "Compound"
+          ],
+          "scientific_name": null,
+          "taxonomy_id": null,
+          "metadata_source": null,
+          "upstream_revision": "catalog-sha256:93212b956a2ed67cc9d9a37acc4bf9e50979b14f763499be437b51a4b069f3c6"
+        },
+        {
+          "id": "reactome-4ddd4e8500fb3e6cecf6",
+          "source_id": "R-ICO-014115",
+          "title": "ABCC6",
+          "source_url": "https://reactome.org/content/detail/R-ICO-014115",
+          "upstream_category": null,
+          "tags": [
+            "transporter",
+            "Transporter"
+          ],
+          "scientific_name": null,
+          "taxonomy_id": null,
+          "metadata_source": null,
+          "upstream_revision": "catalog-sha256:93212b956a2ed67cc9d9a37acc4bf9e50979b14f763499be437b51a4b069f3c6"
+        },
+        {
+          "id": "reactome-4f6fc32bfc1d0711d215",
+          "source_id": "R-ICO-014674",
+          "title": "PIEZO1",
+          "source_url": "https://reactome.org/content/detail/R-ICO-014674",
+          "upstream_category": null,
+          "tags": [
+            "Transporter"
+          ],
+          "scientific_name": null,
+          "taxonomy_id": null,
+          "metadata_source": null,
+          "upstream_revision": "catalog-sha256:93212b956a2ed67cc9d9a37acc4bf9e50979b14f763499be437b51a4b069f3c6"
+        },
+        {
+          "id": "reactome-50983321deb9d7e63b53",
+          "source_id": "R-ICO-014102",
+          "title": "ABCG5",
+          "source_url": "https://reactome.org/content/detail/R-ICO-014102",
+          "upstream_category": null,
+          "tags": [
+            "transporter",
+            "Transporter"
+          ],
+          "scientific_name": null,
+          "taxonomy_id": null,
+          "metadata_source": null,
+          "upstream_revision": "catalog-sha256:93212b956a2ed67cc9d9a37acc4bf9e50979b14f763499be437b51a4b069f3c6"
+        },
+        {
+          "id": "reactome-5382cd038b68011b8b78",
+          "source_id": "R-ICO-013085",
+          "title": "NMDARs",
+          "source_url": "https://reactome.org/content/detail/R-ICO-013085",
+          "upstream_category": null,
+          "tags": [
+            "Transporter"
+          ],
+          "scientific_name": null,
+          "taxonomy_id": null,
+          "metadata_source": null,
+          "upstream_revision": "catalog-sha256:93212b956a2ed67cc9d9a37acc4bf9e50979b14f763499be437b51a4b069f3c6"
+        },
+        {
+          "id": "reactome-5490c55efe806b78f917",
+          "source_id": "R-ICO-013564",
+          "title": "Symporter 03",
+          "source_url": "https://reactome.org/content/detail/R-ICO-013564",
+          "upstream_category": null,
+          "tags": [
+            "Transporter"
+          ],
+          "scientific_name": null,
+          "taxonomy_id": null,
+          "metadata_source": null,
+          "upstream_revision": "catalog-sha256:93212b956a2ed67cc9d9a37acc4bf9e50979b14f763499be437b51a4b069f3c6"
+        },
+        {
+          "id": "reactome-55d1867775417e689543",
+          "source_id": "R-ICO-014130",
+          "title": "ABCB11",
+          "source_url": "https://reactome.org/content/detail/R-ICO-014130",
+          "upstream_category": null,
+          "tags": [
+            "transporter",
+            "Transporter"
+          ],
+          "scientific_name": null,
+          "taxonomy_id": null,
+          "metadata_source": null,
+          "upstream_revision": "catalog-sha256:93212b956a2ed67cc9d9a37acc4bf9e50979b14f763499be437b51a4b069f3c6"
+        },
+        {
+          "id": "reactome-5a12aba0225279e6b329",
+          "source_id": "R-ICO-013582",
+          "title": "Uniporter 03",
+          "source_url": "https://reactome.org/content/detail/R-ICO-013582",
+          "upstream_category": null,
+          "tags": [
+            "Transporter"
+          ],
+          "scientific_name": null,
+          "taxonomy_id": null,
+          "metadata_source": null,
+          "upstream_revision": "catalog-sha256:93212b956a2ed67cc9d9a37acc4bf9e50979b14f763499be437b51a4b069f3c6"
+        },
+        {
+          "id": "reactome-5a28b8a21613ef1d2978",
+          "source_id": "R-ICO-012431",
+          "title": "Antiporter 01",
+          "source_url": "https://reactome.org/content/detail/R-ICO-012431",
+          "upstream_category": null,
+          "tags": [
+            "transporter",
+            "Transporter"
+          ],
+          "scientific_name": null,
+          "taxonomy_id": null,
+          "metadata_source": null,
+          "upstream_revision": "catalog-sha256:93212b956a2ed67cc9d9a37acc4bf9e50979b14f763499be437b51a4b069f3c6"
+        },
+        {
+          "id": "reactome-5d0df97f5d7fc1eeb0f4",
+          "source_id": "R-ICO-013934",
+          "title": "Anti-inflammatory mediators",
+          "source_url": "https://reactome.org/content/detail/R-ICO-013934",
+          "upstream_category": null,
+          "tags": [
+            "Compound"
+          ],
+          "scientific_name": null,
+          "taxonomy_id": null,
+          "metadata_source": null,
+          "upstream_revision": "catalog-sha256:93212b956a2ed67cc9d9a37acc4bf9e50979b14f763499be437b51a4b069f3c6"
+        },
+        {
+          "id": "reactome-633d11a80af008612119",
+          "source_id": "R-ICO-012454",
+          "title": "AUG start codon",
+          "source_url": "https://reactome.org/content/detail/R-ICO-012454",
+          "upstream_category": null,
+          "tags": [
+            "Compound"
+          ],
+          "scientific_name": null,
+          "taxonomy_id": null,
+          "metadata_source": null,
+          "upstream_revision": "catalog-sha256:93212b956a2ed67cc9d9a37acc4bf9e50979b14f763499be437b51a4b069f3c6"
+        },
+        {
+          "id": "reactome-664a138393f338ea980a",
+          "source_id": "R-ICO-013207",
+          "title": "Polyadenylate",
+          "source_url": "https://reactome.org/content/detail/R-ICO-013207",
+          "upstream_category": null,
+          "tags": [
+            "Compound"
+          ],
+          "scientific_name": null,
+          "taxonomy_id": null,
+          "metadata_source": null,
+          "upstream_revision": "catalog-sha256:93212b956a2ed67cc9d9a37acc4bf9e50979b14f763499be437b51a4b069f3c6"
+        },
+        {
+          "id": "reactome-6cc82cf5808b8ad4ead4",
+          "source_id": "R-ICO-012605",
+          "title": "D-Mannuronic acid",
+          "source_url": "https://reactome.org/content/detail/R-ICO-012605",
+          "upstream_category": null,
+          "tags": [
+            "Compound"
+          ],
+          "scientific_name": null,
+          "taxonomy_id": null,
+          "metadata_source": null,
+          "upstream_revision": "catalog-sha256:93212b956a2ed67cc9d9a37acc4bf9e50979b14f763499be437b51a4b069f3c6"
+        },
+        {
+          "id": "reactome-6fb4351df66978ca0199",
+          "source_id": "R-ICO-013043",
+          "title": "N-Acetyl-D-allosamine",
+          "source_url": "https://reactome.org/content/detail/R-ICO-013043",
+          "upstream_category": null,
+          "tags": [
+            "Compound"
+          ],
+          "scientific_name": null,
+          "taxonomy_id": null,
+          "metadata_source": null,
+          "upstream_revision": "catalog-sha256:93212b956a2ed67cc9d9a37acc4bf9e50979b14f763499be437b51a4b069f3c6"
+        },
+        {
+          "id": "reactome-70ba2501bb7163b0c889",
+          "source_id": "R-ICO-014122",
+          "title": "SLC34A2",
+          "source_url": "https://reactome.org/content/detail/R-ICO-014122",
+          "upstream_category": null,
+          "tags": [
+            "Transporter"
+          ],
+          "scientific_name": null,
+          "taxonomy_id": null,
+          "metadata_source": null,
+          "upstream_revision": "catalog-sha256:93212b956a2ed67cc9d9a37acc4bf9e50979b14f763499be437b51a4b069f3c6"
+        },
+        {
+          "id": "reactome-71fd6b58e4d4221336b4",
+          "source_id": "R-ICO-013837",
+          "title": "SLC25A1",
+          "source_url": "https://reactome.org/content/detail/R-ICO-013837",
+          "upstream_category": null,
+          "tags": [
+            "Transporter"
+          ],
+          "scientific_name": null,
+          "taxonomy_id": null,
+          "metadata_source": null,
+          "upstream_revision": "catalog-sha256:93212b956a2ed67cc9d9a37acc4bf9e50979b14f763499be437b51a4b069f3c6"
+        },
+        {
+          "id": "reactome-755bcab5b99e491d8be5",
+          "source_id": "R-ICO-012381",
+          "title": "ABC transporter",
+          "source_url": "https://reactome.org/content/detail/R-ICO-012381",
+          "upstream_category": null,
+          "tags": [
+            "transporter",
+            "Transporter"
+          ],
+          "scientific_name": null,
+          "taxonomy_id": null,
+          "metadata_source": null,
+          "upstream_revision": "catalog-sha256:93212b956a2ed67cc9d9a37acc4bf9e50979b14f763499be437b51a4b069f3c6"
+        },
+        {
+          "id": "reactome-7749d4ab7680970e7f1a",
+          "source_id": "R-ICO-012372",
+          "title": "5-O-phosphono-alpha-D-ribofuranosyl diphosphate",
+          "source_url": "https://reactome.org/content/detail/R-ICO-012372",
+          "upstream_category": null,
+          "tags": [
+            "Compound"
+          ],
+          "scientific_name": null,
+          "taxonomy_id": null,
+          "metadata_source": null,
+          "upstream_revision": "catalog-sha256:93212b956a2ed67cc9d9a37acc4bf9e50979b14f763499be437b51a4b069f3c6"
+        },
+        {
+          "id": "reactome-79f6bec17a02cdcbce64",
+          "source_id": "R-ICO-014120",
+          "title": "ABCG8",
+          "source_url": "https://reactome.org/content/detail/R-ICO-014120",
+          "upstream_category": null,
+          "tags": [
+            "transporter",
+            "Transporter"
+          ],
+          "scientific_name": null,
+          "taxonomy_id": null,
+          "metadata_source": null,
+          "upstream_revision": "catalog-sha256:93212b956a2ed67cc9d9a37acc4bf9e50979b14f763499be437b51a4b069f3c6"
+        },
+        {
+          "id": "reactome-7b4b8b47a48bdc0afa21",
+          "source_id": "R-ICO-012419",
+          "title": "AMPARs",
+          "source_url": "https://reactome.org/content/detail/R-ICO-012419",
+          "upstream_category": null,
+          "tags": [
+            "transporter",
+            "Transporter"
+          ],
+          "scientific_name": null,
+          "taxonomy_id": null,
+          "metadata_source": null,
+          "upstream_revision": "catalog-sha256:93212b956a2ed67cc9d9a37acc4bf9e50979b14f763499be437b51a4b069f3c6"
+        },
+        {
+          "id": "reactome-84e1c121414cee1a136a",
+          "source_id": "R-ICO-013049",
+          "title": "N-acetylgalactosamine",
+          "source_url": "https://reactome.org/content/detail/R-ICO-013049",
+          "upstream_category": null,
+          "tags": [
+            "Compound"
+          ],
+          "scientific_name": null,
+          "taxonomy_id": null,
+          "metadata_source": null,
+          "upstream_revision": "catalog-sha256:93212b956a2ed67cc9d9a37acc4bf9e50979b14f763499be437b51a4b069f3c6"
+        },
+        {
+          "id": "reactome-8776c27fae4f849630a1",
+          "source_id": "R-ICO-012583",
+          "title": "Cotransporter",
+          "source_url": "https://reactome.org/content/detail/R-ICO-012583",
+          "upstream_category": null,
+          "tags": [
+            "Transporter"
+          ],
+          "scientific_name": null,
+          "taxonomy_id": null,
+          "metadata_source": null,
+          "upstream_revision": "catalog-sha256:93212b956a2ed67cc9d9a37acc4bf9e50979b14f763499be437b51a4b069f3c6"
+        },
+        {
+          "id": "reactome-8881c8f782b2f467be7d",
+          "source_id": "R-ICO-014245",
+          "title": "Fucose",
+          "source_url": "https://reactome.org/content/detail/R-ICO-014245",
+          "upstream_category": null,
+          "tags": [
+            "Compound"
+          ],
+          "scientific_name": null,
+          "taxonomy_id": null,
+          "metadata_source": null,
+          "upstream_revision": "catalog-sha256:93212b956a2ed67cc9d9a37acc4bf9e50979b14f763499be437b51a4b069f3c6"
+        },
+        {
+          "id": "reactome-88c1d7d5380e93b0b2e8",
+          "source_id": "R-ICO-014168",
+          "title": "ABCA4",
+          "source_url": "https://reactome.org/content/detail/R-ICO-014168",
+          "upstream_category": null,
+          "tags": [
+            "transporter",
+            "Transporter"
+          ],
+          "scientific_name": null,
+          "taxonomy_id": null,
+          "metadata_source": null,
+          "upstream_revision": "catalog-sha256:93212b956a2ed67cc9d9a37acc4bf9e50979b14f763499be437b51a4b069f3c6"
+        },
+        {
+          "id": "reactome-8c1220b65882b26a0523",
+          "source_id": "R-ICO-013839",
+          "title": "ABCD1",
+          "source_url": "https://reactome.org/content/detail/R-ICO-013839",
+          "upstream_category": null,
+          "tags": [
+            "transporter",
+            "Transporter"
+          ],
+          "scientific_name": null,
+          "taxonomy_id": null,
+          "metadata_source": null,
+          "upstream_revision": "catalog-sha256:93212b956a2ed67cc9d9a37acc4bf9e50979b14f763499be437b51a4b069f3c6"
+        },
+        {
+          "id": "reactome-8e4c116b1a5acb72cb6c",
+          "source_id": "R-ICO-013410",
+          "title": "Sucrose",
+          "source_url": "https://reactome.org/content/detail/R-ICO-013410",
+          "upstream_category": null,
+          "tags": [
+            "Compound"
+          ],
+          "scientific_name": null,
+          "taxonomy_id": null,
+          "metadata_source": null,
+          "upstream_revision": "catalog-sha256:93212b956a2ed67cc9d9a37acc4bf9e50979b14f763499be437b51a4b069f3c6"
+        },
+        {
+          "id": "reactome-8f7b96f86021ee7fb68c",
+          "source_id": "R-ICO-012626",
+          "title": "Disaccharides",
+          "source_url": "https://reactome.org/content/detail/R-ICO-012626",
+          "upstream_category": null,
+          "tags": [
+            "Compound"
+          ],
+          "scientific_name": null,
+          "taxonomy_id": null,
+          "metadata_source": null,
+          "upstream_revision": "catalog-sha256:93212b956a2ed67cc9d9a37acc4bf9e50979b14f763499be437b51a4b069f3c6"
+        },
+        {
+          "id": "reactome-923ad6ce07f52d1681b4",
+          "source_id": "R-ICO-014853",
+          "title": "AAUUU sequence",
+          "source_url": "https://reactome.org/content/detail/R-ICO-014853",
+          "upstream_category": null,
+          "tags": [
+            "Compound"
+          ],
+          "scientific_name": null,
+          "taxonomy_id": null,
+          "metadata_source": null,
+          "upstream_revision": "catalog-sha256:93212b956a2ed67cc9d9a37acc4bf9e50979b14f763499be437b51a4b069f3c6"
+        },
+        {
+          "id": "reactome-94944624e82dc5b1172e",
+          "source_id": "R-ICO-012967",
+          "title": "Lyxose",
+          "source_url": "https://reactome.org/content/detail/R-ICO-012967",
+          "upstream_category": null,
+          "tags": [
+            "Compound"
+          ],
+          "scientific_name": null,
+          "taxonomy_id": null,
+          "metadata_source": null,
+          "upstream_revision": "catalog-sha256:93212b956a2ed67cc9d9a37acc4bf9e50979b14f763499be437b51a4b069f3c6"
+        },
+        {
+          "id": "reactome-9a954cf13f1da876a3b6",
+          "source_id": "R-ICO-013768",
+          "title": "Myristoyl group",
+          "source_url": "https://reactome.org/content/detail/R-ICO-013768",
+          "upstream_category": null,
+          "tags": [
+            "Compound"
+          ],
+          "scientific_name": null,
+          "taxonomy_id": null,
+          "metadata_source": null,
+          "upstream_revision": "catalog-sha256:93212b956a2ed67cc9d9a37acc4bf9e50979b14f763499be437b51a4b069f3c6"
+        },
+        {
+          "id": "reactome-9ac81b6943fc870bc3a2",
+          "source_id": "R-ICO-012914",
+          "title": "Iron channel",
+          "source_url": "https://reactome.org/content/detail/R-ICO-012914",
+          "upstream_category": null,
+          "tags": [
+            "Transporter"
+          ],
+          "scientific_name": null,
+          "taxonomy_id": null,
+          "metadata_source": null,
+          "upstream_revision": "catalog-sha256:93212b956a2ed67cc9d9a37acc4bf9e50979b14f763499be437b51a4b069f3c6"
+        },
+        {
+          "id": "reactome-a11a09c4fdf7d67ceaf7",
+          "source_id": "R-ICO-014831",
+          "title": "Generic transporter",
+          "source_url": "https://reactome.org/content/detail/R-ICO-014831",
+          "upstream_category": null,
+          "tags": [
+            "Transporter"
+          ],
+          "scientific_name": null,
+          "taxonomy_id": null,
+          "metadata_source": null,
+          "upstream_revision": "catalog-sha256:93212b956a2ed67cc9d9a37acc4bf9e50979b14f763499be437b51a4b069f3c6"
+        },
+        {
+          "id": "reactome-a18b0d30eeb4005aa8e4",
+          "source_id": "R-ICO-013543",
+          "title": "Zinc channel",
+          "source_url": "https://reactome.org/content/detail/R-ICO-013543",
+          "upstream_category": null,
+          "tags": [
+            "Transporter"
+          ],
+          "scientific_name": null,
+          "taxonomy_id": null,
+          "metadata_source": null,
+          "upstream_revision": "catalog-sha256:93212b956a2ed67cc9d9a37acc4bf9e50979b14f763499be437b51a4b069f3c6"
+        },
+        {
+          "id": "reactome-a70c5c208b1cfb89ed5e",
+          "source_id": "R-ICO-012607",
+          "title": "D-Taluronic acid",
+          "source_url": "https://reactome.org/content/detail/R-ICO-012607",
+          "upstream_category": null,
+          "tags": [
+            "Compound"
+          ],
+          "scientific_name": null,
+          "taxonomy_id": null,
+          "metadata_source": null,
+          "upstream_revision": "catalog-sha256:93212b956a2ed67cc9d9a37acc4bf9e50979b14f763499be437b51a4b069f3c6"
+        },
+        {
+          "id": "reactome-a719bfe7bfa048c42793",
+          "source_id": "R-ICO-014133",
+          "title": "ABCC9",
+          "source_url": "https://reactome.org/content/detail/R-ICO-014133",
+          "upstream_category": null,
+          "tags": [
+            "transporter",
+            "Transporter"
+          ],
+          "scientific_name": null,
+          "taxonomy_id": null,
+          "metadata_source": null,
+          "upstream_revision": "catalog-sha256:93212b956a2ed67cc9d9a37acc4bf9e50979b14f763499be437b51a4b069f3c6"
+        },
+        {
+          "id": "reactome-a873fa78e48332d3d686",
+          "source_id": "R-ICO-013949",
+          "title": "SLC26A5 tetramer",
+          "source_url": "https://reactome.org/content/detail/R-ICO-013949",
+          "upstream_category": null,
+          "tags": [
+            "Transporter"
+          ],
+          "scientific_name": null,
+          "taxonomy_id": null,
+          "metadata_source": null,
+          "upstream_revision": "catalog-sha256:93212b956a2ed67cc9d9a37acc4bf9e50979b14f763499be437b51a4b069f3c6"
+        },
+        {
+          "id": "reactome-ad1bc1345bcb47a11ff8",
+          "source_id": "R-ICO-012599",
+          "title": "D-Galacturonic acid",
+          "source_url": "https://reactome.org/content/detail/R-ICO-012599",
+          "upstream_category": null,
+          "tags": [
+            "Compound"
+          ],
+          "scientific_name": null,
+          "taxonomy_id": null,
+          "metadata_source": null,
+          "upstream_revision": "catalog-sha256:93212b956a2ed67cc9d9a37acc4bf9e50979b14f763499be437b51a4b069f3c6"
+        },
+        {
+          "id": "reactome-ae12b74643cea9b50a6c",
+          "source_id": "R-ICO-013305",
+          "title": "Ribose",
+          "source_url": "https://reactome.org/content/detail/R-ICO-013305",
+          "upstream_category": null,
+          "tags": [
+            "Compound"
+          ],
+          "scientific_name": null,
+          "taxonomy_id": null,
+          "metadata_source": null,
+          "upstream_revision": "catalog-sha256:93212b956a2ed67cc9d9a37acc4bf9e50979b14f763499be437b51a4b069f3c6"
+        },
+        {
+          "id": "reactome-b16d3de5cf924031dbd7",
+          "source_id": "R-ICO-014022",
+          "title": "SUBSTANCE",
+          "source_url": "https://reactome.org/content/detail/R-ICO-014022",
+          "upstream_category": null,
+          "tags": [
+            "Compound"
+          ],
+          "scientific_name": null,
+          "taxonomy_id": null,
+          "metadata_source": null,
+          "upstream_revision": "catalog-sha256:93212b956a2ed67cc9d9a37acc4bf9e50979b14f763499be437b51a4b069f3c6"
+        },
+        {
+          "id": "reactome-b1f0c8a2f73f690f1eae",
+          "source_id": "R-ICO-012602",
+          "title": "D-Gulosamine",
+          "source_url": "https://reactome.org/content/detail/R-ICO-012602",
+          "upstream_category": null,
+          "tags": [
+            "Compound"
+          ],
+          "scientific_name": null,
+          "taxonomy_id": null,
+          "metadata_source": null,
+          "upstream_revision": "catalog-sha256:93212b956a2ed67cc9d9a37acc4bf9e50979b14f763499be437b51a4b069f3c6"
+        },
+        {
+          "id": "reactome-b2b0a077c340c5d82edc",
+          "source_id": "R-ICO-014051",
+          "title": "Ganglioside",
+          "source_url": "https://reactome.org/content/detail/R-ICO-014051",
+          "upstream_category": null,
+          "tags": [
+            "Compound"
+          ],
+          "scientific_name": null,
+          "taxonomy_id": null,
+          "metadata_source": null,
+          "upstream_revision": "catalog-sha256:93212b956a2ed67cc9d9a37acc4bf9e50979b14f763499be437b51a4b069f3c6"
+        },
+        {
+          "id": "reactome-b4048f4cb56825543dc2",
+          "source_id": "R-ICO-013843",
+          "title": "SLC25A20",
+          "source_url": "https://reactome.org/content/detail/R-ICO-013843",
+          "upstream_category": null,
+          "tags": [
+            "Transporter"
+          ],
+          "scientific_name": null,
+          "taxonomy_id": null,
+          "metadata_source": null,
+          "upstream_revision": "catalog-sha256:93212b956a2ed67cc9d9a37acc4bf9e50979b14f763499be437b51a4b069f3c6"
+        },
+        {
+          "id": "reactome-b6cfc63ec6022aec73d3",
+          "source_id": "R-ICO-012731",
+          "title": "Fructose",
+          "source_url": "https://reactome.org/content/detail/R-ICO-012731",
+          "upstream_category": null,
+          "tags": [
+            "Compound"
+          ],
+          "scientific_name": null,
+          "taxonomy_id": null,
+          "metadata_source": null,
+          "upstream_revision": "catalog-sha256:93212b956a2ed67cc9d9a37acc4bf9e50979b14f763499be437b51a4b069f3c6"
+        },
+        {
+          "id": "reactome-b7b38a152311bf7d6a74",
+          "source_id": "R-ICO-012942",
+          "title": "L-Iduronic acid",
+          "source_url": "https://reactome.org/content/detail/R-ICO-012942",
+          "upstream_category": null,
+          "tags": [
+            "Compound"
+          ],
+          "scientific_name": null,
+          "taxonomy_id": null,
+          "metadata_source": null,
+          "upstream_revision": "catalog-sha256:93212b956a2ed67cc9d9a37acc4bf9e50979b14f763499be437b51a4b069f3c6"
+        },
+        {
+          "id": "reactome-b7e2f18972d6be33688b",
+          "source_id": "R-ICO-014116",
+          "title": "ABCB6",
+          "source_url": "https://reactome.org/content/detail/R-ICO-014116",
+          "upstream_category": null,
+          "tags": [
+            "transporter",
+            "Transporter"
+          ],
+          "scientific_name": null,
+          "taxonomy_id": null,
+          "metadata_source": null,
+          "upstream_revision": "catalog-sha256:93212b956a2ed67cc9d9a37acc4bf9e50979b14f763499be437b51a4b069f3c6"
+        },
+        {
+          "id": "reactome-bcae3e14f3d7181e7492",
+          "source_id": "R-ICO-014601",
+          "title": "PIEZO2",
+          "source_url": "https://reactome.org/content/detail/R-ICO-014601",
+          "upstream_category": null,
+          "tags": [
+            "Transporter"
+          ],
+          "scientific_name": null,
+          "taxonomy_id": null,
+          "metadata_source": null,
+          "upstream_revision": "catalog-sha256:93212b956a2ed67cc9d9a37acc4bf9e50979b14f763499be437b51a4b069f3c6"
+        },
+        {
+          "id": "reactome-c79cda8dd7cadeba21e3",
+          "source_id": "R-ICO-014241",
+          "title": "Photon",
+          "source_url": "https://reactome.org/content/detail/R-ICO-014241",
+          "upstream_category": null,
+          "tags": [
+            "Compound"
+          ],
+          "scientific_name": null,
+          "taxonomy_id": null,
+          "metadata_source": null,
+          "upstream_revision": "catalog-sha256:93212b956a2ed67cc9d9a37acc4bf9e50979b14f763499be437b51a4b069f3c6"
+        },
+        {
+          "id": "reactome-ccafe56510e853393918",
+          "source_id": "R-ICO-014090",
+          "title": "ABCA12",
+          "source_url": "https://reactome.org/content/detail/R-ICO-014090",
+          "upstream_category": null,
+          "tags": [
+            "transporter",
+            "Transporter"
+          ],
+          "scientific_name": null,
+          "taxonomy_id": null,
+          "metadata_source": null,
+          "upstream_revision": "catalog-sha256:93212b956a2ed67cc9d9a37acc4bf9e50979b14f763499be437b51a4b069f3c6"
+        },
+        {
+          "id": "reactome-cdf126fa962374f73f36",
+          "source_id": "R-ICO-014860",
+          "title": "LPS micelles",
+          "source_url": "https://reactome.org/content/detail/R-ICO-014860",
+          "upstream_category": null,
+          "tags": [
+            "Compound"
+          ],
+          "scientific_name": null,
+          "taxonomy_id": null,
+          "metadata_source": null,
+          "upstream_revision": "catalog-sha256:93212b956a2ed67cc9d9a37acc4bf9e50979b14f763499be437b51a4b069f3c6"
+        },
+        {
+          "id": "reactome-d3089a2555acd2ea73f3",
+          "source_id": "R-ICO-013058",
+          "title": "NADPH oxidase complex",
+          "source_url": "https://reactome.org/content/detail/R-ICO-013058",
+          "upstream_category": null,
+          "tags": [
+            "Transporter"
+          ],
+          "scientific_name": null,
+          "taxonomy_id": null,
+          "metadata_source": null,
+          "upstream_revision": "catalog-sha256:93212b956a2ed67cc9d9a37acc4bf9e50979b14f763499be437b51a4b069f3c6"
+        },
+        {
+          "id": "reactome-d5b5a6df1326867ee68b",
+          "source_id": "R-ICO-014096",
+          "title": "ABCC8",
+          "source_url": "https://reactome.org/content/detail/R-ICO-014096",
+          "upstream_category": null,
+          "tags": [
+            "transporter",
+            "Transporter"
+          ],
+          "scientific_name": null,
+          "taxonomy_id": null,
+          "metadata_source": null,
+          "upstream_revision": "catalog-sha256:93212b956a2ed67cc9d9a37acc4bf9e50979b14f763499be437b51a4b069f3c6"
+        },
+        {
+          "id": "reactome-d7e82ae94fac96553933",
+          "source_id": "R-ICO-013581",
+          "title": "Symporter 04",
+          "source_url": "https://reactome.org/content/detail/R-ICO-013581",
+          "upstream_category": null,
+          "tags": [
+            "Transporter"
+          ],
+          "scientific_name": null,
+          "taxonomy_id": null,
+          "metadata_source": null,
+          "upstream_revision": "catalog-sha256:93212b956a2ed67cc9d9a37acc4bf9e50979b14f763499be437b51a4b069f3c6"
+        },
+        {
+          "id": "reactome-d974b68cb07a81b8b290",
+          "source_id": "R-ICO-014140",
+          "title": "ABCC2",
+          "source_url": "https://reactome.org/content/detail/R-ICO-014140",
+          "upstream_category": null,
+          "tags": [
+            "transporter",
+            "Transporter"
+          ],
+          "scientific_name": null,
+          "taxonomy_id": null,
+          "metadata_source": null,
+          "upstream_revision": "catalog-sha256:93212b956a2ed67cc9d9a37acc4bf9e50979b14f763499be437b51a4b069f3c6"
+        },
+        {
+          "id": "reactome-da9d36d028267552990e",
+          "source_id": "R-ICO-013801",
+          "title": "Electron Transport Chain",
+          "source_url": "https://reactome.org/content/detail/R-ICO-013801",
+          "upstream_category": null,
+          "tags": [
+            "Transporter"
+          ],
+          "scientific_name": null,
+          "taxonomy_id": null,
+          "metadata_source": null,
+          "upstream_revision": "catalog-sha256:93212b956a2ed67cc9d9a37acc4bf9e50979b14f763499be437b51a4b069f3c6"
+        },
+        {
+          "id": "reactome-dae4ebbee6d2ce8d28fa",
+          "source_id": "R-ICO-013419",
+          "title": "Symporter 01",
+          "source_url": "https://reactome.org/content/detail/R-ICO-013419",
+          "upstream_category": null,
+          "tags": [
+            "Transporter"
+          ],
+          "scientific_name": null,
+          "taxonomy_id": null,
+          "metadata_source": null,
+          "upstream_revision": "catalog-sha256:93212b956a2ed67cc9d9a37acc4bf9e50979b14f763499be437b51a4b069f3c6"
+        },
+        {
+          "id": "reactome-e2720402bbb5ccac2ea0",
+          "source_id": "R-ICO-013579",
+          "title": "Symporter 02",
+          "source_url": "https://reactome.org/content/detail/R-ICO-013579",
+          "upstream_category": null,
+          "tags": [
+            "Transporter"
+          ],
+          "scientific_name": null,
+          "taxonomy_id": null,
+          "metadata_source": null,
+          "upstream_revision": "catalog-sha256:93212b956a2ed67cc9d9a37acc4bf9e50979b14f763499be437b51a4b069f3c6"
+        },
+        {
+          "id": "reactome-e5e9938b1c69a7ae85e4",
+          "source_id": "R-ICO-014195",
+          "title": "SLC37A4",
+          "source_url": "https://reactome.org/content/detail/R-ICO-014195",
+          "upstream_category": null,
+          "tags": [
+            "Transporter"
+          ],
+          "scientific_name": null,
+          "taxonomy_id": null,
+          "metadata_source": null,
+          "upstream_revision": "catalog-sha256:93212b956a2ed67cc9d9a37acc4bf9e50979b14f763499be437b51a4b069f3c6"
+        },
+        {
+          "id": "reactome-e5fe28d6b2f226116dda",
+          "source_id": "R-ICO-014016",
+          "title": "Attractive guidance cue",
+          "source_url": "https://reactome.org/content/detail/R-ICO-014016",
+          "upstream_category": null,
+          "tags": [
+            "Compound"
+          ],
+          "scientific_name": null,
+          "taxonomy_id": null,
+          "metadata_source": null,
+          "upstream_revision": "catalog-sha256:93212b956a2ed67cc9d9a37acc4bf9e50979b14f763499be437b51a4b069f3c6"
+        },
+        {
+          "id": "reactome-e9d2f70bc63a13948c73",
+          "source_id": "R-ICO-012502",
+          "title": "Calcium channel",
+          "source_url": "https://reactome.org/content/detail/R-ICO-012502",
+          "upstream_category": null,
+          "tags": [
+            "Transporter"
+          ],
+          "scientific_name": null,
+          "taxonomy_id": null,
+          "metadata_source": null,
+          "upstream_revision": "catalog-sha256:93212b956a2ed67cc9d9a37acc4bf9e50979b14f763499be437b51a4b069f3c6"
+        },
+        {
+          "id": "reactome-ea1640051ba1251d62ed",
+          "source_id": "R-ICO-013764",
+          "title": "SLC38A9",
+          "source_url": "https://reactome.org/content/detail/R-ICO-013764",
+          "upstream_category": null,
+          "tags": [
+            "Transporter"
+          ],
+          "scientific_name": null,
+          "taxonomy_id": null,
+          "metadata_source": null,
+          "upstream_revision": "catalog-sha256:93212b956a2ed67cc9d9a37acc4bf9e50979b14f763499be437b51a4b069f3c6"
+        },
+        {
+          "id": "reactome-ec0317ebdbe6a8834d07",
+          "source_id": "R-ICO-013458",
+          "title": "Translocon",
+          "source_url": "https://reactome.org/content/detail/R-ICO-013458",
+          "upstream_category": null,
+          "tags": [
+            "Transporter"
+          ],
+          "scientific_name": null,
+          "taxonomy_id": null,
+          "metadata_source": null,
+          "upstream_revision": "catalog-sha256:93212b956a2ed67cc9d9a37acc4bf9e50979b14f763499be437b51a4b069f3c6"
+        },
+        {
+          "id": "reactome-f0748c4d114e9e22303c",
+          "source_id": "R-ICO-012924",
+          "title": "KARs",
+          "source_url": "https://reactome.org/content/detail/R-ICO-012924",
+          "upstream_category": null,
+          "tags": [
+            "Transporter"
+          ],
+          "scientific_name": null,
+          "taxonomy_id": null,
+          "metadata_source": null,
+          "upstream_revision": "catalog-sha256:93212b956a2ed67cc9d9a37acc4bf9e50979b14f763499be437b51a4b069f3c6"
+        },
+        {
+          "id": "reactome-fe79ceb1b3f93660e182",
+          "source_id": "R-ICO-013991",
+          "title": "Repulsive guidance cue",
+          "source_url": "https://reactome.org/content/detail/R-ICO-013991",
+          "upstream_category": null,
+          "tags": [
+            "Compound"
+          ],
+          "scientific_name": null,
+          "taxonomy_id": null,
+          "metadata_source": null,
+          "upstream_revision": "catalog-sha256:93212b956a2ed67cc9d9a37acc4bf9e50979b14f763499be437b51a4b069f3c6"
+        }
+      ],
+      "recommendation": "Consider an explicit Reactome category-to-molecules mapping after source category provenance is preserved; use it only for broad taxonomy, never to prove a particular receptor/gene or complete object.",
+      "implementation_evidence": [
+        "mga_resources/web_sources.py:241",
+        "mga_resources/web_sources.py:243"
+      ]
+    },
+    {
+      "id": "scidraw_bird_category",
+      "kind": "narrow_official_category_mapping_candidate",
+      "observation": "24 unclassified SciDraw families have official category_name bird; titles include bird silhouette, California thrasher and Zebra Finch. One European starling operant conditioning scene shows why category alone is not a view/action guarantee.",
+      "candidate_records": [
+        {
+          "id": "scidraw-039c666acd30b70d7dcd",
+          "source_id": "c2bc4521-30c7-4ee9-a0bf-8ee75eca7b4e",
+          "title": "bird silhouette",
+          "source_url": "https://scidraw.io/drawing/bird-silhouette-b98882ac",
+          "upstream_category": "bird",
+          "tags": [
+            "bird"
+          ],
+          "scientific_name": null,
+          "taxonomy_id": null,
+          "metadata_source": null,
+          "upstream_revision": "10.5281/zenodo.3926253"
+        },
+        {
+          "id": "scidraw-0789a541d7cd71355363",
+          "source_id": "bcadbf17-9410-42b4-ad60-7e8c0c902666",
+          "title": "California thrasher",
+          "source_url": "https://scidraw.io/drawing/california-thrasher-1332c955",
+          "upstream_category": "bird",
+          "tags": [
+            "bird"
+          ],
+          "scientific_name": null,
+          "taxonomy_id": null,
+          "metadata_source": null,
+          "upstream_revision": "10.5281/zenodo.3926442"
+        },
+        {
+          "id": "scidraw-07aa3212b19001aba15e",
+          "source_id": "3bc4c095-c4b6-4952-af4a-9863de045a7b",
+          "title": "bird silhouette",
+          "source_url": "https://scidraw.io/drawing/bird-silhouette-d6864387",
+          "upstream_category": "bird",
+          "tags": [
+            "bird"
+          ],
+          "scientific_name": null,
+          "taxonomy_id": null,
+          "metadata_source": null,
+          "upstream_revision": "10.5281/zenodo.3926247"
+        },
+        {
+          "id": "scidraw-0b506c9c4385dc3e0117",
+          "source_id": "152ee0f6-8f0d-4b42-8b9a-ec7500ef8e03",
+          "title": "Bird diving silhouette",
+          "source_url": "https://scidraw.io/drawing/bird-diving-silhouette-1cf3f5ad",
+          "upstream_category": "bird",
+          "tags": [
+            "bird"
+          ],
+          "scientific_name": null,
+          "taxonomy_id": null,
+          "metadata_source": null,
+          "upstream_revision": "10.5281/zenodo.3926359"
+        },
+        {
+          "id": "scidraw-1043a431a9bb1bba120e",
+          "source_id": "64da5894-5e5a-48fa-93ed-b9dc643c97f6",
+          "title": "Mute Swan",
+          "source_url": "https://scidraw.io/drawing/mute-swan-6b9943a2",
+          "upstream_category": "bird",
+          "tags": [
+            "bird"
+          ],
+          "scientific_name": null,
+          "taxonomy_id": null,
+          "metadata_source": null,
+          "upstream_revision": "10.5281/zenodo.3926013"
+        },
+        {
+          "id": "scidraw-3b10ab32b87fb0047aee",
+          "source_id": "1304d350-201c-460d-998b-6c1cccbecb31",
+          "title": "bird flying silhouette",
+          "source_url": "https://scidraw.io/drawing/bird-flying-silhouette-c0015319",
+          "upstream_category": "bird",
+          "tags": [
+            "bird"
+          ],
+          "scientific_name": null,
+          "taxonomy_id": null,
+          "metadata_source": null,
+          "upstream_revision": "10.5281/zenodo.3926400"
+        },
+        {
+          "id": "scidraw-3deab750a45ed843d74d",
+          "source_id": "f347d94c-25cd-4adf-98e7-2b326207e9b9",
+          "title": "Eagle",
+          "source_url": "https://scidraw.io/drawing/eagle-a6693d30",
+          "upstream_category": "bird",
+          "tags": [
+            "bird"
+          ],
+          "scientific_name": null,
+          "taxonomy_id": null,
+          "metadata_source": null,
+          "upstream_revision": "10.5281/zenodo.3926608"
+        },
+        {
+          "id": "scidraw-43db5d34dd2814379a4a",
+          "source_id": "58644345-e835-410d-ac6b-47eedf68c9d3",
+          "title": "Gentoo Penguin",
+          "source_url": "https://scidraw.io/drawing/gentoo-penguin-9ff4db48",
+          "upstream_category": "bird",
+          "tags": [
+            "bird"
+          ],
+          "scientific_name": null,
+          "taxonomy_id": null,
+          "metadata_source": null,
+          "upstream_revision": "10.5281/zenodo.3926157"
+        },
+        {
+          "id": "scidraw-44e92dc2c44c82df7b84",
+          "source_id": "5acb7cd9-23af-474a-a151-171d46a851eb",
+          "title": "Cassin's vireo",
+          "source_url": "https://scidraw.io/drawing/cassins-vireo-db0850be",
+          "upstream_category": "bird",
+          "tags": [
+            "bird"
+          ],
+          "scientific_name": null,
+          "taxonomy_id": null,
+          "metadata_source": null,
+          "upstream_revision": "10.5281/zenodo.3926361"
+        },
+        {
+          "id": "scidraw-4d628cc9435d8fd353c2",
+          "source_id": "65d4a207-5ef0-4a0b-ab74-27d630973206",
+          "title": "Australian pied butcherbird",
+          "source_url": "https://scidraw.io/drawing/australian-pied-butcherbird-18b8e829",
+          "upstream_category": "bird",
+          "tags": [
+            "bird"
+          ],
+          "scientific_name": null,
+          "taxonomy_id": null,
+          "metadata_source": null,
+          "upstream_revision": "10.5281/zenodo.6585739"
+        },
+        {
+          "id": "scidraw-4d7380776c43d64333f9",
+          "source_id": "89f2eed7-4afc-4ae0-9608-1ddb8a221fba",
+          "title": "Chicken",
+          "source_url": "https://scidraw.io/drawing/chicken-9cebde98",
+          "upstream_category": "bird",
+          "tags": [
+            "bird"
+          ],
+          "scientific_name": null,
+          "taxonomy_id": null,
+          "metadata_source": null,
+          "upstream_revision": "10.5281/zenodo.11004399"
+        },
+        {
+          "id": "scidraw-52c75cd80468dd43762a",
+          "source_id": "e7a9532f-6abc-45e9-950e-02f14e639a4c",
+          "title": "Bengalese finch",
+          "source_url": "https://scidraw.io/drawing/bengalese-finch-ddfdfc44",
+          "upstream_category": "bird",
+          "tags": [
+            "bird"
+          ],
+          "scientific_name": null,
+          "taxonomy_id": null,
+          "metadata_source": null,
+          "upstream_revision": "10.5281/zenodo.3926440"
+        },
+        {
+          "id": "scidraw-5f664185d9722f82e260",
+          "source_id": "1fa41b66-1a56-4a33-b129-197d75aa9407",
+          "title": "Interacting Budgies",
+          "source_url": "https://scidraw.io/drawing/interacting-budgies-b6634c4e",
+          "upstream_category": "bird",
+          "tags": [
+            "bird"
+          ],
+          "scientific_name": null,
+          "taxonomy_id": null,
+          "metadata_source": null,
+          "upstream_revision": "10.5281/zenodo.3926456"
+        },
+        {
+          "id": "scidraw-6f91bdbafcc443addb83",
+          "source_id": "b6d29346-a376-48d4-9027-fd1c2f4503e7",
+          "title": "Zebra Finch",
+          "source_url": "https://scidraw.io/drawing/zebra-finch-7866f2d6",
+          "upstream_category": "bird",
+          "tags": [
+            "bird"
+          ],
+          "scientific_name": null,
+          "taxonomy_id": null,
+          "metadata_source": null,
+          "upstream_revision": "10.5281/zenodo.3926430"
+        },
+        {
+          "id": "scidraw-7094e8418ee9fbb12439",
+          "source_id": "b9dfb090-8f24-4c71-86f0-ee4a226bc236",
+          "title": "bird silhouette",
+          "source_url": "https://scidraw.io/drawing/bird-silhouette-6a2e0ae2",
+          "upstream_category": "bird",
+          "tags": [
+            "bird"
+          ],
+          "scientific_name": null,
+          "taxonomy_id": null,
+          "metadata_source": null,
+          "upstream_revision": "10.5281/zenodo.3926155"
+        },
+        {
+          "id": "scidraw-7c14e07cd202a00d633e",
+          "source_id": "1831e2d3-9873-4d98-85c4-15fc5f40d38e",
+          "title": "looming hawk",
+          "source_url": "https://scidraw.io/drawing/looming-hawk-4c09bb94",
+          "upstream_category": "bird",
+          "tags": [
+            "bird"
+          ],
+          "scientific_name": null,
+          "taxonomy_id": null,
+          "metadata_source": null,
+          "upstream_revision": "10.5281/zenodo.3926171"
+        },
+        {
+          "id": "scidraw-932ed24fd3990c23a2ee",
+          "source_id": "d8cc1f30-cc96-40d3-8d78-e48e538f6c3d",
+          "title": "Chick",
+          "source_url": "https://scidraw.io/drawing/chick-b7b04c23",
+          "upstream_category": "bird",
+          "tags": [
+            "bird"
+          ],
+          "scientific_name": null,
+          "taxonomy_id": null,
+          "metadata_source": null,
+          "upstream_revision": "10.5281/zenodo.3926545"
+        },
+        {
+          "id": "scidraw-935d42f2595f0934647a",
+          "source_id": "b983ed1b-b8fb-488d-b41a-12b94b03e204",
+          "title": "European starling operant conditioning",
+          "source_url": "https://scidraw.io/drawing/european-starling-operant-conditioning-5d319913",
+          "upstream_category": "bird",
+          "tags": [
+            "bird"
+          ],
+          "scientific_name": null,
+          "taxonomy_id": null,
+          "metadata_source": null,
+          "upstream_revision": "10.5281/zenodo.3926334"
+        },
+        {
+          "id": "scidraw-aa9c7453bd27458b6280",
+          "source_id": "d0839a31-7a3f-444a-a130-701de1013a91",
+          "title": "Blue Budgie",
+          "source_url": "https://scidraw.io/drawing/blue-budgie-e68d1f9b",
+          "upstream_category": "bird",
+          "tags": [
+            "bird"
+          ],
+          "scientific_name": null,
+          "taxonomy_id": null,
+          "metadata_source": null,
+          "upstream_revision": "10.5281/zenodo.3926318"
+        },
+        {
+          "id": "scidraw-b8612e7bbfbfa6039c5a",
+          "source_id": "e9c02b9a-445d-49b1-8a15-1b1d7d0eb959",
+          "title": "Songbird",
+          "source_url": "https://scidraw.io/drawing/songbird-6e716395",
+          "upstream_category": "bird",
+          "tags": [
+            "bird"
+          ],
+          "scientific_name": null,
+          "taxonomy_id": null,
+          "metadata_source": null,
+          "upstream_revision": "10.5281/zenodo.3926029"
+        },
+        {
+          "id": "scidraw-d4ca3cd7b02cf781e20f",
+          "source_id": "b1178954-735c-4524-b5e4-9ec97ad1a4de",
+          "title": "Yellow Budgie",
+          "source_url": "https://scidraw.io/drawing/yellow-budgie-f27fabce",
+          "upstream_category": "bird",
+          "tags": [
+            "bird"
+          ],
+          "scientific_name": null,
+          "taxonomy_id": null,
+          "metadata_source": null,
+          "upstream_revision": "10.5281/zenodo.3926412"
+        },
+        {
+          "id": "scidraw-ebcd5b651fbe4367289f",
+          "source_id": "3198ca03-843a-49c1-86e0-fbe362c2599a",
+          "title": "Black Redstart",
+          "source_url": "https://scidraw.io/drawing/black-redstart-3e232838",
+          "upstream_category": "bird",
+          "tags": [
+            "bird"
+          ],
+          "scientific_name": null,
+          "taxonomy_id": null,
+          "metadata_source": null,
+          "upstream_revision": "10.5281/zenodo.3926596"
+        },
+        {
+          "id": "scidraw-f26fd363c2daca9c9146",
+          "source_id": "d8cc1b59-4ae7-43cd-881a-002b09bb9f25",
+          "title": "Eagle (sitting)",
+          "source_url": "https://scidraw.io/drawing/eagle-sitting-ad401364",
+          "upstream_category": "bird",
+          "tags": [
+            "bird"
+          ],
+          "scientific_name": null,
+          "taxonomy_id": null,
+          "metadata_source": null,
+          "upstream_revision": "10.5281/zenodo.3926612"
+        },
+        {
+          "id": "scidraw-fbb3e0d0373da359efce",
+          "source_id": "a81f4334-2134-4c2a-bc30-bf72498441ba",
+          "title": "Buzzard",
+          "source_url": "https://scidraw.io/drawing/buzzard-ae26ad33",
+          "upstream_category": "bird",
+          "tags": [
+            "bird"
+          ],
+          "scientific_name": null,
+          "taxonomy_id": null,
+          "metadata_source": null,
+          "upstream_revision": "10.5281/zenodo.3926614"
+        }
+      ],
+      "recommendation": "Consider bird as a broad animals category only. The 23 human-category families include Adrenal gland, so human must not become whole-person evidence.",
+      "implementation_evidence": [
+        "mga_resources/sources.py:253",
+        "mga_resources/sources.py:257"
+      ]
+    },
+    {
+      "id": "togo_classification_information_and_conflicts",
+      "kind": "official_taxon_and_tags_need_separation",
+      "observation": "All 676 unclassified primary Togo families have empty categories/upstream_category. Official other_tags_comma_en and taxon1/2/3_en are merged into tags. 365 have at least one selected animal taxon tag; 59 have Organs; 162 have selected plant tags. These overlap and are not proposed auto-classification counts.",
+      "candidate_counts_only": {
+        "animal_taxon_tag_union": 365,
+        "Organs_tag": 59,
+        "plant_tag_union": 162
+      },
+      "examples": [
+        {
+          "id": "togo-0077a4c481343edefa03",
+          "source_id": "632",
+          "title": "Orangutan",
+          "source_url": "https://doi.org/10.7875/togopic.2020.45",
+          "upstream_category": null,
+          "tags": [
+            "Organisms",
+            "Mammals",
+            "Vertebrates",
+            "Primatology",
+            "Mammalia",
+            "Primates",
+            "Pongo pygmaeus"
+          ],
+          "scientific_name": "Pongo pygmaeus",
+          "taxonomy_id": "9600",
+          "metadata_source": "https://togotv-api.dbcls.jp/api/entries",
+          "upstream_revision": "2020-03-01"
+        },
+        {
+          "id": "togo-00b97d950d9513ab733f",
+          "source_id": "1206",
+          "title": "Plain silkworm",
+          "source_url": "https://doi.org/10.7875/togopic.2022.242",
+          "upstream_category": null,
+          "tags": [
+            "Organisms",
+            "Entomology",
+            "Insects",
+            "Arthropods",
+            "Sericulture",
+            "Insecta",
+            "Lepidoptera",
+            "Bombyx mori"
+          ],
+          "scientific_name": "Bombyx mori",
+          "taxonomy_id": "7091",
+          "metadata_source": "https://togotv-api.dbcls.jp/api/entries",
+          "upstream_revision": "2022-06-01"
+        },
+        {
+          "id": "togo-0197e3f7929a7ab68b17",
+          "source_id": "969",
+          "title": "Superior view of male pelvis",
+          "source_url": "https://doi.org/10.7875/togopic.2022.005",
+          "upstream_category": null,
+          "tags": [
+            "Organs",
+            "Anatomy",
+            "Osteology",
+            "Skeletal system",
+            "Orthopedics",
+            "Musculoskeletal system"
+          ],
+          "scientific_name": null,
+          "taxonomy_id": null,
+          "metadata_source": "https://togotv-api.dbcls.jp/api/entries",
+          "upstream_revision": "2022-01-01"
+        },
+        {
+          "id": "togo-01a2d3eeab42d5b54e16",
+          "source_id": "1664",
+          "title": "Triticum aestivum subsp. spelta (monochrome)",
+          "source_url": "https://doi.org/10.7875/togopic.2023.100",
+          "upstream_category": null,
+          "tags": [
+            "Organisms",
+            "Botany",
+            "Crop science",
+            "Agriculture",
+            "Plant taxonomy",
+            "Angiosperms (Magnoliopsida)",
+            "Poaceae",
+            "Triticum aestivum subsp. spelta"
+          ],
+          "scientific_name": "Triticum aestivum subsp. spelta",
+          "taxonomy_id": "58933",
+          "metadata_source": "https://togotv-api.dbcls.jp/api/entries",
+          "upstream_revision": "2023-04-01"
+        },
+        {
+          "id": "togo-02083b33cf9e9bcf633f",
+          "source_id": "2111",
+          "title": "Harmonia axyridis (polymorphic form)",
+          "source_url": "https://doi.org/10.7875/togopic.2024.270",
+          "upstream_category": null,
+          "tags": [
+            "Organisms",
+            "Mammals",
+            "Vertebrates",
+            "Comparative anatomy",
+            "Insecta",
+            "Coleoptera",
+            "Harmonia axyridis"
+          ],
+          "scientific_name": "Harmonia axyridis",
+          "taxonomy_id": "115357",
+          "metadata_source": "https://togotv-api.dbcls.jp/api/entries",
+          "upstream_revision": "2024-12-01"
+        },
+        {
+          "id": "togo-0410bf1378ba8ac24aff",
+          "source_id": "387",
+          "title": "salivary gland",
+          "source_url": "https://doi.org/10.7875/togopic.2014.38",
+          "upstream_category": null,
+          "tags": [
+            "Organs",
+            "Medicine",
+            "Anatomy",
+            "Histology",
+            "Morphology",
+            "Physiology"
+          ],
+          "scientific_name": null,
+          "taxonomy_id": null,
+          "metadata_source": "https://togotv-api.dbcls.jp/api/entries",
+          "upstream_revision": "2014-05-01"
+        },
+        {
+          "id": "togo-06794248ea5ad5da7cbc",
+          "source_id": "1913",
+          "title": "Horse's hoof",
+          "source_url": "https://doi.org/10.7875/togopic.2024.072",
+          "upstream_category": null,
+          "tags": [
+            "Organisms",
+            "Mammals",
+            "Vertebrates",
+            "Veterinary medicine",
+            "Mammalia",
+            "Perissodactyla",
+            "Equus caballus"
+          ],
+          "scientific_name": "Equus caballus",
+          "taxonomy_id": "9796",
+          "metadata_source": "https://togotv-api.dbcls.jp/api/entries",
+          "upstream_revision": "2024-04-01"
+        },
+        {
+          "id": "togo-06c0115e8f980e016b57",
+          "source_id": "2195",
+          "title": "Polycystic ovary syndrome",
+          "source_url": "https://doi.org/10.7875/togopic.2025.084",
+          "upstream_category": null,
+          "tags": [
+            "Medicine",
+            "Icon",
+            "Organs",
+            "Disease",
+            "Gynecological disease",
+            "Ovary",
+            "Mammalia",
+            "Primates",
+            "homo sapiens"
+          ],
+          "scientific_name": "homo sapiens",
+          "taxonomy_id": "9606",
+          "metadata_source": "https://togotv-api.dbcls.jp/api/entries",
+          "upstream_revision": "2025-03-01"
+        }
+      ],
+      "counterexamples": [
+        "Togo 2111 Harmonia axyridis has contradictory Mammals/Vertebrates and Insecta tags.",
+        "Togo 1913 Horse's hoof is an animal part, not the whole horse.",
+        "Togo 2195 Polycystic ovary syndrome carries Mammalia/Homo sapiens but depicts an anatomical condition.",
+        "Togo Organs contains pelvis, ligaments and vessels, which cross our organs/tissues split."
+      ],
+      "recommendation": "Preserve official taxon hierarchy and subject tags in distinct fields with source evidence. Narrow classification may use them with conflict handling; do not globally map Organisms or Mammalia to primary animal. Plant/generic components may legitimately stay outside the 12 medical buckets.",
+      "implementation_evidence": [
+        "mga_resources/web_sources.py:303",
+        "mga_resources/web_sources.py:304"
+      ]
+    },
+    {
+      "id": "healthicons_existing_taxonomy_not_equivalent",
+      "kind": "category_semantic_mismatch",
+      "observation": "Unclassified official categories include symbols102, typography47, devices41, specialties24, emotions24. devices contains Ventilator/ECMO but also Toilet Paper, Mobile App and High Temperature; specialties includes clinical services but also Gym and Chaplaincy.",
+      "examples": [
+        {
+          "id": "healthicons-151cdd213c7d8cf12949",
+          "source_id": "public/icons/svg/filled/specialties/gym.svg",
+          "title": "Gym",
+          "source_url": "https://github.com/resolvetosavelives/healthicons/blob/2080c1b40e4829f2f4217e03bc22908b4e402f6b/public/icons/svg/filled/specialties/gym.svg",
+          "upstream_category": "specialties",
+          "tags": [
+            "Department",
+            "Exercise",
+            "Gymnasium",
+            "Speciality",
+            "Weights",
+            "filled",
+            "specialties",
+            "outline"
+          ],
+          "scientific_name": null,
+          "taxonomy_id": null,
+          "metadata_source": null,
+          "upstream_revision": "2080c1b40e4829f2f4217e03bc22908b4e402f6b"
+        },
+        {
+          "id": "healthicons-4a84511b3214f5736242",
+          "source_id": "public/icons/svg/outline/devices/ecmo.svg",
+          "title": "ECMO",
+          "source_url": "https://github.com/resolvetosavelives/healthicons/blob/2080c1b40e4829f2f4217e03bc22908b4e402f6b/public/icons/svg/outline/devices/ecmo.svg",
+          "upstream_category": "devices",
+          "tags": [
+            "Critical Care",
+            "Device",
+            "Extracorporeal membrane oxygenation",
+            "ICU",
+            "Life Support",
+            "Lungs",
+            "Oxygen",
+            "Pump",
+            "outline",
+            "devices",
+            "filled",
+            "outline-24px",
+            "filled-24px"
+          ],
+          "scientific_name": null,
+          "taxonomy_id": null,
+          "metadata_source": null,
+          "upstream_revision": "2080c1b40e4829f2f4217e03bc22908b4e402f6b"
+        },
+        {
+          "id": "healthicons-5b351265a22a19b58370",
+          "source_id": "public/icons/svg/outline/devices/ventilator.svg",
+          "title": "Ventilator",
+          "source_url": "https://github.com/resolvetosavelives/healthicons/blob/2080c1b40e4829f2f4217e03bc22908b4e402f6b/public/icons/svg/outline/devices/ventilator.svg",
+          "upstream_category": "devices",
+          "tags": [
+            "Breathing",
+            "Device",
+            "Lungs",
+            "outline",
+            "devices",
+            "filled-24px",
+            "filled",
+            "outline-24px"
+          ],
+          "scientific_name": null,
+          "taxonomy_id": null,
+          "metadata_source": null,
+          "upstream_revision": "2080c1b40e4829f2f4217e03bc22908b4e402f6b"
+        },
+        {
+          "id": "healthicons-89e08f3d1991896b5a48",
+          "source_id": "public/icons/svg/outline/devices/toilet-paper.svg",
+          "title": "Toilet Paper",
+          "source_url": "https://github.com/resolvetosavelives/healthicons/blob/2080c1b40e4829f2f4217e03bc22908b4e402f6b/public/icons/svg/outline/devices/toilet-paper.svg",
+          "upstream_category": "devices",
+          "tags": [
+            "Clean",
+            "Fecal",
+            "Feces",
+            "Paper",
+            "Poop",
+            "Sanitation",
+            "Toilet",
+            "outline",
+            "devices",
+            "filled"
+          ],
+          "scientific_name": null,
+          "taxonomy_id": null,
+          "metadata_source": null,
+          "upstream_revision": "2080c1b40e4829f2f4217e03bc22908b4e402f6b"
+        },
+        {
+          "id": "healthicons-b65622ef049d60fed8bb",
+          "source_id": "public/icons/svg/filled/specialties/chaplaincy.svg",
+          "title": "Chaplaincy",
+          "source_url": "https://github.com/resolvetosavelives/healthicons/blob/2080c1b40e4829f2f4217e03bc22908b4e402f6b/public/icons/svg/filled/specialties/chaplaincy.svg",
+          "upstream_category": "specialties",
+          "tags": [
+            "Department",
+            "Prayer",
+            "Religion",
+            "Speciality",
+            "Spirituality",
+            "filled",
+            "specialties",
+            "outline"
+          ],
+          "scientific_name": null,
+          "taxonomy_id": null,
+          "metadata_source": null,
+          "upstream_revision": "2080c1b40e4829f2f4217e03bc22908b4e402f6b"
+        },
+        {
+          "id": "healthicons-c9ce115bcaea61fa550a",
+          "source_id": "public/icons/svg/filled/devices/mobile.svg",
+          "title": "Mobile App",
+          "source_url": "https://github.com/resolvetosavelives/healthicons/blob/2080c1b40e4829f2f4217e03bc22908b4e402f6b/public/icons/svg/filled/devices/mobile.svg",
+          "upstream_category": "devices",
+          "tags": [
+            "App",
+            "Application",
+            "Phone",
+            "Smartphone",
+            "eHealth",
+            "filled",
+            "devices",
+            "filled-24px",
+            "outline-24px",
+            "outline"
+          ],
+          "scientific_name": null,
+          "taxonomy_id": null,
+          "metadata_source": null,
+          "upstream_revision": "2080c1b40e4829f2f4217e03bc22908b4e402f6b"
+        },
+        {
+          "id": "healthicons-e31f34f815855f1a3f84",
+          "source_id": "public/icons/svg/outline-24px/devices/high-temp.svg",
+          "title": "High Temperature",
+          "source_url": "https://github.com/resolvetosavelives/healthicons/blob/2080c1b40e4829f2f4217e03bc22908b4e402f6b/public/icons/svg/outline-24px/devices/high-temp.svg",
+          "upstream_category": "devices",
+          "tags": [
+            "Fever",
+            "High",
+            "Temperature",
+            "Thermometer",
+            "outline-24px",
+            "devices",
+            "outline",
+            "filled",
+            "filled-24px"
+          ],
+          "scientific_name": null,
+          "taxonomy_id": null,
+          "metadata_source": null,
+          "upstream_revision": "2080c1b40e4829f2f4217e03bc22908b4e402f6b"
+        }
+      ],
+      "recommendation": "Expose official categories independently; map narrow objects when evidence supports them. Do not map all devices to laboratory equipment, all specialties to workflow, or all symbols to omics."
+    },
+    {
+      "id": "bioicons_broad_subjects_and_missing_object_vocabulary",
+      "kind": "mixed_vocabulary_gap_and_taxonomy_scope",
+      "observation": "The 821 unclassified primary families are Human_physiology276, General_items175, Blood_Immunology131, Plants_Algae95, Parasites64, Safety_symbols43, Oncology20, Imaging13, Nanotechnology4. These are mixed subject buckets. Examples larynx and venous system are plausible ordinary-vocabulary gaps, MHC2 is a molecular abbreviation, but arrows/sweets/drug tablets cannot all become organs.",
+      "recommendation": "Keep original subject facets; prioritize specific source object names and narrowly evidenced synonym work, separate from official-category mapping. No broad source bucket should supply a medical principal object."
+    },
+    {
+      "id": "arcadia_names_not_a_medical_category",
+      "kind": "source_metadata_is_present_but_taxonomy_not_exhaustive",
+      "observation": "35 families retain official common/scientific names and correct style/family metadata. They include Hydrozoan, Tardigrade, Common marmoset, Human, algae and Thale cress. No medical-category field was observed in the current adapter/gallery enrichment.",
+      "recommendation": "Do not infer animals merely from Arcadia membership. Future taxonomy expansion can use explicit organism taxonomy with evidence; current absence is not a missing download or failed rendering.",
+      "implementation_evidence": [
+        "mga_resources/archive_metadata.py:65",
+        "mga_resources/archive_metadata.py:74"
+      ]
+    },
+    {
+      "id": "scisvg_generic_shapes",
+      "kind": "legitimate_outside_current_taxonomy",
+      "observation": "The four unclassified items are Axes, Curved Arrow, Layers, Arrow Right under official general-science.",
+      "recommendation": "Keep them searchable as generic drawing components; do not classify as clinical workflow or experimental action just to make taxonomy counts complete."
+    }
+  ],
+  "limitations": [
+    "No new image review was performed for this metadata diagnostic.",
+    "Unclassified is a taxonomy condition, not failed licensing/acquisition/rendering and not evidence that artwork is irrelevant.",
+    "Source subject and organism tags must not silently prove primary object, species, view, state or action.",
+    "Scope questions are still pending and this is not the final appearance-bound release catalog."
+  ],
+  "minimal_implementation_proposal": {
+    "status": "proposal_only_not_applied",
+    "priority": "after_current_scope_acceptance_snapshot_and_user_scope_answers",
+    "steps": [
+      {
+        "step": 1,
+        "change": "Preserve source subject facets separately from scientific assertions.",
+        "suggested_field": "source_subject_facets: [{source, kind: official_catalog_category, label, evidence_url, upstream_revision}]",
+        "details": "At discovery record the actual category-page URL for Reactome; for existing Reactome records, only migrate tags because this adapter writes category labels exclusively, and bind the archived record/adapter provenance without inventing a missing category URL. SciDraw already preserves category_name as upstream_category. Keep broad category metadata visible even when no canonical taxonomy mapping exists."
+      },
+      {
+        "step": 2,
+        "change": "Add only source-scoped canonical topic mappings: Reactome Transporter/Compound -> molecules; SciDraw bird -> animals.",
+        "expected_current_unclassified_candidates": {
+          "reactome_transporter": 54,
+          "reactome_compound": 31,
+          "scidraw_bird": 24
+        },
+        "not_an_acceptance_claim": "These are counts of metadata candidates for broad topic classification, not 109 new scientific/view matches or visual passes. Existing scope filtering remains authoritative."
+      },
+      {
+        "step": 3,
+        "change": "Add a reusable scalar/list parser for upstream categories with regression tests, but defer NIH Animals classification.",
+        "details": "NIH ontologytype and ontologykey must be retained as paired official facets; flattening ontologytype alone can mislabel Fried Egg. Do not add NIH topic labels until an explicit mapping/conflict policy is reviewed."
+      },
+      {
+        "step": 4,
+        "change": "Keep source_subject_facets and canonical topic taxonomy out of primary object/species/view/state/role assertions.",
+        "details": "Topic category filtering may use canonical taxonomy, but scientific hard filters continue requiring direct source object evidence or exact-file visual assertions. Changes to topic results require a new frozen catalog/index and disclosed diagnostic delta; do not rewrite old snapshots."
+      }
+    ],
+    "targeted_regressions_to_add_if_implemented": [
+      "Reactome official Transporter/Compound maps topic=molecules; same text in another source free tag does not activate this source-specific rule.",
+      "SciDraw official bird maps topic=animals; human-category Adrenal gland does not become a whole human.",
+      "NIH scalar/list categories parse without stringifying the whole list, while Fried Egg remains free of a newly fabricated whole-animal assertion.",
+      "New topic labels do not create object/species/view/state/role facts; molecular family does not satisfy a specifically requested named molecule without its own evidence.",
+      "Excluded/pending file remains absent from public catalog, search, download and packs even if its subject would otherwise map.",
+      "Togo contradictory labels are preserved/disclosed, never resolved by Mammalia tag priority."
+    ],
+    "no_change_needed_now": [
+      "No search ranking change is proposed.",
+      "No benchmark or 108/120 threshold change.",
+      "No additional artwork downloads."
+    ]
+  }
+}
