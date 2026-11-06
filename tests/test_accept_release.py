@@ -362,6 +362,34 @@ def test_existing_source_sample_format_requires_ten_included_families():
     assert "visual.source_sample" in codes(report)
 
 
+def test_symbol_samples_require_exact_included_file_and_do_not_revive_nameplates():
+    args = fixture()
+    args["judgments"]["curated"] = []
+    review = {"reviewer": "Synthetic symbol reviewer", "reviewed_at": "2026-11-07",
+              "review_method": "Synthetic test of existing explicit symbol verdict",
+              "source": "example", "review_sheet_url": "https://example.invalid/symbols.png",
+              "review_sheet_sha256": h("symbols"), "items": []}
+    for record in args["catalog"][:10]:
+        file = record["files"][0]
+        review["items"].append({"original_sha256": file["sha256"], "preview_sha256": file["preview"]["sha256"],
+            "original_archive": copy.deepcopy(file["archive"]), "preview_archive": copy.deepcopy(file["preview"]["archive"]),
+            "visual_verdict": "usable_as_symbol", "observations": "Synthetic observed independent object icon."})
+    args["source_reviews"] = [review]
+    _, report = accept.evaluate_release(**args)
+    assert report["visual"]["source_samples"]["example"] == 10
+    assert "visual.source_sample" not in codes(report) and "visual.curated" in codes(report)
+    review["items"][0]["preview_archive"]["member"] = "previews/wrong.png"
+    _, report = accept.evaluate_release(**args)
+    assert report["visual"]["source_samples"]["example"] == 9 and "visual.source_sample" in codes(report)
+    review["items"][0]["preview_archive"] = copy.deepcopy(args["catalog"][0]["files"][0]["preview"]["archive"])
+    args["catalog"][0]["files"][0]["public_scope"] = {"status": "excluded", "public_allowed": False,
+        "reason": "Synthetic later nameplate exclusion overrides old usable-as-symbol review."}
+    manifest, report = accept.evaluate_release(**args)
+    assert review["items"][0]["original_sha256"] not in {file["sha256"] for file in manifest["files"]}
+    assert report["visual"]["source_samples"]["example"] == 9
+    assert {"scope.forbidden_public_file", "visual.source_sample"} <= codes(report)
+
+
 def test_cli_outputs_manifest_and_readable_missing_list_with_no_network(tmp_path):
     args = fixture()
     for name in ("assembly", "mapping", "judgments"):

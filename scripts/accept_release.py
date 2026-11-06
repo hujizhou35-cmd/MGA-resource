@@ -369,7 +369,7 @@ def evaluate_release(catalog, assembly, benchmark, mapping, judgments, *, hashes
                     and row.get("preview_archive") == item["preview"]["archive"]
                     and nonempty(row.get("observations"))
                     and row.get("visual_verdict") in {"usable_as_general_illustration", "usable_with_limitations", "usable",
-                                                      "usable_as_schematic_component", "usable_as_detailed_schematic"}):
+                                                      "usable_as_schematic_component", "usable_as_detailed_schematic", "usable_as_symbol"}):
                 source = review.get("source")
                 if source in item["sources"]:
                     sampled[source].update(item["family_ids"])
