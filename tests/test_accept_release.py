@@ -327,6 +327,19 @@ def test_missing_optional_variant_keeps_verified_original_and_exposes_gap():
     selected["items"][0]["available_file_sha256"] = h("not acquired")
     _, report = accept.evaluate_release(**args)
     assert "decisions.incomplete" in codes(report) and "sources.unresolved" in codes(report)
+    # One unavailable member does not invalidate other files in the same ZIP.
+    selected["items"][0]["available_file_sha256"] = existing["sha256"]
+    existing.update(url="https://example.invalid/bundle.zip", archive_member="good.svg")
+    selected["items"][0].update(url=existing["url"], upstream_archive_member="missing.svg")
+    manifest, report = accept.evaluate_release(**args)
+    args["judgments"]["bindings"] = report["required_bindings"]
+    args["decisions"]["publish_manifest"]["sha256"] = report["publish_manifest_sha256"]
+    args["restore_evidence"]["publish_manifest_sha256"] = report["publish_manifest_sha256"]
+    manifest, report = accept.evaluate_release(**args)
+    assert report["acceptance_passed"], report["missing"]
+    selected["items"][0]["upstream_archive_member"] = "good.svg"
+    _, report = accept.evaluate_release(**args)
+    assert "decisions.incomplete" in codes(report)
 
 
 def test_existing_source_sample_format_requires_ten_included_families():

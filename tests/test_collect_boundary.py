@@ -93,6 +93,11 @@ def test_non_git_source_plan_rejects_full_metadata_drift_even_with_same_ids():
     with pytest.raises(ValueError, match="full metadata snapshot changed"):
         collect.select_source_rows(rows, "test", plan=plan, discovery_sha256="b" * 64)
     assert len(collect.select_source_rows(rows, "test", plan=plan, discovery_sha256="a" * 64)) == 4
+    plan.pop("ordered_source_ids_sha256")
+    assert len(collect.select_source_rows(rows, "test", plan=plan, discovery_sha256="a" * 64)) == 4
+    plan.pop("expected_discovery_sha256")
+    with pytest.raises(ValueError, match="requires an ordered-ID digest"):
+        collect.select_source_rows(rows, "test", plan=plan)
 
 
 def test_frozen_discovery_uses_only_exact_verified_release_metadata(tmp_path, monkeypatch):

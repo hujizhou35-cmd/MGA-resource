@@ -63,8 +63,10 @@ def select_source_rows(discovered, source, *, offset=0, limit=0, plan=None, disc
         if any(not isinstance(sid, str) or not sid for sid in ids) or len(set(ids)) != len(ids):
             raise ValueError("Source inventory IDs must be unique non-empty strings")
         digest = hashlib.sha256("\n".join(ids).encode("utf-8")).hexdigest()
-        if digest != plan.get("ordered_source_ids_sha256"):
+        if plan.get("ordered_source_ids_sha256") and digest != plan["ordered_source_ids_sha256"]:
             raise ValueError("Selection plan inventory order/identity changed; rebuild the plan")
+        if not plan.get("ordered_source_ids_sha256") and not plan.get("expected_discovery_sha256"):
+            raise ValueError("Selection plan requires an ordered-ID digest or a full inventory digest")
         pinned = plan.get("pinned_commit")
         if pinned and any(row.get("upstream_revision") != pinned for row in discovered):
             raise ValueError("Selection plan upstream revision changed")
@@ -460,7 +462,9 @@ def main() -> int:
                 except Exception as exc:
                     item_failures += 1
                     failure = {"source": args.source, "source_id": item.get("source_id"), "source_index": item_index,
-                               "url": url, "error_type": type(exc).__name__, "error": str(exc)[:1200]}
+                               "url": url, "format": descriptor.get("format"),
+                               "upstream_archive_member": descriptor.get("archive_member"),
+                               "error_type": type(exc).__name__, "error": str(exc)[:1200]}
                     batch_failures.append(failure)
                     all_failures.append(failure)
                     print(json.dumps({"failure": failure}, ensure_ascii=False), flush=True)

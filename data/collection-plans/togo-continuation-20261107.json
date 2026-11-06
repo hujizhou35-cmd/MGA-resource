@@ -1,0 +1,17 @@
+{
+  "source": "togo",
+  "inventory_count": 2252,
+  "expected_discovery_sha256": "2f35e01f966726f8dd1a9aceb321cf59a1feb4c4e2be0bf0eda8f8554b49178f",
+  "frozen_discovery_asset": "togo-42249870031-1.discovery.jsonl",
+  "based_on_verified_run": "42249870031-1",
+  "recommended_now": {
+    "records": 736,
+    "ranges": [
+      {
+        "offset": 1516,
+        "limit": 736
+      }
+    ]
+  },
+  "reason": "Continue the verified original inventory after the 60-minute cloud checkpoint; do not download the first 1516 acquired records again. Existing missing variants remain separately recorded."
+}

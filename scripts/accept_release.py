@@ -147,7 +147,8 @@ def evaluate_release(catalog, assembly, benchmark, mapping, judgments, *, hashes
                                  and nonempty(entry.get("url")) and entry["url"].startswith("https://")
                                  and nonempty(entry.get("format")) and nonempty(entry.get("reason"))
                                  and support is not None and sha(entry.get("available_file_sha256"))
-                                 and entry["url"] not in {file.get("url") for file in available.values()}
+                                 and (entry["url"], entry.get("upstream_archive_member"))
+                                     not in {(file.get("url"), file.get("archive_member")) for file in available.values()}
                                  and nonempty(proof.get("uri")) and sha(proof.get("sha256")))
         if not need(valid, "decisions.incomplete", f"{label}: a decided, evidence-bound target, impact and mitigation are required."):
             continue
