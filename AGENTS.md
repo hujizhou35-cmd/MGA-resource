@@ -3,6 +3,7 @@
 - Explain in plain Chinese. Ask promptly about material uncertainties that cannot be resolved by inspecting source evidence.
 - Goal: a free, agent-first medical illustration library; finish collection, classification, deduplication and acceptance before implementing the public website.
 - Accept scientific illustrations and icons in vector and raster formats. Do not call an SVG containing a bitmap editable vector.
+- Admit reusable medical objects and experimental scenes; exclude complete tables, text-box-led research workflows, report templates, whole study-design teaching diagrams and paper result charts. Labeled organ/tissue illustrations remain eligible. Use actual content review, not a title-keyword blacklist. Follow `docs/COLLECTION-SCOPE-20261107.md`; original files remain intact and label cleanup happens only on a selected working copy.
 - Keep bulk images and generated previews in cloud CI and cloud releases/hosting. Local work is code, metadata and bounded review samples only.
 - Reuse upstream open-source implementations when useful, retain notices, and preserve each artwork's own license and attribution.
 - Never download the full library onto the user's computer. Never add paid infrastructure or billing products.
