@@ -267,6 +267,8 @@ def test_new_assembly_preserves_source_evidence_and_closes_acceptance(tmp_path):
     parent = {'source_snapshots': [{'source': 'fixture', 'machine_validation_complete': True}],
               'historical_native_evidence': {'matched_unique_originals': 5}, 'collection_release': 'test',
               'metadata_enrichments': [{'source': 'fixture', 'artwork_refetched': False}],
+              'public_scope': {'public_catalog_sha256': 'a' * 64, 'policy_sha256': 'b' * 64,
+                               'internal_catalog': {'sha256': 'c' * 64, 'records': 1}},
               'acceptance_passed': True, 'retrieval_pass_rate': 1, 'visually_judged_queries': 120}
     before = copy.deepcopy(parent)
     output = tmp_path / 'catalog'
@@ -279,6 +281,14 @@ def test_new_assembly_preserves_source_evidence_and_closes_acceptance(tmp_path):
     catalog = backfill.read_jsonl(output / 'catalog.jsonl')
     assert catalog[0]['files'][0]['appearance']['color']['mode'] == 'color'
     assert (output / 'catalog.sqlite').is_file()
+    scope = json.loads((output / 'scope-report.json').read_text())
+    assert scope == report['public_scope']
+    assert scope['public_catalog_sha256'] == report['summary']['catalog_sha256']
+    assert scope['parent_public_catalog_sha256'] == 'a' * 64
+    assert scope['internal_catalog'] == parent['public_scope']['internal_catalog']
+    assert scope['inherited_from_assembly']['prefix'] == 'assembly-1-1'
+    assert {f['sha256'] for r in catalog for f in r['files']} == {
+        f['sha256'] for r in records for f in r['files']}
 
 
 def test_cli_blocks_local_bulk_backfill_before_network():

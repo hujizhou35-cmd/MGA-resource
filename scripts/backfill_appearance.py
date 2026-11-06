@@ -426,6 +426,14 @@ def publish_catalog(records, output, parent_report, *, parent_assembly, appearan
                   retrieval_pass_rate=None, acceptance_passed=False, collection_complete=False,
                   visual_acceptance="pending_after_appearance_rebuild", illustrator_verified=False,
                   website_gate="closed_pending_collection_and_acceptance")
+    if isinstance(report.get("public_scope"), dict):
+        scope = report["public_scope"]
+        scope["parent_public_catalog_sha256"] = scope.get("public_catalog_sha256")
+        scope["public_catalog_sha256"] = summary["catalog_sha256"]
+        scope["inherited_from_assembly"] = copy.deepcopy(parent_assembly)
+        # Appearance adds file metadata only. The parent's internal diagnostic
+        # catalog and scope decisions remain bound evidence, not new artifacts.
+        write_json(output / "scope-report.json", scope)
     write_json(output / "report.json", report)
     return report
 
