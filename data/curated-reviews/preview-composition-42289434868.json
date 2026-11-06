@@ -2096,7 +2096,8 @@
   "limits": [
     "Machine rendering is not actual visual acceptance.",
     "Only exact available local previews are included; contact-sheet crops cannot establish original transparency.",
-    "No actual manuscript composition, style coherence, scientific layout or label cleanup is certified."
+    "No actual manuscript composition, style coherence, scientific layout or label cleanup is certified.",
+    "Observed display limitations do not automatically change public scope or imply original-file damage. API/skill handoff is proposed only and not integrated."
   ],
   "reviewed_at": "2026-11-06T23:08:40.439710+00:00",
   "reviewer": "Codex media_catalog; actual display inspection of four generated QA canvases",
@@ -2155,5 +2156,24 @@
     "font": "Arial (C:/Windows/Fonts/arial.ttf)",
     "font_sha256": "b3658eadae55e682b5f69eb64c439c1ecc8f196c0bb8d4756d145d13bc86476a",
     "cross_platform_note": "Different installed fonts can change annotation pixels; original preview SHA and display extent remain fixed."
+  },
+  "downstream_handoff": {
+    "status": "proposed_not_integrated",
+    "api_integrated": false,
+    "skill_integrated": false,
+    "website_built_by_this_task": false,
+    "file_binding": "original_sha256 + exact preview_sha256 and archive; no family-wide propagation",
+    "proposed_exposed_fields": [
+      "display_conditions",
+      "visual_judgment.transparent_overlay_observation",
+      "visual_judgment.dark_background_observation",
+      "visual_judgment.reduction_96px",
+      "visual_judgment.reduction_48px"
+    ],
+    "interpretation": "Display/use limitations only. Low dark-background contrast, alpha showing the background, or unreadable action at 48px do not automatically exclude scope or diagnose original-file damage.",
+    "catalog_modified": false,
+    "public_scope_modified": false,
+    "minimum_usable_size_inferred": false,
+    "suggestions": "For the explicitly limited cases, use a suitable light background or a larger tested display. Preserve intentional white paint and alpha; reassess the actual working composition before any deliberate cleanup."
   }
 }
