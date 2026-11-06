@@ -1,0 +1,577 @@
+{
+  "schema_version": 1,
+  "reviewed_at": "2026-11-07",
+  "reviewer": "Codex root",
+  "purpose": "validation_exercise_not_user_research_adoption",
+  "method": "Actually viewed the complete cloud sheet, and additionally the unchanged original archived previews for tiles 1, 3, 9 and 14 at full size. Captions alone were not used to classify visual suitability.",
+  "catalog_sha256": "5c90306415ce5e7f36e875c7f57b19a91930aacfeeaeecdf9ad7662770f9a3fe",
+  "mapping_sha256": "021af2d92f6995a02b3de75e47480fd3e47e10078c5290d6591108142335ed2b",
+  "sheet": {
+    "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/exact-review-42291848782-1.review.png",
+    "sha256": "892f47da017b242a051a5eca733571f58f0bacb29bc0a5227328b2c86977c2fd"
+  },
+  "items": [
+    {
+      "tile": 1,
+      "family_id": "scidraw-c634e3116d56cb95e3c2",
+      "source": "scidraw",
+      "source_id": "23d7d914-fd5c-4495-a830-3b30dc49bdfd",
+      "title": "mouse running",
+      "original_sha256": "95b68622e7d1618c71bbfc8c849e9e2ccfe2a32e1ddcb9f79796a8f60d2623ec",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scidraw-42235890704-1-b0000.tar.gz",
+        "member": "files/95/95b68622e7d1618c71bbfc8c849e9e2ccfe2a32e1ddcb9f79796a8f60d2623ec.svg"
+      },
+      "preview": {
+        "sha256": "51ba8a21f6828515ab3fa8a237f24f33a02f6b770e73649c97c4e2e7178cfdf0",
+        "archive": {
+          "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scidraw-42235890704-1-b0000.tar.gz",
+          "member": "previews/95b68622e7d1618c71bbfc8c849e9e2ccfe2a32e1ddcb9f79796a8f60d2623ec.png"
+        }
+      },
+      "project_uses": [
+        {
+          "project_id": "validation-rich-1",
+          "seed": "validation-rich-1",
+          "rank": 1,
+          "case_id": "rich"
+        },
+        {
+          "project_id": "validation-rich-3",
+          "seed": "validation-rich-3",
+          "rank": 4,
+          "case_id": "rich"
+        }
+      ],
+      "reviewer": "Codex root",
+      "object_relevance": "usable_generic_whole_mouse_component",
+      "observations": "完整小鼠线稿，尾、耳、足与运动线可辨；明确跑动姿态，可用于行为图；普通对象图不必采用附加运动线。",
+      "native_editability_tested": false,
+      "scientific_limits": "No independent strain/age/disease or precise species identification from appearance; no new scientific metadata assertion."
+    },
+    {
+      "tile": 2,
+      "family_id": "nih-bioart-da7b71d08e120147c6ce",
+      "source": "nih-bioart",
+      "source_id": "283",
+      "title": "Lab Mouse",
+      "original_sha256": "22f147c050c91e5a611088d648d8a76c6859c3cce8f508603b4aedd77e9626ce",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/nih-bioart-42236561214-1-b0000.tar.gz",
+        "member": "files/22/22f147c050c91e5a611088d648d8a76c6859c3cce8f508603b4aedd77e9626ce.png"
+      },
+      "preview": {
+        "sha256": "2b85b11292b487f2e26a0a54a55f4201fbd0bd0e1e21deea1692ea6c8c4d0e3c",
+        "archive": {
+          "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/nih-bioart-42236561214-1-b0000.tar.gz",
+          "member": "previews/22f147c050c91e5a611088d648d8a76c6859c3cce8f508603b4aedd77e9626ce.png"
+        }
+      },
+      "project_uses": [
+        {
+          "project_id": "validation-rich-1",
+          "seed": "validation-rich-1",
+          "rank": 2,
+          "case_id": "rich"
+        },
+        {
+          "project_id": "validation-rich-5",
+          "seed": "validation-rich-5",
+          "rank": 6,
+          "case_id": "rich"
+        }
+      ],
+      "reviewer": "Codex root",
+      "object_relevance": "usable_generic_whole_mouse_component",
+      "observations": "白色/浅灰身体与粉色耳尾，轮廓较粗，头、足、长尾清楚，主体占比充分；适合通用小鼠对象示意，不推断品系。",
+      "native_editability_tested": false,
+      "scientific_limits": "No independent strain/age/disease or precise species identification from appearance; no new scientific metadata assertion."
+    },
+    {
+      "tile": 3,
+      "family_id": "scidraw-23118e8edf87f17d13cc",
+      "source": "scidraw",
+      "source_id": "4267b505-6ebc-486a-808e-7ded79d18e31",
+      "title": "Drinking Mouse",
+      "original_sha256": "74de69530dfc2351568da3165bd307daac40bc0054e29051c03a7b7f38632bf2",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scidraw-42235890704-1-b0001.tar.gz",
+        "member": "files/74/74de69530dfc2351568da3165bd307daac40bc0054e29051c03a7b7f38632bf2.svg"
+      },
+      "preview": {
+        "sha256": "39b0e2344f05a9a50e2559eabb305794e59a6382d420bdb059c17ccef1d496f9",
+        "archive": {
+          "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scidraw-42235890704-1-b0001.tar.gz",
+          "member": "previews/74de69530dfc2351568da3165bd307daac40bc0054e29051c03a7b7f38632bf2.png"
+        }
+      },
+      "project_uses": [
+        {
+          "project_id": "validation-rich-1",
+          "seed": "validation-rich-1",
+          "rank": 3,
+          "case_id": "rich"
+        }
+      ],
+      "reviewer": "Codex root",
+      "object_relevance": "usable_generic_whole_mouse_component",
+      "observations": "鼠在岩石旁饮水，水面、岩石和行为关系清楚；可复用但附带场景，不优先用于只需要动物对象的图。",
+      "native_editability_tested": false,
+      "scientific_limits": "No independent strain/age/disease or precise species identification from appearance; no new scientific metadata assertion."
+    },
+    {
+      "tile": 4,
+      "family_id": "scidraw-82cdc8227d14a71e9810",
+      "source": "scidraw",
+      "source_id": "3fdfb7e1-9994-40f7-b656-e6578c132bc9",
+      "title": "walking mouse",
+      "original_sha256": "5d71d35e74557758e90645827a47b0be95ffb094ae559255db180a9fa0f9f100",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scidraw-42235890704-1-b0000.tar.gz",
+        "member": "files/5d/5d71d35e74557758e90645827a47b0be95ffb094ae559255db180a9fa0f9f100.svg"
+      },
+      "preview": {
+        "sha256": "55b6090f16d84546bb2322526e5c79025f6066a16c56737764ab9840f1c4c066",
+        "archive": {
+          "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scidraw-42235890704-1-b0000.tar.gz",
+          "member": "previews/5d71d35e74557758e90645827a47b0be95ffb094ae559255db180a9fa0f9f100.png"
+        }
+      },
+      "project_uses": [
+        {
+          "project_id": "validation-rich-1",
+          "seed": "validation-rich-1",
+          "rank": 4,
+          "case_id": "rich"
+        },
+        {
+          "project_id": "validation-rich-3",
+          "seed": "validation-rich-3",
+          "rank": 5,
+          "case_id": "rich"
+        }
+      ],
+      "reviewer": "Codex root",
+      "object_relevance": "usable_generic_whole_mouse_component",
+      "observations": "完整侧向行走鼠，轮廓细，较大尺寸可读，缩小需注意线条；并非结构缺失。",
+      "native_editability_tested": false,
+      "scientific_limits": "No independent strain/age/disease or precise species identification from appearance; no new scientific metadata assertion."
+    },
+    {
+      "tile": 5,
+      "family_id": "scidraw-539e01cb175ea26b6a05",
+      "source": "scidraw",
+      "source_id": "a06bf8f0-3dff-44a8-8cb9-cf242ccea1b9",
+      "title": "Adult mouse",
+      "original_sha256": "409bb12d358d4968342567234565d1ce024dda31be04586bc86f3cdd16ec7c4a",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scidraw-42235890704-1-b0000.tar.gz",
+        "member": "files/40/409bb12d358d4968342567234565d1ce024dda31be04586bc86f3cdd16ec7c4a.svg"
+      },
+      "preview": {
+        "sha256": "fc612a99c14a5cd290f70357fca922a8f48816626e96f0915c26eb90ee759ba4",
+        "archive": {
+          "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scidraw-42235890704-1-b0000.tar.gz",
+          "member": "previews/409bb12d358d4968342567234565d1ce024dda31be04586bc86f3cdd16ec7c4a.png"
+        }
+      },
+      "project_uses": [
+        {
+          "project_id": "validation-rich-1",
+          "seed": "validation-rich-1",
+          "rank": 5,
+          "case_id": "rich"
+        },
+        {
+          "project_id": "validation-rich-2",
+          "seed": "validation-rich-2",
+          "rank": 10,
+          "case_id": "rich"
+        },
+        {
+          "project_id": "validation-rich-5",
+          "seed": "validation-rich-5",
+          "rank": 4,
+          "case_id": "rich"
+        }
+      ],
+      "reviewer": "Codex root",
+      "object_relevance": "usable_generic_whole_mouse_component",
+      "observations": "灰色小鼠含耳尾和足，简单填色、完整对象清楚，适合通用对象；预览留白稍多。",
+      "native_editability_tested": false,
+      "scientific_limits": "No independent strain/age/disease or precise species identification from appearance; no new scientific metadata assertion."
+    },
+    {
+      "tile": 6,
+      "family_id": "arcadia-d7b465496e3f4ec4a9b6",
+      "source": "arcadia",
+      "source_id": "Silhouette SVGs/Mus-musculus-silhouette.svg",
+      "title": "Mouse (Mus musculus) — silhouette",
+      "original_sha256": "949dd5897ba4c17d93da918ed4bcf71d7ef4f27c31d9aa46c91a238a1c3307c9",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/arcadia-42234366112-1-b0000.tar.gz",
+        "member": "files/94/949dd5897ba4c17d93da918ed4bcf71d7ef4f27c31d9aa46c91a238a1c3307c9.svg"
+      },
+      "preview": {
+        "sha256": "ca4beaabcad6d78bc0ff650bbcfa3059de4c086d5782b3cb5f4fd4586b4b7a1c",
+        "archive": {
+          "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/arcadia-42234366112-1-b0000.tar.gz",
+          "member": "previews/949dd5897ba4c17d93da918ed4bcf71d7ef4f27c31d9aa46c91a238a1c3307c9.png"
+        }
+      },
+      "project_uses": [
+        {
+          "project_id": "validation-rich-1",
+          "seed": "validation-rich-1",
+          "rank": 6,
+          "case_id": "rich"
+        },
+        {
+          "project_id": "validation-rich-5",
+          "seed": "validation-rich-5",
+          "rank": 2,
+          "case_id": "rich"
+        }
+      ],
+      "reviewer": "Codex root",
+      "object_relevance": "usable_generic_whole_mouse_component",
+      "observations": "单色小鼠剪影，轮廓完整、缩小可识别，内部结构不可见；可用于简图，不宣称细节解剖。",
+      "native_editability_tested": false,
+      "scientific_limits": "No independent strain/age/disease or precise species identification from appearance; no new scientific metadata assertion."
+    },
+    {
+      "tile": 7,
+      "family_id": "nih-bioart-e86f0ca1e31010f25cc1",
+      "source": "nih-bioart",
+      "source_id": "371",
+      "title": "Mouse Outline",
+      "original_sha256": "1c1b41f8294e44582dcc3666174978d007e50379be8ba02a3e9abaca97222e7e",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/nih-bioart-42236561214-1-b0000.tar.gz",
+        "member": "files/1c/1c1b41f8294e44582dcc3666174978d007e50379be8ba02a3e9abaca97222e7e.png"
+      },
+      "preview": {
+        "sha256": "6608f47f7522bf9ca2968d89c87746a0f60d0ea7004b6aca5ddc30c1fdd00ac3",
+        "archive": {
+          "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/nih-bioart-42236561214-1-b0000.tar.gz",
+          "member": "previews/1c1b41f8294e44582dcc3666174978d007e50379be8ba02a3e9abaca97222e7e.png"
+        }
+      },
+      "project_uses": [
+        {
+          "project_id": "validation-rich-1",
+          "seed": "validation-rich-1",
+          "rank": 7,
+          "case_id": "rich"
+        },
+        {
+          "project_id": "validation-rich-2",
+          "seed": "validation-rich-2",
+          "rank": 9,
+          "case_id": "rich"
+        }
+      ],
+      "reviewer": "Codex root",
+      "object_relevance": "usable_generic_whole_mouse_component",
+      "observations": "灰色鼠形轮廓和密集须线，身体尾部完整；较强的须线在小尺寸略拥挤，仍是有效对象。",
+      "native_editability_tested": false,
+      "scientific_limits": "No independent strain/age/disease or precise species identification from appearance; no new scientific metadata assertion."
+    },
+    {
+      "tile": 8,
+      "family_id": "scidraw-ff155fd93244527ca746",
+      "source": "scidraw",
+      "source_id": "7b5fb470-fa3b-4776-9b8e-3b645d5fe16f",
+      "title": "mouse rearing",
+      "original_sha256": "54119cffceb2e9d63c48d914a7aa6a820194a200845e2c35dc6a5ed3c3c98bae",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scidraw-42235890704-1-b0000.tar.gz",
+        "member": "files/54/54119cffceb2e9d63c48d914a7aa6a820194a200845e2c35dc6a5ed3c3c98bae.svg"
+      },
+      "preview": {
+        "sha256": "7eccf0df6a6a71f2683938ebb3cd3c79602b6f0ddaec37b05ad3c5f01251a9f4",
+        "archive": {
+          "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scidraw-42235890704-1-b0000.tar.gz",
+          "member": "previews/54119cffceb2e9d63c48d914a7aa6a820194a200845e2c35dc6a5ed3c3c98bae.png"
+        }
+      },
+      "project_uses": [
+        {
+          "project_id": "validation-rich-1",
+          "seed": "validation-rich-1",
+          "rank": 8,
+          "case_id": "rich"
+        },
+        {
+          "project_id": "validation-rich-3",
+          "seed": "validation-rich-3",
+          "rank": 10,
+          "case_id": "rich"
+        },
+        {
+          "project_id": "validation-rich-4",
+          "seed": "validation-rich-4",
+          "rank": 1,
+          "case_id": "rich"
+        },
+        {
+          "project_id": "validation-rich-5",
+          "seed": "validation-rich-5",
+          "rank": 3,
+          "case_id": "rich"
+        }
+      ],
+      "reviewer": "Codex root",
+      "object_relevance": "usable_generic_whole_mouse_component",
+      "observations": "直立探身小鼠线稿，完整身体与尾，明确姿态；可用于行为说明，通用静态对象未必首选。",
+      "native_editability_tested": false,
+      "scientific_limits": "No independent strain/age/disease or precise species identification from appearance; no new scientific metadata assertion."
+    },
+    {
+      "tile": 9,
+      "family_id": "togo-88aae7232c3e73365305",
+      "source": "togo",
+      "source_id": "452",
+      "title": "Mouse in J-phenome",
+      "original_sha256": "fb32a50420465cc91f29d766fe7f6e26ed59a5790d5ab101ce1d5ce33aee6341",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42249870031-1-b0000.tar.gz",
+        "member": "files/fb/fb32a50420465cc91f29d766fe7f6e26ed59a5790d5ab101ce1d5ce33aee6341.svg"
+      },
+      "preview": {
+        "sha256": "27d9be14381505570a473349bbc9a69635aec71488ec825021cd44317d2f61ab",
+        "archive": {
+          "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42249870031-1-b0000.tar.gz",
+          "member": "previews/fb32a50420465cc91f29d766fe7f6e26ed59a5790d5ab101ce1d5ce33aee6341.png"
+        }
+      },
+      "project_uses": [
+        {
+          "project_id": "validation-rich-1",
+          "seed": "validation-rich-1",
+          "rank": 9,
+          "case_id": "rich"
+        },
+        {
+          "project_id": "validation-rich-4",
+          "seed": "validation-rich-4",
+          "rank": 7,
+          "case_id": "rich"
+        },
+        {
+          "project_id": "validation-rich-5",
+          "seed": "validation-rich-5",
+          "rank": 5,
+          "case_id": "rich"
+        }
+      ],
+      "reviewer": "Codex root",
+      "object_relevance": "usable_generic_whole_mouse_component",
+      "observations": "完整灰度小鼠，毛发表面有显著绘制笔触和明暗纹理；细节较丰富，适合较大图幅，不能据预览宣称原生矢量或特定品系。",
+      "native_editability_tested": false,
+      "scientific_limits": "No independent strain/age/disease or precise species identification from appearance; no new scientific metadata assertion."
+    },
+    {
+      "tile": 10,
+      "family_id": "scidraw-33cd71340630998212d5",
+      "source": "scidraw",
+      "source_id": "968aeaf3-29a5-4ace-97e0-2a10e7f31cda",
+      "title": "Mouse Sleeping",
+      "original_sha256": "1be2b06588140639cc6a5c074644a7293c8e713fd3ff19c70db1feca80d86b6c",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scidraw-42235890704-1-b0000.tar.gz",
+        "member": "files/1b/1be2b06588140639cc6a5c074644a7293c8e713fd3ff19c70db1feca80d86b6c.png"
+      },
+      "preview": {
+        "sha256": "fc286f4d3b45e203312ef5c746a92377f02004d9affe22fee7b975575e722d76",
+        "archive": {
+          "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scidraw-42235890704-1-b0000.tar.gz",
+          "member": "previews/1be2b06588140639cc6a5c074644a7293c8e713fd3ff19c70db1feca80d86b6c.png"
+        }
+      },
+      "project_uses": [
+        {
+          "project_id": "validation-rich-1",
+          "seed": "validation-rich-1",
+          "rank": 10,
+          "case_id": "rich"
+        },
+        {
+          "project_id": "validation-rich-5",
+          "seed": "validation-rich-5",
+          "rank": 7,
+          "case_id": "rich"
+        }
+      ],
+      "reviewer": "Codex root",
+      "object_relevance": "usable_generic_whole_mouse_component",
+      "observations": "蜷卧睡眠鼠线稿，耳、吻和身体包络可辨；表现睡眠姿态，不作为普通活动鼠的无条件替代。",
+      "native_editability_tested": false,
+      "scientific_limits": "No independent strain/age/disease or precise species identification from appearance; no new scientific metadata assertion."
+    },
+    {
+      "tile": 11,
+      "family_id": "nih-bioart-7f98def53b0dfc2c8273",
+      "source": "nih-bioart",
+      "source_id": "372",
+      "title": "Mouse Silhouette",
+      "original_sha256": "3b68a752aed0e50251b6e3fdf20d444cecea92e1a0012cfac7b6391d583d741a",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/nih-bioart-42236561214-1-b0000.tar.gz",
+        "member": "files/3b/3b68a752aed0e50251b6e3fdf20d444cecea92e1a0012cfac7b6391d583d741a.png"
+      },
+      "preview": {
+        "sha256": "2dc6a41053f4927c4640f7f59e9f832987c9548abdbff02de953c7de2e914688",
+        "archive": {
+          "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/nih-bioart-42236561214-1-b0000.tar.gz",
+          "member": "previews/3b68a752aed0e50251b6e3fdf20d444cecea92e1a0012cfac7b6391d583d741a.png"
+        }
+      },
+      "project_uses": [
+        {
+          "project_id": "validation-rich-2",
+          "seed": "validation-rich-2",
+          "rank": 1,
+          "case_id": "rich"
+        },
+        {
+          "project_id": "validation-rich-3",
+          "seed": "validation-rich-3",
+          "rank": 3,
+          "case_id": "rich"
+        }
+      ],
+      "reviewer": "Codex root",
+      "object_relevance": "usable_generic_whole_mouse_component",
+      "observations": "黑色整鼠剪影，头、足、尾辨认清楚；无内部结构细节，适合简化符号。",
+      "native_editability_tested": false,
+      "scientific_limits": "No independent strain/age/disease or precise species identification from appearance; no new scientific metadata assertion."
+    },
+    {
+      "tile": 12,
+      "family_id": "nih-bioart-5b6a907d7740c87cbae2",
+      "source": "nih-bioart",
+      "source_id": "280",
+      "title": "Lab Mouse",
+      "original_sha256": "79e34e75c4dac112c68f4a188bf66c8fe315d83ed550e812d72d62b8a5bbf22b",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/nih-bioart-42236561214-1-b0000.tar.gz",
+        "member": "files/79/79e34e75c4dac112c68f4a188bf66c8fe315d83ed550e812d72d62b8a5bbf22b.png"
+      },
+      "preview": {
+        "sha256": "2107f1a2f40cc7e0ab66d17a9678cde8db4fb81ba65ddf946360609298a9e642",
+        "archive": {
+          "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/nih-bioart-42236561214-1-b0000.tar.gz",
+          "member": "previews/79e34e75c4dac112c68f4a188bf66c8fe315d83ed550e812d72d62b8a5bbf22b.png"
+        }
+      },
+      "project_uses": [
+        {
+          "project_id": "validation-rich-2",
+          "seed": "validation-rich-2",
+          "rank": 2,
+          "case_id": "rich"
+        },
+        {
+          "project_id": "validation-rich-4",
+          "seed": "validation-rich-4",
+          "rank": 3,
+          "case_id": "rich"
+        }
+      ],
+      "reviewer": "Codex root",
+      "object_relevance": "usable_generic_whole_mouse_component",
+      "observations": "深灰填色、粉色耳尾的整鼠，外轮廓清楚；可作为通用对象，色彩和外观与浅色版本不同。",
+      "native_editability_tested": false,
+      "scientific_limits": "No independent strain/age/disease or precise species identification from appearance; no new scientific metadata assertion."
+    },
+    {
+      "tile": 13,
+      "family_id": "bioicons-e5c2b4d19c935b7ff7a8",
+      "source": "bioicons",
+      "source_id": "cc-0/Animals/Ben-Murrell/Mouse.svg",
+      "title": "Mouse",
+      "original_sha256": "6b2f72e787f1947d0bbeaed0bbe3574aef29d7cf1911de61e5fafb10e98454ea",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42239971379-1-b0000.tar.gz",
+        "member": "files/6b/6b2f72e787f1947d0bbeaed0bbe3574aef29d7cf1911de61e5fafb10e98454ea.svg"
+      },
+      "preview": {
+        "sha256": "afd89dd59867196ce56cd29e484860267c2e2f697d8ea088f85880431d0a5d9b",
+        "archive": {
+          "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42239971379-1-b0000.tar.gz",
+          "member": "previews/6b2f72e787f1947d0bbeaed0bbe3574aef29d7cf1911de61e5fafb10e98454ea.png"
+        }
+      },
+      "project_uses": [
+        {
+          "project_id": "validation-rich-2",
+          "seed": "validation-rich-2",
+          "rank": 3,
+          "case_id": "rich"
+        },
+        {
+          "project_id": "validation-rich-3",
+          "seed": "validation-rich-3",
+          "rank": 8,
+          "case_id": "rich"
+        },
+        {
+          "project_id": "validation-rich-4",
+          "seed": "validation-rich-4",
+          "rank": 6,
+          "case_id": "rich"
+        }
+      ],
+      "reviewer": "Codex root",
+      "object_relevance": "usable_generic_whole_mouse_component",
+      "observations": "黑色侧向整鼠剪影，完整长尾、耳和足轮廓；信息简洁，但内部面部细节少。",
+      "native_editability_tested": false,
+      "scientific_limits": "No independent strain/age/disease or precise species identification from appearance; no new scientific metadata assertion."
+    },
+    {
+      "tile": 14,
+      "family_id": "bioicons-c04274818e8a26003ce4",
+      "source": "bioicons",
+      "source_id": "cc-by-3.0/Animals/Servier/mouse-gray.svg",
+      "title": "mouse gray",
+      "original_sha256": "06a18b85a335b215cd0788906f53613ff78ee888948ca905adb82fb0d27f9ef1",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42251588741-1-b0001.tar.gz",
+        "member": "files/06/06a18b85a335b215cd0788906f53613ff78ee888948ca905adb82fb0d27f9ef1.svg"
+      },
+      "preview": {
+        "sha256": "17ca13bec607a2b89181a3e3dfd3dbb11259fd791e18111deef6999af0ed1435",
+        "archive": {
+          "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42251588741-1-b0001.tar.gz",
+          "member": "previews/06a18b85a335b215cd0788906f53613ff78ee888948ca905adb82fb0d27f9ef1.png"
+        }
+      },
+      "project_uses": [
+        {
+          "project_id": "validation-rich-2",
+          "seed": "validation-rich-2",
+          "rank": 4,
+          "case_id": "rich"
+        },
+        {
+          "project_id": "validation-rich-3",
+          "seed": "validation-rich-3",
+          "rank": 2,
+          "case_id": "rich"
+        },
+        {
+          "project_id": "validation-rich-4",
+          "seed": "validation-rich-4",
+          "rank": 5,
+          "case_id": "rich"
+        }
+      ],
+      "reviewer": "Codex root",
+      "object_relevance": "usable_generic_whole_mouse_component",
+      "observations": "灰白填色鼠，完整大耳、眼、吻、足和长尾，轮廓与明暗层次清楚；通用对象图可读性较好，不推断具体动作、年龄或品系。",
+      "native_editability_tested": false,
+      "scientific_limits": "No independent strain/age/disease or precise species identification from appearance; no new scientific metadata assertion."
+    }
+  ]
+}
