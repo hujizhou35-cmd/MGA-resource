@@ -3,8 +3,8 @@
  */
 import vocabulary from './search-vocabulary.mjs';
 
-export const RANKING_VERSION = 'shared-search-3.4.0';
-export const INDEX_VERSION = 8;
+export const RANKING_VERSION = 'shared-search-3.4.1';
+export const INDEX_VERSION = 9;
 export const DEFAULT_CANDIDATE_POOL = 75;
 const unknown = new Set(['', 'unknown', 'unspecified', 'not_reviewed', '待确认']);
 const arr = value => value == null ? [] : Array.isArray(value) ? value : [value];
@@ -74,6 +74,9 @@ const extraConcepts = [
   ['细胞周期','cell cycle'], ['细胞分选','cell sorting'],
   ['肝吸虫','liver fluke','fasciola'], ['肝小叶','liver lobule','hepatic lobule'],
   ['黑腹果蝇','drosophila melanogaster'],
+  // Tissue from an organ is a more specific object than the whole organ.
+  // Do not drop the noun class globally or let a broad tissue tag prove it.
+  ['肺组织','lung tissue','pulmonary tissue'],
 ];
 // Avoid interpreting the unspecific Chinese experimental rodent as a mouse.
 const concepts = [...vocabulary.concepts, ...extraConcepts].map(group => unique(group.map(norm).filter(x => x !== '实验鼠')));
@@ -82,6 +85,8 @@ const concepts = [...vocabulary.concepts, ...extraConcepts].map(group => unique(
 for(const group of concepts){
   if(group.includes('lung'))group.push('lungs');
   for(const name of ['atp','dna','rna','protein','antibody','lipid'])if(group.includes(name))group.push(`${name} molecule`,`${name}分子`,`${name} 分子`);
+  if(group.includes('bone'))group.push('bone tissue','骨组织','骨 组织');
+  if(group.includes('cartilage'))group.push('cartilage tissue','软骨组织','软骨 组织');
 }
 const qualifiers = Object.entries({...SCIENCE,...APPEARANCE}).flatMap(([key, groups]) => Object.entries(groups).flatMap(([value, terms]) => terms.map(term => ({key,value,term:norm(term)})))).sort((a,b) => b.term.length-a.term.length || cmp(a.term,b.term));
 const animalNames=new Set(Object.values(SCIENCE.species).flat().map(norm));

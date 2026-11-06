@@ -1,0 +1,1265 @@
+{
+  "schema_version": 1,
+  "prepared_at": "2026-11-07",
+  "reviewer": "Codex registry_acceptance",
+  "status": "preparation_only_not_final_acceptance",
+  "bindings": {
+    "historical_catalog": "build/appearance-large/assembly-42258625880-1.catalog.jsonl",
+    "catalog_sha256": "479f4e618e7c952bde430bd45fa10062249ff0f12672c86fb64a20c854da1fde",
+    "historical_ranking_version": "shared-search-3.3.0",
+    "historical_gap_report": "data/diagnostics/search-gaps-v33-20261107.json",
+    "historical_gap_report_sha256": "4763e186f7d07b90c209df6dc10ce1e9082180d08b7bc304f83c3ca66e221ae4",
+    "benchmark_path": "data/benchmark.json",
+    "benchmark_sha256": "ce0282afeb4afbcee8fdef1c6f937844ef569cabf16ba7909e22bf86b1096e92",
+    "current_parser_checkpoint": "d7a2ea4",
+    "current_ranking_version": "shared-search-3.4.1",
+    "current_index_version": 9,
+    "search_core_sha256": "8120b1ff2b47b83605c0cc5495b2aa7f12c59b740f7a44f0db376a28808e9049",
+    "formal_benchmark_rerun": false
+  },
+  "limits": [
+    "This is a reasoned triage of historical empty results, not a fresh 120-query score.",
+    "Metadata title patterns nominate files; they do not prove biological content or corpus-wide absence.",
+    "No new scientific assertions are approved by this shortlist. Unknown required evidence remains unknown.",
+    "Final clean catalog will differ after scope exclusions, remaining Togo acquisition and exact-file reviews.",
+    "Only five new exact files are prioritized; two additional files already have an actual visual scope sheet."
+  ],
+  "counts": {
+    "old_empty_concepts": 16,
+    "old_empty_queries": 30,
+    "classification_counts": {
+      "parser_corrected_pending_clean_catalog": 3,
+      "existing_object_science_evidence_ready": 2,
+      "scene_semantics_unconfirmed_components_exist": 4,
+      "specific_scene_gap_not_proven_absent_globally": 2,
+      "procedure_gap_with_reviewable_components": 2,
+      "scope_decision_pending_and_candidate_gap": 1,
+      "acquired_gapfill_missing_from_snapshot_and_parser_corrected": 2
+    },
+    "priority_one_new_visual_files": 5,
+    "priority_two_existing_sheet_files": 2
+  },
+  "concept_assessments": [
+    {
+      "concept_id": "animals-fruit-fly",
+      "category": "animals",
+      "old_empty_languages": [
+        "zh",
+        "en"
+      ],
+      "original_queries": [
+        {
+          "id": "animals-fruit-fly-zh",
+          "concept_id": "animals-fruit-fly",
+          "category": "animals",
+          "language": "zh",
+          "query": "黑腹果蝇插画",
+          "expected_concepts": [
+            "fruit fly",
+            "Drosophila"
+          ],
+          "required_species": "Drosophila melanogaster",
+          "visual_requirements": "果蝇形态清楚，身体和翅膀完整；不能用蚊子或蜜蜂替代。",
+          "exclude_matches": [
+            "mosquito",
+            "bee"
+          ]
+        },
+        {
+          "id": "animals-fruit-fly-en",
+          "concept_id": "animals-fruit-fly",
+          "category": "animals",
+          "language": "en",
+          "query": "Drosophila melanogaster illustration",
+          "expected_concepts": [
+            "fruit fly",
+            "Drosophila"
+          ],
+          "required_species": "Drosophila melanogaster",
+          "visual_requirements": "果蝇形态清楚，身体和翅膀完整；不能用蚊子或蜜蜂替代。",
+          "exclude_matches": [
+            "mosquito",
+            "bee"
+          ]
+        }
+      ],
+      "classification": "parser_corrected_pending_clean_catalog",
+      "finding_zh": "明确学名素材已存在。修复中英文黑腹果蝇与 Drosophila melanogaster 对齐，保留物种级约束；泛称果蝇不能证明具体物种。",
+      "candidate_family_ids": [
+        "arcadia-0a881c38e52b5e453bea",
+        "togo-f4b337661642ecf136b4"
+      ],
+      "required_evidence_or_resolution": [
+        "source_declared_species",
+        "whole_animal_visual_review"
+      ],
+      "next_action_zh": "新目录统一复测；优先使用明确官方学名的 Arcadia 或 Togo 49，不根据通用果蝇标题补物种。",
+      "final_relevance_passed": null
+    },
+    {
+      "concept_id": "animals-mouse",
+      "category": "animals",
+      "old_empty_languages": [
+        "zh",
+        "en"
+      ],
+      "original_queries": [
+        {
+          "id": "animals-mouse-zh",
+          "concept_id": "animals-mouse",
+          "category": "animals",
+          "language": "zh",
+          "query": "实验小鼠侧视插画",
+          "expected_concepts": [
+            "mouse"
+          ],
+          "required_species": "mouse",
+          "visual_requirements": "完整身体与尾巴，适合实验动物示意；不要把大鼠或电脑鼠标算作匹配。",
+          "exclude_matches": [
+            "rat",
+            "computer mouse",
+            "photograph"
+          ]
+        },
+        {
+          "id": "animals-mouse-en",
+          "concept_id": "animals-mouse",
+          "category": "animals",
+          "language": "en",
+          "query": "laboratory mouse side view illustration",
+          "expected_concepts": [
+            "mouse"
+          ],
+          "required_species": "mouse",
+          "visual_requirements": "完整身体与尾巴，适合实验动物示意；不要把大鼠或电脑鼠标算作匹配。",
+          "exclude_matches": [
+            "rat",
+            "computer mouse",
+            "photograph"
+          ]
+        }
+      ],
+      "classification": "existing_object_science_evidence_ready",
+      "finding_zh": "灰色小鼠的完整侧视及长尾已实际看图确认；旧快照未应用新增精确断言。",
+      "candidate_family_ids": [
+        "bioicons-c04274818e8a26003ce4"
+      ],
+      "required_evidence_or_resolution": [
+        "view:lateral",
+        "role:whole_body",
+        "species:mouse"
+      ],
+      "next_action_zh": "应用已有 source/原件/预览哈希绑定的断言，不放宽未知视角。",
+      "final_relevance_passed": null
+    },
+    {
+      "concept_id": "clinical_workflow-cohort-followup",
+      "category": "clinical_workflow",
+      "old_empty_languages": [
+        "zh",
+        "en"
+      ],
+      "original_queries": [
+        {
+          "id": "clinical_workflow-cohort-followup-zh",
+          "concept_id": "clinical_workflow-cohort-followup",
+          "category": "clinical_workflow",
+          "language": "zh",
+          "query": "队列随访流程素材",
+          "expected_concepts": [
+            "cohort",
+            "follow up"
+          ],
+          "required_species": "human",
+          "visual_requirements": "可表达参与者随时间随访的图形或组合部件，不含虚构研究人数或结论。",
+          "exclude_matches": [
+            "published study data figure",
+            "invented sample size"
+          ]
+        },
+        {
+          "id": "clinical_workflow-cohort-followup-en",
+          "concept_id": "clinical_workflow-cohort-followup",
+          "category": "clinical_workflow",
+          "language": "en",
+          "query": "cohort follow up workflow illustration",
+          "expected_concepts": [
+            "cohort",
+            "follow up"
+          ],
+          "required_species": "human",
+          "visual_requirements": "可表达参与者随时间随访的图形或组合部件，不含虚构研究人数或结论。",
+          "exclude_matches": [
+            "published study data figure",
+            "invented sample size"
+          ]
+        }
+      ],
+      "classification": "scene_semantics_unconfirmed_components_exist",
+      "finding_zh": "人群部件已存在，但人群本身不表达随时间随访。完整队列教学流程图已经出界，不能补成命中。",
+      "candidate_family_ids": [
+        "nih-bioart-57b76866d5aea134f7b4"
+      ],
+      "required_evidence_or_resolution": [
+        "follow_up_scene_or_supported_component_composition"
+      ],
+      "next_action_zh": "先看人群可用性；是否允许组件组合按原题及用户范围口径审阅，不补造随访断言。",
+      "final_relevance_passed": null
+    },
+    {
+      "concept_id": "clinical_workflow-questionnaire",
+      "category": "clinical_workflow",
+      "old_empty_languages": [
+        "zh",
+        "en"
+      ],
+      "original_queries": [
+        {
+          "id": "clinical_workflow-questionnaire-zh",
+          "concept_id": "clinical_workflow-questionnaire",
+          "category": "clinical_workflow",
+          "language": "zh",
+          "query": "问卷调查素材",
+          "expected_concepts": [
+            "questionnaire",
+            "survey"
+          ],
+          "required_species": "human",
+          "visual_requirements": "问卷或访谈含义清楚；不是将真实个人答卷作为素材。",
+          "exclude_matches": [
+            "filled identifiable medical record"
+          ]
+        },
+        {
+          "id": "clinical_workflow-questionnaire-en",
+          "concept_id": "clinical_workflow-questionnaire",
+          "category": "clinical_workflow",
+          "language": "en",
+          "query": "questionnaire survey illustration",
+          "expected_concepts": [
+            "questionnaire",
+            "survey"
+          ],
+          "required_species": "human",
+          "visual_requirements": "问卷或访谈含义清楚；不是将真实个人答卷作为素材。",
+          "exclude_matches": [
+            "filled identifiable medical record"
+          ]
+        }
+      ],
+      "classification": "scene_semantics_unconfirmed_components_exist",
+      "finding_zh": "尚未发现已验证的问卷/访谈场景。Health Worker Form 是候选部件，表单或病历不自动等于问卷。",
+      "candidate_family_ids": [
+        "healthicons-4a4d28be7209b7b4b731"
+      ],
+      "required_evidence_or_resolution": [
+        "questionnaire_or_interview_visible_meaning"
+      ],
+      "next_action_zh": "实际看表单图标；如仅一般记录，继续明确标为问卷语义缺口。",
+      "final_relevance_passed": null
+    },
+    {
+      "concept_id": "clinical_workflow-randomization",
+      "category": "clinical_workflow",
+      "old_empty_languages": [
+        "zh",
+        "en"
+      ],
+      "original_queries": [
+        {
+          "id": "clinical_workflow-randomization-zh",
+          "concept_id": "clinical_workflow-randomization",
+          "category": "clinical_workflow",
+          "language": "zh",
+          "query": "随机分组流程素材",
+          "expected_concepts": [
+            "randomization",
+            "groups"
+          ],
+          "required_species": "human",
+          "visual_requirements": "能表达分组步骤，不能把普通分支箭头直接宣称已证明随机化。",
+          "exclude_matches": [
+            "specific trial outcomes"
+          ]
+        },
+        {
+          "id": "clinical_workflow-randomization-en",
+          "concept_id": "clinical_workflow-randomization",
+          "category": "clinical_workflow",
+          "language": "en",
+          "query": "randomization two groups workflow diagram",
+          "expected_concepts": [
+            "randomization",
+            "groups"
+          ],
+          "required_species": "human",
+          "visual_requirements": "能表达分组步骤，不能把普通分支箭头直接宣称已证明随机化。",
+          "exclude_matches": [
+            "specific trial outcomes"
+          ]
+        }
+      ],
+      "classification": "specific_scene_gap_not_proven_absent_globally",
+      "finding_zh": "当前检索仅有不相干 random network 候选；普通分支箭头不能证明随机分组，人群也不能证明分配方法。",
+      "candidate_family_ids": [],
+      "required_evidence_or_resolution": [
+        "random_assignment_semantics"
+      ],
+      "next_action_zh": "保持无匹配；不要靠完整试验流程模板、普通分支或虚构方案补分。",
+      "final_relevance_passed": null
+    },
+    {
+      "concept_id": "clinical_workflow-recruitment",
+      "category": "clinical_workflow",
+      "old_empty_languages": [
+        "zh",
+        "en"
+      ],
+      "original_queries": [
+        {
+          "id": "clinical_workflow-recruitment-zh",
+          "concept_id": "clinical_workflow-recruitment",
+          "category": "clinical_workflow",
+          "language": "zh",
+          "query": "研究参与者招募素材",
+          "expected_concepts": [
+            "participant",
+            "recruitment"
+          ],
+          "required_species": "human",
+          "visual_requirements": "适合招募/纳入步骤的中性科研插画或图标，不携带虚构纳排标准。",
+          "exclude_matches": [
+            "specific patient data"
+          ]
+        },
+        {
+          "id": "clinical_workflow-recruitment-en",
+          "concept_id": "clinical_workflow-recruitment",
+          "category": "clinical_workflow",
+          "language": "en",
+          "query": "study participant recruitment illustration",
+          "expected_concepts": [
+            "participant",
+            "recruitment"
+          ],
+          "required_species": "human",
+          "visual_requirements": "适合招募/纳入步骤的中性科研插画或图标，不携带虚构纳排标准。",
+          "exclude_matches": [
+            "specific patient data"
+          ]
+        }
+      ],
+      "classification": "scene_semantics_unconfirmed_components_exist",
+      "finding_zh": "已有中性人群组件，但未验证招募/纳入场景。不能把任意人群直接改称研究参与者。",
+      "candidate_family_ids": [
+        "nih-bioart-57b76866d5aea134f7b4"
+      ],
+      "required_evidence_or_resolution": [
+        "recruitment_scene_or_supported_component_composition"
+      ],
+      "next_action_zh": "看人群是否适合组合表达；不生成纳排条件、患者身份或研究人数。",
+      "final_relevance_passed": null
+    },
+    {
+      "concept_id": "experimental_actions-cell-culture",
+      "category": "experimental_actions",
+      "old_empty_languages": [
+        "zh",
+        "en"
+      ],
+      "original_queries": [
+        {
+          "id": "experimental_actions-cell-culture-zh",
+          "concept_id": "experimental_actions-cell-culture",
+          "category": "experimental_actions",
+          "language": "zh",
+          "query": "细胞培养操作示意",
+          "expected_concepts": [
+            "cell culture"
+          ],
+          "required_species": null,
+          "visual_requirements": "适合说明细胞培养操作；不把任意器皿断言为某种培养条件。",
+          "exclude_matches": [
+            "specific cell line without evidence"
+          ]
+        },
+        {
+          "id": "experimental_actions-cell-culture-en",
+          "concept_id": "experimental_actions-cell-culture",
+          "category": "experimental_actions",
+          "language": "en",
+          "query": "cell culture procedure illustration",
+          "expected_concepts": [
+            "cell culture"
+          ],
+          "required_species": null,
+          "visual_requirements": "适合说明细胞培养操作；不把任意器皿断言为某种培养条件。",
+          "exclude_matches": [
+            "specific cell line without evidence"
+          ]
+        }
+      ],
+      "classification": "procedure_gap_with_reviewable_components",
+      "finding_zh": "培养容器、移液人物与共培养候选已存在；设备图不能自动算培养操作。误标题 cell cultuure quipment 3 已实际确认为温度计。",
+      "candidate_family_ids": [
+        "bioicons-c29dc0575353ba50501f",
+        "bioicons-b6733fcf61ab61939b7e"
+      ],
+      "required_evidence_or_resolution": [
+        "visible_culture_or_manipulation_semantics"
+      ],
+      "next_action_zh": "优先看共培养和一个移液人物；只记录实际动作，不推断细胞系、培养条件或实验流程。",
+      "final_relevance_passed": null
+    },
+    {
+      "concept_id": "experimental_actions-centrifugation",
+      "category": "experimental_actions",
+      "old_empty_languages": [
+        "zh",
+        "en"
+      ],
+      "original_queries": [
+        {
+          "id": "experimental_actions-centrifugation-zh",
+          "concept_id": "experimental_actions-centrifugation",
+          "category": "experimental_actions",
+          "language": "zh",
+          "query": "离心分离步骤示意",
+          "expected_concepts": [
+            "centrifugation",
+            "separation"
+          ],
+          "required_species": null,
+          "visual_requirements": "能表达离心与分离，箭头及上下层含义清晰；不伪造转速或时长。",
+          "exclude_matches": [
+            "unsupported rpm or duration"
+          ]
+        },
+        {
+          "id": "experimental_actions-centrifugation-en",
+          "concept_id": "experimental_actions-centrifugation",
+          "category": "experimental_actions",
+          "language": "en",
+          "query": "centrifugation separation workflow illustration",
+          "expected_concepts": [
+            "centrifugation",
+            "separation"
+          ],
+          "required_species": null,
+          "visual_requirements": "能表达离心与分离，箭头及上下层含义清晰；不伪造转速或时长。",
+          "exclude_matches": [
+            "unsupported rpm or duration"
+          ]
+        }
+      ],
+      "classification": "procedure_gap_with_reviewable_components",
+      "finding_zh": "离心机对象已存在；尚未验证分离步骤或可用操作场景。centrifuge user 必须实际看图。",
+      "candidate_family_ids": [
+        "bioicons-a5a17208ccf6a99aa8b0"
+      ],
+      "required_evidence_or_resolution": [
+        "visible_operation",
+        "separation_step_if_present"
+      ],
+      "next_action_zh": "判断是人操作设备还是单台设备；没有分离内容就保留步骤缺口。",
+      "final_relevance_passed": null
+    },
+    {
+      "concept_id": "experimental_actions-mouse-injection",
+      "category": "experimental_actions",
+      "old_empty_languages": [
+        "zh",
+        "en"
+      ],
+      "original_queries": [
+        {
+          "id": "experimental_actions-mouse-injection-zh",
+          "concept_id": "experimental_actions-mouse-injection",
+          "category": "experimental_actions",
+          "language": "zh",
+          "query": "小鼠注射实验示意",
+          "expected_concepts": [
+            "mouse",
+            "injection"
+          ],
+          "required_species": "mouse",
+          "visual_requirements": "能表达对小鼠注射，具体途径和剂量必须由图与来源支持。",
+          "exclude_matches": [
+            "rat",
+            "unsupported route or dose"
+          ]
+        },
+        {
+          "id": "experimental_actions-mouse-injection-en",
+          "concept_id": "experimental_actions-mouse-injection",
+          "category": "experimental_actions",
+          "language": "en",
+          "query": "mouse injection experiment illustration",
+          "expected_concepts": [
+            "mouse",
+            "injection"
+          ],
+          "required_species": "mouse",
+          "visual_requirements": "能表达对小鼠注射，具体途径和剂量必须由图与来源支持。",
+          "exclude_matches": [
+            "rat",
+            "unsupported route or dose"
+          ]
+        }
+      ],
+      "classification": "specific_scene_gap_not_proven_absent_globally",
+      "finding_zh": "当前元数据及常见注射路线同义检索未找到已验证的小鼠注射场景。小鼠与注射器分别存在不构成已完成的注射素材。",
+      "candidate_family_ids": [],
+      "required_evidence_or_resolution": [
+        "mouse_identity",
+        "visible_injection_action"
+      ],
+      "next_action_zh": "作为定向场景缺口；不凭器材组合推断给药途径、剂量或动物操作。",
+      "final_relevance_passed": null
+    },
+    {
+      "concept_id": "molecules-atp",
+      "category": "molecules",
+      "old_empty_languages": [
+        "zh"
+      ],
+      "original_queries": [
+        {
+          "id": "molecules-atp-zh",
+          "concept_id": "molecules-atp",
+          "category": "molecules",
+          "language": "zh",
+          "query": "ATP分子结构示意",
+          "expected_concepts": [
+            "ATP",
+            "adenosine triphosphate"
+          ],
+          "required_species": null,
+          "visual_requirements": "若展示化学结构，需正确表达ATP而非ADP或AMP；视觉可读。",
+          "exclude_matches": [
+            "ADP",
+            "AMP",
+            "chemically incorrect structure"
+          ]
+        },
+        {
+          "id": "molecules-atp-en",
+          "concept_id": "molecules-atp",
+          "category": "molecules",
+          "language": "en",
+          "query": "ATP molecule structure diagram",
+          "expected_concepts": [
+            "ATP",
+            "adenosine triphosphate"
+          ],
+          "required_species": null,
+          "visual_requirements": "若展示化学结构，需正确表达ATP而非ADP或AMP；视觉可读。",
+          "exclude_matches": [
+            "ADP",
+            "AMP",
+            "chemically incorrect structure"
+          ]
+        }
+      ],
+      "classification": "parser_corrected_pending_clean_catalog",
+      "finding_zh": "已有 ATP 分子图，中文附加类属词“分子”造成旧检索缺失；已和英文 molecule 同义处理。",
+      "candidate_family_ids": [
+        "bioicons-025619af010c6d74e17c",
+        "scidraw-12ec9d4ed2c60f7701ed"
+      ],
+      "required_evidence_or_resolution": [
+        "actual_molecular_depiction"
+      ],
+      "next_action_zh": "新目录复测；不依赖已明确排除的 Reactome 纯文字 ATP 名牌。",
+      "final_relevance_passed": null
+    },
+    {
+      "concept_id": "omics_data-forest-template",
+      "category": "omics_data",
+      "old_empty_languages": [
+        "zh",
+        "en"
+      ],
+      "original_queries": [
+        {
+          "id": "omics_data-forest-template-zh",
+          "concept_id": "omics_data-forest-template",
+          "category": "omics_data",
+          "language": "zh",
+          "query": "森林图通用构件模板",
+          "expected_concepts": [
+            "forest plot",
+            "template"
+          ],
+          "required_species": null,
+          "visual_requirements": "只接受空白或明确示意构件，避免把具体效应值、置信区间当成通用素材。",
+          "exclude_matches": [
+            "published meta-analysis data",
+            "unlabeled fabricated estimates"
+          ]
+        },
+        {
+          "id": "omics_data-forest-template-en",
+          "concept_id": "omics_data-forest-template",
+          "category": "omics_data",
+          "language": "en",
+          "query": "forest plot schematic template",
+          "expected_concepts": [
+            "forest plot",
+            "template"
+          ],
+          "required_species": null,
+          "visual_requirements": "只接受空白或明确示意构件，避免把具体效应值、置信区间当成通用素材。",
+          "exclude_matches": [
+            "published meta-analysis data",
+            "unlabeled fabricated estimates"
+          ]
+        }
+      ],
+      "classification": "scope_decision_pending_and_candidate_gap",
+      "finding_zh": "未发现合适的空白森林图构件。原题明确要求模板/示意构件，是否全部出界正由用户澄清；不能用论文结果图补缺。",
+      "candidate_family_ids": [],
+      "required_evidence_or_resolution": [
+        "user_scope_resolution"
+      ],
+      "next_action_zh": "保留原题及原成绩，等待用户决定后另记范围拒收检查或继续保留该要求。",
+      "final_relevance_passed": null
+    },
+    {
+      "concept_id": "omics_data-gene-network",
+      "category": "omics_data",
+      "old_empty_languages": [
+        "zh",
+        "en"
+      ],
+      "original_queries": [
+        {
+          "id": "omics_data-gene-network-zh",
+          "concept_id": "omics_data-gene-network",
+          "category": "omics_data",
+          "language": "zh",
+          "query": "基因网络示意素材",
+          "expected_concepts": [
+            "gene network"
+          ],
+          "required_species": null,
+          "visual_requirements": "通用网络构件可用；特定边或调控关系必须明确为示意，不能冒充实证。",
+          "exclude_matches": [
+            "published gene interaction findings"
+          ]
+        },
+        {
+          "id": "omics_data-gene-network-en",
+          "concept_id": "omics_data-gene-network",
+          "category": "omics_data",
+          "language": "en",
+          "query": "gene network schematic illustration",
+          "expected_concepts": [
+            "gene network"
+          ],
+          "required_species": null,
+          "visual_requirements": "通用网络构件可用；特定边或调控关系必须明确为示意，不能冒充实证。",
+          "exclude_matches": [
+            "published gene interaction findings"
+          ]
+        }
+      ],
+      "classification": "scene_semantics_unconfirmed_components_exist",
+      "finding_zh": "泛化网络图存在，但尚无已核实的基因网络构件候选；普通网络、ANN 或纯文字名牌不自动满足基因网络语义。",
+      "candidate_family_ids": [],
+      "required_evidence_or_resolution": [
+        "reusable_network_component_scope",
+        "schematic_relation_meaning"
+      ],
+      "next_action_zh": "先确定真实可复用构件，不把特定边或调控关系当实证，也不收整张教学/结果图。",
+      "final_relevance_passed": null
+    },
+    {
+      "concept_id": "organs-lungs",
+      "category": "organs",
+      "old_empty_languages": [
+        "en"
+      ],
+      "original_queries": [
+        {
+          "id": "organs-lungs-zh",
+          "concept_id": "organs-lungs",
+          "category": "organs",
+          "language": "zh",
+          "query": "人体双肺插画",
+          "expected_concepts": [
+            "lungs"
+          ],
+          "required_species": "human",
+          "visual_requirements": "双肺或明确标注单肺的解剖形态，气道结构清楚。",
+          "exclude_matches": [
+            "tree-shaped generic symbol"
+          ]
+        },
+        {
+          "id": "organs-lungs-en",
+          "concept_id": "organs-lungs",
+          "category": "organs",
+          "language": "en",
+          "query": "human lungs illustration",
+          "expected_concepts": [
+            "lungs"
+          ],
+          "required_species": "human",
+          "visual_requirements": "双肺或明确标注单肺的解剖形态，气道结构清楚。",
+          "exclude_matches": [
+            "tree-shaped generic symbol"
+          ]
+        }
+      ],
+      "classification": "parser_corrected_pending_clean_catalog",
+      "finding_zh": "Human Lungs 等明确人体肺对象已存在；英文复数 lungs 曾未映射到 lung，导致 human 被误作主要人体对象。",
+      "candidate_family_ids": [
+        "nih-bioart-61282819bc908dd31d1a"
+      ],
+      "required_evidence_or_resolution": [
+        "human_species_from_official_source",
+        "lung_object"
+      ],
+      "next_action_zh": "已修复普通复数，等新目录复测；未要求视角时不新增视角猜测。",
+      "final_relevance_passed": null
+    },
+    {
+      "concept_id": "people-human-body",
+      "category": "people",
+      "old_empty_languages": [
+        "zh",
+        "en"
+      ],
+      "original_queries": [
+        {
+          "id": "people-human-body-zh",
+          "concept_id": "people-human-body",
+          "category": "people",
+          "language": "zh",
+          "query": "人体正面与背面示意",
+          "expected_concepts": [
+            "human body",
+            "front",
+            "back"
+          ],
+          "required_species": "human",
+          "visual_requirements": "能取得标注视角的人体轮廓或解剖示意，不能把前后视图混淆。",
+          "exclude_matches": [
+            "animal anatomy",
+            "clinical photograph"
+          ]
+        },
+        {
+          "id": "people-human-body-en",
+          "concept_id": "people-human-body",
+          "category": "people",
+          "language": "en",
+          "query": "human body anterior posterior illustration",
+          "expected_concepts": [
+            "human body",
+            "front",
+            "back"
+          ],
+          "required_species": "human",
+          "visual_requirements": "能取得标注视角的人体轮廓或解剖示意，不能把前后视图混淆。",
+          "exclude_matches": [
+            "animal anatomy",
+            "clinical photograph"
+          ]
+        }
+      ],
+      "classification": "existing_object_science_evidence_ready",
+      "finding_zh": "OpenPain 两个精确文件已实际确认完整人体正面与背面并列。",
+      "candidate_family_ids": [
+        "open-pain-f8e5755205f3f9e69b2a",
+        "open-pain-c66a17e67b2e8111f592"
+      ],
+      "required_evidence_or_resolution": [
+        "view:anterior",
+        "view:posterior",
+        "role:whole_body"
+      ],
+      "next_action_zh": "应用新增精确科学证据；不宣称所有解剖细节、病理状态或 AI 原生编辑已经验证。",
+      "final_relevance_passed": null
+    },
+    {
+      "concept_id": "tissues_vessels-bone-section",
+      "category": "tissues_vessels",
+      "old_empty_languages": [
+        "zh",
+        "en"
+      ],
+      "original_queries": [
+        {
+          "id": "tissues_vessels-bone-section-zh",
+          "concept_id": "tissues_vessels-bone-section",
+          "category": "tissues_vessels",
+          "language": "zh",
+          "query": "骨组织截面插画",
+          "expected_concepts": [
+            "bone",
+            "cross section"
+          ],
+          "required_species": null,
+          "visual_requirements": "适合介绍骨组织，皮质骨/松质骨等结构以源图实际内容为准。",
+          "exclude_matches": [
+            "x-ray photograph"
+          ]
+        },
+        {
+          "id": "tissues_vessels-bone-section-en",
+          "concept_id": "tissues_vessels-bone-section",
+          "category": "tissues_vessels",
+          "language": "en",
+          "query": "bone tissue cross section illustration",
+          "expected_concepts": [
+            "bone",
+            "cross section"
+          ],
+          "required_species": null,
+          "visual_requirements": "适合介绍骨组织，皮质骨/松质骨等结构以源图实际内容为准。",
+          "exclude_matches": [
+            "x-ray photograph"
+          ]
+        }
+      ],
+      "classification": "acquired_gapfill_missing_from_snapshot_and_parser_corrected",
+      "finding_zh": "Commons 02 骨组织横断面已收集且范围合格，旧 8321 家族快照未纳入。截面断言可由已有精确图审复核；已授权修复骨组织/bone tissue 类属词解析。",
+      "candidate_family_ids": [
+        "commons-315279fb0328ace303fa"
+      ],
+      "required_evidence_or_resolution": [
+        "view:cross_section",
+        "object:bone"
+      ],
+      "next_action_zh": "用真实横断面图补证，不把整根骨或普通骨图当截面；未知视角仍不匹配。",
+      "final_relevance_passed": null
+    },
+    {
+      "concept_id": "tissues_vessels-cartilage",
+      "category": "tissues_vessels",
+      "old_empty_languages": [
+        "zh",
+        "en"
+      ],
+      "original_queries": [
+        {
+          "id": "tissues_vessels-cartilage-zh",
+          "concept_id": "tissues_vessels-cartilage",
+          "category": "tissues_vessels",
+          "language": "zh",
+          "query": "软骨组织示意",
+          "expected_concepts": [
+            "cartilage"
+          ],
+          "required_species": null,
+          "visual_requirements": "软骨结构或关节软骨可识别；不凭色块声称具体分级。",
+          "exclude_matches": [
+            "histology photograph",
+            "numeric disease grading without evidence"
+          ]
+        },
+        {
+          "id": "tissues_vessels-cartilage-en",
+          "concept_id": "tissues_vessels-cartilage",
+          "category": "tissues_vessels",
+          "language": "en",
+          "query": "cartilage tissue illustration",
+          "expected_concepts": [
+            "cartilage"
+          ],
+          "required_species": null,
+          "visual_requirements": "软骨结构或关节软骨可识别；不凭色块声称具体分级。",
+          "exclude_matches": [
+            "histology photograph",
+            "numeric disease grading without evidence"
+          ]
+        }
+      ],
+      "classification": "acquired_gapfill_missing_from_snapshot_and_parser_corrected",
+      "finding_zh": "Commons 03/04 软骨对象已收集且范围合格，旧快照未纳入；已授权修复软骨组织/cartilage tissue 类属词解析。",
+      "candidate_family_ids": [
+        "commons-b50bbb02638ee0ba4875",
+        "commons-f0034fbb07e87ca88eec"
+      ],
+      "required_evidence_or_resolution": [
+        "object:cartilage"
+      ],
+      "next_action_zh": "从实际已收录软骨对象补精确证据；不把标签自动视为流程图，也不推断文字可编辑性。",
+      "final_relevance_passed": null
+    }
+  ],
+  "minimum_review_shortlist": [
+    {
+      "review_id": "centrifuge-user",
+      "priority": 1,
+      "status": "actual_visual_review_needed",
+      "concept_ids": [
+        "experimental_actions-centrifugation"
+      ],
+      "family_id": "bioicons-a5a17208ccf6a99aa8b0",
+      "source": "bioicons",
+      "source_id": "cc-by-4.0/Lab_apparatus/DBCLS/centrifuge-user.svg",
+      "title": "centrifuge user",
+      "source_url": "https://github.com/duerrsimon/bioicons/blob/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-4.0/Lab_apparatus/DBCLS/centrifuge-user.svg",
+      "format": "svg",
+      "original_url": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-4.0/Lab_apparatus/DBCLS/centrifuge-user.svg",
+      "original_sha256": "81cef7afa4208873bff2e21089b6cd024b0dc2d5257b289b1b1f5bab18dd0616",
+      "preview_sha256": "b3ac02c8392176f2b91cacc8e4b6f277644291fcf3fa64813cc4c36008d5d698",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42251588741-1-b0024.tar.gz",
+        "member": "files/81/81cef7afa4208873bff2e21089b6cd024b0dc2d5257b289b1b1f5bab18dd0616.svg"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42251588741-1-b0024.tar.gz",
+        "member": "previews/81cef7afa4208873bff2e21089b6cd024b0dc2d5257b289b1b1f5bab18dd0616.png"
+      },
+      "available_review_evidence": [],
+      "review_question_zh": "确认是否有人实际操作离心机，还是仅设备；如无样品分离步骤则不能声明 separation workflow。",
+      "requested_observations": [
+        "visible_primary_object",
+        "visible_action",
+        "depiction_kind"
+      ],
+      "unsupported_assertions_must_remain_unknown": "标题仅用于提名，尚无对应实际图审。",
+      "approved_scientific_assertions": null
+    },
+    {
+      "review_id": "feeder-coculture",
+      "priority": 1,
+      "status": "actual_visual_review_needed",
+      "concept_ids": [
+        "experimental_actions-cell-culture"
+      ],
+      "family_id": "bioicons-c29dc0575353ba50501f",
+      "source": "bioicons",
+      "source_id": "cc-0/Cell_culture/Marcel_Tisch/cells_feeder_coculture.svg",
+      "title": "cells feeder coculture",
+      "source_url": "https://github.com/duerrsimon/bioicons/blob/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-0/Cell_culture/Marcel_Tisch/cells_feeder_coculture.svg",
+      "format": "svg",
+      "original_url": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-0/Cell_culture/Marcel_Tisch/cells_feeder_coculture.svg",
+      "original_sha256": "e4ff3215a1e5b339e1f50e6b609b99be44cbdfd4fc72e32ee782de77716cf82c",
+      "preview_sha256": "b9dd61f92ba7baa9ae4049327f519b9da647e3f51c7e1ea41e8f57f1f8e3a27f",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42239971379-1-b0000.tar.gz",
+        "member": "files/e4/e4ff3215a1e5b339e1f50e6b609b99be44cbdfd4fc72e32ee782de77716cf82c.svg"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42239971379-1-b0000.tar.gz",
+        "member": "previews/e4ff3215a1e5b339e1f50e6b609b99be44cbdfd4fc72e32ee782de77716cf82c.png"
+      },
+      "available_review_evidence": [],
+      "review_question_zh": "确认共培养结构、细胞与容器可见关系；区分静态组成与实际培养操作。",
+      "requested_observations": [
+        "visible_primary_object",
+        "static_setup_or_action"
+      ],
+      "unsupported_assertions_must_remain_unknown": "不能据标题补细胞系、培养条件或实验步骤。",
+      "approved_scientific_assertions": null
+    },
+    {
+      "review_id": "pipetting-person",
+      "priority": 1,
+      "status": "actual_visual_review_needed",
+      "concept_ids": [
+        "experimental_actions-cell-culture"
+      ],
+      "family_id": "bioicons-b6733fcf61ab61939b7e",
+      "source": "bioicons",
+      "source_id": "cc-by-4.0/Lab_apparatus/DBCLS/Pipetting_Female.svg",
+      "title": "Pipetting Female",
+      "source_url": "https://github.com/duerrsimon/bioicons/blob/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-4.0/Lab_apparatus/DBCLS/Pipetting_Female.svg",
+      "format": "svg",
+      "original_url": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-4.0/Lab_apparatus/DBCLS/Pipetting_Female.svg",
+      "original_sha256": "4f7b88869456238099db6b37d7b327ec6ad6ae86ca43361f2146c36803b0de00",
+      "preview_sha256": "e72ab6ff3572b8444a3025759a77c6d2dc9fc316defe8ecbc3e5b0ec5eb6410b",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42251588741-1-b0022.tar.gz",
+        "member": "files/4f/4f7b88869456238099db6b37d7b327ec6ad6ae86ca43361f2146c36803b0de00.svg"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42251588741-1-b0022.tar.gz",
+        "member": "previews/4f7b88869456238099db6b37d7b327ec6ad6ae86ca43361f2146c36803b0de00.png"
+      },
+      "available_review_evidence": [],
+      "review_question_zh": "确认人物、移液器、容器的实际动作关系；判断能否作为培养操作组合部件。",
+      "requested_observations": [
+        "person_equipment_interaction",
+        "visible_action"
+      ],
+      "unsupported_assertions_must_remain_unknown": "仅移液不证明细胞培养；优先只看一个人物变体。",
+      "approved_scientific_assertions": null
+    },
+    {
+      "review_id": "form-questionnaire",
+      "priority": 1,
+      "status": "actual_visual_review_needed",
+      "concept_ids": [
+        "clinical_workflow-questionnaire"
+      ],
+      "family_id": "healthicons-4a4d28be7209b7b4b731",
+      "source": "healthicons",
+      "source_id": "public/icons/svg/outline/objects/health-worker_form.svg",
+      "title": "Health Worker Form",
+      "source_url": "https://github.com/resolvetosavelives/healthicons/blob/2080c1b40e4829f2f4217e03bc22908b4e402f6b/public/icons/svg/outline/objects/health-worker_form.svg",
+      "format": "svg",
+      "original_url": "https://raw.githubusercontent.com/resolvetosavelives/healthicons/2080c1b40e4829f2f4217e03bc22908b4e402f6b/public/icons/svg/outline/objects/health-worker_form.svg",
+      "original_sha256": "3e0db9de01c5f1207968f9d6316055ceffda289d02ecaca84a755816a40838ca",
+      "preview_sha256": "951debc92d2161cf799949bd5311b2845d86a072d638a7f1d9c6b5776421095b",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/healthicons-42234355854-1-b0003.tar.gz",
+        "member": "files/3e/3e0db9de01c5f1207968f9d6316055ceffda289d02ecaca84a755816a40838ca.svg"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/healthicons-42234355854-1-b0003.tar.gz",
+        "member": "previews/3e0db9de01c5f1207968f9d6316055ceffda289d02ecaca84a755816a40838ca.png"
+      },
+      "available_review_evidence": [],
+      "review_question_zh": "确认画面表达的是问答/访谈、空白表单还是普通病历；不要把健康工作者表单等同调查问卷。",
+      "requested_observations": [
+        "visible_form_semantics",
+        "person_or_form_role"
+      ],
+      "unsupported_assertions_must_remain_unknown": "先看一个 outline 文件，不能把其断言自动应用到其他变体。",
+      "approved_scientific_assertions": null
+    },
+    {
+      "review_id": "people-components",
+      "priority": 1,
+      "status": "actual_visual_review_needed",
+      "concept_ids": [
+        "clinical_workflow-cohort-followup",
+        "clinical_workflow-recruitment"
+      ],
+      "family_id": "nih-bioart-57b76866d5aea134f7b4",
+      "source": "nih-bioart",
+      "source_id": "185",
+      "title": "Group of People",
+      "source_url": "https://bioart.niaid.nih.gov/bioart/185",
+      "format": "png",
+      "original_url": "https://bioart.niaid.nih.gov/api/bioarts/185/files/630277",
+      "original_sha256": "f2cc06c7c8c76c03a1bba830b1670be2d07e1543d0bc49dae3339af880b9e9bc",
+      "preview_sha256": "2573d24e1756da011c4b9b23b2681d0f40af83badb052b0c7258cae477fee1c3",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/nih-bioart-42236561214-1-b0000.tar.gz",
+        "member": "files/f2/f2cc06c7c8c76c03a1bba830b1670be2d07e1543d0bc49dae3339af880b9e9bc.png"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/nih-bioart-42236561214-1-b0000.tar.gz",
+        "member": "previews/f2cc06c7c8c76c03a1bba830b1670be2d07e1543d0bc49dae3339af880b9e9bc.png"
+      },
+      "available_review_evidence": [],
+      "review_question_zh": "确认中性人群是否完整且可作为参与者组合部件；单张图不能证明招募、纳入或随访。",
+      "requested_observations": [
+        "human_group",
+        "component_usable"
+      ],
+      "unsupported_assertions_must_remain_unknown": "只判断可复用对象，不给人物研究身份或样本量。",
+      "approved_scientific_assertions": null
+    },
+    {
+      "review_id": "commons-02-science-binding",
+      "priority": 2,
+      "status": "existing_visual_scope_evidence_available_scientific_binding_pending",
+      "concept_ids": [
+        "tissues_vessels-bone-section"
+      ],
+      "family_id": "commons-315279fb0328ace303fa",
+      "source": "commons",
+      "source_id": "File:Transverse section of bone en.svg",
+      "title": "Transverse section of bone with osteons",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Transverse_section_of_bone_en.svg",
+      "original_sha256": "a68bc1bcbcfdf7a95015bf99a8b16d02687e0c36c92a805a56dc350a376d6c04",
+      "preview_sha256": "4b7288de9ec81968ce9020fa7df61874e0879c31cb3e6588c085b0d3eeeda9d9",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/commons-42260711756-1-b0000.tar.gz",
+        "member": "files/a6/a68bc1bcbcfdf7a95015bf99a8b16d02687e0c36c92a805a56dc350a376d6c04.svg"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/commons-42260711756-1-b0000.tar.gz",
+        "member": "previews/a68bc1bcbcfdf7a95015bf99a8b16d02687e0c36c92a805a56dc350a376d6c04.png"
+      },
+      "available_review_evidence": [
+        {
+          "path": "data/visual-reviews/commons-42260711756-component-scope.json",
+          "sha256": "c3995c6d578fe5e13cc84b8a825db0e767eaca9bdecf6dc918e79b65fa2dabc2",
+          "tile": 2,
+          "sheet": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/commons-42260711756-1-b0000.review.png",
+          "sheet_sha256": "7882d49647b83664b62138770424dc844e6ace018f8a19b55f26ca51ebb201f8",
+          "observations": "骨组织横断面含骨单位、哈弗管、骨细胞和骨小管标签，适合结构示意；缩小时标签需要放大检查。"
+        }
+      ],
+      "review_question_zh": "复核已有精确 tile 后，只给实际可见的对象和截面属性；不扩展到其他变体，不声明编辑性。",
+      "requested_observations": [
+        "object:bone",
+        "view:cross_section"
+      ],
+      "approved_scientific_assertions": null
+    },
+    {
+      "review_id": "commons-04-science-binding",
+      "priority": 2,
+      "status": "existing_visual_scope_evidence_available_scientific_binding_pending",
+      "concept_ids": [
+        "tissues_vessels-cartilage"
+      ],
+      "family_id": "commons-f0034fbb07e87ca88eec",
+      "source": "commons",
+      "source_id": "File:Cartoon Hyaline Cartilage.jpg",
+      "title": "Hyaline cartilage schematic",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Cartoon_Hyaline_Cartilage.jpg",
+      "original_sha256": "62898b9d08c0821a649cb56fc979d1cf32cdc930c0313049ca53bd568e096c5d",
+      "preview_sha256": "b30535f5c91ef5a959d3dae5ab9a283abdb215eeca8ba5e269694d2ffab02312",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/commons-42260711756-1-b0000.tar.gz",
+        "member": "files/62/62898b9d08c0821a649cb56fc979d1cf32cdc930c0313049ca53bd568e096c5d.jpg"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/commons-42260711756-1-b0000.tar.gz",
+        "member": "previews/62898b9d08c0821a649cb56fc979d1cf32cdc930c0313049ca53bd568e096c5d.png"
+      },
+      "available_review_evidence": [
+        {
+          "path": "data/visual-reviews/commons-42260711756-component-scope.json",
+          "sha256": "c3995c6d578fe5e13cc84b8a825db0e767eaca9bdecf6dc918e79b65fa2dabc2",
+          "tile": 4,
+          "sheet": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/commons-42260711756-1-b0000.review.png",
+          "sheet_sha256": "7882d49647b83664b62138770424dc844e6ace018f8a19b55f26ca51ebb201f8",
+          "observations": "透明软骨细胞、陷窝和基质的平面教学示意；不用于病理分级。"
+        }
+      ],
+      "review_question_zh": "复核已有精确 tile 后，只给实际可见的对象和截面属性；不扩展到其他变体，不声明编辑性。",
+      "requested_observations": [
+        "object:cartilage"
+      ],
+      "approved_scientific_assertions": null
+    }
+  ],
+  "already_prepared_exact_scientific_evidence": [
+    {
+      "path": "data/visual-reviews/bioicons-servier-42251588741-sample.json",
+      "document_sha256": "7fb123d001ec967ff252a70d52970c57780e363ebc1b11525ddbb85b9fb00373",
+      "family_id": "bioicons-c04274818e8a26003ce4",
+      "source_id": "cc-by-3.0/Animals/Servier/mouse-gray.svg",
+      "original_sha256": "06a18b85a335b215cd0788906f53613ff78ee888948ca905adb82fb0d27f9ef1",
+      "preview_sha256": "17ca13bec607a2b89181a3e3dfd3dbb11259fd791e18111deef6999af0ed1435",
+      "scientific_assertions": {
+        "object": [
+          "mouse"
+        ],
+        "species": [
+          "mouse"
+        ],
+        "view": [
+          "lateral"
+        ],
+        "role": [
+          "whole_body"
+        ],
+        "depiction_kind": "animal"
+      },
+      "status": "ready_for_exact_file_application_not_formal_retrieval_acceptance"
+    },
+    {
+      "path": "data/visual-reviews/bioicons-servier-42251588741-sample.json",
+      "document_sha256": "7fb123d001ec967ff252a70d52970c57780e363ebc1b11525ddbb85b9fb00373",
+      "family_id": "bioicons-2702995134688f232ace",
+      "source_id": "cc-by-3.0/Animals/Servier/rat-juvenile.svg",
+      "original_sha256": "6566c1e6778a6af77d098c00ef0c58459c382d5019367aef31c821a52d5af1f9",
+      "preview_sha256": "5c4bf8dd47167e661a0d07e9e2a7444306c0933557f78378fa1ebe310d755f96",
+      "scientific_assertions": {
+        "object": [
+          "rat"
+        ],
+        "species": [
+          "rat"
+        ],
+        "view": [
+          "lateral"
+        ],
+        "role": [
+          "whole_body"
+        ],
+        "depiction_kind": "animal"
+      },
+      "status": "ready_for_exact_file_application_not_formal_retrieval_acceptance"
+    },
+    {
+      "path": "data/visual-reviews/open-pain-20261107-scientific.json",
+      "document_sha256": "c63c36bd2210b8151529f526ecb3a75fb22f8977103c2306a83aa0126315dcd5",
+      "family_id": "open-pain-f8e5755205f3f9e69b2a",
+      "source_id": "illustration/1.0/anatomical_illustration.svg",
+      "original_sha256": "ca71ade57f448493b7b10dcb8bb55a5547369412167c69305d1b1d9afd11cc30",
+      "preview_sha256": "8fd230b11b34a644c5f29e610b3c488268d59dab569643a96b4dd150feff2492",
+      "scientific_assertions": {
+        "object": [
+          "human"
+        ],
+        "species": [
+          "human"
+        ],
+        "view": [
+          "anterior",
+          "posterior"
+        ],
+        "role": [
+          "whole_body"
+        ],
+        "depiction_kind": "person"
+      },
+      "status": "ready_for_exact_file_application_not_formal_retrieval_acceptance"
+    },
+    {
+      "path": "data/visual-reviews/open-pain-20261107-scientific.json",
+      "document_sha256": "c63c36bd2210b8151529f526ecb3a75fb22f8977103c2306a83aa0126315dcd5",
+      "family_id": "open-pain-c66a17e67b2e8111f592",
+      "source_id": "illustration/1.0/anatomical_illustration_colored.svg",
+      "original_sha256": "577c2fdde04aa877d7c6366a399a736b2197be010325c75ae602ab660b35b69f",
+      "preview_sha256": "a290e7af8d08ec42165c9bdee668c0a9a19eb10048998fb4b39b2ca4085213b2",
+      "scientific_assertions": {
+        "object": [
+          "human"
+        ],
+        "species": [
+          "human"
+        ],
+        "view": [
+          "anterior",
+          "posterior"
+        ],
+        "role": [
+          "whole_body"
+        ],
+        "depiction_kind": "person"
+      },
+      "status": "ready_for_exact_file_application_not_formal_retrieval_acceptance"
+    },
+    {
+      "path": "data/visual-reviews/bioicons-thermometer-20261107-scientific.json",
+      "document_sha256": "709178bb2c71e3a3080f9a88966d7cc21bf84f0f9fec67a1b91b9ca98413cde9",
+      "family_id": "bioicons-d4ee71aaec1c121b1029",
+      "source_id": "cc-by-3.0/Microbiology/Servier/cell-cultuure-quipment-3.svg",
+      "original_sha256": "0ff0f512952b51d9f9a58bb133c26a4924debc18da511dc62dfab6e04d323fe1",
+      "preview_sha256": "f6be79923ae8df8a3c6633677d75c0d4e70b4852d001c47f92f55b1f0fb4042d",
+      "scientific_assertions": {
+        "object": [
+          "thermometer"
+        ],
+        "depiction_kind": "equipment"
+      },
+      "status": "ready_for_exact_file_application_not_formal_retrieval_acceptance"
+    }
+  ],
+  "specific_tissue_parser_correction": {
+    "examples": [
+      "骨组织截面插画",
+      "软骨组织示意",
+      "cartilage tissue illustration"
+    ],
+    "issue": "Noun-class 组织/tissue remained a separate required lexical token after a specific bone/cartilage object.",
+    "current_core_changed_for_this_issue": true,
+    "scope": "Only bone/cartilage class synonyms are normalized. Tissue is not globally removed; lung tissue remains distinct from the whole lung, including when a whole lung carries a broad tissue tag.",
+    "formal_benchmark_rerun": false
+  }
+}

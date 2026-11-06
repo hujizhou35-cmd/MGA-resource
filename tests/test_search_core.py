@@ -205,7 +205,7 @@ def test_unknown_filter_and_obsolete_index_fail_explicitly(tmp_path):
         search(db, "mouse", filters={"nonsense": "true"})
     with closing(sqlite3.connect(db)) as conn:
         conn.execute("PRAGMA user_version=1")
-    with pytest.raises(ValueError, match="rebuilt as v8"):
+    with pytest.raises(ValueError, match="rebuilt as v9"):
         search(db, "mouse")
 
 
@@ -393,6 +393,34 @@ def test_named_molecule_noun_class_is_equivalent_in_chinese_and_english(tmp_path
     pages=[search_page(db,q) for q in ("ATP分子结构示意","ATP molecule structure schematic")]
     assert all([r["title"] for r in p["results"]]==["ATP"] for p in pages)
     assert all(len(p["query_plan"]["terms"])==1 for p in pages)
+
+
+def test_bone_and_cartilage_noun_classes_keep_cross_section_hard(tmp_path):
+    section=artwork(1,title="Transverse section of bone with osteons",species=None)
+    whole=artwork(2,title="Bone",species=None)
+    cartilage=artwork(3,title="Hyaline cartilage",species=None)
+    marrow=artwork(4,title="Bone marrow",species=None)
+    db=database(tmp_path,[section,whole,cartilage,marrow])
+    for query in ("骨组织截面插画","bone tissue cross section illustration"):
+        page=search_page(db,query)
+        assert [r["title"] for r in page["results"]]==[section["title"]]
+        assert page["query_plan"]["requirements"]["view"]==["cross_section"]
+        assert len(page["query_plan"]["terms"])==1
+        assert any(r["reason"]=="unknown:view" for r in page["diagnostics"]["uncertain_candidates"])
+    for query in ("软骨组织示意","cartilage tissue illustration"):
+        page=search_page(db,query)
+        assert [r["title"] for r in page["results"]]==[cartilage["title"]]
+        assert len(page["query_plan"]["terms"])==1
+
+
+def test_lung_tissue_is_not_a_whole_organ_with_a_broad_tissue_tag(tmp_path):
+    organ=artwork(1,title="Human Lung",species="human",tags=["lung tissue","tissue"])
+    tissue=artwork(2,title="Human Lung Tissue",species="human")
+    db=database(tmp_path,[organ,tissue])
+    for query in ("人体肺组织插画","human lung tissue illustration"):
+        assert [r["title"] for r in search(db,query)]==[tissue["title"]]
+    for query in ("人体肺部插画","human lungs illustration"):
+        assert [r["title"] for r in search(db,query)]==[organ["title"]]
 
 
 def test_lungs_plural_is_an_organ_not_a_human_body_request(tmp_path):

@@ -1,0 +1,568 @@
+{
+  "schema_version": 1,
+  "prepared_at": "2026-11-07",
+  "status": "scope_alignment_analysis_not_benchmark_revision",
+  "bindings": {
+    "benchmark_path": "data/benchmark.json",
+    "benchmark_sha256": "ce0282afeb4afbcee8fdef1c6f937844ef569cabf16ba7909e22bf86b1096e92"
+  },
+  "original_benchmark_preserved": true,
+  "original_counts": {
+    "categories": 12,
+    "concepts": 60,
+    "queries": 120
+  },
+  "original_thresholds": {
+    "top_k": 10,
+    "overall_success_rate": 0.9,
+    "minimum_successful_queries": 108,
+    "minimum_successful_queries_per_language": 54,
+    "minimum_covered_concepts_per_category": 4,
+    "invalid_or_unreadable_downloads": 0
+  },
+  "original_concepts": [
+    {
+      "id": "clinical_workflow-cohort-followup",
+      "category": "clinical_workflow",
+      "label_zh": "队列随访流程素材",
+      "label_en": "cohort follow up workflow illustration",
+      "expected_concepts": [
+        "cohort",
+        "follow up"
+      ],
+      "required_species": "human",
+      "visual_requirements": "可表达参与者随时间随访的图形或组合部件，不含虚构研究人数或结论。",
+      "exclude_matches": [
+        "published study data figure",
+        "invented sample size"
+      ]
+    },
+    {
+      "id": "clinical_workflow-randomization",
+      "category": "clinical_workflow",
+      "label_zh": "随机分组流程素材",
+      "label_en": "randomization two groups workflow diagram",
+      "expected_concepts": [
+        "randomization",
+        "groups"
+      ],
+      "required_species": "human",
+      "visual_requirements": "能表达分组步骤，不能把普通分支箭头直接宣称已证明随机化。",
+      "exclude_matches": [
+        "specific trial outcomes"
+      ]
+    },
+    {
+      "id": "clinical_workflow-recruitment",
+      "category": "clinical_workflow",
+      "label_zh": "研究参与者招募素材",
+      "label_en": "study participant recruitment illustration",
+      "expected_concepts": [
+        "participant",
+        "recruitment"
+      ],
+      "required_species": "human",
+      "visual_requirements": "适合招募/纳入步骤的中性科研插画或图标，不携带虚构纳排标准。",
+      "exclude_matches": [
+        "specific patient data"
+      ]
+    },
+    {
+      "id": "clinical_workflow-questionnaire",
+      "category": "clinical_workflow",
+      "label_zh": "问卷调查素材",
+      "label_en": "questionnaire survey illustration",
+      "expected_concepts": [
+        "questionnaire",
+        "survey"
+      ],
+      "required_species": "human",
+      "visual_requirements": "问卷或访谈含义清楚；不是将真实个人答卷作为素材。",
+      "exclude_matches": [
+        "filled identifiable medical record"
+      ]
+    },
+    {
+      "id": "clinical_workflow-blood-pressure",
+      "category": "clinical_workflow",
+      "label_zh": "血压测量操作插画",
+      "label_en": "blood pressure measurement illustration",
+      "expected_concepts": [
+        "blood pressure",
+        "measurement"
+      ],
+      "required_species": "human",
+      "visual_requirements": "测量器具和动作合理，不将显示值当研究测量结果。",
+      "exclude_matches": [
+        "unsupported study BP value"
+      ]
+    },
+    {
+      "id": "omics_data-rnaseq",
+      "category": "omics_data",
+      "label_zh": "RNA测序流程示意素材",
+      "label_en": "RNA sequencing workflow illustration",
+      "expected_concepts": [
+        "RNA sequencing",
+        "RNA-seq"
+      ],
+      "required_species": null,
+      "visual_requirements": "可用于表达RNA测序方法步骤，不把DNA测序标签或示意读数当实测数据。",
+      "exclude_matches": [
+        "published experimental results"
+      ]
+    },
+    {
+      "id": "omics_data-heatmap",
+      "category": "omics_data",
+      "label_zh": "基因表达热图示意模板",
+      "label_en": "gene expression heatmap schematic template",
+      "expected_concepts": [
+        "gene expression",
+        "heatmap"
+      ],
+      "required_species": null,
+      "visual_requirements": "必须是示意模板或空白构件；不得将别人的实际表达矩阵或结果图作为素材。",
+      "exclude_matches": [
+        "real study heatmap",
+        "unlabeled fabricated data"
+      ]
+    },
+    {
+      "id": "omics_data-sequencer",
+      "category": "omics_data",
+      "label_zh": "测序仪设备插画",
+      "label_en": "sequencing instrument illustration",
+      "expected_concepts": [
+        "sequencer",
+        "sequencing instrument"
+      ],
+      "required_species": null,
+      "visual_requirements": "设备用途有来源支持，商用品牌和型号不得凭外观推断。",
+      "exclude_matches": [
+        "unsupported brand or model"
+      ]
+    },
+    {
+      "id": "omics_data-gene-network",
+      "category": "omics_data",
+      "label_zh": "基因网络示意素材",
+      "label_en": "gene network schematic illustration",
+      "expected_concepts": [
+        "gene network"
+      ],
+      "required_species": null,
+      "visual_requirements": "通用网络构件可用；特定边或调控关系必须明确为示意，不能冒充实证。",
+      "exclude_matches": [
+        "published gene interaction findings"
+      ]
+    },
+    {
+      "id": "omics_data-forest-template",
+      "category": "omics_data",
+      "label_zh": "森林图通用构件模板",
+      "label_en": "forest plot schematic template",
+      "expected_concepts": [
+        "forest plot",
+        "template"
+      ],
+      "required_species": null,
+      "visual_requirements": "只接受空白或明确示意构件，避免把具体效应值、置信区间当成通用素材。",
+      "exclude_matches": [
+        "published meta-analysis data",
+        "unlabeled fabricated estimates"
+      ]
+    }
+  ],
+  "original_queries": [
+    {
+      "id": "clinical_workflow-cohort-followup-zh",
+      "concept_id": "clinical_workflow-cohort-followup",
+      "category": "clinical_workflow",
+      "language": "zh",
+      "query": "队列随访流程素材",
+      "expected_concepts": [
+        "cohort",
+        "follow up"
+      ],
+      "required_species": "human",
+      "visual_requirements": "可表达参与者随时间随访的图形或组合部件，不含虚构研究人数或结论。",
+      "exclude_matches": [
+        "published study data figure",
+        "invented sample size"
+      ]
+    },
+    {
+      "id": "clinical_workflow-cohort-followup-en",
+      "concept_id": "clinical_workflow-cohort-followup",
+      "category": "clinical_workflow",
+      "language": "en",
+      "query": "cohort follow up workflow illustration",
+      "expected_concepts": [
+        "cohort",
+        "follow up"
+      ],
+      "required_species": "human",
+      "visual_requirements": "可表达参与者随时间随访的图形或组合部件，不含虚构研究人数或结论。",
+      "exclude_matches": [
+        "published study data figure",
+        "invented sample size"
+      ]
+    },
+    {
+      "id": "clinical_workflow-randomization-zh",
+      "concept_id": "clinical_workflow-randomization",
+      "category": "clinical_workflow",
+      "language": "zh",
+      "query": "随机分组流程素材",
+      "expected_concepts": [
+        "randomization",
+        "groups"
+      ],
+      "required_species": "human",
+      "visual_requirements": "能表达分组步骤，不能把普通分支箭头直接宣称已证明随机化。",
+      "exclude_matches": [
+        "specific trial outcomes"
+      ]
+    },
+    {
+      "id": "clinical_workflow-randomization-en",
+      "concept_id": "clinical_workflow-randomization",
+      "category": "clinical_workflow",
+      "language": "en",
+      "query": "randomization two groups workflow diagram",
+      "expected_concepts": [
+        "randomization",
+        "groups"
+      ],
+      "required_species": "human",
+      "visual_requirements": "能表达分组步骤，不能把普通分支箭头直接宣称已证明随机化。",
+      "exclude_matches": [
+        "specific trial outcomes"
+      ]
+    },
+    {
+      "id": "clinical_workflow-recruitment-zh",
+      "concept_id": "clinical_workflow-recruitment",
+      "category": "clinical_workflow",
+      "language": "zh",
+      "query": "研究参与者招募素材",
+      "expected_concepts": [
+        "participant",
+        "recruitment"
+      ],
+      "required_species": "human",
+      "visual_requirements": "适合招募/纳入步骤的中性科研插画或图标，不携带虚构纳排标准。",
+      "exclude_matches": [
+        "specific patient data"
+      ]
+    },
+    {
+      "id": "clinical_workflow-recruitment-en",
+      "concept_id": "clinical_workflow-recruitment",
+      "category": "clinical_workflow",
+      "language": "en",
+      "query": "study participant recruitment illustration",
+      "expected_concepts": [
+        "participant",
+        "recruitment"
+      ],
+      "required_species": "human",
+      "visual_requirements": "适合招募/纳入步骤的中性科研插画或图标，不携带虚构纳排标准。",
+      "exclude_matches": [
+        "specific patient data"
+      ]
+    },
+    {
+      "id": "clinical_workflow-questionnaire-zh",
+      "concept_id": "clinical_workflow-questionnaire",
+      "category": "clinical_workflow",
+      "language": "zh",
+      "query": "问卷调查素材",
+      "expected_concepts": [
+        "questionnaire",
+        "survey"
+      ],
+      "required_species": "human",
+      "visual_requirements": "问卷或访谈含义清楚；不是将真实个人答卷作为素材。",
+      "exclude_matches": [
+        "filled identifiable medical record"
+      ]
+    },
+    {
+      "id": "clinical_workflow-questionnaire-en",
+      "concept_id": "clinical_workflow-questionnaire",
+      "category": "clinical_workflow",
+      "language": "en",
+      "query": "questionnaire survey illustration",
+      "expected_concepts": [
+        "questionnaire",
+        "survey"
+      ],
+      "required_species": "human",
+      "visual_requirements": "问卷或访谈含义清楚；不是将真实个人答卷作为素材。",
+      "exclude_matches": [
+        "filled identifiable medical record"
+      ]
+    },
+    {
+      "id": "clinical_workflow-blood-pressure-zh",
+      "concept_id": "clinical_workflow-blood-pressure",
+      "category": "clinical_workflow",
+      "language": "zh",
+      "query": "血压测量操作插画",
+      "expected_concepts": [
+        "blood pressure",
+        "measurement"
+      ],
+      "required_species": "human",
+      "visual_requirements": "测量器具和动作合理，不将显示值当研究测量结果。",
+      "exclude_matches": [
+        "unsupported study BP value"
+      ]
+    },
+    {
+      "id": "clinical_workflow-blood-pressure-en",
+      "concept_id": "clinical_workflow-blood-pressure",
+      "category": "clinical_workflow",
+      "language": "en",
+      "query": "blood pressure measurement illustration",
+      "expected_concepts": [
+        "blood pressure",
+        "measurement"
+      ],
+      "required_species": "human",
+      "visual_requirements": "测量器具和动作合理，不将显示值当研究测量结果。",
+      "exclude_matches": [
+        "unsupported study BP value"
+      ]
+    },
+    {
+      "id": "omics_data-rnaseq-zh",
+      "concept_id": "omics_data-rnaseq",
+      "category": "omics_data",
+      "language": "zh",
+      "query": "RNA测序流程示意素材",
+      "expected_concepts": [
+        "RNA sequencing",
+        "RNA-seq"
+      ],
+      "required_species": null,
+      "visual_requirements": "可用于表达RNA测序方法步骤，不把DNA测序标签或示意读数当实测数据。",
+      "exclude_matches": [
+        "published experimental results"
+      ]
+    },
+    {
+      "id": "omics_data-rnaseq-en",
+      "concept_id": "omics_data-rnaseq",
+      "category": "omics_data",
+      "language": "en",
+      "query": "RNA sequencing workflow illustration",
+      "expected_concepts": [
+        "RNA sequencing",
+        "RNA-seq"
+      ],
+      "required_species": null,
+      "visual_requirements": "可用于表达RNA测序方法步骤，不把DNA测序标签或示意读数当实测数据。",
+      "exclude_matches": [
+        "published experimental results"
+      ]
+    },
+    {
+      "id": "omics_data-heatmap-zh",
+      "concept_id": "omics_data-heatmap",
+      "category": "omics_data",
+      "language": "zh",
+      "query": "基因表达热图示意模板",
+      "expected_concepts": [
+        "gene expression",
+        "heatmap"
+      ],
+      "required_species": null,
+      "visual_requirements": "必须是示意模板或空白构件；不得将别人的实际表达矩阵或结果图作为素材。",
+      "exclude_matches": [
+        "real study heatmap",
+        "unlabeled fabricated data"
+      ]
+    },
+    {
+      "id": "omics_data-heatmap-en",
+      "concept_id": "omics_data-heatmap",
+      "category": "omics_data",
+      "language": "en",
+      "query": "gene expression heatmap schematic template",
+      "expected_concepts": [
+        "gene expression",
+        "heatmap"
+      ],
+      "required_species": null,
+      "visual_requirements": "必须是示意模板或空白构件；不得将别人的实际表达矩阵或结果图作为素材。",
+      "exclude_matches": [
+        "real study heatmap",
+        "unlabeled fabricated data"
+      ]
+    },
+    {
+      "id": "omics_data-sequencer-zh",
+      "concept_id": "omics_data-sequencer",
+      "category": "omics_data",
+      "language": "zh",
+      "query": "测序仪设备插画",
+      "expected_concepts": [
+        "sequencer",
+        "sequencing instrument"
+      ],
+      "required_species": null,
+      "visual_requirements": "设备用途有来源支持，商用品牌和型号不得凭外观推断。",
+      "exclude_matches": [
+        "unsupported brand or model"
+      ]
+    },
+    {
+      "id": "omics_data-sequencer-en",
+      "concept_id": "omics_data-sequencer",
+      "category": "omics_data",
+      "language": "en",
+      "query": "sequencing instrument illustration",
+      "expected_concepts": [
+        "sequencer",
+        "sequencing instrument"
+      ],
+      "required_species": null,
+      "visual_requirements": "设备用途有来源支持，商用品牌和型号不得凭外观推断。",
+      "exclude_matches": [
+        "unsupported brand or model"
+      ]
+    },
+    {
+      "id": "omics_data-gene-network-zh",
+      "concept_id": "omics_data-gene-network",
+      "category": "omics_data",
+      "language": "zh",
+      "query": "基因网络示意素材",
+      "expected_concepts": [
+        "gene network"
+      ],
+      "required_species": null,
+      "visual_requirements": "通用网络构件可用；特定边或调控关系必须明确为示意，不能冒充实证。",
+      "exclude_matches": [
+        "published gene interaction findings"
+      ]
+    },
+    {
+      "id": "omics_data-gene-network-en",
+      "concept_id": "omics_data-gene-network",
+      "category": "omics_data",
+      "language": "en",
+      "query": "gene network schematic illustration",
+      "expected_concepts": [
+        "gene network"
+      ],
+      "required_species": null,
+      "visual_requirements": "通用网络构件可用；特定边或调控关系必须明确为示意，不能冒充实证。",
+      "exclude_matches": [
+        "published gene interaction findings"
+      ]
+    },
+    {
+      "id": "omics_data-forest-template-zh",
+      "concept_id": "omics_data-forest-template",
+      "category": "omics_data",
+      "language": "zh",
+      "query": "森林图通用构件模板",
+      "expected_concepts": [
+        "forest plot",
+        "template"
+      ],
+      "required_species": null,
+      "visual_requirements": "只接受空白或明确示意构件，避免把具体效应值、置信区间当成通用素材。",
+      "exclude_matches": [
+        "published meta-analysis data",
+        "unlabeled fabricated estimates"
+      ]
+    },
+    {
+      "id": "omics_data-forest-template-en",
+      "concept_id": "omics_data-forest-template",
+      "category": "omics_data",
+      "language": "en",
+      "query": "forest plot schematic template",
+      "expected_concepts": [
+        "forest plot",
+        "template"
+      ],
+      "required_species": null,
+      "visual_requirements": "只接受空白或明确示意构件，避免把具体效应值、置信区间当成通用素材。",
+      "exclude_matches": [
+        "published meta-analysis data",
+        "unlabeled fabricated estimates"
+      ]
+    }
+  ],
+  "assessments": [
+    {
+      "concept_id": "clinical_workflow-cohort-followup",
+      "scope_status": "components_explicitly_allowed_but_semantics_required",
+      "analysis_zh": "原题明确允许图形或组合部件；完整教学流程图出界不等于所有随访部件出界。"
+    },
+    {
+      "concept_id": "clinical_workflow-randomization",
+      "scope_status": "meaning_required_not_generic_branch",
+      "analysis_zh": "可复用分组构件与整张试验流程应区分；普通分支不证明随机化。"
+    },
+    {
+      "concept_id": "clinical_workflow-recruitment",
+      "scope_status": "neutral_components_allowed",
+      "analysis_zh": "中性对象/人物可有用途，但必须实际适合招募表达，不附加虚构纳排条件。"
+    },
+    {
+      "concept_id": "clinical_workflow-questionnaire",
+      "scope_status": "questionnaire_or_interview_meaning_required",
+      "analysis_zh": "问卷/访谈对象可在范围内，真实个人答卷不在范围内；表单标题不自动满足语义。"
+    },
+    {
+      "concept_id": "clinical_workflow-blood-pressure",
+      "scope_status": "experimental_or_clinical_scene_in_scope",
+      "analysis_zh": "测量场景可收录，具体显示数值不当研究结果。"
+    },
+    {
+      "concept_id": "omics_data-rnaseq",
+      "scope_status": "component_vs_complete_workflow_requires_actual_review",
+      "analysis_zh": "方法相关设备/分子/操作构件可能在范围内；整张文字流程教学产品出界。"
+    },
+    {
+      "concept_id": "omics_data-heatmap",
+      "scope_status": "user_scope_answer_pending",
+      "analysis_zh": "原题正面要求空白/示意热图模板；新边界是否也排除空白图表构件需用户明确。"
+    },
+    {
+      "concept_id": "omics_data-sequencer",
+      "scope_status": "equipment_object_in_scope",
+      "analysis_zh": "设备对象在范围内，但型号用途不能仅凭外观推断。"
+    },
+    {
+      "concept_id": "omics_data-gene-network",
+      "scope_status": "component_vs_finished_product_requires_actual_review",
+      "analysis_zh": "原题允许通用构件；ANN、纯文字名牌、整幅结果/教学图不能直接充当基因网络构件。"
+    },
+    {
+      "concept_id": "omics_data-forest-template",
+      "scope_status": "user_scope_answer_pending",
+      "analysis_zh": "原题正面要求空白/示意森林图模板；若用户连此类构件也排除，该正向题与新范围冲突。"
+    }
+  ],
+  "conditional_gate_conflict": {
+    "condition": "Only if the user excludes both blank/schematic heatmap and forest-plot components while retaining their original positive-retrieval questions.",
+    "affected_concepts": [
+      "omics_data-heatmap",
+      "omics_data-forest-template"
+    ],
+    "omics_max_positive_concepts": 3,
+    "omics_original_min_positive_concepts": 4,
+    "all_queries_theoretical_max_if_only_these_fail": 116,
+    "original_overall_minimum": 108,
+    "interpretation": "The per-category gate becomes impossible under that condition; the overall 108/120 gate alone does not. This is not a claim that all clinical or omics tasks are inherently out of scope."
+  },
+  "pending_user_resolution": "Root has asked whether blank forest/heatmap components are excluded and whether affected questions become scope-rejection checks. Do not change the original benchmark or old scores before the answer."
+}
