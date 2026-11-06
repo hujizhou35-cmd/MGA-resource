@@ -1,0 +1,399 @@
+{
+  "schema_version": 1,
+  "reviewer": "Codex media_catalog",
+  "generated_at": "2026-11-06T22:09:33.276605+00:00",
+  "status": "intermediate_3.4.2_observation_preserved_before_phrase_fix",
+  "bindings": {
+    "catalog_sha256": "5c90306415ce5e7f36e875c7f57b19a91930aacfeeaeecdf9ad7662770f9a3fe",
+    "sqlite_sha256": "469860082c9d5aeb39780fcbbd6eecdfc2539bfd75db9a7620823c3cca6bdadb",
+    "benchmark_sha256": "ce0282afeb4afbcee8fdef1c6f937844ef569cabf16ba7909e22bf86b1096e92",
+    "publish_manifest_sha256": "a4fe0424ee8ecc32096090ef295242bdaa04b9ce29ff4f7a80948c95516d5436",
+    "search_core_sha256": "f8a5c89fc33e0f6d4ab793e93e8a26ca80a932167b4501cf39b459750cfaa87a",
+    "index_version": 9,
+    "index_metadata": {
+      "catalog_version": "5c90306415ce5e7f36e875c7f57b19a91930aacfeeaeecdf9ad7662770f9a3fe",
+      "ranking_version": "shared-search-3.4.2"
+    },
+    "index_build_receipt_sha256": "11726b70a4cfb1107e097dc5c80a81011aa7507efbbd05144aed5a9be2b824a4"
+  },
+  "prior_report": {
+    "uri": "data/diagnostics/final-negative-observation-42289434868.json",
+    "sha256": "51a3ae42290323166ee7b9eb19639fe237c95feb788ff7ce270595f81278dd53"
+  },
+  "raw_evidence": {
+    "uri": "data/diagnostics/final-negative-raw-42289434868-post-compat-3.4.2.json.gz",
+    "sha256": "4787318fbd5623093f2de2d3b79bd5593e2c60b831c9022f29b2545089bd350a",
+    "encoding": "gzip of exact UTF-8 raw JSON bytes",
+    "uncompressed_sha256": "ac9553cf9c80254ed47170e683ed66caffaec47f59214f06abcf4c17a2381041",
+    "uncompressed_size_bytes": 2407505
+  },
+  "negative_scenarios": [
+    {
+      "scenario_id": "no-such-object",
+      "original_scenario": {
+        "id": "no-such-object",
+        "query": "不存在的量子龙肝脏细胞专用器官",
+        "expected": "no plausible invented medical match"
+      },
+      "request": {
+        "query": "不存在的量子龙肝脏细胞专用器官",
+        "filters": {},
+        "limit": 10,
+        "mode": "explore",
+        "seed": "default"
+      },
+      "status": "passed_zero_result_safety_observation",
+      "fixed_query_result_count": 0,
+      "qualified_variants": 0,
+      "text_matched_variants": 0,
+      "requirements": {
+        "object": [
+          "细胞",
+          "cell",
+          "cells"
+        ]
+      },
+      "fts": "(\"细胞\" OR \"cell\" OR \"cells\") AND (\"肝脏\" OR \"肝\" OR \"liver\" OR \"hepatic\") AND (\"不存在\") AND (\"量子龙\") AND (\"专用器官\")",
+      "selected_original_sha256": [],
+      "execution_error": null,
+      "overall_scenario_visual_pass": true
+    },
+    {
+      "scenario_id": "photo-excluded",
+      "original_scenario": {
+        "id": "photo-excluded",
+        "query": "human liver histology photograph",
+        "filters": {
+          "content_type": "photograph"
+        },
+        "expected": "no in-scope photo; offer clearly marked illustration alternatives only if requested"
+      },
+      "request": {
+        "query": "human liver histology photograph",
+        "filters": {
+          "content_type": "photograph"
+        },
+        "limit": 10,
+        "mode": "explore",
+        "seed": "default"
+      },
+      "status": "passed_zero_result_safety_observation",
+      "fixed_query_result_count": 0,
+      "qualified_variants": 0,
+      "text_matched_variants": 0,
+      "requirements": {
+        "content_type": [
+          "photograph"
+        ],
+        "species": [
+          "human"
+        ],
+        "object": [
+          "liver",
+          "肝脏",
+          "肝",
+          "hepatic"
+        ]
+      },
+      "fts": "(\"human\" OR \"人体\" OR \"人类\" OR \"human body\" OR \"homo sapiens\") AND (\"liver\" OR \"肝脏\" OR \"肝\" OR \"hepatic\") AND (\"histology\") AND (\"photograph\")",
+      "selected_original_sha256": [],
+      "execution_error": null,
+      "overall_scenario_visual_pass": true
+    },
+    {
+      "scenario_id": "mouse-disambiguation",
+      "original_scenario": {
+        "id": "mouse-disambiguation",
+        "query": "mouse",
+        "filters": {
+          "category": "animals"
+        },
+        "expected": "animal results; no computer mouse"
+      },
+      "request": {
+        "query": "mouse",
+        "filters": {
+          "category": "animals"
+        },
+        "limit": 10,
+        "mode": "explore",
+        "seed": "default"
+      },
+      "status": "awaiting_remaining_exact_preview_review",
+      "fixed_query_result_count": 10,
+      "qualified_variants": 62,
+      "text_matched_variants": 306,
+      "requirements": {
+        "category": [
+          "animals"
+        ],
+        "species": [
+          "mouse"
+        ],
+        "object": [
+          "mouse",
+          "小白鼠",
+          "小鼠",
+          "mice",
+          "mus musculus"
+        ]
+      },
+      "fts": "(\"mouse\" OR \"小白鼠\" OR \"小鼠\" OR \"mice\" OR \"mus musculus\")",
+      "selected_original_sha256": [
+        "1c1b41f8294e44582dcc3666174978d007e50379be8ba02a3e9abaca97222e7e",
+        "949dd5897ba4c17d93da918ed4bcf71d7ef4f27c31d9aa46c91a238a1c3307c9",
+        "06a18b85a335b215cd0788906f53613ff78ee888948ca905adb82fb0d27f9ef1",
+        "c061a2dc0338efd78c63bda9a127131f7891c36ce31617e6e3f6b1ed9d5bf251",
+        "641fe3d778d116828071d5b6fb79927976b30bad2c9345d6a8b2376af4ee9526",
+        "360b7ff3da6cb90a6cb5dcc03614166f60da16ae8b4d38b2efb3eec4fa91ed49",
+        "79e34e75c4dac112c68f4a188bf66c8fe315d83ed550e812d72d62b8a5bbf22b",
+        "35ddc9ffce2ca5dbb11e7f99f468d83b8bb40b345ce044b334b2612238e1243c",
+        "a72dfe89b4b1ab765e8b4e46d5cf3075b23e8f0d04b5333783a011ab5fd2bb5e",
+        "54119cffceb2e9d63c48d914a7aa6a820194a200845e2c35dc6a5ed3c3c98bae"
+      ],
+      "execution_error": null,
+      "overall_scenario_visual_pass": false
+    },
+    {
+      "scenario_id": "species-conflict",
+      "original_scenario": {
+        "id": "species-conflict",
+        "query": "rat",
+        "filters": {
+          "species": "rat"
+        },
+        "expected": "no mouse labeled as rat"
+      },
+      "request": {
+        "query": "rat",
+        "filters": {
+          "species": "rat"
+        },
+        "limit": 10,
+        "mode": "explore",
+        "seed": "default"
+      },
+      "status": "awaiting_remaining_exact_preview_review",
+      "fixed_query_result_count": 10,
+      "qualified_variants": 42,
+      "text_matched_variants": 118,
+      "requirements": {
+        "species": [
+          "rat"
+        ],
+        "object": [
+          "rat",
+          "大鼠",
+          "rats",
+          "rattus"
+        ]
+      },
+      "fts": "(\"rat\" OR \"大鼠\" OR \"rats\" OR \"rattus\")",
+      "selected_original_sha256": [
+        "9c5a0b145f3b81cf141a8d5183974f95f2e21664aaa776b99af3f7bbd2efdeb9",
+        "36d2544ef2b7716fdf676134dd3e7174003937a2bbc15be60242a0f28fb9874e",
+        "9f95eb3ee49c5fca04695ab8297c9a00f4ab6354545c8d306fa3937a1100edb5",
+        "0b665d9047faa43f779a5a92f1da6d1a745950be4f86c5de6a9de50f05e81693",
+        "4e52d15f1a1749a32d7c31ca93da129f8fa58cc60d0d671d757c88cdf3837b7a",
+        "00009d849e505a8b79e53a4afa9d1e5b32988053659aef961e511ee2a052c861",
+        "90cf9adc7d330b374a78c5d97be1691c070f3bc9740073a7e469325b1f28b54c",
+        "812b36b84ac49991fb02799ce49662fa6a4ac61ccb7bc023d9c308c63368e32d",
+        "980584b7c5d6253de0adea968462935db3cb8ab5a7bf3d84199298f69cc96af2",
+        "6566c1e6778a6af77d098c00ef0c58459c382d5019367aef31c821a52d5af1f9"
+      ],
+      "execution_error": null,
+      "overall_scenario_visual_pass": false
+    },
+    {
+      "scenario_id": "raster-is-allowed",
+      "original_scenario": {
+        "id": "raster-is-allowed",
+        "query": "mouse illustration",
+        "filters": {
+          "media_type": "raster"
+        },
+        "expected": "valid raster illustrations remain eligible"
+      },
+      "request": {
+        "query": "mouse illustration",
+        "filters": {
+          "media_type": "raster"
+        },
+        "limit": 10,
+        "mode": "explore",
+        "seed": "default"
+      },
+      "status": "awaiting_remaining_exact_preview_review",
+      "fixed_query_result_count": 10,
+      "qualified_variants": 18,
+      "text_matched_variants": 306,
+      "requirements": {
+        "structure": [
+          "raster"
+        ],
+        "species": [
+          "mouse"
+        ],
+        "object": [
+          "mouse",
+          "小白鼠",
+          "小鼠",
+          "mice",
+          "mus musculus"
+        ]
+      },
+      "fts": "(\"mouse\" OR \"小白鼠\" OR \"小鼠\" OR \"mice\" OR \"mus musculus\")",
+      "selected_original_sha256": [
+        "1c1b41f8294e44582dcc3666174978d007e50379be8ba02a3e9abaca97222e7e",
+        "bd6dd09445b0c9f23e95edd288033eead42db86f6269539124551bea522bee89",
+        "79e34e75c4dac112c68f4a188bf66c8fe315d83ed550e812d72d62b8a5bbf22b",
+        "3b68a752aed0e50251b6e3fdf20d444cecea92e1a0012cfac7b6391d583d741a",
+        "3a0ed0dd377ca2acb033e7040defea9bfa1aa3414f00d425756fce450d099e0e",
+        "d9740ce4d39da14309e1148f07eb2d24049c94a40e4cc40842ebda2af9eaf3f9",
+        "10f88d4b1750a745c496fd3190db075be10451b7c21d33f71e10d249d92b5cc1",
+        "22f147c050c91e5a611088d648d8a76c6859c3cce8f508603b4aedd77e9626ce",
+        "1be2b06588140639cc6a5c074644a7293c8e713fd3ff19c70db1feca80d86b6c",
+        "d2dcbc24653c096c837801befe8a65a024836d83001e645709ca4ae85919caf4"
+      ],
+      "execution_error": null,
+      "overall_scenario_visual_pass": false
+    },
+    {
+      "scenario_id": "vector-honesty",
+      "original_scenario": {
+        "id": "vector-honesty",
+        "query": "editable vector mouse",
+        "filters": {
+          "media_type": "pure_vector"
+        },
+        "expected": "exclude SVG wrappers containing only raster image"
+      },
+      "request": {
+        "query": "editable vector mouse",
+        "filters": {
+          "media_type": "pure_vector"
+        },
+        "limit": 10,
+        "mode": "explore",
+        "seed": "default"
+      },
+      "status": "inconclusive_zero_text_candidates",
+      "fixed_query_result_count": 0,
+      "qualified_variants": 0,
+      "text_matched_variants": 0,
+      "requirements": {
+        "structure": [
+          "pure_vector"
+        ],
+        "species": [
+          "mouse"
+        ],
+        "object": [
+          "mouse",
+          "小白鼠",
+          "小鼠",
+          "mice",
+          "mus musculus"
+        ]
+      },
+      "fts": "(\"mouse\" OR \"小白鼠\" OR \"小鼠\" OR \"mice\" OR \"mus musculus\") AND (\"editable\") AND (\"vector\")",
+      "selected_original_sha256": [],
+      "execution_error": null,
+      "overall_scenario_visual_pass": false
+    }
+  ],
+  "findings": [
+    "All three previously unsupported filter parameters execute successfully without changing the frozen queries or catalog.",
+    "The unknown-object and photograph requests both emit zero matches and no invented alternatives.",
+    "Raster mouse illustrations remain eligible, with 18 qualified variants and ten returned files.",
+    "The original editable vector mouse query has zero text candidates because editable and vector still appear as mandatory FTS tokens; zero does not demonstrate successful positive vector retrieval or native editability.",
+    "The separate explicit mouse + pure_vector diagnostic returns ten of forty qualified variants; this is evidence about the filtering path, not a substituted passing answer to the original fixed query."
+  ],
+  "auxiliary_controls_not_fixed_benchmark": [
+    {
+      "input": {
+        "query": "mouse",
+        "filters": {
+          "media_type": "pure_vector"
+        },
+        "limit": 10,
+        "seed": "default",
+        "mode": "explore"
+      },
+      "result_count": 10,
+      "qualified_variants": 40,
+      "selected_files": [
+        {
+          "sha256": "32718a90e3d3431e7fac06b4cf2a92afbb1d8e2690fb6e7e96b13a4b31695534",
+          "format": "svg",
+          "structure": "pure_vector"
+        },
+        {
+          "sha256": "949dd5897ba4c17d93da918ed4bcf71d7ef4f27c31d9aa46c91a238a1c3307c9",
+          "format": "svg",
+          "structure": "pure_vector"
+        },
+        {
+          "sha256": "06a18b85a335b215cd0788906f53613ff78ee888948ca905adb82fb0d27f9ef1",
+          "format": "svg",
+          "structure": "pure_vector"
+        },
+        {
+          "sha256": "c061a2dc0338efd78c63bda9a127131f7891c36ce31617e6e3f6b1ed9d5bf251",
+          "format": "svg",
+          "structure": "pure_vector"
+        },
+        {
+          "sha256": "641fe3d778d116828071d5b6fb79927976b30bad2c9345d6a8b2376af4ee9526",
+          "format": "svg",
+          "structure": "pure_vector"
+        },
+        {
+          "sha256": "360b7ff3da6cb90a6cb5dcc03614166f60da16ae8b4d38b2efb3eec4fa91ed49",
+          "format": "svg",
+          "structure": "pure_vector"
+        },
+        {
+          "sha256": "a59911d905ee6eb0bcc4a028a1734b167987df99e139570a6ee82c0d05b8e1d5",
+          "format": "svg",
+          "structure": "pure_vector"
+        },
+        {
+          "sha256": "35ddc9ffce2ca5dbb11e7f99f468d83b8bb40b345ce044b334b2612238e1243c",
+          "format": "svg",
+          "structure": "pure_vector"
+        },
+        {
+          "sha256": "a72dfe89b4b1ab765e8b4e46d5cf3075b23e8f0d04b5333783a011ab5fd2bb5e",
+          "format": "svg",
+          "structure": "pure_vector"
+        },
+        {
+          "sha256": "54119cffceb2e9d63c48d914a7aa6a820194a200845e2c35dc6a5ed3c3c98bae",
+          "format": "svg",
+          "structure": "pure_vector"
+        }
+      ]
+    },
+    {
+      "input": {
+        "query": "mouse",
+        "filters": {
+          "media_type": "embedded_raster"
+        },
+        "limit": 10,
+        "seed": "default",
+        "mode": "explore"
+      },
+      "result_count": 0,
+      "qualified_variants": 0,
+      "selected_files": []
+    }
+  ],
+  "remaining_exact_review_plan": {
+    "uri": "data/review-plans/negative-followup-20261107.json",
+    "sha256": "fa515bc2ba810a057fbff466253097a2f5e853fa4900fb584616ed50de604b08"
+  },
+  "original_catalog_or_benchmark_changed": false,
+  "overall_acceptance_passed": false
+}
