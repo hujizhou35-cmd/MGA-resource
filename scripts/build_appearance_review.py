@@ -24,6 +24,7 @@ sys.path.insert(0, str(ROOT))
 sys.path.insert(0, str(ROOT / "scripts"))
 from mga_resources.appearance import ANALYSIS_VERSION
 from backfill_appearance import DigestReader, download_checked, gh, sha
+from review_releases import add_release_options, load_review_inputs, release_bindings
 
 CASES = ("transparent_rgb", "small_object_white_background", "pale_color", "single_hue_line",
          "grayscale_shading", "black_white_accent", "enclosed_white_structure", "cross_source_style")
@@ -266,6 +267,7 @@ def build_pack(plan, manifest, output, *, font_path, opener=None):
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--release-tag", required=True)
+    add_release_options(parser)
     parser.add_argument("--assembly-prefix", required=True)
     parser.add_argument("--publish", action="store_true")
     args = parser.parse_args()
@@ -273,13 +275,12 @@ def main():
         parser.error("Real preview archives are read only in cloud CI; local work uses bounded review packs")
     if not re.fullmatch(r"assembly-[0-9]+-[0-9]+", args.assembly_prefix):
         parser.error("Use an exact assembly-RUN-ATTEMPT prefix")
-    from assemble import list_release_assets
     repository = os.environ["GITHUB_REPOSITORY"]
     run_id = os.environ["GITHUB_RUN_ID"] + "-" + os.environ.get("GITHUB_RUN_ATTEMPT", "1")
     base = ROOT / "build" / "appearance-review" / run_id
     incoming, output = base / "metadata", base / "review"
     incoming.mkdir(parents=True, exist_ok=True)
-    assets = list_release_assets(repository, args.release_tag)
+    assets, manifest, archive_tags = load_review_inputs(repository, args.release_tag, args.archive_release_tag)
     catalog_name, report_name = args.assembly_prefix + ".catalog.jsonl", args.assembly_prefix + ".report.json"
     catalog = download_checked(catalog_name, assets[catalog_name], incoming, repository, args.release_tag)
     report = download_checked(report_name, assets[report_name], incoming, repository, args.release_tag)
@@ -289,8 +290,8 @@ def main():
     records = [json.loads(line) for line in catalog.read_text(encoding="utf-8").splitlines() if line.strip()]
     plan = select_candidates(records)
     plan["bindings"] = {"assembly_prefix": args.assembly_prefix, "catalog_sha256": catalog_sha,
-        "assembly_report_sha256": sha(report.read_bytes()), "analysis_version": ANALYSIS_VERSION}
-    manifest = {row["browser_download_url"]: row for name, row in assets.items() if name.endswith(".tar.gz")}
+        "assembly_report_sha256": sha(report.read_bytes()), "analysis_version": ANALYSIS_VERSION,
+        **release_bindings(args, archive_tags)}
     font_path = "/usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc"
     build_pack(plan, manifest, output, font_path=font_path)
     name = "appearance-review-" + run_id
@@ -304,7 +305,7 @@ def main():
         "preview_errors": plan["preview_errors"], "visual_acceptance_passed": False,
         "archive": {"name": archive.name, "size_bytes": archive.stat().st_size, "sha256": sha(archive.read_bytes())}})
     if args.publish:
-        gh("release", "upload", args.release_tag, str(archive), str(summary), "--repo", repository)
+        gh("release", "upload", args.publish_tag or args.release_tag, str(archive), str(summary), "--repo", repository)
     print(json.dumps({"archive": archive.name, "preview_files": plan["preview_files"], "errors": len(plan["preview_errors"])}))
 
 

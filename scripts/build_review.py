@@ -400,8 +400,10 @@ def build_review(records, database, benchmark, output, *, font_path=None, sample
 
 
 def main():
+    from review_releases import add_release_options, load_review_inputs, release_bindings
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--release-tag", required=True)
+    add_release_options(parser)
     parser.add_argument("--assembly-prefix", required=True, help="Exact assembly-RUN-ATTEMPT prefix")
     parser.add_argument("--sample-limit", type=int, default=240)
     parser.add_argument("--font")
@@ -412,13 +414,13 @@ def main():
     if not re.fullmatch(r"assembly-[0-9]+-[0-9]+", args.assembly_prefix):
         parser.error("Expected exact assembly-RUN-ATTEMPT prefix")
     sys.path.insert(0, str(ROOT / "scripts"))
-    from assemble import gh, list_release_assets
+    from assemble import gh
     repository = os.environ["GITHUB_REPOSITORY"]
     run_id = os.environ["GITHUB_RUN_ID"] + "-" + os.environ.get("GITHUB_RUN_ATTEMPT", "1")
     base = ROOT / "build" / "visual-review" / run_id
     incoming, output = base / "metadata", base / "review"
     incoming.mkdir(parents=True, exist_ok=True)
-    assets = list_release_assets(repository, args.release_tag)
+    assets, manifest, archive_tags = load_review_inputs(repository, args.release_tag, args.archive_release_tag)
     paths = {}
     for extension in ("catalog.jsonl", "catalog.sqlite"):
         filename = f"{args.assembly_prefix}.{extension}"
@@ -432,11 +434,10 @@ def main():
     records = [json.loads(line) for line in paths["catalog.jsonl"].read_text(encoding="utf-8").splitlines() if line.strip()]
     benchmark_path = ROOT / "data" / "benchmark.json"
     benchmark = json.loads(benchmark_path.read_text(encoding="utf-8"))
-    manifest = {value["browser_download_url"]: {"size": value["size"], "digest": value.get("digest")}
-                for name, value in assets.items() if name.endswith(".tar.gz")}
     summary = build_review(records, paths["catalog.sqlite"], benchmark, output, font_path=args.font,
                            sample_limit=args.sample_limit, archive_manifest=manifest)
     summary.update({"assembly_prefix": args.assembly_prefix, "collection_release": args.release_tag,
+                    **release_bindings(args, archive_tags),
                     "catalog_sha256": hashlib.sha256(paths["catalog.jsonl"].read_bytes()).hexdigest(),
                     "benchmark_sha256": hashlib.sha256(benchmark_path.read_bytes()).hexdigest(),
                     "tool_commit": os.environ.get("GITHUB_SHA"), "run_id": run_id})
@@ -450,7 +451,7 @@ def main():
     _json(report, {**summary, "bundle": bundle.name, "bundle_bytes": bundle.stat().st_size,
                    "bundle_sha256": hashlib.sha256(bundle.read_bytes()).hexdigest()})
     if args.publish:
-        gh("release", "upload", args.release_tag, str(bundle), str(report))
+        gh("release", "upload", args.publish_tag or args.release_tag, str(bundle), str(report), "--repo", repository)
     print(json.dumps(summary, ensure_ascii=False), flush=True)
     if os.environ.get("GITHUB_STEP_SUMMARY"):
         with open(os.environ["GITHUB_STEP_SUMMARY"], "a", encoding="utf-8") as stream:

@@ -213,8 +213,10 @@ def build_review(records, manifest, output, *, font_path, opener=None, selected_
 
 
 def main():
+    from review_releases import add_release_options, load_review_inputs, release_bindings
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--release-tag", required=True)
+    add_release_options(parser)
     parser.add_argument("--source-prefix", required=True)
     parser.add_argument("--publish", action="store_true")
     args = parser.parse_args()
@@ -222,13 +224,12 @@ def main():
         parser.error("Real scope archives are read only in cloud CI")
     if not re.fullmatch(r"togo-[0-9]+-[0-9]+", args.source_prefix):
         parser.error("Use exact togo-RUN-ATTEMPT")
-    from assemble import list_release_assets
     repository = os.environ["GITHUB_REPOSITORY"]
     run_id = os.environ["GITHUB_RUN_ID"] + "-" + os.environ.get("GITHUB_RUN_ATTEMPT", "1")
     base = ROOT / "build" / "scope-review" / run_id
     incoming, output = base / "metadata", base / "review"
     incoming.mkdir(parents=True, exist_ok=True)
-    assets = list_release_assets(repository, args.release_tag)
+    assets, manifest, archive_tags = load_review_inputs(repository, args.release_tag, args.archive_release_tag)
     records, bindings = [], []
     pattern = re.compile(re.escape(args.source_prefix) + r"-b[0-9]+\.records\.jsonl")
     for name in sorted(n for n in assets if pattern.fullmatch(n)):
@@ -237,10 +238,10 @@ def main():
         bindings.append({"name": name, "sha256": sha(path.read_bytes())})
     if not records:
         raise ValueError("No exact-prefix records were found")
-    manifest = {row["browser_download_url"]: row for name, row in assets.items() if name.endswith(".tar.gz")}
     mapping = build_review(records, manifest, output, font_path="/usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc")
     mapping["input_records"] = bindings
     mapping["source_prefix"] = args.source_prefix
+    mapping["releases"] = release_bindings(args, archive_tags)
     write_json(output / "mapping.json", mapping)
     name = "scope-review-" + run_id
     archive = base / (name + ".tar.gz")
@@ -249,14 +250,14 @@ def main():
             tar.add(path, arcname=path.name)
     if archive.stat().st_size > MAX_PACK_BYTES:
         raise ValueError("Scope archive exceeds 32 MiB")
-    summary = {"source_prefix": args.source_prefix, "file_count": mapping["file_count"],
+    summary = {"source_prefix": args.source_prefix, "releases": mapping["releases"], "file_count": mapping["file_count"],
                "tile_count": mapping["tile_count"], "sheets": mapping["sheets"],
                "preview_errors": mapping["preview_errors"], "scope_acceptance_passed": False,
                "archive": {"name": archive.name, "sha256": sha(archive.read_bytes()), "size_bytes": archive.stat().st_size}}
     summary_path = base / (name + ".summary.json")
     write_json(summary_path, summary)
     if args.publish:
-        gh("release", "upload", args.release_tag, str(archive), str(summary_path), "--repo", repository)
+        gh("release", "upload", args.publish_tag or args.release_tag, str(archive), str(summary_path), "--repo", repository)
     print(json.dumps({k: summary[k] for k in ("file_count", "tile_count", "preview_errors", "archive")}))
 
 

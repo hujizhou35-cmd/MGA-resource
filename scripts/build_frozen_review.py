@@ -13,7 +13,7 @@ import tarfile
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
 sys.path.insert(0, str(ROOT / "scripts"))
-from assemble import list_release_assets
+from review_releases import add_release_options, load_review_inputs, release_bindings
 from backfill_appearance import download_checked, gh
 from build_review import build_review, descriptors
 
@@ -65,7 +65,7 @@ def main():
     parser.add_argument("--release-tag", required=True)
     parser.add_argument("--assembly-prefix", required=True)
     parser.add_argument("--plan", required=True)
-    parser.add_argument("--publish-tag", help="Separate evidence Release; source archives stay in --release-tag")
+    add_release_options(parser)
     parser.add_argument("--publish", action="store_true")
     args = parser.parse_args()
     if os.environ.get("GITHUB_ACTIONS") != "true":
@@ -85,7 +85,7 @@ def main():
     base = ROOT / "build/frozen-review" / run
     incoming, output = base / "metadata", base / "review"
     incoming.mkdir(parents=True, exist_ok=True)
-    assets = list_release_assets(repository, args.release_tag)
+    assets, archive_manifest, archive_tags = load_review_inputs(repository, args.release_tag, args.archive_release_tag)
     name = args.assembly_prefix + ".catalog.jsonl"
     catalog = download_checked(name, assets[name], incoming, repository, args.release_tag)
     if plan.get("bindings", {}).get("catalog_sha256") != digest(catalog):
@@ -93,11 +93,11 @@ def main():
     records = [json.loads(line) for line in catalog.read_text(encoding="utf-8").splitlines() if line.strip()]
     benchmark = json.loads(benchmark_path.read_text(encoding="utf-8"))
     replay = frozen_search(records, benchmark, plan)
-    archive_manifest = {row["browser_download_url"]: row for key, row in assets.items() if key.endswith(".tar.gz")}
     summary = build_review(records, None, benchmark, output, sample_limit=0,
         seed="frozen-observation-no-new-search", search_fn=replay, archive_manifest=archive_manifest,
         font_path="/usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc")
     summary.update({"bindings": plan["bindings"], "frozen_plan_sha256": digest(plan_path),
+        **release_bindings(args, archive_tags),
         "assembly_prefix": args.assembly_prefix, "catalog_sha256": digest(catalog),
         "benchmark_sha256": digest(benchmark_path), "tool_commit": os.environ.get("GITHUB_SHA"),
         "run_id": run, "searches_executed": 0, "sample_limit": 0})
@@ -105,6 +105,7 @@ def main():
     mapping = json.loads(mapping_path.read_text(encoding="utf-8"))
     mapping["bindings"] = plan["bindings"]
     mapping["frozen_plan_sha256"] = digest(plan_path)
+    mapping["releases"] = release_bindings(args, archive_tags)
     mapping_path.write_text(json.dumps(mapping, ensure_ascii=False, indent=2)+"\n", encoding="utf-8")
     (output / "summary.json").write_text(json.dumps(summary, ensure_ascii=False, indent=2)+"\n", encoding="utf-8")
     archive = base / ("frozen-review-" + run + ".tar.gz")

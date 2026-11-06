@@ -13,7 +13,7 @@ import tarfile
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
 sys.path.insert(0, str(ROOT / "scripts"))
-from assemble import list_release_assets
+from review_releases import add_release_options, load_review_inputs, release_bindings
 from backfill_appearance import download_checked, gh, sha
 from build_scope_review import build_review, describe_review_files, write_json, MAX_PACK_BYTES, MAX_FILES
 
@@ -131,6 +131,7 @@ def select_candidates(records, *, offset=0, limit=1000, controls_per_source=2, s
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--release-tag", required=True)
+    add_release_options(parser)
     parser.add_argument("--assembly-prefix", required=True)
     parser.add_argument("--offset", type=int, default=0)
     parser.add_argument("--limit", type=int, default=1000)
@@ -147,7 +148,7 @@ def main():
     base = ROOT / "build" / "content-scope-review" / run
     incoming, output = base / "metadata", base / "review"
     incoming.mkdir(parents=True, exist_ok=True)
-    assets = list_release_assets(repository, args.release_tag)
+    assets, manifest, archive_tags = load_review_inputs(repository, args.release_tag, args.archive_release_tag)
     catalog = download_checked(args.assembly_prefix + ".catalog.jsonl", assets[args.assembly_prefix + ".catalog.jsonl"], incoming, repository, args.release_tag)
     report = download_checked(args.assembly_prefix + ".report.json", assets[args.assembly_prefix + ".report.json"], incoming, repository, args.release_tag)
     catalog_digest = sha(catalog.read_bytes())
@@ -159,12 +160,12 @@ def main():
                                                        source_filter=args.source_filter, full_source=args.full_source)
     if not selected:
         raise ValueError("Selected candidate range is empty")
-    manifest = {row["browser_download_url"]: row for name, row in assets.items() if name.endswith(".tar.gz")}
     mapping = build_review([], manifest, output, selected_candidates=selected,
         heading="Content scope review / labels do not exclude objects; keywords only nominate",
         font_path="/usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc")
     mapping["nomination_report"] = nomination_report
-    mapping["bindings"] = {"assembly_prefix": args.assembly_prefix, "catalog_sha256": catalog_digest, "assembly_report_sha256": sha(report.read_bytes())}
+    mapping["bindings"] = {"assembly_prefix": args.assembly_prefix, "catalog_sha256": catalog_digest, "assembly_report_sha256": sha(report.read_bytes()),
+                           **release_bindings(args, archive_tags)}
     write_json(output / "mapping.json", mapping)
     write_json(output / "judgments.template.json", {"schema_version": 1, "reviewer": None,
         "items": [{"tile_id": t["tile_id"], "file_ids": t["file_ids"], "scope_verdict": None,
@@ -183,7 +184,7 @@ def main():
     summary_path = base / (name + ".summary.json")
     write_json(summary_path, summary)
     if args.publish:
-        gh("release", "upload", args.release_tag, str(archive), str(summary_path), "--repo", repository)
+        gh("release", "upload", args.publish_tag or args.release_tag, str(archive), str(summary_path), "--repo", repository)
     print(json.dumps({k: summary[k] for k in ("total_candidate_files", "selected_files", "tile_count", "preview_errors", "archive")}))
 
 

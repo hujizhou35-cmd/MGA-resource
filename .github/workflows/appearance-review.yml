@@ -10,6 +10,14 @@ on:
         description: Exact appearance-enriched assembly-RUN-ATTEMPT
         required: true
         type: string
+      archive_release_tag:
+        description: Original and preview archive Release
+        default: collection-20261106
+        type: string
+      publish_tag:
+        description: Separate review evidence output Release
+        default: acceptance-20261107
+        type: string
 permissions:
   contents: write
 concurrency:
@@ -31,4 +39,6 @@ jobs:
           GH_TOKEN: ${{ github.token }}
           COLLECTION_TAG: ${{ inputs.release_tag }}
           ASSEMBLY_PREFIX: ${{ inputs.assembly_prefix }}
-        run: python scripts/build_appearance_review.py --release-tag "$COLLECTION_TAG" --assembly-prefix "$ASSEMBLY_PREFIX" --publish
+          ARCHIVE_TAG: ${{ inputs.archive_release_tag }}
+          PUBLISH_TAG: ${{ inputs.publish_tag }}
+        run: python scripts/build_appearance_review.py --release-tag "$COLLECTION_TAG" --archive-release-tag "$ARCHIVE_TAG" --assembly-prefix "$ASSEMBLY_PREFIX" --publish-tag "$PUBLISH_TAG" --publish

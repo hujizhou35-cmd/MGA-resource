@@ -15,8 +15,12 @@ on:
         default: ''
         type: string
       evidence_release_tag:
-        description: Separate output Release for frozen review evidence
+        description: Separate output Release for review evidence
         default: acceptance-20261107
+        type: string
+      archive_release_tag:
+        description: Original and preview archives (may differ from catalog Release)
+        default: collection-20261106
         type: string
 permissions:
   contents: write
@@ -45,9 +49,10 @@ jobs:
           ASSEMBLY_PREFIX: ${{ inputs.assembly_prefix }}
           FROZEN_PLAN: ${{ inputs.frozen_plan }}
           EVIDENCE_TAG: ${{ inputs.evidence_release_tag }}
+          ARCHIVE_TAG: ${{ inputs.archive_release_tag }}
         run: |
           if [ -n "$FROZEN_PLAN" ]; then
-            python scripts/build_frozen_review.py --release-tag "$COLLECTION_TAG" --assembly-prefix "$ASSEMBLY_PREFIX" --plan "$FROZEN_PLAN" --publish-tag "$EVIDENCE_TAG" --publish
+            python scripts/build_frozen_review.py --release-tag "$COLLECTION_TAG" --archive-release-tag "$ARCHIVE_TAG" --assembly-prefix "$ASSEMBLY_PREFIX" --plan "$FROZEN_PLAN" --publish-tag "$EVIDENCE_TAG" --publish
           else
-            python scripts/build_review.py --release-tag "$COLLECTION_TAG" --assembly-prefix "$ASSEMBLY_PREFIX" --publish
+            python scripts/build_review.py --release-tag "$COLLECTION_TAG" --archive-release-tag "$ARCHIVE_TAG" --assembly-prefix "$ASSEMBLY_PREFIX" --publish-tag "$EVIDENCE_TAG" --publish
           fi
