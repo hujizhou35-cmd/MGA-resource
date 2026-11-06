@@ -276,3 +276,143 @@ def test_local_entrypoint_refuses_before_network():
                             env=env, text=True, capture_output=True)
     assert result.returncode == 2
     assert "GitHub Actions" in result.stderr
+
+
+GITHUB_REGISTRY = [{"source_id": "example", "primary": True, "adapter": "github_tree", "repository": "source/art"}]
+
+
+def git_inventory(count=3, *, author="Original artist"):
+    from test_reconciliation import inventory
+    return [{**inventory(str(index)), "author": author} for index in range(count)]
+
+
+def github_checkpoint(folder, inventory, *, run, day, start=0, end=None, statuses=None):
+    """Real SHA-256s over small synthetic metadata, no artwork transfers."""
+    receipt = checkpoint(folder, run=run, day=day, discovered=len(inventory), start=start,
+                         end=len(inventory) if end is None else end, statuses=statuses)
+    metadata_file = folder / f"example-{run}.discovery.jsonl"
+    metadata_file.write_text("".join(json.dumps(item) + "\n" for item in inventory), encoding="utf-8")
+    receipt["discovery_sha256"] = hashlib.sha256(metadata_file.read_bytes()).hexdigest()
+    path = folder / receipt["records_file"]
+    records = assemble.read_lines(path)
+    for record in records:
+        index = record["source_index"]
+        processed_file = record["files"][0]
+        processed_file.update(inventory[index]["files"][0])
+        processed_file["sha256"] = hashlib.sha256(inventory[index]["source_id"].encode()).hexdigest()
+        processed_file["preview"].update(sha256="8" * 64, size_bytes=50)
+        record.update(inventory[index])
+        record["files"] = [processed_file]
+        record["collection_run"] = run
+    path.write_text("".join(json.dumps(record) + "\n" for record in records), encoding="utf-8")
+    receipt["records_sha256"] = hashlib.sha256(path.read_bytes()).hexdigest()
+    receipt_path = folder / receipt["records_file"].replace(".records.jsonl", ".receipt.json")
+    receipt_path.write_text(json.dumps(receipt), encoding="utf-8")
+    assets = cloud_assets(receipt)
+    assets[metadata_file.name]["size"] = metadata_file.stat().st_size
+    for metadata in (receipt_path, path, folder / receipt["failures_file"]):
+        assets[metadata.name] = {"size": metadata.stat().st_size,
+                                "digest": "sha256:" + hashlib.sha256(metadata.read_bytes()).hexdigest()}
+    return receipt, assets
+
+
+def test_metadata_only_update_reuses_verified_originals_without_new_batch_claim(tmp_path):
+    old, assets = github_checkpoint(tmp_path, git_inventory(), run="old", day="01")
+    current_inventory = git_inventory(author="Corrected attribution")
+    current_inventory[0]["title"] = "Updated title"
+    current, new_assets = github_checkpoint(tmp_path, current_inventory, run="new", day="02", start=1, end=2)
+    assets.update(new_assets)
+    records, sources, outstanding, _ = assemble.assemble_snapshots(tmp_path, GITHUB_REGISTRY, assets)
+    summary = sources[0]
+    assert len(records) == 3 and not outstanding
+    assert summary["machine_validation_complete"]
+    assert summary["catalog_uses"] == "latest_metadata_with_verified_original_reuse"
+    assert summary["metadata_reconciliation"]["reused_records"] == 2
+    assert all(r["author"] == "Corrected attribution" for r in records)
+    assert records[0]["title"] == "Updated title"
+    assert records[0]["files"][0]["archive"]["url"].endswith(old["archive"])
+    assert records[1]["files"][0]["archive"]["url"].endswith(current["archive"])
+    assert records[0]["acquisition"]["artifact_evidence"]["records_sha256"] == old["records_sha256"]
+    assert records[0]["acquisition"]["discovery_sha256"] == current["discovery_sha256"]
+    assert records[0]["collection_run"] == "old" and not summary["collection_complete"]
+
+
+def test_reconciliation_does_not_hide_bad_current_attempt(tmp_path):
+    _, assets = github_checkpoint(tmp_path, git_inventory(2), run="old", day="01")
+    bad, newer = github_checkpoint(tmp_path, git_inventory(2, author="Updated"), run="new", day="02", start=1, end=2)
+    assets.update(newer)
+    (tmp_path / bad["records_file"]).write_text("broken", encoding="utf-8")
+    records, sources, outstanding, _ = assemble.assemble_snapshots(tmp_path, GITHUB_REGISTRY, assets)
+    assert len(records) == 1 and records[0]["source_id"] == "0"
+    assert sources[0]["unknown"] == 1
+    assert sources[0]["metadata_reconciliation"]["reused_records"] == 1
+    assert sources[0]["metadata_issues"] and outstanding == ["example"]
+
+
+def test_current_full_inventory_can_remove_art_and_make_rights_held(tmp_path):
+    _, assets = github_checkpoint(tmp_path, git_inventory(3), run="old", day="01")
+    items = git_inventory(2, author="Updated")
+    items[1].update(distribution_allowed=False, rights_note="Current license unresolved")
+    _, newer = github_checkpoint(tmp_path, items, run="new", day="02", start=0, end=0)
+    assets.update(newer)
+    records, sources, outstanding, _ = assemble.assemble_snapshots(tmp_path, GITHUB_REGISTRY, assets)
+    assert [r["source_id"] for r in records] == ["0"]
+    assert sources[0]["discovered"] == sources[0]["processed"] == 2
+    assert sources[0]["held_count"] == 1
+    decision = sources[0]["metadata_reconciliation"]["decisions"][1]
+    assert decision["origin"] == "current_discovery_metadata" and not decision["fetch_attempted"]
+    assert outstanding == ["example"]
+
+
+def test_changed_blob_cannot_be_reused_despite_same_title_and_count(tmp_path):
+    _, assets = github_checkpoint(tmp_path, git_inventory(2), run="old", day="01")
+    items = git_inventory(2)
+    items[1]["files"][0]["upstream_hash"] = "git-blob-sha1:" + "9" * 40
+    _, newer = github_checkpoint(tmp_path, items, run="new", day="02", start=0, end=0)
+    assets.update(newer)
+    records, sources, outstanding, _ = assemble.assemble_snapshots(tmp_path, GITHUB_REGISTRY, assets)
+    assert [r["source_id"] for r in records] == ["0"]
+    assert sources[0]["missing_ranges"] == [[1, 2]] and outstanding == ["example"]
+
+
+def test_missing_old_cloud_archive_blocks_reuse(tmp_path):
+    old, assets = github_checkpoint(tmp_path, git_inventory(2), run="old", day="01")
+    _, newer = github_checkpoint(tmp_path, git_inventory(2, author="Updated"), run="new", day="02", start=0, end=0)
+    assets.update(newer)
+    assets.pop(old["archive"])
+    records, sources, outstanding, _ = assemble.assemble_snapshots(tmp_path, GITHUB_REGISTRY, assets)
+    assert records == [] and sources[0]["missing_ranges"] == [[0, 2]]
+    assert sources[0]["metadata_reconciliation"]["reused_records"] == 0
+    assert outstanding == ["example"]
+
+
+def test_unverified_old_receipt_cannot_authorize_reuse(tmp_path):
+    old, assets = github_checkpoint(tmp_path, git_inventory(2), run="old", day="01")
+    _, newer = github_checkpoint(tmp_path, git_inventory(2, author="Updated"), run="new", day="02", start=0, end=0)
+    assets.update(newer)
+    receipt_name = old["records_file"].replace(".records.jsonl", ".receipt.json")
+    assets[receipt_name]["digest"] = "sha256:" + "0" * 64
+    records, sources, outstanding, _ = assemble.assemble_snapshots(tmp_path, GITHUB_REGISTRY, assets)
+    assert records == [] and outstanding == ["example"]
+    assert sources[0]["metadata_reconciliation"]["rejected_prior_candidates"]["prior_evidence_or_media_incomplete"] == 2
+
+
+def test_actual_complete_discovery_hash_is_required_before_reuse(tmp_path):
+    _, assets = github_checkpoint(tmp_path, git_inventory(2), run="old", day="01")
+    current, newer = github_checkpoint(tmp_path, git_inventory(2, author="Updated"), run="new", day="02", start=0, end=0)
+    assets.update(newer)
+    (tmp_path / "example-new.discovery.jsonl").write_text("{}\n", encoding="utf-8")
+    records, sources, outstanding, _ = assemble.assemble_snapshots(tmp_path, GITHUB_REGISTRY, assets)
+    assert records == [] and outstanding == ["example"]
+    assert "SHA-256" in sources[0]["metadata_issues"][0]
+
+
+def test_duplicate_complete_inventory_is_rejected_even_with_valid_hash(tmp_path):
+    _, assets = github_checkpoint(tmp_path, git_inventory(2), run="old", day="01")
+    items = git_inventory(2, author="Updated")
+    items[1] = dict(items[0])
+    _, newer = github_checkpoint(tmp_path, items, run="new", day="02", start=0, end=0)
+    assets.update(newer)
+    records, sources, outstanding, _ = assemble.assemble_snapshots(tmp_path, GITHUB_REGISTRY, assets)
+    assert records == [] and outstanding == ["example"]
+    assert "duplicate" in sources[0]["metadata_issues"][0]

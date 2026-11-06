@@ -16,6 +16,7 @@ from urllib.parse import quote
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
 from mga_resources.catalog import finalize, search
+from mga_resources.reconciliation import receipt_evidence, reconcile_github_snapshot
 
 
 def gh(*args):
@@ -102,6 +103,40 @@ def _machine_checked(record):
     return bool(files)
 
 
+def _summarize_states(states, summary):
+    """Summarize attempted and explicitly reconciled states without new receipts."""
+    summary = dict(summary)
+    source, digest, discovered = summary["source"], summary["discovery_sha256"], summary["discovered"]
+    records = []
+    for index, state in sorted(states.items()):
+        if state["record"] is not None:
+            record = dict(state["record"])
+            record["acquisition"] = {**record.get("acquisition", {}), "discovery_sha256": digest,
+                                     "source_index": index, "status": state["status"]}
+            if state.get("evidence") and "artifact_evidence" not in record["acquisition"]:
+                record["acquisition"]["artifact_evidence"] = state["evidence"]
+            records.append(record)
+    counts = {name: sum(state["status"] == name for state in states.values())
+              for name in ("acquired", "held", "failed", "excluded", "unknown")}
+    excluded = [state["exclusion"] for _, state in sorted(states.items()) if state.get("exclusion")]
+    missing = set(range(discovered)) - states.keys()
+    issues = sorted(set(summary.get("metadata_issues", [])) | {s["issue"] for s in states.values() if s.get("issue")})
+    inventory_processed = not missing and not issues and summary["inventory_evidence_available"]
+    in_scope = discovered - counts["excluded"]
+    complete = inventory_processed and counts["acquired"] == in_scope
+    unchecked = sum(not _machine_checked(record) for record in records)
+    machine_complete = complete and unchecked == 0
+    summary.update(status="machine_complete_pending_visual" if machine_complete else "incomplete",
+                   processed=len(states), downloaded_records=len(records), **counts,
+                   held_count=counts["held"], failed_records=counts["failed"],
+                   excluded_count=counts["excluded"], excluded_records=excluded,
+                   in_scope_discovered=in_scope, coverage_ranges=_ranges(states), missing_ranges=_ranges(missing),
+                   source_inventory_processed=inventory_processed, acquisition_complete=complete,
+                   machine_validation_complete=machine_complete, machine_validation_pending_records=unchecked,
+                   collection_complete=False, metadata_issues=issues)
+    return records, summary
+
+
 def _snapshot(source, digest, reports, receipts, incoming, release_assets=None):
     evidence = reports + receipts
     latest = max(evidence, key=_priority)
@@ -179,8 +214,21 @@ def _snapshot(source, digest, reports, receipts, incoming, release_assets=None):
                     outcomes[index]["exclusion"] = {"source_index": index,
                         "source_id": item.get("source_id") or detail.get("source_id"), "reason": reason.strip()}
                 outcomes[index]["status"] = status
+                outcomes[index]["source_id"] = item.get("source_id")
             if disposition_indices != set(range(start, end)):
                 raise ValueError("Disposition indices do not cover the checkpoint range")
+            # Evidence is attached only after the entire receipt, records,
+            # failure list and cloud archive identity have passed validation.
+            reusable_metadata = release_assets is not None and all(
+                release_assets.get(name, {}).get("digest") == "sha256:" + str(digest_value)
+                for name, digest_value in (
+                    (receipt.get("_metadata_file"), receipt.get("_metadata_sha256")),
+                    (receipt.get("records_file"), receipt.get("records_sha256")),
+                    (receipt.get("failures_file"), receipt.get("failures_sha256")),
+                ))
+            for index, outcome in outcomes.items():
+                if reusable_metadata:
+                    outcome["evidence"] = receipt_evidence(receipt, index)
         except (ValueError, OSError, TypeError) as exc:
             issue = f"{receipt.get('records_file', receipt.get('run_id'))}: {exc}"
             historical_issues.append(issue)
@@ -189,42 +237,44 @@ def _snapshot(source, digest, reports, receipts, incoming, release_assets=None):
                         for index in range(start, end)}
         states.update(outcomes)
 
-    records = []
-    for index, state in sorted(states.items()):
-        if state["record"] is not None:
-            record = dict(state["record"])
-            record["acquisition"] = {"discovery_sha256": digest, "source_index": index, "status": state["status"]}
-            records.append(record)
     issues += sorted({state["issue"] for state in states.values() if state.get("issue")})
-    status_counts = {name: sum(state["status"] == name for state in states.values())
-                     for name in ("acquired", "held", "failed", "excluded", "unknown")}
-    excluded_records = [state["exclusion"] for _, state in sorted(states.items()) if state.get("exclusion")]
-    in_scope_discovered = discovered - status_counts["excluded"]
-    missing = set(range(discovered)) - states.keys()
-    inventory_processed = not missing and not issues and bool(receipts or any(
+    inventory_evidence = bool(receipts or any(
         report.get("status") == "final" and report.get("processed") == 0 and report.get("fatal") is None
         for report in reports))
-    acquisition_complete = inventory_processed and status_counts["acquired"] == in_scope_discovered
-    unchecked = sum(not _machine_checked(record) for record in records)
-    machine_complete = acquisition_complete and unchecked == 0
     summary = {
         "source": source, "discovery_sha256": digest, "started_at": latest.get("started_at"),
         "run_ids": sorted({item.get("run_id") for item in evidence if item.get("run_id")}),
-        "status": "machine_complete_pending_visual" if machine_complete else "incomplete", "discovered": discovered,
-        "processed": len(states), "downloaded_records": len(records), **status_counts,
-        "held_count": status_counts["held"], "failed_records": status_counts["failed"],
-        "excluded_count": status_counts["excluded"], "excluded_records": excluded_records,
-        "in_scope_discovered": in_scope_discovered,
-        "coverage_ranges": _ranges(states), "missing_ranges": _ranges(missing),
-        "source_inventory_processed": inventory_processed, "acquisition_complete": acquisition_complete,
-        "machine_validation_complete": machine_complete, "machine_validation_pending_records": unchecked,
-        "collection_complete": False, "metadata_issues": issues,
+        "discovered": discovered, "inventory_evidence_available": inventory_evidence,
+        "metadata_issues": issues,
         "historical_metadata_issues": historical_issues,
         "fatal_runs": [{"run_id": report.get("run_id"), "fatal": report["fatal"]}
                        for report in reports if report.get("fatal")],
         "visual_acceptance": "pending", "illustrator_verified": False,
     }
-    return records, summary
+    records, summary = _summarize_states(states, summary)
+    return records, summary, states
+
+
+def _complete_discovery(incoming, source, summary, release_assets):
+    """The complete JSONL, actual SHA, cloud digest, count and IDs all agree."""
+    digest = summary["discovery_sha256"]
+    for run_id in reversed(summary["run_ids"]):
+        filename = f"{source}-{run_id}.discovery.jsonl"
+        asset = release_assets.get(filename)
+        if not asset or asset.get("digest") != "sha256:" + digest:
+            continue
+        rows = _read_checked(incoming, filename, digest, jsonl=True)
+        if asset.get("size") is not None and asset["size"] != (incoming / filename).stat().st_size:
+            raise ValueError("Complete discovery byte size disagrees with GitHub release")
+        if len(rows) != summary["discovered"]:
+            raise ValueError("Complete discovery count disagrees with checkpoint inventory")
+        ids = [row.get("source_id") for row in rows]
+        if (any(row.get("source") != source for row in rows)
+                or any(not isinstance(sid, str) or not sid for sid in ids) or len(set(ids)) != len(ids)):
+            raise ValueError("Complete discovery contains duplicate IDs or a mismatched source")
+        return rows, {"file": filename, "sha256": digest, "run_id": run_id,
+                      "size_bytes": (incoming / filename).stat().st_size, "cloud_digest_verified": True}
+    raise ValueError("No complete discovery asset matches the current snapshot")
 
 
 def assemble_snapshots(incoming: Path, registry: list, release_assets=None):
@@ -234,6 +284,8 @@ def assemble_snapshots(incoming: Path, registry: list, release_assets=None):
     for pattern, kind in (("*.report.json", "reports"), ("*.receipt.json", "receipts")):
         for path in sorted(incoming.glob(pattern)):
             item = json.loads(path.read_text(encoding="utf-8"))
+            item["_metadata_file"] = path.name
+            item["_metadata_sha256"] = hashlib.sha256(path.read_bytes()).hexdigest()
             source, digest = item.get("source"), item.get("discovery_sha256")
             if not source:
                 continue
@@ -248,10 +300,27 @@ def assemble_snapshots(incoming: Path, registry: list, release_assets=None):
     records, summaries = [], []
     for source, versions in sorted(by_source.items()):
         versions.sort(key=lambda pair: (pair[1]["started_at"], pair[1]["discovery_sha256"]), reverse=True)
-        current_records, current = versions[0]
-        fallback = next((summary for _, summary in versions[1:] if summary["machine_validation_complete"]), None)
+        current_records, current, current_states = versions[0]
+        source_config = next((item for item in registry if item["source_id"] == source), {})
+        if (release_assets is not None and source_config.get("adapter") in {"bioicons", "github_tree"}
+                and source_config.get("repository")):
+            try:
+                inventory, inventory_evidence = _complete_discovery(incoming, source, current, release_assets)
+                prior = [{"discovery_sha256": summary["discovery_sha256"], "states": states,
+                          "metadata_issues": summary["metadata_issues"]}
+                         for _, summary, states in versions[1:]]
+                current_states, reconciliation = reconcile_github_snapshot(
+                    source_config, inventory, current["discovery_sha256"], current_states, prior)
+                current["inventory_evidence_available"] = True
+                current_records, current = _summarize_states(current_states, current)
+                current["metadata_reconciliation"] = {**reconciliation, "inventory_evidence": inventory_evidence}
+            except (ValueError, TypeError, OSError) as exc:
+                current["metadata_issues"].append(f"Metadata reconciliation unavailable: {exc}")
+                current_records, current = _summarize_states(current_states, current)
+        fallback = next((summary for _, summary, _ in versions[1:] if summary["machine_validation_complete"]), None)
         current["older_complete_fallback"] = fallback
-        current["catalog_uses"] = "latest_snapshot_only"
+        current["catalog_uses"] = ("latest_metadata_with_verified_original_reuse" if current.get("metadata_reconciliation", {}).get("reused_records")
+                                   else "latest_snapshot_only")
         records.extend(current_records)
         summaries.append(current)
     chosen = {item["source"]: item for item in summaries}
@@ -281,7 +350,7 @@ def main():
     assets = list_release_assets(repository, args.release_tag)
     # Fetch metadata only; no tar, original image, preview or review sheet.
     selected = sorted(name for name in assets if not name.startswith("assembly-") and name.endswith(
-        (".report.json", ".receipt.json", ".records.jsonl", ".failures.json")))
+        (".report.json", ".receipt.json", ".records.jsonl", ".failures.json", ".discovery.jsonl")))
     for start in range(0, len(selected), 100):
         flags = [argument for name in selected[start:start + 100] for argument in ("--pattern", name)]
         gh("release", "download", args.release_tag, *flags, "--dir", str(incoming), "--clobber")
