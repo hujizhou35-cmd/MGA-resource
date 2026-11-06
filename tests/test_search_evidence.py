@@ -38,3 +38,12 @@ def test_rebuilding_frozen_index_never_rewrites_catalog(tmp_path):
     assert path.read_bytes()==before
     assert version==hashlib.sha256(before).hexdigest()
     assert search_page(tmp_path/"rebuilt.sqlite","mouse")["bindings"]["catalog_version"]==version
+
+
+def test_supplemental_report_cannot_borrow_another_catalog_analysis_version(tmp_path):
+    catalog=tmp_path/"catalog.jsonl"
+    catalog.write_text("\n",encoding="utf-8")
+    assembly=tmp_path/"report.json"
+    assembly.write_text(json.dumps({"summary":{"catalog_sha256":"f"*64},"appearance":{"analysis_version":"appearance-1.1.0"}}),encoding="utf-8")
+    with pytest.raises(ValueError,match="Assembly report does not bind"):
+        behavior.validate(catalog,assembly,tmp_path/"out")

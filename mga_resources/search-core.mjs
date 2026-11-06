@@ -3,8 +3,8 @@
  */
 import vocabulary from './search-vocabulary.mjs';
 
-export const RANKING_VERSION = 'shared-search-3.2.0';
-export const INDEX_VERSION = 5;
+export const RANKING_VERSION = 'shared-search-3.3.0';
+export const INDEX_VERSION = 6;
 export const DEFAULT_CANDIDATE_POOL = 75;
 const unknown = new Set(['', 'unknown', 'unspecified', 'not_reviewed', '待确认']);
 const arr = value => value == null ? [] : Array.isArray(value) ? value : [value];
@@ -69,6 +69,9 @@ const extraConcepts = [
   ['人体','人类','human body','human','homo sapiens'],
   ['采血','抽血','taking blood sample','taking a blood sample','drawing blood','blood draw','blood collection','blood sampling','phlebotomy','venipuncture'],
   ['试管','test tube','sample tube','collection tube'],
+  ['细胞分选仪','cell sorter','magnetic cell sorter'],
+  ['细胞周期','cell cycle'], ['细胞分选','cell sorting'],
+  ['肝吸虫','liver fluke','fasciola'], ['肝小叶','liver lobule','hepatic lobule'],
 ];
 // Avoid interpreting the unspecific Chinese experimental rodent as a mouse.
 const concepts = [...vocabulary.concepts, ...extraConcepts].map(group => unique(group.map(norm).filter(x => x !== '实验鼠')));
@@ -78,8 +81,8 @@ for(const group of concepts)for(const name of ['atp','dna','rna','protein','anti
 const qualifiers = Object.entries({...SCIENCE,...APPEARANCE}).flatMap(([key, groups]) => Object.entries(groups).flatMap(([value, terms]) => terms.map(term => ({key,value,term:norm(term)})))).sort((a,b) => b.term.length-a.term.length || cmp(a.term,b.term));
 const animalNames=new Set(Object.values(SCIENCE.species).flat().map(norm));
 const nonBiologicalMouse=value=>['computer mouse','mouse cursor','pointing device','电脑鼠标','鼠标'].some(term=>matches(value,term));
-const actionNames=['injection','blood collection','blood sampling','centrifugation','pipetting','cell culture','transfection','sequencing','dissection','randomization','randomisation','recruitment','taking blood sample','drawing blood','blood draw','phlebotomy','venipuncture'];
-const equipmentNames=['computer mouse','mouse cursor','syringe','pipette','microscope','centrifuge','tube','flask','beaker','incubator','well plate','microplate','petri dish','culture dish','needle','scissors','cutters','sequencer','machine','instrument','apparatus','voltammetry','electrochemical','electrolytic','battery','solar cell'];
+const actionNames=['injection','blood collection','blood sampling','centrifugation','pipetting','cell culture','transfection','sequencing','dissection','randomization','randomisation','recruitment','taking blood sample','drawing blood','blood draw','phlebotomy','venipuncture','cell cycle','cell sorting'];
+const equipmentNames=['computer mouse','mouse cursor','syringe','pipette','microscope','centrifuge','tube','flask','beaker','incubator','well plate','microplate','petri dish','culture dish','needle','scissors','cutters','sequencer','sorter','cell sorter','machine','instrument','apparatus','voltammetry','electrochemical','electrolytic','battery','solar cell'];
 const actionGroups=concepts.filter(group=>group.some(term=>actionNames.includes(term)));
 const equipmentGroups=concepts.filter(group=>group.some(term=>equipmentNames.includes(term)));
 const cellNames=new Set(['cell','cells','macrophage','neuron','lymphocyte','neutrophil','hepatocyte','erythrocyte','fibroblast','stem cell','t cell','b cell','endothelial cell']);
@@ -92,6 +95,8 @@ function primaryConceptGroups(groups,label='') {
   const actions=selected.filter(group=>actionGroups.some(known=>group.some(term=>known.includes(term))));
   if(equipment.length&&!/\b(?:taking|drawing|collecting|injecting|pipetting|centrifuging|dissecting)\b/.test(label))return equipment;
   if(actions.length)return actions;
+  const development=matching(new Set(['embryo','fetus','foetus']));
+  if(development.length)return development;
   if(matching(subcellularNames).length)return matching(subcellularNames);
   if(matching(cellNames).length)return matching(cellNames);
   const notAnimals=selected.filter(group=>!group.some(term=>animalNames.has(term)));
@@ -116,6 +121,7 @@ function depictionKind(title,objects,unresolvedAnimal){
   if(equipment&&/\b(?:user|operator)\b/.test(title)&&!activeVerb)return 'unknown';
   if(equipment&&!activeVerb)return 'equipment';
   if(action)return 'action';
+  if(['embryo','fetus','foetus','胚胎','胎儿'].some(term=>matches(title,term)))return 'developmental_stage';
   if(['cell membrane','cell wall','cell nucleus','axon','dendrite','细胞膜','细胞壁','细胞核','轴突','树突'].some(term=>matches(title,term)))return 'subcellular';
   if([...cellNames,'细胞','神经元'].some(term=>matches(title,term)))return 'cell';
   if(objects.some(term=>animalNames.has(term))&&!unresolvedAnimal)return 'animal';

@@ -205,7 +205,7 @@ def test_unknown_filter_and_obsolete_index_fail_explicitly(tmp_path):
         search(db, "mouse", filters={"nonsense": "true"})
     with closing(sqlite3.connect(db)) as conn:
         conn.execute("PRAGMA user_version=1")
-    with pytest.raises(ValueError, match="rebuilt as v5"):
+    with pytest.raises(ValueError, match="rebuilt as v6"):
         search(db, "mouse")
 
 
@@ -339,3 +339,16 @@ def test_parallel_requested_organs_require_both_and_match_direct_core(tmp_path):
         direct=_search_core({"action":"search","variants":variants,"request":{"query":query,"catalog_version":version}})
         assert [r["title"] for r in page["results"]]==["Heart and liver"]
         assert [r["variant_id"] for r in direct["results"]]==[r["variant_id"] for r in page["results"]]
+
+
+def test_specific_compound_objects_are_not_generic_cells_or_whole_organs(tmp_path):
+    db=database(tmp_path,[artwork(1,title="Magnetic Cell Sorter",species=None),
+        artwork(2,title="Disease Cell Cycle wheel",species=None),
+        artwork(3,title="Liver fluke adult",species=None),
+        artwork(4,title="Liver Lobule",species=None),
+        artwork(5,title="Anemone 4 cell stage embryo",species=None),
+        artwork(6,title="Liver",species=None),artwork(7,title="Macrophage",species=None)])
+    assert [r["title"] for r in search(db,"liver")]==["Liver"]
+    assert [r["title"] for r in search(db,"cell")]==["Macrophage"]
+    for query,title in (("cell sorter","Magnetic Cell Sorter"),("cell cycle","Disease Cell Cycle wheel"),("liver fluke","Liver fluke adult"),("liver lobule","Liver Lobule")):
+        assert [r["title"] for r in search(db,query)]==[title]

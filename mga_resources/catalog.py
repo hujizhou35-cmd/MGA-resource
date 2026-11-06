@@ -489,7 +489,7 @@ def _write_sqlite(records: list[dict[str, Any]], path: Path, catalog_version: st
         db.executemany("INSERT INTO index_metadata VALUES (?, ?)", [
             ("catalog_version", catalog_version), ("ranking_version", prepared["ranking_version"]),
         ])
-        db.execute("PRAGMA user_version=5")
+        db.execute("PRAGMA user_version=6")
 
 
 def finalize(records: Iterable[dict[str, Any]], output_dir: str | Path) -> dict[str, Any]:
@@ -524,7 +524,7 @@ def finalize(records: Iterable[dict[str, Any]], output_dir: str | Path) -> dict[
         "catalog_sha256": hashlib.sha256(catalog_path.read_bytes()).hexdigest(),
     }
     _write_sqlite(items, output_dir / "catalog.sqlite", summary["catalog_sha256"])
-    summary["search_index_version"] = 5
+    summary["search_index_version"] = 6
     summary["search_policy"] = "mga_resources/search-core.mjs; old BM25 available as search_legacy"
     (output_dir / "summary.json").write_text(json.dumps(summary, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     return summary
@@ -666,8 +666,8 @@ def search_page(db_path: str | Path, query: str, limit: int = 10,
             rows = db.execute(statement, parameters).fetchall()
             sql_seconds += time.perf_counter() - started
             return rows
-        if read_sql("PRAGMA user_version")[0][0] != 5:
-            raise ValueError("Search index must be rebuilt as v5 with rebuild_search_index() or finalize(); search_legacy() remains available for old indexes")
+        if read_sql("PRAGMA user_version")[0][0] != 6:
+            raise ValueError("Search index must be rebuilt as v6 with rebuild_search_index() or finalize(); search_legacy() remains available for old indexes")
         metadata = dict(read_sql("SELECT key, value FROM index_metadata"))
         prepared = invoke_core({"action": "window_plan", "request": {
             "query": query, "filters": filters, "limit": limit, "mode": mode, "seed": seed,

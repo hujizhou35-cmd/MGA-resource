@@ -78,6 +78,9 @@ def attach_ledger(project, ledger, pool, catalog_sha256):
 def validate(catalog,assembly_report,output,ledger_path=None,rich_query="mouse",scarce_query="Naegleria gruberi",index_path=None):
     output.mkdir(parents=True,exist_ok=True)
     catalog_sha=sha(catalog)
+    assembly=json.loads(assembly_report.read_text(encoding="utf-8"))
+    if assembly.get("summary",{}).get("catalog_sha256")!=catalog_sha:
+        raise ValueError("Assembly report does not bind this exact catalog")
     dbpath=index_path or output/"catalog.sqlite"
     if index_path:
         with closing(sqlite3.connect(Path(index_path).resolve().as_uri()+"?mode=ro",uri=True)) as index_db:
@@ -85,7 +88,6 @@ def validate(catalog,assembly_report,output,ledger_path=None,rich_query="mouse",
                 raise ValueError("Reused search index does not bind this exact catalog")
     else:
         rebuild_search_index(catalog,dbpath)
-    assembly=json.loads(assembly_report.read_text(encoding="utf-8"))
     ledger=json.loads(ledger_path.read_text(encoding="utf-8")) if ledger_path else None
     db=sqlite3.connect(dbpath)
     eligible=[{"family":family,"hash":digest,"values":json.loads(values)} for family,digest,values in db.execute("SELECT family_id,file_sha256,values_json FROM file_variants WHERE eligible=1 ORDER BY family_id,variant_id")]
@@ -128,12 +130,16 @@ def validate(catalog,assembly_report,output,ledger_path=None,rich_query="mouse",
     base=search_page(dbpath,rich_query,seed="behavior-a")
     repeated=search_page(dbpath,rich_query,seed="behavior-a")
     case("stable_replay",signatures(base)==signatures(repeated) and base["bindings"]==repeated["bindings"] and base["next_cursor"]==repeated["next_cursor"],{"query":rich_query,"seed":"behavior-a"},{"first":compact(base),"replay":compact(repeated)},"Replay compares selected hashes, order, versions and cursor; runtime measurements are excluded.")
+    # Exercise real fixed-window boundaries even if the scientifically stricter
+    # mouse pool contains fewer than 75 families. Do not count a one-page browse
+    # as proof of pagination across candidate windows.
+    pagination_query=rich_query if base["diagnostics"]["qualified_families"]>base["diagnostics"]["candidate_pool"] else "cell"
     all_ids=[];pages=[];cursor=None
     while True:
-        page=search_page(dbpath,rich_query,limit=100,seed="behavior-pages",cursor=cursor)
+        page=search_page(dbpath,pagination_query,limit=100,seed="behavior-pages",cursor=cursor)
         all_ids.extend(ids(page));pages.append(compact(page));cursor=page["next_cursor"]
         if not cursor:break
-    case("pagination_no_duplicate",len(all_ids)==len(set(all_ids))==pages[0]["diagnostics"]["qualified_families"],{"query":rich_query,"limit":100,"seed":"behavior-pages"},{"pages":pages,"returned_families":len(all_ids)},"Traversed the complete actual qualified pool, including fixed-window boundaries.")
+    case("pagination_no_duplicate",len(all_ids)==len(set(all_ids))==pages[0]["diagnostics"]["qualified_families"] and len(all_ids)>pages[0]["diagnostics"]["candidate_pool"] and len(pages)>1,{"query":pagination_query,"limit":100,"seed":"behavior-pages"},{"pages":pages,"returned_families":len(all_ids)},"Traversed the complete actual qualified pool across multiple pages and fixed-window boundaries.")
     if base["results"]:
         chosen=base["results"][-1]
         pin={"asset_id":chosen["asset_id"],"family_id":chosen["family_id"],"file_sha256":chosen["selected_file"]["sha256"]}

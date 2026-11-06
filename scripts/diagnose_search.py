@@ -12,6 +12,7 @@ from pathlib import Path
 import statistics
 import sqlite3
 from contextlib import closing
+from collections import defaultdict
 import sys
 import time
 
@@ -22,6 +23,37 @@ from mga_resources.catalog import rebuild_search_index, search_legacy, search_pa
 
 def digest(path):
     return hashlib.sha256(path.read_bytes()).hexdigest()
+
+
+def candidate_coverage(queries):
+    """Describe missing candidates, never infer visual/relevance acceptance."""
+    categories=defaultdict(list)
+    concepts=defaultdict(list)
+    for query in queries:
+        categories[query["category"]].append(query)
+        concepts[query["concept_id"]].append(query)
+    missing=[]
+    for concept_id,rows in sorted(concepts.items()):
+        absent=[row for row in rows if not row["shared_ids"]]
+        if not absent:
+            continue
+        reasons=[]
+        for row in absent:
+            pushed=row["diagnostics"]["sqlite_pushdown"]
+            rejected=pushed["rejections_by_condition_may_overlap"]
+            unknown={key:value for key,value in rejected.items() if key.startswith("unknown:") and value}
+            reasons.append({"language":row["language"],"query":row["query"],
+                            "text_matched_variants":pushed["text_matched_variants"],
+                            "unknown_conditions":unknown,
+                            "known_or_unknown_filter_rejections_may_overlap":{key:value for key,value in rejected.items() if key.startswith("hard_filter:") and value},
+                            "interpretation":"no_text_candidates_needs_source_or_vocabulary_review" if not pushed["text_matched_variants"] else "has_text_candidates_but_scientific_or_appearance_evidence_unknown" if unknown else "has_text_candidates_but_hard_conditions_not_satisfied"})
+        missing.append({"concept_id":concept_id,"category":rows[0]["category"],"missing_languages":[row["language"] for row in absent],"both_languages_empty":len(absent)==len(rows),"observations":reasons})
+    return {"status":"candidate_availability_only_not_relevance_acceptance",
+            "categories":{category:{"total_queries":len(rows),"nonempty_queries":sum(bool(row["shared_ids"]) for row in rows),
+                "total_concepts":len({row["concept_id"] for row in rows}),
+                "concepts_nonempty_in_both_languages":sum(all(row["shared_ids"] for row in group) for key,group in concepts.items() if group[0]["category"]==category),
+                "independent_relevance_accepted":None} for category,rows in sorted(categories.items())},
+            "concepts_with_empty_queries":missing}
 
 
 def diagnose(catalog_path, benchmark_path, output):
@@ -83,6 +115,7 @@ def diagnose(catalog_path, benchmark_path, output):
             "search_core_sha256":digest(ROOT / "mga_resources/search-core.mjs"),
             "ranking_version":summary["ranking_version"],"search_index_version":summary["search_index_version"],
             "logical_families":summary["logical_families"],"unique_original_files":summary["unique_original_files"],
+            "sqlite_bytes":db.stat().st_size,
             "index_build_seconds":index_seconds,"queries":queries,"broad_queries":broad,"rotation":rotation,
             "summary":{"queries":len(queries),"legacy_nonempty":sum(bool(q["legacy_ids"]) for q in queries),
                        "shared_nonempty":sum(bool(q["shared_ids"]) for q in queries),
@@ -94,6 +127,8 @@ def diagnose(catalog_path, benchmark_path, output):
                            "Node local timings are not Cloudflare CPU measurements. Broad-query payload/cost must be addressed before Worker deployment.",
                            "No benchmark IDs or expected asset lists are used in query/ranking logic."]}
     (output / "search-diagnostic.json").write_text(json.dumps(report,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
+    gaps={"bindings":{key:report[key] for key in ("input_catalog_sha256","benchmark_sha256","search_core_sha256","ranking_version","search_index_version")},**candidate_coverage(queries)}
+    (output / "retrieval-gaps.json").write_text(json.dumps(gaps,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
     print(json.dumps(report["summary"],ensure_ascii=False),flush=True)
     return report
 
