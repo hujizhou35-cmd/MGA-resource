@@ -79,6 +79,8 @@ def load_scope_policy(review_paths=None, release_assets=None):
         selected = [item for item in document.get("items", []) if _action(item)]
         if not selected:
             continue
+        if b"\r\n" in data:
+            raise ValueError(f"Scope review must use repository LF bytes before hashing: {path}. Write with newline='\\n'; Git/cloud LF and Windows CRLF hashes differ.")
         uri = path.relative_to(ROOT).as_posix() if path.is_relative_to(ROOT) else path.name
         proof = {"uri": uri, "sha256": hashlib.sha256(data).hexdigest()}
         documents.append(proof)
@@ -201,7 +203,13 @@ def filter_public_records(records, policy):
             file["public_scope"] = scope
             text_rules = [r for r in policy.get("by_sha", {}).get(file.get("sha256"), []) if r.get("text_content")]
             if text_rules:
-                file["text_content"] = copy.deepcopy(max(text_rules, key=lambda r: r["reviewed_at"])["text_content"])
+                # A later scope-only review often leaves lettering unknown.
+                # It is not a retraction of an earlier exact-original observation.
+                known = [r for r in text_rules if r["text_content"].get("status") in {"present", "absent"}]
+                if known:
+                    file["text_content"] = copy.deepcopy(max(known, key=lambda r: r["reviewed_at"])["text_content"])
+                elif (file.get("text_content") or {}).get("status") not in {"present", "absent"}:
+                    file["text_content"] = copy.deepcopy(max(text_rules, key=lambda r: r["reviewed_at"])["text_content"])
             else:
                 file.setdefault("text_content", {"status": "unknown", "kinds": [], "cleanup_advice": "unknown",
                     "editable_text": "unknown", "basis": "No file-bound text-content review applied.", "evidence": []})

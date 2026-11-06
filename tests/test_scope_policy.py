@@ -86,6 +86,22 @@ def test_partial_family_keeps_other_file_and_scrubs_variant_reference(tmp_path):
     assert "catalog_visibility" not in public[0]
 
 
+@pytest.mark.parametrize("observed", ["present", "absent"])
+def test_later_scope_only_unknown_does_not_erase_observed_text(tmp_path, observed):
+    old = review(tmp_path, status="in_scope", disposition=None, date="2026-11-06T17:00:00Z", name="old")
+    new = review(tmp_path, status="in_scope", disposition=None, date="2026-11-06T18:00:00Z", name="new")
+    for path, status in ((old, observed), (new, "unknown")):
+        data = json.loads(path.read_text())
+        data["items"][0]["text_content"] = {"status": status, "kinds": ["labels"] if status=="present" else [],
+            "cleanup_advice": "task_dependent" if status=="present" else "unknown", "editable_text": "unknown"}
+        path.write_text(json.dumps(data), encoding="utf-8")
+    public, _ = filter_public_records([record()], load_scope_policy([old, new]))
+    assert public[0]["files"][0]["text_content"]["status"] == observed
+    # An unknown-only additional pass also preserves a prior bound observation.
+    second, _ = filter_public_records(public, load_scope_policy([new]))
+    assert second[0]["files"][0]["text_content"]["status"] == observed
+
+
 def test_same_original_hash_cannot_reenter_through_another_source(tmp_path):
     policy = load_scope_policy([review(tmp_path)])
     item = record();item.update(source="alias", source_id="different")
@@ -127,6 +143,16 @@ def test_cloud_evidence_digest_mismatch_fails(tmp_path):
         load_scope_policy([path], {})
     assets = {"review.png": {"browser_download_url": "https://example.invalid/review.png", "digest": "sha256:" + "c" * 64}}
     assert load_scope_policy([path], assets)["evidence_verification"] == "cloud_digest_and_committed_document"
+
+
+def test_windows_review_line_endings_cannot_silently_change_policy_binding(tmp_path):
+    path = review(tmp_path)
+    data = json.loads(path.read_text())
+    path.write_bytes((json.dumps(data, indent=2)+"\n").replace("\n", "\r\n").encode())
+    with pytest.raises(ValueError, match="repository LF bytes"):
+        load_scope_policy([path])
+    path.write_bytes(path.read_bytes().replace(b"\r\n", b"\n"))
+    assert load_scope_policy([path])["rules"]
 
 
 def test_commons_keeps_four_labeled_objects_and_excludes_two_finished_figures():
