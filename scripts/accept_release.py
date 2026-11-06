@@ -91,6 +91,12 @@ def evaluate_release(catalog, assembly, benchmark, mapping, judgments, *, hashes
     excluded_sources, excluded_ids, excluded_hashes = set(), set(), set()
     covered_indices = defaultdict(set)
     valid_decisions = []
+    unavailable_variants = []
+    acquired_by_origin = defaultdict(dict)
+    for record in catalog:
+        for file in record.get("files", []):
+            for origin in file.get("source_records") or [record]:
+                acquired_by_origin[(origin.get("source"), origin.get("source_id"))][file.get("sha256")] = file
 
     if decisions:
         need(decisions.get("template_only") is False, "decisions.template", "Scope decisions are still a template.")
@@ -109,7 +115,7 @@ def evaluate_release(catalog, assembly, benchmark, mapping, judgments, *, hashes
         evidence = decision.get("evidence") or []
         valid = (decisions_bound and decision.get("review_state") == "decided"
                  and decision.get("disposition") in {"not_acquired", "exclude_from_v1", "quarantine"}
-                 and nonempty(source) and kind in {"source", "items", "files"}
+                 and nonempty(source) and kind in {"source", "items", "files", "unavailable_variants"}
                  and nonempty(decision.get("reason")) and identity(decision.get("reviewed_by"))
                  and nonempty(decision.get("reviewed_at"))
                  and nonempty((decision.get("impact") or {}).get("description"))
@@ -130,8 +136,19 @@ def evaluate_release(catalog, assembly, benchmark, mapping, judgments, *, hashes
                 for entry in entries:
                     if kind == "items":
                         valid = valid and nonempty(entry.get("source_id"))
-                    else:
+                    elif kind == "files":
                         valid = valid and sha(entry.get("sha256"))
+                    else:
+                        available = acquired_by_origin.get((source, entry.get("source_id")), {})
+                        support = available.get(entry.get("available_file_sha256"))
+                        proof = entry.get("evidence") or {}
+                        valid = (valid and nonempty(entry.get("source_id"))
+                                 and type(entry.get("source_index")) is int and entry["source_index"] >= 0
+                                 and nonempty(entry.get("url")) and entry["url"].startswith("https://")
+                                 and nonempty(entry.get("format")) and nonempty(entry.get("reason"))
+                                 and support is not None and sha(entry.get("available_file_sha256"))
+                                 and entry["url"] not in {file.get("url") for file in available.values()}
+                                 and nonempty(proof.get("uri")) and sha(proof.get("sha256")))
         if not need(valid, "decisions.incomplete", f"{label}: a decided, evidence-bound target, impact and mitigation are required."):
             continue
         valid_decisions.append(label)
@@ -143,8 +160,14 @@ def evaluate_release(catalog, assembly, benchmark, mapping, judgments, *, hashes
                 index = entry.get("source_index")
                 if type(index) is int and index >= 0:
                     covered_indices[source].add(index)
-            else:
+            elif kind == "files":
                 excluded_hashes.add(entry["sha256"])
+            else:
+                # A missing optional PNG must not remove an already verified
+                # SVG of the same artwork. Account for the missing variant,
+                # retain usable files, and expose the unresolved format.
+                covered_indices[source].add(entry["source_index"])
+                unavailable_variants.append({"source": source, **entry})
 
     manifest_files = {}
     bad_files = []
@@ -394,6 +417,7 @@ def evaluate_release(catalog, assembly, benchmark, mapping, judgments, *, hashes
         "publish_manifest_sha256": manifest_sha, "publish_files": len(manifest_files),
         "excluded_file_hashes": sorted(excluded_hashes), "excluded_sources": sorted(excluded_sources),
         "valid_scope_decisions": valid_decisions, "unresolved_sources": unresolved_sources,
+        "unavailable_variants": unavailable_variants,
         "unresolved_files": bad_files,
         "retrieval": {"reviewed": judged, "successful": len(successes), "languages": dict(language_success),
                       "category_concepts": {key: len(covered[key]) for key in sorted(categories)},

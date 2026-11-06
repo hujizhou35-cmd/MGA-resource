@@ -298,6 +298,37 @@ def test_incomplete_source_without_accounting_is_not_silently_complete():
     assert not report["acceptance_passed"]
 
 
+def test_missing_optional_variant_keeps_verified_original_and_exposes_gap():
+    args = fixture()
+    existing = args["catalog"][1]["files"][0]
+    existing["url"] = "https://example.invalid/one.svg"
+    args["assembly"]["source_snapshots"][0].update(acquisition_complete=False, discovered=60, acquired=59,
+                                                 failed_records=1, excluded_count=0, missing_ranges=[])
+    selected = {"source": "example", "discovery_sha256": h("discovery"), "items": [{
+        "source_id": "1", "source_index": 1, "url": "https://example.invalid/one.png", "format": "png",
+        "available_file_sha256": existing["sha256"], "reason": "Source PNG link is unavailable; SVG was acquired.",
+        "evidence": {"uri": "https://example.invalid/failures.json", "sha256": h("observed 404")}}]}
+    selected_sha = h("selected optional variant metadata")
+    decision = decided_source(args, "example")
+    decision["decisions"][0].update(disposition="not_acquired", target={"source": "example",
+        "kind": "unavailable_variants", "discovery_sha256": h("discovery"),
+        "selection_manifest": {"sha256": selected_sha, "uri": "selected.json"}})
+    args.update(decisions=decision, selection_manifests={selected_sha: selected})
+    # A changed record in this synthetic fixture requires fresh manifest bindings.
+    manifest, report = accept.evaluate_release(**args)
+    args["judgments"]["bindings"] = report["required_bindings"]
+    args["decisions"]["publish_manifest"]["sha256"] = report["publish_manifest_sha256"]
+    args["restore_evidence"]["publish_manifest_sha256"] = report["publish_manifest_sha256"]
+    manifest, report = accept.evaluate_release(**args)
+    assert report["acceptance_passed"], report["missing"]
+    assert len(manifest["files"]) == 60
+    assert report["unavailable_variants"][0]["url"].endswith("one.png")
+    assert existing["sha256"] in {f["sha256"] for f in manifest["files"]}
+    selected["items"][0]["available_file_sha256"] = h("not acquired")
+    _, report = accept.evaluate_release(**args)
+    assert "decisions.incomplete" in codes(report) and "sources.unresolved" in codes(report)
+
+
 def test_existing_source_sample_format_requires_ten_included_families():
     args = fixture()
     args["judgments"]["curated"] = []
