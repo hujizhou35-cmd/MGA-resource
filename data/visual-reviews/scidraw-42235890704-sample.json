@@ -1,0 +1,810 @@
+{
+  "schema_version": 1,
+  "reviewed_at": "2026-11-06T15:04:10.170211+00:00",
+  "reviewer": "Codex media_catalog agent; direct visual inspection independent from retrieval matching",
+  "source": "scidraw",
+  "collection_run": "42235890704-1",
+  "collection_commit": "1e4fe1d88aa8ccd08813e002cda0ff204a69d8cb",
+  "review_method": "Viewed the actual 30-tile cloud-rendered PNG using view_image; judgments entered after inspection. Official detail API and Zenodo metadata were checked for the EM-slice scope question.",
+  "review_sheet_url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scidraw-42235890704-1-b0000.review.png",
+  "review_sheet_sha256": "cb7e542f2bcaa4f33d62b57f12eed69b2e9973c7e5286ffe8079316f2d54c1fd",
+  "collection_report_sha256": "12d21741928846310df428d7dd59eb806984628fdae404f657b800455b938864",
+  "review_limits": [
+    "Contact-sheet scale only; small labels and detailed anatomy were not individually inspected.",
+    "One visual sample is pending source-scope clarification; the sample is not all-pass.",
+    "The other three EM-slice entries received metadata-only scope screening, not direct visual inspection.",
+    "No whole-source, full-resolution, scientific-detail or native Illustrator acceptance is implied."
+  ],
+  "summary": {
+    "viewed_tiles": 30,
+    "usable_at_contact_sheet_scope": 29,
+    "pending_scope_tiles": 1,
+    "whole_source_accepted": false,
+    "collection_failures": 35,
+    "recorded_preview_failures": 1
+  },
+  "items": [
+    {
+      "tile": 1,
+      "id": "scidraw-9a16f62a4902a5830b29",
+      "title": "EM slice",
+      "source_id": "1ea14b1d-f203-41f8-a976-d2dc88f3a50a",
+      "source_url": "https://scidraw.io/drawing/em-slice-f8990ac6",
+      "original_sha256": "9c1fa3821b6aa09fabb31bca45f279cb50f325d75cf63ef326779d68a32ddd69",
+      "preview_sha256": "51d1e8dacb8f594e51b7f545ffac64df58115e16ba7216cce943136e27b43756",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scidraw-42235890704-1-b0000.tar.gz",
+        "member": "files/9c/9c1fa3821b6aa09fabb31bca45f279cb50f325d75cf63ef326779d68a32ddd69.svg"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scidraw-42235890704-1-b0000.tar.gz",
+        "member": "previews/9c1fa3821b6aa09fabb31bca45f279cb50f325d75cf63ef326779d68a32ddd69.png"
+      },
+      "visual_verdict": "pending_source_scope",
+      "observations": "灰阶密集组织纹理可见；可视上像经过简化的电镜切片。原件检查记录为484个path、无嵌入位图；官方详情无绘制过程描述，因此不能确认它是独立示意还是显微图描摹。暂不纳入首版已验收素材。",
+      "recommended_scope": "scope_pending",
+      "scientific_detail_validation": "not_independently_verified",
+      "native_editability_tested": false
+    },
+    {
+      "tile": 2,
+      "id": "scidraw-c8d5111ccfc87316d419",
+      "title": "Mouse Brain Above & Side",
+      "source_id": "9c875bb3-d7f6-41db-9183-fea97cab8deb",
+      "source_url": "https://scidraw.io/drawing/mouse-brain-above-side-f2636266",
+      "original_sha256": "94e28ef3f8f03daa5a356f5601bd6bf3bf6165ae6f861a673462b4e030dc4436",
+      "preview_sha256": "b6c7d2151fb6a5b0865d14becdcf8a758d17337ad96fdb9292c76d1b6a5e3e60",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scidraw-42235890704-1-b0000.tar.gz",
+        "member": "files/94/94e28ef3f8f03daa5a356f5601bd6bf3bf6165ae6f861a673462b4e030dc4436.svg"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scidraw-42235890704-1-b0000.tar.gz",
+        "member": "previews/94e28ef3f8f03daa5a356f5601bd6bf3bf6165ae6f861a673462b4e030dc4436.png"
+      },
+      "visual_verdict": "usable_as_general_illustration",
+      "observations": "小鼠脑的俯视与侧视轮廓清楚，轮廓线粗，适合脑组织取材概览；具体脑区边界未核验。",
+      "recommended_scope": "general_scientific_illustration",
+      "scientific_detail_validation": "not_independently_verified",
+      "native_editability_tested": false
+    },
+    {
+      "tile": 3,
+      "id": "scidraw-33643da7b5b2046b0652",
+      "title": "membrane",
+      "source_id": "339ec000-8659-4be8-9c68-7dd0ec0ad63a",
+      "source_url": "https://scidraw.io/drawing/membrane-470c579d",
+      "original_sha256": "e4e1fef54608616c157c9bb21f15ede6a0d83a98f2cc840613e73673c17159e8",
+      "preview_sha256": "11c11f6be7e18e5d996db5e58f109239e5ec3285e389fe181d3dc3ec6b3e3858",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scidraw-42235890704-1-b0000.tar.gz",
+        "member": "files/e4/e4e1fef54608616c157c9bb21f15ede6a0d83a98f2cc840613e73673c17159e8.svg"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scidraw-42235890704-1-b0000.tar.gz",
+        "member": "previews/e4e1fef54608616c157c9bb21f15ede6a0d83a98f2cc840613e73673c17159e8.png"
+      },
+      "visual_verdict": "usable_as_general_illustration",
+      "observations": "脂质双层、跨膜蛋白与离子符号可辨，属于绘制的膜运输示意；箭头方向和离子机制需按使用情景核对。",
+      "recommended_scope": "general_scientific_illustration",
+      "scientific_detail_validation": "not_independently_verified",
+      "native_editability_tested": false
+    },
+    {
+      "tile": 4,
+      "id": "scidraw-e8ccc43ff71d83f820d1",
+      "title": "Ion channel",
+      "source_id": "dbf19e5c-c403-4338-8f48-2e27832918dd",
+      "source_url": "https://scidraw.io/drawing/ion-channel-42e56ecf",
+      "original_sha256": "dfee687f6cfb71e99555344b538a79f3cf29260e1f72fe7d98c592e30646bda2",
+      "preview_sha256": "3287740f02211aa38cd5a361b643e20a1da6b48bfb5f1992b04d7f9c27214f56",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scidraw-42235890704-1-b0000.tar.gz",
+        "member": "files/df/dfee687f6cfb71e99555344b538a79f3cf29260e1f72fe7d98c592e30646bda2.svg"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scidraw-42235890704-1-b0000.tar.gz",
+        "member": "previews/dfee687f6cfb71e99555344b538a79f3cf29260e1f72fe7d98c592e30646bda2.png"
+      },
+      "visual_verdict": "usable_as_general_illustration",
+      "observations": "绿色通道蛋白及中央通道形状清楚，可作通用离子通道示意，不能仅据外形认定具体通道蛋白。",
+      "recommended_scope": "general_scientific_illustration",
+      "scientific_detail_validation": "not_independently_verified",
+      "native_editability_tested": false
+    },
+    {
+      "tile": 5,
+      "id": "scidraw-123cba401c1782272223",
+      "title": "Mouse brain slices part 2",
+      "source_id": "7a9c5534-9a0b-4a6e-866f-983fca270541",
+      "source_url": "https://scidraw.io/drawing/mouse-brain-slices-part-2-bb92b6ba",
+      "original_sha256": "6db01891cdaafd9ed55ffe11de311966f6a7b5e742a87d3a0cf7616c686d84a6",
+      "preview_sha256": "ba408325b380fd07f1953931f42b85dd29993195d48e85c4bb3b377c5951ff84",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scidraw-42235890704-1-b0000.tar.gz",
+        "member": "files/6d/6db01891cdaafd9ed55ffe11de311966f6a7b5e742a87d3a0cf7616c686d84a6.svg"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scidraw-42235890704-1-b0000.tar.gz",
+        "member": "previews/6db01891cdaafd9ed55ffe11de311966f6a7b5e742a87d3a0cf7616c686d84a6.png"
+      },
+      "visual_verdict": "usable_as_general_illustration",
+      "observations": "三组脑切片轮廓可见，线条很浅；放入小尺寸版面时需提高线条对比。切面位置和解剖层级未核验。",
+      "recommended_scope": "general_scientific_illustration",
+      "scientific_detail_validation": "not_independently_verified",
+      "native_editability_tested": false
+    },
+    {
+      "tile": 6,
+      "id": "scidraw-634e337308ab7b421a88",
+      "title": "Beakers",
+      "source_id": "73808cb2-fc5d-4821-8937-b94c74365e1d",
+      "source_url": "https://scidraw.io/drawing/beakers-ba8583ed",
+      "original_sha256": "a2f281580da8bfbf78236bcdb30b9eb0764b4f22fa3f5c59bef9bea5aa1a1ca3",
+      "preview_sha256": "174eef01fe00c98488c968b860f8afa7e5e87d89b6e5871de52efa0add4c1d0b",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scidraw-42235890704-1-b0000.tar.gz",
+        "member": "files/a2/a2f281580da8bfbf78236bcdb30b9eb0764b4f22fa3f5c59bef9bea5aa1a1ca3.svg"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scidraw-42235890704-1-b0000.tar.gz",
+        "member": "previews/a2f281580da8bfbf78236bcdb30b9eb0764b4f22fa3f5c59bef9bea5aa1a1ca3.png"
+      },
+      "visual_verdict": "usable_as_general_illustration",
+      "observations": "三只不同大小的烧杯及刻度可辨，适合实验器材示意；体积刻度不作计量依据。",
+      "recommended_scope": "general_scientific_illustration",
+      "scientific_detail_validation": "not_independently_verified",
+      "native_editability_tested": false
+    },
+    {
+      "tile": 7,
+      "id": "scidraw-4d621dae7e2ae2e002d4",
+      "title": "Zebrafish brain outline",
+      "source_id": "524633b1-ecef-42d3-8ef4-4825ec39fb27",
+      "source_url": "https://scidraw.io/drawing/zebrafish-brain-outline-85ce2c1a",
+      "original_sha256": "e12c822fb7984e508a8404dfa4ab846ba293f98477422c4c20c86766cef8993c",
+      "preview_sha256": "e10d947b8ff51962e1a4d824c138a52fa5d3a9698035d7ea0aefa497f020fac1",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scidraw-42235890704-1-b0000.tar.gz",
+        "member": "files/e1/e12c822fb7984e508a8404dfa4ab846ba293f98477422c4c20c86766cef8993c.svg"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scidraw-42235890704-1-b0000.tar.gz",
+        "member": "previews/e12c822fb7984e508a8404dfa4ab846ba293f98477422c4c20c86766cef8993c.png"
+      },
+      "visual_verdict": "usable_as_general_illustration",
+      "observations": "鱼脑整体外形和对称结构可辨，可作斑马鱼脑概览；具体脑区分界未核验。",
+      "recommended_scope": "general_scientific_illustration",
+      "scientific_detail_validation": "not_independently_verified",
+      "native_editability_tested": false
+    },
+    {
+      "tile": 8,
+      "id": "scidraw-78538e5d0a8424f50826",
+      "title": "skewed network",
+      "source_id": "06800210-5844-4748-a833-989c3bd6b346",
+      "source_url": "https://scidraw.io/drawing/skewed-network-d9117db9",
+      "original_sha256": "256cba0d9058ea994ef24aa9bf327fc9f04bf0a76a03e7b57741004ad7c633d2",
+      "preview_sha256": "5688ced262b65d3d3633e2c00079f3766f1f1245706a761f5c14aee8f1f91647",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scidraw-42235890704-1-b0000.tar.gz",
+        "member": "files/25/256cba0d9058ea994ef24aa9bf327fc9f04bf0a76a03e7b57741004ad7c633d2.svg"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scidraw-42235890704-1-b0000.tar.gz",
+        "member": "previews/256cba0d9058ea994ef24aa9bf327fc9f04bf0a76a03e7b57741004ad7c633d2.png"
+      },
+      "visual_verdict": "usable_as_symbol",
+      "observations": "节点、红色连线和节点大小差异清楚，可作通用网络连接符号。没有核验其数值来源，不能把节点大小和线宽当作研究结果。",
+      "recommended_scope": "symbol_and_workflow",
+      "scientific_detail_validation": "not_independently_verified",
+      "native_editability_tested": false
+    },
+    {
+      "tile": 9,
+      "id": "scidraw-7bb1531ebd231c987ad7",
+      "title": "mouse alert",
+      "source_id": "9789ecb8-bd61-4c3e-855f-aff081dad99a",
+      "source_url": "https://scidraw.io/drawing/mouse-alert-1eb33414",
+      "original_sha256": "3897d4fb2788bd6f88f9588cca81ad90fe3bfa5c8854ba710a9394b575697dd4",
+      "preview_sha256": "3138b63f685edbe8e556d6b80f446eaf84eb2b7ea8412a9c9f94a8ca827b78f4",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scidraw-42235890704-1-b0000.tar.gz",
+        "member": "files/38/3897d4fb2788bd6f88f9588cca81ad90fe3bfa5c8854ba710a9394b575697dd4.svg"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scidraw-42235890704-1-b0000.tar.gz",
+        "member": "previews/3897d4fb2788bd6f88f9588cca81ad90fe3bfa5c8854ba710a9394b575697dd4.png"
+      },
+      "visual_verdict": "usable_as_general_illustration",
+      "observations": "完整小鼠剪影，尾巴和四肢清楚，适合警觉或活动状态示意；不能据剪影判定品系。",
+      "recommended_scope": "general_scientific_illustration",
+      "scientific_detail_validation": "not_independently_verified",
+      "native_editability_tested": false
+    },
+    {
+      "tile": 10,
+      "id": "scidraw-cd49fdab0dabf83d707b",
+      "title": "Embryo lateral view",
+      "source_id": "512c2a60-f8f7-4f7e-9324-f94e2f2ee3c6",
+      "source_url": "https://scidraw.io/drawing/embryo-lateral-view-67d83273",
+      "original_sha256": "94cb8293486c2ee2df6d381e0438c8cfdc7c050347b6f7a05c09a72b72f24942",
+      "preview_sha256": "1a3d9759f3e433e1898137ae319e0db96a22e126802fa6d998c0d0e632ce781d",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scidraw-42235890704-1-b0000.tar.gz",
+        "member": "files/94/94cb8293486c2ee2df6d381e0438c8cfdc7c050347b6f7a05c09a72b72f24942.svg"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scidraw-42235890704-1-b0000.tar.gz",
+        "member": "previews/94cb8293486c2ee2df6d381e0438c8cfdc7c050347b6f7a05c09a72b72f24942.png"
+      },
+      "visual_verdict": "usable_as_general_illustration",
+      "observations": "胚胎侧面轮廓和肢芽呈绘制风格，可作一般胚胎发育示意；联系表无法确认物种和精确胎龄。",
+      "recommended_scope": "general_scientific_illustration",
+      "scientific_detail_validation": "not_independently_verified",
+      "native_editability_tested": false
+    },
+    {
+      "tile": 11,
+      "id": "scidraw-23692120d4592c49d7d9",
+      "title": "illumina Hi-seq",
+      "source_id": "6cd8d2cb-2fd3-484c-8b00-e6ba8b221b98",
+      "source_url": "https://scidraw.io/drawing/illumina-hi-seq-8427a523",
+      "original_sha256": "3b55def39dcb2e1eef77ce11bd83b59f79a29a723add052d74f4d959a92c0649",
+      "preview_sha256": "ff76cc90520fb01331ec59b0d165d6121903ea35310c8bd1a0bbcaf31428f2cb",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scidraw-42235890704-1-b0000.tar.gz",
+        "member": "files/3b/3b55def39dcb2e1eef77ce11bd83b59f79a29a723add052d74f4d959a92c0649.svg"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scidraw-42235890704-1-b0000.tar.gz",
+        "member": "previews/3b55def39dcb2e1eef77ce11bd83b59f79a29a723add052d74f4d959a92c0649.png"
+      },
+      "visual_verdict": "usable_as_general_illustration",
+      "observations": "测序仪机身为清晰绘制的器械图，图中含Illumina Hi-Seq文字。适合仪器流程；具体型号和商标语境需保留来源。",
+      "recommended_scope": "general_scientific_illustration",
+      "scientific_detail_validation": "not_independently_verified",
+      "native_editability_tested": false
+    },
+    {
+      "tile": 12,
+      "id": "scidraw-26e6589b7085f3e53f5c",
+      "title": "W Maze 3D",
+      "source_id": "512884fd-a249-4b95-9197-ef4ae5c24977",
+      "source_url": "https://scidraw.io/drawing/w-maze-3d-0a3fbf73",
+      "original_sha256": "caae6b5858db5b1ba74188ed2a7486318f153514e2fb5236c1cca902d3ebdfeb",
+      "preview_sha256": "c8631b82b20d31a593c840bfcac60cf220d3431f9f173d6539782cedfa4b7b0f",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scidraw-42235890704-1-b0000.tar.gz",
+        "member": "files/ca/caae6b5858db5b1ba74188ed2a7486318f153514e2fb5236c1cca902d3ebdfeb.svg"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scidraw-42235890704-1-b0000.tar.gz",
+        "member": "previews/caae6b5858db5b1ba74188ed2a7486318f153514e2fb5236c1cca902d3ebdfeb.png"
+      },
+      "visual_verdict": "usable_as_general_illustration",
+      "observations": "W形迷宫三维布局清楚，可作动物行为装置示意；尺寸和实验参数未核验。",
+      "recommended_scope": "general_scientific_illustration",
+      "scientific_detail_validation": "not_independently_verified",
+      "native_editability_tested": false
+    },
+    {
+      "tile": 13,
+      "id": "scidraw-f17570e6f1a3f72f0be1",
+      "title": "Kinesin",
+      "source_id": "6aff6913-72bd-4ee1-9348-a0eb02fb0e6e",
+      "source_url": "https://scidraw.io/drawing/kinesin-fe237cd5",
+      "original_sha256": "6a9e5bd4dda595253fa06d9e587b71ef0325fe2bc17880539f61bb10c1529045",
+      "preview_sha256": "84a8aea2301a414fa9f543adebdf39a854dd654a9c8250b542fca78f719c6b79",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scidraw-42235890704-1-b0000.tar.gz",
+        "member": "files/6a/6a9e5bd4dda595253fa06d9e587b71ef0325fe2bc17880539f61bb10c1529045.svg"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scidraw-42235890704-1-b0000.tar.gz",
+        "member": "previews/6a9e5bd4dda595253fa06d9e587b71ef0325fe2bc17880539f61bb10c1529045.png"
+      },
+      "visual_verdict": "usable_as_general_illustration",
+      "observations": "马达蛋白的双足和连接杆画法清楚，可作驱动蛋白概念图；不表示真实结构比例或构象。",
+      "recommended_scope": "general_scientific_illustration",
+      "scientific_detail_validation": "not_independently_verified",
+      "native_editability_tested": false
+    },
+    {
+      "tile": 14,
+      "id": "scidraw-366fed2b8aaf49949b17",
+      "title": "1ml syringe with 25G needle",
+      "source_id": "200532bc-f6c0-4ed5-b46b-1cdf78649ae0",
+      "source_url": "https://scidraw.io/drawing/1ml-syringe-with-25g-needle-d1185aaa",
+      "original_sha256": "52e1df0929577cc6e7a63e2d0d8752fe2758a20d3e4f9c31621918044aa8d920",
+      "preview_sha256": "ed24f40728c732adbde165cc0663ff2cbada9751631cb19f000e89ec54cd19d7",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scidraw-42235890704-1-b0000.tar.gz",
+        "member": "files/52/52e1df0929577cc6e7a63e2d0d8752fe2758a20d3e4f9c31621918044aa8d920.svg"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scidraw-42235890704-1-b0000.tar.gz",
+        "member": "previews/52e1df0929577cc6e7a63e2d0d8752fe2758a20d3e4f9c31621918044aa8d920.png"
+      },
+      "visual_verdict": "usable_as_general_illustration",
+      "observations": "细长注射器和针头可见，但缩略图很小；适合注射操作示意，1 ml容量与25G规格未由图像独立核实。",
+      "recommended_scope": "general_scientific_illustration",
+      "scientific_detail_validation": "not_independently_verified",
+      "native_editability_tested": false
+    },
+    {
+      "tile": 15,
+      "id": "scidraw-1d7a3ef506fd16a76ce9",
+      "title": "Mouse head schema",
+      "source_id": "132c05bd-a944-4d64-afdb-1217762219a2",
+      "source_url": "https://scidraw.io/drawing/mouse-head-schema-51ed02be",
+      "original_sha256": "a3902e998ced6c0c4db3c29705a991f5bf86c3c4471ca4f656691111205c647a",
+      "preview_sha256": "a305827605394a0bcea7f1adce6384e84ce6fd03f3b1038ec9e88ce81b9049de",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scidraw-42235890704-1-b0000.tar.gz",
+        "member": "files/a3/a3902e998ced6c0c4db3c29705a991f5bf86c3c4471ca4f656691111205c647a.svg"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scidraw-42235890704-1-b0000.tar.gz",
+        "member": "previews/a3902e998ced6c0c4db3c29705a991f5bf86c3c4471ca4f656691111205c647a.png"
+      },
+      "visual_verdict": "usable_as_general_illustration",
+      "observations": "小鼠头部轮廓及脑部示意可辨，可作头部实验概览；具体定位和脑区边界未核验。",
+      "recommended_scope": "general_scientific_illustration",
+      "scientific_detail_validation": "not_independently_verified",
+      "native_editability_tested": false
+    },
+    {
+      "tile": 16,
+      "id": "scidraw-489e0aebadb74366dd58",
+      "title": "Drosophila Fluorescent Mushroom Bodies",
+      "source_id": "5e74b6cf-68b4-4e9f-a6be-01f5009a0abe",
+      "source_url": "https://scidraw.io/drawing/drosophila-fluorescent-mushroom-bodies-cff72f36",
+      "original_sha256": "b0bad99aad29c2c0d6bd682fd4ad2e42a86d9308844ee17714596fadc379e2bf",
+      "preview_sha256": "0e13e209eaddc20269e5c9800d34abcfe51f502ea65e96bf73fa8a544d505e15",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scidraw-42235890704-1-b0000.tar.gz",
+        "member": "files/b0/b0bad99aad29c2c0d6bd682fd4ad2e42a86d9308844ee17714596fadc379e2bf.svg"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scidraw-42235890704-1-b0000.tar.gz",
+        "member": "previews/b0bad99aad29c2c0d6bd682fd4ad2e42a86d9308844ee17714596fadc379e2bf.png"
+      },
+      "visual_verdict": "usable_as_general_illustration",
+      "observations": "果蝇轮廓和头部绿色标记为绘制示意，实际预览不是荧光显微照片。可用于果蝇脑区概览，绿色标记定位未独立核实。",
+      "recommended_scope": "general_scientific_illustration",
+      "scientific_detail_validation": "not_independently_verified",
+      "native_editability_tested": false
+    },
+    {
+      "tile": 17,
+      "id": "scidraw-d4d42ec9c5d8142c22c1",
+      "title": "Ovum",
+      "source_id": "71039c18-de7e-4725-9bc0-40ac3d412768",
+      "source_url": "https://scidraw.io/drawing/ovum-3ca40a81",
+      "original_sha256": "90081e667634ad6790388846e530c0b595379ce683ba05e10e63cf480ae04b8c",
+      "preview_sha256": "b60df912d189e735a9b14d2e902d0a4173ef176db51d074b5f6eb0a919ad713f",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scidraw-42235890704-1-b0000.tar.gz",
+        "member": "files/90/90081e667634ad6790388846e530c0b595379ce683ba05e10e63cf480ae04b8c.svg"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scidraw-42235890704-1-b0000.tar.gz",
+        "member": "previews/90081e667634ad6790388846e530c0b595379ce683ba05e10e63cf480ae04b8c.png"
+      },
+      "visual_verdict": "usable_as_general_illustration",
+      "observations": "卵细胞的外层、细胞核及胞内结构清楚，适合通用细胞示意；不据图推断物种或成熟阶段。",
+      "recommended_scope": "general_scientific_illustration",
+      "scientific_detail_validation": "not_independently_verified",
+      "native_editability_tested": false
+    },
+    {
+      "tile": 18,
+      "id": "scidraw-48c0946bb3161dbcb8d1",
+      "title": "Adult_Hooded_Rat_Sitting",
+      "source_id": "23e6313f-ae83-4a71-9896-8492602746ac",
+      "source_url": "https://scidraw.io/drawing/adult_hooded_rat_sitting-91c44c0c",
+      "original_sha256": "117564adfc168d63190575c41e22a99cf4f1144362485c0a592f14f3ece3c094",
+      "preview_sha256": "f39979799f78a1d65c4a0e4348d25b2760611f4fe9e5f632e88bb11ee4c2a4dd",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scidraw-42235890704-1-b0000.tar.gz",
+        "member": "files/11/117564adfc168d63190575c41e22a99cf4f1144362485c0a592f14f3ece3c094.svg"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scidraw-42235890704-1-b0000.tar.gz",
+        "member": "previews/117564adfc168d63190575c41e22a99cf4f1144362485c0a592f14f3ece3c094.png"
+      },
+      "visual_verdict": "usable_as_general_illustration",
+      "observations": "有头巾样毛色的大鼠坐姿绘图清晰，尾巴和肢体完整；可作大鼠概览，品系信息需来源支持。",
+      "recommended_scope": "general_scientific_illustration",
+      "scientific_detail_validation": "not_independently_verified",
+      "native_editability_tested": false
+    },
+    {
+      "tile": 19,
+      "id": "scidraw-d3644216319ae40a866f",
+      "title": "Simplistic rat cartoon",
+      "source_id": "5b3db8d6-813d-4aef-80e8-0710ef5b9ff3",
+      "source_url": "https://scidraw.io/drawing/simplistic-rat-cartoon-db882e50",
+      "original_sha256": "3867b9b3b639ac769423a163c074b6487b8e0e8dc777b1060da9dfd9a98c2157",
+      "preview_sha256": "d11966444cfc55b357aaefe50a4bf597c26abb7d593cb8e76c2992ad41b5db47",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scidraw-42235890704-1-b0000.tar.gz",
+        "member": "files/38/3867b9b3b639ac769423a163c074b6487b8e0e8dc777b1060da9dfd9a98c2157.svg"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scidraw-42235890704-1-b0000.tar.gz",
+        "member": "previews/3867b9b3b639ac769423a163c074b6487b8e0e8dc777b1060da9dfd9a98c2157.png"
+      },
+      "visual_verdict": "usable_as_general_illustration",
+      "observations": "简化大鼠侧视轮廓完整，白色躯体与黑眼可辨；适合实验动物图标，鼠种仍需依来源标签区分。",
+      "recommended_scope": "general_scientific_illustration",
+      "scientific_detail_validation": "not_independently_verified",
+      "native_editability_tested": false
+    },
+    {
+      "tile": 20,
+      "id": "scidraw-9c02e74aeaefa3ce0f03",
+      "title": "Human Eye Schematic",
+      "source_id": "a25b78f9-8f40-4abe-8865-4e8ea70d68fd",
+      "source_url": "https://scidraw.io/drawing/human-eye-schematic-b7ec55b9",
+      "original_sha256": "8387a4c2e97dcde8885c64fdd12fa827092dbaedc6e85dddfd3f8e1eddea5015",
+      "preview_sha256": "8fa5a9c1f8d396856058700012170e1483318425657aefc436fc162e1281a1d4",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scidraw-42235890704-1-b0000.tar.gz",
+        "member": "files/83/8387a4c2e97dcde8885c64fdd12fa827092dbaedc6e85dddfd3f8e1eddea5015.svg"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scidraw-42235890704-1-b0000.tar.gz",
+        "member": "previews/8387a4c2e97dcde8885c64fdd12fa827092dbaedc6e85dddfd3f8e1eddea5015.png"
+      },
+      "visual_verdict": "usable_as_general_illustration",
+      "observations": "眼球剖面轮廓、晶状体和角膜区域可辨，可作眼部结构概览；各层精细解剖未核验。",
+      "recommended_scope": "general_scientific_illustration",
+      "scientific_detail_validation": "not_independently_verified",
+      "native_editability_tested": false
+    },
+    {
+      "tile": 21,
+      "id": "scidraw-3d41228b014505ed3a78",
+      "title": "Spleen",
+      "source_id": "015c71f8-15fd-401f-aa35-d8a73bbb49b7",
+      "source_url": "https://scidraw.io/drawing/spleen-41bb1b59",
+      "original_sha256": "ec2b82d3332c33ac871ead93b687c4e9162569726bba91d8277aff406de08ed7",
+      "preview_sha256": "15dfb2c90b21059730f95e64af96fcbb5d1121a07af4300eea214daa66615244",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scidraw-42235890704-1-b0000.tar.gz",
+        "member": "files/ec/ec2b82d3332c33ac871ead93b687c4e9162569726bba91d8277aff406de08ed7.svg"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scidraw-42235890704-1-b0000.tar.gz",
+        "member": "previews/ec2b82d3332c33ac871ead93b687c4e9162569726bba91d8277aff406de08ed7.png"
+      },
+      "visual_verdict": "usable_as_general_illustration",
+      "observations": "脾脏外形、门部和内部层次为清楚的插画，适合器官概览；不表示病理或精确解剖比例。",
+      "recommended_scope": "general_scientific_illustration",
+      "scientific_detail_validation": "not_independently_verified",
+      "native_editability_tested": false
+    },
+    {
+      "tile": 22,
+      "id": "scidraw-3d3bd0158506079bb7ab",
+      "title": "mouse grooming",
+      "source_id": "833177c5-0563-48c0-92e4-b248dd6c29ae",
+      "source_url": "https://scidraw.io/drawing/mouse-grooming-dc2dcd0a",
+      "original_sha256": "3c0d0da7b235a2b01a98a8a9258f972593166b6e405efda3ce1b98a65dec7e98",
+      "preview_sha256": "76a1ac1b1390b908ef73778a0dfcfec34ac045d579db93a7db9c90f6ed00236b",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scidraw-42235890704-1-b0000.tar.gz",
+        "member": "files/3c/3c0d0da7b235a2b01a98a8a9258f972593166b6e405efda3ce1b98a65dec7e98.svg"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scidraw-42235890704-1-b0000.tar.gz",
+        "member": "previews/3c0d0da7b235a2b01a98a8a9258f972593166b6e405efda3ce1b98a65dec7e98.png"
+      },
+      "visual_verdict": "usable_as_general_illustration",
+      "observations": "小鼠清理身体的姿势可辨，耳、尾和前肢完整，适合行为示意。",
+      "recommended_scope": "general_scientific_illustration",
+      "scientific_detail_validation": "not_independently_verified",
+      "native_editability_tested": false
+    },
+    {
+      "tile": 23,
+      "id": "scidraw-932ed24fd3990c23a2ee",
+      "title": "Chick",
+      "source_id": "d8cc1f30-cc96-40d3-8d78-e48e538f6c3d",
+      "source_url": "https://scidraw.io/drawing/chick-b7b04c23",
+      "original_sha256": "0399fb8e43340f1cf0bf950f780d99b6ebe852804fdc37f2b61ed353da75942e",
+      "preview_sha256": "42bdd53776e6e661bb8b76d0aeda36106ecb4e28c35867db38ffdeb638018ca1",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scidraw-42235890704-1-b0000.tar.gz",
+        "member": "files/03/0399fb8e43340f1cf0bf950f780d99b6ebe852804fdc37f2b61ed353da75942e.svg"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scidraw-42235890704-1-b0000.tar.gz",
+        "member": "previews/0399fb8e43340f1cf0bf950f780d99b6ebe852804fdc37f2b61ed353da75942e.png"
+      },
+      "visual_verdict": "usable_as_general_illustration",
+      "observations": "黄色雏鸟卡通形态清楚，脚和喙可辨，适合动物概览；不能据卡通外形判定鸡种或发育日龄。",
+      "recommended_scope": "general_scientific_illustration",
+      "scientific_detail_validation": "not_independently_verified",
+      "native_editability_tested": false
+    },
+    {
+      "tile": 24,
+      "id": "scidraw-b0b6b00c6e226f12761d",
+      "title": "Rat from the top",
+      "source_id": "67f4c207-e185-4155-b76b-fedf82b087fd",
+      "source_url": "https://scidraw.io/drawing/rat-from-the-top-e32a5181",
+      "original_sha256": "ceebfef22c63c9cea9cbbe4bb63bda8ba606b209aaf342795adf8686a4f5d793",
+      "preview_sha256": "ca760d94671a72e503d38e7719783b3199957f497f84c579fc7877ecdc3f3e62",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scidraw-42235890704-1-b0000.tar.gz",
+        "member": "files/ce/ceebfef22c63c9cea9cbbe4bb63bda8ba606b209aaf342795adf8686a4f5d793.svg"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scidraw-42235890704-1-b0000.tar.gz",
+        "member": "previews/ceebfef22c63c9cea9cbbe4bb63bda8ba606b209aaf342795adf8686a4f5d793.png"
+      },
+      "visual_verdict": "usable_as_general_illustration",
+      "observations": "大鼠俯视轮廓及背部配色清楚，可用于实验姿态示意；具体品系未核验。",
+      "recommended_scope": "general_scientific_illustration",
+      "scientific_detail_validation": "not_independently_verified",
+      "native_editability_tested": false
+    },
+    {
+      "tile": 25,
+      "id": "scidraw-ad423b91bd937996fbd7",
+      "title": "Perfusion",
+      "source_id": "117dd1d9-f901-4b93-9d91-cfd5930964b6",
+      "source_url": "https://scidraw.io/drawing/perfusion-03c10284",
+      "original_sha256": "50701baf46ba1d49781e642d718acbffd21e7080f3e99e3d8b555dc6f4c2f263",
+      "preview_sha256": "ee5ca594948ce338813d3e119f3ac3a88e71d5f18f7bbf72ffac296dc6424cd4",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scidraw-42235890704-1-b0000.tar.gz",
+        "member": "files/50/50701baf46ba1d49781e642d718acbffd21e7080f3e99e3d8b555dc6f4c2f263.svg"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scidraw-42235890704-1-b0000.tar.gz",
+        "member": "previews/50701baf46ba1d49781e642d718acbffd21e7080f3e99e3d8b555dc6f4c2f263.png"
+      },
+      "visual_verdict": "usable_as_symbol",
+      "observations": "渐变管状结构和流线可辨，可作灌流方向概念符号；单图缺少装置连接和单位，不代表真实灌流参数。",
+      "recommended_scope": "symbol_and_workflow",
+      "scientific_detail_validation": "not_independently_verified",
+      "native_editability_tested": false
+    },
+    {
+      "tile": 26,
+      "id": "scidraw-f1fcc2c861edfc15e55b",
+      "title": "Hair Cell",
+      "source_id": "cf98e34c-a0e2-4728-bbcc-101149863e3f",
+      "source_url": "https://scidraw.io/drawing/hair-cell-cf68c24f",
+      "original_sha256": "862bb05a4d8f91082b0e52223cca5cb70b464498cdb511ca4d49db6e775a7932",
+      "preview_sha256": "a4087684cf9bde7406d94ffce2551440518e91959e1ed32da65164d136c01855",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scidraw-42235890704-1-b0000.tar.gz",
+        "member": "files/86/862bb05a4d8f91082b0e52223cca5cb70b464498cdb511ca4d49db6e775a7932.svg"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scidraw-42235890704-1-b0000.tar.gz",
+        "member": "previews/862bb05a4d8f91082b0e52223cca5cb70b464498cdb511ca4d49db6e775a7932.png"
+      },
+      "visual_verdict": "usable_as_general_illustration",
+      "observations": "带毛束的细长细胞为清晰插画，适合毛细胞概览；毛束排列和器官定位未核验。",
+      "recommended_scope": "general_scientific_illustration",
+      "scientific_detail_validation": "not_independently_verified",
+      "native_editability_tested": false
+    },
+    {
+      "tile": 27,
+      "id": "scidraw-c18b33f3b0f671df1eb4",
+      "title": "syringe",
+      "source_id": "14f503fb-aec8-4760-8cf3-09f6ccedb7c1",
+      "source_url": "https://scidraw.io/drawing/syringe-34dc24e3",
+      "original_sha256": "fb9a044a15b0eb3374f4a08eb42ecb7801be3b64e735b86f79b3f14e2dbe0935",
+      "preview_sha256": "0f5dd673bfb4133bcf9c73ad0115d8acd0d7f3d74e83b454652d548888e97cc2",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scidraw-42235890704-1-b0000.tar.gz",
+        "member": "files/fb/fb9a044a15b0eb3374f4a08eb42ecb7801be3b64e735b86f79b3f14e2dbe0935.svg"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scidraw-42235890704-1-b0000.tar.gz",
+        "member": "previews/fb9a044a15b0eb3374f4a08eb42ecb7801be3b64e735b86f79b3f14e2dbe0935.png"
+      },
+      "visual_verdict": "usable_as_general_illustration",
+      "observations": "注射器筒体、活塞和针头清楚，可作实验或临床流程组件；刻度和具体规格不作计量依据。",
+      "recommended_scope": "general_scientific_illustration",
+      "scientific_detail_validation": "not_independently_verified",
+      "native_editability_tested": false
+    },
+    {
+      "tile": 28,
+      "id": "scidraw-12f78df9e99cc785c1fb",
+      "title": "Rat pup P1",
+      "source_id": "c902d772-c280-42d2-b128-330fbae74e6a",
+      "source_url": "https://scidraw.io/drawing/rat-pup-p1-ea617811",
+      "original_sha256": "f271cafe7d288cf5241e0c63be8e6fb252bc0a3b68a638c5ec6478db49fd5290",
+      "preview_sha256": "3436f2639c984fcbc42028762a227ccf5e0bcee2e80eb7201c9017900235a0a8",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scidraw-42235890704-1-b0000.tar.gz",
+        "member": "files/f2/f271cafe7d288cf5241e0c63be8e6fb252bc0a3b68a638c5ec6478db49fd5290.svg"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scidraw-42235890704-1-b0000.tar.gz",
+        "member": "previews/f271cafe7d288cf5241e0c63be8e6fb252bc0a3b68a638c5ec6478db49fd5290.png"
+      },
+      "visual_verdict": "usable_as_general_illustration",
+      "observations": "幼鼠粉色身体、闭眼和肢尾为清晰绘图，可作新生鼠示意；P1标签未独立用形态确认。",
+      "recommended_scope": "general_scientific_illustration",
+      "scientific_detail_validation": "not_independently_verified",
+      "native_editability_tested": false
+    },
+    {
+      "tile": 29,
+      "id": "scidraw-37a27f59e8f02c550b68",
+      "title": "obese mouse eating",
+      "source_id": "95747238-b4be-465d-851e-eb4df0d23d9c",
+      "source_url": "https://scidraw.io/drawing/obese-mouse-eating-cbf7a31d",
+      "original_sha256": "c21bf634ed009a8a1d9e756979313fd29bd21c15a2a781cbdb9d9950c543e474",
+      "preview_sha256": "7c64bd70118067e16fcc446aa7440f0e2f701008b4594cfb1d353a006d106f9e",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scidraw-42235890704-1-b0000.tar.gz",
+        "member": "files/c2/c21bf634ed009a8a1d9e756979313fd29bd21c15a2a781cbdb9d9950c543e474.svg"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scidraw-42235890704-1-b0000.tar.gz",
+        "member": "previews/c21bf634ed009a8a1d9e756979313fd29bd21c15a2a781cbdb9d9950c543e474.png"
+      },
+      "visual_verdict": "usable_as_general_illustration",
+      "observations": "圆胖小鼠进食姿势和食物可辨，可作进食或肥胖主题概览；不能把画中体型当作诊断或体重结果。",
+      "recommended_scope": "general_scientific_illustration",
+      "scientific_detail_validation": "not_independently_verified",
+      "native_editability_tested": false
+    },
+    {
+      "tile": 30,
+      "id": "scidraw-86885d9604df8ff23c6e",
+      "title": "Zebrafish retina (adult)",
+      "source_id": "27df5ffe-4f13-4dc2-acc2-14660d712f07",
+      "source_url": "https://scidraw.io/drawing/zebrafish-retina-adult-cf474837",
+      "original_sha256": "6bbc16be73b2e463f40f6370a35d526d2497438005a8010effae789c26801c66",
+      "preview_sha256": "e0f5c2e6bfc27b51e2df7ca58ed71b266f2db8d0f6ce8c79018a4d833b7c61a9",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scidraw-42235890704-1-b0000.tar.gz",
+        "member": "files/6b/6bbc16be73b2e463f40f6370a35d526d2497438005a8010effae789c26801c66.svg"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scidraw-42235890704-1-b0000.tar.gz",
+        "member": "previews/6bbc16be73b2e463f40f6370a35d526d2497438005a8010effae789c26801c66.png"
+      },
+      "visual_verdict": "usable_as_general_illustration",
+      "observations": "鱼体标识及视网膜细胞分层为绘制示意，不是实拍显微图。联系表尺度下文字和细胞连接过细，精细机制使用前需看大图核对。",
+      "recommended_scope": "general_scientific_illustration",
+      "scientific_detail_validation": "not_independently_verified",
+      "native_editability_tested": false
+    }
+  ],
+  "scope_investigation": {
+    "em_slices": [
+      {
+        "id": "scidraw-9a16f62a4902a5830b29",
+        "source_id": "1ea14b1d-f203-41f8-a976-d2dc88f3a50a",
+        "source_url": "https://scidraw.io/drawing/em-slice-f8990ac6",
+        "original_sha256": "9c1fa3821b6aa09fabb31bca45f279cb50f325d75cf63ef326779d68a32ddd69",
+        "preview_sha256": "51d1e8dacb8f594e51b7f545ffac64df58115e16ba7216cce943136e27b43756",
+        "official_api_url": "https://scidraw.io/api/v1/drawings/em-slice-f8990ac6/",
+        "official_api_response_sha256": "6ed32b50b19e776ac9dc67063a0d17d3c145503e56235917535f00655b9e0ade",
+        "official_api_description_present": false,
+        "official_category_description": "",
+        "doi": "10.5281/zenodo.4421149",
+        "actual_structure": "pure_vector",
+        "path_count": 484,
+        "embedded_images": 0,
+        "visual_inspected_in_this_sample": true,
+        "scope_verdict": "pending_source_scope",
+        "reason": "Pure vector structure is established, but source metadata does not establish whether the artwork is an independent schematic or traced microscopy. Do not label this as a direct micrograph or accept it as general illustration without scope review."
+      },
+      {
+        "id": "scidraw-1f2ef8a0504986a12813",
+        "source_id": "1ded1227-3bc5-418d-8e72-507f28b6284c",
+        "source_url": "https://scidraw.io/drawing/em-slice-9e873298",
+        "original_sha256": "ae0e488a7b61f5896f6de4cf48911deec6f9d48852d871b97c10704746e10730",
+        "preview_sha256": "f324e87c936319099bf1ef63bef60d0e7366cf21e81bfa9d509377359cee1256",
+        "official_api_url": "https://scidraw.io/api/v1/drawings/em-slice-9e873298/",
+        "official_api_response_sha256": "9528c5cf397500893c08b99443ea7a0849bb9af0a3b2449c665980219f53b864",
+        "official_api_description_present": false,
+        "official_category_description": "",
+        "doi": "10.5281/zenodo.4421137",
+        "actual_structure": "pure_vector",
+        "path_count": 515,
+        "embedded_images": 0,
+        "visual_inspected_in_this_sample": false,
+        "scope_verdict": "pending_source_scope",
+        "reason": "Pure vector structure is established, but source metadata does not establish whether the artwork is an independent schematic or traced microscopy. Do not label this as a direct micrograph or accept it as general illustration without scope review."
+      },
+      {
+        "id": "scidraw-916af2eca0b14ba4c8fb",
+        "source_id": "7d1ae4c9-e65e-4163-9805-45a73de056c5",
+        "source_url": "https://scidraw.io/drawing/em-slice-657ed890",
+        "original_sha256": "e9621d38093bc23f2d835160dc9458d4539ab925be118692b888a5393e88544c",
+        "preview_sha256": "88b394199f23a862d7e0db0289c0b0a1362cfc7cb991a4132701c5b914aeb9c8",
+        "official_api_url": "https://scidraw.io/api/v1/drawings/em-slice-657ed890/",
+        "official_api_response_sha256": "4c16a5234cff861a7bc94791f6181de1e5c8715702884ec4428ad72ace1d4d5b",
+        "official_api_description_present": false,
+        "official_category_description": "",
+        "doi": "10.5281/zenodo.4421145",
+        "actual_structure": "pure_vector",
+        "path_count": 565,
+        "embedded_images": 0,
+        "visual_inspected_in_this_sample": false,
+        "scope_verdict": "pending_source_scope",
+        "reason": "Pure vector structure is established, but source metadata does not establish whether the artwork is an independent schematic or traced microscopy. Do not label this as a direct micrograph or accept it as general illustration without scope review."
+      },
+      {
+        "id": "scidraw-cd2eec82d607e0779fc6",
+        "source_id": "9688e9b3-ba99-4e55-93d9-eaa06366df58",
+        "source_url": "https://scidraw.io/drawing/em-slice-679de801",
+        "original_sha256": "ef8cef4216f84c634b9699ef934eb9b316396ec73f0560d0997137e6f950dba6",
+        "preview_sha256": "0fd52af2b4ff0e34b9402164cec30a09bc54f8bf5992ccf48497649e63b5e5f5",
+        "official_api_url": "https://scidraw.io/api/v1/drawings/em-slice-679de801/",
+        "official_api_response_sha256": "16fc89bb55c1f13d382993de95bf340f20f8081edfa079419c6f69d9dee572e9",
+        "official_api_description_present": false,
+        "official_category_description": "",
+        "doi": "10.5281/zenodo.4421141",
+        "actual_structure": "pure_vector",
+        "path_count": 598,
+        "embedded_images": 0,
+        "visual_inspected_in_this_sample": false,
+        "scope_verdict": "pending_source_scope",
+        "reason": "Pure vector structure is established, but source metadata does not establish whether the artwork is an independent schematic or traced microscopy. Do not label this as a direct micrograph or accept it as general illustration without scope review."
+      }
+    ],
+    "zenodo_evidence": {
+      "url": "https://zenodo.org/api/records/4421149",
+      "metadata_description": "SciDraw upload",
+      "resource_type": "Drawing",
+      "response_sha256": "950c64ba0140be7eeed98b2d43890f5f2a38014d7cdc70dd66876a2e331c605c",
+      "limitation": "The generic drawing type and description do not explain the artwork generation process."
+    },
+    "additional_metadata_only_flag": {
+      "id": "scidraw-6e2c35bb513674adabbf",
+      "source_url": "https://scidraw.io/drawing/cyber-criminal-triangle-modal-6688b840",
+      "official_api_url": "https://scidraw.io/api/v1/drawings/cyber-criminal-triangle-modal-6688b840/",
+      "title": "cyber criminal triangle modal",
+      "visual_inspected": false,
+      "recommendation": "Review for non-medical/non-biological scope before publishing; no visual verdict assigned."
+    }
+  },
+  "failure_audit": {
+    "failure_record_count": 35,
+    "by_message": {
+      "SVG loads an external or unsupported resource via license/resource": 3,
+      "SVG entity declaration is not allowed": 27,
+      "SVG loads an external or unsupported resource via image/href": 2,
+      "SVG XML could not be safely parsed: junk after document element: line 289, column 6": 1,
+      "SVG XML could not be safely parsed: not well-formed (invalid token): line 9, column 6": 1,
+      "SVG contains unsupported active element: foreignobject": 1
+    },
+    "preview_failed_records": [
+      {
+        "id": "scidraw-41062f2822dd0acc2897",
+        "source_id": "4ac6a744-08db-4f7e-a71e-6d3f199e0b39",
+        "title": "DNA",
+        "source_url": "https://scidraw.io/drawing/dna-4461dd7d",
+        "original_sha256": "f3097e6230478dfae5be24d5d6cd21e0e90f7935a7ea5b5d583457dd89f993fc",
+        "validation": {
+          "status": "preview_failed",
+          "findings": [
+            "Contains live text; appearance can depend on installed fonts",
+            "Preview renderer failed: ValueError: could not convert string to float: 'null'"
+          ],
+          "scientific_review": "not_reviewed",
+          "visual_review": "not_reviewed",
+          "illustrator_editability": "not_tested"
+        }
+      }
+    ],
+    "assigned_follow_up": "ingestion_adapters agent received exact metadata paths and failure examples; no media code changed in this review."
+  }
+}

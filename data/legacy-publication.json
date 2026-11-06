@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "published_at": "2026-11-06",
+  "release_tag": "collection-20261106",
+  "scope": "Five previously validated components only; no private GA crops",
+  "archive": {
+    "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/legacy-illustrator-five-20261106.tar.gz",
+    "size_bytes": 818596,
+    "sha256": "c9311f2f0593c4634da51f91c68e65ae77c5da7433051e2b8836c18e8e75e465"
+  },
+  "manifest": {
+    "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/legacy-illustrator-five-20261106.manifest.json",
+    "size_bytes": 24832,
+    "sha256": "d7e9e2c361ca50e569f5804e56b5216bc6585dfc5a9bf54710e4ca4dc9e01121"
+  },
+  "verification": {
+    "original_file_count": 10,
+    "original_bytes": 1018041,
+    "original_sha256_rechecked": true,
+    "archive_members_verified": true,
+    "github_remote_digests_match": true,
+    "new_native_tests_performed": false,
+    "historical_evidence": "data/legacy-illustrator-verification.json"
+  }
+}
