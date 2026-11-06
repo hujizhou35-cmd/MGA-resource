@@ -1,0 +1,32 @@
+{
+  "binding_passed": true,
+  "errors": [],
+  "distinct_originals": 48,
+  "distinct_families": 48,
+  "category_counts": {
+    "animals": 5,
+    "people": 5,
+    "organs": 5,
+    "tissues_vessels": 5,
+    "cells": 5,
+    "organelles": 4,
+    "molecules": 5,
+    "microbes": 5,
+    "lab_equipment": 5,
+    "experimental_actions": 4,
+    "clinical_workflow": 0,
+    "omics_data": 0
+  },
+  "missing_to_five": {
+    "organelles": 1,
+    "experimental_actions": 1,
+    "clinical_workflow": 5,
+    "omics_data": 5
+  },
+  "full_curated_coverage_requirement_passed": false,
+  "full_release_acceptance_claimed": false,
+  "note": "Binding checks validate recorded evidence only. They do not manufacture visual review, native editing, overlay/composition or scientific accuracy acceptance.",
+  "review_sha256": "32011683c6259d0221e39ac5e6748dc460d451d91ec0af74d6851d8dba1ed78c",
+  "manifest_sha256": "a4fe0424ee8ecc32096090ef295242bdaa04b9ce29ff4f7a80948c95516d5436",
+  "catalog_sha256": "5c90306415ce5e7f36e875c7f57b19a91930aacfeeaeecdf9ad7662770f9a3fe"
+}
