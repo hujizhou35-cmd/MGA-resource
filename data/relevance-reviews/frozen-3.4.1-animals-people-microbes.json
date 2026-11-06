@@ -21402,5 +21402,6 @@
     "Simple geometry and a complete phage-adsorption sequence remain uncertainties in this review. Public scope, source metadata and ranking were not changed.",
     "Exact source/license/acquisition metadata was checked and cited. No actual clinical identity, precise age/strain, variant, Gram staining property, quantitative anatomical scale, or native-editing capability is established by a contact-sheet image.",
     "An attempted live check of two Togo DOI pages was unavailable through the web tool; no live-source validation is claimed. Frozen file-specific source records and actual image content remain the stated evidence."
-  ]
+  ],
+  "independent_from_metadata_matcher": true
 }
