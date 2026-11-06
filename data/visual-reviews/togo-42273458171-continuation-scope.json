@@ -1,0 +1,1007 @@
+{
+  "schema_version": 1,
+  "reviewed_at": "2026-11-06T19:23:01.652577+00:00",
+  "review_method": "Actual visual inspection of every displayed contact-sheet tile by the named reviewer. Hash-bound mapping expands only same-record identical full RGBA into sibling file observations. Keywords nominated candidates only.",
+  "review_limits": [
+    "A visual component-scope decision is not species/anatomical correctness, Illustrator verification, editability, or license clearance.",
+    "Complete multi-stage mechanism and chart/icon boundaries remain pending while the user clarification is outstanding.",
+    "Original source bytes were not altered or downloaded locally for this review.",
+    "Pending judgments do not assert photographic origin, corrupt source data, or actual paper measurements."
+  ],
+  "scope_acceptance_passed": false,
+  "source": "togo",
+  "collection_prefix": "togo-42261598057-1",
+  "review_packs": [
+    {
+      "prefix": "scope-review-42273458171-1",
+      "pack": {
+        "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scope-review-42273458171-1.tar.gz",
+        "sha256": "e223bdf25c78bfd14288bc1ffcd8390bfa0f128ca5a69775a3f9c102cd344a9b",
+        "size_bytes": 418196
+      },
+      "mapping_sha256": "787e2a41b99ea7064020b8f6b474fe1bd01901c91ca6ff9e47c11129b79bc050",
+      "reviewed_tile_count": 16,
+      "file_count": 16,
+      "sheets": [
+        {
+          "filename": "scope-01.png",
+          "sha256": "172689a813fb94b3c952af843e1f06a658a7bfb3e78724bfb2cf1fc2a7ad2486",
+          "size_bytes": 419763,
+          "width": 1500,
+          "height": 1095,
+          "tile_ids": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16
+          ]
+        }
+      ],
+      "bindings": null,
+      "nomination_report": null,
+      "raw_judgments_sha256": {
+        "media-togo-second-judgments.json": "d4044abf76f5285befeda8ccc4ec8b8ef03e3d560983b82a3217a4997295d95c"
+      }
+    }
+  ],
+  "summary": {
+    "reviewed_files": 16,
+    "reviewed_tiles": 16,
+    "sheets": 1,
+    "whole_togo_scope_complete": false,
+    "judgment_counts": {
+      "scope_pending": 8,
+      "in_scope": 8
+    }
+  },
+  "items": [
+    {
+      "candidate_id": "2db990d4d6afe7db87961b33521131a0008faffb9242f6e35a74313960626656",
+      "tile": 1,
+      "review_pack": "scope-review-42273458171-1",
+      "source": "togo",
+      "source_id": "1551",
+      "id": "togo-3d070858a5011a11e9b6",
+      "title": "String pull task before cooperation",
+      "source_url": "https://doi.org/10.7875/togopic.2022.587",
+      "original_sha256": "055043601444a64ab94698cdfbe333752d53733d806ce076657786e6f3fbb772",
+      "sha256": "055043601444a64ab94698cdfbe333752d53733d806ce076657786e6f3fbb772",
+      "preview_sha256": "efb31e41a5897ff679da533c0c4adcd9f5baf683264333fca7bf10ec4c6cfa69",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42261598057-1-b0000.tar.gz",
+        "member": "files/05/055043601444a64ab94698cdfbe333752d53733d806ce076657786e6f3fbb772.png"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42261598057-1-b0000.tar.gz",
+        "member": "previews/055043601444a64ab94698cdfbe333752d53733d806ce076657786e6f3fbb772.png"
+      },
+      "format": "png",
+      "structure": "raster",
+      "selection_reason": "raster_embedded_or_mixed_record_and_sibling_formats",
+      "full_preview_rgba_sha256": "3ac04d56e21fefa7b5b5c722b7532927e61cf7f0fa5a04d5422a0a347235c853",
+      "scope_verdict": "scope_pending",
+      "observations": "Bird behavioral apparatus is rendered/drawn, but the birds have highly textured feather cutouts; the small preview cannot establish photographic origin versus rendering. Do not call all PNG photographs.",
+      "reason": "Bird behavioral apparatus is rendered/drawn, but the birds have highly textured feather cutouts; the small preview cannot establish photographic origin versus rendering. Do not call all PNG photographs.",
+      "reviewed_by": "Codex media_catalog; actual inspection of all 16 tiles in the single contact sheet",
+      "reviewed_at": "2026-11-06T19:23:01.652577+00:00",
+      "review_history": [
+        {
+          "verdict": "scope_pending",
+          "observations": "Bird behavioral apparatus is rendered/drawn, but the birds have highly textured feather cutouts; the small preview cannot establish photographic origin versus rendering. Do not call all PNG photographs.",
+          "reviewed_by": "Codex media_catalog; actual inspection of all 16 tiles in the single contact sheet",
+          "reviewed_at": "2026-11-06T19:23:01.652577+00:00"
+        }
+      ],
+      "evidence": [
+        {
+          "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scope-review-42273458171-1.tar.gz",
+          "sha256": "e223bdf25c78bfd14288bc1ffcd8390bfa0f128ca5a69775a3f9c102cd344a9b",
+          "member": "scope-01.png",
+          "member_sha256": "172689a813fb94b3c952af843e1f06a658a7bfb3e78724bfb2cf1fc2a7ad2486"
+        }
+      ],
+      "native_editability_tested": false,
+      "scientific_detail_validation": "not_independently_verified",
+      "text_content": {
+        "status": "unknown",
+        "kinds": [],
+        "cleanup_advice": "unknown",
+        "basis": "not_independently_assessed",
+        "evidence": [],
+        "editable_text": "unknown"
+      },
+      "scope_status": "scope_pending",
+      "visual_verdict": "scope_pending",
+      "photographic_provenance_independently_verified": false
+    },
+    {
+      "candidate_id": "ba3cbe1063c82eac5fe1f96c942eb99566fb8af352b7442a484296b136f1f9bf",
+      "tile": 2,
+      "review_pack": "scope-review-42273458171-1",
+      "source": "togo",
+      "source_id": "1551",
+      "id": "togo-3d070858a5011a11e9b6",
+      "title": "String pull task before cooperation",
+      "source_url": "https://doi.org/10.7875/togopic.2022.587",
+      "original_sha256": "35b9e351a9ffe83e15d9c833c58625436535815bc416900ccdf43626bd98d8b8",
+      "sha256": "35b9e351a9ffe83e15d9c833c58625436535815bc416900ccdf43626bd98d8b8",
+      "preview_sha256": "0e56d5e78f269158340cf09cbdaddbd01da6c2ecbbd91e7fcfd3d9e3576823ef",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42261598057-1-b0000.tar.gz",
+        "member": "files/35/35b9e351a9ffe83e15d9c833c58625436535815bc416900ccdf43626bd98d8b8.svg"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42261598057-1-b0000.tar.gz",
+        "member": "previews/35b9e351a9ffe83e15d9c833c58625436535815bc416900ccdf43626bd98d8b8.png"
+      },
+      "format": "svg",
+      "structure": "embedded_raster",
+      "selection_reason": "raster_embedded_or_mixed_record_and_sibling_formats",
+      "full_preview_rgba_sha256": "ed7a62cbf521028807f2c43ab618eb8945c6e689d064b4df3f89efde1e9fed3b",
+      "scope_verdict": "scope_pending",
+      "observations": "Bird behavioral apparatus is rendered/drawn, but the birds have highly textured feather cutouts; the small preview cannot establish photographic origin versus rendering. Do not call all PNG photographs.",
+      "reason": "Bird behavioral apparatus is rendered/drawn, but the birds have highly textured feather cutouts; the small preview cannot establish photographic origin versus rendering. Do not call all PNG photographs.",
+      "reviewed_by": "Codex media_catalog; actual inspection of all 16 tiles in the single contact sheet",
+      "reviewed_at": "2026-11-06T19:23:01.652577+00:00",
+      "review_history": [
+        {
+          "verdict": "scope_pending",
+          "observations": "Bird behavioral apparatus is rendered/drawn, but the birds have highly textured feather cutouts; the small preview cannot establish photographic origin versus rendering. Do not call all PNG photographs.",
+          "reviewed_by": "Codex media_catalog; actual inspection of all 16 tiles in the single contact sheet",
+          "reviewed_at": "2026-11-06T19:23:01.652577+00:00"
+        }
+      ],
+      "evidence": [
+        {
+          "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scope-review-42273458171-1.tar.gz",
+          "sha256": "e223bdf25c78bfd14288bc1ffcd8390bfa0f128ca5a69775a3f9c102cd344a9b",
+          "member": "scope-01.png",
+          "member_sha256": "172689a813fb94b3c952af843e1f06a658a7bfb3e78724bfb2cf1fc2a7ad2486"
+        }
+      ],
+      "native_editability_tested": false,
+      "scientific_detail_validation": "not_independently_verified",
+      "text_content": {
+        "status": "unknown",
+        "kinds": [],
+        "cleanup_advice": "unknown",
+        "basis": "not_independently_assessed",
+        "evidence": [],
+        "editable_text": "unknown"
+      },
+      "scope_status": "scope_pending",
+      "visual_verdict": "scope_pending",
+      "photographic_provenance_independently_verified": false
+    },
+    {
+      "candidate_id": "371711db7e151f4c0a9e7814ebc81def5c40aebbbfda8f6ddacb856680585e11",
+      "tile": 3,
+      "review_pack": "scope-review-42273458171-1",
+      "source": "togo",
+      "source_id": "1552",
+      "id": "togo-e93daee9a568350e25a1",
+      "title": "String pull task cooperation success",
+      "source_url": "https://doi.org/10.7875/togopic.2022.588",
+      "original_sha256": "cdd4af96a75b1512bfb2d8698b2dec86fec93c977e1e673f9ae6c59bb225f597",
+      "sha256": "cdd4af96a75b1512bfb2d8698b2dec86fec93c977e1e673f9ae6c59bb225f597",
+      "preview_sha256": "ab3e1e5dd9e939713f3e95b968bdd141395f43f92548f84ee8514693e16d020e",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42261598057-1-b0000.tar.gz",
+        "member": "files/cd/cdd4af96a75b1512bfb2d8698b2dec86fec93c977e1e673f9ae6c59bb225f597.png"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42261598057-1-b0000.tar.gz",
+        "member": "previews/cdd4af96a75b1512bfb2d8698b2dec86fec93c977e1e673f9ae6c59bb225f597.png"
+      },
+      "format": "png",
+      "structure": "raster",
+      "selection_reason": "raster_embedded_or_mixed_record_and_sibling_formats",
+      "full_preview_rgba_sha256": "292c34c2ac8df896b86a495609cdcda6cc0bb87ad9825d6cf2aa65fb13fc48fd",
+      "scope_verdict": "scope_pending",
+      "observations": "Bird behavioral apparatus is rendered/drawn, but the birds have highly textured feather cutouts; the small preview cannot establish photographic origin versus rendering. Do not call all PNG photographs.",
+      "reason": "Bird behavioral apparatus is rendered/drawn, but the birds have highly textured feather cutouts; the small preview cannot establish photographic origin versus rendering. Do not call all PNG photographs.",
+      "reviewed_by": "Codex media_catalog; actual inspection of all 16 tiles in the single contact sheet",
+      "reviewed_at": "2026-11-06T19:23:01.652577+00:00",
+      "review_history": [
+        {
+          "verdict": "scope_pending",
+          "observations": "Bird behavioral apparatus is rendered/drawn, but the birds have highly textured feather cutouts; the small preview cannot establish photographic origin versus rendering. Do not call all PNG photographs.",
+          "reviewed_by": "Codex media_catalog; actual inspection of all 16 tiles in the single contact sheet",
+          "reviewed_at": "2026-11-06T19:23:01.652577+00:00"
+        }
+      ],
+      "evidence": [
+        {
+          "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scope-review-42273458171-1.tar.gz",
+          "sha256": "e223bdf25c78bfd14288bc1ffcd8390bfa0f128ca5a69775a3f9c102cd344a9b",
+          "member": "scope-01.png",
+          "member_sha256": "172689a813fb94b3c952af843e1f06a658a7bfb3e78724bfb2cf1fc2a7ad2486"
+        }
+      ],
+      "native_editability_tested": false,
+      "scientific_detail_validation": "not_independently_verified",
+      "text_content": {
+        "status": "unknown",
+        "kinds": [],
+        "cleanup_advice": "unknown",
+        "basis": "not_independently_assessed",
+        "evidence": [],
+        "editable_text": "unknown"
+      },
+      "scope_status": "scope_pending",
+      "visual_verdict": "scope_pending",
+      "photographic_provenance_independently_verified": false
+    },
+    {
+      "candidate_id": "76959e88cb2547c3ad744dba260dec38c334d37849feab93923b46f9b8790e45",
+      "tile": 4,
+      "review_pack": "scope-review-42273458171-1",
+      "source": "togo",
+      "source_id": "1552",
+      "id": "togo-e93daee9a568350e25a1",
+      "title": "String pull task cooperation success",
+      "source_url": "https://doi.org/10.7875/togopic.2022.588",
+      "original_sha256": "ed29444e142db42c9a5773ee76ac7ac656b4d1e58763e27710665e881c3c3ec8",
+      "sha256": "ed29444e142db42c9a5773ee76ac7ac656b4d1e58763e27710665e881c3c3ec8",
+      "preview_sha256": "fcf3b49de587c388fb3cdd3724e559d2f1745ab9e3684e63b0d99245463e24a0",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42261598057-1-b0000.tar.gz",
+        "member": "files/ed/ed29444e142db42c9a5773ee76ac7ac656b4d1e58763e27710665e881c3c3ec8.svg"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42261598057-1-b0000.tar.gz",
+        "member": "previews/ed29444e142db42c9a5773ee76ac7ac656b4d1e58763e27710665e881c3c3ec8.png"
+      },
+      "format": "svg",
+      "structure": "embedded_raster",
+      "selection_reason": "raster_embedded_or_mixed_record_and_sibling_formats",
+      "full_preview_rgba_sha256": "f7f361a8c55c7d413a685fae1654dbcc95123ca238078a906d2fb39a9885416a",
+      "scope_verdict": "scope_pending",
+      "observations": "Bird behavioral apparatus is rendered/drawn, but the birds have highly textured feather cutouts; the small preview cannot establish photographic origin versus rendering. Do not call all PNG photographs.",
+      "reason": "Bird behavioral apparatus is rendered/drawn, but the birds have highly textured feather cutouts; the small preview cannot establish photographic origin versus rendering. Do not call all PNG photographs.",
+      "reviewed_by": "Codex media_catalog; actual inspection of all 16 tiles in the single contact sheet",
+      "reviewed_at": "2026-11-06T19:23:01.652577+00:00",
+      "review_history": [
+        {
+          "verdict": "scope_pending",
+          "observations": "Bird behavioral apparatus is rendered/drawn, but the birds have highly textured feather cutouts; the small preview cannot establish photographic origin versus rendering. Do not call all PNG photographs.",
+          "reviewed_by": "Codex media_catalog; actual inspection of all 16 tiles in the single contact sheet",
+          "reviewed_at": "2026-11-06T19:23:01.652577+00:00"
+        }
+      ],
+      "evidence": [
+        {
+          "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scope-review-42273458171-1.tar.gz",
+          "sha256": "e223bdf25c78bfd14288bc1ffcd8390bfa0f128ca5a69775a3f9c102cd344a9b",
+          "member": "scope-01.png",
+          "member_sha256": "172689a813fb94b3c952af843e1f06a658a7bfb3e78724bfb2cf1fc2a7ad2486"
+        }
+      ],
+      "native_editability_tested": false,
+      "scientific_detail_validation": "not_independently_verified",
+      "text_content": {
+        "status": "unknown",
+        "kinds": [],
+        "cleanup_advice": "unknown",
+        "basis": "not_independently_assessed",
+        "evidence": [],
+        "editable_text": "unknown"
+      },
+      "scope_status": "scope_pending",
+      "visual_verdict": "scope_pending",
+      "photographic_provenance_independently_verified": false
+    },
+    {
+      "candidate_id": "8018918fed6c57776d76ec00b165a6b8f5841e5a7bbc87a6a2fbfe06e1dca827",
+      "tile": 5,
+      "review_pack": "scope-review-42273458171-1",
+      "source": "togo",
+      "source_id": "1553",
+      "id": "togo-244e9e6e22dac8229d98",
+      "title": "String pull task cooperation failure",
+      "source_url": "https://doi.org/10.7875/togopic.2022.589",
+      "original_sha256": "22adaa90b5ad101238352b244ccaa04e012371262f10e8f49dc954c084384917",
+      "sha256": "22adaa90b5ad101238352b244ccaa04e012371262f10e8f49dc954c084384917",
+      "preview_sha256": "37512624283cac339294b1a48b1200b5e78cce169276faf9ffe20440cca43ba6",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42261598057-1-b0000.tar.gz",
+        "member": "files/22/22adaa90b5ad101238352b244ccaa04e012371262f10e8f49dc954c084384917.svg"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42261598057-1-b0000.tar.gz",
+        "member": "previews/22adaa90b5ad101238352b244ccaa04e012371262f10e8f49dc954c084384917.png"
+      },
+      "format": "svg",
+      "structure": "embedded_raster",
+      "selection_reason": "raster_embedded_or_mixed_record_and_sibling_formats",
+      "full_preview_rgba_sha256": "68e4eabaae5b79da589e47ee9adc10ad40e4c5de516254391ae814962b093ab5",
+      "scope_verdict": "scope_pending",
+      "observations": "Bird behavioral apparatus is rendered/drawn, but the birds have highly textured feather cutouts; the small preview cannot establish photographic origin versus rendering. Do not call all PNG photographs.",
+      "reason": "Bird behavioral apparatus is rendered/drawn, but the birds have highly textured feather cutouts; the small preview cannot establish photographic origin versus rendering. Do not call all PNG photographs.",
+      "reviewed_by": "Codex media_catalog; actual inspection of all 16 tiles in the single contact sheet",
+      "reviewed_at": "2026-11-06T19:23:01.652577+00:00",
+      "review_history": [
+        {
+          "verdict": "scope_pending",
+          "observations": "Bird behavioral apparatus is rendered/drawn, but the birds have highly textured feather cutouts; the small preview cannot establish photographic origin versus rendering. Do not call all PNG photographs.",
+          "reviewed_by": "Codex media_catalog; actual inspection of all 16 tiles in the single contact sheet",
+          "reviewed_at": "2026-11-06T19:23:01.652577+00:00"
+        }
+      ],
+      "evidence": [
+        {
+          "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scope-review-42273458171-1.tar.gz",
+          "sha256": "e223bdf25c78bfd14288bc1ffcd8390bfa0f128ca5a69775a3f9c102cd344a9b",
+          "member": "scope-01.png",
+          "member_sha256": "172689a813fb94b3c952af843e1f06a658a7bfb3e78724bfb2cf1fc2a7ad2486"
+        }
+      ],
+      "native_editability_tested": false,
+      "scientific_detail_validation": "not_independently_verified",
+      "text_content": {
+        "status": "unknown",
+        "kinds": [],
+        "cleanup_advice": "unknown",
+        "basis": "not_independently_assessed",
+        "evidence": [],
+        "editable_text": "unknown"
+      },
+      "scope_status": "scope_pending",
+      "visual_verdict": "scope_pending",
+      "photographic_provenance_independently_verified": false
+    },
+    {
+      "candidate_id": "00fbea0fc3ec4d7faa95e000b16bb5d82afc529435ce83868c63ed9bad729bc9",
+      "tile": 6,
+      "review_pack": "scope-review-42273458171-1",
+      "source": "togo",
+      "source_id": "1553",
+      "id": "togo-244e9e6e22dac8229d98",
+      "title": "String pull task cooperation failure",
+      "source_url": "https://doi.org/10.7875/togopic.2022.589",
+      "original_sha256": "6b4162f50294f5072d78c039d6730c55eed2a1bb60882cebf8c32561100c5756",
+      "sha256": "6b4162f50294f5072d78c039d6730c55eed2a1bb60882cebf8c32561100c5756",
+      "preview_sha256": "0bdc474b7b5af37b6f110751bcb99a69fd64881d9448f405701c14eec6dd2aa3",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42261598057-1-b0000.tar.gz",
+        "member": "files/6b/6b4162f50294f5072d78c039d6730c55eed2a1bb60882cebf8c32561100c5756.png"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42261598057-1-b0000.tar.gz",
+        "member": "previews/6b4162f50294f5072d78c039d6730c55eed2a1bb60882cebf8c32561100c5756.png"
+      },
+      "format": "png",
+      "structure": "raster",
+      "selection_reason": "raster_embedded_or_mixed_record_and_sibling_formats",
+      "full_preview_rgba_sha256": "ecc3e58c2d7616b753313ca0be735985f1b9556eb292089d3ce6a860b8a7f5e3",
+      "scope_verdict": "scope_pending",
+      "observations": "Bird behavioral apparatus is rendered/drawn, but the birds have highly textured feather cutouts; the small preview cannot establish photographic origin versus rendering. Do not call all PNG photographs.",
+      "reason": "Bird behavioral apparatus is rendered/drawn, but the birds have highly textured feather cutouts; the small preview cannot establish photographic origin versus rendering. Do not call all PNG photographs.",
+      "reviewed_by": "Codex media_catalog; actual inspection of all 16 tiles in the single contact sheet",
+      "reviewed_at": "2026-11-06T19:23:01.652577+00:00",
+      "review_history": [
+        {
+          "verdict": "scope_pending",
+          "observations": "Bird behavioral apparatus is rendered/drawn, but the birds have highly textured feather cutouts; the small preview cannot establish photographic origin versus rendering. Do not call all PNG photographs.",
+          "reviewed_by": "Codex media_catalog; actual inspection of all 16 tiles in the single contact sheet",
+          "reviewed_at": "2026-11-06T19:23:01.652577+00:00"
+        }
+      ],
+      "evidence": [
+        {
+          "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scope-review-42273458171-1.tar.gz",
+          "sha256": "e223bdf25c78bfd14288bc1ffcd8390bfa0f128ca5a69775a3f9c102cd344a9b",
+          "member": "scope-01.png",
+          "member_sha256": "172689a813fb94b3c952af843e1f06a658a7bfb3e78724bfb2cf1fc2a7ad2486"
+        }
+      ],
+      "native_editability_tested": false,
+      "scientific_detail_validation": "not_independently_verified",
+      "text_content": {
+        "status": "unknown",
+        "kinds": [],
+        "cleanup_advice": "unknown",
+        "basis": "not_independently_assessed",
+        "evidence": [],
+        "editable_text": "unknown"
+      },
+      "scope_status": "scope_pending",
+      "visual_verdict": "scope_pending",
+      "photographic_provenance_independently_verified": false
+    },
+    {
+      "candidate_id": "d7c35c52caaa4d0a34e5468769fea475a3855e03da4e0c353af98c2dacf96b8b",
+      "tile": 7,
+      "review_pack": "scope-review-42273458171-1",
+      "source": "togo",
+      "source_id": "1723",
+      "id": "togo-6424f2b589866d8097d4",
+      "title": "Coiled coil",
+      "source_url": "https://doi.org/10.7875/togopic.2023.158",
+      "original_sha256": "7cf051d139e18ea927d4216b0c7faa94a884c28bd9f21b274ddc501b881cb7d0",
+      "sha256": "7cf051d139e18ea927d4216b0c7faa94a884c28bd9f21b274ddc501b881cb7d0",
+      "preview_sha256": "cc2b585afacb7a4cf033f70b28d668da93c4bb6b89664a975912dc92506a388b",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42261598057-1-b0000.tar.gz",
+        "member": "files/7c/7cf051d139e18ea927d4216b0c7faa94a884c28bd9f21b274ddc501b881cb7d0.png"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42261598057-1-b0000.tar.gz",
+        "member": "previews/7cf051d139e18ea927d4216b0c7faa94a884c28bd9f21b274ddc501b881cb7d0.png"
+      },
+      "format": "png",
+      "structure": "raster",
+      "selection_reason": "raster_embedded_or_mixed_record_and_sibling_formats",
+      "full_preview_rgba_sha256": "628f3a71da35c2ae2058ee46d6c9d6a738f82fdb883f302cbf831436dc24ccba",
+      "scope_verdict": "in_scope",
+      "observations": "Drawn DNA helix and colored protein helices/loops form an independently reusable local molecular structure; no real micrograph or complete data chart is visible.",
+      "reason": "Drawn DNA helix and colored protein helices/loops form an independently reusable local molecular structure; no real micrograph or complete data chart is visible.",
+      "reviewed_by": "Codex media_catalog; actual inspection of all 16 tiles in the single contact sheet",
+      "reviewed_at": "2026-11-06T19:23:01.652577+00:00",
+      "review_history": [
+        {
+          "verdict": "in_scope",
+          "observations": "Drawn DNA helix and colored protein helices/loops form an independently reusable local molecular structure; no real micrograph or complete data chart is visible.",
+          "reviewed_by": "Codex media_catalog; actual inspection of all 16 tiles in the single contact sheet",
+          "reviewed_at": "2026-11-06T19:23:01.652577+00:00"
+        }
+      ],
+      "evidence": [
+        {
+          "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scope-review-42273458171-1.tar.gz",
+          "sha256": "e223bdf25c78bfd14288bc1ffcd8390bfa0f128ca5a69775a3f9c102cd344a9b",
+          "member": "scope-01.png",
+          "member_sha256": "172689a813fb94b3c952af843e1f06a658a7bfb3e78724bfb2cf1fc2a7ad2486"
+        }
+      ],
+      "native_editability_tested": false,
+      "scientific_detail_validation": "not_independently_verified",
+      "text_content": {
+        "status": "unknown",
+        "kinds": [],
+        "cleanup_advice": "unknown",
+        "basis": "not_independently_assessed",
+        "evidence": [],
+        "editable_text": "unknown"
+      },
+      "scope_status": "visually_illustration",
+      "photographic_provenance_independently_verified": false
+    },
+    {
+      "candidate_id": "0473423cc96942d9baaa73f8a4795e1dba17699d60be393b0b480fa822843951",
+      "tile": 8,
+      "review_pack": "scope-review-42273458171-1",
+      "source": "togo",
+      "source_id": "1723",
+      "id": "togo-6424f2b589866d8097d4",
+      "title": "Coiled coil",
+      "source_url": "https://doi.org/10.7875/togopic.2023.158",
+      "original_sha256": "09019e6a571627fd5514ca6f8e4dcb229eda94cb924f7cb96332f68c6f827d33",
+      "sha256": "09019e6a571627fd5514ca6f8e4dcb229eda94cb924f7cb96332f68c6f827d33",
+      "preview_sha256": "fde0e73c9d1b36a946603143ad2011a9780bbbf50caa56a02ee91bd76f85b5b0",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42261598057-1-b0000.tar.gz",
+        "member": "files/09/09019e6a571627fd5514ca6f8e4dcb229eda94cb924f7cb96332f68c6f827d33.svg"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42261598057-1-b0000.tar.gz",
+        "member": "previews/09019e6a571627fd5514ca6f8e4dcb229eda94cb924f7cb96332f68c6f827d33.png"
+      },
+      "format": "svg",
+      "structure": "mixed",
+      "selection_reason": "raster_embedded_or_mixed_record_and_sibling_formats",
+      "full_preview_rgba_sha256": "8f1edcba0e402128523d4671b12129bd2be8b07432479afb7354aa4dfa335c0a",
+      "scope_verdict": "in_scope",
+      "observations": "Drawn DNA helix and colored protein helices/loops form an independently reusable local molecular structure; no real micrograph or complete data chart is visible.",
+      "reason": "Drawn DNA helix and colored protein helices/loops form an independently reusable local molecular structure; no real micrograph or complete data chart is visible.",
+      "reviewed_by": "Codex media_catalog; actual inspection of all 16 tiles in the single contact sheet",
+      "reviewed_at": "2026-11-06T19:23:01.652577+00:00",
+      "review_history": [
+        {
+          "verdict": "in_scope",
+          "observations": "Drawn DNA helix and colored protein helices/loops form an independently reusable local molecular structure; no real micrograph or complete data chart is visible.",
+          "reviewed_by": "Codex media_catalog; actual inspection of all 16 tiles in the single contact sheet",
+          "reviewed_at": "2026-11-06T19:23:01.652577+00:00"
+        }
+      ],
+      "evidence": [
+        {
+          "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scope-review-42273458171-1.tar.gz",
+          "sha256": "e223bdf25c78bfd14288bc1ffcd8390bfa0f128ca5a69775a3f9c102cd344a9b",
+          "member": "scope-01.png",
+          "member_sha256": "172689a813fb94b3c952af843e1f06a658a7bfb3e78724bfb2cf1fc2a7ad2486"
+        }
+      ],
+      "native_editability_tested": false,
+      "scientific_detail_validation": "not_independently_verified",
+      "text_content": {
+        "status": "unknown",
+        "kinds": [],
+        "cleanup_advice": "unknown",
+        "basis": "not_independently_assessed",
+        "evidence": [],
+        "editable_text": "unknown"
+      },
+      "scope_status": "visually_illustration",
+      "photographic_provenance_independently_verified": false
+    },
+    {
+      "candidate_id": "699320e97abf69337a8158baea37f2dcc8830b7df4b950a00fa72b6a42c6582d",
+      "tile": 9,
+      "review_pack": "scope-review-42273458171-1",
+      "source": "togo",
+      "source_id": "1726",
+      "id": "togo-1f8854a631d41758c75a",
+      "title": "Helix-loop-helix",
+      "source_url": "https://doi.org/10.7875/togopic.2023.161",
+      "original_sha256": "5b961c94fe255eb4da5b4abb606a84ffcc462c7f013563e0ade16dc9eff3dbf0",
+      "sha256": "5b961c94fe255eb4da5b4abb606a84ffcc462c7f013563e0ade16dc9eff3dbf0",
+      "preview_sha256": "e4bbc1b459505856860f7b1631f73431ce1533630827a576e6f6df68910ed6a5",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42261598057-1-b0000.tar.gz",
+        "member": "files/5b/5b961c94fe255eb4da5b4abb606a84ffcc462c7f013563e0ade16dc9eff3dbf0.svg"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42261598057-1-b0000.tar.gz",
+        "member": "previews/5b961c94fe255eb4da5b4abb606a84ffcc462c7f013563e0ade16dc9eff3dbf0.png"
+      },
+      "format": "svg",
+      "structure": "mixed",
+      "selection_reason": "raster_embedded_or_mixed_record_and_sibling_formats",
+      "full_preview_rgba_sha256": "2748a9a02bee97108a75009fa996b4453c524c6daaab3ec23a886aae8240c123",
+      "scope_verdict": "in_scope",
+      "observations": "Drawn DNA helix and colored protein helices/loops form an independently reusable local molecular structure; no real micrograph or complete data chart is visible.",
+      "reason": "Drawn DNA helix and colored protein helices/loops form an independently reusable local molecular structure; no real micrograph or complete data chart is visible.",
+      "reviewed_by": "Codex media_catalog; actual inspection of all 16 tiles in the single contact sheet",
+      "reviewed_at": "2026-11-06T19:23:01.652577+00:00",
+      "review_history": [
+        {
+          "verdict": "in_scope",
+          "observations": "Drawn DNA helix and colored protein helices/loops form an independently reusable local molecular structure; no real micrograph or complete data chart is visible.",
+          "reviewed_by": "Codex media_catalog; actual inspection of all 16 tiles in the single contact sheet",
+          "reviewed_at": "2026-11-06T19:23:01.652577+00:00"
+        }
+      ],
+      "evidence": [
+        {
+          "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scope-review-42273458171-1.tar.gz",
+          "sha256": "e223bdf25c78bfd14288bc1ffcd8390bfa0f128ca5a69775a3f9c102cd344a9b",
+          "member": "scope-01.png",
+          "member_sha256": "172689a813fb94b3c952af843e1f06a658a7bfb3e78724bfb2cf1fc2a7ad2486"
+        }
+      ],
+      "native_editability_tested": false,
+      "scientific_detail_validation": "not_independently_verified",
+      "text_content": {
+        "status": "unknown",
+        "kinds": [],
+        "cleanup_advice": "unknown",
+        "basis": "not_independently_assessed",
+        "evidence": [],
+        "editable_text": "unknown"
+      },
+      "scope_status": "visually_illustration",
+      "photographic_provenance_independently_verified": false
+    },
+    {
+      "candidate_id": "b6e8e1a85341f4ab97e4e2a260bf74df5f2f555a62a68c4e0f4bcf8db7e6f9ae",
+      "tile": 10,
+      "review_pack": "scope-review-42273458171-1",
+      "source": "togo",
+      "source_id": "1726",
+      "id": "togo-1f8854a631d41758c75a",
+      "title": "Helix-loop-helix",
+      "source_url": "https://doi.org/10.7875/togopic.2023.161",
+      "original_sha256": "e857a864e59a3ecff1cc1344fcfe481966eed5cb9c4a4ce151218c3334c7c928",
+      "sha256": "e857a864e59a3ecff1cc1344fcfe481966eed5cb9c4a4ce151218c3334c7c928",
+      "preview_sha256": "e94fc27df68839252d4a9123816e21198a32a49ae1e1d5300de3a049030739da",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42261598057-1-b0000.tar.gz",
+        "member": "files/e8/e857a864e59a3ecff1cc1344fcfe481966eed5cb9c4a4ce151218c3334c7c928.png"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42261598057-1-b0000.tar.gz",
+        "member": "previews/e857a864e59a3ecff1cc1344fcfe481966eed5cb9c4a4ce151218c3334c7c928.png"
+      },
+      "format": "png",
+      "structure": "raster",
+      "selection_reason": "raster_embedded_or_mixed_record_and_sibling_formats",
+      "full_preview_rgba_sha256": "6ce04fd2a9e8876171369e7c18e469c81aeb11beb433140743926dddf6c81ff1",
+      "scope_verdict": "in_scope",
+      "observations": "Drawn DNA helix and colored protein helices/loops form an independently reusable local molecular structure; no real micrograph or complete data chart is visible.",
+      "reason": "Drawn DNA helix and colored protein helices/loops form an independently reusable local molecular structure; no real micrograph or complete data chart is visible.",
+      "reviewed_by": "Codex media_catalog; actual inspection of all 16 tiles in the single contact sheet",
+      "reviewed_at": "2026-11-06T19:23:01.652577+00:00",
+      "review_history": [
+        {
+          "verdict": "in_scope",
+          "observations": "Drawn DNA helix and colored protein helices/loops form an independently reusable local molecular structure; no real micrograph or complete data chart is visible.",
+          "reviewed_by": "Codex media_catalog; actual inspection of all 16 tiles in the single contact sheet",
+          "reviewed_at": "2026-11-06T19:23:01.652577+00:00"
+        }
+      ],
+      "evidence": [
+        {
+          "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scope-review-42273458171-1.tar.gz",
+          "sha256": "e223bdf25c78bfd14288bc1ffcd8390bfa0f128ca5a69775a3f9c102cd344a9b",
+          "member": "scope-01.png",
+          "member_sha256": "172689a813fb94b3c952af843e1f06a658a7bfb3e78724bfb2cf1fc2a7ad2486"
+        }
+      ],
+      "native_editability_tested": false,
+      "scientific_detail_validation": "not_independently_verified",
+      "text_content": {
+        "status": "unknown",
+        "kinds": [],
+        "cleanup_advice": "unknown",
+        "basis": "not_independently_assessed",
+        "evidence": [],
+        "editable_text": "unknown"
+      },
+      "scope_status": "visually_illustration",
+      "photographic_provenance_independently_verified": false
+    },
+    {
+      "candidate_id": "f9c0a610d33c0996a6febcf256f12cf0d36c64883c1a2210cb3bc9ae7fae3148",
+      "tile": 11,
+      "review_pack": "scope-review-42273458171-1",
+      "source": "togo",
+      "source_id": "1727",
+      "id": "togo-35e842da1e6648b297ca",
+      "title": "Helix-turn-helix",
+      "source_url": "https://doi.org/10.7875/togopic.2023.162",
+      "original_sha256": "39c8fabdf2989870451876933925a9d28f8b580afaa75a3768bc8f9c851d4fd6",
+      "sha256": "39c8fabdf2989870451876933925a9d28f8b580afaa75a3768bc8f9c851d4fd6",
+      "preview_sha256": "1d4ed48e15cca25df53e2118f3c28da78c250293d4ef15ece2dde026e1da674c",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42261598057-1-b0000.tar.gz",
+        "member": "files/39/39c8fabdf2989870451876933925a9d28f8b580afaa75a3768bc8f9c851d4fd6.svg"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42261598057-1-b0000.tar.gz",
+        "member": "previews/39c8fabdf2989870451876933925a9d28f8b580afaa75a3768bc8f9c851d4fd6.png"
+      },
+      "format": "svg",
+      "structure": "mixed",
+      "selection_reason": "raster_embedded_or_mixed_record_and_sibling_formats",
+      "full_preview_rgba_sha256": "c510a3aaf185ee1972b5f0b0ff3ddd09b320df587e79eabdd4059452393941c9",
+      "scope_verdict": "in_scope",
+      "observations": "Drawn DNA helix and colored protein helices/loops form an independently reusable local molecular structure; no real micrograph or complete data chart is visible.",
+      "reason": "Drawn DNA helix and colored protein helices/loops form an independently reusable local molecular structure; no real micrograph or complete data chart is visible.",
+      "reviewed_by": "Codex media_catalog; actual inspection of all 16 tiles in the single contact sheet",
+      "reviewed_at": "2026-11-06T19:23:01.652577+00:00",
+      "review_history": [
+        {
+          "verdict": "in_scope",
+          "observations": "Drawn DNA helix and colored protein helices/loops form an independently reusable local molecular structure; no real micrograph or complete data chart is visible.",
+          "reviewed_by": "Codex media_catalog; actual inspection of all 16 tiles in the single contact sheet",
+          "reviewed_at": "2026-11-06T19:23:01.652577+00:00"
+        }
+      ],
+      "evidence": [
+        {
+          "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scope-review-42273458171-1.tar.gz",
+          "sha256": "e223bdf25c78bfd14288bc1ffcd8390bfa0f128ca5a69775a3f9c102cd344a9b",
+          "member": "scope-01.png",
+          "member_sha256": "172689a813fb94b3c952af843e1f06a658a7bfb3e78724bfb2cf1fc2a7ad2486"
+        }
+      ],
+      "native_editability_tested": false,
+      "scientific_detail_validation": "not_independently_verified",
+      "text_content": {
+        "status": "unknown",
+        "kinds": [],
+        "cleanup_advice": "unknown",
+        "basis": "not_independently_assessed",
+        "evidence": [],
+        "editable_text": "unknown"
+      },
+      "scope_status": "visually_illustration",
+      "photographic_provenance_independently_verified": false
+    },
+    {
+      "candidate_id": "74a76c2aacebf312acb4a7abe4cd0ab43536f33f037cc83330aa40a0fbc06471",
+      "tile": 12,
+      "review_pack": "scope-review-42273458171-1",
+      "source": "togo",
+      "source_id": "1727",
+      "id": "togo-35e842da1e6648b297ca",
+      "title": "Helix-turn-helix",
+      "source_url": "https://doi.org/10.7875/togopic.2023.162",
+      "original_sha256": "635715cbb24d6cacd2bf398e25084e26d8f57ce280827d8a643814af516c8d0e",
+      "sha256": "635715cbb24d6cacd2bf398e25084e26d8f57ce280827d8a643814af516c8d0e",
+      "preview_sha256": "5935dd992139abdd0bbc47c8d5fc35260cfbfa7b72c8df15d959aebc94847c9c",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42261598057-1-b0000.tar.gz",
+        "member": "files/63/635715cbb24d6cacd2bf398e25084e26d8f57ce280827d8a643814af516c8d0e.png"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42261598057-1-b0000.tar.gz",
+        "member": "previews/635715cbb24d6cacd2bf398e25084e26d8f57ce280827d8a643814af516c8d0e.png"
+      },
+      "format": "png",
+      "structure": "raster",
+      "selection_reason": "raster_embedded_or_mixed_record_and_sibling_formats",
+      "full_preview_rgba_sha256": "eb6b7299fb6161ca15757afc7039a1919d2bef4ff3553bf7cf9bdc0ea7c0dab1",
+      "scope_verdict": "in_scope",
+      "observations": "Drawn DNA helix and colored protein helices/loops form an independently reusable local molecular structure; no real micrograph or complete data chart is visible.",
+      "reason": "Drawn DNA helix and colored protein helices/loops form an independently reusable local molecular structure; no real micrograph or complete data chart is visible.",
+      "reviewed_by": "Codex media_catalog; actual inspection of all 16 tiles in the single contact sheet",
+      "reviewed_at": "2026-11-06T19:23:01.652577+00:00",
+      "review_history": [
+        {
+          "verdict": "in_scope",
+          "observations": "Drawn DNA helix and colored protein helices/loops form an independently reusable local molecular structure; no real micrograph or complete data chart is visible.",
+          "reviewed_by": "Codex media_catalog; actual inspection of all 16 tiles in the single contact sheet",
+          "reviewed_at": "2026-11-06T19:23:01.652577+00:00"
+        }
+      ],
+      "evidence": [
+        {
+          "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scope-review-42273458171-1.tar.gz",
+          "sha256": "e223bdf25c78bfd14288bc1ffcd8390bfa0f128ca5a69775a3f9c102cd344a9b",
+          "member": "scope-01.png",
+          "member_sha256": "172689a813fb94b3c952af843e1f06a658a7bfb3e78724bfb2cf1fc2a7ad2486"
+        }
+      ],
+      "native_editability_tested": false,
+      "scientific_detail_validation": "not_independently_verified",
+      "text_content": {
+        "status": "unknown",
+        "kinds": [],
+        "cleanup_advice": "unknown",
+        "basis": "not_independently_assessed",
+        "evidence": [],
+        "editable_text": "unknown"
+      },
+      "scope_status": "visually_illustration",
+      "photographic_provenance_independently_verified": false
+    },
+    {
+      "candidate_id": "2be2b791efb34c3d65deacd434fd8a60c06236c164bc5e54e879a4caf9d80977",
+      "tile": 13,
+      "review_pack": "scope-review-42273458171-1",
+      "source": "togo",
+      "source_id": "1883",
+      "id": "togo-0d05e295ac04d0766845",
+      "title": "Plant cell",
+      "source_url": "https://doi.org/10.7875/togopic.2024.042",
+      "original_sha256": "f141d7c060230ab87afcc77e0f4e4e23f1235b1d2828f7c8783e5ce6e297c1db",
+      "sha256": "f141d7c060230ab87afcc77e0f4e4e23f1235b1d2828f7c8783e5ce6e297c1db",
+      "preview_sha256": "111b63e449cd06aa18ed5650e83edeb07c16df3cdc7d46521466eff695cc59ce",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42261598057-1-b0001.tar.gz",
+        "member": "files/f1/f141d7c060230ab87afcc77e0f4e4e23f1235b1d2828f7c8783e5ce6e297c1db.png"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42261598057-1-b0001.tar.gz",
+        "member": "previews/f141d7c060230ab87afcc77e0f4e4e23f1235b1d2828f7c8783e5ce6e297c1db.png"
+      },
+      "format": "png",
+      "structure": "raster",
+      "selection_reason": "raster_embedded_or_mixed_record_and_sibling_formats",
+      "full_preview_rgba_sha256": "10118d72293ba59c7242ec84e8b4a1fe11919a301959f2f963987f73fbcf7a96",
+      "scope_verdict": "in_scope",
+      "observations": "Clearly drawn plant-cell cross-section with cell wall and illustrated organelles; an independent biological object.",
+      "reason": "Clearly drawn plant-cell cross-section with cell wall and illustrated organelles; an independent biological object.",
+      "reviewed_by": "Codex media_catalog; actual inspection of all 16 tiles in the single contact sheet",
+      "reviewed_at": "2026-11-06T19:23:01.652577+00:00",
+      "review_history": [
+        {
+          "verdict": "in_scope",
+          "observations": "Clearly drawn plant-cell cross-section with cell wall and illustrated organelles; an independent biological object.",
+          "reviewed_by": "Codex media_catalog; actual inspection of all 16 tiles in the single contact sheet",
+          "reviewed_at": "2026-11-06T19:23:01.652577+00:00"
+        }
+      ],
+      "evidence": [
+        {
+          "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scope-review-42273458171-1.tar.gz",
+          "sha256": "e223bdf25c78bfd14288bc1ffcd8390bfa0f128ca5a69775a3f9c102cd344a9b",
+          "member": "scope-01.png",
+          "member_sha256": "172689a813fb94b3c952af843e1f06a658a7bfb3e78724bfb2cf1fc2a7ad2486"
+        }
+      ],
+      "native_editability_tested": false,
+      "scientific_detail_validation": "not_independently_verified",
+      "text_content": {
+        "status": "unknown",
+        "kinds": [],
+        "cleanup_advice": "unknown",
+        "basis": "not_independently_assessed",
+        "evidence": [],
+        "editable_text": "unknown"
+      },
+      "scope_status": "visually_illustration",
+      "photographic_provenance_independently_verified": false
+    },
+    {
+      "candidate_id": "1cf68965d19f337a1a3326795cf3cdf92c0a017137ba08ea37e7494415cd3ebe",
+      "tile": 14,
+      "review_pack": "scope-review-42273458171-1",
+      "source": "togo",
+      "source_id": "1883",
+      "id": "togo-0d05e295ac04d0766845",
+      "title": "Plant cell",
+      "source_url": "https://doi.org/10.7875/togopic.2024.042",
+      "original_sha256": "07497f3f7d6ee1cc32dbc682d3da8412b6c62010d794224759a574ee5ce2d1b5",
+      "sha256": "07497f3f7d6ee1cc32dbc682d3da8412b6c62010d794224759a574ee5ce2d1b5",
+      "preview_sha256": "3e02dcd6fa9da3a4f27455adc950cb91b7e5c3d3a46d020438e320cb08f82c6b",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42261598057-1-b0001.tar.gz",
+        "member": "files/07/07497f3f7d6ee1cc32dbc682d3da8412b6c62010d794224759a574ee5ce2d1b5.svg"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42261598057-1-b0001.tar.gz",
+        "member": "previews/07497f3f7d6ee1cc32dbc682d3da8412b6c62010d794224759a574ee5ce2d1b5.png"
+      },
+      "format": "svg",
+      "structure": "mixed",
+      "selection_reason": "raster_embedded_or_mixed_record_and_sibling_formats",
+      "full_preview_rgba_sha256": "edaeccf6a8472fea16482412ff833846b7152b4f482f2f86ef34199d4613d743",
+      "scope_verdict": "in_scope",
+      "observations": "Clearly drawn plant-cell cross-section with cell wall and illustrated organelles; an independent biological object.",
+      "reason": "Clearly drawn plant-cell cross-section with cell wall and illustrated organelles; an independent biological object.",
+      "reviewed_by": "Codex media_catalog; actual inspection of all 16 tiles in the single contact sheet",
+      "reviewed_at": "2026-11-06T19:23:01.652577+00:00",
+      "review_history": [
+        {
+          "verdict": "in_scope",
+          "observations": "Clearly drawn plant-cell cross-section with cell wall and illustrated organelles; an independent biological object.",
+          "reviewed_by": "Codex media_catalog; actual inspection of all 16 tiles in the single contact sheet",
+          "reviewed_at": "2026-11-06T19:23:01.652577+00:00"
+        }
+      ],
+      "evidence": [
+        {
+          "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scope-review-42273458171-1.tar.gz",
+          "sha256": "e223bdf25c78bfd14288bc1ffcd8390bfa0f128ca5a69775a3f9c102cd344a9b",
+          "member": "scope-01.png",
+          "member_sha256": "172689a813fb94b3c952af843e1f06a658a7bfb3e78724bfb2cf1fc2a7ad2486"
+        }
+      ],
+      "native_editability_tested": false,
+      "scientific_detail_validation": "not_independently_verified",
+      "text_content": {
+        "status": "unknown",
+        "kinds": [],
+        "cleanup_advice": "unknown",
+        "basis": "not_independently_assessed",
+        "evidence": [],
+        "editable_text": "unknown"
+      },
+      "scope_status": "visually_illustration",
+      "photographic_provenance_independently_verified": false
+    },
+    {
+      "candidate_id": "127f6e3fdafd3a1a591d90d64c19c03a58faf45f0fc256c8cbaabc9331d44468",
+      "tile": 15,
+      "review_pack": "scope-review-42273458171-1",
+      "source": "togo",
+      "source_id": "1890",
+      "id": "togo-41614373f93784bcbd55",
+      "title": "Triticum aestivum, seedling stage-1",
+      "source_url": "https://doi.org/10.7875/togopic.2024.049",
+      "original_sha256": "bd57b9013d02e6c7cd0c790b2ccb5868128c367e31d30c1b43679bcfe403700e",
+      "sha256": "bd57b9013d02e6c7cd0c790b2ccb5868128c367e31d30c1b43679bcfe403700e",
+      "preview_sha256": "30ccdcb54532a95e63c3897af2c95e845f7617e7468fa00e73ac92211da94875",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42261598057-1-b0001.tar.gz",
+        "member": "files/bd/bd57b9013d02e6c7cd0c790b2ccb5868128c367e31d30c1b43679bcfe403700e.svg"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42261598057-1-b0001.tar.gz",
+        "member": "previews/bd57b9013d02e6c7cd0c790b2ccb5868128c367e31d30c1b43679bcfe403700e.png"
+      },
+      "format": "svg",
+      "structure": "mixed",
+      "selection_reason": "raster_embedded_or_mixed_record_and_sibling_formats",
+      "full_preview_rgba_sha256": "0f4d5b02bb4a215d54ab46b8d2e9a9066ed6a2ad6a18a85c6da0b50a1cd83cb8",
+      "scope_verdict": "scope_pending",
+      "observations": "Seedling outline contains pale fine-grained internal texture. The contact preview does not establish hand-drawn stippling versus embedded real microscopy; medium requires further source evidence.",
+      "reason": "Seedling outline contains pale fine-grained internal texture. The contact preview does not establish hand-drawn stippling versus embedded real microscopy; medium requires further source evidence.",
+      "reviewed_by": "Codex media_catalog; actual inspection of all 16 tiles in the single contact sheet",
+      "reviewed_at": "2026-11-06T19:23:01.652577+00:00",
+      "review_history": [
+        {
+          "verdict": "scope_pending",
+          "observations": "Seedling outline contains pale fine-grained internal texture. The contact preview does not establish hand-drawn stippling versus embedded real microscopy; medium requires further source evidence.",
+          "reviewed_by": "Codex media_catalog; actual inspection of all 16 tiles in the single contact sheet",
+          "reviewed_at": "2026-11-06T19:23:01.652577+00:00"
+        }
+      ],
+      "evidence": [
+        {
+          "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scope-review-42273458171-1.tar.gz",
+          "sha256": "e223bdf25c78bfd14288bc1ffcd8390bfa0f128ca5a69775a3f9c102cd344a9b",
+          "member": "scope-01.png",
+          "member_sha256": "172689a813fb94b3c952af843e1f06a658a7bfb3e78724bfb2cf1fc2a7ad2486"
+        }
+      ],
+      "native_editability_tested": false,
+      "scientific_detail_validation": "not_independently_verified",
+      "text_content": {
+        "status": "unknown",
+        "kinds": [],
+        "cleanup_advice": "unknown",
+        "basis": "not_independently_assessed",
+        "evidence": [],
+        "editable_text": "unknown"
+      },
+      "scope_status": "scope_pending",
+      "visual_verdict": "scope_pending",
+      "photographic_provenance_independently_verified": false
+    },
+    {
+      "candidate_id": "7c4bac40426f27774d877b0965e56a9f886643de2b9a0f22e2db088c547624d4",
+      "tile": 16,
+      "review_pack": "scope-review-42273458171-1",
+      "source": "togo",
+      "source_id": "1890",
+      "id": "togo-41614373f93784bcbd55",
+      "title": "Triticum aestivum, seedling stage-1",
+      "source_url": "https://doi.org/10.7875/togopic.2024.049",
+      "original_sha256": "e0595d3ca5cf9e04e2808bb533b1ceaa123e66d5548bd93357aa2d933bb53447",
+      "sha256": "e0595d3ca5cf9e04e2808bb533b1ceaa123e66d5548bd93357aa2d933bb53447",
+      "preview_sha256": "d8be0bf65f7f8e029ffd8a9767b2ebe3b262ba5e51a2a1f9222689e731cbce02",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42261598057-1-b0001.tar.gz",
+        "member": "files/e0/e0595d3ca5cf9e04e2808bb533b1ceaa123e66d5548bd93357aa2d933bb53447.png"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42261598057-1-b0001.tar.gz",
+        "member": "previews/e0595d3ca5cf9e04e2808bb533b1ceaa123e66d5548bd93357aa2d933bb53447.png"
+      },
+      "format": "png",
+      "structure": "raster",
+      "selection_reason": "raster_embedded_or_mixed_record_and_sibling_formats",
+      "full_preview_rgba_sha256": "88322753a1624eeb5e5eed0a7e489a44fabee01e60f5e3adb5d3edf23418d12a",
+      "scope_verdict": "scope_pending",
+      "observations": "Seedling outline contains pale fine-grained internal texture. The contact preview does not establish hand-drawn stippling versus embedded real microscopy; medium requires further source evidence.",
+      "reason": "Seedling outline contains pale fine-grained internal texture. The contact preview does not establish hand-drawn stippling versus embedded real microscopy; medium requires further source evidence.",
+      "reviewed_by": "Codex media_catalog; actual inspection of all 16 tiles in the single contact sheet",
+      "reviewed_at": "2026-11-06T19:23:01.652577+00:00",
+      "review_history": [
+        {
+          "verdict": "scope_pending",
+          "observations": "Seedling outline contains pale fine-grained internal texture. The contact preview does not establish hand-drawn stippling versus embedded real microscopy; medium requires further source evidence.",
+          "reviewed_by": "Codex media_catalog; actual inspection of all 16 tiles in the single contact sheet",
+          "reviewed_at": "2026-11-06T19:23:01.652577+00:00"
+        }
+      ],
+      "evidence": [
+        {
+          "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scope-review-42273458171-1.tar.gz",
+          "sha256": "e223bdf25c78bfd14288bc1ffcd8390bfa0f128ca5a69775a3f9c102cd344a9b",
+          "member": "scope-01.png",
+          "member_sha256": "172689a813fb94b3c952af843e1f06a658a7bfb3e78724bfb2cf1fc2a7ad2486"
+        }
+      ],
+      "native_editability_tested": false,
+      "scientific_detail_validation": "not_independently_verified",
+      "text_content": {
+        "status": "unknown",
+        "kinds": [],
+        "cleanup_advice": "unknown",
+        "basis": "not_independently_assessed",
+        "evidence": [],
+        "editable_text": "unknown"
+      },
+      "scope_status": "scope_pending",
+      "visual_verdict": "scope_pending",
+      "photographic_provenance_independently_verified": false
+    }
+  ]
+}
