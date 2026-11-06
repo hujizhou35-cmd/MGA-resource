@@ -10,6 +10,10 @@ on:
         description: Exact assembly-RUN-ATTEMPT prefix from the assembled catalog
         required: true
         type: string
+      frozen_plan:
+        description: Optional committed plan to replay observed results without searching again
+        default: ''
+        type: string
 permissions:
   contents: write
 concurrency:
@@ -35,4 +39,10 @@ jobs:
           GH_TOKEN: ${{ github.token }}
           COLLECTION_TAG: ${{ inputs.release_tag }}
           ASSEMBLY_PREFIX: ${{ inputs.assembly_prefix }}
-        run: python scripts/build_review.py --release-tag "$COLLECTION_TAG" --assembly-prefix "$ASSEMBLY_PREFIX" --publish
+          FROZEN_PLAN: ${{ inputs.frozen_plan }}
+        run: |
+          if [ -n "$FROZEN_PLAN" ]; then
+            python scripts/build_frozen_review.py --release-tag "$COLLECTION_TAG" --assembly-prefix "$ASSEMBLY_PREFIX" --plan "$FROZEN_PLAN" --publish
+          else
+            python scripts/build_review.py --release-tag "$COLLECTION_TAG" --assembly-prefix "$ASSEMBLY_PREFIX" --publish
+          fi

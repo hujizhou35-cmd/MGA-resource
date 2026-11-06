@@ -81,6 +81,29 @@ def test_query_union_keeps_both_ranks_and_real_empty_results(tmp_path):
     assert all(row["visual_judgment"] is None for row in plan["queries"])
 
 
+def test_frozen_review_replays_exact_variants_and_rejects_drift(tmp_path):
+    from scripts.build_frozen_review import frozen_search
+    records, database, _ = fixture_catalog(tmp_path)
+    plan = review.plan_review(records, database, benchmark(), sample_limit=0)
+    replay = frozen_search(records, benchmark(), plan)
+    reproduced = review.plan_review(records, None, benchmark(), sample_limit=0, search_fn=replay)
+    assert reproduced["queries"] == plan["queries"]
+    assert reproduced["candidates"] == plan["candidates"]
+    for mutation in ("query", "rank", "preview", "original"):
+        bad = copy.deepcopy(plan)
+        first = next(iter(bad["candidates"].values()))
+        if mutation == "query":
+            bad["queries"][0]["query"] = "different query"
+        elif mutation == "rank":
+            bad["queries"][0]["candidates"][0]["rank"] = 2
+        elif mutation == "preview":
+            first["preview"]["sha256"] = "f" * 64
+        else:
+            first["original_sha256"] = "f" * 64
+        with pytest.raises(ValueError, match="Frozen"):
+            frozen_search(records, benchmark(), bad)
+
+
 def test_review_uses_the_search_selected_variant_not_the_first_family_file(tmp_path):
     records, database, _ = fixture_catalog(tmp_path)
     item = records[0]
