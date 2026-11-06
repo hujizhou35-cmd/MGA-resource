@@ -426,7 +426,12 @@ def main():
     gh("release", "download", args.release_tag, "--pattern", manifest_name, "--dir", str(incoming), "--clobber")
     records, native_evidence_report = attach_native_evidence(
         records, ROOT / "data/legacy-illustrator-verification.json", publication_path, incoming / manifest_name)
+    from mga_resources.scientific_reviews import apply_scientific_reviews, finalized_scientific_review_counts
+    records, scientific_review_report = apply_scientific_reviews(
+        records, (ROOT / "data/visual-reviews").glob("*.json"), assets)
     summary = finalize(records, output)
+    scientific_review_report["retained_after_finalize"] = finalized_scientific_review_counts(
+        read_lines(output / "catalog.jsonl"))
     benchmark = json.loads((ROOT / "data/benchmark.json").read_text(encoding="utf-8"))
     results = []
     for query in benchmark["queries"]:
@@ -439,6 +444,7 @@ def main():
               "source_snapshots": acquisition, "legacy_checkpoints": legacy,
               "metadata_enrichments": enrichments,
               "historical_native_evidence": native_evidence_report,
+              "scientific_visual_reviews": scientific_review_report,
               "outstanding_primary_sources": outstanding,
               "benchmark_queries": len(results), "visually_judged_queries": 0,
               "retrieval_pass_rate": None, "acceptance_passed": False,
