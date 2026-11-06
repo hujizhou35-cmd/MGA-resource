@@ -2175,5 +2175,46 @@
     "public_scope_modified": false,
     "minimum_usable_size_inferred": false,
     "suggestions": "For the explicitly limited cases, use a suitable light background or a larger tested display. Preserve intentional white paint and alpha; reassess the actual working composition before any deliberate cleanup."
+  },
+  "independent_recheck": {
+    "reviewer": "Codex root; independently displayed and viewed all four exact QA canvases",
+    "recorded_at": "2026-11-06T23:11:31.736494+00:00",
+    "scope": "Same nine exact preview files and same four recorded canvases only; not full 48-item acceptance",
+    "sheets": [
+      {
+        "path": "comparison-01.png",
+        "sha256": "c231178146fd116167fed6d84da81b2bdb60f30574857fa26059c031ac20984e",
+        "width": 1300,
+        "height": 1080
+      },
+      {
+        "path": "comparison-02.png",
+        "sha256": "73f430dc6361fd61f68d3b175d75f9381ad8bcfb0a5cae4b059447254b73b091",
+        "width": 1300,
+        "height": 1080
+      },
+      {
+        "path": "comparison-03.png",
+        "sha256": "b119ad05bff12771436c1f318e1a29c5c0f70021c595dcce8760cd74a034bde8",
+        "width": 1300,
+        "height": 1080
+      },
+      {
+        "path": "adjacency.png",
+        "sha256": "b4e93e894b73bc58b269ce4dfb98a99b7c154110cef1caad45bd7babfb2e8c5f",
+        "width": 1440,
+        "height": 930
+      }
+    ],
+    "confirmed_observations": [
+      "Tail suspension and restrain have low contrast on the tested dark background.",
+      "Zebrafish brain gray regions show the underlying background and become markedly darker on the tested dark background.",
+      "Group of People has a visible white outer edge; this is an observed source-preview appearance, not a damage diagnosis.",
+      "Pipetting and centrifuge-operation details are insufficient at the tested 48px extent.",
+      "The adjacency board demonstrates technical placement such as no between-cell obstruction; it does not establish a scientific workflow or style coherence."
+    ],
+    "public_scope_changed": false,
+    "native_editability_tested": false,
+    "full_curated_requirement_passed": false
   }
 }
