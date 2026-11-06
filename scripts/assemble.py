@@ -291,6 +291,22 @@ def main():
             raise RuntimeError(f"Downloaded metadata SHA-256 disagrees with GitHub: {name}")
     registry = json.loads((ROOT / "data/sources.json").read_text(encoding="utf-8"))["sources"]
     records, acquisition, outstanding, legacy = assemble_snapshots(incoming, registry, assets)
+    enrichments = []
+    arcadia_records = [record for record in records if record.get("source") == "arcadia"]
+    if arcadia_records:
+        from mga_resources.archive_metadata import load_arcadia_metadata, enrich_arcadia
+        from mga_resources.http import HttpClient
+        source = next(item for item in registry if item["source_id"] == "arcadia")
+        metadata = load_arcadia_metadata(source, HttpClient())
+        for record in arcadia_records:
+            member = next((item["archive_member"] for item in record.get("files", [])
+                           if item.get("archive_member")), record["source_id"])
+            enrich_arcadia(record, member, source, metadata)
+        enrichments.append({"source": "arcadia", "metadata_url": metadata["url"],
+                            "metadata_revision": metadata["revision"], "records": len(arcadia_records),
+                            "matched": sum(record.get("metadata_status") == "matched_official_gallery"
+                                           for record in arcadia_records),
+                            "artwork_refetched": False})
     summary = finalize(records, output)
     benchmark = json.loads((ROOT / "data/benchmark.json").read_text(encoding="utf-8"))
     results = []
@@ -302,6 +318,7 @@ def main():
     report = {"assembled_at": datetime.now(timezone.utc).isoformat(), "run_id": run_id,
               "collection_release": args.release_tag, "summary": summary,
               "source_snapshots": acquisition, "legacy_checkpoints": legacy,
+              "metadata_enrichments": enrichments,
               "outstanding_primary_sources": outstanding,
               "benchmark_queries": len(results), "visually_judged_queries": 0,
               "retrieval_pass_rate": None, "acceptance_passed": False,
