@@ -3,8 +3,8 @@
  */
 import vocabulary from './search-vocabulary.mjs';
 
-export const RANKING_VERSION = 'shared-search-3.0.0';
-export const INDEX_VERSION = 3;
+export const RANKING_VERSION = 'shared-search-3.1.0';
+export const INDEX_VERSION = 4;
 export const DEFAULT_CANDIDATE_POOL = 75;
 const unknown = new Set(['', 'unknown', 'unspecified', 'not_reviewed', '待确认']);
 const arr = value => value == null ? [] : Array.isArray(value) ? value : [value];
@@ -53,7 +53,7 @@ const APPEARANCE = {
   detail: {minimal:['极简','minimal','minimalist'], moderate:['适中细节','moderate detail'], detailed:['精细','detailed']},
   realism: {schematic:['示意风格','schematic style'], semi_realistic:['半写实','semi realistic','semi-realistic'], realistic:['写实','realistic']},
 };
-const FILTER_KEYS = new Set(['source','license','distribution_status','category','format','species','state','view','role','object','color_mode','palette_traits','representation','detail','realism','series','asset_id','family_id','file_sha256','transparent']);
+const FILTER_KEYS = new Set(['source','license','distribution_status','category','format','species','state','view','role','object','depiction_kind','color_mode','palette_traits','representation','detail','realism','series','asset_id','family_id','file_sha256','transparent']);
 const ALIASES = {color:'color_mode',colorMode:'color_mode',palette:'palette_traits'};
 const extraConcepts = [
   ['脾脏','脾','spleen','splenic'], ['胃','stomach','gastric'], ['甲状腺','thyroid'],
@@ -62,6 +62,13 @@ const extraConcepts = [
   ['细菌杆菌','杆状细菌','bacillus','rod shaped bacteria','rod-shaped bacterium'],
   ['基因表达热图','gene expression heatmap','heatmap','heat map'],
   ['膀胱','bladder'], ['免疫细胞','immune cell'], ['正常肺','normal lung'],
+  ['头部','头','head'], ['颅骨','skull'], ['尾巴','tail'], ['爪','paw'],
+  ['前肢','forelimb'], ['后肢','hindlimb'], ['视网膜','retina'], ['脊髓','spinal cord'],
+  ['胚胎','embryo'], ['胎儿','fetus','foetus'], ['骨髓','bone marrow'],
+  ['电脑鼠标','鼠标','computer mouse','mouse cursor','pointing device'],
+  ['人体','人类','human body','human','homo sapiens'],
+  ['采血','抽血','taking blood sample','taking a blood sample','drawing blood','blood draw','blood collection','blood sampling','phlebotomy','venipuncture'],
+  ['试管','test tube','sample tube','collection tube'],
 ];
 // Avoid interpreting the unspecific Chinese experimental rodent as a mouse.
 const concepts = [...vocabulary.concepts, ...extraConcepts].map(group => unique(group.map(norm).filter(x => x !== '实验鼠')));
@@ -69,6 +76,32 @@ const concepts = [...vocabulary.concepts, ...extraConcepts].map(group => unique(
 // object, not a demand that the source redundantly repeat the word molecule.
 for(const group of concepts)for(const name of ['atp','dna','rna','protein','antibody','lipid'])if(group.includes(name))group.push(`${name} molecule`);
 const qualifiers = Object.entries({...SCIENCE,...APPEARANCE}).flatMap(([key, groups]) => Object.entries(groups).flatMap(([value, terms]) => terms.map(term => ({key,value,term:norm(term)})))).sort((a,b) => b.term.length-a.term.length || cmp(a.term,b.term));
+const animalNames=new Set(Object.values(SCIENCE.species).flat().map(norm));
+const nonBiologicalMouse=value=>['computer mouse','mouse cursor','pointing device','电脑鼠标','鼠标'].some(term=>matches(value,term));
+const actionNames=['injection','blood collection','blood sampling','centrifugation','pipetting','cell culture','transfection','sequencing','dissection','randomization','randomisation','recruitment','taking blood sample','drawing blood','blood draw','phlebotomy','venipuncture'];
+const equipmentNames=['computer mouse','mouse cursor','syringe','pipette','microscope','centrifuge','tube','flask','beaker','incubator','well plate','microplate','petri dish','culture dish','needle','scissors','cutters','sequencer','machine','instrument','apparatus','voltammetry','electrochemical','electrolytic','battery','solar cell'];
+const actionGroups=concepts.filter(group=>group.some(term=>actionNames.includes(term)));
+const equipmentGroups=concepts.filter(group=>group.some(term=>equipmentNames.includes(term)));
+function depictionKind(title,objects,unresolvedAnimal){
+  const equipment=equipmentNames.some(term=>matches(title,term));
+  const action=actionGroups.some(group=>group.some(term=>matches(title,term)));
+  const activeVerb=/\b(?:taking|drawing|collecting|injecting|pipetting|centrifuging|dissecting)\b/.test(title);
+  if(equipment&&/\b(?:user|operator)\b/.test(title)&&!activeVerb)return 'unknown';
+  if(equipment&&!activeVerb)return 'equipment';
+  if(action)return 'action';
+  if(['cell membrane','cell wall','cell nucleus','axon','dendrite','细胞膜','细胞壁','细胞核','轴突','树突'].some(term=>matches(title,term)))return 'subcellular';
+  if(['cell','cells','macrophage','neuron','lymphocyte','neutrophil','hepatocyte','erythrocyte','fibroblast','细胞','神经元'].some(term=>matches(title,term)))return 'cell';
+  if(objects.some(term=>animalNames.has(term))&&!unresolvedAnimal)return 'animal';
+  return objects.length?'named_object':'unknown';
+}
+function animalTitleRemainder(title){
+  let rest=title;
+  const modifiers=[...animalNames,...qualifiers.filter(q=>q.key!=='state').map(q=>q.term),...vocabulary.contextTerms,
+    'adult','juvenile','newborn','neonatal','male','female','standing','sitting','running','walking','eating','drinking','sleeping','rearing','grooming','climbing','lying','dorsal','ventral','white','black','gray','grey','brown','albino','house','cartoon','simple','outline','stroke','tricolor','raster','svg','png','vector','design','drawing','silhouette','view','body','full body','whole body',
+    '成年','幼年','雄性','雌性','站立','坐姿','奔跑','行走','进食','饮水','睡眠','轮廓','白色','黑色','灰色'];
+  for(const term of modifiers.sort((a,b)=>b.length-a.length))rest=removeTerm(rest,norm(term));
+  return rest.replace(/\b(?:c57bl[\w/-]*|balb[\w/-]*|p\d+|\d+)\b/gi,' ').replace(/[^\p{L}\p{N}]+/gu,' ').trim();
+}
 const phraseVocabulary=unique([...concepts.flat(),...qualifiers.map(q=>q.term),...Object.values(vocabulary.legacyPresentationTerms).flat()]).filter(term=>term.includes(' ')||term.includes('-')||/[\u3400-\u9fff]/.test(term));
 const termKey=value=>norm(value).replace(/-/g,' ').replace(/\s+/g,' ');
 function indexTerms(value) {
@@ -121,6 +154,7 @@ export function buildQueryPlan(query = '', filters = {}, options = {}) {
   // conditions even inside compounds such as 正常肺 / normal lung.
   for (const entry of qualifiers) {
     if (!matches(remaining,entry.term)) continue;
+    if(entry.key==='species'&&entry.value==='mouse'&&nonBiologicalMouse(remaining))continue;
     if (entry.key === 'species') {
       // Species also names the requested animal; leave it as an object term.
       if (!explicit.has(entry.key)) requirements[entry.key] = unique([...(requirements[entry.key]||[]),entry.value]);
@@ -144,22 +178,55 @@ export function buildQueryPlan(query = '', filters = {}, options = {}) {
   for (const [term, aliases] of Object.entries(vocabulary.legacyPresentationTerms).sort((a,b)=>b[0].length-a[0].length)) {
     if (matches(remaining,norm(term))) {softTerms.push(aliases.map(norm)); remaining=removeTerm(remaining,norm(term));}
   }
-  const context = [...vocabulary.contextTerms,'prefer','preferred','if possible','偏好','优先','需要','必须','要求'];
+  const context = [...vocabulary.contextTerms,'process','过程','prefer','preferred','if possible','偏好','优先','需要','必须','要求'];
   for (const term of context.sort((a,b)=>b.length-a.length)) remaining=removeTerm(remaining,norm(term));
   for (const word of remaining.match(/[\p{L}\p{N}]+/gu)||[]) terms.push([word]);
   const groups = [...new Map(terms.map(group=>[stableStringify([...group].sort()),group])).values()];
+  const allRequirements={};
+  if(!explicit.has('view')&&(requirements.view||[]).length>1&&!/\bor\b|或者|或/.test(norm(query)))allRequirements.view=requirements.view;
+  // A lone requested animal is the object, not merely the species of a brain,
+  // cell or surgical instrument. More specific compound queries retain their
+  // requested object terms (e.g. mouse brain) and the hard mouse species.
+  if(!explicit.has('object') && groups.length && groups.every(group=>group.some(term=>animalNames.has(term)))) {
+    requirements.object=unique(groups.flatMap(group=>group.filter(term=>animalNames.has(term))));
+  }
+  if(!explicit.has('depiction_kind')) {
+    if(groups.some(group=>actionGroups.some(action=>group.some(term=>action.includes(term)))))requirements.depiction_kind=['action'];
+    else if(groups.length&&groups.every(group=>equipmentGroups.some(equipment=>group.some(term=>equipment.includes(term)))))requirements.depiction_kind=['equipment'];
+    else if(groups.some(group=>group.some(term=>['cell','cells','细胞'].includes(term)))&&groups.every(group=>group.some(term=>['cell','cells','细胞'].includes(term)||animalNames.has(term))))requirements.depiction_kind=['cell'];
+  }
   const fts = groups.map(group=>'('+group.map(term=>'"'+term.replaceAll('"','""')+'"').join(' OR ')+')').join(' AND ');
   const empty = !groups.length && !Object.keys(requirements).length && !Object.keys(preferences).length && Boolean(String(query).trim());
-  return {query:String(query),terms:groups,fts,requirements,preferences,soft_terms:softTerms,empty,parsed_qualifiers:parsed,ranking_version:RANKING_VERSION};
+  return {query:String(query),terms:groups,fts,requirements,all_requirements:allRequirements,preferences,soft_terms:softTerms,empty,parsed_qualifiers:parsed,ranking_version:RANKING_VERSION};
 }
 
+function manualEvidence(file,key) {
+  if((file.scientific_conflicts||[]).includes(key))return [];
+  return (file.scientific_review_evidence||[]).flatMap((e,index)=>{
+    const archive=e.applies_to_archive||e.original_archive;
+    const previewArchive=e.applies_to_preview_archive||e.preview_archive;
+    const accepted=e.accepted_assertions||{};
+    const bound=archive?.url===file.archive?.url&&archive?.member===file.archive?.member&&Boolean(archive?.url&&archive?.member)&&previewArchive?.url===file.preview?.archive?.url&&previewArchive?.member===file.preview?.archive?.member&&Boolean(previewArchive?.url&&previewArchive?.member);
+    const actual=arr(file.scientific?.[key]).map(value=>norm(canonical(key,value)));
+    const supported=arr(accepted[key]).map(value=>norm(canonical(key,value)));
+    const matchesClaim=actual.length&&actual.every(value=>supported.includes(value));
+    return e.kind==='manual_visual_review'&&['applied','partial_conflict'].includes(e.status)&&e.original_sha256===file.sha256&&e.preview_sha256===file.preview?.sha256&&bound&&Object.hasOwn(accepted,key)&&matchesClaim&&String(e.reviewer||'').trim()&&String(e.evidence_uri||'').trim()&&/^[a-f0-9]{64}$/.test(e.evidence_sha256||'')?[index]:[];
+  });
+}
+function scientificValue(file,key) {
+  if((file.scientific_conflicts||[]).includes(key))return 'unknown';
+  const value=file.scientific?.[key];
+  const manualClaim=(file.scientific_review_evidence||[]).some(e=>Object.hasOwn(e.accepted_assertions||{},key));
+  return manualClaim&&!manualEvidence(file,key).length?'unknown':value;
+}
 function valuesFromMetadata(key, context, file) {
-  const explicit = file.scientific?.[key] ?? file[key] ?? context.scientific?.[key] ?? context[key];
+  const explicit = scientificValue(file,key) ?? file[key] ?? context.scientific?.[key] ?? context[key];
   if (explicit != null) {
     const structured=typeof explicit==='object' && !Array.isArray(explicit) ? explicit.values ?? explicit.value : explicit;
     return unique(arr(structured).map(value=>canonical(key,value)).filter(value=>!unknown.has(norm(value))));
   }
   const sourceText = norm([context.title,context.title_zh,context.tags,context.upstream_category]);
+  if(key==='species'&&nonBiologicalMouse(norm([context.title,context.title_zh])))return [];
   if(key==='role'&&contextualWholeRole(sourceText))return [contextualWholeRole(sourceText)];
   return Object.entries(SCIENCE[key]||{}).filter(([,terms])=>terms.some(term=>matches(sourceText,norm(term)))).map(([value])=>value);
 }
@@ -167,14 +234,21 @@ function compactAppearance(file) {
   const appearance=file.appearance;
   if (!appearance || appearance.binding?.file_sha256 !== file.sha256 || (file.preview?.sha256 && appearance.binding?.preview_sha256 !== file.preview.sha256)) return {classification_version:null,color:{mode:'unknown'},style:{}};
   const style=appearance.style||{};
+  const unresolvedStatus=new Set(['needs_review','not_measured','not_reviewed','conflict','conflict_pending']);
   const safeAxis = (axis,many=false) => {
     const value=style[axis]||{};
-    if (!value.basis_evidence_indices?.length || value.review_status==='needs_review' || value.confidence==='unknown') return many ? {values:[]} : {value:'unknown'};
+    if (!value.basis_evidence_indices?.length || unresolvedStatus.has(value.review_status) || value.confidence==='unknown') return many ? {values:[]} : {value:'unknown'};
     return value;
   };
+  const color=appearance.color||{};
+  // Known machine measurements may have medium confidence (e.g. a white
+  // background hypothesis). Only explicitly unresolved values are withheld;
+  // a tentative palette must never rescue an unknown/unmeasured color mode.
+  const knownColor=['black_white','grayscale','color'].includes(color.mode)&&!unresolvedStatus.has(color.review_status)&&color.confidence!=='unknown';
+  const series=style.series||{};
   return {classification_version:appearance.classification_version,binding:appearance.binding,
-    color:{mode:appearance.color?.mode||'unknown',palette_traits:appearance.color?.palette_traits||[],confidence:appearance.color?.confidence,review_status:appearance.color?.review_status,uncertainty:appearance.color?.uncertainty},
-    style:{representation:safeAxis('representation',true),detail:safeAxis('detail'),realism:safeAxis('realism'),series:style.series?.basis_evidence_indices?.length ? style.series : {memberships:[]}}};
+    color:{mode:knownColor?color.mode:'unknown',palette_traits:knownColor?(color.palette_traits||[]):[],confidence:color.confidence,review_status:color.review_status,uncertainty:color.uncertainty},
+    style:{representation:safeAxis('representation',true),detail:safeAxis('detail'),realism:safeAxis('realism'),series:series.basis_evidence_indices?.length&&!unresolvedStatus.has(series.review_status)&&series.confidence!=='unknown' ? series : {memberships:[]}}};
 }
 
 /** One row per physical file and original scientific context, never union
@@ -193,9 +267,10 @@ export function prepareVariants(records) {
       const single=(asset.variants||[]).length<=1;
       const fields=single ? {...asset,...context} : context;
       const facts=Object.fromEntries(Object.keys(SCIENCE).map(key=>[key,valuesFromMetadata(key,fields,file)]));
+      const factBasis=Object.fromEntries(Object.keys(facts).map(key=>[key,(file.scientific_conflicts||[]).includes(key)?{kind:'conflict_pending'}:!facts[key].length?{kind:'unknown'}:manualEvidence(file,key).length?{kind:'manual_visual_review',evidence_indices:manualEvidence(file,key)}:{kind:(file.scientific?.[key]??file[key]??fields.scientific?.[key]??fields[key])!=null?'explicit_source_field':'direct_source_label',evidence:fields.title||null}]));
       const appearance=compactAppearance(file);
       const title=norm([fields.title,fields.title_zh]);
-      const contextText=norm([fields.description,fields.tags,fields.upstream_category,fields.categories,fields.anatomy,fields.action,fields.object,...Object.values(facts)]);
+      const contextText=norm([fields.description,fields.tags,fields.upstream_category,fields.categories,fields.anatomy,fields.action,scientificValue(file,'object')??file.object??fields.object,...Object.values(facts)]);
       const descriptive=title+' '+contextText;
       const aliases=unique(concepts.filter(group=>group.some(term=>matches(descriptive,term))).flat());
       const license=origin.license||asset.license;
@@ -203,16 +278,28 @@ export function prepareVariants(records) {
       const canDownload=Boolean(file.archive?.url && file.archive?.member || /^https?:\/\//.test(file.url||''));
       const rejectedReview=[file.validation?.scientific_review,file.validation?.visual_review,asset.validation?.scientific_review,asset.validation?.visual_review].some(value=>['failed','rejected','unusable'].includes(value));
       const eligible=Boolean(file.sha256 && file.preview && canDownload && ['machine_checked','machine_checked_and_rendered'].includes(file.validation?.status) && rights==='license_recorded' && !rejectedReview);
-      const declaredObjects=file.scientific?.object ?? fields.scientific?.object ?? fields.object;
-      const objects=declaredObjects!=null ? arr(declaredObjects).map(norm) : unique(concepts.filter(group=>group.some(term=>matches(title,term))).flat());
+      const declaredObjects=scientificValue(file,'object') ?? file.object ?? fields.scientific?.object ?? fields.object;
+      const namedConcepts=concepts.filter(group=>group.some(term=>matches(title,term)));
+      const nonAnimalConcepts=namedConcepts.filter(group=>!group.some(term=>animalNames.has(term)));
+      // In explicit compound labels such as mouse brain / mouse cell / mouse
+      // syringe, animal words describe species/context rather than the primary
+      // depicted object. Unknown titles do not borrow objects from broad tags.
+      const primaryConcepts=nonAnimalConcepts.length?nonAnimalConcepts:namedConcepts;
+      const declared=arr(declaredObjects).map(norm);
+      const unresolvedAnimalTitle=!nonAnimalConcepts.length&&namedConcepts.some(group=>group.some(term=>animalNames.has(term)))&&Boolean(animalTitleRemainder(title));
+      const objects=declaredObjects!=null ? unique(declared.filter(value=>!unknown.has(value)).flatMap(value=>[value,...concepts.filter(group=>group.includes(value)).flat()])) : unresolvedAnimalTitle?[]:unique(primaryConcepts.flat());
+      const kind=scientificValue(file,'depiction_kind')??fields.scientific?.depiction_kind??fields.depiction_kind??depictionKind(title,objects,unresolvedAnimalTitle);
+      // Named cell types remain discoverable by their biological parent class;
+      // this is an explicit ontology relation, not a substring/equipment match.
+      if(kind==='cell')aliases.push('cell','cells','细胞');
       const values={...facts,source:arr(origin.source||asset.source),license:arr(license),distribution_status:arr(rights),category:arr(fields.taxonomy||asset.taxonomy),format:arr(file.format),
         color_mode:arr(appearance.color.mode).filter(v=>!unknown.has(v)),palette_traits:appearance.color.palette_traits||[],representation:appearance.style.representation?.values||[],detail:arr(appearance.style.detail?.value).filter(v=>!unknown.has(v)),realism:arr(appearance.style.realism?.value).filter(v=>!unknown.has(v)),series:(appearance.style.series?.memberships||[]).map(x=>x.id),
-        asset_id:unique([asset.id,origin.asset_id].filter(Boolean)),family_id:arr(asset.family_id||asset.id),file_sha256:arr(file.sha256),object:objects,transparent:file.transparency?.has_transparent_pixels!=null ? [String(file.transparency.has_transparent_pixels)] : file.has_transparency!=null ? [String(file.has_transparency)] : []};
-      const selectedFile=Object.fromEntries(['sha256','format','structure','url','archive','preview','validation','width','height','size_bytes','dimensions','transparency'].filter(k=>file[k]!=null).map(k=>[k,file[k]]));
+        asset_id:unique([asset.id,origin.asset_id].filter(Boolean)),family_id:arr(asset.family_id||asset.id),file_sha256:arr(file.sha256),object:objects,depiction_kind:unknown.has(kind)?[]:[kind],transparent:file.transparency?.has_transparent_pixels!=null ? [String(file.transparency.has_transparent_pixels)] : file.has_transparency!=null ? [String(file.has_transparency)] : []};
+      const selectedFile=Object.fromEntries(['sha256','format','structure','url','archive','preview','validation','width','height','size_bytes','dimensions','transparency','scientific','scientific_review_evidence','scientific_conflicts'].filter(k=>file[k]!=null).map(k=>[k,file[k]]));
       selectedFile.appearance=appearance;
       const lexical={title:indexTerms(title),context:indexTerms(contextText)};
       lexical.all=unique([...lexical.title,...lexical.context,...aliases.map(termKey)]).sort(cmp);
-      const row={variant_id:[asset.id,digest,origin.asset_id||origin.source_id||'',originIndex].join(':'),asset_id:asset.id,family_id:asset.family_id||asset.id,title:fields.title||asset.title,source:origin.source||asset.source,source_id:origin.source_id||asset.source_id,author:origin.author||fields.author,attribution:origin.attribution||fields.attribution,values,eligible,facts,fact_basis:'explicit_source_fields_or_direct_source_labels; not independent scientific review',search:{title,aliases:aliases.join(' '),context:contextText},lexical,file:selectedFile,validation:asset.validation||{}};
+      const row={variant_id:[asset.id,digest,origin.asset_id||origin.source_id||'',originIndex].join(':'),asset_id:asset.id,family_id:asset.family_id||asset.id,title:fields.title||asset.title,source:origin.source||asset.source,source_id:origin.source_id||asset.source_id,author:origin.author||fields.author,attribution:origin.attribution||fields.attribution,values,eligible,facts,primary_object:{terms:objects,depiction_kind:kind,basis:manualEvidence(file,'object').length?'manual_visual_review':declaredObjects!=null&&objects.length?'explicit_source_field':objects.length?'direct_source_title_compound_label':'unknown',evidence:fields.title||null,manual_evidence_indices:manualEvidence(file,'object'),whole_body_verified:manualEvidence(file,'role').length>0&&facts.role.includes('whole_body')},fact_basis:factBasis,search:{title,aliases:aliases.join(' '),context:contextText},lexical,file:selectedFile,validation:asset.validation||{}};
       row.rotation_key=Math.floor(unitHash(row.family_id)*2147483647);
       row.features={signature:[...signature(row)].sort(cmp)};
       result.push(row);
@@ -230,7 +317,8 @@ export function sqlitePlan(plan) {
   const textClauses=plan.fts ? ['file_variants_fts MATCH ?'] : [];
   const textParams=plan.fts ? [plan.fts] : [];
   const conditions=[{code:'unavailable_or_rights_unresolved',sql:'v.eligible=1',params:[]}];
-  for(const [key,values] of Object.entries(plan.requirements)) conditions.push({code:`hard_filter:${key}`,sql:`EXISTS (SELECT 1 FROM json_each(v.values_json, '$.${key}') j WHERE j.value IN (${values.map(()=>'?').join(',')}))`,params:values});
+  for(const [key,values] of Object.entries(plan.requirements)) conditions.push({code:`hard_filter:${key}`,sql:plan.all_requirements?.[key]?`(SELECT COUNT(DISTINCT j.value) FROM json_each(v.values_json, '$.${key}') j WHERE j.value IN (${values.map(()=>'?').join(',')}))=${values.length}`:`EXISTS (SELECT 1 FROM json_each(v.values_json, '$.${key}') j WHERE j.value IN (${values.map(()=>'?').join(',')}))`,params:values,
+    unknown_sql:['species','state','view','role','object','depiction_kind','color_mode','palette_traits','representation','detail','realism','series'].includes(key)?`json_array_length(v.values_json,'$.${key}')=0`:null});
   return {from,text_clauses:textClauses,text_params:textParams,conditions,where:[...textClauses,...conditions.map(c=>c.sql)].join(' AND ')||'1',params:[...textParams,...conditions.flatMap(c=>c.params)]};
 }
 
@@ -250,7 +338,7 @@ export function filterVariant(variant,plan) {
   for(const [key,expected] of Object.entries(plan.requirements)) {
     const actual=variant.values[key]||[];
     if(!actual.length) return {matched:false,reason:`unknown:${key}`};
-    if(!expected.some(v=>actual.includes(v))) return {matched:false,reason:`hard_filter:${key}`};
+    if(!(plan.all_requirements?.[key]?expected.every(v=>actual.includes(v)):expected.some(v=>actual.includes(v)))) return {matched:false,reason:`hard_filter:${key}`};
   }
   const relevance=lexicalScore(variant,plan);
   return relevance==null ? {matched:false,reason:'object_terms'} : {matched:true,relevance};
@@ -368,7 +456,10 @@ export async function prepareWindowSearch(request={}) {
   if(plan.empty)conditions.push('0');
   const from=plan.fts?'file_variants v JOIN file_variants_fts f ON f.variant_id=v.variant_id':'file_variants v';
   if(plan.fts)conditions.push(`file_variants_fts MATCH ${param(plan.fts)}`);
-  for(const [key,values] of Object.entries(plan.requirements))conditions.push(member(`json_extract(v.values_json,'$.${key}')`,values));
+  for(const [key,values] of Object.entries(plan.requirements)) {
+    if(plan.all_requirements?.[key])for(const value of values)conditions.push(member(`json_extract(v.values_json,'$.${key}')`,[value]));
+    else conditions.push(member(`json_extract(v.values_json,'$.${key}')`,values));
+  }
   for(const group of plan.terms)conditions.push(member('v.all_terms',group.map(termKey)));
   const adopted=param(JSON.stringify(history.adopted||[]));
   const historyPenalty=mode==='exact'?'0.0':`0.035*MIN(3,(SELECT count(*) FROM json_each(${adopted}) used WHERE json_extract(used.value,'$.family_id')=r.family_id AND json_extract(used.value,'$.status')='adopted'))`;
@@ -403,7 +494,7 @@ export function finishWindowSearch(rows,counts,state) {
 }
 
 export function materializeResult(row,variant) {
-  return {asset_id:variant.asset_id,family_id:variant.family_id,variant_id:variant.variant_id,title:variant.title,selected_file:variant.file,selected_source:{source:variant.source,source_id:variant.source_id,attribution:variant.attribution},selected_science:{values:variant.facts,basis:variant.fact_basis},preview:variant.file.preview,download:variant.file.archive||{url:variant.file.url},pinned:Boolean(row.pinned),search_score:row.selection_score??row._score,validation:variant.validation};
+  return {asset_id:variant.asset_id,family_id:variant.family_id,variant_id:variant.variant_id,title:variant.title,selected_file:variant.file,selected_source:{source:variant.source,source_id:variant.source_id,attribution:variant.attribution},selected_science:{values:variant.facts,primary_object:variant.primary_object,basis:variant.fact_basis},preview:variant.file.preview,download:variant.file.archive||{url:variant.file.url},pinned:Boolean(row.pinned),search_score:row.selection_score??row._score,validation:variant.validation};
 }
 
 export async function searchCandidates(variants,request={}) {

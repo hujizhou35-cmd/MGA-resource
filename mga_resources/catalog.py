@@ -12,6 +12,7 @@ import json
 import re
 import sqlite3
 import subprocess
+import time
 import unicodedata
 from collections import Counter, defaultdict
 from contextlib import closing
@@ -321,7 +322,7 @@ def _search_context(item: dict[str, Any]) -> dict[str, Any]:
     """
     keys = ("title", "title_zh", "description", "tags", "categories", "taxonomy",
             "upstream_category", "species", "state", "view", "role", "object",
-            "anatomy", "action", "scientific", "author", "distribution_status")
+            "anatomy", "action", "depiction_kind", "scientific", "author", "distribution_status")
     return {key: copy.deepcopy(item[key]) for key in keys if item.get(key) is not None}
 
 
@@ -488,7 +489,7 @@ def _write_sqlite(records: list[dict[str, Any]], path: Path, catalog_version: st
         db.executemany("INSERT INTO index_metadata VALUES (?, ?)", [
             ("catalog_version", catalog_version), ("ranking_version", prepared["ranking_version"]),
         ])
-        db.execute("PRAGMA user_version=3")
+        db.execute("PRAGMA user_version=4")
 
 
 def finalize(records: Iterable[dict[str, Any]], output_dir: str | Path) -> dict[str, Any]:
@@ -523,10 +524,23 @@ def finalize(records: Iterable[dict[str, Any]], output_dir: str | Path) -> dict[
         "catalog_sha256": hashlib.sha256(catalog_path.read_bytes()).hexdigest(),
     }
     _write_sqlite(items, output_dir / "catalog.sqlite", summary["catalog_sha256"])
-    summary["search_index_version"] = 3
+    summary["search_index_version"] = 4
     summary["search_policy"] = "mga_resources/search-core.mjs; old BM25 available as search_legacy"
     (output_dir / "summary.json").write_text(json.dumps(summary, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     return summary
+
+
+def rebuild_search_index(catalog_path: str | Path, index_path: str | Path) -> str:
+    """Index a frozen catalog without normalizing or rewriting its bytes."""
+    catalog_path, index_path = Path(catalog_path), Path(index_path)
+    data = catalog_path.read_bytes()
+    records = [json.loads(line) for line in data.decode("utf-8").splitlines() if line.strip()]
+    if any(not row.get("id") or not row.get("family_id") for row in records):
+        raise ValueError("Index rebuild requires a finalized family catalog")
+    version = hashlib.sha256(data).hexdigest()
+    index_path.parent.mkdir(parents=True, exist_ok=True)
+    _write_sqlite(records, index_path, version)
+    return version
 
 
 def _query_plan(query: str) -> tuple[str, list[tuple[str, ...]]]:
@@ -636,12 +650,26 @@ def search_page(db_path: str | Path, query: str, limit: int = 10,
     and precomputed similarity features enter the ranking kernel. Full metadata
     is read for the returned selection, never all broad-query matches.
     """
+    total_started = time.perf_counter()
+    sql_seconds = core_seconds = 0.0
     filters, history, project = filters or {}, history or {}, project or {}
+    def invoke_core(payload):
+        nonlocal core_seconds
+        started = time.perf_counter()
+        result = _search_core(payload)
+        core_seconds += time.perf_counter() - started
+        return result
     with closing(sqlite3.connect(Path(db_path).resolve().as_uri() + "?mode=ro", uri=True)) as db:
-        if db.execute("PRAGMA user_version").fetchone()[0] != 3:
-            raise ValueError("Search index must be rebuilt as v3 with finalize(); search_legacy() remains available for old indexes")
-        metadata = dict(db.execute("SELECT key, value FROM index_metadata"))
-        prepared = _search_core({"action": "window_plan", "request": {
+        def read_sql(statement, parameters=()):
+            nonlocal sql_seconds
+            started = time.perf_counter()
+            rows = db.execute(statement, parameters).fetchall()
+            sql_seconds += time.perf_counter() - started
+            return rows
+        if read_sql("PRAGMA user_version")[0][0] != 4:
+            raise ValueError("Search index must be rebuilt as v4 with finalize(); search_legacy() remains available for old indexes")
+        metadata = dict(read_sql("SELECT key, value FROM index_metadata"))
+        prepared = invoke_core({"action": "window_plan", "request": {
             "query": query, "filters": filters, "limit": limit, "mode": mode, "seed": seed,
             "history": history, "project": project, "cursor": cursor, "preferences": preferences or {},
             "candidate_pool": candidate_pool, "catalog_version": metadata["catalog_version"],
@@ -650,41 +678,44 @@ def search_page(db_path: str | Path, query: str, limit: int = 10,
         plan = state["plan"]
         if metadata["ranking_version"] != plan["ranking_version"]:
             raise ValueError("Search policy version changed; rebuild the index with finalize()")
-        count_row = db.execute(sql["counts"], sql["params"]).fetchone()
+        count_row = read_sql(sql["counts"], sql["params"])[0]
         counts = dict(zip(("qualified_variants", "qualified_families"), count_row))
         rows = []
-        for row in db.execute(sql["window"], sql["params"]):
+        for row in read_sql(sql["window"], sql["params"]):
             candidate = dict(zip(("variant_id", "asset_id", "family_id", "file_sha256", "features", "relevance", "preference_score", "pinned", "selection_score", "rotation"), row))
             candidate["features"] = json.loads(candidate["features"])
             rows.append(candidate)
         compact_bytes = len(json.dumps(rows, ensure_ascii=False, separators=(",", ":")).encode("utf-8"))
-        page = _search_core({"action": "window_finish", "rows": rows, "counts": counts, "state": state})
-        variants = [json.loads(db.execute("SELECT metadata FROM file_variants WHERE variant_id=?", (row["variant_id"],)).fetchone()[0]) for row in page["selected"]]
+        page = invoke_core({"action": "window_finish", "rows": rows, "counts": counts, "state": state})
+        variants = [json.loads(read_sql("SELECT metadata FROM file_variants WHERE variant_id=?", (row["variant_id"],))[0][0]) for row in page["selected"]]
         details_bytes = len(json.dumps(variants, ensure_ascii=False, separators=(",", ":")).encode("utf-8"))
-        materialized = _search_core({"action": "hydrate", "selected": page.pop("selected"), "variants": variants})
+        materialized = invoke_core({"action": "hydrate", "selected": page.pop("selected"), "variants": variants})
         enriched = []
         for result in materialized["results"]:
-            asset = json.loads(db.execute("SELECT metadata FROM assets WHERE id=?", (result["asset_id"],)).fetchone()[0])
+            asset = json.loads(read_sql("SELECT metadata FROM assets WHERE id=?", (result["asset_id"],))[0][0])
             selected = next(file for file in asset["files"] if file.get("sha256") == result["selected_file"].get("sha256"))
             enriched.append({**asset, **result, "selected_file": selected, "preview": selected.get("preview"), "download": selected.get("archive") or {"url": selected.get("url")}})
         page["results"] = enriched
         page["diagnostics"]["unavailable_project_pins"] = [
             {**json.loads(pin), "reason": "selected file no longer satisfies this query, hard filters, availability or catalog"}
-            for pin, available in db.execute(sql["pins"], sql["params"]) if not available
+            for pin, available in read_sql(sql["pins"], sql["params"]) if not available
         ]
         # Small aggregates/samples explain missing metadata without loading the
         # rejected artwork records. Condition counts may overlap by design.
         base_where = " AND ".join(diagnostic_sql["text_clauses"]) or "1"
-        text_count = db.execute(f"SELECT count(*) FROM {diagnostic_sql['from']} WHERE {base_where}", diagnostic_sql["text_params"]).fetchone()[0] if not plan["empty"] else 0
+        text_count = read_sql(f"SELECT count(*) FROM {diagnostic_sql['from']} WHERE {base_where}", diagnostic_sql["text_params"])[0][0] if not plan["empty"] else 0
         rejected, uncertain = {}, []
         if not plan["empty"]:
             for condition in diagnostic_sql["conditions"]:
-                count = db.execute(f"SELECT count(*) FROM {diagnostic_sql['from']} WHERE {base_where} AND NOT ({condition['sql']})", [*diagnostic_sql["text_params"], *condition["params"]]).fetchone()[0]
+                count = read_sql(f"SELECT count(*) FROM {diagnostic_sql['from']} WHERE {base_where} AND NOT ({condition['sql']})", [*diagnostic_sql["text_params"], *condition["params"]])[0][0]
                 rejected[condition["code"]] = count
             for key in plan["requirements"]:
                 path = "$." + key
-                samples = db.execute(f"SELECT v.variant_id, v.family_id FROM {diagnostic_sql['from']} WHERE {base_where} AND json_array_length(v.values_json, ?)=0 ORDER BY v.variant_id LIMIT 20", [*diagnostic_sql["text_params"], path]).fetchall()
-                count = db.execute(f"SELECT count(*) FROM {diagnostic_sql['from']} WHERE {base_where} AND json_array_length(v.values_json, ?)=0", [*diagnostic_sql["text_params"], path]).fetchone()[0]
+                other_conditions = [condition for condition in diagnostic_sql["conditions"] if condition["code"] != "hard_filter:" + key]
+                uncertainty_where = " AND ".join([base_where, *[("(" + condition["sql"] + " OR " + condition["unknown_sql"] + ")") if condition.get("unknown_sql") else condition["sql"] for condition in other_conditions]])
+                uncertainty_params = [*diagnostic_sql["text_params"], *[parameter for condition in other_conditions for parameter in condition["params"]], path]
+                samples = read_sql(f"SELECT v.variant_id, v.family_id FROM {diagnostic_sql['from']} WHERE {uncertainty_where} AND json_array_length(v.values_json, ?)=0 ORDER BY v.variant_id LIMIT 20", uncertainty_params)
+                count = read_sql(f"SELECT count(*) FROM {diagnostic_sql['from']} WHERE {uncertainty_where} AND json_array_length(v.values_json, ?)=0", uncertainty_params)[0][0]
                 rejected["unknown:" + key] = count
                 uncertain.extend({"variant_id": row[0], "family_id": row[1], "reason": "unknown:" + key} for row in samples)
     page["diagnostics"]["sqlite_pushdown"] = {"text_matched_variants": text_count,
@@ -694,6 +725,10 @@ def search_page(db_path: str | Path, query: str, limit: int = 10,
         "hard_filters_before_payload_load": True, "family_grouping_before_candidate_limit": True,
         "candidate_limit_before_filters": None}
     page["diagnostics"]["uncertain_candidates"] = uncertain[:20]
+    page["adapter_metrics"].update({"sqlite_wall_milliseconds": sql_seconds * 1000,
+        "node_process_wall_milliseconds": core_seconds * 1000,
+        "search_page_wall_milliseconds": (time.perf_counter() - total_started) * 1000,
+        "returned_results_bytes": len(json.dumps(page["results"], ensure_ascii=False, separators=(",", ":")).encode("utf-8"))})
     return page
 
 

@@ -89,6 +89,23 @@ def test_file_appearance_binding_unknown_style_and_preferences_are_distinct(tmp_
     assert len(search(db, "mouse", filters={"preferences": {"detail": "detailed"}})) == 2
 
 
+def test_unresolved_palette_is_not_a_hard_match_but_known_medium_is_retained(tmp_path):
+    known, uncertain, unmeasured, unresolved = [artwork(i) for i in range(4)]
+    for item in (known, uncertain, unmeasured, unresolved):
+        item["files"][0]["appearance"]["color"].update(palette_traits=["monochrome_hue"], confidence="medium")
+    uncertain["files"][0]["appearance"]["color"]["mode"] = "unknown"
+    unmeasured["files"][0]["appearance"]["color"]["review_status"] = "not_measured"
+    unresolved["files"][0]["appearance"]["color"]["review_status"] = "needs_review"
+    unresolved["files"][0]["appearance"]["style"]["series"]["review_status"] = "needs_review"
+    db = database(tmp_path, [known, uncertain, unmeasured, unresolved])
+    for filters in ({"palette_traits": "monochrome_hue"}, {"color_mode": "color"}):
+        page = search_page(db, "mouse", filters=filters)
+        assert [r["selected_file"]["sha256"] for r in page["results"]] == [known["files"][0]["sha256"]]
+        assert page["diagnostics"]["uncertain_candidates"]
+    assert len(search(db, "mouse", filters={"series": "fixture-series"})) == 3
+    assert len(search(db, "mouse", filters={"preferences": {"palette_traits": "monochrome_hue"}})) == 4
+
+
 def test_seed_history_pagination_and_same_project_pins(tmp_path):
     db = database(tmp_path, [artwork(i) for i in range(120)])
     first = search_page(db, "mouse", seed="paper-a")
@@ -188,7 +205,7 @@ def test_unknown_filter_and_obsolete_index_fail_explicitly(tmp_path):
         search(db, "mouse", filters={"nonsense": "true"})
     with closing(sqlite3.connect(db)) as conn:
         conn.execute("PRAGMA user_version=1")
-    with pytest.raises(ValueError, match="rebuilt as v3"):
+    with pytest.raises(ValueError, match="rebuilt as v4"):
         search(db, "mouse")
 
 
@@ -231,3 +248,66 @@ def test_chinese_alias_substrings_do_not_turn_equipment_into_an_action(tmp_path)
     db=database(tmp_path,[artwork(1,title="Centrifuge",species=None),artwork(2,title="Centrifugation",species=None)])
     for query in ("离心分离步骤示意","centrifugation separation workflow illustration"):
         assert [row["title"] for row in search(db,query)]==["Centrifugation"]
+
+
+def test_animal_object_is_not_a_species_tag_on_brains_cells_actions_or_equipment(tmp_path):
+    records=[artwork(1,title="Mouse lateral view"),artwork(2,title="Mouse Brain",tags=["Side view"]),
+        artwork(3,title="Mouse cell",tags=["Side view"]),artwork(4,title="Mouse head",tags=["Side view"]),
+        artwork(5,title="Mouse injection",tags=["Side view"]),artwork(6,title="Computer mouse",species=None),
+        artwork(7,title="Mouse unknown apparatus label",tags=["Side view"]),artwork(8,title="Mouse")]
+    db=database(tmp_path,records)
+    for query in ("实验小鼠侧视插画","laboratory mouse side view illustration"):
+        page=search_page(db,query)
+        assert [row["title"] for row in page["results"]]==["Mouse lateral view"]
+        unknown={row["family_id"] for row in page["diagnostics"]["uncertain_candidates"] if row["reason"]=="unknown:view"}
+        mouse_family=search(db,"mouse",filters={"file_sha256":records[-1]["files"][0]["sha256"]})[0]["family_id"]
+        assert mouse_family in unknown
+        assert all(row["family_id"]!=page["results"][0]["family_id"] for row in page["diagnostics"]["uncertain_candidates"])
+    assert [row["title"] for row in search(db,"mouse brain side view")]==["Mouse Brain"]
+    assert [row["title"] for row in search(db,"computer mouse")]==["Computer mouse"]
+
+
+def test_taking_blood_is_an_action_but_a_collection_tube_is_not(tmp_path):
+    db=database(tmp_path,[artwork(1,title="taking blood sample",species=None),artwork(2,title="blood collection tube",species=None),artwork(3,title="blood sample tube",species=None)])
+    for query in ("采血过程示意","blood collection procedure illustration"):
+        assert [row["title"] for row in search(db,query)]==["taking blood sample"]
+
+
+def test_whole_body_words_do_not_replace_the_primary_species_with_a_body_part(tmp_path):
+    db=database(tmp_path,[artwork(1,title="Mouse whole body"),artwork(2,title="Human brain",species="human"),artwork(3,title="Human body",species="human")])
+    assert [r["title"] for r in search(db,"mouse")]==["Mouse whole body"]
+    assert [r["title"] for r in search(db,"human body")]==["Human body"]
+
+
+def test_manual_science_evidence_is_exact_file_bound_and_conflicts_stay_unknown(tmp_path):
+    good=artwork(1,title="Unspecified silhouette",species=None)
+    file=good["files"][0]
+    file["scientific"]={"object":["mouse"],"species":["mouse"],"view":["lateral"],"role":["whole_body"],"depiction_kind":"animal"}
+    file["scientific_review_evidence"]=[{"kind":"manual_visual_review","status":"applied","original_sha256":file["sha256"],"preview_sha256":file["preview"]["sha256"],"original_archive":file["archive"],"applies_to_archive":file["archive"],"applies_to_preview_archive":file["preview"]["archive"],"reviewer":"Fixture reviewer","evidence_uri":"https://example.invalid/review.png","evidence_sha256":"f"*64,"accepted_assertions":copy.deepcopy(file["scientific"])}]
+    bad=copy.deepcopy(good);bad["source_id"]="bad";bad["files"][0]["sha256"]="e"*64
+    conflict=copy.deepcopy(good);conflict["source_id"]="conflict";conflict["files"][0]["sha256"]="d"*64
+    conflict["files"][0]["scientific_review_evidence"][0]["original_sha256"]="d"*64
+    conflict["files"][0]["scientific_conflicts"]=["species"]
+    db=database(tmp_path,[good,bad,conflict])
+    rows=search(db,"mouse side view",filters={"role":"whole_body"})
+    assert len(rows)==1 and rows[0]["selected_file"]["sha256"]==file["sha256"]
+    science=rows[0]["selected_science"]
+    assert science["primary_object"]["basis"]=="manual_visual_review"
+    assert science["primary_object"]["whole_body_verified"] is True
+    assert science["basis"]["species"]["kind"]=="manual_visual_review"
+    assert rows[0]["selected_file"]["scientific_review_evidence"]
+
+
+def test_two_requested_views_require_both_on_the_selected_file(tmp_path):
+    both=artwork(1,title="Human body",species="human",view=["anterior","posterior"])
+    front=artwork(2,title="Human body",species="human",view="anterior")
+    db=database(tmp_path,[both,front])
+    for query in ("人体正面与背面示意","human body anterior posterior illustration"):
+        rows=search(db,query)
+        assert len(rows)==1 and rows[0]["selected_file"]["sha256"]==both["files"][0]["sha256"]
+
+
+def test_biological_cell_query_excludes_electrochemical_cells_and_cell_parts(tmp_path):
+    db=database(tmp_path,[artwork(1,title="Animal cell",species=None),artwork(2,title="Cyclic Voltammetry Const Temp Cell",species=None),artwork(3,title="Cell membrane",species=None),artwork(4,title="Macrophage",species=None)])
+    rows=search(db,"cell")
+    assert {row["title"] for row in rows}=={"Animal cell","Macrophage"}
