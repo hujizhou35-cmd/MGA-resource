@@ -91,13 +91,15 @@ class SourceTests(unittest.TestCase):
         source = {"source_id": "arcadia", "source_url": "https://zenodo.org/records/18395998", "metadata_url": url,
                   "filename_aliases": {"Agaricus-bisporis": "Agaricus-bisporus"}}
         metadata = load_arcadia_metadata(source, client)
-        raster, vector = {}, {}
+        raster, vector = {"family_id": "old-derived-family", "family_hint": "old/archive-path"}, {}
         enrich_arcadia(raster, "Tricolor + stroke PNGs/Agaricus-bisporis-tricolorstroke.png", source, metadata)
         enrich_arcadia(vector, "Silhouette SVGs/Agaricus-bisporus-silhouette.svg", source, metadata)
         self.assertEqual(raster["family_hint"], vector["family_hint"])
         self.assertIn("White button mushroom", raster["title"])
         self.assertIn("T. Michael Keesey", raster["attribution"])
         self.assertEqual(raster["scientific_name"], "Agaricus bisporus")
+        self.assertEqual(raster["species"], "Agaricus bisporus")
+        self.assertNotIn("family_id", raster)
 
     def test_arcadia_body_parts_are_not_merged_into_whole_organism(self):
         url = "https://example.org/arcadia/"

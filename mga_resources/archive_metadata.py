@@ -46,7 +46,10 @@ def enrich_arcadia(record: dict, path: str, source: dict, metadata: dict) -> Non
     name = PurePosixPath(path).name
     family = arcadia_family(name, source.get("filename_aliases", {}))
     match = metadata["names"].get(name.lower()) or metadata["families"].get(family)
-    record["family_hint"] = source["source_id"] + ":" + family
+    family_hint = source["source_id"] + ":" + family
+    if record.get("family_hint") != family_hint:
+        record.pop("family_id", None)
+    record["family_hint"] = family_hint
     record["metadata_source"] = metadata["url"]
     record["metadata_revision"] = metadata["revision"]
     if not match:
@@ -64,6 +67,7 @@ def enrich_arcadia(record: dict, path: str, source: dict, metadata: dict) -> Non
         record["title"] += " — " + family[len(base_family) + 1:].replace("-", " ")
     record["title"] += " — " + style
     record["scientific_name"] = scientific
+    record["species"] = scientific
     record["common_name"] = common
     record["organism_family"] = "arcadia:" + organism_key
     record["style"] = style
