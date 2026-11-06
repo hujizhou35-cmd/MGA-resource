@@ -1,0 +1,89 @@
+name: Build or restore clean publication data
+on:
+  workflow_dispatch:
+    inputs:
+      operation:
+        description: Build clean packs or independently restore an existing bundle
+        type: choice
+        options: [build, restore]
+        default: build
+      version:
+        description: Explicit immutable data version (build only, e.g. v20261107-1)
+        type: string
+      manifest_url:
+        description: Exact Release URL ending in publish_manifest.json (build only)
+        type: string
+      manifest_sha256:
+        description: Exact SHA-256 from acceptance checker (build only)
+        type: string
+      bundle_url:
+        description: Published multipart .bundle.json URL (restore only)
+        type: string
+      bundle_sha256:
+        description: Expected bundle index SHA-256 (restore only)
+        type: string
+permissions:
+  contents: write
+concurrency:
+  group: clean-publish-${{ inputs.version || inputs.bundle_sha256 }}
+  cancel-in-progress: false
+jobs:
+  recovery:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 180
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Validate explicit inputs before reading artwork
+        env:
+          OPERATION: ${{ inputs.operation }}
+          VERSION: ${{ inputs.version }}
+          MANIFEST_URL: ${{ inputs.manifest_url }}
+          MANIFEST_SHA: ${{ inputs.manifest_sha256 }}
+          BUNDLE_URL: ${{ inputs.bundle_url }}
+          BUNDLE_SHA: ${{ inputs.bundle_sha256 }}
+        run: |
+          python - <<'PY'
+          import os, re
+          mode = os.environ['OPERATION']
+          fields = ('VERSION', 'MANIFEST_URL', 'MANIFEST_SHA') if mode == 'build' else ('BUNDLE_URL', 'BUNDLE_SHA')
+          if mode not in ('build', 'restore') or any(not os.environ.get(field) for field in fields):
+              raise SystemExit('An explicit versioned manifest or existing bundle and its SHA-256 are required.')
+          digest = os.environ['MANIFEST_SHA' if mode == 'build' else 'BUNDLE_SHA']
+          if not re.fullmatch(r'[0-9a-f]{64}', digest):
+              raise SystemExit('SHA-256 must be 64 lowercase hexadecimal characters.')
+          PY
+      - name: Run synthetic recovery tests
+        run: |
+          python -m pip install 'pytest>=8,<10'
+          python -m pytest -q tests/test_publish_pack.py
+      - name: Build or independently restore cloud data
+        env:
+          GH_TOKEN: ${{ github.token }}
+          OPERATION: ${{ inputs.operation }}
+          VERSION: ${{ inputs.version }}
+          MANIFEST_URL: ${{ inputs.manifest_url }}
+          MANIFEST_SHA: ${{ inputs.manifest_sha256 }}
+          BUNDLE_URL: ${{ inputs.bundle_url }}
+          BUNDLE_SHA: ${{ inputs.bundle_sha256 }}
+        run: |
+          if [ "$OPERATION" = build ]; then
+            python scripts/build_publish_pack.py build --manifest-url "$MANIFEST_URL" --manifest-sha256 "$MANIFEST_SHA" --version "$VERSION" --publish
+          else
+            python scripts/build_publish_pack.py restore --bundle-url "$BUNDLE_URL" --bundle-sha256 "$BUNDLE_SHA"
+          fi
+      - name: Preserve small recovery proofs
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: clean-publication-proof-${{ github.run_id }}-${{ github.run_attempt }}
+          if-no-files-found: ignore
+          retention-days: 7
+          path: |
+            build/publish-pack/*.bundle.json
+            build/publish-pack/*.restore_evidence.json
+            build/publish-pack/*.receipt.json
+            build/restored-publication/bundle.json
+            build/restored-publication/restore_evidence.json
