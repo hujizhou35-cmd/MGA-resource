@@ -1,0 +1,647 @@
+{
+  "schema_version": 1,
+  "reviewed_at": "2026-11-06",
+  "reviewer": "Codex primary agent; direct visual inspection",
+  "source": "scisvg",
+  "collection_run": "42238985604-1",
+  "collection_commit": "de01d875a27c79bafac5327db6e1302ba3fd37b1",
+  "review_method": "Actual cloud-rendered contact sheet viewed with view_image; observations entered after inspection.",
+  "review_sheet_url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scisvg-42238985604-1-b0000.review.png",
+  "review_sheet_sha256": "d6eac4897aebcd56bda0e8bde1dc6cd5c9d22d8ce08bff1953b0cc99d78b4f8c",
+  "review_limits": [
+    "Contact-sheet-scale legibility and use scope only.",
+    "No whole-source scientific or native-editing approval."
+  ],
+  "items": [
+    {
+      "tile": 1,
+      "id": "scisvg-98cb7aeca429c2a054e7",
+      "title": "Gene Structure",
+      "source_id": "assets/bioinformatics/genomics/gene-structure.svg",
+      "source_url": "https://github.com/SaveenaSolanki/SciSVG/blob/b8a2b60a3a5b2d9b717b1065fbcb8de9f1faf72b/assets/bioinformatics/genomics/gene-structure.svg",
+      "original_sha256": "95f89725308fd871cecca6c8eb92eaa5afe197330a840aa6301c5c04f6536412",
+      "preview_sha256": "74780bb20c7a9e07e98b4e4c5c2cd70587b4c6b09a972f8d7db3e9574742b5ec",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scisvg-42238985604-1-b0000.tar.gz",
+        "member": "files/95/95f89725308fd871cecca6c8eb92eaa5afe197330a840aa6301c5c04f6536412.svg"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scisvg-42238985604-1-b0000.tar.gz",
+        "member": "previews/95f89725308fd871cecca6c8eb92eaa5afe197330a840aa6301c5c04f6536412.png"
+      },
+      "visual_verdict": "usable_as_schematic_component",
+      "observations": "基因区段示意，未表达具体基因或数据。",
+      "scientific_detail_validation": "not_independently_verified",
+      "native_editability_tested": false
+    },
+    {
+      "tile": 2,
+      "id": "scisvg-cc9111b6bf16d2ee8103",
+      "title": "Heatmap",
+      "source_id": "assets/bioinformatics/genomics/heatmap.svg",
+      "source_url": "https://github.com/SaveenaSolanki/SciSVG/blob/b8a2b60a3a5b2d9b717b1065fbcb8de9f1faf72b/assets/bioinformatics/genomics/heatmap.svg",
+      "original_sha256": "4cd97bf2588183b3e8baa38cfaab442d14f8d75b8a0ed97cf4364ccd4e005dd7",
+      "preview_sha256": "41fcf04974b1487816bff5ff84e03a91a7994ea0bee7c62eb7ce6d234ff9e696",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scisvg-42238985604-1-b0000.tar.gz",
+        "member": "files/4c/4cd97bf2588183b3e8baa38cfaab442d14f8d75b8a0ed97cf4364ccd4e005dd7.svg"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scisvg-42238985604-1-b0000.tar.gz",
+        "member": "previews/4cd97bf2588183b3e8baa38cfaab442d14f8d75b8a0ed97cf4364ccd4e005dd7.png"
+      },
+      "visual_verdict": "usable_as_schematic_component",
+      "observations": "通用热图模板，没有研究数值标签；只可作示意。",
+      "scientific_detail_validation": "not_independently_verified",
+      "native_editability_tested": false
+    },
+    {
+      "tile": 3,
+      "id": "scisvg-c8ca50f9d1be49139499",
+      "title": "Sequence Alignment",
+      "source_id": "assets/bioinformatics/genomics/sequence-alignment.svg",
+      "source_url": "https://github.com/SaveenaSolanki/SciSVG/blob/b8a2b60a3a5b2d9b717b1065fbcb8de9f1faf72b/assets/bioinformatics/genomics/sequence-alignment.svg",
+      "original_sha256": "ffbc3633502de1ffffbc655936bfd2bcf1527be6dafd0d6277fbd117dbec1940",
+      "preview_sha256": "5197cb45b505c59d12214abb96524048bfb02d6d15acb5cfb9f68a7365b1b035",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scisvg-42238985604-1-b0000.tar.gz",
+        "member": "files/ff/ffbc3633502de1ffffbc655936bfd2bcf1527be6dafd0d6277fbd117dbec1940.svg"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scisvg-42238985604-1-b0000.tar.gz",
+        "member": "previews/ffbc3633502de1ffffbc655936bfd2bcf1527be6dafd0d6277fbd117dbec1940.png"
+      },
+      "visual_verdict": "usable_as_schematic_component",
+      "observations": "序列比对示意，不能当作具体序列。",
+      "scientific_detail_validation": "not_independently_verified",
+      "native_editability_tested": false
+    },
+    {
+      "tile": 4,
+      "id": "scisvg-40f21e41c3dbedc83b21",
+      "title": "Sequencing Reads",
+      "source_id": "assets/bioinformatics/genomics/sequencing-reads.svg",
+      "source_url": "https://github.com/SaveenaSolanki/SciSVG/blob/b8a2b60a3a5b2d9b717b1065fbcb8de9f1faf72b/assets/bioinformatics/genomics/sequencing-reads.svg",
+      "original_sha256": "9452c6c0d452ea7efe8c01de34747b38d5022986b3ab98e60a73b7840f75d39d",
+      "preview_sha256": "37e1b4887f61f22b6edea3c205041e38ea61803351b87ce982795c761f3cd1f7",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scisvg-42238985604-1-b0000.tar.gz",
+        "member": "files/94/9452c6c0d452ea7efe8c01de34747b38d5022986b3ab98e60a73b7840f75d39d.svg"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scisvg-42238985604-1-b0000.tar.gz",
+        "member": "previews/9452c6c0d452ea7efe8c01de34747b38d5022986b3ab98e60a73b7840f75d39d.png"
+      },
+      "visual_verdict": "usable_as_schematic_component",
+      "observations": "轮廓和线条清楚，适合作为来源名称所指的简化示意或装配部件；未验证精细科学结构。",
+      "scientific_detail_validation": "not_independently_verified",
+      "native_editability_tested": false
+    },
+    {
+      "tile": 5,
+      "id": "scisvg-49acf25ee171e72a1ce6",
+      "title": "Neural Network",
+      "source_id": "assets/bioinformatics/machine-learning/neural-network.svg",
+      "source_url": "https://github.com/SaveenaSolanki/SciSVG/blob/b8a2b60a3a5b2d9b717b1065fbcb8de9f1faf72b/assets/bioinformatics/machine-learning/neural-network.svg",
+      "original_sha256": "862026b05b1c0309b714ec0988c7223e5532db9665563fad682a3781023adc9a",
+      "preview_sha256": "2c8a7990409a7f2cdaea672c693b54014c6f1c78b3e5d3c0dac3e4572bc1971a",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scisvg-42238985604-1-b0000.tar.gz",
+        "member": "files/86/862026b05b1c0309b714ec0988c7223e5532db9665563fad682a3781023adc9a.svg"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scisvg-42238985604-1-b0000.tar.gz",
+        "member": "previews/862026b05b1c0309b714ec0988c7223e5532db9665563fad682a3781023adc9a.png"
+      },
+      "visual_verdict": "usable_as_schematic_component",
+      "observations": "神经网络结构符号，不是生物神经元。",
+      "scientific_detail_validation": "not_independently_verified",
+      "native_editability_tested": false
+    },
+    {
+      "tile": 6,
+      "id": "scisvg-639a3363eff9563423ad",
+      "title": "Phylogenetic Tree",
+      "source_id": "assets/bioinformatics/networks/phylogenetic-tree.svg",
+      "source_url": "https://github.com/SaveenaSolanki/SciSVG/blob/b8a2b60a3a5b2d9b717b1065fbcb8de9f1faf72b/assets/bioinformatics/networks/phylogenetic-tree.svg",
+      "original_sha256": "f52d90b8e76716f937ed0ce8fa5cc9fc8dbb94b7efe667f20103b9cb6d370c54",
+      "preview_sha256": "1d1750438eda059b2158165feed7a2296973db255c004a414be91dd2cf4b80ef",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scisvg-42238985604-1-b0000.tar.gz",
+        "member": "files/f5/f52d90b8e76716f937ed0ce8fa5cc9fc8dbb94b7efe667f20103b9cb6d370c54.svg"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scisvg-42238985604-1-b0000.tar.gz",
+        "member": "previews/f52d90b8e76716f937ed0ce8fa5cc9fc8dbb94b7efe667f20103b9cb6d370c54.png"
+      },
+      "visual_verdict": "usable_as_schematic_component",
+      "observations": "轮廓和线条清楚，适合作为来源名称所指的简化示意或装配部件；未验证精细科学结构。",
+      "scientific_detail_validation": "not_independently_verified",
+      "native_editability_tested": false
+    },
+    {
+      "tile": 7,
+      "id": "scisvg-e985637415722b55fc64",
+      "title": "Workflow Pipeline",
+      "source_id": "assets/bioinformatics/workflows/workflow-pipeline.svg",
+      "source_url": "https://github.com/SaveenaSolanki/SciSVG/blob/b8a2b60a3a5b2d9b717b1065fbcb8de9f1faf72b/assets/bioinformatics/workflows/workflow-pipeline.svg",
+      "original_sha256": "9540abdad5229c8fe272c01628d9762b6f1735e1ee580470f9bbefc7bc10d8d5",
+      "preview_sha256": "fc5234c25db0da85b11768713ef853552cdc990b1fef4cfe1e84b351177c107b",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scisvg-42238985604-1-b0000.tar.gz",
+        "member": "files/95/9540abdad5229c8fe272c01628d9762b6f1735e1ee580470f9bbefc7bc10d8d5.svg"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scisvg-42238985604-1-b0000.tar.gz",
+        "member": "previews/9540abdad5229c8fe272c01628d9762b6f1735e1ee580470f9bbefc7bc10d8d5.png"
+      },
+      "visual_verdict": "usable_as_schematic_component",
+      "observations": "可组合流程框架，无特定临床含义。",
+      "scientific_detail_validation": "not_independently_verified",
+      "native_editability_tested": false
+    },
+    {
+      "tile": 8,
+      "id": "scisvg-9389f49f66db9e26f8ed",
+      "title": "Animal Cell",
+      "source_id": "assets/biology/cells/animal-cell.svg",
+      "source_url": "https://github.com/SaveenaSolanki/SciSVG/blob/b8a2b60a3a5b2d9b717b1065fbcb8de9f1faf72b/assets/biology/cells/animal-cell.svg",
+      "original_sha256": "0f534fc86a753d11dbc9e893a1981b8234af2f6a76809329db1de56f37553806",
+      "preview_sha256": "d2d06ce9e9859cc4533dd4e687cdcd6ad51f3c0da379e16177e0ccfd1b6d1bdd",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scisvg-42238985604-1-b0000.tar.gz",
+        "member": "files/0f/0f534fc86a753d11dbc9e893a1981b8234af2f6a76809329db1de56f37553806.svg"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scisvg-42238985604-1-b0000.tar.gz",
+        "member": "previews/0f534fc86a753d11dbc9e893a1981b8234af2f6a76809329db1de56f37553806.png"
+      },
+      "visual_verdict": "usable_as_schematic_component",
+      "observations": "通用动物细胞示意，不能当作特定细胞类型或物种。",
+      "scientific_detail_validation": "not_independently_verified",
+      "native_editability_tested": false
+    },
+    {
+      "tile": 9,
+      "id": "scisvg-64f544c67402fd5d248e",
+      "title": "Cell Membrane",
+      "source_id": "assets/biology/cells/cell-membrane.svg",
+      "source_url": "https://github.com/SaveenaSolanki/SciSVG/blob/b8a2b60a3a5b2d9b717b1065fbcb8de9f1faf72b/assets/biology/cells/cell-membrane.svg",
+      "original_sha256": "1d0e7471631d1d3da806c3a8e5b1b0916c64f4bd235e912ce7b6bc774de28bb0",
+      "preview_sha256": "26a2f7776d11d7456a93d0c1c41d113f565607d938f2ba04ee143ab7b13d9dd0",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scisvg-42238985604-1-b0000.tar.gz",
+        "member": "files/1d/1d0e7471631d1d3da806c3a8e5b1b0916c64f4bd235e912ce7b6bc774de28bb0.svg"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scisvg-42238985604-1-b0000.tar.gz",
+        "member": "previews/1d0e7471631d1d3da806c3a8e5b1b0916c64f4bd235e912ce7b6bc774de28bb0.png"
+      },
+      "visual_verdict": "usable_as_schematic_component",
+      "observations": "膜双层与跨膜蛋白符号可辨。",
+      "scientific_detail_validation": "not_independently_verified",
+      "native_editability_tested": false
+    },
+    {
+      "tile": 10,
+      "id": "scisvg-372cde5fd4acbdd4abf2",
+      "title": "Neuron",
+      "source_id": "assets/biology/cells/neuron.svg",
+      "source_url": "https://github.com/SaveenaSolanki/SciSVG/blob/b8a2b60a3a5b2d9b717b1065fbcb8de9f1faf72b/assets/biology/cells/neuron.svg",
+      "original_sha256": "63cd13b461a897431554889908a2306d55a273b8751ee7313e432f53955d09f3",
+      "preview_sha256": "fde234a7bf8b561fa9080ac89a67931d5a6f66283410c9dea2f9d4ca1baf9046",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scisvg-42238985604-1-b0000.tar.gz",
+        "member": "files/63/63cd13b461a897431554889908a2306d55a273b8751ee7313e432f53955d09f3.svg"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scisvg-42238985604-1-b0000.tar.gz",
+        "member": "previews/63cd13b461a897431554889908a2306d55a273b8751ee7313e432f53955d09f3.png"
+      },
+      "visual_verdict": "usable_as_schematic_component",
+      "observations": "神经元结构符号可辨。",
+      "scientific_detail_validation": "not_independently_verified",
+      "native_editability_tested": false
+    },
+    {
+      "tile": 11,
+      "id": "scisvg-0c6ca8023739f6b18537",
+      "title": "Chromosome",
+      "source_id": "assets/biology/dna-rna/chromosome.svg",
+      "source_url": "https://github.com/SaveenaSolanki/SciSVG/blob/b8a2b60a3a5b2d9b717b1065fbcb8de9f1faf72b/assets/biology/dna-rna/chromosome.svg",
+      "original_sha256": "31f50db3579332e47ab540d7e002eecef626c072764918a8b577131facdd3433",
+      "preview_sha256": "c77fca951fe6f2b19a6dbc0f57273918ce03f59ff268f1eac3a202a73eecbf21",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scisvg-42238985604-1-b0000.tar.gz",
+        "member": "files/31/31f50db3579332e47ab540d7e002eecef626c072764918a8b577131facdd3433.svg"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scisvg-42238985604-1-b0000.tar.gz",
+        "member": "previews/31f50db3579332e47ab540d7e002eecef626c072764918a8b577131facdd3433.png"
+      },
+      "visual_verdict": "usable_as_schematic_component",
+      "observations": "复制染色体符号可辨，非染色体核型结果。",
+      "scientific_detail_validation": "not_independently_verified",
+      "native_editability_tested": false
+    },
+    {
+      "tile": 12,
+      "id": "scisvg-f17c9a0be6f7b611fc18",
+      "title": "DNA Double Helix",
+      "source_id": "assets/biology/dna-rna/dna-double-helix.svg",
+      "source_url": "https://github.com/SaveenaSolanki/SciSVG/blob/b8a2b60a3a5b2d9b717b1065fbcb8de9f1faf72b/assets/biology/dna-rna/dna-double-helix.svg",
+      "original_sha256": "f49612e45d3410d733d44ffe58f4df3f1120923d2041352218655d5901e433c8",
+      "preview_sha256": "d050e7af80b415aa1a7bd42be51845aa2a8a42e685b903754736cbc26f470b0b",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scisvg-42238985604-1-b0000.tar.gz",
+        "member": "files/f4/f49612e45d3410d733d44ffe58f4df3f1120923d2041352218655d5901e433c8.svg"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scisvg-42238985604-1-b0000.tar.gz",
+        "member": "previews/f49612e45d3410d733d44ffe58f4df3f1120923d2041352218655d5901e433c8.png"
+      },
+      "visual_verdict": "usable_as_schematic_component",
+      "observations": "DNA双螺旋概念符号；未验证具体螺距或碱基。",
+      "scientific_detail_validation": "not_independently_verified",
+      "native_editability_tested": false
+    },
+    {
+      "tile": 13,
+      "id": "scisvg-266300f31d622ae4b74d",
+      "title": "Plasmid",
+      "source_id": "assets/biology/dna-rna/plasmid.svg",
+      "source_url": "https://github.com/SaveenaSolanki/SciSVG/blob/b8a2b60a3a5b2d9b717b1065fbcb8de9f1faf72b/assets/biology/dna-rna/plasmid.svg",
+      "original_sha256": "66f5ab1939a63c51bb40efa0e7c44d0ea663dbffb67625d17256753e92d7d555",
+      "preview_sha256": "3dcf2f27d9e23a8d572e0c2c939eecb549d84995b5f7a520236bd73c4125a306",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scisvg-42238985604-1-b0000.tar.gz",
+        "member": "files/66/66f5ab1939a63c51bb40efa0e7c44d0ea663dbffb67625d17256753e92d7d555.svg"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scisvg-42238985604-1-b0000.tar.gz",
+        "member": "previews/66f5ab1939a63c51bb40efa0e7c44d0ea663dbffb67625d17256753e92d7d555.png"
+      },
+      "visual_verdict": "usable_as_schematic_component",
+      "observations": "轮廓和线条清楚，适合作为来源名称所指的简化示意或装配部件；未验证精细科学结构。",
+      "scientific_detail_validation": "not_independently_verified",
+      "native_editability_tested": false
+    },
+    {
+      "tile": 14,
+      "id": "scisvg-a43d1aa2b772b58b3f69",
+      "title": "Mitochondrion",
+      "source_id": "assets/biology/organelles/mitochondrion.svg",
+      "source_url": "https://github.com/SaveenaSolanki/SciSVG/blob/b8a2b60a3a5b2d9b717b1065fbcb8de9f1faf72b/assets/biology/organelles/mitochondrion.svg",
+      "original_sha256": "c2bda598dc6756e66155a90f74e472ba20c8fffa41359fad070fa7e8d66a65b3",
+      "preview_sha256": "ac25d50e99e71325ea9c2d5bd1f533fdec2630581850a6f71266880b0384c7d8",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scisvg-42238985604-1-b0000.tar.gz",
+        "member": "files/c2/c2bda598dc6756e66155a90f74e472ba20c8fffa41359fad070fa7e8d66a65b3.svg"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scisvg-42238985604-1-b0000.tar.gz",
+        "member": "previews/c2bda598dc6756e66155a90f74e472ba20c8fffa41359fad070fa7e8d66a65b3.png"
+      },
+      "visual_verdict": "usable_as_schematic_component",
+      "observations": "线粒体概念图可辨。",
+      "scientific_detail_validation": "not_independently_verified",
+      "native_editability_tested": false
+    },
+    {
+      "tile": 15,
+      "id": "scisvg-e51e0cf0d23461ca94dd",
+      "title": "Ribosome",
+      "source_id": "assets/biology/organelles/ribosome.svg",
+      "source_url": "https://github.com/SaveenaSolanki/SciSVG/blob/b8a2b60a3a5b2d9b717b1065fbcb8de9f1faf72b/assets/biology/organelles/ribosome.svg",
+      "original_sha256": "2d465a162efe7bdf3543fa66d376d260b41570c645be7aa9122eedcbc1d0ca93",
+      "preview_sha256": "a45b068446d667e52e073180911dc48118d615d53f1c062747b14edd1d8f4fe4",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scisvg-42238985604-1-b0000.tar.gz",
+        "member": "files/2d/2d465a162efe7bdf3543fa66d376d260b41570c645be7aa9122eedcbc1d0ca93.svg"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scisvg-42238985604-1-b0000.tar.gz",
+        "member": "previews/2d465a162efe7bdf3543fa66d376d260b41570c645be7aa9122eedcbc1d0ca93.png"
+      },
+      "visual_verdict": "usable_as_schematic_component",
+      "observations": "轮廓和线条清楚，适合作为来源名称所指的简化示意或装配部件；未验证精细科学结构。",
+      "scientific_detail_validation": "not_independently_verified",
+      "native_editability_tested": false
+    },
+    {
+      "tile": 16,
+      "id": "scisvg-421a5e731abb04ca4dae",
+      "title": "Erlenmeyer Flask",
+      "source_id": "assets/chemistry/glassware/erlenmeyer-flask.svg",
+      "source_url": "https://github.com/SaveenaSolanki/SciSVG/blob/b8a2b60a3a5b2d9b717b1065fbcb8de9f1faf72b/assets/chemistry/glassware/erlenmeyer-flask.svg",
+      "original_sha256": "800454264fe49923c1ada758f4880c765398e78822c47fa99e718a4f4f7b8ac6",
+      "preview_sha256": "c622c643df2a314e48828906bf0e7909e40904bf57280c81e6084a467480ec8b",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scisvg-42238985604-1-b0000.tar.gz",
+        "member": "files/80/800454264fe49923c1ada758f4880c765398e78822c47fa99e718a4f4f7b8ac6.svg"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scisvg-42238985604-1-b0000.tar.gz",
+        "member": "previews/800454264fe49923c1ada758f4880c765398e78822c47fa99e718a4f4f7b8ac6.png"
+      },
+      "visual_verdict": "usable_as_schematic_component",
+      "observations": "轮廓和线条清楚，适合作为来源名称所指的简化示意或装配部件；未验证精细科学结构。",
+      "scientific_detail_validation": "not_independently_verified",
+      "native_editability_tested": false
+    },
+    {
+      "tile": 17,
+      "id": "scisvg-c5c68f4b10a681cb7ff6",
+      "title": "Benzene Ring",
+      "source_id": "assets/chemistry/molecules/benzene-ring.svg",
+      "source_url": "https://github.com/SaveenaSolanki/SciSVG/blob/b8a2b60a3a5b2d9b717b1065fbcb8de9f1faf72b/assets/chemistry/molecules/benzene-ring.svg",
+      "original_sha256": "4080c12d3f6c2c42458ceb5e341226679a3d92218bfa1d1cc6c6131ddbc725be",
+      "preview_sha256": "978a0058d3a8b1d35c7af08e81387cb0b043e918eebce33562db2a102c2511fc",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scisvg-42238985604-1-b0000.tar.gz",
+        "member": "files/40/4080c12d3f6c2c42458ceb5e341226679a3d92218bfa1d1cc6c6131ddbc725be.svg"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scisvg-42238985604-1-b0000.tar.gz",
+        "member": "previews/4080c12d3f6c2c42458ceb5e341226679a3d92218bfa1d1cc6c6131ddbc725be.png"
+      },
+      "visual_verdict": "usable_as_schematic_component",
+      "observations": "轮廓和线条清楚，适合作为来源名称所指的简化示意或装配部件；未验证精细科学结构。",
+      "scientific_detail_validation": "not_independently_verified",
+      "native_editability_tested": false
+    },
+    {
+      "tile": 18,
+      "id": "scisvg-d91acbe7c1753a4ae151",
+      "title": "Peptide Bond",
+      "source_id": "assets/chemistry/molecules/peptide-bond.svg",
+      "source_url": "https://github.com/SaveenaSolanki/SciSVG/blob/b8a2b60a3a5b2d9b717b1065fbcb8de9f1faf72b/assets/chemistry/molecules/peptide-bond.svg",
+      "original_sha256": "51eebb1ea9061639292234c63b428869acf3fc147452b1af4285403ab3fb94bb",
+      "preview_sha256": "45670d82e8b409267bc23da3997aabd9d30c6f2dd56440065dc5e3c64a992565",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scisvg-42238985604-1-b0000.tar.gz",
+        "member": "files/51/51eebb1ea9061639292234c63b428869acf3fc147452b1af4285403ab3fb94bb.svg"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scisvg-42238985604-1-b0000.tar.gz",
+        "member": "previews/51eebb1ea9061639292234c63b428869acf3fc147452b1af4285403ab3fb94bb.png"
+      },
+      "visual_verdict": "usable_as_schematic_component",
+      "observations": "分子/肽键风格示意，不能据此认定具体化学结构或序列。",
+      "scientific_detail_validation": "not_independently_verified",
+      "native_editability_tested": false
+    },
+    {
+      "tile": 19,
+      "id": "scisvg-48c9c8077ee2d173f478",
+      "title": "Protein-Ligand Binding",
+      "source_id": "assets/chemistry/molecules/protein-ligand-binding.svg",
+      "source_url": "https://github.com/SaveenaSolanki/SciSVG/blob/b8a2b60a3a5b2d9b717b1065fbcb8de9f1faf72b/assets/chemistry/molecules/protein-ligand-binding.svg",
+      "original_sha256": "8200273c2fe9e8c044a472c4e60b194f61b9d31cce334f47a0f88662ff1ca051",
+      "preview_sha256": "02040f981859e1d71c22b39ebe9fa4e48cdf6979f8231da57d4e02725e3ed7d4",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scisvg-42238985604-1-b0000.tar.gz",
+        "member": "files/82/8200273c2fe9e8c044a472c4e60b194f61b9d31cce334f47a0f88662ff1ca051.svg"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scisvg-42238985604-1-b0000.tar.gz",
+        "member": "previews/8200273c2fe9e8c044a472c4e60b194f61b9d31cce334f47a0f88662ff1ca051.png"
+      },
+      "visual_verdict": "usable_as_schematic_component",
+      "observations": "轮廓和线条清楚，适合作为来源名称所指的简化示意或装配部件；未验证精细科学结构。",
+      "scientific_detail_validation": "not_independently_verified",
+      "native_editability_tested": false
+    },
+    {
+      "tile": 20,
+      "id": "scisvg-0c3c2fb24f36a0edb946",
+      "title": "Reaction Arrow",
+      "source_id": "assets/chemistry/reactions/reaction-arrow.svg",
+      "source_url": "https://github.com/SaveenaSolanki/SciSVG/blob/b8a2b60a3a5b2d9b717b1065fbcb8de9f1faf72b/assets/chemistry/reactions/reaction-arrow.svg",
+      "original_sha256": "31e7080138656b5e170eb0c54c68d2255508dc52e129cc9fbd8c756df3df1465",
+      "preview_sha256": "87f142ef1d66d1b510e381fcf0603215ebd6cf8c70d30302c3331d7aefed1cb0",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scisvg-42238985604-1-b0000.tar.gz",
+        "member": "files/31/31e7080138656b5e170eb0c54c68d2255508dc52e129cc9fbd8c756df3df1465.svg"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scisvg-42238985604-1-b0000.tar.gz",
+        "member": "previews/31e7080138656b5e170eb0c54c68d2255508dc52e129cc9fbd8c756df3df1465.png"
+      },
+      "visual_verdict": "usable_as_schematic_component",
+      "observations": "A+B到C的通用反应符号，不代表具体实验结果。",
+      "scientific_detail_validation": "not_independently_verified",
+      "native_editability_tested": false
+    },
+    {
+      "tile": 21,
+      "id": "scisvg-831534a8c5727920ab07",
+      "title": "Arrow Right",
+      "source_id": "assets/general-science/arrow-right.svg",
+      "source_url": "https://github.com/SaveenaSolanki/SciSVG/blob/b8a2b60a3a5b2d9b717b1065fbcb8de9f1faf72b/assets/general-science/arrow-right.svg",
+      "original_sha256": "d593f3f74ef30aa682d8cdf14a03412cf9574e19118d9ce2506467ca3d163344",
+      "preview_sha256": "d29f611287b2b5d93ff571dc5ae14d0378d8ceb1fd7bb3fa987a3959f6e8e3b1",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scisvg-42238985604-1-b0000.tar.gz",
+        "member": "files/d5/d593f3f74ef30aa682d8cdf14a03412cf9574e19118d9ce2506467ca3d163344.svg"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scisvg-42238985604-1-b0000.tar.gz",
+        "member": "previews/d593f3f74ef30aa682d8cdf14a03412cf9574e19118d9ce2506467ca3d163344.png"
+      },
+      "visual_verdict": "usable_as_schematic_component",
+      "observations": "轮廓和线条清楚，适合作为来源名称所指的简化示意或装配部件；未验证精细科学结构。",
+      "scientific_detail_validation": "not_independently_verified",
+      "native_editability_tested": false
+    },
+    {
+      "tile": 22,
+      "id": "scisvg-023a4aa2d07c9e86534d",
+      "title": "Axes",
+      "source_id": "assets/general-science/axes.svg",
+      "source_url": "https://github.com/SaveenaSolanki/SciSVG/blob/b8a2b60a3a5b2d9b717b1065fbcb8de9f1faf72b/assets/general-science/axes.svg",
+      "original_sha256": "d6663d332faecbf3d1216d9a69302731e56e36b03e8ad80ae85ca2c79adae2d6",
+      "preview_sha256": "19dc6f9234bbb8c6084c6da9ebaff0e7f67d71039fca76eb5fb3883519fa2674",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scisvg-42238985604-1-b0000.tar.gz",
+        "member": "files/d6/d6663d332faecbf3d1216d9a69302731e56e36b03e8ad80ae85ca2c79adae2d6.svg"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scisvg-42238985604-1-b0000.tar.gz",
+        "member": "previews/d6663d332faecbf3d1216d9a69302731e56e36b03e8ad80ae85ca2c79adae2d6.png"
+      },
+      "visual_verdict": "usable_as_schematic_component",
+      "observations": "空坐标轴，可用作图形部件，不能当作数据图。",
+      "scientific_detail_validation": "not_independently_verified",
+      "native_editability_tested": false
+    },
+    {
+      "tile": 23,
+      "id": "scisvg-32b7557083496405f23e",
+      "title": "Curved Arrow",
+      "source_id": "assets/general-science/curved-arrow.svg",
+      "source_url": "https://github.com/SaveenaSolanki/SciSVG/blob/b8a2b60a3a5b2d9b717b1065fbcb8de9f1faf72b/assets/general-science/curved-arrow.svg",
+      "original_sha256": "eaccffdbcccacead22e96575460169d6c5c49c8e13eedf68f18f64418580d12f",
+      "preview_sha256": "d7c5a733da4cb74eadb8168c27a3153b378a71dd9c2efc74dbe7031278b8cd7b",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scisvg-42238985604-1-b0000.tar.gz",
+        "member": "files/ea/eaccffdbcccacead22e96575460169d6c5c49c8e13eedf68f18f64418580d12f.svg"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scisvg-42238985604-1-b0000.tar.gz",
+        "member": "previews/eaccffdbcccacead22e96575460169d6c5c49c8e13eedf68f18f64418580d12f.png"
+      },
+      "visual_verdict": "usable_as_schematic_component",
+      "observations": "轮廓和线条清楚，适合作为来源名称所指的简化示意或装配部件；未验证精细科学结构。",
+      "scientific_detail_validation": "not_independently_verified",
+      "native_editability_tested": false
+    },
+    {
+      "tile": 24,
+      "id": "scisvg-635057fa417ec6f063e0",
+      "title": "Layers",
+      "source_id": "assets/general-science/layers.svg",
+      "source_url": "https://github.com/SaveenaSolanki/SciSVG/blob/b8a2b60a3a5b2d9b717b1065fbcb8de9f1faf72b/assets/general-science/layers.svg",
+      "original_sha256": "4b10dd793193c458b073fc009b0ac50417b8ef0c9b0530dc8ab0b0e18777361f",
+      "preview_sha256": "7691e8726b7507d7a974be57fbb7771782ca39d234247ad2566448952e013d97",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scisvg-42238985604-1-b0000.tar.gz",
+        "member": "files/4b/4b10dd793193c458b073fc009b0ac50417b8ef0c9b0530dc8ab0b0e18777361f.svg"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scisvg-42238985604-1-b0000.tar.gz",
+        "member": "previews/4b10dd793193c458b073fc009b0ac50417b8ef0c9b0530dc8ab0b0e18777361f.png"
+      },
+      "visual_verdict": "usable_as_schematic_component",
+      "observations": "轮廓和线条清楚，适合作为来源名称所指的简化示意或装配部件；未验证精细科学结构。",
+      "scientific_detail_validation": "not_independently_verified",
+      "native_editability_tested": false
+    },
+    {
+      "tile": 25,
+      "id": "scisvg-d8f7a0a44797c8d3e3e8",
+      "title": "Magnifier",
+      "source_id": "assets/general-science/magnifier.svg",
+      "source_url": "https://github.com/SaveenaSolanki/SciSVG/blob/b8a2b60a3a5b2d9b717b1065fbcb8de9f1faf72b/assets/general-science/magnifier.svg",
+      "original_sha256": "c13a3afdddd864d3e6db351275528c839953ebd256cd8b89e40ec40cd712ea63",
+      "preview_sha256": "608f626a4dc85954c90a50b192a0734cabd133fd51d97e2b35430b3974144c00",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scisvg-42238985604-1-b0000.tar.gz",
+        "member": "files/c1/c13a3afdddd864d3e6db351275528c839953ebd256cd8b89e40ec40cd712ea63.svg"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scisvg-42238985604-1-b0000.tar.gz",
+        "member": "previews/c13a3afdddd864d3e6db351275528c839953ebd256cd8b89e40ec40cd712ea63.png"
+      },
+      "visual_verdict": "usable_as_schematic_component",
+      "observations": "轮廓和线条清楚，适合作为来源名称所指的简化示意或装配部件；未验证精细科学结构。",
+      "scientific_detail_validation": "not_independently_verified",
+      "native_editability_tested": false
+    },
+    {
+      "tile": 26,
+      "id": "scisvg-3bc0eb05944fa777024f",
+      "title": "96-Well Plate",
+      "source_id": "assets/laboratory/consumables/96-well-plate.svg",
+      "source_url": "https://github.com/SaveenaSolanki/SciSVG/blob/b8a2b60a3a5b2d9b717b1065fbcb8de9f1faf72b/assets/laboratory/consumables/96-well-plate.svg",
+      "original_sha256": "150908b6a1f898a8a951ee9037d27f9dcc92238c22df9083bc97039120167326",
+      "preview_sha256": "7debbec9b8d0b12f812e643105ff6ee5050ec92a59499d9d5c2332ea4b807cb6",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scisvg-42238985604-1-b0000.tar.gz",
+        "member": "files/15/150908b6a1f898a8a951ee9037d27f9dcc92238c22df9083bc97039120167326.svg"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scisvg-42238985604-1-b0000.tar.gz",
+        "member": "previews/150908b6a1f898a8a951ee9037d27f9dcc92238c22df9083bc97039120167326.png"
+      },
+      "visual_verdict": "usable_as_schematic_component",
+      "observations": "96孔板模板，彩色孔为示意。",
+      "scientific_detail_validation": "not_independently_verified",
+      "native_editability_tested": false
+    },
+    {
+      "tile": 27,
+      "id": "scisvg-6ce4d7b3ed41985b18d5",
+      "title": "Petri Dish",
+      "source_id": "assets/laboratory/consumables/petri-dish.svg",
+      "source_url": "https://github.com/SaveenaSolanki/SciSVG/blob/b8a2b60a3a5b2d9b717b1065fbcb8de9f1faf72b/assets/laboratory/consumables/petri-dish.svg",
+      "original_sha256": "1954e595fcc663566690d8a2e12c448874552306d064cf20385e275f5bc77113",
+      "preview_sha256": "34d4fd1a725842f7f5203c08cc30b802823fbb74f81e62fd17f6a1dc3b4810f5",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scisvg-42238985604-1-b0000.tar.gz",
+        "member": "files/19/1954e595fcc663566690d8a2e12c448874552306d064cf20385e275f5bc77113.svg"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scisvg-42238985604-1-b0000.tar.gz",
+        "member": "previews/1954e595fcc663566690d8a2e12c448874552306d064cf20385e275f5bc77113.png"
+      },
+      "visual_verdict": "usable_as_schematic_component",
+      "observations": "培养皿与菌落样点，可作培养示意。",
+      "scientific_detail_validation": "not_independently_verified",
+      "native_editability_tested": false
+    },
+    {
+      "tile": 28,
+      "id": "scisvg-519891a4c033306eccbb",
+      "title": "Micropipette",
+      "source_id": "assets/laboratory/equipment/micropipette.svg",
+      "source_url": "https://github.com/SaveenaSolanki/SciSVG/blob/b8a2b60a3a5b2d9b717b1065fbcb8de9f1faf72b/assets/laboratory/equipment/micropipette.svg",
+      "original_sha256": "eb51703468824613cebafacea70c08cb8cbb5c78b192d421c995e1af9d27a1c4",
+      "preview_sha256": "858cb9870dd0ca7c354312af33390896d2956aa182a37aaa959b0062d1a7513d",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scisvg-42238985604-1-b0000.tar.gz",
+        "member": "files/eb/eb51703468824613cebafacea70c08cb8cbb5c78b192d421c995e1af9d27a1c4.svg"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scisvg-42238985604-1-b0000.tar.gz",
+        "member": "previews/eb51703468824613cebafacea70c08cb8cbb5c78b192d421c995e1af9d27a1c4.png"
+      },
+      "visual_verdict": "usable_as_schematic_component",
+      "observations": "完整移液器符号可辨。",
+      "scientific_detail_validation": "not_independently_verified",
+      "native_editability_tested": false
+    },
+    {
+      "tile": 29,
+      "id": "scisvg-a0aab22945ecaba6892e",
+      "title": "Microscope",
+      "source_id": "assets/laboratory/equipment/microscope.svg",
+      "source_url": "https://github.com/SaveenaSolanki/SciSVG/blob/b8a2b60a3a5b2d9b717b1065fbcb8de9f1faf72b/assets/laboratory/equipment/microscope.svg",
+      "original_sha256": "2b15e9a5bef7bbd946352abd737d6c116f37599081b999602b363a509fe9f35d",
+      "preview_sha256": "df6ee40c4259637ea8e182e352a865e63456f33d591ab158b0e83ffcd17fd669",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scisvg-42238985604-1-b0000.tar.gz",
+        "member": "files/2b/2b15e9a5bef7bbd946352abd737d6c116f37599081b999602b363a509fe9f35d.svg"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scisvg-42238985604-1-b0000.tar.gz",
+        "member": "previews/2b15e9a5bef7bbd946352abd737d6c116f37599081b999602b363a509fe9f35d.png"
+      },
+      "visual_verdict": "usable_as_schematic_component",
+      "observations": "显微镜符号可辨。",
+      "scientific_detail_validation": "not_independently_verified",
+      "native_editability_tested": false
+    },
+    {
+      "tile": 30,
+      "id": "scisvg-f66d69a3b51086c174e5",
+      "title": "Test Tube Rack",
+      "source_id": "assets/laboratory/equipment/test-tube-rack.svg",
+      "source_url": "https://github.com/SaveenaSolanki/SciSVG/blob/b8a2b60a3a5b2d9b717b1065fbcb8de9f1faf72b/assets/laboratory/equipment/test-tube-rack.svg",
+      "original_sha256": "1696b2dbb14253cd021c2874b368cb48db433bcecfef35eee1320a6f3539c79f",
+      "preview_sha256": "9db678f0d784339bc96b59a7946dd65e283e4e077ad4bb567b45a0142c9c4220",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scisvg-42238985604-1-b0000.tar.gz",
+        "member": "files/16/1696b2dbb14253cd021c2874b368cb48db433bcecfef35eee1320a6f3539c79f.svg"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scisvg-42238985604-1-b0000.tar.gz",
+        "member": "previews/1696b2dbb14253cd021c2874b368cb48db433bcecfef35eee1320a6f3539c79f.png"
+      },
+      "visual_verdict": "usable_as_schematic_component",
+      "observations": "轮廓和线条清楚，适合作为来源名称所指的简化示意或装配部件；未验证精细科学结构。",
+      "scientific_detail_validation": "not_independently_verified",
+      "native_editability_tested": false
+    }
+  ]
+}

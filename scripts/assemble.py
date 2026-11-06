@@ -307,6 +307,18 @@ def main():
                             "matched": sum(record.get("metadata_status") == "matched_official_gallery"
                                            for record in arcadia_records),
                             "artwork_refetched": False})
+    from mga_resources.native_evidence import attach_native_evidence
+    publication_path = ROOT / "data/legacy-publication.json"
+    publication = json.loads(publication_path.read_text(encoding="utf-8"))
+    manifest_name = publication["manifest"]["url"].rsplit("/", 1)[-1]
+    for key in ("manifest", "archive"):
+        expected = publication[key]
+        remote = assets.get(expected["url"].rsplit("/", 1)[-1], {})
+        if remote.get("digest") != "sha256:" + expected["sha256"] or remote.get("size") != expected["size_bytes"]:
+            raise RuntimeError(f"Legacy cloud {key} integrity disagrees with recorded publication")
+    gh("release", "download", args.release_tag, "--pattern", manifest_name, "--dir", str(incoming), "--clobber")
+    records, native_evidence_report = attach_native_evidence(
+        records, ROOT / "data/legacy-illustrator-verification.json", publication_path, incoming / manifest_name)
     summary = finalize(records, output)
     benchmark = json.loads((ROOT / "data/benchmark.json").read_text(encoding="utf-8"))
     results = []
@@ -319,6 +331,7 @@ def main():
               "collection_release": args.release_tag, "summary": summary,
               "source_snapshots": acquisition, "legacy_checkpoints": legacy,
               "metadata_enrichments": enrichments,
+              "historical_native_evidence": native_evidence_report,
               "outstanding_primary_sources": outstanding,
               "benchmark_queries": len(results), "visually_judged_queries": 0,
               "retrieval_pass_rate": None, "acceptance_passed": False,

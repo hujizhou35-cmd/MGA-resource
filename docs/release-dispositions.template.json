@@ -1,0 +1,128 @@
+{
+  "schema_version": 1,
+  "template_only": true,
+  "release_id": null,
+  "input_catalog_sha256": null,
+  "benchmark_sha256": null,
+  "publish_manifest": {
+    "uri": null,
+    "sha256": null
+  },
+  "decisions": [
+    {
+      "decision_id": "draft-biocartoon-unavailable",
+      "review_state": "proposed",
+      "target": {
+        "kind": "source",
+        "source": "biocartoon",
+        "discovery_sha256": null,
+        "selection_manifest": null
+      },
+      "observed_state": "blocked_access",
+      "disposition": "not_acquired",
+      "reason": "已知目录请求返回 HTTP 403；不重复或绕道请求该目录。保留来源状态，首版不把此目录当成已取得。",
+      "evidence": [
+        {
+          "kind": "request_result",
+          "uri": null,
+          "sha256": null,
+          "description": "在此引用既有 403 记录；不得为填写证据重新请求。"
+        }
+      ],
+      "impact": {
+        "inventory_count": null,
+        "affected_categories": [],
+        "description": "聚合目录未取得，其完整数量和独有内容未知；不能把未知影响写为零。"
+      },
+      "mitigation": {
+        "decision": "依靠已独立取得的原始来源建设首版；用冻结的 120 条检索和视觉审阅实测覆盖，发现缺口后定向补足。",
+        "evidence_uri": null
+      },
+      "release_effect": "exclude_target_from_publish_manifest",
+      "revisit_trigger": "取得新的官方访问许可或正式公开目录信息时另建版本处置；不自动重试现有拒绝请求。",
+      "reviewed_by": null,
+      "reviewed_at": null
+    },
+    {
+      "decision_id": "draft-servier-rights-hold",
+      "review_state": "proposed",
+      "target": {
+        "kind": "items",
+        "source": "bioicons",
+        "discovery_sha256": null,
+        "selection_manifest": {
+          "uri": null,
+          "sha256": null
+        }
+      },
+      "observed_state": "held",
+      "disposition": "exclude_from_v1",
+      "reason": "Servier 作者条目的相关再分发及独立素材库条件尚未明确；本处置不能赋予任何许可。",
+      "evidence": [
+        {
+          "kind": "held_item_manifest",
+          "uri": null,
+          "sha256": null,
+          "description": "必须绑定当前发现快照和具体条目清单；不得使用会随源更新变化的动态作者筛选代替冻结清单。"
+        },
+        {
+          "kind": "source_policy",
+          "uri": "https://smart.servier.com/using-smart-images-what-you-can-do/",
+          "sha256": null,
+          "description": "填入已实际检查的许可证据和未解决之处。"
+        }
+      ],
+      "impact": {
+        "inventory_count": null,
+        "affected_categories": [],
+        "description": "填入实际待确认条目数量及受影响的对象、画风或类别；原始 held 数量不改写。"
+      },
+      "mitigation": {
+        "decision": "逐项确认所需绘图概念是否由可分发来源覆盖；检索与视觉验收失败的概念继续补缺。",
+        "evidence_uri": null
+      },
+      "release_effect": "exclude_target_from_publish_manifest",
+      "revisit_trigger": "取得可验证的许可说明后，重新检查对应条目并形成新的发布清单。",
+      "reviewed_by": null,
+      "reviewed_at": null
+    },
+    {
+      "decision_id": "draft-quarantine-invalid-file",
+      "review_state": "proposed",
+      "target": {
+        "kind": "files",
+        "source": null,
+        "discovery_sha256": null,
+        "selection_manifest": {
+          "uri": null,
+          "sha256": null
+        }
+      },
+      "observed_state": "validation_failed",
+      "disposition": "quarantine",
+      "reason": null,
+      "evidence": [
+        {
+          "kind": "validation_result",
+          "uri": null,
+          "sha256": null,
+          "description": "填写实际文件 SHA-256、可复现的损坏/危险内容/预览失败记录；不能仅引用失败总数。"
+        }
+      ],
+      "impact": {
+        "inventory_count": null,
+        "affected_categories": [],
+        "description": "说明被隔离的具体文件、逻辑素材及仍可用的格式；计数未知时保持 null。"
+      },
+      "mitigation": {
+        "decision": "尝试修复取件或使用已通过检查的其他原始格式；修复不了的文件保留隔离记录，并在发布子集上重跑原验收。",
+        "evidence_uri": null
+      },
+      "release_effect": "exclude_target_from_publish_manifest",
+      "revisit_trigger": "产生新的原件或通过复检后另记决定；不得覆盖原失败证据。",
+      "reviewed_by": null,
+      "reviewed_at": null
+    }
+  ]
+}
+

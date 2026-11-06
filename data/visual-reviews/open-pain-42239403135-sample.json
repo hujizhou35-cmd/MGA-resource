@@ -1,0 +1,59 @@
+{
+  "schema_version": 1,
+  "reviewed_at": "2026-11-06",
+  "reviewer": "Codex primary agent; direct visual inspection",
+  "source": "open-pain",
+  "collection_run": "42239403135-1",
+  "collection_commit": "de01d875a27c79bafac5327db6e1302ba3fd37b1",
+  "review_method": "Actual cloud-rendered contact sheet viewed with view_image; observations entered after inspection.",
+  "review_sheet_url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/open-pain-42239403135-1-b0000.review.png",
+  "review_sheet_sha256": "5bf53e0db8e06471e4431d1e8dc8c61441cdc0aa0b21f10dc0d5d8cdc5fb1d87",
+  "review_limits": [
+    "Contact-sheet-scale legibility and use scope only.",
+    "No whole-source scientific or native-editing approval."
+  ],
+  "items": [
+    {
+      "tile": 1,
+      "id": "open-pain-f8e5755205f3f9e69b2a",
+      "title": "anatomical illustration",
+      "source_id": "illustration/1.0/anatomical_illustration.svg",
+      "source_url": "https://github.com/DigitalHealthZurich/open-pain-illustration/blob/96d6f379790e39584289bad17a1d6eecc5104bd9/illustration/1.0/anatomical_illustration.svg",
+      "original_sha256": "ca71ade57f448493b7b10dcb8bb55a5547369412167c69305d1b1d9afd11cc30",
+      "preview_sha256": "8fd230b11b34a644c5f29e610b3c488268d59dab569643a96b4dd150feff2492",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/open-pain-42239403135-1-b0000.tar.gz",
+        "member": "files/ca/ca71ade57f448493b7b10dcb8bb55a5547369412167c69305d1b1d9afd11cc30.svg"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/open-pain-42239403135-1-b0000.tar.gz",
+        "member": "previews/ca71ade57f448493b7b10dcb8bb55a5547369412167c69305d1b1d9afd11cc30.png"
+      },
+      "visual_verdict": "usable_as_schematic_component",
+      "observations": "前后位人体与浅色骨性结构完整可辨；联系表尺度无法确认全部解剖细节。",
+      "scientific_detail_validation": "not_independently_verified",
+      "native_editability_tested": false
+    },
+    {
+      "tile": 2,
+      "id": "open-pain-c66a17e67b2e8111f592",
+      "title": "anatomical illustration colored",
+      "source_id": "illustration/1.0/anatomical_illustration_colored.svg",
+      "source_url": "https://github.com/DigitalHealthZurich/open-pain-illustration/blob/96d6f379790e39584289bad17a1d6eecc5104bd9/illustration/1.0/anatomical_illustration_colored.svg",
+      "original_sha256": "577c2fdde04aa877d7c6366a399a736b2197be010325c75ae602ab660b35b69f",
+      "preview_sha256": "a290e7af8d08ec42165c9bdee668c0a9a19eb10048998fb4b39b2ca4085213b2",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/open-pain-42239403135-1-b0000.tar.gz",
+        "member": "files/57/577c2fdde04aa877d7c6366a399a736b2197be010325c75ae602ab660b35b69f.svg"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/open-pain-42239403135-1-b0000.tar.gz",
+        "member": "previews/577c2fdde04aa877d7c6366a399a736b2197be010325c75ae602ab660b35b69f.png"
+      },
+      "visual_verdict": "usable_as_schematic_component",
+      "observations": "前后位彩色身体区域图可辨，适合疼痛部位交流；不用于精确解剖测量。",
+      "scientific_detail_validation": "not_independently_verified",
+      "native_editability_tested": false
+    }
+  ]
+}

@@ -1,0 +1,647 @@
+{
+  "schema_version": 1,
+  "reviewed_at": "2026-11-06",
+  "reviewer": "Codex primary agent; direct visual inspection",
+  "source": "lab-equipment",
+  "collection_run": "42237927278-1",
+  "collection_commit": "228f640b92f010a531d5d900145c1029d7857a22",
+  "review_method": "Actual cloud-rendered contact sheet viewed with view_image; observations entered after inspection.",
+  "review_sheet_url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/lab-equipment-42237927278-1-b0000.review.png",
+  "review_sheet_sha256": "7aa2922b3ab94c53da59d44a2a04a6c8e14336f11b691b48ffb6f35f0160fc80",
+  "review_limits": [
+    "Contact-sheet-scale legibility and use scope only.",
+    "No whole-source scientific or native-editing approval."
+  ],
+  "items": [
+    {
+      "tile": 1,
+      "id": "lab-equipment-c2ddf5470818088318a8",
+      "title": "Tube For SPPSwo Cap",
+      "source_id": "svg/TubeForSPPSwoCap.svg",
+      "source_url": "https://github.com/KYU49/SvgCollectionOfLabEquipment/blob/702ca002ec2a7ba40c0369ef7b66075f262315b3/svg/TubeForSPPSwoCap.svg",
+      "original_sha256": "c82c8dea8e86af480eaab27216362284db2fcc14e7e2f3b1bd651ffdfa01bb32",
+      "preview_sha256": "48c7ee88fa3c160a44567bf45c9d366cddc4d2db995f536dd7125b683be5e666",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/lab-equipment-42237927278-1-b0000.tar.gz",
+        "member": "files/c8/c82c8dea8e86af480eaab27216362284db2fcc14e7e2f3b1bd651ffdfa01bb32.svg"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/lab-equipment-42237927278-1-b0000.tar.gz",
+        "member": "previews/c82c8dea8e86af480eaab27216362284db2fcc14e7e2f3b1bd651ffdfa01bb32.png"
+      },
+      "visual_verdict": "usable_as_schematic_component",
+      "observations": "未加盖管体部件，适合装配示意。",
+      "scientific_detail_validation": "not_independently_verified",
+      "native_editability_tested": false
+    },
+    {
+      "tile": 2,
+      "id": "lab-equipment-11dbab1525ad7b01d708",
+      "title": "Burette",
+      "source_id": "svg/Burette.svg",
+      "source_url": "https://github.com/KYU49/SvgCollectionOfLabEquipment/blob/702ca002ec2a7ba40c0369ef7b66075f262315b3/svg/Burette.svg",
+      "original_sha256": "98c61a6d0fb6d12f16a178884df0e70710a4860917bb67e532a7fa079485ee80",
+      "preview_sha256": "7241a958f510dcdd7f54afe5aec9141bac65f625314f04bc211afd3166663cd3",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/lab-equipment-42237927278-1-b0000.tar.gz",
+        "member": "files/98/98c61a6d0fb6d12f16a178884df0e70710a4860917bb67e532a7fa079485ee80.svg"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/lab-equipment-42237927278-1-b0000.tar.gz",
+        "member": "previews/98c61a6d0fb6d12f16a178884df0e70710a4860917bb67e532a7fa079485ee80.png"
+      },
+      "visual_verdict": "usable_as_schematic_component",
+      "observations": "细长滴定管横向布局，缩小时刻度不可读；适合作为仪器部件。",
+      "scientific_detail_validation": "not_independently_verified",
+      "native_editability_tested": false
+    },
+    {
+      "tile": 3,
+      "id": "lab-equipment-8d2afb1bf84a243ef5ed",
+      "title": "Column Packed Small",
+      "source_id": "svg/ColumnPackedSmall.svg",
+      "source_url": "https://github.com/KYU49/SvgCollectionOfLabEquipment/blob/702ca002ec2a7ba40c0369ef7b66075f262315b3/svg/ColumnPackedSmall.svg",
+      "original_sha256": "3c116d20525868b955a47de8f06577d9e51308eeec6ba273dc849bbdf123281b",
+      "preview_sha256": "d1e51d7dbef8f8e286366e2b06286490fdf5ce63fb7389f30cddafed62b4eb50",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/lab-equipment-42237927278-1-b0000.tar.gz",
+        "member": "files/3c/3c116d20525868b955a47de8f06577d9e51308eeec6ba273dc849bbdf123281b.svg"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/lab-equipment-42237927278-1-b0000.tar.gz",
+        "member": "previews/3c116d20525868b955a47de8f06577d9e51308eeec6ba273dc849bbdf123281b.png"
+      },
+      "visual_verdict": "usable_as_schematic_component",
+      "observations": "轮廓和线条清楚，适合作为来源名称所指的简化示意或装配部件；未验证精细科学结构。",
+      "scientific_detail_validation": "not_independently_verified",
+      "native_editability_tested": false
+    },
+    {
+      "tile": 4,
+      "id": "lab-equipment-73289cb3cce4355d812c",
+      "title": "Culture Dish Reverse",
+      "source_id": "svg/CultureDishReverse.svg",
+      "source_url": "https://github.com/KYU49/SvgCollectionOfLabEquipment/blob/702ca002ec2a7ba40c0369ef7b66075f262315b3/svg/CultureDishReverse.svg",
+      "original_sha256": "68bb6648569446f031b6fc72d440de68e52735852aec164356f896357f53f8da",
+      "preview_sha256": "e9c1d76a79c3ffca85cc6fd2c52fee8001f437579d8825e87e22739c122b9b24",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/lab-equipment-42237927278-1-b0000.tar.gz",
+        "member": "files/68/68bb6648569446f031b6fc72d440de68e52735852aec164356f896357f53f8da.svg"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/lab-equipment-42237927278-1-b0000.tar.gz",
+        "member": "previews/68bb6648569446f031b6fc72d440de68e52735852aec164356f896357f53f8da.png"
+      },
+      "visual_verdict": "usable_as_schematic_component",
+      "observations": "轮廓和线条清楚，适合作为来源名称所指的简化示意或装配部件；未验证精细科学结构。",
+      "scientific_detail_validation": "not_independently_verified",
+      "native_editability_tested": false
+    },
+    {
+      "tile": 5,
+      "id": "lab-equipment-5fac041b2ab1b07e209e",
+      "title": "Glass Syringe Barrel",
+      "source_id": "svg/GlassSyringeBarrel.svg",
+      "source_url": "https://github.com/KYU49/SvgCollectionOfLabEquipment/blob/702ca002ec2a7ba40c0369ef7b66075f262315b3/svg/GlassSyringeBarrel.svg",
+      "original_sha256": "3bd7e4e077f56c1db7bef742c135a3b44afb34b0927f4835fb0b0e2a4b27be3d",
+      "preview_sha256": "d64bf751c094bca6bb75a697d45d6151d88aad394b1da4c914a968f6e0f3897d",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/lab-equipment-42237927278-1-b0000.tar.gz",
+        "member": "files/3b/3bd7e4e077f56c1db7bef742c135a3b44afb34b0927f4835fb0b0e2a4b27be3d.svg"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/lab-equipment-42237927278-1-b0000.tar.gz",
+        "member": "previews/3bd7e4e077f56c1db7bef742c135a3b44afb34b0927f4835fb0b0e2a4b27be3d.png"
+      },
+      "visual_verdict": "usable_as_schematic_component",
+      "observations": "玻璃注射器筒体，不应当作完整注射器。",
+      "scientific_detail_validation": "not_independently_verified",
+      "native_editability_tested": false
+    },
+    {
+      "tile": 6,
+      "id": "lab-equipment-22eaf2156acb65f30780",
+      "title": "12well Plate",
+      "source_id": "svg/12wellPlate.svg",
+      "source_url": "https://github.com/KYU49/SvgCollectionOfLabEquipment/blob/702ca002ec2a7ba40c0369ef7b66075f262315b3/svg/12wellPlate.svg",
+      "original_sha256": "b4a374bbb03641fde66d1ee22d74aac9ff2546d2db8392e4a1023943870141ad",
+      "preview_sha256": "b942339dbabb73532d79e093af7e29c9f99d53268590494392bc5a5d64a0fc45",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/lab-equipment-42237927278-1-b0000.tar.gz",
+        "member": "files/b4/b4a374bbb03641fde66d1ee22d74aac9ff2546d2db8392e4a1023943870141ad.svg"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/lab-equipment-42237927278-1-b0000.tar.gz",
+        "member": "previews/b4a374bbb03641fde66d1ee22d74aac9ff2546d2db8392e4a1023943870141ad.png"
+      },
+      "visual_verdict": "usable_as_schematic_component",
+      "observations": "12孔板可辨，孔数与标签一致。",
+      "scientific_detail_validation": "not_independently_verified",
+      "native_editability_tested": false
+    },
+    {
+      "tile": 7,
+      "id": "lab-equipment-1c4aee25bdaea604d01f",
+      "title": "Test Tube",
+      "source_id": "svg/TestTube.svg",
+      "source_url": "https://github.com/KYU49/SvgCollectionOfLabEquipment/blob/702ca002ec2a7ba40c0369ef7b66075f262315b3/svg/TestTube.svg",
+      "original_sha256": "ba2041f7a42b92d0185c525c4c86964a3eafd93dc6ef9264ab410c9c9f05e5f4",
+      "preview_sha256": "3dfdd734b7046271592fd724800c335e6c7b013ad45aaabcbd29c591643798ab",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/lab-equipment-42237927278-1-b0000.tar.gz",
+        "member": "files/ba/ba2041f7a42b92d0185c525c4c86964a3eafd93dc6ef9264ab410c9c9f05e5f4.svg"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/lab-equipment-42237927278-1-b0000.tar.gz",
+        "member": "previews/ba2041f7a42b92d0185c525c4c86964a3eafd93dc6ef9264ab410c9c9f05e5f4.png"
+      },
+      "visual_verdict": "usable_as_schematic_component",
+      "observations": "轮廓和线条清楚，适合作为来源名称所指的简化示意或装配部件；未验证精细科学结构。",
+      "scientific_detail_validation": "not_independently_verified",
+      "native_editability_tested": false
+    },
+    {
+      "tile": 8,
+      "id": "lab-equipment-ad088ee4a88d5535f04d",
+      "title": "Micro Spatula Tip",
+      "source_id": "svg/MicroSpatulaTip.svg",
+      "source_url": "https://github.com/KYU49/SvgCollectionOfLabEquipment/blob/702ca002ec2a7ba40c0369ef7b66075f262315b3/svg/MicroSpatulaTip.svg",
+      "original_sha256": "c8176cf6bee8e4421c1f3bddfcad7e3be54f70ba702dbd05cd8403fae5ecb3da",
+      "preview_sha256": "0cad7ca8c799892b36ca0b24748b9e5f6788197ef30e5380363d9aff66a6d5cb",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/lab-equipment-42237927278-1-b0000.tar.gz",
+        "member": "files/c8/c8176cf6bee8e4421c1f3bddfcad7e3be54f70ba702dbd05cd8403fae5ecb3da.svg"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/lab-equipment-42237927278-1-b0000.tar.gz",
+        "member": "previews/c8176cf6bee8e4421c1f3bddfcad7e3be54f70ba702dbd05cd8403fae5ecb3da.png"
+      },
+      "visual_verdict": "usable_as_schematic_component",
+      "observations": "轮廓和线条清楚，适合作为来源名称所指的简化示意或装配部件；未验证精细科学结构。",
+      "scientific_detail_validation": "not_independently_verified",
+      "native_editability_tested": false
+    },
+    {
+      "tile": 9,
+      "id": "lab-equipment-e4ada0a7b833205017ca",
+      "title": "Ni Affinity Column",
+      "source_id": "svg/NiAffinityColumn.svg",
+      "source_url": "https://github.com/KYU49/SvgCollectionOfLabEquipment/blob/702ca002ec2a7ba40c0369ef7b66075f262315b3/svg/NiAffinityColumn.svg",
+      "original_sha256": "644e7c5cd2dcb05efa6d0324fdec308a3520a0a7f619a8bdfda9e316d7e7edef",
+      "preview_sha256": "f2cccf15af0dccdca9c0f893c2feb3ae0f055dec129c82c373812f8a65dabed1",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/lab-equipment-42237927278-1-b0000.tar.gz",
+        "member": "files/64/644e7c5cd2dcb05efa6d0324fdec308a3520a0a7f619a8bdfda9e316d7e7edef.svg"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/lab-equipment-42237927278-1-b0000.tar.gz",
+        "member": "previews/644e7c5cd2dcb05efa6d0324fdec308a3520a0a7f619a8bdfda9e316d7e7edef.png"
+      },
+      "visual_verdict": "usable_as_schematic_component",
+      "observations": "Ni亲和柱原理符号可辨，应配套方法文字。",
+      "scientific_detail_validation": "not_independently_verified",
+      "native_editability_tested": false
+    },
+    {
+      "tile": 10,
+      "id": "lab-equipment-418f302a36b2f021bf2a",
+      "title": "Kiriyama Funnel",
+      "source_id": "svg/KiriyamaFunnel.svg",
+      "source_url": "https://github.com/KYU49/SvgCollectionOfLabEquipment/blob/702ca002ec2a7ba40c0369ef7b66075f262315b3/svg/KiriyamaFunnel.svg",
+      "original_sha256": "cb8eeee16f7814aa6e6d7c723f085c2679ce624061ba1dc6e170cb47ac858dbb",
+      "preview_sha256": "7f371581ef68b4825727c66766a5b3428b72aedca68a6a19a8554fb2b4827320",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/lab-equipment-42237927278-1-b0000.tar.gz",
+        "member": "files/cb/cb8eeee16f7814aa6e6d7c723f085c2679ce624061ba1dc6e170cb47ac858dbb.svg"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/lab-equipment-42237927278-1-b0000.tar.gz",
+        "member": "previews/cb8eeee16f7814aa6e6d7c723f085c2679ce624061ba1dc6e170cb47ac858dbb.png"
+      },
+      "visual_verdict": "usable_as_schematic_component",
+      "observations": "轮廓和线条清楚，适合作为来源名称所指的简化示意或装配部件；未验证精细科学结构。",
+      "scientific_detail_validation": "not_independently_verified",
+      "native_editability_tested": false
+    },
+    {
+      "tile": 11,
+      "id": "lab-equipment-0390151926c1b8e57130",
+      "title": "24well Plate",
+      "source_id": "svg/24wellPlate.svg",
+      "source_url": "https://github.com/KYU49/SvgCollectionOfLabEquipment/blob/702ca002ec2a7ba40c0369ef7b66075f262315b3/svg/24wellPlate.svg",
+      "original_sha256": "a2482b84548797fcdf86257257bdf5aaee55b61f8cb5c7253a8b61be106a7b10",
+      "preview_sha256": "4dfce0025db71353273e37e6e8389b4ba83901c34d8c239ef44c4a20d4aea403",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/lab-equipment-42237927278-1-b0000.tar.gz",
+        "member": "files/a2/a2482b84548797fcdf86257257bdf5aaee55b61f8cb5c7253a8b61be106a7b10.svg"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/lab-equipment-42237927278-1-b0000.tar.gz",
+        "member": "previews/a2482b84548797fcdf86257257bdf5aaee55b61f8cb5c7253a8b61be106a7b10.png"
+      },
+      "visual_verdict": "usable_as_schematic_component",
+      "observations": "轮廓和线条清楚，适合作为来源名称所指的简化示意或装配部件；未验证精细科学结构。",
+      "scientific_detail_validation": "not_independently_verified",
+      "native_editability_tested": false
+    },
+    {
+      "tile": 12,
+      "id": "lab-equipment-1eba47bf1be16364d8da",
+      "title": "96well Plate",
+      "source_id": "svg/96wellPlate.svg",
+      "source_url": "https://github.com/KYU49/SvgCollectionOfLabEquipment/blob/702ca002ec2a7ba40c0369ef7b66075f262315b3/svg/96wellPlate.svg",
+      "original_sha256": "680b642071b771e30ac730c1572d2561df6a85abd99864881633ad2451a9258a",
+      "preview_sha256": "9b1ebb4150b5e47a6edb269739631be1fdd64995ff749965f8322addc2b73ff5",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/lab-equipment-42237927278-1-b0000.tar.gz",
+        "member": "files/68/680b642071b771e30ac730c1572d2561df6a85abd99864881633ad2451a9258a.svg"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/lab-equipment-42237927278-1-b0000.tar.gz",
+        "member": "previews/680b642071b771e30ac730c1572d2561df6a85abd99864881633ad2451a9258a.png"
+      },
+      "visual_verdict": "usable_as_schematic_component",
+      "observations": "96孔板轮廓可辨，具体孔数以原件放大检查。",
+      "scientific_detail_validation": "not_independently_verified",
+      "native_editability_tested": false
+    },
+    {
+      "tile": 13,
+      "id": "lab-equipment-0b58f64ff4e2ba9fc54c",
+      "title": "Culture Dish Bottom",
+      "source_id": "svg/CultureDishBottom.svg",
+      "source_url": "https://github.com/KYU49/SvgCollectionOfLabEquipment/blob/702ca002ec2a7ba40c0369ef7b66075f262315b3/svg/CultureDishBottom.svg",
+      "original_sha256": "70fb5d1f01fcee679fca9b6dfcbc0551c354d92f9a82b6bec13d866447c7e565",
+      "preview_sha256": "f657f50beef2c7030cae783239ffb0cc00077e61feba7c6171195df055997853",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/lab-equipment-42237927278-1-b0000.tar.gz",
+        "member": "files/70/70fb5d1f01fcee679fca9b6dfcbc0551c354d92f9a82b6bec13d866447c7e565.svg"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/lab-equipment-42237927278-1-b0000.tar.gz",
+        "member": "previews/70fb5d1f01fcee679fca9b6dfcbc0551c354d92f9a82b6bec13d866447c7e565.png"
+      },
+      "visual_verdict": "usable_as_schematic_component",
+      "observations": "培养皿底部，不应误当含盖完整培养皿。",
+      "scientific_detail_validation": "not_independently_verified",
+      "native_editability_tested": false
+    },
+    {
+      "tile": 14,
+      "id": "lab-equipment-7eff61d8a84a96f28264",
+      "title": "Flask Stopper Flat Head",
+      "source_id": "svg/FlaskStopperFlatHead.svg",
+      "source_url": "https://github.com/KYU49/SvgCollectionOfLabEquipment/blob/702ca002ec2a7ba40c0369ef7b66075f262315b3/svg/FlaskStopperFlatHead.svg",
+      "original_sha256": "c96447367ae6db4c4a2e6b78664da38a7f69322f8bd328e69928f24faf696c5e",
+      "preview_sha256": "1eb053b9176f1fd33beca8d0dc440a9a6842b7f8042f7237009c9800b5243110",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/lab-equipment-42237927278-1-b0000.tar.gz",
+        "member": "files/c9/c96447367ae6db4c4a2e6b78664da38a7f69322f8bd328e69928f24faf696c5e.svg"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/lab-equipment-42237927278-1-b0000.tar.gz",
+        "member": "previews/c96447367ae6db4c4a2e6b78664da38a7f69322f8bd328e69928f24faf696c5e.png"
+      },
+      "visual_verdict": "usable_as_schematic_component",
+      "observations": "轮廓和线条清楚，适合作为来源名称所指的简化示意或装配部件；未验证精细科学结构。",
+      "scientific_detail_validation": "not_independently_verified",
+      "native_editability_tested": false
+    },
+    {
+      "tile": 15,
+      "id": "lab-equipment-9db723be2f045c29aa5e",
+      "title": "Graduated Cylinder",
+      "source_id": "svg/GraduatedCylinder.svg",
+      "source_url": "https://github.com/KYU49/SvgCollectionOfLabEquipment/blob/702ca002ec2a7ba40c0369ef7b66075f262315b3/svg/GraduatedCylinder.svg",
+      "original_sha256": "e3bb7dde52a2990b6f529a0dde15725eb5f3b11eb5b1e2e976ac89e4cf5d2580",
+      "preview_sha256": "002126801970aee7a287271aa1d05f68c68df672ef6a4e59176603196a1968f3",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/lab-equipment-42237927278-1-b0000.tar.gz",
+        "member": "files/e3/e3bb7dde52a2990b6f529a0dde15725eb5f3b11eb5b1e2e976ac89e4cf5d2580.svg"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/lab-equipment-42237927278-1-b0000.tar.gz",
+        "member": "previews/e3bb7dde52a2990b6f529a0dde15725eb5f3b11eb5b1e2e976ac89e4cf5d2580.png"
+      },
+      "visual_verdict": "usable_as_schematic_component",
+      "observations": "轮廓和线条清楚，适合作为来源名称所指的简化示意或装配部件；未验证精细科学结构。",
+      "scientific_detail_validation": "not_independently_verified",
+      "native_editability_tested": false
+    },
+    {
+      "tile": 16,
+      "id": "lab-equipment-187e5c79731fbef3b070",
+      "title": "Vial Closed",
+      "source_id": "svg/VialClosed.svg",
+      "source_url": "https://github.com/KYU49/SvgCollectionOfLabEquipment/blob/702ca002ec2a7ba40c0369ef7b66075f262315b3/svg/VialClosed.svg",
+      "original_sha256": "b33338a97ee05b76c1e262d0f1b7a1ccdcd5c118b3183422addef7897b4aa1e2",
+      "preview_sha256": "b702d7373126a6db4a44779c6ac3dca20cc52655dd0da7226bc7d0bc17c90c89",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/lab-equipment-42237927278-1-b0000.tar.gz",
+        "member": "files/b3/b33338a97ee05b76c1e262d0f1b7a1ccdcd5c118b3183422addef7897b4aa1e2.svg"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/lab-equipment-42237927278-1-b0000.tar.gz",
+        "member": "previews/b33338a97ee05b76c1e262d0f1b7a1ccdcd5c118b3183422addef7897b4aa1e2.png"
+      },
+      "visual_verdict": "usable_as_schematic_component",
+      "observations": "轮廓和线条清楚，适合作为来源名称所指的简化示意或装配部件；未验证精细科学结构。",
+      "scientific_detail_validation": "not_independently_verified",
+      "native_editability_tested": false
+    },
+    {
+      "tile": 17,
+      "id": "lab-equipment-de0ad8ae7d21e2e499e4",
+      "title": "Cyclic Voltammetry Cell",
+      "source_id": "svg/CyclicVoltammetryCell.svg",
+      "source_url": "https://github.com/KYU49/SvgCollectionOfLabEquipment/blob/702ca002ec2a7ba40c0369ef7b66075f262315b3/svg/CyclicVoltammetryCell.svg",
+      "original_sha256": "15a65fc0af2be7d927b358428ddcdaa98c50b4e4a0f12adae701337c3b89ac6d",
+      "preview_sha256": "4ce37a78b3a95bd36296e7304ffe0e004256cef67eff737c8cb451b3dba35c0e",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/lab-equipment-42237927278-1-b0000.tar.gz",
+        "member": "files/15/15a65fc0af2be7d927b358428ddcdaa98c50b4e4a0f12adae701337c3b89ac6d.svg"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/lab-equipment-42237927278-1-b0000.tar.gz",
+        "member": "previews/15a65fc0af2be7d927b358428ddcdaa98c50b4e4a0f12adae701337c3b89ac6d.png"
+      },
+      "visual_verdict": "usable_as_schematic_component",
+      "observations": "轮廓和线条清楚，适合作为来源名称所指的简化示意或装配部件；未验证精细科学结构。",
+      "scientific_detail_validation": "not_independently_verified",
+      "native_editability_tested": false
+    },
+    {
+      "tile": 18,
+      "id": "lab-equipment-4c77e9f8cd30b7a33822",
+      "title": "Micro Pipette Tip",
+      "source_id": "svg/MicroPipetteTip.svg",
+      "source_url": "https://github.com/KYU49/SvgCollectionOfLabEquipment/blob/702ca002ec2a7ba40c0369ef7b66075f262315b3/svg/MicroPipetteTip.svg",
+      "original_sha256": "0d47465192c365ede06b334d0547d57305675e5622ea88ec737a88fda284a75d",
+      "preview_sha256": "c699b6e0539c2785ec65e5dcc1c46cb0370c9e0367ee812d06ffc141b9e86936",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/lab-equipment-42237927278-1-b0000.tar.gz",
+        "member": "files/0d/0d47465192c365ede06b334d0547d57305675e5622ea88ec737a88fda284a75d.svg"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/lab-equipment-42237927278-1-b0000.tar.gz",
+        "member": "previews/0d47465192c365ede06b334d0547d57305675e5622ea88ec737a88fda284a75d.png"
+      },
+      "visual_verdict": "usable_as_schematic_component",
+      "observations": "移液器吸头，不是完整移液器。",
+      "scientific_detail_validation": "not_independently_verified",
+      "native_editability_tested": false
+    },
+    {
+      "tile": 19,
+      "id": "lab-equipment-b15629e2e24759b1fbe3",
+      "title": "Septum Stopper",
+      "source_id": "svg/SeptumStopper.svg",
+      "source_url": "https://github.com/KYU49/SvgCollectionOfLabEquipment/blob/702ca002ec2a7ba40c0369ef7b66075f262315b3/svg/SeptumStopper.svg",
+      "original_sha256": "af5dcd1cffb1a6ae1f9015c05a031e9f99048fedeb85f0e198b67f588d66f960",
+      "preview_sha256": "69ddbb2d204c4feda2bf5d24d057cd9240fbae86890fb6ec656a2e6d32595792",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/lab-equipment-42237927278-1-b0000.tar.gz",
+        "member": "files/af/af5dcd1cffb1a6ae1f9015c05a031e9f99048fedeb85f0e198b67f588d66f960.svg"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/lab-equipment-42237927278-1-b0000.tar.gz",
+        "member": "previews/af5dcd1cffb1a6ae1f9015c05a031e9f99048fedeb85f0e198b67f588d66f960.png"
+      },
+      "visual_verdict": "usable_as_schematic_component",
+      "observations": "轮廓和线条清楚，适合作为来源名称所指的简化示意或装配部件；未验证精细科学结构。",
+      "scientific_detail_validation": "not_independently_verified",
+      "native_editability_tested": false
+    },
+    {
+      "tile": 20,
+      "id": "lab-equipment-9537728d6a1930a38a66",
+      "title": "Micro Tube Cent",
+      "source_id": "svg/MicroTubeCent.svg",
+      "source_url": "https://github.com/KYU49/SvgCollectionOfLabEquipment/blob/702ca002ec2a7ba40c0369ef7b66075f262315b3/svg/MicroTubeCent.svg",
+      "original_sha256": "58611048dbf7d12fbac5999ce2961f554a2718222c5461f56a73ed5028018157",
+      "preview_sha256": "e24fda400958dcfadb4dd45b1bbc1ddc1d83b90e09f4334af9e04d74f24ff183",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/lab-equipment-42237927278-1-b0000.tar.gz",
+        "member": "files/58/58611048dbf7d12fbac5999ce2961f554a2718222c5461f56a73ed5028018157.svg"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/lab-equipment-42237927278-1-b0000.tar.gz",
+        "member": "previews/58611048dbf7d12fbac5999ce2961f554a2718222c5461f56a73ed5028018157.png"
+      },
+      "visual_verdict": "usable_as_schematic_component",
+      "observations": "开盖离心管，状态明确。",
+      "scientific_detail_validation": "not_independently_verified",
+      "native_editability_tested": false
+    },
+    {
+      "tile": 21,
+      "id": "lab-equipment-b03b4b965d51be7c2a09",
+      "title": "Vacuum Adapter",
+      "source_id": "svg/VacuumAdapter.svg",
+      "source_url": "https://github.com/KYU49/SvgCollectionOfLabEquipment/blob/702ca002ec2a7ba40c0369ef7b66075f262315b3/svg/VacuumAdapter.svg",
+      "original_sha256": "132e353782bf867056eb6fedf9b8827b55696d8f440a673219003d915a9c0d4d",
+      "preview_sha256": "5cd56c82f2450cfab38721267f1531bdd363c56142785d42c17aeb0e9c943c7a",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/lab-equipment-42237927278-1-b0000.tar.gz",
+        "member": "files/13/132e353782bf867056eb6fedf9b8827b55696d8f440a673219003d915a9c0d4d.svg"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/lab-equipment-42237927278-1-b0000.tar.gz",
+        "member": "previews/132e353782bf867056eb6fedf9b8827b55696d8f440a673219003d915a9c0d4d.png"
+      },
+      "visual_verdict": "usable_as_schematic_component",
+      "observations": "轮廓和线条清楚，适合作为来源名称所指的简化示意或装配部件；未验证精细科学结构。",
+      "scientific_detail_validation": "not_independently_verified",
+      "native_editability_tested": false
+    },
+    {
+      "tile": 22,
+      "id": "lab-equipment-9b5d2987e13a40a0142e",
+      "title": "Vial",
+      "source_id": "svg/Vial.svg",
+      "source_url": "https://github.com/KYU49/SvgCollectionOfLabEquipment/blob/702ca002ec2a7ba40c0369ef7b66075f262315b3/svg/Vial.svg",
+      "original_sha256": "86c66ba820f238d92817750d7b3bbb9f6cfc0b0f8abf42962db44c654fa337f9",
+      "preview_sha256": "6b61bc0cf7c10b43f9d5972fe1faab9883fed74973ff92adb897d8bb78e2a3aa",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/lab-equipment-42237927278-1-b0000.tar.gz",
+        "member": "files/86/86c66ba820f238d92817750d7b3bbb9f6cfc0b0f8abf42962db44c654fa337f9.svg"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/lab-equipment-42237927278-1-b0000.tar.gz",
+        "member": "previews/86c66ba820f238d92817750d7b3bbb9f6cfc0b0f8abf42962db44c654fa337f9.png"
+      },
+      "visual_verdict": "usable_as_schematic_component",
+      "observations": "轮廓和线条清楚，适合作为来源名称所指的简化示意或装配部件；未验证精细科学结构。",
+      "scientific_detail_validation": "not_independently_verified",
+      "native_editability_tested": false
+    },
+    {
+      "tile": 23,
+      "id": "lab-equipment-ffa51e3b875ad22f33b4",
+      "title": "Recovery Flask Illust empty",
+      "source_id": "svg/RecoveryFlaskIllust_empty.svg",
+      "source_url": "https://github.com/KYU49/SvgCollectionOfLabEquipment/blob/702ca002ec2a7ba40c0369ef7b66075f262315b3/svg/RecoveryFlaskIllust_empty.svg",
+      "original_sha256": "13a323b535045d264b440c96b9ddada14d343529c9b4358b4d760c4eb458ebca",
+      "preview_sha256": "650679e38c2d137a7423cedf9c7da5e50544334627331b7835cbdd466a057adb",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/lab-equipment-42237927278-1-b0000.tar.gz",
+        "member": "files/13/13a323b535045d264b440c96b9ddada14d343529c9b4358b4d760c4eb458ebca.svg"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/lab-equipment-42237927278-1-b0000.tar.gz",
+        "member": "previews/13a323b535045d264b440c96b9ddada14d343529c9b4358b4d760c4eb458ebca.png"
+      },
+      "visual_verdict": "usable_as_schematic_component",
+      "observations": "轮廓和线条清楚，适合作为来源名称所指的简化示意或装配部件；未验证精细科学结构。",
+      "scientific_detail_validation": "not_independently_verified",
+      "native_editability_tested": false
+    },
+    {
+      "tile": 24,
+      "id": "lab-equipment-bd6a8f9e5d96fa48e2bb",
+      "title": "Recovery Flask With Schlenk Cock",
+      "source_id": "svg/RecoveryFlaskWithSchlenkCock.svg",
+      "source_url": "https://github.com/KYU49/SvgCollectionOfLabEquipment/blob/702ca002ec2a7ba40c0369ef7b66075f262315b3/svg/RecoveryFlaskWithSchlenkCock.svg",
+      "original_sha256": "71e1405b8c9abd3e7bde758afc7358e7cf84aa60e83199b321b0f50de795a092",
+      "preview_sha256": "c6247f60c530f78b0b73667b7af0205e79e44c38c68b43d8c6a3c24f31ba5852",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/lab-equipment-42237927278-1-b0000.tar.gz",
+        "member": "files/71/71e1405b8c9abd3e7bde758afc7358e7cf84aa60e83199b321b0f50de795a092.svg"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/lab-equipment-42237927278-1-b0000.tar.gz",
+        "member": "previews/71e1405b8c9abd3e7bde758afc7358e7cf84aa60e83199b321b0f50de795a092.png"
+      },
+      "visual_verdict": "usable_as_schematic_component",
+      "observations": "轮廓和线条清楚，适合作为来源名称所指的简化示意或装配部件；未验证精细科学结构。",
+      "scientific_detail_validation": "not_independently_verified",
+      "native_editability_tested": false
+    },
+    {
+      "tile": 25,
+      "id": "lab-equipment-b1f97edcc27ce7073ef3",
+      "title": "Column Packed",
+      "source_id": "svg/ColumnPacked.svg",
+      "source_url": "https://github.com/KYU49/SvgCollectionOfLabEquipment/blob/702ca002ec2a7ba40c0369ef7b66075f262315b3/svg/ColumnPacked.svg",
+      "original_sha256": "d3446893e301ec2b1ed50b97d3a87600e1a104d23242b9347ba7aea0e21ef129",
+      "preview_sha256": "cbd74e0441b65a16f7c7030998bdabdcd5691e310bfe0c956e42ac923e2bd504",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/lab-equipment-42237927278-1-b0000.tar.gz",
+        "member": "files/d3/d3446893e301ec2b1ed50b97d3a87600e1a104d23242b9347ba7aea0e21ef129.svg"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/lab-equipment-42237927278-1-b0000.tar.gz",
+        "member": "previews/d3446893e301ec2b1ed50b97d3a87600e1a104d23242b9347ba7aea0e21ef129.png"
+      },
+      "visual_verdict": "usable_as_schematic_component",
+      "observations": "轮廓和线条清楚，适合作为来源名称所指的简化示意或装配部件；未验证精细科学结构。",
+      "scientific_detail_validation": "not_independently_verified",
+      "native_editability_tested": false
+    },
+    {
+      "tile": 26,
+      "id": "lab-equipment-bd3189012cb2fa84bb26",
+      "title": "Recovery Flask Illust low Add",
+      "source_id": "svg/RecoveryFlaskIllust_lowAdd.svg",
+      "source_url": "https://github.com/KYU49/SvgCollectionOfLabEquipment/blob/702ca002ec2a7ba40c0369ef7b66075f262315b3/svg/RecoveryFlaskIllust_lowAdd.svg",
+      "original_sha256": "5eb2b1c972ef6e91e0292f8338ebfd0e201c602a017f42864a420f348dc04349",
+      "preview_sha256": "013eb8fd3af7b4f2b92e75c9d81699259451e8ecf5addd01f467aab9a55ea49a",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/lab-equipment-42237927278-1-b0000.tar.gz",
+        "member": "files/5e/5eb2b1c972ef6e91e0292f8338ebfd0e201c602a017f42864a420f348dc04349.svg"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/lab-equipment-42237927278-1-b0000.tar.gz",
+        "member": "previews/5eb2b1c972ef6e91e0292f8338ebfd0e201c602a017f42864a420f348dc04349.png"
+      },
+      "visual_verdict": "usable_as_schematic_component",
+      "observations": "轮廓和线条清楚，适合作为来源名称所指的简化示意或装配部件；未验证精细科学结构。",
+      "scientific_detail_validation": "not_independently_verified",
+      "native_editability_tested": false
+    },
+    {
+      "tile": 27,
+      "id": "lab-equipment-5a21038072a5210d3cc7",
+      "title": "Recovery Flask2way",
+      "source_id": "svg/RecoveryFlask2way.svg",
+      "source_url": "https://github.com/KYU49/SvgCollectionOfLabEquipment/blob/702ca002ec2a7ba40c0369ef7b66075f262315b3/svg/RecoveryFlask2way.svg",
+      "original_sha256": "084c131c9efd70c26d41c57252884e4adcc95f7bb285656ab0990cc25d7777fc",
+      "preview_sha256": "4ebefbb4a8721f9452a7f350a4e72ca981de309fe38b4dac1cd5be17fa4c6d52",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/lab-equipment-42237927278-1-b0000.tar.gz",
+        "member": "files/08/084c131c9efd70c26d41c57252884e4adcc95f7bb285656ab0990cc25d7777fc.svg"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/lab-equipment-42237927278-1-b0000.tar.gz",
+        "member": "previews/084c131c9efd70c26d41c57252884e4adcc95f7bb285656ab0990cc25d7777fc.png"
+      },
+      "visual_verdict": "usable_as_schematic_component",
+      "observations": "轮廓和线条清楚，适合作为来源名称所指的简化示意或装配部件；未验证精细科学结构。",
+      "scientific_detail_validation": "not_independently_verified",
+      "native_editability_tested": false
+    },
+    {
+      "tile": 28,
+      "id": "lab-equipment-95899d5dc4cb1dd03d5c",
+      "title": "Micro Tube Zoom",
+      "source_id": "svg/MicroTubeZoom.svg",
+      "source_url": "https://github.com/KYU49/SvgCollectionOfLabEquipment/blob/702ca002ec2a7ba40c0369ef7b66075f262315b3/svg/MicroTubeZoom.svg",
+      "original_sha256": "d3189affdb0d094e1a218acb08de4a732f32fa187e2394ae058323b77c9613ed",
+      "preview_sha256": "a40f7b69c3ac4cf3f09748347d44f83c2fd5f949f102a01e58c2f929f52ddd76",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/lab-equipment-42237927278-1-b0000.tar.gz",
+        "member": "files/d3/d3189affdb0d094e1a218acb08de4a732f32fa187e2394ae058323b77c9613ed.svg"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/lab-equipment-42237927278-1-b0000.tar.gz",
+        "member": "previews/d3189affdb0d094e1a218acb08de4a732f32fa187e2394ae058323b77c9613ed.png"
+      },
+      "visual_verdict": "usable_as_schematic_component",
+      "observations": "离心管放大局部，裁切是来源明确的局部用途。",
+      "scientific_detail_validation": "not_independently_verified",
+      "native_editability_tested": false
+    },
+    {
+      "tile": 29,
+      "id": "lab-equipment-c798deb17dcaa2b89dba",
+      "title": "Glass Syringe Pull",
+      "source_id": "svg/GlassSyringePull.svg",
+      "source_url": "https://github.com/KYU49/SvgCollectionOfLabEquipment/blob/702ca002ec2a7ba40c0369ef7b66075f262315b3/svg/GlassSyringePull.svg",
+      "original_sha256": "62a5f2ba27ee69397fde7f81e1b702cd734290ffe0e3949cea922faedcad0cad",
+      "preview_sha256": "d113526d09f2925c3551e63abcfddf3bc71252de88d5d3ea97fd650f752e7900",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/lab-equipment-42237927278-1-b0000.tar.gz",
+        "member": "files/62/62a5f2ba27ee69397fde7f81e1b702cd734290ffe0e3949cea922faedcad0cad.svg"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/lab-equipment-42237927278-1-b0000.tar.gz",
+        "member": "previews/62a5f2ba27ee69397fde7f81e1b702cd734290ffe0e3949cea922faedcad0cad.png"
+      },
+      "visual_verdict": "usable_as_schematic_component",
+      "observations": "轮廓和线条清楚，适合作为来源名称所指的简化示意或装配部件；未验证精细科学结构。",
+      "scientific_detail_validation": "not_independently_verified",
+      "native_editability_tested": false
+    },
+    {
+      "tile": 30,
+      "id": "lab-equipment-f61c871a7e72611f61c5",
+      "title": "Stirrer Bar",
+      "source_id": "svg/StirrerBar.svg",
+      "source_url": "https://github.com/KYU49/SvgCollectionOfLabEquipment/blob/702ca002ec2a7ba40c0369ef7b66075f262315b3/svg/StirrerBar.svg",
+      "original_sha256": "9b97faaf129727def377fab864773826ea0af5e484a50b1f43b5a4abae2c2e6a",
+      "preview_sha256": "d63f081fbee19b6f8675d6f1b321918095e0dc382facf0434bd547c820b5dc32",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/lab-equipment-42237927278-1-b0000.tar.gz",
+        "member": "files/9b/9b97faaf129727def377fab864773826ea0af5e484a50b1f43b5a4abae2c2e6a.svg"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/lab-equipment-42237927278-1-b0000.tar.gz",
+        "member": "previews/9b97faaf129727def377fab864773826ea0af5e484a50b1f43b5a4abae2c2e6a.png"
+      },
+      "visual_verdict": "usable_as_schematic_component",
+      "observations": "轮廓和线条清楚，适合作为来源名称所指的简化示意或装配部件；未验证精细科学结构。",
+      "scientific_detail_validation": "not_independently_verified",
+      "native_editability_tested": false
+    }
+  ]
+}
