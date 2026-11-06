@@ -2,6 +2,7 @@ import hashlib
 import importlib.util
 import json
 from pathlib import Path
+import sqlite3
 
 import pytest
 
@@ -11,6 +12,9 @@ ROOT=Path(__file__).resolve().parents[1]
 spec=importlib.util.spec_from_file_location("validate_search_behavior",ROOT/"scripts/validate_search_behavior.py")
 behavior=importlib.util.module_from_spec(spec)
 spec.loader.exec_module(behavior)
+diagnostic_spec=importlib.util.spec_from_file_location("diagnose_search",ROOT/"scripts/diagnose_search.py")
+diagnostic=importlib.util.module_from_spec(diagnostic_spec)
+diagnostic_spec.loader.exec_module(diagnostic)
 
 
 def test_adoption_cannot_be_inferred_from_rank_or_empty_decision_template():
@@ -47,3 +51,26 @@ def test_supplemental_report_cannot_borrow_another_catalog_analysis_version(tmp_
     assembly.write_text(json.dumps({"summary":{"catalog_sha256":"f"*64},"appearance":{"analysis_version":"appearance-1.1.0"}}),encoding="utf-8")
     with pytest.raises(ValueError,match="Assembly report does not bind"):
         behavior.validate(catalog,assembly,tmp_path/"out")
+
+
+def test_diagnostic_reuses_exact_index_without_rebuilding_or_writing(tmp_path, monkeypatch):
+    finalize([], tmp_path)
+    db=tmp_path/"catalog.sqlite"
+    before=db.read_bytes()
+    monkeypatch.setattr(diagnostic, "rebuild_search_index", lambda *_: pytest.fail("Unexpected rebuild"))
+    path, catalog_sha, info=diagnostic.resolve_index(tmp_path/"catalog.jsonl",tmp_path/"unused",db)
+    assert path==db.resolve()
+    assert catalog_sha==hashlib.sha256((tmp_path/"catalog.jsonl").read_bytes()).hexdigest()
+    assert info["reused"] is True and info["build_seconds"] is None
+    assert db.read_bytes()==before and not (tmp_path/"unused").exists()
+
+
+@pytest.mark.parametrize("mismatch",["catalog", "schema", "ranking"])
+def test_diagnostic_rejects_mismatched_reused_index(tmp_path, mismatch):
+    finalize([],tmp_path)
+    db=tmp_path/"catalog.sqlite"
+    with sqlite3.connect(db) as connection:
+        if mismatch=="schema":connection.execute("PRAGMA user_version=8")
+        else:connection.execute("UPDATE index_metadata SET value=? WHERE key=?",("wrong", "catalog_version" if mismatch=="catalog" else "ranking_version"))
+    with pytest.raises(ValueError,match={"catalog":"exact catalog","schema":"current v9","ranking":"ranking version"}[mismatch]):
+        diagnostic.resolve_index(tmp_path/"catalog.jsonl",tmp_path/"unused",db)

@@ -1,0 +1,270 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-11-06T20:42:52.096356+00:00",
+  "status": "verified_family_topic_union_no_cross_origin_scientific_or_category_leak",
+  "bindings": {
+    "before_catalog_sha256": "3e12babad36819c593147f5f2f98929904590ab2171659a898db6900530381b7",
+    "after_catalog_sha256": "70d450a2a5cdf8b44efc531e164b3e1718e952ed858c2603a628ffae6c135aca",
+    "search_core_sha256": "8120b1ff2b47b83605c0cc5495b2aa7f12c59b740f7a44f0db376a28808e9049"
+  },
+  "explanation": "Two previously unclassified families use Arcadia as the representative source but already contain exact-byte SciDraw mirrors. Their SciDraw official bird categories legitimately contribute to family topic union. All eight Arcadia origin contexts retain empty taxonomy; all four SciDraw origin contexts receive animals. Category-filtered selected files can use only the qualifying origin. No new scientific facts are introduced.",
+  "origin_counts": {
+    "arcadia": 8,
+    "scidraw": 4
+  },
+  "families": [
+    {
+      "family_id": "arcadia-7b0d570d7652b29ffdf9",
+      "title": "Chicken (Gallus gallus domesticus) — tricolor-stroke",
+      "family_taxonomy": [
+        "animals"
+      ],
+      "sources": [
+        "arcadia",
+        "scidraw"
+      ],
+      "scidraw_facets": [
+        {
+          "source": "scidraw",
+          "source_id": "51e9b153-686a-4d85-bc90-f68ef848e657",
+          "kind": "official_catalog_subject",
+          "label": "bird",
+          "taxonomy": "animals",
+          "upstream_field": "upstream_category",
+          "source_url": "https://scidraw.io/drawing/gallus-gallus-636dd4a1",
+          "upstream_revision": "10.57844/arcadia-4gbv-pzkv",
+          "basis": "official_category_name_preserved_by_scidraw_adapter",
+          "mapping_version": "source-topic-1.0.0",
+          "scientific_assertion": false
+        },
+        {
+          "source": "scidraw",
+          "source_id": "5adb7784-8431-45d2-88f2-55e48bc58463",
+          "kind": "official_catalog_subject",
+          "label": "bird",
+          "taxonomy": "animals",
+          "upstream_field": "upstream_category",
+          "source_url": "https://scidraw.io/drawing/gallus-gallus-b605382c",
+          "upstream_revision": "10.57844/arcadia-4gbv-pzkv",
+          "basis": "official_category_name_preserved_by_scidraw_adapter",
+          "mapping_version": "source-topic-1.0.0",
+          "scientific_assertion": false
+        }
+      ]
+    },
+    {
+      "family_id": "arcadia-f73b83ad4b060579b4ee",
+      "title": "Zebra finch (Taeniopygia guttata) — silhouette",
+      "family_taxonomy": [
+        "animals"
+      ],
+      "sources": [
+        "arcadia",
+        "scidraw"
+      ],
+      "scidraw_facets": [
+        {
+          "source": "scidraw",
+          "source_id": "8a33534a-5070-46d6-a9b3-e3eb8ee9d086",
+          "kind": "official_catalog_subject",
+          "label": "bird",
+          "taxonomy": "animals",
+          "upstream_field": "upstream_category",
+          "source_url": "https://scidraw.io/drawing/taeniopygia-guttata-acf0957a",
+          "upstream_revision": "10.57844/arcadia-4gbv-pzkv",
+          "basis": "official_category_name_preserved_by_scidraw_adapter",
+          "mapping_version": "source-topic-1.0.0",
+          "scientific_assertion": false
+        },
+        {
+          "source": "scidraw",
+          "source_id": "e6db99a3-34e2-4777-ac32-ea2d0c9267c4",
+          "kind": "official_catalog_subject",
+          "label": "bird",
+          "taxonomy": "animals",
+          "upstream_field": "upstream_category",
+          "source_url": "https://scidraw.io/drawing/taeniopygia-guttata-30f2d5f0",
+          "upstream_revision": "10.57844/arcadia-4gbv-pzkv",
+          "basis": "official_category_name_preserved_by_scidraw_adapter",
+          "mapping_version": "source-topic-1.0.0",
+          "scientific_assertion": false
+        }
+      ]
+    }
+  ],
+  "prepared_origins": [
+    {
+      "family_id": "arcadia-7b0d570d7652b29ffdf9",
+      "source": "arcadia",
+      "source_id": "Silhouette SVGs/Gallus-gallus-silhouette.svg",
+      "file_sha256": "429cf54f3f962b83fe0b10d56968bbf5ff919b649b9dec951dd2135274db4327",
+      "category": [],
+      "scientific_fields_unchanged": true
+    },
+    {
+      "family_id": "arcadia-7b0d570d7652b29ffdf9",
+      "source": "arcadia",
+      "source_id": "Tricolor + stroke SVGs/Gallus-gallus-tricolorstroke.svg",
+      "file_sha256": "4f6397d5d32ff7ea58451cb5e5725c87501be155c0eb64f85c5821dfe99cb1ed",
+      "category": [],
+      "scientific_fields_unchanged": true
+    },
+    {
+      "family_id": "arcadia-7b0d570d7652b29ffdf9",
+      "source": "scidraw",
+      "source_id": "5adb7784-8431-45d2-88f2-55e48bc58463",
+      "file_sha256": "4f6397d5d32ff7ea58451cb5e5725c87501be155c0eb64f85c5821dfe99cb1ed",
+      "category": [
+        "animals"
+      ],
+      "scientific_fields_unchanged": true
+    },
+    {
+      "family_id": "arcadia-7b0d570d7652b29ffdf9",
+      "source": "arcadia",
+      "source_id": "Raster PNGs/Gallus-gallus-raster.png",
+      "file_sha256": "b0ca26397733722695d2f4ec59de300ad714cc82f3e8fd08f1d558eb470fc871",
+      "category": [],
+      "scientific_fields_unchanged": true
+    },
+    {
+      "family_id": "arcadia-7b0d570d7652b29ffdf9",
+      "source": "scidraw",
+      "source_id": "51e9b153-686a-4d85-bc90-f68ef848e657",
+      "file_sha256": "b0ca26397733722695d2f4ec59de300ad714cc82f3e8fd08f1d558eb470fc871",
+      "category": [
+        "animals"
+      ],
+      "scientific_fields_unchanged": true
+    },
+    {
+      "family_id": "arcadia-7b0d570d7652b29ffdf9",
+      "source": "arcadia",
+      "source_id": "Tricolor + stroke PNGs/Gallus-gallus-tricolorstroke.png",
+      "file_sha256": "b346cd066ac47759974c20ba66c35f00eeef17136684b02687edcc846b0e7c98",
+      "category": [],
+      "scientific_fields_unchanged": true
+    },
+    {
+      "family_id": "arcadia-f73b83ad4b060579b4ee",
+      "source": "arcadia",
+      "source_id": "Silhouette SVGs/Taeniopygia-guttata-silhouette.svg",
+      "file_sha256": "85d338194c424f192b37df3d6d6d9e8f4a9b28c7b713de90b918638b85f582ae",
+      "category": [],
+      "scientific_fields_unchanged": true
+    },
+    {
+      "family_id": "arcadia-f73b83ad4b060579b4ee",
+      "source": "arcadia",
+      "source_id": "Tricolor + stroke SVGs/Taeniopygia-guttata-tricolorstroke.svg",
+      "file_sha256": "bf0c8ec79b32ba643190bef232ac4a5ea66d38be32f1f228e6ba0b13a6ba6580",
+      "category": [],
+      "scientific_fields_unchanged": true
+    },
+    {
+      "family_id": "arcadia-f73b83ad4b060579b4ee",
+      "source": "scidraw",
+      "source_id": "8a33534a-5070-46d6-a9b3-e3eb8ee9d086",
+      "file_sha256": "bf0c8ec79b32ba643190bef232ac4a5ea66d38be32f1f228e6ba0b13a6ba6580",
+      "category": [
+        "animals"
+      ],
+      "scientific_fields_unchanged": true
+    },
+    {
+      "family_id": "arcadia-f73b83ad4b060579b4ee",
+      "source": "arcadia",
+      "source_id": "Tricolor + stroke PNGs/Taeniopygia-guttata-tricolorstroke.png",
+      "file_sha256": "f17565e874d98fe5ddad11be1eef5bcb70c44301c89ec3764df3457296fb1ea9",
+      "category": [],
+      "scientific_fields_unchanged": true
+    },
+    {
+      "family_id": "arcadia-f73b83ad4b060579b4ee",
+      "source": "arcadia",
+      "source_id": "Raster PNGs/Taeniopygia-guttata-raster.png",
+      "file_sha256": "fd986d9579449a9cb2526b70b1316d3eba6ffe62aa687d75fae14b603e53e362",
+      "category": [],
+      "scientific_fields_unchanged": true
+    },
+    {
+      "family_id": "arcadia-f73b83ad4b060579b4ee",
+      "source": "scidraw",
+      "source_id": "e6db99a3-34e2-4777-ac32-ea2d0c9267c4",
+      "file_sha256": "fd986d9579449a9cb2526b70b1316d3eba6ffe62aa687d75fae14b603e53e362",
+      "category": [
+        "animals"
+      ],
+      "scientific_fields_unchanged": true
+    }
+  ],
+  "actual_shared_core_queries": [
+    {
+      "input": {
+        "query": "",
+        "filters": {
+          "family_id": "arcadia-7b0d570d7652b29ffdf9",
+          "category": "animals",
+          "source": "arcadia"
+        },
+        "catalog_version": "70d450a2a5cdf8b44efc531e164b3e1718e952ed858c2603a628ffae6c135aca",
+        "seed": "topic-origin-check"
+      },
+      "selected": []
+    },
+    {
+      "input": {
+        "query": "",
+        "filters": {
+          "family_id": "arcadia-7b0d570d7652b29ffdf9",
+          "category": "animals",
+          "source": "scidraw"
+        },
+        "catalog_version": "70d450a2a5cdf8b44efc531e164b3e1718e952ed858c2603a628ffae6c135aca",
+        "seed": "topic-origin-check"
+      },
+      "selected": [
+        {
+          "family_id": "arcadia-7b0d570d7652b29ffdf9",
+          "source": "scidraw",
+          "source_id": "5adb7784-8431-45d2-88f2-55e48bc58463",
+          "file_sha256": "4f6397d5d32ff7ea58451cb5e5725c87501be155c0eb64f85c5821dfe99cb1ed"
+        }
+      ]
+    },
+    {
+      "input": {
+        "query": "",
+        "filters": {
+          "family_id": "arcadia-f73b83ad4b060579b4ee",
+          "category": "animals",
+          "source": "arcadia"
+        },
+        "catalog_version": "70d450a2a5cdf8b44efc531e164b3e1718e952ed858c2603a628ffae6c135aca",
+        "seed": "topic-origin-check"
+      },
+      "selected": []
+    },
+    {
+      "input": {
+        "query": "",
+        "filters": {
+          "family_id": "arcadia-f73b83ad4b060579b4ee",
+          "category": "animals",
+          "source": "scidraw"
+        },
+        "catalog_version": "70d450a2a5cdf8b44efc531e164b3e1718e952ed858c2603a628ffae6c135aca",
+        "seed": "topic-origin-check"
+      },
+      "selected": [
+        {
+          "family_id": "arcadia-f73b83ad4b060579b4ee",
+          "source": "scidraw",
+          "source_id": "8a33534a-5070-46d6-a9b3-e3eb8ee9d086",
+          "file_sha256": "bf0c8ec79b32ba643190bef232ac4a5ea66d38be32f1f228e6ba0b13a6ba6580"
+        }
+      ]
+    }
+  ],
+  "images_downloaded": 0
+}

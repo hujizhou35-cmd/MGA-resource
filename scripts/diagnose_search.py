@@ -18,7 +18,7 @@ import time
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
-from mga_resources.catalog import rebuild_search_index, search_legacy, search_page
+from mga_resources.catalog import _search_core, rebuild_search_index, search_legacy, search_page
 
 
 def digest(path):
@@ -56,19 +56,39 @@ def candidate_coverage(queries):
             "concepts_with_empty_queries":missing}
 
 
-def diagnose(catalog_path, benchmark_path, output):
-    output.mkdir(parents=True, exist_ok=True)
+def resolve_index(catalog_path, output, index_path=None):
+    """Reuse only an exact catalog/current-policy index; never rewrite it."""
     started = time.perf_counter()
-    catalog_sha = rebuild_search_index(catalog_path, output / "catalog.sqlite")
-    index_seconds = time.perf_counter() - started
-    db = output / "catalog.sqlite"
-    with closing(sqlite3.connect(db)) as connection:
+    if index_path is None:
+        db = output / "catalog.sqlite"
+        catalog_sha = rebuild_search_index(catalog_path, db)
+        return db, catalog_sha, {"reused": False, "build_seconds": time.perf_counter()-started,
+                                 "validation_seconds": None}
+    db = Path(index_path).resolve()
+    catalog_sha = digest(catalog_path)
+    with closing(sqlite3.connect(db.as_uri()+"?mode=ro", uri=True)) as connection:
+        metadata = dict(connection.execute("SELECT key, value FROM index_metadata"))
+        if metadata.get("catalog_version") != catalog_sha:
+            raise ValueError("Reused index does not bind this exact catalog")
+        if connection.execute("PRAGMA user_version").fetchone()[0] != 9:
+            raise ValueError("Reused index must have the current v9 schema")
+    expected_ranking = _search_core({"action": "prepare", "records": []})["ranking_version"]
+    if metadata.get("ranking_version") != expected_ranking:
+        raise ValueError("Reused index ranking version differs from the current shared core")
+    return db, catalog_sha, {"reused": True, "build_seconds": None,
+                            "validation_seconds": time.perf_counter()-started}
+
+
+def diagnose(catalog_path, benchmark_path, output, index_path=None):
+    output.mkdir(parents=True, exist_ok=True)
+    db, catalog_sha, index_info = resolve_index(catalog_path, output, index_path)
+    with closing(sqlite3.connect(db.resolve().as_uri()+"?mode=ro", uri=True)) as connection:
         summary={"catalog_sha256":catalog_sha,
                  "logical_families":connection.execute("SELECT count(*) FROM assets").fetchone()[0],
                  "unique_original_files":connection.execute("SELECT count(DISTINCT file_sha256) FROM file_variants").fetchone()[0],
                  "ranking_version":connection.execute("SELECT value FROM index_metadata WHERE key='ranking_version'").fetchone()[0],
                  "search_index_version":connection.execute("PRAGMA user_version").fetchone()[0]}
-    print(f"Rebuilt {summary['logical_families']} families in {index_seconds:.2f}s", flush=True)
+    print(f"{'Reused verified' if index_info['reused'] else 'Rebuilt'} index of {summary['logical_families']} families", flush=True)
     benchmark = json.loads(benchmark_path.read_text(encoding="utf-8"))
     queries = []
     for index, query in enumerate(benchmark["queries"]):
@@ -111,12 +131,16 @@ def diagnose(catalog_path, benchmark_path, output):
                          "unique_first_candidates":len({run["first_candidate"] for run in runs if run["first_candidate"]}),
                          "final_adoptions_observed":False})
     report={"schema_version":1,"status":"diagnostic_not_acceptance","input_catalog_sha256":digest(catalog_path),
-            "rebuilt_catalog_sha256":summary["catalog_sha256"],"benchmark_sha256":digest(benchmark_path),
+            "rebuilt_catalog_sha256":None if index_info["reused"] else summary["catalog_sha256"],
+            "index_catalog_sha256":summary["catalog_sha256"],"benchmark_sha256":digest(benchmark_path),
             "search_core_sha256":digest(ROOT / "mga_resources/search-core.mjs"),
             "ranking_version":summary["ranking_version"],"search_index_version":summary["search_index_version"],
             "logical_families":summary["logical_families"],"unique_original_files":summary["unique_original_files"],
-            "sqlite_bytes":db.stat().st_size,
-            "index_build_seconds":index_seconds,"queries":queries,"broad_queries":broad,"rotation":rotation,
+            "sqlite_bytes":db.stat().st_size,"sqlite_sha256":digest(db),
+            "index_reused":index_info["reused"],"index_path":str(db),
+            "index_build_seconds":index_info["build_seconds"],
+            "index_validation_seconds":index_info["validation_seconds"],
+            "queries":queries,"broad_queries":broad,"rotation":rotation,
             "summary":{"queries":len(queries),"legacy_nonempty":sum(bool(q["legacy_ids"]) for q in queries),
                        "shared_nonempty":sum(bool(q["shared_ids"]) for q in queries),
                        "median_adapter_milliseconds":statistics.median(q["shared_adapter_milliseconds"] for q in queries),
@@ -138,5 +162,6 @@ if __name__ == "__main__":
     parser.add_argument("--catalog",type=Path,required=True)
     parser.add_argument("--benchmark",type=Path,default=ROOT/"data/benchmark.json")
     parser.add_argument("--output",type=Path,required=True)
+    parser.add_argument("--index",type=Path,help="Reuse an existing v9 index bound to the exact catalog and current shared ranking version")
     args=parser.parse_args()
-    diagnose(args.catalog,args.benchmark,args.output)
+    diagnose(args.catalog,args.benchmark,args.output,args.index)
