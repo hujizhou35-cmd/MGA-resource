@@ -1,0 +1,172 @@
+{
+  "schema_version": 1,
+  "verified_at": "2026-11-06T21:17:49.269401+00:00",
+  "supplement_pass": true,
+  "missing": [],
+  "overall_release_allowed": false,
+  "collection_complete": false,
+  "bindings": {
+    "catalog_sha256": "5c90306415ce5e7f36e875c7f57b19a91930aacfeeaeecdf9ad7662770f9a3fe",
+    "benchmark_sha256": "ce0282afeb4afbcee8fdef1c6f937844ef569cabf16ba7909e22bf86b1096e92",
+    "search_core_sha256": "8120b1ff2b47b83605c0cc5495b2aa7f12c59b740f7a44f0db376a28808e9049",
+    "ranking_version": "shared-search-3.4.1",
+    "analysis_version": "appearance-1.1.0",
+    "candidate_manifest_sha256": "a4fe0424ee8ecc32096090ef295242bdaa04b9ce29ff4f7a80948c95516d5436",
+    "assembly_report_sha256": "cecdab1b3f5162cae569fc51de43d0ec34f33e00f0a81d57d56632964199cacd"
+  },
+  "supplemental_evidence": {
+    "uri": "build/search-final/assembly-42289434868-1/supplement-final/supplemental-evidence.json",
+    "sha256": "8a8f3d5322bba7ca6b1ef4fe00e63350be325fb53c76ae3d3353de72e427e976"
+  },
+  "candidate_manifest": {
+    "uri": "build/dispositions-final-scope-42289434868/candidate_publish_manifest.json",
+    "sha256": "a4fe0424ee8ecc32096090ef295242bdaa04b9ce29ff4f7a80948c95516d5436",
+    "files": 19473,
+    "acceptance_report_required": true
+  },
+  "evaluation": {
+    "required_bindings": {
+      "catalog_sha256": "5c90306415ce5e7f36e875c7f57b19a91930aacfeeaeecdf9ad7662770f9a3fe",
+      "benchmark_sha256": "ce0282afeb4afbcee8fdef1c6f937844ef569cabf16ba7909e22bf86b1096e92",
+      "search_core_sha256": "8120b1ff2b47b83605c0cc5495b2aa7f12c59b740f7a44f0db376a28808e9049"
+    },
+    "appearance_reviewed_files": 18,
+    "appearance_reviewed_sources": [
+      "arcadia",
+      "bioicons",
+      "lab-equipment",
+      "nih-bioart",
+      "open-pain",
+      "scidraw",
+      "scisvg",
+      "togo"
+    ],
+    "diversity_observations": [
+      {
+        "case_id": "rich-mouse",
+        "pool_kind": "rich",
+        "eligible_families": 38,
+        "metrics": {
+          "projects": 5,
+          "old_top_family_ids": {
+            "distinct_families": 10,
+            "total_project_family_choices": 50,
+            "maximum_project_reuse": 5,
+            "mean_pairwise_jaccard": 1.0
+          },
+          "new_top_family_ids": {
+            "distinct_families": 27,
+            "total_project_family_choices": 50,
+            "maximum_project_reuse": 4,
+            "mean_pairwise_jaccard": 0.2049486461251167
+          },
+          "trial_downloaded_family_ids": {
+            "distinct_families": 0,
+            "total_project_family_choices": 0,
+            "maximum_project_reuse": 0,
+            "mean_pairwise_jaccard": 0.0
+          },
+          "adopted_family_ids": {
+            "distinct_families": 2,
+            "total_project_family_choices": 5,
+            "maximum_project_reuse": 3,
+            "mean_pairwise_jaccard": 0.4
+          }
+        },
+        "review_notes": "Real catalog/source-qualified candidate pool; source labels are not independent visual acceptance. Validation exercise projects only. Final validation-exercise decisions are separately identified and evidence-bound. No user research project adoption is claimed."
+      },
+      {
+        "case_id": "scarce-Naegleria-gruberi",
+        "pool_kind": "scarce",
+        "eligible_families": 1,
+        "metrics": {
+          "projects": 5,
+          "old_top_family_ids": {
+            "distinct_families": 1,
+            "total_project_family_choices": 5,
+            "maximum_project_reuse": 5,
+            "mean_pairwise_jaccard": 1.0
+          },
+          "new_top_family_ids": {
+            "distinct_families": 1,
+            "total_project_family_choices": 5,
+            "maximum_project_reuse": 5,
+            "mean_pairwise_jaccard": 1.0
+          },
+          "trial_downloaded_family_ids": {
+            "distinct_families": 0,
+            "total_project_family_choices": 0,
+            "maximum_project_reuse": 0,
+            "mean_pairwise_jaccard": 0.0
+          },
+          "adopted_family_ids": {
+            "distinct_families": 1,
+            "total_project_family_choices": 5,
+            "maximum_project_reuse": 5,
+            "mean_pairwise_jaccard": 1.0
+          }
+        },
+        "review_notes": "Real catalog/source-qualified candidate pool; source labels are not independent visual acceptance. Validation exercise projects only. Final validation-exercise decisions are separately identified and evidence-bound. No user research project adoption is claimed."
+      }
+    ],
+    "note": "Metrics describe observed runs and final adoption; no arbitrary diversity pass score is inferred.",
+    "missing": []
+  },
+  "strict_checks": {
+    "all_appearance_original_preview_archive_bindings_match": true,
+    "unique_appearance_originals": 18,
+    "actual_selected_files_match_manifest": true,
+    "trial_original_download_arrays_unchanged_empty": true,
+    "verified_local_raw_evidence_files": 30
+  },
+  "original_benchmark": {
+    "queries": 120,
+    "candidate_nonempty": 102,
+    "language_nonempty": {
+      "zh": 51,
+      "en": 51
+    },
+    "relevance_score": null,
+    "acceptance": "not_passed",
+    "results_preserved": true,
+    "source": {
+      "uri": "build/search-final/assembly-42289434868-1/diagnostic/search-diagnostic.json",
+      "sha256": "eb59d5d46ec591a3759d3638da546aabdd97ba65134f74a033692847e6fa4e74"
+    }
+  },
+  "pending_user_scope_decisions": [
+    "Whether complete multistage biological mechanism/teaching scenes belong in the reusable-component library.",
+    "Whether value-free chart templates/analysis icons, including forest plots and heatmaps, belong in the collection.",
+    "Whether unlabeled generic geometric shapes presented as schematic proteins are in scope.",
+    "Whether to add a separate composable-component acceptance exercise for cohort follow-up/randomization/recruitment while preserving the original120 questions/results."
+  ],
+  "limitations": [
+    "The supplemental check passes only its appearance/functional/diversity evidence contract; it does not authorize publication or waive original retrieval, curated, source, negative-case or clean-bundle requirements.",
+    "Later seven-file lysosome/rodent-action science evidence is not applied to this frozen catalog or to its102/120 observation."
+  ],
+  "cloud_receipts": [
+    {
+      "kind": "archive",
+      "name": "supplement-evidence-42289434868-1.tar.gz",
+      "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/supplement-evidence-42289434868-1.tar.gz",
+      "asset_id": 718592725,
+      "size_bytes": 2305293,
+      "sha256": "3a276844b76e0ddd0b8e33958d7cef4d5b18d5d4529789b5caf21abaa8bca036",
+      "github_digest": "sha256:3a276844b76e0ddd0b8e33958d7cef4d5b18d5d4529789b5caf21abaa8bca036",
+      "verified_against_local_bytes": true
+    },
+    {
+      "kind": "check",
+      "name": "supplement-evidence-42289434868-1.check.json",
+      "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/supplement-evidence-42289434868-1.check.json",
+      "asset_id": 718592728,
+      "size_bytes": 6279,
+      "sha256": "796a38a0fd59364e68a7a3afcc207ba6712a3ab00352315c3f98176298db2de2",
+      "github_digest": "sha256:796a38a0fd59364e68a7a3afcc207ba6712a3ab00352315c3f98176298db2de2",
+      "verified_against_local_bytes": true
+    }
+  ],
+  "metadata_files": 40,
+  "images_included": 0,
+  "original_artwork_files_included": 0
+}
