@@ -1,0 +1,494 @@
+{
+  "schema_version": 1,
+  "exercise": "validation_exercise",
+  "catalog_sha256": "5c90306415ce5e7f36e875c7f57b19a91930aacfeeaeecdf9ad7662770f9a3fe",
+  "search_core_sha256": "8120b1ff2b47b83605c0cc5495b2aa7f12c59b740f7a44f0db376a28808e9049",
+  "ranking_version": "shared-search-3.4.1",
+  "analysis_version": "appearance-1.1.0",
+  "generated_at": "2026-11-06T21:06:45.419885+00:00",
+  "selection_authority": "Explicit final choices supplied by Codex root after real part 1 and part 2 contact-sheet review; part 2 also independently reviewed one preview at a time.",
+  "old_search_final_adoptions": null,
+  "trial_download_note": "Only bounded preview review packs were downloaded; no original file was trial-downloaded for these projects.",
+  "projects": [
+    {
+      "project_id": "validation-rich-1",
+      "seed": "validation-rich-1",
+      "case_id": "rich",
+      "trial_downloaded_family_ids": [],
+      "adopted_family_ids": [
+        "nih-bioart-da7b71d08e120147c6ce"
+      ],
+      "decision": {
+        "reviewer": "Codex root; source previews independently inspected by registry_acceptance for part 2",
+        "decided_at": "2026-11-06T21:06:45.412007+00:00",
+        "observations": "NIH pale Lab Mouse selected after actual review: complete recognizable body, adequate subject size and clear rendering without an added drinking/sleeping/running scene.",
+        "selection_criteria": "Generic mouse object, visible whole-body structure, clear after reduction, minimal attached scene burden, moderate detail; no ranking-first rule, source quota or forced diversity.",
+        "reviewed_evidence": [
+          {
+            "uri": "data/adoption-reviews/diversity-42291848782-part1.json",
+            "sha256": "9d742e00e3597ad9bf86ae79a27583216a30df2df054e05621f5b2694bb71544"
+          },
+          {
+            "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/exact-review-42291848782-1.review.png",
+            "sha256": "892f47da017b242a051a5eca733571f58f0bacb29bc0a5227328b2c86977c2fd"
+          }
+        ],
+        "selected_files": [
+          {
+            "family_id": "nih-bioart-da7b71d08e120147c6ce",
+            "asset_id": "nih-bioart-da7b71d08e120147c6ce",
+            "source": "nih-bioart",
+            "source_id": "283",
+            "original_sha256": "22f147c050c91e5a611088d648d8a76c6859c3cce8f508603b4aedd77e9626ce",
+            "preview_sha256": "2b85b11292b487f2e26a0a54a55f4201fbd0bd0e1e21deea1692ea6c8c4d0e3c",
+            "original_archive": {
+              "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/nih-bioart-42236561214-1-b0000.tar.gz",
+              "member": "files/22/22f147c050c91e5a611088d648d8a76c6859c3cce8f508603b4aedd77e9626ce.png"
+            },
+            "preview_archive": {
+              "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/nih-bioart-42236561214-1-b0000.tar.gz",
+              "member": "previews/22f147c050c91e5a611088d648d8a76c6859c3cce8f508603b4aedd77e9626ce.png"
+            },
+            "review_part": 1,
+            "review_tile": 2,
+            "original_presentation_rank": 2
+          }
+        ],
+        "selection_was_in_original_top10": true,
+        "not_user_research_adoption": true
+      }
+    },
+    {
+      "project_id": "validation-rich-2",
+      "seed": "validation-rich-2",
+      "case_id": "rich",
+      "trial_downloaded_family_ids": [],
+      "adopted_family_ids": [
+        "bioicons-c04274818e8a26003ce4"
+      ],
+      "decision": {
+        "reviewer": "Codex root; source previews independently inspected by registry_acceptance for part 2",
+        "decided_at": "2026-11-06T21:06:45.413548+00:00",
+        "observations": "Bioicons gray mouse selected after actual review: clear whole-body structure, moderate shading and restrained detail, without an added drinking/sleeping/running scene.",
+        "selection_criteria": "Generic mouse object, visible whole-body structure, clear after reduction, minimal attached scene burden, moderate detail; no ranking-first rule, source quota or forced diversity.",
+        "reviewed_evidence": [
+          {
+            "uri": "data/adoption-reviews/diversity-42291848782-part1.json",
+            "sha256": "9d742e00e3597ad9bf86ae79a27583216a30df2df054e05621f5b2694bb71544"
+          },
+          {
+            "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/exact-review-42291848782-1.review.png",
+            "sha256": "892f47da017b242a051a5eca733571f58f0bacb29bc0a5227328b2c86977c2fd"
+          }
+        ],
+        "selected_files": [
+          {
+            "family_id": "bioicons-c04274818e8a26003ce4",
+            "asset_id": "bioicons-c04274818e8a26003ce4",
+            "source": "bioicons",
+            "source_id": "cc-by-3.0/Animals/Servier/mouse-gray.svg",
+            "original_sha256": "06a18b85a335b215cd0788906f53613ff78ee888948ca905adb82fb0d27f9ef1",
+            "preview_sha256": "17ca13bec607a2b89181a3e3dfd3dbb11259fd791e18111deef6999af0ed1435",
+            "original_archive": {
+              "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42251588741-1-b0001.tar.gz",
+              "member": "files/06/06a18b85a335b215cd0788906f53613ff78ee888948ca905adb82fb0d27f9ef1.svg"
+            },
+            "preview_archive": {
+              "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42251588741-1-b0001.tar.gz",
+              "member": "previews/06a18b85a335b215cd0788906f53613ff78ee888948ca905adb82fb0d27f9ef1.png"
+            },
+            "review_part": 1,
+            "review_tile": 14,
+            "original_presentation_rank": 4
+          }
+        ],
+        "selection_was_in_original_top10": true,
+        "not_user_research_adoption": true
+      }
+    },
+    {
+      "project_id": "validation-rich-3",
+      "seed": "validation-rich-3",
+      "case_id": "rich",
+      "trial_downloaded_family_ids": [],
+      "adopted_family_ids": [
+        "bioicons-c04274818e8a26003ce4"
+      ],
+      "decision": {
+        "reviewer": "Codex root; source previews independently inspected by registry_acceptance for part 2",
+        "decided_at": "2026-11-06T21:06:45.414119+00:00",
+        "observations": "Bioicons gray mouse selected after actual review: clear whole-body structure, moderate shading and restrained detail, without an added drinking/sleeping/running scene.",
+        "selection_criteria": "Generic mouse object, visible whole-body structure, clear after reduction, minimal attached scene burden, moderate detail; no ranking-first rule, source quota or forced diversity.",
+        "reviewed_evidence": [
+          {
+            "uri": "data/adoption-reviews/diversity-42291848782-part1.json",
+            "sha256": "9d742e00e3597ad9bf86ae79a27583216a30df2df054e05621f5b2694bb71544"
+          },
+          {
+            "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/exact-review-42291848782-1.review.png",
+            "sha256": "892f47da017b242a051a5eca733571f58f0bacb29bc0a5227328b2c86977c2fd"
+          }
+        ],
+        "selected_files": [
+          {
+            "family_id": "bioicons-c04274818e8a26003ce4",
+            "asset_id": "bioicons-c04274818e8a26003ce4",
+            "source": "bioicons",
+            "source_id": "cc-by-3.0/Animals/Servier/mouse-gray.svg",
+            "original_sha256": "06a18b85a335b215cd0788906f53613ff78ee888948ca905adb82fb0d27f9ef1",
+            "preview_sha256": "17ca13bec607a2b89181a3e3dfd3dbb11259fd791e18111deef6999af0ed1435",
+            "original_archive": {
+              "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42251588741-1-b0001.tar.gz",
+              "member": "files/06/06a18b85a335b215cd0788906f53613ff78ee888948ca905adb82fb0d27f9ef1.svg"
+            },
+            "preview_archive": {
+              "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42251588741-1-b0001.tar.gz",
+              "member": "previews/06a18b85a335b215cd0788906f53613ff78ee888948ca905adb82fb0d27f9ef1.png"
+            },
+            "review_part": 1,
+            "review_tile": 14,
+            "original_presentation_rank": 2
+          }
+        ],
+        "selection_was_in_original_top10": true,
+        "not_user_research_adoption": true
+      }
+    },
+    {
+      "project_id": "validation-rich-4",
+      "seed": "validation-rich-4",
+      "case_id": "rich",
+      "trial_downloaded_family_ids": [],
+      "adopted_family_ids": [
+        "bioicons-c04274818e8a26003ce4"
+      ],
+      "decision": {
+        "reviewer": "Codex root; source previews independently inspected by registry_acceptance for part 2",
+        "decided_at": "2026-11-06T21:06:45.414799+00:00",
+        "observations": "Bioicons gray mouse selected after actual review: clear whole-body structure, moderate shading and restrained detail, without an added drinking/sleeping/running scene.",
+        "selection_criteria": "Generic mouse object, visible whole-body structure, clear after reduction, minimal attached scene burden, moderate detail; no ranking-first rule, source quota or forced diversity.",
+        "reviewed_evidence": [
+          {
+            "uri": "data/adoption-reviews/diversity-42291848782-part1.json",
+            "sha256": "9d742e00e3597ad9bf86ae79a27583216a30df2df054e05621f5b2694bb71544"
+          },
+          {
+            "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/exact-review-42291848782-1.review.png",
+            "sha256": "892f47da017b242a051a5eca733571f58f0bacb29bc0a5227328b2c86977c2fd"
+          }
+        ],
+        "selected_files": [
+          {
+            "family_id": "bioicons-c04274818e8a26003ce4",
+            "asset_id": "bioicons-c04274818e8a26003ce4",
+            "source": "bioicons",
+            "source_id": "cc-by-3.0/Animals/Servier/mouse-gray.svg",
+            "original_sha256": "06a18b85a335b215cd0788906f53613ff78ee888948ca905adb82fb0d27f9ef1",
+            "preview_sha256": "17ca13bec607a2b89181a3e3dfd3dbb11259fd791e18111deef6999af0ed1435",
+            "original_archive": {
+              "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42251588741-1-b0001.tar.gz",
+              "member": "files/06/06a18b85a335b215cd0788906f53613ff78ee888948ca905adb82fb0d27f9ef1.svg"
+            },
+            "preview_archive": {
+              "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42251588741-1-b0001.tar.gz",
+              "member": "previews/06a18b85a335b215cd0788906f53613ff78ee888948ca905adb82fb0d27f9ef1.png"
+            },
+            "review_part": 1,
+            "review_tile": 14,
+            "original_presentation_rank": 5
+          }
+        ],
+        "selection_was_in_original_top10": true,
+        "not_user_research_adoption": true
+      }
+    },
+    {
+      "project_id": "validation-rich-5",
+      "seed": "validation-rich-5",
+      "case_id": "rich",
+      "trial_downloaded_family_ids": [],
+      "adopted_family_ids": [
+        "nih-bioart-da7b71d08e120147c6ce"
+      ],
+      "decision": {
+        "reviewer": "Codex root; source previews independently inspected by registry_acceptance for part 2",
+        "decided_at": "2026-11-06T21:06:45.415328+00:00",
+        "observations": "NIH pale Lab Mouse selected after actual review: complete recognizable body, adequate subject size and clear rendering without an added drinking/sleeping/running scene.",
+        "selection_criteria": "Generic mouse object, visible whole-body structure, clear after reduction, minimal attached scene burden, moderate detail; no ranking-first rule, source quota or forced diversity.",
+        "reviewed_evidence": [
+          {
+            "uri": "data/adoption-reviews/diversity-42291848782-part1.json",
+            "sha256": "9d742e00e3597ad9bf86ae79a27583216a30df2df054e05621f5b2694bb71544"
+          },
+          {
+            "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/exact-review-42291848782-1.review.png",
+            "sha256": "892f47da017b242a051a5eca733571f58f0bacb29bc0a5227328b2c86977c2fd"
+          }
+        ],
+        "selected_files": [
+          {
+            "family_id": "nih-bioart-da7b71d08e120147c6ce",
+            "asset_id": "nih-bioart-da7b71d08e120147c6ce",
+            "source": "nih-bioart",
+            "source_id": "283",
+            "original_sha256": "22f147c050c91e5a611088d648d8a76c6859c3cce8f508603b4aedd77e9626ce",
+            "preview_sha256": "2b85b11292b487f2e26a0a54a55f4201fbd0bd0e1e21deea1692ea6c8c4d0e3c",
+            "original_archive": {
+              "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/nih-bioart-42236561214-1-b0000.tar.gz",
+              "member": "files/22/22f147c050c91e5a611088d648d8a76c6859c3cce8f508603b4aedd77e9626ce.png"
+            },
+            "preview_archive": {
+              "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/nih-bioart-42236561214-1-b0000.tar.gz",
+              "member": "previews/22f147c050c91e5a611088d648d8a76c6859c3cce8f508603b4aedd77e9626ce.png"
+            },
+            "review_part": 1,
+            "review_tile": 2,
+            "original_presentation_rank": 6
+          }
+        ],
+        "selection_was_in_original_top10": true,
+        "not_user_research_adoption": true
+      }
+    },
+    {
+      "project_id": "validation-scarce-1",
+      "seed": "validation-scarce-1",
+      "case_id": "scarce",
+      "trial_downloaded_family_ids": [],
+      "adopted_family_ids": [
+        "arcadia-80bc9933df93cb7e8cb3"
+      ],
+      "decision": {
+        "reviewer": "Codex root; source previews independently inspected by registry_acceptance for part 2",
+        "decided_at": "2026-11-06T21:06:45.416861+00:00",
+        "observations": "The only qualified family is the official-source-labeled Naegleria gruberi silhouette. Actual preview supports an amoeboid depiction; the species label comes from the source and is not independently diagnosed from this silhouette. Legitimate reuse is retained.",
+        "selection_criteria": "Only scientifically source-qualified candidate; retain the sole reusable amoeboid depiction without substituting an unrelated species.",
+        "reviewed_evidence": [
+          {
+            "uri": "data/adoption-reviews/diversity-42291874562-part2.json",
+            "sha256": "a1a70eb8214e0b8c2d01accd17383ff2ac3966940d2e60ca310697c4f7cf1e47"
+          },
+          {
+            "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/exact-review-42291874562-1.review.png",
+            "sha256": "ce7fa1509b22788bb615cfbe2998738a56ac1bb63fe334cd9f42468d3a57960d"
+          }
+        ],
+        "selected_files": [
+          {
+            "family_id": "arcadia-80bc9933df93cb7e8cb3",
+            "asset_id": "arcadia-80bc9933df93cb7e8cb3",
+            "source": "arcadia",
+            "source_id": "Silhouette SVGs/Naegleria-gruberi-silhouette.svg",
+            "original_sha256": "05470087bdf7617189a282ea6474aafac7d1efeb0a03fbb05fa7abb7df0a0b1a",
+            "preview_sha256": "403f3ab715bcc022375440c7f666fa0f079fd4f4655eee56eac12eb20e908fb4",
+            "original_archive": {
+              "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/arcadia-42234366112-1-b0000.tar.gz",
+              "member": "files/05/05470087bdf7617189a282ea6474aafac7d1efeb0a03fbb05fa7abb7df0a0b1a.svg"
+            },
+            "preview_archive": {
+              "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/arcadia-42234366112-1-b0000.tar.gz",
+              "member": "previews/05470087bdf7617189a282ea6474aafac7d1efeb0a03fbb05fa7abb7df0a0b1a.png"
+            },
+            "review_part": 2,
+            "review_tile": 14,
+            "original_presentation_rank": 1
+          }
+        ],
+        "selection_was_in_original_top10": true,
+        "not_user_research_adoption": true
+      }
+    },
+    {
+      "project_id": "validation-scarce-2",
+      "seed": "validation-scarce-2",
+      "case_id": "scarce",
+      "trial_downloaded_family_ids": [],
+      "adopted_family_ids": [
+        "arcadia-80bc9933df93cb7e8cb3"
+      ],
+      "decision": {
+        "reviewer": "Codex root; source previews independently inspected by registry_acceptance for part 2",
+        "decided_at": "2026-11-06T21:06:45.416861+00:00",
+        "observations": "The only qualified family is the official-source-labeled Naegleria gruberi silhouette. Actual preview supports an amoeboid depiction; the species label comes from the source and is not independently diagnosed from this silhouette. Legitimate reuse is retained.",
+        "selection_criteria": "Only scientifically source-qualified candidate; retain the sole reusable amoeboid depiction without substituting an unrelated species.",
+        "reviewed_evidence": [
+          {
+            "uri": "data/adoption-reviews/diversity-42291874562-part2.json",
+            "sha256": "a1a70eb8214e0b8c2d01accd17383ff2ac3966940d2e60ca310697c4f7cf1e47"
+          },
+          {
+            "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/exact-review-42291874562-1.review.png",
+            "sha256": "ce7fa1509b22788bb615cfbe2998738a56ac1bb63fe334cd9f42468d3a57960d"
+          }
+        ],
+        "selected_files": [
+          {
+            "family_id": "arcadia-80bc9933df93cb7e8cb3",
+            "asset_id": "arcadia-80bc9933df93cb7e8cb3",
+            "source": "arcadia",
+            "source_id": "Silhouette SVGs/Naegleria-gruberi-silhouette.svg",
+            "original_sha256": "05470087bdf7617189a282ea6474aafac7d1efeb0a03fbb05fa7abb7df0a0b1a",
+            "preview_sha256": "403f3ab715bcc022375440c7f666fa0f079fd4f4655eee56eac12eb20e908fb4",
+            "original_archive": {
+              "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/arcadia-42234366112-1-b0000.tar.gz",
+              "member": "files/05/05470087bdf7617189a282ea6474aafac7d1efeb0a03fbb05fa7abb7df0a0b1a.svg"
+            },
+            "preview_archive": {
+              "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/arcadia-42234366112-1-b0000.tar.gz",
+              "member": "previews/05470087bdf7617189a282ea6474aafac7d1efeb0a03fbb05fa7abb7df0a0b1a.png"
+            },
+            "review_part": 2,
+            "review_tile": 14,
+            "original_presentation_rank": 1
+          }
+        ],
+        "selection_was_in_original_top10": true,
+        "not_user_research_adoption": true
+      }
+    },
+    {
+      "project_id": "validation-scarce-3",
+      "seed": "validation-scarce-3",
+      "case_id": "scarce",
+      "trial_downloaded_family_ids": [],
+      "adopted_family_ids": [
+        "arcadia-80bc9933df93cb7e8cb3"
+      ],
+      "decision": {
+        "reviewer": "Codex root; source previews independently inspected by registry_acceptance for part 2",
+        "decided_at": "2026-11-06T21:06:45.417878+00:00",
+        "observations": "The only qualified family is the official-source-labeled Naegleria gruberi silhouette. Actual preview supports an amoeboid depiction; the species label comes from the source and is not independently diagnosed from this silhouette. Legitimate reuse is retained.",
+        "selection_criteria": "Only scientifically source-qualified candidate; retain the sole reusable amoeboid depiction without substituting an unrelated species.",
+        "reviewed_evidence": [
+          {
+            "uri": "data/adoption-reviews/diversity-42291874562-part2.json",
+            "sha256": "a1a70eb8214e0b8c2d01accd17383ff2ac3966940d2e60ca310697c4f7cf1e47"
+          },
+          {
+            "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/exact-review-42291874562-1.review.png",
+            "sha256": "ce7fa1509b22788bb615cfbe2998738a56ac1bb63fe334cd9f42468d3a57960d"
+          }
+        ],
+        "selected_files": [
+          {
+            "family_id": "arcadia-80bc9933df93cb7e8cb3",
+            "asset_id": "arcadia-80bc9933df93cb7e8cb3",
+            "source": "arcadia",
+            "source_id": "Silhouette SVGs/Naegleria-gruberi-silhouette.svg",
+            "original_sha256": "05470087bdf7617189a282ea6474aafac7d1efeb0a03fbb05fa7abb7df0a0b1a",
+            "preview_sha256": "403f3ab715bcc022375440c7f666fa0f079fd4f4655eee56eac12eb20e908fb4",
+            "original_archive": {
+              "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/arcadia-42234366112-1-b0000.tar.gz",
+              "member": "files/05/05470087bdf7617189a282ea6474aafac7d1efeb0a03fbb05fa7abb7df0a0b1a.svg"
+            },
+            "preview_archive": {
+              "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/arcadia-42234366112-1-b0000.tar.gz",
+              "member": "previews/05470087bdf7617189a282ea6474aafac7d1efeb0a03fbb05fa7abb7df0a0b1a.png"
+            },
+            "review_part": 2,
+            "review_tile": 14,
+            "original_presentation_rank": 1
+          }
+        ],
+        "selection_was_in_original_top10": true,
+        "not_user_research_adoption": true
+      }
+    },
+    {
+      "project_id": "validation-scarce-4",
+      "seed": "validation-scarce-4",
+      "case_id": "scarce",
+      "trial_downloaded_family_ids": [],
+      "adopted_family_ids": [
+        "arcadia-80bc9933df93cb7e8cb3"
+      ],
+      "decision": {
+        "reviewer": "Codex root; source previews independently inspected by registry_acceptance for part 2",
+        "decided_at": "2026-11-06T21:06:45.418880+00:00",
+        "observations": "The only qualified family is the official-source-labeled Naegleria gruberi silhouette. Actual preview supports an amoeboid depiction; the species label comes from the source and is not independently diagnosed from this silhouette. Legitimate reuse is retained.",
+        "selection_criteria": "Only scientifically source-qualified candidate; retain the sole reusable amoeboid depiction without substituting an unrelated species.",
+        "reviewed_evidence": [
+          {
+            "uri": "data/adoption-reviews/diversity-42291874562-part2.json",
+            "sha256": "a1a70eb8214e0b8c2d01accd17383ff2ac3966940d2e60ca310697c4f7cf1e47"
+          },
+          {
+            "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/exact-review-42291874562-1.review.png",
+            "sha256": "ce7fa1509b22788bb615cfbe2998738a56ac1bb63fe334cd9f42468d3a57960d"
+          }
+        ],
+        "selected_files": [
+          {
+            "family_id": "arcadia-80bc9933df93cb7e8cb3",
+            "asset_id": "arcadia-80bc9933df93cb7e8cb3",
+            "source": "arcadia",
+            "source_id": "Silhouette SVGs/Naegleria-gruberi-silhouette.svg",
+            "original_sha256": "05470087bdf7617189a282ea6474aafac7d1efeb0a03fbb05fa7abb7df0a0b1a",
+            "preview_sha256": "403f3ab715bcc022375440c7f666fa0f079fd4f4655eee56eac12eb20e908fb4",
+            "original_archive": {
+              "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/arcadia-42234366112-1-b0000.tar.gz",
+              "member": "files/05/05470087bdf7617189a282ea6474aafac7d1efeb0a03fbb05fa7abb7df0a0b1a.svg"
+            },
+            "preview_archive": {
+              "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/arcadia-42234366112-1-b0000.tar.gz",
+              "member": "previews/05470087bdf7617189a282ea6474aafac7d1efeb0a03fbb05fa7abb7df0a0b1a.png"
+            },
+            "review_part": 2,
+            "review_tile": 14,
+            "original_presentation_rank": 1
+          }
+        ],
+        "selection_was_in_original_top10": true,
+        "not_user_research_adoption": true
+      }
+    },
+    {
+      "project_id": "validation-scarce-5",
+      "seed": "validation-scarce-5",
+      "case_id": "scarce",
+      "trial_downloaded_family_ids": [],
+      "adopted_family_ids": [
+        "arcadia-80bc9933df93cb7e8cb3"
+      ],
+      "decision": {
+        "reviewer": "Codex root; source previews independently inspected by registry_acceptance for part 2",
+        "decided_at": "2026-11-06T21:06:45.419885+00:00",
+        "observations": "The only qualified family is the official-source-labeled Naegleria gruberi silhouette. Actual preview supports an amoeboid depiction; the species label comes from the source and is not independently diagnosed from this silhouette. Legitimate reuse is retained.",
+        "selection_criteria": "Only scientifically source-qualified candidate; retain the sole reusable amoeboid depiction without substituting an unrelated species.",
+        "reviewed_evidence": [
+          {
+            "uri": "data/adoption-reviews/diversity-42291874562-part2.json",
+            "sha256": "a1a70eb8214e0b8c2d01accd17383ff2ac3966940d2e60ca310697c4f7cf1e47"
+          },
+          {
+            "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/exact-review-42291874562-1.review.png",
+            "sha256": "ce7fa1509b22788bb615cfbe2998738a56ac1bb63fe334cd9f42468d3a57960d"
+          }
+        ],
+        "selected_files": [
+          {
+            "family_id": "arcadia-80bc9933df93cb7e8cb3",
+            "asset_id": "arcadia-80bc9933df93cb7e8cb3",
+            "source": "arcadia",
+            "source_id": "Silhouette SVGs/Naegleria-gruberi-silhouette.svg",
+            "original_sha256": "05470087bdf7617189a282ea6474aafac7d1efeb0a03fbb05fa7abb7df0a0b1a",
+            "preview_sha256": "403f3ab715bcc022375440c7f666fa0f079fd4f4655eee56eac12eb20e908fb4",
+            "original_archive": {
+              "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/arcadia-42234366112-1-b0000.tar.gz",
+              "member": "files/05/05470087bdf7617189a282ea6474aafac7d1efeb0a03fbb05fa7abb7df0a0b1a.svg"
+            },
+            "preview_archive": {
+              "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/arcadia-42234366112-1-b0000.tar.gz",
+              "member": "previews/05470087bdf7617189a282ea6474aafac7d1efeb0a03fbb05fa7abb7df0a0b1a.png"
+            },
+            "review_part": 2,
+            "review_tile": 14,
+            "original_presentation_rank": 1
+          }
+        ],
+        "selection_was_in_original_top10": true,
+        "not_user_research_adoption": true
+      }
+    }
+  ]
+}
