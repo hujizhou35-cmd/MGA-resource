@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "release": "acceptance-20261107",
+  "evidence_purpose": "Version-bound supplemental checks and bounded visual QA; not overall collection or website acceptance",
+  "catalog_sha256": "5c90306415ce5e7f36e875c7f57b19a91930aacfeeaeecdf9ad7662770f9a3fe",
+  "search_core_sha256": "191c4631bb80f36a33ec2580739580ea4289a9726b09dfffb70d022b2a1382e6",
+  "assets": [
+    {
+      "kind": "supplement_metadata",
+      "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/acceptance-20261107/supplement-evidence-42289434868-3.4.3.tar.gz",
+      "asset_id": 718893878,
+      "sha256": "0ab9e150b0a98a33fa234874ba4892414a3ee9f78f6791b78a64a1778a559d61",
+      "size_bytes": 2199104,
+      "members": 39,
+      "github_digest_and_size_verified": true,
+      "library_originals": 0,
+      "report": "data/diagnostics/final-supplement-evidence-42289434868-3.4.3.json",
+      "supplement_pass": true
+    },
+    {
+      "kind": "bounded_display_qa",
+      "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/acceptance-20261107/curated-display-qa-42289434868-20261107.tar.gz",
+      "asset_id": 718893911,
+      "sha256": "ce2acf267cff5e9ebb4af8d853d4c63e2daada28e553549b8d977c65e74ae0e8",
+      "size_bytes": 982628,
+      "members": 7,
+      "github_digest_and_size_verified": true,
+      "bounded_qa_images": 4,
+      "library_originals": 0,
+      "reviewed_files": 9,
+      "curated_files": 48,
+      "review": "data/curated-reviews/preview-composition-42289434868.json",
+      "full_curated_requirement_passed": false,
+      "note": "The enclosed Markdown report is the pre-upload snapshot; current cloud locations are recorded here."
+    }
+  ],
+  "overall_collection_accepted": false,
+  "website_deployed": false
+}
