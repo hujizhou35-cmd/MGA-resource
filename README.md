@@ -6,6 +6,8 @@ A free medical illustration library for agents and people. Scientific illustrati
 
 Collection, classification, deduplication and acceptance. The website is not yet built or deployed. Counts in upstream catalogs are candidates, not accepted artwork.
 
+The current data phase also includes [file-level color/style descriptions and reproducible selection diversity](docs/INCREMENTAL-PLAN-visual-diversity.md). Existing collection checkpoints continue; the new classification, variant filters, ranking and diversity checks must be finished before catalog acceptance and website deployment.
+
 Bulk artwork is processed on GitHub Actions cloud runners. This repository contains code, source descriptions and acceptance definitions, not the full image library. Versioned collection packages and reports are published as GitHub Release attachments. Future public file delivery uses Cloudflare Free static assets.
 
 ## Collection workflow
