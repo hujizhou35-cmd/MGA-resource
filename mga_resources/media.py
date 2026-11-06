@@ -44,6 +44,17 @@ XLINK_HREF = "{http://www.w3.org/1999/xlink}href"
 RASTER_DATA_URI = re.compile(r"^data:image/(png|jpeg|jpg|webp);base64,", re.I)
 STATIC_HTML_TAGS = {"div", "span", "p", "br", "b", "strong", "i", "em", "font", "sub", "sup"}
 COLOR_ATTRIBUTES = {"style", "fill", "stroke", "color", "stop-color", "flood-color", "lighting-color"}
+ADOBE_AI_NS = "http://ns.adobe.com/AdobeIllustrator/10.0/"
+ADOBE_NAMESPACE_ENTITIES = {
+    b"ns_extend": b"http://ns.adobe.com/Extensibility/1.0/",
+    b"ns_ai": ADOBE_AI_NS.encode(),
+    b"ns_graphs": b"http://ns.adobe.com/Graphs/1.0/",
+    b"ns_vars": b"http://ns.adobe.com/Variables/1.0/",
+    b"ns_imrep": b"http://ns.adobe.com/ImageReplacement/1.0/",
+    b"ns_sfw": b"http://ns.adobe.com/SaveForWeb/1.0/",
+    b"ns_custom": b"http://ns.adobe.com/GenericCustomNamespace/1.0/",
+    b"ns_adobe_xpath": b"http://ns.adobe.com/XPath/1.0/",
+}
 MIME_TYPES = {
     "svg": "image/svg+xml", "png": "image/png", "jpeg": "image/jpeg",
     "webp": "image/webp", "gif": "image/gif", "tiff": "image/tiff",
@@ -84,6 +95,38 @@ def _embedded_only_fetcher(url: str, resource_type: str) -> bytes:
     return payload
 
 
+def _expand_adobe_namespace_entities(data: bytes) -> tuple[bytes, int]:
+    """Resolve only known Illustrator namespace constants in a bounded copy.
+
+    No XML entity parser is enabled. External, parameter, recursive and unknown
+    entities remain rejected by the checks here and by defusedxml afterwards.
+    """
+    if not re.search(br"<!\s*ENTITY\b", data, re.I):
+        return data, 0
+    declaration = re.compile(br'''<!ENTITY\s+([\w:.-]+)\s+(["'])([^"'<>%&\r\n]*)\2\s*>''')
+    entities = {}
+
+    def remove_known(match):
+        name, value = match.group(1), match.group(3)
+        if name in entities or ADOBE_NAMESPACE_ENTITIES.get(name) != value:
+            raise MediaValidationError("SVG has an unsupported entity declaration")
+        entities[name] = value
+        return b""
+
+    result = declaration.sub(remove_known, data)
+    if re.search(br"<!\s*ENTITY\b", result, re.I):
+        raise MediaValidationError("SVG has an external, recursive or unsupported entity declaration")
+    expanded_size = len(result)
+    for name, value in entities.items():
+        reference = b"&" + name + b";"
+        count = result.count(reference)
+        expanded_size += count * (len(value) - len(reference))
+        if count > 100_000 or expanded_size > MAX_SOURCE_BYTES:
+            raise MediaValidationError("SVG namespace entity expansion exceeds byte limit")
+        result = result.replace(reference, value)
+    return result, len(entities)
+
+
 def _foreign_fallbacks(root) -> list[tuple]:
     """Recognize draw.io's explicit static label fallback, preserving its art.
 
@@ -96,8 +139,29 @@ def _foreign_fallbacks(root) -> list[tuple]:
         if _tag(foreign.tag) != "foreignobject":
             continue
         parent = parents.get(foreign)
-        if (parent is None or parent.tag != "{" + SVG_NS + "}switch"
-                or foreign.get("requiredFeatures") != "http://www.w3.org/TR/SVG11/feature#Extensibility"):
+        if parent is None or parent.tag != "{" + SVG_NS + "}switch":
+            raise MediaValidationError("SVG foreignObject has no supported explicit fallback; quarantined to avoid missing labels")
+        siblings = list(parent)
+        if len(siblings) != 2 or siblings[0] is not foreign:
+            raise MediaValidationError("SVG foreignObject fallback is ambiguous; quarantined")
+        fallback = siblings[1]
+        if any(fallback.get(key) for key in ("requiredFeatures", "requiredExtensions", "systemLanguage")):
+            raise MediaValidationError("SVG foreignObject fallback is conditional; quarantined")
+        # Illustrator's native-editing reference is not visible art. Standard
+        # SVG renderers select the author's complete following SVG group.
+        if foreign.get("requiredExtensions") == ADOBE_AI_NS:
+            children = list(foreign)
+            valid_ref = not children or (len(children) == 1
+                and children[0].tag in {"{" + ADOBE_AI_NS + "}pgfRef", "{" + ADOBE_AI_NS + "}aipgfRef"}
+                and not list(children[0])
+                and (children[0].get("href") or children[0].get(XLINK_HREF) or "").startswith("#"))
+            if (not valid_ref or "".join(foreign.itertext()).strip()
+                    or _length(foreign.get("width")) != 1 or _length(foreign.get("height")) != 1
+                    or fallback.tag != "{" + SVG_NS + "}g"):
+                raise MediaValidationError("SVG Illustrator foreignObject is not a supported native-data reference")
+            result.append((parent, foreign, fallback, {"label": None, "kind": "illustrator_svg_fallback"}))
+            continue
+        if foreign.get("requiredFeatures") != "http://www.w3.org/TR/SVG11/feature#Extensibility":
             raise MediaValidationError("SVG foreignObject has no supported explicit fallback; quarantined to avoid missing labels")
         for child in foreign.iter():
             if child is foreign:
@@ -105,11 +169,9 @@ def _foreign_fallbacks(root) -> list[tuple]:
             if not child.tag.startswith("{" + XHTML_NS + "}") or _tag(child.tag) not in STATIC_HTML_TAGS:
                 raise MediaValidationError("SVG foreignObject has non-text HTML; quarantined")
         label = " ".join("".join(foreign.itertext()).split())
-        siblings = list(parent)
         # Conditional selection must match the exported switch's ordering.
-        if not label or len(siblings) != 2 or siblings[0] is not foreign:
+        if not label:
             raise MediaValidationError("SVG foreignObject fallback is ambiguous; quarantined")
-        fallback = siblings[1]
         if fallback.tag == "{" + SVG_NS + "}text":
             if " ".join("".join(fallback.itertext()).split()) != label:
                 raise MediaValidationError("SVG foreignObject text fallback differs from its label; quarantined")
@@ -125,17 +187,16 @@ def _foreign_fallbacks(root) -> list[tuple]:
             kind = "exporter_embedded_raster"
         else:
             raise MediaValidationError("SVG foreignObject has no supported image/text fallback; quarantined")
-        if fallback.get("requiredFeatures") or fallback.get("systemLanguage"):
-            raise MediaValidationError("SVG foreignObject fallback is conditional; quarantined")
         result.append((parent, foreign, fallback, {"label": label, "kind": kind}))
     return result
 
 
 def _svg_preview_bytes(data: bytes) -> bytes:
     """Choose the original exporter's fallback only in the preview copy."""
+    data, namespace_entities = _expand_adobe_namespace_entities(data)
     root = SafeET.fromstring(data, forbid_dtd=False, forbid_entities=True, forbid_external=True)
     fallbacks = _foreign_fallbacks(root)
-    changed = bool(fallbacks)
+    changed = bool(fallbacks or namespace_entities)
     for parent, foreign, fallback, _ in fallbacks:
         parent.remove(foreign)
         parent.tag = "{" + SVG_NS + "}g"
@@ -219,9 +280,9 @@ def _decode_raster(data: bytes) -> tuple[Image.Image, dict[str, Any]]:
 
 def _inspect_svg(data: bytes) -> dict[str, Any]:
     # A normal SVG 1.1 PUBLIC doctype is allowed, but its DTD is not loaded.
-    # Entity declarations and external entities are forbidden by defusedxml.
-    if re.search(br"<!\s*ENTITY\b", data, re.I):
-        raise MediaValidationError("SVG entity declaration is not allowed")
+    # Only known literal Illustrator namespace constants are expanded first.
+    # All remaining entities are forbidden by defusedxml.
+    data, namespace_entities = _expand_adobe_namespace_entities(data)
     if re.search(br"<\?xml-stylesheet\b", data, re.I):
         raise MediaValidationError("SVG external stylesheet instruction is not allowed")
     try:
@@ -334,7 +395,9 @@ def _inspect_svg(data: bytes) -> dict[str, Any]:
     if embedded_color_profiles:
         findings.append("Embedded ICC profiles retained; preview uses the renderer's SVG color handling")
     if foreign_fallbacks:
-        findings.append("Static foreignObject labels use the exporter's explicit SVG text or embedded image fallback in the preview; original XHTML is preserved")
+        findings.append("Preview uses the exporter's explicit foreignObject fallback; original foreign content is preserved")
+    if namespace_entities:
+        findings.append("Known Illustrator namespace constants expanded only for inspection and preview; original bytes are preserved")
     if has_theme_colors:
         findings.append("Preview selects the authored light color-scheme values; the original retains both themes")
     return {
@@ -344,6 +407,7 @@ def _inspect_svg(data: bytes) -> dict[str, Any]:
         "element_counts": counts, "vector_element_count": shape_count,
         "embedded_images": embedded_images, "findings": findings,
         "embedded_color_profile_count": embedded_color_profiles,
+        "illustrator_namespace_entity_count": namespace_entities,
         "foreign_object_fallbacks": foreign_fallbacks,
         "preview_color_scheme": "light" if has_theme_colors else None,
     }

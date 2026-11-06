@@ -67,6 +67,53 @@ def test_legacy_cc_and_drawio_resource_are_nonloading_metadata():
     assert inspect_media(data)["structure"] == "pure_vector"
 
 
+def illustrator_svg(native_ref='<i:aipgfRef href="#adobe_illustrator_pgf"/>'):
+    return ('''<!DOCTYPE svg [<!ENTITY ns_ai "http://ns.adobe.com/AdobeIllustrator/10.0/">]>
+    <svg xmlns="http://www.w3.org/2000/svg" xmlns:i="&ns_ai;" viewBox="0 0 20 20">
+    <switch><foreignObject requiredExtensions="&ns_ai;" width="1" height="1">'''
+    + native_ref + '''</foreignObject><g><rect width="15" height="15" fill="red"/></g></switch></svg>''').encode()
+
+
+@pytest.mark.parametrize("native_ref", ['<i:aipgfRef href="#adobe_illustrator_pgf"/>', '<i:pgfRef href="#native"/>', ''])
+def test_illustrator_namespace_constants_and_native_data_fallback(tmp_path, monkeypatch, native_ref):
+    monkeypatch.setattr("urllib.request.urlopen", lambda *a, **kw: pytest.fail("Renderer attempted network/file IO"))
+    original = illustrator_svg(native_ref)
+    path = tmp_path / "illustrator.svg"
+    path.write_bytes(original)
+    result = process_file(path, tmp_path / "previews", 64)
+    assert result["validation"]["status"] == "machine_checked_and_rendered"
+    assert result["illustrator_namespace_entity_count"] == 1
+    assert result["foreign_object_fallbacks"] == [{"label": None, "kind": "illustrator_svg_fallback"}]
+    assert result["structure"] == "pure_vector"
+    assert path.read_bytes() == original
+    assert result["sha256"] == hashlib.sha256(original).hexdigest()
+
+
+@pytest.mark.parametrize("declaration", [
+    '<!ENTITY ns_ai SYSTEM "file:///etc/passwd">',
+    '<!ENTITY ns_ai "&recursive;">',
+    '<!ENTITY % ns_ai "http://ns.adobe.com/AdobeIllustrator/10.0/">',
+    '<!ENTITY ns_ai "https://example.invalid/namespace">',
+    '<!ENTITY ns_ai "http://ns.adobe.com/AdobeIllustrator/10.0/"><!ENTITY ns_ai "http://ns.adobe.com/AdobeIllustrator/10.0/">',
+])
+def test_only_known_nonrecursive_illustrator_entities_are_allowed(declaration):
+    original = illustrator_svg().replace(b'<!ENTITY ns_ai "http://ns.adobe.com/AdobeIllustrator/10.0/">', declaration.encode())
+    with pytest.raises(MediaValidationError):
+        inspect_media(original)
+
+
+def test_illustrator_entity_expansion_is_bounded(monkeypatch):
+    monkeypatch.setattr("mga_resources.media.MAX_SOURCE_BYTES", 550)
+    with pytest.raises(MediaValidationError, match="expansion exceeds"):
+        inspect_media(illustrator_svg().replace(b'<g>', b'<g><desc>' + b'&ns_ai;' * 12 + b'</desc>'))
+
+
+@pytest.mark.parametrize("native_ref", ['<i:aipgfRef href="https://example.invalid/native"/>', '<i:aipgfRef href="#native"><text>visible</text></i:aipgfRef>', '<text>Important label</text>'])
+def test_nonstandard_native_foreign_content_is_quarantined(native_ref):
+    with pytest.raises(MediaValidationError):
+        inspect_media(illustrator_svg(native_ref))
+
+
 @pytest.mark.parametrize("href", ["", "/name/Animal_cell", "../locations/SL-0001", "https://www.uniprot.org/locations/SL-0001"])
 def test_static_empty_and_relative_anchor_links_are_allowed(href):
     data = svg(f'<a href="{href}"><rect width="10" height="10"/></a>')
