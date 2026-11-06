@@ -339,6 +339,7 @@
         "icon"
       ],
       "style_notes": "Cellular and molecular pathway components, receptors, organelles and some organ/anatomy artwork.",
+      "scope_notes": "Exclude text-only molecular nameplates only after exact-file content review (content_scope_reason=text_only_molecular_nameplate). Retain structural receptors, cells and reusable mechanism components, including useful molecular labels. Source membership, title or an unknown text attribute never excludes an item automatically.",
       "evidence_urls": [
         "https://reactome.org/license",
         "https://reactome.org/icon-info/icons-guidelines"

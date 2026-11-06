@@ -51,6 +51,30 @@ def test_unknown_attributes_and_template_title_are_not_automatic_rejection():
     assert public[0]["files"][0]["text_content"]["status"] == "unknown"
 
 
+def test_reviewed_text_only_nameplate_excluded_but_labeled_structure_and_unknown_retained(tmp_path):
+    path = review(tmp_path)
+    nameplate = json.loads(path.read_text())["items"][0]
+    nameplate.update(source="reactome", content_scope_reason="text_only_molecular_nameplate",
+        reason="Fixture actual review: molecular name in a plain box, no structural component.",
+        text_content={"status": "present", "kinds": ["labels"], "cleanup_advice": "task_dependent",
+                      "editable_text": "unknown"})
+    structure = copy.deepcopy(nameplate)
+    structure.update(source_id="two", original_sha256="e" * 64,
+        scope_status="in_scope", disposition=None, content_scope_reason="labeled_structural_component",
+        reason="Fixture actual review: receptor structure with a molecular label.")
+    path.write_text(json.dumps({"items": [nameplate, structure]}), encoding="utf-8")
+    rows = []
+    for sid, sha in (("one", "a" * 64), ("two", "e" * 64), ("three", "f" * 64)):
+        item = record();item.update(source="reactome", source_id=sid, id=sid, title="Molecular name")
+        item["files"][0]["sha256"] = sha
+        rows.append(item)
+    public, audit = filter_public_records(rows, load_scope_policy([path]))
+    assert [item["source_id"] for item in public] == ["two", "three"]
+    assert audit["excluded_files"][0]["public_scope"]["content_scope_reason"] == "text_only_molecular_nameplate"
+    assert public[0]["files"][0]["text_content"]["status"] == "present"
+    assert public[1]["files"][0]["public_scope"]["status"] == "unreviewed"
+
+
 def test_partial_family_keeps_other_file_and_scrubs_variant_reference(tmp_path):
     policy = load_scope_policy([review(tmp_path)])
     item = record();good = copy.deepcopy(item["files"][0]);good["sha256"] = "e" * 64

@@ -492,7 +492,8 @@ def main(argv=None):
     for key, rows in reviewed.items():
         groups[key].extend(rows)
     pending.extend(unresolved)
-    for key, rows in failed_previews(available, snapshots, assembly_proofs[args.catalog.name]).items():
+    acquired_catalog_proof = assembly_proofs[args.internal_catalog.name if internal_binding else args.catalog.name]
+    for key, rows in failed_previews(available, snapshots, acquired_catalog_proof).items():
         groups[key].extend(rows)
     # This is a recorded historical denial, not a fresh network observation.
     historical = None

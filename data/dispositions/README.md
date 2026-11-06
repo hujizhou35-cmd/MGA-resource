@@ -54,6 +54,11 @@
 按原件 SHA 生效；预览完整性问题另绑定预览 SHA。文字属性未知、文件标题命中某个词
 或是 PNG/SVG 格式本身，都不是排除依据。
 
+纯文字分子名牌的公共范围类别为 `content_scope_reason=text_only_molecular_nameplate`。
+只有实际审阅、绑定原件/预览 SHA 的 `exclude_from_v1` 才会生效；
+含分子标签的结构受体、细胞或机制部件仍可收录，未审文件不因标题或来源自动排除。
+此类别沿用同一个文件级决定，不改变许可、不重写原件，也不把已收录结构部件改成纯文字。
+
 采集器保留完整 discovery、内部 records 和 receipts；只有固定上游内容哈希、URL、
 格式及大小都吻合的既有范围排除，才可以在再次取件前跳过。
 汇总先保存 `internal-catalog.jsonl`，再物理过滤公开 `catalog.jsonl`、SQLite 及检索候选。
