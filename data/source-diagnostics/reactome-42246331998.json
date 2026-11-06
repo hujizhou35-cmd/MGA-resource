@@ -1,0 +1,120 @@
+{
+  "schema_version": 1,
+  "source": "reactome",
+  "collection_run": "42246331998-1",
+  "observed_at": "2026-11-06T16:30:06.031794+00:00",
+  "discovery_sha256": "0f8bc0cda06d8ea7739d7f5df8c4be223df078a950aa9f5005c5e44c3ad6f66c",
+  "inventory_count": 2571,
+  "successful_original_svg_records": 2523,
+  "successful_original_png_files": 0,
+  "failure_counts": {
+    "png_http_404": 2524,
+    "png_http_521": 47,
+    "svg_http_521": 48,
+    "media_validation_failures": 0
+  },
+  "svg_failure_ranges": [
+    {
+      "offset": 2443,
+      "limit": 48
+    }
+  ],
+  "selected_existing_successful_files": 0,
+  "official_evidence": [
+    {
+      "url": "https://reactome.org/content/detail/R-ICO-012337",
+      "html_sha256": "82e0c0d0fa4b00e450f733b5b045134cef66f928b33b03d2723a74727e55029b",
+      "observation": "Official SVG and PNG anchors point to /icon/R-ICO-012337.svg and /icon/R-ICO-012337.png; the PNG URL is not merely an adapter-invented format."
+    },
+    {
+      "url": "https://reactome.org/icon-lib",
+      "html_sha256": "63cfaa8621238cca850bd0c94a7453c3dd8e1778bbee35677e16aab73b419e4a",
+      "observation": "Official library reports 2571 icons and links icon-lib-png.tgz and icon-lib-svg.tgz; both archive URLs currently return HTTP 404."
+    }
+  ],
+  "current_endpoint_head_checks": [
+    {
+      "url": "https://reactome.org/icon/R-ICO-012337.png",
+      "method": "HEAD",
+      "status": 404
+    },
+    {
+      "url": "https://reactome.org/icon/R-ICO-014787.svg",
+      "method": "HEAD",
+      "status": 200,
+      "content_type": "image/svg+xml",
+      "content_length": "11957",
+      "last_modified": "Tue, 01 Sep 2026 20:04:34 GMT",
+      "etag": "\"2eb5-65a716d7ce240\""
+    },
+    {
+      "url": "https://reactome.org/icon/R-ICO-014834.svg",
+      "method": "HEAD",
+      "status": 200,
+      "content_type": "image/svg+xml",
+      "content_length": "2681",
+      "last_modified": "Tue, 01 Sep 2026 20:04:34 GMT",
+      "etag": "\"a79-65a716d7ce83f\""
+    },
+    {
+      "url": "https://reactome.org/icon/icon-lib-png.tgz",
+      "method": "HEAD",
+      "status": 404
+    },
+    {
+      "url": "https://reactome.org/icon/icon-lib-svg.tgz",
+      "method": "HEAD",
+      "status": 404
+    }
+  ],
+  "format_disposition": {
+    "format": "png",
+    "role": "upstream_original",
+    "status": "unavailable_in_collected_snapshot",
+    "reason": "Every requested official PNG failed. The first PNG link still returns 404 and the official bulk PNG archive also returns 404. Preserve all failures; do not turn generated previews into claimed upstream originals.",
+    "required_for_v1": false,
+    "acceptable_available_format": "svg",
+    "preview_role": "cloud-generated PNG derivative from the archived SVG, separately hashed and marked as preview",
+    "release_effect": "Retain successful SVGs and their previews; explicitly report original PNG absence. This does not grant visual or native acceptance."
+  },
+  "incremental_plan": {
+    "path": "data/collection-plans/reactome-svg-retry-20261107.json",
+    "sha256": "7a621b222e2c5dc56a4053725df42f11982bcd159c09023397386993d1b93372",
+    "scope": "Only 48 items with no successful original files; original PNG descriptors remain unchanged and any repeated failure is honestly recorded."
+  },
+  "metadata_integrity": {
+    "report_url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/reactome-42246331998-1.report.json",
+    "report_sha256": "d23c1ebfc39baf27a60a1f10cc86c6cb897f755c851ea9634004a08fb7078bbc",
+    "failure_metadata_files": [
+      {
+        "name": "reactome-42246331998-1-b0000.failures.json",
+        "sha256": "29bca99f70a023444eefe34460a7e50743e689e3d77574f50c4222f854383a33"
+      },
+      {
+        "name": "reactome-42246331998-1-b0001.failures.json",
+        "sha256": "5604011afa67440351fbd9ff161a06196ccac7d139eca63995b2a23c83222dc0"
+      },
+      {
+        "name": "reactome-42246331998-1-b0002.failures.json",
+        "sha256": "f05635640a101e628609be0d34d1ca0b0759ecf6d92cef2b53c8ff5378b8d4bf"
+      },
+      {
+        "name": "reactome-42246331998-1-b0003.failures.json",
+        "sha256": "c9ba2ccb2473c67cf0c04bdfe0eff92cb856c7768e9ae8025fafc84fd744db71"
+      },
+      {
+        "name": "reactome-42246331998-1-b0004.failures.json",
+        "sha256": "a196b4e2ce5aff06cad17d05cb6df3c70438df81329daf327e848663e5f9c0e8"
+      },
+      {
+        "name": "reactome-42246331998-1-b0005.failures.json",
+        "sha256": "c24524f1b748285907af46bbf857a79a74b65498fd04d45bd07452edf4adc897"
+      }
+    ]
+  },
+  "original_artwork_downloaded_locally": false,
+  "media_fix_required": false,
+  "native_operations_performed": false,
+  "cloud_run_triggered": false,
+  "acceptance_passed": false
+}

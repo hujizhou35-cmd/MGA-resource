@@ -1,0 +1,108 @@
+{
+  "schema_version": 1,
+  "source": "reactome",
+  "based_on_verified_run": "42246331998-1",
+  "expected_discovery_sha256": "0f8bc0cda06d8ea7739d7f5df8c4be223df078a950aa9f5005c5e44c3ad6f66c",
+  "inventory_count": 2571,
+  "ordered_source_ids_sha256": "d2ef071792aa481bfa4e9539079e0f1ee3ba202e122ed1de5ff4daf85da7613c",
+  "range_contract": "Zero-based offset and limit against the unchanged full Reactome discovery. Require the exact discovery digest and ordered source IDs before fetching. Do not change source formats or discovery for this retry.",
+  "already_cloud_acquired_svg_records": 2523,
+  "recommended_now": {
+    "records": 48,
+    "ranges": [
+      {
+        "offset": 2443,
+        "limit": 48
+      }
+    ],
+    "reason": "These 48 complete items have zero successful files; SVG was HTTP 521 during one contiguous outage. Two SVG HEAD probes now return HTTP 200. Retry their existing descriptors only, retaining all other successes.",
+    "selected_existing_successful_files": 0,
+    "expected_file_attempts": 96
+  },
+  "selected_source_ids": [
+    "R-ICO-014787",
+    "R-ICO-014788",
+    "R-ICO-014789",
+    "R-ICO-014790",
+    "R-ICO-014791",
+    "R-ICO-014792",
+    "R-ICO-014793",
+    "R-ICO-014794",
+    "R-ICO-014795",
+    "R-ICO-014796",
+    "R-ICO-014797",
+    "R-ICO-014798",
+    "R-ICO-014799",
+    "R-ICO-014800",
+    "R-ICO-014801",
+    "R-ICO-014802",
+    "R-ICO-014803",
+    "R-ICO-014804",
+    "R-ICO-014805",
+    "R-ICO-014806",
+    "R-ICO-014807",
+    "R-ICO-014808",
+    "R-ICO-014809",
+    "R-ICO-014810",
+    "R-ICO-014811",
+    "R-ICO-014812",
+    "R-ICO-014813",
+    "R-ICO-014814",
+    "R-ICO-014815",
+    "R-ICO-014816",
+    "R-ICO-014817",
+    "R-ICO-014818",
+    "R-ICO-014819",
+    "R-ICO-014820",
+    "R-ICO-014821",
+    "R-ICO-014822",
+    "R-ICO-014823",
+    "R-ICO-014824",
+    "R-ICO-014825",
+    "R-ICO-014826",
+    "R-ICO-014827",
+    "R-ICO-014828",
+    "R-ICO-014829",
+    "R-ICO-014830",
+    "R-ICO-014831",
+    "R-ICO-014832",
+    "R-ICO-014833",
+    "R-ICO-014834"
+  ],
+  "preservation": {
+    "do_not_refetch_existing_2523_svgs": true,
+    "keep_original_discovery_unchanged": true,
+    "png_failures_remain_explicit": true,
+    "do_not_generate_fake_original_png": true
+  },
+  "evidence": {
+    "report_url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/reactome-42246331998-1.report.json",
+    "report_sha256": "d23c1ebfc39baf27a60a1f10cc86c6cb897f755c851ea9634004a08fb7078bbc",
+    "failure_metadata_files": [
+      {
+        "name": "reactome-42246331998-1-b0000.failures.json",
+        "sha256": "29bca99f70a023444eefe34460a7e50743e689e3d77574f50c4222f854383a33"
+      },
+      {
+        "name": "reactome-42246331998-1-b0001.failures.json",
+        "sha256": "5604011afa67440351fbd9ff161a06196ccac7d139eca63995b2a23c83222dc0"
+      },
+      {
+        "name": "reactome-42246331998-1-b0002.failures.json",
+        "sha256": "f05635640a101e628609be0d34d1ca0b0759ecf6d92cef2b53c8ff5378b8d4bf"
+      },
+      {
+        "name": "reactome-42246331998-1-b0003.failures.json",
+        "sha256": "c9ba2ccb2473c67cf0c04bdfe0eff92cb856c7768e9ae8025fafc84fd744db71"
+      },
+      {
+        "name": "reactome-42246331998-1-b0004.failures.json",
+        "sha256": "a196b4e2ce5aff06cad17d05cb6df3c70438df81329daf327e848663e5f9c0e8"
+      },
+      {
+        "name": "reactome-42246331998-1-b0005.failures.json",
+        "sha256": "c24524f1b748285907af46bbf857a79a74b65498fd04d45bd07452edf4adc897"
+      }
+    ]
+  }
+}
