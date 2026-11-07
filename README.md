@@ -8,6 +8,8 @@ Collection, classification, deduplication and acceptance. The website is not yet
 
 The [2026-11-07 QA candidate](docs/CLOUD-QA-RECOVERY-20261107.md) has passed content-scope filtering and an independent cloud restore of 19,473 originals with their previews. All 48 current curated previews have recorded display reviews. Overall collection acceptance remains incomplete: the original visual retrieval result is 100/120 and the curated set remains below 60. These QA archives are not the formal website release.
 
+Subsequent file-specific source, license, species-applicability and recovery confirmation records 98 query passes, 20 concrete gaps and 2 pending layer-use cases. The original rankings and visual observations remain unchanged; formal confirmation and visual relevance are reported separately.
+
 The current data phase also includes [file-level color/style descriptions and reproducible selection diversity](docs/INCREMENTAL-PLAN-visual-diversity.md). Existing collection checkpoints continue; the new classification, variant filters, ranking and diversity checks must be finished before catalog acceptance and website deployment.
 
 Bulk artwork is processed on GitHub Actions cloud runners. This repository contains code, source descriptions and acceptance definitions, not the full image library. Versioned collection packages and reports are published as GitHub Release attachments. Future public file delivery uses Cloudflare Free static assets.

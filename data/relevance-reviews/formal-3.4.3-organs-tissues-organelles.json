@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "reviewer": "root-agent/exact-source-and-query-confirmation",
-  "reviewed_at": "2026-11-07T00:21:39.608507+00:00",
+  "reviewed_at": "2026-11-07T00:25:51.427407+00:00",
   "independent_from_metadata_matcher": true,
   "scope": "Explicit selection and formal confirmation using previously viewed exact previews, fixed source records, and independently restored identical bytes. No new visual inspection or scoring-rule change.",
   "bindings": {
@@ -59,9 +59,9 @@
   ],
   "counts": {
     "queries": 30,
-    "formal_pass": 28,
+    "formal_pass": 26,
     "formal_fail": 2,
-    "formal_pending": 0,
+    "formal_pending": 2,
     "selected_unique_originals": 15
   },
   "limits": [
@@ -2189,7 +2189,9 @@
       ],
       "visual_observation_reused": true,
       "new_visual_inspection": false,
-      "pending_checks": [],
+      "pending_checks": [
+        "Independent endothelial-cell identity is evidenced, but the frozen query asks for an endothelial layer. No layer or vessel-inner-surface composition is verified; do not promote a possible future arrangement into a completed query pass."
+      ],
       "source_checks": [
         {
           "candidate_id": "reactome-9fe83891a724d8081298:file-0",
@@ -2323,7 +2325,7 @@
         "applicability": "not_required",
         "basis": "原查询未限制物种，species_matches=true仅表示没有未满足的物种条件；不据此新增人体、鼠种或品系标注。"
       },
-      "pass": true,
+      "pass": null,
       "selected_candidate_ids": [
         "reactome-9fe83891a724d8081298:file-0"
       ],
@@ -2332,7 +2334,8 @@
       "license_checked": true,
       "species_matches": true,
       "original_download_checked": true,
-      "gap_reason": null
+      "gap_reason": null,
+      "formal_review_note": "交叉复核后保留相关性观察，但层的用途需补充证据；不放宽既有查询，不把单细胞自行排列的设想作为通过。"
     },
     {
       "query_id": "tissues_vessels-endothelium-en",
@@ -2346,7 +2349,9 @@
       ],
       "visual_observation_reused": true,
       "new_visual_inspection": false,
-      "pending_checks": [],
+      "pending_checks": [
+        "Independent endothelial-cell identity is evidenced, but the frozen query asks for an endothelial layer. No layer or vessel-inner-surface composition is verified; do not promote a possible future arrangement into a completed query pass."
+      ],
       "source_checks": [
         {
           "candidate_id": "reactome-9fe83891a724d8081298:file-0",
@@ -2480,7 +2485,7 @@
         "applicability": "not_required",
         "basis": "原查询未限制物种，species_matches=true仅表示没有未满足的物种条件；不据此新增人体、鼠种或品系标注。"
       },
-      "pass": true,
+      "pass": null,
       "selected_candidate_ids": [
         "reactome-9fe83891a724d8081298:file-0"
       ],
@@ -2489,7 +2494,8 @@
       "license_checked": true,
       "species_matches": true,
       "original_download_checked": true,
-      "gap_reason": null
+      "gap_reason": null,
+      "formal_review_note": "交叉复核后保留相关性观察，但层的用途需补充证据；不放宽既有查询，不把单细胞自行排列的设想作为通过。"
     },
     {
       "query_id": "tissues_vessels-skin-layers-zh",

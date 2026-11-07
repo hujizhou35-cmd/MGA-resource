@@ -1,0 +1,199 @@
+{
+  "schema_version": 1,
+  "verified_at": "2026-11-07T00:31:35.458665+00:00",
+  "status": "formal_query_confirmations_completed_except_endothelial_layer_pair_overall_gate_not_passed",
+  "catalog_sha256": "5c90306415ce5e7f36e875c7f57b19a91930aacfeeaeecdf9ad7662770f9a3fe",
+  "bindings": {
+    "base_judgments_sha256": "d231951d084ff2d53ae5d35d2f1b9ff6591e467bb086afe0dfab517929c4b433",
+    "mapping_sha256": "1988b7a52e3d727442f3f0ee3112e73915845b1514833fc95964d62b99e239d9",
+    "benchmark_sha256": "ce0282afeb4afbcee8fdef1c6f937844ef569cabf16ba7909e22bf86b1096e92",
+    "manifest_sha256": "a4fe0424ee8ecc32096090ef295242bdaa04b9ce29ff4f7a80948c95516d5436",
+    "restore_evidence_sha256": "bdfdf932d22b6ce2a008de38873ac70ba8dcb1dc3235b474f40f9f8fbc9eb4dd"
+  },
+  "source_confirmation_documents": [
+    {
+      "path": "data/relevance-reviews/formal-3.4.3-animals-people-microbes.json",
+      "sha256": "f95b6da362ebf14124807b731be345642f1894b9d9a0dbc0f244612b87f8b932",
+      "reviewer": "Codex media_catalog",
+      "reviewed_at": "2026-11-07T08:20:24.773297+08:00"
+    },
+    {
+      "path": "data/relevance-reviews/formal-3.4.3-equipment-cells-molecules.json",
+      "sha256": "602a4d64754f068c52717acec3b4de19ca63e247119ca64960deab8b0dc60f94",
+      "reviewer": "Codex scope_publication_check; explicit formal confirmation using prior actual visual review and verified source/restoration evidence",
+      "reviewed_at": "2026-11-07T00:22:07.665875+00:00"
+    },
+    {
+      "path": "data/relevance-reviews/formal-3.4.3-organs-tissues-organelles.json",
+      "sha256": "e1098b6eb7660e9c6954e87cd15626af4b43e701473bc8c7fbfb9b7c525ab286",
+      "reviewer": "root-agent/exact-source-and-query-confirmation",
+      "reviewed_at": "2026-11-07T00:25:51.427407+00:00"
+    },
+    {
+      "path": "data/relevance-reviews/formal-3.4.3-actions-clinical-omics.json",
+      "sha256": "6d76e22fa9375046ff43a74cb6775e48d494b0f54c388c466bfcc8d61e442c90",
+      "reviewer": "registry_acceptance; formal confirmation from prior direct visual review and exact-file evidence",
+      "reviewed_at": "2026-11-07T00:24:16.765662+00:00"
+    }
+  ],
+  "confirmation_audit": {
+    "path": "build/formal-query-confirmation-42312769493/confirmation-audit.json",
+    "sha256": "5d05333fcfce96c8292292678ffcc1a3a15dfacc2bd2a214a513bad584d1b34e",
+    "size_bytes": 2279
+  },
+  "formal_judgments": {
+    "path": "build/formal-query-confirmation-42312769493/judgments.json",
+    "sha256": "7692e91153664d0cd1b5a1a957fe4e00ca8a43b0e27a9d10bf06ec20a4640b1b",
+    "size_bytes": 3674924
+  },
+  "acceptance_report": {
+    "path": "build/formal-query-confirmation-42312769493/acceptance-report/checkreport.json",
+    "sha256": "bcb78472efd1fca9192120a1176d6a0e53c51ed0a358b3abd9cfec2927c324c6",
+    "size_bytes": 1726777
+  },
+  "invocation": {
+    "path": "build/formal-query-confirmation-42312769493/acceptance-invocation.json",
+    "sha256": "7c953281bee119c77e0a786f0e310a48ca8d535db175362fd0bb719b7d1578ee",
+    "size_bytes": 4251
+  },
+  "formal_query_counts": {
+    "pass": 98,
+    "pending": 2,
+    "fail": 20
+  },
+  "original_visual_positive_queries": 100,
+  "query_total": 120,
+  "result_positions_unchanged": 706,
+  "rankings_changed": false,
+  "benchmark_or_thresholds_changed": false,
+  "actual_retrieval_evaluation": {
+    "category_concepts": {
+      "animals": 5,
+      "cells": 5,
+      "clinical_workflow": 2,
+      "experimental_actions": 2,
+      "lab_equipment": 5,
+      "microbes": 5,
+      "molecules": 5,
+      "omics_data": 2,
+      "organelles": 4,
+      "organs": 5,
+      "people": 5,
+      "tissues_vessels": 4
+    },
+    "languages": {
+      "en": 49,
+      "zh": 49
+    },
+    "negative_scenarios_passed": 6,
+    "reviewed": 118,
+    "successful": 98
+  },
+  "required_queries": 108,
+  "required_per_language": 54,
+  "remaining_query_confirmations": [
+    {
+      "query_id": "tissues_vessels-endothelium-zh",
+      "selected_candidate_ids": [
+        "reactome-9fe83891a724d8081298:file-0"
+      ],
+      "pending_checks": [
+        "Independent endothelial-cell identity is evidenced, but the frozen query asks for an endothelial layer. No layer or vessel-inner-surface composition is verified; do not promote a possible future arrangement into a completed query pass."
+      ]
+    },
+    {
+      "query_id": "tissues_vessels-endothelium-en",
+      "selected_candidate_ids": [
+        "reactome-9fe83891a724d8081298:file-0"
+      ],
+      "pending_checks": [
+        "Independent endothelial-cell identity is evidenced, but the frozen query asks for an endothelial layer. No layer or vessel-inner-surface composition is verified; do not promote a possible future arrangement into a completed query pass."
+      ]
+    }
+  ],
+  "missing_code_counts": {
+    "queries.pending": 2,
+    "queries.reviewed": 1,
+    "queries.threshold": 1,
+    "queries.language": 2,
+    "queries.category": 3,
+    "visual.curated": 1,
+    "visual.curated_category": 4
+  },
+  "missing": [
+    {
+      "code": "queries.pending",
+      "detail": "tissues_vessels-endothelium-zh: record an evidenced pass or a specific gap."
+    },
+    {
+      "code": "queries.pending",
+      "detail": "tissues_vessels-endothelium-en: record an evidenced pass or a specific gap."
+    },
+    {
+      "code": "queries.reviewed",
+      "detail": "Only 118/120 query judgments are complete."
+    },
+    {
+      "code": "queries.threshold",
+      "detail": "Retrieval success is 98/120; need 108."
+    },
+    {
+      "code": "queries.language",
+      "detail": "zh: 49/60; need 54."
+    },
+    {
+      "code": "queries.language",
+      "detail": "en: 49/60; need 54."
+    },
+    {
+      "code": "queries.category",
+      "detail": "clinical_workflow: 2/5 concepts; need 4."
+    },
+    {
+      "code": "queries.category",
+      "detail": "experimental_actions: 2/5 concepts; need 4."
+    },
+    {
+      "code": "queries.category",
+      "detail": "omics_data: 2/5 concepts; need 4."
+    },
+    {
+      "code": "visual.curated",
+      "detail": "Curated review covers 48/60 distinct included families."
+    },
+    {
+      "code": "visual.curated_category",
+      "detail": "clinical_workflow: 0/5 curated families."
+    },
+    {
+      "code": "visual.curated_category",
+      "detail": "experimental_actions: 4/5 curated families."
+    },
+    {
+      "code": "visual.curated_category",
+      "detail": "omics_data: 0/5 curated families."
+    },
+    {
+      "code": "visual.curated_category",
+      "detail": "organelles: 4/5 curated families."
+    }
+  ],
+  "restore_passed": true,
+  "supplement_passed": true,
+  "source_sample_missing_checks": [],
+  "curated_families": 48,
+  "curated_required": 60,
+  "historical_native_matches": 5,
+  "scope_exclusions_unchanged": true,
+  "originals_downloaded_this_step": 0,
+  "new_visual_inspections": 0,
+  "overall_acceptance_passed": false,
+  "formal_website_deployed": false,
+  "limits": [
+    "98 formal query passes do not imply the overall gate has passed.",
+    "Two endothelial-layer queries remain pending because an independently reusable single cell does not by itself establish a layer composition.",
+    "The original 20 failed queries and all 706 per-result visual observations remain unchanged.",
+    "Scientific applicability, pathology, partial anatomy, raster and label restrictions remain in each confirmation.",
+    "Four earlier scope/acceptance decisions are still unanswered; none is inferred here."
+  ]
+}
