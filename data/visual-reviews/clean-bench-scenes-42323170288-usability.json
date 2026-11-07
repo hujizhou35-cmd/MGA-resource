@@ -1,0 +1,233 @@
+{
+  "schema_version": 1,
+  "reviewer": "Codex root and scope_publication_check; independent actual view_image inspection of the three-tile sheet",
+  "reviewed_at": "2026-11-07T01:27:06.395193+00:00",
+  "review_method": "Both reviewers actually viewed the1080x1225 sheet, then distinguished general laboratory scene use, source-supported culture context, and unobserved specific steps. SHA of every exact preview, mapping, sheet and cloud package was checked. Titles nominated files only; no automatic pass or scope exclusion.",
+  "review_sheet_url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/acceptance-20261107/exact-review-42323170288-1.review.png",
+  "review_sheet_sha256": "ce0c90a4a2a8efb095ea0e769ce482dddefbb2fd3c14c8731797b07150b7ff7f",
+  "review_pack": {
+    "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/acceptance-20261107/exact-review-42323170288-1.tar.gz",
+    "sha256": "cf4f7975eb548e4f831dc6b00f9985dda7e05aacf658b39ab5aaeb083cf76531",
+    "size_bytes": 304450,
+    "mapping_sha256": "4ab5d3e79f985898f70e6a09105768118e2fa3a84d14dea3bd9e48c74eb68b4e"
+  },
+  "catalog_binding": {
+    "prefix": "assembly-42320673266-1",
+    "sha256": "8a961c42a357147f2ae0229526f6127c955e05928721d94283e829463f738da0"
+  },
+  "items": [
+    {
+      "tile": 1,
+      "source": "bioicons",
+      "source_id": "cc-by-4.0/Cell_culture/DBCLS/Clean_bench_F.svg",
+      "asset_id": "bioicons-a645be9c960715ea7dee",
+      "selected_candidate_id": "bioicons-a645be9c960715ea7dee:file-0",
+      "title": "Clean bench F",
+      "source_url": "https://github.com/duerrsimon/bioicons/blob/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-4.0/Cell_culture/DBCLS/Clean_bench_F.svg",
+      "original_sha256": "9b5470c2f35d66eca0e3fb9eb83f896a6ad7c9e774d678ec5dca51912b02526d",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42239971379-1-b0004.tar.gz",
+        "member": "files/9b/9b5470c2f35d66eca0e3fb9eb83f896a6ad7c9e774d678ec5dca51912b02526d.svg"
+      },
+      "source_records": [
+        {
+          "title": "Clean bench F",
+          "tags": [
+            "Cell culture"
+          ],
+          "categories": [],
+          "taxonomy": [
+            "cells",
+            "experimental_actions"
+          ],
+          "upstream_category": "Cell_culture",
+          "author": "DBCLS",
+          "distribution_status": "license_recorded",
+          "asset_id": "bioicons-a645be9c960715ea7dee",
+          "source": "bioicons",
+          "source_id": "cc-by-4.0/Cell_culture/DBCLS/Clean_bench_F.svg",
+          "source_url": "https://github.com/duerrsimon/bioicons/blob/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-4.0/Cell_culture/DBCLS/Clean_bench_F.svg",
+          "url": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-4.0/Cell_culture/DBCLS/Clean_bench_F.svg",
+          "license": "CC-BY-4.0",
+          "attribution": "Clean bench F — DBCLS; https://togotv.dbcls.jp/en/pics.html; CC-BY-4.0; via Bioicons"
+        }
+      ],
+      "preview_sha256": "3d7f0f20e1a90141500ce3c8c911024fcadf8f83b7631100dbe3825cc975ff49",
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42239971379-1-b0004.tar.gz",
+        "member": "previews/9b5470c2f35d66eca0e3fb9eb83f896a6ad7c9e774d678ec5dca51912b02526d.png"
+      },
+      "visual_verdict": "usable_with_limitations",
+      "observations": "实际看图可见穿实验服的女性坐在洁净台前，双臂伸入台内、手在浅圆器皿旁；前横梁遮住关键接触处。人物、台体、座椅为独立可用实验场景，不是静态培养皿，也不是研究流程图。",
+      "recommended_use": "结合固定Bioicons来源路径的Cell_culture类别，适合作为说明一般细胞培养工作的场景部件；这里确认的是用途适配，不是已经观察到一个具体培养步骤。",
+      "use_evidence": {
+        "source_context": "Fixed upstream Bioicons Cell_culture category with DBCLS attribution",
+        "observed_scene": "Person working at a clean bench beside shallow round lab vessels",
+        "limited_use": "generic cell-culture work context"
+      },
+      "limitations": [
+        "不能断言具体接种、换液、细胞类型、培养条件、培养成功或无菌状态。",
+        "横梁遮住手部关键接触点，不用于精确操作教学。",
+        "与Togo781画面相似，但服装和鞋等细节不同；保留不同字节与来源，不按相似标题去重。"
+      ],
+      "original_benchmark_disposition": "Potentially suitable for the general culture-work role allowed by the unchanged original requirement. This newly nominated file was not in the recorded top-10, so no score is added. Requires a future actual search replay before query acceptance.",
+      "text_observation": {
+        "status": "no_readable_labels_in_reviewed_preview",
+        "unknown_in_original": true,
+        "cleanup_advice": "selected_working_copy_only_if_needed"
+      },
+      "native_editability_tested": false
+    },
+    {
+      "tile": 2,
+      "source": "togo",
+      "source_id": "781",
+      "asset_id": "togo-058a1fb764263551b38b",
+      "selected_candidate_id": "togo-058a1fb764263551b38b:file-0",
+      "title": "A woman working on a clean bench",
+      "source_url": "https://doi.org/10.7875/togopic.2020.194",
+      "original_sha256": "1ba5a7053693c774eb459c2d198b956d64b730d3c9dc62e29be152dd469b3995",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42249870031-1-b0001.tar.gz",
+        "member": "files/1b/1ba5a7053693c774eb459c2d198b956d64b730d3c9dc62e29be152dd469b3995.svg"
+      },
+      "source_records": [
+        {
+          "title": "A woman working on a clean bench",
+          "tags": [
+            "Lab apparatus",
+            "Icon",
+            "Research activities",
+            "Life science",
+            "Education",
+            "Healthcare",
+            "Mammalia",
+            "Primates",
+            "Homo sapiens"
+          ],
+          "categories": [],
+          "taxonomy": [
+            "people",
+            "lab_equipment",
+            "clinical_workflow"
+          ],
+          "author": "Wakana Sasaki",
+          "distribution_status": "license_recorded",
+          "asset_id": "togo-4dc97b7764f0aebfcbe8",
+          "source": "togo",
+          "source_id": "781",
+          "source_url": "https://doi.org/10.7875/togopic.2020.194",
+          "url": "https://dbarchive.biosciencedbc.jp/data/togo-pic/image/202010_Clean_bench_F.svg",
+          "license": "CC-BY-4.0",
+          "attribution": "A woman working on a clean bench — Wakana Sasaki; © 2016 DBCLS TogoTV / CC-BY-4.0; https://doi.org/10.7875/togopic.2020.194"
+        }
+      ],
+      "preview_sha256": "220ccf1d1e1d8923fb8889ea1cf7820f100007f61fdf690c68777c1597044b9c",
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42249870031-1-b0001.tar.gz",
+        "member": "previews/1ba5a7053693c774eb459c2d198b956d64b730d3c9dc62e29be152dd469b3995.png"
+      },
+      "visual_verdict": "usable_with_limitations",
+      "observations": "实际看图可见实验服女性在洁净台工作，双手靠近台内浅圆器皿，横梁遮挡部分手部接触；下身服装和鞋不同于第1件。",
+      "recommended_use": "一般洁净台或实验室操作场景。",
+      "use_evidence": {
+        "source_context": "Togo781 A woman working on a clean bench",
+        "observed_scene": "Seated person with arms inside cabinet near lab vessels",
+        "limited_use": "generic clean-bench laboratory work"
+      },
+      "limitations": [
+        "该精确来源标题和画面未明确某个细胞培养动作；不借第1件的分类或相似画面替此文件新增科学断言。",
+        "不声称正在换液、接种、无菌处理或特定细胞培养。"
+      ],
+      "original_benchmark_disposition": "Culture-specific relevance remains uncertain for this exact file. It remains useful as general laboratory work and is not excluded.",
+      "text_observation": {
+        "status": "no_readable_labels_in_reviewed_preview",
+        "unknown_in_original": true,
+        "cleanup_advice": "selected_working_copy_only_if_needed"
+      },
+      "native_editability_tested": false
+    },
+    {
+      "tile": 3,
+      "source": "togo",
+      "source_id": "1562",
+      "asset_id": "togo-d9c7515a9eec9fe0f88e",
+      "selected_candidate_id": "togo-d9c7515a9eec9fe0f88e:file-0",
+      "title": "Clean bench work (female)",
+      "source_url": "https://doi.org/10.7875/togopic.2022.598",
+      "original_sha256": "a0ad68c9c11425694bbe4e10b5c05d0cfe37a3c2d2479a173e67716802bd0e10",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42261598057-1-b0000.tar.gz",
+        "member": "files/a0/a0ad68c9c11425694bbe4e10b5c05d0cfe37a3c2d2479a173e67716802bd0e10.svg"
+      },
+      "source_records": [
+        {
+          "title": "Clean bench work (female)",
+          "tags": [
+            "Organisms",
+            "Lab equipment",
+            "Icon",
+            "Biology",
+            "Taxonomy",
+            "Ecology",
+            "Mammalia",
+            "Primates",
+            "Homo sapiens"
+          ],
+          "categories": [],
+          "taxonomy": [
+            "lab_equipment"
+          ],
+          "author": "<a href=\"https://erikotoyooka.com/\" target=\"_blank\">erico</a>",
+          "distribution_status": "license_recorded",
+          "asset_id": "togo-8611a0b68eee1b5ae3ac",
+          "source": "togo",
+          "source_id": "1562",
+          "source_url": "https://doi.org/10.7875/togopic.2022.598",
+          "url": "https://dbarchive.biosciencedbc.jp/data/togo-pic/image/202212_Clean_Bench_Female.svg",
+          "license": "CC-BY-4.0",
+          "attribution": "Clean bench work (female) — <a href=\"https://erikotoyooka.com/\" target=\"_blank\">erico</a>; © 2016 DBCLS TogoTV / CC-BY-4.0; https://doi.org/10.7875/togopic.2022.598"
+        }
+      ],
+      "preview_sha256": "901470b33f828108013fe7efc32aff21083618cbf36e88bfe6e8cad1a8ae6144",
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42261598057-1-b0000.tar.gz",
+        "member": "previews/a0ad68c9c11425694bbe4e10b5c05d0cfe37a3c2d2479a173e67716802bd0e10.png"
+      },
+      "visual_verdict": "usable_with_limitations",
+      "observations": "实际看图可见女性坐于洁净台前，手持移液器状工具，旁边有红色瓶；瓶内物质无可读标注，加液目标不清楚。主体为绘制场景。",
+      "recommended_use": "一般洁净台操作／实验室移液工作场景，动作细节需结合具体任务核对。",
+      "use_evidence": {
+        "source_context": "Togo1562 Clean bench work (female)",
+        "observed_scene": "Person holding pipette-like implement inside cabinet next to an unlabeled red bottle",
+        "limited_use": "generic laboratory work"
+      },
+      "limitations": [
+        "不能把红瓶自动标为培养基，也不能确定吸取或加入的具体物质。",
+        "不能确认接种、换液、目标培养器皿或某种细胞。"
+      ],
+      "original_benchmark_disposition": "Culture-specific relevance remains uncertain for this exact file. It remains useful as general laboratory work and is not excluded.",
+      "text_observation": {
+        "status": "no_readable_labels_in_reviewed_preview",
+        "unknown_in_original": true,
+        "cleanup_advice": "selected_working_copy_only_if_needed"
+      },
+      "native_editability_tested": false
+    }
+  ],
+  "actual_visual_review_completed": true,
+  "originals_downloaded_locally": 0,
+  "newly_collected_files": 0,
+  "scope_decisions_changed": false,
+  "scientific_identity_fields_changed": false,
+  "original120_results_changed": false,
+  "original120_score_changed": false,
+  "source_artwork_modified": false,
+  "text_cleanup_performed": false,
+  "overall_acceptance_passed": false,
+  "limits": [
+    "The purpose suitability of item01 is not an assertion of an observed specific culture step.",
+    "No source title, taxonomy or similar neighboring file alone establishes scientific content.",
+    "This review does not itself add any file to the actual search result list or update a catalog/index."
+  ]
+}

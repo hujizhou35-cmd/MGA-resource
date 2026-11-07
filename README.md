@@ -6,9 +6,11 @@ A free medical illustration library for agents and people. Scientific illustrati
 
 Collection, classification, deduplication and acceptance. The website is not yet built or deployed. Counts in upstream catalogs are candidates, not accepted artwork.
 
-The [2026-11-07 QA candidate](docs/CLOUD-QA-RECOVERY-20261107.md) has passed content-scope filtering and an independent cloud restore of 19,473 originals with their previews. All 48 current curated previews have recorded display reviews. Overall collection acceptance remains incomplete: the original visual retrieval result is 100/120 and the curated set remains below 60. These QA archives are not the formal website release.
+The [2026-11-07 QA candidate](docs/CLOUD-QA-RECOVERY-20261107.md) has passed content-scope filtering and an independent cloud restore of 19,473 originals with their previews. The curated set now contains 60 distinct families, five per category, with actual display and use-case composition reviews and recorded limitations. These QA archives are not the formal website release.
 
-Subsequent file-specific source, license, species-applicability and recovery confirmation records 98 query passes, 20 concrete gaps and 2 pending layer-use cases. The original rankings and visual observations remain unchanged; formal confirmation and visual relevance are reported separately.
+Acceptance on the restored catalog records 100 query passes and 20 gaps. The earlier two pending endothelium cases were corrected under the existing rule allowing explicit reusable components; the files remain labeled as individual cells. The original 120 questions and 706 result positions are unchanged. Overall acceptance remains incomplete because retrieval coverage is below the original thresholds.
+
+A subsequent science-metadata update changes seven files without changing scope or artwork. Its cloud replay preserves 118 query result lists and adds one exact lysosome SVG to each of the two remaining queries. [Evidence-based relevance confirmation](data/diagnostics/science-update-42322620502-relevance.json) is now 102/120, with 51/60 in each language. New-version publication bindings remain pending. The [60-item QA package](data/diagnostics/curated-60-42320795764.json) includes actual reviews, attribution and the remaining acceptance failures.
 
 The current data phase also includes [file-level color/style descriptions and reproducible selection diversity](docs/INCREMENTAL-PLAN-visual-diversity.md). Existing collection checkpoints continue; the new classification, variant filters, ranking and diversity checks must be finished before catalog acceptance and website deployment.
 
