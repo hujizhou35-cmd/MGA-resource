@@ -1,0 +1,584 @@
+{
+  "schema_version": 1,
+  "purpose": "Bounded exact archived previews for12 additional curated families; old48 and frozen120 remain unchanged. No source recollection, original artwork persistence or premature display acceptance.",
+  "catalog_prefix": "assembly-42289434868-1",
+  "catalog_sha256": "5c90306415ce5e7f36e875c7f57b19a91930aacfeeaeecdf9ad7662770f9a3fe",
+  "selection_binding": {
+    "path": "build/curated-expansion-60/selection.json",
+    "sha256": "96948b6b66292622ecfc6cec683ec4e52d413048f845eb64df41ad77806c8e2f"
+  },
+  "manifest_sha256": "a4fe0424ee8ecc32096090ef295242bdaa04b9ce29ff4f7a80948c95516d5436",
+  "source_release_tag": "collection-20261106",
+  "publish_tag": "acceptance-20261107",
+  "files": [
+    {
+      "source": "bioicons",
+      "source_id": "cc-by-3.0/Intracellular_components/Servier/nucleus-full-3d.svg",
+      "asset_id": "bioicons-49e695f1a88f41f5dce1",
+      "selected_candidate_id": "bioicons-49e695f1a88f41f5dce1:file-0",
+      "selection_ordinal": 49,
+      "family_id": "bioicons-49e695f1a88f41f5dce1",
+      "categories": [
+        "organelles"
+      ],
+      "title": "nucleus full 3d",
+      "source_url": "https://github.com/duerrsimon/bioicons/blob/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-3.0/Intracellular_components/Servier/nucleus-full-3d.svg",
+      "original_sha256": "534948dd77f32890efce6924dc3ae15a707c41cc56696cb48b505d9847e1a4d4",
+      "original_archive": {
+        "member": "files/53/534948dd77f32890efce6924dc3ae15a707c41cc56696cb48b505d9847e1a4d4.svg",
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42251588741-1-b0002.tar.gz"
+      },
+      "format": "svg",
+      "structure": "pure_vector",
+      "preview": {
+        "archive": {
+          "member": "previews/534948dd77f32890efce6924dc3ae15a707c41cc56696cb48b505d9847e1a4d4.png",
+          "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42251588741-1-b0002.tar.gz"
+        },
+        "format": "png",
+        "height": 512,
+        "path": "previews/534948dd77f32890efce6924dc3ae15a707c41cc56696cb48b505d9847e1a4d4.png",
+        "sha256": "467ceed7e10d0886f9ebfaf09a9b1f89ca395b39b7c43e46b7e4d8ee99b1601b",
+        "size_bytes": 62603,
+        "width": 464
+      },
+      "review_question": "Extract the exact archived RGBA preview bytes only. Prepare bounded display QA for white/dark/checkerboard transparency,96/48px detail and labels, then record actual visual limitations. Prior object/source review is reused; extraction and a white contact sheet are not display QA, scientific acceptance, native editability or full composition approval. Preserve original artwork and do not infer additional species/clinical/experimental facts.",
+      "prior_visual_evidence": {
+        "path": "data/relevance-reviews/frozen-3.4.1-organs-tissues-organelles.json",
+        "sha256": "f5df2dc1671742e09a94f29c2ecdade4956dfa822821ff319a801623e59dc37d",
+        "json_pointer": "/queries/23/result_judgments/4",
+        "query_id": "organelles-nucleus-en",
+        "observations": "独立圆形核、双层外边界和孔状结构可辨，源名nucleus full 3d；适合简化三维细胞核示意，不推断具体物种或病理。",
+        "visual_verdict": "relevant",
+        "reviewer": "root-agent/direct-visual-review",
+        "reviewed_at": "2026-11-06T22:09:04.592588+00:00"
+      },
+      "recommended_use": "简化三维细胞核对象，补充独立核的完整外形。",
+      "limitations": [
+        "不推断物种、病理或真实尺寸；来源的双层与核孔为示意。"
+      ]
+    },
+    {
+      "source": "togo",
+      "source_id": "1704",
+      "asset_id": "togo-566ebe910304d8f21ef9",
+      "selected_candidate_id": "togo-566ebe910304d8f21ef9:file-0",
+      "selection_ordinal": 50,
+      "family_id": "togo-566ebe910304d8f21ef9",
+      "categories": [
+        "experimental_actions"
+      ],
+      "title": "Drawing blood male",
+      "source_url": "https://doi.org/10.7875/togopic.2023.140",
+      "original_sha256": "10c58a71b1a29304672c3cc684c4ab8753de6d4e55217443c16ffda5e5a3da1b",
+      "original_archive": {
+        "member": "files/10/10c58a71b1a29304672c3cc684c4ab8753de6d4e55217443c16ffda5e5a3da1b.svg",
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42261598057-1-b0000.tar.gz"
+      },
+      "format": "svg",
+      "structure": "pure_vector",
+      "preview": {
+        "archive": {
+          "member": "previews/10c58a71b1a29304672c3cc684c4ab8753de6d4e55217443c16ffda5e5a3da1b.png",
+          "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42261598057-1-b0000.tar.gz"
+        },
+        "format": "png",
+        "height": 512,
+        "path": "previews/10c58a71b1a29304672c3cc684c4ab8753de6d4e55217443c16ffda5e5a3da1b.png",
+        "sha256": "87d4541a4329f558509266008a78a544fb9a6caf6d891b8a7bd552a048534657",
+        "size_bytes": 35539,
+        "width": 512
+      },
+      "review_question": "Extract the exact archived RGBA preview bytes only. Prepare bounded display QA for white/dark/checkerboard transparency,96/48px detail and labels, then record actual visual limitations. Prior object/source review is reused; extraction and a white contact sheet are not display QA, scientific acceptance, native editability or full composition approval. Preserve original artwork and do not infer additional species/clinical/experimental facts.",
+      "prior_visual_evidence": {
+        "path": "data/relevance-reviews/frozen-3.4.1-actions-clinical-omics.json",
+        "sha256": "647485d79bb88e9281778a7e3cf71f0d344d7df8fdaedcbd90759cce631a5ff5",
+        "json_pointer": "/queries/1/result_judgments/2",
+        "query_id": "experimental_actions-blood-collection-en",
+        "observations": "桌旁成人男性伸出手臂，工作人员在肘前附近操作，手臂束带、支撑和取样关系清楚；可作采血动作，不推断具体血管及样本量。",
+        "visual_verdict": "relevant",
+        "reviewer": "Codex registry_acceptance; direct visual inspection",
+        "reviewed_at": "2026-11-06T21:57:36.219097+00:00"
+      },
+      "recommended_use": "受试者手臂与工作人员的采血操作场景。",
+      "limitations": [
+        "不推断具体血管、针具规格、样本量或采血途径；不是临床操作培训认证。"
+      ]
+    },
+    {
+      "source": "openclipart",
+      "source_id": "195847",
+      "asset_id": "openclipart-c2d02e0011c4e4c60482",
+      "selected_candidate_id": "openclipart-c2d02e0011c4e4c60482:file-0",
+      "selection_ordinal": 51,
+      "family_id": "openclipart-c2d02e0011c4e4c60482",
+      "categories": [
+        "clinical_workflow"
+      ],
+      "title": "Online computer survey",
+      "source_url": "https://openclipart.org/detail/195847/online-computer-survey",
+      "original_sha256": "1b741a83f5fad9a6fdfbdf255d4455878ae2e400bf5e944c7271d4605fa4723f",
+      "original_archive": {
+        "member": "files/1b/1b741a83f5fad9a6fdfbdf255d4455878ae2e400bf5e944c7271d4605fa4723f.svg",
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/openclipart-42260737515-1-b0000.tar.gz"
+      },
+      "format": "svg",
+      "structure": "pure_vector",
+      "preview": {
+        "archive": {
+          "member": "previews/1b741a83f5fad9a6fdfbdf255d4455878ae2e400bf5e944c7271d4605fa4723f.png",
+          "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/openclipart-42260737515-1-b0000.tar.gz"
+        },
+        "format": "png",
+        "height": 512,
+        "path": "previews/1b741a83f5fad9a6fdfbdf255d4455878ae2e400bf5e944c7271d4605fa4723f.png",
+        "sha256": "af4cf34f6c966f3c91bede0d6f62c62efec828f8a6aa4ed8f8fab0b891f7cccd",
+        "size_bytes": 12923,
+        "width": 512
+      },
+      "review_question": "Extract the exact archived RGBA preview bytes only. Prepare bounded display QA for white/dark/checkerboard transparency,96/48px detail and labels, then record actual visual limitations. Prior object/source review is reused; extraction and a white contact sheet are not display QA, scientific acceptance, native editability or full composition approval. Preserve original artwork and do not infer additional species/clinical/experimental facts.",
+      "prior_visual_evidence": {
+        "path": "data/relevance-reviews/frozen-3.4.1-actions-clinical-omics.json",
+        "sha256": "647485d79bb88e9281778a7e3cf71f0d344d7df8fdaedcbd90759cce631a5ff5",
+        "json_pointer": "/queries/17/result_judgments/0",
+        "query_id": "clinical_workflow-questionnaire-en",
+        "observations": "电脑屏幕上有SURVEY标题、条目/选择点与光标，表达在线问卷界面；没有可读真实个人答案或研究数据。是供人使用的问卷工具符号，不声称画面已展示某个受试者。",
+        "visual_verdict": "relevant",
+        "reviewer": "Codex registry_acceptance; direct visual inspection",
+        "reviewed_at": "2026-11-06T21:57:36.219097+00:00"
+      },
+      "recommended_use": "问卷与在线调查工具入口，可作为临床研究的信息采集部件。",
+      "limitations": [
+        "不是参与者招募、随访过程或已填写的真实答卷；图内SURVEY文字按任务处理。"
+      ]
+    },
+    {
+      "source": "togo",
+      "source_id": "1696",
+      "asset_id": "togo-ddd7adfee80048608d91",
+      "selected_candidate_id": "togo-ddd7adfee80048608d91:file-1",
+      "selection_ordinal": 52,
+      "family_id": "togo-ddd7adfee80048608d91",
+      "categories": [
+        "clinical_workflow"
+      ],
+      "title": "Blood pressure measurement female",
+      "source_url": "https://doi.org/10.7875/togopic.2023.132",
+      "original_sha256": "22cf6386f1a4e6e0bf826ac9b29bb57aa3701bf015a4eedd55361f06fb7cb3fa",
+      "original_archive": {
+        "member": "files/22/22cf6386f1a4e6e0bf826ac9b29bb57aa3701bf015a4eedd55361f06fb7cb3fa.png",
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42261598057-1-b0000.tar.gz"
+      },
+      "format": "png",
+      "structure": "raster",
+      "preview": {
+        "archive": {
+          "member": "previews/22cf6386f1a4e6e0bf826ac9b29bb57aa3701bf015a4eedd55361f06fb7cb3fa.png",
+          "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42261598057-1-b0000.tar.gz"
+        },
+        "format": "png",
+        "height": 400,
+        "path": "previews/22cf6386f1a4e6e0bf826ac9b29bb57aa3701bf015a4eedd55361f06fb7cb3fa.png",
+        "sha256": "c730deb6084ff81b0ca7994d14db016c396762716cc6c099a66823195de1f326",
+        "size_bytes": 19265,
+        "width": 400
+      },
+      "review_question": "Extract the exact archived RGBA preview bytes only. Prepare bounded display QA for white/dark/checkerboard transparency,96/48px detail and labels, then record actual visual limitations. Prior object/source review is reused; extraction and a white contact sheet are not display QA, scientific acceptance, native editability or full composition approval. Preserve original artwork and do not infer additional species/clinical/experimental facts.",
+      "prior_visual_evidence": {
+        "path": "data/relevance-reviews/frozen-3.4.1-actions-clinical-omics.json",
+        "sha256": "647485d79bb88e9281778a7e3cf71f0d344d7df8fdaedcbd90759cce631a5ff5",
+        "json_pointer": "/queries/19/result_judgments/0",
+        "query_id": "clinical_workflow-blood-pressure-en",
+        "observations": "坐姿女性手臂受到支撑，袖带与测量器材连接，工作人员在旁操作；可作人体血压测量场景，不从小图认证袖带尺寸、姿势细节或具体读数。",
+        "visual_verdict": "relevant",
+        "reviewer": "Codex registry_acceptance; direct visual inspection",
+        "reviewed_at": "2026-11-06T21:57:36.219097+00:00"
+      },
+      "recommended_use": "坐姿成人女性的测压场景，用于临床测量步骤。",
+      "limitations": [
+        "不从小图认证袖带尺寸、精细姿势或具体血压读数；不宣称已表达完整诊疗流程。"
+      ]
+    },
+    {
+      "source": "nih-bioart",
+      "source_id": "130",
+      "asset_id": "nih-bioart-5b91f62cf60eb83887ef",
+      "selected_candidate_id": "nih-bioart-5b91f62cf60eb83887ef:file-0",
+      "selection_ordinal": 53,
+      "family_id": "nih-bioart-5b91f62cf60eb83887ef",
+      "categories": [
+        "clinical_workflow"
+      ],
+      "title": "Doctor Patient",
+      "source_url": "https://bioart.niaid.nih.gov/bioart/130",
+      "original_sha256": "24a5babba9a341784bfdbdbce1fdd4a73678e2ca1fa8473aa26ee72579d4c36e",
+      "original_archive": {
+        "member": "files/24/24a5babba9a341784bfdbdbce1fdd4a73678e2ca1fa8473aa26ee72579d4c36e.png",
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/nih-bioart-42236561214-1-b0000.tar.gz"
+      },
+      "format": "png",
+      "structure": "raster",
+      "preview": {
+        "archive": {
+          "member": "previews/24a5babba9a341784bfdbdbce1fdd4a73678e2ca1fa8473aa26ee72579d4c36e.png",
+          "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/nih-bioart-42236561214-1-b0000.tar.gz"
+        },
+        "format": "png",
+        "height": 310,
+        "path": "previews/24a5babba9a341784bfdbdbce1fdd4a73678e2ca1fa8473aa26ee72579d4c36e.png",
+        "sha256": "d5a278e9b2eb33e8c42badd66ccfd9691708143e0d9534ff4532fd59de6ceeb7",
+        "size_bytes": 105103,
+        "width": 512
+      },
+      "review_question": "Extract the exact archived RGBA preview bytes only. Prepare bounded display QA for white/dark/checkerboard transparency,96/48px detail and labels, then record actual visual limitations. Prior object/source review is reused; extraction and a white contact sheet are not display QA, scientific acceptance, native editability or full composition approval. Preserve original artwork and do not infer additional species/clinical/experimental facts.",
+      "prior_visual_evidence": {
+        "path": "data/relevance-reviews/frozen-3.4.1-animals-people-microbes.json",
+        "sha256": "c7df273d5e0b7ed7fec544c42267a9d977407476c13cba8195ea60ab4873424c",
+        "json_pointer": "/concepts/5/items/6",
+        "query_id": "people-patient-en",
+        "observations": "带听诊器的临床人员向另一人解释夹板内容，另一人倾听，医患交流可辨。",
+        "visual_verdict": "relevant",
+        "reviewer": "Codex media_catalog",
+        "reviewed_at": "2026-11-06T22:00:31.261934+00:00"
+      },
+      "recommended_use": "临床人员向患者解释夹板内容的医患交流场景，可作咨询沟通步骤。",
+      "limitations": [
+        "仅作来源与图面支持的医患解释/倾听交流，不冒称已显示招募、随机分组、纳入、纵向随访或特定诊断。",
+        "选择的是PNG位图；不能因源标签含Vector就声称可路径编辑；不读取夹板为真实患者数据。"
+      ]
+    },
+    {
+      "source": "togo",
+      "source_id": "1695",
+      "asset_id": "togo-9718c104999655d7a224",
+      "selected_candidate_id": "togo-9718c104999655d7a224:file-1",
+      "selection_ordinal": 54,
+      "family_id": "togo-9718c104999655d7a224",
+      "categories": [
+        "clinical_workflow"
+      ],
+      "title": "Blood pressure measurement child",
+      "source_url": "https://doi.org/10.7875/togopic.2023.131",
+      "original_sha256": "39653320dd9f1cdc2918bcca0ed2b6a408ec6f3c53b35d71ceeef7def79920ad",
+      "original_archive": {
+        "member": "files/39/39653320dd9f1cdc2918bcca0ed2b6a408ec6f3c53b35d71ceeef7def79920ad.png",
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42261598057-1-b0000.tar.gz"
+      },
+      "format": "png",
+      "structure": "raster",
+      "preview": {
+        "archive": {
+          "member": "previews/39653320dd9f1cdc2918bcca0ed2b6a408ec6f3c53b35d71ceeef7def79920ad.png",
+          "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42261598057-1-b0000.tar.gz"
+        },
+        "format": "png",
+        "height": 400,
+        "path": "previews/39653320dd9f1cdc2918bcca0ed2b6a408ec6f3c53b35d71ceeef7def79920ad.png",
+        "sha256": "4f43e725855a09eafe82d8bf16ecfabd90339cb26dcb875902cedeca28c9666e",
+        "size_bytes": 20588,
+        "width": 400
+      },
+      "review_question": "Extract the exact archived RGBA preview bytes only. Prepare bounded display QA for white/dark/checkerboard transparency,96/48px detail and labels, then record actual visual limitations. Prior object/source review is reused; extraction and a white contact sheet are not display QA, scientific acceptance, native editability or full composition approval. Preserve original artwork and do not infer additional species/clinical/experimental facts.",
+      "prior_visual_evidence": {
+        "path": "data/relevance-reviews/frozen-3.4.1-actions-clinical-omics.json",
+        "sha256": "647485d79bb88e9281778a7e3cf71f0d344d7df8fdaedcbd90759cce631a5ff5",
+        "json_pointer": "/queries/19/result_judgments/4",
+        "query_id": "clinical_workflow-blood-pressure-en",
+        "observations": "成人陪伴儿童坐于桌前，工作人员与儿童的上臂袖带/测压器具交互；可用于儿童测压场景，不推断袖带规格或测量结果。",
+        "visual_verdict": "relevant",
+        "reviewer": "Codex registry_acceptance; direct visual inspection",
+        "reviewed_at": "2026-11-06T21:57:36.219097+00:00"
+      },
+      "recommended_use": "儿童、陪护者与工作人员的测压场景，用于儿科测量情境。",
+      "limitations": [
+        "不推断袖带规格、儿童精确年龄或测量结果；不是招募或随访的已完成表达。"
+      ]
+    },
+    {
+      "source": "togo",
+      "source_id": "1703",
+      "asset_id": "togo-e58166ac8684f2ff6f0a",
+      "selected_candidate_id": "togo-e58166ac8684f2ff6f0a:file-0",
+      "selection_ordinal": 55,
+      "family_id": "togo-e58166ac8684f2ff6f0a",
+      "categories": [
+        "clinical_workflow"
+      ],
+      "title": "Drawing blood female",
+      "source_url": "https://doi.org/10.7875/togopic.2023.139",
+      "original_sha256": "043e3915172ac71ac24ef365f6d10795d34672784c06080fb99d5aebd112ca8d",
+      "original_archive": {
+        "member": "files/04/043e3915172ac71ac24ef365f6d10795d34672784c06080fb99d5aebd112ca8d.svg",
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42261598057-1-b0000.tar.gz"
+      },
+      "format": "svg",
+      "structure": "pure_vector",
+      "preview": {
+        "archive": {
+          "member": "previews/043e3915172ac71ac24ef365f6d10795d34672784c06080fb99d5aebd112ca8d.png",
+          "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42261598057-1-b0000.tar.gz"
+        },
+        "format": "png",
+        "height": 512,
+        "path": "previews/043e3915172ac71ac24ef365f6d10795d34672784c06080fb99d5aebd112ca8d.png",
+        "sha256": "aada6b11a1676c72837b0f2afea81cb6cbe36f692ee8cd6b2047d1084449a8c5",
+        "size_bytes": 35137,
+        "width": 512
+      },
+      "review_question": "Extract the exact archived RGBA preview bytes only. Prepare bounded display QA for white/dark/checkerboard transparency,96/48px detail and labels, then record actual visual limitations. Prior object/source review is reused; extraction and a white contact sheet are not display QA, scientific acceptance, native editability or full composition approval. Preserve original artwork and do not infer additional species/clinical/experimental facts.",
+      "prior_visual_evidence": {
+        "path": "data/relevance-reviews/frozen-3.4.1-actions-clinical-omics.json",
+        "sha256": "647485d79bb88e9281778a7e3cf71f0d344d7df8fdaedcbd90759cce631a5ff5",
+        "json_pointer": "/queries/1/result_judgments/3",
+        "query_id": "experimental_actions-blood-collection-en",
+        "observations": "桌旁成人女性伸臂，工作人员在其手臂前侧操作，束带及手臂支撑清楚；可用于采血步骤，不将示意器材当作操作规范。",
+        "visual_verdict": "relevant",
+        "reviewer": "Codex registry_acceptance; direct visual inspection",
+        "reviewed_at": "2026-11-06T21:57:36.219097+00:00"
+      },
+      "recommended_use": "成人女性受试者的临床采样步骤，作为临床操作场景。",
+      "limitations": [
+        "此项独立类别判断来自采样角色与实际图审，不从目录标签自证；不据此宣称招募、随机分组或随访。"
+      ]
+    },
+    {
+      "source": "nih-bioart",
+      "source_id": "685",
+      "asset_id": "nih-bioart-caed41384908a7f81cf9",
+      "selected_candidate_id": "nih-bioart-caed41384908a7f81cf9:file-0",
+      "selection_ordinal": 56,
+      "family_id": "nih-bioart-caed41384908a7f81cf9",
+      "categories": [
+        "omics_data"
+      ],
+      "title": "RNA-Seq",
+      "source_url": "https://bioart.niaid.nih.gov/bioart/685",
+      "original_sha256": "0f05cb0e3e44b1d73ca68959d51e1898510624cb145ca4f06571a1c05b522863",
+      "original_archive": {
+        "member": "files/0f/0f05cb0e3e44b1d73ca68959d51e1898510624cb145ca4f06571a1c05b522863.svg",
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/nih-bioart-42236561214-1-b0001.tar.gz"
+      },
+      "format": "svg",
+      "structure": "pure_vector",
+      "preview": {
+        "archive": {
+          "member": "previews/0f05cb0e3e44b1d73ca68959d51e1898510624cb145ca4f06571a1c05b522863.png",
+          "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/nih-bioart-42236561214-1-b0001.tar.gz"
+        },
+        "format": "png",
+        "height": 512,
+        "path": "previews/0f05cb0e3e44b1d73ca68959d51e1898510624cb145ca4f06571a1c05b522863.png",
+        "sha256": "c8dbf9bb6f69d0b95602a73782bea3dc73830ba8c9426c6344fddb178f57dbb0",
+        "size_bytes": 35689,
+        "width": 512
+      },
+      "review_question": "Extract the exact archived RGBA preview bytes only. Prepare bounded display QA for white/dark/checkerboard transparency,96/48px detail and labels, then record actual visual limitations. Prior object/source review is reused; extraction and a white contact sheet are not display QA, scientific acceptance, native editability or full composition approval. Preserve original artwork and do not infer additional species/clinical/experimental facts.",
+      "prior_visual_evidence": {
+        "path": "data/relevance-reviews/frozen-3.4.1-actions-clinical-omics.json",
+        "sha256": "647485d79bb88e9281778a7e3cf71f0d344d7df8fdaedcbd90759cce631a5ff5",
+        "json_pointer": "/queries/21/result_judgments/2",
+        "query_id": "omics_data-rnaseq-en",
+        "observations": "可见独立台式测序设备、上部显示屏和前部舱体；exact源记录NIH BioArt685明确称RNA-Seq。按原允许可组合部件的要求，可用于RNA测序方法中的设备步骤；不是完整流程，也不凭外观补品牌、型号或具体文库技术。",
+        "visual_verdict": "relevant",
+        "reviewer": "Codex registry_acceptance; direct visual inspection",
+        "reviewed_at": "2026-11-06T21:57:36.219097+00:00"
+      },
+      "recommended_use": "RNA测序方法配图中的设备步骤部件。",
+      "limitations": [
+        "来源NIH BioArt685支持RNA-Seq用途；不是完整RNA测序流程，不补品牌、型号或文库技术。"
+      ]
+    },
+    {
+      "source": "bioicons",
+      "source_id": "cc-0/Genetics/PacBio/img_sequencer_short_read01.svg",
+      "asset_id": "bioicons-6c132d72a134686b571f",
+      "selected_candidate_id": "bioicons-6c132d72a134686b571f:file-0",
+      "selection_ordinal": 57,
+      "family_id": "bioicons-6c132d72a134686b571f",
+      "categories": [
+        "omics_data"
+      ],
+      "title": "img sequencer short read01",
+      "source_url": "https://github.com/duerrsimon/bioicons/blob/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-0/Genetics/PacBio/img_sequencer_short_read01.svg",
+      "original_sha256": "a769949ed12aa00f8fdc428ec66c74c5038e11bc530ec1db30d31cc8d1176024",
+      "original_archive": {
+        "member": "files/a7/a769949ed12aa00f8fdc428ec66c74c5038e11bc530ec1db30d31cc8d1176024.svg",
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42239971379-1-b0000.tar.gz"
+      },
+      "format": "svg",
+      "structure": "pure_vector",
+      "preview": {
+        "archive": {
+          "member": "previews/a769949ed12aa00f8fdc428ec66c74c5038e11bc530ec1db30d31cc8d1176024.png",
+          "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42239971379-1-b0000.tar.gz"
+        },
+        "format": "png",
+        "height": 384,
+        "path": "previews/a769949ed12aa00f8fdc428ec66c74c5038e11bc530ec1db30d31cc8d1176024.png",
+        "sha256": "ea3fe51e10fcacfacb1e37ae842dbebda3ca7043dc821a3babd13dfc26cc446a",
+        "size_bytes": 4675,
+        "width": 512
+      },
+      "review_question": "Extract the exact archived RGBA preview bytes only. Prepare bounded display QA for white/dark/checkerboard transparency,96/48px detail and labels, then record actual visual limitations. Prior object/source review is reused; extraction and a white contact sheet are not display QA, scientific acceptance, native editability or full composition approval. Preserve original artwork and do not infer additional species/clinical/experimental facts.",
+      "prior_visual_evidence": {
+        "path": "data/relevance-reviews/frozen-3.4.1-actions-clinical-omics.json",
+        "sha256": "647485d79bb88e9281778a7e3cf71f0d344d7df8fdaedcbd90759cce631a5ff5",
+        "json_pointer": "/queries/25/result_judgments/1",
+        "query_id": "omics_data-sequencer-en",
+        "observations": "黑色大型箱式仪器有分舱面板与开口线条，文件来源标short read sequencer；整体轮廓可取用，不从图面断言厂家、性能或某个测序平台。",
+        "visual_verdict": "relevant",
+        "reviewer": "Codex registry_acceptance; direct visual inspection",
+        "reviewed_at": "2026-11-06T21:57:36.219097+00:00"
+      },
+      "recommended_use": "来源标注short-read的测序设备对象。",
+      "limitations": [
+        "仅沿用固定来源名称，不从外观追加平台型号、通量或性能，不表示已测得数据。"
+      ]
+    },
+    {
+      "source": "bioicons",
+      "source_id": "cc-0/Genetics/PacBio/img_sequencer_long_read05.svg",
+      "asset_id": "bioicons-a94c4db0bd505d9e21b3",
+      "selected_candidate_id": "bioicons-a94c4db0bd505d9e21b3:file-0",
+      "selection_ordinal": 58,
+      "family_id": "bioicons-a94c4db0bd505d9e21b3",
+      "categories": [
+        "omics_data"
+      ],
+      "title": "img sequencer long read05",
+      "source_url": "https://github.com/duerrsimon/bioicons/blob/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-0/Genetics/PacBio/img_sequencer_long_read05.svg",
+      "original_sha256": "60be45316c17d981be896a83cae68b484d2a135cd0b05cc9187e37f63f07fc59",
+      "original_archive": {
+        "member": "files/60/60be45316c17d981be896a83cae68b484d2a135cd0b05cc9187e37f63f07fc59.svg",
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42239971379-1-b0000.tar.gz"
+      },
+      "format": "svg",
+      "structure": "pure_vector",
+      "preview": {
+        "archive": {
+          "member": "previews/60be45316c17d981be896a83cae68b484d2a135cd0b05cc9187e37f63f07fc59.png",
+          "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42239971379-1-b0000.tar.gz"
+        },
+        "format": "png",
+        "height": 512,
+        "path": "previews/60be45316c17d981be896a83cae68b484d2a135cd0b05cc9187e37f63f07fc59.png",
+        "sha256": "4b213cededab4e128683d74f723f761ae3935dd296528a158bb9400c8a224d19",
+        "size_bytes": 10026,
+        "width": 292
+      },
+      "review_question": "Extract the exact archived RGBA preview bytes only. Prepare bounded display QA for white/dark/checkerboard transparency,96/48px detail and labels, then record actual visual limitations. Prior object/source review is reused; extraction and a white contact sheet are not display QA, scientific acceptance, native editability or full composition approval. Preserve original artwork and do not infer additional species/clinical/experimental facts.",
+      "prior_visual_evidence": {
+        "path": "data/relevance-reviews/frozen-3.4.1-actions-clinical-omics.json",
+        "sha256": "647485d79bb88e9281778a7e3cf71f0d344d7df8fdaedcbd90759cce631a5ff5",
+        "json_pointer": "/queries/25/result_judgments/4",
+        "query_id": "omics_data-sequencer-en",
+        "observations": "立式黑色箱体、顶部侧边蓝色块和少量品牌文字可见，来源标long read sequencer；适合设备示意，保留品牌出处且不声称未核型号/参数。",
+        "visual_verdict": "relevant",
+        "reviewer": "Codex registry_acceptance; direct visual inspection",
+        "reviewed_at": "2026-11-06T21:57:36.219097+00:00"
+      },
+      "recommended_use": "来源标注long-read的立式测序设备对象。",
+      "limitations": [
+        "保留品牌出处；不从外观推断具体型号或参数，品牌小字的可读性待显示检查。"
+      ]
+    },
+    {
+      "source": "togo",
+      "source_id": "501",
+      "asset_id": "togo-fa9ee4a114af11864902",
+      "selected_candidate_id": "togo-fa9ee4a114af11864902:file-0",
+      "selection_ordinal": 59,
+      "family_id": "togo-fa9ee4a114af11864902",
+      "categories": [
+        "omics_data"
+      ],
+      "title": "Portable sequencer",
+      "source_url": "https://doi.org/10.7875/togopic.2017.35",
+      "original_sha256": "1d2d0b1f1542f96197f41b939401eb4c38852b9451c77d30f280bd3322be461a",
+      "original_archive": {
+        "member": "files/1d/1d2d0b1f1542f96197f41b939401eb4c38852b9451c77d30f280bd3322be461a.png",
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42249870031-1-b0001.tar.gz"
+      },
+      "format": "png",
+      "structure": "raster",
+      "preview": {
+        "archive": {
+          "member": "previews/1d2d0b1f1542f96197f41b939401eb4c38852b9451c77d30f280bd3322be461a.png",
+          "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42249870031-1-b0001.tar.gz"
+        },
+        "format": "png",
+        "height": 512,
+        "path": "previews/1d2d0b1f1542f96197f41b939401eb4c38852b9451c77d30f280bd3322be461a.png",
+        "sha256": "e14f3a6bedcdf0ad49a13e032cda8a3530c7db6deb9ea8d6f352c04fe8fa375d",
+        "size_bytes": 94374,
+        "width": 512
+      },
+      "review_question": "Extract the exact archived RGBA preview bytes only. Prepare bounded display QA for white/dark/checkerboard transparency,96/48px detail and labels, then record actual visual limitations. Prior object/source review is reused; extraction and a white contact sheet are not display QA, scientific acceptance, native editability or full composition approval. Preserve original artwork and do not infer additional species/clinical/experimental facts.",
+      "prior_visual_evidence": {
+        "path": "data/relevance-reviews/frozen-3.4.1-actions-clinical-omics.json",
+        "sha256": "647485d79bb88e9281778a7e3cf71f0d344d7df8fdaedcbd90759cce631a5ff5",
+        "json_pointer": "/queries/25/result_judgments/7",
+        "query_id": "omics_data-sequencer-en",
+        "observations": "笔记本电脑通过线缆连接小型便携模块，来源标Portable sequencer；能够表达便携测序设备组合，不推断品牌、实时数据或操作结果。",
+        "visual_verdict": "relevant",
+        "reviewer": "Codex registry_acceptance; direct visual inspection",
+        "reviewed_at": "2026-11-06T21:57:36.219097+00:00"
+      },
+      "recommended_use": "便携测序模块及其连接电脑的设备组合。",
+      "limitations": [
+        "不推断品牌、即时结果、数据内容或操作结果；这是有明确来源的设备场景。"
+      ]
+    },
+    {
+      "source": "togo",
+      "source_id": "586",
+      "asset_id": "togo-a094e62fb31b65be0d8b",
+      "selected_candidate_id": "togo-a094e62fb31b65be0d8b:file-1",
+      "selection_ordinal": 60,
+      "family_id": "togo-a094e62fb31b65be0d8b",
+      "categories": [
+        "omics_data"
+      ],
+      "title": "DNA sequencer 12",
+      "source_url": "https://doi.org/10.7875/togopic.2019.34",
+      "original_sha256": "e2b9c40b097842577202e727863906ebd81777ec132c59e242361cb3bc4665c4",
+      "original_archive": {
+        "member": "files/e2/e2b9c40b097842577202e727863906ebd81777ec132c59e242361cb3bc4665c4.png",
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42249870031-1-b0001.tar.gz"
+      },
+      "format": "png",
+      "structure": "raster",
+      "preview": {
+        "archive": {
+          "member": "previews/e2b9c40b097842577202e727863906ebd81777ec132c59e242361cb3bc4665c4.png",
+          "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42249870031-1-b0001.tar.gz"
+        },
+        "format": "png",
+        "height": 512,
+        "path": "previews/e2b9c40b097842577202e727863906ebd81777ec132c59e242361cb3bc4665c4.png",
+        "sha256": "85db25f9bdbf4a0517d3867a7c5a0204815e7cc374c23bf4f0f7b8bf7fb7730f",
+        "size_bytes": 64199,
+        "width": 512
+      },
+      "review_question": "Extract the exact archived RGBA preview bytes only. Prepare bounded display QA for white/dark/checkerboard transparency,96/48px detail and labels, then record actual visual limitations. Prior object/source review is reused; extraction and a white contact sheet are not display QA, scientific acceptance, native editability or full composition approval. Preserve original artwork and do not infer additional species/clinical/experimental facts.",
+      "prior_visual_evidence": {
+        "path": "data/relevance-reviews/frozen-3.4.1-actions-clinical-omics.json",
+        "sha256": "647485d79bb88e9281778a7e3cf71f0d344d7df8fdaedcbd90759cce631a5ff5",
+        "json_pointer": "/queries/25/result_judgments/3",
+        "query_id": "omics_data-sequencer-en",
+        "observations": "桌面盒式设备上方有多个安装位及正面指示部件，来源标DNA sequencer；可用作测序设备图，不猜通量或仪器品牌。",
+        "visual_verdict": "relevant",
+        "reviewer": "Codex registry_acceptance; direct visual inspection",
+        "reviewed_at": "2026-11-06T21:57:36.219097+00:00"
+      },
+      "recommended_use": "DNA测序仪对象，展示带多个安装位的桌面设备形态。",
+      "limitations": [
+        "不推断测序原理、品牌或通量；与其他对象是不同家族，不是同作品的格式替换。"
+      ]
+    }
+  ],
+  "selection_reference": {
+    "path": "data/curated-reviews/selected-additional-12-42289434868.json",
+    "sha256": "96948b6b66292622ecfc6cec683ec4e52d413048f845eb64df41ad77806c8e2f"
+  }
+}

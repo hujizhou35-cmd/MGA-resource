@@ -1,0 +1,3928 @@
+{
+  "schema_version": 1,
+  "reviewer": "Codex scope_publication_check; explicit selection from previously inspected exact assets",
+  "reviewed_at": "2026-11-07T00:48:42.083183+00:00",
+  "independent_from_metadata_matcher": true,
+  "benchmark_version": "2026-11-06.v1",
+  "scope": "12 additional curated selections, metadata and prior-view evidence only; display and composition QA not performed in this selection step. Does not change old48 or frozen120.",
+  "catalog_binding": {
+    "path": "build/final-scope-baseline/assembly-42289434868-1.catalog.jsonl",
+    "sha256": "5c90306415ce5e7f36e875c7f57b19a91930aacfeeaeecdf9ad7662770f9a3fe"
+  },
+  "manifest_binding": {
+    "path": "build/cloud-recovery-20261107/frozen-42289434868-3.4.3.publish_manifest.json",
+    "sha256": "a4fe0424ee8ecc32096090ef295242bdaa04b9ce29ff4f7a80948c95516d5436",
+    "file_count": 19473,
+    "officially_published": false
+  },
+  "bindings": {
+    "mapping_sha256": "1988b7a52e3d727442f3f0ee3112e73915845b1514833fc95964d62b99e239d9",
+    "base_judgments_sha256": "d231951d084ff2d53ae5d35d2f1b9ff6591e467bb086afe0dfab517929c4b433",
+    "old48_sha256": "32011683c6259d0221e39ac5e6748dc460d451d91ec0af74d6851d8dba1ed78c",
+    "manifest_sha256": "a4fe0424ee8ecc32096090ef295242bdaa04b9ce29ff4f7a80948c95516d5436",
+    "bundle_sha256": "54b055c631c5fd814a7012f176151eb86d65c66849f8b2c71ea3a53ae44dc3a0",
+    "restore_evidence_sha256": "bdfdf932d22b6ce2a008de38873ac70ba8dcb1dc3235b474f40f9f8fbc9eb4dd"
+  },
+  "source_documents": [
+    {
+      "path": "data/curated-reviews/selected-object-components-42289434868.json",
+      "sha256": "32011683c6259d0221e39ac5e6748dc460d451d91ec0af74d6851d8dba1ed78c"
+    },
+    {
+      "path": "build/current-acceptance-evidence-42312769493/mapping.json",
+      "sha256": "1988b7a52e3d727442f3f0ee3112e73915845b1514833fc95964d62b99e239d9"
+    },
+    {
+      "path": "build/current-acceptance-evidence-42312769493/judgments.json",
+      "sha256": "d231951d084ff2d53ae5d35d2f1b9ff6591e467bb086afe0dfab517929c4b433"
+    },
+    {
+      "path": "build/cloud-recovery-20261107/frozen-42289434868-3.4.3.publish_manifest.json",
+      "sha256": "a4fe0424ee8ecc32096090ef295242bdaa04b9ce29ff4f7a80948c95516d5436"
+    },
+    {
+      "path": "build/cloud-recovery-20261107/build-evidence/qa-20261107-42289434868-3.4.3.bundle.json",
+      "sha256": "54b055c631c5fd814a7012f176151eb86d65c66849f8b2c71ea3a53ae44dc3a0"
+    },
+    {
+      "path": "build/cloud-recovery-20261107/restore-evidence/qa-20261107-42289434868-3.4.3-42312769493-1.restore_evidence.json",
+      "sha256": "bdfdf932d22b6ce2a008de38873ac70ba8dcb1dc3235b474f40f9f8fbc9eb4dd"
+    },
+    {
+      "path": "build/final-scope-baseline/assembly-42283380295-1.internal-catalog.jsonl",
+      "sha256": "8d04bf38b1469ca6690972dd0f140f06e76411b96e245efff67f9efa73ee7970"
+    },
+    {
+      "path": "build/final-scope-baseline/release-assets-42289434868.flat.json",
+      "sha256": "f8fbefd4b736ce04b84185fe50747bc5b818a2b8893b84c89ea10a067f373b1f"
+    },
+    {
+      "path": "data/benchmark.json",
+      "sha256": "ce0282afeb4afbcee8fdef1c6f937844ef569cabf16ba7909e22bf86b1096e92"
+    },
+    {
+      "path": "data/relevance-reviews/frozen-3.4.1-organs-tissues-organelles.json",
+      "sha256": "f5df2dc1671742e09a94f29c2ecdade4956dfa822821ff319a801623e59dc37d"
+    },
+    {
+      "path": "data/relevance-reviews/frozen-3.4.1-actions-clinical-omics.json",
+      "sha256": "647485d79bb88e9281778a7e3cf71f0d344d7df8fdaedcbd90759cce631a5ff5"
+    },
+    {
+      "path": "docs/source-rights-decision-20261107.md",
+      "sha256": "79ee008f3d76ed1288db9ea26e6250dc661893a551ebe91eae352227f1cc4976"
+    },
+    {
+      "path": "data/diagnostics/servier-rights-assessment.json",
+      "sha256": "9c4d9985f984413ebf35fe5ebaf85f164f6d6f95948afe73f4ff98515b274088"
+    },
+    {
+      "path": "data/relevance-reviews/frozen-3.4.1-animals-people-microbes.json",
+      "sha256": "c7df273d5e0b7ed7fec544c42267a9d977407476c13cba8195ea60ab4873424c"
+    }
+  ],
+  "review_method": "Reused prior actual visual observations at exact JSON pointers. This step explicitly selects category and use, verifies frozen source/license/collection receipt metadata and the independent restore association. No new images viewed, downloaded or altered.",
+  "reviewed_sheets": [],
+  "curated": [
+    {
+      "ordinal": 49,
+      "candidate_id": "bioicons-49e695f1a88f41f5dce1:file-0",
+      "family_id": "bioicons-49e695f1a88f41f5dce1",
+      "asset_id": "bioicons-49e695f1a88f41f5dce1",
+      "title": "nucleus full 3d",
+      "categories": [
+        "organelles"
+      ],
+      "usable": true,
+      "source_evidence_checked": true,
+      "license_checked": true,
+      "original_download_checked": true,
+      "visual_evidence_notes": "独立圆形核、双层外边界和孔状结构可辨，源名nucleus full 3d；适合简化三维细胞核示意，不推断具体物种或病理。",
+      "recommended_use": "简化三维细胞核对象，补充独立核的完整外形。",
+      "limitations": [
+        "不推断物种、病理或真实尺寸；来源的双层与核孔为示意。"
+      ],
+      "category_evidence": {
+        "basis": "explicit_curated_category_selection_using_prior_actual_visual_review_and_exact_source_records",
+        "observed": "独立圆形核、双层外边界和孔状结构可辨，源名nucleus full 3d；适合简化三维细胞核示意，不推断具体物种或病理。",
+        "category_role": "简化三维细胞核对象，补充独立核的完整外形。",
+        "not_inferred_from_catalog_taxonomy": true,
+        "not_asserting_a_new_benchmark_concept": true
+      },
+      "original_sha256": "534948dd77f32890efce6924dc3ae15a707c41cc56696cb48b505d9847e1a4d4",
+      "preview_sha256": "467ceed7e10d0886f9ebfaf09a9b1f89ca395b39b7c43e46b7e4d8ee99b1601b",
+      "original_archive": {
+        "member": "files/53/534948dd77f32890efce6924dc3ae15a707c41cc56696cb48b505d9847e1a4d4.svg",
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42251588741-1-b0002.tar.gz"
+      },
+      "preview_archive": {
+        "member": "previews/534948dd77f32890efce6924dc3ae15a707c41cc56696cb48b505d9847e1a4d4.png",
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42251588741-1-b0002.tar.gz"
+      },
+      "format": "svg",
+      "structure": "pure_vector",
+      "source_records": [
+        {
+          "asset_id": "bioicons-49e695f1a88f41f5dce1",
+          "attribution": "nucleus full 3d — Servier Medical Art by Servier; CC BY 3.0 (https://creativecommons.org/licenses/by/3.0/); fixed source: https://github.com/duerrsimon/bioicons/blob/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-3.0/Intracellular_components/Servier/nucleus-full-3d.svg; via Bioicons. Historical SVG copy distributed through Bioicons; no new artwork modification by MGA-resource.",
+          "author": "Servier",
+          "categories": [],
+          "distribution_status": "license_recorded",
+          "license": "CC-BY-3.0",
+          "source": "bioicons",
+          "source_id": "cc-by-3.0/Intracellular_components/Servier/nucleus-full-3d.svg",
+          "source_url": "https://github.com/duerrsimon/bioicons/blob/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-3.0/Intracellular_components/Servier/nucleus-full-3d.svg",
+          "tags": [
+            "Intracellular components"
+          ],
+          "taxonomy": [
+            "organelles"
+          ],
+          "title": "nucleus full 3d",
+          "upstream_category": "Intracellular_components",
+          "url": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-3.0/Intracellular_components/Servier/nucleus-full-3d.svg"
+        }
+      ],
+      "all_provenance": [
+        {
+          "asset_id": "bioicons-49e695f1a88f41f5dce1",
+          "attribution": "nucleus full 3d — Servier Medical Art by Servier; CC BY 3.0 (https://creativecommons.org/licenses/by/3.0/); fixed source: https://github.com/duerrsimon/bioicons/blob/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-3.0/Intracellular_components/Servier/nucleus-full-3d.svg; via Bioicons. Historical SVG copy distributed through Bioicons; no new artwork modification by MGA-resource.",
+          "author": "Servier",
+          "categories": [],
+          "distribution_status": "license_recorded",
+          "license": "CC-BY-3.0",
+          "source": "bioicons",
+          "source_id": "cc-by-3.0/Intracellular_components/Servier/nucleus-full-3d.svg",
+          "source_url": "https://github.com/duerrsimon/bioicons/blob/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-3.0/Intracellular_components/Servier/nucleus-full-3d.svg",
+          "tags": [
+            "Intracellular components"
+          ],
+          "taxonomy": [
+            "organelles"
+          ],
+          "title": "nucleus full 3d",
+          "upstream_category": "Intracellular_components",
+          "url": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-3.0/Intracellular_components/Servier/nucleus-full-3d.svg"
+        }
+      ],
+      "source_versions_and_rights": [
+        {
+          "source": "bioicons",
+          "source_id": "cc-by-3.0/Intracellular_components/Servier/nucleus-full-3d.svg",
+          "title": "nucleus full 3d",
+          "author": "Servier",
+          "license": "CC-BY-3.0",
+          "license_url": "https://creativecommons.org/licenses/by/3.0/",
+          "attribution": "nucleus full 3d — Servier Medical Art by Servier; CC BY 3.0 (https://creativecommons.org/licenses/by/3.0/); fixed source: https://github.com/duerrsimon/bioicons/blob/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-3.0/Intracellular_components/Servier/nucleus-full-3d.svg; via Bioicons. Historical SVG copy distributed through Bioicons; no new artwork modification by MGA-resource.",
+          "source_url": "https://github.com/duerrsimon/bioicons/blob/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-3.0/Intracellular_components/Servier/nucleus-full-3d.svg",
+          "upstream_revision": "d29e766ea7580b8063c4f47b29e872db40a4d979"
+        }
+      ],
+      "license_check_basis": "Exact frozen file-level provenance, internal records and GitHub records/receipt digests checked. Existing recorded licenses and user-authorized historical Servier decision retained. No new legal opinion or source-site fetch.",
+      "collection_source_evidence": [
+        {
+          "internal_catalog": {
+            "path": "build/final-scope-baseline/assembly-42283380295-1.internal-catalog.jsonl",
+            "sha256": "8d04bf38b1469ca6690972dd0f140f06e76411b96e245efff67f9efa73ee7970",
+            "jsonl_line": 1746
+          },
+          "source": "bioicons",
+          "source_id": "cc-by-3.0/Intracellular_components/Servier/nucleus-full-3d.svg",
+          "source_index": 1447,
+          "selected_file_validation": "machine_checked_and_rendered",
+          "record_acquisition_status": "acquired",
+          "artifact_evidence": {
+            "source": "bioicons",
+            "run_id": "42251588741-1",
+            "repository": "hujizhou35-cmd/MGA-resource",
+            "release_tag": "collection-20261106",
+            "discovery_sha256": "6e3354582fd6b2c52968dcfe586d4ca029ff7dfc92a4b28e81d5e5a9d1bb3a6e",
+            "archive": "bioicons-42251588741-1-b0002.tar.gz",
+            "archive_bytes": 45378745,
+            "records_file": "bioicons-42251588741-1-b0002.records.jsonl",
+            "records_sha256": "2b96caf5cd3f571aee9ab4394155560e8f1c1941dfada8dfd2918b90e2ef2878",
+            "failures_file": "bioicons-42251588741-1-b0002.failures.json",
+            "failures_sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+            "source_index": 1447,
+            "archive_sha256": "673617ecbf86e8ee0e49b4b74ccf34ec680fa4f37f9b71100e2e89e724e843ce",
+            "receipt_file": "bioicons-42251588741-1-b0002.receipt.json",
+            "receipt_sha256": "38411f1ea86d7a9037df05fa530a05b442cfcf253d83c0cda35891fe37906fad"
+          },
+          "asset_evidence": [
+            {
+              "kind": "records",
+              "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42251588741-1-b0002.records.jsonl",
+              "sha256": "2b96caf5cd3f571aee9ab4394155560e8f1c1941dfada8dfd2918b90e2ef2878",
+              "size_bytes": 2860584,
+              "matches_internal_record": true
+            },
+            {
+              "kind": "receipt",
+              "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42251588741-1-b0002.receipt.json",
+              "sha256": "38411f1ea86d7a9037df05fa530a05b442cfcf253d83c0cda35891fe37906fad",
+              "size_bytes": 111678,
+              "matches_internal_record": true
+            }
+          ]
+        }
+      ],
+      "exact_prior_review": {
+        "path": "data/relevance-reviews/frozen-3.4.1-organs-tissues-organelles.json",
+        "sha256": "f5df2dc1671742e09a94f29c2ecdade4956dfa822821ff319a801623e59dc37d",
+        "json_pointer": "/queries/23/result_judgments/4",
+        "query_id": "organelles-nucleus-en",
+        "observations": "独立圆形核、双层外边界和孔状结构可辨，源名nucleus full 3d；适合简化三维细胞核示意，不推断具体物种或病理。",
+        "visual_verdict": "relevant",
+        "reviewer": "root-agent/direct-visual-review",
+        "reviewed_at": "2026-11-06T22:09:04.592588+00:00"
+      },
+      "viewed_sheet": {
+        "member": "concepts/organelles-nucleus.png",
+        "member_sha256": "0b7c14b029212488a5047b403e330c79cf03197c8541b9298552e3de4e47517a",
+        "sha256": "a4a7e7e6a9e2750472d39ac1d9acbb34e8461d559d6b3afc2141b1ecd76ed196",
+        "tile": 5,
+        "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/frozen-review-42298772894-1.tar.gz"
+      },
+      "new_visual_inspection_performed": false,
+      "selection_confirmation_is_new": true,
+      "text_content": {
+        "status": "unknown",
+        "basis": "Existing catalog text property not reclassified during selection preparation; observed labels remain in the reused visual notes.",
+        "cleanup_advice": "selected_working_copy_only_if_needed"
+      },
+      "original_verification": {
+        "route": "independent_remote_restore_of_identical_bytes",
+        "restore_evidence": {
+          "path": "build/cloud-recovery-20261107/restore-evidence/qa-20261107-42289434868-3.4.3-42312769493-1.restore_evidence.json",
+          "sha256": "bdfdf932d22b6ce2a008de38873ac70ba8dcb1dc3235b474f40f9f8fbc9eb4dd"
+        },
+        "bundle_index": {
+          "path": "build/cloud-recovery-20261107/build-evidence/qa-20261107-42289434868-3.4.3.bundle.json",
+          "sha256": "54b055c631c5fd814a7012f176151eb86d65c66849f8b2c71ea3a53ae44dc3a0"
+        },
+        "restored_objects": [
+          {
+            "clean_member": "objects/534948dd77f32890efce6924dc3ae15a707c41cc56696cb48b505d9847e1a4d4.svg",
+            "pack_sha256": "162a83a194bef94c4a349a7de87d99b853f5581a7f76132f7a2b64d583720c9d",
+            "pack_url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/publish-qa-20261107-42289434868-3.4.3/qa-20261107-42289434868-3.4.3.static-0004.tar.gz",
+            "role": "original",
+            "sha256": "534948dd77f32890efce6924dc3ae15a707c41cc56696cb48b505d9847e1a4d4",
+            "size_bytes": 21308
+          },
+          {
+            "clean_member": "objects/467ceed7e10d0886f9ebfaf09a9b1f89ca395b39b7c43e46b7e4d8ee99b1601b.png",
+            "pack_sha256": "162a83a194bef94c4a349a7de87d99b853f5581a7f76132f7a2b64d583720c9d",
+            "pack_url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/publish-qa-20261107-42289434868-3.4.3/qa-20261107-42289434868-3.4.3.static-0004.tar.gz",
+            "role": "preview",
+            "sha256": "467ceed7e10d0886f9ebfaf09a9b1f89ca395b39b7c43e46b7e4d8ee99b1601b",
+            "size_bytes": 62603
+          }
+        ],
+        "fresh_original_download_performed": false
+      },
+      "checks": {
+        "recognizable_at_sheet_scale": "reused_prior_actual_review",
+        "source_identity_corroborated": true,
+        "species_and_state_not_extended_beyond_source": true,
+        "native_editability_tested_in_this_review": false,
+        "dark_background_overlay": "not_tested",
+        "white_background_overlay": "not_tested",
+        "checkerboard_transparency": "not_tested",
+        "small_size_96px": "not_tested",
+        "small_size_48px": "not_tested",
+        "cross_source_composition": "not_tested",
+        "label_readability_at_original_resolution": "not_tested"
+      },
+      "visual_display_review_completed": false,
+      "full_curated_requirement_passed": false,
+      "license_resolution": [
+        {
+          "decision_id": "servier-pinned-ccby3-20261107",
+          "pinned_commit": "d29e766ea7580b8063c4f47b29e872db40a4d979",
+          "license": "CC-BY-3.0",
+          "resolved_at": "2026-11-07",
+          "basis": "Existing historical CC BY 3.0 distribution through a fixed Bioicons commit; user explicitly chose inclusion.",
+          "evidence_urls": [
+            "https://github.com/duerrsimon/bioicons/blob/d29e766ea7580b8063c4f47b29e872db40a4d979/README.md",
+            "https://github.com/duerrsimon/bioicons/blob/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-3.0/LICENSE",
+            "https://github.com/duerrsimon/bioicons/blob/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/authors.json",
+            "https://creativecommons.org/licenses/by/3.0/legalcode.en"
+          ],
+          "current_terms_conflict": {
+            "url": "https://smart.servier.com/using-smart-images-what-you-can-do/",
+            "question": "Educational game/app use",
+            "quote": "not marketed as a standalone image library or collection",
+            "assessment": "This is a real restriction stated in the current FAQ and should not be concealed. It conflicts with the general collection/redistribution rights of the standard CC license; it is not a medical-professional-only restriction."
+          },
+          "decision_note": "User explicitly authorized inclusion of these 1,375 pinned historical CC BY 3.0 SVG copies on 2026-11-07 while retaining attribution, fixed provenance and the current FAQ conflict. This is not a new Servier-site collection or a relabeling to CC BY 4.0."
+        }
+      ]
+    },
+    {
+      "ordinal": 50,
+      "candidate_id": "togo-566ebe910304d8f21ef9:file-0",
+      "family_id": "togo-566ebe910304d8f21ef9",
+      "asset_id": "togo-566ebe910304d8f21ef9",
+      "title": "Drawing blood male",
+      "categories": [
+        "experimental_actions"
+      ],
+      "usable": true,
+      "source_evidence_checked": true,
+      "license_checked": true,
+      "original_download_checked": true,
+      "visual_evidence_notes": "桌旁成人男性伸出手臂，工作人员在肘前附近操作，手臂束带、支撑和取样关系清楚；可作采血动作，不推断具体血管及样本量。",
+      "recommended_use": "受试者手臂与工作人员的采血操作场景。",
+      "limitations": [
+        "不推断具体血管、针具规格、样本量或采血途径；不是临床操作培训认证。"
+      ],
+      "category_evidence": {
+        "basis": "explicit_curated_category_selection_using_prior_actual_visual_review_and_exact_source_records",
+        "observed": "桌旁成人男性伸出手臂，工作人员在肘前附近操作，手臂束带、支撑和取样关系清楚；可作采血动作，不推断具体血管及样本量。",
+        "category_role": "受试者手臂与工作人员的采血操作场景。",
+        "not_inferred_from_catalog_taxonomy": true,
+        "not_asserting_a_new_benchmark_concept": true
+      },
+      "original_sha256": "10c58a71b1a29304672c3cc684c4ab8753de6d4e55217443c16ffda5e5a3da1b",
+      "preview_sha256": "87d4541a4329f558509266008a78a544fb9a6caf6d891b8a7bd552a048534657",
+      "original_archive": {
+        "member": "files/10/10c58a71b1a29304672c3cc684c4ab8753de6d4e55217443c16ffda5e5a3da1b.svg",
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42261598057-1-b0000.tar.gz"
+      },
+      "preview_archive": {
+        "member": "previews/10c58a71b1a29304672c3cc684c4ab8753de6d4e55217443c16ffda5e5a3da1b.png",
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42261598057-1-b0000.tar.gz"
+      },
+      "format": "svg",
+      "structure": "pure_vector",
+      "source_records": [
+        {
+          "asset_id": "togo-70d99579cbbfdbc1a6d2",
+          "attribution": "Drawing blood male — <a href=\"https://erikotoyooka.com/\" target=\"_blank\">erico</a>; © 2016 DBCLS TogoTV / CC-BY-4.0; https://doi.org/10.7875/togopic.2023.140",
+          "author": "<a href=\"https://erikotoyooka.com/\" target=\"_blank\">erico</a>",
+          "categories": [],
+          "distribution_status": "license_recorded",
+          "license": "CC-BY-4.0",
+          "source": "togo",
+          "source_id": "1704",
+          "source_url": "https://doi.org/10.7875/togopic.2023.140",
+          "tags": [
+            "Icon",
+            "Medical devices",
+            "Clinical medicine",
+            "Diagnosis",
+            "Treatment",
+            "Nursing",
+            "Mammalia",
+            "Primates",
+            "Homo sapiens"
+          ],
+          "taxonomy": [
+            "clinical_workflow"
+          ],
+          "title": "Drawing blood male",
+          "url": "https://dbarchive.biosciencedbc.jp/data/togo-pic/image/202306_Drawing_Blood_Male.svg"
+        }
+      ],
+      "all_provenance": [
+        {
+          "asset_id": "togo-70d99579cbbfdbc1a6d2",
+          "attribution": "Drawing blood male — <a href=\"https://erikotoyooka.com/\" target=\"_blank\">erico</a>; © 2016 DBCLS TogoTV / CC-BY-4.0; https://doi.org/10.7875/togopic.2023.140",
+          "author": "<a href=\"https://erikotoyooka.com/\" target=\"_blank\">erico</a>",
+          "categories": [],
+          "distribution_status": "license_recorded",
+          "license": "CC-BY-4.0",
+          "source": "togo",
+          "source_id": "1704",
+          "source_url": "https://doi.org/10.7875/togopic.2023.140",
+          "tags": [
+            "Icon",
+            "Medical devices",
+            "Clinical medicine",
+            "Diagnosis",
+            "Treatment",
+            "Nursing",
+            "Mammalia",
+            "Primates",
+            "Homo sapiens"
+          ],
+          "taxonomy": [
+            "clinical_workflow"
+          ],
+          "title": "Drawing blood male",
+          "url": "https://dbarchive.biosciencedbc.jp/data/togo-pic/image/202306_Drawing_Blood_Male.svg"
+        }
+      ],
+      "source_versions_and_rights": [
+        {
+          "source": "togo",
+          "source_id": "1704",
+          "title": "Drawing blood male",
+          "author": "<a href=\"https://erikotoyooka.com/\" target=\"_blank\">erico</a>",
+          "license": "CC-BY-4.0",
+          "license_url": "https://creativecommons.org/licenses/by/4.0/",
+          "attribution": "Drawing blood male — <a href=\"https://erikotoyooka.com/\" target=\"_blank\">erico</a>; © 2016 DBCLS TogoTV / CC-BY-4.0; https://doi.org/10.7875/togopic.2023.140",
+          "source_url": "https://doi.org/10.7875/togopic.2023.140",
+          "upstream_revision": "2023-06-01"
+        }
+      ],
+      "license_check_basis": "Exact frozen file-level provenance, internal records and GitHub records/receipt digests checked. Existing recorded licenses and user-authorized historical Servier decision retained. No new legal opinion or source-site fetch.",
+      "collection_source_evidence": [
+        {
+          "internal_catalog": {
+            "path": "build/final-scope-baseline/assembly-42283380295-1.internal-catalog.jsonl",
+            "sha256": "8d04bf38b1469ca6690972dd0f140f06e76411b96e245efff67f9efa73ee7970",
+            "jsonl_line": 11336
+          },
+          "source": "togo",
+          "source_id": "1704",
+          "source_index": 1703,
+          "selected_file_validation": "machine_checked_and_rendered",
+          "record_acquisition_status": "acquired",
+          "artifact_evidence": {
+            "source": "togo",
+            "run_id": "42261598057-1",
+            "repository": "hujizhou35-cmd/MGA-resource",
+            "release_tag": "collection-20261106",
+            "discovery_sha256": "2f35e01f966726f8dd1a9aceb321cf59a1feb4c4e2be0bf0eda8f8554b49178f",
+            "archive": "togo-42261598057-1-b0000.tar.gz",
+            "archive_bytes": 243537964,
+            "records_file": "togo-42261598057-1-b0000.records.jsonl",
+            "records_sha256": "010904cdca8b514b56c715ef9fd348051fa855c631699fbd34b774832ab86210",
+            "failures_file": "togo-42261598057-1-b0000.failures.json",
+            "failures_sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+            "source_index": 1703,
+            "archive_sha256": "ef0d4d105cb49725a199e9d2ce7b28bbe6fea5eb9ac644e4ed311638be6ac87b",
+            "receipt_file": "togo-42261598057-1-b0000.receipt.json",
+            "receipt_sha256": "ef86f41f1597e087390797c836de416baff1e55a05b86149d7f037ad49b41fbd"
+          },
+          "asset_evidence": [
+            {
+              "kind": "records",
+              "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42261598057-1-b0000.records.jsonl",
+              "sha256": "010904cdca8b514b56c715ef9fd348051fa855c631699fbd34b774832ab86210",
+              "size_bytes": 1839711,
+              "matches_internal_record": true
+            },
+            {
+              "kind": "receipt",
+              "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42261598057-1-b0000.receipt.json",
+              "sha256": "ef86f41f1597e087390797c836de416baff1e55a05b86149d7f037ad49b41fbd",
+              "size_bytes": 62717,
+              "matches_internal_record": true
+            }
+          ]
+        }
+      ],
+      "exact_prior_review": {
+        "path": "data/relevance-reviews/frozen-3.4.1-actions-clinical-omics.json",
+        "sha256": "647485d79bb88e9281778a7e3cf71f0d344d7df8fdaedcbd90759cce631a5ff5",
+        "json_pointer": "/queries/1/result_judgments/2",
+        "query_id": "experimental_actions-blood-collection-en",
+        "observations": "桌旁成人男性伸出手臂，工作人员在肘前附近操作，手臂束带、支撑和取样关系清楚；可作采血动作，不推断具体血管及样本量。",
+        "visual_verdict": "relevant",
+        "reviewer": "Codex registry_acceptance; direct visual inspection",
+        "reviewed_at": "2026-11-06T21:57:36.219097+00:00"
+      },
+      "viewed_sheet": {
+        "member": "concepts/experimental_actions-blood-collection.png",
+        "member_sha256": "1f56205111cc1744417d835e8be2b79f9cfa9bad593497375a88fee7c3b915bc",
+        "review_method": "Actual contact sheet opened with view_image and inspected by this agent; no automated visual verdict.",
+        "sha256": "a4a7e7e6a9e2750472d39ac1d9acbb34e8461d559d6b3afc2141b1ecd76ed196",
+        "tile": 3,
+        "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/frozen-review-42298772894-1.tar.gz"
+      },
+      "new_visual_inspection_performed": false,
+      "selection_confirmation_is_new": true,
+      "text_content": {
+        "status": "unknown",
+        "basis": "Existing catalog text property not reclassified during selection preparation; observed labels remain in the reused visual notes.",
+        "cleanup_advice": "selected_working_copy_only_if_needed"
+      },
+      "original_verification": {
+        "route": "independent_remote_restore_of_identical_bytes",
+        "restore_evidence": {
+          "path": "build/cloud-recovery-20261107/restore-evidence/qa-20261107-42289434868-3.4.3-42312769493-1.restore_evidence.json",
+          "sha256": "bdfdf932d22b6ce2a008de38873ac70ba8dcb1dc3235b474f40f9f8fbc9eb4dd"
+        },
+        "bundle_index": {
+          "path": "build/cloud-recovery-20261107/build-evidence/qa-20261107-42289434868-3.4.3.bundle.json",
+          "sha256": "54b055c631c5fd814a7012f176151eb86d65c66849f8b2c71ea3a53ae44dc3a0"
+        },
+        "restored_objects": [
+          {
+            "clean_member": "objects/10c58a71b1a29304672c3cc684c4ab8753de6d4e55217443c16ffda5e5a3da1b.svg",
+            "pack_sha256": "3ce926b16f4736506a263e2195eabae82d0eaca2645e2291b10ca422255dbf0b",
+            "pack_url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/publish-qa-20261107-42289434868-3.4.3/qa-20261107-42289434868-3.4.3.static-0001.tar.gz",
+            "role": "original",
+            "sha256": "10c58a71b1a29304672c3cc684c4ab8753de6d4e55217443c16ffda5e5a3da1b",
+            "size_bytes": 232664
+          },
+          {
+            "clean_member": "objects/87d4541a4329f558509266008a78a544fb9a6caf6d891b8a7bd552a048534657.png",
+            "pack_sha256": "a9d6feb05c20c7ec930bec9fa8f507d2cc1897c3ce9ff7f3ecc840768994c1e0",
+            "pack_url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/publish-qa-20261107-42289434868-3.4.3/qa-20261107-42289434868-3.4.3.static-0008.tar.gz",
+            "role": "preview",
+            "sha256": "87d4541a4329f558509266008a78a544fb9a6caf6d891b8a7bd552a048534657",
+            "size_bytes": 35539
+          }
+        ],
+        "fresh_original_download_performed": false
+      },
+      "checks": {
+        "recognizable_at_sheet_scale": "reused_prior_actual_review",
+        "source_identity_corroborated": true,
+        "species_and_state_not_extended_beyond_source": true,
+        "native_editability_tested_in_this_review": false,
+        "dark_background_overlay": "not_tested",
+        "white_background_overlay": "not_tested",
+        "checkerboard_transparency": "not_tested",
+        "small_size_96px": "not_tested",
+        "small_size_48px": "not_tested",
+        "cross_source_composition": "not_tested",
+        "label_readability_at_original_resolution": "not_tested"
+      },
+      "visual_display_review_completed": false,
+      "full_curated_requirement_passed": false
+    },
+    {
+      "ordinal": 51,
+      "candidate_id": "openclipart-c2d02e0011c4e4c60482:file-0",
+      "family_id": "openclipart-c2d02e0011c4e4c60482",
+      "asset_id": "openclipart-c2d02e0011c4e4c60482",
+      "title": "Online computer survey",
+      "categories": [
+        "clinical_workflow"
+      ],
+      "usable": true,
+      "source_evidence_checked": true,
+      "license_checked": true,
+      "original_download_checked": true,
+      "visual_evidence_notes": "电脑屏幕上有SURVEY标题、条目/选择点与光标，表达在线问卷界面；没有可读真实个人答案或研究数据。是供人使用的问卷工具符号，不声称画面已展示某个受试者。",
+      "recommended_use": "问卷与在线调查工具入口，可作为临床研究的信息采集部件。",
+      "limitations": [
+        "不是参与者招募、随访过程或已填写的真实答卷；图内SURVEY文字按任务处理。"
+      ],
+      "category_evidence": {
+        "basis": "explicit_curated_category_selection_using_prior_actual_visual_review_and_exact_source_records",
+        "observed": "电脑屏幕上有SURVEY标题、条目/选择点与光标，表达在线问卷界面；没有可读真实个人答案或研究数据。是供人使用的问卷工具符号，不声称画面已展示某个受试者。",
+        "category_role": "问卷与在线调查工具入口，可作为临床研究的信息采集部件。",
+        "not_inferred_from_catalog_taxonomy": true,
+        "not_asserting_a_new_benchmark_concept": true
+      },
+      "original_sha256": "1b741a83f5fad9a6fdfbdf255d4455878ae2e400bf5e944c7271d4605fa4723f",
+      "preview_sha256": "af4cf34f6c966f3c91bede0d6f62c62efec828f8a6aa4ed8f8fab0b891f7cccd",
+      "original_archive": {
+        "member": "files/1b/1b741a83f5fad9a6fdfbdf255d4455878ae2e400bf5e944c7271d4605fa4723f.svg",
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/openclipart-42260737515-1-b0000.tar.gz"
+      },
+      "preview_archive": {
+        "member": "previews/1b741a83f5fad9a6fdfbdf255d4455878ae2e400bf5e944c7271d4605fa4723f.png",
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/openclipart-42260737515-1-b0000.tar.gz"
+      },
+      "format": "svg",
+      "structure": "pure_vector",
+      "source_records": [
+        {
+          "asset_id": "openclipart-a5aa73baaf6bb27558a2",
+          "attribution": "Online Computer Survey — Dustwin, uploaded 2014-08-02, Openclipart #195847, CC0 1.0. https://openclipart.org/detail/195847/online-computer-survey",
+          "author": "Dustwin",
+          "categories": [
+            "clinical_workflow"
+          ],
+          "description": "Blue and white online survey interface with multiple choice rows and a pointer; no personal answers or patient identifiers.",
+          "distribution_status": "license_recorded",
+          "license": "CC0-1.0",
+          "source": "openclipart",
+          "source_id": "195847",
+          "source_url": "https://openclipart.org/detail/195847/online-computer-survey",
+          "tags": [
+            "questionnaire",
+            "survey",
+            "online survey",
+            "multiple choice",
+            "computer",
+            "clinical workflow"
+          ],
+          "taxonomy": [
+            "people",
+            "clinical_workflow",
+            "omics_data"
+          ],
+          "title": "Online computer survey",
+          "title_zh": "在线问卷调查图标",
+          "url": "https://openclipart.org/download/195847/Online-Survey-Icon-or-logo.svg"
+        }
+      ],
+      "all_provenance": [
+        {
+          "asset_id": "openclipart-a5aa73baaf6bb27558a2",
+          "attribution": "Online Computer Survey — Dustwin, uploaded 2014-08-02, Openclipart #195847, CC0 1.0. https://openclipart.org/detail/195847/online-computer-survey",
+          "author": "Dustwin",
+          "categories": [
+            "clinical_workflow"
+          ],
+          "description": "Blue and white online survey interface with multiple choice rows and a pointer; no personal answers or patient identifiers.",
+          "distribution_status": "license_recorded",
+          "license": "CC0-1.0",
+          "source": "openclipart",
+          "source_id": "195847",
+          "source_url": "https://openclipart.org/detail/195847/online-computer-survey",
+          "tags": [
+            "questionnaire",
+            "survey",
+            "online survey",
+            "multiple choice",
+            "computer",
+            "clinical workflow"
+          ],
+          "taxonomy": [
+            "people",
+            "clinical_workflow",
+            "omics_data"
+          ],
+          "title": "Online computer survey",
+          "title_zh": "在线问卷调查图标",
+          "url": "https://openclipart.org/download/195847/Online-Survey-Icon-or-logo.svg"
+        }
+      ],
+      "source_versions_and_rights": [
+        {
+          "source": "openclipart",
+          "source_id": "195847",
+          "title": "Online computer survey",
+          "author": "Dustwin",
+          "license": "CC0-1.0",
+          "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "attribution": "Online Computer Survey — Dustwin, uploaded 2014-08-02, Openclipart #195847, CC0 1.0. https://openclipart.org/detail/195847/online-computer-survey",
+          "source_url": "https://openclipart.org/detail/195847/online-computer-survey",
+          "upstream_revision": "sha256:1b741a83f5fad9a6fdfbdf255d4455878ae2e400bf5e944c7271d4605fa4723f"
+        }
+      ],
+      "license_check_basis": "Exact frozen file-level provenance, internal records and GitHub records/receipt digests checked. Existing recorded licenses and user-authorized historical Servier decision retained. No new legal opinion or source-site fetch.",
+      "collection_source_evidence": [
+        {
+          "internal_catalog": {
+            "path": "build/final-scope-baseline/assembly-42283380295-1.internal-catalog.jsonl",
+            "sha256": "8d04bf38b1469ca6690972dd0f140f06e76411b96e245efff67f9efa73ee7970",
+            "jsonl_line": 6253
+          },
+          "source": "openclipart",
+          "source_id": "195847",
+          "source_index": 0,
+          "selected_file_validation": "machine_checked_and_rendered",
+          "record_acquisition_status": "acquired",
+          "artifact_evidence": {
+            "source": "openclipart",
+            "run_id": "42260737515-1",
+            "repository": "hujizhou35-cmd/MGA-resource",
+            "release_tag": "collection-20261106",
+            "discovery_sha256": "3515a8c6b6c8d92e0abf72257a45ddeca1bf878b834293307218af5c915e8991",
+            "archive": "openclipart-42260737515-1-b0000.tar.gz",
+            "archive_bytes": 17942,
+            "records_file": "openclipart-42260737515-1-b0000.records.jsonl",
+            "records_sha256": "dfc001c2bf406f4b392c27eefc673e8dafcbce855eb5e2e1fd2c166508e1b7a2",
+            "failures_file": "openclipart-42260737515-1-b0000.failures.json",
+            "failures_sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+            "source_index": 0,
+            "archive_sha256": "ffa82eb7afc6ff786aa2ab600c223c1c260f912795c3db6a3c771b0d49d25542",
+            "receipt_file": "openclipart-42260737515-1-b0000.receipt.json",
+            "receipt_sha256": "cbf9e43aa9c65fc81b054beb92feef365e6bdfc7bc3c2c308c2670ec23b7c335"
+          },
+          "asset_evidence": [
+            {
+              "kind": "records",
+              "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/openclipart-42260737515-1-b0000.records.jsonl",
+              "sha256": "dfc001c2bf406f4b392c27eefc673e8dafcbce855eb5e2e1fd2c166508e1b7a2",
+              "size_bytes": 5020,
+              "matches_internal_record": true
+            },
+            {
+              "kind": "receipt",
+              "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/openclipart-42260737515-1-b0000.receipt.json",
+              "sha256": "cbf9e43aa9c65fc81b054beb92feef365e6bdfc7bc3c2c308c2670ec23b7c335",
+              "size_bytes": 1694,
+              "matches_internal_record": true
+            }
+          ]
+        }
+      ],
+      "exact_prior_review": {
+        "path": "data/relevance-reviews/frozen-3.4.1-actions-clinical-omics.json",
+        "sha256": "647485d79bb88e9281778a7e3cf71f0d344d7df8fdaedcbd90759cce631a5ff5",
+        "json_pointer": "/queries/17/result_judgments/0",
+        "query_id": "clinical_workflow-questionnaire-en",
+        "observations": "电脑屏幕上有SURVEY标题、条目/选择点与光标，表达在线问卷界面；没有可读真实个人答案或研究数据。是供人使用的问卷工具符号，不声称画面已展示某个受试者。",
+        "visual_verdict": "relevant",
+        "reviewer": "Codex registry_acceptance; direct visual inspection",
+        "reviewed_at": "2026-11-06T21:57:36.219097+00:00"
+      },
+      "viewed_sheet": {
+        "member": "concepts/clinical_workflow-questionnaire.png",
+        "member_sha256": "5fcb64ce08d87ee357dce0df5f5f63169217e71da27919cfda2988199dc31bd2",
+        "review_method": "Actual contact sheet opened with view_image and inspected by this agent; no automated visual verdict.",
+        "sha256": "a4a7e7e6a9e2750472d39ac1d9acbb34e8461d559d6b3afc2141b1ecd76ed196",
+        "tile": 1,
+        "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/frozen-review-42298772894-1.tar.gz"
+      },
+      "new_visual_inspection_performed": false,
+      "selection_confirmation_is_new": true,
+      "text_content": {
+        "status": "unknown",
+        "basis": "Existing catalog text property not reclassified during selection preparation; observed labels remain in the reused visual notes.",
+        "cleanup_advice": "selected_working_copy_only_if_needed"
+      },
+      "original_verification": {
+        "route": "independent_remote_restore_of_identical_bytes",
+        "restore_evidence": {
+          "path": "build/cloud-recovery-20261107/restore-evidence/qa-20261107-42289434868-3.4.3-42312769493-1.restore_evidence.json",
+          "sha256": "bdfdf932d22b6ce2a008de38873ac70ba8dcb1dc3235b474f40f9f8fbc9eb4dd"
+        },
+        "bundle_index": {
+          "path": "build/cloud-recovery-20261107/build-evidence/qa-20261107-42289434868-3.4.3.bundle.json",
+          "sha256": "54b055c631c5fd814a7012f176151eb86d65c66849f8b2c71ea3a53ae44dc3a0"
+        },
+        "restored_objects": [
+          {
+            "clean_member": "objects/1b741a83f5fad9a6fdfbdf255d4455878ae2e400bf5e944c7271d4605fa4723f.svg",
+            "pack_sha256": "47b6706a7be42ea7d0f71d9c2e0b485980f11098d6c800bdfcb7ae031042bfe4",
+            "pack_url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/publish-qa-20261107-42289434868-3.4.3/qa-20261107-42289434868-3.4.3.static-0003.tar.gz",
+            "role": "original",
+            "sha256": "1b741a83f5fad9a6fdfbdf255d4455878ae2e400bf5e944c7271d4605fa4723f",
+            "size_bytes": 12750
+          },
+          {
+            "clean_member": "objects/af4cf34f6c966f3c91bede0d6f62c62efec828f8a6aa4ed8f8fab0b891f7cccd.png",
+            "pack_sha256": "35aeb8f51cbf9f69ef28731a667c65ff18cf9981b812035fd68b84f08a465d77",
+            "pack_url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/publish-qa-20261107-42289434868-3.4.3/qa-20261107-42289434868-3.4.3.static-0009.tar.gz",
+            "role": "preview",
+            "sha256": "af4cf34f6c966f3c91bede0d6f62c62efec828f8a6aa4ed8f8fab0b891f7cccd",
+            "size_bytes": 12923
+          }
+        ],
+        "fresh_original_download_performed": false
+      },
+      "checks": {
+        "recognizable_at_sheet_scale": "reused_prior_actual_review",
+        "source_identity_corroborated": true,
+        "species_and_state_not_extended_beyond_source": true,
+        "native_editability_tested_in_this_review": false,
+        "dark_background_overlay": "not_tested",
+        "white_background_overlay": "not_tested",
+        "checkerboard_transparency": "not_tested",
+        "small_size_96px": "not_tested",
+        "small_size_48px": "not_tested",
+        "cross_source_composition": "not_tested",
+        "label_readability_at_original_resolution": "not_tested"
+      },
+      "visual_display_review_completed": false,
+      "full_curated_requirement_passed": false
+    },
+    {
+      "ordinal": 52,
+      "candidate_id": "togo-ddd7adfee80048608d91:file-1",
+      "family_id": "togo-ddd7adfee80048608d91",
+      "asset_id": "togo-ddd7adfee80048608d91",
+      "title": "Blood pressure measurement female",
+      "categories": [
+        "clinical_workflow"
+      ],
+      "usable": true,
+      "source_evidence_checked": true,
+      "license_checked": true,
+      "original_download_checked": true,
+      "visual_evidence_notes": "坐姿女性手臂受到支撑，袖带与测量器材连接，工作人员在旁操作；可作人体血压测量场景，不从小图认证袖带尺寸、姿势细节或具体读数。",
+      "recommended_use": "坐姿成人女性的测压场景，用于临床测量步骤。",
+      "limitations": [
+        "不从小图认证袖带尺寸、精细姿势或具体血压读数；不宣称已表达完整诊疗流程。"
+      ],
+      "category_evidence": {
+        "basis": "explicit_curated_category_selection_using_prior_actual_visual_review_and_exact_source_records",
+        "observed": "坐姿女性手臂受到支撑，袖带与测量器材连接，工作人员在旁操作；可作人体血压测量场景，不从小图认证袖带尺寸、姿势细节或具体读数。",
+        "category_role": "坐姿成人女性的测压场景，用于临床测量步骤。",
+        "not_inferred_from_catalog_taxonomy": true,
+        "not_asserting_a_new_benchmark_concept": true
+      },
+      "original_sha256": "22cf6386f1a4e6e0bf826ac9b29bb57aa3701bf015a4eedd55361f06fb7cb3fa",
+      "preview_sha256": "c730deb6084ff81b0ca7994d14db016c396762716cc6c099a66823195de1f326",
+      "original_archive": {
+        "member": "files/22/22cf6386f1a4e6e0bf826ac9b29bb57aa3701bf015a4eedd55361f06fb7cb3fa.png",
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42261598057-1-b0000.tar.gz"
+      },
+      "preview_archive": {
+        "member": "previews/22cf6386f1a4e6e0bf826ac9b29bb57aa3701bf015a4eedd55361f06fb7cb3fa.png",
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42261598057-1-b0000.tar.gz"
+      },
+      "format": "png",
+      "structure": "raster",
+      "source_records": [
+        {
+          "asset_id": "togo-8e6f7bc20a124f7bd3e3",
+          "attribution": "Blood pressure measurement female — <a href=\"https://erikotoyooka.com/\" target=\"_blank\">erico</a>; © 2016 DBCLS TogoTV / CC-BY-4.0; https://doi.org/10.7875/togopic.2023.132",
+          "author": "<a href=\"https://erikotoyooka.com/\" target=\"_blank\">erico</a>",
+          "categories": [],
+          "distribution_status": "license_recorded",
+          "license": "CC-BY-4.0",
+          "source": "togo",
+          "source_id": "1696",
+          "source_url": "https://doi.org/10.7875/togopic.2023.132",
+          "tags": [
+            "Icon",
+            "Research activities",
+            "Life science",
+            "Education",
+            "Healthcare",
+            "Science communication",
+            "Mammalia",
+            "Primates",
+            "Homo sapiens"
+          ],
+          "taxonomy": [
+            "clinical_workflow"
+          ],
+          "title": "Blood pressure measurement female",
+          "url": "https://dbarchive.biosciencedbc.jp/data/togo-pic/image/202306_Blood_Pressure_Measurement_Female.png"
+        }
+      ],
+      "all_provenance": [
+        {
+          "asset_id": "togo-8e6f7bc20a124f7bd3e3",
+          "attribution": "Blood pressure measurement female — <a href=\"https://erikotoyooka.com/\" target=\"_blank\">erico</a>; © 2016 DBCLS TogoTV / CC-BY-4.0; https://doi.org/10.7875/togopic.2023.132",
+          "author": "<a href=\"https://erikotoyooka.com/\" target=\"_blank\">erico</a>",
+          "categories": [],
+          "distribution_status": "license_recorded",
+          "license": "CC-BY-4.0",
+          "source": "togo",
+          "source_id": "1696",
+          "source_url": "https://doi.org/10.7875/togopic.2023.132",
+          "tags": [
+            "Icon",
+            "Research activities",
+            "Life science",
+            "Education",
+            "Healthcare",
+            "Science communication",
+            "Mammalia",
+            "Primates",
+            "Homo sapiens"
+          ],
+          "taxonomy": [
+            "clinical_workflow"
+          ],
+          "title": "Blood pressure measurement female",
+          "url": "https://dbarchive.biosciencedbc.jp/data/togo-pic/image/202306_Blood_Pressure_Measurement_Female.png"
+        }
+      ],
+      "source_versions_and_rights": [
+        {
+          "source": "togo",
+          "source_id": "1696",
+          "title": "Blood pressure measurement female",
+          "author": "<a href=\"https://erikotoyooka.com/\" target=\"_blank\">erico</a>",
+          "license": "CC-BY-4.0",
+          "license_url": "https://creativecommons.org/licenses/by/4.0/",
+          "attribution": "Blood pressure measurement female — <a href=\"https://erikotoyooka.com/\" target=\"_blank\">erico</a>; © 2016 DBCLS TogoTV / CC-BY-4.0; https://doi.org/10.7875/togopic.2023.132",
+          "source_url": "https://doi.org/10.7875/togopic.2023.132",
+          "upstream_revision": "2023-06-01"
+        }
+      ],
+      "license_check_basis": "Exact frozen file-level provenance, internal records and GitHub records/receipt digests checked. Existing recorded licenses and user-authorized historical Servier decision retained. No new legal opinion or source-site fetch.",
+      "collection_source_evidence": [
+        {
+          "internal_catalog": {
+            "path": "build/final-scope-baseline/assembly-42283380295-1.internal-catalog.jsonl",
+            "sha256": "8d04bf38b1469ca6690972dd0f140f06e76411b96e245efff67f9efa73ee7970",
+            "jsonl_line": 11328
+          },
+          "source": "togo",
+          "source_id": "1696",
+          "source_index": 1695,
+          "selected_file_validation": "machine_checked_and_rendered",
+          "record_acquisition_status": "acquired",
+          "artifact_evidence": {
+            "source": "togo",
+            "run_id": "42261598057-1",
+            "repository": "hujizhou35-cmd/MGA-resource",
+            "release_tag": "collection-20261106",
+            "discovery_sha256": "2f35e01f966726f8dd1a9aceb321cf59a1feb4c4e2be0bf0eda8f8554b49178f",
+            "archive": "togo-42261598057-1-b0000.tar.gz",
+            "archive_bytes": 243537964,
+            "records_file": "togo-42261598057-1-b0000.records.jsonl",
+            "records_sha256": "010904cdca8b514b56c715ef9fd348051fa855c631699fbd34b774832ab86210",
+            "failures_file": "togo-42261598057-1-b0000.failures.json",
+            "failures_sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+            "source_index": 1695,
+            "archive_sha256": "ef0d4d105cb49725a199e9d2ce7b28bbe6fea5eb9ac644e4ed311638be6ac87b",
+            "receipt_file": "togo-42261598057-1-b0000.receipt.json",
+            "receipt_sha256": "ef86f41f1597e087390797c836de416baff1e55a05b86149d7f037ad49b41fbd"
+          },
+          "asset_evidence": [
+            {
+              "kind": "records",
+              "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42261598057-1-b0000.records.jsonl",
+              "sha256": "010904cdca8b514b56c715ef9fd348051fa855c631699fbd34b774832ab86210",
+              "size_bytes": 1839711,
+              "matches_internal_record": true
+            },
+            {
+              "kind": "receipt",
+              "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42261598057-1-b0000.receipt.json",
+              "sha256": "ef86f41f1597e087390797c836de416baff1e55a05b86149d7f037ad49b41fbd",
+              "size_bytes": 62717,
+              "matches_internal_record": true
+            }
+          ]
+        }
+      ],
+      "exact_prior_review": {
+        "path": "data/relevance-reviews/frozen-3.4.1-actions-clinical-omics.json",
+        "sha256": "647485d79bb88e9281778a7e3cf71f0d344d7df8fdaedcbd90759cce631a5ff5",
+        "json_pointer": "/queries/19/result_judgments/0",
+        "query_id": "clinical_workflow-blood-pressure-en",
+        "observations": "坐姿女性手臂受到支撑，袖带与测量器材连接，工作人员在旁操作；可作人体血压测量场景，不从小图认证袖带尺寸、姿势细节或具体读数。",
+        "visual_verdict": "relevant",
+        "reviewer": "Codex registry_acceptance; direct visual inspection",
+        "reviewed_at": "2026-11-06T21:57:36.219097+00:00"
+      },
+      "viewed_sheet": {
+        "member": "concepts/clinical_workflow-blood-pressure.png",
+        "member_sha256": "4c16f2fc63cba2b4631b51f6c7c6dfa44232e1c3898a82190a73c1980408b876",
+        "review_method": "Actual contact sheet opened with view_image and inspected by this agent; no automated visual verdict.",
+        "sha256": "a4a7e7e6a9e2750472d39ac1d9acbb34e8461d559d6b3afc2141b1ecd76ed196",
+        "tile": 1,
+        "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/frozen-review-42298772894-1.tar.gz"
+      },
+      "new_visual_inspection_performed": false,
+      "selection_confirmation_is_new": true,
+      "text_content": {
+        "status": "unknown",
+        "basis": "Existing catalog text property not reclassified during selection preparation; observed labels remain in the reused visual notes.",
+        "cleanup_advice": "selected_working_copy_only_if_needed"
+      },
+      "original_verification": {
+        "route": "independent_remote_restore_of_identical_bytes",
+        "restore_evidence": {
+          "path": "build/cloud-recovery-20261107/restore-evidence/qa-20261107-42289434868-3.4.3-42312769493-1.restore_evidence.json",
+          "sha256": "bdfdf932d22b6ce2a008de38873ac70ba8dcb1dc3235b474f40f9f8fbc9eb4dd"
+        },
+        "bundle_index": {
+          "path": "build/cloud-recovery-20261107/build-evidence/qa-20261107-42289434868-3.4.3.bundle.json",
+          "sha256": "54b055c631c5fd814a7012f176151eb86d65c66849f8b2c71ea3a53ae44dc3a0"
+        },
+        "restored_objects": [
+          {
+            "clean_member": "objects/22cf6386f1a4e6e0bf826ac9b29bb57aa3701bf015a4eedd55361f06fb7cb3fa.png",
+            "pack_sha256": "47b6706a7be42ea7d0f71d9c2e0b485980f11098d6c800bdfcb7ae031042bfe4",
+            "pack_url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/publish-qa-20261107-42289434868-3.4.3/qa-20261107-42289434868-3.4.3.static-0003.tar.gz",
+            "role": "original",
+            "sha256": "22cf6386f1a4e6e0bf826ac9b29bb57aa3701bf015a4eedd55361f06fb7cb3fa",
+            "size_bytes": 18686
+          },
+          {
+            "clean_member": "objects/c730deb6084ff81b0ca7994d14db016c396762716cc6c099a66823195de1f326.png",
+            "pack_sha256": "1665c914ab4090eccf812cf9e0e263d7ba66547a0267343268a7a6a895c73f6a",
+            "pack_url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/publish-qa-20261107-42289434868-3.4.3/qa-20261107-42289434868-3.4.3.static-0010.tar.gz",
+            "role": "preview",
+            "sha256": "c730deb6084ff81b0ca7994d14db016c396762716cc6c099a66823195de1f326",
+            "size_bytes": 19265
+          }
+        ],
+        "fresh_original_download_performed": false
+      },
+      "checks": {
+        "recognizable_at_sheet_scale": "reused_prior_actual_review",
+        "source_identity_corroborated": true,
+        "species_and_state_not_extended_beyond_source": true,
+        "native_editability_tested_in_this_review": false,
+        "dark_background_overlay": "not_tested",
+        "white_background_overlay": "not_tested",
+        "checkerboard_transparency": "not_tested",
+        "small_size_96px": "not_tested",
+        "small_size_48px": "not_tested",
+        "cross_source_composition": "not_tested",
+        "label_readability_at_original_resolution": "not_tested"
+      },
+      "visual_display_review_completed": false,
+      "full_curated_requirement_passed": false
+    },
+    {
+      "ordinal": 53,
+      "candidate_id": "nih-bioart-5b91f62cf60eb83887ef:file-0",
+      "family_id": "nih-bioart-5b91f62cf60eb83887ef",
+      "asset_id": "nih-bioart-5b91f62cf60eb83887ef",
+      "title": "Doctor Patient",
+      "categories": [
+        "clinical_workflow"
+      ],
+      "usable": true,
+      "source_evidence_checked": true,
+      "license_checked": true,
+      "original_download_checked": true,
+      "visual_evidence_notes": "带听诊器的临床人员向另一人解释夹板内容，另一人倾听，医患交流可辨。",
+      "recommended_use": "临床人员向患者解释夹板内容的医患交流场景，可作咨询沟通步骤。",
+      "limitations": [
+        "仅作来源与图面支持的医患解释/倾听交流，不冒称已显示招募、随机分组、纳入、纵向随访或特定诊断。",
+        "选择的是PNG位图；不能因源标签含Vector就声称可路径编辑；不读取夹板为真实患者数据。"
+      ],
+      "category_evidence": {
+        "basis": "explicit_curated_category_selection_using_prior_actual_visual_review_and_exact_source_records",
+        "observed": "带听诊器的临床人员向另一人解释夹板内容，另一人倾听，医患交流可辨。",
+        "category_role": "临床人员向患者解释夹板内容的医患交流场景，可作咨询沟通步骤。",
+        "not_inferred_from_catalog_taxonomy": true,
+        "not_asserting_a_new_benchmark_concept": true
+      },
+      "original_sha256": "24a5babba9a341784bfdbdbce1fdd4a73678e2ca1fa8473aa26ee72579d4c36e",
+      "preview_sha256": "d5a278e9b2eb33e8c42badd66ccfd9691708143e0d9534ff4532fd59de6ceeb7",
+      "original_archive": {
+        "member": "files/24/24a5babba9a341784bfdbdbce1fdd4a73678e2ca1fa8473aa26ee72579d4c36e.png",
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/nih-bioart-42236561214-1-b0000.tar.gz"
+      },
+      "preview_archive": {
+        "member": "previews/24a5babba9a341784bfdbdbce1fdd4a73678e2ca1fa8473aa26ee72579d4c36e.png",
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/nih-bioart-42236561214-1-b0000.tar.gz"
+      },
+      "format": "png",
+      "structure": "raster",
+      "source_records": [
+        {
+          "asset_id": "nih-bioart-0b53fb554bee1aeb5633",
+          "attribution": "Doctor Patient — Ryan Kissinger, NIH BioArt Source; https://bioart.niaid.nih.gov/bioart/130; Public Domain",
+          "author": "Ryan Kissinger",
+          "categories": [],
+          "description": " Doctor consulting with patient ",
+          "distribution_status": "license_recorded",
+          "license": "Public-Domain",
+          "source": "nih-bioart",
+          "source_id": "130",
+          "source_url": "https://bioart.niaid.nih.gov/bioart/130",
+          "tags": [
+            "Adult",
+            "Female",
+            "People",
+            "Vector",
+            "clipboard",
+            "consulting",
+            "doctor patient",
+            "genetic counselling",
+            "man",
+            "people",
+            "scientist",
+            "woman"
+          ],
+          "taxonomy": [
+            "people"
+          ],
+          "title": "Doctor Patient",
+          "upstream_category": [
+            "Age (Human)",
+            "Bioart Category",
+            "Sex (Human)",
+            "Image Type"
+          ],
+          "url": "https://bioart.niaid.nih.gov/api/bioarts/130/files/629436"
+        }
+      ],
+      "all_provenance": [
+        {
+          "asset_id": "nih-bioart-0b53fb554bee1aeb5633",
+          "attribution": "Doctor Patient — Ryan Kissinger, NIH BioArt Source; https://bioart.niaid.nih.gov/bioart/130; Public Domain",
+          "author": "Ryan Kissinger",
+          "categories": [],
+          "description": " Doctor consulting with patient ",
+          "distribution_status": "license_recorded",
+          "license": "Public-Domain",
+          "source": "nih-bioart",
+          "source_id": "130",
+          "source_url": "https://bioart.niaid.nih.gov/bioart/130",
+          "tags": [
+            "Adult",
+            "Female",
+            "People",
+            "Vector",
+            "clipboard",
+            "consulting",
+            "doctor patient",
+            "genetic counselling",
+            "man",
+            "people",
+            "scientist",
+            "woman"
+          ],
+          "taxonomy": [
+            "people"
+          ],
+          "title": "Doctor Patient",
+          "upstream_category": [
+            "Age (Human)",
+            "Bioart Category",
+            "Sex (Human)",
+            "Image Type"
+          ],
+          "url": "https://bioart.niaid.nih.gov/api/bioarts/130/files/629436"
+        }
+      ],
+      "source_versions_and_rights": [
+        {
+          "source": "nih-bioart",
+          "source_id": "130",
+          "title": "Doctor Patient",
+          "author": "Ryan Kissinger",
+          "license": "Public-Domain",
+          "license_url": null,
+          "attribution": "Doctor Patient — Ryan Kissinger, NIH BioArt Source; https://bioart.niaid.nih.gov/bioart/130; Public Domain",
+          "source_url": "https://bioart.niaid.nih.gov/bioart/130",
+          "upstream_revision": "2024-10-29T18:07:59.362Z"
+        }
+      ],
+      "license_check_basis": "Exact frozen file-level provenance, internal records and GitHub records/receipt digests checked. Existing recorded licenses and user-authorized historical Servier decision retained. No new legal opinion or source-site fetch.",
+      "collection_source_evidence": [
+        {
+          "internal_catalog": {
+            "path": "build/final-scope-baseline/assembly-42283380295-1.internal-catalog.jsonl",
+            "sha256": "8d04bf38b1469ca6690972dd0f140f06e76411b96e245efff67f9efa73ee7970",
+            "jsonl_line": 5436
+          },
+          "source": "nih-bioart",
+          "source_id": "130",
+          "source_index": 126,
+          "selected_file_validation": "machine_checked_and_rendered",
+          "record_acquisition_status": "acquired",
+          "artifact_evidence": {
+            "source": "nih-bioart",
+            "run_id": "42236561214-1",
+            "repository": "hujizhou35-cmd/MGA-resource",
+            "release_tag": "collection-20261106",
+            "discovery_sha256": "282b9201bcd1da91999a34ce94fbe20b973ba37bcfa8c67433c8f3efeddfbb01",
+            "archive": "nih-bioart-42236561214-1-b0000.tar.gz",
+            "archive_bytes": 490613847,
+            "records_file": "nih-bioart-42236561214-1-b0000.records.jsonl",
+            "records_sha256": "a6cef65fbf004e7401d66f53ed3543bcf0f33f52bcc72dd73b4a6906511fb66f",
+            "failures_file": "nih-bioart-42236561214-1-b0000.failures.json",
+            "failures_sha256": "83e624dfca0f0937d744898f4944270a18f5002d7ca70eeed6dddfb14d50ed01",
+            "source_index": 126,
+            "archive_sha256": "bc400b21ab4c2770ac0eb5d4a6474bdc26357b437cc74c402ff60076ee635c80",
+            "receipt_file": "nih-bioart-42236561214-1-b0000.receipt.json",
+            "receipt_sha256": "32778095e69d62fb0ec92e0491567a9026d113ae6013e2138fd5d80753f8ff23"
+          },
+          "asset_evidence": [
+            {
+              "kind": "records",
+              "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/nih-bioart-42236561214-1-b0000.records.jsonl",
+              "sha256": "a6cef65fbf004e7401d66f53ed3543bcf0f33f52bcc72dd73b4a6906511fb66f",
+              "size_bytes": 7195594,
+              "matches_internal_record": true
+            },
+            {
+              "kind": "receipt",
+              "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/nih-bioart-42236561214-1-b0000.receipt.json",
+              "sha256": "32778095e69d62fb0ec92e0491567a9026d113ae6013e2138fd5d80753f8ff23",
+              "size_bytes": 89044,
+              "matches_internal_record": true
+            }
+          ]
+        }
+      ],
+      "exact_prior_review": {
+        "path": "data/relevance-reviews/frozen-3.4.1-animals-people-microbes.json",
+        "sha256": "c7df273d5e0b7ed7fec544c42267a9d977407476c13cba8195ea60ab4873424c",
+        "json_pointer": "/concepts/5/items/6",
+        "query_id": "people-patient-en",
+        "observations": "带听诊器的临床人员向另一人解释夹板内容，另一人倾听，医患交流可辨。",
+        "visual_verdict": "relevant",
+        "reviewer": "Codex media_catalog",
+        "reviewed_at": "2026-11-06T22:00:31.261934+00:00"
+      },
+      "viewed_sheet": {
+        "bounds_xywh": [
+          330,
+          510,
+          330,
+          360
+        ],
+        "mapping_sha256": "fd7901163b7dba233b34808253ffe1561eb996020382275a85c1ed2ef0f17222",
+        "member": "concepts/people-patient.png",
+        "member_sha256": "077ab9f6747cd573d47492251119209a45bd9d12f1ae5e45d621e1a825b67b3b",
+        "sha256": "a4a7e7e6a9e2750472d39ac1d9acbb34e8461d559d6b3afc2141b1ecd76ed196",
+        "tile": 7,
+        "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/frozen-review-42298772894-1.tar.gz"
+      },
+      "new_visual_inspection_performed": false,
+      "selection_confirmation_is_new": true,
+      "text_content": {
+        "status": "unknown",
+        "basis": "Existing catalog text property not reclassified during selection preparation; observed labels remain in the reused visual notes.",
+        "cleanup_advice": "selected_working_copy_only_if_needed"
+      },
+      "original_verification": {
+        "route": "independent_remote_restore_of_identical_bytes",
+        "restore_evidence": {
+          "path": "build/cloud-recovery-20261107/restore-evidence/qa-20261107-42289434868-3.4.3-42312769493-1.restore_evidence.json",
+          "sha256": "bdfdf932d22b6ce2a008de38873ac70ba8dcb1dc3235b474f40f9f8fbc9eb4dd"
+        },
+        "bundle_index": {
+          "path": "build/cloud-recovery-20261107/build-evidence/qa-20261107-42289434868-3.4.3.bundle.json",
+          "sha256": "54b055c631c5fd814a7012f176151eb86d65c66849f8b2c71ea3a53ae44dc3a0"
+        },
+        "restored_objects": [
+          {
+            "clean_member": "objects/24a5babba9a341784bfdbdbce1fdd4a73678e2ca1fa8473aa26ee72579d4c36e.png",
+            "pack_sha256": "47b6706a7be42ea7d0f71d9c2e0b485980f11098d6c800bdfcb7ae031042bfe4",
+            "pack_url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/publish-qa-20261107-42289434868-3.4.3/qa-20261107-42289434868-3.4.3.static-0003.tar.gz",
+            "role": "original",
+            "sha256": "24a5babba9a341784bfdbdbce1fdd4a73678e2ca1fa8473aa26ee72579d4c36e",
+            "size_bytes": 221217
+          },
+          {
+            "clean_member": "objects/d5a278e9b2eb33e8c42badd66ccfd9691708143e0d9534ff4532fd59de6ceeb7.png",
+            "pack_sha256": "1665c914ab4090eccf812cf9e0e263d7ba66547a0267343268a7a6a895c73f6a",
+            "pack_url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/publish-qa-20261107-42289434868-3.4.3/qa-20261107-42289434868-3.4.3.static-0010.tar.gz",
+            "role": "preview",
+            "sha256": "d5a278e9b2eb33e8c42badd66ccfd9691708143e0d9534ff4532fd59de6ceeb7",
+            "size_bytes": 105103
+          }
+        ],
+        "fresh_original_download_performed": false
+      },
+      "checks": {
+        "recognizable_at_sheet_scale": "reused_prior_actual_review",
+        "source_identity_corroborated": true,
+        "species_and_state_not_extended_beyond_source": true,
+        "native_editability_tested_in_this_review": false,
+        "dark_background_overlay": "not_tested",
+        "white_background_overlay": "not_tested",
+        "checkerboard_transparency": "not_tested",
+        "small_size_96px": "not_tested",
+        "small_size_48px": "not_tested",
+        "cross_source_composition": "not_tested",
+        "label_readability_at_original_resolution": "not_tested"
+      },
+      "visual_display_review_completed": false,
+      "full_curated_requirement_passed": false
+    },
+    {
+      "ordinal": 54,
+      "candidate_id": "togo-9718c104999655d7a224:file-1",
+      "family_id": "togo-9718c104999655d7a224",
+      "asset_id": "togo-9718c104999655d7a224",
+      "title": "Blood pressure measurement child",
+      "categories": [
+        "clinical_workflow"
+      ],
+      "usable": true,
+      "source_evidence_checked": true,
+      "license_checked": true,
+      "original_download_checked": true,
+      "visual_evidence_notes": "成人陪伴儿童坐于桌前，工作人员与儿童的上臂袖带/测压器具交互；可用于儿童测压场景，不推断袖带规格或测量结果。",
+      "recommended_use": "儿童、陪护者与工作人员的测压场景，用于儿科测量情境。",
+      "limitations": [
+        "不推断袖带规格、儿童精确年龄或测量结果；不是招募或随访的已完成表达。"
+      ],
+      "category_evidence": {
+        "basis": "explicit_curated_category_selection_using_prior_actual_visual_review_and_exact_source_records",
+        "observed": "成人陪伴儿童坐于桌前，工作人员与儿童的上臂袖带/测压器具交互；可用于儿童测压场景，不推断袖带规格或测量结果。",
+        "category_role": "儿童、陪护者与工作人员的测压场景，用于儿科测量情境。",
+        "not_inferred_from_catalog_taxonomy": true,
+        "not_asserting_a_new_benchmark_concept": true
+      },
+      "original_sha256": "39653320dd9f1cdc2918bcca0ed2b6a408ec6f3c53b35d71ceeef7def79920ad",
+      "preview_sha256": "4f43e725855a09eafe82d8bf16ecfabd90339cb26dcb875902cedeca28c9666e",
+      "original_archive": {
+        "member": "files/39/39653320dd9f1cdc2918bcca0ed2b6a408ec6f3c53b35d71ceeef7def79920ad.png",
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42261598057-1-b0000.tar.gz"
+      },
+      "preview_archive": {
+        "member": "previews/39653320dd9f1cdc2918bcca0ed2b6a408ec6f3c53b35d71ceeef7def79920ad.png",
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42261598057-1-b0000.tar.gz"
+      },
+      "format": "png",
+      "structure": "raster",
+      "source_records": [
+        {
+          "asset_id": "togo-8a580c4ede495f0bbba2",
+          "attribution": "Blood pressure measurement child — <a href=\"https://erikotoyooka.com/\" target=\"_blank\">erico</a>; © 2016 DBCLS TogoTV / CC-BY-4.0; https://doi.org/10.7875/togopic.2023.131",
+          "author": "<a href=\"https://erikotoyooka.com/\" target=\"_blank\">erico</a>",
+          "categories": [],
+          "distribution_status": "license_recorded",
+          "license": "CC-BY-4.0",
+          "source": "togo",
+          "source_id": "1695",
+          "source_url": "https://doi.org/10.7875/togopic.2023.131",
+          "tags": [
+            "Icon",
+            "Life science",
+            "Medicine",
+            "Education",
+            "Research activities",
+            "Explanatory diagram",
+            "Mammalia",
+            "Primates",
+            "Homo sapiens"
+          ],
+          "taxonomy": [
+            "people"
+          ],
+          "title": "Blood pressure measurement child",
+          "url": "https://dbarchive.biosciencedbc.jp/data/togo-pic/image/202306_Blood_Pressure_Measurement_Child.png"
+        }
+      ],
+      "all_provenance": [
+        {
+          "asset_id": "togo-8a580c4ede495f0bbba2",
+          "attribution": "Blood pressure measurement child — <a href=\"https://erikotoyooka.com/\" target=\"_blank\">erico</a>; © 2016 DBCLS TogoTV / CC-BY-4.0; https://doi.org/10.7875/togopic.2023.131",
+          "author": "<a href=\"https://erikotoyooka.com/\" target=\"_blank\">erico</a>",
+          "categories": [],
+          "distribution_status": "license_recorded",
+          "license": "CC-BY-4.0",
+          "source": "togo",
+          "source_id": "1695",
+          "source_url": "https://doi.org/10.7875/togopic.2023.131",
+          "tags": [
+            "Icon",
+            "Life science",
+            "Medicine",
+            "Education",
+            "Research activities",
+            "Explanatory diagram",
+            "Mammalia",
+            "Primates",
+            "Homo sapiens"
+          ],
+          "taxonomy": [
+            "people"
+          ],
+          "title": "Blood pressure measurement child",
+          "url": "https://dbarchive.biosciencedbc.jp/data/togo-pic/image/202306_Blood_Pressure_Measurement_Child.png"
+        }
+      ],
+      "source_versions_and_rights": [
+        {
+          "source": "togo",
+          "source_id": "1695",
+          "title": "Blood pressure measurement child",
+          "author": "<a href=\"https://erikotoyooka.com/\" target=\"_blank\">erico</a>",
+          "license": "CC-BY-4.0",
+          "license_url": "https://creativecommons.org/licenses/by/4.0/",
+          "attribution": "Blood pressure measurement child — <a href=\"https://erikotoyooka.com/\" target=\"_blank\">erico</a>; © 2016 DBCLS TogoTV / CC-BY-4.0; https://doi.org/10.7875/togopic.2023.131",
+          "source_url": "https://doi.org/10.7875/togopic.2023.131",
+          "upstream_revision": "2023-06-01"
+        }
+      ],
+      "license_check_basis": "Exact frozen file-level provenance, internal records and GitHub records/receipt digests checked. Existing recorded licenses and user-authorized historical Servier decision retained. No new legal opinion or source-site fetch.",
+      "collection_source_evidence": [
+        {
+          "internal_catalog": {
+            "path": "build/final-scope-baseline/assembly-42283380295-1.internal-catalog.jsonl",
+            "sha256": "8d04bf38b1469ca6690972dd0f140f06e76411b96e245efff67f9efa73ee7970",
+            "jsonl_line": 11327
+          },
+          "source": "togo",
+          "source_id": "1695",
+          "source_index": 1694,
+          "selected_file_validation": "machine_checked_and_rendered",
+          "record_acquisition_status": "acquired",
+          "artifact_evidence": {
+            "source": "togo",
+            "run_id": "42261598057-1",
+            "repository": "hujizhou35-cmd/MGA-resource",
+            "release_tag": "collection-20261106",
+            "discovery_sha256": "2f35e01f966726f8dd1a9aceb321cf59a1feb4c4e2be0bf0eda8f8554b49178f",
+            "archive": "togo-42261598057-1-b0000.tar.gz",
+            "archive_bytes": 243537964,
+            "records_file": "togo-42261598057-1-b0000.records.jsonl",
+            "records_sha256": "010904cdca8b514b56c715ef9fd348051fa855c631699fbd34b774832ab86210",
+            "failures_file": "togo-42261598057-1-b0000.failures.json",
+            "failures_sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+            "source_index": 1694,
+            "archive_sha256": "ef0d4d105cb49725a199e9d2ce7b28bbe6fea5eb9ac644e4ed311638be6ac87b",
+            "receipt_file": "togo-42261598057-1-b0000.receipt.json",
+            "receipt_sha256": "ef86f41f1597e087390797c836de416baff1e55a05b86149d7f037ad49b41fbd"
+          },
+          "asset_evidence": [
+            {
+              "kind": "records",
+              "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42261598057-1-b0000.records.jsonl",
+              "sha256": "010904cdca8b514b56c715ef9fd348051fa855c631699fbd34b774832ab86210",
+              "size_bytes": 1839711,
+              "matches_internal_record": true
+            },
+            {
+              "kind": "receipt",
+              "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42261598057-1-b0000.receipt.json",
+              "sha256": "ef86f41f1597e087390797c836de416baff1e55a05b86149d7f037ad49b41fbd",
+              "size_bytes": 62717,
+              "matches_internal_record": true
+            }
+          ]
+        }
+      ],
+      "exact_prior_review": {
+        "path": "data/relevance-reviews/frozen-3.4.1-actions-clinical-omics.json",
+        "sha256": "647485d79bb88e9281778a7e3cf71f0d344d7df8fdaedcbd90759cce631a5ff5",
+        "json_pointer": "/queries/19/result_judgments/4",
+        "query_id": "clinical_workflow-blood-pressure-en",
+        "observations": "成人陪伴儿童坐于桌前，工作人员与儿童的上臂袖带/测压器具交互；可用于儿童测压场景，不推断袖带规格或测量结果。",
+        "visual_verdict": "relevant",
+        "reviewer": "Codex registry_acceptance; direct visual inspection",
+        "reviewed_at": "2026-11-06T21:57:36.219097+00:00"
+      },
+      "viewed_sheet": {
+        "member": "concepts/clinical_workflow-blood-pressure.png",
+        "member_sha256": "4c16f2fc63cba2b4631b51f6c7c6dfa44232e1c3898a82190a73c1980408b876",
+        "review_method": "Actual contact sheet opened with view_image and inspected by this agent; no automated visual verdict.",
+        "sha256": "a4a7e7e6a9e2750472d39ac1d9acbb34e8461d559d6b3afc2141b1ecd76ed196",
+        "tile": 5,
+        "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/frozen-review-42298772894-1.tar.gz"
+      },
+      "new_visual_inspection_performed": false,
+      "selection_confirmation_is_new": true,
+      "text_content": {
+        "status": "unknown",
+        "basis": "Existing catalog text property not reclassified during selection preparation; observed labels remain in the reused visual notes.",
+        "cleanup_advice": "selected_working_copy_only_if_needed"
+      },
+      "original_verification": {
+        "route": "independent_remote_restore_of_identical_bytes",
+        "restore_evidence": {
+          "path": "build/cloud-recovery-20261107/restore-evidence/qa-20261107-42289434868-3.4.3-42312769493-1.restore_evidence.json",
+          "sha256": "bdfdf932d22b6ce2a008de38873ac70ba8dcb1dc3235b474f40f9f8fbc9eb4dd"
+        },
+        "bundle_index": {
+          "path": "build/cloud-recovery-20261107/build-evidence/qa-20261107-42289434868-3.4.3.bundle.json",
+          "sha256": "54b055c631c5fd814a7012f176151eb86d65c66849f8b2c71ea3a53ae44dc3a0"
+        },
+        "restored_objects": [
+          {
+            "clean_member": "objects/39653320dd9f1cdc2918bcca0ed2b6a408ec6f3c53b35d71ceeef7def79920ad.png",
+            "pack_sha256": "162a83a194bef94c4a349a7de87d99b853f5581a7f76132f7a2b64d583720c9d",
+            "pack_url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/publish-qa-20261107-42289434868-3.4.3/qa-20261107-42289434868-3.4.3.static-0004.tar.gz",
+            "role": "original",
+            "sha256": "39653320dd9f1cdc2918bcca0ed2b6a408ec6f3c53b35d71ceeef7def79920ad",
+            "size_bytes": 20019
+          },
+          {
+            "clean_member": "objects/4f43e725855a09eafe82d8bf16ecfabd90339cb26dcb875902cedeca28c9666e.png",
+            "pack_sha256": "162a83a194bef94c4a349a7de87d99b853f5581a7f76132f7a2b64d583720c9d",
+            "pack_url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/publish-qa-20261107-42289434868-3.4.3/qa-20261107-42289434868-3.4.3.static-0004.tar.gz",
+            "role": "preview",
+            "sha256": "4f43e725855a09eafe82d8bf16ecfabd90339cb26dcb875902cedeca28c9666e",
+            "size_bytes": 20588
+          }
+        ],
+        "fresh_original_download_performed": false
+      },
+      "checks": {
+        "recognizable_at_sheet_scale": "reused_prior_actual_review",
+        "source_identity_corroborated": true,
+        "species_and_state_not_extended_beyond_source": true,
+        "native_editability_tested_in_this_review": false,
+        "dark_background_overlay": "not_tested",
+        "white_background_overlay": "not_tested",
+        "checkerboard_transparency": "not_tested",
+        "small_size_96px": "not_tested",
+        "small_size_48px": "not_tested",
+        "cross_source_composition": "not_tested",
+        "label_readability_at_original_resolution": "not_tested"
+      },
+      "visual_display_review_completed": false,
+      "full_curated_requirement_passed": false
+    },
+    {
+      "ordinal": 55,
+      "candidate_id": "togo-e58166ac8684f2ff6f0a:file-0",
+      "family_id": "togo-e58166ac8684f2ff6f0a",
+      "asset_id": "togo-e58166ac8684f2ff6f0a",
+      "title": "Drawing blood female",
+      "categories": [
+        "clinical_workflow"
+      ],
+      "usable": true,
+      "source_evidence_checked": true,
+      "license_checked": true,
+      "original_download_checked": true,
+      "visual_evidence_notes": "桌旁成人女性伸臂，工作人员在其手臂前侧操作，束带及手臂支撑清楚；可用于采血步骤，不将示意器材当作操作规范。",
+      "recommended_use": "成人女性受试者的临床采样步骤，作为临床操作场景。",
+      "limitations": [
+        "此项独立类别判断来自采样角色与实际图审，不从目录标签自证；不据此宣称招募、随机分组或随访。"
+      ],
+      "category_evidence": {
+        "basis": "explicit_curated_category_selection_using_prior_actual_visual_review_and_exact_source_records",
+        "observed": "桌旁成人女性伸臂，工作人员在其手臂前侧操作，束带及手臂支撑清楚；可用于采血步骤，不将示意器材当作操作规范。",
+        "category_role": "成人女性受试者的临床采样步骤，作为临床操作场景。",
+        "not_inferred_from_catalog_taxonomy": true,
+        "not_asserting_a_new_benchmark_concept": true
+      },
+      "original_sha256": "043e3915172ac71ac24ef365f6d10795d34672784c06080fb99d5aebd112ca8d",
+      "preview_sha256": "aada6b11a1676c72837b0f2afea81cb6cbe36f692ee8cd6b2047d1084449a8c5",
+      "original_archive": {
+        "member": "files/04/043e3915172ac71ac24ef365f6d10795d34672784c06080fb99d5aebd112ca8d.svg",
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42261598057-1-b0000.tar.gz"
+      },
+      "preview_archive": {
+        "member": "previews/043e3915172ac71ac24ef365f6d10795d34672784c06080fb99d5aebd112ca8d.png",
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42261598057-1-b0000.tar.gz"
+      },
+      "format": "svg",
+      "structure": "pure_vector",
+      "source_records": [
+        {
+          "asset_id": "togo-2fa4490e0c960b9927a6",
+          "attribution": "Drawing blood female — <a href=\"https://erikotoyooka.com/\" target=\"_blank\">erico</a>; © 2016 DBCLS TogoTV / CC-BY-4.0; https://doi.org/10.7875/togopic.2023.139",
+          "author": "<a href=\"https://erikotoyooka.com/\" target=\"_blank\">erico</a>",
+          "categories": [],
+          "distribution_status": "license_recorded",
+          "license": "CC-BY-4.0",
+          "source": "togo",
+          "source_id": "1703",
+          "source_url": "https://doi.org/10.7875/togopic.2023.139",
+          "tags": [
+            "Icon",
+            "Medical devices",
+            "Clinical medicine",
+            "Diagnosis",
+            "Treatment",
+            "Nursing",
+            "Mammalia",
+            "Primates",
+            "Homo sapiens"
+          ],
+          "taxonomy": [
+            "clinical_workflow"
+          ],
+          "title": "Drawing blood female",
+          "url": "https://dbarchive.biosciencedbc.jp/data/togo-pic/image/202306_Drawing_Blood_Female.svg"
+        }
+      ],
+      "all_provenance": [
+        {
+          "asset_id": "togo-2fa4490e0c960b9927a6",
+          "attribution": "Drawing blood female — <a href=\"https://erikotoyooka.com/\" target=\"_blank\">erico</a>; © 2016 DBCLS TogoTV / CC-BY-4.0; https://doi.org/10.7875/togopic.2023.139",
+          "author": "<a href=\"https://erikotoyooka.com/\" target=\"_blank\">erico</a>",
+          "categories": [],
+          "distribution_status": "license_recorded",
+          "license": "CC-BY-4.0",
+          "source": "togo",
+          "source_id": "1703",
+          "source_url": "https://doi.org/10.7875/togopic.2023.139",
+          "tags": [
+            "Icon",
+            "Medical devices",
+            "Clinical medicine",
+            "Diagnosis",
+            "Treatment",
+            "Nursing",
+            "Mammalia",
+            "Primates",
+            "Homo sapiens"
+          ],
+          "taxonomy": [
+            "clinical_workflow"
+          ],
+          "title": "Drawing blood female",
+          "url": "https://dbarchive.biosciencedbc.jp/data/togo-pic/image/202306_Drawing_Blood_Female.svg"
+        }
+      ],
+      "source_versions_and_rights": [
+        {
+          "source": "togo",
+          "source_id": "1703",
+          "title": "Drawing blood female",
+          "author": "<a href=\"https://erikotoyooka.com/\" target=\"_blank\">erico</a>",
+          "license": "CC-BY-4.0",
+          "license_url": "https://creativecommons.org/licenses/by/4.0/",
+          "attribution": "Drawing blood female — <a href=\"https://erikotoyooka.com/\" target=\"_blank\">erico</a>; © 2016 DBCLS TogoTV / CC-BY-4.0; https://doi.org/10.7875/togopic.2023.139",
+          "source_url": "https://doi.org/10.7875/togopic.2023.139",
+          "upstream_revision": "2023-06-01"
+        }
+      ],
+      "license_check_basis": "Exact frozen file-level provenance, internal records and GitHub records/receipt digests checked. Existing recorded licenses and user-authorized historical Servier decision retained. No new legal opinion or source-site fetch.",
+      "collection_source_evidence": [
+        {
+          "internal_catalog": {
+            "path": "build/final-scope-baseline/assembly-42283380295-1.internal-catalog.jsonl",
+            "sha256": "8d04bf38b1469ca6690972dd0f140f06e76411b96e245efff67f9efa73ee7970",
+            "jsonl_line": 11335
+          },
+          "source": "togo",
+          "source_id": "1703",
+          "source_index": 1702,
+          "selected_file_validation": "machine_checked_and_rendered",
+          "record_acquisition_status": "acquired",
+          "artifact_evidence": {
+            "source": "togo",
+            "run_id": "42261598057-1",
+            "repository": "hujizhou35-cmd/MGA-resource",
+            "release_tag": "collection-20261106",
+            "discovery_sha256": "2f35e01f966726f8dd1a9aceb321cf59a1feb4c4e2be0bf0eda8f8554b49178f",
+            "archive": "togo-42261598057-1-b0000.tar.gz",
+            "archive_bytes": 243537964,
+            "records_file": "togo-42261598057-1-b0000.records.jsonl",
+            "records_sha256": "010904cdca8b514b56c715ef9fd348051fa855c631699fbd34b774832ab86210",
+            "failures_file": "togo-42261598057-1-b0000.failures.json",
+            "failures_sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+            "source_index": 1702,
+            "archive_sha256": "ef0d4d105cb49725a199e9d2ce7b28bbe6fea5eb9ac644e4ed311638be6ac87b",
+            "receipt_file": "togo-42261598057-1-b0000.receipt.json",
+            "receipt_sha256": "ef86f41f1597e087390797c836de416baff1e55a05b86149d7f037ad49b41fbd"
+          },
+          "asset_evidence": [
+            {
+              "kind": "records",
+              "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42261598057-1-b0000.records.jsonl",
+              "sha256": "010904cdca8b514b56c715ef9fd348051fa855c631699fbd34b774832ab86210",
+              "size_bytes": 1839711,
+              "matches_internal_record": true
+            },
+            {
+              "kind": "receipt",
+              "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42261598057-1-b0000.receipt.json",
+              "sha256": "ef86f41f1597e087390797c836de416baff1e55a05b86149d7f037ad49b41fbd",
+              "size_bytes": 62717,
+              "matches_internal_record": true
+            }
+          ]
+        }
+      ],
+      "exact_prior_review": {
+        "path": "data/relevance-reviews/frozen-3.4.1-actions-clinical-omics.json",
+        "sha256": "647485d79bb88e9281778a7e3cf71f0d344d7df8fdaedcbd90759cce631a5ff5",
+        "json_pointer": "/queries/1/result_judgments/3",
+        "query_id": "experimental_actions-blood-collection-en",
+        "observations": "桌旁成人女性伸臂，工作人员在其手臂前侧操作，束带及手臂支撑清楚；可用于采血步骤，不将示意器材当作操作规范。",
+        "visual_verdict": "relevant",
+        "reviewer": "Codex registry_acceptance; direct visual inspection",
+        "reviewed_at": "2026-11-06T21:57:36.219097+00:00"
+      },
+      "viewed_sheet": {
+        "member": "concepts/experimental_actions-blood-collection.png",
+        "member_sha256": "1f56205111cc1744417d835e8be2b79f9cfa9bad593497375a88fee7c3b915bc",
+        "review_method": "Actual contact sheet opened with view_image and inspected by this agent; no automated visual verdict.",
+        "sha256": "a4a7e7e6a9e2750472d39ac1d9acbb34e8461d559d6b3afc2141b1ecd76ed196",
+        "tile": 4,
+        "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/frozen-review-42298772894-1.tar.gz"
+      },
+      "new_visual_inspection_performed": false,
+      "selection_confirmation_is_new": true,
+      "text_content": {
+        "status": "unknown",
+        "basis": "Existing catalog text property not reclassified during selection preparation; observed labels remain in the reused visual notes.",
+        "cleanup_advice": "selected_working_copy_only_if_needed"
+      },
+      "original_verification": {
+        "route": "independent_remote_restore_of_identical_bytes",
+        "restore_evidence": {
+          "path": "build/cloud-recovery-20261107/restore-evidence/qa-20261107-42289434868-3.4.3-42312769493-1.restore_evidence.json",
+          "sha256": "bdfdf932d22b6ce2a008de38873ac70ba8dcb1dc3235b474f40f9f8fbc9eb4dd"
+        },
+        "bundle_index": {
+          "path": "build/cloud-recovery-20261107/build-evidence/qa-20261107-42289434868-3.4.3.bundle.json",
+          "sha256": "54b055c631c5fd814a7012f176151eb86d65c66849f8b2c71ea3a53ae44dc3a0"
+        },
+        "restored_objects": [
+          {
+            "clean_member": "objects/043e3915172ac71ac24ef365f6d10795d34672784c06080fb99d5aebd112ca8d.svg",
+            "pack_sha256": "3ce926b16f4736506a263e2195eabae82d0eaca2645e2291b10ca422255dbf0b",
+            "pack_url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/publish-qa-20261107-42289434868-3.4.3/qa-20261107-42289434868-3.4.3.static-0001.tar.gz",
+            "role": "original",
+            "sha256": "043e3915172ac71ac24ef365f6d10795d34672784c06080fb99d5aebd112ca8d",
+            "size_bytes": 231401
+          },
+          {
+            "clean_member": "objects/aada6b11a1676c72837b0f2afea81cb6cbe36f692ee8cd6b2047d1084449a8c5.png",
+            "pack_sha256": "35aeb8f51cbf9f69ef28731a667c65ff18cf9981b812035fd68b84f08a465d77",
+            "pack_url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/publish-qa-20261107-42289434868-3.4.3/qa-20261107-42289434868-3.4.3.static-0009.tar.gz",
+            "role": "preview",
+            "sha256": "aada6b11a1676c72837b0f2afea81cb6cbe36f692ee8cd6b2047d1084449a8c5",
+            "size_bytes": 35137
+          }
+        ],
+        "fresh_original_download_performed": false
+      },
+      "checks": {
+        "recognizable_at_sheet_scale": "reused_prior_actual_review",
+        "source_identity_corroborated": true,
+        "species_and_state_not_extended_beyond_source": true,
+        "native_editability_tested_in_this_review": false,
+        "dark_background_overlay": "not_tested",
+        "white_background_overlay": "not_tested",
+        "checkerboard_transparency": "not_tested",
+        "small_size_96px": "not_tested",
+        "small_size_48px": "not_tested",
+        "cross_source_composition": "not_tested",
+        "label_readability_at_original_resolution": "not_tested"
+      },
+      "visual_display_review_completed": false,
+      "full_curated_requirement_passed": false
+    },
+    {
+      "ordinal": 56,
+      "candidate_id": "nih-bioart-caed41384908a7f81cf9:file-0",
+      "family_id": "nih-bioart-caed41384908a7f81cf9",
+      "asset_id": "nih-bioart-caed41384908a7f81cf9",
+      "title": "RNA-Seq",
+      "categories": [
+        "omics_data"
+      ],
+      "usable": true,
+      "source_evidence_checked": true,
+      "license_checked": true,
+      "original_download_checked": true,
+      "visual_evidence_notes": "可见独立台式测序设备、上部显示屏和前部舱体；exact源记录NIH BioArt685明确称RNA-Seq。按原允许可组合部件的要求，可用于RNA测序方法中的设备步骤；不是完整流程，也不凭外观补品牌、型号或具体文库技术。",
+      "recommended_use": "RNA测序方法配图中的设备步骤部件。",
+      "limitations": [
+        "来源NIH BioArt685支持RNA-Seq用途；不是完整RNA测序流程，不补品牌、型号或文库技术。"
+      ],
+      "category_evidence": {
+        "basis": "explicit_curated_category_selection_using_prior_actual_visual_review_and_exact_source_records",
+        "observed": "可见独立台式测序设备、上部显示屏和前部舱体；exact源记录NIH BioArt685明确称RNA-Seq。按原允许可组合部件的要求，可用于RNA测序方法中的设备步骤；不是完整流程，也不凭外观补品牌、型号或具体文库技术。",
+        "category_role": "RNA测序方法配图中的设备步骤部件。",
+        "not_inferred_from_catalog_taxonomy": true,
+        "not_asserting_a_new_benchmark_concept": true
+      },
+      "original_sha256": "0f05cb0e3e44b1d73ca68959d51e1898510624cb145ca4f06571a1c05b522863",
+      "preview_sha256": "c8dbf9bb6f69d0b95602a73782bea3dc73830ba8c9426c6344fddb178f57dbb0",
+      "original_archive": {
+        "member": "files/0f/0f05cb0e3e44b1d73ca68959d51e1898510624cb145ca4f06571a1c05b522863.svg",
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/nih-bioart-42236561214-1-b0001.tar.gz"
+      },
+      "preview_archive": {
+        "member": "previews/0f05cb0e3e44b1d73ca68959d51e1898510624cb145ca4f06571a1c05b522863.png",
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/nih-bioart-42236561214-1-b0001.tar.gz"
+      },
+      "format": "svg",
+      "structure": "pure_vector",
+      "source_records": [
+        {
+          "asset_id": "nih-bioart-6e4ef1e3735ec9c2bec9",
+          "attribution": "RNA-Seq — Ryan Kissinger, NIH BioArt Source; https://bioart.niaid.nih.gov/bioart/685; Public Domain",
+          "author": "Ryan Kissinger",
+          "categories": [],
+          "description": " RNA-seq machine ",
+          "distribution_status": "license_recorded",
+          "license": "Public-Domain",
+          "source": "nih-bioart",
+          "source_id": "685",
+          "source_url": "https://bioart.niaid.nih.gov/bioart/685",
+          "tags": [
+            "Equipment",
+            "Lab Equipment",
+            "Machine",
+            "illumina",
+            "seq"
+          ],
+          "taxonomy": [
+            "molecules",
+            "lab_equipment"
+          ],
+          "title": "RNA-Seq",
+          "upstream_category": [
+            "Equipment",
+            "Bioart Category"
+          ],
+          "url": "https://bioart.niaid.nih.gov/api/bioarts/685/files/782326"
+        }
+      ],
+      "all_provenance": [
+        {
+          "asset_id": "nih-bioart-6e4ef1e3735ec9c2bec9",
+          "attribution": "RNA-Seq — Ryan Kissinger, NIH BioArt Source; https://bioart.niaid.nih.gov/bioart/685; Public Domain",
+          "author": "Ryan Kissinger",
+          "categories": [],
+          "description": " RNA-seq machine ",
+          "distribution_status": "license_recorded",
+          "license": "Public-Domain",
+          "source": "nih-bioart",
+          "source_id": "685",
+          "source_url": "https://bioart.niaid.nih.gov/bioart/685",
+          "tags": [
+            "Equipment",
+            "Lab Equipment",
+            "Machine",
+            "illumina",
+            "seq"
+          ],
+          "taxonomy": [
+            "molecules",
+            "lab_equipment"
+          ],
+          "title": "RNA-Seq",
+          "upstream_category": [
+            "Equipment",
+            "Bioart Category"
+          ],
+          "url": "https://bioart.niaid.nih.gov/api/bioarts/685/files/782326"
+        }
+      ],
+      "source_versions_and_rights": [
+        {
+          "source": "nih-bioart",
+          "source_id": "685",
+          "title": "RNA-Seq",
+          "author": "Ryan Kissinger",
+          "license": "Public-Domain",
+          "license_url": null,
+          "attribution": "RNA-Seq — Ryan Kissinger, NIH BioArt Source; https://bioart.niaid.nih.gov/bioart/685; Public Domain",
+          "source_url": "https://bioart.niaid.nih.gov/bioart/685",
+          "upstream_revision": "2026-06-02T15:01:40.7Z"
+        }
+      ],
+      "license_check_basis": "Exact frozen file-level provenance, internal records and GitHub records/receipt digests checked. Existing recorded licenses and user-authorized historical Servier decision retained. No new legal opinion or source-site fetch.",
+      "collection_source_evidence": [
+        {
+          "internal_catalog": {
+            "path": "build/final-scope-baseline/assembly-42283380295-1.internal-catalog.jsonl",
+            "sha256": "8d04bf38b1469ca6690972dd0f140f06e76411b96e245efff67f9efa73ee7970",
+            "jsonl_line": 5968
+          },
+          "source": "nih-bioart",
+          "source_id": "685",
+          "source_index": 675,
+          "selected_file_validation": "machine_checked_and_rendered",
+          "record_acquisition_status": "acquired",
+          "artifact_evidence": {
+            "source": "nih-bioart",
+            "run_id": "42236561214-1",
+            "repository": "hujizhou35-cmd/MGA-resource",
+            "release_tag": "collection-20261106",
+            "discovery_sha256": "282b9201bcd1da91999a34ce94fbe20b973ba37bcfa8c67433c8f3efeddfbb01",
+            "archive": "nih-bioart-42236561214-1-b0001.tar.gz",
+            "archive_bytes": 546540577,
+            "records_file": "nih-bioart-42236561214-1-b0001.records.jsonl",
+            "records_sha256": "1358f7daae256bd5c80a72c270786dd48999d23fa6507fa7742f4e7200343633",
+            "failures_file": "nih-bioart-42236561214-1-b0001.failures.json",
+            "failures_sha256": "aee6bdbe6f48d13a4f98279d16c7227924e4dea8a36c221824464e616b349052",
+            "source_index": 675,
+            "archive_sha256": "d8f41cd8dc16b926bed75c1ef762721b811893448cc8b2e91916e8495b4a7029",
+            "receipt_file": "nih-bioart-42236561214-1-b0001.receipt.json",
+            "receipt_sha256": "f57d4ad9cff23b55e5f6f083a57655abca6043959b4f71ca83583e5e1c62ef5f"
+          },
+          "asset_evidence": [
+            {
+              "kind": "records",
+              "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/nih-bioart-42236561214-1-b0001.records.jsonl",
+              "sha256": "1358f7daae256bd5c80a72c270786dd48999d23fa6507fa7742f4e7200343633",
+              "size_bytes": 5767554,
+              "matches_internal_record": true
+            },
+            {
+              "kind": "receipt",
+              "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/nih-bioart-42236561214-1-b0001.receipt.json",
+              "sha256": "f57d4ad9cff23b55e5f6f083a57655abca6043959b4f71ca83583e5e1c62ef5f",
+              "size_bytes": 55116,
+              "matches_internal_record": true
+            }
+          ]
+        }
+      ],
+      "exact_prior_review": {
+        "path": "data/relevance-reviews/frozen-3.4.1-actions-clinical-omics.json",
+        "sha256": "647485d79bb88e9281778a7e3cf71f0d344d7df8fdaedcbd90759cce631a5ff5",
+        "json_pointer": "/queries/21/result_judgments/2",
+        "query_id": "omics_data-rnaseq-en",
+        "observations": "可见独立台式测序设备、上部显示屏和前部舱体；exact源记录NIH BioArt685明确称RNA-Seq。按原允许可组合部件的要求，可用于RNA测序方法中的设备步骤；不是完整流程，也不凭外观补品牌、型号或具体文库技术。",
+        "visual_verdict": "relevant",
+        "reviewer": "Codex registry_acceptance; direct visual inspection",
+        "reviewed_at": "2026-11-06T21:57:36.219097+00:00"
+      },
+      "viewed_sheet": {
+        "member": "concepts/omics_data-rnaseq.png",
+        "member_sha256": "c3d3a6287fe54876dcd6bcb31339acfd6e09ceafbc5bd4d44970afde73702719",
+        "review_method": "Actual contact sheet opened with view_image and inspected by this agent; no automated visual verdict.",
+        "sha256": "a4a7e7e6a9e2750472d39ac1d9acbb34e8461d559d6b3afc2141b1ecd76ed196",
+        "tile": 3,
+        "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/frozen-review-42298772894-1.tar.gz"
+      },
+      "new_visual_inspection_performed": false,
+      "selection_confirmation_is_new": true,
+      "text_content": {
+        "status": "unknown",
+        "basis": "Existing catalog text property not reclassified during selection preparation; observed labels remain in the reused visual notes.",
+        "cleanup_advice": "selected_working_copy_only_if_needed"
+      },
+      "original_verification": {
+        "route": "independent_remote_restore_of_identical_bytes",
+        "restore_evidence": {
+          "path": "build/cloud-recovery-20261107/restore-evidence/qa-20261107-42289434868-3.4.3-42312769493-1.restore_evidence.json",
+          "sha256": "bdfdf932d22b6ce2a008de38873ac70ba8dcb1dc3235b474f40f9f8fbc9eb4dd"
+        },
+        "bundle_index": {
+          "path": "build/cloud-recovery-20261107/build-evidence/qa-20261107-42289434868-3.4.3.bundle.json",
+          "sha256": "54b055c631c5fd814a7012f176151eb86d65c66849f8b2c71ea3a53ae44dc3a0"
+        },
+        "restored_objects": [
+          {
+            "clean_member": "objects/0f05cb0e3e44b1d73ca68959d51e1898510624cb145ca4f06571a1c05b522863.svg",
+            "pack_sha256": "3ce926b16f4736506a263e2195eabae82d0eaca2645e2291b10ca422255dbf0b",
+            "pack_url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/publish-qa-20261107-42289434868-3.4.3/qa-20261107-42289434868-3.4.3.static-0001.tar.gz",
+            "role": "original",
+            "sha256": "0f05cb0e3e44b1d73ca68959d51e1898510624cb145ca4f06571a1c05b522863",
+            "size_bytes": 19541
+          },
+          {
+            "clean_member": "objects/c8dbf9bb6f69d0b95602a73782bea3dc73830ba8c9426c6344fddb178f57dbb0.png",
+            "pack_sha256": "1665c914ab4090eccf812cf9e0e263d7ba66547a0267343268a7a6a895c73f6a",
+            "pack_url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/publish-qa-20261107-42289434868-3.4.3/qa-20261107-42289434868-3.4.3.static-0010.tar.gz",
+            "role": "preview",
+            "sha256": "c8dbf9bb6f69d0b95602a73782bea3dc73830ba8c9426c6344fddb178f57dbb0",
+            "size_bytes": 35689
+          }
+        ],
+        "fresh_original_download_performed": false
+      },
+      "checks": {
+        "recognizable_at_sheet_scale": "reused_prior_actual_review",
+        "source_identity_corroborated": true,
+        "species_and_state_not_extended_beyond_source": true,
+        "native_editability_tested_in_this_review": false,
+        "dark_background_overlay": "not_tested",
+        "white_background_overlay": "not_tested",
+        "checkerboard_transparency": "not_tested",
+        "small_size_96px": "not_tested",
+        "small_size_48px": "not_tested",
+        "cross_source_composition": "not_tested",
+        "label_readability_at_original_resolution": "not_tested"
+      },
+      "visual_display_review_completed": false,
+      "full_curated_requirement_passed": false
+    },
+    {
+      "ordinal": 57,
+      "candidate_id": "bioicons-6c132d72a134686b571f:file-0",
+      "family_id": "bioicons-6c132d72a134686b571f",
+      "asset_id": "bioicons-6c132d72a134686b571f",
+      "title": "img sequencer short read01",
+      "categories": [
+        "omics_data"
+      ],
+      "usable": true,
+      "source_evidence_checked": true,
+      "license_checked": true,
+      "original_download_checked": true,
+      "visual_evidence_notes": "黑色大型箱式仪器有分舱面板与开口线条，文件来源标short read sequencer；整体轮廓可取用，不从图面断言厂家、性能或某个测序平台。",
+      "recommended_use": "来源标注short-read的测序设备对象。",
+      "limitations": [
+        "仅沿用固定来源名称，不从外观追加平台型号、通量或性能，不表示已测得数据。"
+      ],
+      "category_evidence": {
+        "basis": "explicit_curated_category_selection_using_prior_actual_visual_review_and_exact_source_records",
+        "observed": "黑色大型箱式仪器有分舱面板与开口线条，文件来源标short read sequencer；整体轮廓可取用，不从图面断言厂家、性能或某个测序平台。",
+        "category_role": "来源标注short-read的测序设备对象。",
+        "not_inferred_from_catalog_taxonomy": true,
+        "not_asserting_a_new_benchmark_concept": true
+      },
+      "original_sha256": "a769949ed12aa00f8fdc428ec66c74c5038e11bc530ec1db30d31cc8d1176024",
+      "preview_sha256": "ea3fe51e10fcacfacb1e37ae842dbebda3ca7043dc821a3babd13dfc26cc446a",
+      "original_archive": {
+        "member": "files/a7/a769949ed12aa00f8fdc428ec66c74c5038e11bc530ec1db30d31cc8d1176024.svg",
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42239971379-1-b0000.tar.gz"
+      },
+      "preview_archive": {
+        "member": "previews/a769949ed12aa00f8fdc428ec66c74c5038e11bc530ec1db30d31cc8d1176024.png",
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42239971379-1-b0000.tar.gz"
+      },
+      "format": "svg",
+      "structure": "pure_vector",
+      "source_records": [
+        {
+          "asset_id": "bioicons-6c132d72a134686b571f",
+          "attribution": "img sequencer short read01 — PacBio; https://pacb.com; CC0-1.0; via Bioicons",
+          "author": "PacBio",
+          "categories": [],
+          "distribution_status": "license_recorded",
+          "license": "CC0-1.0",
+          "source": "bioicons",
+          "source_id": "cc-0/Genetics/PacBio/img_sequencer_short_read01.svg",
+          "source_url": "https://github.com/duerrsimon/bioicons/blob/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-0/Genetics/PacBio/img_sequencer_short_read01.svg",
+          "tags": [
+            "Genetics"
+          ],
+          "taxonomy": [
+            "omics_data"
+          ],
+          "title": "img sequencer short read01",
+          "upstream_category": "Genetics",
+          "url": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-0/Genetics/PacBio/img_sequencer_short_read01.svg"
+        }
+      ],
+      "all_provenance": [
+        {
+          "asset_id": "bioicons-6c132d72a134686b571f",
+          "attribution": "img sequencer short read01 — PacBio; https://pacb.com; CC0-1.0; via Bioicons",
+          "author": "PacBio",
+          "categories": [],
+          "distribution_status": "license_recorded",
+          "license": "CC0-1.0",
+          "source": "bioicons",
+          "source_id": "cc-0/Genetics/PacBio/img_sequencer_short_read01.svg",
+          "source_url": "https://github.com/duerrsimon/bioicons/blob/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-0/Genetics/PacBio/img_sequencer_short_read01.svg",
+          "tags": [
+            "Genetics"
+          ],
+          "taxonomy": [
+            "omics_data"
+          ],
+          "title": "img sequencer short read01",
+          "upstream_category": "Genetics",
+          "url": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-0/Genetics/PacBio/img_sequencer_short_read01.svg"
+        }
+      ],
+      "source_versions_and_rights": [
+        {
+          "source": "bioicons",
+          "source_id": "cc-0/Genetics/PacBio/img_sequencer_short_read01.svg",
+          "title": "img sequencer short read01",
+          "author": "PacBio",
+          "license": "CC0-1.0",
+          "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "attribution": "img sequencer short read01 — PacBio; https://pacb.com; CC0-1.0; via Bioicons",
+          "source_url": "https://github.com/duerrsimon/bioicons/blob/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-0/Genetics/PacBio/img_sequencer_short_read01.svg",
+          "upstream_revision": "d29e766ea7580b8063c4f47b29e872db40a4d979"
+        }
+      ],
+      "license_check_basis": "Exact frozen file-level provenance, internal records and GitHub records/receipt digests checked. Existing recorded licenses and user-authorized historical Servier decision retained. No new legal opinion or source-site fetch.",
+      "collection_source_evidence": [
+        {
+          "internal_catalog": {
+            "path": "build/final-scope-baseline/assembly-42283380295-1.internal-catalog.jsonl",
+            "sha256": "8d04bf38b1469ca6690972dd0f140f06e76411b96e245efff67f9efa73ee7970",
+            "jsonl_line": 505
+          },
+          "source": "bioicons",
+          "source_id": "cc-0/Genetics/PacBio/img_sequencer_short_read01.svg",
+          "source_index": 205,
+          "selected_file_validation": "machine_checked_and_rendered",
+          "record_acquisition_status": "acquired",
+          "artifact_evidence": {
+            "source": "bioicons",
+            "run_id": "42239971379-1",
+            "repository": "hujizhou35-cmd/MGA-resource",
+            "release_tag": "collection-20261106",
+            "discovery_sha256": "b03f392be6a524c2ce27e09e60a5884a7ea35964b5ae3c153c58a6ac47349f26",
+            "archive": "bioicons-42239971379-1-b0000.tar.gz",
+            "archive_bytes": 36402602,
+            "records_file": "bioicons-42239971379-1-b0000.records.jsonl",
+            "records_sha256": "4008fda332c6f1ac57540313325bb5c5ba6cb59f3480aa114390904218cbb9cc",
+            "failures_file": "bioicons-42239971379-1-b0000.failures.json",
+            "failures_sha256": "5aa011c6a5e703841ba23993db9f02c805035a24161a3bc4af48882386aef097",
+            "source_index": 205,
+            "archive_sha256": "779774611fbf47b05d0175dbfd541e705eb53e9f9f8561b0e8f8d0c485bba4e7",
+            "receipt_file": "bioicons-42239971379-1-b0000.receipt.json",
+            "receipt_sha256": "7b2be4db3de6e792ceb41bdc6bdf03559a45de0c0e6077f0c6b3d0ee4e112cdd"
+          },
+          "asset_evidence": [
+            {
+              "kind": "records",
+              "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42239971379-1-b0000.records.jsonl",
+              "sha256": "4008fda332c6f1ac57540313325bb5c5ba6cb59f3480aa114390904218cbb9cc",
+              "size_bytes": 1762365,
+              "matches_internal_record": true
+            },
+            {
+              "kind": "receipt",
+              "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42239971379-1-b0000.receipt.json",
+              "sha256": "7b2be4db3de6e792ceb41bdc6bdf03559a45de0c0e6077f0c6b3d0ee4e112cdd",
+              "size_bytes": 113819,
+              "matches_internal_record": true
+            }
+          ]
+        }
+      ],
+      "exact_prior_review": {
+        "path": "data/relevance-reviews/frozen-3.4.1-actions-clinical-omics.json",
+        "sha256": "647485d79bb88e9281778a7e3cf71f0d344d7df8fdaedcbd90759cce631a5ff5",
+        "json_pointer": "/queries/25/result_judgments/1",
+        "query_id": "omics_data-sequencer-en",
+        "observations": "黑色大型箱式仪器有分舱面板与开口线条，文件来源标short read sequencer；整体轮廓可取用，不从图面断言厂家、性能或某个测序平台。",
+        "visual_verdict": "relevant",
+        "reviewer": "Codex registry_acceptance; direct visual inspection",
+        "reviewed_at": "2026-11-06T21:57:36.219097+00:00"
+      },
+      "viewed_sheet": {
+        "member": "concepts/omics_data-sequencer.png",
+        "member_sha256": "d7249c6b79b9d33996e356dd469fbf016324732a1d4b591de12f7dee17ae8673",
+        "review_method": "Actual contact sheet opened with view_image and inspected by this agent; no automated visual verdict.",
+        "sha256": "a4a7e7e6a9e2750472d39ac1d9acbb34e8461d559d6b3afc2141b1ecd76ed196",
+        "tile": 2,
+        "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/frozen-review-42298772894-1.tar.gz"
+      },
+      "new_visual_inspection_performed": false,
+      "selection_confirmation_is_new": true,
+      "text_content": {
+        "status": "unknown",
+        "basis": "Existing catalog text property not reclassified during selection preparation; observed labels remain in the reused visual notes.",
+        "cleanup_advice": "selected_working_copy_only_if_needed"
+      },
+      "original_verification": {
+        "route": "independent_remote_restore_of_identical_bytes",
+        "restore_evidence": {
+          "path": "build/cloud-recovery-20261107/restore-evidence/qa-20261107-42289434868-3.4.3-42312769493-1.restore_evidence.json",
+          "sha256": "bdfdf932d22b6ce2a008de38873ac70ba8dcb1dc3235b474f40f9f8fbc9eb4dd"
+        },
+        "bundle_index": {
+          "path": "build/cloud-recovery-20261107/build-evidence/qa-20261107-42289434868-3.4.3.bundle.json",
+          "sha256": "54b055c631c5fd814a7012f176151eb86d65c66849f8b2c71ea3a53ae44dc3a0"
+        },
+        "restored_objects": [
+          {
+            "clean_member": "objects/a769949ed12aa00f8fdc428ec66c74c5038e11bc530ec1db30d31cc8d1176024.svg",
+            "pack_sha256": "35aeb8f51cbf9f69ef28731a667c65ff18cf9981b812035fd68b84f08a465d77",
+            "pack_url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/publish-qa-20261107-42289434868-3.4.3/qa-20261107-42289434868-3.4.3.static-0009.tar.gz",
+            "role": "original",
+            "sha256": "a769949ed12aa00f8fdc428ec66c74c5038e11bc530ec1db30d31cc8d1176024",
+            "size_bytes": 6004
+          },
+          {
+            "clean_member": "objects/ea3fe51e10fcacfacb1e37ae842dbebda3ca7043dc821a3babd13dfc26cc446a.png",
+            "pack_sha256": "74c2a7f82950f563277dd2f1ea7a36b69dc802b105294c0a47a7af8dd95e4052",
+            "pack_url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/publish-qa-20261107-42289434868-3.4.3/qa-20261107-42289434868-3.4.3.static-0011.tar.gz",
+            "role": "preview",
+            "sha256": "ea3fe51e10fcacfacb1e37ae842dbebda3ca7043dc821a3babd13dfc26cc446a",
+            "size_bytes": 4675
+          }
+        ],
+        "fresh_original_download_performed": false
+      },
+      "checks": {
+        "recognizable_at_sheet_scale": "reused_prior_actual_review",
+        "source_identity_corroborated": true,
+        "species_and_state_not_extended_beyond_source": true,
+        "native_editability_tested_in_this_review": false,
+        "dark_background_overlay": "not_tested",
+        "white_background_overlay": "not_tested",
+        "checkerboard_transparency": "not_tested",
+        "small_size_96px": "not_tested",
+        "small_size_48px": "not_tested",
+        "cross_source_composition": "not_tested",
+        "label_readability_at_original_resolution": "not_tested"
+      },
+      "visual_display_review_completed": false,
+      "full_curated_requirement_passed": false
+    },
+    {
+      "ordinal": 58,
+      "candidate_id": "bioicons-a94c4db0bd505d9e21b3:file-0",
+      "family_id": "bioicons-a94c4db0bd505d9e21b3",
+      "asset_id": "bioicons-a94c4db0bd505d9e21b3",
+      "title": "img sequencer long read05",
+      "categories": [
+        "omics_data"
+      ],
+      "usable": true,
+      "source_evidence_checked": true,
+      "license_checked": true,
+      "original_download_checked": true,
+      "visual_evidence_notes": "立式黑色箱体、顶部侧边蓝色块和少量品牌文字可见，来源标long read sequencer；适合设备示意，保留品牌出处且不声称未核型号/参数。",
+      "recommended_use": "来源标注long-read的立式测序设备对象。",
+      "limitations": [
+        "保留品牌出处；不从外观推断具体型号或参数，品牌小字的可读性待显示检查。"
+      ],
+      "category_evidence": {
+        "basis": "explicit_curated_category_selection_using_prior_actual_visual_review_and_exact_source_records",
+        "observed": "立式黑色箱体、顶部侧边蓝色块和少量品牌文字可见，来源标long read sequencer；适合设备示意，保留品牌出处且不声称未核型号/参数。",
+        "category_role": "来源标注long-read的立式测序设备对象。",
+        "not_inferred_from_catalog_taxonomy": true,
+        "not_asserting_a_new_benchmark_concept": true
+      },
+      "original_sha256": "60be45316c17d981be896a83cae68b484d2a135cd0b05cc9187e37f63f07fc59",
+      "preview_sha256": "4b213cededab4e128683d74f723f761ae3935dd296528a158bb9400c8a224d19",
+      "original_archive": {
+        "member": "files/60/60be45316c17d981be896a83cae68b484d2a135cd0b05cc9187e37f63f07fc59.svg",
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42239971379-1-b0000.tar.gz"
+      },
+      "preview_archive": {
+        "member": "previews/60be45316c17d981be896a83cae68b484d2a135cd0b05cc9187e37f63f07fc59.png",
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42239971379-1-b0000.tar.gz"
+      },
+      "format": "svg",
+      "structure": "pure_vector",
+      "source_records": [
+        {
+          "asset_id": "bioicons-a94c4db0bd505d9e21b3",
+          "attribution": "img sequencer long read05 — PacBio; https://pacb.com; CC0-1.0; via Bioicons",
+          "author": "PacBio",
+          "categories": [],
+          "distribution_status": "license_recorded",
+          "license": "CC0-1.0",
+          "source": "bioicons",
+          "source_id": "cc-0/Genetics/PacBio/img_sequencer_long_read05.svg",
+          "source_url": "https://github.com/duerrsimon/bioicons/blob/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-0/Genetics/PacBio/img_sequencer_long_read05.svg",
+          "tags": [
+            "Genetics"
+          ],
+          "taxonomy": [
+            "omics_data"
+          ],
+          "title": "img sequencer long read05",
+          "upstream_category": "Genetics",
+          "url": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-0/Genetics/PacBio/img_sequencer_long_read05.svg"
+        }
+      ],
+      "all_provenance": [
+        {
+          "asset_id": "bioicons-a94c4db0bd505d9e21b3",
+          "attribution": "img sequencer long read05 — PacBio; https://pacb.com; CC0-1.0; via Bioicons",
+          "author": "PacBio",
+          "categories": [],
+          "distribution_status": "license_recorded",
+          "license": "CC0-1.0",
+          "source": "bioicons",
+          "source_id": "cc-0/Genetics/PacBio/img_sequencer_long_read05.svg",
+          "source_url": "https://github.com/duerrsimon/bioicons/blob/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-0/Genetics/PacBio/img_sequencer_long_read05.svg",
+          "tags": [
+            "Genetics"
+          ],
+          "taxonomy": [
+            "omics_data"
+          ],
+          "title": "img sequencer long read05",
+          "upstream_category": "Genetics",
+          "url": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-0/Genetics/PacBio/img_sequencer_long_read05.svg"
+        }
+      ],
+      "source_versions_and_rights": [
+        {
+          "source": "bioicons",
+          "source_id": "cc-0/Genetics/PacBio/img_sequencer_long_read05.svg",
+          "title": "img sequencer long read05",
+          "author": "PacBio",
+          "license": "CC0-1.0",
+          "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "attribution": "img sequencer long read05 — PacBio; https://pacb.com; CC0-1.0; via Bioicons",
+          "source_url": "https://github.com/duerrsimon/bioicons/blob/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-0/Genetics/PacBio/img_sequencer_long_read05.svg",
+          "upstream_revision": "d29e766ea7580b8063c4f47b29e872db40a4d979"
+        }
+      ],
+      "license_check_basis": "Exact frozen file-level provenance, internal records and GitHub records/receipt digests checked. Existing recorded licenses and user-authorized historical Servier decision retained. No new legal opinion or source-site fetch.",
+      "collection_source_evidence": [
+        {
+          "internal_catalog": {
+            "path": "build/final-scope-baseline/assembly-42283380295-1.internal-catalog.jsonl",
+            "sha256": "8d04bf38b1469ca6690972dd0f140f06e76411b96e245efff67f9efa73ee7970",
+            "jsonl_line": 503
+          },
+          "source": "bioicons",
+          "source_id": "cc-0/Genetics/PacBio/img_sequencer_long_read05.svg",
+          "source_index": 203,
+          "selected_file_validation": "machine_checked_and_rendered",
+          "record_acquisition_status": "acquired",
+          "artifact_evidence": {
+            "source": "bioicons",
+            "run_id": "42239971379-1",
+            "repository": "hujizhou35-cmd/MGA-resource",
+            "release_tag": "collection-20261106",
+            "discovery_sha256": "b03f392be6a524c2ce27e09e60a5884a7ea35964b5ae3c153c58a6ac47349f26",
+            "archive": "bioicons-42239971379-1-b0000.tar.gz",
+            "archive_bytes": 36402602,
+            "records_file": "bioicons-42239971379-1-b0000.records.jsonl",
+            "records_sha256": "4008fda332c6f1ac57540313325bb5c5ba6cb59f3480aa114390904218cbb9cc",
+            "failures_file": "bioicons-42239971379-1-b0000.failures.json",
+            "failures_sha256": "5aa011c6a5e703841ba23993db9f02c805035a24161a3bc4af48882386aef097",
+            "source_index": 203,
+            "archive_sha256": "779774611fbf47b05d0175dbfd541e705eb53e9f9f8561b0e8f8d0c485bba4e7",
+            "receipt_file": "bioicons-42239971379-1-b0000.receipt.json",
+            "receipt_sha256": "7b2be4db3de6e792ceb41bdc6bdf03559a45de0c0e6077f0c6b3d0ee4e112cdd"
+          },
+          "asset_evidence": [
+            {
+              "kind": "records",
+              "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42239971379-1-b0000.records.jsonl",
+              "sha256": "4008fda332c6f1ac57540313325bb5c5ba6cb59f3480aa114390904218cbb9cc",
+              "size_bytes": 1762365,
+              "matches_internal_record": true
+            },
+            {
+              "kind": "receipt",
+              "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42239971379-1-b0000.receipt.json",
+              "sha256": "7b2be4db3de6e792ceb41bdc6bdf03559a45de0c0e6077f0c6b3d0ee4e112cdd",
+              "size_bytes": 113819,
+              "matches_internal_record": true
+            }
+          ]
+        }
+      ],
+      "exact_prior_review": {
+        "path": "data/relevance-reviews/frozen-3.4.1-actions-clinical-omics.json",
+        "sha256": "647485d79bb88e9281778a7e3cf71f0d344d7df8fdaedcbd90759cce631a5ff5",
+        "json_pointer": "/queries/25/result_judgments/4",
+        "query_id": "omics_data-sequencer-en",
+        "observations": "立式黑色箱体、顶部侧边蓝色块和少量品牌文字可见，来源标long read sequencer；适合设备示意，保留品牌出处且不声称未核型号/参数。",
+        "visual_verdict": "relevant",
+        "reviewer": "Codex registry_acceptance; direct visual inspection",
+        "reviewed_at": "2026-11-06T21:57:36.219097+00:00"
+      },
+      "viewed_sheet": {
+        "member": "concepts/omics_data-sequencer.png",
+        "member_sha256": "d7249c6b79b9d33996e356dd469fbf016324732a1d4b591de12f7dee17ae8673",
+        "review_method": "Actual contact sheet opened with view_image and inspected by this agent; no automated visual verdict.",
+        "sha256": "a4a7e7e6a9e2750472d39ac1d9acbb34e8461d559d6b3afc2141b1ecd76ed196",
+        "tile": 5,
+        "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/frozen-review-42298772894-1.tar.gz"
+      },
+      "new_visual_inspection_performed": false,
+      "selection_confirmation_is_new": true,
+      "text_content": {
+        "status": "unknown",
+        "basis": "Existing catalog text property not reclassified during selection preparation; observed labels remain in the reused visual notes.",
+        "cleanup_advice": "selected_working_copy_only_if_needed"
+      },
+      "original_verification": {
+        "route": "independent_remote_restore_of_identical_bytes",
+        "restore_evidence": {
+          "path": "build/cloud-recovery-20261107/restore-evidence/qa-20261107-42289434868-3.4.3-42312769493-1.restore_evidence.json",
+          "sha256": "bdfdf932d22b6ce2a008de38873ac70ba8dcb1dc3235b474f40f9f8fbc9eb4dd"
+        },
+        "bundle_index": {
+          "path": "build/cloud-recovery-20261107/build-evidence/qa-20261107-42289434868-3.4.3.bundle.json",
+          "sha256": "54b055c631c5fd814a7012f176151eb86d65c66849f8b2c71ea3a53ae44dc3a0"
+        },
+        "restored_objects": [
+          {
+            "clean_member": "objects/60be45316c17d981be896a83cae68b484d2a135cd0b05cc9187e37f63f07fc59.svg",
+            "pack_sha256": "0904e8d62c85579b3c35a1a60813a7c892ce88306bc919d1c571ab7aa3579ff8",
+            "pack_url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/publish-qa-20261107-42289434868-3.4.3/qa-20261107-42289434868-3.4.3.static-0005.tar.gz",
+            "role": "original",
+            "sha256": "60be45316c17d981be896a83cae68b484d2a135cd0b05cc9187e37f63f07fc59",
+            "size_bytes": 7777
+          },
+          {
+            "clean_member": "objects/4b213cededab4e128683d74f723f761ae3935dd296528a158bb9400c8a224d19.png",
+            "pack_sha256": "162a83a194bef94c4a349a7de87d99b853f5581a7f76132f7a2b64d583720c9d",
+            "pack_url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/publish-qa-20261107-42289434868-3.4.3/qa-20261107-42289434868-3.4.3.static-0004.tar.gz",
+            "role": "preview",
+            "sha256": "4b213cededab4e128683d74f723f761ae3935dd296528a158bb9400c8a224d19",
+            "size_bytes": 10026
+          }
+        ],
+        "fresh_original_download_performed": false
+      },
+      "checks": {
+        "recognizable_at_sheet_scale": "reused_prior_actual_review",
+        "source_identity_corroborated": true,
+        "species_and_state_not_extended_beyond_source": true,
+        "native_editability_tested_in_this_review": false,
+        "dark_background_overlay": "not_tested",
+        "white_background_overlay": "not_tested",
+        "checkerboard_transparency": "not_tested",
+        "small_size_96px": "not_tested",
+        "small_size_48px": "not_tested",
+        "cross_source_composition": "not_tested",
+        "label_readability_at_original_resolution": "not_tested"
+      },
+      "visual_display_review_completed": false,
+      "full_curated_requirement_passed": false
+    },
+    {
+      "ordinal": 59,
+      "candidate_id": "togo-fa9ee4a114af11864902:file-0",
+      "family_id": "togo-fa9ee4a114af11864902",
+      "asset_id": "togo-fa9ee4a114af11864902",
+      "title": "Portable sequencer",
+      "categories": [
+        "omics_data"
+      ],
+      "usable": true,
+      "source_evidence_checked": true,
+      "license_checked": true,
+      "original_download_checked": true,
+      "visual_evidence_notes": "笔记本电脑通过线缆连接小型便携模块，来源标Portable sequencer；能够表达便携测序设备组合，不推断品牌、实时数据或操作结果。",
+      "recommended_use": "便携测序模块及其连接电脑的设备组合。",
+      "limitations": [
+        "不推断品牌、即时结果、数据内容或操作结果；这是有明确来源的设备场景。"
+      ],
+      "category_evidence": {
+        "basis": "explicit_curated_category_selection_using_prior_actual_visual_review_and_exact_source_records",
+        "observed": "笔记本电脑通过线缆连接小型便携模块，来源标Portable sequencer；能够表达便携测序设备组合，不推断品牌、实时数据或操作结果。",
+        "category_role": "便携测序模块及其连接电脑的设备组合。",
+        "not_inferred_from_catalog_taxonomy": true,
+        "not_asserting_a_new_benchmark_concept": true
+      },
+      "original_sha256": "1d2d0b1f1542f96197f41b939401eb4c38852b9451c77d30f280bd3322be461a",
+      "preview_sha256": "e14f3a6bedcdf0ad49a13e032cda8a3530c7db6deb9ea8d6f352c04fe8fa375d",
+      "original_archive": {
+        "member": "files/1d/1d2d0b1f1542f96197f41b939401eb4c38852b9451c77d30f280bd3322be461a.png",
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42249870031-1-b0001.tar.gz"
+      },
+      "preview_archive": {
+        "member": "previews/1d2d0b1f1542f96197f41b939401eb4c38852b9451c77d30f280bd3322be461a.png",
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42249870031-1-b0001.tar.gz"
+      },
+      "format": "png",
+      "structure": "raster",
+      "source_records": [
+        {
+          "asset_id": "togo-9e67d276f3a2831c8d4e",
+          "attribution": "Portable sequencer — Wakana Sasaki; © 2016 DBCLS TogoTV / CC-BY-4.0; https://doi.org/10.7875/togopic.2017.35",
+          "author": "Wakana Sasaki",
+          "categories": [],
+          "distribution_status": "license_recorded",
+          "license": "CC-BY-4.0",
+          "source": "togo",
+          "source_id": "501",
+          "source_url": "https://doi.org/10.7875/togopic.2017.35",
+          "tags": [
+            "Lab apparatus",
+            "DNA sequencer",
+            "Next-generation sequencing",
+            "Genome analysis",
+            "Gene analysis",
+            "Molecular biology"
+          ],
+          "taxonomy": [
+            "molecules",
+            "lab_equipment",
+            "experimental_actions",
+            "omics_data"
+          ],
+          "title": "Portable sequencer",
+          "url": "https://dbarchive.biosciencedbc.jp/data/togo-pic/image/201707_Portable_sequencer.png"
+        }
+      ],
+      "all_provenance": [
+        {
+          "asset_id": "togo-9e67d276f3a2831c8d4e",
+          "attribution": "Portable sequencer — Wakana Sasaki; © 2016 DBCLS TogoTV / CC-BY-4.0; https://doi.org/10.7875/togopic.2017.35",
+          "author": "Wakana Sasaki",
+          "categories": [],
+          "distribution_status": "license_recorded",
+          "license": "CC-BY-4.0",
+          "source": "togo",
+          "source_id": "501",
+          "source_url": "https://doi.org/10.7875/togopic.2017.35",
+          "tags": [
+            "Lab apparatus",
+            "DNA sequencer",
+            "Next-generation sequencing",
+            "Genome analysis",
+            "Gene analysis",
+            "Molecular biology"
+          ],
+          "taxonomy": [
+            "molecules",
+            "lab_equipment",
+            "experimental_actions",
+            "omics_data"
+          ],
+          "title": "Portable sequencer",
+          "url": "https://dbarchive.biosciencedbc.jp/data/togo-pic/image/201707_Portable_sequencer.png"
+        }
+      ],
+      "source_versions_and_rights": [
+        {
+          "source": "togo",
+          "source_id": "501",
+          "title": "Portable sequencer",
+          "author": "Wakana Sasaki",
+          "license": "CC-BY-4.0",
+          "license_url": "https://creativecommons.org/licenses/by/4.0/",
+          "attribution": "Portable sequencer — Wakana Sasaki; © 2016 DBCLS TogoTV / CC-BY-4.0; https://doi.org/10.7875/togopic.2017.35",
+          "source_url": "https://doi.org/10.7875/togopic.2017.35",
+          "upstream_revision": "2017-07-01"
+        }
+      ],
+      "license_check_basis": "Exact frozen file-level provenance, internal records and GitHub records/receipt digests checked. Existing recorded licenses and user-authorized historical Servier decision retained. No new legal opinion or source-site fetch.",
+      "collection_source_evidence": [
+        {
+          "internal_catalog": {
+            "path": "build/final-scope-baseline/assembly-42283380295-1.internal-catalog.jsonl",
+            "sha256": "8d04bf38b1469ca6690972dd0f140f06e76411b96e245efff67f9efa73ee7970",
+            "jsonl_line": 10133
+          },
+          "source": "togo",
+          "source_id": "501",
+          "source_index": 500,
+          "selected_file_validation": "machine_checked_and_rendered",
+          "record_acquisition_status": "failed",
+          "artifact_evidence": {
+            "source": "togo",
+            "run_id": "42249870031-1",
+            "repository": "hujizhou35-cmd/MGA-resource",
+            "release_tag": "collection-20261106",
+            "discovery_sha256": "2f35e01f966726f8dd1a9aceb321cf59a1feb4c4e2be0bf0eda8f8554b49178f",
+            "archive": "togo-42249870031-1-b0001.tar.gz",
+            "archive_bytes": 414970276,
+            "records_file": "togo-42249870031-1-b0001.records.jsonl",
+            "records_sha256": "c00adeba6ad96b29b00ef41d84ef57475eb91ea5362f2c1f2b2ae74a0be2240c",
+            "failures_file": "togo-42249870031-1-b0001.failures.json",
+            "failures_sha256": "6a7ed168eed8787e138eb7a49efe170052e732dd8d88720ebb1905f5cb67413f",
+            "source_index": 500,
+            "archive_sha256": "957c1bfbebbf2f38c81d8210be57559fd62996001b974a55d8f8b7b584f54841",
+            "receipt_file": "togo-42249870031-1-b0001.receipt.json",
+            "receipt_sha256": "a6c5ec3e734ea14e9ef79e998e385bae3b39b9e4069ae4e8464a1ecd8927a8cd"
+          },
+          "asset_evidence": [
+            {
+              "kind": "records",
+              "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42249870031-1-b0001.records.jsonl",
+              "sha256": "c00adeba6ad96b29b00ef41d84ef57475eb91ea5362f2c1f2b2ae74a0be2240c",
+              "size_bytes": 2820861,
+              "matches_internal_record": true
+            },
+            {
+              "kind": "receipt",
+              "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42249870031-1-b0001.receipt.json",
+              "sha256": "a6c5ec3e734ea14e9ef79e998e385bae3b39b9e4069ae4e8464a1ecd8927a8cd",
+              "size_bytes": 85116,
+              "matches_internal_record": true
+            }
+          ]
+        }
+      ],
+      "exact_prior_review": {
+        "path": "data/relevance-reviews/frozen-3.4.1-actions-clinical-omics.json",
+        "sha256": "647485d79bb88e9281778a7e3cf71f0d344d7df8fdaedcbd90759cce631a5ff5",
+        "json_pointer": "/queries/25/result_judgments/7",
+        "query_id": "omics_data-sequencer-en",
+        "observations": "笔记本电脑通过线缆连接小型便携模块，来源标Portable sequencer；能够表达便携测序设备组合，不推断品牌、实时数据或操作结果。",
+        "visual_verdict": "relevant",
+        "reviewer": "Codex registry_acceptance; direct visual inspection",
+        "reviewed_at": "2026-11-06T21:57:36.219097+00:00"
+      },
+      "viewed_sheet": {
+        "member": "concepts/omics_data-sequencer.png",
+        "member_sha256": "d7249c6b79b9d33996e356dd469fbf016324732a1d4b591de12f7dee17ae8673",
+        "review_method": "Actual contact sheet opened with view_image and inspected by this agent; no automated visual verdict.",
+        "sha256": "a4a7e7e6a9e2750472d39ac1d9acbb34e8461d559d6b3afc2141b1ecd76ed196",
+        "tile": 8,
+        "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/frozen-review-42298772894-1.tar.gz"
+      },
+      "new_visual_inspection_performed": false,
+      "selection_confirmation_is_new": true,
+      "text_content": {
+        "status": "unknown",
+        "basis": "Existing catalog text property not reclassified during selection preparation; observed labels remain in the reused visual notes.",
+        "cleanup_advice": "selected_working_copy_only_if_needed"
+      },
+      "original_verification": {
+        "route": "independent_remote_restore_of_identical_bytes",
+        "restore_evidence": {
+          "path": "build/cloud-recovery-20261107/restore-evidence/qa-20261107-42289434868-3.4.3-42312769493-1.restore_evidence.json",
+          "sha256": "bdfdf932d22b6ce2a008de38873ac70ba8dcb1dc3235b474f40f9f8fbc9eb4dd"
+        },
+        "bundle_index": {
+          "path": "build/cloud-recovery-20261107/build-evidence/qa-20261107-42289434868-3.4.3.bundle.json",
+          "sha256": "54b055c631c5fd814a7012f176151eb86d65c66849f8b2c71ea3a53ae44dc3a0"
+        },
+        "restored_objects": [
+          {
+            "clean_member": "objects/1d2d0b1f1542f96197f41b939401eb4c38852b9451c77d30f280bd3322be461a.png",
+            "pack_sha256": "47b6706a7be42ea7d0f71d9c2e0b485980f11098d6c800bdfcb7ae031042bfe4",
+            "pack_url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/publish-qa-20261107-42289434868-3.4.3/qa-20261107-42289434868-3.4.3.static-0003.tar.gz",
+            "role": "original",
+            "sha256": "1d2d0b1f1542f96197f41b939401eb4c38852b9451c77d30f280bd3322be461a",
+            "size_bytes": 205965
+          },
+          {
+            "clean_member": "objects/e14f3a6bedcdf0ad49a13e032cda8a3530c7db6deb9ea8d6f352c04fe8fa375d.png",
+            "pack_sha256": "74c2a7f82950f563277dd2f1ea7a36b69dc802b105294c0a47a7af8dd95e4052",
+            "pack_url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/publish-qa-20261107-42289434868-3.4.3/qa-20261107-42289434868-3.4.3.static-0011.tar.gz",
+            "role": "preview",
+            "sha256": "e14f3a6bedcdf0ad49a13e032cda8a3530c7db6deb9ea8d6f352c04fe8fa375d",
+            "size_bytes": 94374
+          }
+        ],
+        "fresh_original_download_performed": false
+      },
+      "checks": {
+        "recognizable_at_sheet_scale": "reused_prior_actual_review",
+        "source_identity_corroborated": true,
+        "species_and_state_not_extended_beyond_source": true,
+        "native_editability_tested_in_this_review": false,
+        "dark_background_overlay": "not_tested",
+        "white_background_overlay": "not_tested",
+        "checkerboard_transparency": "not_tested",
+        "small_size_96px": "not_tested",
+        "small_size_48px": "not_tested",
+        "cross_source_composition": "not_tested",
+        "label_readability_at_original_resolution": "not_tested"
+      },
+      "visual_display_review_completed": false,
+      "full_curated_requirement_passed": false
+    },
+    {
+      "ordinal": 60,
+      "candidate_id": "togo-a094e62fb31b65be0d8b:file-1",
+      "family_id": "togo-a094e62fb31b65be0d8b",
+      "asset_id": "togo-a094e62fb31b65be0d8b",
+      "title": "DNA sequencer 12",
+      "categories": [
+        "omics_data"
+      ],
+      "usable": true,
+      "source_evidence_checked": true,
+      "license_checked": true,
+      "original_download_checked": true,
+      "visual_evidence_notes": "桌面盒式设备上方有多个安装位及正面指示部件，来源标DNA sequencer；可用作测序设备图，不猜通量或仪器品牌。",
+      "recommended_use": "DNA测序仪对象，展示带多个安装位的桌面设备形态。",
+      "limitations": [
+        "不推断测序原理、品牌或通量；与其他对象是不同家族，不是同作品的格式替换。"
+      ],
+      "category_evidence": {
+        "basis": "explicit_curated_category_selection_using_prior_actual_visual_review_and_exact_source_records",
+        "observed": "桌面盒式设备上方有多个安装位及正面指示部件，来源标DNA sequencer；可用作测序设备图，不猜通量或仪器品牌。",
+        "category_role": "DNA测序仪对象，展示带多个安装位的桌面设备形态。",
+        "not_inferred_from_catalog_taxonomy": true,
+        "not_asserting_a_new_benchmark_concept": true
+      },
+      "original_sha256": "e2b9c40b097842577202e727863906ebd81777ec132c59e242361cb3bc4665c4",
+      "preview_sha256": "85db25f9bdbf4a0517d3867a7c5a0204815e7cc374c23bf4f0f7b8bf7fb7730f",
+      "original_archive": {
+        "member": "files/e2/e2b9c40b097842577202e727863906ebd81777ec132c59e242361cb3bc4665c4.png",
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42249870031-1-b0001.tar.gz"
+      },
+      "preview_archive": {
+        "member": "previews/e2b9c40b097842577202e727863906ebd81777ec132c59e242361cb3bc4665c4.png",
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42249870031-1-b0001.tar.gz"
+      },
+      "format": "png",
+      "structure": "raster",
+      "source_records": [
+        {
+          "asset_id": "togo-1f7ee10943b9b3495bf0",
+          "attribution": "DNA sequencer 12 — Watanabe; © 2016 DBCLS TogoTV / CC-BY-4.0; https://doi.org/10.7875/togopic.2019.34",
+          "author": "Watanabe",
+          "categories": [],
+          "distribution_status": "license_recorded",
+          "license": "CC-BY-4.0",
+          "source": "togo",
+          "source_id": "586",
+          "source_url": "https://doi.org/10.7875/togopic.2019.34",
+          "tags": [
+            "Lab apparatus",
+            "DNA sequencer",
+            "Molecular biology",
+            "Genetics",
+            "Genomics",
+            "Bioinformatics"
+          ],
+          "taxonomy": [
+            "molecules",
+            "lab_equipment",
+            "omics_data"
+          ],
+          "title": "DNA sequencer 12",
+          "url": "https://dbarchive.biosciencedbc.jp/data/togo-pic/image/201912_DNA_sequencer_12.png"
+        }
+      ],
+      "all_provenance": [
+        {
+          "asset_id": "togo-1f7ee10943b9b3495bf0",
+          "attribution": "DNA sequencer 12 — Watanabe; © 2016 DBCLS TogoTV / CC-BY-4.0; https://doi.org/10.7875/togopic.2019.34",
+          "author": "Watanabe",
+          "categories": [],
+          "distribution_status": "license_recorded",
+          "license": "CC-BY-4.0",
+          "source": "togo",
+          "source_id": "586",
+          "source_url": "https://doi.org/10.7875/togopic.2019.34",
+          "tags": [
+            "Lab apparatus",
+            "DNA sequencer",
+            "Molecular biology",
+            "Genetics",
+            "Genomics",
+            "Bioinformatics"
+          ],
+          "taxonomy": [
+            "molecules",
+            "lab_equipment",
+            "omics_data"
+          ],
+          "title": "DNA sequencer 12",
+          "url": "https://dbarchive.biosciencedbc.jp/data/togo-pic/image/201912_DNA_sequencer_12.png"
+        }
+      ],
+      "source_versions_and_rights": [
+        {
+          "source": "togo",
+          "source_id": "586",
+          "title": "DNA sequencer 12",
+          "author": "Watanabe",
+          "license": "CC-BY-4.0",
+          "license_url": "https://creativecommons.org/licenses/by/4.0/",
+          "attribution": "DNA sequencer 12 — Watanabe; © 2016 DBCLS TogoTV / CC-BY-4.0; https://doi.org/10.7875/togopic.2019.34",
+          "source_url": "https://doi.org/10.7875/togopic.2019.34",
+          "upstream_revision": "2019-12-01"
+        }
+      ],
+      "license_check_basis": "Exact frozen file-level provenance, internal records and GitHub records/receipt digests checked. Existing recorded licenses and user-authorized historical Servier decision retained. No new legal opinion or source-site fetch.",
+      "collection_source_evidence": [
+        {
+          "internal_catalog": {
+            "path": "build/final-scope-baseline/assembly-42283380295-1.internal-catalog.jsonl",
+            "sha256": "8d04bf38b1469ca6690972dd0f140f06e76411b96e245efff67f9efa73ee7970",
+            "jsonl_line": 10218
+          },
+          "source": "togo",
+          "source_id": "586",
+          "source_index": 585,
+          "selected_file_validation": "machine_checked_and_rendered",
+          "record_acquisition_status": "acquired",
+          "artifact_evidence": {
+            "source": "togo",
+            "run_id": "42249870031-1",
+            "repository": "hujizhou35-cmd/MGA-resource",
+            "release_tag": "collection-20261106",
+            "discovery_sha256": "2f35e01f966726f8dd1a9aceb321cf59a1feb4c4e2be0bf0eda8f8554b49178f",
+            "archive": "togo-42249870031-1-b0001.tar.gz",
+            "archive_bytes": 414970276,
+            "records_file": "togo-42249870031-1-b0001.records.jsonl",
+            "records_sha256": "c00adeba6ad96b29b00ef41d84ef57475eb91ea5362f2c1f2b2ae74a0be2240c",
+            "failures_file": "togo-42249870031-1-b0001.failures.json",
+            "failures_sha256": "6a7ed168eed8787e138eb7a49efe170052e732dd8d88720ebb1905f5cb67413f",
+            "source_index": 585,
+            "archive_sha256": "957c1bfbebbf2f38c81d8210be57559fd62996001b974a55d8f8b7b584f54841",
+            "receipt_file": "togo-42249870031-1-b0001.receipt.json",
+            "receipt_sha256": "a6c5ec3e734ea14e9ef79e998e385bae3b39b9e4069ae4e8464a1ecd8927a8cd"
+          },
+          "asset_evidence": [
+            {
+              "kind": "records",
+              "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42249870031-1-b0001.records.jsonl",
+              "sha256": "c00adeba6ad96b29b00ef41d84ef57475eb91ea5362f2c1f2b2ae74a0be2240c",
+              "size_bytes": 2820861,
+              "matches_internal_record": true
+            },
+            {
+              "kind": "receipt",
+              "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42249870031-1-b0001.receipt.json",
+              "sha256": "a6c5ec3e734ea14e9ef79e998e385bae3b39b9e4069ae4e8464a1ecd8927a8cd",
+              "size_bytes": 85116,
+              "matches_internal_record": true
+            }
+          ]
+        }
+      ],
+      "exact_prior_review": {
+        "path": "data/relevance-reviews/frozen-3.4.1-actions-clinical-omics.json",
+        "sha256": "647485d79bb88e9281778a7e3cf71f0d344d7df8fdaedcbd90759cce631a5ff5",
+        "json_pointer": "/queries/25/result_judgments/3",
+        "query_id": "omics_data-sequencer-en",
+        "observations": "桌面盒式设备上方有多个安装位及正面指示部件，来源标DNA sequencer；可用作测序设备图，不猜通量或仪器品牌。",
+        "visual_verdict": "relevant",
+        "reviewer": "Codex registry_acceptance; direct visual inspection",
+        "reviewed_at": "2026-11-06T21:57:36.219097+00:00"
+      },
+      "viewed_sheet": {
+        "member": "concepts/omics_data-sequencer.png",
+        "member_sha256": "d7249c6b79b9d33996e356dd469fbf016324732a1d4b591de12f7dee17ae8673",
+        "review_method": "Actual contact sheet opened with view_image and inspected by this agent; no automated visual verdict.",
+        "sha256": "a4a7e7e6a9e2750472d39ac1d9acbb34e8461d559d6b3afc2141b1ecd76ed196",
+        "tile": 4,
+        "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/frozen-review-42298772894-1.tar.gz"
+      },
+      "new_visual_inspection_performed": false,
+      "selection_confirmation_is_new": true,
+      "text_content": {
+        "status": "unknown",
+        "basis": "Existing catalog text property not reclassified during selection preparation; observed labels remain in the reused visual notes.",
+        "cleanup_advice": "selected_working_copy_only_if_needed"
+      },
+      "original_verification": {
+        "route": "independent_remote_restore_of_identical_bytes",
+        "restore_evidence": {
+          "path": "build/cloud-recovery-20261107/restore-evidence/qa-20261107-42289434868-3.4.3-42312769493-1.restore_evidence.json",
+          "sha256": "bdfdf932d22b6ce2a008de38873ac70ba8dcb1dc3235b474f40f9f8fbc9eb4dd"
+        },
+        "bundle_index": {
+          "path": "build/cloud-recovery-20261107/build-evidence/qa-20261107-42289434868-3.4.3.bundle.json",
+          "sha256": "54b055c631c5fd814a7012f176151eb86d65c66849f8b2c71ea3a53ae44dc3a0"
+        },
+        "restored_objects": [
+          {
+            "clean_member": "objects/e2b9c40b097842577202e727863906ebd81777ec132c59e242361cb3bc4665c4.png",
+            "pack_sha256": "74c2a7f82950f563277dd2f1ea7a36b69dc802b105294c0a47a7af8dd95e4052",
+            "pack_url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/publish-qa-20261107-42289434868-3.4.3/qa-20261107-42289434868-3.4.3.static-0011.tar.gz",
+            "role": "original",
+            "sha256": "e2b9c40b097842577202e727863906ebd81777ec132c59e242361cb3bc4665c4",
+            "size_bytes": 228689
+          },
+          {
+            "clean_member": "objects/85db25f9bdbf4a0517d3867a7c5a0204815e7cc374c23bf4f0f7b8bf7fb7730f.png",
+            "pack_sha256": "8954c29c8339f37e6a7c7278f56b2f593a8684d4fd136c145573d19982b91eb3",
+            "pack_url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/publish-qa-20261107-42289434868-3.4.3/qa-20261107-42289434868-3.4.3.static-0007.tar.gz",
+            "role": "preview",
+            "sha256": "85db25f9bdbf4a0517d3867a7c5a0204815e7cc374c23bf4f0f7b8bf7fb7730f",
+            "size_bytes": 64199
+          }
+        ],
+        "fresh_original_download_performed": false
+      },
+      "checks": {
+        "recognizable_at_sheet_scale": "reused_prior_actual_review",
+        "source_identity_corroborated": true,
+        "species_and_state_not_extended_beyond_source": true,
+        "native_editability_tested_in_this_review": false,
+        "dark_background_overlay": "not_tested",
+        "white_background_overlay": "not_tested",
+        "checkerboard_transparency": "not_tested",
+        "small_size_96px": "not_tested",
+        "small_size_48px": "not_tested",
+        "cross_source_composition": "not_tested",
+        "label_readability_at_original_resolution": "not_tested"
+      },
+      "visual_display_review_completed": false,
+      "full_curated_requirement_passed": false
+    }
+  ],
+  "mapping_candidates": {
+    "bioicons-49e695f1a88f41f5dce1:file-0": {
+      "asset_id": "bioicons-49e695f1a88f41f5dce1",
+      "attribution": "nucleus full 3d — Servier Medical Art by Servier; CC BY 3.0 (https://creativecommons.org/licenses/by/3.0/); fixed source: https://github.com/duerrsimon/bioicons/blob/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-3.0/Intracellular_components/Servier/nucleus-full-3d.svg; via Bioicons. Historical SVG copy distributed through Bioicons; no new artwork modification by MGA-resource.",
+      "candidate_id": "bioicons-49e695f1a88f41f5dce1:file-0",
+      "distribution_status": "license_recorded",
+      "family_id": "bioicons-49e695f1a88f41f5dce1",
+      "file_source_records": [
+        {
+          "asset_id": "bioicons-49e695f1a88f41f5dce1",
+          "attribution": "nucleus full 3d — Servier Medical Art by Servier; CC BY 3.0 (https://creativecommons.org/licenses/by/3.0/); fixed source: https://github.com/duerrsimon/bioicons/blob/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-3.0/Intracellular_components/Servier/nucleus-full-3d.svg; via Bioicons. Historical SVG copy distributed through Bioicons; no new artwork modification by MGA-resource.",
+          "author": "Servier",
+          "categories": [],
+          "distribution_status": "license_recorded",
+          "license": "CC-BY-3.0",
+          "source": "bioicons",
+          "source_id": "cc-by-3.0/Intracellular_components/Servier/nucleus-full-3d.svg",
+          "source_url": "https://github.com/duerrsimon/bioicons/blob/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-3.0/Intracellular_components/Servier/nucleus-full-3d.svg",
+          "tags": [
+            "Intracellular components"
+          ],
+          "taxonomy": [
+            "organelles"
+          ],
+          "title": "nucleus full 3d",
+          "upstream_category": "Intracellular_components",
+          "url": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-3.0/Intracellular_components/Servier/nucleus-full-3d.svg"
+        }
+      ],
+      "format": "svg",
+      "license": "CC-BY-3.0",
+      "license_url": "https://creativecommons.org/licenses/by/3.0/",
+      "original_archive": {
+        "member": "files/53/534948dd77f32890efce6924dc3ae15a707c41cc56696cb48b505d9847e1a4d4.svg",
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42251588741-1-b0002.tar.gz"
+      },
+      "original_sha256": "534948dd77f32890efce6924dc3ae15a707c41cc56696cb48b505d9847e1a4d4",
+      "preview": {
+        "archive": {
+          "member": "previews/534948dd77f32890efce6924dc3ae15a707c41cc56696cb48b505d9847e1a4d4.png",
+          "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42251588741-1-b0002.tar.gz"
+        },
+        "format": "png",
+        "height": 512,
+        "path": "previews/534948dd77f32890efce6924dc3ae15a707c41cc56696cb48b505d9847e1a4d4.png",
+        "sha256": "467ceed7e10d0886f9ebfaf09a9b1f89ca395b39b7c43e46b7e4d8ee99b1601b",
+        "size_bytes": 62603,
+        "width": 464
+      },
+      "preview_error": null,
+      "preview_key": [
+        "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42251588741-1-b0002.tar.gz",
+        "previews/534948dd77f32890efce6924dc3ae15a707c41cc56696cb48b505d9847e1a4d4.png",
+        "467ceed7e10d0886f9ebfaf09a9b1f89ca395b39b7c43e46b7e4d8ee99b1601b"
+      ],
+      "preview_status": "viewable",
+      "provenance": [
+        {
+          "attribution": "nucleus full 3d — Servier Medical Art by Servier; CC BY 3.0 (https://creativecommons.org/licenses/by/3.0/); fixed source: https://github.com/duerrsimon/bioicons/blob/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-3.0/Intracellular_components/Servier/nucleus-full-3d.svg; via Bioicons. Historical SVG copy distributed through Bioicons; no new artwork modification by MGA-resource.",
+          "author": "Servier",
+          "distribution_status": "license_recorded",
+          "id": "bioicons-49e695f1a88f41f5dce1",
+          "license": "CC-BY-3.0",
+          "license_original": "cc-by-3.0",
+          "license_url": "https://creativecommons.org/licenses/by/3.0/",
+          "source": "bioicons",
+          "source_id": "cc-by-3.0/Intracellular_components/Servier/nucleus-full-3d.svg",
+          "source_url": "https://github.com/duerrsimon/bioicons/blob/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-3.0/Intracellular_components/Servier/nucleus-full-3d.svg",
+          "title": "nucleus full 3d",
+          "upstream_revision": "d29e766ea7580b8063c4f47b29e872db40a4d979"
+        }
+      ],
+      "source": "bioicons",
+      "source_id": "cc-by-3.0/Intracellular_components/Servier/nucleus-full-3d.svg",
+      "source_url": "https://github.com/duerrsimon/bioicons/blob/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-3.0/Intracellular_components/Servier/nucleus-full-3d.svg",
+      "sources": [
+        "bioicons"
+      ],
+      "species": null,
+      "style": null,
+      "title": "nucleus full 3d",
+      "type": "pure_vector"
+    },
+    "togo-566ebe910304d8f21ef9:file-0": {
+      "asset_id": "togo-566ebe910304d8f21ef9",
+      "attribution": "Drawing blood male — <a href=\"https://erikotoyooka.com/\" target=\"_blank\">erico</a>; © 2016 DBCLS TogoTV / CC-BY-4.0; https://doi.org/10.7875/togopic.2023.140",
+      "candidate_id": "togo-566ebe910304d8f21ef9:file-0",
+      "distribution_status": "license_recorded",
+      "family_id": "togo-566ebe910304d8f21ef9",
+      "file_source_records": [
+        {
+          "asset_id": "togo-70d99579cbbfdbc1a6d2",
+          "attribution": "Drawing blood male — <a href=\"https://erikotoyooka.com/\" target=\"_blank\">erico</a>; © 2016 DBCLS TogoTV / CC-BY-4.0; https://doi.org/10.7875/togopic.2023.140",
+          "author": "<a href=\"https://erikotoyooka.com/\" target=\"_blank\">erico</a>",
+          "categories": [],
+          "distribution_status": "license_recorded",
+          "license": "CC-BY-4.0",
+          "source": "togo",
+          "source_id": "1704",
+          "source_url": "https://doi.org/10.7875/togopic.2023.140",
+          "tags": [
+            "Icon",
+            "Medical devices",
+            "Clinical medicine",
+            "Diagnosis",
+            "Treatment",
+            "Nursing",
+            "Mammalia",
+            "Primates",
+            "Homo sapiens"
+          ],
+          "taxonomy": [
+            "clinical_workflow"
+          ],
+          "title": "Drawing blood male",
+          "url": "https://dbarchive.biosciencedbc.jp/data/togo-pic/image/202306_Drawing_Blood_Male.svg"
+        }
+      ],
+      "format": "svg",
+      "license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "original_archive": {
+        "member": "files/10/10c58a71b1a29304672c3cc684c4ab8753de6d4e55217443c16ffda5e5a3da1b.svg",
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42261598057-1-b0000.tar.gz"
+      },
+      "original_sha256": "10c58a71b1a29304672c3cc684c4ab8753de6d4e55217443c16ffda5e5a3da1b",
+      "preview": {
+        "archive": {
+          "member": "previews/10c58a71b1a29304672c3cc684c4ab8753de6d4e55217443c16ffda5e5a3da1b.png",
+          "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42261598057-1-b0000.tar.gz"
+        },
+        "format": "png",
+        "height": 512,
+        "path": "previews/10c58a71b1a29304672c3cc684c4ab8753de6d4e55217443c16ffda5e5a3da1b.png",
+        "sha256": "87d4541a4329f558509266008a78a544fb9a6caf6d891b8a7bd552a048534657",
+        "size_bytes": 35539,
+        "width": 512
+      },
+      "preview_error": null,
+      "preview_key": [
+        "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42261598057-1-b0000.tar.gz",
+        "previews/10c58a71b1a29304672c3cc684c4ab8753de6d4e55217443c16ffda5e5a3da1b.png",
+        "87d4541a4329f558509266008a78a544fb9a6caf6d891b8a7bd552a048534657"
+      ],
+      "preview_status": "viewable",
+      "provenance": [
+        {
+          "attribution": "Drawing blood male — <a href=\"https://erikotoyooka.com/\" target=\"_blank\">erico</a>; © 2016 DBCLS TogoTV / CC-BY-4.0; https://doi.org/10.7875/togopic.2023.140",
+          "author": "<a href=\"https://erikotoyooka.com/\" target=\"_blank\">erico</a>",
+          "distribution_status": "license_recorded",
+          "id": "togo-70d99579cbbfdbc1a6d2",
+          "license": "CC-BY-4.0",
+          "license_original": "https://creativecommons.org/licenses/by/4.0/",
+          "license_url": "https://creativecommons.org/licenses/by/4.0/",
+          "source": "togo",
+          "source_id": "1704",
+          "source_url": "https://doi.org/10.7875/togopic.2023.140",
+          "title": "Drawing blood male",
+          "upstream_revision": "2023-06-01"
+        }
+      ],
+      "source": "togo",
+      "source_id": "1704",
+      "source_url": "https://doi.org/10.7875/togopic.2023.140",
+      "sources": [
+        "togo"
+      ],
+      "species": null,
+      "style": null,
+      "title": "Drawing blood male",
+      "type": "pure_vector"
+    },
+    "openclipart-c2d02e0011c4e4c60482:file-0": {
+      "asset_id": "openclipart-c2d02e0011c4e4c60482",
+      "attribution": "Online Computer Survey — Dustwin, uploaded 2014-08-02, Openclipart #195847, CC0 1.0. https://openclipart.org/detail/195847/online-computer-survey",
+      "candidate_id": "openclipart-c2d02e0011c4e4c60482:file-0",
+      "distribution_status": "license_recorded",
+      "family_id": "openclipart-c2d02e0011c4e4c60482",
+      "file_source_records": [
+        {
+          "asset_id": "openclipart-a5aa73baaf6bb27558a2",
+          "attribution": "Online Computer Survey — Dustwin, uploaded 2014-08-02, Openclipart #195847, CC0 1.0. https://openclipart.org/detail/195847/online-computer-survey",
+          "author": "Dustwin",
+          "categories": [
+            "clinical_workflow"
+          ],
+          "description": "Blue and white online survey interface with multiple choice rows and a pointer; no personal answers or patient identifiers.",
+          "distribution_status": "license_recorded",
+          "license": "CC0-1.0",
+          "source": "openclipart",
+          "source_id": "195847",
+          "source_url": "https://openclipart.org/detail/195847/online-computer-survey",
+          "tags": [
+            "questionnaire",
+            "survey",
+            "online survey",
+            "multiple choice",
+            "computer",
+            "clinical workflow"
+          ],
+          "taxonomy": [
+            "people",
+            "clinical_workflow",
+            "omics_data"
+          ],
+          "title": "Online computer survey",
+          "title_zh": "在线问卷调查图标",
+          "url": "https://openclipart.org/download/195847/Online-Survey-Icon-or-logo.svg"
+        }
+      ],
+      "format": "svg",
+      "license": "CC0-1.0",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "original_archive": {
+        "member": "files/1b/1b741a83f5fad9a6fdfbdf255d4455878ae2e400bf5e944c7271d4605fa4723f.svg",
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/openclipart-42260737515-1-b0000.tar.gz"
+      },
+      "original_sha256": "1b741a83f5fad9a6fdfbdf255d4455878ae2e400bf5e944c7271d4605fa4723f",
+      "preview": {
+        "archive": {
+          "member": "previews/1b741a83f5fad9a6fdfbdf255d4455878ae2e400bf5e944c7271d4605fa4723f.png",
+          "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/openclipart-42260737515-1-b0000.tar.gz"
+        },
+        "format": "png",
+        "height": 512,
+        "path": "previews/1b741a83f5fad9a6fdfbdf255d4455878ae2e400bf5e944c7271d4605fa4723f.png",
+        "sha256": "af4cf34f6c966f3c91bede0d6f62c62efec828f8a6aa4ed8f8fab0b891f7cccd",
+        "size_bytes": 12923,
+        "width": 512
+      },
+      "preview_error": null,
+      "preview_key": [
+        "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/openclipart-42260737515-1-b0000.tar.gz",
+        "previews/1b741a83f5fad9a6fdfbdf255d4455878ae2e400bf5e944c7271d4605fa4723f.png",
+        "af4cf34f6c966f3c91bede0d6f62c62efec828f8a6aa4ed8f8fab0b891f7cccd"
+      ],
+      "preview_status": "viewable",
+      "provenance": [
+        {
+          "attribution": "Online Computer Survey — Dustwin, uploaded 2014-08-02, Openclipart #195847, CC0 1.0. https://openclipart.org/detail/195847/online-computer-survey",
+          "author": "Dustwin",
+          "distribution_status": "license_recorded",
+          "id": "openclipart-a5aa73baaf6bb27558a2",
+          "license": "CC0-1.0",
+          "license_original": "Openclipart CC0 upload policy; SVG also contains its legacy publicdomain declaration",
+          "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "source": "openclipart",
+          "source_id": "195847",
+          "source_url": "https://openclipart.org/detail/195847/online-computer-survey",
+          "title": "Online computer survey",
+          "upstream_revision": "sha256:1b741a83f5fad9a6fdfbdf255d4455878ae2e400bf5e944c7271d4605fa4723f"
+        }
+      ],
+      "source": "openclipart",
+      "source_id": "195847",
+      "source_url": "https://openclipart.org/detail/195847/online-computer-survey",
+      "sources": [
+        "openclipart"
+      ],
+      "species": null,
+      "style": null,
+      "title": "Online computer survey",
+      "type": "pure_vector"
+    },
+    "togo-ddd7adfee80048608d91:file-1": {
+      "asset_id": "togo-ddd7adfee80048608d91",
+      "attribution": "Blood pressure measurement female — <a href=\"https://erikotoyooka.com/\" target=\"_blank\">erico</a>; © 2016 DBCLS TogoTV / CC-BY-4.0; https://doi.org/10.7875/togopic.2023.132",
+      "candidate_id": "togo-ddd7adfee80048608d91:file-1",
+      "distribution_status": "license_recorded",
+      "family_id": "togo-ddd7adfee80048608d91",
+      "file_source_records": [
+        {
+          "asset_id": "togo-8e6f7bc20a124f7bd3e3",
+          "attribution": "Blood pressure measurement female — <a href=\"https://erikotoyooka.com/\" target=\"_blank\">erico</a>; © 2016 DBCLS TogoTV / CC-BY-4.0; https://doi.org/10.7875/togopic.2023.132",
+          "author": "<a href=\"https://erikotoyooka.com/\" target=\"_blank\">erico</a>",
+          "categories": [],
+          "distribution_status": "license_recorded",
+          "license": "CC-BY-4.0",
+          "source": "togo",
+          "source_id": "1696",
+          "source_url": "https://doi.org/10.7875/togopic.2023.132",
+          "tags": [
+            "Icon",
+            "Research activities",
+            "Life science",
+            "Education",
+            "Healthcare",
+            "Science communication",
+            "Mammalia",
+            "Primates",
+            "Homo sapiens"
+          ],
+          "taxonomy": [
+            "clinical_workflow"
+          ],
+          "title": "Blood pressure measurement female",
+          "url": "https://dbarchive.biosciencedbc.jp/data/togo-pic/image/202306_Blood_Pressure_Measurement_Female.png"
+        }
+      ],
+      "format": "png",
+      "license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "original_archive": {
+        "member": "files/22/22cf6386f1a4e6e0bf826ac9b29bb57aa3701bf015a4eedd55361f06fb7cb3fa.png",
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42261598057-1-b0000.tar.gz"
+      },
+      "original_sha256": "22cf6386f1a4e6e0bf826ac9b29bb57aa3701bf015a4eedd55361f06fb7cb3fa",
+      "preview": {
+        "archive": {
+          "member": "previews/22cf6386f1a4e6e0bf826ac9b29bb57aa3701bf015a4eedd55361f06fb7cb3fa.png",
+          "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42261598057-1-b0000.tar.gz"
+        },
+        "format": "png",
+        "height": 400,
+        "path": "previews/22cf6386f1a4e6e0bf826ac9b29bb57aa3701bf015a4eedd55361f06fb7cb3fa.png",
+        "sha256": "c730deb6084ff81b0ca7994d14db016c396762716cc6c099a66823195de1f326",
+        "size_bytes": 19265,
+        "width": 400
+      },
+      "preview_error": null,
+      "preview_key": [
+        "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42261598057-1-b0000.tar.gz",
+        "previews/22cf6386f1a4e6e0bf826ac9b29bb57aa3701bf015a4eedd55361f06fb7cb3fa.png",
+        "c730deb6084ff81b0ca7994d14db016c396762716cc6c099a66823195de1f326"
+      ],
+      "preview_status": "viewable",
+      "provenance": [
+        {
+          "attribution": "Blood pressure measurement female — <a href=\"https://erikotoyooka.com/\" target=\"_blank\">erico</a>; © 2016 DBCLS TogoTV / CC-BY-4.0; https://doi.org/10.7875/togopic.2023.132",
+          "author": "<a href=\"https://erikotoyooka.com/\" target=\"_blank\">erico</a>",
+          "distribution_status": "license_recorded",
+          "id": "togo-8e6f7bc20a124f7bd3e3",
+          "license": "CC-BY-4.0",
+          "license_original": "https://creativecommons.org/licenses/by/4.0/",
+          "license_url": "https://creativecommons.org/licenses/by/4.0/",
+          "source": "togo",
+          "source_id": "1696",
+          "source_url": "https://doi.org/10.7875/togopic.2023.132",
+          "title": "Blood pressure measurement female",
+          "upstream_revision": "2023-06-01"
+        }
+      ],
+      "source": "togo",
+      "source_id": "1696",
+      "source_url": "https://doi.org/10.7875/togopic.2023.132",
+      "sources": [
+        "togo"
+      ],
+      "species": null,
+      "style": null,
+      "title": "Blood pressure measurement female",
+      "type": "raster"
+    },
+    "togo-9718c104999655d7a224:file-1": {
+      "asset_id": "togo-9718c104999655d7a224",
+      "attribution": "Blood pressure measurement child — <a href=\"https://erikotoyooka.com/\" target=\"_blank\">erico</a>; © 2016 DBCLS TogoTV / CC-BY-4.0; https://doi.org/10.7875/togopic.2023.131",
+      "candidate_id": "togo-9718c104999655d7a224:file-1",
+      "distribution_status": "license_recorded",
+      "family_id": "togo-9718c104999655d7a224",
+      "file_source_records": [
+        {
+          "asset_id": "togo-8a580c4ede495f0bbba2",
+          "attribution": "Blood pressure measurement child — <a href=\"https://erikotoyooka.com/\" target=\"_blank\">erico</a>; © 2016 DBCLS TogoTV / CC-BY-4.0; https://doi.org/10.7875/togopic.2023.131",
+          "author": "<a href=\"https://erikotoyooka.com/\" target=\"_blank\">erico</a>",
+          "categories": [],
+          "distribution_status": "license_recorded",
+          "license": "CC-BY-4.0",
+          "source": "togo",
+          "source_id": "1695",
+          "source_url": "https://doi.org/10.7875/togopic.2023.131",
+          "tags": [
+            "Icon",
+            "Life science",
+            "Medicine",
+            "Education",
+            "Research activities",
+            "Explanatory diagram",
+            "Mammalia",
+            "Primates",
+            "Homo sapiens"
+          ],
+          "taxonomy": [
+            "people"
+          ],
+          "title": "Blood pressure measurement child",
+          "url": "https://dbarchive.biosciencedbc.jp/data/togo-pic/image/202306_Blood_Pressure_Measurement_Child.png"
+        }
+      ],
+      "format": "png",
+      "license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "original_archive": {
+        "member": "files/39/39653320dd9f1cdc2918bcca0ed2b6a408ec6f3c53b35d71ceeef7def79920ad.png",
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42261598057-1-b0000.tar.gz"
+      },
+      "original_sha256": "39653320dd9f1cdc2918bcca0ed2b6a408ec6f3c53b35d71ceeef7def79920ad",
+      "preview": {
+        "archive": {
+          "member": "previews/39653320dd9f1cdc2918bcca0ed2b6a408ec6f3c53b35d71ceeef7def79920ad.png",
+          "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42261598057-1-b0000.tar.gz"
+        },
+        "format": "png",
+        "height": 400,
+        "path": "previews/39653320dd9f1cdc2918bcca0ed2b6a408ec6f3c53b35d71ceeef7def79920ad.png",
+        "sha256": "4f43e725855a09eafe82d8bf16ecfabd90339cb26dcb875902cedeca28c9666e",
+        "size_bytes": 20588,
+        "width": 400
+      },
+      "preview_error": null,
+      "preview_key": [
+        "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42261598057-1-b0000.tar.gz",
+        "previews/39653320dd9f1cdc2918bcca0ed2b6a408ec6f3c53b35d71ceeef7def79920ad.png",
+        "4f43e725855a09eafe82d8bf16ecfabd90339cb26dcb875902cedeca28c9666e"
+      ],
+      "preview_status": "viewable",
+      "provenance": [
+        {
+          "attribution": "Blood pressure measurement child — <a href=\"https://erikotoyooka.com/\" target=\"_blank\">erico</a>; © 2016 DBCLS TogoTV / CC-BY-4.0; https://doi.org/10.7875/togopic.2023.131",
+          "author": "<a href=\"https://erikotoyooka.com/\" target=\"_blank\">erico</a>",
+          "distribution_status": "license_recorded",
+          "id": "togo-8a580c4ede495f0bbba2",
+          "license": "CC-BY-4.0",
+          "license_original": "https://creativecommons.org/licenses/by/4.0/",
+          "license_url": "https://creativecommons.org/licenses/by/4.0/",
+          "source": "togo",
+          "source_id": "1695",
+          "source_url": "https://doi.org/10.7875/togopic.2023.131",
+          "title": "Blood pressure measurement child",
+          "upstream_revision": "2023-06-01"
+        }
+      ],
+      "source": "togo",
+      "source_id": "1695",
+      "source_url": "https://doi.org/10.7875/togopic.2023.131",
+      "sources": [
+        "togo"
+      ],
+      "species": null,
+      "style": null,
+      "title": "Blood pressure measurement child",
+      "type": "raster"
+    },
+    "togo-e58166ac8684f2ff6f0a:file-0": {
+      "asset_id": "togo-e58166ac8684f2ff6f0a",
+      "attribution": "Drawing blood female — <a href=\"https://erikotoyooka.com/\" target=\"_blank\">erico</a>; © 2016 DBCLS TogoTV / CC-BY-4.0; https://doi.org/10.7875/togopic.2023.139",
+      "candidate_id": "togo-e58166ac8684f2ff6f0a:file-0",
+      "distribution_status": "license_recorded",
+      "family_id": "togo-e58166ac8684f2ff6f0a",
+      "file_source_records": [
+        {
+          "asset_id": "togo-2fa4490e0c960b9927a6",
+          "attribution": "Drawing blood female — <a href=\"https://erikotoyooka.com/\" target=\"_blank\">erico</a>; © 2016 DBCLS TogoTV / CC-BY-4.0; https://doi.org/10.7875/togopic.2023.139",
+          "author": "<a href=\"https://erikotoyooka.com/\" target=\"_blank\">erico</a>",
+          "categories": [],
+          "distribution_status": "license_recorded",
+          "license": "CC-BY-4.0",
+          "source": "togo",
+          "source_id": "1703",
+          "source_url": "https://doi.org/10.7875/togopic.2023.139",
+          "tags": [
+            "Icon",
+            "Medical devices",
+            "Clinical medicine",
+            "Diagnosis",
+            "Treatment",
+            "Nursing",
+            "Mammalia",
+            "Primates",
+            "Homo sapiens"
+          ],
+          "taxonomy": [
+            "clinical_workflow"
+          ],
+          "title": "Drawing blood female",
+          "url": "https://dbarchive.biosciencedbc.jp/data/togo-pic/image/202306_Drawing_Blood_Female.svg"
+        }
+      ],
+      "format": "svg",
+      "license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "original_archive": {
+        "member": "files/04/043e3915172ac71ac24ef365f6d10795d34672784c06080fb99d5aebd112ca8d.svg",
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42261598057-1-b0000.tar.gz"
+      },
+      "original_sha256": "043e3915172ac71ac24ef365f6d10795d34672784c06080fb99d5aebd112ca8d",
+      "preview": {
+        "archive": {
+          "member": "previews/043e3915172ac71ac24ef365f6d10795d34672784c06080fb99d5aebd112ca8d.png",
+          "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42261598057-1-b0000.tar.gz"
+        },
+        "format": "png",
+        "height": 512,
+        "path": "previews/043e3915172ac71ac24ef365f6d10795d34672784c06080fb99d5aebd112ca8d.png",
+        "sha256": "aada6b11a1676c72837b0f2afea81cb6cbe36f692ee8cd6b2047d1084449a8c5",
+        "size_bytes": 35137,
+        "width": 512
+      },
+      "preview_error": null,
+      "preview_key": [
+        "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42261598057-1-b0000.tar.gz",
+        "previews/043e3915172ac71ac24ef365f6d10795d34672784c06080fb99d5aebd112ca8d.png",
+        "aada6b11a1676c72837b0f2afea81cb6cbe36f692ee8cd6b2047d1084449a8c5"
+      ],
+      "preview_status": "viewable",
+      "provenance": [
+        {
+          "attribution": "Drawing blood female — <a href=\"https://erikotoyooka.com/\" target=\"_blank\">erico</a>; © 2016 DBCLS TogoTV / CC-BY-4.0; https://doi.org/10.7875/togopic.2023.139",
+          "author": "<a href=\"https://erikotoyooka.com/\" target=\"_blank\">erico</a>",
+          "distribution_status": "license_recorded",
+          "id": "togo-2fa4490e0c960b9927a6",
+          "license": "CC-BY-4.0",
+          "license_original": "https://creativecommons.org/licenses/by/4.0/",
+          "license_url": "https://creativecommons.org/licenses/by/4.0/",
+          "source": "togo",
+          "source_id": "1703",
+          "source_url": "https://doi.org/10.7875/togopic.2023.139",
+          "title": "Drawing blood female",
+          "upstream_revision": "2023-06-01"
+        }
+      ],
+      "source": "togo",
+      "source_id": "1703",
+      "source_url": "https://doi.org/10.7875/togopic.2023.139",
+      "sources": [
+        "togo"
+      ],
+      "species": null,
+      "style": null,
+      "title": "Drawing blood female",
+      "type": "pure_vector"
+    },
+    "nih-bioart-caed41384908a7f81cf9:file-0": {
+      "asset_id": "nih-bioart-caed41384908a7f81cf9",
+      "attribution": "RNA-Seq — Ryan Kissinger, NIH BioArt Source; https://bioart.niaid.nih.gov/bioart/685; Public Domain",
+      "candidate_id": "nih-bioart-caed41384908a7f81cf9:file-0",
+      "distribution_status": "license_recorded",
+      "family_id": "nih-bioart-caed41384908a7f81cf9",
+      "file_source_records": [
+        {
+          "asset_id": "nih-bioart-6e4ef1e3735ec9c2bec9",
+          "attribution": "RNA-Seq — Ryan Kissinger, NIH BioArt Source; https://bioart.niaid.nih.gov/bioart/685; Public Domain",
+          "author": "Ryan Kissinger",
+          "categories": [],
+          "description": " RNA-seq machine ",
+          "distribution_status": "license_recorded",
+          "license": "Public-Domain",
+          "source": "nih-bioart",
+          "source_id": "685",
+          "source_url": "https://bioart.niaid.nih.gov/bioart/685",
+          "tags": [
+            "Equipment",
+            "Lab Equipment",
+            "Machine",
+            "illumina",
+            "seq"
+          ],
+          "taxonomy": [
+            "molecules",
+            "lab_equipment"
+          ],
+          "title": "RNA-Seq",
+          "upstream_category": [
+            "Equipment",
+            "Bioart Category"
+          ],
+          "url": "https://bioart.niaid.nih.gov/api/bioarts/685/files/782326"
+        }
+      ],
+      "format": "svg",
+      "license": "Public-Domain",
+      "license_url": null,
+      "original_archive": {
+        "member": "files/0f/0f05cb0e3e44b1d73ca68959d51e1898510624cb145ca4f06571a1c05b522863.svg",
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/nih-bioart-42236561214-1-b0001.tar.gz"
+      },
+      "original_sha256": "0f05cb0e3e44b1d73ca68959d51e1898510624cb145ca4f06571a1c05b522863",
+      "preview": {
+        "archive": {
+          "member": "previews/0f05cb0e3e44b1d73ca68959d51e1898510624cb145ca4f06571a1c05b522863.png",
+          "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/nih-bioart-42236561214-1-b0001.tar.gz"
+        },
+        "format": "png",
+        "height": 512,
+        "path": "previews/0f05cb0e3e44b1d73ca68959d51e1898510624cb145ca4f06571a1c05b522863.png",
+        "sha256": "c8dbf9bb6f69d0b95602a73782bea3dc73830ba8c9426c6344fddb178f57dbb0",
+        "size_bytes": 35689,
+        "width": 512
+      },
+      "preview_error": null,
+      "preview_key": [
+        "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/nih-bioart-42236561214-1-b0001.tar.gz",
+        "previews/0f05cb0e3e44b1d73ca68959d51e1898510624cb145ca4f06571a1c05b522863.png",
+        "c8dbf9bb6f69d0b95602a73782bea3dc73830ba8c9426c6344fddb178f57dbb0"
+      ],
+      "preview_status": "viewable",
+      "provenance": [
+        {
+          "attribution": "RNA-Seq — Ryan Kissinger, NIH BioArt Source; https://bioart.niaid.nih.gov/bioart/685; Public Domain",
+          "author": "Ryan Kissinger",
+          "distribution_status": "license_recorded",
+          "id": "nih-bioart-6e4ef1e3735ec9c2bec9",
+          "license": "Public-Domain",
+          "license_original": "Public Domain",
+          "license_url": null,
+          "source": "nih-bioart",
+          "source_id": "685",
+          "source_url": "https://bioart.niaid.nih.gov/bioart/685",
+          "title": "RNA-Seq",
+          "upstream_revision": "2026-06-02T15:01:40.7Z"
+        }
+      ],
+      "source": "nih-bioart",
+      "source_id": "685",
+      "source_url": "https://bioart.niaid.nih.gov/bioart/685",
+      "sources": [
+        "nih-bioart"
+      ],
+      "species": null,
+      "style": null,
+      "title": "RNA-Seq",
+      "type": "pure_vector"
+    },
+    "bioicons-6c132d72a134686b571f:file-0": {
+      "asset_id": "bioicons-6c132d72a134686b571f",
+      "attribution": "img sequencer short read01 — PacBio; https://pacb.com; CC0-1.0; via Bioicons",
+      "candidate_id": "bioicons-6c132d72a134686b571f:file-0",
+      "distribution_status": "license_recorded",
+      "family_id": "bioicons-6c132d72a134686b571f",
+      "file_source_records": [
+        {
+          "asset_id": "bioicons-6c132d72a134686b571f",
+          "attribution": "img sequencer short read01 — PacBio; https://pacb.com; CC0-1.0; via Bioicons",
+          "author": "PacBio",
+          "categories": [],
+          "distribution_status": "license_recorded",
+          "license": "CC0-1.0",
+          "source": "bioicons",
+          "source_id": "cc-0/Genetics/PacBio/img_sequencer_short_read01.svg",
+          "source_url": "https://github.com/duerrsimon/bioicons/blob/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-0/Genetics/PacBio/img_sequencer_short_read01.svg",
+          "tags": [
+            "Genetics"
+          ],
+          "taxonomy": [
+            "omics_data"
+          ],
+          "title": "img sequencer short read01",
+          "upstream_category": "Genetics",
+          "url": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-0/Genetics/PacBio/img_sequencer_short_read01.svg"
+        }
+      ],
+      "format": "svg",
+      "license": "CC0-1.0",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "original_archive": {
+        "member": "files/a7/a769949ed12aa00f8fdc428ec66c74c5038e11bc530ec1db30d31cc8d1176024.svg",
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42239971379-1-b0000.tar.gz"
+      },
+      "original_sha256": "a769949ed12aa00f8fdc428ec66c74c5038e11bc530ec1db30d31cc8d1176024",
+      "preview": {
+        "archive": {
+          "member": "previews/a769949ed12aa00f8fdc428ec66c74c5038e11bc530ec1db30d31cc8d1176024.png",
+          "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42239971379-1-b0000.tar.gz"
+        },
+        "format": "png",
+        "height": 384,
+        "path": "previews/a769949ed12aa00f8fdc428ec66c74c5038e11bc530ec1db30d31cc8d1176024.png",
+        "sha256": "ea3fe51e10fcacfacb1e37ae842dbebda3ca7043dc821a3babd13dfc26cc446a",
+        "size_bytes": 4675,
+        "width": 512
+      },
+      "preview_error": null,
+      "preview_key": [
+        "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42239971379-1-b0000.tar.gz",
+        "previews/a769949ed12aa00f8fdc428ec66c74c5038e11bc530ec1db30d31cc8d1176024.png",
+        "ea3fe51e10fcacfacb1e37ae842dbebda3ca7043dc821a3babd13dfc26cc446a"
+      ],
+      "preview_status": "viewable",
+      "provenance": [
+        {
+          "attribution": "img sequencer short read01 — PacBio; https://pacb.com; CC0-1.0; via Bioicons",
+          "author": "PacBio",
+          "distribution_status": "license_recorded",
+          "id": "bioicons-6c132d72a134686b571f",
+          "license": "CC0-1.0",
+          "license_original": "CC0-1.0",
+          "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "source": "bioicons",
+          "source_id": "cc-0/Genetics/PacBio/img_sequencer_short_read01.svg",
+          "source_url": "https://github.com/duerrsimon/bioicons/blob/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-0/Genetics/PacBio/img_sequencer_short_read01.svg",
+          "title": "img sequencer short read01",
+          "upstream_revision": "d29e766ea7580b8063c4f47b29e872db40a4d979"
+        }
+      ],
+      "source": "bioicons",
+      "source_id": "cc-0/Genetics/PacBio/img_sequencer_short_read01.svg",
+      "source_url": "https://github.com/duerrsimon/bioicons/blob/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-0/Genetics/PacBio/img_sequencer_short_read01.svg",
+      "sources": [
+        "bioicons"
+      ],
+      "species": null,
+      "style": null,
+      "title": "img sequencer short read01",
+      "type": "pure_vector"
+    },
+    "bioicons-a94c4db0bd505d9e21b3:file-0": {
+      "asset_id": "bioicons-a94c4db0bd505d9e21b3",
+      "attribution": "img sequencer long read05 — PacBio; https://pacb.com; CC0-1.0; via Bioicons",
+      "candidate_id": "bioicons-a94c4db0bd505d9e21b3:file-0",
+      "distribution_status": "license_recorded",
+      "family_id": "bioicons-a94c4db0bd505d9e21b3",
+      "file_source_records": [
+        {
+          "asset_id": "bioicons-a94c4db0bd505d9e21b3",
+          "attribution": "img sequencer long read05 — PacBio; https://pacb.com; CC0-1.0; via Bioicons",
+          "author": "PacBio",
+          "categories": [],
+          "distribution_status": "license_recorded",
+          "license": "CC0-1.0",
+          "source": "bioicons",
+          "source_id": "cc-0/Genetics/PacBio/img_sequencer_long_read05.svg",
+          "source_url": "https://github.com/duerrsimon/bioicons/blob/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-0/Genetics/PacBio/img_sequencer_long_read05.svg",
+          "tags": [
+            "Genetics"
+          ],
+          "taxonomy": [
+            "omics_data"
+          ],
+          "title": "img sequencer long read05",
+          "upstream_category": "Genetics",
+          "url": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-0/Genetics/PacBio/img_sequencer_long_read05.svg"
+        }
+      ],
+      "format": "svg",
+      "license": "CC0-1.0",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "original_archive": {
+        "member": "files/60/60be45316c17d981be896a83cae68b484d2a135cd0b05cc9187e37f63f07fc59.svg",
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42239971379-1-b0000.tar.gz"
+      },
+      "original_sha256": "60be45316c17d981be896a83cae68b484d2a135cd0b05cc9187e37f63f07fc59",
+      "preview": {
+        "archive": {
+          "member": "previews/60be45316c17d981be896a83cae68b484d2a135cd0b05cc9187e37f63f07fc59.png",
+          "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42239971379-1-b0000.tar.gz"
+        },
+        "format": "png",
+        "height": 512,
+        "path": "previews/60be45316c17d981be896a83cae68b484d2a135cd0b05cc9187e37f63f07fc59.png",
+        "sha256": "4b213cededab4e128683d74f723f761ae3935dd296528a158bb9400c8a224d19",
+        "size_bytes": 10026,
+        "width": 292
+      },
+      "preview_error": null,
+      "preview_key": [
+        "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42239971379-1-b0000.tar.gz",
+        "previews/60be45316c17d981be896a83cae68b484d2a135cd0b05cc9187e37f63f07fc59.png",
+        "4b213cededab4e128683d74f723f761ae3935dd296528a158bb9400c8a224d19"
+      ],
+      "preview_status": "viewable",
+      "provenance": [
+        {
+          "attribution": "img sequencer long read05 — PacBio; https://pacb.com; CC0-1.0; via Bioicons",
+          "author": "PacBio",
+          "distribution_status": "license_recorded",
+          "id": "bioicons-a94c4db0bd505d9e21b3",
+          "license": "CC0-1.0",
+          "license_original": "CC0-1.0",
+          "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "source": "bioicons",
+          "source_id": "cc-0/Genetics/PacBio/img_sequencer_long_read05.svg",
+          "source_url": "https://github.com/duerrsimon/bioicons/blob/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-0/Genetics/PacBio/img_sequencer_long_read05.svg",
+          "title": "img sequencer long read05",
+          "upstream_revision": "d29e766ea7580b8063c4f47b29e872db40a4d979"
+        }
+      ],
+      "source": "bioicons",
+      "source_id": "cc-0/Genetics/PacBio/img_sequencer_long_read05.svg",
+      "source_url": "https://github.com/duerrsimon/bioicons/blob/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-0/Genetics/PacBio/img_sequencer_long_read05.svg",
+      "sources": [
+        "bioicons"
+      ],
+      "species": null,
+      "style": null,
+      "title": "img sequencer long read05",
+      "type": "pure_vector"
+    },
+    "togo-fa9ee4a114af11864902:file-0": {
+      "asset_id": "togo-fa9ee4a114af11864902",
+      "attribution": "Portable sequencer — Wakana Sasaki; © 2016 DBCLS TogoTV / CC-BY-4.0; https://doi.org/10.7875/togopic.2017.35",
+      "candidate_id": "togo-fa9ee4a114af11864902:file-0",
+      "distribution_status": "license_recorded",
+      "family_id": "togo-fa9ee4a114af11864902",
+      "file_source_records": [
+        {
+          "asset_id": "togo-9e67d276f3a2831c8d4e",
+          "attribution": "Portable sequencer — Wakana Sasaki; © 2016 DBCLS TogoTV / CC-BY-4.0; https://doi.org/10.7875/togopic.2017.35",
+          "author": "Wakana Sasaki",
+          "categories": [],
+          "distribution_status": "license_recorded",
+          "license": "CC-BY-4.0",
+          "source": "togo",
+          "source_id": "501",
+          "source_url": "https://doi.org/10.7875/togopic.2017.35",
+          "tags": [
+            "Lab apparatus",
+            "DNA sequencer",
+            "Next-generation sequencing",
+            "Genome analysis",
+            "Gene analysis",
+            "Molecular biology"
+          ],
+          "taxonomy": [
+            "molecules",
+            "lab_equipment",
+            "experimental_actions",
+            "omics_data"
+          ],
+          "title": "Portable sequencer",
+          "url": "https://dbarchive.biosciencedbc.jp/data/togo-pic/image/201707_Portable_sequencer.png"
+        }
+      ],
+      "format": "png",
+      "license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "original_archive": {
+        "member": "files/1d/1d2d0b1f1542f96197f41b939401eb4c38852b9451c77d30f280bd3322be461a.png",
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42249870031-1-b0001.tar.gz"
+      },
+      "original_sha256": "1d2d0b1f1542f96197f41b939401eb4c38852b9451c77d30f280bd3322be461a",
+      "preview": {
+        "archive": {
+          "member": "previews/1d2d0b1f1542f96197f41b939401eb4c38852b9451c77d30f280bd3322be461a.png",
+          "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42249870031-1-b0001.tar.gz"
+        },
+        "format": "png",
+        "height": 512,
+        "path": "previews/1d2d0b1f1542f96197f41b939401eb4c38852b9451c77d30f280bd3322be461a.png",
+        "sha256": "e14f3a6bedcdf0ad49a13e032cda8a3530c7db6deb9ea8d6f352c04fe8fa375d",
+        "size_bytes": 94374,
+        "width": 512
+      },
+      "preview_error": null,
+      "preview_key": [
+        "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42249870031-1-b0001.tar.gz",
+        "previews/1d2d0b1f1542f96197f41b939401eb4c38852b9451c77d30f280bd3322be461a.png",
+        "e14f3a6bedcdf0ad49a13e032cda8a3530c7db6deb9ea8d6f352c04fe8fa375d"
+      ],
+      "preview_status": "viewable",
+      "provenance": [
+        {
+          "attribution": "Portable sequencer — Wakana Sasaki; © 2016 DBCLS TogoTV / CC-BY-4.0; https://doi.org/10.7875/togopic.2017.35",
+          "author": "Wakana Sasaki",
+          "distribution_status": "license_recorded",
+          "id": "togo-9e67d276f3a2831c8d4e",
+          "license": "CC-BY-4.0",
+          "license_original": "https://creativecommons.org/licenses/by/4.0/",
+          "license_url": "https://creativecommons.org/licenses/by/4.0/",
+          "source": "togo",
+          "source_id": "501",
+          "source_url": "https://doi.org/10.7875/togopic.2017.35",
+          "title": "Portable sequencer",
+          "upstream_revision": "2017-07-01"
+        }
+      ],
+      "source": "togo",
+      "source_id": "501",
+      "source_url": "https://doi.org/10.7875/togopic.2017.35",
+      "sources": [
+        "togo"
+      ],
+      "species": null,
+      "style": null,
+      "title": "Portable sequencer",
+      "type": "raster"
+    },
+    "togo-a094e62fb31b65be0d8b:file-1": {
+      "asset_id": "togo-a094e62fb31b65be0d8b",
+      "attribution": "DNA sequencer 12 — Watanabe; © 2016 DBCLS TogoTV / CC-BY-4.0; https://doi.org/10.7875/togopic.2019.34",
+      "candidate_id": "togo-a094e62fb31b65be0d8b:file-1",
+      "distribution_status": "license_recorded",
+      "family_id": "togo-a094e62fb31b65be0d8b",
+      "file_source_records": [
+        {
+          "asset_id": "togo-1f7ee10943b9b3495bf0",
+          "attribution": "DNA sequencer 12 — Watanabe; © 2016 DBCLS TogoTV / CC-BY-4.0; https://doi.org/10.7875/togopic.2019.34",
+          "author": "Watanabe",
+          "categories": [],
+          "distribution_status": "license_recorded",
+          "license": "CC-BY-4.0",
+          "source": "togo",
+          "source_id": "586",
+          "source_url": "https://doi.org/10.7875/togopic.2019.34",
+          "tags": [
+            "Lab apparatus",
+            "DNA sequencer",
+            "Molecular biology",
+            "Genetics",
+            "Genomics",
+            "Bioinformatics"
+          ],
+          "taxonomy": [
+            "molecules",
+            "lab_equipment",
+            "omics_data"
+          ],
+          "title": "DNA sequencer 12",
+          "url": "https://dbarchive.biosciencedbc.jp/data/togo-pic/image/201912_DNA_sequencer_12.png"
+        }
+      ],
+      "format": "png",
+      "license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "original_archive": {
+        "member": "files/e2/e2b9c40b097842577202e727863906ebd81777ec132c59e242361cb3bc4665c4.png",
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42249870031-1-b0001.tar.gz"
+      },
+      "original_sha256": "e2b9c40b097842577202e727863906ebd81777ec132c59e242361cb3bc4665c4",
+      "preview": {
+        "archive": {
+          "member": "previews/e2b9c40b097842577202e727863906ebd81777ec132c59e242361cb3bc4665c4.png",
+          "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42249870031-1-b0001.tar.gz"
+        },
+        "format": "png",
+        "height": 512,
+        "path": "previews/e2b9c40b097842577202e727863906ebd81777ec132c59e242361cb3bc4665c4.png",
+        "sha256": "85db25f9bdbf4a0517d3867a7c5a0204815e7cc374c23bf4f0f7b8bf7fb7730f",
+        "size_bytes": 64199,
+        "width": 512
+      },
+      "preview_error": null,
+      "preview_key": [
+        "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42249870031-1-b0001.tar.gz",
+        "previews/e2b9c40b097842577202e727863906ebd81777ec132c59e242361cb3bc4665c4.png",
+        "85db25f9bdbf4a0517d3867a7c5a0204815e7cc374c23bf4f0f7b8bf7fb7730f"
+      ],
+      "preview_status": "viewable",
+      "provenance": [
+        {
+          "attribution": "DNA sequencer 12 — Watanabe; © 2016 DBCLS TogoTV / CC-BY-4.0; https://doi.org/10.7875/togopic.2019.34",
+          "author": "Watanabe",
+          "distribution_status": "license_recorded",
+          "id": "togo-1f7ee10943b9b3495bf0",
+          "license": "CC-BY-4.0",
+          "license_original": "https://creativecommons.org/licenses/by/4.0/",
+          "license_url": "https://creativecommons.org/licenses/by/4.0/",
+          "source": "togo",
+          "source_id": "586",
+          "source_url": "https://doi.org/10.7875/togopic.2019.34",
+          "title": "DNA sequencer 12",
+          "upstream_revision": "2019-12-01"
+        }
+      ],
+      "source": "togo",
+      "source_id": "586",
+      "source_url": "https://doi.org/10.7875/togopic.2019.34",
+      "sources": [
+        "togo"
+      ],
+      "species": null,
+      "style": null,
+      "title": "DNA sequencer 12",
+      "type": "raster"
+    },
+    "nih-bioart-5b91f62cf60eb83887ef:file-0": {
+      "asset_id": "nih-bioart-5b91f62cf60eb83887ef",
+      "attribution": "Doctor Patient — Ryan Kissinger, NIH BioArt Source; https://bioart.niaid.nih.gov/bioart/130; Public Domain",
+      "candidate_id": "nih-bioart-5b91f62cf60eb83887ef:file-0",
+      "distribution_status": "license_recorded",
+      "family_id": "nih-bioart-5b91f62cf60eb83887ef",
+      "file_source_records": [
+        {
+          "asset_id": "nih-bioart-0b53fb554bee1aeb5633",
+          "attribution": "Doctor Patient — Ryan Kissinger, NIH BioArt Source; https://bioart.niaid.nih.gov/bioart/130; Public Domain",
+          "author": "Ryan Kissinger",
+          "categories": [],
+          "description": " Doctor consulting with patient ",
+          "distribution_status": "license_recorded",
+          "license": "Public-Domain",
+          "source": "nih-bioart",
+          "source_id": "130",
+          "source_url": "https://bioart.niaid.nih.gov/bioart/130",
+          "tags": [
+            "Adult",
+            "Female",
+            "People",
+            "Vector",
+            "clipboard",
+            "consulting",
+            "doctor patient",
+            "genetic counselling",
+            "man",
+            "people",
+            "scientist",
+            "woman"
+          ],
+          "taxonomy": [
+            "people"
+          ],
+          "title": "Doctor Patient",
+          "upstream_category": [
+            "Age (Human)",
+            "Bioart Category",
+            "Sex (Human)",
+            "Image Type"
+          ],
+          "url": "https://bioart.niaid.nih.gov/api/bioarts/130/files/629436"
+        }
+      ],
+      "format": "png",
+      "license": "Public-Domain",
+      "license_url": null,
+      "original_archive": {
+        "member": "files/24/24a5babba9a341784bfdbdbce1fdd4a73678e2ca1fa8473aa26ee72579d4c36e.png",
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/nih-bioart-42236561214-1-b0000.tar.gz"
+      },
+      "original_sha256": "24a5babba9a341784bfdbdbce1fdd4a73678e2ca1fa8473aa26ee72579d4c36e",
+      "preview": {
+        "archive": {
+          "member": "previews/24a5babba9a341784bfdbdbce1fdd4a73678e2ca1fa8473aa26ee72579d4c36e.png",
+          "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/nih-bioart-42236561214-1-b0000.tar.gz"
+        },
+        "format": "png",
+        "height": 310,
+        "path": "previews/24a5babba9a341784bfdbdbce1fdd4a73678e2ca1fa8473aa26ee72579d4c36e.png",
+        "sha256": "d5a278e9b2eb33e8c42badd66ccfd9691708143e0d9534ff4532fd59de6ceeb7",
+        "size_bytes": 105103,
+        "width": 512
+      },
+      "preview_error": null,
+      "preview_key": [
+        "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/nih-bioart-42236561214-1-b0000.tar.gz",
+        "previews/24a5babba9a341784bfdbdbce1fdd4a73678e2ca1fa8473aa26ee72579d4c36e.png",
+        "d5a278e9b2eb33e8c42badd66ccfd9691708143e0d9534ff4532fd59de6ceeb7"
+      ],
+      "preview_status": "viewable",
+      "provenance": [
+        {
+          "attribution": "Doctor Patient — Ryan Kissinger, NIH BioArt Source; https://bioart.niaid.nih.gov/bioart/130; Public Domain",
+          "author": "Ryan Kissinger",
+          "distribution_status": "license_recorded",
+          "id": "nih-bioart-0b53fb554bee1aeb5633",
+          "license": "Public-Domain",
+          "license_original": "Public Domain",
+          "license_url": null,
+          "source": "nih-bioart",
+          "source_id": "130",
+          "source_url": "https://bioart.niaid.nih.gov/bioart/130",
+          "title": "Doctor Patient",
+          "upstream_revision": "2024-10-29T18:07:59.362Z"
+        }
+      ],
+      "source": "nih-bioart",
+      "source_id": "130",
+      "source_url": "https://bioart.niaid.nih.gov/bioart/130",
+      "sources": [
+        "nih-bioart"
+      ],
+      "species": null,
+      "style": null,
+      "title": "Doctor Patient",
+      "type": "raster"
+    }
+  },
+  "distinct_families": 12,
+  "category_counts": {
+    "organelles": 1,
+    "experimental_actions": 1,
+    "clinical_workflow": 5,
+    "omics_data": 5
+  },
+  "combined_distinct_families": 60,
+  "combined_category_counts": {
+    "animals": 5,
+    "cells": 5,
+    "clinical_workflow": 5,
+    "experimental_actions": 5,
+    "lab_equipment": 5,
+    "microbes": 5,
+    "molecules": 5,
+    "omics_data": 5,
+    "organelles": 5,
+    "organs": 5,
+    "people": 5,
+    "tissues_vessels": 5
+  },
+  "remaining_quality_checks": [
+    "Actual white/dark/checkerboard transparency display check for these12",
+    "Actual96/48px and label-readability limitations",
+    "Actual cross-source scientific composition/occlusion/style check; adjacency alone is not full composition evidence"
+  ],
+  "full_curated_requirement_passed": false,
+  "selection_count_requirement_met": true,
+  "new_visual_inspections": 0,
+  "originals_downloaded_this_step": 0,
+  "collection_receipt_asset_references_checked": 24,
+  "unresolved_categories": [],
+  "boundary_notes": [
+    "clinical_workflow selections cover questionnaire, adult/child measurement, clinician-patient communication and sampling parts. None is claimed to establish recruitment/followup/randomization.",
+    "omics selections are distinct restored families with RNA-Seq, short-read, long-read, portable and other DNA-sequencer roles; the set remains equipment-heavy and does not establish heatmap/network/forest-template coverage.",
+    "No pending template, molecular text nameplate or excluded original is admitted.",
+    "Original120 scores and original48 records remain unchanged; selected count does not assert full visual/composition acceptance."
+  ]
+}
