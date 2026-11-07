@@ -1,0 +1,1231 @@
+{
+  "schema_version": 1,
+  "reviewer": "media_catalog (independent actual visual review)",
+  "reviewed_at": "2026-11-07T01:06:03.885987+00:00",
+  "independent_from_metadata_matcher": true,
+  "review_method": "Directly viewed five newly rendered purpose-based composition PNGs; no candidate ranking or keyword match was used as visual proof. Pages 09/10/12 were viewed earlier in this same review session; 07/08 were viewed before writing this record.",
+  "bindings": {
+    "composition_mapping_sha256": "8b830a100962db7335e5d4e49a341c0d8f00353df8a854aa6e20f6e85f976a8f",
+    "composition_plan_sha256": "f7ef078cda2e38055b10c4897228e78d203be533614da4d7298546f172020e57",
+    "old_curated_sha256": "32011683c6259d0221e39ac5e6748dc460d451d91ec0af74d6851d8dba1ed78c",
+    "new_selection_sha256": "96948b6b66292622ecfc6cec683ec4e52d413048f845eb64df41ad77806c8e2f",
+    "catalog_sha256": "5c90306415ce5e7f36e875c7f57b19a91930aacfeeaeecdf9ad7662770f9a3fe",
+    "old_manifest_binding": {
+      "path": "build/dispositions-final-scope-42289434868/candidate_publish_manifest.json",
+      "sha256": "a4fe0424ee8ecc32096090ef295242bdaa04b9ce29ff4f7a80948c95516d5436",
+      "file_count": 19473,
+      "officially_published": false
+    },
+    "new_manifest_binding": {
+      "path": "build/cloud-recovery-20261107/frozen-42289434868-3.4.3.publish_manifest.json",
+      "sha256": "a4fe0424ee8ecc32096090ef295242bdaa04b9ce29ff4f7a80948c95516d5436",
+      "file_count": 19473,
+      "officially_published": false
+    }
+  },
+  "source_documents": [
+    {
+      "path": "build/curated-expansion-60/composition/composition-mapping.json",
+      "sha256": "8b830a100962db7335e5d4e49a341c0d8f00353df8a854aa6e20f6e85f976a8f"
+    },
+    {
+      "path": "build/curated-expansion-60/composition-plan.json",
+      "sha256": "f7ef078cda2e38055b10c4897228e78d203be533614da4d7298546f172020e57"
+    }
+  ],
+  "pages": [
+    {
+      "path": "build/curated-expansion-60/composition/07-microbial-forms.png",
+      "sha256": "768d4b002a5fa2b11000921544e51de89707d2b5ae0568e377f6b8dde25a5283",
+      "pixel_size": [
+        2200,
+        1500
+      ],
+      "displayed_pixel_size": [
+        1920,
+        1308
+      ],
+      "directly_viewed_with": "functions.view_image(detail=original); tool resized the full page for display",
+      "semantic_use_zh": "五个微生物/病毒独立对象的选材与形态比较；物种及病毒名称沿用已绑定来源，不从画面新增鉴定。尺寸差异仅为排版，不表达真实大小、载量或感染联系。",
+      "layout_occlusion_zh": "主对象互不遮挡，标题未压住主体；17 号标题靠近主图区左缘，但在画布内。可用于分隔对象的比较面板，正式排版可进一步整理边距。",
+      "style_compatibility_zh": "18 的浅色细线、20 的粗描边粉彩、16/17 的阴影分枝与19的简化线稿明显不同。作为不同对象的选材比较可用；若用于一张要求统一画风的医学图，应按任务选择相容风格，不把本页视作自动统一成功。",
+      "transparency_zh": "三个背景检查显示各对象的外部留空和内部填充并不相同；尤其病毒内部结构不能一概作为背景去除。",
+      "reduction_zh": "96 px 通常保留轮廓；48 px 的病毒内部与霉菌分枝细节不足。",
+      "overlay_test_scope_zh": "实际观察的是源 RGBA 对浅色版面背景及白/深/棋盘底的叠放；本页前景对象互不重叠，未检验前景对象彼此遮盖时的效果。",
+      "background_or_style_advice_is_scope_exclusion": false,
+      "comparison_panel_usable_with_stated_limits": true,
+      "uniform_style_for_single_medical_figure_confirmed": false,
+      "visual_display_review_completed": true,
+      "items": [
+        {
+          "ordinal": 18,
+          "candidate_id": "arcadia-2e37e792decdbbd34575:file-0",
+          "original_sha256": "a250456c1a72fd884b6e920e399a82c96f02034a035d5ba7e30a41ef95666452",
+          "preview_sha256": "e0fa944e18a9feacbe59ee608bd84182f3f97b23730000e168563b2d635c97d1",
+          "original_archive": {
+            "member": "files/a2/a250456c1a72fd884b6e920e399a82c96f02034a035d5ba7e30a41ef95666452.svg",
+            "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/arcadia-42234366112-1-b0000.tar.gz"
+          },
+          "preview_archive": {
+            "member": "previews/a250456c1a72fd884b6e920e399a82c96f02034a035d5ba7e30a41ef95666452.png",
+            "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/arcadia-42234366112-1-b0000.tar.gz"
+          },
+          "composition_position_xywh": [
+            90,
+            250,
+            460,
+            460
+          ],
+          "uniform_scale": 0.8984375,
+          "z_order": 10,
+          "main_composition_observation_zh": "主图可辨病毒剖面和内部结构，外围突起与邻图分开。",
+          "transparency_background_observation_zh": "深底和棋盘从结构间隙透出，结构不是完整实心圆片；浅色细部在复杂底上更难读。",
+          "reduction_observation_zh": "96 px 可看轮廓和剖面概念，48 px 内部组件细节明显简化。",
+          "use_and_scientific_limits_zh": "适合作为来源所称 HIV 结构概念图；不得由此图推断分子精确数量、病毒载量或与相邻病毒存在感染关系。",
+          "existing_scientific_limits_preserved": [
+            "各结构比例与计量未经验证，不表示病毒载量或感染阶段。"
+          ],
+          "reviewed_sheet": {
+            "path": "build/curated-expansion-60/composition/07-microbial-forms.png",
+            "sha256": "768d4b002a5fa2b11000921544e51de89707d2b5ae0568e377f6b8dde25a5283"
+          },
+          "visual_display_review_completed": true,
+          "new_scientific_assertions": false
+        },
+        {
+          "ordinal": 20,
+          "candidate_id": "nih-bioart-768a2f15ee3675717ef5:file-0",
+          "original_sha256": "2052e367b8d115dd8cfce906ea425e9cb9068f686f7c4fa29533949df39cb252",
+          "preview_sha256": "4dba4d2a4e1229646dd773415c1b7fcbdf93f40cfa5cbf721dad9cf982a07dca",
+          "original_archive": {
+            "member": "files/20/2052e367b8d115dd8cfce906ea425e9cb9068f686f7c4fa29533949df39cb252.png",
+            "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/nih-bioart-42248095929-1-b0000.tar.gz"
+          },
+          "preview_archive": {
+            "member": "previews/2052e367b8d115dd8cfce906ea425e9cb9068f686f7c4fa29533949df39cb252.png",
+            "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/nih-bioart-42248095929-1-b0000.tar.gz"
+          },
+          "composition_position_xywh": [
+            900,
+            250,
+            480,
+            480
+          ],
+          "uniform_scale": 0.9375,
+          "z_order": 11,
+          "main_composition_observation_zh": "厚描边、粉色内部卷曲和外周突起在主图可辨，白色源结构没有被去除。",
+          "transparency_background_observation_zh": "内部浅粉填充在深底仍保持浅色，外部留空区显示底色；不能把内部浅色填充当背景删除。",
+          "reduction_observation_zh": "96 px 外轮廓可辨，48 px 内部细节密集，不宜承担精细结构注释。",
+          "use_and_scientific_limits_zh": "适合作为来源所称尼帕病毒概念对象；与 HIV 的不同显示尺寸不表示真实大小差异。",
+          "existing_scientific_limits_preserved": [
+            "不据颜色和内部卷曲数量作分子计量或结构精度声明。"
+          ],
+          "reviewed_sheet": {
+            "path": "build/curated-expansion-60/composition/07-microbial-forms.png",
+            "sha256": "768d4b002a5fa2b11000921544e51de89707d2b5ae0568e377f6b8dde25a5283"
+          },
+          "visual_display_review_completed": true,
+          "new_scientific_assertions": false
+        },
+        {
+          "ordinal": 16,
+          "candidate_id": "arcadia-cee1b6647882ce12b663:file-2",
+          "original_sha256": "61e214cda16f1f782484db9b9ba6970eb584503b7b1620097ed89c3ba325740d",
+          "preview_sha256": "35ee0c60dcc6e237930825670d2cdd4f46e9e444c3156cafb8f171218b51efcc",
+          "original_archive": {
+            "member": "files/61/61e214cda16f1f782484db9b9ba6970eb584503b7b1620097ed89c3ba325740d.png",
+            "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/arcadia-42234366112-1-b0000.tar.gz"
+          },
+          "preview_archive": {
+            "member": "previews/61e214cda16f1f782484db9b9ba6970eb584503b7b1620097ed89c3ba325740d.png",
+            "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/arcadia-42234366112-1-b0000.tar.gz"
+          },
+          "composition_position_xywh": [
+            545,
+            850,
+            310,
+            310
+          ],
+          "uniform_scale": 0.60546875,
+          "z_order": 12,
+          "main_composition_observation_zh": "分枝状金棕色菌体形象完整，主图与标题相邻，未被其他对象遮住。",
+          "transparency_background_observation_zh": "白、深与棋盘底均可辨主分枝；棋盘与深底未见整块不透明矩形外框。",
+          "reduction_observation_zh": "96 px 可见分枝，48 px 主要剩外形，不能据此分辨微小结构。",
+          "use_and_scientific_limits_zh": "可用于来源所指 Candida albicans 的对象配图；名称沿用原证据，本次显示审阅不重新进行物种鉴定。",
+          "existing_scientific_limits_preserved": [
+            "源身份未被独立微生物鉴定；不能表示特定菌株或感染严重程度。"
+          ],
+          "reviewed_sheet": {
+            "path": "build/curated-expansion-60/composition/07-microbial-forms.png",
+            "sha256": "768d4b002a5fa2b11000921544e51de89707d2b5ae0568e377f6b8dde25a5283"
+          },
+          "visual_display_review_completed": true,
+          "new_scientific_assertions": false
+        },
+        {
+          "ordinal": 17,
+          "candidate_id": "arcadia-c3a49a3a6cfdafdecc0d:file-1",
+          "original_sha256": "73dda46e5ec98d9073693e764bad6c78c42a7fcc0332f31e04892a8b49ae4408",
+          "preview_sha256": "9854472fd8171baf810446bd1984a64dd62ead3c93e0e24e486bc09c6325dcc5",
+          "original_archive": {
+            "member": "files/73/73dda46e5ec98d9073693e764bad6c78c42a7fcc0332f31e04892a8b49ae4408.png",
+            "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/arcadia-42234366112-1-b0000.tar.gz"
+          },
+          "preview_archive": {
+            "member": "previews/73dda46e5ec98d9073693e764bad6c78c42a7fcc0332f31e04892a8b49ae4408.png",
+            "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/arcadia-42234366112-1-b0000.tar.gz"
+          },
+          "composition_position_xywh": [
+            40,
+            900,
+            330,
+            330
+          ],
+          "uniform_scale": 0.64453125,
+          "z_order": 13,
+          "main_composition_observation_zh": "绿色分枝和顶端细小簇在主图可见，源图方向保留；标题接近左侧主图区边缘但没有被画布裁掉。",
+          "transparency_background_observation_zh": "深底上绿色细枝对比降低，棋盘底与细线有视觉竞争。",
+          "reduction_observation_zh": "96 px 尚有主要枝干，48 px 顶端细节难以分开。",
+          "use_and_scientific_limits_zh": "可用于来源所指 Penicillium chrysogenum 的形态对象比较；需要显示细枝时增大尺寸、优先浅色纯底。",
+          "existing_scientific_limits_preserved": [
+            "不将图中分支数作为测量；物种沿用固定来源说明。"
+          ],
+          "reviewed_sheet": {
+            "path": "build/curated-expansion-60/composition/07-microbial-forms.png",
+            "sha256": "768d4b002a5fa2b11000921544e51de89707d2b5ae0568e377f6b8dde25a5283"
+          },
+          "visual_display_review_completed": true,
+          "new_scientific_assertions": false
+        },
+        {
+          "ordinal": 19,
+          "candidate_id": "nih-bioart-c9a85bdb9c5145e09761:file-0",
+          "original_sha256": "3fba45fd0a31e135cfd48416c73a466b9ab7418408108c8e2dfa462a8daea289",
+          "preview_sha256": "fa3531bf8c7c1607ef2e54e9c17b122806d40442fd46033068f054025fc50e10",
+          "original_archive": {
+            "member": "files/3f/3fba45fd0a31e135cfd48416c73a466b9ab7418408108c8e2dfa462a8daea289.png",
+            "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/nih-bioart-42248095929-1-b0000.tar.gz"
+          },
+          "preview_archive": {
+            "member": "previews/3fba45fd0a31e135cfd48416c73a466b9ab7418408108c8e2dfa462a8daea289.png",
+            "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/nih-bioart-42248095929-1-b0000.tar.gz"
+          },
+          "composition_position_xywh": [
+            1031,
+            1000,
+            257,
+            240
+          ],
+          "uniform_scale": 0.502092050209205,
+          "z_order": 14,
+          "main_composition_observation_zh": "细长主体与延伸鞭毛清楚，与上方来源对象没有连接。",
+          "transparency_background_observation_zh": "白底和深底都可见主体，棋盘能从细线之间透出；浅色主体填充保留。",
+          "reduction_observation_zh": "96 px 主要形态可辨；48 px 鞭毛和内部标记很细，不适合讲解细节。",
+          "use_and_scientific_limits_zh": "可作锥虫概念对象；保持具体种未知，不把展示中的形状当物种确定证据。",
+          "existing_scientific_limits_preserved": [
+            "不确定具体种、生活史阶段或寄主；不代替物种鉴定。"
+          ],
+          "reviewed_sheet": {
+            "path": "build/curated-expansion-60/composition/07-microbial-forms.png",
+            "sha256": "768d4b002a5fa2b11000921544e51de89707d2b5ae0568e377f6b8dde25a5283"
+          },
+          "visual_display_review_completed": true,
+          "new_scientific_assertions": false
+        }
+      ]
+    },
+    {
+      "path": "build/curated-expansion-60/composition/08-molecular-components.png",
+      "sha256": "1378386e7f8266471b4bd237cb6ce62f3f6d6cde289406976cef604657ec51c4",
+      "pixel_size": [
+        2200,
+        1500
+      ],
+      "displayed_pixel_size": [
+        1920,
+        1308
+      ],
+      "directly_viewed_with": "functions.view_image(detail=original); tool resized the full page for display",
+      "semantic_use_zh": "DNA、苯环、通道、驱动蛋白和 IgM 分开展示，用于部件选材；没有将邻接关系解释成化学/生物机制，也没有增加因果箭头。",
+      "layout_occlusion_zh": "五个对象没有实际互相遮盖；IgM 与下方蛋白之间留有间隔。DNA 标题距其主体较远，正式图中建议靠近对象，避免弱化对应关系。",
+      "style_compatibility_zh": "细线 DNA/苯环、平滑绿通道、阴影卡通驱动蛋白和带高光的 IgM 风格不相同。可用于分隔比较面板；同一机制图若追求统一外观需任务中选同类风格或在获准工作副本调整，本次未调整。",
+      "transparency_zh": "苯环保留白色实心内部，IgM 白色连接在浅底上低对比；其他对象的渐变/源阴影也保留。背景适配必须逐件处理。",
+      "reduction_zh": "48 px 可辨大轮廓，但 DNA 横向细线、IgM 连接和多域细节不足，不能据此进行精细结构讲解。",
+      "overlay_test_scope_zh": "实际观察的是源 RGBA 对浅色版面背景及白/深/棋盘底的叠放；本页前景对象互不重叠，未检验前景对象彼此遮盖时的效果。",
+      "background_or_style_advice_is_scope_exclusion": false,
+      "comparison_panel_usable_with_stated_limits": true,
+      "uniform_style_for_single_medical_figure_confirmed": false,
+      "visual_display_review_completed": true,
+      "items": [
+        {
+          "ordinal": 21,
+          "candidate_id": "scisvg-f17c9a0be6f7b611fc18:file-0",
+          "original_sha256": "f49612e45d3410d733d44ffe58f4df3f1120923d2041352218655d5901e433c8",
+          "preview_sha256": "d050e7af80b415aa1a7bd42be51845aa2a8a42e685b903754736cbc26f470b0b",
+          "original_archive": {
+            "member": "files/f4/f49612e45d3410d733d44ffe58f4df3f1120923d2041352218655d5901e433c8.svg",
+            "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scisvg-42238985604-1-b0000.tar.gz"
+          },
+          "preview_archive": {
+            "member": "previews/f49612e45d3410d733d44ffe58f4df3f1120923d2041352218655d5901e433c8.png",
+            "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scisvg-42238985604-1-b0000.tar.gz"
+          },
+          "composition_position_xywh": [
+            80,
+            460,
+            300,
+            300
+          ],
+          "uniform_scale": 0.5859375,
+          "z_order": 10,
+          "main_composition_observation_zh": "双螺旋概念线条完整，没有与其他分子连接；标题离对象较远，正式排版宜让标题更靠近对应对象。",
+          "transparency_background_observation_zh": "深底下蓝绿细线对比比浅底弱，棋盘会干扰细梯级。",
+          "reduction_observation_zh": "96 px 尚可辨双链形态，48 px 横向细线和两股分离程度不足以支撑序列/配对讲解。",
+          "use_and_scientific_limits_zh": "可作 DNA 概念配图，不表示具体序列、长度或碱基配对证据。",
+          "existing_scientific_limits_preserved": [
+            "不表示碱基序列、手性验证、真实螺距或原子结构。"
+          ],
+          "reviewed_sheet": {
+            "path": "build/curated-expansion-60/composition/08-molecular-components.png",
+            "sha256": "1378386e7f8266471b4bd237cb6ce62f3f6d6cde289406976cef604657ec51c4"
+          },
+          "visual_display_review_completed": true,
+          "new_scientific_assertions": false
+        },
+        {
+          "ordinal": 22,
+          "candidate_id": "scisvg-c5c68f4b10a681cb7ff6:file-0",
+          "original_sha256": "4080c12d3f6c2c42458ceb5e341226679a3d92218bfa1d1cc6c6131ddbc725be",
+          "preview_sha256": "978a0058d3a8b1d35c7af08e81387cb0b043e918eebce33562db2a102c2511fc",
+          "original_archive": {
+            "member": "files/40/4080c12d3f6c2c42458ceb5e341226679a3d92218bfa1d1cc6c6131ddbc725be.svg",
+            "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scisvg-42238985604-1-b0000.tar.gz"
+          },
+          "preview_archive": {
+            "member": "previews/4080c12d3f6c2c42458ceb5e341226679a3d92218bfa1d1cc6c6131ddbc725be.png",
+            "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scisvg-42238985604-1-b0000.tar.gz"
+          },
+          "composition_position_xywh": [
+            145,
+            1100,
+            150,
+            150
+          ],
+          "uniform_scale": 0.29296875,
+          "z_order": 11,
+          "main_composition_observation_zh": "主图中的六角环与中心圆可辨，未被别的对象遮挡；源白色内部仍在。",
+          "transparency_background_observation_zh": "深底和棋盘上可见白色六边形内部，说明不能把该符号作为中空透明线框使用。",
+          "reduction_observation_zh": "96 px 可辨环，48 px 线条较细，若作为正文旁的小符号需现场核可读性。",
+          "use_and_scientific_limits_zh": "可作独立苯环化学符号；不得凭与蛋白邻接构造未有依据的化学作用。",
+          "existing_scientific_limits_preserved": [
+            "二维化学符号，不是蛋白或原子级三维模型；使用时保留其化学意义。"
+          ],
+          "reviewed_sheet": {
+            "path": "build/curated-expansion-60/composition/08-molecular-components.png",
+            "sha256": "1378386e7f8266471b4bd237cb6ce62f3f6d6cde289406976cef604657ec51c4"
+          },
+          "visual_display_review_completed": true,
+          "new_scientific_assertions": false
+        },
+        {
+          "ordinal": 23,
+          "candidate_id": "scidraw-e8ccc43ff71d83f820d1:file-0",
+          "original_sha256": "dfee687f6cfb71e99555344b538a79f3cf29260e1f72fe7d98c592e30646bda2",
+          "preview_sha256": "3287740f02211aa38cd5a361b643e20a1da6b48bfb5f1992b04d7f9c27214f56",
+          "original_archive": {
+            "member": "files/df/dfee687f6cfb71e99555344b538a79f3cf29260e1f72fe7d98c592e30646bda2.svg",
+            "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scidraw-42235890704-1-b0000.tar.gz"
+          },
+          "preview_archive": {
+            "member": "previews/dfee687f6cfb71e99555344b538a79f3cf29260e1f72fe7d98c592e30646bda2.png",
+            "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scidraw-42235890704-1-b0000.tar.gz"
+          },
+          "composition_position_xywh": [
+            570,
+            920,
+            220,
+            320
+          ],
+          "uniform_scale": 0.625,
+          "z_order": 12,
+          "main_composition_observation_zh": "两侧绿色通道样轮廓与中间浅绿部分完整，未添加膜或定位。",
+          "transparency_background_observation_zh": "绿色主体在三个背景均可辨，中部浅绿源填充保留，不是新加的底色。",
+          "reduction_observation_zh": "96/48 px 的大轮廓仍可辨，但不能用于强调微观结构细节。",
+          "use_and_scientific_limits_zh": "可作来源所称离子通道部件；此图未证明其膜定位、开闭状态或具体分子身份。",
+          "existing_scientific_limits_preserved": [
+            "不推断具体通道家族、开放状态或离子选择性。"
+          ],
+          "reviewed_sheet": {
+            "path": "build/curated-expansion-60/composition/08-molecular-components.png",
+            "sha256": "1378386e7f8266471b4bd237cb6ce62f3f6d6cde289406976cef604657ec51c4"
+          },
+          "visual_display_review_completed": true,
+          "new_scientific_assertions": false
+        },
+        {
+          "ordinal": 24,
+          "candidate_id": "scidraw-f17570e6f1a3f72f0be1:file-0",
+          "original_sha256": "6a9e5bd4dda595253fa06d9e587b71ef0325fe2bc17880539f61bb10c1529045",
+          "preview_sha256": "84a8aea2301a414fa9f543adebdf39a854dd654a9c8250b542fca78f719c6b79",
+          "original_archive": {
+            "member": "files/6a/6a9e5bd4dda595253fa06d9e587b71ef0325fe2bc17880539f61bb10c1529045.svg",
+            "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scidraw-42235890704-1-b0000.tar.gz"
+          },
+          "preview_archive": {
+            "member": "previews/6a9e5bd4dda595253fa06d9e587b71ef0325fe2bc17880539f61bb10c1529045.png",
+            "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scidraw-42235890704-1-b0000.tar.gz"
+          },
+          "composition_position_xywh": [
+            1013,
+            860,
+            343,
+            370
+          ],
+          "uniform_scale": 0.72265625,
+          "z_order": 13,
+          "main_composition_observation_zh": "红色杆状上部、黄色连接与紫色下部在主图完整，源阴影保留；未添加行走轨迹。",
+          "transparency_background_observation_zh": "主体在白、深与棋盘上可辨，浅灰阴影在不同底上观感不同。",
+          "reduction_observation_zh": "96 px 可见部件轮廓，48 px 连接点与下部细节缩小明显。",
+          "use_and_scientific_limits_zh": "可作驱动蛋白部件示意，不把静态部件排列说成实际运动过程或与本页通道的机制关系。",
+          "existing_scientific_limits_preserved": [
+            "不由静态图推断运行方向、结合状态或亚基计量。"
+          ],
+          "reviewed_sheet": {
+            "path": "build/curated-expansion-60/composition/08-molecular-components.png",
+            "sha256": "1378386e7f8266471b4bd237cb6ce62f3f6d6cde289406976cef604657ec51c4"
+          },
+          "visual_display_review_completed": true,
+          "new_scientific_assertions": false
+        },
+        {
+          "ordinal": 25,
+          "candidate_id": "bioicons-8018ef21f91d0acfc334:file-0",
+          "original_sha256": "ecfe82536d4ee34049bfa6eaf6c2d734bb9c8a0fd8e07fac77f32e313ad0b533",
+          "preview_sha256": "25f4f61d937be9b38fa1e430918729c1156f71bf1e496a99682d5d5c0c5be8eb",
+          "original_archive": {
+            "member": "files/ec/ecfe82536d4ee34049bfa6eaf6c2d734bb9c8a0fd8e07fac77f32e313ad0b533.svg",
+            "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42251588741-1-b0001.tar.gz"
+          },
+          "preview_archive": {
+            "member": "previews/ecfe82536d4ee34049bfa6eaf6c2d734bb9c8a0fd8e07fac77f32e313ad0b533.png",
+            "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42251588741-1-b0001.tar.gz"
+          },
+          "composition_position_xywh": [
+            709,
+            284,
+            512,
+            481
+          ],
+          "uniform_scale": 1.0,
+          "z_order": 14,
+          "main_composition_observation_zh": "多臂彩色结构在主图完整，但中心白色细连接线在浅色主背景上对比很低。",
+          "transparency_background_observation_zh": "深底使白色连接线更明显；棋盘会与细连接及小彩色域竞争，源白线需保留。",
+          "reduction_observation_zh": "96 px 多臂整体可辨，48 px 小域和连接难以逐个判读。",
+          "use_and_scientific_limits_zh": "可作 IgM 概念结构对象；讲解臂间连接时需合适底色及更大尺寸，不从该图自行补写精确结构解释。",
+          "existing_scientific_limits_preserved": [
+            "不作为精确三维结构或序列模型；保留 Servier 历史许可与署名说明。"
+          ],
+          "reviewed_sheet": {
+            "path": "build/curated-expansion-60/composition/08-molecular-components.png",
+            "sha256": "1378386e7f8266471b4bd237cb6ce62f3f6d6cde289406976cef604657ec51c4"
+          },
+          "visual_display_review_completed": true,
+          "new_scientific_assertions": false
+        }
+      ]
+    },
+    {
+      "path": "build/curated-expansion-60/composition/09-anatomy-tissue.png",
+      "sha256": "161282a475461147b105ded163d6a50182b2c601b1e42b5cd7b4ef7ee3696de4",
+      "pixel_size": [
+        2200,
+        1500
+      ],
+      "displayed_pixel_size": [
+        1920,
+        1308
+      ],
+      "directly_viewed_with": "functions.view_image(detail=original); tool resized the full page for display",
+      "semantic_use_zh": "分隔器官与组织结构的图版比较；各对象保留源标签、背景及未知物种限制，不将其组合成人体解剖关系。",
+      "layout_occlusion_zh": "主图中未见器官互相遮挡，骨图的原标签和引线未与其他素材相交；标签与所属结构仍在各自区域。",
+      "style_compatibility_zh": "细线眼、阴影脾脏、实心黑图标、骨结构线图和带矩形源底的软骨图差异明显。作为有明确分隔的比较图版可用；不能据此宣称同一解剖图中的统一画风已通过。",
+      "transparency_zh": "38 的白色矩形源底、39 的紫色源底及其他浅色结构均保留。深底对眼细线和黑图标不友好，40 的浅色分枝在浅底亦有对比限制。",
+      "reduction_zh": "骨/软骨原标签在小尺寸不可读；主图也不足以逐字核对所有小字。细神经分枝和眼内线条在48 px不适合承担细节。",
+      "overlay_test_scope_zh": "实际观察的是源 RGBA 对浅色版面背景及白/深/棋盘底的叠放；本页前景对象互不重叠，未检验前景对象彼此遮盖时的效果。",
+      "background_or_style_advice_is_scope_exclusion": false,
+      "comparison_panel_usable_with_stated_limits": true,
+      "uniform_style_for_single_medical_figure_confirmed": false,
+      "visual_display_review_completed": true,
+      "items": [
+        {
+          "ordinal": 28,
+          "candidate_id": "scidraw-9c02e74aeaefa3ce0f03:file-0",
+          "original_sha256": "8387a4c2e97dcde8885c64fdd12fa827092dbaedc6e85dddfd3f8e1eddea5015",
+          "preview_sha256": "8fa5a9c1f8d396856058700012170e1483318425657aefc436fc162e1281a1d4",
+          "original_archive": {
+            "member": "files/83/8387a4c2e97dcde8885c64fdd12fa827092dbaedc6e85dddfd3f8e1eddea5015.svg",
+            "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scidraw-42235890704-1-b0000.tar.gz"
+          },
+          "preview_archive": {
+            "member": "previews/8387a4c2e97dcde8885c64fdd12fa827092dbaedc6e85dddfd3f8e1eddea5015.png",
+            "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scidraw-42235890704-1-b0000.tar.gz"
+          },
+          "composition_position_xywh": [
+            70,
+            255,
+            340,
+            289
+          ],
+          "uniform_scale": 0.6640625,
+          "z_order": 10,
+          "main_composition_observation_zh": "眼剖面细线在主图可见，未被相邻脾脏或其他部件遮挡。",
+          "transparency_background_observation_zh": "深底中细暗线对比不足；浅底主图适合轮廓识别，棋盘会干扰内部线条。",
+          "reduction_observation_zh": "96 px 细部变弱，48 px 不适合承载眼内结构说明。",
+          "use_and_scientific_limits_zh": "适合人眼剖面概念对象；保持原结构与方向，不能用该小预览作诊断或比例模型。",
+          "existing_scientific_limits_preserved": [
+            "线条细，极小尺寸下可能消失；不是眼科诊断或尺寸模型。"
+          ],
+          "reviewed_sheet": {
+            "path": "build/curated-expansion-60/composition/09-anatomy-tissue.png",
+            "sha256": "161282a475461147b105ded163d6a50182b2c601b1e42b5cd7b4ef7ee3696de4"
+          },
+          "visual_display_review_completed": true,
+          "new_scientific_assertions": false
+        },
+        {
+          "ordinal": 29,
+          "candidate_id": "scidraw-3d41228b014505ed3a78:file-0",
+          "original_sha256": "ec2b82d3332c33ac871ead93b687c4e9162569726bba91d8277aff406de08ed7",
+          "preview_sha256": "15dfb2c90b21059730f95e64af96fcbb5d1121a07af4300eea214daa66615244",
+          "original_archive": {
+            "member": "files/ec/ec2b82d3332c33ac871ead93b687c4e9162569726bba91d8277aff406de08ed7.svg",
+            "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scidraw-42235890704-1-b0000.tar.gz"
+          },
+          "preview_archive": {
+            "member": "previews/ec2b82d3332c33ac871ead93b687c4e9162569726bba91d8277aff406de08ed7.png",
+            "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scidraw-42235890704-1-b0000.tar.gz"
+          },
+          "composition_position_xywh": [
+            509,
+            220,
+            262,
+            340
+          ],
+          "uniform_scale": 0.6640625,
+          "z_order": 11,
+          "main_composition_observation_zh": "粉色阴影的独立脾脏完整，主体与背景色块分明。",
+          "transparency_background_observation_zh": "三个背景都可识别轮廓，源明暗塑形与周围线描图不一致。",
+          "reduction_observation_zh": "96/48 px 可辨外轮廓，内部表面细节在小尺寸减弱。",
+          "use_and_scientific_limits_zh": "可作脾脏对象配图，物种沿用未知，不由外观或邻近人体图补成人。",
+          "existing_scientific_limits_preserved": [
+            "不推断物种、病变、真实大小或血流方向。"
+          ],
+          "reviewed_sheet": {
+            "path": "build/curated-expansion-60/composition/09-anatomy-tissue.png",
+            "sha256": "161282a475461147b105ded163d6a50182b2c601b1e42b5cd7b4ef7ee3696de4"
+          },
+          "visual_display_review_completed": true,
+          "new_scientific_assertions": false
+        },
+        {
+          "ordinal": 30,
+          "candidate_id": "healthicons-09dd490cf28c9c9a95db:file-0",
+          "original_sha256": "5d9239639f72df30f5a3befe9ee4186f53908851c5119e817cf57657853c22ad",
+          "preview_sha256": "8b66aba7875657e6024cae5fba9c638dd996d5685900b3e5af6ca80fc19cdb5d",
+          "original_archive": {
+            "member": "files/5d/5d9239639f72df30f5a3befe9ee4186f53908851c5119e817cf57657853c22ad.svg",
+            "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/healthicons-42234355854-1-b0000.tar.gz"
+          },
+          "preview_archive": {
+            "member": "previews/5d9239639f72df30f5a3befe9ee4186f53908851c5119e817cf57657853c22ad.png",
+            "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/healthicons-42234355854-1-b0000.tar.gz"
+          },
+          "composition_position_xywh": [
+            1010,
+            260,
+            300,
+            300
+          ],
+          "uniform_scale": 0.5859375,
+          "z_order": 12,
+          "main_composition_observation_zh": "实心黑色概念图标在浅底主图清楚，与细线器官图的视觉重量明显不同。",
+          "transparency_background_observation_zh": "深底的黑色主体对比很低；白底或足够浅的底色更合适。",
+          "reduction_observation_zh": "96/48 px 可辨大轮廓，但小尺寸不能承载内部解剖说明。",
+          "use_and_scientific_limits_zh": "适合前列腺概念图标或图例，不应与写实器官混放后声称比例或解剖细节一致。",
+          "existing_scientific_limits_preserved": [
+            "仅粗粒度器官符号，不适合精细解剖、病灶位置或切除范围绘制。"
+          ],
+          "reviewed_sheet": {
+            "path": "build/curated-expansion-60/composition/09-anatomy-tissue.png",
+            "sha256": "161282a475461147b105ded163d6a50182b2c601b1e42b5cd7b4ef7ee3696de4"
+          },
+          "visual_display_review_completed": true,
+          "new_scientific_assertions": false
+        },
+        {
+          "ordinal": 36,
+          "candidate_id": "commons-d943a568aeb9758e977c:file-0",
+          "original_sha256": "eb6ab3a919268fcb1864da73b50cf2a63147cc1ec588c280ca04788bbc437fec",
+          "preview_sha256": "97da6d31081ff955dd3736d4c786af1340e4b6609932fb93f180fa2e7a363058",
+          "original_archive": {
+            "member": "files/eb/eb6ab3a919268fcb1864da73b50cf2a63147cc1ec588c280ca04788bbc437fec.svg",
+            "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/commons-42260711756-1-b0000.tar.gz"
+          },
+          "preview_archive": {
+            "member": "previews/eb6ab3a919268fcb1864da73b50cf2a63147cc1ec588c280ca04788bbc437fec.png",
+            "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/commons-42260711756-1-b0000.tar.gz"
+          },
+          "composition_position_xywh": [
+            129,
+            712,
+            512,
+            256
+          ],
+          "uniform_scale": 1.0,
+          "z_order": 13,
+          "main_composition_observation_zh": "骨剖面主图完整，内部彩色结构与外侧轮廓没有被其他素材盖住。",
+          "transparency_background_observation_zh": "浅底上主要结构可辨，源浅色填充保留；背景测试没有进行白色结构清理。",
+          "reduction_observation_zh": "缩小后骨内结构更密，48 px 只能识别概念外形。",
+          "use_and_scientific_limits_zh": "适合作为无原文字标签的骨剖面对象；若用于讲内部层次，需要保持较大显示面积。",
+          "existing_scientific_limits_preserved": [
+            "非实测组织切片；不推断物种、病变或结构尺寸。"
+          ],
+          "reviewed_sheet": {
+            "path": "build/curated-expansion-60/composition/09-anatomy-tissue.png",
+            "sha256": "161282a475461147b105ded163d6a50182b2c601b1e42b5cd7b4ef7ee3696de4"
+          },
+          "visual_display_review_completed": true,
+          "new_scientific_assertions": false
+        },
+        {
+          "ordinal": 37,
+          "candidate_id": "commons-e9dca210ccd4ed9d1fc1:file-0",
+          "original_sha256": "a68bc1bcbcfdf7a95015bf99a8b16d02687e0c36c92a805a56dc350a376d6c04",
+          "preview_sha256": "4b7288de9ec81968ce9020fa7df61874e0879c31cb3e6588c085b0d3eeeda9d9",
+          "original_archive": {
+            "member": "files/a6/a68bc1bcbcfdf7a95015bf99a8b16d02687e0c36c92a805a56dc350a376d6c04.svg",
+            "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/commons-42260711756-1-b0000.tar.gz"
+          },
+          "preview_archive": {
+            "member": "previews/a68bc1bcbcfdf7a95015bf99a8b16d02687e0c36c92a805a56dc350a376d6c04.png",
+            "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/commons-42260711756-1-b0000.tar.gz"
+          },
+          "composition_position_xywh": [
+            911,
+            650,
+            377,
+            330
+          ],
+          "uniform_scale": 0.7366071428571429,
+          "z_order": 14,
+          "main_composition_observation_zh": "主图含骨单位、横断面及源英文引线标签；标签与本页其他对象没有交叠。",
+          "transparency_background_observation_zh": "源文字和细引线在深色或棋盘背景上的对比与干扰需要谨慎，不能只依据外轮廓选择背景。",
+          "reduction_observation_zh": "本次屏幕主图可看到标签，但 96/48 px 无法可靠阅读源英文小字。",
+          "use_and_scientific_limits_zh": "适合保留标签的骨结构说明；若需要阅读文字，采用更大版本并逐字核对，不执行自动去字。",
+          "existing_scientific_limits_preserved": [
+            "英文标签需选用后按任务调整；不能删掉表达结构的线，也不推断病理状态。"
+          ],
+          "reviewed_sheet": {
+            "path": "build/curated-expansion-60/composition/09-anatomy-tissue.png",
+            "sha256": "161282a475461147b105ded163d6a50182b2c601b1e42b5cd7b4ef7ee3696de4"
+          },
+          "visual_display_review_completed": true,
+          "new_scientific_assertions": false
+        },
+        {
+          "ordinal": 38,
+          "candidate_id": "commons-c5cd912e52274269536a:file-0",
+          "original_sha256": "977c20aa8dd1b9b4c73d3ce3b1eebed3f9558a9b5256517582cb1072edb50c98",
+          "preview_sha256": "3783a951e750cb23a951535639488c7708875836a56e46f32622209bb545976c",
+          "original_archive": {
+            "member": "files/97/977c20aa8dd1b9b4c73d3ce3b1eebed3f9558a9b5256517582cb1072edb50c98.jpg",
+            "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/commons-42260711756-1-b0000.tar.gz"
+          },
+          "preview_archive": {
+            "member": "previews/977c20aa8dd1b9b4c73d3ce3b1eebed3f9558a9b5256517582cb1072edb50c98.png",
+            "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/commons-42260711756-1-b0000.tar.gz"
+          },
+          "composition_position_xywh": [
+            75,
+            1050,
+            380,
+            230
+          ],
+          "uniform_scale": 0.7419354838709677,
+          "z_order": 15,
+          "main_composition_observation_zh": "软骨结构与区域图中的源白色矩形背景可见，标签没有被本次渲染删除。",
+          "transparency_background_observation_zh": "白色源背景在浅米色主面板和深底检查中形成可见矩形，不是透明切出对象。",
+          "reduction_observation_zh": "主图小标签在本次屏幕尺寸已难逐字核对，96/48 px 更不适合阅读。",
+          "use_and_scientific_limits_zh": "适合作为带标签的独立结构小图；与其他部件同图时预留白底框及足够阅读面积。",
+          "existing_scientific_limits_preserved": [
+            "原始为位图；小字在联系表尺寸不可完整辨读，正式使用需检查原分辨率与按需清理标签。"
+          ],
+          "reviewed_sheet": {
+            "path": "build/curated-expansion-60/composition/09-anatomy-tissue.png",
+            "sha256": "161282a475461147b105ded163d6a50182b2c601b1e42b5cd7b4ef7ee3696de4"
+          },
+          "visual_display_review_completed": true,
+          "new_scientific_assertions": false
+        },
+        {
+          "ordinal": 39,
+          "candidate_id": "commons-9ae4aac9f0eaf197bf7f:file-0",
+          "original_sha256": "62898b9d08c0821a649cb56fc979d1cf32cdc930c0313049ca53bd568e096c5d",
+          "preview_sha256": "b30535f5c91ef5a959d3dae5ab9a283abdb215eeca8ba5e269694d2ffab02312",
+          "original_archive": {
+            "member": "files/62/62898b9d08c0821a649cb56fc979d1cf32cdc930c0313049ca53bd568e096c5d.jpg",
+            "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/commons-42260711756-1-b0000.tar.gz"
+          },
+          "preview_archive": {
+            "member": "previews/62898b9d08c0821a649cb56fc979d1cf32cdc930c0313049ca53bd568e096c5d.png",
+            "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/commons-42260711756-1-b0000.tar.gz"
+          },
+          "composition_position_xywh": [
+            598,
+            1050,
+            294,
+            230
+          ],
+          "uniform_scale": 0.575,
+          "z_order": 16,
+          "main_composition_observation_zh": "透明软骨组织示意保留紫色矩形底与源标注，未与邻图产生实际遮挡。",
+          "transparency_background_observation_zh": "紫色源底是图的一部分，在白、深、棋盘背景上均形成独立块面，不应当作可随意透底素材。",
+          "reduction_observation_zh": "组织纹理与源小字在小尺寸非常密；本次显示不能逐字确认所有标签。",
+          "use_and_scientific_limits_zh": "可作带标签的组织图版；需要同图统一底色时仅记录后续任务要求，本次不删除紫色底或文字。",
+          "existing_scientific_limits_preserved": [
+            "位图标签按任务清理；不代表疾病分级、细胞密度或真实染色。"
+          ],
+          "reviewed_sheet": {
+            "path": "build/curated-expansion-60/composition/09-anatomy-tissue.png",
+            "sha256": "161282a475461147b105ded163d6a50182b2c601b1e42b5cd7b4ef7ee3696de4"
+          },
+          "visual_display_review_completed": true,
+          "new_scientific_assertions": false
+        },
+        {
+          "ordinal": 40,
+          "candidate_id": "nih-bioart-61e789823280e368511e:file-0",
+          "original_sha256": "6b1ec458e4fa141fc976eeb49eda6032b9cd30a6824035f30a5afa90d71f75b6",
+          "preview_sha256": "32f413c1374cda2b361df596bb15405313d6a18da5af9eb7faa1f7015dbc271b",
+          "original_archive": {
+            "member": "files/6b/6b1ec458e4fa141fc976eeb49eda6032b9cd30a6824035f30a5afa90d71f75b6.png",
+            "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/nih-bioart-42248095929-1-b0000.tar.gz"
+          },
+          "preview_archive": {
+            "member": "previews/6b1ec458e4fa141fc976eeb49eda6032b9cd30a6824035f30a5afa90d71f75b6.png",
+            "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/nih-bioart-42248095929-1-b0000.tar.gz"
+          },
+          "composition_position_xywh": [
+            1030,
+            1032,
+            420,
+            236
+          ],
+          "uniform_scale": 0.8203125,
+          "z_order": 17,
+          "main_composition_observation_zh": "两类细长分枝结构并行显示完整，与骨/软骨图分开；没有添加路径方向或因果连接。",
+          "transparency_background_observation_zh": "浅色细枝在浅底上对比偏低，棋盘会增加辨认负担；深底观感变化不等于原件受损。",
+          "reduction_observation_zh": "96 px 有主要形态，48 px 多条细枝难以区分。",
+          "use_and_scientific_limits_zh": "适合神经与淋巴管并行部件的概念配图，宜较大尺寸与简洁底色，不由本次图像新增解剖断言。",
+          "existing_scientific_limits_preserved": [
+            "示意线在小尺寸较细；不用于神经束或淋巴管的真实解剖定位和比例。"
+          ],
+          "reviewed_sheet": {
+            "path": "build/curated-expansion-60/composition/09-anatomy-tissue.png",
+            "sha256": "161282a475461147b105ded163d6a50182b2c601b1e42b5cd7b4ef7ee3696de4"
+          },
+          "visual_display_review_completed": true,
+          "new_scientific_assertions": false
+        }
+      ]
+    },
+    {
+      "path": "build/curated-expansion-60/composition/10-people-communication.png",
+      "sha256": "c5842f99d052bb1903d1244172521786ce9fcb6221f5b4fc8464ef806543f7c6",
+      "pixel_size": [
+        2200,
+        1500
+      ],
+      "displayed_pixel_size": [
+        1920,
+        1308
+      ],
+      "directly_viewed_with": "functions.view_image(detail=original); tool resized the full page for display",
+      "semantic_use_zh": "一般人物、沟通场景、抬腿姿态与问卷工具的用途比较；没有宣称这些人参加同一研究、招募或随访，也没有把设备图替代动作。",
+      "layout_occlusion_zh": "各源对象分区完整，未见跨对象遮挡，SURVEY 文字仍在电脑对象内。人物源半身/圆底边界没有在本次被裁切或清除。",
+      "style_compatibility_zh": "圆底头像、蓝色剪影、人群细线/白外缘、浅色肢体、粗线电脑及阴影医患场景明显异风格。可用于有标签的选材比较；一张连贯临床插图应另行匹配风格和人物表现，不自动视为统一。",
+      "transparency_zh": "32/33 的原圆底、34 白外缘及53浅色衣物/底部保留。35 在浅米色背景低对比，是使用限制，不是损坏判断。",
+      "reduction_zh": "48 px 人群手势、医患细节和抬腿肢体关系不足，问卷工具的细部也不应依赖缩略显示。",
+      "overlay_test_scope_zh": "实际观察的是源 RGBA 对浅色版面背景及白/深/棋盘底的叠放；本页前景对象互不重叠，未检验前景对象彼此遮盖时的效果。",
+      "background_or_style_advice_is_scope_exclusion": false,
+      "comparison_panel_usable_with_stated_limits": true,
+      "uniform_style_for_single_medical_figure_confirmed": false,
+      "visual_display_review_completed": true,
+      "items": [
+        {
+          "ordinal": 32,
+          "candidate_id": "nih-bioart-f6e0453778b6799b07a8:file-0",
+          "original_sha256": "d542691acf0c34eb0a9807b94ff30e64941b50a43abb88a085628508ed0e8f2e",
+          "preview_sha256": "2142f6f09adcdcaf5abacb61fabe483e7523e66a37c813e879e1d363235667c0",
+          "original_archive": {
+            "member": "files/d5/d542691acf0c34eb0a9807b94ff30e64941b50a43abb88a085628508ed0e8f2e.png",
+            "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/nih-bioart-42248095929-1-b0000.tar.gz"
+          },
+          "preview_archive": {
+            "member": "previews/d542691acf0c34eb0a9807b94ff30e64941b50a43abb88a085628508ed0e8f2e.png",
+            "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/nih-bioart-42248095929-1-b0000.tar.gz"
+          },
+          "composition_position_xywh": [
+            40,
+            260,
+            300,
+            300
+          ],
+          "uniform_scale": 0.5859375,
+          "z_order": 10,
+          "main_composition_observation_zh": "半身头像连同原圆形底保留，比较布局中不与别人的身体拼接。",
+          "transparency_background_observation_zh": "圆形背景属于源图的一部分，在棋盘和深底仍形成完整圆块，不是无底人物剪影。",
+          "reduction_observation_zh": "96 px 可辨人物，48 px 面部细节弱。",
+          "use_and_scientific_limits_zh": "适合一般半身人物图例；正式版面应考虑原圆底与其他人物风格的区别。",
+          "existing_scientific_limits_preserved": [
+            "半身裁切是构图限制；不能独立证明职业、性别认同或患者身份。"
+          ],
+          "reviewed_sheet": {
+            "path": "build/curated-expansion-60/composition/10-people-communication.png",
+            "sha256": "c5842f99d052bb1903d1244172521786ce9fcb6221f5b4fc8464ef806543f7c6"
+          },
+          "visual_display_review_completed": true,
+          "new_scientific_assertions": false
+        },
+        {
+          "ordinal": 31,
+          "candidate_id": "nih-bioart-1878a0c62866c60a07c7:file-0",
+          "original_sha256": "7e5dad3258b69cd569374a574f52fd5e31f77e4f7bd0aab236945b8e38233d65",
+          "preview_sha256": "b79f1981d287dcbb12faadac35d3e9b1d4fdb0d808557d858ef160ba03979e06",
+          "original_archive": {
+            "member": "files/7e/7e5dad3258b69cd569374a574f52fd5e31f77e4f7bd0aab236945b8e38233d65.png",
+            "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/nih-bioart-42248095929-1-b0000.tar.gz"
+          },
+          "preview_archive": {
+            "member": "previews/7e5dad3258b69cd569374a574f52fd5e31f77e4f7bd0aab236945b8e38233d65.png",
+            "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/nih-bioart-42248095929-1-b0000.tar.gz"
+          },
+          "composition_position_xywh": [
+            430,
+            270,
+            240,
+            300
+          ],
+          "uniform_scale": 0.58679706601467,
+          "z_order": 11,
+          "main_composition_observation_zh": "携物行走人物的完整姿态可见，未与旁边头像或人群重叠。",
+          "transparency_background_observation_zh": "蓝色实心轮廓在浅底清楚，深底对比降低；没有添加新的外描边。",
+          "reduction_observation_zh": "96/48 px 可辨人形姿态，手中小物体细节不宜作主要信息。",
+          "use_and_scientific_limits_zh": "可用于一般人物/携物情景，不能以此代替已发生的临床操作或患者身份。",
+          "existing_scientific_limits_preserved": [
+            "不由外观推断族群、职业风险、移民身份或健康状态。"
+          ],
+          "reviewed_sheet": {
+            "path": "build/curated-expansion-60/composition/10-people-communication.png",
+            "sha256": "c5842f99d052bb1903d1244172521786ce9fcb6221f5b4fc8464ef806543f7c6"
+          },
+          "visual_display_review_completed": true,
+          "new_scientific_assertions": false
+        },
+        {
+          "ordinal": 34,
+          "candidate_id": "nih-bioart-57b76866d5aea134f7b4:file-0",
+          "original_sha256": "f2cc06c7c8c76c03a1bba830b1670be2d07e1543d0bc49dae3339af880b9e9bc",
+          "preview_sha256": "2573d24e1756da011c4b9b23b2681d0f40af83badb052b0c7258cae477fee1c3",
+          "original_archive": {
+            "member": "files/f2/f2cc06c7c8c76c03a1bba830b1670be2d07e1543d0bc49dae3339af880b9e9bc.png",
+            "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/nih-bioart-42236561214-1-b0000.tar.gz"
+          },
+          "preview_archive": {
+            "member": "previews/f2cc06c7c8c76c03a1bba830b1670be2d07e1543d0bc49dae3339af880b9e9bc.png",
+            "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/nih-bioart-42236561214-1-b0000.tar.gz"
+          },
+          "composition_position_xywh": [
+            950,
+            220,
+            349,
+            350
+          ],
+          "uniform_scale": 0.68359375,
+          "z_order": 12,
+          "main_composition_observation_zh": "人群主体完整，主图可见源白色外缘，与邻近图没有重叠。",
+          "transparency_background_observation_zh": "白外缘在色底/深底中可见，属于实际显示表现；未据此判断源文件损坏或自动清边。",
+          "reduction_observation_zh": "96 px 能看出人群，48 px 个体表情、手势及细部不可靠。",
+          "use_and_scientific_limits_zh": "适合一般人群对象或人群概念，不补写特定人群资格或招募事实。",
+          "existing_scientific_limits_preserved": [
+            "部分成人下身被构图裁切；不适合要求所有人全身完整的任务，不代表研究招募流程。"
+          ],
+          "reviewed_sheet": {
+            "path": "build/curated-expansion-60/composition/10-people-communication.png",
+            "sha256": "c5842f99d052bb1903d1244172521786ce9fcb6221f5b4fc8464ef806543f7c6"
+          },
+          "visual_display_review_completed": true,
+          "new_scientific_assertions": false
+        },
+        {
+          "ordinal": 33,
+          "candidate_id": "nih-bioart-823de4e4cd0635de9ae5:file-0",
+          "original_sha256": "0356ced15b2e6827f35fc609e2fff92aa65660911ebccfad4a72f1c6903b8275",
+          "preview_sha256": "76b9b5179e4d693eaa51e733f64adbab286737cc3473497378ed98af12ae435b",
+          "original_archive": {
+            "member": "files/03/0356ced15b2e6827f35fc609e2fff92aa65660911ebccfad4a72f1c6903b8275.png",
+            "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/nih-bioart-42248095929-1-b0000.tar.gz"
+          },
+          "preview_archive": {
+            "member": "previews/0356ced15b2e6827f35fc609e2fff92aa65660911ebccfad4a72f1c6903b8275.png",
+            "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/nih-bioart-42248095929-1-b0000.tar.gz"
+          },
+          "composition_position_xywh": [
+            60,
+            825,
+            350,
+            350
+          ],
+          "uniform_scale": 0.68359375,
+          "z_order": 13,
+          "main_composition_observation_zh": "多人交流场景连同源圆形背景完整，人物没有被本页其他素材遮挡。",
+          "transparency_background_observation_zh": "保留圆底后可与页面背景区分；这不是纯透明人物组合。",
+          "reduction_observation_zh": "96 px 可见多人交流构图，48 px 个体细节和小动作不宜承担任务语义。",
+          "use_and_scientific_limits_zh": "可用于一般交流场景，不据此声称招募、随访、问卷发放或研究参与关系。",
+          "existing_scientific_limits_preserved": [
+            "不据场景推出知情同意、招募、随机分组或研究随访。"
+          ],
+          "reviewed_sheet": {
+            "path": "build/curated-expansion-60/composition/10-people-communication.png",
+            "sha256": "c5842f99d052bb1903d1244172521786ce9fcb6221f5b4fc8464ef806543f7c6"
+          },
+          "visual_display_review_completed": true,
+          "new_scientific_assertions": false
+        },
+        {
+          "ordinal": 35,
+          "candidate_id": "bioicons-559c5be459a35f0326a6:file-0",
+          "original_sha256": "b4f44658f1bef47407eac25358a44ef923c03ae39fde6c797cf5c55b7ef7f2fa",
+          "preview_sha256": "2e1d05e2e0b98102a62889e1d6835c331f7e12c45195c2ad7c0c2300d3872816",
+          "original_archive": {
+            "member": "files/b4/b4f44658f1bef47407eac25358a44ef923c03ae39fde6c797cf5c55b7ef7f2fa.svg",
+            "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42251588741-1-b0001.tar.gz"
+          },
+          "preview_archive": {
+            "member": "previews/b4f44658f1bef47407eac25358a44ef923c03ae39fde6c797cf5c55b7ef7f2fa.png",
+            "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42251588741-1-b0001.tar.gz"
+          },
+          "composition_position_xywh": [
+            434,
+            1004,
+            512,
+            221
+          ],
+          "uniform_scale": 1.0,
+          "z_order": 14,
+          "main_composition_observation_zh": "卧床抬腿姿态完整，浅色肢体在浅米色主背景上对比偏低。",
+          "transparency_background_observation_zh": "主体浅色填充被保留，换底会改变可辨性；本次未增描边或改色。",
+          "reduction_observation_zh": "96 px 可辨姿态，48 px 肢体关系及细线不足以用于精细动作讲解。",
+          "use_and_scientific_limits_zh": "可作原姿态示意；应给予足够尺寸并选择有对比的简洁背景，不自行解释成另一种动作。",
+          "existing_scientific_limits_preserved": [
+            "不推断操作指征、诊断、测量角度或医疗指导；图中姿态不等于完整实验操作流程。"
+          ],
+          "reviewed_sheet": {
+            "path": "build/curated-expansion-60/composition/10-people-communication.png",
+            "sha256": "c5842f99d052bb1903d1244172521786ce9fcb6221f5b4fc8464ef806543f7c6"
+          },
+          "visual_display_review_completed": true,
+          "new_scientific_assertions": false
+        },
+        {
+          "ordinal": 51,
+          "candidate_id": "openclipart-c2d02e0011c4e4c60482:file-0",
+          "original_sha256": "1b741a83f5fad9a6fdfbdf255d4455878ae2e400bf5e944c7271d4605fa4723f",
+          "preview_sha256": "af4cf34f6c966f3c91bede0d6f62c62efec828f8a6aa4ed8f8fab0b891f7cccd",
+          "original_archive": {
+            "member": "files/1b/1b741a83f5fad9a6fdfbdf255d4455878ae2e400bf5e944c7271d4605fa4723f.svg",
+            "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/openclipart-42260737515-1-b0000.tar.gz"
+          },
+          "preview_archive": {
+            "member": "previews/1b741a83f5fad9a6fdfbdf255d4455878ae2e400bf5e944c7271d4605fa4723f.png",
+            "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/openclipart-42260737515-1-b0000.tar.gz"
+          },
+          "composition_position_xywh": [
+            1035,
+            850,
+            350,
+            350
+          ],
+          "uniform_scale": 0.68359375,
+          "z_order": 15,
+          "main_composition_observation_zh": "电脑与 SURVEY 源文字完整，主图可辨问卷工具概念；周围人物没有通过线或箭头与之连成流程。",
+          "transparency_background_observation_zh": "黑色轮廓与浅色部位均保留，复杂或深色背景下需分别检查文字和边缘。",
+          "reduction_observation_zh": "主图 SURVEY 可读，小尺寸不适合承载问卷内容或细节阅读。",
+          "use_and_scientific_limits_zh": "可作在线问卷工具对象；没有问卷答案、招募流程或临床结局信息。",
+          "existing_scientific_limits_preserved": [
+            "不是参与者招募、随访过程或已填写的真实答卷；图内SURVEY文字按任务处理。"
+          ],
+          "reviewed_sheet": {
+            "path": "build/curated-expansion-60/composition/10-people-communication.png",
+            "sha256": "c5842f99d052bb1903d1244172521786ce9fcb6221f5b4fc8464ef806543f7c6"
+          },
+          "visual_display_review_completed": true,
+          "new_scientific_assertions": false
+        },
+        {
+          "ordinal": 53,
+          "candidate_id": "nih-bioart-5b91f62cf60eb83887ef:file-0",
+          "original_sha256": "24a5babba9a341784bfdbdbce1fdd4a73678e2ca1fa8473aa26ee72579d4c36e",
+          "preview_sha256": "d5a278e9b2eb33e8c42badd66ccfd9691708143e0d9534ff4532fd59de6ceeb7",
+          "original_archive": {
+            "member": "files/24/24a5babba9a341784bfdbdbce1fdd4a73678e2ca1fa8473aa26ee72579d4c36e.png",
+            "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/nih-bioart-42236561214-1-b0000.tar.gz"
+          },
+          "preview_archive": {
+            "member": "previews/24a5babba9a341784bfdbdbce1fdd4a73678e2ca1fa8473aa26ee72579d4c36e.png",
+            "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/nih-bioart-42236561214-1-b0000.tar.gz"
+          },
+          "composition_position_xywh": [
+            467,
+            660,
+            446,
+            270
+          ],
+          "uniform_scale": 0.8709677419354839,
+          "z_order": 16,
+          "main_composition_observation_zh": "医患解释/倾听场景在主图可见，源半身构图和底部浅色区域保留，没有与其他人物拼接。",
+          "transparency_background_observation_zh": "浅色衣物/底部源填充在色底中可见；不能把这些白色区域误当多余背景自动抠除。",
+          "reduction_observation_zh": "96 px 主要交流姿态可见，48 px 细手势、面部和小物件不足以明确具体诊疗操作。",
+          "use_and_scientific_limits_zh": "适合医患沟通场景，不据此改成招募、随访或特定诊断流程。",
+          "existing_scientific_limits_preserved": [
+            "仅作来源与图面支持的医患解释/倾听交流，不冒称已显示招募、随机分组、纳入、纵向随访或特定诊断。",
+            "选择的是PNG位图；不能因源标签含Vector就声称可路径编辑；不读取夹板为真实患者数据。"
+          ],
+          "reviewed_sheet": {
+            "path": "build/curated-expansion-60/composition/10-people-communication.png",
+            "sha256": "c5842f99d052bb1903d1244172521786ce9fcb6221f5b4fc8464ef806543f7c6"
+          },
+          "visual_display_review_completed": true,
+          "new_scientific_assertions": false
+        }
+      ]
+    },
+    {
+      "path": "build/curated-expansion-60/composition/12-sequencing-equipment.png",
+      "sha256": "5cc91f6651483f88859f618058a6a1fcf8fbaba19d92fc8896a261d792c3fd6a",
+      "pixel_size": [
+        2200,
+        1500
+      ],
+      "displayed_pixel_size": [
+        1920,
+        1308
+      ],
+      "directly_viewed_with": "functions.view_image(detail=original); tool resized the full page for display",
+      "semantic_use_zh": "五种来源所称测序相关设备的独立对象比较；不把设备位置连接为 protocol，也不添加研究数据、型号/性能比较或操作结论。",
+      "layout_occlusion_zh": "设备分别完整放置，未见相互遮挡或标题压住机身。便携设备源预览边界保留，不根据源边缘外观推断损坏。",
+      "style_compatibility_zh": "56 的线描阴影、57/58 的扁平暗色外壳和59/60较立体的塑形不统一。比较面板可以明确分隔使用；同一实验场景应按任务匹配绘制方式，不能由本次比较宣称统一画风。",
+      "transparency_zh": "57/58 在深底低对比，源灰色反射/阴影没有被去除。其他设备源浅色区域也原样保留；不假定所有设备适合任意底色。",
+      "reduction_zh": "96/48 px 可用于大体设备轮廓辨认，品牌、屏幕、按钮和细小槽口不可靠，不能以缩略图验证型号或数据。",
+      "overlay_test_scope_zh": "实际观察的是源 RGBA 对浅色版面背景及白/深/棋盘底的叠放；本页前景对象互不重叠，未检验前景对象彼此遮盖时的效果。",
+      "background_or_style_advice_is_scope_exclusion": false,
+      "comparison_panel_usable_with_stated_limits": true,
+      "uniform_style_for_single_medical_figure_confirmed": false,
+      "visual_display_review_completed": true,
+      "items": [
+        {
+          "ordinal": 56,
+          "candidate_id": "nih-bioart-caed41384908a7f81cf9:file-0",
+          "original_sha256": "0f05cb0e3e44b1d73ca68959d51e1898510624cb145ca4f06571a1c05b522863",
+          "preview_sha256": "c8dbf9bb6f69d0b95602a73782bea3dc73830ba8c9426c6344fddb178f57dbb0",
+          "original_archive": {
+            "member": "files/0f/0f05cb0e3e44b1d73ca68959d51e1898510624cb145ca4f06571a1c05b522863.svg",
+            "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/nih-bioart-42236561214-1-b0001.tar.gz"
+          },
+          "preview_archive": {
+            "member": "previews/0f05cb0e3e44b1d73ca68959d51e1898510624cb145ca4f06571a1c05b522863.png",
+            "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/nih-bioart-42236561214-1-b0001.tar.gz"
+          },
+          "composition_position_xywh": [
+            85,
+            300,
+            400,
+            400
+          ],
+          "uniform_scale": 0.78125,
+          "z_order": 10,
+          "main_composition_observation_zh": "设备箱体与控制区轮廓在主图完整，独立于其他测序设备展示。",
+          "transparency_background_observation_zh": "源浅色面板和描边保留，深底对比与浅底不同，没有给屏幕新增数据。",
+          "reduction_observation_zh": "96 px 可识别设备外形，48 px 面板细节不足以辨认功能或型号。",
+          "use_and_scientific_limits_zh": "可作来源称 RNA-Seq 的设备部件；不得据此把整套 RNA-seq 工作流程、性能或型号确认记为通过。",
+          "existing_scientific_limits_preserved": [
+            "来源NIH BioArt685支持RNA-Seq用途；不是完整RNA测序流程，不补品牌、型号或文库技术。"
+          ],
+          "reviewed_sheet": {
+            "path": "build/curated-expansion-60/composition/12-sequencing-equipment.png",
+            "sha256": "5cc91f6651483f88859f618058a6a1fcf8fbaba19d92fc8896a261d792c3fd6a"
+          },
+          "visual_display_review_completed": true,
+          "new_scientific_assertions": false
+        },
+        {
+          "ordinal": 57,
+          "candidate_id": "bioicons-6c132d72a134686b571f:file-0",
+          "original_sha256": "a769949ed12aa00f8fdc428ec66c74c5038e11bc530ec1db30d31cc8d1176024",
+          "preview_sha256": "ea3fe51e10fcacfacb1e37ae842dbebda3ca7043dc821a3babd13dfc26cc446a",
+          "original_archive": {
+            "member": "files/a7/a769949ed12aa00f8fdc428ec66c74c5038e11bc530ec1db30d31cc8d1176024.svg",
+            "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42239971379-1-b0000.tar.gz"
+          },
+          "preview_archive": {
+            "member": "previews/a769949ed12aa00f8fdc428ec66c74c5038e11bc530ec1db30d31cc8d1176024.png",
+            "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42239971379-1-b0000.tar.gz"
+          },
+          "composition_position_xywh": [
+            650,
+            370,
+            320,
+            240
+          ],
+          "uniform_scale": 0.625,
+          "z_order": 11,
+          "main_composition_observation_zh": "深灰设备的外轮廓完整，源底部灰色表现保留。",
+          "transparency_background_observation_zh": "深底下暗色主体对比很低，优先浅色背景；未通过改色使其适应深底。",
+          "reduction_observation_zh": "96/48 px 主要剩箱体轮廓，按钮和细节难以确认。",
+          "use_and_scientific_limits_zh": "可作来源称 short-read 的独立设备对象，不代表测序步骤、性能比较或特定实验结果。",
+          "existing_scientific_limits_preserved": [
+            "仅沿用固定来源名称，不从外观追加平台型号、通量或性能，不表示已测得数据。"
+          ],
+          "reviewed_sheet": {
+            "path": "build/curated-expansion-60/composition/12-sequencing-equipment.png",
+            "sha256": "5cc91f6651483f88859f618058a6a1fcf8fbaba19d92fc8896a261d792c3fd6a"
+          },
+          "visual_display_review_completed": true,
+          "new_scientific_assertions": false
+        },
+        {
+          "ordinal": 58,
+          "candidate_id": "bioicons-a94c4db0bd505d9e21b3:file-0",
+          "original_sha256": "60be45316c17d981be896a83cae68b484d2a135cd0b05cc9187e37f63f07fc59",
+          "preview_sha256": "4b213cededab4e128683d74f723f761ae3935dd296528a158bb9400c8a224d19",
+          "original_archive": {
+            "member": "files/60/60be45316c17d981be896a83cae68b484d2a135cd0b05cc9187e37f63f07fc59.svg",
+            "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42239971379-1-b0000.tar.gz"
+          },
+          "preview_archive": {
+            "member": "previews/60be45316c17d981be896a83cae68b484d2a135cd0b05cc9187e37f63f07fc59.png",
+            "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42239971379-1-b0000.tar.gz"
+          },
+          "composition_position_xywh": [
+            1084,
+            234,
+            292,
+            512
+          ],
+          "uniform_scale": 1.0,
+          "z_order": 12,
+          "main_composition_observation_zh": "高立设备与源底部灰色反射/阴影表现完整，主图可见源品牌字样。",
+          "transparency_background_observation_zh": "深底使暗色主体轮廓变弱，浅色底更有利；源灰色反射并非渲染器新增。",
+          "reduction_observation_zh": "96/48 px 的品牌/面板小字不可依赖，不能从缩略图读出型号。",
+          "use_and_scientific_limits_zh": "可作来源称 long-read 的独立设备对象，保留源字样但不新增型号、性能或可比性断言。",
+          "existing_scientific_limits_preserved": [
+            "保留品牌出处；不从外观推断具体型号或参数，品牌小字的可读性待显示检查。"
+          ],
+          "reviewed_sheet": {
+            "path": "build/curated-expansion-60/composition/12-sequencing-equipment.png",
+            "sha256": "5cc91f6651483f88859f618058a6a1fcf8fbaba19d92fc8896a261d792c3fd6a"
+          },
+          "visual_display_review_completed": true,
+          "new_scientific_assertions": false
+        },
+        {
+          "ordinal": 59,
+          "candidate_id": "togo-fa9ee4a114af11864902:file-0",
+          "original_sha256": "1d2d0b1f1542f96197f41b939401eb4c38852b9451c77d30f280bd3322be461a",
+          "preview_sha256": "e14f3a6bedcdf0ad49a13e032cda8a3530c7db6deb9ea8d6f352c04fe8fa375d",
+          "original_archive": {
+            "member": "files/1d/1d2d0b1f1542f96197f41b939401eb4c38852b9451c77d30f280bd3322be461a.png",
+            "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42249870031-1-b0001.tar.gz"
+          },
+          "preview_archive": {
+            "member": "previews/1d2d0b1f1542f96197f41b939401eb4c38852b9451c77d30f280bd3322be461a.png",
+            "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42249870031-1-b0001.tar.gz"
+          },
+          "composition_position_xywh": [
+            270,
+            970,
+            270,
+            270
+          ],
+          "uniform_scale": 0.52734375,
+          "z_order": 13,
+          "main_composition_observation_zh": "便携模块与电脑组合保留源预览边界，未被主图布局裁切或其他设备遮挡。",
+          "transparency_background_observation_zh": "保留源浅色/暗色区域，棋盘下可见轮廓间隙；没有执行背景抠除。",
+          "reduction_observation_zh": "96 px 可见电脑加模块，48 px 不能可靠分辨细小部件或屏幕信息。",
+          "use_and_scientific_limits_zh": "适合作为便携测序设备组合，不能作为具体协议、软件画面或数据结果的证明。",
+          "existing_scientific_limits_preserved": [
+            "不推断品牌、即时结果、数据内容或操作结果；这是有明确来源的设备场景。"
+          ],
+          "reviewed_sheet": {
+            "path": "build/curated-expansion-60/composition/12-sequencing-equipment.png",
+            "sha256": "5cc91f6651483f88859f618058a6a1fcf8fbaba19d92fc8896a261d792c3fd6a"
+          },
+          "visual_display_review_completed": true,
+          "new_scientific_assertions": false
+        },
+        {
+          "ordinal": 60,
+          "candidate_id": "togo-a094e62fb31b65be0d8b:file-1",
+          "original_sha256": "e2b9c40b097842577202e727863906ebd81777ec132c59e242361cb3bc4665c4",
+          "preview_sha256": "85db25f9bdbf4a0517d3867a7c5a0204815e7cc374c23bf4f0f7b8bf7fb7730f",
+          "original_archive": {
+            "member": "files/e2/e2b9c40b097842577202e727863906ebd81777ec132c59e242361cb3bc4665c4.png",
+            "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42249870031-1-b0001.tar.gz"
+          },
+          "preview_archive": {
+            "member": "previews/e2b9c40b097842577202e727863906ebd81777ec132c59e242361cb3bc4665c4.png",
+            "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42249870031-1-b0001.tar.gz"
+          },
+          "composition_position_xywh": [
+            995,
+            960,
+            260,
+            260
+          ],
+          "uniform_scale": 0.5078125,
+          "z_order": 14,
+          "main_composition_observation_zh": "测序仪机身、面板与源阴影完整，独立位于下方对比区域。",
+          "transparency_background_observation_zh": "源深浅塑形与邻近扁平设备不同，白/深/棋盘底的边缘可辨性需按使用背景选取。",
+          "reduction_observation_zh": "96 px 可辨设备，48 px 面板、槽口与标识不适合阅读。",
+          "use_and_scientific_limits_zh": "可作 DNA 测序仪对象，不能把静态设备称为测序动作或完整组学流程。",
+          "existing_scientific_limits_preserved": [
+            "不推断测序原理、品牌或通量；与其他对象是不同家族，不是同作品的格式替换。"
+          ],
+          "reviewed_sheet": {
+            "path": "build/curated-expansion-60/composition/12-sequencing-equipment.png",
+            "sha256": "5cc91f6651483f88859f618058a6a1fcf8fbaba19d92fc8896a261d792c3fd6a"
+          },
+          "visual_display_review_completed": true,
+          "new_scientific_assertions": false
+        }
+      ]
+    }
+  ],
+  "reviewed_pages": 5,
+  "reviewed_unique_originals": 30,
+  "visual_display_review_completed": true,
+  "full_curated_requirement_passed": false,
+  "all_60_visual_review_claimed": false,
+  "source_originals_opened": 0,
+  "source_originals_modified": false,
+  "previews_modified": false,
+  "catalog_scope_scientific_native_changes": false,
+  "limitations_zh": [
+    "这份记录只覆盖 07/08/09/10/12 共五页和其中30个原件；没有替其他七页或全部60件给出结论。",
+    "2200×1500 的页面由显示工具缩到1920×1308；名义96/48 px检查块在本次屏幕上更小。细标签不可读时如实记录，未推断源文字有错。",
+    "比较面板可用不等于同一医学机制/场景已实现统一画风，也不等于科学流程、原生编辑或完整精选验收通过。",
+    "透明度、白填充、低对比、细节缩小和源边界均是逐任务显示建议；没有自动推断损坏或更改范围处置。",
+    "所有来源名称、物种和对象身份仅沿用既有绑定证据，本次不以缩略图新增身份、动作、因果、比例或诊断事实。"
+  ],
+  "handoff_zh": "未来 API/skill 应能携带逐文件的背景、最小显示尺度和原标签保留建议；此记录仅提出显示使用建议，网站/API尚未据此完成接入。"
+}
