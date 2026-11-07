@@ -1,0 +1,1222 @@
+{
+  "schema_version": 1,
+  "reviewer": "Codex scope_publication_check; actual inspection of comparison03/04 and corresponding white/dark adjacency sheets",
+  "reviewed_at": "2026-11-07T01:01:08.596547+00:00",
+  "date": "2026-11-07",
+  "mapping_path": "build/curated-expansion-60/display/expanded-display-mapping.json",
+  "mapping_sha256": "fe096d7aac72a5af732a599e3fbec616560c8bcf35684903e5e8f2423a8d7e84",
+  "selection_sha256": "96948b6b66292622ecfc6cec683ec4e52d413048f845eb64df41ad77806c8e2f",
+  "archive_sha256": "c7c8670d302a4a603d7b05983d47c023eee7102e421b62ba03484f6e38d51567",
+  "cloud_review_run_id": 42320795764,
+  "review_scope": "Only selected ordinals55-60,6 assets and42 specified display conditions; this is not overall60-family acceptance or scientific-use composition approval.",
+  "items": [
+    {
+      "ordinal": 55,
+      "candidate_id": "togo-e58166ac8684f2ff6f0a:file-0",
+      "title": "Drawing blood female",
+      "original_sha256": "043e3915172ac71ac24ef365f6d10795d34672784c06080fb99d5aebd112ca8d",
+      "preview_sha256": "aada6b11a1676c72837b0f2afea81cb6cbe36f692ee8cd6b2047d1084449a8c5",
+      "original_archive": {
+        "member": "files/04/043e3915172ac71ac24ef365f6d10795d34672784c06080fb99d5aebd112ca8d.svg",
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42261598057-1-b0000.tar.gz"
+      },
+      "preview_archive": {
+        "member": "previews/043e3915172ac71ac24ef365f6d10795d34672784c06080fb99d5aebd112ca8d.png",
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42261598057-1-b0000.tar.gz"
+      },
+      "reviewed_sheets": [
+        {
+          "path": "build/curated-expansion-60/display/comparison-03.png",
+          "sha256": "fb73c2d34716998f87fa5c1b3d9e84e84f08f5d64864e408628a48863bc75e33",
+          "review_method": "Actually opened with view_image and inspected at original output resolution",
+          "input_mapping_sheet": "comparison-03.png"
+        },
+        {
+          "path": "build/curated-expansion-60/display/adjacency.png",
+          "sha256": "4b67bdb4e7bb7ab20ba593433e5448020f1dcad2969d0b42cee5bd2ff51cb01c",
+          "review_method": "Actually opened with view_image and inspected at original output resolution",
+          "input_mapping_sheet": "adjacency.png"
+        }
+      ],
+      "reviewed_display_conditions": [
+        {
+          "extent": 256,
+          "rendered_size": [
+            256,
+            256
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "uniform_scale": 0.5,
+          "cropped": false,
+          "background": "white",
+          "sheet": "comparison-03.png",
+          "bounds_xywh": [
+            20,
+            120,
+            256,
+            256
+          ]
+        },
+        {
+          "extent": 256,
+          "rendered_size": [
+            256,
+            256
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "uniform_scale": 0.5,
+          "cropped": false,
+          "background": "dark",
+          "sheet": "comparison-03.png",
+          "bounds_xywh": [
+            300,
+            120,
+            256,
+            256
+          ]
+        },
+        {
+          "extent": 256,
+          "rendered_size": [
+            256,
+            256
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "uniform_scale": 0.5,
+          "cropped": false,
+          "background": "grid",
+          "sheet": "comparison-03.png",
+          "bounds_xywh": [
+            580,
+            120,
+            256,
+            256
+          ]
+        },
+        {
+          "extent": 96,
+          "rendered_size": [
+            96,
+            96
+          ],
+          "offset": [
+            18,
+            80
+          ],
+          "uniform_scale": 0.1875,
+          "cropped": false,
+          "background": "white",
+          "sheet": "comparison-03.png",
+          "bounds_xywh": [
+            860,
+            120,
+            132,
+            256
+          ]
+        },
+        {
+          "extent": 48,
+          "rendered_size": [
+            48,
+            48
+          ],
+          "offset": [
+            42,
+            104
+          ],
+          "uniform_scale": 0.09375,
+          "cropped": false,
+          "background": "white",
+          "sheet": "comparison-03.png",
+          "bounds_xywh": [
+            1016,
+            120,
+            132,
+            256
+          ]
+        },
+        {
+          "extent": 208,
+          "rendered_size": [
+            208,
+            208
+          ],
+          "offset": [
+            0,
+            11
+          ],
+          "uniform_scale": 0.40625,
+          "cropped": false,
+          "background": "white",
+          "sheet": "adjacency.png",
+          "bounds_xywh": [
+            30,
+            642,
+            208,
+            230
+          ]
+        },
+        {
+          "extent": 208,
+          "rendered_size": [
+            208,
+            208
+          ],
+          "offset": [
+            0,
+            11
+          ],
+          "uniform_scale": 0.40625,
+          "cropped": false,
+          "background": "dark",
+          "sheet": "adjacency.png",
+          "bounds_xywh": [
+            750,
+            642,
+            208,
+            230
+          ]
+        }
+      ],
+      "observations_zh": [
+        "256px白底、深底及棋盘上均能分辨两个人物、伸出的手臂、工作人员手部与桌面；人物浅色衣服和灰桌面是实色内容，棋盘及橙线仅从场景外围空白处露出。",
+        "96px下仍能辨认面对面的操作场景，手臂与取样接触点已很小；48px主要剩人物和桌面的概貌，不能据此核验针具或穿刺位置。",
+        "208px白/深底邻接板中场景边界完整且未与邻图重叠；扁平柔和彩色人物与旁边有渐变的仪器画风差异明显。未见显示页新增裁边或残留引线。"
+      ],
+      "display_limits_zh": [
+        "保持较大的显示尺寸以解释采血动作；48px仅适合作场景概览，不适合讲解具体操作。",
+        "桌面和人物会遮住下层内容，不能把整个画面当全透明线稿。",
+        "继续仅作来源支持的女性采血场景；不推断血管、采血量、路线或已表达招募/随访。"
+      ],
+      "text_observation": {
+        "status": "no_legible_text_observed_in_tested_views",
+        "notes_zh": "这组实际显示中未见可读文字标签；不把技术检查页的标题计入素材，不据此改写全库文字属性。"
+      },
+      "visual_display_review_completed": true,
+      "full_curated_requirement_passed": false,
+      "scientific_composition_review_completed": false,
+      "native_editability_tested": false,
+      "original_artwork_modified": false,
+      "library_text_attributes_modified": false
+    },
+    {
+      "ordinal": 56,
+      "candidate_id": "nih-bioart-caed41384908a7f81cf9:file-0",
+      "title": "RNA-Seq",
+      "original_sha256": "0f05cb0e3e44b1d73ca68959d51e1898510624cb145ca4f06571a1c05b522863",
+      "preview_sha256": "c8dbf9bb6f69d0b95602a73782bea3dc73830ba8c9426c6344fddb178f57dbb0",
+      "original_archive": {
+        "member": "files/0f/0f05cb0e3e44b1d73ca68959d51e1898510624cb145ca4f06571a1c05b522863.svg",
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/nih-bioart-42236561214-1-b0001.tar.gz"
+      },
+      "preview_archive": {
+        "member": "previews/0f05cb0e3e44b1d73ca68959d51e1898510624cb145ca4f06571a1c05b522863.png",
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/nih-bioart-42236561214-1-b0001.tar.gz"
+      },
+      "reviewed_sheets": [
+        {
+          "path": "build/curated-expansion-60/display/comparison-03.png",
+          "sha256": "fb73c2d34716998f87fa5c1b3d9e84e84f08f5d64864e408628a48863bc75e33",
+          "review_method": "Actually opened with view_image and inspected at original output resolution",
+          "input_mapping_sheet": "comparison-03.png"
+        },
+        {
+          "path": "build/curated-expansion-60/display/adjacency.png",
+          "sha256": "4b67bdb4e7bb7ab20ba593433e5448020f1dcad2969d0b42cee5bd2ff51cb01c",
+          "review_method": "Actually opened with view_image and inspected at original output resolution",
+          "input_mapping_sheet": "adjacency.png"
+        }
+      ],
+      "reviewed_display_conditions": [
+        {
+          "extent": 256,
+          "rendered_size": [
+            256,
+            256
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "uniform_scale": 0.5,
+          "cropped": false,
+          "background": "white",
+          "sheet": "comparison-03.png",
+          "bounds_xywh": [
+            20,
+            446,
+            256,
+            256
+          ]
+        },
+        {
+          "extent": 256,
+          "rendered_size": [
+            256,
+            256
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "uniform_scale": 0.5,
+          "cropped": false,
+          "background": "dark",
+          "sheet": "comparison-03.png",
+          "bounds_xywh": [
+            300,
+            446,
+            256,
+            256
+          ]
+        },
+        {
+          "extent": 256,
+          "rendered_size": [
+            256,
+            256
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "uniform_scale": 0.5,
+          "cropped": false,
+          "background": "grid",
+          "sheet": "comparison-03.png",
+          "bounds_xywh": [
+            580,
+            446,
+            256,
+            256
+          ]
+        },
+        {
+          "extent": 96,
+          "rendered_size": [
+            96,
+            96
+          ],
+          "offset": [
+            18,
+            80
+          ],
+          "uniform_scale": 0.1875,
+          "cropped": false,
+          "background": "white",
+          "sheet": "comparison-03.png",
+          "bounds_xywh": [
+            860,
+            446,
+            132,
+            256
+          ]
+        },
+        {
+          "extent": 48,
+          "rendered_size": [
+            48,
+            48
+          ],
+          "offset": [
+            42,
+            104
+          ],
+          "uniform_scale": 0.09375,
+          "cropped": false,
+          "background": "white",
+          "sheet": "comparison-03.png",
+          "bounds_xywh": [
+            1016,
+            446,
+            132,
+            256
+          ]
+        },
+        {
+          "extent": 208,
+          "rendered_size": [
+            208,
+            208
+          ],
+          "offset": [
+            0,
+            11
+          ],
+          "uniform_scale": 0.40625,
+          "cropped": false,
+          "background": "white",
+          "sheet": "adjacency.png",
+          "bounds_xywh": [
+            250,
+            642,
+            208,
+            230
+          ]
+        },
+        {
+          "extent": 208,
+          "rendered_size": [
+            208,
+            208
+          ],
+          "offset": [
+            0,
+            11
+          ],
+          "uniform_scale": 0.40625,
+          "cropped": false,
+          "background": "dark",
+          "sheet": "adjacency.png",
+          "bounds_xywh": [
+            970,
+            642,
+            208,
+            230
+          ]
+        }
+      ],
+      "observations_zh": [
+        "256px白底及棋盘上，浅色外壳、黑色前舱和上部显示屏均清楚；橙线被实色仪器主体遮住，外围背景透明。",
+        "深底上浅色外壳仍清楚，但黑色前舱与深背景的外缘对比减弱；208px邻接板也呈现同样问题。",
+        "96px还能分辨屏幕和箱体；48px屏幕只剩浅色小块、分舱线弱化。屏幕呈列状/界面色块，未读出文字或真实数据。",
+        "预览保留仪器外围留白，当前显示未见新增裁边。"
+      ],
+      "display_limits_zh": [
+        "优先使用浅底或在实际构图中检查深色前舱的边界；不以48px确认面板细节。",
+        "外壳及屏幕内部是实色填充，会遮住后面的图形。",
+        "仍是RNA测序方法中的设备部件，不能据此宣称完整RNA测序流程、平台型号或实验结果。"
+      ],
+      "text_observation": {
+        "status": "screen_marks_not_legible_text",
+        "notes_zh": "屏幕可见界面样色块与线列，但本次256/96/48px显示未读到可靠字词或数值；不作序列/结果解释。"
+      },
+      "visual_display_review_completed": true,
+      "full_curated_requirement_passed": false,
+      "scientific_composition_review_completed": false,
+      "native_editability_tested": false,
+      "original_artwork_modified": false,
+      "library_text_attributes_modified": false
+    },
+    {
+      "ordinal": 57,
+      "candidate_id": "bioicons-6c132d72a134686b571f:file-0",
+      "title": "img sequencer short read01",
+      "original_sha256": "a769949ed12aa00f8fdc428ec66c74c5038e11bc530ec1db30d31cc8d1176024",
+      "preview_sha256": "ea3fe51e10fcacfacb1e37ae842dbebda3ca7043dc821a3babd13dfc26cc446a",
+      "original_archive": {
+        "member": "files/a7/a769949ed12aa00f8fdc428ec66c74c5038e11bc530ec1db30d31cc8d1176024.svg",
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42239971379-1-b0000.tar.gz"
+      },
+      "preview_archive": {
+        "member": "previews/a769949ed12aa00f8fdc428ec66c74c5038e11bc530ec1db30d31cc8d1176024.png",
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42239971379-1-b0000.tar.gz"
+      },
+      "reviewed_sheets": [
+        {
+          "path": "build/curated-expansion-60/display/comparison-03.png",
+          "sha256": "fb73c2d34716998f87fa5c1b3d9e84e84f08f5d64864e408628a48863bc75e33",
+          "review_method": "Actually opened with view_image and inspected at original output resolution",
+          "input_mapping_sheet": "comparison-03.png"
+        },
+        {
+          "path": "build/curated-expansion-60/display/adjacency.png",
+          "sha256": "4b67bdb4e7bb7ab20ba593433e5448020f1dcad2969d0b42cee5bd2ff51cb01c",
+          "review_method": "Actually opened with view_image and inspected at original output resolution",
+          "input_mapping_sheet": "adjacency.png"
+        }
+      ],
+      "reviewed_display_conditions": [
+        {
+          "extent": 256,
+          "rendered_size": [
+            256,
+            192
+          ],
+          "offset": [
+            0,
+            32
+          ],
+          "uniform_scale": 0.5,
+          "cropped": false,
+          "background": "white",
+          "sheet": "comparison-03.png",
+          "bounds_xywh": [
+            20,
+            772,
+            256,
+            256
+          ]
+        },
+        {
+          "extent": 256,
+          "rendered_size": [
+            256,
+            192
+          ],
+          "offset": [
+            0,
+            32
+          ],
+          "uniform_scale": 0.5,
+          "cropped": false,
+          "background": "dark",
+          "sheet": "comparison-03.png",
+          "bounds_xywh": [
+            300,
+            772,
+            256,
+            256
+          ]
+        },
+        {
+          "extent": 256,
+          "rendered_size": [
+            256,
+            192
+          ],
+          "offset": [
+            0,
+            32
+          ],
+          "uniform_scale": 0.5,
+          "cropped": false,
+          "background": "grid",
+          "sheet": "comparison-03.png",
+          "bounds_xywh": [
+            580,
+            772,
+            256,
+            256
+          ]
+        },
+        {
+          "extent": 96,
+          "rendered_size": [
+            96,
+            72
+          ],
+          "offset": [
+            18,
+            92
+          ],
+          "uniform_scale": 0.1875,
+          "cropped": false,
+          "background": "white",
+          "sheet": "comparison-03.png",
+          "bounds_xywh": [
+            860,
+            772,
+            132,
+            256
+          ]
+        },
+        {
+          "extent": 48,
+          "rendered_size": [
+            48,
+            36
+          ],
+          "offset": [
+            42,
+            110
+          ],
+          "uniform_scale": 0.09375,
+          "cropped": false,
+          "background": "white",
+          "sheet": "comparison-03.png",
+          "bounds_xywh": [
+            1016,
+            772,
+            132,
+            256
+          ]
+        },
+        {
+          "extent": 208,
+          "rendered_size": [
+            208,
+            156
+          ],
+          "offset": [
+            0,
+            37
+          ],
+          "uniform_scale": 0.40625,
+          "cropped": false,
+          "background": "white",
+          "sheet": "adjacency.png",
+          "bounds_xywh": [
+            470,
+            642,
+            208,
+            230
+          ]
+        },
+        {
+          "extent": 208,
+          "rendered_size": [
+            208,
+            156
+          ],
+          "offset": [
+            0,
+            37
+          ],
+          "uniform_scale": 0.40625,
+          "cropped": false,
+          "background": "dark",
+          "sheet": "adjacency.png",
+          "bounds_xywh": [
+            1190,
+            642,
+            208,
+            230
+          ]
+        }
+      ],
+      "observations_zh": [
+        "256px白底上可见黑灰色上下机舱、水平把手/分隔线及左上青色标记；深底上大面积黑灰轮廓与背景接近，细分舱线更弱。",
+        "棋盘和横线在实色箱体区域被挡住，箱体下方的柔和投影随背景改变，显示出半透明阴影的叠放影响。",
+        "画面横向铺得很满，主体侧边贴近原预览边界；检查页按比例缩放且未额外裁切，不能把这种原有紧取景直接判作文件损坏。",
+        "96px与48px仍像上下叠置箱体，但细面板及把手明显简化；208px邻接板显示该设备比旁边小留白的仪器占据更大视觉面积。"
+      ],
+      "display_limits_zh": [
+        "浅底更利于识别轮廓；深底使用前需要在工作副本构图中核对边界。",
+        "保留原有阴影与紧边框事实；需要完整外延或更宽留白时，先检查原件画布，不凭预览补画结构。",
+        "来源的short-read名称保留，但图面本身不证明平台型号、通量或技术性能；不能把多个设备对象当作多个已验证组学概念。"
+      ],
+      "text_observation": {
+        "status": "no_legible_text_observed_in_tested_views",
+        "notes_zh": "仅见少量标记和面板线条，本次显示未见可读文字；不猜品牌或型号。"
+      },
+      "visual_display_review_completed": true,
+      "full_curated_requirement_passed": false,
+      "scientific_composition_review_completed": false,
+      "native_editability_tested": false,
+      "original_artwork_modified": false,
+      "library_text_attributes_modified": false
+    },
+    {
+      "ordinal": 58,
+      "candidate_id": "bioicons-a94c4db0bd505d9e21b3:file-0",
+      "title": "img sequencer long read05",
+      "original_sha256": "60be45316c17d981be896a83cae68b484d2a135cd0b05cc9187e37f63f07fc59",
+      "preview_sha256": "4b213cededab4e128683d74f723f761ae3935dd296528a158bb9400c8a224d19",
+      "original_archive": {
+        "member": "files/60/60be45316c17d981be896a83cae68b484d2a135cd0b05cc9187e37f63f07fc59.svg",
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42239971379-1-b0000.tar.gz"
+      },
+      "preview_archive": {
+        "member": "previews/60be45316c17d981be896a83cae68b484d2a135cd0b05cc9187e37f63f07fc59.png",
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42239971379-1-b0000.tar.gz"
+      },
+      "reviewed_sheets": [
+        {
+          "path": "build/curated-expansion-60/display/comparison-04.png",
+          "sha256": "2db152f6ec8595d9d1e480d416a8524f850c6c3f8af1e6a52fbc495d7ed10780",
+          "review_method": "Actually opened with view_image and inspected at original output resolution",
+          "input_mapping_sheet": "comparison-04.png"
+        },
+        {
+          "path": "build/curated-expansion-60/display/tail/adjacency.png",
+          "sha256": "4a11a2eb3d33762ff5fb66b4f22ca308c6533fee184d8f54eec56237d131bbd3",
+          "review_method": "Actually opened with view_image and inspected at original output resolution",
+          "input_mapping_sheet": "tail/adjacency.png"
+        }
+      ],
+      "reviewed_display_conditions": [
+        {
+          "extent": 256,
+          "rendered_size": [
+            146,
+            256
+          ],
+          "offset": [
+            55,
+            0
+          ],
+          "uniform_scale": 0.5,
+          "cropped": false,
+          "background": "white",
+          "sheet": "comparison-04.png",
+          "bounds_xywh": [
+            20,
+            120,
+            256,
+            256
+          ]
+        },
+        {
+          "extent": 256,
+          "rendered_size": [
+            146,
+            256
+          ],
+          "offset": [
+            55,
+            0
+          ],
+          "uniform_scale": 0.5,
+          "cropped": false,
+          "background": "dark",
+          "sheet": "comparison-04.png",
+          "bounds_xywh": [
+            300,
+            120,
+            256,
+            256
+          ]
+        },
+        {
+          "extent": 256,
+          "rendered_size": [
+            146,
+            256
+          ],
+          "offset": [
+            55,
+            0
+          ],
+          "uniform_scale": 0.5,
+          "cropped": false,
+          "background": "grid",
+          "sheet": "comparison-04.png",
+          "bounds_xywh": [
+            580,
+            120,
+            256,
+            256
+          ]
+        },
+        {
+          "extent": 96,
+          "rendered_size": [
+            55,
+            96
+          ],
+          "offset": [
+            38,
+            80
+          ],
+          "uniform_scale": 0.1875,
+          "cropped": false,
+          "background": "white",
+          "sheet": "comparison-04.png",
+          "bounds_xywh": [
+            860,
+            120,
+            132,
+            256
+          ]
+        },
+        {
+          "extent": 48,
+          "rendered_size": [
+            27,
+            48
+          ],
+          "offset": [
+            52,
+            104
+          ],
+          "uniform_scale": 0.09375,
+          "cropped": false,
+          "background": "white",
+          "sheet": "comparison-04.png",
+          "bounds_xywh": [
+            1016,
+            120,
+            132,
+            256
+          ]
+        },
+        {
+          "extent": 208,
+          "rendered_size": [
+            119,
+            208
+          ],
+          "offset": [
+            44,
+            11
+          ],
+          "uniform_scale": 0.40625,
+          "cropped": false,
+          "background": "white",
+          "sheet": "tail/adjacency.png",
+          "bounds_xywh": [
+            30,
+            102,
+            208,
+            230
+          ]
+        },
+        {
+          "extent": 208,
+          "rendered_size": [
+            119,
+            208
+          ],
+          "offset": [
+            44,
+            11
+          ],
+          "uniform_scale": 0.40625,
+          "cropped": false,
+          "background": "dark",
+          "sheet": "tail/adjacency.png",
+          "bounds_xywh": [
+            750,
+            102,
+            208,
+            230
+          ]
+        }
+      ],
+      "observations_zh": [
+        "256px白底和棋盘上可见黑色立式设备、侧面灰板、顶部青色片及底部反射/阴影；主体实色遮住棋盘和横线，底部反射随背景透出。",
+        "深底上黑色正面及左侧轮廓对比低，灰侧板和青色顶部仍较显眼；208px邻接板同样如此。",
+        "前面板有粉色品牌字样，较大显示可辨为PacBio；96px时接近粉色小点，48px无法可靠读取。",
+        "96/48px仍能分辨立式箱体，但侧板、顶部及反射细节减少。主体紧贴原预览边缘，显示页未另裁切。"
+      ],
+      "display_limits_zh": [
+        "优先浅底；深底构图需逐次检查黑色轮廓，不把底部反射误当透明空白或损坏。",
+        "品牌字样在小尺寸不可读；若任务需要改动标签，应保留原始文件并另作工作副本处理，本轮未清理。",
+        "仅沿用来源long-read设备身份，不从画面新增型号、读长、通量或完整测序流程声明。"
+      ],
+      "text_observation": {
+        "status": "brand_text_observed",
+        "observed_text": [
+          "PacBio"
+        ],
+        "notes_zh": "前面板粉色品牌文字在较大显示可辨，小尺寸不可靠；这是显示观察，不是新许可或品牌授权结论。"
+      },
+      "visual_display_review_completed": true,
+      "full_curated_requirement_passed": false,
+      "scientific_composition_review_completed": false,
+      "native_editability_tested": false,
+      "original_artwork_modified": false,
+      "library_text_attributes_modified": false
+    },
+    {
+      "ordinal": 59,
+      "candidate_id": "togo-fa9ee4a114af11864902:file-0",
+      "title": "Portable sequencer",
+      "original_sha256": "1d2d0b1f1542f96197f41b939401eb4c38852b9451c77d30f280bd3322be461a",
+      "preview_sha256": "e14f3a6bedcdf0ad49a13e032cda8a3530c7db6deb9ea8d6f352c04fe8fa375d",
+      "original_archive": {
+        "member": "files/1d/1d2d0b1f1542f96197f41b939401eb4c38852b9451c77d30f280bd3322be461a.png",
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42249870031-1-b0001.tar.gz"
+      },
+      "preview_archive": {
+        "member": "previews/1d2d0b1f1542f96197f41b939401eb4c38852b9451c77d30f280bd3322be461a.png",
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42249870031-1-b0001.tar.gz"
+      },
+      "reviewed_sheets": [
+        {
+          "path": "build/curated-expansion-60/display/comparison-04.png",
+          "sha256": "2db152f6ec8595d9d1e480d416a8524f850c6c3f8af1e6a52fbc495d7ed10780",
+          "review_method": "Actually opened with view_image and inspected at original output resolution",
+          "input_mapping_sheet": "comparison-04.png"
+        },
+        {
+          "path": "build/curated-expansion-60/display/tail/adjacency.png",
+          "sha256": "4a11a2eb3d33762ff5fb66b4f22ca308c6533fee184d8f54eec56237d131bbd3",
+          "review_method": "Actually opened with view_image and inspected at original output resolution",
+          "input_mapping_sheet": "tail/adjacency.png"
+        }
+      ],
+      "reviewed_display_conditions": [
+        {
+          "extent": 256,
+          "rendered_size": [
+            256,
+            256
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "uniform_scale": 0.5,
+          "cropped": false,
+          "background": "white",
+          "sheet": "comparison-04.png",
+          "bounds_xywh": [
+            20,
+            446,
+            256,
+            256
+          ]
+        },
+        {
+          "extent": 256,
+          "rendered_size": [
+            256,
+            256
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "uniform_scale": 0.5,
+          "cropped": false,
+          "background": "dark",
+          "sheet": "comparison-04.png",
+          "bounds_xywh": [
+            300,
+            446,
+            256,
+            256
+          ]
+        },
+        {
+          "extent": 256,
+          "rendered_size": [
+            256,
+            256
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "uniform_scale": 0.5,
+          "cropped": false,
+          "background": "grid",
+          "sheet": "comparison-04.png",
+          "bounds_xywh": [
+            580,
+            446,
+            256,
+            256
+          ]
+        },
+        {
+          "extent": 96,
+          "rendered_size": [
+            96,
+            96
+          ],
+          "offset": [
+            18,
+            80
+          ],
+          "uniform_scale": 0.1875,
+          "cropped": false,
+          "background": "white",
+          "sheet": "comparison-04.png",
+          "bounds_xywh": [
+            860,
+            446,
+            132,
+            256
+          ]
+        },
+        {
+          "extent": 48,
+          "rendered_size": [
+            48,
+            48
+          ],
+          "offset": [
+            42,
+            104
+          ],
+          "uniform_scale": 0.09375,
+          "cropped": false,
+          "background": "white",
+          "sheet": "comparison-04.png",
+          "bounds_xywh": [
+            1016,
+            446,
+            132,
+            256
+          ]
+        },
+        {
+          "extent": 208,
+          "rendered_size": [
+            208,
+            208
+          ],
+          "offset": [
+            0,
+            11
+          ],
+          "uniform_scale": 0.40625,
+          "cropped": false,
+          "background": "white",
+          "sheet": "tail/adjacency.png",
+          "bounds_xywh": [
+            250,
+            102,
+            208,
+            230
+          ]
+        },
+        {
+          "extent": 208,
+          "rendered_size": [
+            208,
+            208
+          ],
+          "offset": [
+            0,
+            11
+          ],
+          "uniform_scale": 0.40625,
+          "cropped": false,
+          "background": "dark",
+          "sheet": "tail/adjacency.png",
+          "bounds_xywh": [
+            970,
+            102,
+            208,
+            230
+          ]
+        }
+      ],
+      "observations_zh": [
+        "256px白底和棋盘上，笔记本电脑、黑色连接线和浅灰便携模块关系清楚；电脑/模块是实色内容，周围留白透明。",
+        "深底上浅灰设备仍突出，但黑色连接线、接头和黑屏边缘低对比；208px邻接板中线缆也容易隐入背景。",
+        "96px仍能识别电脑和外接模块，键盘与接口细节弱化；48px设备连接关系较难辨，不能用其判断接口或具体技术。",
+        "电脑上缘和右侧在原预览范围边界处截断，映射显示本轮未新增裁切；这是源画面取景限制，不据此宣称原件损坏。"
+      ],
+      "display_limits_zh": [
+        "需要解释连接关系时采用更大尺寸或浅底；深底必须检查线缆可见性。",
+        "不作为完整笔记本电脑外形示范；需要完整电脑时换用合适素材，不能把本图裁边当已修复。",
+        "只作来源支持的便携测序设备组合，不推断品牌、接口规格、实时结果或完整测序流程。"
+      ],
+      "text_observation": {
+        "status": "small_device_marks_unreadable",
+        "notes_zh": "键盘和模块上有细小标记/纹理，本次测试尺寸未读出可靠字词；不由模糊标记猜品牌。"
+      },
+      "visual_display_review_completed": true,
+      "full_curated_requirement_passed": false,
+      "scientific_composition_review_completed": false,
+      "native_editability_tested": false,
+      "original_artwork_modified": false,
+      "library_text_attributes_modified": false
+    },
+    {
+      "ordinal": 60,
+      "candidate_id": "togo-a094e62fb31b65be0d8b:file-1",
+      "title": "DNA sequencer 12",
+      "original_sha256": "e2b9c40b097842577202e727863906ebd81777ec132c59e242361cb3bc4665c4",
+      "preview_sha256": "85db25f9bdbf4a0517d3867a7c5a0204815e7cc374c23bf4f0f7b8bf7fb7730f",
+      "original_archive": {
+        "member": "files/e2/e2b9c40b097842577202e727863906ebd81777ec132c59e242361cb3bc4665c4.png",
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42249870031-1-b0001.tar.gz"
+      },
+      "preview_archive": {
+        "member": "previews/e2b9c40b097842577202e727863906ebd81777ec132c59e242361cb3bc4665c4.png",
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42249870031-1-b0001.tar.gz"
+      },
+      "reviewed_sheets": [
+        {
+          "path": "build/curated-expansion-60/display/comparison-04.png",
+          "sha256": "2db152f6ec8595d9d1e480d416a8524f850c6c3f8af1e6a52fbc495d7ed10780",
+          "review_method": "Actually opened with view_image and inspected at original output resolution",
+          "input_mapping_sheet": "comparison-04.png"
+        },
+        {
+          "path": "build/curated-expansion-60/display/tail/adjacency.png",
+          "sha256": "4a11a2eb3d33762ff5fb66b4f22ca308c6533fee184d8f54eec56237d131bbd3",
+          "review_method": "Actually opened with view_image and inspected at original output resolution",
+          "input_mapping_sheet": "tail/adjacency.png"
+        }
+      ],
+      "reviewed_display_conditions": [
+        {
+          "extent": 256,
+          "rendered_size": [
+            256,
+            256
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "uniform_scale": 0.5,
+          "cropped": false,
+          "background": "white",
+          "sheet": "comparison-04.png",
+          "bounds_xywh": [
+            20,
+            772,
+            256,
+            256
+          ]
+        },
+        {
+          "extent": 256,
+          "rendered_size": [
+            256,
+            256
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "uniform_scale": 0.5,
+          "cropped": false,
+          "background": "dark",
+          "sheet": "comparison-04.png",
+          "bounds_xywh": [
+            300,
+            772,
+            256,
+            256
+          ]
+        },
+        {
+          "extent": 256,
+          "rendered_size": [
+            256,
+            256
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "uniform_scale": 0.5,
+          "cropped": false,
+          "background": "grid",
+          "sheet": "comparison-04.png",
+          "bounds_xywh": [
+            580,
+            772,
+            256,
+            256
+          ]
+        },
+        {
+          "extent": 96,
+          "rendered_size": [
+            96,
+            96
+          ],
+          "offset": [
+            18,
+            80
+          ],
+          "uniform_scale": 0.1875,
+          "cropped": false,
+          "background": "white",
+          "sheet": "comparison-04.png",
+          "bounds_xywh": [
+            860,
+            772,
+            132,
+            256
+          ]
+        },
+        {
+          "extent": 48,
+          "rendered_size": [
+            48,
+            48
+          ],
+          "offset": [
+            42,
+            104
+          ],
+          "uniform_scale": 0.09375,
+          "cropped": false,
+          "background": "white",
+          "sheet": "comparison-04.png",
+          "bounds_xywh": [
+            1016,
+            772,
+            132,
+            256
+          ]
+        },
+        {
+          "extent": 208,
+          "rendered_size": [
+            208,
+            208
+          ],
+          "offset": [
+            0,
+            11
+          ],
+          "uniform_scale": 0.40625,
+          "cropped": false,
+          "background": "white",
+          "sheet": "tail/adjacency.png",
+          "bounds_xywh": [
+            470,
+            102,
+            208,
+            230
+          ]
+        },
+        {
+          "extent": 208,
+          "rendered_size": [
+            208,
+            208
+          ],
+          "offset": [
+            0,
+            11
+          ],
+          "uniform_scale": 0.40625,
+          "cropped": false,
+          "background": "dark",
+          "sheet": "tail/adjacency.png",
+          "bounds_xywh": [
+            1190,
+            102,
+            208,
+            230
+          ]
+        }
+      ],
+      "observations_zh": [
+        "256px白底和棋盘上可见灰色上面板、多个重复安装位、散热孔格和黑色下部机箱；主体区域遮住横线，周围背景透明。",
+        "深底上灰面板仍清楚，黑色底座与背景对比减弱；208px邻接板可见同一限制。",
+        "96px能保留大体箱体和上部排列结构；48px重复小结构及前面板标记趋于合并，不能数安装位或读取指示。",
+        "设备四周留白仍在，本次显示未见新增裁边。"
+      ],
+      "display_limits_zh": [
+        "小尺寸仅作测序仪概览；需要区分上面板、安装位或前部接口时使用较大显示。",
+        "面板和箱体为实色填充，会遮住后方内容；深底需检查下部外缘。",
+        "来源支持DNA测序仪对象，不把安装位外观解释为具体通量、原理或实验结果。"
+      ],
+      "text_observation": {
+        "status": "panel_symbols_not_readable_text",
+        "notes_zh": "可见很小的前面板指示/符号，但未读出可靠字词和数值；不把符号当真实实验数据。"
+      },
+      "visual_display_review_completed": true,
+      "full_curated_requirement_passed": false,
+      "scientific_composition_review_completed": false,
+      "native_editability_tested": false,
+      "original_artwork_modified": false,
+      "library_text_attributes_modified": false
+    }
+  ],
+  "visual_display_review_completed": true,
+  "full_curated_requirement_passed": false,
+  "scientific_composition_review_completed": false,
+  "native_editability_tested": false,
+  "originals_downloaded_locally": 0,
+  "source_originals_modified": false,
+  "limits": [
+    "Actual display observations apply only to these exact original/preview hashes and the tested sizes/backgrounds.",
+    "Transparent margins, opaque fills, small labels, low contrast and existing image framing are reported as use limits, not automatic scope exclusions or damaged-original findings.",
+    "Adjacent independent objects do not establish a scientific sequence, clinical procedure or full cross-source composition.",
+    "No text cleanup, recoloring, cropping or scientific fact changes were performed."
+  ]
+}
