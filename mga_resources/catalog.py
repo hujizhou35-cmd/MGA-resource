@@ -17,6 +17,7 @@ import unicodedata
 from collections import Counter, defaultdict
 from contextlib import closing
 from datetime import datetime, timezone
+from functools import lru_cache
 from pathlib import Path
 from typing import Any, Iterable
 
@@ -508,6 +509,37 @@ def _search_core(payload: dict[str, Any]) -> dict[str, Any]:
     return json.loads(completed.stdout)
 
 
+def search_policy_binding() -> dict[str, str]:
+    """Bind the complete portable policy, including imported vocabulary bytes."""
+    names = {
+        "search_core_sha256": "search-core.mjs",
+        "search_vocabulary_sha256": "search-vocabulary.mjs",
+        "search_cli_sha256": "search-cli.mjs",
+    }
+    values = {key: hashlib.sha256(Path(__file__).with_name(name).read_bytes()).hexdigest()
+              for key, name in names.items()}
+    files = {"mga_resources/" + name: values[key] for key, name in names.items()}
+    canonical = json.dumps(files, ensure_ascii=False, sort_keys=True, separators=(",", ":")).encode("utf8")
+    return {**values, "search_policy_sha256": hashlib.sha256(canonical).hexdigest()}
+
+
+@lru_cache(maxsize=8)
+def _search_versions(policy_sha256: str) -> dict[str, Any]:
+    prepared = _search_core({"action": "prepare", "records": []})
+    version = prepared.get("index_version")
+    if type(version) is not int or version < 1 or not prepared.get("ranking_version"):
+        raise ValueError("Shared search CLI must declare ranking and index versions")
+    if search_policy_binding()["search_policy_sha256"] != policy_sha256:
+        raise ValueError("Search policy changed while reading its versions")
+    return {"ranking_version": prepared["ranking_version"], "search_index_version": version}
+
+
+def search_policy_metadata() -> dict[str, Any]:
+    """Current runtime versions and byte hashes, reusable by cloud replay tools."""
+    binding = search_policy_binding()
+    return {**binding, **_search_versions(binding["search_policy_sha256"])}
+
+
 def _assert_public_records(records: list[dict[str, Any]]) -> None:
     """Reject unfiltered internal scope records before writing public artifacts.
 
@@ -522,9 +554,16 @@ def _assert_public_records(records: list[dict[str, Any]]) -> None:
                 raise ValueError("Public catalog/index requires scope-filtered records; apply filter_public_records() before finalize or rebuild")
 
 
-def _write_sqlite(records: list[dict[str, Any]], path: Path, catalog_version: str) -> None:
+def _write_sqlite(records: list[dict[str, Any]], path: Path, catalog_version: str) -> dict[str, Any]:
     _assert_public_records(records)
+    binding = search_policy_binding()
     prepared = _search_core({"action": "prepare", "records": records})
+    index_version = prepared.get("index_version")
+    if type(index_version) is not int or index_version < 1:
+        raise ValueError("Shared search CLI must declare its index version")
+    if search_policy_binding() != binding:
+        raise ValueError("Search policy changed while preparing the index")
+    policy = {**binding, "ranking_version": prepared["ranking_version"], "search_index_version": index_version}
     if path.exists():
         path.unlink()
     with closing(sqlite3.connect(path)) as db, db:
@@ -573,9 +612,10 @@ def _write_sqlite(records: list[dict[str, Any]], path: Path, catalog_version: st
                 variant["variant_id"], variant["search"]["title"], variant["search"]["aliases"], variant["search"]["context"],
             ))
         db.executemany("INSERT INTO index_metadata VALUES (?, ?)", [
-            ("catalog_version", catalog_version), ("ranking_version", prepared["ranking_version"]),
+            ("catalog_version", catalog_version), *[(key, str(value)) for key, value in policy.items()],
         ])
-        db.execute("PRAGMA user_version=9")
+        db.execute(f"PRAGMA user_version={index_version}")
+    return policy
 
 
 def finalize(records: Iterable[dict[str, Any]], output_dir: str | Path) -> dict[str, Any]:
@@ -612,8 +652,8 @@ def finalize(records: Iterable[dict[str, Any]], output_dir: str | Path) -> dict[
         "acceptance": {"scientific_coverage": "not_accepted", "visual_review": "not_completed", "illustrator_editability": "not_established_by_this_pipeline"},
         "catalog_sha256": hashlib.sha256(catalog_path.read_bytes()).hexdigest(),
     }
-    _write_sqlite(items, output_dir / "catalog.sqlite", summary["catalog_sha256"])
-    summary["search_index_version"] = 9
+    policy = _write_sqlite(items, output_dir / "catalog.sqlite", summary["catalog_sha256"])
+    summary.update(policy)
     summary["search_policy"] = "mga_resources/search-core.mjs; old BM25 available as search_legacy"
     (output_dir / "summary.json").write_text(json.dumps(summary, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     return summary
@@ -740,6 +780,7 @@ def search_page(db_path: str | Path, query: str, limit: int = 10,
     is read for the returned selection, never all broad-query matches.
     """
     total_started = time.perf_counter()
+    policy = search_policy_metadata()
     sql_seconds = core_seconds = 0.0
     filters, history, project = filters or {}, history or {}, project or {}
     def invoke_core(payload):
@@ -755,9 +796,11 @@ def search_page(db_path: str | Path, query: str, limit: int = 10,
             rows = db.execute(statement, parameters).fetchall()
             sql_seconds += time.perf_counter() - started
             return rows
-        if read_sql("PRAGMA user_version")[0][0] != 9:
-            raise ValueError("Search index must be rebuilt as v9 with rebuild_search_index() or finalize(); search_legacy() remains available for old indexes")
+        if read_sql("PRAGMA user_version")[0][0] != policy["search_index_version"]:
+            raise ValueError(f"Search index must be rebuilt as v{policy['search_index_version']} with rebuild_search_index() or finalize(); search_legacy() remains available for old indexes")
         metadata = dict(read_sql("SELECT key, value FROM index_metadata"))
+        if any(metadata.get(key) != str(value) for key, value in policy.items()):
+            raise ValueError("Search policy version or byte hash changed; rebuild the index with rebuild_search_index() or finalize()")
         prepared = invoke_core({"action": "window_plan", "request": {
             "query": query, "filters": filters, "limit": limit, "mode": mode, "seed": seed,
             "history": history, "project": project, "cursor": cursor, "preferences": preferences or {},

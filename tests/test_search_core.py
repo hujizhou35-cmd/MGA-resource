@@ -205,7 +205,7 @@ def test_unknown_filter_and_obsolete_index_fail_explicitly(tmp_path):
         search(db, "mouse", filters={"nonsense": "true"})
     with closing(sqlite3.connect(db)) as conn:
         conn.execute("PRAGMA user_version=1")
-    with pytest.raises(ValueError, match="rebuilt as v9"):
+    with pytest.raises(ValueError, match="rebuilt as v10"):
         search(db, "mouse")
 
 
@@ -271,6 +271,49 @@ def test_taking_blood_is_an_action_but_a_collection_tube_is_not(tmp_path):
     db=database(tmp_path,[artwork(1,title="taking blood sample",species=None),artwork(2,title="blood collection tube",species=None),artwork(3,title="blood sample tube",species=None)])
     for query in ("采血过程示意","blood collection procedure illustration"):
         assert [row["title"] for row in search(db,query)]==["taking blood sample"]
+
+
+@pytest.mark.parametrize("queries,title,decoys", [
+    (("采血管插画", "blood collection tube illustration"), "Blood collection tube", ["Blood vessel", "Blood collection"]),
+    (("细胞培养瓶插画", "cell culture flask illustration"), "Cell culture flask", ["Cell culture", "Animal cell"]),
+    (("实验室离心管", "laboratory centrifuge tube"), "Centrifuge tube", ["Centrifuge", "Centrifugation"]),
+    (("微量离心管", "microcentrifuge tube"), "Microcentrifuge tube", ["Centrifuge", "Centrifuge tube"]),
+    (("实验室离心机", "laboratory centrifuge"), "Centrifuge", ["Centrifuge tube", "Centrifugation"]),
+])
+def test_equipment_compounds_are_objects_not_their_nested_actions(tmp_path, queries, title, decoys):
+    db = database(tmp_path, [artwork(i, title=name, species=None) for i, name in enumerate([title, *decoys])])
+    for query in queries:
+        assert [row["title"] for row in search(db, query)] == [title]
+
+
+def test_body_part_and_attached_equipment_requirements_are_not_discarded(tmp_path):
+    db = database(tmp_path, [artwork(1, title="Human arm", species="human"),
+        artwork(2, title="Human body", species="human"), artwork(3, title="Syringe with needle", species=None),
+        artwork(4, title="Syringe", species=None), artwork(5, title="Needle", species=None)])
+    for query in ("人体手臂插画", "human arm illustration"):
+        assert [row["title"] for row in search(db, query)] == ["Human arm"]
+    for query in ("带针注射器插画", "syringe with needle illustration"):
+        assert [row["title"] for row in search(db, query)] == ["Syringe with needle"]
+
+
+def test_lexical_modifiers_preserve_age_and_distinguish_consultation_from_examination(tmp_path):
+    records = [artwork(1, title="Person", species="human", tags=["Adult"]),
+        artwork(2, title="Person", species="human", tags=["Infant"]),
+        artwork(3, title="Doctor Patient", species="human", description="Doctor consulting with patient"),
+        artwork(4, title="Doctor Patient", species="human", description="Doctor examining a patient")]
+    db = database(tmp_path, records)
+    for query in ("成年人物", "adult person"):
+        assert [row["selected_source"]["source_id"] for row in search(db, query)] == ["1"]
+    for query in ("医生与患者沟通场景", "clinician patient consultation"):
+        assert [row["selected_source"]["source_id"] for row in search(db, query)] == ["3"]
+    for query in ("医生为患者检查的场景插画", "clinician examining a patient illustration"):
+        assert [row["selected_source"]["source_id"] for row in search(db, query)] == ["4"]
+
+
+def test_oral_requirement_is_not_discarded_for_unlabelled_medication(tmp_path):
+    db = database(tmp_path, [artwork(1, title="Tablet", species=None),
+        artwork(2, title="Pill bug", species=None)])
+    assert search(db, "oral tablet") == []
 
 
 def test_whole_body_words_do_not_replace_the_primary_species_with_a_body_part(tmp_path):
@@ -550,10 +593,10 @@ def test_content_type_scope_projection_uses_only_bound_media_dimension(tmp_path)
 def test_old_ranking_index_is_rejected_even_with_unchanged_sql_schema(tmp_path):
     db = database(tmp_path, [artwork(1)])
     with closing(sqlite3.connect(db)) as conn, conn:
-        assert conn.execute("PRAGMA user_version").fetchone()[0] == 9
-        assert conn.execute("SELECT value FROM index_metadata WHERE key='ranking_version'").fetchone()[0] == "shared-search-3.4.3"
+        assert conn.execute("PRAGMA user_version").fetchone()[0] == 10
+        assert conn.execute("SELECT value FROM index_metadata WHERE key='ranking_version'").fetchone()[0] == "shared-search-3.5.0"
         conn.execute("UPDATE index_metadata SET value='shared-search-3.4.2' WHERE key='ranking_version'")
-    with pytest.raises(ValueError, match="policy version changed; rebuild"):
+    with pytest.raises(ValueError, match="policy version.*changed; rebuild"):
         search(db, "mouse", filters={"media_type": "raster"})
 
 

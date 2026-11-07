@@ -1,0 +1,66 @@
+name: Reindex exact catalog metadata only
+on:
+  workflow_dispatch:
+    inputs:
+      release_tag:
+        default: acceptance-20261107
+        type: string
+      assembly_prefix:
+        default: assembly-42320673266-1
+        required: true
+        type: string
+      catalog_sha256:
+        default: 8a961c42a357147f2ae0229526f6127c955e05928721d94283e829463f738da0
+        required: true
+        type: string
+      manifest_asset:
+        default: science-update-42320673266.publish_manifest.json
+        type: string
+      manifest_sha256:
+        default: e9cf028a56e6a3b827bad7e5e576d48599ca7e4224f4f5e7f8a7660f0dfdcbbe
+        required: true
+        type: string
+      publish_tag:
+        default: acceptance-20261107
+        type: string
+permissions:
+  contents: write
+concurrency:
+  group: reindex-catalog
+  cancel-in-progress: false
+jobs:
+  reindex:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install -e '.[test]'
+      - run: python -m pytest tests/test_reindex_catalog.py -q
+      - name: Rebuild derived index while preserving catalog bytes
+        env:
+          GH_TOKEN: ${{ github.token }}
+          SOURCE_TAG: ${{ inputs.release_tag }}
+          PREFIX: ${{ inputs.assembly_prefix }}
+          CATALOG_SHA: ${{ inputs.catalog_sha256 }}
+          MANIFEST_ASSET: ${{ inputs.manifest_asset }}
+          MANIFEST_SHA: ${{ inputs.manifest_sha256 }}
+          PUBLISH_TAG: ${{ inputs.publish_tag }}
+        run: >-
+          python scripts/reindex_catalog.py
+          --release-tag "$SOURCE_TAG" --assembly-prefix "$PREFIX"
+          --catalog-sha256 "$CATALOG_SHA" --manifest-asset "$MANIFEST_ASSET"
+          --manifest-sha256 "$MANIFEST_SHA" --publish-tag "$PUBLISH_TAG" --publish
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: reindex-metadata-receipt-${{ github.run_id }}-${{ github.run_attempt }}
+          if-no-files-found: ignore
+          path: |
+            build/reindex/*/reindex-checkpoint.json
+            build/reindex/*/output/*.report.json

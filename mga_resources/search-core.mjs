@@ -3,8 +3,8 @@
  */
 import vocabulary from './search-vocabulary.mjs';
 
-export const RANKING_VERSION = 'shared-search-3.4.3';
-export const INDEX_VERSION = 9;
+export const RANKING_VERSION = 'shared-search-3.5.0';
+export const INDEX_VERSION = 10;
 export const DEFAULT_CANDIDATE_POOL = 75;
 const unknown = new Set(['', 'unknown', 'unspecified', 'not_reviewed', '待确认']);
 const arr = value => value == null ? [] : Array.isArray(value) ? value : [value];
@@ -81,9 +81,48 @@ const extraConcepts = [
   // Tissue from an organ is a more specific object than the whole organ.
   // Do not drop the noun class globally or let a broad tissue tag prove it.
   ['肺组织','lung tissue','pulmonary tissue'],
+  // Reusable objects are separate from the procedures named inside them.
+  ['采血管','血液采集管','blood collection tube','blood collection tubes','blood sampling tube','blood collection vial'],
+  ['培养瓶','细胞培养瓶','培养烧瓶','culture flask','cell culture flask','tissue culture flask'],
+  ['离心管','centrifuge tube','centrifugation tube'],
+  ['微量离心管','microcentrifuge tube','microcentrifugation tube','microcentrifuge tubes'],
+  ['烧瓶','flask','flasks'],
+  ['手臂','胳膊','arm','arms'],
+  ['针头','针','needle','needles'],
+  ['微量移液器','micropipette','micro pipette'],
+  ['枪头','吸头','移液器枪头','pipette tip','pipette tips','tip'],
+  ['动物细胞','animal cell','animal cells'],
+  ['人群','group of people','people group'],
+  ['人物','人像','person','people','individual'],
+  ['核酸测序仪','nucleic acid sequencing instrument','nucleic acid sequencer','dna sequencer','sequencer','sequencing instrument'],
+  ['dna结合蛋白','dna结合蛋白质','dna binding protein','dna-binding protein'],
+  ['计算机工作站','computer workstation','workstation'],
+];
+// These constrain source wording without claiming a primary depicted object.
+// In particular, adulthood and an examination are not implied by a person.
+const lexicalConcepts=[
+  ['成年','成年人','adult','adults'],
+  ['动物','animal','animals'],
+  ['口服','oral'],
+  ['沟通','交流','咨询','consultation','consulting','consult','consults'],
+  ['检查','examining','examination','examines','examine'],
 ];
 // Avoid interpreting the unspecific Chinese experimental rodent as a mouse.
 const concepts = [...vocabulary.concepts, ...extraConcepts].map(group => unique(group.map(norm).filter(x => x !== '实验鼠')));
+// Use the same longest non-overlapping interpretation on both sides. A source
+// title "centrifuge tube" must not assert that a centrifuge is depicted.
+function matchedConcepts(value, groups=concepts) {
+  let remaining=value;
+  const selected=[];
+  const matchesByLength=groups.flatMap(group=>group.filter(term=>matches(value,term)).map(term=>({term,group})))
+    .sort((a,b)=>b.term.length-a.term.length || cmp(a.term,b.term));
+  for(const {term,group} of matchesByLength){
+    if(!matches(remaining,term))continue;
+    selected.push(group);
+    remaining=removeTerm(remaining,term);
+  }
+  return {groups:unique(selected),remaining};
+}
 // A named molecular object followed by its noun class is the same requested
 // object, not a demand that the source redundantly repeat the word molecule.
 for(const group of concepts){
@@ -96,10 +135,10 @@ const qualifiers = Object.entries({...SCIENCE,...APPEARANCE}).flatMap(([key, gro
 const animalNames=new Set(Object.values(SCIENCE.species).flat().map(norm));
 const nonBiologicalMouse=value=>['computer mouse','mouse cursor','pointing device','电脑鼠标','鼠标'].some(term=>matches(value,term));
 const actionNames=['injection','blood collection','blood sampling','centrifugation','pipetting','cell culture','transfection','sequencing','dissection','randomization','randomisation','recruitment','taking blood sample','drawing blood','blood draw','phlebotomy','venipuncture','cell cycle','cell sorting'];
-const equipmentNames=['computer mouse','mouse cursor','syringe','pipette','microscope','centrifuge','tube','flask','beaker','incubator','well plate','microplate','petri dish','culture dish','needle','scissors','cutters','sequencer','sorter','cell sorter','machine','instrument','apparatus','voltammetry','electrochemical','electrolytic','battery','solar cell'];
+const equipmentNames=['computer mouse','mouse cursor','syringe','pipette','micropipette','pipette tip','microscope','centrifuge','centrifuge tube','microcentrifuge tube','blood collection tube','culture flask','tube','test tube','flask','beaker','incubator','well plate','microplate','petri dish','culture dish','needle','scissors','cutters','sequencer','sorter','cell sorter','machine','instrument','apparatus','workstation','voltammetry','electrochemical','electrolytic','battery','solar cell'];
 const actionGroups=concepts.filter(group=>group.some(term=>actionNames.includes(term)));
 const equipmentGroups=concepts.filter(group=>group.some(term=>equipmentNames.includes(term)));
-const cellNames=new Set(['cell','cells','macrophage','neuron','lymphocyte','neutrophil','hepatocyte','erythrocyte','fibroblast','stem cell','t cell','b cell','endothelial cell']);
+const cellNames=new Set(['cell','cells','animal cell','macrophage','neuron','lymphocyte','neutrophil','hepatocyte','erythrocyte','fibroblast','stem cell','t cell','b cell','endothelial cell']);
 const subcellularNames=new Set(['cell membrane','cell nucleus','nucleus','mitochondria','mitochondrion','endoplasmic reticulum','golgi','lysosome','ribosome','cell membrane receptor','membrane receptor','receptor']);
 const organNames=new Set(['heart','brain','liver','lung','kidney','intestine','pancreas','stomach','spleen','thyroid','bladder']);
 function primaryConceptGroups(groups,label='') {
@@ -129,8 +168,11 @@ function explicitDepictionDescription(value) {
   return found?.[1]||'';
 }
 function depictionKind(title,objects,unresolvedAnimal){
+  const named=matchedConcepts(title).groups;
+  // Unambiguous technical labels such as electrochemical/voltammetry also
+  // establish equipment; they need not have a bilingual object alias group.
   const equipment=equipmentNames.some(term=>matches(title,term));
-  const action=actionGroups.some(group=>group.some(term=>matches(title,term)));
+  const action=named.some(group=>actionGroups.includes(group));
   const activeVerb=/\b(?:taking|drawing|collecting|injecting|pipetting|centrifuging|dissecting)\b/.test(title);
   if(equipment&&/\b(?:user|operator)\b/.test(title)&&!activeVerb)return 'unknown';
   if(equipment&&!activeVerb)return 'equipment';
@@ -149,7 +191,7 @@ function animalTitleRemainder(title){
   for(const term of modifiers.sort((a,b)=>b.length-a.length))rest=removeTerm(rest,norm(term));
   return rest.replace(/\b(?:c57bl[\w/-]*|balb[\w/-]*|p\d+|\d+)\b/gi,' ').replace(/[^\p{L}\p{N}]+/gu,' ').trim();
 }
-const phraseVocabulary=unique([...concepts.flat(),...qualifiers.map(q=>q.term),...Object.values(vocabulary.legacyPresentationTerms).flat()]).filter(term=>term.includes(' ')||term.includes('-')||/[\u3400-\u9fff]/.test(term));
+const phraseVocabulary=unique([...concepts.flat(),...lexicalConcepts.flat(),...qualifiers.map(q=>q.term),...Object.values(vocabulary.legacyPresentationTerms).flat()]).filter(term=>term.includes(' ')||term.includes('-')||/[\u3400-\u9fff]/.test(term));
 const termKey=value=>norm(value).replace(/-/g,' ').replace(/\s+/g,' ');
 function indexTerms(value) {
   const normalized=norm(value);
@@ -234,18 +276,18 @@ export function buildQueryPlan(query = '', filters = {}, options = {}) {
   }
   if (remaining.includes('人体') && /肝|肺|肾|心|脑|细胞|血管|胃|脾/.test(remaining)) remaining = remaining.replaceAll('人体',' human ');
   const terms = [];
-  const nounMatches = concepts.flatMap(group => group.filter(term => matches(remaining,term)).map(term => ({term,group}))).sort((a,b)=>b.term.length-a.term.length || cmp(a.term,b.term));
-  for (const {term,group} of nounMatches) {
-    if (!matches(remaining,term)) continue;
-    terms.push(unique([term,...group]));
-    remaining = removeTerm(remaining,term);
-  }
+  const nouns=matchedConcepts(remaining);
+  terms.push(...nouns.groups);
+  remaining=nouns.remaining;
+  const modifiers=matchedConcepts(remaining,lexicalConcepts);
+  terms.push(...modifiers.groups);
+  remaining=modifiers.remaining;
   // Remaining historical descriptive phrases are soft preferences only.
   const softTerms = [];
   for (const [term, aliases] of Object.entries(vocabulary.legacyPresentationTerms).sort((a,b)=>b[0].length-a[0].length)) {
     if (matches(remaining,norm(term))) {softTerms.push(aliases.map(norm)); remaining=removeTerm(remaining,norm(term));}
   }
-  const context = [...vocabulary.contextTerms,'process','过程','prefer','preferred','if possible','偏好','优先','需要','必须','要求'];
+  const context = [...vocabulary.contextTerms,'process','过程','prefer','preferred','if possible','偏好','优先','需要','必须','要求','场景','带','为'];
   for (const term of context.sort((a,b)=>b.length-a.length)) remaining=removeTerm(remaining,norm(term));
   for (const word of remaining.match(/[\p{L}\p{N}]+/gu)||[]) terms.push([word]);
   const groups = [...new Map(terms.map(group=>[stableStringify([...group].sort()),group])).values()];
@@ -378,7 +420,7 @@ export function prepareVariants(records) {
       const title=norm([fields.title,fields.title_zh]);
       const contextText=norm([fields.description,fields.tags,fields.upstream_category,fields.categories,fields.anatomy,fields.action,scientificValue(file,'object')??file.object??fields.object,...Object.values(facts)]);
       const descriptive=title+' '+contextText;
-      const aliases=unique(concepts.filter(group=>group.some(term=>matches(descriptive,term))).flat());
+      const aliases=unique([...matchedConcepts(descriptive).groups,...matchedConcepts(descriptive,lexicalConcepts).groups].flat());
       const license=origin.license||asset.license;
       const rights=origin.distribution_status || (origin.license===asset.license ? asset.distribution_status : 'needs_rights_review');
       const canDownload=Boolean(file.archive?.url && file.archive?.member || /^https?:\/\//.test(file.url||''));
@@ -386,10 +428,10 @@ export function prepareVariants(records) {
       const publicScopeAllowed=![asset,origin,file].some(item=>item.catalog_visibility==='internal_diagnostic'||item.public_scope?.public_allowed===false||['excluded','pending_review'].includes(item.public_scope?.status)||item.scope_status==='excluded');
       const eligible=Boolean(publicScopeAllowed && file.sha256 && file.preview && canDownload && ['machine_checked','machine_checked_and_rendered'].includes(file.validation?.status) && rights==='license_recorded' && !rejectedReview);
       const declaredObjects=scientificValue(file,'object') ?? file.object ?? fields.scientific?.object ?? fields.object;
-      const titleConcepts=concepts.filter(group=>group.some(term=>matches(title,term)));
+      const titleConcepts=matchedConcepts(title).groups;
       const descriptionLabel=titleConcepts.length?'':explicitDepictionDescription(fields.description);
       const objectLabel=descriptionLabel||title;
-      const namedConcepts=descriptionLabel?concepts.filter(group=>group.some(term=>matches(descriptionLabel,term))):titleConcepts;
+      const namedConcepts=descriptionLabel?matchedConcepts(descriptionLabel).groups:titleConcepts;
       const nonAnimalConcepts=namedConcepts.filter(group=>!group.some(term=>animalNames.has(term)));
       // In explicit compound labels such as mouse brain / mouse cell / mouse
       // syringe, animal words describe species/context rather than the primary

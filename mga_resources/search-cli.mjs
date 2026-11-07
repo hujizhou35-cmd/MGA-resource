@@ -1,10 +1,10 @@
 // Thin process adapter only; all query/filter/ranking policy lives in the core.
 import {readFileSync} from 'node:fs';
-import {prepareVariants,buildQueryPlan,sqlitePlan,searchCandidates,prepareWindowSearch,finishWindowSearch,materializeResult,RANKING_VERSION} from './search-core.mjs';
+import {prepareVariants,buildQueryPlan,sqlitePlan,searchCandidates,prepareWindowSearch,finishWindowSearch,materializeResult,RANKING_VERSION,INDEX_VERSION} from './search-core.mjs';
 try {
   const input=JSON.parse(readFileSync(0,'utf8'));
   let output;
-  if(input.action==='prepare')output={variants:prepareVariants(input.records),ranking_version:RANKING_VERSION};
+  if(input.action==='prepare')output={variants:prepareVariants(input.records),ranking_version:RANKING_VERSION,index_version:INDEX_VERSION};
   else if(input.action==='plan'){const plan=buildQueryPlan(input.query,input.filters,input.options);output={plan,sql:sqlitePlan(plan)};}
   else if(input.action==='search'){const start=performance.now();output=await searchCandidates(input.variants,input.request);output.adapter_metrics={core_milliseconds:performance.now()-start};}
   else if(input.action==='window_plan')output=await prepareWindowSearch(input.request);

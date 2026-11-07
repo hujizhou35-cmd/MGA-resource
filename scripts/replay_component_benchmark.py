@@ -232,6 +232,8 @@ def main():
         "catalog_sha256": catalog_sha, "sqlite_sha256": digest(paths["catalog.sqlite"]),
         "assembly_report_sha256": digest(paths["report.json"]), "search_core_sha256": core_sha,
         "ranking_version": metadata["ranking_version"], "search_index_version": version}
+    bindings.update({key: metadata[key] for key in
+        ("search_vocabulary_sha256", "search_cli_sha256", "search_policy_sha256") if key in metadata})
     raw = execute_queries(paths["catalog.sqlite"], benchmark, bindings)
     raw["metadata_run"] = {"repository": repository, "run_id": os.environ["GITHUB_RUN_ID"],
         "run_attempt": os.environ.get("GITHUB_RUN_ATTEMPT", "1"), "commit_sha": os.environ["GITHUB_SHA"],

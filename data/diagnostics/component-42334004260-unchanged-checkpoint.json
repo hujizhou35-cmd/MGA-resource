@@ -1,0 +1,130 @@
+{
+  "schema_version": 1,
+  "status": "user_requested_checkpoint_no_website_or_material_revalidation_enabled",
+  "generated_at": "2026-11-07T03:43:07.375533+00:00",
+  "author": "registry_acceptance",
+  "bindings": {
+    "component_benchmark_sha256": "d4e462a631b88929bc3be419ab287599bb5a713de2e4cb0c2c84123cf5b94cef",
+    "legacy_benchmark_sha256": "ce0282afeb4afbcee8fdef1c6f937844ef569cabf16ba7909e22bf86b1096e92",
+    "catalog_sha256": "8a961c42a357147f2ae0229526f6127c955e05928721d94283e829463f738da0",
+    "sqlite_sha256": "c00793e2e23fdd18e2ba217a1ce062fc99efd0609ef50ea956d2aa3b3008ef15",
+    "assembly_report_sha256": "bd25e5564e472d85e9a46c3ff691238edebabc2442faf8e90910d346a4b9efbb",
+    "search_core_sha256": "191c4631bb80f36a33ec2580739580ea4289a9726b09dfffb70d022b2a1382e6",
+    "ranking_version": "shared-search-3.4.3",
+    "search_index_version": 9
+  },
+  "frozen_benchmark": {
+    "path": "data/component-benchmark.json",
+    "sha256": "d4e462a631b88929bc3be419ab287599bb5a713de2e4cb0c2c84123cf5b94cef",
+    "size_bytes": 230473
+  },
+  "freeze_record": {
+    "path": "data/component-benchmark-freeze.json",
+    "sha256": "a1d732d5e707ee9aee682d8d85ad8b4cb92276f884814a6f0c6d77f8b2a83ea7",
+    "size_bytes": 1908
+  },
+  "first_actual_replay": {
+    "run": {
+      "id": "42334004260",
+      "attempt": "1",
+      "url": "https://github.com/hujizhou35-cmd/MGA-resource/actions/runs/42334004260",
+      "head_sha": "0330813bb9c43acf6116d383e76e1991795a74ac"
+    },
+    "package": {
+      "name": "component-benchmark-42334004260-1.tar.gz",
+      "sha256": "0a03e7af2ea8ed828f51c5732c7c65e473f52de28baf866cf5046bfe5b880d5a",
+      "size_bytes": 901672,
+      "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/acceptance-20261107/component-benchmark-42334004260-1.tar.gz",
+      "github_asset_id": 719470419,
+      "github_digest": "sha256:0a03e7af2ea8ed828f51c5732c7c65e473f52de28baf866cf5046bfe5b880d5a",
+      "digest_verified": true
+    },
+    "summary": {
+      "path": "build/component-benchmark-review/42334004260/component-benchmark-42334004260-1.summary.json",
+      "sha256": "020515d9f407ca729c448b26bf5ffe31e4a1b5cc1f239350f52f0d4cdcf6a75f",
+      "size_bytes": 3423
+    },
+    "child_queries": 142,
+    "nonempty_child_queries": 117,
+    "result_positions": 831,
+    "unique_exact_files": 391,
+    "task_language_units_with_all_required_roles_nonempty": 101,
+    "candidate_only_upper_bound_out_of_120": 101,
+    "candidate_only_upper_bound_by_language": {
+      "zh": 49,
+      "en": 52
+    },
+    "candidate_only_upper_bound_explanation": "Every required role must have an actual returned candidate. Empty-role tasks cannot pass. The 101/120 upper bound is candidate availability, not a visual relevance score; it is below the frozen 108/120 threshold.",
+    "full_formal_component_score": null,
+    "acceptance_passed": false,
+    "website_gate_opened": false
+  },
+  "unchanged_use_bridge": {
+    "eligible_tasks": 47,
+    "child_queries": 94,
+    "bridged_queries": 94,
+    "bridged_task_language_units": 94,
+    "result_positions": 658,
+    "selected_unique_originals": 48,
+    "pending": [],
+    "copied_per_result_verdicts": {
+      "relevant": 511,
+      "irrelevant": 92,
+      "uncertain": 55
+    },
+    "new_visual_inspections": 0,
+    "new_original_or_preview_downloads": 0,
+    "conditions": "Exact same old query and four scientific/use requirements, request seed/mode/filters, full search bindings, ordered variants, original/preview hashes, both archives and all selected-source fields. Source/license/species confirmation and actual observations were reused without changing their text.",
+    "evidence": {
+      "path": "build/component-benchmark-review/unchanged/unchanged-evidence.json",
+      "sha256": "8723ac0d734f3c5850f08514195b6fe0b754cb48d44fae53af07c95a066d29ba",
+      "size_bytes": 2978938
+    },
+    "audit": {
+      "path": "build/component-benchmark-review/unchanged/binding-audit.json",
+      "sha256": "fc27c9242a1d577491f33d2d94c7c5d71c87b41dc0caa08f57558836cfa82609",
+      "size_bytes": 88359
+    },
+    "script": {
+      "path": "build/component-benchmark-review/unchanged/bridge_unchanged.py",
+      "sha256": "b02e10e741d877af24ed003e7254b8687f706b5f51e377a5335af6e2dcdab92c",
+      "size_bytes": 17143
+    },
+    "independent_readonly_review": {
+      "reviewer": "scope_publication_check",
+      "result": "No cross-variant reuse or new-purpose pass copying found. Only carried-forward single-role tasks included.",
+      "communication": "Reported directly to registry_acceptance and root in the current agent session; no new image review."
+    },
+    "version_limit": "This bridge binds shared-search-3.4.3 and its original core hash. A new core requires a real replay and a new explicit comparison; the old hash must not be replaced."
+  },
+  "remaining_new_uses": {
+    "tasks": 13,
+    "child_queries": 48,
+    "nonempty_child_queries": 23,
+    "result_positions": 173,
+    "formal_score": null,
+    "note": "New or decomposed roles require their own actual applicability judgments; multi-role tasks additionally require a bound composition-use review. Exact prior image observations alone do not grant a new use."
+  },
+  "material_core_revalidation": {
+    "implemented": false,
+    "enabled": false,
+    "production_files_edited_by_this_task": [],
+    "design_only": "Preserve freeze, old material report and historical 102/120. A future append-only receipt would bind a genuinely regenerated current material report, new raw/index/core and scope to the unchanged catalog/manifest. No such new report or pass has been generated here.",
+    "known_existing_tool_constraints": [
+      "replay_catalog_metadata.validate_baseline pins the old core; a deliberate old/current branch is needed before a new-core replay.",
+      "replay_catalog_controls currently labels ranking_version shared-search-3.4.3 explicitly; it must read the real new index version for any future new-core run.",
+      "An existing identical-manifest restore/equivalence proof can be reused. Do not call compare_manifests with the same catalog on both sides or claim a fresh artwork restore."
+    ]
+  },
+  "historical_original_120": {
+    "successful": 102,
+    "total": 120,
+    "formal_acceptance_passed": false,
+    "unchanged": true
+  },
+  "scope_and_work_limits": [
+    "No benchmark, scope decision, old raw or prior judgment was overwritten.",
+    "No new query, cloud operation, bulk artwork download, website construction or deployment was performed by this checkpoint task.",
+    "Blank chart templates, complete mechanism products and bare-geometry scope holds remain unchanged."
+  ]
+}

@@ -18,7 +18,7 @@ import time
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
-from mga_resources.catalog import _search_core, rebuild_search_index, search_legacy, search_page
+from mga_resources.catalog import _search_core, rebuild_search_index, search_legacy, search_page, search_policy_metadata
 
 
 def digest(path):
@@ -66,15 +66,19 @@ def resolve_index(catalog_path, output, index_path=None):
                                  "validation_seconds": None}
     db = Path(index_path).resolve()
     catalog_sha = digest(catalog_path)
+    expected_policy = search_policy_metadata()
     with closing(sqlite3.connect(db.as_uri()+"?mode=ro", uri=True)) as connection:
         metadata = dict(connection.execute("SELECT key, value FROM index_metadata"))
         if metadata.get("catalog_version") != catalog_sha:
             raise ValueError("Reused index does not bind this exact catalog")
-        if connection.execute("PRAGMA user_version").fetchone()[0] != 9:
-            raise ValueError("Reused index must have the current v9 schema")
-    expected_ranking = _search_core({"action": "prepare", "records": []})["ranking_version"]
+        if connection.execute("PRAGMA user_version").fetchone()[0] != expected_policy["search_index_version"]:
+            raise ValueError(f"Reused index must have the current v{expected_policy['search_index_version']} schema")
+    expected_ranking = expected_policy["ranking_version"]
     if metadata.get("ranking_version") != expected_ranking:
         raise ValueError("Reused index ranking version differs from the current shared core")
+    for key, expected in expected_policy.items():
+        if key.endswith("sha256") and metadata.get(key) != expected:
+            raise ValueError(f"Reused index policy bytes differ: {key}")
     return db, catalog_sha, {"reused": True, "build_seconds": None,
                             "validation_seconds": time.perf_counter()-started}
 
