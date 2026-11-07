@@ -1,0 +1,279 @@
+{
+  "schema_version": 1,
+  "reviewer": "Codex root",
+  "reviewed_at": "2026-11-07T01:06:22.325083+00:00",
+  "mapping_path": "build/curated-expansion-60/composition/composition-mapping.json",
+  "mapping_sha256": "8b830a100962db7335e5d4e49a341c0d8f00353df8a854aa6e20f6e85f976a8f",
+  "plan_sha256": "f7ef078cda2e38055b10c4897228e78d203be533614da4d7298546f172020e57",
+  "bindings": {
+    "old_curated_sha256": "32011683c6259d0221e39ac5e6748dc460d451d91ec0af74d6851d8dba1ed78c",
+    "new_selection_sha256": "96948b6b66292622ecfc6cec683ec4e52d413048f845eb64df41ad77806c8e2f",
+    "catalog_sha256": "5c90306415ce5e7f36e875c7f57b19a91930aacfeeaeecdf9ad7662770f9a3fe",
+    "old_manifest_binding": {
+      "path": "build/dispositions-final-scope-42289434868/candidate_publish_manifest.json",
+      "sha256": "a4fe0424ee8ecc32096090ef295242bdaa04b9ce29ff4f7a80948c95516d5436",
+      "file_count": 19473,
+      "officially_published": false
+    },
+    "new_manifest_binding": {
+      "path": "build/cloud-recovery-20261107/frozen-42289434868-3.4.3.publish_manifest.json",
+      "sha256": "a4fe0424ee8ecc32096090ef295242bdaa04b9ce29ff4f7a80948c95516d5436",
+      "file_count": 19473,
+      "officially_published": false
+    }
+  },
+  "pages": [
+    {
+      "panel": 5,
+      "path": "build/curated-expansion-60/composition/05-laboratory-scenes.png",
+      "sha256": "532e4174017e01a1758d34172af6c763048be28342db7e0a1a586746a0f9fd4a",
+      "review_method": "Actual individual view_image call; 2200x1500 file displayed by tool at1920x1308. No claim of native editing or full-resolution tiny text reading.",
+      "review_completed": true,
+      "items": [
+        {
+          "ordinal": 45,
+          "candidate_id": "bioicons-a5a17208ccf6a99aa8b0:file-0",
+          "original_sha256": "81cef7afa4208873bff2e21089b6cd024b0dc2d5257b289b1b1f5bab18dd0616",
+          "preview_sha256": "b3ac02c8392176f2b91cacc8e4b6f277644291fcf3fa64813cc4c36008d5d698",
+          "original_archive": {
+            "member": "files/81/81cef7afa4208873bff2e21089b6cd024b0dc2d5257b289b1b1f5bab18dd0616.svg",
+            "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42251588741-1-b0024.tar.gz"
+          },
+          "preview_archive": {
+            "member": "previews/81cef7afa4208873bff2e21089b6cd024b0dc2d5257b289b1b1f5bab18dd0616.png",
+            "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42251588741-1-b0024.tar.gz"
+          }
+        },
+        {
+          "ordinal": 46,
+          "candidate_id": "bioicons-b6733fcf61ab61939b7e:file-0",
+          "original_sha256": "4f7b88869456238099db6b37d7b327ec6ad6ae86ca43361f2146c36803b0de00",
+          "preview_sha256": "e72ab6ff3572b8444a3025759a77c6d2dc9fc316defe8ecbc3e5b0ec5eb6410b",
+          "original_archive": {
+            "member": "files/4f/4f7b88869456238099db6b37d7b327ec6ad6ae86ca43361f2146c36803b0de00.svg",
+            "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42251588741-1-b0022.tar.gz"
+          },
+          "preview_archive": {
+            "member": "previews/4f7b88869456238099db6b37d7b327ec6ad6ae86ca43361f2146c36803b0de00.png",
+            "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42251588741-1-b0022.tar.gz"
+          }
+        },
+        {
+          "ordinal": 11,
+          "candidate_id": "scisvg-421a5e731abb04ca4dae:file-0",
+          "original_sha256": "800454264fe49923c1ada758f4880c765398e78822c47fa99e718a4f4f7b8ac6",
+          "preview_sha256": "c622c643df2a314e48828906bf0e7909e40904bf57280c81e6084a467480ec8b",
+          "original_archive": {
+            "member": "files/80/800454264fe49923c1ada758f4880c765398e78822c47fa99e718a4f4f7b8ac6.svg",
+            "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scisvg-42238985604-1-b0000.tar.gz"
+          },
+          "preview_archive": {
+            "member": "previews/800454264fe49923c1ada758f4880c765398e78822c47fa99e718a4f4f7b8ac6.png",
+            "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scisvg-42238985604-1-b0000.tar.gz"
+          }
+        },
+        {
+          "ordinal": 12,
+          "candidate_id": "scisvg-3bc0eb05944fa777024f:file-0",
+          "original_sha256": "150908b6a1f898a8a951ee9037d27f9dcc92238c22df9083bc97039120167326",
+          "preview_sha256": "7debbec9b8d0b12f812e643105ff6ee5050ec92a59499d9d5c2332ea4b807cb6",
+          "original_archive": {
+            "member": "files/15/150908b6a1f898a8a951ee9037d27f9dcc92238c22df9083bc97039120167326.svg",
+            "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scisvg-42238985604-1-b0000.tar.gz"
+          },
+          "preview_archive": {
+            "member": "previews/150908b6a1f898a8a951ee9037d27f9dcc92238c22df9083bc97039120167326.png",
+            "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scisvg-42238985604-1-b0000.tar.gz"
+          }
+        },
+        {
+          "ordinal": 13,
+          "candidate_id": "scisvg-519891a4c033306eccbb:file-0",
+          "original_sha256": "eb51703468824613cebafacea70c08cb8cbb5c78b192d421c995e1af9d27a1c4",
+          "preview_sha256": "858cb9870dd0ca7c354312af33390896d2956aa182a37aaa959b0062d1a7513d",
+          "original_archive": {
+            "member": "files/eb/eb51703468824613cebafacea70c08cb8cbb5c78b192d421c995e1af9d27a1c4.svg",
+            "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scisvg-42238985604-1-b0000.tar.gz"
+          },
+          "preview_archive": {
+            "member": "previews/eb51703468824613cebafacea70c08cb8cbb5c78b192d421c995e1af9d27a1c4.png",
+            "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scisvg-42238985604-1-b0000.tar.gz"
+          }
+        },
+        {
+          "ordinal": 14,
+          "candidate_id": "scisvg-a0aab22945ecaba6892e:file-0",
+          "original_sha256": "2b15e9a5bef7bbd946352abd737d6c116f37599081b999602b363a509fe9f35d",
+          "preview_sha256": "df6ee40c4259637ea8e182e352a865e63456f33d591ab158b0e83ffcd17fd669",
+          "original_archive": {
+            "member": "files/2b/2b15e9a5bef7bbd946352abd737d6c116f37599081b999602b363a509fe9f35d.svg",
+            "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scisvg-42238985604-1-b0000.tar.gz"
+          },
+          "preview_archive": {
+            "member": "previews/2b15e9a5bef7bbd946352abd737d6c116f37599081b999602b363a509fe9f35d.png",
+            "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scisvg-42238985604-1-b0000.tar.gz"
+          }
+        },
+        {
+          "ordinal": 15,
+          "candidate_id": "scisvg-f66d69a3b51086c174e5:file-0",
+          "original_sha256": "1696b2dbb14253cd021c2874b368cb48db433bcecfef35eee1320a6f3539c79f",
+          "preview_sha256": "9db678f0d784339bc96b59a7946dd65e283e4e077ad4bb567b45a0142c9c4220",
+          "original_archive": {
+            "member": "files/16/1696b2dbb14253cd021c2874b368cb48db433bcecfef35eee1320a6f3539c79f.svg",
+            "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scisvg-42238985604-1-b0000.tar.gz"
+          },
+          "preview_archive": {
+            "member": "previews/1696b2dbb14253cd021c2874b368cb48db433bcecfef35eee1320a6f3539c79f.png",
+            "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scisvg-42238985604-1-b0000.tar.gz"
+          }
+        }
+      ],
+      "purpose_assessment_zh": "上方为离心机装载/移液操作，下面是可独立选用的实验设备；作为实验室对象与场景选材板可用。没有箭头把这些画成完整流程，未凭外观确认速度、时间、样本或完成离心。",
+      "occlusion_observation_zh": "本幅上方两场景和下方五设备均相互分开，未见图间遮挡或新增裁切。实色设备与桌面遮住底层颜色/参考线，这是预览原有填充。",
+      "style_observation_zh": "两个上方操作场景为柔和立体/等距平涂，下方五件蓝色设备图标线宽与配色较一致。上下两组风格不同，可作为分组比较板；若作为同一实验流程的连续部件，需按任务选同系列或做单独调整。",
+      "display_limits_zh": [
+        "白衣与浅底对比较低；现有较大场景仍可辨人和设备。",
+        "96/48px只保留多数设备轮廓，移液接触点、离心管、刻度和面板不能靠小图验科学细节。",
+        "黑/蓝显微镜与试管架在深底更弱；多孔板的彩色孔是素材示意，不能当研究结果或具体样本分组。"
+      ],
+      "suitable_use_zh": "实验设备/操作场景的独立说明或按风格分组的素材选择。",
+      "use_assessment": "usable_for_stated_comparison_or_overview_with_recorded_limits",
+      "unified_cross_source_style_pass_claimed": false,
+      "native_editability_tested": false
+    },
+    {
+      "panel": 6,
+      "path": "build/curated-expansion-60/composition/06-rodent-scenes.png",
+      "sha256": "0582e5d91bd312e8ed48bdaa1d4f70d5dfe931a99b5ef7267065058d67590197",
+      "review_method": "Actual individual view_image call; 2200x1500 file displayed by tool at1920x1308. No claim of native editing or full-resolution tiny text reading.",
+      "review_completed": true,
+      "items": [
+        {
+          "ordinal": 47,
+          "candidate_id": "scidraw-510d6c34c8ed6f0923a0:file-0",
+          "original_sha256": "bb78b1ff5e325ac78a483e1105e76bbb9e9e99a932b1540a268bcd2e8774f7f9",
+          "preview_sha256": "439c8f2db7a6b2a9715591c915da7f5123a966111640324974776a94ccb21065",
+          "original_archive": {
+            "member": "files/bb/bb78b1ff5e325ac78a483e1105e76bbb9e9e99a932b1540a268bcd2e8774f7f9.svg",
+            "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scidraw-42235890704-1-b0000.tar.gz"
+          },
+          "preview_archive": {
+            "member": "previews/bb78b1ff5e325ac78a483e1105e76bbb9e9e99a932b1540a268bcd2e8774f7f9.png",
+            "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scidraw-42235890704-1-b0000.tar.gz"
+          }
+        },
+        {
+          "ordinal": 48,
+          "candidate_id": "scidraw-d92ce948c56aa4a649be:file-0",
+          "original_sha256": "2854eba6c1d743ccbdcb5bba86daafc7a5525a6619af374c156ab7c667b38eb5",
+          "preview_sha256": "1c73e2caead94a41c1c4bea851474382f0dfeb881b4d8dc540b36acaad16fbe5",
+          "original_archive": {
+            "member": "files/28/2854eba6c1d743ccbdcb5bba86daafc7a5525a6619af374c156ab7c667b38eb5.svg",
+            "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scidraw-42235890704-1-b0000.tar.gz"
+          },
+          "preview_archive": {
+            "member": "previews/2854eba6c1d743ccbdcb5bba86daafc7a5525a6619af374c156ab7c667b38eb5.png",
+            "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scidraw-42235890704-1-b0000.tar.gz"
+          }
+        }
+      ],
+      "purpose_assessment_zh": "尾悬吊和固定装置分成两个独立场景，可以比较选材；没有把它们连为注射或完整实验流程。",
+      "occlusion_observation_zh": "两场景互不遮挡；尾悬吊跨浅蓝/白/米色背景，外轮廓仍可辨。固定装置的透明内部可见底色，未见新增裁切。",
+      "style_observation_zh": "两个灰色鼠形轮廓与少量彩色装置风格相近，在浅底主图中协调。主图排版未表达同一只动物或时序关系。",
+      "display_limits_zh": [
+        "深底中灰鼠、尾部和固定装置线条对比明显下降，优先使用浅底。",
+        "48px装置细线与脚趾合并，只能作场景概览，不能用于步骤或行为量值说明。",
+        "画布绑定旧目录，因此47标签保留旧鼠种未知状态；最新科学元数据已有独立来源确认mouse。消费新目录时须用新来源物种记录，品系仍未知。"
+      ],
+      "suitable_use_zh": "浅底上的鼠类实验场景选材；具体物种采用对应目录版本的来源证据，不能由轮廓推定品系。",
+      "use_assessment": "usable_for_stated_comparison_or_overview_with_recorded_limits",
+      "unified_cross_source_style_pass_claimed": false,
+      "native_editability_tested": false
+    },
+    {
+      "panel": 11,
+      "path": "build/curated-expansion-60/composition/11-clinical-sampling.png",
+      "sha256": "69e727d82285504bc0a9aa461ffc0a1de623f59331217e23c6d16d4a94fd99c6",
+      "review_method": "Actual individual view_image call; 2200x1500 file displayed by tool at1920x1308. No claim of native editing or full-resolution tiny text reading.",
+      "review_completed": true,
+      "items": [
+        {
+          "ordinal": 50,
+          "candidate_id": "togo-566ebe910304d8f21ef9:file-0",
+          "original_sha256": "10c58a71b1a29304672c3cc684c4ab8753de6d4e55217443c16ffda5e5a3da1b",
+          "preview_sha256": "87d4541a4329f558509266008a78a544fb9a6caf6d891b8a7bd552a048534657",
+          "original_archive": {
+            "member": "files/10/10c58a71b1a29304672c3cc684c4ab8753de6d4e55217443c16ffda5e5a3da1b.svg",
+            "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42261598057-1-b0000.tar.gz"
+          },
+          "preview_archive": {
+            "member": "previews/10c58a71b1a29304672c3cc684c4ab8753de6d4e55217443c16ffda5e5a3da1b.png",
+            "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42261598057-1-b0000.tar.gz"
+          }
+        },
+        {
+          "ordinal": 55,
+          "candidate_id": "togo-e58166ac8684f2ff6f0a:file-0",
+          "original_sha256": "043e3915172ac71ac24ef365f6d10795d34672784c06080fb99d5aebd112ca8d",
+          "preview_sha256": "aada6b11a1676c72837b0f2afea81cb6cbe36f692ee8cd6b2047d1084449a8c5",
+          "original_archive": {
+            "member": "files/04/043e3915172ac71ac24ef365f6d10795d34672784c06080fb99d5aebd112ca8d.svg",
+            "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42261598057-1-b0000.tar.gz"
+          },
+          "preview_archive": {
+            "member": "previews/043e3915172ac71ac24ef365f6d10795d34672784c06080fb99d5aebd112ca8d.png",
+            "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42261598057-1-b0000.tar.gz"
+          }
+        },
+        {
+          "ordinal": 52,
+          "candidate_id": "togo-ddd7adfee80048608d91:file-1",
+          "original_sha256": "22cf6386f1a4e6e0bf826ac9b29bb57aa3701bf015a4eedd55361f06fb7cb3fa",
+          "preview_sha256": "c730deb6084ff81b0ca7994d14db016c396762716cc6c099a66823195de1f326",
+          "original_archive": {
+            "member": "files/22/22cf6386f1a4e6e0bf826ac9b29bb57aa3701bf015a4eedd55361f06fb7cb3fa.png",
+            "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42261598057-1-b0000.tar.gz"
+          },
+          "preview_archive": {
+            "member": "previews/22cf6386f1a4e6e0bf826ac9b29bb57aa3701bf015a4eedd55361f06fb7cb3fa.png",
+            "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42261598057-1-b0000.tar.gz"
+          }
+        },
+        {
+          "ordinal": 54,
+          "candidate_id": "togo-9718c104999655d7a224:file-1",
+          "original_sha256": "39653320dd9f1cdc2918bcca0ed2b6a408ec6f3c53b35d71ceeef7def79920ad",
+          "preview_sha256": "4f43e725855a09eafe82d8bf16ecfabd90339cb26dcb875902cedeca28c9666e",
+          "original_archive": {
+            "member": "files/39/39653320dd9f1cdc2918bcca0ed2b6a408ec6f3c53b35d71ceeef7def79920ad.png",
+            "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42261598057-1-b0000.tar.gz"
+          },
+          "preview_archive": {
+            "member": "previews/39653320dd9f1cdc2918bcca0ed2b6a408ec6f3c53b35d71ceeef7def79920ad.png",
+            "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42261598057-1-b0000.tar.gz"
+          }
+        }
+      ],
+      "purpose_assessment_zh": "成人男性/女性采血及成人/儿童测压并列展示，场景对象清楚；没有连接箭头、操作时间线或受试者组别含义。",
+      "occlusion_observation_zh": "四幅场景互不遮挡，原有完整场景均保留，桌面及人物填充自然盖住底层色块；未见额外切断四幅主体。",
+      "style_observation_zh": "四图同为柔和无五官平涂人物，颜色、轮廓和视角相近，可在一张临床活动概览中并列使用；两幅采血与两幅测压的不同桌面透视已可见。",
+      "display_limits_zh": [
+        "96px人物关系尚可辨；48px只能识别总体场景，针/导管/袖带/读数不可用于科学细节验收。",
+        "各图原桌面实色，放置时要预留位置，不能当只有人物的透明剪影。",
+        "儿童图仅显示陪同成人，不能从画面推断亲属身份；无可读测量数值。"
+      ],
+      "suitable_use_zh": "临床采样与测量的概览；需表达规范操作细节时查看更大原件并按研究任务核对。",
+      "use_assessment": "usable_for_stated_comparison_or_overview_with_recorded_limits",
+      "unified_cross_source_style_pass_claimed": false,
+      "native_editability_tested": false
+    }
+  ],
+  "review_scope": "Actual purpose compositions05,06,11 only; other panels recorded by separate reviewers.",
+  "review_completed": true,
+  "full_curated_requirement_passed": false,
+  "source_originals_modified": false,
+  "preview_inputs_modified": false,
+  "text_cleanup_performed": false,
+  "native_editability_tested": false
+}
