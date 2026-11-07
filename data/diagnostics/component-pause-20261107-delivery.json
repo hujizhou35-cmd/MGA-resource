@@ -1,0 +1,126 @@
+{
+  "schema_version": 1,
+  "status": "saved_pause_checkpoint_not_acceptance",
+  "delivered_at": "2026-11-07T04:03:43.594179+00:00",
+  "release_tag": "acceptance-20261107",
+  "package": {
+    "name": "component-pause-20261107-1.metadata.tar.gz",
+    "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/acceptance-20261107/component-pause-20261107-1.metadata.tar.gz",
+    "sha256": "640791fb4305be1fba586ea451f8629e62014f95b408ee114996ac2497917428",
+    "size_bytes": 230304,
+    "github_asset_id": 719547359,
+    "github_digest": "sha256:640791fb4305be1fba586ea451f8629e62014f95b408ee114996ac2497917428",
+    "github_digest_verified": true
+  },
+  "members": [
+    {
+      "path": "data/relevance-reviews/component-42334004260-clinical-partial.json",
+      "sha256": "77a926f3c648678941f80cb53a5008ea32e0c978415dbb250470faf04528dad3",
+      "size_bytes": 88405
+    },
+    {
+      "path": "data/relevance-reviews/component-42334004260-human-body-partial.json",
+      "sha256": "ea48893e35faabe1fcff341f62eb95f1372afb4527696b01cbd57a4ce0e95966",
+      "size_bytes": 52462
+    },
+    {
+      "path": "build/component-benchmark-review/42336054640/download-receipts.json",
+      "sha256": "07fce00808888e03fd0998012145cc0b706db9272c2d3f5b979025883b62f573",
+      "size_bytes": 2083
+    },
+    {
+      "path": "build/component-benchmark-review/42336054640/first-vs-extra-replay-summary.json",
+      "sha256": "d1ae9e59519ee5de8946d04b8f32b10a0ae47968671925ae635edcb8a2b73351",
+      "size_bytes": 4255
+    },
+    {
+      "path": "build/component-benchmark-review/42336054640/first-vs-extra-replay-diff.json",
+      "sha256": "593cfd3d32e5b87e21ca30e0726eede671beba7f71a097bfa25affa4dbdf08d0",
+      "size_bytes": 3255806
+    },
+    {
+      "path": "build/component-benchmark-review/search-3.5.0-targeted.xml",
+      "sha256": "28b6262739d34d51d46431f6f98948db30483e90e3f8be4ee0b67711d86ea867",
+      "size_bytes": 9289
+    },
+    {
+      "path": "build/component-benchmark-review/search-3.5.0-final-targeted.xml",
+      "sha256": "657bba764711408ed00ede3963057fb70780b63a6132d607b24779d2bd628c8e",
+      "size_bytes": 1768
+    },
+    {
+      "path": "build/component-benchmark-review/pause-delivery/reindex-42335896259-excerpt.json",
+      "sha256": "62e3f13864dcb34bea579d343cc0f184637de3bfa2e8e976443d9837644bb9f8",
+      "size_bytes": 4479
+    },
+    {
+      "path": "build/component-benchmark-review/pause-delivery/component-pause-20261107-1.members.json",
+      "sha256": "9de8466f08cad222b426213d183692286507db29c9148b9a25f50f1d91e7bb4a",
+      "size_bytes": 3660
+    }
+  ],
+  "external_raw_packages": [
+    {
+      "name": "component-benchmark-42334004260-1.tar.gz",
+      "sha256": "0a03e7af2ea8ed828f51c5732c7c65e473f52de28baf866cf5046bfe5b880d5a",
+      "size_bytes": 901672,
+      "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/acceptance-20261107/component-benchmark-42334004260-1.tar.gz",
+      "github_asset_id": 719470419,
+      "github_digest": "sha256:0a03e7af2ea8ed828f51c5732c7c65e473f52de28baf866cf5046bfe5b880d5a",
+      "digest_verified": true,
+      "run_id": "42334004260",
+      "included_in_package": false
+    },
+    {
+      "name": "component-benchmark-42336054640-1.tar.gz",
+      "sha256": "2d395a18d825438e0afbf0b20ec6e46c12a5df3717ccec4416a52bda1b49e635",
+      "size_bytes": 955587,
+      "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/acceptance-20261107/component-benchmark-42336054640-1.tar.gz",
+      "github_asset_id": 719530392,
+      "github_digest": "sha256:2d395a18d825438e0afbf0b20ec6e46c12a5df3717ccec4416a52bda1b49e635",
+      "digest_verified": true,
+      "run_id": "42336054640",
+      "included_in_package": false
+    }
+  ],
+  "test_reports": [
+    {
+      "path": "build/component-benchmark-review/search-3.5.0-targeted.xml",
+      "tests": 56,
+      "failures": 1,
+      "errors": 0,
+      "skipped": 0
+    },
+    {
+      "path": "build/component-benchmark-review/search-3.5.0-final-targeted.xml",
+      "tests": 10,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    }
+  ],
+  "reindex_report_reference": {
+    "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/acceptance-20261107/assembly-42335896259-1.report.json",
+    "sha256": "3c10659c7e0577b7f1e4b863360e9919fe434349aef7325b9eedb47576d1fd22",
+    "size_bytes": 7753924,
+    "github_asset_id": 719525415,
+    "github_digest_verified": true,
+    "included_in_package": false
+  },
+  "scope": "Existing human-body/clinical partial reviews, extra replay exact-file/selected-science differences, both actual test outcomes, and cloud reindex policy/count/reference excerpt saved without modifying evidence.",
+  "new_queries_executed": 0,
+  "new_visual_inspections": 0,
+  "new_verdicts_assigned": 0,
+  "old_passes_migrated": 0,
+  "artwork_members": 0,
+  "catalog_or_sqlite_members": 0,
+  "raw_or_candidate_members": 0,
+  "acceptance_passed": false,
+  "website_deployed": false,
+  "limitations": [
+    "The initial test XML retains its real one failure; the later test run is separately preserved.",
+    "Nonempty search results and unchanged file bytes are not new-purpose visual passes.",
+    "The saved partial reviews and old94 bridge remain scoped to their recorded policy and actual observations.",
+    "This delivery performs no additional reindex, benchmark replay, image acquisition or review."
+  ]
+}

@@ -1,0 +1,1927 @@
+{
+  "schema_version": 1,
+  "status": "first_baseline_initial_clinical_review_not_formal_acceptance",
+  "reviewer": "scope_publication_check",
+  "reviewed_at": "2026-11-07T03:54:59.563714+00:00",
+  "bindings": {
+    "raw_results_sha256": "5fac0130d60538497d616ff03c5038bfca93176d351f1738f291e46334e35bd3",
+    "component_benchmark_sha256": "d4e462a631b88929bc3be419ab287599bb5a713de2e4cb0c2c84123cf5b94cef",
+    "catalog_sha256": "8a961c42a357147f2ae0229526f6127c955e05928721d94283e829463f738da0",
+    "publish_manifest_sha256": "e9cf028a56e6a3b827bad7e5e576d48599ca7e4224f4f5e7f8a7660f0dfdcbbe",
+    "search_core_sha256": "191c4631bb80f36a33ec2580739580ea4289a9726b09dfffb70d022b2a1382e6"
+  },
+  "source_documents": [
+    {
+      "path": "build/component-benchmark-review/42334004260/evidence/raw-component-results.json",
+      "sha256": "5fac0130d60538497d616ff03c5038bfca93176d351f1738f291e46334e35bd3"
+    },
+    {
+      "path": "data/component-benchmark.json",
+      "sha256": "d4e462a631b88929bc3be419ab287599bb5a713de2e4cb0c2c84123cf5b94cef"
+    },
+    {
+      "path": "data/relevance-reviews/frozen-3.4.1-animals-people-microbes.json",
+      "sha256": "c7df273d5e0b7ed7fec544c42267a9d977407476c13cba8195ea60ab4873424c"
+    },
+    {
+      "path": "build/science-version-acceptance-20261107/dispositions/candidate_publish_manifest.json",
+      "sha256": "e9cf028a56e6a3b827bad7e5e576d48599ca7e4224f4f5e7f8a7660f0dfdcbbe"
+    }
+  ],
+  "queries": [
+    {
+      "query_id": "component-clinical_workflow-cohort-followup--human_subject--zh",
+      "task_id": "component-clinical_workflow-cohort-followup",
+      "component_id": "human_subject",
+      "language": "zh",
+      "request": {
+        "query": "成年人物插画",
+        "filters": {},
+        "limit": 10,
+        "mode": "explore",
+        "seed": "diagnostic-fixed-project"
+      },
+      "request_sha256": "1f3f61868cbc3ba00d5bc4518475a7b060895945f9a9fa8b62e1f357ffa8ed89",
+      "query_plan": {
+        "query": "成年人物插画",
+        "terms": [
+          [
+            "成年"
+          ]
+        ],
+        "fts": "(\"成年\")",
+        "requirements": {},
+        "all_requirements": {},
+        "object_groups": [],
+        "preferences": {},
+        "soft_terms": [],
+        "empty": false,
+        "parsed_qualifiers": [],
+        "ranking_version": "shared-search-3.4.3"
+      },
+      "review_requirements": {
+        "expected_concepts": [
+          "human figure"
+        ],
+        "required_species": "human",
+        "visual_requirements": "实际可辨的人体人物，不携带真实个人身份或研究人数；仅作为研究中人体对象的代表，不声称来源人物已入组。",
+        "exclude_matches": [
+          "animal",
+          "identifiable patient photograph",
+          "cohort membership inferred from appearance"
+        ]
+      },
+      "actual_result_count": 0,
+      "results": [],
+      "parser_observation": "首次解析只保留“成年”，人物被剥除且成年未映射 adult；实际零结果。",
+      "component_use_pass": false,
+      "gap_reason": "Actual first-baseline result list is empty; no substitute or fallback search.",
+      "selected_variant_ids": [],
+      "composition_use_pass": null
+    },
+    {
+      "query_id": "component-clinical_workflow-cohort-followup--human_subject--en",
+      "task_id": "component-clinical_workflow-cohort-followup",
+      "component_id": "human_subject",
+      "language": "en",
+      "request": {
+        "query": "adult person illustration",
+        "filters": {},
+        "limit": 10,
+        "mode": "explore",
+        "seed": "diagnostic-fixed-project"
+      },
+      "request_sha256": "82c04dfa9bd9ee5a7d7817b75b51bdfb28e68388d5d8ceac40b05ab74fb4efe9",
+      "query_plan": {
+        "query": "adult person illustration",
+        "terms": [
+          [
+            "person",
+            "患者",
+            "病人",
+            "参与者",
+            "patient",
+            "participant"
+          ],
+          [
+            "adult"
+          ]
+        ],
+        "fts": "(\"person\" OR \"患者\" OR \"病人\" OR \"参与者\" OR \"patient\" OR \"participant\") AND (\"adult\")",
+        "requirements": {
+          "object": [
+            "person",
+            "患者",
+            "病人",
+            "参与者",
+            "patient",
+            "participant"
+          ]
+        },
+        "all_requirements": {},
+        "object_groups": [
+          [
+            "person",
+            "患者",
+            "病人",
+            "参与者",
+            "patient",
+            "participant"
+          ]
+        ],
+        "preferences": {},
+        "soft_terms": [],
+        "empty": false,
+        "parsed_qualifiers": [],
+        "ranking_version": "shared-search-3.4.3"
+      },
+      "review_requirements": {
+        "expected_concepts": [
+          "human figure"
+        ],
+        "required_species": "human",
+        "visual_requirements": "实际可辨的人体人物，不携带真实个人身份或研究人数；仅作为研究中人体对象的代表，不声称来源人物已入组。",
+        "exclude_matches": [
+          "animal",
+          "identifiable patient photograph",
+          "cohort membership inferred from appearance"
+        ]
+      },
+      "actual_result_count": 10,
+      "results": [
+        {
+          "rank": 1,
+          "candidate_id": "nih-bioart-2d9147079e799c272572:file-20",
+          "variant_id": "nih-bioart-2d9147079e799c272572:020b208f7e1dab88f9c631f9ebf47a1d04cf136a00d72fd655c397ac3ab9e19c:nih-bioart-0726ae13ea7daa9c772a:0",
+          "family_id": "nih-bioart-2d9147079e799c272572",
+          "title": "Long Hair Person in Lab Coat 3",
+          "original_sha256": "020b208f7e1dab88f9c631f9ebf47a1d04cf136a00d72fd655c397ac3ab9e19c",
+          "preview_sha256": "571c195357b03c7f9e5cda9798d640dfbb4a9adb93bd4f65176136538e7e2a57",
+          "original_archive": {
+            "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/nih-bioart-42236561214-1-b0001.tar.gz",
+            "member": "files/02/020b208f7e1dab88f9c631f9ebf47a1d04cf136a00d72fd655c397ac3ab9e19c.svg"
+          },
+          "preview_archive": {
+            "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/nih-bioart-42236561214-1-b0001.tar.gz",
+            "member": "previews/020b208f7e1dab88f9c631f9ebf47a1d04cf136a00d72fd655c397ac3ab9e19c.png"
+          },
+          "manifest_pair_metadata_checked": true,
+          "selected_source": {
+            "source": "nih-bioart",
+            "source_id": "743",
+            "attribution": "Long Hair Person in Lab Coat 3 — Austin J. Athman, NIH BioArt Source; https://bioart.niaid.nih.gov/bioart/743; Public Domain"
+          },
+          "file_source_records": [
+            {
+              "title": "Long Hair Person in Lab Coat 3",
+              "description": "Generic person icon with long hair and white lab coat in a circular inset. Skin Type 3 - Medium to Olive.",
+              "tags": [
+                "Adult",
+                "Female",
+                "Hair",
+                "Lab",
+                "People",
+                "Profile",
+                "Skin Type 3",
+                "Type 3 – Medium to Olive",
+                "Vector",
+                "avatar",
+                "circle",
+                "coat",
+                "female",
+                "hair",
+                "human",
+                "people",
+                "person",
+                "woman"
+              ],
+              "categories": [],
+              "taxonomy": [
+                "people",
+                "organs"
+              ],
+              "upstream_category": [
+                "Bioart Category",
+                "Anatomy",
+                "Age (Human)",
+                "Sex (Human)",
+                "Image Type",
+                "Fitzpatrick Skin Tones"
+              ],
+              "author": "Austin J. Athman",
+              "distribution_status": "license_recorded",
+              "asset_id": "nih-bioart-0726ae13ea7daa9c772a",
+              "source": "nih-bioart",
+              "source_id": "743",
+              "source_url": "https://bioart.niaid.nih.gov/bioart/743",
+              "url": "https://bioart.niaid.nih.gov/api/bioarts/743/files/791565",
+              "license": "Public-Domain",
+              "attribution": "Long Hair Person in Lab Coat 3 — Austin J. Athman, NIH BioArt Source; https://bioart.niaid.nih.gov/bioart/743; Public Domain"
+            }
+          ],
+          "new_visual_inspection_performed": false,
+          "provisional_role_verdict": "uncertain",
+          "review_status": "pending_exact_preview_review",
+          "notes": "已核本题实际返回与manifest绑定；在既有 data/relevance-reviews、data/curated-reviews、data/visual-reviews 未定位到本文件精确双SHA视觉记录，不能以来源标题替代看图。"
+        },
+        {
+          "rank": 2,
+          "candidate_id": "nih-bioart-bff908acc1343a66052d:file-1",
+          "variant_id": "nih-bioart-bff908acc1343a66052d:0a87367439993bb93a46e6894f5251824e79381ed1c7ca0c9f38428a636ebfc0:nih-bioart-b799255ded93eee0b0be:0",
+          "family_id": "nih-bioart-bff908acc1343a66052d",
+          "title": "Person in Hat 5",
+          "original_sha256": "0a87367439993bb93a46e6894f5251824e79381ed1c7ca0c9f38428a636ebfc0",
+          "preview_sha256": "4f9b08987220cd62f011f2b0f6129464388a9deee808ddc673f43f17f50fdc94",
+          "original_archive": {
+            "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/nih-bioart-42236561214-1-b0001.tar.gz",
+            "member": "files/0a/0a87367439993bb93a46e6894f5251824e79381ed1c7ca0c9f38428a636ebfc0.png"
+          },
+          "preview_archive": {
+            "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/nih-bioart-42236561214-1-b0001.tar.gz",
+            "member": "previews/0a87367439993bb93a46e6894f5251824e79381ed1c7ca0c9f38428a636ebfc0.png"
+          },
+          "manifest_pair_metadata_checked": true,
+          "selected_source": {
+            "source": "nih-bioart",
+            "source_id": "747",
+            "attribution": "Person in Hat 5 — Ryan Kissinger, NIH BioArt Source; https://bioart.niaid.nih.gov/bioart/747; Public Domain"
+          },
+          "file_source_records": [
+            {
+              "title": "Person in Hat 5",
+              "description": "Generic person icon with a hat in a circular inset. Skin Type 5 - Brown.",
+              "tags": [
+                "Adult",
+                "Male",
+                "People",
+                "Profile",
+                "Skin Type 5",
+                "Type 5 – Brown",
+                "Vector",
+                "avatar",
+                "circle",
+                "hat",
+                "human",
+                "man",
+                "people",
+                "person"
+              ],
+              "categories": [],
+              "taxonomy": [
+                "people",
+                "organs"
+              ],
+              "upstream_category": [
+                "Bioart Category",
+                "Sex (Human)",
+                "Image Type",
+                "Age (Human)",
+                "Fitzpatrick Skin Tones"
+              ],
+              "author": "Ryan Kissinger",
+              "distribution_status": "license_recorded",
+              "asset_id": "nih-bioart-b799255ded93eee0b0be",
+              "source": "nih-bioart",
+              "source_id": "747",
+              "source_url": "https://bioart.niaid.nih.gov/bioart/747",
+              "url": "https://bioart.niaid.nih.gov/api/bioarts/747/files/791710",
+              "license": "Public-Domain",
+              "attribution": "Person in Hat 5 — Ryan Kissinger, NIH BioArt Source; https://bioart.niaid.nih.gov/bioart/747; Public Domain"
+            }
+          ],
+          "new_visual_inspection_performed": false,
+          "provisional_role_verdict": "uncertain",
+          "review_status": "pending_exact_preview_review",
+          "notes": "已核本题实际返回与manifest绑定；在既有 data/relevance-reviews、data/curated-reviews、data/visual-reviews 未定位到本文件精确双SHA视觉记录，不能以来源标题替代看图。"
+        },
+        {
+          "rank": 3,
+          "candidate_id": "nih-bioart-5b91f62cf60eb83887ef:file-0",
+          "variant_id": "nih-bioart-5b91f62cf60eb83887ef:24a5babba9a341784bfdbdbce1fdd4a73678e2ca1fa8473aa26ee72579d4c36e:nih-bioart-0b53fb554bee1aeb5633:0",
+          "family_id": "nih-bioart-5b91f62cf60eb83887ef",
+          "title": "Doctor Patient",
+          "original_sha256": "24a5babba9a341784bfdbdbce1fdd4a73678e2ca1fa8473aa26ee72579d4c36e",
+          "preview_sha256": "d5a278e9b2eb33e8c42badd66ccfd9691708143e0d9534ff4532fd59de6ceeb7",
+          "original_archive": {
+            "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/nih-bioart-42236561214-1-b0000.tar.gz",
+            "member": "files/24/24a5babba9a341784bfdbdbce1fdd4a73678e2ca1fa8473aa26ee72579d4c36e.png"
+          },
+          "preview_archive": {
+            "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/nih-bioart-42236561214-1-b0000.tar.gz",
+            "member": "previews/24a5babba9a341784bfdbdbce1fdd4a73678e2ca1fa8473aa26ee72579d4c36e.png"
+          },
+          "manifest_pair_metadata_checked": true,
+          "selected_source": {
+            "source": "nih-bioart",
+            "source_id": "130",
+            "attribution": "Doctor Patient — Ryan Kissinger, NIH BioArt Source; https://bioart.niaid.nih.gov/bioart/130; Public Domain"
+          },
+          "file_source_records": [
+            {
+              "title": "Doctor Patient",
+              "description": " Doctor consulting with patient ",
+              "tags": [
+                "Adult",
+                "Female",
+                "People",
+                "Vector",
+                "clipboard",
+                "consulting",
+                "doctor patient",
+                "genetic counselling",
+                "man",
+                "people",
+                "scientist",
+                "woman"
+              ],
+              "categories": [],
+              "taxonomy": [
+                "people"
+              ],
+              "upstream_category": [
+                "Age (Human)",
+                "Bioart Category",
+                "Sex (Human)",
+                "Image Type"
+              ],
+              "author": "Ryan Kissinger",
+              "distribution_status": "license_recorded",
+              "asset_id": "nih-bioart-0b53fb554bee1aeb5633",
+              "source": "nih-bioart",
+              "source_id": "130",
+              "source_url": "https://bioart.niaid.nih.gov/bioart/130",
+              "url": "https://bioart.niaid.nih.gov/api/bioarts/130/files/629436",
+              "license": "Public-Domain",
+              "attribution": "Doctor Patient — Ryan Kissinger, NIH BioArt Source; https://bioart.niaid.nih.gov/bioart/130; Public Domain"
+            }
+          ],
+          "new_visual_inspection_performed": true,
+          "provisional_role_verdict": "relevant",
+          "review_status": "one_exact_preview_actually_viewed_for_new_human_subject_use_only",
+          "notes": "本题 human_subject EN 的第3项可有限用作人体对象代表；人体上身而非完整全身，且包含医患咨询情境。可保留局部场景使用；若任务需要独立中性人体切图，须在工作副本中另作选取/裁切并复查，不宣称此次已清理或抠出人物。不把来源人物称为已入组、已随访或患特定疾病；不挪作未返回本文件的consultation/clinical_assessment题得分。",
+          "prior_visual_observation": "带听诊器的临床人员向另一人解释夹板内容，另一人倾听，医患交流可辨。",
+          "prior_limits": [
+            "不是单独患者切图；不推断沟通内容、疾病或研究参与状态。"
+          ],
+          "visual_evidence": [
+            {
+              "path": "data/relevance-reviews/frozen-3.4.1-animals-people-microbes.json",
+              "sha256": "c7df273d5e0b7ed7fec544c42267a9d977407476c13cba8195ea60ab4873424c",
+              "json_pointer": "/concepts/5/items/6",
+              "sheet_evidence": {
+                "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/frozen-review-42298772894-1.tar.gz",
+                "sha256": "a4a7e7e6a9e2750472d39ac1d9acbb34e8461d559d6b3afc2141b1ecd76ed196",
+                "member": "concepts/people-patient.png",
+                "member_sha256": "077ab9f6747cd573d47492251119209a45bd9d12f1ae5e45d621e1a825b67b3b",
+                "tile": 7,
+                "bounds_xywh": [
+                  330,
+                  510,
+                  330,
+                  360
+                ],
+                "mapping_sha256": "fd7901163b7dba233b34808253ffe1561eb996020382275a85c1ed2ef0f17222"
+              }
+            },
+            {
+              "kind": "actual_local_exact_preview_view",
+              "path": "build/curated-expansion-60/preview-42320795764/review/previews/24a5babba9a341784bfdbdbce1fdd4a73678e2ca1fa8473aa26ee72579d4c36e.png",
+              "sha256": "d5a278e9b2eb33e8c42badd66ccfd9691708143e0d9534ff4532fd59de6ceeb7",
+              "mapping_path": "build/curated-expansion-60/display/expanded-display-mapping.json",
+              "mapping_sha256": "fe096d7aac72a5af732a599e3fbec616560c8bcf35684903e5e8f2423a8d7e84",
+              "mapping_json_pointer": "/items/4",
+              "original_sha256": "24a5babba9a341784bfdbdbce1fdd4a73678e2ca1fa8473aa26ee72579d4c36e",
+              "viewed_at": "2026-11-07T03:54:59.563714+00:00",
+              "new_view_count": 1
+            }
+          ],
+          "new_role_judgment_made": true,
+          "actual_visual_observations_zh": "实际查看512×310精确预览：左侧人物戴听诊器、持夹板和笔，右侧人物坐姿托腮倾听，两个成年外观的人体上身清楚可辨。夹板没有可读个人信息或研究数字，图为插画。人物具有临床咨询关系；听诊器未接触右侧人物，不能从本图宣称已进行体格检查。",
+          "use_limits_zh": [
+            "图面是双人咨询场景，不是独立全身人体；下缘截断上身属于原图构图限制。",
+            "人体为来源明确的Adult人物；不能推断确切年龄、真实身份、参与研究状态、疾病或检验结果。",
+            "没有实际展示身体检查、随访时间轴或分组；听诊器存在不等于已完成检查。",
+            "PNG为位图，不声明路径可编辑；文字清理、裁切、组合版面均未执行。"
+          ],
+          "text_observation": {
+            "status": "no_readable_text_observed_in_selected_preview",
+            "notes_zh": "夹板有外轮廓与夹扣，但本次预览无可读文字、患者编号、姓名或测量值；此观察不批量改写全库text字段。"
+          },
+          "species_requirement": {
+            "required_species": "human",
+            "applicability": "required",
+            "species_matches": true,
+            "basis": "实际预览清楚为人体人物；精确来源NIH130的People/Adult标签及Doctor consulting with patient描述共同支持。"
+          },
+          "adult_requirement": {
+            "status": "source_supported_and_visually_consistent",
+            "basis": "精确source_record.tags含Adult，来源upstream_category含Age (Human)；预览人物成年外观相符。成年依据来自该来源记录，不从任务要求回填；确切年龄未知。"
+          },
+          "source_evidence_checked": true,
+          "license_checked": true,
+          "source_checks": {
+            "source_record": {
+              "asset_id": "nih-bioart-0b53fb554bee1aeb5633",
+              "attribution": "Doctor Patient — Ryan Kissinger, NIH BioArt Source; https://bioart.niaid.nih.gov/bioart/130; Public Domain",
+              "author": "Ryan Kissinger",
+              "categories": [],
+              "description": " Doctor consulting with patient ",
+              "distribution_status": "license_recorded",
+              "license": "Public-Domain",
+              "source": "nih-bioart",
+              "source_id": "130",
+              "source_url": "https://bioart.niaid.nih.gov/bioart/130",
+              "tags": [
+                "Adult",
+                "Female",
+                "People",
+                "Vector",
+                "clipboard",
+                "consulting",
+                "doctor patient",
+                "genetic counselling",
+                "man",
+                "people",
+                "scientist",
+                "woman"
+              ],
+              "taxonomy": [
+                "people"
+              ],
+              "title": "Doctor Patient",
+              "upstream_category": [
+                "Age (Human)",
+                "Bioart Category",
+                "Sex (Human)",
+                "Image Type"
+              ],
+              "url": "https://bioart.niaid.nih.gov/api/bioarts/130/files/629436"
+            },
+            "manifest_reference": {
+              "path": "build/science-version-acceptance-20261107/dispositions/candidate_publish_manifest.json",
+              "sha256": "e9cf028a56e6a3b827bad7e5e576d48599ca7e4224f4f5e7f8a7660f0dfdcbbe",
+              "json_pointer": "/files/2703/provenance/0"
+            },
+            "exact_prior_source_evidence": {
+              "status": "exact_file_source_records_and_manifest_binding_checked",
+              "source_record_binding_verified": true,
+              "evidence": [
+                {
+                  "kind": "records",
+                  "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/nih-bioart-42236561214-1-b0000.records.jsonl",
+                  "sha256": "a6cef65fbf004e7401d66f53ed3543bcf0f33f52bcc72dd73b4a6906511fb66f",
+                  "size_bytes": 7195594,
+                  "matches_internal_record": true
+                },
+                {
+                  "kind": "receipt",
+                  "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/nih-bioart-42236561214-1-b0000.receipt.json",
+                  "sha256": "32778095e69d62fb0ec92e0491567a9026d113ae6013e2138fd5d80753f8ff23",
+                  "size_bytes": 89044,
+                  "matches_internal_record": true
+                }
+              ],
+              "catalog_sha256": "5c90306415ce5e7f36e875c7f57b19a91930aacfeeaeecdf9ad7662770f9a3fe",
+              "candidate_manifest_sha256": "a4fe0424ee8ecc32096090ef295242bdaa04b9ce29ff4f7a80948c95516d5436"
+            },
+            "exact_prior_license_evidence": {
+              "status": "exact_upstream_rights_metadata_checked",
+              "metadata_rights_fields_recorded": true,
+              "independent_live_legal_revalidation": false,
+              "claims": [
+                {
+                  "source": "nih-bioart",
+                  "source_id": "130",
+                  "license": "Public-Domain",
+                  "attribution": "Doctor Patient — Ryan Kissinger, NIH BioArt Source; https://bioart.niaid.nih.gov/bioart/130; Public Domain",
+                  "source_url": "https://bioart.niaid.nih.gov/bioart/130"
+                }
+              ],
+              "evidence": [
+                {
+                  "kind": "records",
+                  "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/nih-bioart-42236561214-1-b0000.records.jsonl",
+                  "sha256": "a6cef65fbf004e7401d66f53ed3543bcf0f33f52bcc72dd73b4a6906511fb66f",
+                  "size_bytes": 7195594,
+                  "matches_internal_record": true
+                },
+                {
+                  "kind": "receipt",
+                  "uri": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/nih-bioart-42236561214-1-b0000.receipt.json",
+                  "sha256": "32778095e69d62fb0ec92e0491567a9026d113ae6013e2138fd5d80753f8ff23",
+                  "size_bytes": 89044,
+                  "matches_internal_record": true
+                }
+              ],
+              "limit": "The exact recorded source license and credits match the candidate manifest; this is not a new legal opinion or a claim inferred from the query."
+            },
+            "meaning": "本次核对该精确文件的raw source与当前manifest和已审来源记录一致；Public-Domain及Ryan Kissinger署名可取得。不是新法律意见，也没有重新访问原站。",
+            "new_original_download_performed": false,
+            "new_legal_revalidation_performed": false
+          },
+          "reviewed_at": "2026-11-07T03:54:59.563714+00:00"
+        },
+        {
+          "rank": 4,
+          "candidate_id": "nih-bioart-0b11becf9df7efc56f30:file-8",
+          "variant_id": "nih-bioart-0b11becf9df7efc56f30:1014014a42ba287b7c999a6afef442866e452fe070e7ee2be566351c36385f93:nih-bioart-c6ec1a0e851863c4913d:0",
+          "family_id": "nih-bioart-0b11becf9df7efc56f30",
+          "title": "Short Hair Person 5",
+          "original_sha256": "1014014a42ba287b7c999a6afef442866e452fe070e7ee2be566351c36385f93",
+          "preview_sha256": "228687349243321ca0a073df74b96693da8164bc758f1e69aedc3a7095dfc773",
+          "original_archive": {
+            "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/nih-bioart-42236561214-1-b0001.tar.gz",
+            "member": "files/10/1014014a42ba287b7c999a6afef442866e452fe070e7ee2be566351c36385f93.png"
+          },
+          "preview_archive": {
+            "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/nih-bioart-42236561214-1-b0001.tar.gz",
+            "member": "previews/1014014a42ba287b7c999a6afef442866e452fe070e7ee2be566351c36385f93.png"
+          },
+          "manifest_pair_metadata_checked": true,
+          "selected_source": {
+            "source": "nih-bioart",
+            "source_id": "750",
+            "attribution": "Short Hair Person 5 — Ryan Kissinger, NIH BioArt Source; https://bioart.niaid.nih.gov/bioart/750; Public Domain"
+          },
+          "file_source_records": [
+            {
+              "title": "Short Hair Person 5",
+              "description": "Generic person icon with jacket in a circular icon. Skin Type 5 -Brown.",
+              "tags": [
+                "Adult",
+                "Female",
+                "Hair",
+                "Male",
+                "Other",
+                "People",
+                "Profile",
+                "Type 5 – Brown",
+                "Vector",
+                "avatar",
+                "circle",
+                "hair",
+                "human",
+                "jacket",
+                "man",
+                "people",
+                "person"
+              ],
+              "categories": [],
+              "taxonomy": [
+                "people",
+                "organs"
+              ],
+              "upstream_category": [
+                "Bioart Category",
+                "Anatomy",
+                "Sex (Human)",
+                "Image Type",
+                "Age (Human)",
+                "Sex (Human)",
+                "PA Medical Application",
+                "Fitzpatrick Skin Tones"
+              ],
+              "author": "Ryan Kissinger",
+              "distribution_status": "license_recorded",
+              "asset_id": "nih-bioart-c6ec1a0e851863c4913d",
+              "source": "nih-bioart",
+              "source_id": "750",
+              "source_url": "https://bioart.niaid.nih.gov/bioart/750",
+              "url": "https://bioart.niaid.nih.gov/api/bioarts/750/files/791870",
+              "license": "Public-Domain",
+              "attribution": "Short Hair Person 5 — Ryan Kissinger, NIH BioArt Source; https://bioart.niaid.nih.gov/bioart/750; Public Domain"
+            }
+          ],
+          "new_visual_inspection_performed": false,
+          "provisional_role_verdict": "uncertain",
+          "review_status": "pending_exact_preview_review",
+          "notes": "已核本题实际返回与manifest绑定；在既有 data/relevance-reviews、data/curated-reviews、data/visual-reviews 未定位到本文件精确双SHA视觉记录，不能以来源标题替代看图。"
+        },
+        {
+          "rank": 5,
+          "candidate_id": "nih-bioart-19f29435e8610f854638:file-0",
+          "variant_id": "nih-bioart-19f29435e8610f854638:2a48235cb19306b67766697bf4b6765775d3676a89a0a404f5a75a10a04cd625:nih-bioart-a7036d99e605ffa25811:0",
+          "family_id": "nih-bioart-19f29435e8610f854638",
+          "title": "Person Standing",
+          "original_sha256": "2a48235cb19306b67766697bf4b6765775d3676a89a0a404f5a75a10a04cd625",
+          "preview_sha256": "ae60060f650280544319e5dad77bcd21522cf9be599d4396f400b80c04b38134",
+          "original_archive": {
+            "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/nih-bioart-42236561214-1-b0001.tar.gz",
+            "member": "files/2a/2a48235cb19306b67766697bf4b6765775d3676a89a0a404f5a75a10a04cd625.png"
+          },
+          "preview_archive": {
+            "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/nih-bioart-42236561214-1-b0001.tar.gz",
+            "member": "previews/2a48235cb19306b67766697bf4b6765775d3676a89a0a404f5a75a10a04cd625.png"
+          },
+          "manifest_pair_metadata_checked": true,
+          "selected_source": {
+            "source": "nih-bioart",
+            "source_id": "555",
+            "attribution": "Person Standing — Ryan Kissinger, NIH BioArt Source; https://bioart.niaid.nih.gov/bioart/555; Public Domain"
+          },
+          "file_source_records": [
+            {
+              "title": "Person Standing",
+              "description": " Person wearing a hat standing. ",
+              "tags": [
+                "Abhilash",
+                "Adult",
+                "Bengaluru",
+                "Indian person",
+                "Male",
+                "People",
+                "Shaded",
+                "Type 5 – Brown",
+                "Vector",
+                "animal",
+                "hat",
+                "human",
+                "person",
+                "sunglasses"
+              ],
+              "categories": [],
+              "taxonomy": [
+                "animals",
+                "people",
+                "organs"
+              ],
+              "upstream_category": [
+                "Bioart Category",
+                "Image Style",
+                "Age (Human)",
+                "Fitzpatrick Skin Tones",
+                "Sex (Human)",
+                "Image Type"
+              ],
+              "author": "Ryan Kissinger",
+              "distribution_status": "license_recorded",
+              "asset_id": "nih-bioart-a7036d99e605ffa25811",
+              "source": "nih-bioart",
+              "source_id": "555",
+              "source_url": "https://bioart.niaid.nih.gov/bioart/555",
+              "url": "https://bioart.niaid.nih.gov/api/bioarts/555/files/643527",
+              "license": "Public-Domain",
+              "attribution": "Person Standing — Ryan Kissinger, NIH BioArt Source; https://bioart.niaid.nih.gov/bioart/555; Public Domain"
+            }
+          ],
+          "new_visual_inspection_performed": false,
+          "provisional_role_verdict": "uncertain",
+          "review_status": "pending_exact_preview_review",
+          "notes": "已核本题实际返回与manifest绑定；在既有 data/relevance-reviews、data/curated-reviews、data/visual-reviews 未定位到本文件精确双SHA视觉记录，不能以来源标题替代看图。"
+        },
+        {
+          "rank": 6,
+          "candidate_id": "healthicons-8ffe37b1a2391764b6f0:file-0",
+          "variant_id": "healthicons-8ffe37b1a2391764b6f0:2a91f269af30a8943041b5201a02756ce525fb132cca34d140bf77d3c0fd6436:healthicons-d3f8292def3dfd792937:0",
+          "family_id": "healthicons-8ffe37b1a2391764b6f0",
+          "title": "Person",
+          "original_sha256": "2a91f269af30a8943041b5201a02756ce525fb132cca34d140bf77d3c0fd6436",
+          "preview_sha256": "b47cb0d9876a36b99a59e51d3467ca950212fea0b6f920c23bd91f9e985a62a5",
+          "original_archive": {
+            "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/healthicons-42234355854-1-b0001.tar.gz",
+            "member": "files/2a/2a91f269af30a8943041b5201a02756ce525fb132cca34d140bf77d3c0fd6436.svg"
+          },
+          "preview_archive": {
+            "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/healthicons-42234355854-1-b0001.tar.gz",
+            "member": "previews/2a91f269af30a8943041b5201a02756ce525fb132cca34d140bf77d3c0fd6436.png"
+          },
+          "manifest_pair_metadata_checked": true,
+          "selected_source": {
+            "source": "healthicons",
+            "source_id": "public/icons/svg/filled/people/person.svg",
+            "attribution": "Person — Resolve to Save Lives / Health Icons contributors; https://github.com/resolvetosavelives/healthicons/blob/2080c1b40e4829f2f4217e03bc22908b4e402f6b/public/icons/svg/filled/people/person.svg; CC0-1.0"
+          },
+          "file_source_records": [
+            {
+              "title": "Person",
+              "tags": [
+                "Adult",
+                "Avatar",
+                "Man",
+                "Parent",
+                "User",
+                "Woman",
+                "filled",
+                "people"
+              ],
+              "categories": [],
+              "taxonomy": [
+                "people"
+              ],
+              "upstream_category": "people",
+              "author": "Resolve to Save Lives / Health Icons contributors",
+              "distribution_status": "license_recorded",
+              "asset_id": "healthicons-d3f8292def3dfd792937",
+              "source": "healthicons",
+              "source_id": "public/icons/svg/filled/people/person.svg",
+              "source_url": "https://github.com/resolvetosavelives/healthicons/blob/2080c1b40e4829f2f4217e03bc22908b4e402f6b/public/icons/svg/filled/people/person.svg",
+              "url": "https://raw.githubusercontent.com/resolvetosavelives/healthicons/2080c1b40e4829f2f4217e03bc22908b4e402f6b/public/icons/svg/filled/people/person.svg",
+              "license": "CC0-1.0",
+              "attribution": "Person — Resolve to Save Lives / Health Icons contributors; https://github.com/resolvetosavelives/healthicons/blob/2080c1b40e4829f2f4217e03bc22908b4e402f6b/public/icons/svg/filled/people/person.svg; CC0-1.0"
+            }
+          ],
+          "new_visual_inspection_performed": false,
+          "provisional_role_verdict": "uncertain",
+          "review_status": "pending_exact_preview_review",
+          "notes": "已核本题实际返回与manifest绑定；在既有 data/relevance-reviews、data/curated-reviews、data/visual-reviews 未定位到本文件精确双SHA视觉记录，不能以来源标题替代看图。"
+        },
+        {
+          "rank": 7,
+          "candidate_id": "nih-bioart-e5390f541ddd2d73044e:file-1",
+          "variant_id": "nih-bioart-e5390f541ddd2d73044e:1820e35e410f6ef4e037864e56e2a991d573cb3c4add7dd200b2b8712d6d6c43:nih-bioart-b51657e0d738c462e46c:0",
+          "family_id": "nih-bioart-e5390f541ddd2d73044e",
+          "title": "Long Hair Person in Lab Coat 5",
+          "original_sha256": "1820e35e410f6ef4e037864e56e2a991d573cb3c4add7dd200b2b8712d6d6c43",
+          "preview_sha256": "bb978b7cd51e847edfd1cfb8bc5a548803cd97c86f4fdabae2b5bbc0b6a71674",
+          "original_archive": {
+            "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/nih-bioart-42236561214-1-b0001.tar.gz",
+            "member": "files/18/1820e35e410f6ef4e037864e56e2a991d573cb3c4add7dd200b2b8712d6d6c43.png"
+          },
+          "preview_archive": {
+            "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/nih-bioart-42236561214-1-b0001.tar.gz",
+            "member": "previews/1820e35e410f6ef4e037864e56e2a991d573cb3c4add7dd200b2b8712d6d6c43.png"
+          },
+          "manifest_pair_metadata_checked": true,
+          "selected_source": {
+            "source": "nih-bioart",
+            "source_id": "745",
+            "attribution": "Long Hair Person in Lab Coat 5 — Austin J. Athman, NIH BioArt Source; https://bioart.niaid.nih.gov/bioart/745; Public Domain"
+          },
+          "file_source_records": [
+            {
+              "title": "Long Hair Person in Lab Coat 5",
+              "description": "Generic person icon with long hair and white lab coat in a circular inset. Skin Type 5 - Brown.",
+              "tags": [
+                "Adult",
+                "Female",
+                "Hair",
+                "Lab",
+                "People",
+                "Profile",
+                "Skin Type 5",
+                "Type 5 – Brown",
+                "Vector",
+                "avatar",
+                "circle",
+                "coat",
+                "female",
+                "hair",
+                "human",
+                "people",
+                "person",
+                "woman"
+              ],
+              "categories": [],
+              "taxonomy": [
+                "people",
+                "organs"
+              ],
+              "upstream_category": [
+                "Bioart Category",
+                "Anatomy",
+                "Age (Human)",
+                "Sex (Human)",
+                "Image Type",
+                "Fitzpatrick Skin Tones"
+              ],
+              "author": "Austin J. Athman",
+              "distribution_status": "license_recorded",
+              "asset_id": "nih-bioart-b51657e0d738c462e46c",
+              "source": "nih-bioart",
+              "source_id": "745",
+              "source_url": "https://bioart.niaid.nih.gov/bioart/745",
+              "url": "https://bioart.niaid.nih.gov/api/bioarts/745/files/791625",
+              "license": "Public-Domain",
+              "attribution": "Long Hair Person in Lab Coat 5 — Austin J. Athman, NIH BioArt Source; https://bioart.niaid.nih.gov/bioart/745; Public Domain"
+            }
+          ],
+          "new_visual_inspection_performed": false,
+          "provisional_role_verdict": "uncertain",
+          "review_status": "pending_exact_preview_review",
+          "notes": "已核本题实际返回与manifest绑定；在既有 data/relevance-reviews、data/curated-reviews、data/visual-reviews 未定位到本文件精确双SHA视觉记录，不能以来源标题替代看图。"
+        },
+        {
+          "rank": 8,
+          "candidate_id": "nih-bioart-31deb3116b1eb9a06337:file-5",
+          "variant_id": "nih-bioart-31deb3116b1eb9a06337:17b02fc638c77d5ee9bdd1769e42cb58ff433862b86284b6059cc17cef337c56:nih-bioart-4939680c7865d823f6dc:0",
+          "family_id": "nih-bioart-31deb3116b1eb9a06337",
+          "title": "Short Hair Person in Lab Coat 3",
+          "original_sha256": "17b02fc638c77d5ee9bdd1769e42cb58ff433862b86284b6059cc17cef337c56",
+          "preview_sha256": "f0bc792e11ef3298f18a23df1e665167a96c603bc25a6db0dcb8581e60485e26",
+          "original_archive": {
+            "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/nih-bioart-42236561214-1-b0001.tar.gz",
+            "member": "files/17/17b02fc638c77d5ee9bdd1769e42cb58ff433862b86284b6059cc17cef337c56.png"
+          },
+          "preview_archive": {
+            "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/nih-bioart-42236561214-1-b0001.tar.gz",
+            "member": "previews/17b02fc638c77d5ee9bdd1769e42cb58ff433862b86284b6059cc17cef337c56.png"
+          },
+          "manifest_pair_metadata_checked": true,
+          "selected_source": {
+            "source": "nih-bioart",
+            "source_id": "751",
+            "attribution": "Short Hair Person in Lab Coat 3 — Ryan Kissinger, NIH BioArt Source; https://bioart.niaid.nih.gov/bioart/751; Public Domain"
+          },
+          "file_source_records": [
+            {
+              "title": "Short Hair Person in Lab Coat 3",
+              "description": "Generic person icon with short hair and white lab coat in a circular inset. Skin Type 3 - Medium to Olive.",
+              "tags": [
+                "Adult",
+                "Female",
+                "Hair",
+                "Lab",
+                "Male",
+                "Other",
+                "People",
+                "Profile",
+                "Skin Type 3",
+                "Type 3 – Medium to Olive",
+                "Vector",
+                "avatar",
+                "circle",
+                "coat",
+                "hair",
+                "human",
+                "man",
+                "people",
+                "person"
+              ],
+              "categories": [],
+              "taxonomy": [
+                "people",
+                "organs"
+              ],
+              "upstream_category": [
+                "Bioart Category",
+                "Anatomy",
+                "Sex (Human)",
+                "Image Type",
+                "Age (Human)",
+                "Sex (Human)",
+                "PA Medical Application",
+                "Fitzpatrick Skin Tones"
+              ],
+              "author": "Ryan Kissinger",
+              "distribution_status": "license_recorded",
+              "asset_id": "nih-bioart-4939680c7865d823f6dc",
+              "source": "nih-bioart",
+              "source_id": "751",
+              "source_url": "https://bioart.niaid.nih.gov/bioart/751",
+              "url": "https://bioart.niaid.nih.gov/api/bioarts/751/files/791903",
+              "license": "Public-Domain",
+              "attribution": "Short Hair Person in Lab Coat 3 — Ryan Kissinger, NIH BioArt Source; https://bioart.niaid.nih.gov/bioart/751; Public Domain"
+            }
+          ],
+          "new_visual_inspection_performed": false,
+          "provisional_role_verdict": "uncertain",
+          "review_status": "pending_exact_preview_review",
+          "notes": "已核本题实际返回与manifest绑定；在既有 data/relevance-reviews、data/curated-reviews、data/visual-reviews 未定位到本文件精确双SHA视觉记录，不能以来源标题替代看图。"
+        },
+        {
+          "rank": 9,
+          "candidate_id": "nih-bioart-8e79073e15120955e045:file-16",
+          "variant_id": "nih-bioart-8e79073e15120955e045:02c261fd5f314f363c07bdfa16fcd2bd5d27c89f72d86a42d0381451a3ad5fde:nih-bioart-91595da9cf15b50de113:0",
+          "family_id": "nih-bioart-8e79073e15120955e045",
+          "title": "Long Hair Person 4",
+          "original_sha256": "02c261fd5f314f363c07bdfa16fcd2bd5d27c89f72d86a42d0381451a3ad5fde",
+          "preview_sha256": "759ab5867a0b6b4d09907aa3f08f50fda5b474829073adc6877769d6d2309bf0",
+          "original_archive": {
+            "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/nih-bioart-42236561214-1-b0001.tar.gz",
+            "member": "files/02/02c261fd5f314f363c07bdfa16fcd2bd5d27c89f72d86a42d0381451a3ad5fde.svg"
+          },
+          "preview_archive": {
+            "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/nih-bioart-42236561214-1-b0001.tar.gz",
+            "member": "previews/02c261fd5f314f363c07bdfa16fcd2bd5d27c89f72d86a42d0381451a3ad5fde.png"
+          },
+          "manifest_pair_metadata_checked": true,
+          "selected_source": {
+            "source": "nih-bioart",
+            "source_id": "741",
+            "attribution": "Long Hair Person 4 — Ryan Kissinger, NIH BioArt Source; https://bioart.niaid.nih.gov/bioart/741; Public Domain"
+          },
+          "file_source_records": [
+            {
+              "title": "Long Hair Person 4",
+              "description": "Generic person icon with long hair in a circular inset. Skin Type 4 - Olive.",
+              "tags": [
+                "Adult",
+                "Female",
+                "Hair",
+                "People",
+                "Profile",
+                "Vector",
+                "avatar",
+                "circle",
+                "female",
+                "hair",
+                "human",
+                "people",
+                "person",
+                "woman"
+              ],
+              "categories": [],
+              "taxonomy": [
+                "people",
+                "organs"
+              ],
+              "upstream_category": [
+                "Bioart Category",
+                "Anatomy",
+                "Age (Human)",
+                "Sex (Human)",
+                "Image Type"
+              ],
+              "author": "Ryan Kissinger",
+              "distribution_status": "license_recorded",
+              "asset_id": "nih-bioart-91595da9cf15b50de113",
+              "source": "nih-bioart",
+              "source_id": "741",
+              "source_url": "https://bioart.niaid.nih.gov/bioart/741",
+              "url": "https://bioart.niaid.nih.gov/api/bioarts/741/files/791462",
+              "license": "Public-Domain",
+              "attribution": "Long Hair Person 4 — Ryan Kissinger, NIH BioArt Source; https://bioart.niaid.nih.gov/bioart/741; Public Domain"
+            }
+          ],
+          "new_visual_inspection_performed": false,
+          "provisional_role_verdict": "uncertain",
+          "review_status": "pending_exact_preview_review",
+          "notes": "已核本题实际返回与manifest绑定；在既有 data/relevance-reviews、data/curated-reviews、data/visual-reviews 未定位到本文件精确双SHA视觉记录，不能以来源标题替代看图。"
+        },
+        {
+          "rank": 10,
+          "candidate_id": "nih-bioart-37bd132ae6824955fce4:file-0",
+          "variant_id": "nih-bioart-37bd132ae6824955fce4:2c30b2e977c5bb17a34c6e0f45d0622c2f2328d35050c44bc1cb2879a451bdcc:nih-bioart-9ce7d59281894e9dd97a:0",
+          "family_id": "nih-bioart-37bd132ae6824955fce4",
+          "title": "Person walking",
+          "original_sha256": "2c30b2e977c5bb17a34c6e0f45d0622c2f2328d35050c44bc1cb2879a451bdcc",
+          "preview_sha256": "1e4fe6522e88210fcca6145ca73bc89dea9d85b55a9d6006038cb3752d21973b",
+          "original_archive": {
+            "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/nih-bioart-42236561214-1-b0000.tar.gz",
+            "member": "files/2c/2c30b2e977c5bb17a34c6e0f45d0622c2f2328d35050c44bc1cb2879a451bdcc.png"
+          },
+          "preview_archive": {
+            "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/nih-bioart-42236561214-1-b0000.tar.gz",
+            "member": "previews/2c30b2e977c5bb17a34c6e0f45d0622c2f2328d35050c44bc1cb2879a451bdcc.png"
+          },
+          "manifest_pair_metadata_checked": true,
+          "selected_source": {
+            "source": "nih-bioart",
+            "source_id": "389",
+            "attribution": "Person walking — Ryan Kissinger, NIH BioArt Source; https://bioart.niaid.nih.gov/bioart/389; Public Domain"
+          },
+          "file_source_records": [
+            {
+              "title": "Person walking",
+              "description": " Person walking looking over shoulder. ",
+              "tags": [
+                "Adult",
+                "Male",
+                "Pathology",
+                "People",
+                "Vector",
+                "Walking",
+                "humans",
+                "man",
+                "standing"
+              ],
+              "categories": [],
+              "taxonomy": [
+                "people"
+              ],
+              "upstream_category": [
+                "Age (Human)",
+                "Sex (Human)",
+                "Bioart Category",
+                "Scientific Disciplines And Research Areas",
+                "Image Type"
+              ],
+              "author": "Ryan Kissinger",
+              "distribution_status": "license_recorded",
+              "asset_id": "nih-bioart-9ce7d59281894e9dd97a",
+              "source": "nih-bioart",
+              "source_id": "389",
+              "source_url": "https://bioart.niaid.nih.gov/bioart/389",
+              "url": "https://bioart.niaid.nih.gov/api/bioarts/389/files/633121",
+              "license": "Public-Domain",
+              "attribution": "Person walking — Ryan Kissinger, NIH BioArt Source; https://bioart.niaid.nih.gov/bioart/389; Public Domain"
+            }
+          ],
+          "new_visual_inspection_performed": false,
+          "provisional_role_verdict": "uncertain",
+          "review_status": "pending_exact_preview_review",
+          "notes": "已核本题实际返回与manifest绑定；在既有 data/relevance-reviews、data/curated-reviews、data/visual-reviews 未定位到本文件精确双SHA视觉记录，不能以来源标题替代看图。"
+        }
+      ],
+      "parser_observation": "首次解析 person 同义组 AND adult，实际返回10件；需逐图判断中性人体用途，不能从 Adult 标签独立推出图面可用。",
+      "component_use_pass": null,
+      "gap_reason": "One returned exact file was actually viewed for the human-subject role, but the other nine results remain unviewed and the companion clinical-assessment role is empty. No complete role/task acceptance is claimed.",
+      "selected_variant_ids": [],
+      "composition_use_pass": null,
+      "partial_confirmed_variant_ids": [
+        "nih-bioart-5b91f62cf60eb83887ef:24a5babba9a341784bfdbdbce1fdd4a73678e2ca1fa8473aa26ee72579d4c36e:nih-bioart-0b53fb554bee1aeb5633:0"
+      ]
+    },
+    {
+      "query_id": "component-clinical_workflow-cohort-followup--clinical_assessment--zh",
+      "task_id": "component-clinical_workflow-cohort-followup",
+      "component_id": "clinical_assessment",
+      "language": "zh",
+      "request": {
+        "query": "医生为患者检查的场景插画",
+        "filters": {},
+        "limit": 10,
+        "mode": "explore",
+        "seed": "diagnostic-fixed-project"
+      },
+      "request_sha256": "2eccffd9b059cc1e02344140d5d41d7b7838a028fa0dcb0549faae300f665963",
+      "query_plan": {
+        "query": "医生为患者检查的场景插画",
+        "terms": [
+          [
+            "医生",
+            "doctor",
+            "physician"
+          ],
+          [
+            "患者",
+            "病人",
+            "patient"
+          ],
+          [
+            "为"
+          ],
+          [
+            "检查"
+          ],
+          [
+            "场景"
+          ]
+        ],
+        "fts": "(\"医生\" OR \"doctor\" OR \"physician\") AND (\"患者\" OR \"病人\" OR \"patient\") AND (\"为\") AND (\"检查\") AND (\"场景\")",
+        "requirements": {
+          "object": [
+            "医生",
+            "doctor",
+            "physician",
+            "患者",
+            "病人",
+            "patient"
+          ]
+        },
+        "all_requirements": {},
+        "object_groups": [
+          [
+            "医生",
+            "doctor",
+            "physician"
+          ],
+          [
+            "患者",
+            "病人",
+            "patient"
+          ]
+        ],
+        "preferences": {},
+        "soft_terms": [],
+        "empty": false,
+        "parsed_qualifiers": [],
+        "ranking_version": "shared-search-3.4.3"
+      },
+      "review_requirements": {
+        "expected_concepts": [
+          "clinical examination",
+          "patient"
+        ],
+        "required_species": "human",
+        "visual_requirements": "图中可见临床人员与受检者及检查/评估关系，来源与图面支持临床情境；单独医生、普通会议人物或仪器不能代替该场景。",
+        "exclude_matches": [
+          "isolated clinician",
+          "business meeting",
+          "complete follow-up study diagram"
+        ]
+      },
+      "actual_result_count": 0,
+      "results": [],
+      "parser_observation": "除医生/患者外，还强制匹配“为”“检查”“场景”；中文功能词及未规范化动作词可能阻断召回。检查关系本身不能被直接删除。",
+      "component_use_pass": false,
+      "gap_reason": "Actual first-baseline result list is empty; no substitute or fallback search.",
+      "selected_variant_ids": [],
+      "composition_use_pass": null
+    },
+    {
+      "query_id": "component-clinical_workflow-cohort-followup--clinical_assessment--en",
+      "task_id": "component-clinical_workflow-cohort-followup",
+      "component_id": "clinical_assessment",
+      "language": "en",
+      "request": {
+        "query": "clinician examining a patient illustration",
+        "filters": {},
+        "limit": 10,
+        "mode": "explore",
+        "seed": "diagnostic-fixed-project"
+      },
+      "request_sha256": "967b03652f60be236507402bb5a9b1617d5a71037d570628a5e73346b9884f01",
+      "query_plan": {
+        "query": "clinician examining a patient illustration",
+        "terms": [
+          [
+            "clinician",
+            "医生",
+            "临床医生",
+            "doctor",
+            "physician"
+          ],
+          [
+            "patient",
+            "患者",
+            "病人"
+          ],
+          [
+            "examining"
+          ]
+        ],
+        "fts": "(\"clinician\" OR \"医生\" OR \"临床医生\" OR \"doctor\" OR \"physician\") AND (\"patient\" OR \"患者\" OR \"病人\") AND (\"examining\")",
+        "requirements": {
+          "object": [
+            "clinician",
+            "医生",
+            "临床医生",
+            "doctor",
+            "physician",
+            "patient",
+            "患者",
+            "病人"
+          ]
+        },
+        "all_requirements": {},
+        "object_groups": [
+          [
+            "clinician",
+            "医生",
+            "临床医生",
+            "doctor",
+            "physician"
+          ],
+          [
+            "patient",
+            "患者",
+            "病人"
+          ]
+        ],
+        "preferences": {},
+        "soft_terms": [],
+        "empty": false,
+        "parsed_qualifiers": [],
+        "ranking_version": "shared-search-3.4.3"
+      },
+      "review_requirements": {
+        "expected_concepts": [
+          "clinical examination",
+          "patient"
+        ],
+        "required_species": "human",
+        "visual_requirements": "图中可见临床人员与受检者及检查/评估关系，来源与图面支持临床情境；单独医生、普通会议人物或仪器不能代替该场景。",
+        "exclude_matches": [
+          "isolated clinician",
+          "business meeting",
+          "complete follow-up study diagram"
+        ]
+      },
+      "actual_result_count": 0,
+      "results": [],
+      "parser_observation": "除 clinician/patient 外强制 literal examining；词形与检查/评估表述尚未归一。临床人员和受检者的检查关系仍必须由实际来源和图面证明。",
+      "component_use_pass": false,
+      "gap_reason": "Actual first-baseline result list is empty; no substitute or fallback search.",
+      "selected_variant_ids": [],
+      "composition_use_pass": null
+    },
+    {
+      "query_id": "component-clinical_workflow-randomization--people_group--zh",
+      "task_id": "component-clinical_workflow-randomization",
+      "component_id": "people_group",
+      "language": "zh",
+      "request": {
+        "query": "人群插画",
+        "filters": {},
+        "limit": 10,
+        "mode": "explore",
+        "seed": "diagnostic-fixed-project"
+      },
+      "request_sha256": "40cd30a378522aca9bf69fbfd23ef821ccfb342c25b206d2e6a9778440470e65",
+      "query_plan": {
+        "query": "人群插画",
+        "terms": [
+          [
+            "人群"
+          ]
+        ],
+        "fts": "(\"人群\")",
+        "requirements": {},
+        "all_requirements": {},
+        "object_groups": [],
+        "preferences": {},
+        "soft_terms": [],
+        "empty": false,
+        "parsed_qualifiers": [],
+        "ranking_version": "shared-search-3.4.3"
+      },
+      "review_requirements": {
+        "expected_concepts": [
+          "group of people"
+        ],
+        "required_species": "human",
+        "visual_requirements": "至少两个可区分的人体人物组成的群体，不是几个未标识圆点；不把图中人数当样本量或把一般人群称已随机分配。",
+        "exclude_matches": [
+          "anonymous geometric dots",
+          "invented sample size",
+          "grouping claimed as randomization"
+        ]
+      },
+      "actual_result_count": 0,
+      "results": [],
+      "parser_observation": "只有 literal 中文“人群”；没有 group of people 等跨语种概念映射。",
+      "component_use_pass": false,
+      "gap_reason": "Actual first-baseline result list is empty; no substitute or fallback search.",
+      "selected_variant_ids": [],
+      "composition_use_pass": null
+    },
+    {
+      "query_id": "component-clinical_workflow-randomization--people_group--en",
+      "task_id": "component-clinical_workflow-randomization",
+      "component_id": "people_group",
+      "language": "en",
+      "request": {
+        "query": "group of people illustration",
+        "filters": {},
+        "limit": 10,
+        "mode": "explore",
+        "seed": "diagnostic-fixed-project"
+      },
+      "request_sha256": "a389e910179a27fce63941a850db7f974edb2c2ce31921acc97e61eeeea2115b",
+      "query_plan": {
+        "query": "group of people illustration",
+        "terms": [
+          [
+            "group"
+          ],
+          [
+            "people"
+          ]
+        ],
+        "fts": "(\"group\") AND (\"people\")",
+        "requirements": {},
+        "all_requirements": {},
+        "object_groups": [],
+        "preferences": {},
+        "soft_terms": [],
+        "empty": false,
+        "parsed_qualifiers": [],
+        "ranking_version": "shared-search-3.4.3"
+      },
+      "review_requirements": {
+        "expected_concepts": [
+          "group of people"
+        ],
+        "required_species": "human",
+        "visual_requirements": "至少两个可区分的人体人物组成的群体，不是几个未标识圆点；不把图中人数当样本量或把一般人群称已随机分配。",
+        "exclude_matches": [
+          "anonymous geometric dots",
+          "invented sample size",
+          "grouping claimed as randomization"
+        ]
+      },
+      "actual_result_count": 5,
+      "results": [
+        {
+          "rank": 1,
+          "candidate_id": "nih-bioart-57b76866d5aea134f7b4:file-1",
+          "variant_id": "nih-bioart-57b76866d5aea134f7b4:e2ec71fbfd15863aeca1be8d12b2fb517b51f10d837fcd774bf48198b90fc518:nih-bioart-b4b80f03c723ec6ea19c:0",
+          "family_id": "nih-bioart-57b76866d5aea134f7b4",
+          "title": "Group of People",
+          "original_sha256": "e2ec71fbfd15863aeca1be8d12b2fb517b51f10d837fcd774bf48198b90fc518",
+          "preview_sha256": "4c4e913ed53c7e931ddf4feebdf2a9ad5f367a41f88bab1cee41519eb7559b63",
+          "original_archive": {
+            "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/nih-bioart-42236561214-1-b0000.tar.gz",
+            "member": "files/e2/e2ec71fbfd15863aeca1be8d12b2fb517b51f10d837fcd774bf48198b90fc518.svg"
+          },
+          "preview_archive": {
+            "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/nih-bioart-42236561214-1-b0000.tar.gz",
+            "member": "previews/e2ec71fbfd15863aeca1be8d12b2fb517b51f10d837fcd774bf48198b90fc518.png"
+          },
+          "manifest_pair_metadata_checked": true,
+          "selected_source": {
+            "source": "nih-bioart",
+            "source_id": "185",
+            "attribution": "Group of People — Ryan Kissinger, NIH BioArt Source; https://bioart.niaid.nih.gov/bioart/185; Public Domain"
+          },
+          "file_source_records": [
+            {
+              "title": "Group of People",
+              "description": " Diverse group of people ",
+              "tags": [
+                "Adult",
+                "Female",
+                "Infant",
+                "Male",
+                "People",
+                "Senior",
+                "Toddler",
+                "Type 1 – Light, Pale White",
+                "Type 2 – Fair",
+                "Type 3 – Medium to Olive",
+                "Type 4 – Olive",
+                "Type 5 – Brown",
+                "Type 6 – Dark Brown to Black",
+                "Vector",
+                "diverse",
+                "group",
+                "human",
+                "people",
+                "population",
+                "representative",
+                "world"
+              ],
+              "categories": [],
+              "taxonomy": [
+                "people",
+                "organs"
+              ],
+              "upstream_category": [
+                "Age (Human)",
+                "Age (Human)",
+                "Age (Human)",
+                "Age (Human)",
+                "Sex (Human)",
+                "Sex (Human)",
+                "Fitzpatrick Skin Tones",
+                "Fitzpatrick Skin Tones",
+                "Fitzpatrick Skin Tones",
+                "Fitzpatrick Skin Tones",
+                "Fitzpatrick Skin Tones",
+                "Fitzpatrick Skin Tones",
+                "Bioart Category",
+                "Image Type"
+              ],
+              "author": "Ryan Kissinger",
+              "distribution_status": "license_recorded",
+              "asset_id": "nih-bioart-b4b80f03c723ec6ea19c",
+              "source": "nih-bioart",
+              "source_id": "185",
+              "source_url": "https://bioart.niaid.nih.gov/bioart/185",
+              "url": "https://bioart.niaid.nih.gov/api/bioarts/185/files/630278",
+              "license": "Public-Domain",
+              "attribution": "Group of People — Ryan Kissinger, NIH BioArt Source; https://bioart.niaid.nih.gov/bioart/185; Public Domain"
+            }
+          ],
+          "new_visual_inspection_performed": false,
+          "provisional_role_verdict": "uncertain",
+          "review_status": "pending_exact_preview_review",
+          "notes": "已核本题实际返回与manifest绑定；在既有 data/relevance-reviews、data/curated-reviews、data/visual-reviews 未定位到本文件精确双SHA视觉记录，不能以来源标题替代看图。"
+        },
+        {
+          "rank": 2,
+          "candidate_id": "healthicons-618c7593b402749acc19:file-1",
+          "variant_id": "healthicons-618c7593b402749acc19:a227119302b50f074120f89ac8a464725620ee773695996c70fa53b626f7f6c9:healthicons-58a76b2e8435db45930e:0",
+          "family_id": "healthicons-618c7593b402749acc19",
+          "title": "Group Discussion",
+          "original_sha256": "a227119302b50f074120f89ac8a464725620ee773695996c70fa53b626f7f6c9",
+          "preview_sha256": "6f564d8cd12439e31fbfca394a24f7604fc9329d25c0f413e36e8c534a088e72",
+          "original_archive": {
+            "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/healthicons-42234355854-1-b0001.tar.gz",
+            "member": "files/a2/a227119302b50f074120f89ac8a464725620ee773695996c70fa53b626f7f6c9.svg"
+          },
+          "preview_archive": {
+            "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/healthicons-42234355854-1-b0001.tar.gz",
+            "member": "previews/a227119302b50f074120f89ac8a464725620ee773695996c70fa53b626f7f6c9.png"
+          },
+          "manifest_pair_metadata_checked": true,
+          "selected_source": {
+            "source": "healthicons",
+            "source_id": "public/icons/svg/filled/people/group-discussion_meetingx3.svg",
+            "attribution": "Group Discussion — Resolve to Save Lives / Health Icons contributors; https://github.com/resolvetosavelives/healthicons/blob/2080c1b40e4829f2f4217e03bc22908b4e402f6b/public/icons/svg/filled/people/group-discussion_meetingx3.svg; CC0-1.0"
+          },
+          "file_source_records": [
+            {
+              "title": "Group Discussion",
+              "tags": [
+                "Chat",
+                "Discussion",
+                "Forum",
+                "Meeting",
+                "People",
+                "Speech",
+                "filled",
+                "people"
+              ],
+              "categories": [],
+              "taxonomy": [
+                "people"
+              ],
+              "upstream_category": "people",
+              "author": "Resolve to Save Lives / Health Icons contributors",
+              "distribution_status": "license_recorded",
+              "asset_id": "healthicons-58a76b2e8435db45930e",
+              "source": "healthicons",
+              "source_id": "public/icons/svg/filled/people/group-discussion_meetingx3.svg",
+              "source_url": "https://github.com/resolvetosavelives/healthicons/blob/2080c1b40e4829f2f4217e03bc22908b4e402f6b/public/icons/svg/filled/people/group-discussion_meetingx3.svg",
+              "url": "https://raw.githubusercontent.com/resolvetosavelives/healthicons/2080c1b40e4829f2f4217e03bc22908b4e402f6b/public/icons/svg/filled/people/group-discussion_meetingx3.svg",
+              "license": "CC0-1.0",
+              "attribution": "Group Discussion — Resolve to Save Lives / Health Icons contributors; https://github.com/resolvetosavelives/healthicons/blob/2080c1b40e4829f2f4217e03bc22908b4e402f6b/public/icons/svg/filled/people/group-discussion_meetingx3.svg; CC0-1.0"
+            }
+          ],
+          "new_visual_inspection_performed": false,
+          "provisional_role_verdict": "uncertain",
+          "review_status": "pending_exact_preview_review",
+          "notes": "已核本题实际返回与manifest绑定；在既有 data/relevance-reviews、data/curated-reviews、data/visual-reviews 未定位到本文件精确双SHA视觉记录，不能以来源标题替代看图。"
+        },
+        {
+          "rank": 3,
+          "candidate_id": "healthicons-ee992d5ea980e67e0ecd:file-0",
+          "variant_id": "healthicons-ee992d5ea980e67e0ecd:a5d9fa5c1edf7772d3febddba5dfef7fbc55dee200689d1724e73e7df1e7a1bf:healthicons-3d7757c3de235edb3a87:0",
+          "family_id": "healthicons-ee992d5ea980e67e0ecd",
+          "title": "People",
+          "original_sha256": "a5d9fa5c1edf7772d3febddba5dfef7fbc55dee200689d1724e73e7df1e7a1bf",
+          "preview_sha256": "08ba71bf019bedfb1cd09cdb9e3ea48b37a81e6cbddb3d8e4e6bac25f4300250",
+          "original_archive": {
+            "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/healthicons-42234355854-1-b0001.tar.gz",
+            "member": "files/a5/a5d9fa5c1edf7772d3febddba5dfef7fbc55dee200689d1724e73e7df1e7a1bf.svg"
+          },
+          "preview_archive": {
+            "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/healthicons-42234355854-1-b0001.tar.gz",
+            "member": "previews/a5d9fa5c1edf7772d3febddba5dfef7fbc55dee200689d1724e73e7df1e7a1bf.png"
+          },
+          "manifest_pair_metadata_checked": true,
+          "selected_source": {
+            "source": "healthicons",
+            "source_id": "public/icons/svg/filled/people/people.svg",
+            "attribution": "People — Resolve to Save Lives / Health Icons contributors; https://github.com/resolvetosavelives/healthicons/blob/2080c1b40e4829f2f4217e03bc22908b4e402f6b/public/icons/svg/filled/people/people.svg; CC0-1.0"
+          },
+          "file_source_records": [
+            {
+              "title": "People",
+              "tags": [
+                "Avatars",
+                "Group",
+                "Parent",
+                "Person",
+                "Two People",
+                "Users",
+                "filled",
+                "people"
+              ],
+              "categories": [],
+              "taxonomy": [
+                "people"
+              ],
+              "upstream_category": "people",
+              "author": "Resolve to Save Lives / Health Icons contributors",
+              "distribution_status": "license_recorded",
+              "asset_id": "healthicons-3d7757c3de235edb3a87",
+              "source": "healthicons",
+              "source_id": "public/icons/svg/filled/people/people.svg",
+              "source_url": "https://github.com/resolvetosavelives/healthicons/blob/2080c1b40e4829f2f4217e03bc22908b4e402f6b/public/icons/svg/filled/people/people.svg",
+              "url": "https://raw.githubusercontent.com/resolvetosavelives/healthicons/2080c1b40e4829f2f4217e03bc22908b4e402f6b/public/icons/svg/filled/people/people.svg",
+              "license": "CC0-1.0",
+              "attribution": "People — Resolve to Save Lives / Health Icons contributors; https://github.com/resolvetosavelives/healthicons/blob/2080c1b40e4829f2f4217e03bc22908b4e402f6b/public/icons/svg/filled/people/people.svg; CC0-1.0"
+            }
+          ],
+          "new_visual_inspection_performed": false,
+          "provisional_role_verdict": "uncertain",
+          "review_status": "pending_exact_preview_review",
+          "notes": "已核本题实际返回与manifest绑定；在既有 data/relevance-reviews、data/curated-reviews、data/visual-reviews 未定位到本文件精确双SHA视觉记录，不能以来源标题替代看图。"
+        },
+        {
+          "rank": 4,
+          "candidate_id": "healthicons-5849d98c22fdf77d735d:file-0",
+          "variant_id": "healthicons-5849d98c22fdf77d735d:46868f75b96bc0e52df06d160aaae2b27bc2ee6b7a779d523871837f2e1ee4ab:healthicons-901c044ce167cd817022:0",
+          "family_id": "healthicons-5849d98c22fdf77d735d",
+          "title": "Group",
+          "original_sha256": "46868f75b96bc0e52df06d160aaae2b27bc2ee6b7a779d523871837f2e1ee4ab",
+          "preview_sha256": "c032503daf11889df39ec67077a97715319a7d08845283bb79635b73c6cf55a8",
+          "original_archive": {
+            "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/healthicons-42234355854-1-b0001.tar.gz",
+            "member": "files/46/46868f75b96bc0e52df06d160aaae2b27bc2ee6b7a779d523871837f2e1ee4ab.svg"
+          },
+          "preview_archive": {
+            "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/healthicons-42234355854-1-b0001.tar.gz",
+            "member": "previews/46868f75b96bc0e52df06d160aaae2b27bc2ee6b7a779d523871837f2e1ee4ab.png"
+          },
+          "manifest_pair_metadata_checked": true,
+          "selected_source": {
+            "source": "healthicons",
+            "source_id": "public/icons/svg/filled/people/i-groups_perspective_crowd.svg",
+            "attribution": "Group — Resolve to Save Lives / Health Icons contributors; https://github.com/resolvetosavelives/healthicons/blob/2080c1b40e4829f2f4217e03bc22908b4e402f6b/public/icons/svg/filled/people/i-groups_perspective_crowd.svg; CC0-1.0"
+          },
+          "file_source_records": [
+            {
+              "title": "Group",
+              "tags": [
+                "Community",
+                "Crowd",
+                "Group",
+                "Person",
+                "Three People",
+                "Users",
+                "filled",
+                "people"
+              ],
+              "categories": [],
+              "taxonomy": [
+                "people"
+              ],
+              "upstream_category": "people",
+              "author": "Resolve to Save Lives / Health Icons contributors",
+              "distribution_status": "license_recorded",
+              "asset_id": "healthicons-901c044ce167cd817022",
+              "source": "healthicons",
+              "source_id": "public/icons/svg/filled/people/i-groups_perspective_crowd.svg",
+              "source_url": "https://github.com/resolvetosavelives/healthicons/blob/2080c1b40e4829f2f4217e03bc22908b4e402f6b/public/icons/svg/filled/people/i-groups_perspective_crowd.svg",
+              "url": "https://raw.githubusercontent.com/resolvetosavelives/healthicons/2080c1b40e4829f2f4217e03bc22908b4e402f6b/public/icons/svg/filled/people/i-groups_perspective_crowd.svg",
+              "license": "CC0-1.0",
+              "attribution": "Group — Resolve to Save Lives / Health Icons contributors; https://github.com/resolvetosavelives/healthicons/blob/2080c1b40e4829f2f4217e03bc22908b4e402f6b/public/icons/svg/filled/people/i-groups_perspective_crowd.svg; CC0-1.0"
+            }
+          ],
+          "new_visual_inspection_performed": false,
+          "provisional_role_verdict": "uncertain",
+          "review_status": "pending_exact_preview_review",
+          "notes": "已核本题实际返回与manifest绑定；在既有 data/relevance-reviews、data/curated-reviews、data/visual-reviews 未定位到本文件精确双SHA视觉记录，不能以来源标题替代看图。"
+        },
+        {
+          "rank": 5,
+          "candidate_id": "healthicons-92548a82230a43a484c9:file-0",
+          "variant_id": "healthicons-92548a82230a43a484c9:2f2a3963f759df95655029a4518896ae469fbd50f9be0ad6efc94afebd8c8a00:healthicons-8f9c440bf2ac137477e9:0",
+          "family_id": "healthicons-92548a82230a43a484c9",
+          "title": "Human Resources",
+          "original_sha256": "2f2a3963f759df95655029a4518896ae469fbd50f9be0ad6efc94afebd8c8a00",
+          "preview_sha256": "eb4ec5d2bbbc719ff6723e403eea0ee10a60deea5ed81b0efee4ad32f5a81857",
+          "original_archive": {
+            "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/healthicons-42234355854-1-b0001.tar.gz",
+            "member": "files/2f/2f2a3963f759df95655029a4518896ae469fbd50f9be0ad6efc94afebd8c8a00.svg"
+          },
+          "preview_archive": {
+            "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/healthicons-42234355854-1-b0001.tar.gz",
+            "member": "previews/2f2a3963f759df95655029a4518896ae469fbd50f9be0ad6efc94afebd8c8a00.png"
+          },
+          "manifest_pair_metadata_checked": true,
+          "selected_source": {
+            "source": "healthicons",
+            "source_id": "public/icons/svg/filled/specialties/human-resoruces.svg",
+            "attribution": "Human Resources — Resolve to Save Lives / Health Icons contributors; https://github.com/resolvetosavelives/healthicons/blob/2080c1b40e4829f2f4217e03bc22908b4e402f6b/public/icons/svg/filled/specialties/human-resoruces.svg; CC0-1.0"
+          },
+          "file_source_records": [
+            {
+              "title": "Human Resources",
+              "tags": [
+                "Department",
+                "Group",
+                "HR",
+                "Hiring",
+                "People",
+                "Speciality",
+                "Team",
+                "filled",
+                "specialties"
+              ],
+              "categories": [],
+              "taxonomy": [
+                "people"
+              ],
+              "upstream_category": "specialties",
+              "author": "Resolve to Save Lives / Health Icons contributors",
+              "distribution_status": "license_recorded",
+              "asset_id": "healthicons-8f9c440bf2ac137477e9",
+              "source": "healthicons",
+              "source_id": "public/icons/svg/filled/specialties/human-resoruces.svg",
+              "source_url": "https://github.com/resolvetosavelives/healthicons/blob/2080c1b40e4829f2f4217e03bc22908b4e402f6b/public/icons/svg/filled/specialties/human-resoruces.svg",
+              "url": "https://raw.githubusercontent.com/resolvetosavelives/healthicons/2080c1b40e4829f2f4217e03bc22908b4e402f6b/public/icons/svg/filled/specialties/human-resoruces.svg",
+              "license": "CC0-1.0",
+              "attribution": "Human Resources — Resolve to Save Lives / Health Icons contributors; https://github.com/resolvetosavelives/healthicons/blob/2080c1b40e4829f2f4217e03bc22908b4e402f6b/public/icons/svg/filled/specialties/human-resoruces.svg; CC0-1.0"
+            }
+          ],
+          "new_visual_inspection_performed": false,
+          "provisional_role_verdict": "uncertain",
+          "review_status": "pending_exact_preview_review",
+          "notes": "已核本题实际返回与manifest绑定；在既有 data/relevance-reviews、data/curated-reviews、data/visual-reviews 未定位到本文件精确双SHA视觉记录，不能以来源标题替代看图。"
+        }
+      ],
+      "parser_observation": "group AND people 实际返回5件；标题/标签不能代替至少两个人体人物的图面审阅。",
+      "component_use_pass": null,
+      "gap_reason": "Initial evidence inventory only; exact visual coverage and composition review are incomplete.",
+      "selected_variant_ids": [],
+      "composition_use_pass": null
+    },
+    {
+      "query_id": "component-clinical_workflow-randomization--oral_medication--zh",
+      "task_id": "component-clinical_workflow-randomization",
+      "component_id": "oral_medication",
+      "language": "zh",
+      "request": {
+        "query": "口服片剂或胶囊插画",
+        "filters": {},
+        "limit": 10,
+        "mode": "explore",
+        "seed": "diagnostic-fixed-project"
+      },
+      "request_sha256": "e48fe540b5c6a7b798b324c9dd6671301e445f718db8f7c4d73ffa08a05f73f7",
+      "query_plan": {
+        "query": "口服片剂或胶囊插画",
+        "terms": [
+          [
+            "口服片剂或胶囊"
+          ]
+        ],
+        "fts": "(\"口服片剂或胶囊\")",
+        "requirements": {},
+        "all_requirements": {},
+        "object_groups": [],
+        "preferences": {},
+        "soft_terms": [],
+        "empty": false,
+        "parsed_qualifiers": [],
+        "ranking_version": "shared-search-3.4.3"
+      },
+      "review_requirements": {
+        "expected_concepts": [
+          "tablet",
+          "capsule",
+          "oral medication"
+        ],
+        "required_species": null,
+        "visual_requirements": "来源和图面支持片剂或胶囊等口服剂型，不以任意小球当药物，不从颜色推断药名、剂量、疗效或安慰剂身份。",
+        "exclude_matches": [
+          "generic colored sphere",
+          "unsupported active drug or placebo claim"
+        ]
+      },
+      "actual_result_count": 0,
+      "results": [],
+      "parser_observation": "“口服片剂或胶囊”作为一段未拆解文字强制匹配，未表达片剂/胶囊的选择关系。",
+      "component_use_pass": false,
+      "gap_reason": "Actual first-baseline result list is empty; no substitute or fallback search.",
+      "selected_variant_ids": [],
+      "composition_use_pass": null
+    },
+    {
+      "query_id": "component-clinical_workflow-randomization--oral_medication--en",
+      "task_id": "component-clinical_workflow-randomization",
+      "component_id": "oral_medication",
+      "language": "en",
+      "request": {
+        "query": "oral tablets capsules illustration",
+        "filters": {},
+        "limit": 10,
+        "mode": "explore",
+        "seed": "diagnostic-fixed-project"
+      },
+      "request_sha256": "2506f4b1e7fad62361519260f23e6a646a195437046a9912ce7132ab6c640402",
+      "query_plan": {
+        "query": "oral tablets capsules illustration",
+        "terms": [
+          [
+            "oral"
+          ],
+          [
+            "tablets"
+          ],
+          [
+            "capsules"
+          ]
+        ],
+        "fts": "(\"oral\") AND (\"tablets\") AND (\"capsules\")",
+        "requirements": {},
+        "all_requirements": {},
+        "object_groups": [],
+        "preferences": {},
+        "soft_terms": [],
+        "empty": false,
+        "parsed_qualifiers": [],
+        "ranking_version": "shared-search-3.4.3"
+      },
+      "review_requirements": {
+        "expected_concepts": [
+          "tablet",
+          "capsule",
+          "oral medication"
+        ],
+        "required_species": null,
+        "visual_requirements": "来源和图面支持片剂或胶囊等口服剂型，不以任意小球当药物，不从颜色推断药名、剂量、疗效或安慰剂身份。",
+        "exclude_matches": [
+          "generic colored sphere",
+          "unsupported active drug or placebo claim"
+        ]
+      },
+      "actual_result_count": 0,
+      "results": [],
+      "parser_observation": "oral AND tablets AND capsules 三个独立必需词；剂型同义/选择关系及复数词形未处理。不能把任意球体或非口服药物当作修复后的命中。",
+      "component_use_pass": false,
+      "gap_reason": "Actual first-baseline result list is empty; no substitute or fallback search.",
+      "selected_variant_ids": [],
+      "composition_use_pass": null
+    },
+    {
+      "query_id": "component-clinical_workflow-recruitment--clinical_conversation--zh",
+      "task_id": "component-clinical_workflow-recruitment",
+      "component_id": "clinical_conversation",
+      "language": "zh",
+      "request": {
+        "query": "医生与患者沟通场景插画",
+        "filters": {},
+        "limit": 10,
+        "mode": "explore",
+        "seed": "diagnostic-fixed-project"
+      },
+      "request_sha256": "67f4e2c43dd40abcf658cad3dcdd65c73c4eb0a8c4bfbd0ccf5700ed0533c29d",
+      "query_plan": {
+        "query": "医生与患者沟通场景插画",
+        "terms": [
+          [
+            "医生",
+            "doctor",
+            "physician"
+          ],
+          [
+            "患者",
+            "病人",
+            "patient"
+          ],
+          [
+            "沟通场景"
+          ]
+        ],
+        "fts": "(\"医生\" OR \"doctor\" OR \"physician\") AND (\"患者\" OR \"病人\" OR \"patient\") AND (\"沟通场景\")",
+        "requirements": {
+          "object": [
+            "医生",
+            "doctor",
+            "physician",
+            "患者",
+            "病人",
+            "patient"
+          ]
+        },
+        "all_requirements": {},
+        "object_groups": [
+          [
+            "医生",
+            "doctor",
+            "physician"
+          ],
+          [
+            "患者",
+            "病人",
+            "patient"
+          ]
+        ],
+        "preferences": {},
+        "soft_terms": [],
+        "empty": false,
+        "parsed_qualifiers": [],
+        "ranking_version": "shared-search-3.4.3"
+      },
+      "review_requirements": {
+        "expected_concepts": [
+          "clinical consultation",
+          "clinician",
+          "patient"
+        ],
+        "required_species": "human",
+        "visual_requirements": "图面与来源支持临床人员同另一成人面对面沟通或解释的局部场景；不能用单个人、企业会议或纯对白文字框代替。",
+        "exclude_matches": [
+          "isolated person",
+          "corporate meeting without clinical context",
+          "filled consent form",
+          "complete recruitment flowchart"
+        ]
+      },
+      "actual_result_count": 0,
+      "results": [],
+      "parser_observation": "强制未切分的“沟通场景”，妨碍对已有临床咨询描述的匹配。",
+      "component_use_pass": false,
+      "gap_reason": "Actual first-baseline result list is empty; no substitute or fallback search.",
+      "selected_variant_ids": [],
+      "composition_use_pass": null
+    },
+    {
+      "query_id": "component-clinical_workflow-recruitment--clinical_conversation--en",
+      "task_id": "component-clinical_workflow-recruitment",
+      "component_id": "clinical_conversation",
+      "language": "en",
+      "request": {
+        "query": "clinician patient consultation illustration",
+        "filters": {},
+        "limit": 10,
+        "mode": "explore",
+        "seed": "diagnostic-fixed-project"
+      },
+      "request_sha256": "68d94d7181125f3e095affaf2115f1cdaf70dde05077b63a278ba029cb944909",
+      "query_plan": {
+        "query": "clinician patient consultation illustration",
+        "terms": [
+          [
+            "clinician",
+            "医生",
+            "临床医生",
+            "doctor",
+            "physician"
+          ],
+          [
+            "patient",
+            "患者",
+            "病人"
+          ],
+          [
+            "consultation"
+          ]
+        ],
+        "fts": "(\"clinician\" OR \"医生\" OR \"临床医生\" OR \"doctor\" OR \"physician\") AND (\"patient\" OR \"患者\" OR \"病人\") AND (\"consultation\")",
+        "requirements": {
+          "object": [
+            "clinician",
+            "医生",
+            "临床医生",
+            "doctor",
+            "physician",
+            "patient",
+            "患者",
+            "病人"
+          ]
+        },
+        "all_requirements": {},
+        "object_groups": [
+          [
+            "clinician",
+            "医生",
+            "临床医生",
+            "doctor",
+            "physician"
+          ],
+          [
+            "patient",
+            "患者",
+            "病人"
+          ]
+        ],
+        "preferences": {},
+        "soft_terms": [],
+        "empty": false,
+        "parsed_qualifiers": [],
+        "ranking_version": "shared-search-3.4.3"
+      },
+      "review_requirements": {
+        "expected_concepts": [
+          "clinical consultation",
+          "clinician",
+          "patient"
+        ],
+        "required_species": "human",
+        "visual_requirements": "图面与来源支持临床人员同另一成人面对面沟通或解释的局部场景；不能用单个人、企业会议或纯对白文字框代替。",
+        "exclude_matches": [
+          "isolated person",
+          "corporate meeting without clinical context",
+          "filled consent form",
+          "complete recruitment flowchart"
+        ]
+      },
+      "actual_result_count": 0,
+      "results": [],
+      "parser_observation": "强制 consultation；本轮 human_subject 实际返回的 NIH130 来源使用 consulting with patient。当前 exact lexical 层不自动归一 consultation/consulting。该文件不在本题返回中，不能跨题补分。",
+      "component_use_pass": false,
+      "gap_reason": "Actual first-baseline result list is empty; no substitute or fallback search.",
+      "selected_variant_ids": [],
+      "composition_use_pass": null
+    }
+  ],
+  "summary": {
+    "new_clinical_child_queries": 10,
+    "zero_result_queries": 8,
+    "nonempty_queries": 2,
+    "actual_result_positions": 15,
+    "unique_original_files": 15,
+    "exact_manifest_pair_metadata_checks": 15,
+    "prior_exact_visual_observations_located": 1,
+    "pending_exact_visual_review": 14,
+    "new_visual_inspections": 1,
+    "new_queries_executed": 0,
+    "new_original_or_preview_downloads": 0,
+    "new_visual_inspections_limited_to_exact_files": 1
+  },
+  "scope_pending_files_remain_isolated": 631,
+  "acceptance_passed": null,
+  "website_gate_opened": false,
+  "limitations": [
+    "This is the first real run baseline; future parser repairs must produce another real cloud run with separate hashes.",
+    "Prior observations do not establish new composition use by themselves. No multi-role task has a complete selected set in this first clinical baseline.",
+    "No source identities, science metadata, benchmark requirements, query text, scope decisions, or historical results were modified.",
+    "Current parser observations are diagnostics, not permission to remove clinical-action or medication-identity requirements.",
+    "One local exact preview was viewed after the initial inventory. No new downloads, searches, source changes, label cleanup or composition board was performed."
+  ],
+  "revisions": [
+    {
+      "at": "2026-11-07T03:54:59.563714+00:00",
+      "previous_path": "build/component-benchmark-review/42334004260/clinical-initial-review.before-nih130-display.json",
+      "previous_sha256": "41f772d8e2ae6c70435495b2f1df3989d0acc76fe4f2e60e1b5ab2080f70d7dd",
+      "change": "Actually viewed only the already-local exact NIH130 preview and added new-role limits plus source/license metadata checks. Other 14 files and all composite-use conclusions remain unpassed."
+    }
+  ]
+}

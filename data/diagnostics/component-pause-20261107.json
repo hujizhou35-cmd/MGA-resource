@@ -1,0 +1,359 @@
+{
+  "schema_version": 1,
+  "status": "paused_at_user_request",
+  "recorded_at": "2026-11-07T04:02:25.253746+00:00",
+  "resume_requires_new_user_message": true,
+  "website_build_or_deployment_started": false,
+  "pause_scope": "Acceptance checkpoint only; stop automatic continuation even if a check passes.",
+  "code_commit": "604389589ce69bde9841d3404898a9579a4cc6ee",
+  "current_search_bindings": {
+    "component_benchmark_sha256": "d4e462a631b88929bc3be419ab287599bb5a713de2e4cb0c2c84123cf5b94cef",
+    "legacy_benchmark_sha256": "ce0282afeb4afbcee8fdef1c6f937844ef569cabf16ba7909e22bf86b1096e92",
+    "catalog_sha256": "8a961c42a357147f2ae0229526f6127c955e05928721d94283e829463f738da0",
+    "sqlite_sha256": "11389f717e95efa55b35f33d579e31da24373d6d1372b1542901d4092dc1440e",
+    "assembly_report_sha256": "3c10659c7e0577b7f1e4b863360e9919fe434349aef7325b9eedb47576d1fd22",
+    "search_core_sha256": "31df33a978e9a238ce04c938d65dd59fda64ff6085b67454f68798c64b59d4b6",
+    "ranking_version": "shared-search-3.5.0",
+    "search_index_version": 10,
+    "search_vocabulary_sha256": "49c264129091681e1d38b670d8eac118e560c9ca15d39079ae25be0a36a858c8",
+    "search_cli_sha256": "b2fe91561fdb1be14225be773e0e914010a30152a76d8b5a1ee0ac989f1b6ac4",
+    "search_policy_sha256": "e62c572d05f6190abe9aa0c6a9a9a931c1178085ad7a666533bb5c7f57225464"
+  },
+  "frozen_inputs": {
+    "original_benchmark": {
+      "path": "data/benchmark.json",
+      "sha256": "ce0282afeb4afbcee8fdef1c6f937844ef569cabf16ba7909e22bf86b1096e92",
+      "size_bytes": 91856
+    },
+    "component_benchmark": {
+      "path": "data/component-benchmark.json",
+      "sha256": "d4e462a631b88929bc3be419ab287599bb5a713de2e4cb0c2c84123cf5b94cef",
+      "size_bytes": 230473
+    },
+    "freeze": {
+      "path": "data/component-benchmark-freeze.json",
+      "sha256": "a1d732d5e707ee9aee682d8d85ad8b4cb92276f884814a6f0c6d77f8b2a83ea7",
+      "size_bytes": 1908
+    }
+  },
+  "historical_original_120": {
+    "core": "shared-search-3.4.3",
+    "passed": 102,
+    "total": 120,
+    "zh": 51,
+    "en": 51,
+    "gaps": 18,
+    "pending_queries": 0,
+    "rerun_this_checkpoint": false,
+    "report": {
+      "path": "build/science-version-acceptance-20261107/acceptance-report/checkreport.json",
+      "sha256": "31c6b189a45e4e4228db35b9492eac609c8d36e3e57549e6a14ccde424576ccb",
+      "size_bytes": 1726226
+    }
+  },
+  "first_component": {
+    "run_id": 42334004260,
+    "raw": {
+      "path": "build/component-benchmark-review/42334004260/evidence/raw-component-results.json",
+      "sha256": "5fac0130d60538497d616ff03c5038bfca93176d351f1738f291e46334e35bd3",
+      "size_bytes": 7468587
+    },
+    "queries": 142,
+    "nonempty_queries": 117,
+    "positions": 831,
+    "formal_score": null,
+    "candidate_only_task_upper_bound": 101,
+    "retained_failure_record": true
+  },
+  "additional_component": {
+    "run_id": 42336054640,
+    "status": "success",
+    "extra_replays_after_pause_request": 1,
+    "raw": {
+      "path": "build/component-benchmark-review/42336054640/evidence/raw-component-results.json",
+      "sha256": "5b68f3b68361e792c3b0d78d8ea22af0c37916fe35684b170fc0f92b951e2501",
+      "size_bytes": 8037651
+    },
+    "cloud_assets": [
+      {
+        "name": "component-benchmark-42336054640-1.tar.gz",
+        "sha256": "2d395a18d825438e0afbf0b20ec6e46c12a5df3717ccec4416a52bda1b49e635",
+        "size_bytes": 955587,
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/acceptance-20261107/component-benchmark-42336054640-1.tar.gz",
+        "github_asset_id": 719530392,
+        "github_digest": "sha256:2d395a18d825438e0afbf0b20ec6e46c12a5df3717ccec4416a52bda1b49e635",
+        "digest_verified": true
+      },
+      {
+        "name": "component-benchmark-42336054640-1.summary.json",
+        "sha256": "5bfa9e74ea9d15da655e8abe61fc2df119e9c8870d16a59ce63ff4f4a894f931",
+        "size_bytes": 3713,
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/acceptance-20261107/component-benchmark-42336054640-1.summary.json",
+        "github_asset_id": 719530394,
+        "github_digest": "sha256:5bfa9e74ea9d15da655e8abe61fc2df119e9c8870d16a59ce63ff4f4a894f931",
+        "digest_verified": true
+      }
+    ],
+    "queries": 142,
+    "nonempty_queries": 132,
+    "positions": 902,
+    "zero_result_queries": [
+      {
+        "query_id": "component-experimental_actions-blood-collection--blood_collection_tube--zh",
+        "task_id": "component-experimental_actions-blood-collection",
+        "language": "zh",
+        "query": "采血管插画"
+      },
+      {
+        "query_id": "component-experimental_actions-blood-collection--blood_collection_tube--en",
+        "task_id": "component-experimental_actions-blood-collection",
+        "language": "en",
+        "query": "blood collection tube illustration"
+      },
+      {
+        "query_id": "component-experimental_actions-pipetting--receiving_tube--zh",
+        "task_id": "component-experimental_actions-pipetting",
+        "language": "zh",
+        "query": "微量离心管插画"
+      },
+      {
+        "query_id": "component-experimental_actions-pipetting--receiving_tube--en",
+        "task_id": "component-experimental_actions-pipetting",
+        "language": "en",
+        "query": "microcentrifuge tube illustration"
+      },
+      {
+        "query_id": "component-clinical_workflow-cohort-followup--clinical_assessment--zh",
+        "task_id": "component-clinical_workflow-cohort-followup",
+        "language": "zh",
+        "query": "医生为患者检查的场景插画"
+      },
+      {
+        "query_id": "component-clinical_workflow-cohort-followup--clinical_assessment--en",
+        "task_id": "component-clinical_workflow-cohort-followup",
+        "language": "en",
+        "query": "clinician examining a patient illustration"
+      },
+      {
+        "query_id": "component-clinical_workflow-randomization--oral_medication--zh",
+        "task_id": "component-clinical_workflow-randomization",
+        "language": "zh",
+        "query": "口服片剂或胶囊插画"
+      },
+      {
+        "query_id": "component-clinical_workflow-randomization--oral_medication--en",
+        "task_id": "component-clinical_workflow-randomization",
+        "language": "en",
+        "query": "oral tablets capsules illustration"
+      },
+      {
+        "query_id": "component-omics_data-gene-network--dna_binding_protein--zh",
+        "task_id": "component-omics_data-gene-network",
+        "language": "zh",
+        "query": "DNA结合蛋白结构插画"
+      },
+      {
+        "query_id": "component-omics_data-gene-network--dna_binding_protein--en",
+        "task_id": "component-omics_data-gene-network",
+        "language": "en",
+        "query": "DNA binding protein illustration"
+      }
+    ],
+    "candidate_only_task_upper_bound": 110,
+    "candidate_upper_by_language": {
+      "zh": 55,
+      "en": 55
+    },
+    "candidate_upper_by_category": {
+      "animals": {
+        "zh": 5,
+        "en": 5
+      },
+      "people": {
+        "zh": 5,
+        "en": 5
+      },
+      "organs": {
+        "zh": 5,
+        "en": 5
+      },
+      "tissues_vessels": {
+        "zh": 5,
+        "en": 5
+      },
+      "cells": {
+        "zh": 5,
+        "en": 5
+      },
+      "organelles": {
+        "zh": 5,
+        "en": 5
+      },
+      "molecules": {
+        "zh": 5,
+        "en": 5
+      },
+      "microbes": {
+        "zh": 5,
+        "en": 5
+      },
+      "lab_equipment": {
+        "zh": 5,
+        "en": 5
+      },
+      "experimental_actions": {
+        "zh": 3,
+        "en": 3
+      },
+      "clinical_workflow": {
+        "zh": 3,
+        "en": 3
+      },
+      "omics_data": {
+        "zh": 4,
+        "en": 4
+      }
+    },
+    "category_upper_below_required_four": [
+      "experimental_actions",
+      "clinical_workflow"
+    ],
+    "formal_score": null,
+    "relevance_status": "partial historical observations; current-policy judgments not finalized",
+    "composition_status": "human-body task reviewed on first raw; remaining new composite uses pending",
+    "acceptance_passed": false,
+    "raw_completion_is_not_relevance_or_composition_acceptance": true
+  },
+  "evidence": {
+    "old94_bridge": {
+      "path": "build/component-benchmark-review/unchanged/unchanged-evidence.json",
+      "sha256": "8723ac0d734f3c5850f08514195b6fe0b754cb48d44fae53af07c95a066d29ba",
+      "size_bytes": 2978938
+    },
+    "old94_checkpoint": {
+      "path": "data/diagnostics/component-42334004260-unchanged-checkpoint.json",
+      "sha256": "afbcaea30a4815f814be4eee2cc520b05fd5d7618a2bfff23925b6016ecf1189",
+      "size_bytes": 6661
+    },
+    "old94_cloud_delivery": {
+      "path": "data/diagnostics/component-initial-review-42334004260-delivery.json",
+      "sha256": "194aa5245e39596375a07ff5dc24439e71078233a9ce5c85f47cf8dadd791e94",
+      "size_bytes": 4006
+    },
+    "human_body_partial": {
+      "path": "data/relevance-reviews/component-42334004260-human-body-partial.json",
+      "sha256": "ea48893e35faabe1fcff341f62eb95f1372afb4527696b01cbd57a4ce0e95966",
+      "size_bytes": 52462
+    },
+    "clinical_partial": {
+      "path": "data/relevance-reviews/component-42334004260-clinical-partial.json",
+      "sha256": "77a926f3c648678941f80cb53a5008ea32e0c978415dbb250470faf04528dad3",
+      "size_bytes": 88405
+    },
+    "current_difference_summary": {
+      "path": "build/component-benchmark-review/42336054640/first-vs-extra-replay-summary.json",
+      "sha256": "d1ae9e59519ee5de8946d04b8f32b10a0ae47968671925ae635edcb8a2b73351",
+      "size_bytes": 4255
+    },
+    "current_full_difference": {
+      "path": "build/component-benchmark-review/42336054640/first-vs-extra-replay-diff.json",
+      "sha256": "593cfd3d32e5b87e21ca30e0726eede671beba7f71a097bfa25affa4dbdf08d0",
+      "size_bytes": 3255806
+    },
+    "metadata_delivery_record": {
+      "path": "data/diagnostics/component-pause-20261107-delivery.json",
+      "sha256": "3e3b8ef6265e86bee1c6c32d9be536b43545c194d2dcbd49e60945022eb638be",
+      "size_bytes": 5409
+    }
+  },
+  "review_reuse": {
+    "first_run_old_queries_fully_bridged": 94,
+    "first_run_old_positions_reviewed": 658,
+    "new_run_old94_requests_purposes_unchanged": 94,
+    "new_run_old94_pair_source_sequence_unchanged": 84,
+    "new_run_old94_full_metadata_unchanged": 50,
+    "passes_migrated_to_new_core": 0,
+    "first_run_human_body_new_role_queries_reviewed": 4,
+    "first_run_human_body_positions_reviewed": 8,
+    "first_run_human_body_language_compositions_reviewed": 2,
+    "clinical_exact_file_viewed": 1,
+    "clinical_other_first_run_files_pending": 14,
+    "new_pairs_relative_to_first": 32,
+    "new_pairs_with_prior_exact_observation": 4,
+    "new_pairs_without_located_prior_observation": 28,
+    "limitation": "28 is a delta review count, not the total number of pending uses or files."
+  },
+  "validation": {
+    "final_ci": {
+      "run_id": 42335865819,
+      "status": "success",
+      "passed_tests": 701,
+      "failed_tests": 0
+    },
+    "retained_ci_failure": {
+      "run_id": 42335652321,
+      "status": "failure",
+      "passed_tests": 700,
+      "failed_tests": 1,
+      "failure": "Named fruitfly parent lookup; fixed in current code"
+    },
+    "local_targeted_final": {
+      "path": "build/component-benchmark-review/search-3.5.0-final-targeted.xml",
+      "sha256": "657bba764711408ed00ede3963057fb70780b63a6132d607b24779d2bd628c8e",
+      "size_bytes": 1768
+    },
+    "local_previous_failure": {
+      "path": "build/component-benchmark-review/search-3.5.0-targeted.xml",
+      "sha256": "28b6262739d34d51d46431f6f98948db30483e90e3f8be4ee0b67711d86ea867",
+      "size_bytes": 9289
+    }
+  },
+  "cloud_runs": [
+    {
+      "run_id": 42334004260,
+      "purpose": "first frozen component replay",
+      "status": "completed",
+      "conclusion": "success"
+    },
+    {
+      "run_id": 42335652321,
+      "purpose": "intermediate CI failure retained",
+      "status": "completed",
+      "conclusion": "failure"
+    },
+    {
+      "run_id": 42335865819,
+      "purpose": "final executable-code CI",
+      "status": "completed",
+      "conclusion": "success"
+    },
+    {
+      "run_id": 42335896259,
+      "purpose": "metadata-only reindex",
+      "status": "completed",
+      "conclusion": "success",
+      "prefix": "assembly-42335896259-1"
+    },
+    {
+      "run_id": 42336054640,
+      "purpose": "only additional frozen component replay",
+      "status": "completed",
+      "conclusion": "success"
+    }
+  ],
+  "running_tasks_at_checkpoint": [],
+  "not_done": [
+    "Current-policy full relevance/source/role mapping and remaining composition reviews",
+    "Remaining ten zero-result child queries: keep genuine gaps, do not backfill from another query",
+    "Current-core six negative / appearance-diversity / material-gate revalidation; frozen old reports are not current-core proof",
+    "Website and deployment",
+    "Selected-asset text cleanup capability in the future skill; no whole-library cleanup"
+  ],
+  "resume_first_step": "Read docs/CLOUD-QA-RECOVERY-20261107.md and this record; reuse 42336054640 raw and its diff, map unchanged exact observations without re-running collection/retrieval, then review only unresolved new uses. Keep original 120 score and first component failure immutable.",
+  "cloud_queue_check": {
+    "observed_at_utc": "2026-11-07T04:03:00Z",
+    "in_progress": [],
+    "queued": [],
+    "method": "gh run list, repository hujizhou35-cmd/MGA-resource"
+  }
+}

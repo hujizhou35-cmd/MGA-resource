@@ -1,0 +1,946 @@
+{
+  "schema_version": 1,
+  "status": "partial_human_body_roles_and_composition_actually_reviewed_first_baseline",
+  "reviewer": "registry_acceptance",
+  "reviewed_at": "2026-11-07T03:55:10.821563+00:00",
+  "independent_from_metadata_matcher": true,
+  "bindings": {
+    "component_benchmark_sha256": "d4e462a631b88929bc3be419ab287599bb5a713de2e4cb0c2c84123cf5b94cef",
+    "raw_results_sha256": "5fac0130d60538497d616ff03c5038bfca93176d351f1738f291e46334e35bd3",
+    "catalog_sha256": "8a961c42a357147f2ae0229526f6127c955e05928721d94283e829463f738da0",
+    "publish_manifest_sha256": "e9cf028a56e6a3b827bad7e5e576d48599ca7e4224f4f5e7f8a7660f0dfdcbbe",
+    "search_core_sha256": "191c4631bb80f36a33ec2580739580ea4289a9726b09dfffb70d022b2a1382e6"
+  },
+  "source_documents": [
+    {
+      "path": "build/component-benchmark-review/42334004260/evidence/raw-component-results.json",
+      "sha256": "5fac0130d60538497d616ff03c5038bfca93176d351f1738f291e46334e35bd3"
+    },
+    {
+      "path": "data/component-benchmark.json",
+      "sha256": "d4e462a631b88929bc3be419ab287599bb5a713de2e4cb0c2c84123cf5b94cef"
+    },
+    {
+      "path": "build/science-version-acceptance-20261107/dispositions/candidate_publish_manifest.json",
+      "sha256": "e9cf028a56e6a3b827bad7e5e576d48599ca7e4224f4f5e7f8a7660f0dfdcbbe"
+    },
+    {
+      "path": "build/science-version-acceptance-20261107/visual/final/judgments.json",
+      "sha256": "81f8313353d678976d47db6c42bb54ae6628abcf15b7bcff779ee60a46f776f2"
+    },
+    {
+      "path": "data/visual-reviews/open-pain-20261107-scientific.json",
+      "sha256": "d68ce83e651dacc98c4ed3706993de7b271443a274b186364c660132c46e53b2"
+    },
+    {
+      "path": "build/frozen-review-42298772894/review/mapping.json",
+      "sha256": "fd7901163b7dba233b34808253ffe1561eb996020382275a85c1ed2ef0f17222"
+    }
+  ],
+  "queries": [
+    {
+      "query_id": "component-people-human-body--anterior_view--zh",
+      "task_id": "component-people-human-body",
+      "component_id": "anterior_view",
+      "language": "zh",
+      "request": {
+        "query": "人体正面示意",
+        "filters": {},
+        "limit": 10,
+        "mode": "explore",
+        "seed": "diagnostic-fixed-project"
+      },
+      "review_requirements": {
+        "expected_concepts": [
+          "human body",
+          "front"
+        ],
+        "required_species": "human",
+        "visual_requirements": "来源/科学审阅与图面明确为人体正面；轮廓完整，不能把背面或侧面改名。",
+        "exclude_matches": [
+          "posterior view mislabeled",
+          "animal anatomy",
+          "clinical photograph"
+        ]
+      },
+      "result_judgments": [
+        {
+          "variant_id": "open-pain-f8e5755205f3f9e69b2a:ca71ade57f448493b7b10dcb8bb55a5547369412167c69305d1b1d9afd11cc30:open-pain-f8e5755205f3f9e69b2a:0",
+          "candidate_id": "open-pain-f8e5755205f3f9e69b2a:file-0",
+          "rank": 1,
+          "original_sha256": "ca71ade57f448493b7b10dcb8bb55a5547369412167c69305d1b1d9afd11cc30",
+          "preview_sha256": "8fd230b11b34a644c5f29e610b3c488268d59dab569643a96b4dd150feff2492",
+          "original_archive": {
+            "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/open-pain-42239403135-1-b0000.tar.gz",
+            "member": "files/ca/ca71ade57f448493b7b10dcb8bb55a5547369412167c69305d1b1d9afd11cc30.svg"
+          },
+          "preview_archive": {
+            "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/open-pain-42239403135-1-b0000.tar.gz",
+            "member": "previews/ca71ade57f448493b7b10dcb8bb55a5547369412167c69305d1b1d9afd11cc30.png"
+          },
+          "verdict": "relevant",
+          "evidence_notes": "实际同屏查看联系表中浅灰版本：左侧人体有面部五官、前胸和前腹，右侧有后头、背部/肩胛与臀部轮廓，均从头到足完整，明显不是将正面镜像成背面。本子题使用左侧正面图，正面角色成立。",
+          "visual_evidence": [
+            {
+              "path": "build/frozen-review-42298772894/review/concepts/people-human-body.png",
+              "sha256": "00bdd219ef0b61644e22e85242a67c7b390ab27b9d1763fd9e29dea478110c28"
+            },
+            {
+              "path": "build/frozen-review-42298772894/review/mapping.json",
+              "sha256": "fd7901163b7dba233b34808253ffe1561eb996020382275a85c1ed2ef0f17222"
+            },
+            {
+              "path": "build/appearance-real-review/appearance-review-42255022104-1/previews/ca71ade57f448493b7b10dcb8bb55a5547369412167c69305d1b1d9afd11cc30.png",
+              "sha256": "8fd230b11b34a644c5f29e610b3c488268d59dab569643a96b4dd150feff2492"
+            }
+          ],
+          "tile": 1,
+          "bounds_xywh": [
+            0,
+            150,
+            330,
+            360
+          ],
+          "new_visual_inspection_performed": true,
+          "scientific_basis": {
+            "path": "data/visual-reviews/open-pain-20261107-scientific.json",
+            "sha256": "d68ce83e651dacc98c4ed3706993de7b271443a274b186364c660132c46e53b2"
+          },
+          "limits": "只认人体前/后与完整轮廓；不验证每块骨骼解剖准确性、性别年龄、病理或原生编辑。"
+        },
+        {
+          "variant_id": "open-pain-c66a17e67b2e8111f592:577c2fdde04aa877d7c6366a399a736b2197be010325c75ae602ab660b35b69f:open-pain-c66a17e67b2e8111f592:0",
+          "candidate_id": "open-pain-c66a17e67b2e8111f592:file-0",
+          "rank": 2,
+          "original_sha256": "577c2fdde04aa877d7c6366a399a736b2197be010325c75ae602ab660b35b69f",
+          "preview_sha256": "a290e7af8d08ec42165c9bdee668c0a9a19eb10048998fb4b39b2ca4085213b2",
+          "original_archive": {
+            "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/open-pain-42239403135-1-b0000.tar.gz",
+            "member": "files/57/577c2fdde04aa877d7c6366a399a736b2197be010325c75ae602ab660b35b69f.svg"
+          },
+          "preview_archive": {
+            "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/open-pain-42239403135-1-b0000.tar.gz",
+            "member": "previews/577c2fdde04aa877d7c6366a399a736b2197be010325c75ae602ab660b35b69f.png"
+          },
+          "verdict": "relevant",
+          "evidence_notes": "实际同屏查看联系表中彩色分区版本：左侧人体有面部五官、前胸和前腹，右侧有后头、背部/肩胛与臀部轮廓，均从头到足完整，明显不是将正面镜像成背面。本子题使用左侧正面图，正面角色成立。",
+          "visual_evidence": [
+            {
+              "path": "build/frozen-review-42298772894/review/concepts/people-human-body.png",
+              "sha256": "00bdd219ef0b61644e22e85242a67c7b390ab27b9d1763fd9e29dea478110c28"
+            },
+            {
+              "path": "build/frozen-review-42298772894/review/mapping.json",
+              "sha256": "fd7901163b7dba233b34808253ffe1561eb996020382275a85c1ed2ef0f17222"
+            }
+          ],
+          "tile": 2,
+          "bounds_xywh": [
+            330,
+            150,
+            330,
+            360
+          ],
+          "new_visual_inspection_performed": true,
+          "scientific_basis": {
+            "path": "data/visual-reviews/open-pain-20261107-scientific.json",
+            "sha256": "d68ce83e651dacc98c4ed3706993de7b271443a274b186364c660132c46e53b2"
+          },
+          "limits": "只认人体前/后与完整轮廓；不验证每块骨骼解剖准确性、性别年龄、病理或原生编辑。"
+        }
+      ],
+      "selected_variant_ids": [
+        "open-pain-f8e5755205f3f9e69b2a:ca71ade57f448493b7b10dcb8bb55a5547369412167c69305d1b1d9afd11cc30:open-pain-f8e5755205f3f9e69b2a:0"
+      ],
+      "source_checks": [
+        {
+          "variant_id": "open-pain-f8e5755205f3f9e69b2a:ca71ade57f448493b7b10dcb8bb55a5547369412167c69305d1b1d9afd11cc30:open-pain-f8e5755205f3f9e69b2a:0",
+          "candidate_id": "open-pain-f8e5755205f3f9e69b2a:file-0",
+          "original_sha256": "ca71ade57f448493b7b10dcb8bb55a5547369412167c69305d1b1d9afd11cc30",
+          "preview_sha256": "8fd230b11b34a644c5f29e610b3c488268d59dab569643a96b4dd150feff2492",
+          "original_archive": {
+            "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/open-pain-42239403135-1-b0000.tar.gz",
+            "member": "files/ca/ca71ade57f448493b7b10dcb8bb55a5547369412167c69305d1b1d9afd11cc30.svg"
+          },
+          "preview_archive": {
+            "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/open-pain-42239403135-1-b0000.tar.gz",
+            "member": "previews/ca71ade57f448493b7b10dcb8bb55a5547369412167c69305d1b1d9afd11cc30.png"
+          },
+          "source_record": {
+            "asset_id": "open-pain-f8e5755205f3f9e69b2a",
+            "attribution": "anatomical illustration — Yanick X. Lukic et al.; https://github.com/DigitalHealthZurich/open-pain-illustration/blob/96d6f379790e39584289bad17a1d6eecc5104bd9/illustration/1.0/anatomical_illustration.svg; CC-BY-4.0",
+            "author": "Yanick X. Lukic et al.",
+            "categories": [
+              "people",
+              "tissues_vessels"
+            ],
+            "distribution_status": "license_recorded",
+            "license": "CC-BY-4.0",
+            "source": "open-pain",
+            "source_id": "illustration/1.0/anatomical_illustration.svg",
+            "source_url": "https://github.com/DigitalHealthZurich/open-pain-illustration/blob/96d6f379790e39584289bad17a1d6eecc5104bd9/illustration/1.0/anatomical_illustration.svg",
+            "tags": [],
+            "taxonomy": [
+              "people"
+            ],
+            "title": "anatomical illustration",
+            "url": "https://raw.githubusercontent.com/DigitalHealthZurich/open-pain-illustration/96d6f379790e39584289bad17a1d6eecc5104bd9/illustration/1.0/anatomical_illustration.svg"
+          },
+          "source_evidence_checked": true,
+          "license_checked": true,
+          "species_matches": true,
+          "required_species": "human",
+          "species_basis": "精确Open Pain人体图来源、原文件绑定科学审阅和本轮可见人类面部/四肢/躯干及前后轮廓共同支持human；不新增人群、性别、年龄或疾病标签。",
+          "source_evidence": [
+            {
+              "path": "build/science-version-acceptance-20261107/visual/final/judgments.json",
+              "sha256": "81f8313353d678976d47db6c42bb54ae6628abcf15b7bcff779ee60a46f776f2",
+              "json_pointer": "/queries/18/source_checks/0"
+            },
+            {
+              "path": "data/visual-reviews/open-pain-20261107-scientific.json",
+              "sha256": "d68ce83e651dacc98c4ed3706993de7b271443a274b186364c660132c46e53b2"
+            }
+          ],
+          "original_download_checked": true,
+          "original_download_check_meaning": "复用同一manifest的既有独立原件恢复/等价链；本轮没有再下载原件。",
+          "new_original_download_performed": false
+        }
+      ],
+      "gap_reason": null,
+      "visual_role_pass": true,
+      "new_role_judgment": true
+    },
+    {
+      "query_id": "component-people-human-body--anterior_view--en",
+      "task_id": "component-people-human-body",
+      "component_id": "anterior_view",
+      "language": "en",
+      "request": {
+        "query": "human body anterior illustration",
+        "filters": {},
+        "limit": 10,
+        "mode": "explore",
+        "seed": "diagnostic-fixed-project"
+      },
+      "review_requirements": {
+        "expected_concepts": [
+          "human body",
+          "front"
+        ],
+        "required_species": "human",
+        "visual_requirements": "来源/科学审阅与图面明确为人体正面；轮廓完整，不能把背面或侧面改名。",
+        "exclude_matches": [
+          "posterior view mislabeled",
+          "animal anatomy",
+          "clinical photograph"
+        ]
+      },
+      "result_judgments": [
+        {
+          "variant_id": "open-pain-f8e5755205f3f9e69b2a:ca71ade57f448493b7b10dcb8bb55a5547369412167c69305d1b1d9afd11cc30:open-pain-f8e5755205f3f9e69b2a:0",
+          "candidate_id": "open-pain-f8e5755205f3f9e69b2a:file-0",
+          "rank": 1,
+          "original_sha256": "ca71ade57f448493b7b10dcb8bb55a5547369412167c69305d1b1d9afd11cc30",
+          "preview_sha256": "8fd230b11b34a644c5f29e610b3c488268d59dab569643a96b4dd150feff2492",
+          "original_archive": {
+            "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/open-pain-42239403135-1-b0000.tar.gz",
+            "member": "files/ca/ca71ade57f448493b7b10dcb8bb55a5547369412167c69305d1b1d9afd11cc30.svg"
+          },
+          "preview_archive": {
+            "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/open-pain-42239403135-1-b0000.tar.gz",
+            "member": "previews/ca71ade57f448493b7b10dcb8bb55a5547369412167c69305d1b1d9afd11cc30.png"
+          },
+          "verdict": "relevant",
+          "evidence_notes": "实际同屏查看联系表中浅灰版本：左侧人体有面部五官、前胸和前腹，右侧有后头、背部/肩胛与臀部轮廓，均从头到足完整，明显不是将正面镜像成背面。本子题使用左侧正面图，正面角色成立。",
+          "visual_evidence": [
+            {
+              "path": "build/frozen-review-42298772894/review/concepts/people-human-body.png",
+              "sha256": "00bdd219ef0b61644e22e85242a67c7b390ab27b9d1763fd9e29dea478110c28"
+            },
+            {
+              "path": "build/frozen-review-42298772894/review/mapping.json",
+              "sha256": "fd7901163b7dba233b34808253ffe1561eb996020382275a85c1ed2ef0f17222"
+            },
+            {
+              "path": "build/appearance-real-review/appearance-review-42255022104-1/previews/ca71ade57f448493b7b10dcb8bb55a5547369412167c69305d1b1d9afd11cc30.png",
+              "sha256": "8fd230b11b34a644c5f29e610b3c488268d59dab569643a96b4dd150feff2492"
+            }
+          ],
+          "tile": 1,
+          "bounds_xywh": [
+            0,
+            150,
+            330,
+            360
+          ],
+          "new_visual_inspection_performed": true,
+          "scientific_basis": {
+            "path": "data/visual-reviews/open-pain-20261107-scientific.json",
+            "sha256": "d68ce83e651dacc98c4ed3706993de7b271443a274b186364c660132c46e53b2"
+          },
+          "limits": "只认人体前/后与完整轮廓；不验证每块骨骼解剖准确性、性别年龄、病理或原生编辑。"
+        },
+        {
+          "variant_id": "open-pain-c66a17e67b2e8111f592:577c2fdde04aa877d7c6366a399a736b2197be010325c75ae602ab660b35b69f:open-pain-c66a17e67b2e8111f592:0",
+          "candidate_id": "open-pain-c66a17e67b2e8111f592:file-0",
+          "rank": 2,
+          "original_sha256": "577c2fdde04aa877d7c6366a399a736b2197be010325c75ae602ab660b35b69f",
+          "preview_sha256": "a290e7af8d08ec42165c9bdee668c0a9a19eb10048998fb4b39b2ca4085213b2",
+          "original_archive": {
+            "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/open-pain-42239403135-1-b0000.tar.gz",
+            "member": "files/57/577c2fdde04aa877d7c6366a399a736b2197be010325c75ae602ab660b35b69f.svg"
+          },
+          "preview_archive": {
+            "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/open-pain-42239403135-1-b0000.tar.gz",
+            "member": "previews/577c2fdde04aa877d7c6366a399a736b2197be010325c75ae602ab660b35b69f.png"
+          },
+          "verdict": "relevant",
+          "evidence_notes": "实际同屏查看联系表中彩色分区版本：左侧人体有面部五官、前胸和前腹，右侧有后头、背部/肩胛与臀部轮廓，均从头到足完整，明显不是将正面镜像成背面。本子题使用左侧正面图，正面角色成立。",
+          "visual_evidence": [
+            {
+              "path": "build/frozen-review-42298772894/review/concepts/people-human-body.png",
+              "sha256": "00bdd219ef0b61644e22e85242a67c7b390ab27b9d1763fd9e29dea478110c28"
+            },
+            {
+              "path": "build/frozen-review-42298772894/review/mapping.json",
+              "sha256": "fd7901163b7dba233b34808253ffe1561eb996020382275a85c1ed2ef0f17222"
+            }
+          ],
+          "tile": 2,
+          "bounds_xywh": [
+            330,
+            150,
+            330,
+            360
+          ],
+          "new_visual_inspection_performed": true,
+          "scientific_basis": {
+            "path": "data/visual-reviews/open-pain-20261107-scientific.json",
+            "sha256": "d68ce83e651dacc98c4ed3706993de7b271443a274b186364c660132c46e53b2"
+          },
+          "limits": "只认人体前/后与完整轮廓；不验证每块骨骼解剖准确性、性别年龄、病理或原生编辑。"
+        }
+      ],
+      "selected_variant_ids": [
+        "open-pain-f8e5755205f3f9e69b2a:ca71ade57f448493b7b10dcb8bb55a5547369412167c69305d1b1d9afd11cc30:open-pain-f8e5755205f3f9e69b2a:0"
+      ],
+      "source_checks": [
+        {
+          "variant_id": "open-pain-f8e5755205f3f9e69b2a:ca71ade57f448493b7b10dcb8bb55a5547369412167c69305d1b1d9afd11cc30:open-pain-f8e5755205f3f9e69b2a:0",
+          "candidate_id": "open-pain-f8e5755205f3f9e69b2a:file-0",
+          "original_sha256": "ca71ade57f448493b7b10dcb8bb55a5547369412167c69305d1b1d9afd11cc30",
+          "preview_sha256": "8fd230b11b34a644c5f29e610b3c488268d59dab569643a96b4dd150feff2492",
+          "original_archive": {
+            "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/open-pain-42239403135-1-b0000.tar.gz",
+            "member": "files/ca/ca71ade57f448493b7b10dcb8bb55a5547369412167c69305d1b1d9afd11cc30.svg"
+          },
+          "preview_archive": {
+            "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/open-pain-42239403135-1-b0000.tar.gz",
+            "member": "previews/ca71ade57f448493b7b10dcb8bb55a5547369412167c69305d1b1d9afd11cc30.png"
+          },
+          "source_record": {
+            "asset_id": "open-pain-f8e5755205f3f9e69b2a",
+            "attribution": "anatomical illustration — Yanick X. Lukic et al.; https://github.com/DigitalHealthZurich/open-pain-illustration/blob/96d6f379790e39584289bad17a1d6eecc5104bd9/illustration/1.0/anatomical_illustration.svg; CC-BY-4.0",
+            "author": "Yanick X. Lukic et al.",
+            "categories": [
+              "people",
+              "tissues_vessels"
+            ],
+            "distribution_status": "license_recorded",
+            "license": "CC-BY-4.0",
+            "source": "open-pain",
+            "source_id": "illustration/1.0/anatomical_illustration.svg",
+            "source_url": "https://github.com/DigitalHealthZurich/open-pain-illustration/blob/96d6f379790e39584289bad17a1d6eecc5104bd9/illustration/1.0/anatomical_illustration.svg",
+            "tags": [],
+            "taxonomy": [
+              "people"
+            ],
+            "title": "anatomical illustration",
+            "url": "https://raw.githubusercontent.com/DigitalHealthZurich/open-pain-illustration/96d6f379790e39584289bad17a1d6eecc5104bd9/illustration/1.0/anatomical_illustration.svg"
+          },
+          "source_evidence_checked": true,
+          "license_checked": true,
+          "species_matches": true,
+          "required_species": "human",
+          "species_basis": "精确Open Pain人体图来源、原文件绑定科学审阅和本轮可见人类面部/四肢/躯干及前后轮廓共同支持human；不新增人群、性别、年龄或疾病标签。",
+          "source_evidence": [
+            {
+              "path": "build/science-version-acceptance-20261107/visual/final/judgments.json",
+              "sha256": "81f8313353d678976d47db6c42bb54ae6628abcf15b7bcff779ee60a46f776f2",
+              "json_pointer": "/queries/19/source_checks/0"
+            },
+            {
+              "path": "data/visual-reviews/open-pain-20261107-scientific.json",
+              "sha256": "d68ce83e651dacc98c4ed3706993de7b271443a274b186364c660132c46e53b2"
+            }
+          ],
+          "original_download_checked": true,
+          "original_download_check_meaning": "复用同一manifest的既有独立原件恢复/等价链；本轮没有再下载原件。",
+          "new_original_download_performed": false
+        }
+      ],
+      "gap_reason": null,
+      "visual_role_pass": true,
+      "new_role_judgment": true
+    },
+    {
+      "query_id": "component-people-human-body--posterior_view--zh",
+      "task_id": "component-people-human-body",
+      "component_id": "posterior_view",
+      "language": "zh",
+      "request": {
+        "query": "人体背面示意",
+        "filters": {},
+        "limit": 10,
+        "mode": "explore",
+        "seed": "diagnostic-fixed-project"
+      },
+      "review_requirements": {
+        "expected_concepts": [
+          "human body",
+          "back"
+        ],
+        "required_species": "human",
+        "visual_requirements": "来源/科学审阅与图面明确为人体背面；不能镜像或复制正面冒充背面。",
+        "exclude_matches": [
+          "anterior view mirrored as back",
+          "animal anatomy",
+          "clinical photograph"
+        ]
+      },
+      "result_judgments": [
+        {
+          "variant_id": "open-pain-f8e5755205f3f9e69b2a:ca71ade57f448493b7b10dcb8bb55a5547369412167c69305d1b1d9afd11cc30:open-pain-f8e5755205f3f9e69b2a:0",
+          "candidate_id": "open-pain-f8e5755205f3f9e69b2a:file-0",
+          "rank": 1,
+          "original_sha256": "ca71ade57f448493b7b10dcb8bb55a5547369412167c69305d1b1d9afd11cc30",
+          "preview_sha256": "8fd230b11b34a644c5f29e610b3c488268d59dab569643a96b4dd150feff2492",
+          "original_archive": {
+            "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/open-pain-42239403135-1-b0000.tar.gz",
+            "member": "files/ca/ca71ade57f448493b7b10dcb8bb55a5547369412167c69305d1b1d9afd11cc30.svg"
+          },
+          "preview_archive": {
+            "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/open-pain-42239403135-1-b0000.tar.gz",
+            "member": "previews/ca71ade57f448493b7b10dcb8bb55a5547369412167c69305d1b1d9afd11cc30.png"
+          },
+          "verdict": "relevant",
+          "evidence_notes": "实际同屏查看联系表中浅灰版本：左侧人体有面部五官、前胸和前腹，右侧有后头、背部/肩胛与臀部轮廓，均从头到足完整，明显不是将正面镜像成背面。本子题使用右侧背面图，背面角色成立。",
+          "visual_evidence": [
+            {
+              "path": "build/frozen-review-42298772894/review/concepts/people-human-body.png",
+              "sha256": "00bdd219ef0b61644e22e85242a67c7b390ab27b9d1763fd9e29dea478110c28"
+            },
+            {
+              "path": "build/frozen-review-42298772894/review/mapping.json",
+              "sha256": "fd7901163b7dba233b34808253ffe1561eb996020382275a85c1ed2ef0f17222"
+            },
+            {
+              "path": "build/appearance-real-review/appearance-review-42255022104-1/previews/ca71ade57f448493b7b10dcb8bb55a5547369412167c69305d1b1d9afd11cc30.png",
+              "sha256": "8fd230b11b34a644c5f29e610b3c488268d59dab569643a96b4dd150feff2492"
+            }
+          ],
+          "tile": 1,
+          "bounds_xywh": [
+            0,
+            150,
+            330,
+            360
+          ],
+          "new_visual_inspection_performed": true,
+          "scientific_basis": {
+            "path": "data/visual-reviews/open-pain-20261107-scientific.json",
+            "sha256": "d68ce83e651dacc98c4ed3706993de7b271443a274b186364c660132c46e53b2"
+          },
+          "limits": "只认人体前/后与完整轮廓；不验证每块骨骼解剖准确性、性别年龄、病理或原生编辑。"
+        },
+        {
+          "variant_id": "open-pain-c66a17e67b2e8111f592:577c2fdde04aa877d7c6366a399a736b2197be010325c75ae602ab660b35b69f:open-pain-c66a17e67b2e8111f592:0",
+          "candidate_id": "open-pain-c66a17e67b2e8111f592:file-0",
+          "rank": 2,
+          "original_sha256": "577c2fdde04aa877d7c6366a399a736b2197be010325c75ae602ab660b35b69f",
+          "preview_sha256": "a290e7af8d08ec42165c9bdee668c0a9a19eb10048998fb4b39b2ca4085213b2",
+          "original_archive": {
+            "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/open-pain-42239403135-1-b0000.tar.gz",
+            "member": "files/57/577c2fdde04aa877d7c6366a399a736b2197be010325c75ae602ab660b35b69f.svg"
+          },
+          "preview_archive": {
+            "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/open-pain-42239403135-1-b0000.tar.gz",
+            "member": "previews/577c2fdde04aa877d7c6366a399a736b2197be010325c75ae602ab660b35b69f.png"
+          },
+          "verdict": "relevant",
+          "evidence_notes": "实际同屏查看联系表中彩色分区版本：左侧人体有面部五官、前胸和前腹，右侧有后头、背部/肩胛与臀部轮廓，均从头到足完整，明显不是将正面镜像成背面。本子题使用右侧背面图，背面角色成立。",
+          "visual_evidence": [
+            {
+              "path": "build/frozen-review-42298772894/review/concepts/people-human-body.png",
+              "sha256": "00bdd219ef0b61644e22e85242a67c7b390ab27b9d1763fd9e29dea478110c28"
+            },
+            {
+              "path": "build/frozen-review-42298772894/review/mapping.json",
+              "sha256": "fd7901163b7dba233b34808253ffe1561eb996020382275a85c1ed2ef0f17222"
+            }
+          ],
+          "tile": 2,
+          "bounds_xywh": [
+            330,
+            150,
+            330,
+            360
+          ],
+          "new_visual_inspection_performed": true,
+          "scientific_basis": {
+            "path": "data/visual-reviews/open-pain-20261107-scientific.json",
+            "sha256": "d68ce83e651dacc98c4ed3706993de7b271443a274b186364c660132c46e53b2"
+          },
+          "limits": "只认人体前/后与完整轮廓；不验证每块骨骼解剖准确性、性别年龄、病理或原生编辑。"
+        }
+      ],
+      "selected_variant_ids": [
+        "open-pain-f8e5755205f3f9e69b2a:ca71ade57f448493b7b10dcb8bb55a5547369412167c69305d1b1d9afd11cc30:open-pain-f8e5755205f3f9e69b2a:0"
+      ],
+      "source_checks": [
+        {
+          "variant_id": "open-pain-f8e5755205f3f9e69b2a:ca71ade57f448493b7b10dcb8bb55a5547369412167c69305d1b1d9afd11cc30:open-pain-f8e5755205f3f9e69b2a:0",
+          "candidate_id": "open-pain-f8e5755205f3f9e69b2a:file-0",
+          "original_sha256": "ca71ade57f448493b7b10dcb8bb55a5547369412167c69305d1b1d9afd11cc30",
+          "preview_sha256": "8fd230b11b34a644c5f29e610b3c488268d59dab569643a96b4dd150feff2492",
+          "original_archive": {
+            "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/open-pain-42239403135-1-b0000.tar.gz",
+            "member": "files/ca/ca71ade57f448493b7b10dcb8bb55a5547369412167c69305d1b1d9afd11cc30.svg"
+          },
+          "preview_archive": {
+            "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/open-pain-42239403135-1-b0000.tar.gz",
+            "member": "previews/ca71ade57f448493b7b10dcb8bb55a5547369412167c69305d1b1d9afd11cc30.png"
+          },
+          "source_record": {
+            "asset_id": "open-pain-f8e5755205f3f9e69b2a",
+            "attribution": "anatomical illustration — Yanick X. Lukic et al.; https://github.com/DigitalHealthZurich/open-pain-illustration/blob/96d6f379790e39584289bad17a1d6eecc5104bd9/illustration/1.0/anatomical_illustration.svg; CC-BY-4.0",
+            "author": "Yanick X. Lukic et al.",
+            "categories": [
+              "people",
+              "tissues_vessels"
+            ],
+            "distribution_status": "license_recorded",
+            "license": "CC-BY-4.0",
+            "source": "open-pain",
+            "source_id": "illustration/1.0/anatomical_illustration.svg",
+            "source_url": "https://github.com/DigitalHealthZurich/open-pain-illustration/blob/96d6f379790e39584289bad17a1d6eecc5104bd9/illustration/1.0/anatomical_illustration.svg",
+            "tags": [],
+            "taxonomy": [
+              "people"
+            ],
+            "title": "anatomical illustration",
+            "url": "https://raw.githubusercontent.com/DigitalHealthZurich/open-pain-illustration/96d6f379790e39584289bad17a1d6eecc5104bd9/illustration/1.0/anatomical_illustration.svg"
+          },
+          "source_evidence_checked": true,
+          "license_checked": true,
+          "species_matches": true,
+          "required_species": "human",
+          "species_basis": "精确Open Pain人体图来源、原文件绑定科学审阅和本轮可见人类面部/四肢/躯干及前后轮廓共同支持human；不新增人群、性别、年龄或疾病标签。",
+          "source_evidence": [
+            {
+              "path": "build/science-version-acceptance-20261107/visual/final/judgments.json",
+              "sha256": "81f8313353d678976d47db6c42bb54ae6628abcf15b7bcff779ee60a46f776f2",
+              "json_pointer": "/queries/18/source_checks/0"
+            },
+            {
+              "path": "data/visual-reviews/open-pain-20261107-scientific.json",
+              "sha256": "d68ce83e651dacc98c4ed3706993de7b271443a274b186364c660132c46e53b2"
+            }
+          ],
+          "original_download_checked": true,
+          "original_download_check_meaning": "复用同一manifest的既有独立原件恢复/等价链；本轮没有再下载原件。",
+          "new_original_download_performed": false
+        }
+      ],
+      "gap_reason": null,
+      "visual_role_pass": true,
+      "new_role_judgment": true
+    },
+    {
+      "query_id": "component-people-human-body--posterior_view--en",
+      "task_id": "component-people-human-body",
+      "component_id": "posterior_view",
+      "language": "en",
+      "request": {
+        "query": "human body posterior illustration",
+        "filters": {},
+        "limit": 10,
+        "mode": "explore",
+        "seed": "diagnostic-fixed-project"
+      },
+      "review_requirements": {
+        "expected_concepts": [
+          "human body",
+          "back"
+        ],
+        "required_species": "human",
+        "visual_requirements": "来源/科学审阅与图面明确为人体背面；不能镜像或复制正面冒充背面。",
+        "exclude_matches": [
+          "anterior view mirrored as back",
+          "animal anatomy",
+          "clinical photograph"
+        ]
+      },
+      "result_judgments": [
+        {
+          "variant_id": "open-pain-f8e5755205f3f9e69b2a:ca71ade57f448493b7b10dcb8bb55a5547369412167c69305d1b1d9afd11cc30:open-pain-f8e5755205f3f9e69b2a:0",
+          "candidate_id": "open-pain-f8e5755205f3f9e69b2a:file-0",
+          "rank": 1,
+          "original_sha256": "ca71ade57f448493b7b10dcb8bb55a5547369412167c69305d1b1d9afd11cc30",
+          "preview_sha256": "8fd230b11b34a644c5f29e610b3c488268d59dab569643a96b4dd150feff2492",
+          "original_archive": {
+            "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/open-pain-42239403135-1-b0000.tar.gz",
+            "member": "files/ca/ca71ade57f448493b7b10dcb8bb55a5547369412167c69305d1b1d9afd11cc30.svg"
+          },
+          "preview_archive": {
+            "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/open-pain-42239403135-1-b0000.tar.gz",
+            "member": "previews/ca71ade57f448493b7b10dcb8bb55a5547369412167c69305d1b1d9afd11cc30.png"
+          },
+          "verdict": "relevant",
+          "evidence_notes": "实际同屏查看联系表中浅灰版本：左侧人体有面部五官、前胸和前腹，右侧有后头、背部/肩胛与臀部轮廓，均从头到足完整，明显不是将正面镜像成背面。本子题使用右侧背面图，背面角色成立。",
+          "visual_evidence": [
+            {
+              "path": "build/frozen-review-42298772894/review/concepts/people-human-body.png",
+              "sha256": "00bdd219ef0b61644e22e85242a67c7b390ab27b9d1763fd9e29dea478110c28"
+            },
+            {
+              "path": "build/frozen-review-42298772894/review/mapping.json",
+              "sha256": "fd7901163b7dba233b34808253ffe1561eb996020382275a85c1ed2ef0f17222"
+            },
+            {
+              "path": "build/appearance-real-review/appearance-review-42255022104-1/previews/ca71ade57f448493b7b10dcb8bb55a5547369412167c69305d1b1d9afd11cc30.png",
+              "sha256": "8fd230b11b34a644c5f29e610b3c488268d59dab569643a96b4dd150feff2492"
+            }
+          ],
+          "tile": 1,
+          "bounds_xywh": [
+            0,
+            150,
+            330,
+            360
+          ],
+          "new_visual_inspection_performed": true,
+          "scientific_basis": {
+            "path": "data/visual-reviews/open-pain-20261107-scientific.json",
+            "sha256": "d68ce83e651dacc98c4ed3706993de7b271443a274b186364c660132c46e53b2"
+          },
+          "limits": "只认人体前/后与完整轮廓；不验证每块骨骼解剖准确性、性别年龄、病理或原生编辑。"
+        },
+        {
+          "variant_id": "open-pain-c66a17e67b2e8111f592:577c2fdde04aa877d7c6366a399a736b2197be010325c75ae602ab660b35b69f:open-pain-c66a17e67b2e8111f592:0",
+          "candidate_id": "open-pain-c66a17e67b2e8111f592:file-0",
+          "rank": 2,
+          "original_sha256": "577c2fdde04aa877d7c6366a399a736b2197be010325c75ae602ab660b35b69f",
+          "preview_sha256": "a290e7af8d08ec42165c9bdee668c0a9a19eb10048998fb4b39b2ca4085213b2",
+          "original_archive": {
+            "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/open-pain-42239403135-1-b0000.tar.gz",
+            "member": "files/57/577c2fdde04aa877d7c6366a399a736b2197be010325c75ae602ab660b35b69f.svg"
+          },
+          "preview_archive": {
+            "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/open-pain-42239403135-1-b0000.tar.gz",
+            "member": "previews/577c2fdde04aa877d7c6366a399a736b2197be010325c75ae602ab660b35b69f.png"
+          },
+          "verdict": "relevant",
+          "evidence_notes": "实际同屏查看联系表中彩色分区版本：左侧人体有面部五官、前胸和前腹，右侧有后头、背部/肩胛与臀部轮廓，均从头到足完整，明显不是将正面镜像成背面。本子题使用右侧背面图，背面角色成立。",
+          "visual_evidence": [
+            {
+              "path": "build/frozen-review-42298772894/review/concepts/people-human-body.png",
+              "sha256": "00bdd219ef0b61644e22e85242a67c7b390ab27b9d1763fd9e29dea478110c28"
+            },
+            {
+              "path": "build/frozen-review-42298772894/review/mapping.json",
+              "sha256": "fd7901163b7dba233b34808253ffe1561eb996020382275a85c1ed2ef0f17222"
+            }
+          ],
+          "tile": 2,
+          "bounds_xywh": [
+            330,
+            150,
+            330,
+            360
+          ],
+          "new_visual_inspection_performed": true,
+          "scientific_basis": {
+            "path": "data/visual-reviews/open-pain-20261107-scientific.json",
+            "sha256": "d68ce83e651dacc98c4ed3706993de7b271443a274b186364c660132c46e53b2"
+          },
+          "limits": "只认人体前/后与完整轮廓；不验证每块骨骼解剖准确性、性别年龄、病理或原生编辑。"
+        }
+      ],
+      "selected_variant_ids": [
+        "open-pain-f8e5755205f3f9e69b2a:ca71ade57f448493b7b10dcb8bb55a5547369412167c69305d1b1d9afd11cc30:open-pain-f8e5755205f3f9e69b2a:0"
+      ],
+      "source_checks": [
+        {
+          "variant_id": "open-pain-f8e5755205f3f9e69b2a:ca71ade57f448493b7b10dcb8bb55a5547369412167c69305d1b1d9afd11cc30:open-pain-f8e5755205f3f9e69b2a:0",
+          "candidate_id": "open-pain-f8e5755205f3f9e69b2a:file-0",
+          "original_sha256": "ca71ade57f448493b7b10dcb8bb55a5547369412167c69305d1b1d9afd11cc30",
+          "preview_sha256": "8fd230b11b34a644c5f29e610b3c488268d59dab569643a96b4dd150feff2492",
+          "original_archive": {
+            "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/open-pain-42239403135-1-b0000.tar.gz",
+            "member": "files/ca/ca71ade57f448493b7b10dcb8bb55a5547369412167c69305d1b1d9afd11cc30.svg"
+          },
+          "preview_archive": {
+            "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/open-pain-42239403135-1-b0000.tar.gz",
+            "member": "previews/ca71ade57f448493b7b10dcb8bb55a5547369412167c69305d1b1d9afd11cc30.png"
+          },
+          "source_record": {
+            "asset_id": "open-pain-f8e5755205f3f9e69b2a",
+            "attribution": "anatomical illustration — Yanick X. Lukic et al.; https://github.com/DigitalHealthZurich/open-pain-illustration/blob/96d6f379790e39584289bad17a1d6eecc5104bd9/illustration/1.0/anatomical_illustration.svg; CC-BY-4.0",
+            "author": "Yanick X. Lukic et al.",
+            "categories": [
+              "people",
+              "tissues_vessels"
+            ],
+            "distribution_status": "license_recorded",
+            "license": "CC-BY-4.0",
+            "source": "open-pain",
+            "source_id": "illustration/1.0/anatomical_illustration.svg",
+            "source_url": "https://github.com/DigitalHealthZurich/open-pain-illustration/blob/96d6f379790e39584289bad17a1d6eecc5104bd9/illustration/1.0/anatomical_illustration.svg",
+            "tags": [],
+            "taxonomy": [
+              "people"
+            ],
+            "title": "anatomical illustration",
+            "url": "https://raw.githubusercontent.com/DigitalHealthZurich/open-pain-illustration/96d6f379790e39584289bad17a1d6eecc5104bd9/illustration/1.0/anatomical_illustration.svg"
+          },
+          "source_evidence_checked": true,
+          "license_checked": true,
+          "species_matches": true,
+          "required_species": "human",
+          "species_basis": "精确Open Pain人体图来源、原文件绑定科学审阅和本轮可见人类面部/四肢/躯干及前后轮廓共同支持human；不新增人群、性别、年龄或疾病标签。",
+          "source_evidence": [
+            {
+              "path": "build/science-version-acceptance-20261107/visual/final/judgments.json",
+              "sha256": "81f8313353d678976d47db6c42bb54ae6628abcf15b7bcff779ee60a46f776f2",
+              "json_pointer": "/queries/19/source_checks/0"
+            },
+            {
+              "path": "data/visual-reviews/open-pain-20261107-scientific.json",
+              "sha256": "d68ce83e651dacc98c4ed3706993de7b271443a274b186364c660132c46e53b2"
+            }
+          ],
+          "original_download_checked": true,
+          "original_download_check_meaning": "复用同一manifest的既有独立原件恢复/等价链；本轮没有再下载原件。",
+          "new_original_download_performed": false
+        }
+      ],
+      "gap_reason": null,
+      "visual_role_pass": true,
+      "new_role_judgment": true
+    }
+  ],
+  "tasks": [
+    {
+      "task_id": "component-people-human-body",
+      "language": "zh",
+      "selected_roles": {
+        "anterior_view": [
+          "open-pain-f8e5755205f3f9e69b2a:ca71ade57f448493b7b10dcb8bb55a5547369412167c69305d1b1d9afd11cc30:open-pain-f8e5755205f3f9e69b2a:0"
+        ],
+        "posterior_view": [
+          "open-pain-f8e5755205f3f9e69b2a:ca71ade57f448493b7b10dcb8bb55a5547369412167c69305d1b1d9afd11cc30:open-pain-f8e5755205f3f9e69b2a:0"
+        ]
+      },
+      "composition_use_pass": true,
+      "composition_notes": "本轮同屏实际查看两个精确候选的前后成对人体，并另看浅灰版本原SHA绑定的PNG。选择浅灰同一文件承担两角色：左图面部/前胸为anterior，右图后头/背部/臀部为posterior；前后轮廓完整、比例与画风一致，足以作清楚的前后并列对照。同文件在两角色各自的中英实际结果中均返回；不是复制或镜像单一正面。彩色版本是可用备选，但不混用其无图例色码。",
+      "composition_requirements": [
+        "两视角都取得并在实际组合预览中清楚区分前/后；同一正面镜像不能填补背面。"
+      ],
+      "limitations": [
+        "只证明该精确对象或局部场景可作为绘图素材；不证明未要求的病理状态、测量值、具体品系或原生编辑能力。",
+        "未把图中每处骨骼细节当作经过临床解剖准确性验收；小图使用须注意低对比细线。"
+      ],
+      "composition_evidence": [
+        {
+          "path": "build/frozen-review-42298772894/review/concepts/people-human-body.png",
+          "sha256": "00bdd219ef0b61644e22e85242a67c7b390ab27b9d1763fd9e29dea478110c28"
+        },
+        {
+          "path": "build/frozen-review-42298772894/review/mapping.json",
+          "sha256": "fd7901163b7dba233b34808253ffe1561eb996020382275a85c1ed2ef0f17222"
+        },
+        {
+          "path": "build/appearance-real-review/appearance-review-42255022104-1/previews/ca71ade57f448493b7b10dcb8bb55a5547369412167c69305d1b1d9afd11cc30.png",
+          "sha256": "8fd230b11b34a644c5f29e610b3c488268d59dab569643a96b4dd150feff2492"
+        }
+      ],
+      "same_file_can_fill_both_roles": true,
+      "actual_same_screen_view_completed": true,
+      "new_composition_board_generated": false,
+      "composition_display_basis": "Existing exact-pair contact sheet was actually displayed this turn; the selected file itself already contains two distinct full-body views."
+    },
+    {
+      "task_id": "component-people-human-body",
+      "language": "en",
+      "selected_roles": {
+        "anterior_view": [
+          "open-pain-f8e5755205f3f9e69b2a:ca71ade57f448493b7b10dcb8bb55a5547369412167c69305d1b1d9afd11cc30:open-pain-f8e5755205f3f9e69b2a:0"
+        ],
+        "posterior_view": [
+          "open-pain-f8e5755205f3f9e69b2a:ca71ade57f448493b7b10dcb8bb55a5547369412167c69305d1b1d9afd11cc30:open-pain-f8e5755205f3f9e69b2a:0"
+        ]
+      },
+      "composition_use_pass": true,
+      "composition_notes": "本轮同屏实际查看两个精确候选的前后成对人体，并另看浅灰版本原SHA绑定的PNG。选择浅灰同一文件承担两角色：左图面部/前胸为anterior，右图后头/背部/臀部为posterior；前后轮廓完整、比例与画风一致，足以作清楚的前后并列对照。同文件在两角色各自的中英实际结果中均返回；不是复制或镜像单一正面。彩色版本是可用备选，但不混用其无图例色码。",
+      "composition_requirements": [
+        "两视角都取得并在实际组合预览中清楚区分前/后；同一正面镜像不能填补背面。"
+      ],
+      "limitations": [
+        "只证明该精确对象或局部场景可作为绘图素材；不证明未要求的病理状态、测量值、具体品系或原生编辑能力。",
+        "未把图中每处骨骼细节当作经过临床解剖准确性验收；小图使用须注意低对比细线。"
+      ],
+      "composition_evidence": [
+        {
+          "path": "build/frozen-review-42298772894/review/concepts/people-human-body.png",
+          "sha256": "00bdd219ef0b61644e22e85242a67c7b390ab27b9d1763fd9e29dea478110c28"
+        },
+        {
+          "path": "build/frozen-review-42298772894/review/mapping.json",
+          "sha256": "fd7901163b7dba233b34808253ffe1561eb996020382275a85c1ed2ef0f17222"
+        },
+        {
+          "path": "build/appearance-real-review/appearance-review-42255022104-1/previews/ca71ade57f448493b7b10dcb8bb55a5547369412167c69305d1b1d9afd11cc30.png",
+          "sha256": "8fd230b11b34a644c5f29e610b3c488268d59dab569643a96b4dd150feff2492"
+        }
+      ],
+      "same_file_can_fill_both_roles": true,
+      "actual_same_screen_view_completed": true,
+      "new_composition_board_generated": false,
+      "composition_display_basis": "Existing exact-pair contact sheet was actually displayed this turn; the selected file itself already contains two distinct full-body views."
+    }
+  ],
+  "items": [
+    {
+      "candidate_id": "open-pain-f8e5755205f3f9e69b2a:file-0",
+      "original_sha256": "ca71ade57f448493b7b10dcb8bb55a5547369412167c69305d1b1d9afd11cc30",
+      "preview_sha256": "8fd230b11b34a644c5f29e610b3c488268d59dab569643a96b4dd150feff2492",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/open-pain-42239403135-1-b0000.tar.gz",
+        "member": "files/ca/ca71ade57f448493b7b10dcb8bb55a5547369412167c69305d1b1d9afd11cc30.svg"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/open-pain-42239403135-1-b0000.tar.gz",
+        "member": "previews/ca71ade57f448493b7b10dcb8bb55a5547369412167c69305d1b1d9afd11cc30.png"
+      },
+      "view_method": "本轮实际查看已精确绑定的两候选同屏联系表；另实际打开与preview SHA完全相等的432×512 PNG。",
+      "source_records": [
+        {
+          "asset_id": "open-pain-f8e5755205f3f9e69b2a",
+          "attribution": "anatomical illustration — Yanick X. Lukic et al.; https://github.com/DigitalHealthZurich/open-pain-illustration/blob/96d6f379790e39584289bad17a1d6eecc5104bd9/illustration/1.0/anatomical_illustration.svg; CC-BY-4.0",
+          "author": "Yanick X. Lukic et al.",
+          "categories": [
+            "people",
+            "tissues_vessels"
+          ],
+          "distribution_status": "license_recorded",
+          "license": "CC-BY-4.0",
+          "source": "open-pain",
+          "source_id": "illustration/1.0/anatomical_illustration.svg",
+          "source_url": "https://github.com/DigitalHealthZurich/open-pain-illustration/blob/96d6f379790e39584289bad17a1d6eecc5104bd9/illustration/1.0/anatomical_illustration.svg",
+          "tags": [],
+          "taxonomy": [
+            "people"
+          ],
+          "title": "anatomical illustration",
+          "url": "https://raw.githubusercontent.com/DigitalHealthZurich/open-pain-illustration/96d6f379790e39584289bad17a1d6eecc5104bd9/illustration/1.0/anatomical_illustration.svg"
+        }
+      ],
+      "reviewed_sheets": [
+        {
+          "path": "build/frozen-review-42298772894/review/concepts/people-human-body.png",
+          "sha256": "00bdd219ef0b61644e22e85242a67c7b390ab27b9d1763fd9e29dea478110c28"
+        },
+        {
+          "path": "build/frozen-review-42298772894/review/mapping.json",
+          "sha256": "fd7901163b7dba233b34808253ffe1561eb996020382275a85c1ed2ef0f17222"
+        },
+        {
+          "path": "build/appearance-real-review/appearance-review-42255022104-1/previews/ca71ade57f448493b7b10dcb8bb55a5547369412167c69305d1b1d9afd11cc30.png",
+          "sha256": "8fd230b11b34a644c5f29e610b3c488268d59dab569643a96b4dd150feff2492"
+        }
+      ],
+      "observations_zh": "实际同屏查看联系表中浅灰版本：左侧人体有面部五官、前胸和前腹，右侧有后头、背部/肩胛与臀部轮廓，均从头到足完整，明显不是将正面镜像成背面。本子题使用右侧背面图，背面角色成立。",
+      "display_limits_zh": [
+        "浅灰细线在白色/棋盘背景下对比偏低，缩成小图时骨骼和手足细节会弱化；需要在最终画布尺寸另看。",
+        "没有观察到覆盖人物的文字标签；联系表外部标题不是原图内容。",
+        "适合中性前后对照，但不可把浅灰骨骼细节当作经过临床解剖审定。"
+      ],
+      "native_editability_pass": null
+    },
+    {
+      "candidate_id": "open-pain-c66a17e67b2e8111f592:file-0",
+      "original_sha256": "577c2fdde04aa877d7c6366a399a736b2197be010325c75ae602ab660b35b69f",
+      "preview_sha256": "a290e7af8d08ec42165c9bdee668c0a9a19eb10048998fb4b39b2ca4085213b2",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/open-pain-42239403135-1-b0000.tar.gz",
+        "member": "files/57/577c2fdde04aa877d7c6366a399a736b2197be010325c75ae602ab660b35b69f.svg"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/open-pain-42239403135-1-b0000.tar.gz",
+        "member": "previews/577c2fdde04aa877d7c6366a399a736b2197be010325c75ae602ab660b35b69f.png"
+      },
+      "view_method": "本轮实际查看已精确绑定的两候选同屏联系表；彩色文件未另取单独PNG，所见为该预览的联系表缩放呈现。",
+      "source_records": [
+        {
+          "asset_id": "open-pain-c66a17e67b2e8111f592",
+          "attribution": "anatomical illustration colored — Yanick X. Lukic et al.; https://github.com/DigitalHealthZurich/open-pain-illustration/blob/96d6f379790e39584289bad17a1d6eecc5104bd9/illustration/1.0/anatomical_illustration_colored.svg; CC-BY-4.0",
+          "author": "Yanick X. Lukic et al.",
+          "categories": [
+            "people",
+            "tissues_vessels"
+          ],
+          "distribution_status": "license_recorded",
+          "license": "CC-BY-4.0",
+          "source": "open-pain",
+          "source_id": "illustration/1.0/anatomical_illustration_colored.svg",
+          "source_url": "https://github.com/DigitalHealthZurich/open-pain-illustration/blob/96d6f379790e39584289bad17a1d6eecc5104bd9/illustration/1.0/anatomical_illustration_colored.svg",
+          "tags": [],
+          "taxonomy": [
+            "people"
+          ],
+          "title": "anatomical illustration colored",
+          "url": "https://raw.githubusercontent.com/DigitalHealthZurich/open-pain-illustration/96d6f379790e39584289bad17a1d6eecc5104bd9/illustration/1.0/anatomical_illustration_colored.svg"
+        }
+      ],
+      "reviewed_sheets": [
+        {
+          "path": "build/frozen-review-42298772894/review/concepts/people-human-body.png",
+          "sha256": "00bdd219ef0b61644e22e85242a67c7b390ab27b9d1763fd9e29dea478110c28"
+        },
+        {
+          "path": "build/frozen-review-42298772894/review/mapping.json",
+          "sha256": "fd7901163b7dba233b34808253ffe1561eb996020382275a85c1ed2ef0f17222"
+        }
+      ],
+      "observations_zh": "实际同屏查看联系表中彩色分区版本：左侧人体有面部五官、前胸和前腹，右侧有后头、背部/肩胛与臀部轮廓，均从头到足完整，明显不是将正面镜像成背面。本子题使用右侧背面图，背面角色成立。",
+      "display_limits_zh": [
+        "浅灰细线在白色/棋盘背景下对比偏低，缩成小图时骨骼和手足细节会弱化；需要在最终画布尺寸另看。",
+        "没有观察到覆盖人物的文字标签；联系表外部标题不是原图内容。",
+        "彩色分区没有在本次图面给出图例，不赋予疾病、分组或组织功能含义。"
+      ],
+      "native_editability_pass": null
+    }
+  ],
+  "summary": {
+    "child_queries": 4,
+    "result_positions": 8,
+    "unique_files_actually_viewed": 2,
+    "new_query_specific_role_judgments": 4,
+    "task_language_composition_reviews_completed": 2,
+    "formal_total_component_score": null,
+    "new_original_or_preview_downloads": 0,
+    "new_searches": 0
+  },
+  "new_visual_inspections": 2,
+  "old_observations_reused_for_source_confirmation": true,
+  "new_composition_review": true,
+  "acceptance_passed": null,
+  "website_gate_opened": false,
+  "limitations": [
+    "仅首轮shared-search-3.4.3四条人体子查询的部分证据；不是完整组件验收通过。",
+    "彩色候选仅通过已校验SHA的联系表实际查看，没有声称另看完整分辨率原件。",
+    "没有改catalog/science/core/gate，也未测试Illustrator或新增医疗准确性声明。"
+  ]
+}
