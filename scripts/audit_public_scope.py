@@ -19,6 +19,7 @@ sys.path.insert(0, str(ROOT))
 sys.path.insert(0, str(ROOT / "scripts"))
 from mga_resources.scope_policy import load_scope_policy, evaluate_public_scope
 from build_publish_pack import validate_index, validate_remote_restore
+from restore_equivalence import compare_manifests, validate_restore_equivalence
 
 
 def read_json(path):
@@ -39,7 +40,9 @@ def records(path):
 
 def audit(catalog, assembly, *, catalog_sha256, policy, internal=None,
           internal_sha256=None, index=None, manifest=None, manifest_sha256=None,
-          bundle=None, bundle_sha256=None, restore=None, paired_review=None):
+          bundle=None, bundle_sha256=None, restore=None, paired_review=None,
+          restore_equivalence=None, restore_equivalence_sha256=None,
+          restored_manifest=None, restored_manifest_sha256=None, restore_sha256=None):
     checks = []
 
     def check(name, passed, detail):
@@ -135,16 +138,38 @@ def audit(catalog, assembly, *, catalog_sha256, policy, internal=None,
         check("publish_bundle.exact_manifest_members", None, "Supply both clean bundle index and publication manifest. Raw collection archives are not clean publication packs.")
     else:
         try:
-            validate_index(bundle, manifest, bundle.get("repository"))
+            if restore_equivalence is not None:
+                compare_manifests(manifest, restored_manifest)
+                validate_index(bundle, restored_manifest, bundle.get("repository"))
+            else:
+                validate_index(bundle, manifest, bundle.get("repository"))
             check("publish_bundle.exact_manifest_members", True, {"packs": len(bundle["packs"]), "members": bundle["artwork_object_count"]})
         except (ValueError, KeyError, TypeError) as error:
             check("publish_bundle.exact_manifest_members", False, str(error))
-    if restore is None or bundle is None or manifest is None:
+    restore_proof_type = "pending"
+    if restore_equivalence is not None:
+        try:
+            from build_publish_pack import json_bytes
+            if restore_equivalence_sha256 != hashlib.sha256(json_bytes(restore_equivalence)).hexdigest():
+                raise ValueError("Equivalence evidence hash/canonical bytes are missing or mismatched")
+            validate_restore_equivalence(restore_equivalence, manifest, restored_manifest, bundle, restore,
+                new_manifest_sha256=manifest_sha256, restored_manifest_sha256=restored_manifest_sha256,
+                bundle_sha256=bundle_sha256, restore_evidence_sha256=restore_sha256)
+            restore_proof_type = "equivalence_non_fresh_artwork_read"
+            check("publish_bundle.restore_equivalence", True,
+                  {"proof_type": restore_proof_type, "metadata_run": restore_equivalence["metadata_run"],
+                   "historical_build_run": restore["build_run"], "historical_restore_run": restore["restore_run"],
+                   "current_pack_asset_metadata_checks": len(restore_equivalence["remote_pack_asset_checks"]),
+                   "new_artwork_archive_reads": 0})
+        except (ValueError, KeyError, TypeError) as error:
+            check("publish_bundle.restore_equivalence", False, str(error))
+    elif restore is None or bundle is None or manifest is None:
         check("publish_bundle.independent_restore", None, "Cloud restore receipt still required; a written rule or bundle plan is not a successful restore.")
     else:
         try:
             validate_remote_restore(restore, bundle, manifest,
                                     manifest_sha256=manifest_sha256, bundle_sha256=bundle_sha256)
+            restore_proof_type = "independent_remote_restore"
             check("publish_bundle.independent_restore", True,
                   {"member_count": restore["artwork_member_count"], "build_run": restore["build_run"],
                    "restore_run": restore["restore_run"], "checked_at": restore["checked_at"]})
@@ -186,6 +211,9 @@ def audit(catalog, assembly, *, catalog_sha256, policy, internal=None,
     return {"schema_version": 1, "audit_scope": "Exact file scope only; not full collection, scientific, skill-cleanup or deployment acceptance.",
         "checked_at": datetime.now(timezone.utc).isoformat(), "catalog_sha256": catalog_sha256,
         "policy_sha256": policy["sha256"], "scope_end_to_end_passed": not failed and not pending,
+        "restore_proof_type": restore_proof_type,
+        "restore_equivalence_sha256": restore_equivalence_sha256,
+        "full_artwork_restore_proof_directly_binds_current_manifest": restore_proof_type == "independent_remote_restore",
         "failed_checks": failed, "pending_checks": pending, "checks": checks,
         "counts": {"public_families": len(catalog), "public_unique_originals": len(public),
             "nonpublic_unique_originals": len({r["sha256"] for r in dispositions}) if internal is not None else None,
@@ -207,8 +235,14 @@ def main():
     parser.add_argument("--publish-manifest", type=Path)
     parser.add_argument("--bundle-index", type=Path)
     parser.add_argument("--restore-evidence", type=Path)
+    parser.add_argument("--restore-equivalence", type=Path)
+    parser.add_argument("--restored-manifest", type=Path)
     parser.add_argument("--output", type=Path, required=True)
     args = parser.parse_args()
+    if args.restore_equivalence and not all((args.restored_manifest, args.bundle_index, args.restore_evidence, args.publish_manifest)):
+        parser.error("Equivalence requires new/old manifests, historical bundle and historical restore evidence")
+    if args.restored_manifest and not args.restore_equivalence:
+        parser.error("--restored-manifest requires explicit --restore-equivalence")
     inputs = {key:proof(path) for key,path in vars(args).items() if path and key != "output"}
     report = audit(records(args.catalog), read_json(args.assembly_report),
         catalog_sha256=inputs["catalog"]["sha256"], policy=load_scope_policy(),
@@ -219,6 +253,11 @@ def main():
         bundle=read_json(args.bundle_index) if args.bundle_index else None,
         bundle_sha256=inputs.get("bundle_index", {}).get("sha256"),
         restore=read_json(args.restore_evidence) if args.restore_evidence else None,
+        restore_equivalence=read_json(args.restore_equivalence) if args.restore_equivalence else None,
+        restore_equivalence_sha256=inputs.get("restore_equivalence", {}).get("sha256"),
+        restored_manifest=read_json(args.restored_manifest) if args.restored_manifest else None,
+        restored_manifest_sha256=inputs.get("restored_manifest", {}).get("sha256"),
+        restore_sha256=inputs.get("restore_evidence", {}).get("sha256"),
         paired_review=read_json(ROOT/"data/visual-reviews/commons-42260711756-component-scope.json"))
     report["input_proofs"] = inputs
     args.output.parent.mkdir(parents=True, exist_ok=True)

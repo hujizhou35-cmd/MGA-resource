@@ -106,3 +106,32 @@ def test_scope_audit_requires_independent_remote_reads_not_build_or_legacy_flags
     args["bundle"].pop("build_run")
     args["bundle_sha256"] = pack.sha(pack.json_bytes(args["bundle"]))
     assert status() == "failed"
+
+
+def test_scope_audit_explicit_equivalence_keeps_old_full_read_separate(tmp_path):
+    from test_restore_equivalence import example, pack
+    evidence, docs, _ = example()
+    args = fixture(tmp_path)
+    args.update(manifest=docs['new_manifest'], manifest_sha256=pack.sha(pack.json_bytes(docs['new_manifest'])),
+        bundle=docs['historical_bundle'], bundle_sha256=pack.sha(pack.json_bytes(docs['historical_bundle'])),
+        restore=docs['historical_restore'], restore_sha256=pack.sha(pack.json_bytes(docs['historical_restore'])),
+        restored_manifest=docs['restored_manifest'], restored_manifest_sha256=pack.sha(pack.json_bytes(docs['restored_manifest'])),
+        restore_equivalence=evidence, restore_equivalence_sha256=pack.sha(pack.json_bytes(evidence)))
+    result = audit_module.audit(**args)
+    checks = {x['check']: x['status'] for x in result['checks']}
+    assert checks['publish_bundle.exact_manifest_members'] == 'passed'
+    assert checks['publish_bundle.restore_equivalence'] == 'passed'
+    assert result['restore_proof_type'] == 'equivalence_non_fresh_artwork_read'
+    assert not result['full_artwork_restore_proof_directly_binds_current_manifest']
+    assert not result['scope_end_to_end_passed']  # unrelated synthetic catalog is deliberately different
+    args['restore_equivalence'] = {**evidence, 'new_artwork_archive_reads': 1}
+    args['restore_equivalence_sha256'] = pack.sha(pack.json_bytes(args['restore_equivalence']))
+    result = audit_module.audit(**args)
+    assert 'publish_bundle.restore_equivalence' in result['failed_checks']
+
+
+def test_scope_equivalence_does_not_accept_missing_historical_manifest(tmp_path):
+    args = fixture(tmp_path)
+    args.update(restore_equivalence={}, restore_equivalence_sha256='f' * 64)
+    result = audit_module.audit(**args)
+    assert 'publish_bundle.restore_equivalence' in result['failed_checks']
