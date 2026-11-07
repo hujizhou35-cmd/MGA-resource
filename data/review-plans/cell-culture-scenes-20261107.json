@@ -1,0 +1,183 @@
+{
+  "schema_version": 1,
+  "purpose": "Bounded visual investigation of three already-collected clean-bench scenes; not new collection, a scope decision or benchmark success.",
+  "catalog_prefix": "assembly-42320673266-1",
+  "catalog_sha256": "8a961c42a357147f2ae0229526f6127c955e05928721d94283e829463f738da0",
+  "source_release_tag": "collection-20261106",
+  "publish_tag": "acceptance-20261107",
+  "files": [
+    {
+      "source": "bioicons",
+      "source_id": "cc-by-4.0/Cell_culture/DBCLS/Clean_bench_F.svg",
+      "asset_id": "bioicons-a645be9c960715ea7dee",
+      "selected_candidate_id": "bioicons-a645be9c960715ea7dee:file-0",
+      "family_id": "bioicons-a645be9c960715ea7dee",
+      "title": "Clean bench F",
+      "source_url": "https://github.com/duerrsimon/bioicons/blob/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-4.0/Cell_culture/DBCLS/Clean_bench_F.svg",
+      "original_sha256": "9b5470c2f35d66eca0e3fb9eb83f896a6ad7c9e774d678ec5dca51912b02526d",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42239971379-1-b0004.tar.gz",
+        "member": "files/9b/9b5470c2f35d66eca0e3fb9eb83f896a6ad7c9e774d678ec5dca51912b02526d.svg"
+      },
+      "format": "svg",
+      "structure": "pure_vector",
+      "preview": {
+        "path": "previews/9b5470c2f35d66eca0e3fb9eb83f896a6ad7c9e774d678ec5dca51912b02526d.png",
+        "format": "png",
+        "width": 512,
+        "height": 512,
+        "sha256": "3d7f0f20e1a90141500ce3c8c911024fcadf8f83b7631100dbe3825cc975ff49",
+        "size_bytes": 67926,
+        "archive": {
+          "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42239971379-1-b0004.tar.gz",
+          "member": "previews/9b5470c2f35d66eca0e3fb9eb83f896a6ad7c9e774d678ec5dca51912b02526d.png"
+        }
+      },
+      "source_records": [
+        {
+          "title": "Clean bench F",
+          "tags": [
+            "Cell culture"
+          ],
+          "categories": [],
+          "taxonomy": [
+            "cells",
+            "experimental_actions"
+          ],
+          "upstream_category": "Cell_culture",
+          "author": "DBCLS",
+          "distribution_status": "license_recorded",
+          "asset_id": "bioicons-a645be9c960715ea7dee",
+          "source": "bioicons",
+          "source_id": "cc-by-4.0/Cell_culture/DBCLS/Clean_bench_F.svg",
+          "source_url": "https://github.com/duerrsimon/bioicons/blob/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-4.0/Cell_culture/DBCLS/Clean_bench_F.svg",
+          "url": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-4.0/Cell_culture/DBCLS/Clean_bench_F.svg",
+          "license": "CC-BY-4.0",
+          "attribution": "Clean bench F — DBCLS; https://togotv.dbcls.jp/en/pics.html; CC-BY-4.0; via Bioicons"
+        }
+      ],
+      "review_question": "Observe the actual clean-bench scene: identify visible hands, vessels and contact/action relationships. Decide whether it depicts a reusable cell-culture action, only unspecified clean-bench laboratory work, or static equipment. Source title/categories nominate this review but cannot establish a culture procedure or successful benchmark match. Do not invent sterile status, cell type, medium change, step order, quantities or completed processing. Preserve originals and return exact archived previews only.",
+      "selection_is_acceptance": false
+    },
+    {
+      "source": "togo",
+      "source_id": "781",
+      "asset_id": "togo-058a1fb764263551b38b",
+      "selected_candidate_id": "togo-058a1fb764263551b38b:file-0",
+      "family_id": "togo-058a1fb764263551b38b",
+      "title": "A woman working on a clean bench",
+      "source_url": "https://doi.org/10.7875/togopic.2020.194",
+      "original_sha256": "1ba5a7053693c774eb459c2d198b956d64b730d3c9dc62e29be152dd469b3995",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42249870031-1-b0001.tar.gz",
+        "member": "files/1b/1ba5a7053693c774eb459c2d198b956d64b730d3c9dc62e29be152dd469b3995.svg"
+      },
+      "format": "svg",
+      "structure": "pure_vector",
+      "preview": {
+        "path": "previews/1ba5a7053693c774eb459c2d198b956d64b730d3c9dc62e29be152dd469b3995.png",
+        "format": "png",
+        "width": 512,
+        "height": 512,
+        "sha256": "220ccf1d1e1d8923fb8889ea1cf7820f100007f61fdf690c68777c1597044b9c",
+        "size_bytes": 67705,
+        "archive": {
+          "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42249870031-1-b0001.tar.gz",
+          "member": "previews/1ba5a7053693c774eb459c2d198b956d64b730d3c9dc62e29be152dd469b3995.png"
+        }
+      },
+      "source_records": [
+        {
+          "title": "A woman working on a clean bench",
+          "tags": [
+            "Lab apparatus",
+            "Icon",
+            "Research activities",
+            "Life science",
+            "Education",
+            "Healthcare",
+            "Mammalia",
+            "Primates",
+            "Homo sapiens"
+          ],
+          "categories": [],
+          "taxonomy": [
+            "people",
+            "lab_equipment",
+            "clinical_workflow"
+          ],
+          "author": "Wakana Sasaki",
+          "distribution_status": "license_recorded",
+          "asset_id": "togo-4dc97b7764f0aebfcbe8",
+          "source": "togo",
+          "source_id": "781",
+          "source_url": "https://doi.org/10.7875/togopic.2020.194",
+          "url": "https://dbarchive.biosciencedbc.jp/data/togo-pic/image/202010_Clean_bench_F.svg",
+          "license": "CC-BY-4.0",
+          "attribution": "A woman working on a clean bench — Wakana Sasaki; © 2016 DBCLS TogoTV / CC-BY-4.0; https://doi.org/10.7875/togopic.2020.194"
+        }
+      ],
+      "review_question": "Observe the actual clean-bench scene: identify visible hands, vessels and contact/action relationships. Decide whether it depicts a reusable cell-culture action, only unspecified clean-bench laboratory work, or static equipment. Source title/categories nominate this review but cannot establish a culture procedure or successful benchmark match. Do not invent sterile status, cell type, medium change, step order, quantities or completed processing. Preserve originals and return exact archived previews only.",
+      "selection_is_acceptance": false
+    },
+    {
+      "source": "togo",
+      "source_id": "1562",
+      "asset_id": "togo-d9c7515a9eec9fe0f88e",
+      "selected_candidate_id": "togo-d9c7515a9eec9fe0f88e:file-0",
+      "family_id": "togo-d9c7515a9eec9fe0f88e",
+      "title": "Clean bench work (female)",
+      "source_url": "https://doi.org/10.7875/togopic.2022.598",
+      "original_sha256": "a0ad68c9c11425694bbe4e10b5c05d0cfe37a3c2d2479a173e67716802bd0e10",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42261598057-1-b0000.tar.gz",
+        "member": "files/a0/a0ad68c9c11425694bbe4e10b5c05d0cfe37a3c2d2479a173e67716802bd0e10.svg"
+      },
+      "format": "svg",
+      "structure": "pure_vector",
+      "preview": {
+        "path": "previews/a0ad68c9c11425694bbe4e10b5c05d0cfe37a3c2d2479a173e67716802bd0e10.png",
+        "format": "png",
+        "width": 512,
+        "height": 512,
+        "sha256": "901470b33f828108013fe7efc32aff21083618cbf36e88bfe6e8cad1a8ae6144",
+        "size_bytes": 21035,
+        "archive": {
+          "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42261598057-1-b0000.tar.gz",
+          "member": "previews/a0ad68c9c11425694bbe4e10b5c05d0cfe37a3c2d2479a173e67716802bd0e10.png"
+        }
+      },
+      "source_records": [
+        {
+          "title": "Clean bench work (female)",
+          "tags": [
+            "Organisms",
+            "Lab equipment",
+            "Icon",
+            "Biology",
+            "Taxonomy",
+            "Ecology",
+            "Mammalia",
+            "Primates",
+            "Homo sapiens"
+          ],
+          "categories": [],
+          "taxonomy": [
+            "lab_equipment"
+          ],
+          "author": "<a href=\"https://erikotoyooka.com/\" target=\"_blank\">erico</a>",
+          "distribution_status": "license_recorded",
+          "asset_id": "togo-8611a0b68eee1b5ae3ac",
+          "source": "togo",
+          "source_id": "1562",
+          "source_url": "https://doi.org/10.7875/togopic.2022.598",
+          "url": "https://dbarchive.biosciencedbc.jp/data/togo-pic/image/202212_Clean_Bench_Female.svg",
+          "license": "CC-BY-4.0",
+          "attribution": "Clean bench work (female) — <a href=\"https://erikotoyooka.com/\" target=\"_blank\">erico</a>; © 2016 DBCLS TogoTV / CC-BY-4.0; https://doi.org/10.7875/togopic.2022.598"
+        }
+      ],
+      "review_question": "Observe the actual clean-bench scene: identify visible hands, vessels and contact/action relationships. Decide whether it depicts a reusable cell-culture action, only unspecified clean-bench laboratory work, or static equipment. Source title/categories nominate this review but cannot establish a culture procedure or successful benchmark match. Do not invent sterile status, cell type, medium change, step order, quantities or completed processing. Preserve originals and return exact archived previews only.",
+      "selection_is_acceptance": false
+    }
+  ]
+}
