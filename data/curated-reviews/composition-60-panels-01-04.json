@@ -1,0 +1,751 @@
+{
+  "schema_version": 1,
+  "reviewer": "Codex scope_publication_check; direct actual visual inspection",
+  "reviewed_at": "2026-11-07T01:05:46.881073+00:00",
+  "mapping_path": "build/curated-expansion-60/composition/composition-mapping.json",
+  "mapping_sha256": "8b830a100962db7335e5d4e49a341c0d8f00353df8a854aa6e20f6e85f976a8f",
+  "catalog_sha256": "5c90306415ce5e7f36e875c7f57b19a91930aacfeeaeecdf9ad7662770f9a3fe",
+  "manifest_sha256": "a4fe0424ee8ecc32096090ef295242bdaa04b9ce29ff4f7a80948c95516d5436",
+  "input_mappings": [
+    {
+      "mapping_sha256": "0fcb104d57b430cc4592d7f5123ed4d0fb53cf8c3c17557c161cf4bcd7f5b218",
+      "kind": "restored"
+    },
+    {
+      "mapping_sha256": "dbdb7b4c2721f6da0460ffd9da5b3bea54c09d669fed8285ba98886f0b61f921",
+      "kind": "exact_review"
+    }
+  ],
+  "review_scope": "Only purpose-composition pages01-04, including their technical background/reduction strips; not all60 or a complete scientific-figure/Illustrator acceptance.",
+  "pages": [
+    {
+      "page_id": "01",
+      "page_path": "build/curated-expansion-60/composition/01-animal-models.png",
+      "page_sha256": "0dd5e392255ef4b1bf802677d4bef073628b6a79271b86eed59ff188ee279287",
+      "page_size_bytes": 413042,
+      "mapping_sha256": "8b830a100962db7335e5d4e49a341c0d8f00353df8a854aa6e20f6e85f976a8f",
+      "title_zh": "研究动物的对象选材",
+      "assets": [
+        {
+          "ordinal": 2,
+          "candidate_id": "arcadia-4955af18ad237ed6cd9b:file-3",
+          "original_sha256": "47be7999412d70b592425317803ec9d4e105a021323fef204a85da0a7585171e",
+          "preview_sha256": "2fe1da833e485b5b54dcffcfbc63692d9c054e2e5df8ec319ecd9ec6667a64df",
+          "original_archive": {
+            "member": "files/47/47be7999412d70b592425317803ec9d4e105a021323fef204a85da0a7585171e.svg",
+            "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/arcadia-42234366112-1-b0000.tar.gz"
+          },
+          "preview_archive": {
+            "member": "previews/47be7999412d70b592425317803ec9d4e105a021323fef204a85da0a7585171e.png",
+            "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/arcadia-42234366112-1-b0000.tar.gz"
+          },
+          "caption_zh": "猕猴 / Macaca mulatta",
+          "rendered_xywh": [
+            80,
+            360,
+            430,
+            430
+          ],
+          "nonzero_alpha_bounds_xyxy": [
+            167,
+            465,
+            428,
+            716
+          ],
+          "scientific_limits": [
+            "仅沿用来源物种身份，不作独立物种鉴定或个体年龄判断。"
+          ],
+          "actual_observation_zh": "主图完整尾部跨背景色块，棕色细描边与同页剪影不同；不新增年龄或品系断言。"
+        },
+        {
+          "ordinal": 1,
+          "candidate_id": "arcadia-1a5ce7548667ba354a8a:file-3",
+          "original_sha256": "f7e6c68cbcb0a6748f6be18b8c9ba8fd5c385508d807c6918c7db78b779c393b",
+          "preview_sha256": "a38c8cd9f0a32cdf70ac71f72803efbca9520aa3aae9329ee34fe70356aeb705",
+          "original_archive": {
+            "member": "files/f7/f7e6c68cbcb0a6748f6be18b8c9ba8fd5c385508d807c6918c7db78b779c393b.png",
+            "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/arcadia-42234366112-1-b0000.tar.gz"
+          },
+          "preview_archive": {
+            "member": "previews/f7e6c68cbcb0a6748f6be18b8c9ba8fd5c385508d807c6918c7db78b779c393b.png",
+            "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/arcadia-42234366112-1-b0000.tar.gz"
+          },
+          "caption_zh": "斑马鱼 / Danio rerio",
+          "rendered_xywh": [
+            820,
+            250,
+            260,
+            260
+          ],
+          "nonzero_alpha_bounds_xyxy": [
+            833,
+            343,
+            1067,
+            422
+          ],
+          "scientific_limits": [
+            "不推断品系、性别或疾病；位图不冒称路径可编辑。"
+          ],
+          "actual_observation_zh": "鱼体细纹与鱼鳍在缩小后减少；仅沿用来源物种，不能用当前显示比例比较真实体型。"
+        },
+        {
+          "ordinal": 3,
+          "candidate_id": "scidraw-7bb1531ebd231c987ad7:file-0",
+          "original_sha256": "3897d4fb2788bd6f88f9588cca81ad90fe3bfa5c8854ba710a9394b575697dd4",
+          "preview_sha256": "3138b63f685edbe8e556d6b80f446eaf84eb2b7ea8412a9c9f94a8ca827b78f4",
+          "original_archive": {
+            "member": "files/38/3897d4fb2788bd6f88f9588cca81ad90fe3bfa5c8854ba710a9394b575697dd4.svg",
+            "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scidraw-42235890704-1-b0000.tar.gz"
+          },
+          "preview_archive": {
+            "member": "previews/3897d4fb2788bd6f88f9588cca81ad90fe3bfa5c8854ba710a9394b575697dd4.png",
+            "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scidraw-42235890704-1-b0000.tar.gz"
+          },
+          "caption_zh": "小鼠警觉姿态",
+          "rendered_xywh": [
+            550,
+            779,
+            300,
+            151
+          ],
+          "nonzero_alpha_bounds_xyxy": [
+            550,
+            779,
+            850,
+            930
+          ],
+          "scientific_limits": [
+            "不据剪影推断品系、性别或实验处理。"
+          ],
+          "actual_observation_zh": "深底96px上的深色小鼠剪影接近背景，浅底较清楚；尾肢细节在48px弱化。"
+        },
+        {
+          "ordinal": 4,
+          "candidate_id": "scidraw-48c0946bb3161dbcb8d1:file-0",
+          "original_sha256": "117564adfc168d63190575c41e22a99cf4f1144362485c0a592f14f3ece3c094",
+          "preview_sha256": "f39979799f78a1d65c4a0e4348d25b2760611f4fe9e5f632e88bb11ee4c2a4dd",
+          "original_archive": {
+            "member": "files/11/117564adfc168d63190575c41e22a99cf4f1144362485c0a592f14f3ece3c094.svg",
+            "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scidraw-42235890704-1-b0000.tar.gz"
+          },
+          "preview_archive": {
+            "member": "previews/117564adfc168d63190575c41e22a99cf4f1144362485c0a592f14f3ece3c094.png",
+            "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scidraw-42235890704-1-b0000.tar.gz"
+          },
+          "caption_zh": "成年花斑大鼠坐姿",
+          "rendered_xywh": [
+            920,
+            761,
+            430,
+            188
+          ],
+          "nonzero_alpha_bounds_xyxy": [
+            920,
+            761,
+            1350,
+            949
+          ],
+          "scientific_limits": [
+            "年龄及物种沿用源说明；不能当成小鼠或实测体型比例。"
+          ],
+          "actual_observation_zh": "大鼠渐变与部分浅色透底随背景改变，须部和足部缩小后弱；不能改称小鼠。"
+        },
+        {
+          "ordinal": 5,
+          "candidate_id": "scidraw-932ed24fd3990c23a2ee:file-0",
+          "original_sha256": "0399fb8e43340f1cf0bf950f780d99b6ebe852804fdc37f2b61ed353da75942e",
+          "preview_sha256": "42bdd53776e6e661bb8b76d0aeda36106ecb4e28c35867db38ffdeb638018ca1",
+          "original_archive": {
+            "member": "files/03/0399fb8e43340f1cf0bf950f780d99b6ebe852804fdc37f2b61ed353da75942e.svg",
+            "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scidraw-42235890704-1-b0000.tar.gz"
+          },
+          "preview_archive": {
+            "member": "previews/0399fb8e43340f1cf0bf950f780d99b6ebe852804fdc37f2b61ed353da75942e.png",
+            "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scidraw-42235890704-1-b0000.tar.gz"
+          },
+          "caption_zh": "雏禽对象",
+          "rendered_xywh": [
+            182,
+            940,
+            196,
+            300
+          ],
+          "nonzero_alpha_bounds_xyxy": [
+            182,
+            940,
+            378,
+            1240
+          ],
+          "scientific_limits": [
+            "卡通比例；不推断鸡种、性别或精确日龄。"
+          ],
+          "actual_observation_zh": "高饱和黄色和粗轮廓视觉重量大，48px仍是雏禽概貌；不推断鸡种、性别或日龄。"
+        }
+      ],
+      "purpose_fit_zh": "可用于并列展示不同研究动物素材、比较画风和视觉重量。物种继续沿用逐文件来源；本页既不是体型比较图，也不是动物分组或实验关系图。",
+      "observations_zh": [
+        "五个动物对象和各自文字说明没有互相盖住；猕猴尾部跨过浅蓝底块边界仍完整，底块只是排版背景。",
+        "猕猴细描边与棕色填充、斑马鱼细致纹理、小鼠纯剪影、大鼠渐变及雏禽粗轮廓卡通明显属于不同画风。色彩鲜亮且较大的雏禽和深色小鼠比小幅斑马鱼更抢眼，当前不能称统一视觉重量。",
+        "主画面保留完整对象轮廓；各动物之间没有比例尺或科学关系箭头。标签有留白，没有压在动物主体上。"
+      ],
+      "occlusion_assessment_zh": "本页当前位置未见对象间实际遮挡；实色动物会遮住底块，半透明填充/阴影会随背景变化。这不证明任意重叠构图都可用。",
+      "reduction_and_background_zh": "96px白底多数对象仍可辨轮廓；深底上的小鼠剪影接近隐没，猕猴暗部也减弱。48px下鱼鳍/条纹、大鼠须和四肢细节减少。棋盘可透过大鼠部分浅灰区域，不能当作一整块实白。",
+      "style_assessment_zh": "适合作为保留来源差异的素材比较面板；若用于一张正式图，需要按任务协调线宽、渐变和颜色。当前未取得统一画风结论。",
+      "display_limits_zh": [
+        "不能依据本页大小推断真实体型、年龄、品系或实验状态。",
+        "深色剪影优先浅底，48px不用于物种鉴别或精细解剖。",
+        "若需要外观一致的动物系列，应另选同系列或在工作副本上有依据地协调；本轮未重绘或改色。"
+      ],
+      "review_method": "Actually opened this full PNG with view_image at original resolution; inspected main arrangement and white96/dark96/grid96/white48 panels.",
+      "actual_page_review_completed": true,
+      "actual_occlusion_review_completed": true,
+      "mixed_style_review_completed": true,
+      "uniform_style_passed": false,
+      "native_editability_tested": false,
+      "all60_acceptance_claimed": false
+    },
+    {
+      "page_id": "02",
+      "page_path": "build/curated-expansion-60/composition/02-species-brains.png",
+      "page_sha256": "5c84cc594e0129e5c2678a7a471162a6744937e142d3492acc418e5ac811f597",
+      "page_size_bytes": 327058,
+      "mapping_sha256": "8b830a100962db7335e5d4e49a341c0d8f00353df8a854aa6e20f6e85f976a8f",
+      "title_zh": "物种与脑图的对应配图",
+      "assets": [
+        {
+          "ordinal": 26,
+          "candidate_id": "scidraw-c8d5111ccfc87316d419:file-0",
+          "original_sha256": "94e28ef3f8f03daa5a356f5601bd6bf3bf6165ae6f861a673462b4e030dc4436",
+          "preview_sha256": "b6c7d2151fb6a5b0865d14becdcf8a758d17337ad96fdb9292c76d1b6a5e3e60",
+          "original_archive": {
+            "member": "files/94/94e28ef3f8f03daa5a356f5601bd6bf3bf6165ae6f861a673462b4e030dc4436.svg",
+            "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scidraw-42235890704-1-b0000.tar.gz"
+          },
+          "preview_archive": {
+            "member": "previews/94e28ef3f8f03daa5a356f5601bd6bf3bf6165ae6f861a673462b4e030dc4436.png",
+            "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scidraw-42235890704-1-b0000.tar.gz"
+          },
+          "caption_zh": "小鼠脑：保留两种视角",
+          "rendered_xywh": [
+            160,
+            300,
+            450,
+            450
+          ],
+          "nonzero_alpha_bounds_xyxy": [
+            182,
+            313,
+            587,
+            741
+          ],
+          "scientific_limits": [
+            "两视图关联需保留；不得当成人脑或未标明的脑区定位图。"
+          ],
+          "actual_observation_zh": "两种脑视角保留在同一素材内；48px褶皱简化，不据此做脑区定位或解剖对应。"
+        },
+        {
+          "ordinal": 3,
+          "candidate_id": "scidraw-7bb1531ebd231c987ad7:file-0",
+          "original_sha256": "3897d4fb2788bd6f88f9588cca81ad90fe3bfa5c8854ba710a9394b575697dd4",
+          "preview_sha256": "3138b63f685edbe8e556d6b80f446eaf84eb2b7ea8412a9c9f94a8ca827b78f4",
+          "original_archive": {
+            "member": "files/38/3897d4fb2788bd6f88f9588cca81ad90fe3bfa5c8854ba710a9394b575697dd4.svg",
+            "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scidraw-42235890704-1-b0000.tar.gz"
+          },
+          "preview_archive": {
+            "member": "previews/3897d4fb2788bd6f88f9588cca81ad90fe3bfa5c8854ba710a9394b575697dd4.png",
+            "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scidraw-42235890704-1-b0000.tar.gz"
+          },
+          "caption_zh": "小鼠警觉姿态",
+          "rendered_xywh": [
+            160,
+            1017,
+            250,
+            126
+          ],
+          "nonzero_alpha_bounds_xyxy": [
+            160,
+            1017,
+            410,
+            1143
+          ],
+          "scientific_limits": [
+            "不据剪影推断品系、性别或实验处理。"
+          ],
+          "actual_observation_zh": "深底96px上的深色小鼠剪影接近背景，浅底较清楚；尾肢细节在48px弱化。"
+        },
+        {
+          "ordinal": 27,
+          "candidate_id": "scidraw-4d621dae7e2ae2e002d4:file-0",
+          "original_sha256": "e12c822fb7984e508a8404dfa4ab846ba293f98477422c4c20c86766cef8993c",
+          "preview_sha256": "e10d947b8ff51962e1a4d824c138a52fa5d3a9698035d7ea0aefa497f020fac1",
+          "original_archive": {
+            "member": "files/e1/e12c822fb7984e508a8404dfa4ab846ba293f98477422c4c20c86766cef8993c.svg",
+            "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scidraw-42235890704-1-b0000.tar.gz"
+          },
+          "preview_archive": {
+            "member": "previews/e12c822fb7984e508a8404dfa4ab846ba293f98477422c4c20c86766cef8993c.png",
+            "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scidraw-42235890704-1-b0000.tar.gz"
+          },
+          "caption_zh": "斑马鱼脑轮廓",
+          "rendered_xywh": [
+            869,
+            414,
+            512,
+            312
+          ],
+          "nonzero_alpha_bounds_xyxy": [
+            894,
+            439,
+            1356,
+            701
+          ],
+          "scientific_limits": [
+            "不能按外轮廓标定细胞群、实验切面或具体脑区。"
+          ],
+          "actual_observation_zh": "浅灰脑轮廓的区域明暗受底色显著影响，48px结构弱；不据外轮廓确定脑区/细胞群。"
+        },
+        {
+          "ordinal": 1,
+          "candidate_id": "arcadia-1a5ce7548667ba354a8a:file-3",
+          "original_sha256": "f7e6c68cbcb0a6748f6be18b8c9ba8fd5c385508d807c6918c7db78b779c393b",
+          "preview_sha256": "a38c8cd9f0a32cdf70ac71f72803efbca9520aa3aae9329ee34fe70356aeb705",
+          "original_archive": {
+            "member": "files/f7/f7e6c68cbcb0a6748f6be18b8c9ba8fd5c385508d807c6918c7db78b779c393b.png",
+            "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/arcadia-42234366112-1-b0000.tar.gz"
+          },
+          "preview_archive": {
+            "member": "previews/f7e6c68cbcb0a6748f6be18b8c9ba8fd5c385508d807c6918c7db78b779c393b.png",
+            "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/arcadia-42234366112-1-b0000.tar.gz"
+          },
+          "caption_zh": "斑马鱼 / Danio rerio",
+          "rendered_xywh": [
+            1050,
+            1000,
+            180,
+            180
+          ],
+          "nonzero_alpha_bounds_xyxy": [
+            1058,
+            1063,
+            1222,
+            1120
+          ],
+          "scientific_limits": [
+            "不推断品系、性别或疾病；位图不冒称路径可编辑。"
+          ],
+          "actual_observation_zh": "鱼体细纹与鱼鳍在缩小后减少；仅沿用来源物种，不能用当前显示比例比较真实体型。"
+        }
+      ],
+      "purpose_fit_zh": "可作为来源支持的小鼠/小鼠脑、斑马鱼/斑马鱼脑的对象配图。这里只核对独立对象的物种标识与排版用途，不建立同一个体、脑区同源、视角对应或实验关系。",
+      "observations_zh": [
+        "左侧小鼠脑两个原有视角完整保留，下面是小鼠剪影；右侧独立斑马鱼脑轮廓与鱼体各自留白，没有对象相互覆盖。",
+        "小鼠脑粗黑轮廓和灰填充很醒目；斑马鱼脑浅灰区在浅蓝背景及白底交界处对比弱，背景改变也改变了其内部区域的可见性。",
+        "脑图明显大于下面动物图，符合本页概念配图布局，却不能读成真实脑/身体比例。标签说明与图分开，没有额外脑区引线。"
+      ],
+      "occlusion_assessment_zh": "当前没有动物覆盖脑图或脑图彼此遮挡；小鼠脑双视图未被拆开。浅色脑图跨背景色块只影响对比，不代表不同生物区域。",
+      "reduction_and_background_zh": "96px尚能辨小鼠脑双视图轮廓，48px细褶皱趋于合并。小鼠剪影在深底很弱；斑马鱼脑的灰区在深底与棋盘上呈现明显透底/对比变化，48px很难可靠读其结构。",
+      "style_assessment_zh": "粗线小鼠脑、灰度斑马鱼脑、纯色小鼠和细纹鱼体未统一画风；并列对象指示可用，跨物种解剖比较不由此获得证明。",
+      "display_limits_zh": [
+        "禁止把两种脑外轮廓的相邻位置或颜色当作同源脑区/解剖定位。",
+        "保留小鼠脑两个视角及物种说明；不把任一脑图改称人脑。",
+        "斑马鱼脑用于低对比背景前须逐次核对可读性，不能在48px上标定细胞群或切面。"
+      ],
+      "review_method": "Actually opened this full PNG with view_image at original resolution; inspected main arrangement and white96/dark96/grid96/white48 panels.",
+      "actual_page_review_completed": true,
+      "actual_occlusion_review_completed": true,
+      "mixed_style_review_completed": true,
+      "uniform_style_passed": false,
+      "native_editability_tested": false,
+      "all60_acceptance_claimed": false
+    },
+    {
+      "page_id": "03",
+      "page_path": "build/curated-expansion-60/composition/03-cell-examples.png",
+      "page_sha256": "5e98e34f728b8143680ffa938b487e41eada058a1d68a36d11ab259217995ae7",
+      "page_size_bytes": 501363,
+      "mapping_sha256": "8b830a100962db7335e5d4e49a341c0d8f00353df8a854aa6e20f6e85f976a8f",
+      "title_zh": "不同细胞对象的配图比较",
+      "assets": [
+        {
+          "ordinal": 6,
+          "candidate_id": "scisvg-9389f49f66db9e26f8ed:file-0",
+          "original_sha256": "0f534fc86a753d11dbc9e893a1981b8234af2f6a76809329db1de56f37553806",
+          "preview_sha256": "d2d06ce9e9859cc4533dd4e687cdcd6ad51f3c0da379e16177e0ccfd1b6d1bdd",
+          "original_archive": {
+            "member": "files/0f/0f534fc86a753d11dbc9e893a1981b8234af2f6a76809329db1de56f37553806.svg",
+            "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scisvg-42238985604-1-b0000.tar.gz"
+          },
+          "preview_archive": {
+            "member": "previews/0f534fc86a753d11dbc9e893a1981b8234af2f6a76809329db1de56f37553806.png",
+            "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scisvg-42238985604-1-b0000.tar.gz"
+          },
+          "caption_zh": "简化动物细胞",
+          "rendered_xywh": [
+            100,
+            300,
+            500,
+            500
+          ],
+          "nonzero_alpha_bounds_xyxy": [
+            138,
+            379,
+            562,
+            725
+          ],
+          "scientific_limits": [
+            "不代表特定物种、细胞类型或真实细胞器比例。"
+          ],
+          "actual_observation_zh": "白色内部填充遮住底色，细胞器为简化符号；细胞整体大图幅不是生物尺寸。"
+        },
+        {
+          "ordinal": 7,
+          "candidate_id": "scisvg-372cde5fd4acbdd4abf2:file-0",
+          "original_sha256": "63cd13b461a897431554889908a2306d55a273b8751ee7313e432f53955d09f3",
+          "preview_sha256": "fde234a7bf8b561fa9080ac89a67931d5a6f66283410c9dea2f9d4ca1baf9046",
+          "original_archive": {
+            "member": "files/63/63cd13b461a897431554889908a2306d55a273b8751ee7313e432f53955d09f3.svg",
+            "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scisvg-42238985604-1-b0000.tar.gz"
+          },
+          "preview_archive": {
+            "member": "previews/63cd13b461a897431554889908a2306d55a273b8751ee7313e432f53955d09f3.png",
+            "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scisvg-42238985604-1-b0000.tar.gz"
+          },
+          "caption_zh": "简化神经元",
+          "rendered_xywh": [
+            900,
+            230,
+            350,
+            350
+          ],
+          "nonzero_alpha_bounds_xyxy": [
+            906,
+            305,
+            1247,
+            531
+          ],
+          "scientific_limits": [
+            "髓鞘与分支数量属示意，不证明神经元亚型、连接对象或信号方向。"
+          ],
+          "actual_observation_zh": "神经元细分支在深底弱，48px仅留大体形态；没有展示或推断与同页其他细胞的连接。"
+        },
+        {
+          "ordinal": 8,
+          "candidate_id": "nih-bioart-9884f7994b482964c203:file-0",
+          "original_sha256": "d09890ebe02cafe4c2520c9ab4c6c7c29f4fc83700ab87340c9000b39a4bb649",
+          "preview_sha256": "0fe9858ba2656de8a87a592aec08cd535bb57198d14bccbe36668c5e82471281",
+          "original_archive": {
+            "member": "files/d0/d09890ebe02cafe4c2520c9ab4c6c7c29f4fc83700ab87340c9000b39a4bb649.png",
+            "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/nih-bioart-42248095929-1-b0000.tar.gz"
+          },
+          "preview_archive": {
+            "member": "previews/d09890ebe02cafe4c2520c9ab4c6c7c29f4fc83700ab87340c9000b39a4bb649.png",
+            "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/nih-bioart-42248095929-1-b0000.tar.gz"
+          },
+          "caption_zh": "中性粒细胞",
+          "rendered_xywh": [
+            650,
+            762,
+            270,
+            275
+          ],
+          "nonzero_alpha_bounds_xyxy": [
+            661,
+            774,
+            909,
+            1026
+          ],
+          "scientific_limits": [
+            "淡色外缘与阴影在浅底上较弱；不作为病理诊断、细胞计数或激活状态证据。"
+          ],
+          "actual_observation_zh": "分叶核样结构在大图可辨，48px细节减少；淡边和投影随背景改变，不作病理或激活判断。"
+        },
+        {
+          "ordinal": 9,
+          "candidate_id": "nih-bioart-715bdabd3087f8e763be:file-0",
+          "original_sha256": "a8bad275f7917310f2f54a6779244c3624fb9602bdefe515ec9e58177e752b1f",
+          "preview_sha256": "90c14665d92325ef349c4d484841145bdcf3eb303ab98a1af5f7ca70a2528f95",
+          "original_archive": {
+            "member": "files/a8/a8bad275f7917310f2f54a6779244c3624fb9602bdefe515ec9e58177e752b1f.png",
+            "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/nih-bioart-42248095929-1-b0000.tar.gz"
+          },
+          "preview_archive": {
+            "member": "previews/a8bad275f7917310f2f54a6779244c3624fb9602bdefe515ec9e58177e752b1f.png",
+            "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/nih-bioart-42248095929-1-b0000.tar.gz"
+          },
+          "caption_zh": "单核细胞",
+          "rendered_xywh": [
+            1030,
+            731,
+            370,
+            377
+          ],
+          "nonzero_alpha_bounds_xyxy": [
+            1045,
+            747,
+            1385,
+            1093
+          ],
+          "scientific_limits": [
+            "来源身份与可见外形共同支持类别；不证明亚群、感染或激活状态。"
+          ],
+          "actual_observation_zh": "渐变核和外围阴影视觉重量较大，48px只保留轮廓；不据核外观推断亚群或感染。"
+        },
+        {
+          "ordinal": 10,
+          "candidate_id": "scidraw-d4d42ec9c5d8142c22c1:file-0",
+          "original_sha256": "90081e667634ad6790388846e530c0b595379ce683ba05e10e63cf480ae04b8c",
+          "preview_sha256": "b60df912d189e735a9b14d2e902d0a4173ef176db51d074b5f6eb0a919ad713f",
+          "original_archive": {
+            "member": "files/90/90081e667634ad6790388846e530c0b595379ce683ba05e10e63cf480ae04b8c.svg",
+            "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scidraw-42235890704-1-b0000.tar.gz"
+          },
+          "preview_archive": {
+            "member": "previews/90081e667634ad6790388846e530c0b595379ce683ba05e10e63cf480ae04b8c.png",
+            "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scidraw-42235890704-1-b0000.tar.gz"
+          },
+          "caption_zh": "卵细胞：物种未确证",
+          "rendered_xywh": [
+            160,
+            961,
+            300,
+            297
+          ],
+          "nonzero_alpha_bounds_xyxy": [
+            166,
+            963,
+            458,
+            1256
+          ],
+          "scientific_limits": [
+            "未确认物种或成熟阶段，不由配色推断生理状态。"
+          ],
+          "actual_observation_zh": "粉色平面/卡通风格与渐变免疫细胞不同，内部细节缩小时减少；物种与成熟阶段保持未知。"
+        }
+      ],
+      "purpose_fit_zh": "可用于独立说明不同细胞对象及其表现风格；不表示分化路径、数量、细胞接触或相互作用。卵细胞的物种与阶段继续保持未知。",
+      "observations_zh": [
+        "简化动物细胞、神经元、中性粒细胞、单核细胞和卵细胞独立放置，文字未压住主体；没有明显对象相互遮挡。",
+        "简化动物细胞的内部白填充遮住浅蓝底，神经元细线外围为空；渐变免疫细胞的柔软阴影覆盖浅色背景，这些都不是同一种透明处理。",
+        "细线平面图、带强体积光影的免疫细胞和粉色卡通卵细胞并列，线宽、质感、明暗差异清楚。较大单核细胞/动物细胞的视觉重量不能解释为真实大小或丰度。"
+      ],
+      "occlusion_assessment_zh": "当前无对象间相互盖住；底色块在白填充细胞及实色细胞下被遮住，阴影只影响各自附近背景。不得从相邻摆放推断细胞间连接。",
+      "reduction_and_background_zh": "96px神经元细分支在深底上对比弱；48px下细胞器、分叶核和卵细胞内部细节明显减少。免疫细胞淡色边缘在浅底较弱，在深底较突出；本页未据缩略图确认病理状态。",
+      "style_assessment_zh": "本页已经暴露混合风格，适合素材类型示例；没有证明其能不经调整成为同一科研图的统一细胞系列。",
+      "display_limits_zh": [
+        "颜色、核形与阴影不作为激活、感染、细胞计数或疾病证据。",
+        "没有指定物种的普通动物细胞/神经元/卵细胞不加物种标签。",
+        "48px仅作对象概览，分支/髓鞘数量和内部结构不能据此认证。"
+      ],
+      "review_method": "Actually opened this full PNG with view_image at original resolution; inspected main arrangement and white96/dark96/grid96/white48 panels.",
+      "actual_page_review_completed": true,
+      "actual_occlusion_review_completed": true,
+      "mixed_style_review_completed": true,
+      "uniform_style_passed": false,
+      "native_editability_tested": false,
+      "all60_acceptance_claimed": false
+    },
+    {
+      "page_id": "04",
+      "page_path": "build/curated-expansion-60/composition/04-organelle-components.png",
+      "page_sha256": "74f8c2510f90d4b95309d240e14d1e7d8a835a22c0a85441f31ac0bc96e672e8",
+      "page_size_bytes": 434149,
+      "mapping_sha256": "8b830a100962db7335e5d4e49a341c0d8f00353df8a854aa6e20f6e85f976a8f",
+      "title_zh": "细胞器对象的说明面板",
+      "assets": [
+        {
+          "ordinal": 49,
+          "candidate_id": "bioicons-49e695f1a88f41f5dce1:file-0",
+          "original_sha256": "534948dd77f32890efce6924dc3ae15a707c41cc56696cb48b505d9847e1a4d4",
+          "preview_sha256": "467ceed7e10d0886f9ebfaf09a9b1f89ca395b39b7c43e46b7e4d8ee99b1601b",
+          "original_archive": {
+            "member": "files/53/534948dd77f32890efce6924dc3ae15a707c41cc56696cb48b505d9847e1a4d4.svg",
+            "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42251588741-1-b0002.tar.gz"
+          },
+          "preview_archive": {
+            "member": "previews/534948dd77f32890efce6924dc3ae15a707c41cc56696cb48b505d9847e1a4d4.png",
+            "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42251588741-1-b0002.tar.gz"
+          },
+          "caption_zh": "完整细胞核概念部件",
+          "rendered_xywh": [
+            112,
+            300,
+            426,
+            470
+          ],
+          "nonzero_alpha_bounds_xyxy": [
+            112,
+            300,
+            538,
+            770
+          ],
+          "scientific_limits": [
+            "不推断物种、病理或真实尺寸；来源的双层与核孔为示意。"
+          ],
+          "actual_observation_zh": "孔状区域透底、主体实色；饱和核占大图幅不代表与其他细胞器的真实尺寸比例。"
+        },
+        {
+          "ordinal": 41,
+          "candidate_id": "scisvg-a43d1aa2b772b58b3f69:file-0",
+          "original_sha256": "c2bda598dc6756e66155a90f74e472ba20c8fffa41359fad070fa7e8d66a65b3",
+          "preview_sha256": "ac25d50e99e71325ea9c2d5bd1f533fdec2630581850a6f71266880b0384c7d8",
+          "original_archive": {
+            "member": "files/c2/c2bda598dc6756e66155a90f74e472ba20c8fffa41359fad070fa7e8d66a65b3.svg",
+            "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scisvg-42238985604-1-b0000.tar.gz"
+          },
+          "preview_archive": {
+            "member": "previews/c2bda598dc6756e66155a90f74e472ba20c8fffa41359fad070fa7e8d66a65b3.png",
+            "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scisvg-42238985604-1-b0000.tar.gz"
+          },
+          "caption_zh": "线粒体概念部件",
+          "rendered_xywh": [
+            865,
+            300,
+            300,
+            300
+          ],
+          "nonzero_alpha_bounds_xyxy": [
+            897,
+            373,
+            1133,
+            536
+          ],
+          "scientific_limits": [
+            "嵴数量和内外膜比例未经测量，不表示病理或功能状态。"
+          ],
+          "actual_observation_zh": "细线嵴样结构与白填充清楚，48px细节减少；不确定嵴数量或病理状态。"
+        },
+        {
+          "ordinal": 42,
+          "candidate_id": "scisvg-e51e0cf0d23461ca94dd:file-0",
+          "original_sha256": "2d465a162efe7bdf3543fa66d376d260b41570c645be7aa9122eedcbc1d0ca93",
+          "preview_sha256": "a45b068446d667e52e073180911dc48118d615d53f1c062747b14edd1d8f4fe4",
+          "original_archive": {
+            "member": "files/2d/2d465a162efe7bdf3543fa66d376d260b41570c645be7aa9122eedcbc1d0ca93.svg",
+            "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scisvg-42238985604-1-b0000.tar.gz"
+          },
+          "preview_archive": {
+            "member": "previews/2d465a162efe7bdf3543fa66d376d260b41570c645be7aa9122eedcbc1d0ca93.png",
+            "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scisvg-42238985604-1-b0000.tar.gz"
+          },
+          "caption_zh": "核糖体概念部件",
+          "rendered_xywh": [
+            130,
+            960,
+            230,
+            230
+          ],
+          "nonzero_alpha_bounds_xyxy": [
+            162,
+            1016,
+            328,
+            1104
+          ],
+          "scientific_limits": [
+            "不据简化图确定物种、亚基大小、密码子或肽链长度。"
+          ],
+          "actual_observation_zh": "细横线及点链缩小时难辨，不能把这些结构线当孤立标签线清除；不推断亚基大小或肽链长度。"
+        },
+        {
+          "ordinal": 43,
+          "candidate_id": "nih-bioart-469ab575b90ee2c9d61d:file-1",
+          "original_sha256": "201a1b8705c3ffb62dcc0f01b0f851046d63c83ccfaf92ad9dde29ac125c007c",
+          "preview_sha256": "667e6c1162fc96f16ccf923a8453fa1f000f826a4dc75851fad72d12ffc9aaa0",
+          "original_archive": {
+            "member": "files/20/201a1b8705c3ffb62dcc0f01b0f851046d63c83ccfaf92ad9dde29ac125c007c.svg",
+            "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/nih-bioart-42236561214-1-b0000.tar.gz"
+          },
+          "preview_archive": {
+            "member": "previews/201a1b8705c3ffb62dcc0f01b0f851046d63c83ccfaf92ad9dde29ac125c007c.png",
+            "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/nih-bioart-42236561214-1-b0000.tar.gz"
+          },
+          "caption_zh": "溶酶体",
+          "rendered_xywh": [
+            700,
+            792,
+            330,
+            335
+          ],
+          "nonzero_alpha_bounds_xyxy": [
+            750,
+            846,
+            1006,
+            1103
+          ],
+          "scientific_limits": [
+            "不因圆形就推断身份，使用来源与内容共同证据；不声明粒径、酶活性或疾病状态。"
+          ],
+          "actual_observation_zh": "颗粒/阴影在大图清楚，缩小时颗粒简化；身份沿用来源，不推断粒径或酶活性。"
+        },
+        {
+          "ordinal": 44,
+          "candidate_id": "reactome-61f88d175cb4f15d430d:file-0",
+          "original_sha256": "650e62728a0736c1fd5e25c579c928c5843e4b78f280ccec5d8f9db5d41ef345",
+          "preview_sha256": "3810499ecef92d348de1732d18537f2b7dace7791b1e04a036c0902bd70abcf6",
+          "original_archive": {
+            "member": "files/65/650e62728a0736c1fd5e25c579c928c5843e4b78f280ccec5d8f9db5d41ef345.svg",
+            "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/reactome-42246331998-1-b0002.tar.gz"
+          },
+          "preview_archive": {
+            "member": "previews/650e62728a0736c1fd5e25c579c928c5843e4b78f280ccec5d8f9db5d41ef345.png",
+            "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/reactome-42246331998-1-b0002.tar.gz"
+          },
+          "caption_zh": "自噬溶酶体：非普通溶酶体",
+          "rendered_xywh": [
+            1120,
+            927,
+            300,
+            205
+          ],
+          "nonzero_alpha_bounds_xyxy": [
+            1120,
+            927,
+            1420,
+            1132
+          ],
+          "scientific_limits": [
+            "保留自噬溶酶体身份，不换名为普通溶酶体；静态图不证明融合动力学。"
+          ],
+          "actual_observation_zh": "绿色/黄色两部分体积感强、轮廓可辨；保持自噬溶酶体名字，静态形状不证明融合动力学。"
+        }
+      ],
+      "purpose_fit_zh": "可作为独立细胞器素材的说明面板；核、线粒体、核糖体、溶酶体和自噬溶酶体各自命名，不构成亚细胞定位、运输或融合过程。",
+      "observations_zh": [
+        "五个部件和标签独立放置，未见彼此盖住；核很大、核糖体很小、溶酶体和自噬溶酶体并排但没有连接箭头。",
+        "细胞核上的孔状区域在深底变暗，说明背景能从这些局部露出；线粒体内部白填充遮住底色，核糖体的长细横线仍保留，未被当标签线删除。",
+        "溶酶体有固体阴影和颗粒状内部，自噬溶酶体为有体积渐变的绿黄结构；与细线线粒体/核糖体和高饱和核相比，明暗、线宽及视觉重量不同。"
+      ],
+      "occlusion_assessment_zh": "当前无不同细胞器之间的实际遮挡。实色填充及阴影影响底色，细胞核局部孔洞透底；此排布不证明在真实细胞内部相互叠放仍正确。",
+      "reduction_and_background_zh": "96px核糖体仅保留细横线及少量小点，48px时小点/细线更难辨；线粒体嵴样弯线和溶酶体颗粒也减少。细胞核孔的明暗随背景变化，自噬溶酶体仍有两部分轮廓但不表示动态融合。",
+      "style_assessment_zh": "用途为独立组件说明时可分辨，风格仍混合；不宣称已经统一画风，也不把分配的图幅当真实细胞器比例。",
+      "display_limits_zh": [
+        "不得将独立部件摆放推断为真实空间相邻、细胞内定位或相互作用。",
+        "保留自噬溶酶体身份，不替代普通溶酶体；没有新增融合或酶活性结论。",
+        "核糖体的细横线/小点属于结构示意，不能按文字清理规则统一删线；缩小后需要较大展示才能讲细节。"
+      ],
+      "review_method": "Actually opened this full PNG with view_image at original resolution; inspected main arrangement and white96/dark96/grid96/white48 panels.",
+      "actual_page_review_completed": true,
+      "actual_occlusion_review_completed": true,
+      "mixed_style_review_completed": true,
+      "uniform_style_passed": false,
+      "native_editability_tested": false,
+      "all60_acceptance_claimed": false
+    }
+  ],
+  "reviewed_pages": 4,
+  "main_object_placements_reviewed": 19,
+  "unique_originals_reviewed": 17,
+  "actual_composition_display_review_completed_for_listed_pages": true,
+  "full_curated_requirement_passed": false,
+  "uniform_style_passed": false,
+  "native_editability_tested": false,
+  "source_originals_modified": false,
+  "preview_bytes_modified": false,
+  "new_scientific_relationships_asserted": false,
+  "limits": [
+    "Only inspected layouts and tested sizes/backgrounds are covered; no arbitrary future overlap is certified.",
+    "Object identity and species limitations remain those of prior source-bound evidence; same-page adjacency does not establish anatomy, scale, interaction or temporal order.",
+    "No microbe-size or cross-species-brain anatomical correspondence is inferred.",
+    "Review completion records actual observations and limitations; it is not a claim that all60 share one style or that every scientific-use requirement has passed."
+  ]
+}
