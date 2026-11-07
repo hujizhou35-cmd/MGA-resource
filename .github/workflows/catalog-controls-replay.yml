@@ -1,0 +1,43 @@
+name: Replay fixed catalog controls using metadata only
+on:
+  workflow_dispatch:
+    inputs:
+      release_tag:
+        default: acceptance-20261107
+        type: string
+      assembly_prefix:
+        description: Exact appearance-complete catalog/index prefix
+        default: assembly-42320673266-1
+        required: true
+        type: string
+      publish_tag:
+        default: acceptance-20261107
+        type: string
+permissions:
+  contents: write
+concurrency:
+  group: catalog-controls-replay
+  cancel-in-progress: false
+jobs:
+  replay:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install -e .
+      - name: Replay six negatives, real appearance filters and fixed adoption history
+        env:
+          GH_TOKEN: ${{ github.token }}
+          METADATA_TAG: ${{ inputs.release_tag }}
+          ASSEMBLY_PREFIX: ${{ inputs.assembly_prefix }}
+          PUBLISH_TAG: ${{ inputs.publish_tag }}
+        run: >-
+          python scripts/replay_catalog_controls.py
+          --release-tag "$METADATA_TAG" --assembly-prefix "$ASSEMBLY_PREFIX"
+          --publish-tag "$PUBLISH_TAG" --publish
