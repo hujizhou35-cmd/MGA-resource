@@ -444,6 +444,13 @@ export function prepareVariants(records) {
       // Named cell types remain discoverable by their biological parent class;
       // this is an explicit ontology relation, not a substring/equipment match.
       if(kind==='cell'){aliases.push('cell','cells','细胞');objects.push('cell','cells','细胞');}
+      // A named species is also discoverable by its genus/common group. This
+      // one-way relation does not let unspecified fruit flies satisfy a named
+      // species query, nor turn a fly's organ into a whole-animal object.
+      if(objects.includes('drosophila melanogaster')){
+        aliases.push(...SCIENCE.species.drosophila);
+        objects.push(...SCIENCE.species.drosophila);
+      }
       const values={...facts,source:arr(origin.source||asset.source),license:arr(license),distribution_status:arr(rights),category:arr(fields.taxonomy||asset.taxonomy),format:arr(file.format),
         structure:STRUCTURES.has(file.structure)?[file.structure]:[],content_type:CONTENT_TYPES.has(contentType.value)?[contentType.value]:[],
         color_mode:arr(appearance.color.mode).filter(v=>!unknown.has(v)),palette_traits:appearance.color.palette_traits||[],representation:appearance.style.representation?.values||[],detail:arr(appearance.style.detail?.value).filter(v=>!unknown.has(v)),realism:arr(appearance.style.realism?.value).filter(v=>!unknown.has(v)),series:(appearance.style.series?.memberships||[]).map(x=>x.id),

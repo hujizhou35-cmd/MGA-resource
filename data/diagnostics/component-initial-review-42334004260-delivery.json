@@ -1,0 +1,83 @@
+{
+  "schema_version": 1,
+  "status": "existing_evidence_saved_checkpoint_not_acceptance",
+  "delivered_at": "2026-11-07T03:48:16.716196+00:00",
+  "source_run_id": "42334004260",
+  "release_tag": "acceptance-20261107",
+  "package": {
+    "name": "component-initial-review-42334004260-checkpoint-1.metadata.tar.gz",
+    "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/acceptance-20261107/component-initial-review-42334004260-checkpoint-1.metadata.tar.gz",
+    "sha256": "b46ba027cd4a59cb940d18ad1bdd008d0b0ff94be52215910c6177a51edcd29a",
+    "size_bytes": 577364,
+    "github_asset_id": 719515146,
+    "github_digest": "sha256:b46ba027cd4a59cb940d18ad1bdd008d0b0ff94be52215910c6177a51edcd29a",
+    "github_digest_verified": true
+  },
+  "members": [
+    {
+      "path": "build/component-benchmark-review/42334004260/download-receipts.json",
+      "sha256": "fbe0c5ac8be45bd2c7de0de2d977deb6c16471dcca73990fa5f233845050ac9e",
+      "size_bytes": 2083
+    },
+    {
+      "path": "build/component-benchmark-review/42334004260/delta-review-inventory.json",
+      "sha256": "20b8dc3f7a10f34b24837e79258e4c038c8f6c12e48d25ff7ccb64c6f4915675",
+      "size_bytes": 3617960
+    },
+    {
+      "path": "build/component-benchmark-review/42334004260/clinical-initial-review.json",
+      "sha256": "41f772d8e2ae6c70435495b2f1df3989d0acc76fe4f2e60e1b5ab2080f70d7dd",
+      "size_bytes": 79533
+    },
+    {
+      "path": "build/component-benchmark-review/unchanged/binding-audit.json",
+      "sha256": "fc27c9242a1d577491f33d2d94c7c5d71c87b41dc0caa08f57558836cfa82609",
+      "size_bytes": 88359
+    },
+    {
+      "path": "build/component-benchmark-review/unchanged/summary.json",
+      "sha256": "af373c05fbd55d421fdfcd10756452670a31a9c16586588ce4327b2f8f9f236d",
+      "size_bytes": 1133
+    },
+    {
+      "path": "build/component-benchmark-review/unchanged/unchanged-evidence.json",
+      "sha256": "8723ac0d734f3c5850f08514195b6fe0b754cb48d44fae53af07c95a066d29ba",
+      "size_bytes": 2978938
+    },
+    {
+      "path": "data/diagnostics/component-42334004260-unchanged-checkpoint.json",
+      "sha256": "afbcaea30a4815f814be4eee2cc520b05fd5d7618a2bfff23925b6016ecf1189",
+      "size_bytes": 6661
+    },
+    {
+      "path": "build/component-benchmark-review/delivery/component-initial-review-42334004260-checkpoint-1.members.json",
+      "sha256": "b2b7695a99afbb1478dc4cc91c81d0e9ff50278765264fb3f9860b469010752b",
+      "size_bytes": 2673
+    }
+  ],
+  "external_raw_evidence": {
+    "name": "component-benchmark-42334004260-1.tar.gz",
+    "sha256": "0a03e7af2ea8ed828f51c5732c7c65e473f52de28baf866cf5046bfe5b880d5a",
+    "size_bytes": 901672,
+    "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/acceptance-20261107/component-benchmark-42334004260-1.tar.gz",
+    "github_asset_id": 719470419,
+    "github_digest": "sha256:0a03e7af2ea8ed828f51c5732c7c65e473f52de28baf866cf5046bfe5b880d5a",
+    "digest_verified": true,
+    "included_in_this_package": false,
+    "raw_results_member": "build/component-benchmark/42334004260-1/evidence/raw-component-results.json",
+    "raw_results_sha256": "5fac0130d60538497d616ff03c5038bfca93176d351f1738f291e46334e35bd3"
+  },
+  "scope": "Saved existing first-run receipts, exact-pair delta routing, initial clinical review and unchanged-use bridge. No new review or retrieval was performed.",
+  "new_queries_executed": 0,
+  "new_visual_inspections": 0,
+  "new_role_verdicts_assigned": 0,
+  "artwork_members": 0,
+  "catalog_or_sqlite_members": 0,
+  "new_material_acceptance_passed": false,
+  "website_deployed": false,
+  "limits": [
+    "The unchanged-use bridge covers 47 tasks / 94 child queries only; new composition purposes are not granted passes by delivery.",
+    "Initial clinical metadata/source observations and unresolved visual work remain as recorded in the packaged evidence.",
+    "This checkpoint binds the first-run shared-search-3.4.3/index9 evidence; it is not a successful replay of a later search policy."
+  ]
+}
