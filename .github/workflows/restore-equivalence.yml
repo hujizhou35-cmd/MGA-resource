@@ -1,0 +1,70 @@
+name: Verify unchanged artwork for a metadata-only catalog update
+on:
+  workflow_dispatch:
+    inputs:
+      new_manifest_url:
+        description: New immutable Release .publish_manifest.json URL
+        type: string
+        required: true
+      new_manifest_sha256:
+        description: Exact new canonical manifest SHA-256
+        type: string
+        required: true
+      bundle_url:
+        description: Unchanged historical .bundle.json URL
+        type: string
+        required: true
+      bundle_sha256:
+        description: Exact historical bundle SHA-256
+        type: string
+        required: true
+      restore_url:
+        description: Actual historical .restore_evidence.json URL
+        type: string
+        required: true
+      restore_sha256:
+        description: Exact historical independent restore SHA-256
+        type: string
+        required: true
+      evidence_tag:
+        description: Separate Release for the small metadata-equivalence proof
+        type: string
+        default: acceptance-20261107
+permissions:
+  contents: write
+concurrency:
+  group: restore-equivalence-${{ inputs.new_manifest_sha256 }}
+  cancel-in-progress: false
+jobs:
+  metadata-only:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Test strict equivalence using synthetic metadata
+        run: |
+          python -m pip install 'pytest>=8,<10'
+          python -m pytest -q tests/test_restore_equivalence.py
+      - name: Read four remote JSON assets and verify exact equivalence
+        env:
+          GH_TOKEN: ${{ github.token }}
+          NEW_MANIFEST_URL: ${{ inputs.new_manifest_url }}
+          NEW_MANIFEST_SHA: ${{ inputs.new_manifest_sha256 }}
+          BUNDLE_URL: ${{ inputs.bundle_url }}
+          BUNDLE_SHA: ${{ inputs.bundle_sha256 }}
+          RESTORE_URL: ${{ inputs.restore_url }}
+          RESTORE_SHA: ${{ inputs.restore_sha256 }}
+          EVIDENCE_TAG: ${{ inputs.evidence_tag }}
+        run: |
+          python scripts/restore_equivalence.py --new-manifest-url "$NEW_MANIFEST_URL" --new-manifest-sha256 "$NEW_MANIFEST_SHA" --bundle-url "$BUNDLE_URL" --bundle-sha256 "$BUNDLE_SHA" --restore-url "$RESTORE_URL" --restore-sha256 "$RESTORE_SHA" --evidence-tag "$EVIDENCE_TAG" --publish
+      - name: Preserve small metadata proof independently of Release upload
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: restore-equivalence-${{ github.run_id }}-${{ github.run_attempt }}
+          if-no-files-found: ignore
+          retention-days: 7
+          path: build/restore-equivalence/*.json
