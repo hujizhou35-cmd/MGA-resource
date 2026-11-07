@@ -1,0 +1,310 @@
+{
+  "schema_version": 1,
+  "created_at": "2026-11-07T02:12:08.304250+00:00",
+  "status_zh": "本轮新版本验收与范围证据已归档；原120题覆盖门槛仍未通过，网站未建设或部署。",
+  "catalog_sha256": "8a961c42a357147f2ae0229526f6127c955e05928721d94283e829463f738da0",
+  "candidate_publish_manifest_sha256": "e9cf028a56e6a3b827bad7e5e576d48599ca7e4224f4f5e7f8a7660f0dfdcbbe",
+  "benchmark_sha256": "ce0282afeb4afbcee8fdef1c6f937844ef569cabf16ba7909e22bf86b1096e92",
+  "search_core_sha256": "191c4631bb80f36a33ec2580739580ea4289a9726b09dfffb70d022b2a1382e6",
+  "ranking_version": "shared-search-3.4.3",
+  "analysis_version": "appearance-1.1.0",
+  "formal_acceptance": {
+    "report": {
+      "path": "build/science-version-acceptance-20261107/acceptance-report/checkreport.json",
+      "sha256": "31c6b189a45e4e4228db35b9492eac609c8d36e3e57549e6a14ccde424576ccb",
+      "size_bytes": 1726226
+    },
+    "invocation": {
+      "path": "build/science-version-acceptance-20261107/acceptance-invocation.json",
+      "sha256": "9a406e51fbc637517410b516da10ea001d27d5ca303a640d5a2eb5d54406e9f6",
+      "size_bytes": 3403
+    },
+    "actual_cli_exit_code": 2,
+    "code_commit": "b60991b8b5d02144577c5f807197936fbe1a6403",
+    "acceptance_passed": false,
+    "website_gate": "closed_pending_evidence",
+    "retrieval": {
+      "category_concepts": {
+        "animals": 5,
+        "cells": 5,
+        "clinical_workflow": 2,
+        "experimental_actions": 2,
+        "lab_equipment": 5,
+        "microbes": 5,
+        "molecules": 5,
+        "omics_data": 2,
+        "organelles": 5,
+        "organs": 5,
+        "people": 5,
+        "tissues_vessels": 5
+      },
+      "languages": {
+        "en": 51,
+        "zh": 51
+      },
+      "negative_scenarios_passed": 6,
+      "reviewed": 120,
+      "successful": 102
+    },
+    "visual": {
+      "curated_families": 60,
+      "source_samples": {
+        "arcadia": 23,
+        "bioicons": 36,
+        "commons": 4,
+        "healthicons": 25,
+        "lab-equipment": 30,
+        "nih-bioart": 33,
+        "open-pain": 2,
+        "openclipart": 1,
+        "reactome": 11,
+        "scidraw": 34,
+        "scisvg": 27,
+        "swissbiopics": 28,
+        "togo": 33
+      }
+    },
+    "missing": [
+      {
+        "code": "queries.threshold",
+        "detail": "Retrieval success is 102/120; need 108."
+      },
+      {
+        "code": "queries.language",
+        "detail": "zh: 51/60; need 54."
+      },
+      {
+        "code": "queries.language",
+        "detail": "en: 51/60; need 54."
+      },
+      {
+        "code": "queries.category",
+        "detail": "clinical_workflow: 2/5 concepts; need 4."
+      },
+      {
+        "code": "queries.category",
+        "detail": "experimental_actions: 2/5 concepts; need 4."
+      },
+      {
+        "code": "queries.category",
+        "detail": "omics_data: 2/5 concepts; need 4."
+      }
+    ],
+    "missing_code_counts": {
+      "queries.threshold": 1,
+      "queries.language": 2,
+      "queries.category": 3
+    },
+    "original_query_count": 120,
+    "original_thresholds_changed": false,
+    "candidate_nonempty_is_not_success": true
+  },
+  "scope_layer": {
+    "report": {
+      "path": "build/science-version-acceptance-20261107/cloud-scope-42326843247/scope-metadata-audit-42326843247-1.scope-audit.json",
+      "sha256": "cae285133aa5f4b899d5f719fe956bf38b06d489bef59d1290752a02c4240d7a",
+      "size_bytes": 1338890
+    },
+    "summary": {
+      "path": "build/science-version-acceptance-20261107/cloud-scope-42326843247/scope-metadata-audit-42326843247-1.summary.json",
+      "sha256": "bda7828f36cee20ad2d036c1bee51e7eb076a874f9350fbbb3f854534b611a7a",
+      "size_bytes": 1683
+    },
+    "run_id": "42326843247",
+    "scope_end_to_end_passed": true,
+    "failed_checks": [],
+    "pending_checks": [],
+    "excluded_originals": 1663,
+    "pending_review_originals": 631,
+    "excluded_and_pending_absent_from_public_set": true,
+    "public_catalog_families": 7839,
+    "public_catalog_originals": 19474,
+    "download_manifest_originals": 19473,
+    "meaning_zh": "1663件排除及631件待定均不在公开集合；这不表示全库科学属性已逐件确认。"
+  },
+  "text_attribute_layer": {
+    "counts": {
+      "absent": 1,
+      "present": 37,
+      "unknown": 19436
+    },
+    "unknown_does_not_mean_absent": true,
+    "meaning_zh": "37件明确有文字，1件明确未见文字，19436件未知；带标注的医学对象可保留，未知不能当作无文字。"
+  },
+  "designer_cleanup_layer": {
+    "state": "documented_guidance_only",
+    "selection_based_cleanup_guidance_documented": true,
+    "automatic_cleanup_engine_accepted": false,
+    "whole_library_text_cleanup_performed": false,
+    "new_cleanup_visual_acceptance": false,
+    "supporting_feedback_audit": {
+      "path": "build/curated-expansion-60/user-feedback-audit.json",
+      "sha256": "c9c84845202b919079410f69451254ad33cf19d654b2d68b5e30253111ec4054",
+      "size_bytes": 42970
+    },
+    "meaning_zh": "已有按选中素材处理标签的规范，尚无自动去字或全库清理验收；本轮未修改MGA-Designer或恢复训练。"
+  },
+  "restore": {
+    "passed": true,
+    "proof_type": "equivalence_non_fresh_artwork_read",
+    "equivalence_proof": {
+      "path": "build/science-version-acceptance-20261107/cloud/restore-equivalence-42326280035-1.json",
+      "sha256": "ad51f90caa7142ff4b0279740db1982d67c5fcf36f9990cca6545deaa4ea3501",
+      "size_bytes": 9738
+    },
+    "cloud_url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/acceptance-20261107/restore-equivalence-42326280035-1.json",
+    "historical_independent_full_read_validated": true,
+    "fresh_artwork_restore_performed": false,
+    "new_artwork_archive_reads": 0,
+    "complete_file_records_equal": true,
+    "only_manifest_changed_paths": [
+      "/catalog_sha256"
+    ]
+  },
+  "supplement": {
+    "summary": {
+      "path": "build/science-version-acceptance-20261107/supplement/fresh-controls/summary.json",
+      "sha256": "4b2b8e63c9ec39fe3a960f472746ec0190b37cdf789e07c6a370d03ddc754485",
+      "size_bytes": 5820
+    },
+    "report": {
+      "path": "build/science-version-acceptance-20261107/supplement/fresh-controls/supplemental-evidence.json",
+      "sha256": "15c1c40f2c86a7f062402a026073a2dfdcab747e0ca957d3cad4e4c18637dce1",
+      "size_bytes": 10698405
+    },
+    "passed": true,
+    "missing": [],
+    "fresh_functional_cases": 9,
+    "fresh_seeded_projects": 10,
+    "fresh_appearance_filter_calls": 75,
+    "fresh_actual_history_projects": 10,
+    "appearance_visual_cases_reused": 8,
+    "appearance_visual_files_reused": 18,
+    "new_adoptions": 0,
+    "new_visual_inspections": 0,
+    "diversity_metrics": [
+      {
+        "case_id": "rich-mouse",
+        "pool_kind": "rich",
+        "eligible_families": 38,
+        "metrics": {
+          "projects": 5,
+          "old_top_family_ids": {
+            "distinct_families": 10,
+            "total_project_family_choices": 50,
+            "maximum_project_reuse": 5,
+            "mean_pairwise_jaccard": 1.0
+          },
+          "new_top_family_ids": {
+            "distinct_families": 27,
+            "total_project_family_choices": 50,
+            "maximum_project_reuse": 4,
+            "mean_pairwise_jaccard": 0.2049486461251167
+          },
+          "trial_downloaded_family_ids": {
+            "distinct_families": 0,
+            "total_project_family_choices": 0,
+            "maximum_project_reuse": 0,
+            "mean_pairwise_jaccard": 0.0
+          },
+          "adopted_family_ids": {
+            "distinct_families": 2,
+            "total_project_family_choices": 5,
+            "maximum_project_reuse": 3,
+            "mean_pairwise_jaccard": 0.4
+          }
+        },
+        "review_notes": "Fresh cloud qualified pool and seeded ranking observation. Final choices are unchanged historical validation-exercise decisions linked by exact metadata migration proofs; no new selection, original download or user research adoption is claimed."
+      },
+      {
+        "case_id": "scarce-Naegleria-gruberi",
+        "pool_kind": "scarce",
+        "eligible_families": 1,
+        "metrics": {
+          "projects": 5,
+          "old_top_family_ids": {
+            "distinct_families": 1,
+            "total_project_family_choices": 5,
+            "maximum_project_reuse": 5,
+            "mean_pairwise_jaccard": 1.0
+          },
+          "new_top_family_ids": {
+            "distinct_families": 1,
+            "total_project_family_choices": 5,
+            "maximum_project_reuse": 5,
+            "mean_pairwise_jaccard": 1.0
+          },
+          "trial_downloaded_family_ids": {
+            "distinct_families": 0,
+            "total_project_family_choices": 0,
+            "maximum_project_reuse": 0,
+            "mean_pairwise_jaccard": 0.0
+          },
+          "adopted_family_ids": {
+            "distinct_families": 1,
+            "total_project_family_choices": 5,
+            "maximum_project_reuse": 5,
+            "mean_pairwise_jaccard": 1.0
+          }
+        },
+        "review_notes": "Fresh cloud qualified pool and seeded ranking observation. Final choices are unchanged historical validation-exercise decisions linked by exact metadata migration proofs; no new selection, original download or user research adoption is claimed."
+      }
+    ]
+  },
+  "package": {
+    "name": "science-version-acceptance-42320673266-1.metadata.tar.gz",
+    "sha256": "0f3eccba4653c9c60b5e90d61811a5123ea63d50fb4e29b4dfcb6337739c35d4",
+    "size_bytes": 6308570,
+    "members": 75,
+    "metadata_only": true,
+    "original_artwork_members": 0,
+    "sqlite_members": 0,
+    "large_manifest_or_restore_members": 0,
+    "uploaded": true,
+    "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/acceptance-20261107/science-version-acceptance-42320673266-1.metadata.tar.gz",
+    "github_asset_api_url": "https://api.github.com/repos/hujizhou35-cmd/MGA-resource/releases/assets/719300133",
+    "github_digest": "sha256:0f3eccba4653c9c60b5e90d61811a5123ea63d50fb4e29b4dfcb6337739c35d4",
+    "remote_digest_and_size_verified": true,
+    "verified_at": "2026-11-07T02:12:08.267248+00:00"
+  },
+  "package_inventory": {
+    "path": "build/science-version-acceptance-20261107/package/package-inventory.json",
+    "sha256": "36029b8153bf11e9320cd14163e4ed8515a76138f48263ac6ac14847037d8103",
+    "size_bytes": 19704
+  },
+  "source_reference_index": {
+    "path": "build/science-version-acceptance-20261107/package/source-reference-index.json",
+    "sha256": "a4084732fdb1fdd0b13c2ffac2b17c973cdaa09c400200475b469bad7e5b53f4",
+    "size_bytes": 1359947
+  },
+  "package_validation": {
+    "top_level_members": 75,
+    "all_member_bytes_sha_checked": true,
+    "nested_metadata_only_containers": [
+      {
+        "member": "build/search-filter-3.4.3/supplement/supplement-evidence-42289434868-3.4.3.tar.gz",
+        "sha256": "0ab9e150b0a98a33fa234874ba4892414a3ee9f78f6791b78a64a1778a559d61",
+        "size_bytes": 2199104,
+        "role": "verified_nested_metadata_only_archive"
+      }
+    ],
+    "nested_members_checked_regular_metadata_only": true,
+    "unresolved_metadata_references": 0,
+    "original_artwork_members": 0,
+    "sqlite_members": 0,
+    "full_catalog_members": 0,
+    "large_manifest_or_restore_members": 0,
+    "legacy_metadata_line_endings": "One Commons historical JSON was recovered with CRLF from committed LF bytes and exactly matched its original recorded SHA; no old observation or existing file was changed."
+  },
+  "source_and_rights_chain": "Per-file original source, author, license and archive members remain in the final mapping/formal confirmations. Source registry and NOTICE are retained/referenced; artwork is not relicensed as a single library license.",
+  "no_new_local_artwork_or_sqlite_downloads": true,
+  "old_evidence_sha_not_rewritten": true,
+  "official_library_release_claimed": false,
+  "website_deployment_claimed": false,
+  "limits_zh": [
+    "这是验收元数据包，不是素材下载网站或正式通过公告。",
+    "总分102需108，中英文各51需54，临床/实验动作/组学各2类需求需4；未更换原题或降低门槛。",
+    "范围与文字属性、Designer清理规范是三个独立层面，不能互相替代。",
+    "实际原生编辑能力只按既有精确文件证据保留；本轮没有新增原生编辑测试。"
+  ]
+}
