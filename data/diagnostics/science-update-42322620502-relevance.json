@@ -1,0 +1,305 @@
+{
+  "schema_version": 1,
+  "status": "root_confirmed_relevance_release_pending",
+  "record": {
+    "path": "data/relevance-reviews/science-update-42322620502-120.json",
+    "sha256": "b1a5119e39c10df29160cf73d32551c55d849a95a88f1012b06ec2d3b94f5b11"
+  },
+  "bindings": {
+    "catalog_sha256": "8a961c42a357147f2ae0229526f6127c955e05928721d94283e829463f738da0",
+    "assembly_report_sha256": "bd25e5564e472d85e9a46c3ff691238edebabc2442faf8e90910d346a4b9efbb",
+    "benchmark_sha256": "ce0282afeb4afbcee8fdef1c6f937844ef569cabf16ba7909e22bf86b1096e92",
+    "search_core_sha256": "191c4631bb80f36a33ec2580739580ea4289a9726b09dfffb70d022b2a1382e6",
+    "ranking_version": "shared-search-3.4.3",
+    "search_index_version": 9,
+    "prior_component_rule_judgments_sha256": "f8e6d87c18d5478a962dd5aaeeb25e7c69a94bca2e4c08cd53850d7faaf09f52",
+    "new_diagnostic_sha256": "d11ab7552b40d5c74ba1927e5ebfb5939a973e43e503e6af2ee12671f41221e0",
+    "replay_diff_sha256": "9be9a8fcb036c6c775294fe1152c53727f0b7cb1e33fc6ff96094e6075cd3170",
+    "current_publish_manifest_sha256": null,
+    "current_restore_or_equivalence_evidence_sha256": null
+  },
+  "root_evidence_confirmation": {
+    "reviewer": "root-agent",
+    "confirmation_recorded_at": "2026-11-07T01:25:13.702217+00:00",
+    "method": "Root reread exact scientific tile 2 observations and the new lysosome-zh draft row, confirmed the NIH306 SVG matches the unchanged requirement, and authorized persisting the 102/120 evidence synthesis.",
+    "new_visual_inspection_claimed": false,
+    "new_scope_decision_claimed": false,
+    "approval_scope": "query relevance evidence only; no new manifest/restoration/release acceptance"
+  },
+  "evidence_reuse": {
+    "unchanged_queries": 118,
+    "old_result_positions_preserved": 706,
+    "new_queries": [
+      "organelles-lysosome-zh",
+      "organelles-lysosome-en"
+    ],
+    "new_result_positions": 2,
+    "compared_fields": [
+      "rank",
+      "candidate_id",
+      "family_id",
+      "original_sha256",
+      "preview_sha256",
+      "original_archive",
+      "preview_archive"
+    ],
+    "new_result_exact_source": "NIH BioArt306 SVG; pre-existing actual visual review tile2, not tile1 PNG",
+    "new_result_manifest_provenance_exact_match": true,
+    "new_actual_viewings": 0,
+    "new_original_or_preview_downloads": 0
+  },
+  "summary": {
+    "queries": 120,
+    "actual_relevance_supported": 102,
+    "actual_relevance_rate": 0.85,
+    "not_supported": 18,
+    "candidate_nonempty_queries": 104,
+    "nonempty_but_no_relevant_result": [
+      "experimental_actions-cell-culture-zh",
+      "experimental_actions-cell-culture-en"
+    ],
+    "new_catalog_formal_pass_count": 0,
+    "new_catalog_formal_pending": 102,
+    "specific_gaps_preserved": 18,
+    "by_language": {
+      "zh": {
+        "positive": 51,
+        "total": 60
+      },
+      "en": {
+        "positive": 51,
+        "total": 60
+      }
+    },
+    "by_category": {
+      "animals": {
+        "positive_queries": 10,
+        "total_queries": 10,
+        "concepts_positive_both_languages": 5,
+        "total_concepts": 5
+      },
+      "cells": {
+        "positive_queries": 10,
+        "total_queries": 10,
+        "concepts_positive_both_languages": 5,
+        "total_concepts": 5
+      },
+      "clinical_workflow": {
+        "positive_queries": 4,
+        "total_queries": 10,
+        "concepts_positive_both_languages": 2,
+        "total_concepts": 5
+      },
+      "experimental_actions": {
+        "positive_queries": 4,
+        "total_queries": 10,
+        "concepts_positive_both_languages": 2,
+        "total_concepts": 5
+      },
+      "lab_equipment": {
+        "positive_queries": 10,
+        "total_queries": 10,
+        "concepts_positive_both_languages": 5,
+        "total_concepts": 5
+      },
+      "microbes": {
+        "positive_queries": 10,
+        "total_queries": 10,
+        "concepts_positive_both_languages": 5,
+        "total_concepts": 5
+      },
+      "molecules": {
+        "positive_queries": 10,
+        "total_queries": 10,
+        "concepts_positive_both_languages": 5,
+        "total_concepts": 5
+      },
+      "omics_data": {
+        "positive_queries": 4,
+        "total_queries": 10,
+        "concepts_positive_both_languages": 2,
+        "total_concepts": 5
+      },
+      "organelles": {
+        "positive_queries": 10,
+        "total_queries": 10,
+        "concepts_positive_both_languages": 5,
+        "total_concepts": 5
+      },
+      "organs": {
+        "positive_queries": 10,
+        "total_queries": 10,
+        "concepts_positive_both_languages": 5,
+        "total_concepts": 5
+      },
+      "people": {
+        "positive_queries": 10,
+        "total_queries": 10,
+        "concepts_positive_both_languages": 5,
+        "total_concepts": 5
+      },
+      "tissues_vessels": {
+        "positive_queries": 10,
+        "total_queries": 10,
+        "concepts_positive_both_languages": 5,
+        "total_concepts": 5
+      }
+    },
+    "result_positions": 708,
+    "result_verdicts": {
+      "relevant": 535,
+      "uncertain": 61,
+      "irrelevant": 112
+    },
+    "original_relevance_threshold": {
+      "required": 108,
+      "actual_supported": 102,
+      "met": false
+    },
+    "formal_release_passed": false
+  },
+  "formal_field_semantics": "102 relevance-positive queries remain pass:null for the new release binding; 18 existing specific failures remain pass:false. This is not a retrieval score of 0/120.",
+  "old_documents_preserved": true,
+  "current_manifest_restore_binding_complete": false,
+  "publication_acceptance": false,
+  "remaining_relevance_gaps": [
+    {
+      "query_id": "experimental_actions-mouse-injection-zh",
+      "query": "小鼠注射实验示意",
+      "gap_reason": "Frozen top-10 is empty in both languages. No depicted mouse injection candidate was retrieved; restraint/tail suspension are not injection. Do not invent route/dose or substitute a syringe alone."
+    },
+    {
+      "query_id": "experimental_actions-mouse-injection-en",
+      "query": "mouse injection experiment illustration",
+      "gap_reason": "Frozen top-10 is empty in both languages. No depicted mouse injection candidate was retrieved; restraint/tail suspension are not injection. Do not invent route/dose or substitute a syringe alone."
+    },
+    {
+      "query_id": "experimental_actions-cell-culture-zh",
+      "query": "细胞培养操作示意",
+      "gap_reason": "All ten actual top-10 files are static culture plates or a medium bottle. No inoculation/medium-changing/cell-culture action or operative relationship is shown; equipment remains useful outside this action query."
+    },
+    {
+      "query_id": "experimental_actions-cell-culture-en",
+      "query": "cell culture procedure illustration",
+      "gap_reason": "All ten actual top-10 files are static culture plates or a medium bottle. No inoculation/medium-changing/cell-culture action or operative relationship is shown; equipment remains useful outside this action query."
+    },
+    {
+      "query_id": "experimental_actions-centrifugation-zh",
+      "query": "离心分离步骤示意",
+      "gap_reason": "Frozen top-10 is empty. Original requirement asks centrifugation and separation with clear arrows/layer meaning; an equipment-loading scene alone does not establish separation."
+    },
+    {
+      "query_id": "experimental_actions-centrifugation-en",
+      "query": "centrifugation separation workflow illustration",
+      "gap_reason": "Frozen top-10 is empty. Original requirement asks centrifugation and separation with clear arrows/layer meaning; an equipment-loading scene alone does not establish separation."
+    },
+    {
+      "query_id": "clinical_workflow-cohort-followup-zh",
+      "query": "队列随访流程素材",
+      "gap_reason": "Frozen top-10 is empty. Participants alone do not establish follow-up over time. Proposed separate composable-component acceptance awaits the user; original query remains unpassed."
+    },
+    {
+      "query_id": "clinical_workflow-cohort-followup-en",
+      "query": "cohort follow up workflow illustration",
+      "gap_reason": "Frozen top-10 is empty. Participants alone do not establish follow-up over time. Proposed separate composable-component acceptance awaits the user; original query remains unpassed."
+    },
+    {
+      "query_id": "clinical_workflow-randomization-zh",
+      "query": "随机分组流程素材",
+      "gap_reason": "Frozen top-10 is empty. Ordinary branches/groups do not prove random allocation; no substitute or changed benchmark was introduced."
+    },
+    {
+      "query_id": "clinical_workflow-randomization-en",
+      "query": "randomization two groups workflow diagram",
+      "gap_reason": "Frozen top-10 is empty. Ordinary branches/groups do not prove random allocation; no substitute or changed benchmark was introduced."
+    },
+    {
+      "query_id": "clinical_workflow-recruitment-zh",
+      "query": "研究参与者招募素材",
+      "gap_reason": "Frozen top-10 is empty. Generic people alone do not show recruitment/inclusion. Separate composable-component interpretation awaits the user."
+    },
+    {
+      "query_id": "clinical_workflow-recruitment-en",
+      "query": "study participant recruitment illustration",
+      "gap_reason": "Frozen top-10 is empty. Generic people alone do not show recruitment/inclusion. Separate composable-component interpretation awaits the user."
+    },
+    {
+      "query_id": "omics_data-heatmap-zh",
+      "query": "基因表达热图示意模板",
+      "gap_reason": "Frozen top-10 is empty; blank/value-free heatmap template scope is pending. Preserve the empty original query; do not promote another query's RNA-Seq heatmap by title."
+    },
+    {
+      "query_id": "omics_data-heatmap-en",
+      "query": "gene expression heatmap schematic template",
+      "gap_reason": "Frozen top-10 is empty; blank/value-free heatmap template scope is pending. Preserve the empty original query; do not promote another query's RNA-Seq heatmap by title."
+    },
+    {
+      "query_id": "omics_data-gene-network-zh",
+      "query": "基因网络示意素材",
+      "gap_reason": "Frozen top-10 is empty. No retrieved candidate established a generic network component suitable under the current scope; complete mechanisms and real result diagrams are not silently substituted."
+    },
+    {
+      "query_id": "omics_data-gene-network-en",
+      "query": "gene network schematic illustration",
+      "gap_reason": "Frozen top-10 is empty. No retrieved candidate established a generic network component suitable under the current scope; complete mechanisms and real result diagrams are not silently substituted."
+    },
+    {
+      "query_id": "omics_data-forest-template-zh",
+      "query": "森林图通用构件模板",
+      "gap_reason": "Frozen top-10 is empty; blank/schematic forest plot template scope is pending. Original query/result remains unchanged."
+    },
+    {
+      "query_id": "omics_data-forest-template-en",
+      "query": "forest plot schematic template",
+      "gap_reason": "Frozen top-10 is empty; blank/schematic forest plot template scope is pending. Original query/result remains unchanged."
+    }
+  ],
+  "remaining_release_requirements": [
+    "Bind a candidate manifest for the new catalog and a valid immutable-byte restoration/equivalence proof.",
+    "The original relevance gate remains unmet: 102/120 < 108/120; languages 51/60 each < 54/60.",
+    "Experimental actions, clinical workflow and omics categories each have 2/5 supported concepts, below 4/5.",
+    "Unresolved scope decisions, curated/native/source and supplemental acceptance are not automatically changed by this record."
+  ],
+  "source_draft": {
+    "path": "build/scientific-catalog-update-20261107/replay-42322620502/new-catalog-relevance-draft.json",
+    "sha256": "be108f63e210a74627d5245dc4b3dd8dfedd1242dce76c50b7f5a44c95e58ca2"
+  },
+  "source_evidence_change_audit": {
+    "path": "build/scientific-catalog-update-20261107/replay-42322620502/new-catalog-relevance-evidence-audit.json",
+    "sha256": "4f8b6a907696f27ecf63c30c6b337a52ad4c23e3f2f6f904e30cabc7f2e22365"
+  },
+  "metadata_package": {
+    "name": "science-update-42322620502-relevance-evidence-1.tar.gz",
+    "sha256": "1cc1075b2c47a126d09a0c3779e4c12f23875ed8ab803331abae8263c80a20c2",
+    "size_bytes": 714448,
+    "members": 14,
+    "uncompressed_json_bytes": 8938870,
+    "metadata_only": true,
+    "artwork_members": 0,
+    "sqlite_members": 0,
+    "record_sha256": "b1a5119e39c10df29160cf73d32551c55d849a95a88f1012b06ec2d3b94f5b11",
+    "summary_sha256": "67ab228b87079450b237895203095a4d92f58a41de7f812d3023f8cdc8a4a1ba",
+    "draft_sha256": "be108f63e210a74627d5245dc4b3dd8dfedd1242dce76c50b7f5a44c95e58ca2",
+    "audit_sha256": "4f8b6a907696f27ecf63c30c6b337a52ad4c23e3f2f6f904e30cabc7f2e22365",
+    "repository": "hujizhou35-cmd/MGA-resource",
+    "release_tag": "acceptance-20261107",
+    "asset_id": 719199942,
+    "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/acceptance-20261107/science-update-42322620502-relevance-evidence-1.tar.gz",
+    "github_digest": "sha256:1cc1075b2c47a126d09a0c3779e4c12f23875ed8ab803331abae8263c80a20c2",
+    "remote_state": "uploaded",
+    "remote_digest_and_size_verified": true,
+    "verified_at": "2026-11-07T01:26:59.250798+00:00",
+    "method": "GitHub Release asset API size/digest compared with local package bytes; no artwork archive read."
+  },
+  "direct_actual_replay_check": {
+    "queries": 120,
+    "ordered_result_positions": 708,
+    "rank_candidate_family_both_sha_both_archives_match": true,
+    "new_search_or_artwork_read": false
+  },
+  "independent_evidence_audit": {
+    "reviewer": "scope_publication_check",
+    "method": "Read-only independent comparison of all 708 actual diagnostic positions, all 118 unchanged old result_judgments, document hashes and NIH306 SVG provenance. This is evidence binding review, not a new image inspection.",
+    "findings": "No data errors found; 102 supported,18 gaps,104 nonempty; draft and audit correctly preserve new manifest/restoration pending."
+  }
+}
