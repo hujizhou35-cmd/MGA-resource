@@ -6,6 +6,8 @@ A free medical illustration library for agents and people. Scientific illustrati
 
 Collection, classification, deduplication and acceptance. The website is not yet built or deployed. Counts in upstream catalogs are candidates, not accepted artwork.
 
+The user has authorized a separate [component retrieval gate](docs/COMPONENT-ACCEPTANCE.md) under the updated collection boundary. Its 60 tasks, 71 required roles and 142 bilingual child queries are frozen before the first replay. The historical 120 questions and 102/120 result below remain unchanged. Website implementation begins after this new gate and the existing material checks pass.
+
 The [2026-11-07 QA candidate](docs/CLOUD-QA-RECOVERY-20261107.md) has passed content-scope filtering and an independent cloud restore of 19,473 originals with their previews. The curated set now contains 60 distinct families, five per category, with actual display and use-case composition reviews and recorded limitations. These QA archives are not the formal website release.
 
 Current formal acceptance records 102 query passes and 18 gaps, with 51/60 in each language. The 60-item curated set, six negative scenarios, source checks, color/style/diversity evidence and recovery verification pass. Six remaining checks concern query coverage: 102/120 is below 108, each language needs 54/60, and clinical workflow, experimental actions and omics each cover 2/5 concepts against a 4/5 requirement. The original questions and thresholds remain unchanged.

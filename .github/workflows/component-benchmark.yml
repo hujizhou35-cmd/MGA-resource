@@ -1,0 +1,66 @@
+name: Replay frozen component benchmark using metadata only
+on:
+  workflow_dispatch:
+    inputs:
+      benchmark:
+        description: Separate frozen component benchmark under data/
+        default: data/component-benchmark.json
+        type: string
+      benchmark_sha256:
+        description: Exact approved SHA256; drafts are rejected before downloading metadata
+        required: true
+        type: string
+      release_tag:
+        default: acceptance-20261107
+        type: string
+      assembly_prefix:
+        description: Exact current catalog/index/report prefix
+        default: assembly-42320673266-1
+        required: true
+        type: string
+      publish_tag:
+        default: acceptance-20261107
+        type: string
+permissions:
+  contents: write
+concurrency:
+  group: component-benchmark
+  cancel-in-progress: false
+jobs:
+  replay:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install -e '.[test]'
+      - name: Verify tiny synthetic metadata mechanics
+        run: python -m pytest tests/test_component_replay.py -q
+      - name: Record frozen child queries without artwork access
+        env:
+          GH_TOKEN: ${{ github.token }}
+          BENCHMARK: ${{ inputs.benchmark }}
+          BENCHMARK_SHA: ${{ inputs.benchmark_sha256 }}
+          METADATA_TAG: ${{ inputs.release_tag }}
+          ASSEMBLY_PREFIX: ${{ inputs.assembly_prefix }}
+          PUBLISH_TAG: ${{ inputs.publish_tag }}
+        run: >-
+          python scripts/replay_component_benchmark.py
+          --benchmark "$BENCHMARK" --benchmark-sha256 "$BENCHMARK_SHA"
+          --release-tag "$METADATA_TAG" --assembly-prefix "$ASSEMBLY_PREFIX"
+          --publish-tag "$PUBLISH_TAG" --publish
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: component-metadata-${{ github.run_id }}-${{ github.run_attempt }}
+          if-no-files-found: ignore
+          path: |
+            build/component-benchmark/*/evidence/
+            build/component-benchmark/*/*.tar.gz
+            build/component-benchmark/*/*.summary.json
+            build/component-benchmark/*/publication-receipt.json

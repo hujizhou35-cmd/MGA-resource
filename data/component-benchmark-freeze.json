@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "frozen_at": "2026-11-07T03:21:23Z",
+  "reviewed_by": "root-agent",
+  "basis": "User explicitly selected a separate component retrieval gate. All task/role requests were reviewed and frozen before the first run.",
+  "benchmark_version": "component-2026-11-07.v1",
+  "queries_executed_before_freeze": 0,
+  "tasks": 60,
+  "task_language_units": 120,
+  "required_roles": 71,
+  "child_queries": 142,
+  "catalog_sha256": "8a961c42a357147f2ae0229526f6127c955e05928721d94283e829463f738da0",
+  "component_benchmark_sha256": "d4e462a631b88929bc3be419ab287599bb5a713de2e4cb0c2c84123cf5b94cef",
+  "legacy_benchmark_sha256": "ce0282afeb4afbcee8fdef1c6f937844ef569cabf16ba7909e22bf86b1096e92",
+  "decision_sha256": "61755cd602045398e91b0e62a502131f4323b9aac814bcf67169e980714b9099",
+  "legacy_report_sha256": "31c6b189a45e4e4228db35b9492eac609c8d36e3e57549e6a14ccde424576ccb",
+  "scope_report_sha256": "cae285133aa5f4b899d5f719fe956bf38b06d489bef59d1290752a02c4240d7a",
+  "publish_manifest_sha256": "e9cf028a56e6a3b827bad7e5e576d48599ca7e4224f4f5e7f8a7660f0dfdcbbe",
+  "search_core_sha256": "191c4631bb80f36a33ec2580739580ea4289a9726b09dfffb70d022b2a1382e6",
+  "input_paths": {
+    "component_benchmark_sha256": "data/component-benchmark.json",
+    "legacy_benchmark_sha256": "data/benchmark.json",
+    "decision_sha256": "data/acceptance-decisions/component-boundary-20261107.json",
+    "legacy_report_sha256": "build/science-version-acceptance-20261107/acceptance-report/checkreport.json",
+    "scope_report_sha256": "build/science-version-acceptance-20261107/cloud-scope-42326843247/scope-metadata-audit-42326843247-1.scope-audit.json",
+    "publish_manifest_sha256": "build/science-version-acceptance-20261107/dispositions/candidate_publish_manifest.json",
+    "search_core_sha256": "mga_resources/search-core.mjs"
+  },
+  "original_results_preserved": true,
+  "acceptance_granted": false
+}

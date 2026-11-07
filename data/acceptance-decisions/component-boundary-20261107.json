@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "decision_id": "component-boundary-20261107",
+  "decided_by": "user",
+  "date": "2026-11-07",
+  "timezone": "Asia/Singapore",
+  "instruction_zh": "选1，按新的收录边界建立组件检索验收，保留原120题及真实成绩。验收通过后继续搭建和部署网站，保持完全免费、Agent优先，素材尽量在云端处理，不要整库下载到本地。",
+  "first_release_retrieval_gate": "separate_component_benchmark_under_current_collection_scope",
+  "historical_benchmark": {
+    "path": "data/benchmark.json",
+    "sha256": "ce0282afeb4afbcee8fdef1c6f937844ef569cabf16ba7909e22bf86b1096e92",
+    "preserve_bytes_and_thresholds": true,
+    "role": "historical_comparison_not_replaced_or_relabelled"
+  },
+  "historical_result": {
+    "path": "data/diagnostics/science-version-acceptance-42326843247.json",
+    "sha256": "193a2421594d3a5dc2ce9556452edced9282f39511b90f7762c02c357d94d50d",
+    "successful_queries": 102,
+    "total_queries": 120,
+    "historical_acceptance_passed": false
+  },
+  "unchanged_requirements": [
+    "Complete component retrieval and existing material, scope, rights, appearance, diversity and recovery acceptance before website implementation.",
+    "Keep excluded and pending-scope material outside public search, downloads and release contents.",
+    "Do not infer scientific identity, species, procedure or editing capability from filenames, broad geometry or successful search alone.",
+    "Use actual previews and sources to judge returned results; component combinations are not proof of completed scientific procedures.",
+    "Preserve originals and attribution; selected-asset text cleanup is a later skill operation, not a whole-library job.",
+    "Keep hosting and processing completely free, prioritize agents, and never download the entire artwork library locally."
+  ],
+  "acceptance_granted_by_this_decision": false,
+  "website_implementation_requires_component_acceptance": true
+}
