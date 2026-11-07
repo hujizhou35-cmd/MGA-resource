@@ -1,0 +1,1346 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-11-07T00:07:59.536739+00:00",
+  "status": "bound_existing_evidence_formal_query_confirmation_pending",
+  "bindings": {
+    "catalog_sha256": "5c90306415ce5e7f36e875c7f57b19a91930aacfeeaeecdf9ad7662770f9a3fe",
+    "benchmark_sha256": "ce0282afeb4afbcee8fdef1c6f937844ef569cabf16ba7909e22bf86b1096e92",
+    "assembly_report_sha256": "cecdab1b3f5162cae569fc51de43d0ec34f33e00f0a81d57d56632964199cacd",
+    "publish_manifest_sha256": "a4fe0424ee8ecc32096090ef295242bdaa04b9ce29ff4f7a80948c95516d5436",
+    "mapping_sha256": "1988b7a52e3d727442f3f0ee3112e73915845b1514833fc95964d62b99e239d9",
+    "search_core_sha256": "191c4631bb80f36a33ec2580739580ea4289a9726b09dfffb70d022b2a1382e6",
+    "bundle_index_sha256": "54b055c631c5fd814a7012f176151eb86d65c66849f8b2c71ea3a53ae44dc3a0",
+    "restore_evidence_sha256": "bdfdf932d22b6ce2a008de38873ac70ba8dcb1dc3235b474f40f9f8fbc9eb4dd"
+  },
+  "current_ranking_version": "shared-search-3.4.3",
+  "input_proofs": {
+    "mapping": {
+      "uri": "build/frozen-review-42298772894/review/mapping.json",
+      "sha256": "fd7901163b7dba233b34808253ffe1561eb996020382275a85c1ed2ef0f17222"
+    },
+    "merged": {
+      "uri": "data/relevance-reviews/frozen-3.4.1-merged-120.json",
+      "sha256": "382b079338289fa288093846a31f1a477cf14508c7e813ea7536f4128cbcd473"
+    },
+    "curated": {
+      "uri": "data/curated-reviews/selected-object-components-42289434868.json",
+      "sha256": "32011683c6259d0221e39ac5e6748dc460d451d91ec0af74d6851d8dba1ed78c"
+    },
+    "negative": {
+      "uri": "data/diagnostics/final-negative-observation-42289434868-post-phrase-3.4.3.json",
+      "sha256": "a419a795c830744a3630e497f8af629d99827655ecb8f29a826f0e2c696b5d01"
+    },
+    "negative_raw": {
+      "uri": "build/negative-final-42289434868/raw-negative-results-post-phrase-3.4.3.json",
+      "sha256": "0c0617cf453420ce2fe940dd4d9d95ae66011e6c8db3f4b45ef32cfb0911f6c6"
+    },
+    "benchmark": {
+      "uri": "data/benchmark.json",
+      "sha256": "ce0282afeb4afbcee8fdef1c6f937844ef569cabf16ba7909e22bf86b1096e92"
+    },
+    "assembly": {
+      "uri": "build/final-scope-baseline/assembly-42289434868-1.report.json",
+      "sha256": "cecdab1b3f5162cae569fc51de43d0ec34f33e00f0a81d57d56632964199cacd"
+    },
+    "manifest": {
+      "uri": "build/cloud-recovery-20261107/frozen-42289434868-3.4.3.publish_manifest.json",
+      "sha256": "a4fe0424ee8ecc32096090ef295242bdaa04b9ce29ff4f7a80948c95516d5436"
+    },
+    "bundle": {
+      "uri": "build/cloud-recovery-20261107/build-evidence/qa-20261107-42289434868-3.4.3.bundle.json",
+      "sha256": "54b055c631c5fd814a7012f176151eb86d65c66849f8b2c71ea3a53ae44dc3a0"
+    },
+    "restore": {
+      "uri": "build/cloud-recovery-20261107/restore-evidence/qa-20261107-42289434868-3.4.3-42312769493-1.restore_evidence.json",
+      "sha256": "bdfdf932d22b6ce2a008de38873ac70ba8dcb1dc3235b474f40f9f8fbc9eb4dd"
+    },
+    "replay": {
+      "uri": "build/search-filter-3.4.3/replay-diff.json",
+      "sha256": "b4e555b644e30484b522b08bda69a0e04cc209da15ce3e6586af85ebc17b2eaa"
+    },
+    "source_readiness": {
+      "uri": "build/dispositions-final-scope-42289434868/acceptance-evidence-readiness.json",
+      "sha256": "a89f22d5fd393be15f4b7f97fb57062b2527ce3383386bc48087e132f9e2966d"
+    },
+    "review_summary": {
+      "uri": "build/frozen-review-42298772894/review/summary.json",
+      "sha256": "0d3069a1b021480c539d6aa42c30ed091b013844a47b09342423aa37eebc3714"
+    },
+    "supplement": {
+      "uri": "build/search-filter-3.4.3/supplement/supplemental-evidence.json",
+      "sha256": "59def07ac36ee98f6659b7a4fe976a60c429af3e70fa6e77938a10d6956f0a8c"
+    }
+  },
+  "counts": {
+    "queries": 120,
+    "result_positions": 706,
+    "visual_positive_queries": 100,
+    "formal_pass_true": 0,
+    "formal_pending": 100,
+    "recorded_failed_queries": 20,
+    "mapped_candidate_ids": 426,
+    "unique_mapped_originals": 418,
+    "curated_distinct_families": 48,
+    "negative_scenarios_reused": 6,
+    "restored_exact_pairs": 426
+  },
+  "pending_confirmations": [
+    {
+      "query_id": "animals-mouse-zh",
+      "required_species": "mouse",
+      "needs": [
+        "explicit_selection_from_already_reviewed_relevant_candidates",
+        "source_evidence_checked",
+        "license_checked",
+        "species_matches",
+        "explicit_formal_query_decision"
+      ],
+      "new_visual_review_automatically_required": false
+    },
+    {
+      "query_id": "animals-mouse-en",
+      "required_species": "mouse",
+      "needs": [
+        "explicit_selection_from_already_reviewed_relevant_candidates",
+        "source_evidence_checked",
+        "license_checked",
+        "species_matches",
+        "explicit_formal_query_decision"
+      ],
+      "new_visual_review_automatically_required": false
+    },
+    {
+      "query_id": "animals-rat-zh",
+      "required_species": "rat",
+      "needs": [
+        "explicit_selection_from_already_reviewed_relevant_candidates",
+        "source_evidence_checked",
+        "license_checked",
+        "species_matches",
+        "explicit_formal_query_decision"
+      ],
+      "new_visual_review_automatically_required": false
+    },
+    {
+      "query_id": "animals-rat-en",
+      "required_species": "rat",
+      "needs": [
+        "explicit_selection_from_already_reviewed_relevant_candidates",
+        "source_evidence_checked",
+        "license_checked",
+        "species_matches",
+        "explicit_formal_query_decision"
+      ],
+      "new_visual_review_automatically_required": false
+    },
+    {
+      "query_id": "animals-zebrafish-zh",
+      "required_species": "Danio rerio",
+      "needs": [
+        "explicit_selection_from_already_reviewed_relevant_candidates",
+        "source_evidence_checked",
+        "license_checked",
+        "species_matches",
+        "explicit_formal_query_decision"
+      ],
+      "new_visual_review_automatically_required": false
+    },
+    {
+      "query_id": "animals-zebrafish-en",
+      "required_species": "Danio rerio",
+      "needs": [
+        "explicit_selection_from_already_reviewed_relevant_candidates",
+        "source_evidence_checked",
+        "license_checked",
+        "species_matches",
+        "explicit_formal_query_decision"
+      ],
+      "new_visual_review_automatically_required": false
+    },
+    {
+      "query_id": "animals-fruit-fly-zh",
+      "required_species": "Drosophila melanogaster",
+      "needs": [
+        "explicit_selection_from_already_reviewed_relevant_candidates",
+        "source_evidence_checked",
+        "license_checked",
+        "species_matches",
+        "explicit_formal_query_decision"
+      ],
+      "new_visual_review_automatically_required": false
+    },
+    {
+      "query_id": "animals-fruit-fly-en",
+      "required_species": "Drosophila melanogaster",
+      "needs": [
+        "explicit_selection_from_already_reviewed_relevant_candidates",
+        "source_evidence_checked",
+        "license_checked",
+        "species_matches",
+        "explicit_formal_query_decision"
+      ],
+      "new_visual_review_automatically_required": false
+    },
+    {
+      "query_id": "animals-rabbit-zh",
+      "required_species": "rabbit",
+      "needs": [
+        "explicit_selection_from_already_reviewed_relevant_candidates",
+        "source_evidence_checked",
+        "license_checked",
+        "species_matches",
+        "explicit_formal_query_decision"
+      ],
+      "new_visual_review_automatically_required": false
+    },
+    {
+      "query_id": "animals-rabbit-en",
+      "required_species": "rabbit",
+      "needs": [
+        "explicit_selection_from_already_reviewed_relevant_candidates",
+        "source_evidence_checked",
+        "license_checked",
+        "species_matches",
+        "explicit_formal_query_decision"
+      ],
+      "new_visual_review_automatically_required": false
+    },
+    {
+      "query_id": "people-patient-zh",
+      "required_species": "human",
+      "needs": [
+        "explicit_selection_from_already_reviewed_relevant_candidates",
+        "source_evidence_checked",
+        "license_checked",
+        "species_matches",
+        "explicit_formal_query_decision"
+      ],
+      "new_visual_review_automatically_required": false
+    },
+    {
+      "query_id": "people-patient-en",
+      "required_species": "human",
+      "needs": [
+        "explicit_selection_from_already_reviewed_relevant_candidates",
+        "source_evidence_checked",
+        "license_checked",
+        "species_matches",
+        "explicit_formal_query_decision"
+      ],
+      "new_visual_review_automatically_required": false
+    },
+    {
+      "query_id": "people-older-adult-zh",
+      "required_species": "human",
+      "needs": [
+        "explicit_selection_from_already_reviewed_relevant_candidates",
+        "source_evidence_checked",
+        "license_checked",
+        "species_matches",
+        "explicit_formal_query_decision"
+      ],
+      "new_visual_review_automatically_required": false
+    },
+    {
+      "query_id": "people-older-adult-en",
+      "required_species": "human",
+      "needs": [
+        "explicit_selection_from_already_reviewed_relevant_candidates",
+        "source_evidence_checked",
+        "license_checked",
+        "species_matches",
+        "explicit_formal_query_decision"
+      ],
+      "new_visual_review_automatically_required": false
+    },
+    {
+      "query_id": "people-clinician-zh",
+      "required_species": "human",
+      "needs": [
+        "explicit_selection_from_already_reviewed_relevant_candidates",
+        "source_evidence_checked",
+        "license_checked",
+        "species_matches",
+        "explicit_formal_query_decision"
+      ],
+      "new_visual_review_automatically_required": false
+    },
+    {
+      "query_id": "people-clinician-en",
+      "required_species": "human",
+      "needs": [
+        "explicit_selection_from_already_reviewed_relevant_candidates",
+        "source_evidence_checked",
+        "license_checked",
+        "species_matches",
+        "explicit_formal_query_decision"
+      ],
+      "new_visual_review_automatically_required": false
+    },
+    {
+      "query_id": "people-scientist-zh",
+      "required_species": "human",
+      "needs": [
+        "explicit_selection_from_already_reviewed_relevant_candidates",
+        "source_evidence_checked",
+        "license_checked",
+        "species_matches",
+        "explicit_formal_query_decision"
+      ],
+      "new_visual_review_automatically_required": false
+    },
+    {
+      "query_id": "people-scientist-en",
+      "required_species": "human",
+      "needs": [
+        "explicit_selection_from_already_reviewed_relevant_candidates",
+        "source_evidence_checked",
+        "license_checked",
+        "species_matches",
+        "explicit_formal_query_decision"
+      ],
+      "new_visual_review_automatically_required": false
+    },
+    {
+      "query_id": "people-human-body-zh",
+      "required_species": "human",
+      "needs": [
+        "explicit_selection_from_already_reviewed_relevant_candidates",
+        "source_evidence_checked",
+        "license_checked",
+        "species_matches",
+        "explicit_formal_query_decision"
+      ],
+      "new_visual_review_automatically_required": false
+    },
+    {
+      "query_id": "people-human-body-en",
+      "required_species": "human",
+      "needs": [
+        "explicit_selection_from_already_reviewed_relevant_candidates",
+        "source_evidence_checked",
+        "license_checked",
+        "species_matches",
+        "explicit_formal_query_decision"
+      ],
+      "new_visual_review_automatically_required": false
+    },
+    {
+      "query_id": "organs-liver-zh",
+      "required_species": "human",
+      "needs": [
+        "species_matches",
+        "explicit_formal_query_decision"
+      ],
+      "new_visual_review_automatically_required": false
+    },
+    {
+      "query_id": "organs-liver-en",
+      "required_species": "human",
+      "needs": [
+        "species_matches",
+        "explicit_formal_query_decision"
+      ],
+      "new_visual_review_automatically_required": false
+    },
+    {
+      "query_id": "organs-heart-zh",
+      "required_species": "human",
+      "needs": [
+        "species_matches",
+        "explicit_formal_query_decision"
+      ],
+      "new_visual_review_automatically_required": false
+    },
+    {
+      "query_id": "organs-heart-en",
+      "required_species": "human",
+      "needs": [
+        "species_matches",
+        "explicit_formal_query_decision"
+      ],
+      "new_visual_review_automatically_required": false
+    },
+    {
+      "query_id": "organs-lungs-zh",
+      "required_species": "human",
+      "needs": [
+        "species_matches",
+        "explicit_formal_query_decision"
+      ],
+      "new_visual_review_automatically_required": false
+    },
+    {
+      "query_id": "organs-lungs-en",
+      "required_species": "human",
+      "needs": [
+        "species_matches",
+        "explicit_formal_query_decision"
+      ],
+      "new_visual_review_automatically_required": false
+    },
+    {
+      "query_id": "organs-brain-zh",
+      "required_species": "human",
+      "needs": [
+        "species_matches",
+        "explicit_formal_query_decision"
+      ],
+      "new_visual_review_automatically_required": false
+    },
+    {
+      "query_id": "organs-brain-en",
+      "required_species": "human",
+      "needs": [
+        "species_matches",
+        "explicit_formal_query_decision"
+      ],
+      "new_visual_review_automatically_required": false
+    },
+    {
+      "query_id": "organs-kidney-zh",
+      "required_species": "human",
+      "needs": [
+        "species_matches",
+        "explicit_formal_query_decision"
+      ],
+      "new_visual_review_automatically_required": false
+    },
+    {
+      "query_id": "organs-kidney-en",
+      "required_species": "human",
+      "needs": [
+        "species_matches",
+        "explicit_formal_query_decision"
+      ],
+      "new_visual_review_automatically_required": false
+    },
+    {
+      "query_id": "tissues_vessels-vessel-section-zh",
+      "required_species": null,
+      "needs": [
+        "species_matches",
+        "explicit_formal_query_decision"
+      ],
+      "new_visual_review_automatically_required": false
+    },
+    {
+      "query_id": "tissues_vessels-vessel-section-en",
+      "required_species": null,
+      "needs": [
+        "species_matches",
+        "explicit_formal_query_decision"
+      ],
+      "new_visual_review_automatically_required": false
+    },
+    {
+      "query_id": "tissues_vessels-endothelium-zh",
+      "required_species": null,
+      "needs": [
+        "species_matches",
+        "explicit_formal_query_decision"
+      ],
+      "new_visual_review_automatically_required": false
+    },
+    {
+      "query_id": "tissues_vessels-endothelium-en",
+      "required_species": null,
+      "needs": [
+        "species_matches",
+        "explicit_formal_query_decision"
+      ],
+      "new_visual_review_automatically_required": false
+    },
+    {
+      "query_id": "tissues_vessels-skin-layers-zh",
+      "required_species": "human",
+      "needs": [
+        "species_matches",
+        "explicit_formal_query_decision"
+      ],
+      "new_visual_review_automatically_required": false
+    },
+    {
+      "query_id": "tissues_vessels-skin-layers-en",
+      "required_species": "human",
+      "needs": [
+        "species_matches",
+        "explicit_formal_query_decision"
+      ],
+      "new_visual_review_automatically_required": false
+    },
+    {
+      "query_id": "tissues_vessels-bone-section-zh",
+      "required_species": null,
+      "needs": [
+        "species_matches",
+        "explicit_formal_query_decision"
+      ],
+      "new_visual_review_automatically_required": false
+    },
+    {
+      "query_id": "tissues_vessels-bone-section-en",
+      "required_species": null,
+      "needs": [
+        "species_matches",
+        "explicit_formal_query_decision"
+      ],
+      "new_visual_review_automatically_required": false
+    },
+    {
+      "query_id": "tissues_vessels-cartilage-zh",
+      "required_species": null,
+      "needs": [
+        "species_matches",
+        "explicit_formal_query_decision"
+      ],
+      "new_visual_review_automatically_required": false
+    },
+    {
+      "query_id": "tissues_vessels-cartilage-en",
+      "required_species": null,
+      "needs": [
+        "species_matches",
+        "explicit_formal_query_decision"
+      ],
+      "new_visual_review_automatically_required": false
+    },
+    {
+      "query_id": "cells-t-cell-zh",
+      "required_species": null,
+      "needs": [
+        "license_checked",
+        "species_matches",
+        "explicit_formal_query_decision"
+      ],
+      "new_visual_review_automatically_required": false
+    },
+    {
+      "query_id": "cells-t-cell-en",
+      "required_species": null,
+      "needs": [
+        "license_checked",
+        "species_matches",
+        "explicit_formal_query_decision"
+      ],
+      "new_visual_review_automatically_required": false
+    },
+    {
+      "query_id": "cells-neuron-zh",
+      "required_species": null,
+      "needs": [
+        "license_checked",
+        "species_matches",
+        "explicit_formal_query_decision"
+      ],
+      "new_visual_review_automatically_required": false
+    },
+    {
+      "query_id": "cells-neuron-en",
+      "required_species": null,
+      "needs": [
+        "license_checked",
+        "species_matches",
+        "explicit_formal_query_decision"
+      ],
+      "new_visual_review_automatically_required": false
+    },
+    {
+      "query_id": "cells-macrophage-zh",
+      "required_species": null,
+      "needs": [
+        "license_checked",
+        "species_matches",
+        "explicit_formal_query_decision"
+      ],
+      "new_visual_review_automatically_required": false
+    },
+    {
+      "query_id": "cells-macrophage-en",
+      "required_species": null,
+      "needs": [
+        "license_checked",
+        "species_matches",
+        "explicit_formal_query_decision"
+      ],
+      "new_visual_review_automatically_required": false
+    },
+    {
+      "query_id": "cells-red-blood-cell-zh",
+      "required_species": null,
+      "needs": [
+        "license_checked",
+        "species_matches",
+        "explicit_formal_query_decision"
+      ],
+      "new_visual_review_automatically_required": false
+    },
+    {
+      "query_id": "cells-red-blood-cell-en",
+      "required_species": null,
+      "needs": [
+        "license_checked",
+        "species_matches",
+        "explicit_formal_query_decision"
+      ],
+      "new_visual_review_automatically_required": false
+    },
+    {
+      "query_id": "cells-hepatocyte-zh",
+      "required_species": null,
+      "needs": [
+        "license_checked",
+        "species_matches",
+        "explicit_formal_query_decision"
+      ],
+      "new_visual_review_automatically_required": false
+    },
+    {
+      "query_id": "cells-hepatocyte-en",
+      "required_species": null,
+      "needs": [
+        "license_checked",
+        "species_matches",
+        "explicit_formal_query_decision"
+      ],
+      "new_visual_review_automatically_required": false
+    },
+    {
+      "query_id": "organelles-mitochondrion-zh",
+      "required_species": null,
+      "needs": [
+        "species_matches",
+        "explicit_formal_query_decision"
+      ],
+      "new_visual_review_automatically_required": false
+    },
+    {
+      "query_id": "organelles-mitochondrion-en",
+      "required_species": null,
+      "needs": [
+        "species_matches",
+        "explicit_formal_query_decision"
+      ],
+      "new_visual_review_automatically_required": false
+    },
+    {
+      "query_id": "organelles-nucleus-zh",
+      "required_species": null,
+      "needs": [
+        "species_matches",
+        "explicit_formal_query_decision"
+      ],
+      "new_visual_review_automatically_required": false
+    },
+    {
+      "query_id": "organelles-nucleus-en",
+      "required_species": null,
+      "needs": [
+        "species_matches",
+        "explicit_formal_query_decision"
+      ],
+      "new_visual_review_automatically_required": false
+    },
+    {
+      "query_id": "organelles-endoplasmic-reticulum-zh",
+      "required_species": null,
+      "needs": [
+        "species_matches",
+        "explicit_formal_query_decision"
+      ],
+      "new_visual_review_automatically_required": false
+    },
+    {
+      "query_id": "organelles-endoplasmic-reticulum-en",
+      "required_species": null,
+      "needs": [
+        "species_matches",
+        "explicit_formal_query_decision"
+      ],
+      "new_visual_review_automatically_required": false
+    },
+    {
+      "query_id": "organelles-golgi-zh",
+      "required_species": null,
+      "needs": [
+        "species_matches",
+        "explicit_formal_query_decision"
+      ],
+      "new_visual_review_automatically_required": false
+    },
+    {
+      "query_id": "organelles-golgi-en",
+      "required_species": null,
+      "needs": [
+        "species_matches",
+        "explicit_formal_query_decision"
+      ],
+      "new_visual_review_automatically_required": false
+    },
+    {
+      "query_id": "molecules-dna-zh",
+      "required_species": null,
+      "needs": [
+        "license_checked",
+        "species_matches",
+        "explicit_formal_query_decision"
+      ],
+      "new_visual_review_automatically_required": false
+    },
+    {
+      "query_id": "molecules-dna-en",
+      "required_species": null,
+      "needs": [
+        "license_checked",
+        "species_matches",
+        "explicit_formal_query_decision"
+      ],
+      "new_visual_review_automatically_required": false
+    },
+    {
+      "query_id": "molecules-rna-zh",
+      "required_species": null,
+      "needs": [
+        "license_checked",
+        "species_matches",
+        "explicit_formal_query_decision"
+      ],
+      "new_visual_review_automatically_required": false
+    },
+    {
+      "query_id": "molecules-rna-en",
+      "required_species": null,
+      "needs": [
+        "license_checked",
+        "species_matches",
+        "explicit_formal_query_decision"
+      ],
+      "new_visual_review_automatically_required": false
+    },
+    {
+      "query_id": "molecules-antibody-zh",
+      "required_species": null,
+      "needs": [
+        "license_checked",
+        "species_matches",
+        "explicit_formal_query_decision"
+      ],
+      "new_visual_review_automatically_required": false
+    },
+    {
+      "query_id": "molecules-antibody-en",
+      "required_species": null,
+      "needs": [
+        "license_checked",
+        "species_matches",
+        "explicit_formal_query_decision"
+      ],
+      "new_visual_review_automatically_required": false
+    },
+    {
+      "query_id": "molecules-membrane-receptor-zh",
+      "required_species": null,
+      "needs": [
+        "license_checked",
+        "species_matches",
+        "explicit_formal_query_decision"
+      ],
+      "new_visual_review_automatically_required": false
+    },
+    {
+      "query_id": "molecules-membrane-receptor-en",
+      "required_species": null,
+      "needs": [
+        "license_checked",
+        "species_matches",
+        "explicit_formal_query_decision"
+      ],
+      "new_visual_review_automatically_required": false
+    },
+    {
+      "query_id": "molecules-atp-zh",
+      "required_species": null,
+      "needs": [
+        "license_checked",
+        "species_matches",
+        "explicit_formal_query_decision"
+      ],
+      "new_visual_review_automatically_required": false
+    },
+    {
+      "query_id": "molecules-atp-en",
+      "required_species": null,
+      "needs": [
+        "license_checked",
+        "species_matches",
+        "explicit_formal_query_decision"
+      ],
+      "new_visual_review_automatically_required": false
+    },
+    {
+      "query_id": "microbes-rod-bacterium-zh",
+      "required_species": null,
+      "needs": [
+        "explicit_selection_from_already_reviewed_relevant_candidates",
+        "source_evidence_checked",
+        "license_checked",
+        "species_matches",
+        "explicit_formal_query_decision"
+      ],
+      "new_visual_review_automatically_required": false
+    },
+    {
+      "query_id": "microbes-rod-bacterium-en",
+      "required_species": null,
+      "needs": [
+        "explicit_selection_from_already_reviewed_relevant_candidates",
+        "source_evidence_checked",
+        "license_checked",
+        "species_matches",
+        "explicit_formal_query_decision"
+      ],
+      "new_visual_review_automatically_required": false
+    },
+    {
+      "query_id": "microbes-coccus-zh",
+      "required_species": null,
+      "needs": [
+        "explicit_selection_from_already_reviewed_relevant_candidates",
+        "source_evidence_checked",
+        "license_checked",
+        "species_matches",
+        "explicit_formal_query_decision"
+      ],
+      "new_visual_review_automatically_required": false
+    },
+    {
+      "query_id": "microbes-coccus-en",
+      "required_species": null,
+      "needs": [
+        "explicit_selection_from_already_reviewed_relevant_candidates",
+        "source_evidence_checked",
+        "license_checked",
+        "species_matches",
+        "explicit_formal_query_decision"
+      ],
+      "new_visual_review_automatically_required": false
+    },
+    {
+      "query_id": "microbes-coronavirus-zh",
+      "required_species": null,
+      "needs": [
+        "explicit_selection_from_already_reviewed_relevant_candidates",
+        "source_evidence_checked",
+        "license_checked",
+        "species_matches",
+        "explicit_formal_query_decision"
+      ],
+      "new_visual_review_automatically_required": false
+    },
+    {
+      "query_id": "microbes-coronavirus-en",
+      "required_species": null,
+      "needs": [
+        "explicit_selection_from_already_reviewed_relevant_candidates",
+        "source_evidence_checked",
+        "license_checked",
+        "species_matches",
+        "explicit_formal_query_decision"
+      ],
+      "new_visual_review_automatically_required": false
+    },
+    {
+      "query_id": "microbes-bacteriophage-zh",
+      "required_species": null,
+      "needs": [
+        "explicit_selection_from_already_reviewed_relevant_candidates",
+        "source_evidence_checked",
+        "license_checked",
+        "species_matches",
+        "explicit_formal_query_decision"
+      ],
+      "new_visual_review_automatically_required": false
+    },
+    {
+      "query_id": "microbes-bacteriophage-en",
+      "required_species": null,
+      "needs": [
+        "explicit_selection_from_already_reviewed_relevant_candidates",
+        "source_evidence_checked",
+        "license_checked",
+        "species_matches",
+        "explicit_formal_query_decision"
+      ],
+      "new_visual_review_automatically_required": false
+    },
+    {
+      "query_id": "microbes-yeast-zh",
+      "required_species": null,
+      "needs": [
+        "explicit_selection_from_already_reviewed_relevant_candidates",
+        "source_evidence_checked",
+        "license_checked",
+        "species_matches",
+        "explicit_formal_query_decision"
+      ],
+      "new_visual_review_automatically_required": false
+    },
+    {
+      "query_id": "microbes-yeast-en",
+      "required_species": null,
+      "needs": [
+        "explicit_selection_from_already_reviewed_relevant_candidates",
+        "source_evidence_checked",
+        "license_checked",
+        "species_matches",
+        "explicit_formal_query_decision"
+      ],
+      "new_visual_review_automatically_required": false
+    },
+    {
+      "query_id": "lab_equipment-pipette-zh",
+      "required_species": null,
+      "needs": [
+        "license_checked",
+        "species_matches",
+        "explicit_formal_query_decision"
+      ],
+      "new_visual_review_automatically_required": false
+    },
+    {
+      "query_id": "lab_equipment-pipette-en",
+      "required_species": null,
+      "needs": [
+        "license_checked",
+        "species_matches",
+        "explicit_formal_query_decision"
+      ],
+      "new_visual_review_automatically_required": false
+    },
+    {
+      "query_id": "lab_equipment-microscope-zh",
+      "required_species": null,
+      "needs": [
+        "license_checked",
+        "species_matches",
+        "explicit_formal_query_decision"
+      ],
+      "new_visual_review_automatically_required": false
+    },
+    {
+      "query_id": "lab_equipment-microscope-en",
+      "required_species": null,
+      "needs": [
+        "license_checked",
+        "species_matches",
+        "explicit_formal_query_decision"
+      ],
+      "new_visual_review_automatically_required": false
+    },
+    {
+      "query_id": "lab_equipment-well-plate-zh",
+      "required_species": null,
+      "needs": [
+        "license_checked",
+        "species_matches",
+        "explicit_formal_query_decision"
+      ],
+      "new_visual_review_automatically_required": false
+    },
+    {
+      "query_id": "lab_equipment-well-plate-en",
+      "required_species": null,
+      "needs": [
+        "license_checked",
+        "species_matches",
+        "explicit_formal_query_decision"
+      ],
+      "new_visual_review_automatically_required": false
+    },
+    {
+      "query_id": "lab_equipment-petri-dish-zh",
+      "required_species": null,
+      "needs": [
+        "license_checked",
+        "species_matches",
+        "explicit_formal_query_decision"
+      ],
+      "new_visual_review_automatically_required": false
+    },
+    {
+      "query_id": "lab_equipment-petri-dish-en",
+      "required_species": null,
+      "needs": [
+        "license_checked",
+        "species_matches",
+        "explicit_formal_query_decision"
+      ],
+      "new_visual_review_automatically_required": false
+    },
+    {
+      "query_id": "lab_equipment-centrifuge-zh",
+      "required_species": null,
+      "needs": [
+        "license_checked",
+        "species_matches",
+        "explicit_formal_query_decision"
+      ],
+      "new_visual_review_automatically_required": false
+    },
+    {
+      "query_id": "lab_equipment-centrifuge-en",
+      "required_species": null,
+      "needs": [
+        "license_checked",
+        "species_matches",
+        "explicit_formal_query_decision"
+      ],
+      "new_visual_review_automatically_required": false
+    },
+    {
+      "query_id": "experimental_actions-blood-collection-zh",
+      "required_species": null,
+      "needs": [
+        "species_matches",
+        "explicit_formal_query_decision"
+      ],
+      "new_visual_review_automatically_required": false
+    },
+    {
+      "query_id": "experimental_actions-blood-collection-en",
+      "required_species": null,
+      "needs": [
+        "species_matches",
+        "explicit_formal_query_decision"
+      ],
+      "new_visual_review_automatically_required": false
+    },
+    {
+      "query_id": "experimental_actions-pipetting-zh",
+      "required_species": null,
+      "needs": [
+        "species_matches",
+        "explicit_formal_query_decision"
+      ],
+      "new_visual_review_automatically_required": false
+    },
+    {
+      "query_id": "experimental_actions-pipetting-en",
+      "required_species": null,
+      "needs": [
+        "species_matches",
+        "explicit_formal_query_decision"
+      ],
+      "new_visual_review_automatically_required": false
+    },
+    {
+      "query_id": "clinical_workflow-questionnaire-zh",
+      "required_species": "human",
+      "needs": [
+        "species_matches",
+        "explicit_formal_query_decision"
+      ],
+      "new_visual_review_automatically_required": false
+    },
+    {
+      "query_id": "clinical_workflow-questionnaire-en",
+      "required_species": "human",
+      "needs": [
+        "species_matches",
+        "explicit_formal_query_decision"
+      ],
+      "new_visual_review_automatically_required": false
+    },
+    {
+      "query_id": "clinical_workflow-blood-pressure-zh",
+      "required_species": "human",
+      "needs": [
+        "species_matches",
+        "explicit_formal_query_decision"
+      ],
+      "new_visual_review_automatically_required": false
+    },
+    {
+      "query_id": "clinical_workflow-blood-pressure-en",
+      "required_species": "human",
+      "needs": [
+        "species_matches",
+        "explicit_formal_query_decision"
+      ],
+      "new_visual_review_automatically_required": false
+    },
+    {
+      "query_id": "omics_data-rnaseq-zh",
+      "required_species": null,
+      "needs": [
+        "species_matches",
+        "explicit_formal_query_decision"
+      ],
+      "new_visual_review_automatically_required": false
+    },
+    {
+      "query_id": "omics_data-rnaseq-en",
+      "required_species": null,
+      "needs": [
+        "species_matches",
+        "explicit_formal_query_decision"
+      ],
+      "new_visual_review_automatically_required": false
+    },
+    {
+      "query_id": "omics_data-sequencer-zh",
+      "required_species": null,
+      "needs": [
+        "species_matches",
+        "explicit_formal_query_decision"
+      ],
+      "new_visual_review_automatically_required": false
+    },
+    {
+      "query_id": "omics_data-sequencer-en",
+      "required_species": null,
+      "needs": [
+        "species_matches",
+        "explicit_formal_query_decision"
+      ],
+      "new_visual_review_automatically_required": false
+    }
+  ],
+  "pending_field_counts": {
+    "explicit_selection_from_already_reviewed_relevant_candidates": 30,
+    "source_evidence_checked": 30,
+    "license_checked": 60,
+    "species_matches": 100,
+    "explicit_formal_query_decision": 100
+  },
+  "restore_binding_passed": true,
+  "actual_restoration_run": {
+    "commit_sha": "4ca726beb2689f5f67a3b982f063eb04bb85e3b5",
+    "repository": "hujizhou35-cmd/MGA-resource",
+    "run_attempt": "1",
+    "run_id": "42312769493",
+    "url": "https://github.com/hujizhou35-cmd/MGA-resource/actions/runs/42312769493",
+    "workflow_ref": "hujizhou35-cmd/MGA-resource/.github/workflows/publish-pack.yml@refs/heads/main"
+  },
+  "originals_downloaded_by_bridge": 0,
+  "new_visual_judgments": 0,
+  "acceptance_checker_executed": true,
+  "overall_acceptance_passed": false,
+  "thresholds_changed": false,
+  "next_step": "The acceptance checker has run once and correctly failed. Existing visual relevance remains100/120, while100 positive-query formal decisions remain null. An identified reviewer can associate already reviewed relevant selections with recorded source/license/species evidence; none is automatically promoted. Curated48/60 remains a separate shortfall. No new query, image or boundary decision is made by this bridge.",
+  "limits": [
+    "Independent restoration proves bytes, not species, licenses, medical relevance or native editability.",
+    "No pending pass is promoted; no missing species flag is manufactured, including queries with no species requirement.",
+    "The 48 curated selections and six negative judgments are reused, not newly adjudicated."
+  ],
+  "outputs": {
+    "mapping": {
+      "uri": "build/current-acceptance-evidence-42312769493/mapping.json",
+      "sha256": "1988b7a52e3d727442f3f0ee3112e73915845b1514833fc95964d62b99e239d9"
+    },
+    "judgments": {
+      "uri": "build/current-acceptance-evidence-42312769493/judgments.json",
+      "sha256": "d231951d084ff2d53ae5d35d2f1b9ff6591e467bb086afe0dfab517929c4b433"
+    },
+    "review-summary": {
+      "uri": "build/current-acceptance-evidence-42312769493/review-summary.json",
+      "sha256": "99a9a723c82d2fec61115d486b9450d85816ce357094de80da8dee9628bee7f9"
+    }
+  },
+  "accept_release_cli_arguments": [
+    "--catalog",
+    "build\\final-scope-baseline\\assembly-42289434868-1.catalog.jsonl",
+    "--assembly-report",
+    "build\\final-scope-baseline\\assembly-42289434868-1.report.json",
+    "--decisions",
+    "build\\dispositions-final-scope-42289434868\\decisions.json",
+    "--native-evidence",
+    "data/legacy-illustrator-verification.json",
+    "--source-review",
+    "data/visual-reviews/arcadia-42234366112-sample.json",
+    "--source-review",
+    "data/visual-reviews/bioicons-servier-42251588741-sample.json",
+    "--source-review",
+    "data/visual-reviews/bioicons-thermometer-20261107-scientific.json",
+    "--source-review",
+    "data/visual-reviews/commons-20261107-scientific.json",
+    "--source-review",
+    "data/visual-reviews/commons-42260711756-component-scope.json",
+    "--source-review",
+    "data/visual-reviews/healthicons-42234355854-sample.json",
+    "--source-review",
+    "data/visual-reviews/lab-equipment-42237927278-sample.json",
+    "--source-review",
+    "data/visual-reviews/nih-bioart-42248095929-sample.json",
+    "--source-review",
+    "data/visual-reviews/nih-bioart-855-scope-followup-20261107.json",
+    "--source-review",
+    "data/visual-reviews/open-pain-20261107-scientific.json",
+    "--source-review",
+    "data/visual-reviews/open-pain-42239403135-sample.json",
+    "--source-review",
+    "data/visual-reviews/openclipart-42260737515-sample.json",
+    "--source-review",
+    "data/visual-reviews/reactome-42246331998-sample.json",
+    "--source-review",
+    "data/visual-reviews/scidraw-42235890704-sample.json",
+    "--source-review",
+    "data/visual-reviews/scisvg-42238985604-sample.json",
+    "--source-review",
+    "data/visual-reviews/swissbiopics-42242170927-sample.json",
+    "--source-review",
+    "data/visual-reviews/togo-42249870031-sample.json",
+    "--mapping",
+    "E:\\My Programme\\MGA-resource\\build\\current-acceptance-evidence-42312769493\\mapping.json",
+    "--judgments",
+    "E:\\My Programme\\MGA-resource\\build\\current-acceptance-evidence-42312769493\\judgments.json",
+    "--review-summary",
+    "E:\\My Programme\\MGA-resource\\build\\current-acceptance-evidence-42312769493\\review-summary.json",
+    "--supplemental-evidence",
+    "E:\\My Programme\\MGA-resource\\build\\search-filter-3.4.3\\supplement\\supplemental-evidence.json",
+    "--bundle-index",
+    "E:\\My Programme\\MGA-resource\\build\\cloud-recovery-20261107\\build-evidence\\qa-20261107-42289434868-3.4.3.bundle.json",
+    "--restore-evidence",
+    "E:\\My Programme\\MGA-resource\\build\\cloud-recovery-20261107\\restore-evidence\\qa-20261107-42289434868-3.4.3-42312769493-1.restore_evidence.json",
+    "--output",
+    "E:\\My Programme\\MGA-resource\\build\\current-acceptance-evidence-42312769493\\acceptance-report"
+  ],
+  "source_readiness_is_historical_preparation": true,
+  "source_readiness_old_missing_flags_not_used": true,
+  "acceptance_checker_execution": {
+    "exit_code": 2,
+    "report": {
+      "uri": "build/current-acceptance-evidence-42312769493/acceptance-report/checkreport.json",
+      "sha256": "cdc2225895f21b1768c10175ef1ed852223e7fc00324b5d0af40c71f283269c6"
+    },
+    "missing_code_counts": {
+      "queries.pending": 100,
+      "queries.reviewed": 1,
+      "queries.threshold": 1,
+      "queries.language": 2,
+      "queries.category": 12,
+      "visual.curated": 1,
+      "visual.curated_category": 4
+    },
+    "formal_retrieval_fields": {
+      "category_concepts": {
+        "animals": 0,
+        "cells": 0,
+        "clinical_workflow": 0,
+        "experimental_actions": 0,
+        "lab_equipment": 0,
+        "microbes": 0,
+        "molecules": 0,
+        "omics_data": 0,
+        "organelles": 0,
+        "organs": 0,
+        "people": 0,
+        "tissues_vessels": 0
+      },
+      "languages": {},
+      "negative_scenarios_passed": 6,
+      "reviewed": 20,
+      "successful": 0
+    },
+    "visual_observations_retained": {
+      "visual_positive_queries": 100,
+      "queries": 120,
+      "statement": "100/120 visual relevance is retained. The zero formal approvals below reflect unfinalized null decisions, not a new zero-relevance result."
+    },
+    "restore_passed": true,
+    "supplement_missing": [],
+    "source_samples": {
+      "arcadia": 23,
+      "bioicons": 33,
+      "commons": 4,
+      "healthicons": 25,
+      "lab-equipment": 30,
+      "nih-bioart": 31,
+      "open-pain": 2,
+      "openclipart": 1,
+      "reactome": 11,
+      "scidraw": 34,
+      "scisvg": 27,
+      "swissbiopics": 28,
+      "togo": 27
+    },
+    "curated_families": 48,
+    "historical_native_matches": 5,
+    "acceptance_passed": false,
+    "website_gate": "closed_pending_evidence",
+    "command": {
+      "program": "E:\\My Programme\\MGA-resource\\.venv\\Scripts\\python.exe",
+      "script": "scripts/accept_release.py",
+      "script_sha256": "2a7eae575a0551db5d412f6d13ebf16363dd0cf986d2465053cd9eb5fa82ddd7",
+      "arguments": [
+        "--catalog",
+        "build\\final-scope-baseline\\assembly-42289434868-1.catalog.jsonl",
+        "--assembly-report",
+        "build\\final-scope-baseline\\assembly-42289434868-1.report.json",
+        "--decisions",
+        "build\\dispositions-final-scope-42289434868\\decisions.json",
+        "--native-evidence",
+        "data/legacy-illustrator-verification.json",
+        "--source-review",
+        "data/visual-reviews/arcadia-42234366112-sample.json",
+        "--source-review",
+        "data/visual-reviews/bioicons-servier-42251588741-sample.json",
+        "--source-review",
+        "data/visual-reviews/bioicons-thermometer-20261107-scientific.json",
+        "--source-review",
+        "data/visual-reviews/commons-20261107-scientific.json",
+        "--source-review",
+        "data/visual-reviews/commons-42260711756-component-scope.json",
+        "--source-review",
+        "data/visual-reviews/healthicons-42234355854-sample.json",
+        "--source-review",
+        "data/visual-reviews/lab-equipment-42237927278-sample.json",
+        "--source-review",
+        "data/visual-reviews/nih-bioart-42248095929-sample.json",
+        "--source-review",
+        "data/visual-reviews/nih-bioart-855-scope-followup-20261107.json",
+        "--source-review",
+        "data/visual-reviews/open-pain-20261107-scientific.json",
+        "--source-review",
+        "data/visual-reviews/open-pain-42239403135-sample.json",
+        "--source-review",
+        "data/visual-reviews/openclipart-42260737515-sample.json",
+        "--source-review",
+        "data/visual-reviews/reactome-42246331998-sample.json",
+        "--source-review",
+        "data/visual-reviews/scidraw-42235890704-sample.json",
+        "--source-review",
+        "data/visual-reviews/scisvg-42238985604-sample.json",
+        "--source-review",
+        "data/visual-reviews/swissbiopics-42242170927-sample.json",
+        "--source-review",
+        "data/visual-reviews/togo-42249870031-sample.json",
+        "--mapping",
+        "E:\\My Programme\\MGA-resource\\build\\current-acceptance-evidence-42312769493\\mapping.json",
+        "--judgments",
+        "E:\\My Programme\\MGA-resource\\build\\current-acceptance-evidence-42312769493\\judgments.json",
+        "--review-summary",
+        "E:\\My Programme\\MGA-resource\\build\\current-acceptance-evidence-42312769493\\review-summary.json",
+        "--supplemental-evidence",
+        "E:\\My Programme\\MGA-resource\\build\\search-filter-3.4.3\\supplement\\supplemental-evidence.json",
+        "--bundle-index",
+        "E:\\My Programme\\MGA-resource\\build\\cloud-recovery-20261107\\build-evidence\\qa-20261107-42289434868-3.4.3.bundle.json",
+        "--restore-evidence",
+        "E:\\My Programme\\MGA-resource\\build\\cloud-recovery-20261107\\restore-evidence\\qa-20261107-42289434868-3.4.3-42312769493-1.restore_evidence.json",
+        "--output",
+        "E:\\My Programme\\MGA-resource\\build\\current-acceptance-evidence-42312769493\\acceptance-report"
+      ]
+    },
+    "supplement_passed": true
+  },
+  "negative_shared_variant_binding_check": {
+    "occurrences": 40,
+    "unique_variant_ids": 30,
+    "conflicts": 0
+  },
+  "generator": {
+    "uri": "scripts/prepare_acceptance_evidence.py",
+    "sha256": "59040863f01e315c3359c939904f2ac7bfdc7541977ca711122d2b21b8fc89f1",
+    "targeted_tests_passed": 13
+  }
+}
