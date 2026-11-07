@@ -1,0 +1,169 @@
+{
+  "schema_version": 1,
+  "verified_at": "2026-11-06T23:53:09.627879+00:00",
+  "status": "cloud_candidate_storage_scope_and_current_48_display_review_completed_not_overall_release",
+  "version": "qa-20261107-42289434868-3.4.3",
+  "candidate_release_url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/tag/publish-qa-20261107-42289434868-3.4.3",
+  "catalog_sha256": "5c90306415ce5e7f36e875c7f57b19a91930aacfeeaeecdf9ad7662770f9a3fe",
+  "policy_sha256": "f5d1dcd500f0f3e5a04c29783f9e8bde907e521e2453f5257419860ad7fc2233",
+  "manifest_sha256": "a4fe0424ee8ecc32096090ef295242bdaa04b9ce29ff4f7a80948c95516d5436",
+  "build_run": {
+    "commit_sha": "6febcd7b3073127a0bcb22eef58b43b1c9865e1f",
+    "repository": "hujizhou35-cmd/MGA-resource",
+    "run_attempt": "1",
+    "run_id": "42309798276",
+    "url": "https://github.com/hujizhou35-cmd/MGA-resource/actions/runs/42309798276",
+    "workflow_ref": "hujizhou35-cmd/MGA-resource/.github/workflows/publish-pack.yml@refs/heads/main",
+    "observed_conclusion": "success"
+  },
+  "restore_run": {
+    "commit_sha": "4ca726beb2689f5f67a3b982f063eb04bb85e3b5",
+    "repository": "hujizhou35-cmd/MGA-resource",
+    "run_attempt": "1",
+    "run_id": "42312769493",
+    "url": "https://github.com/hujizhou35-cmd/MGA-resource/actions/runs/42312769493",
+    "workflow_ref": "hujizhou35-cmd/MGA-resource/.github/workflows/publish-pack.yml@refs/heads/main",
+    "observed_conclusion": "success"
+  },
+  "restoration_core_and_scope_policy_git_blobs_unchanged_between_runs": true,
+  "bundle": {
+    "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/publish-qa-20261107-42289434868-3.4.3/qa-20261107-42289434868-3.4.3.bundle.json",
+    "sha256": "54b055c631c5fd814a7012f176151eb86d65c66849f8b2c71ea3a53ae44dc3a0",
+    "size_bytes": 8500765
+  },
+  "selected_originals": 19473,
+  "unique_artwork_objects": 38748,
+  "pack_count": 13,
+  "compressed_pack_bytes": 3342746415,
+  "restore_evidence": {
+    "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/acceptance-20261107/qa-20261107-42289434868-3.4.3-42312769493-1.restore_evidence.json",
+    "asset_id": 718949354,
+    "sha256": "bdfdf932d22b6ce2a008de38873ac70ba8dcb1dc3235b474f40f9f8fbc9eb4dd",
+    "size_bytes": 5199214,
+    "github_digest_and_local_bytes_verified": true,
+    "independent_remote_restore_validated": true
+  },
+  "scope_audit": {
+    "sha256": "c8b033fd8ea5df66edb37aa072b00a239fb0ccefd8d45c23b144f60cb5c707c1",
+    "size_bytes": 1575430,
+    "path": "build/prebuild-qa-20261107/postrestore-scope-audit.json",
+    "archive_member": "postrestore-scope-audit.json",
+    "scope_end_to_end_passed": true,
+    "failed_checks": [],
+    "pending_checks": [],
+    "counts": {
+      "public_families": 7839,
+      "public_unique_originals": 19474,
+      "nonpublic_unique_originals": 2294,
+      "nonpublic_by_status": {
+        "pending_review": 631,
+        "excluded": 1663
+      },
+      "nonpublic_by_reason": {
+        "component_suitability": 523,
+        "outside_component_scope": 18,
+        "media_type": 208,
+        "text_only_molecular_nameplate": 1541,
+        "preview_integrity": 3,
+        "scientific_attribution_conflict": 1
+      },
+      "nonpublic_by_source": {
+        "arcadia": {
+          "pending_review": 1
+        },
+        "bioicons": {
+          "excluded": 1,
+          "pending_review": 17
+        },
+        "commons": {
+          "excluded": 2
+        },
+        "healthicons": {
+          "pending_review": 50,
+          "excluded": 2
+        },
+        "nih-bioart": {
+          "excluded": 11,
+          "pending_review": 323
+        },
+        "reactome": {
+          "excluded": 1541,
+          "pending_review": 111
+        },
+        "scidraw": {
+          "pending_review": 9,
+          "excluded": 5
+        },
+        "scisvg": {
+          "pending_review": 3
+        },
+        "togo": {
+          "excluded": 101,
+          "pending_review": 120
+        }
+      },
+      "public_text_attribute_counts": {
+        "unknown": 19436,
+        "present": 37,
+        "absent": 1
+      }
+    },
+    "claim_scope": "Scope filtering, catalog/index, candidate manifest, exact clean bundle and independent restore only."
+  },
+  "curated_display_review": {
+    "current_set": 48,
+    "actually_reviewed_files": 48,
+    "actually_reviewed_sheets": 24,
+    "verified_display_conditions": 336,
+    "mapping_sha256": "0fcb104d57b430cc4592d7f5123ed4d0fb53cf8c3c17557c161cf4bcd7f5b218",
+    "merged_review_path": "data/curated-reviews/restored-display-42312769493-merged-48.json",
+    "sha256": "54d0fc8d1d006998afc50482a82b4b4bfbb2b77100f30cea97b81ede68bc2fba",
+    "size_bytes": 341308,
+    "preview_archive_url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/acceptance-20261107/restored-curated-42312769493-1.tar.gz",
+    "preview_archive_sha256": "7d00632b110fcf73955522d3e71b7cd572a8d14753a2072b4c286eced32f1d48",
+    "preview_archive_size_bytes": 8077366,
+    "full_curated_requirement_passed": false
+  },
+  "metadata_archive": {
+    "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/acceptance-20261107/qa-acceptance-42312769493.metadata.tar.gz",
+    "asset_id": 718986179,
+    "sha256": "c91f0ea71dba1eca663312cffeacae9ecf5df7db6b8a6beae2188fdf2bebfbbd",
+    "size_bytes": 636474,
+    "members": 12,
+    "metadata_only": true,
+    "github_digest_and_local_bytes_verified": true
+  },
+  "ci": {
+    "run_id": "42312634850",
+    "commit_sha": "4ca726beb2689f5f67a3b982f063eb04bb85e3b5",
+    "url": "https://github.com/hujizhou35-cmd/MGA-resource/actions/runs/42312634850",
+    "conclusion": "success",
+    "tests_passed": 526
+  },
+  "actual_restore_runner_disk_free_before_operation": "86G, from df -h in completed run logs; not a promise for future runners",
+  "library_originals_downloaded_locally": 0,
+  "remaining": {
+    "original_visual_query_score": {
+      "positive": 100,
+      "total": 120,
+      "required_positive": 108,
+      "zh": "50/60",
+      "en": "50/60"
+    },
+    "formal_query_judgment_mapping_and_restored_member_association_pending": true,
+    "curated_current_distinct_families": 48,
+    "curated_required": 60,
+    "curated_unresolved_categories": {
+      "organelles": 1,
+      "experimental_actions": 1,
+      "clinical_workflow": 5,
+      "omics_data": 5
+    },
+    "actual_scientific_composition_overlap_and_style_review_pending": true,
+    "four_user_scope_choices_pending": true,
+    "selected_asset_text_cleanup_is_normative_only": true
+  },
+  "overall_collection_accepted": false,
+  "formal_release_published": false,
+  "website_deployed": false
+}
