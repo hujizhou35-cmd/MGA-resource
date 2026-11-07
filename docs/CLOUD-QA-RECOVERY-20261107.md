@@ -21,7 +21,7 @@
 - [独立恢复回执](https://github.com/hujizhou35-cmd/MGA-resource/releases/download/acceptance-20261107/qa-20261107-42289434868-3.4.3-42312769493-1.restore_evidence.json)。
 - [48件精选预览与检查页](https://github.com/hujizhou35-cmd/MGA-resource/releases/download/acceptance-20261107/restored-curated-42312769493-1.tar.gz)，约8.08 MB，不含图库原件。
 - [范围审计与逐件显示审阅元数据](https://github.com/hujizhou35-cmd/MGA-resource/releases/download/acceptance-20261107/qa-acceptance-42312769493.metadata.tar.gz)，约0.64 MB，不含图像。
-- [正式验收输入与未通过报告](https://github.com/hujizhou35-cmd/MGA-resource/releases/download/acceptance-20261107/acceptance-evidence-42312769493.metadata.tar.gz)，419,796字节、7份元数据文件；远端大小和SHA-256均已核对，摘要为 `ef000ba001925cf5124b72cf90a45f281559673501f37d16ff358890263ad3e7`。
+- [此前证据关联阶段快照](https://github.com/hujizhou35-cmd/MGA-resource/releases/download/acceptance-20261107/acceptance-evidence-42312769493.metadata.tar.gz)，419,796字节、7份元数据文件，当时尚有100条正式待确认；远端大小和SHA-256均已核对，摘要为 `ef000ba001925cf5124b72cf90a45f281559673501f37d16ff358890263ad3e7`。
 - [后续逐题确认与最新验收报告](https://github.com/hujizhou35-cmd/MGA-resource/releases/download/acceptance-20261107/formal-query-confirmation-42312769493.metadata.tar.gz)，576,829字节、10份元数据文件；远端大小和SHA-256均已核对，摘要为 `324e0333cac85c4dd237f658d4eaf74f0a7b2d6b9d74a182b96b26aaa06c1dda`。
 - [全部版本与哈希记录](../data/diagnostics/cloud-qa-recovery-42312769493.json)。
 
@@ -31,6 +31,6 @@
 
 恢复、六项反例、来源抽检及补充检查继续通过；完整验收仍未通过。最新机器结果见[正式逐题确认诊断](../data/diagnostics/formal-query-acceptance-42312769493.json)。[此前证据关联记录](../data/diagnostics/current-acceptance-readiness-42312769493.json)保留当时100条正式待确认的快照；98条新通过来自后续有来源依据的明确确认，未通过批量改空值或降低门槛获得。
 
-整体门槛仍未通过：原120条查询的视觉相关性是100/120，未达到108/120；精选只有48个家族，尚未满足60件及十二类各5件；技术邻接板也不等于真实科研构图的遮挡和画风验收。四项收录／验收边界仍待用户选择。当前没有正式网站，也没有自动清理文字的新能力。
+整体门槛仍未通过：正式查询确认是98/120，原视觉相关性记录是100/120，两者均低于108/120；精选只有48个家族，尚未满足60件及十二类各5件；技术邻接板也不等于真实科研构图的遮挡和画风验收。四项收录／验收边界仍待用户选择。当前没有正式网站，也没有自动清理文字的新能力。
 
 本次结论只绑定目录 `assembly-42289434868-1`、3.4.3检索索引及当前候选manifest。后续改变收录范围或文件配对时，必须重新核对对应版本，不能把这一候选包的结果挪作新版本证明。
