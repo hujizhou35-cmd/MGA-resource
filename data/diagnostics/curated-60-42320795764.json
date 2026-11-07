@@ -1,0 +1,653 @@
+{
+  "schema_version": 1,
+  "created_at": "2026-11-07T01:25:22.889291+00:00",
+  "status_zh": "用途有限定的精选审阅完成；实际整体验收仍未通过",
+  "scope": "Bounded QA cloud delivery only; frozen old-catalog formal100 plus curated60 evidence, not a new official library release.",
+  "repository": "hujizhou35-cmd/MGA-resource",
+  "release_tag": "acceptance-20261107",
+  "package": {
+    "name": "curated-60-42320795764.qa.tar.gz",
+    "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/acceptance-20261107/curated-60-42320795764.qa.tar.gz",
+    "api_url": "https://api.github.com/repos/hujizhou35-cmd/MGA-resource/releases/assets/719195233",
+    "asset_id": 719195233,
+    "size_bytes": 8215048,
+    "sha256": "bf552a2ad719b278370e33a2378b614288520a39245db5f5119eea79570f2d7d",
+    "github_api_digest": "sha256:bf552a2ad719b278370e33a2378b614288520a39245db5f5119eea79570f2d7d",
+    "state": "uploaded",
+    "created_at": "2026-11-07T01:23:45Z",
+    "updated_at": "2026-11-07T01:24:00Z",
+    "api_digest_and_size_verified": true,
+    "remote_content_redownloaded": false,
+    "existing_asset_overwritten": false,
+    "member_count": 60,
+    "uncompressed_member_bytes": 25094167,
+    "maximum_archive_size_bytes": 33554432
+  },
+  "safe_paths_and_all_local_tar_member_bytes_verified": true,
+  "members": [
+    {
+      "path": "build/curated-expansion-60/acceptance/acceptance-invocation.public.json",
+      "sha256": "92814723c191157fe602c8af05c9b2e2b341cdb4f0147a1552c9effdf43a3450",
+      "size_bytes": 3588,
+      "role": "public_sanitized_actual_invocation"
+    },
+    {
+      "path": "build/curated-expansion-60/acceptance/acceptance-report/checkreport.json",
+      "sha256": "6e783922756ac898a3ce8d08c5e9e2521b68abe028bd534af65bde600ed5cbd8",
+      "size_bytes": 1726039,
+      "role": "actual_acceptance_report"
+    },
+    {
+      "path": "build/curated-expansion-60/acceptance/acceptance-report/checkreport.md",
+      "sha256": "47656427031042454eb77f1e319d73e4ebc54c3ea492d109ce0f05f55b2978cc",
+      "size_bytes": 460,
+      "role": "actual_acceptance_report"
+    },
+    {
+      "path": "build/curated-expansion-60/acceptance/audit.json",
+      "sha256": "02cb2cb6aed89a4f672e00031788ff70562075c259b549c26cad0dec2be11b07",
+      "size_bytes": 20077,
+      "role": "merged60_acceptance_evidence"
+    },
+    {
+      "path": "build/curated-expansion-60/acceptance/audit.md",
+      "sha256": "f0c78d78aa5c3b8d7fbbe2045a48f1fbb76446d787fa930958624cb89cbf9775",
+      "size_bytes": 1900,
+      "role": "merged60_acceptance_evidence"
+    },
+    {
+      "path": "build/curated-expansion-60/acceptance/combined-curated.json",
+      "sha256": "10be2c301669ac0aeff2b2a7828954d6e62a48d143b205120bb4e1ae2564a0a1",
+      "size_bytes": 1945824,
+      "role": "merged60_acceptance_evidence"
+    },
+    {
+      "path": "build/curated-expansion-60/acceptance/judgments.json",
+      "sha256": "6fde66eb13d9fb915cf535e16a34d56ccfc6720fca15afb3169d5527bd29e047",
+      "size_bytes": 5354191,
+      "role": "merged60_acceptance_evidence"
+    },
+    {
+      "path": "build/curated-expansion-60/acceptance/mapping.json",
+      "sha256": "1988b7a52e3d727442f3f0ee3112e73915845b1514833fc95964d62b99e239d9",
+      "size_bytes": 1698100,
+      "role": "merged60_acceptance_evidence"
+    },
+    {
+      "path": "build/curated-expansion-60/acceptance/merge_curated_evidence.py",
+      "sha256": "2ece8d174b65ac1388c331f7e5850e37ca6b9e89c99925596bb533df38593acb",
+      "size_bytes": 23236,
+      "role": "merged60_acceptance_evidence"
+    },
+    {
+      "path": "build/curated-expansion-60/composition-plan.json",
+      "sha256": "f7ef078cda2e38055b10c4897228e78d203be533614da4d7298546f172020e57",
+      "size_bytes": 60767,
+      "role": "composition_mapping_plan_or_renderer"
+    },
+    {
+      "path": "build/curated-expansion-60/composition/01-animal-models.png",
+      "sha256": "0dd5e392255ef4b1bf802677d4bef073628b6a79271b86eed59ff188ee279287",
+      "size_bytes": 413042,
+      "role": "reviewed_purpose_composition_png"
+    },
+    {
+      "path": "build/curated-expansion-60/composition/02-species-brains.png",
+      "sha256": "5c84cc594e0129e5c2678a7a471162a6744937e142d3492acc418e5ac811f597",
+      "size_bytes": 327058,
+      "role": "reviewed_purpose_composition_png"
+    },
+    {
+      "path": "build/curated-expansion-60/composition/03-cell-examples.png",
+      "sha256": "5e98e34f728b8143680ffa938b487e41eada058a1d68a36d11ab259217995ae7",
+      "size_bytes": 501363,
+      "role": "reviewed_purpose_composition_png"
+    },
+    {
+      "path": "build/curated-expansion-60/composition/04-organelle-components.png",
+      "sha256": "74f8c2510f90d4b95309d240e14d1e7d8a835a22c0a85441f31ac0bc96e672e8",
+      "size_bytes": 434149,
+      "role": "reviewed_purpose_composition_png"
+    },
+    {
+      "path": "build/curated-expansion-60/composition/05-laboratory-scenes.png",
+      "sha256": "532e4174017e01a1758d34172af6c763048be28342db7e0a1a586746a0f9fd4a",
+      "size_bytes": 337838,
+      "role": "reviewed_purpose_composition_png"
+    },
+    {
+      "path": "build/curated-expansion-60/composition/06-rodent-scenes.png",
+      "sha256": "0582e5d91bd312e8ed48bdaa1d4f70d5dfe931a99b5ef7267065058d67590197",
+      "size_bytes": 181720,
+      "role": "reviewed_purpose_composition_png"
+    },
+    {
+      "path": "build/curated-expansion-60/composition/07-microbial-forms.png",
+      "sha256": "768d4b002a5fa2b11000921544e51de89707d2b5ae0568e377f6b8dde25a5283",
+      "size_bytes": 730124,
+      "role": "reviewed_purpose_composition_png"
+    },
+    {
+      "path": "build/curated-expansion-60/composition/08-molecular-components.png",
+      "sha256": "1378386e7f8266471b4bd237cb6ce62f3f6d6cde289406976cef604657ec51c4",
+      "size_bytes": 421045,
+      "role": "reviewed_purpose_composition_png"
+    },
+    {
+      "path": "build/curated-expansion-60/composition/09-anatomy-tissue.png",
+      "sha256": "161282a475461147b105ded163d6a50182b2c601b1e42b5cd7b4ef7ee3696de4",
+      "size_bytes": 678525,
+      "role": "reviewed_purpose_composition_png"
+    },
+    {
+      "path": "build/curated-expansion-60/composition/10-people-communication.png",
+      "sha256": "c5842f99d052bb1903d1244172521786ce9fcb6221f5b4fc8464ef806543f7c6",
+      "size_bytes": 678385,
+      "role": "reviewed_purpose_composition_png"
+    },
+    {
+      "path": "build/curated-expansion-60/composition/11-clinical-sampling.png",
+      "sha256": "69e727d82285504bc0a9aa461ffc0a1de623f59331217e23c6d16d4a94fd99c6",
+      "size_bytes": 353943,
+      "role": "reviewed_purpose_composition_png"
+    },
+    {
+      "path": "build/curated-expansion-60/composition/12-sequencing-equipment.png",
+      "sha256": "5cc91f6651483f88859f618058a6a1fcf8fbaba19d92fc8896a261d792c3fd6a",
+      "size_bytes": 338151,
+      "role": "reviewed_purpose_composition_png"
+    },
+    {
+      "path": "build/curated-expansion-60/composition/composition-mapping.json",
+      "sha256": "8b830a100962db7335e5d4e49a341c0d8f00353df8a854aa6e20f6e85f976a8f",
+      "size_bytes": 438012,
+      "role": "composition_mapping_plan_or_renderer"
+    },
+    {
+      "path": "build/curated-expansion-60/composition/summary.json",
+      "sha256": "a21959335b1b67bc8b71c143274393e575fd7490b92aa545b5c4fd97c0b33229",
+      "size_bytes": 265,
+      "role": "composition_mapping_plan_or_renderer"
+    },
+    {
+      "path": "build/curated-expansion-60/display/adjacency.png",
+      "sha256": "4b67bdb4e7bb7ab20ba593433e5448020f1dcad2969d0b42cee5bd2ff51cb01c",
+      "size_bytes": 268273,
+      "role": "reviewed_new12_background_reduction_png"
+    },
+    {
+      "path": "build/curated-expansion-60/display/comparison-01.png",
+      "sha256": "15e04102a11b1c47feb019409cd2e10cadfcf2ef235edab2ef2b873abbce2492",
+      "size_bytes": 194526,
+      "role": "reviewed_new12_background_reduction_png"
+    },
+    {
+      "path": "build/curated-expansion-60/display/comparison-02.png",
+      "sha256": "5bf98ccc3025f459b7f5eee71587d03e829b5365c9c8bed805bca9c7a0736318",
+      "size_bytes": 230638,
+      "role": "reviewed_new12_background_reduction_png"
+    },
+    {
+      "path": "build/curated-expansion-60/display/comparison-03.png",
+      "sha256": "fb73c2d34716998f87fa5c1b3d9e84e84f08f5d64864e408628a48863bc75e33",
+      "size_bytes": 152859,
+      "role": "reviewed_new12_background_reduction_png"
+    },
+    {
+      "path": "build/curated-expansion-60/display/comparison-04.png",
+      "sha256": "2db152f6ec8595d9d1e480d416a8524f850c6c3f8af1e6a52fbc495d7ed10780",
+      "size_bytes": 168524,
+      "role": "reviewed_new12_background_reduction_png"
+    },
+    {
+      "path": "build/curated-expansion-60/display/expanded-display-mapping.json",
+      "sha256": "fe096d7aac72a5af732a599e3fbec616560c8bcf35684903e5e8f2423a8d7e84",
+      "size_bytes": 61305,
+      "role": "new12_display_or_preview_extraction_metadata"
+    },
+    {
+      "path": "build/curated-expansion-60/display/tail/adjacency.png",
+      "sha256": "4a11a2eb3d33762ff5fb66b4f22ca308c6533fee184d8f54eec56237d131bbd3",
+      "size_bytes": 91214,
+      "role": "reviewed_new12_background_reduction_png"
+    },
+    {
+      "path": "build/curated-expansion-60/preview-42320795764/review/mapping.json",
+      "sha256": "dbdb7b4c2721f6da0460ffd9da5b3bea54c09d669fed8285ba98886f0b61f921",
+      "size_bytes": 43437,
+      "role": "new12_display_or_preview_extraction_metadata"
+    },
+    {
+      "path": "build/curated-expansion-60/preview-inventory.json",
+      "sha256": "40181253c556791bdab1aac3965530bcdc44e69eb8eb582015aa9d7021b0e92c",
+      "size_bytes": 4031,
+      "role": "new12_display_or_preview_extraction_metadata"
+    },
+    {
+      "path": "build/curated-expansion-60/qa-package/package_qa.py",
+      "sha256": "868dbbee73ba4f01c9d8e1eae49c4c7e123bcfb0efdb96b9c4cc015de0ff1ff0",
+      "size_bytes": 13495,
+      "role": "package_builder"
+    },
+    {
+      "path": "build/curated-expansion-60/render_composition_qa.py",
+      "sha256": "f3cd9c1389aefad7933fa1b20fc956e86438aa4e9fe5921cd8ff0d2a4d932910",
+      "size_bytes": 25834,
+      "role": "composition_mapping_plan_or_renderer"
+    },
+    {
+      "path": "build/curated-expansion-60/render_display_checks.py",
+      "sha256": "02478aed6caacc2057480b61588d9bc48ea8d26196f2267432f54ca333a3c573",
+      "size_bytes": 2246,
+      "role": "new12_display_or_preview_extraction_metadata"
+    },
+    {
+      "path": "build/curated-expansion-60/user-feedback-audit.json",
+      "sha256": "c9c84845202b919079410f69451254ad33cf19d654b2d68b5e30253111ec4054",
+      "size_bytes": 42970,
+      "role": "newer_catalog_readonly_feedback_audit_not_restore"
+    },
+    {
+      "path": "build/curated-expansion-60/verified-preview-pack.json",
+      "sha256": "900d81f99f133706902d78cab07a2bdcb8b56f85e4a252740430c1101c8246e5",
+      "size_bytes": 3053,
+      "role": "new12_display_or_preview_extraction_metadata"
+    },
+    {
+      "path": "build/current-acceptance-evidence-42312769493/mapping.json",
+      "sha256": "1988b7a52e3d727442f3f0ee3112e73915845b1514833fc95964d62b99e239d9",
+      "size_bytes": 1698100,
+      "role": "unchanged_original_query_mapping"
+    },
+    {
+      "path": "build/formal-query-confirmation-component-rule-42312769493/judgments.json",
+      "sha256": "f8e6d87c18d5478a962dd5aaeeb25e7c69a94bca2e4c08cd53850d7faaf09f52",
+      "size_bytes": 3676220,
+      "role": "unchanged_formal100_baseline_judgments"
+    },
+    {
+      "path": "build/restored-curated-42312769493/review/mapping.json",
+      "sha256": "0fcb104d57b430cc4592d7f5123ed4d0fb53cf8c3c17557c161cf4bcd7f5b218",
+      "size_bytes": 295554,
+      "role": "old48_display_mapping"
+    },
+    {
+      "path": "data/benchmark.json",
+      "sha256": "ce0282afeb4afbcee8fdef1c6f937844ef569cabf16ba7909e22bf86b1096e92",
+      "size_bytes": 91856,
+      "role": "unchanged_fixed120_benchmark"
+    },
+    {
+      "path": "data/curated-reviews/composition-60-panels-01-04.json",
+      "sha256": "5b334cdcb922fde043b5b09e74d9cf83857e38e85c687c200b3630c8be589980",
+      "size_bytes": 39938,
+      "role": "actual_visual_review"
+    },
+    {
+      "path": "data/curated-reviews/composition-60-panels-05-06-11.json",
+      "sha256": "58e3fcdd71d0082d92eb9a3552463e241f0b35400b50cbc574b6444f5d5c33dc",
+      "size_bytes": 18249,
+      "role": "actual_visual_review"
+    },
+    {
+      "path": "data/curated-reviews/composition-60-panels-07-10-12.json",
+      "sha256": "a17fb18793293b1d049c340e5d16d89ba872d2d44cb0866a667617b533d873d5",
+      "size_bytes": 76188,
+      "role": "actual_visual_review"
+    },
+    {
+      "path": "data/curated-reviews/expanded-display-42320795764-items-49-54.json",
+      "sha256": "b0b4f09a4a6a05c987ca3dfec0d4e8c411df69bc61c0030307f2b445af9df527",
+      "size_bytes": 35478,
+      "role": "actual_visual_review"
+    },
+    {
+      "path": "data/curated-reviews/expanded-display-42320795764-items-55-60.json",
+      "sha256": "c242b8e3140ccce40df7f45eb86e8bc48104877fb5627caba0b99ba597880cbf",
+      "size_bytes": 38445,
+      "role": "actual_visual_review"
+    },
+    {
+      "path": "data/curated-reviews/restored-display-42312769493-batch-01.json",
+      "sha256": "f9c1a3f273379d0d41b4c1d0568381409e9e60932cbdcf124590a1072914341d",
+      "size_bytes": 23325,
+      "role": "actual_visual_review"
+    },
+    {
+      "path": "data/curated-reviews/restored-display-42312769493-batch-02.json",
+      "sha256": "c28541c53189529bd27bf1222e36d9866cd673cae06171ba40797b161c2bc05e",
+      "size_bytes": 25392,
+      "role": "actual_visual_review"
+    },
+    {
+      "path": "data/curated-reviews/restored-display-42312769493-batch-03.json",
+      "sha256": "ca4ce6c88b56ee3b5a263d0b7d81742b946a2d79c874455f0dcc2963f3fed490",
+      "size_bytes": 71366,
+      "role": "actual_visual_review"
+    },
+    {
+      "path": "data/curated-reviews/restored-display-42312769493-batch-04.json",
+      "sha256": "3a2400db8045ed3a5df965defd50e606eec117ad15b61ed59f1f88daaeaf50c3",
+      "size_bytes": 62654,
+      "role": "actual_visual_review"
+    },
+    {
+      "path": "data/curated-reviews/restored-display-42312769493-merged-48.json",
+      "sha256": "54d0fc8d1d006998afc50482a82b4b4bfbb2b77100f30cea97b81ede68bc2fba",
+      "size_bytes": 341308,
+      "role": "actual_visual_review"
+    },
+    {
+      "path": "data/curated-reviews/selected-additional-12-42289434868.json",
+      "sha256": "96948b6b66292622ecfc6cec683ec4e52d413048f845eb64df41ad77806c8e2f",
+      "size_bytes": 201474,
+      "role": "selection_with_full_source_credit"
+    },
+    {
+      "path": "data/curated-reviews/selected-object-components-42289434868.json",
+      "sha256": "32011683c6259d0221e39ac5e6748dc460d451d91ec0af74d6851d8dba1ed78c",
+      "size_bytes": 341061,
+      "role": "selection_with_full_source_credit"
+    },
+    {
+      "path": "mga_resources/scope_policy.py",
+      "sha256": "a20d43c88a449c496d930deb3037a0e62ae826a5b40457b3e1c07ae3e5ca3891",
+      "size_bytes": 14150,
+      "role": "restore_validator_dependency"
+    },
+    {
+      "path": "qa-package/CONTENTS.json",
+      "sha256": "8454530eb5ccb913b9957f7d7a362d61155c141731a165ec46a7b5439466c2df",
+      "size_bytes": 17716,
+      "role": "content_inventory"
+    },
+    {
+      "path": "qa-package/NOTES.txt",
+      "sha256": "379e6abbe23c7130ff2b7cfb71e4f3f13f7a7e95a6a4d69576d8a8fc9f6f9c7f",
+      "size_bytes": 1137,
+      "role": "package_scope_and_rights_notice"
+    },
+    {
+      "path": "qa-package/external-references.json",
+      "sha256": "fcbf836b253f878060ae23b36525f5883825c8367b2b3c93ee334012af05d314",
+      "size_bytes": 4193,
+      "role": "large_metadata_and_prior_QA_references"
+    },
+    {
+      "path": "scripts/build_publish_pack.py",
+      "sha256": "30cb921999647536476e51aa353a0ee7e79f0a9d96919cb0f10d39691f498e00",
+      "size_bytes": 40464,
+      "role": "restore_validator_dependency"
+    },
+    {
+      "path": "scripts/check_preview_composition.py",
+      "sha256": "eb1172305a6429c1e5ab3e0aa656b6a1dcec96b96696094c2eb0bc7115d5bc6c",
+      "size_bytes": 9692,
+      "role": "display_renderer_dependency"
+    }
+  ],
+  "contents_summary": {
+    "purpose_composition_pngs": 12,
+    "new12_background_reduction_pngs": 6,
+    "new_independent_review_documents": 5,
+    "old48_display_merged_included": true,
+    "old48_original_batch_reviews_included": 4,
+    "selection_documents_with_full_provenance": 2,
+    "curated_distinct_families": 60,
+    "category_counts": {
+      "animals": 5,
+      "cells": 5,
+      "clinical_workflow": 5,
+      "experimental_actions": 5,
+      "lab_equipment": 5,
+      "microbes": 5,
+      "molecules": 5,
+      "omics_data": 5,
+      "organelles": 5,
+      "organs": 5,
+      "people": 5,
+      "tissues_vessels": 5
+    },
+    "display_conditions": 420,
+    "composition_placements": 62,
+    "frozen120_results_and_ranks_unchanged": true,
+    "result_judgments": 706,
+    "negative_scenarios_unchanged": 6
+  },
+  "actual_acceptance": {
+    "exit_code": 2,
+    "acceptance_passed": false,
+    "report": {
+      "path": "build/curated-expansion-60/acceptance/acceptance-report/checkreport.json",
+      "sha256": "6e783922756ac898a3ce8d08c5e9e2521b68abe028bd534af65bde600ed5cbd8"
+    },
+    "formal_success": 100,
+    "formal_total": 120,
+    "curated_families": 60,
+    "missing": [
+      {
+        "code": "queries.threshold",
+        "detail": "Retrieval success is 100/120; need 108."
+      },
+      {
+        "code": "queries.language",
+        "detail": "zh: 50/60; need 54."
+      },
+      {
+        "code": "queries.language",
+        "detail": "en: 50/60; need 54."
+      },
+      {
+        "code": "queries.category",
+        "detail": "clinical_workflow: 2/5 concepts; need 4."
+      },
+      {
+        "code": "queries.category",
+        "detail": "experimental_actions: 2/5 concepts; need 4."
+      },
+      {
+        "code": "queries.category",
+        "detail": "omics_data: 2/5 concepts; need 4."
+      }
+    ],
+    "new_curated_evidence_cannot_change_search_decisions": true
+  },
+  "merged_evidence": {
+    "combined_curated": {
+      "path": "build/curated-expansion-60/acceptance/combined-curated.json",
+      "sha256": "10be2c301669ac0aeff2b2a7828954d6e62a48d143b205120bb4e1ae2564a0a1"
+    },
+    "strict_merge_audit": {
+      "path": "build/curated-expansion-60/acceptance/audit.json",
+      "sha256": "02cb2cb6aed89a4f672e00031788ff70562075c259b549c26cad0dec2be11b07"
+    },
+    "historical_global_false_flags_preserved": true,
+    "curated_hard_blockers_from_binding_audit": []
+  },
+  "newer_catalog_feedback_audit": {
+    "path": "build/curated-expansion-60/user-feedback-audit.json",
+    "sha256": "c9c84845202b919079410f69451254ad33cf19d654b2d68b5e30253111ec4054",
+    "scope": "Read-only newer-catalog scope/text and MGA-Designer normative checks. It is not a restore of the new catalog.",
+    "current_catalog_assembly": "assembly-42320673266-1",
+    "counts": {
+      "public_families": 7839,
+      "public_unique_originals": 19474,
+      "nonpublic_unique_originals": 2294,
+      "nonpublic_by_status": {
+        "pending_review": 631,
+        "excluded": 1663
+      },
+      "nonpublic_by_reason": {
+        "component_suitability": 523,
+        "outside_component_scope": 18,
+        "media_type": 208,
+        "text_only_molecular_nameplate": 1541,
+        "preview_integrity": 3,
+        "scientific_attribution_conflict": 1
+      },
+      "nonpublic_by_source": {
+        "arcadia": {
+          "pending_review": 1
+        },
+        "bioicons": {
+          "excluded": 1,
+          "pending_review": 17
+        },
+        "commons": {
+          "excluded": 2
+        },
+        "healthicons": {
+          "pending_review": 50,
+          "excluded": 2
+        },
+        "nih-bioart": {
+          "excluded": 11,
+          "pending_review": 323
+        },
+        "reactome": {
+          "excluded": 1541,
+          "pending_review": 111
+        },
+        "scidraw": {
+          "pending_review": 9,
+          "excluded": 5
+        },
+        "scisvg": {
+          "pending_review": 3
+        },
+        "togo": {
+          "excluded": 101,
+          "pending_review": 120
+        }
+      },
+      "public_text_attribute_counts": {
+        "unknown": 19436,
+        "present": 37,
+        "absent": 1
+      },
+      "nonpublic_by_reason_and_status": {
+        "component_suitability": {
+          "pending_review": 519,
+          "excluded": 4
+        },
+        "media_type": {
+          "pending_review": 111,
+          "excluded": 97
+        },
+        "outside_component_scope": {
+          "excluded": 18
+        },
+        "preview_integrity": {
+          "excluded": 3
+        },
+        "scientific_attribution_conflict": {
+          "pending_review": 1
+        },
+        "text_only_molecular_nameplate": {
+          "excluded": 1541
+        }
+      },
+      "nonpublic_report_records_before_dedup": 2305,
+      "public_file_scope_statuses": {
+        "unreviewed": 17461,
+        "included": 2013
+      }
+    },
+    "fresh_restore_of_newer_catalog_claimed": false
+  },
+  "external_large_evidence": [
+    {
+      "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/publish-qa-20261107-42289434868-3.4.3/qa-20261107-42289434868-3.4.3.publish_manifest.json",
+      "sha256": "a4fe0424ee8ecc32096090ef295242bdaa04b9ce29ff4f7a80948c95516d5436",
+      "size_bytes": 44707354,
+      "api_asset_id": 718912883,
+      "local_path_aliases": [
+        "build/cloud-recovery-20261107/frozen-42289434868-3.4.3.publish_manifest.json",
+        "build/dispositions-final-scope-42289434868/candidate_publish_manifest.json"
+      ],
+      "scope": "Frozen old-catalog exact publication subset and all source credits",
+      "included_in_package": false
+    },
+    {
+      "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/publish-qa-20261107-42289434868-3.4.3/qa-20261107-42289434868-3.4.3.bundle.json",
+      "sha256": "54b055c631c5fd814a7012f176151eb86d65c66849f8b2c71ea3a53ae44dc3a0",
+      "size_bytes": 8500765,
+      "api_asset_id": 718912997,
+      "local_path_aliases": [
+        "build/cloud-recovery-20261107/build-evidence/qa-20261107-42289434868-3.4.3.bundle.json"
+      ],
+      "scope": "Old-catalog clean recovery pack index; not a new-catalog restore",
+      "included_in_package": false
+    },
+    {
+      "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/acceptance-20261107/qa-20261107-42289434868-3.4.3-42312769493-1.restore_evidence.json",
+      "sha256": "bdfdf932d22b6ce2a008de38873ac70ba8dcb1dc3235b474f40f9f8fbc9eb4dd",
+      "size_bytes": 5199214,
+      "api_asset_id": 718949354,
+      "local_path_aliases": [
+        "build/cloud-recovery-20261107/restore-evidence/qa-20261107-42289434868-3.4.3-42312769493-1.restore_evidence.json"
+      ],
+      "scope": "Independent restore of old frozen catalog only",
+      "included_in_package": false
+    },
+    {
+      "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/acceptance-20261107/restored-curated-42312769493-1.tar.gz",
+      "sha256": "7d00632b110fcf73955522d3e71b7cd572a8d14753a2072b4c286eced32f1d48",
+      "size_bytes": 8077366,
+      "api_asset_id": 718950040,
+      "local_path_aliases": [
+        "build/restored-curated-42312769493/review/"
+      ],
+      "scope": "Already published bounded old48 exact previews and original display pages",
+      "included_in_package": false
+    },
+    {
+      "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/acceptance-20261107/exact-review-42320795764-1.tar.gz",
+      "sha256": "c7c8670d302a4a603d7b05983d47c023eee7102e421b62ba03484f6e38d51567",
+      "size_bytes": 1020724,
+      "api_asset_id": 719127652,
+      "local_path_aliases": [
+        "build/curated-expansion-60/preview-42320795764/review/"
+      ],
+      "scope": "Already published bounded new12 exact archived previews",
+      "included_in_package": false
+    },
+    {
+      "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/assembly-42289434868-1.catalog.jsonl",
+      "sha256": "5c90306415ce5e7f36e875c7f57b19a91930aacfeeaeecdf9ad7662770f9a3fe",
+      "size_bytes": 231179408,
+      "api_asset_id": 718479822,
+      "local_path_aliases": [
+        "build/final-scope-baseline/assembly-42289434868-1.catalog.jsonl"
+      ],
+      "scope": "Large old-catalog metadata referenced only; no download performed by packaging",
+      "included_in_package": false
+    },
+    {
+      "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/assembly-42289434868-1.report.json",
+      "sha256": "cecdab1b3f5162cae569fc51de43d0ec34f33e00f0a81d57d56632964199cacd",
+      "size_bytes": 7750696,
+      "api_asset_id": 718479825,
+      "local_path_aliases": [
+        "build/final-scope-baseline/assembly-42289434868-1.report.json"
+      ],
+      "scope": "Large old-catalog metadata referenced only; no download performed by packaging",
+      "included_in_package": false
+    }
+  ],
+  "rights_and_credit": "Both original selection documents are included without changes, with per-file source/author/license/attribution and complete duplicate-source provenance. Each visible source artwork retains its own license; there is no new blanket artwork license.",
+  "original_artwork_members": 0,
+  "catalog_or_sqlite_members": 0,
+  "new_source_downloads": 0,
+  "local_library_original_downloads": 0,
+  "source_originals_modified": false,
+  "new_native_edit_tests": 0,
+  "native_status_promoted": false,
+  "official_library_release_claimed": false,
+  "website_deployment_claimed": false,
+  "limits_zh": [
+    "小尺寸细节、文字可读性、深底对比、源白色填充与混合画风的限制均保留在逐文件审阅中。",
+    "组合面板只是声明用途下的实际显示审阅，不证明任意组合均协调，也不构成新的医学机制或完整实验流程。",
+    "旧冻结目录已恢复的证明没有升级为新目录恢复；原生编辑能力仍只由实际测过的精确文件和记录环境支持。"
+  ]
+}
