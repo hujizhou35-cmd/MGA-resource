@@ -79,7 +79,19 @@ def resolve_index(catalog_path, output, index_path=None):
                             "validation_seconds": time.perf_counter()-started}
 
 
-def diagnose(catalog_path, benchmark_path, output, index_path=None):
+def export_query_results(page):
+    """Keep exact selected variants from this search, without fetching previews."""
+    fields = ("sha256", "size_bytes", "format", "structure", "archive", "preview", "source_records",
+              "scientific", "scientific_review_evidence", "scientific_conflicts", "public_scope")
+    return [{"rank": rank, "asset_id": row["asset_id"], "family_id": row["family_id"],
+             "variant_id": row["variant_id"], "title": row["title"],
+             "selected_source": row["selected_source"], "selected_science": row["selected_science"],
+             "selected_file": {key: row["selected_file"][key] for key in fields if key in row["selected_file"]},
+             "preview": row["preview"], "download": row["download"]}
+            for rank, row in enumerate(page["results"], 1)]
+
+
+def diagnose(catalog_path, benchmark_path, output, index_path=None, *, include_results=False):
     output.mkdir(parents=True, exist_ok=True)
     db, catalog_sha, index_info = resolve_index(catalog_path, output, index_path)
     with closing(sqlite3.connect(db.resolve().as_uri()+"?mode=ro", uri=True)) as connection:
@@ -107,6 +119,8 @@ def diagnose(catalog_path, benchmark_path, output, index_path=None):
                         "adapter_metrics": page["adapter_metrics"],
                         "diagnostics": page["diagnostics"], "requirements": page["query_plan"]["requirements"],
                         "independent_relevance_judgment": None})
+        if include_results:
+            queries[-1].update(exact_results=export_query_results(page), search_bindings=page["bindings"])
         if (index + 1) % 20 == 0:
             print(f"Compared {index + 1}/{len(benchmark['queries'])} fixed queries", flush=True)
     broad = []
@@ -163,5 +177,6 @@ if __name__ == "__main__":
     parser.add_argument("--benchmark",type=Path,default=ROOT/"data/benchmark.json")
     parser.add_argument("--output",type=Path,required=True)
     parser.add_argument("--index",type=Path,help="Reuse an existing v9 index bound to the exact catalog and current shared ranking version")
+    parser.add_argument("--include-results",action="store_true",help="Export exact selected-file metadata from the same search; no image requests")
     args=parser.parse_args()
-    diagnose(args.catalog,args.benchmark,args.output,args.index)
+    diagnose(args.catalog,args.benchmark,args.output,args.index,include_results=args.include_results)

@@ -1,0 +1,56 @@
+name: Replay search using metadata only
+on:
+  workflow_dispatch:
+    inputs:
+      release_tag:
+        description: Release containing the exact catalog, SQLite index and report
+        default: acceptance-20261107
+        type: string
+      assembly_prefix:
+        description: Exact appearance-complete assembly-RUN-ATTEMPT prefix
+        default: assembly-42320673266-1
+        required: true
+        type: string
+      baseline_release_tag:
+        description: Release containing the recorded original 3.4.3 diagnostic metadata
+        default: acceptance-20261107
+        type: string
+      baseline_asset:
+        description: Exact baseline JSON; its SHA must match committed historical evidence
+        default: search-baseline-42289434868-3.4.3.search-diagnostic.json
+        type: string
+      publish_tag:
+        description: Existing Release for the small replay evidence package
+        default: acceptance-20261107
+        type: string
+permissions:
+  contents: write
+concurrency:
+  group: search-metadata-replay
+  cancel-in-progress: false
+jobs:
+  replay:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install -e .
+      - name: Replay original queries and behavior without artwork access
+        env:
+          GH_TOKEN: ${{ github.token }}
+          METADATA_TAG: ${{ inputs.release_tag }}
+          ASSEMBLY_PREFIX: ${{ inputs.assembly_prefix }}
+          BASELINE_TAG: ${{ inputs.baseline_release_tag }}
+          BASELINE_ASSET: ${{ inputs.baseline_asset }}
+          PUBLISH_TAG: ${{ inputs.publish_tag }}
+        run: >-
+          python scripts/replay_catalog_metadata.py
+          --release-tag "$METADATA_TAG" --assembly-prefix "$ASSEMBLY_PREFIX"
+          --baseline-release-tag "$BASELINE_TAG" --baseline-asset "$BASELINE_ASSET"
+          --publish-tag "$PUBLISH_TAG" --publish
