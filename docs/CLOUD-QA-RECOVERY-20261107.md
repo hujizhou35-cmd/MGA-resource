@@ -21,6 +21,7 @@
 - [独立恢复回执](https://github.com/hujizhou35-cmd/MGA-resource/releases/download/acceptance-20261107/qa-20261107-42289434868-3.4.3-42312769493-1.restore_evidence.json)。
 - [48件精选预览与检查页](https://github.com/hujizhou35-cmd/MGA-resource/releases/download/acceptance-20261107/restored-curated-42312769493-1.tar.gz)，约8.08 MB，不含图库原件。
 - [范围审计与逐件显示审阅元数据](https://github.com/hujizhou35-cmd/MGA-resource/releases/download/acceptance-20261107/qa-acceptance-42312769493.metadata.tar.gz)，约0.64 MB，不含图像。
+- [正式验收输入与未通过报告](https://github.com/hujizhou35-cmd/MGA-resource/releases/download/acceptance-20261107/acceptance-evidence-42312769493.metadata.tar.gz)，419,796字节、7份元数据文件；远端大小和SHA-256均已核对，摘要为 `ef000ba001925cf5124b72cf90a45f281559673501f37d16ff358890263ad3e7`。
 - [全部版本与哈希记录](../data/diagnostics/cloud-qa-recovery-42312769493.json)。
 
 显示检查发现了真实限制：深色剪影在深底对比不足、部分灰区透明透底、白色内填充会遮住下方元素、小尺寸下实验动作和组织细节难以辨认。骨与软骨图上的标签仍可保留入库，但缩略图不能证明标签适合最终成图。逐件观察保存在[48件合并记录](../data/curated-reviews/restored-display-42312769493-merged-48.json)，原文件没有改色、去字或覆盖。
