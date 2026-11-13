@@ -205,7 +205,7 @@ def test_unknown_filter_and_obsolete_index_fail_explicitly(tmp_path):
         search(db, "mouse", filters={"nonsense": "true"})
     with closing(sqlite3.connect(db)) as conn:
         conn.execute("PRAGMA user_version=1")
-    with pytest.raises(ValueError, match="rebuilt as v11"):
+    with pytest.raises(ValueError, match="rebuilt as v12"):
         search(db, "mouse")
 
 
@@ -609,8 +609,8 @@ def test_content_type_scope_projection_uses_only_bound_media_dimension(tmp_path)
 def test_old_ranking_index_is_rejected_even_with_unchanged_sql_schema(tmp_path):
     db = database(tmp_path, [artwork(1)])
     with closing(sqlite3.connect(db)) as conn, conn:
-        assert conn.execute("PRAGMA user_version").fetchone()[0] == 11
-        assert conn.execute("SELECT value FROM index_metadata WHERE key='ranking_version'").fetchone()[0] == "shared-search-3.5.1"
+        assert conn.execute("PRAGMA user_version").fetchone()[0] == 12
+        assert conn.execute("SELECT value FROM index_metadata WHERE key='ranking_version'").fetchone()[0] == "shared-search-3.5.2"
         conn.execute("UPDATE index_metadata SET value='shared-search-3.4.2' WHERE key='ranking_version'")
     with pytest.raises(ValueError, match="policy version.*changed; rebuild"):
         search(db, "mouse", filters={"media_type": "raster"})
@@ -653,3 +653,18 @@ def test_appearance_aliases_intersect_without_silently_widening_hard_filters():
     assert plan["requirements"]["color_mode"] == ["grayscale"]
     with pytest.raises(ValueError, match="Conflicting aliases"):
         _search_core({"action": "plan", "query": "mouse", "filters": {"color": "color", "color_mode": "grayscale"}})
+
+
+def test_computer_workstation_class_excludes_laboratory_robot_and_mouse(tmp_path):
+    records=[artwork(8101,title="Laptop open",species=None),
+             artwork(8102,title="Desktop computer",species=None),
+             artwork(8103,title="NGS workstation robot",species=None),
+             artwork(8104,title="Computer mouse",species=None),
+             artwork(8105,title="Unknown box",species=None,tags=["computer","laptop"])]
+    db=database(tmp_path,records)
+    for query in ("计算机工作站插画","computer workstation illustration","computer illustration"):
+        assert {r['selected_source']['source_id'] for r in search(db,query)} == {'8101','8102'}
+    assert {r['selected_source']['source_id'] for r in search(db,'laptop illustration')} == {'8101'}
+    # A generic computer does not become a laptop; query matching does not
+    # certify that any particular returned file has a visible/open display.
+    assert {r['selected_source']['source_id'] for r in search(db,'NGS workstation')} == {'8103'}

@@ -1,0 +1,849 @@
+{
+  "schema_version": 1,
+  "reviewer": "Codex root; actual exact-preview contact-sheet inspection",
+  "reviewed_at": "2026-11-13T17:56:29.342196+00:00",
+  "review_method": "Actually displayed and inspected all twelve exact tiles; tied every note to both original and preview hashes and the fixed source. Reusing old Pipetman context, with an explicit new component-detail check.",
+  "review_sheet_url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/acceptance-20261107/exact-review-43476227920-1.review.png",
+  "review_sheet_sha256": "053d25a7797a559ef487550fed44638efbf9aa6e43d68bdbba83d39c1413eaa3",
+  "review_limits": [
+    "No original modification or source collection.",
+    "No displayed-volume, performance, specific medical procedure or computer-analysis claim.",
+    "This stock review does not insert candidates into an old frozen replay.",
+    "One yellow micropipette has no confirmed tip separation; only its equipment identity is asserted.",
+    "A computer monitor is recorded as a monitor, without inventing its absent host computer."
+  ],
+  "cloud_run": 43476227920,
+  "catalog_sha256": "331a28608746cd36fbd4c7d69b1890b4c8519d38a9f4ede29411691eb5ff1a28",
+  "items": [
+    {
+      "tile": 1,
+      "id": "healthicons-f9dbec50d6c1c336832f",
+      "title": "Arm",
+      "source": "healthicons",
+      "source_id": "public/icons/svg/outline/body/arm.svg",
+      "source_record": {
+        "asset_id": "healthicons-5140a766cb71a7ddb16f",
+        "attribution": "Arm — Resolve to Save Lives / Health Icons contributors; https://github.com/resolvetosavelives/healthicons/blob/2080c1b40e4829f2f4217e03bc22908b4e402f6b/public/icons/svg/outline/body/arm.svg; CC0-1.0",
+        "author": "Resolve to Save Lives / Health Icons contributors",
+        "categories": [],
+        "distribution_status": "license_recorded",
+        "license": "CC0-1.0",
+        "source": "healthicons",
+        "source_id": "public/icons/svg/outline/body/arm.svg",
+        "source_url": "https://github.com/resolvetosavelives/healthicons/blob/2080c1b40e4829f2f4217e03bc22908b4e402f6b/public/icons/svg/outline/body/arm.svg",
+        "tags": [
+          "Arm",
+          "Hand",
+          "Joint",
+          "outline",
+          "body"
+        ],
+        "taxonomy": [
+          "people"
+        ],
+        "title": "Arm",
+        "upstream_category": "body",
+        "url": "https://raw.githubusercontent.com/resolvetosavelives/healthicons/2080c1b40e4829f2f4217e03bc22908b4e402f6b/public/icons/svg/outline/body/arm.svg"
+      },
+      "original_sha256": "e051867bbb905c5125fec58fa45db56d6a40b1b5327f1a41ad2a13bc62d08e9b",
+      "preview_sha256": "754de8d8076be8d8294890c934659e4ef187cf9c05913584971f8d5edf2f722e",
+      "original_archive": {
+        "member": "files/e0/e051867bbb905c5125fec58fa45db56d6a40b1b5327f1a41ad2a13bc62d08e9b.svg",
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/healthicons-42234355854-1-b0002.tar.gz"
+      },
+      "preview_archive": {
+        "member": "previews/e051867bbb905c5125fec58fa45db56d6a40b1b5327f1a41ad2a13bc62d08e9b.png",
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/healthicons-42234355854-1-b0002.tar.gz"
+      },
+      "visual_verdict": "usable_as_schematic_component",
+      "observations": "单独弯曲的人体上肢线描，近端截面、肘部轮廓、前臂和简化手部明确。HealthIcons body目录及Arm/Hand/Joint标签支持人体手臂符号。可作采样部位概念部件，不代表穿刺点、静脉或肩部完整解剖。",
+      "scientific_assertions": {
+        "object": [
+          "arm"
+        ],
+        "species": [
+          "human"
+        ],
+        "depiction_kind": "named_object"
+      },
+      "visual_evidence": [
+        {
+          "path": "build/component-resume-20261114/remaining-role-preview-43476227920/exact-review-43476227920-1.review.png",
+          "sha256": "053d25a7797a559ef487550fed44638efbf9aa6e43d68bdbba83d39c1413eaa3"
+        },
+        {
+          "path": "build/component-resume-20261114/remaining-role-preview-43476227920/mapping.json",
+          "sha256": "29436c3ad677f71562fce11f7963702d73e7c2c67dbe605de2d8561d62e4a2b7"
+        }
+      ],
+      "source_evidence_basis": "Pinned exact source record above plus actual visible object; no performance, state, volume or procedure claim.",
+      "text_observation": {
+        "contains_readable_labels": false,
+        "review_status": "No readable explanatory labels observed on this preview; vector text/path internals not separately parsed.",
+        "cleanup_required": "task_dependent"
+      },
+      "new_individual_preview_display": false
+    },
+    {
+      "tile": 2,
+      "id": "healthicons-f9dbec50d6c1c336832f",
+      "title": "Arm",
+      "source": "healthicons",
+      "source_id": "public/icons/svg/filled/body/arm.svg",
+      "source_record": {
+        "asset_id": "healthicons-ded31ddb6a68669012a0",
+        "attribution": "Arm — Resolve to Save Lives / Health Icons contributors; https://github.com/resolvetosavelives/healthicons/blob/2080c1b40e4829f2f4217e03bc22908b4e402f6b/public/icons/svg/filled/body/arm.svg; CC0-1.0",
+        "author": "Resolve to Save Lives / Health Icons contributors",
+        "categories": [],
+        "distribution_status": "license_recorded",
+        "license": "CC0-1.0",
+        "source": "healthicons",
+        "source_id": "public/icons/svg/filled/body/arm.svg",
+        "source_url": "https://github.com/resolvetosavelives/healthicons/blob/2080c1b40e4829f2f4217e03bc22908b4e402f6b/public/icons/svg/filled/body/arm.svg",
+        "tags": [
+          "Arm",
+          "Hand",
+          "Joint",
+          "filled",
+          "body"
+        ],
+        "taxonomy": [
+          "people"
+        ],
+        "title": "Arm",
+        "upstream_category": "body",
+        "url": "https://raw.githubusercontent.com/resolvetosavelives/healthicons/2080c1b40e4829f2f4217e03bc22908b4e402f6b/public/icons/svg/filled/body/arm.svg"
+      },
+      "original_sha256": "67da2ac1e1010668322dcf8aa773d7d8c6f8ff16b9452cbb1e700d0671e6671c",
+      "preview_sha256": "0d99c78e24a99cfb546c4a0eb256204e488ab182d2caf4055def7b353a16c6b6",
+      "original_archive": {
+        "member": "files/67/67da2ac1e1010668322dcf8aa773d7d8c6f8ff16b9452cbb1e700d0671e6671c.svg",
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/healthicons-42234355854-1-b0000.tar.gz"
+      },
+      "preview_archive": {
+        "member": "previews/67da2ac1e1010668322dcf8aa773d7d8c6f8ff16b9452cbb1e700d0671e6671c.png",
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/healthicons-42234355854-1-b0000.tar.gz"
+      },
+      "visual_verdict": "usable_as_schematic_component",
+      "observations": "黑色实心的人体弯臂与简化手部剪影，近端与远端清楚，主要对象是手臂。源HealthIcons body/arm支持用途；深底对比不足，不能由形状认定血管或疾病。",
+      "scientific_assertions": {
+        "object": [
+          "arm"
+        ],
+        "species": [
+          "human"
+        ],
+        "depiction_kind": "named_object"
+      },
+      "visual_evidence": [
+        {
+          "path": "build/component-resume-20261114/remaining-role-preview-43476227920/exact-review-43476227920-1.review.png",
+          "sha256": "053d25a7797a559ef487550fed44638efbf9aa6e43d68bdbba83d39c1413eaa3"
+        },
+        {
+          "path": "build/component-resume-20261114/remaining-role-preview-43476227920/mapping.json",
+          "sha256": "29436c3ad677f71562fce11f7963702d73e7c2c67dbe605de2d8561d62e4a2b7"
+        }
+      ],
+      "source_evidence_basis": "Pinned exact source record above plus actual visible object; no performance, state, volume or procedure claim.",
+      "text_observation": {
+        "contains_readable_labels": false,
+        "review_status": "No readable explanatory labels observed on this preview; vector text/path internals not separately parsed.",
+        "cleanup_required": "task_dependent"
+      },
+      "new_individual_preview_display": false
+    },
+    {
+      "tile": 3,
+      "id": "healthicons-7df0c486d78475eb1992",
+      "title": "Arm Circumference",
+      "source": "healthicons",
+      "source_id": "public/icons/svg/outline/symbols/arm-circumference.svg",
+      "source_record": {
+        "asset_id": "healthicons-67b3ddfa2dac48f703cb",
+        "attribution": "Arm Circumference — Resolve to Save Lives / Health Icons contributors; https://github.com/resolvetosavelives/healthicons/blob/2080c1b40e4829f2f4217e03bc22908b4e402f6b/public/icons/svg/outline/symbols/arm-circumference.svg; CC0-1.0",
+        "author": "Resolve to Save Lives / Health Icons contributors",
+        "categories": [],
+        "distribution_status": "license_recorded",
+        "license": "CC0-1.0",
+        "source": "healthicons",
+        "source_id": "public/icons/svg/outline/symbols/arm-circumference.svg",
+        "source_url": "https://github.com/resolvetosavelives/healthicons/blob/2080c1b40e4829f2f4217e03bc22908b4e402f6b/public/icons/svg/outline/symbols/arm-circumference.svg",
+        "tags": [
+          "Arm",
+          "Centimeter",
+          "Diagnostic",
+          "Measure",
+          "Patient",
+          "outline",
+          "symbols"
+        ],
+        "taxonomy": [
+          "people"
+        ],
+        "title": "Arm Circumference",
+        "upstream_category": "symbols",
+        "url": "https://raw.githubusercontent.com/resolvetosavelives/healthicons/2080c1b40e4829f2f4217e03bc22908b4e402f6b/public/icons/svg/outline/symbols/arm-circumference.svg"
+      },
+      "original_sha256": "88bc95eda72e1226f7b157210731b67d1e6c50a3b10b6cb6edcb9f10b2fe9407",
+      "preview_sha256": "4f4851c91844f081f6d6cd81a55c3fa7889634cd69e61bcf8b1ced77da8222b2",
+      "original_archive": {
+        "member": "files/88/88bc95eda72e1226f7b157210731b67d1e6c50a3b10b6cb6edcb9f10b2fe9407.svg",
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/healthicons-42234355854-1-b0003.tar.gz"
+      },
+      "preview_archive": {
+        "member": "previews/88bc95eda72e1226f7b157210731b67d1e6c50a3b10b6cb6edcb9f10b2fe9407.png",
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/healthicons-42234355854-1-b0003.tar.gz"
+      },
+      "visual_verdict": "usable_as_schematic_component",
+      "observations": "独立弯臂轮廓上附绕上臂的弧形箭头，源Arm Circumference支持上臂围度语境；箭头有测量含义，不能无判断删掉或当采血方向。可复用手臂对象但不是中性无标记版本。",
+      "scientific_assertions": {
+        "object": [
+          "arm"
+        ],
+        "species": [
+          "human"
+        ],
+        "depiction_kind": "named_object"
+      },
+      "visual_evidence": [
+        {
+          "path": "build/component-resume-20261114/remaining-role-preview-43476227920/exact-review-43476227920-1.review.png",
+          "sha256": "053d25a7797a559ef487550fed44638efbf9aa6e43d68bdbba83d39c1413eaa3"
+        },
+        {
+          "path": "build/component-resume-20261114/remaining-role-preview-43476227920/mapping.json",
+          "sha256": "29436c3ad677f71562fce11f7963702d73e7c2c67dbe605de2d8561d62e4a2b7"
+        }
+      ],
+      "source_evidence_basis": "Pinned exact source record above plus actual visible object; no performance, state, volume or procedure claim.",
+      "text_observation": {
+        "contains_readable_labels": false,
+        "review_status": "No readable explanatory labels observed on this preview; vector text/path internals not separately parsed.",
+        "cleanup_required": "task_dependent"
+      },
+      "new_individual_preview_display": false
+    },
+    {
+      "tile": 4,
+      "id": "bioicons-2920777ffb44dc11e36d",
+      "title": "micropipette",
+      "source": "bioicons",
+      "source_id": "cc-by-3.0/Chemistry/Servier/micropipette.svg",
+      "source_record": {
+        "asset_id": "bioicons-2920777ffb44dc11e36d",
+        "attribution": "micropipette — Servier Medical Art by Servier; CC BY 3.0 (https://creativecommons.org/licenses/by/3.0/); fixed source: https://github.com/duerrsimon/bioicons/blob/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-3.0/Chemistry/Servier/micropipette.svg; via Bioicons. Historical SVG copy distributed through Bioicons; no new artwork modification by MGA-resource.",
+        "author": "Servier",
+        "categories": [],
+        "distribution_status": "license_recorded",
+        "license": "CC-BY-3.0",
+        "source": "bioicons",
+        "source_id": "cc-by-3.0/Chemistry/Servier/micropipette.svg",
+        "source_url": "https://github.com/duerrsimon/bioicons/blob/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-3.0/Chemistry/Servier/micropipette.svg",
+        "tags": [
+          "Chemistry"
+        ],
+        "taxonomy": [
+          "molecules"
+        ],
+        "title": "micropipette",
+        "upstream_category": "Chemistry",
+        "url": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-3.0/Chemistry/Servier/micropipette.svg"
+      },
+      "original_sha256": "88029da12d315fd46e6a8804b98ae4a78a2801414ae1b35e2647817fcf46dfac",
+      "preview_sha256": "4e1ae5d9a9f3f944c09a248ddb99c869d005fafa3027201bf9d4d768cc8c6e71",
+      "original_archive": {
+        "member": "files/88/88029da12d315fd46e6a8804b98ae4a78a2801414ae1b35e2647817fcf46dfac.svg",
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42251588741-1-b0001.tar.gz"
+      },
+      "preview_archive": {
+        "member": "previews/88029da12d315fd46e6a8804b98ae4a78a2801414ae1b35e2647817fcf46dfac.png",
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42251588741-1-b0001.tar.gz"
+      },
+      "visual_verdict": "usable_as_schematic_component",
+      "observations": "移液器按压钮、手握机身、体积窗口、细长下杆与可区分的浅蓝色锥形枪头清楚，固定Servier来源为micropipette。可满足整机与枪头部件角色，不读取实际体积或推断液体。",
+      "scientific_assertions": {
+        "object": [
+          "micropipette",
+          "pipette tip"
+        ],
+        "depiction_kind": "equipment"
+      },
+      "visual_evidence": [
+        {
+          "path": "build/component-resume-20261114/remaining-role-preview-43476227920/exact-review-43476227920-1.review.png",
+          "sha256": "053d25a7797a559ef487550fed44638efbf9aa6e43d68bdbba83d39c1413eaa3"
+        },
+        {
+          "path": "build/component-resume-20261114/remaining-role-preview-43476227920/mapping.json",
+          "sha256": "29436c3ad677f71562fce11f7963702d73e7c2c67dbe605de2d8561d62e4a2b7"
+        }
+      ],
+      "source_evidence_basis": "Pinned exact source record above plus actual visible object; no performance, state, volume or procedure claim.",
+      "text_observation": {
+        "contains_readable_labels": false,
+        "review_status": "No readable explanatory labels observed on this preview; vector text/path internals not separately parsed.",
+        "cleanup_required": "task_dependent"
+      },
+      "new_individual_preview_display": false
+    },
+    {
+      "tile": 5,
+      "id": "scisvg-519891a4c033306eccbb",
+      "title": "Micropipette",
+      "source": "scisvg",
+      "source_id": "assets/laboratory/equipment/micropipette.svg",
+      "source_record": {
+        "asset_id": "scisvg-519891a4c033306eccbb",
+        "attribution": "Micropipette — Saveena Solanki; https://github.com/SaveenaSolanki/SciSVG/blob/b8a2b60a3a5b2d9b717b1065fbcb8de9f1faf72b/assets/laboratory/equipment/micropipette.svg; CC-BY-4.0",
+        "author": "Saveena Solanki",
+        "categories": [],
+        "description": "Micropipette with tip ejector, volume window and a droplet.",
+        "distribution_status": "license_recorded",
+        "license": "CC-BY-4.0",
+        "source": "scisvg",
+        "source_id": "assets/laboratory/equipment/micropipette.svg",
+        "source_url": "https://github.com/SaveenaSolanki/SciSVG/blob/b8a2b60a3a5b2d9b717b1065fbcb8de9f1faf72b/assets/laboratory/equipment/micropipette.svg",
+        "tags": [
+          "micropipette",
+          "laboratory",
+          "equipment"
+        ],
+        "taxonomy": [
+          "lab_equipment"
+        ],
+        "title": "Micropipette",
+        "upstream_category": "laboratory",
+        "url": "https://raw.githubusercontent.com/SaveenaSolanki/SciSVG/b8a2b60a3a5b2d9b717b1065fbcb8de9f1faf72b/assets/laboratory/equipment/micropipette.svg"
+      },
+      "original_sha256": "eb51703468824613cebafacea70c08cb8cbb5c78b192d421c995e1af9d27a1c4",
+      "preview_sha256": "858cb9870dd0ca7c354312af33390896d2956aa182a37aaa959b0062d1a7513d",
+      "original_archive": {
+        "member": "files/eb/eb51703468824613cebafacea70c08cb8cbb5c78b192d421c995e1af9d27a1c4.svg",
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scisvg-42238985604-1-b0000.tar.gz"
+      },
+      "preview_archive": {
+        "member": "previews/eb51703468824613cebafacea70c08cb8cbb5c78b192d421c995e1af9d27a1c4.png",
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scisvg-42238985604-1-b0000.tar.gz"
+      },
+      "visual_verdict": "usable_as_schematic_component",
+      "observations": "完整简化微量移液器有顶部按压部件、窗口、侧边按钮和蓝色锥形下端，下面附一滴液体；源描述明确micropipette with tip ejector。可用作移液器及示意枪头，不将液滴等同真实操作或试剂。",
+      "scientific_assertions": {
+        "object": [
+          "micropipette",
+          "pipette tip"
+        ],
+        "depiction_kind": "equipment"
+      },
+      "visual_evidence": [
+        {
+          "path": "build/component-resume-20261114/remaining-role-preview-43476227920/exact-review-43476227920-1.review.png",
+          "sha256": "053d25a7797a559ef487550fed44638efbf9aa6e43d68bdbba83d39c1413eaa3"
+        },
+        {
+          "path": "build/component-resume-20261114/remaining-role-preview-43476227920/mapping.json",
+          "sha256": "29436c3ad677f71562fce11f7963702d73e7c2c67dbe605de2d8561d62e4a2b7"
+        }
+      ],
+      "source_evidence_basis": "Pinned exact source record above plus actual visible object; no performance, state, volume or procedure claim.",
+      "text_observation": {
+        "contains_readable_labels": false,
+        "review_status": "No readable explanatory labels observed on this preview; vector text/path internals not separately parsed.",
+        "cleanup_required": "task_dependent"
+      },
+      "new_individual_preview_display": false
+    },
+    {
+      "tile": 6,
+      "id": "togo-122b29d01a68755a4b0f",
+      "title": "Micropipette",
+      "source": "togo",
+      "source_id": "806",
+      "source_record": {
+        "asset_id": "togo-c72e1112099240655683",
+        "attribution": "Micropipette — <a href=\"https://erikotoyooka.com/\" target=\"_blank\">erico</a>; © 2016 DBCLS TogoTV / CC-BY-4.0; https://doi.org/10.7875/togopic.2021.001",
+        "author": "<a href=\"https://erikotoyooka.com/\" target=\"_blank\">erico</a>",
+        "categories": [],
+        "distribution_status": "license_recorded",
+        "license": "CC-BY-4.0",
+        "source": "togo",
+        "source_id": "806",
+        "source_url": "https://doi.org/10.7875/togopic.2021.001",
+        "tags": [
+          "Lab equipment",
+          "Icon",
+          "Lab instruments",
+          "Lab techniques",
+          "Molecular biology",
+          "Cell culture"
+        ],
+        "taxonomy": [
+          "cells",
+          "lab_equipment",
+          "experimental_actions"
+        ],
+        "title": "Micropipette",
+        "url": "https://dbarchive.biosciencedbc.jp/data/togo-pic/image/202101_Micropipette.svg"
+      },
+      "original_sha256": "6520d6901fb8af6244ab8e356a36b2eb91f3a759b6c81b3694a1e78d48670174",
+      "preview_sha256": "b91d3165d50e799e9d23da6088ab450c68ec161f97d9f347c70c5bf3fa417494",
+      "original_archive": {
+        "member": "files/65/6520d6901fb8af6244ab8e356a36b2eb91f3a759b6c81b3694a1e78d48670174.svg",
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42249870031-1-b0001.tar.gz"
+      },
+      "preview_archive": {
+        "member": "previews/6520d6901fb8af6244ab8e356a36b2eb91f3a759b6c81b3694a1e78d48670174.png",
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42249870031-1-b0001.tar.gz"
+      },
+      "visual_verdict": "usable_as_schematic_component",
+      "observations": "黄色简化微量移液器，顶部按压杆、支托、主体、细长下端可辨。下部同色连接不够清楚，不能独立确认可拆卸枪头与下杆边界；只补移液器身份，枪头仍未知。",
+      "scientific_assertions": {
+        "object": [
+          "micropipette"
+        ],
+        "depiction_kind": "equipment"
+      },
+      "visual_evidence": [
+        {
+          "path": "build/component-resume-20261114/remaining-role-preview-43476227920/exact-review-43476227920-1.review.png",
+          "sha256": "053d25a7797a559ef487550fed44638efbf9aa6e43d68bdbba83d39c1413eaa3"
+        },
+        {
+          "path": "build/component-resume-20261114/remaining-role-preview-43476227920/mapping.json",
+          "sha256": "29436c3ad677f71562fce11f7963702d73e7c2c67dbe605de2d8561d62e4a2b7"
+        }
+      ],
+      "source_evidence_basis": "Pinned exact source record above plus actual visible object; no performance, state, volume or procedure claim.",
+      "text_observation": {
+        "contains_readable_labels": false,
+        "review_status": "No readable explanatory labels observed on this preview; vector text/path internals not separately parsed.",
+        "cleanup_required": "task_dependent"
+      },
+      "new_individual_preview_display": false
+    },
+    {
+      "tile": 7,
+      "id": "togo-5d55cce5ce0f4b93cf32",
+      "title": "pipetman",
+      "source": "togo",
+      "source_id": "254",
+      "source_record": {
+        "asset_id": "togo-78f4b2f2eba6c5edcbc8",
+        "attribution": "pipetman — <a href=\"https://twitter.com/riv7\" target=\"_blank\">@riv7</a>; © 2016 DBCLS TogoTV / CC-BY-4.0; https://doi.org/10.7875/togopic.2011.30",
+        "author": "<a href=\"https://twitter.com/riv7\" target=\"_blank\">@riv7</a>",
+        "categories": [],
+        "distribution_status": "license_recorded",
+        "license": "CC-BY-4.0",
+        "source": "togo",
+        "source_id": "254",
+        "source_url": "https://doi.org/10.7875/togopic.2011.30",
+        "tags": [
+          "Lab equipment",
+          "Lab instruments",
+          "Lab techniques",
+          "Molecular biology",
+          "Cell culture",
+          "Biotechnology"
+        ],
+        "taxonomy": [
+          "cells",
+          "lab_equipment",
+          "experimental_actions"
+        ],
+        "title": "pipetman",
+        "url": "https://dbarchive.biosciencedbc.jp/data/togo-pic/image/201104_pipetman.svg"
+      },
+      "original_sha256": "140b1941d001323a03b84cec823fc2ef2bf0e056c3233b45444ddfb73223a8c0",
+      "preview_sha256": "391c9dfc05e08da7979c129cc2f29fa65cedf6fc4383b658866ec636aa6e17a3",
+      "original_archive": {
+        "member": "files/14/140b1941d001323a03b84cec823fc2ef2bf0e056c3233b45444ddfb73223a8c0.svg",
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42249870031-1-b0000.tar.gz"
+      },
+      "preview_archive": {
+        "member": "previews/140b1941d001323a03b84cec823fc2ef2bf0e056c3233b45444ddfb73223a8c0.png",
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42249870031-1-b0000.tar.gz"
+      },
+      "visual_verdict": "usable_as_schematic_component",
+      "observations": "蓝色Pipetman斜放，双按压构件、握柄、白色下杆及末端黄色锥形枪头明确。与旧scope图审所述机身和枪头一致，可作微量移液器和枪头对象，不声明量程或品牌性能。",
+      "scientific_assertions": {
+        "object": [
+          "micropipette",
+          "pipette tip"
+        ],
+        "depiction_kind": "equipment"
+      },
+      "visual_evidence": [
+        {
+          "path": "build/component-resume-20261114/remaining-role-preview-43476227920/exact-review-43476227920-1.review.png",
+          "sha256": "053d25a7797a559ef487550fed44638efbf9aa6e43d68bdbba83d39c1413eaa3"
+        },
+        {
+          "path": "build/component-resume-20261114/remaining-role-preview-43476227920/mapping.json",
+          "sha256": "29436c3ad677f71562fce11f7963702d73e7c2c67dbe605de2d8561d62e4a2b7"
+        }
+      ],
+      "source_evidence_basis": "Pinned exact source record above plus actual visible object; no performance, state, volume or procedure claim.",
+      "text_observation": {
+        "contains_readable_labels": false,
+        "review_status": "No readable explanatory labels observed on this preview; vector text/path internals not separately parsed.",
+        "cleanup_required": "task_dependent"
+      },
+      "new_individual_preview_display": false
+    },
+    {
+      "tile": 8,
+      "id": "bioicons-fa545f22f81a760c669b",
+      "title": "laptop",
+      "source": "bioicons",
+      "source_id": "cc-0/Computer_hardware/Simon_Dürr/laptop.svg",
+      "source_record": {
+        "asset_id": "bioicons-fa545f22f81a760c669b",
+        "attribution": "laptop — Simon Dürr; https://twitter.com/simonduerr; CC0-1.0; via Bioicons",
+        "author": "Simon Dürr",
+        "categories": [],
+        "distribution_status": "license_recorded",
+        "license": "CC0-1.0",
+        "source": "bioicons",
+        "source_id": "cc-0/Computer_hardware/Simon_Dürr/laptop.svg",
+        "source_url": "https://github.com/duerrsimon/bioicons/blob/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-0/Computer_hardware/Simon_D%C3%BCrr/laptop.svg",
+        "tags": [
+          "Computer hardware"
+        ],
+        "taxonomy": [
+          "omics_data"
+        ],
+        "title": "laptop",
+        "upstream_category": "Computer_hardware",
+        "url": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-0/Computer_hardware/Simon_D%C3%BCrr/laptop.svg"
+      },
+      "original_sha256": "7e2208b668267a80b08c439643d4876b0d8c806fe3b2ca339f36bd5957951c4f",
+      "preview_sha256": "25da95cc79a6549de90921d35a253c4adc1f84da7c6ee724791af0a691b5a42e",
+      "original_archive": {
+        "member": "files/7e/7e2208b668267a80b08c439643d4876b0d8c806fe3b2ca339f36bd5957951c4f.svg",
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42239971379-1-b0000.tar.gz"
+      },
+      "preview_archive": {
+        "member": "previews/7e2208b668267a80b08c439643d4876b0d8c806fe3b2ca339f36bd5957951c4f.png",
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42239971379-1-b0000.tar.gz"
+      },
+      "visual_verdict": "usable_as_schematic_component",
+      "observations": "深灰色打开的笔记本电脑，屏幕、边框、摄像孔和下方机身底边可辨；Bioicons Computer hardware/laptop提供源身份。正面视角未细画键盘，不代表屏幕显示数据。",
+      "scientific_assertions": {
+        "object": [
+          "laptop"
+        ],
+        "depiction_kind": "equipment"
+      },
+      "visual_evidence": [
+        {
+          "path": "build/component-resume-20261114/remaining-role-preview-43476227920/exact-review-43476227920-1.review.png",
+          "sha256": "053d25a7797a559ef487550fed44638efbf9aa6e43d68bdbba83d39c1413eaa3"
+        },
+        {
+          "path": "build/component-resume-20261114/remaining-role-preview-43476227920/mapping.json",
+          "sha256": "29436c3ad677f71562fce11f7963702d73e7c2c67dbe605de2d8561d62e4a2b7"
+        }
+      ],
+      "source_evidence_basis": "Pinned exact source record above plus actual visible object; no performance, state, volume or procedure claim.",
+      "text_observation": {
+        "contains_readable_labels": false,
+        "review_status": "No readable explanatory labels observed on this preview; vector text/path internals not separately parsed.",
+        "cleanup_required": "task_dependent"
+      },
+      "new_individual_preview_display": false
+    },
+    {
+      "tile": 9,
+      "id": "healthicons-54b20ffdef2e10024097",
+      "title": "Laptop",
+      "source": "healthicons",
+      "source_id": "public/icons/svg/filled/objects/laptop.svg",
+      "source_record": {
+        "asset_id": "healthicons-43427d0b036773e71cd5",
+        "attribution": "Laptop — Resolve to Save Lives / Health Icons contributors; https://github.com/resolvetosavelives/healthicons/blob/2080c1b40e4829f2f4217e03bc22908b4e402f6b/public/icons/svg/filled/objects/laptop.svg; CC0-1.0",
+        "author": "Resolve to Save Lives / Health Icons contributors",
+        "categories": [],
+        "distribution_status": "license_recorded",
+        "license": "CC0-1.0",
+        "source": "healthicons",
+        "source_id": "public/icons/svg/filled/objects/laptop.svg",
+        "source_url": "https://github.com/resolvetosavelives/healthicons/blob/2080c1b40e4829f2f4217e03bc22908b4e402f6b/public/icons/svg/filled/objects/laptop.svg",
+        "tags": [
+          "Computer",
+          "Device",
+          "Health",
+          "IT",
+          "Information technology",
+          "Laptop",
+          "Medicine",
+          "Technology",
+          "filled",
+          "objects"
+        ],
+        "taxonomy": [
+          "omics_data"
+        ],
+        "title": "Laptop",
+        "upstream_category": "objects",
+        "url": "https://raw.githubusercontent.com/resolvetosavelives/healthicons/2080c1b40e4829f2f4217e03bc22908b4e402f6b/public/icons/svg/filled/objects/laptop.svg"
+      },
+      "original_sha256": "0081ff4027057c577b1157fdc5f8624cb4766cadc9212338f9e7ec9d89167dd7",
+      "preview_sha256": "aa94d58d49865c7f02a251e953346f4215725a72011bc42af08ab6b255741cc3",
+      "original_archive": {
+        "member": "files/00/0081ff4027057c577b1157fdc5f8624cb4766cadc9212338f9e7ec9d89167dd7.svg",
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/healthicons-42234355854-1-b0001.tar.gz"
+      },
+      "preview_archive": {
+        "member": "previews/0081ff4027057c577b1157fdc5f8624cb4766cadc9212338f9e7ec9d89167dd7.png",
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/healthicons-42234355854-1-b0001.tar.gz"
+      },
+      "visual_verdict": "usable_as_schematic_component",
+      "observations": "黑色笔记本电脑符号，屏幕区域、外框和下方展开机身可辨；HealthIcons Laptop文件提供设备身份。适合概念电脑部件，不含分析结果。",
+      "scientific_assertions": {
+        "object": [
+          "laptop"
+        ],
+        "depiction_kind": "equipment"
+      },
+      "visual_evidence": [
+        {
+          "path": "build/component-resume-20261114/remaining-role-preview-43476227920/exact-review-43476227920-1.review.png",
+          "sha256": "053d25a7797a559ef487550fed44638efbf9aa6e43d68bdbba83d39c1413eaa3"
+        },
+        {
+          "path": "build/component-resume-20261114/remaining-role-preview-43476227920/mapping.json",
+          "sha256": "29436c3ad677f71562fce11f7963702d73e7c2c67dbe605de2d8561d62e4a2b7"
+        }
+      ],
+      "source_evidence_basis": "Pinned exact source record above plus actual visible object; no performance, state, volume or procedure claim.",
+      "text_observation": {
+        "contains_readable_labels": false,
+        "review_status": "No readable explanatory labels observed on this preview; vector text/path internals not separately parsed.",
+        "cleanup_required": "task_dependent"
+      },
+      "new_individual_preview_display": false
+    },
+    {
+      "tile": 10,
+      "id": "nih-bioart-3ef21bba1a8348425966",
+      "title": "Computer Monitor with Blank Screen",
+      "source": "nih-bioart",
+      "source_id": "829",
+      "source_record": {
+        "asset_id": "nih-bioart-f63ebd6a934871783b96",
+        "attribution": "Computer Monitor with Blank Screen — Ryan Kissinger, NIH BioArt Source; https://bioart.niaid.nih.gov/bioart/829; Public Domain",
+        "author": "Ryan Kissinger",
+        "categories": [],
+        "description": "A light grey square computer monitor with a black screen.",
+        "distribution_status": "license_recorded",
+        "license": "Public-Domain",
+        "source": "nih-bioart",
+        "source_id": "829",
+        "source_url": "https://bioart.niaid.nih.gov/bioart/829",
+        "tags": [
+          "Equipment",
+          "Vector",
+          "black screen",
+          "computer",
+          "monitor",
+          "screen"
+        ],
+        "taxonomy": [
+          "lab_equipment",
+          "omics_data"
+        ],
+        "title": "Computer Monitor with Blank Screen",
+        "upstream_category": [
+          "Bioart Category",
+          "Image Type"
+        ],
+        "url": "https://bioart.niaid.nih.gov/api/bioarts/829/files/795828"
+      },
+      "original_sha256": "d7a416bd04c18539180626ccb4a574240600844177b21523d34889bb0995f78b",
+      "preview_sha256": "45bd79d4df8517b3ccdf141acb3f5862d50ea2955cd53999835e027619d9ace7",
+      "original_archive": {
+        "member": "files/d7/d7a416bd04c18539180626ccb4a574240600844177b21523d34889bb0995f78b.svg",
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/nih-bioart-42248095929-1-b0000.tar.gz"
+      },
+      "preview_archive": {
+        "member": "previews/d7a416bd04c18539180626ccb4a574240600844177b21523d34889bb0995f78b.png",
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/nih-bioart-42248095929-1-b0000.tar.gz"
+      },
+      "visual_verdict": "usable_as_schematic_component",
+      "observations": "独立显示器与支架底座，黑色空白屏幕和显示器机身可辨；NIH来源明确Computer Monitor with Blank Screen。只标显示器，不宣称图中还有电脑主机或完整计算工作站。",
+      "scientific_assertions": {
+        "object": [
+          "computer monitor"
+        ],
+        "depiction_kind": "equipment"
+      },
+      "visual_evidence": [
+        {
+          "path": "build/component-resume-20261114/remaining-role-preview-43476227920/exact-review-43476227920-1.review.png",
+          "sha256": "053d25a7797a559ef487550fed44638efbf9aa6e43d68bdbba83d39c1413eaa3"
+        },
+        {
+          "path": "build/component-resume-20261114/remaining-role-preview-43476227920/mapping.json",
+          "sha256": "29436c3ad677f71562fce11f7963702d73e7c2c67dbe605de2d8561d62e4a2b7"
+        }
+      ],
+      "source_evidence_basis": "Pinned exact source record above plus actual visible object; no performance, state, volume or procedure claim.",
+      "text_observation": {
+        "contains_readable_labels": false,
+        "review_status": "No readable explanatory labels observed on this preview; vector text/path internals not separately parsed.",
+        "cleanup_required": "task_dependent"
+      },
+      "new_individual_preview_display": false
+    },
+    {
+      "tile": 11,
+      "id": "nih-bioart-f3566d99fce58cd91a83",
+      "title": "Laptop Open",
+      "source": "nih-bioart",
+      "source_id": "734",
+      "source_record": {
+        "asset_id": "nih-bioart-22de0ac5af69de78ab1d",
+        "attribution": "Laptop Open — Ryan Kissinger, NIH BioArt Source; https://bioart.niaid.nih.gov/bioart/734; Public Domain",
+        "author": "Ryan Kissinger",
+        "categories": [],
+        "description": "Open laptop with screen lit up.",
+        "distribution_status": "license_recorded",
+        "license": "Public-Domain",
+        "source": "nih-bioart",
+        "source_id": "734",
+        "source_url": "https://bioart.niaid.nih.gov/bioart/734",
+        "tags": [
+          "Equipment",
+          "Shaded",
+          "Vector",
+          "communication",
+          "computer",
+          "device",
+          "electronics",
+          "equipment",
+          "information technology",
+          "laptop",
+          "office equipment",
+          "productivity",
+          "remote work",
+          "technology",
+          "workplace"
+        ],
+        "taxonomy": [
+          "lab_equipment",
+          "omics_data"
+        ],
+        "title": "Laptop Open",
+        "upstream_category": [
+          "Bioart Category",
+          "Image Type",
+          "Image Style"
+        ],
+        "url": "https://bioart.niaid.nih.gov/api/bioarts/734/files/791283"
+      },
+      "original_sha256": "0844b340cfa87e1c7e652151e60fb539f831c8562cf5f3f6ff2bf71d776ba64d",
+      "preview_sha256": "0a7af07dd73c1a83e255d03d6914bcc95cad541c93ee04a5cbab36d6dae7bc95",
+      "original_archive": {
+        "member": "files/08/0844b340cfa87e1c7e652151e60fb539f831c8562cf5f3f6ff2bf71d776ba64d.svg",
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/nih-bioart-42236561214-1-b0001.tar.gz"
+      },
+      "preview_archive": {
+        "member": "previews/0844b340cfa87e1c7e652151e60fb539f831c8562cf5f3f6ff2bf71d776ba64d.png",
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/nih-bioart-42236561214-1-b0001.tar.gz"
+      },
+      "visual_verdict": "usable_as_schematic_component",
+      "observations": "打开的浅棕色笔记本，亮色空白屏幕、铰接机身与简化输入区域可辨；NIH源名Laptop Open及说明支持。无可读取结果或软件身份。",
+      "scientific_assertions": {
+        "object": [
+          "laptop"
+        ],
+        "depiction_kind": "equipment"
+      },
+      "visual_evidence": [
+        {
+          "path": "build/component-resume-20261114/remaining-role-preview-43476227920/exact-review-43476227920-1.review.png",
+          "sha256": "053d25a7797a559ef487550fed44638efbf9aa6e43d68bdbba83d39c1413eaa3"
+        },
+        {
+          "path": "build/component-resume-20261114/remaining-role-preview-43476227920/mapping.json",
+          "sha256": "29436c3ad677f71562fce11f7963702d73e7c2c67dbe605de2d8561d62e4a2b7"
+        }
+      ],
+      "source_evidence_basis": "Pinned exact source record above plus actual visible object; no performance, state, volume or procedure claim.",
+      "text_observation": {
+        "contains_readable_labels": false,
+        "review_status": "No readable explanatory labels observed on this preview; vector text/path internals not separately parsed.",
+        "cleanup_required": "task_dependent"
+      },
+      "new_individual_preview_display": false
+    },
+    {
+      "tile": 12,
+      "id": "togo-ffb307bcb66feb53b173",
+      "title": "Laptop (open)",
+      "source": "togo",
+      "source_id": "492",
+      "source_record": {
+        "asset_id": "togo-92caef213137245dfce3",
+        "attribution": "Laptop (open) — Wakana Sasaki; © 2016 DBCLS TogoTV / CC-BY-4.0; https://doi.org/10.7875/togopic.2017.26",
+        "author": "Wakana Sasaki",
+        "categories": [],
+        "distribution_status": "license_recorded",
+        "license": "CC-BY-4.0",
+        "source": "togo",
+        "source_id": "492",
+        "source_url": "https://doi.org/10.7875/togopic.2017.26",
+        "tags": [
+          "Computer",
+          "Bioinformatics",
+          "Data analysis",
+          "Research data",
+          "Life science",
+          "Information science"
+        ],
+        "taxonomy": [
+          "omics_data"
+        ],
+        "title": "Laptop (open)",
+        "url": "https://dbarchive.biosciencedbc.jp/data/togo-pic/image/201706_Laptop_open.svg"
+      },
+      "original_sha256": "9c0cb4f69a6ec7449251dfa4feeb2a8e6a656cc597fdb65b78a798cfdbf9e057",
+      "preview_sha256": "679d4adb9dd10db8179f529b6677a3cc5809141354b8712b475873c07c0a4bbc",
+      "original_archive": {
+        "member": "files/9c/9c0cb4f69a6ec7449251dfa4feeb2a8e6a656cc597fdb65b78a798cfdbf9e057.svg",
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42249870031-1-b0000.tar.gz"
+      },
+      "preview_archive": {
+        "member": "previews/9c0cb4f69a6ec7449251dfa4feeb2a8e6a656cc597fdb65b78a798cfdbf9e057.png",
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42249870031-1-b0000.tar.gz"
+      },
+      "visual_verdict": "usable_as_schematic_component",
+      "observations": "打开的银灰色笔记本电脑，黑色屏幕、显示边框、键盘和触控板清楚；Togo源名Laptop(open)及Computer/Bioinformatics/Data analysis标签支持可作分析电脑对象，不说明运行了某算法或得到结果。",
+      "scientific_assertions": {
+        "object": [
+          "laptop"
+        ],
+        "depiction_kind": "equipment"
+      },
+      "visual_evidence": [
+        {
+          "path": "build/component-resume-20261114/remaining-role-preview-43476227920/exact-review-43476227920-1.review.png",
+          "sha256": "053d25a7797a559ef487550fed44638efbf9aa6e43d68bdbba83d39c1413eaa3"
+        },
+        {
+          "path": "build/component-resume-20261114/remaining-role-preview-43476227920/mapping.json",
+          "sha256": "29436c3ad677f71562fce11f7963702d73e7c2c67dbe605de2d8561d62e4a2b7"
+        }
+      ],
+      "source_evidence_basis": "Pinned exact source record above plus actual visible object; no performance, state, volume or procedure claim.",
+      "text_observation": {
+        "contains_readable_labels": false,
+        "review_status": "No readable explanatory labels observed on this preview; vector text/path internals not separately parsed.",
+        "cleanup_required": "task_dependent"
+      },
+      "new_individual_preview_display": false
+    }
+  ],
+  "scientific_metadata_applied_to_catalog": false,
+  "acceptance_passed": false
+}

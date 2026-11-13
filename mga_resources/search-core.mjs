@@ -3,8 +3,8 @@
  */
 import vocabulary from './search-vocabulary.mjs';
 
-export const RANKING_VERSION = 'shared-search-3.5.1';
-export const INDEX_VERSION = 11;
+export const RANKING_VERSION = 'shared-search-3.5.2';
+export const INDEX_VERSION = 12;
 export const DEFAULT_CANDIDATE_POOL = 75;
 const unknown = new Set(['', 'unknown', 'unspecified', 'not_reviewed', '待确认']);
 const arr = value => value == null ? [] : Array.isArray(value) ? value : [value];
@@ -96,7 +96,11 @@ const extraConcepts = [
   ['人物','人像','person','people','individual'],
   ['核酸测序仪','nucleic acid sequencing instrument','nucleic acid sequencer','dna sequencer','sequencer','sequencing instrument'],
   ['dna结合蛋白','dna结合蛋白质','dna binding protein','dna-binding protein'],
-  ['计算机工作站','computer workstation','workstation'],
+  ['电脑','计算机','计算机工作站','computer','computers','computer workstation','desktop computer','personal computer'],
+  ['笔记本电脑','笔记本计算机','laptop','laptops','laptop computer'],
+  // An unqualified workstation may be a laboratory robot. Do not silently
+  // equate that label with the specifically requested computer class.
+  ['工作站','workstation'],
   ['片剂','药片','tablet','tablets','drug tablet','drug tablets'],
   ['胶囊','capsule','capsules','drug capsule','drug capsules'],
   ['口服药物','oral medication','oral medicine'],
@@ -138,7 +142,7 @@ const qualifiers = Object.entries({...SCIENCE,...APPEARANCE}).flatMap(([key, gro
 const animalNames=new Set(Object.values(SCIENCE.species).flat().map(norm));
 const nonBiologicalMouse=value=>['computer mouse','mouse cursor','pointing device','电脑鼠标','鼠标'].some(term=>matches(value,term));
 const actionNames=['injection','blood collection','blood sampling','centrifugation','pipetting','cell culture','transfection','sequencing','dissection','randomization','randomisation','recruitment','taking blood sample','drawing blood','blood draw','phlebotomy','venipuncture','cell cycle','cell sorting'];
-const equipmentNames=['computer mouse','mouse cursor','syringe','pipette','micropipette','pipette tip','microscope','centrifuge','centrifuge tube','microcentrifuge tube','blood collection tube','culture flask','tube','test tube','flask','beaker','incubator','well plate','microplate','petri dish','culture dish','needle','scissors','cutters','sequencer','sorter','cell sorter','machine','instrument','apparatus','workstation','voltammetry','electrochemical','electrolytic','battery','solar cell'];
+const equipmentNames=['computer mouse','mouse cursor','computer','laptop','syringe','pipette','micropipette','pipette tip','microscope','centrifuge','centrifuge tube','microcentrifuge tube','blood collection tube','culture flask','tube','test tube','flask','beaker','incubator','well plate','microplate','petri dish','culture dish','needle','scissors','cutters','sequencer','sorter','cell sorter','machine','instrument','apparatus','workstation','voltammetry','electrochemical','electrolytic','battery','solar cell'];
 const actionGroups=concepts.filter(group=>group.some(term=>actionNames.includes(term)));
 const equipmentGroups=concepts.filter(group=>group.some(term=>equipmentNames.includes(term)));
 const cellNames=new Set(['cell','cells','animal cell','macrophage','neuron','lymphocyte','neutrophil','hepatocyte','erythrocyte','fibroblast','stem cell','t cell','b cell','endothelial cell']);
@@ -460,6 +464,13 @@ export function prepareVariants(records) {
       // Named cell types remain discoverable by their biological parent class;
       // this is an explicit ontology relation, not a substring/equipment match.
       if(kind==='cell'){aliases.push('cell','cells','细胞');objects.push('cell','cells','细胞');}
+      // Laptops are computers. This one-way source identity relation does not
+      // assert a visible display, an open state, or a complete workstation.
+      // Neither a computer mouse nor an NGS robot gains computer identity.
+      if(objects.includes('laptop')){
+        const parent=concepts.find(group=>group.includes('computer'));
+        aliases.push(...parent);objects.push(...parent);
+      }
       // A named species is also discoverable by its genus/common group. This
       // one-way relation does not let unspecified fruit flies satisfy a named
       // species query, nor turn a fly's organ into a whole-animal object.
