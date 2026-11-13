@@ -1,0 +1,34 @@
+name: Verify every public artwork object in cloud
+on:
+  workflow_dispatch:
+permissions:
+  contents: write
+  actions: read
+concurrency:
+  group: website-http-verification
+  cancel-in-progress: false
+jobs:
+  verify:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 35
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - uses: actions/download-artifact@v4
+        with:
+          name: website-prepared-43485204419
+          run-id: 43485204419
+          github-token: ${{ github.token }}
+          path: build/website
+      - run: python -m pip install -e .
+      - run: python scripts/verify_website_delivery.py
+        env:
+          GH_TOKEN: ${{ github.token }}
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: website-http-results-${{ github.run_id }}
+          retention-days: 30
+          path: build/website-delivery/
