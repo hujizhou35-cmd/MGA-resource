@@ -41,7 +41,8 @@ def main():
         require(previous['accepted_replay']==43481252923 and previous['endpoint']==ORIGIN and previous['raw_results_sha256']==formal['bindings']['raw_results_sha256'],'Resume binding differs')
         require(previous['stop_reason']=='free_read_budget_guard' and not previous['failures'] and previous['checked']==previous['passed'],'Only exactly successful completed queries can be reused')
         require(previous['pending']==[q['query_id'] for q in queries[previous['checked']:]],'Pending query identity/order differs')
-        reuse=previous['passed'];queries=queries[previous['checked']:];budget=1_000_000
+        reuse=previous['passed'];queries=queries[previous['checked']:]
+        budget=min(1_000_000,max(0,4_900_000-previous.get('total_d1_rows_read_upper_bound',previous['d1_rows_read_upper_bound'])))
     code,health=request('/v1/health');require(code==200 and health['status']=='ready','Live catalog is not ready')
     with (out/'live-responses.jsonl').open('w',encoding='utf8') as stream:
         for query in queries:
@@ -67,7 +68,7 @@ def main():
         'previous_report':{'run_id':args.resume_run,'sha256':args.resume_sha} if previous else None,
         'failures':[{'query_id':r['query_id'],'status':r['status'],'reason':r.get('reason','Result/binding difference')} for r in rows if not r['passed']],
         'pending':[q['query_id'] for q in queries[len(rows):]],'stop_reason':stop,'d1_rows_read_upper_bound':reads,'d1_writes':0,'invalid_request_checks':checks,
-        'total_d1_rows_read_upper_bound':reads+(previous['d1_rows_read_upper_bound'] if previous else 0),
+        'total_d1_rows_read_upper_bound':reads+(previous.get('total_d1_rows_read_upper_bound',previous['d1_rows_read_upper_bound']) if previous else 0),
         'responses_sha256':hashlib.sha256((out/'live-responses.jsonl').read_bytes()).hexdigest(),
         'passed_all':reuse+len(rows)==142 and all(r['passed'] for r in rows+checks),'new_visual_reviews':0,'interpretation':'Execution-adapter parity only. Existing file/use reviews reused; this is not a new component score.'}
     filename=out/f'website-api-{os.environ["GITHUB_RUN_ID"]}.json';write(filename,report)
