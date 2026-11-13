@@ -1,0 +1,12 @@
+{
+  "verified_date": "2026-11-14",
+  "method": "Actual Cloudflare dashboard accessibility state in authenticated browser",
+  "page": "https://dash.cloudflare.com/104f09363abf61ba85c8266b39593ceb/workers/plans",
+  "observed_current_plan": "Free",
+  "observed_price": "$0",
+  "observed_selection": "Current plan (disabled) under Free",
+  "plan_changed": false,
+  "billing_products_added": false,
+  "subscription_api_note": "OAuth read returned 403; live authenticated dashboard supplied the evidence instead.",
+  "deployment_policy": "Keep Workers Free, Pages Free and D1 Free; no R2, paid AI, billing upgrade or paid fallback. Quota failures remain explicit."
+}

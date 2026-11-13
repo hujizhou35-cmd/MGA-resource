@@ -1,0 +1,7 @@
+/*
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+  Access-Control-Allow-Origin: *
+  Content-Security-Policy: default-src 'self'; img-src 'self' https://mga-resource-files-0.pages.dev https://mga-resource-files-1.pages.dev https://mga-resource-files-2.pages.dev; script-src 'self'; style-src 'self'; connect-src 'self'; frame-ancestors 'none'; object-src 'none'; base-uri 'self'
+/catalog/*
+  Cache-Control: public, max-age=86400

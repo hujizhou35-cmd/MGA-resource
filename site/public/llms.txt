@@ -1,0 +1,19 @@
+# MGA-resource · mainly-for-agent
+
+Free medical drawing components. Search, inspect and download without login or source-site navigation.
+
+- API instructions: https://mga-resource-mainly-for-agent.pages.dev/agent
+- OpenAPI: https://mga-resource-mainly-for-agent.pages.dev/openapi.json
+- Version: https://mga-resource-mainly-for-agent.pages.dev/version.json
+- Health: https://mga-resource-mainly-for-agent.pages.dev/v1/health
+- Example: https://mga-resource-mainly-for-agent.pages.dev/v1/search?q=mouse&limit=5
+
+POST /v1/search application/json supports query, filters, mode (explore/design/exact), seed, project, history, cursor, preferences, candidate_pool and limit (1–20).
+GET accepts q or query and JSON-encoded structured parameters.
+Result selected_file is the exact file selected by the query; do not replace it with the first family file.
+download.url and preview.url are direct hosted objects. Fetch the preview, inspect scientific suitability, fetch the original and verify download.sha256. metadata_url preserves full source context.
+Each artwork retains its own license. Preserve selected_source.provenance, attribution and modification notes. Historical Servier CC BY 3.0 provenance and current-FAQ conflict notes remain in catalog records.
+Record only actual final adoption in history.adopted with status=adopted. Views and trial downloads are not adoption. Use a stable project seed for reproducibility and a different seed for new project exploration.
+Unknown scientific/appearance/text fields remain unknown. A result is a candidate, not automatic task approval. Collection acceptance does not certify every possible use.
+Keep originals unchanged. On a selected working copy, remove/replace irrelevant labels and their leader lines as needed; preserve scale, directions, scientific symbols and mechanism arrows. Inspect the edited image. Library-wide text removal has not been performed; automatic skill cleanup is not implemented here.
+Empty results are genuine. Do not relax species, state, view or object constraints silently. A 503 is temporary service/quota failure, not an empty result. No paid fallback.
