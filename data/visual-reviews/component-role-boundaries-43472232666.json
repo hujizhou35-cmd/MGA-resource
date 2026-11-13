@@ -1,0 +1,446 @@
+{
+  "schema_version": 1,
+  "reviewer": "Codex root; actual sheet viewing and frozen-role comparison",
+  "reviewed_at": "2026-11-13T17:31:18.082780+00:00",
+  "cloud_run": 43472232666,
+  "items": [
+    {
+      "tile": 1,
+      "original_sha256": "9b0ef2304d250db82b5b5f7dd822cb020d3edb43ee1640f60f680b7c23194465",
+      "preview_sha256": "e2ad5005c5f7c3a288dd9f9f31fde2de542dc304ed9f4f9f0e3f024c4a05c943",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42271777119-1-b0000.tar.gz",
+        "member": "files/9b/9b0ef2304d250db82b5b5f7dd822cb020d3edb43ee1640f60f680b7c23194465.png"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42271777119-1-b0000.tar.gz",
+        "member": "previews/9b0ef2304d250db82b5b5f7dd822cb020d3edb43ee1640f60f680b7c23194465.png"
+      },
+      "title": "Aged female researcher making a cross with arms",
+      "source": "togo",
+      "source_id": "1935",
+      "source_url": "https://doi.org/10.7875/togopic.2024.094",
+      "observations": "穿实验服女性双臂交叉并有X对白符号；主要对象是做否定手势的人物，袖子与躯干相连，不是独立可用的采血部位手臂。",
+      "visual_evidence": [
+        {
+          "path": "build/component-resume-20261114/role-preview-43472232666/exact-review-43472232666-1.review.png",
+          "sha256": "188b3809236726b72f77d3a82707dba8c279e583a77060e160738a0893680250"
+        },
+        {
+          "path": "build/component-resume-20261114/role-preview-43472232666/mapping.json",
+          "sha256": "99631bafdbaeb259e6e208f04563be54dfdb60459b533c8d849e848e08c3b670"
+        }
+      ],
+      "collection_disposition": "retain_existing_reusable_object_or_scene; query-specific failure does not exclude it",
+      "new_visual_inspection_performed": true,
+      "review_method": "Actual displayed fourteen-tile sheet at large resolution; exact individual preview bytes checked, not separately displayed."
+    },
+    {
+      "tile": 2,
+      "original_sha256": "66e66c6fc8ec9a22fecd7cdd59d87a6e43730c1250dc496bc21704315db3be9d",
+      "preview_sha256": "37dbed5389eb60a31c02c1ed50763c18a2de158d4d7e7693eb6c6d28bcb26899",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42271777119-1-b0000.tar.gz",
+        "member": "files/66/66e66c6fc8ec9a22fecd7cdd59d87a6e43730c1250dc496bc21704315db3be9d.svg"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42271777119-1-b0000.tar.gz",
+        "member": "previews/66e66c6fc8ec9a22fecd7cdd59d87a6e43730c1250dc496bc21704315db3be9d.png"
+      },
+      "title": "Young male teacher making a circle with arms",
+      "source": "togo",
+      "source_id": "1940",
+      "source_url": "https://doi.org/10.7875/togopic.2024.099",
+      "observations": "西装男性举双臂过头形成圆形并有O符号；手臂包在衣袖中，主要对象是人物动作，不是独立手臂。",
+      "visual_evidence": [
+        {
+          "path": "build/component-resume-20261114/role-preview-43472232666/exact-review-43472232666-1.review.png",
+          "sha256": "188b3809236726b72f77d3a82707dba8c279e583a77060e160738a0893680250"
+        },
+        {
+          "path": "build/component-resume-20261114/role-preview-43472232666/mapping.json",
+          "sha256": "99631bafdbaeb259e6e208f04563be54dfdb60459b533c8d849e848e08c3b670"
+        }
+      ],
+      "collection_disposition": "retain_existing_reusable_object_or_scene; query-specific failure does not exclude it",
+      "new_visual_inspection_performed": true,
+      "review_method": "Actual displayed fourteen-tile sheet at large resolution; exact individual preview bytes checked, not separately displayed."
+    },
+    {
+      "tile": 3,
+      "original_sha256": "91982280dffd27611ff3954b3d7ca429ccc6ff20acaeba68fdb60330547a1f19",
+      "preview_sha256": "1c2d75c24eb6233cd66536527156b6439f14c629af6775468fcb2095522e7d64",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42271777119-1-b0000.tar.gz",
+        "member": "files/91/91982280dffd27611ff3954b3d7ca429ccc6ff20acaeba68fdb60330547a1f19.svg"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42271777119-1-b0000.tar.gz",
+        "member": "previews/91982280dffd27611ff3954b3d7ca429ccc6ff20acaeba68fdb60330547a1f19.png"
+      },
+      "title": "Aged female teacher making a circle with arms",
+      "source": "togo",
+      "source_id": "1939",
+      "source_url": "https://doi.org/10.7875/togopic.2024.098",
+      "observations": "有眼镜的女性举臂形成圆形，附O符号；人物和衣袖主导，没有独立手臂部件。",
+      "visual_evidence": [
+        {
+          "path": "build/component-resume-20261114/role-preview-43472232666/exact-review-43472232666-1.review.png",
+          "sha256": "188b3809236726b72f77d3a82707dba8c279e583a77060e160738a0893680250"
+        },
+        {
+          "path": "build/component-resume-20261114/role-preview-43472232666/mapping.json",
+          "sha256": "99631bafdbaeb259e6e208f04563be54dfdb60459b533c8d849e848e08c3b670"
+        }
+      ],
+      "collection_disposition": "retain_existing_reusable_object_or_scene; query-specific failure does not exclude it",
+      "new_visual_inspection_performed": true,
+      "review_method": "Actual displayed fourteen-tile sheet at large resolution; exact individual preview bytes checked, not separately displayed."
+    },
+    {
+      "tile": 4,
+      "original_sha256": "78fa1e31278c6a5f2c97ef5e81db0c9dea48fa3fcf3b442b0eb06abf7683e1f4",
+      "preview_sha256": "be240c9d84ed9663f1b18fbb6de916286a18d6dd3ee09e6bfb9e993f9d3ba5d8",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42271777119-1-b0000.tar.gz",
+        "member": "files/78/78fa1e31278c6a5f2c97ef5e81db0c9dea48fa3fcf3b442b0eb06abf7683e1f4.png"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42271777119-1-b0000.tar.gz",
+        "member": "previews/78fa1e31278c6a5f2c97ef5e81db0c9dea48fa3fcf3b442b0eb06abf7683e1f4.png"
+      },
+      "title": "Young female researcher making a circle with arms",
+      "source": "togo",
+      "source_id": "1945",
+      "source_url": "https://doi.org/10.7875/togopic.2024.104",
+      "observations": "穿实验服女性举臂过头、附O符号；衣袖连接躯干，不能直接用作主要对象为手臂的采样部位图。",
+      "visual_evidence": [
+        {
+          "path": "build/component-resume-20261114/role-preview-43472232666/exact-review-43472232666-1.review.png",
+          "sha256": "188b3809236726b72f77d3a82707dba8c279e583a77060e160738a0893680250"
+        },
+        {
+          "path": "build/component-resume-20261114/role-preview-43472232666/mapping.json",
+          "sha256": "99631bafdbaeb259e6e208f04563be54dfdb60459b533c8d849e848e08c3b670"
+        }
+      ],
+      "collection_disposition": "retain_existing_reusable_object_or_scene; query-specific failure does not exclude it",
+      "new_visual_inspection_performed": true,
+      "review_method": "Actual displayed fourteen-tile sheet at large resolution; exact individual preview bytes checked, not separately displayed."
+    },
+    {
+      "tile": 5,
+      "original_sha256": "44d150234d071319d12446d91270279d8e2b69a1ee695a3e0cbb37aa1b125a6d",
+      "preview_sha256": "3b398336c4af378ce22b7762a93c4e250a0299c4f8b8ac5851580821fee07e8f",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42271777119-1-b0000.tar.gz",
+        "member": "files/44/44d150234d071319d12446d91270279d8e2b69a1ee695a3e0cbb37aa1b125a6d.png"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42271777119-1-b0000.tar.gz",
+        "member": "previews/44d150234d071319d12446d91270279d8e2b69a1ee695a3e0cbb37aa1b125a6d.png"
+      },
+      "title": "A woman fixing his arm with a sling",
+      "source": "togo",
+      "source_id": "1911",
+      "source_url": "https://doi.org/10.7875/togopic.2024.070",
+      "observations": "女性前臂在三角吊带内，手臂轮廓被吊带遮挡；是固定/康复人物场景，不满足手臂轮廓与近远端清楚的部件要求。",
+      "visual_evidence": [
+        {
+          "path": "build/component-resume-20261114/role-preview-43472232666/exact-review-43472232666-1.review.png",
+          "sha256": "188b3809236726b72f77d3a82707dba8c279e583a77060e160738a0893680250"
+        },
+        {
+          "path": "build/component-resume-20261114/role-preview-43472232666/mapping.json",
+          "sha256": "99631bafdbaeb259e6e208f04563be54dfdb60459b533c8d849e848e08c3b670"
+        }
+      ],
+      "collection_disposition": "retain_existing_reusable_object_or_scene; query-specific failure does not exclude it",
+      "new_visual_inspection_performed": true,
+      "review_method": "Actual displayed fourteen-tile sheet at large resolution; exact individual preview bytes checked, not separately displayed."
+    },
+    {
+      "tile": 6,
+      "original_sha256": "99a16addfeb7dc4389200c47d7861d93a8c2cb86c101dcb14771130a01660a9b",
+      "preview_sha256": "bb28ed9f5ef2e3d9ea91c788360eada688b38421e329fb78a09e14230e2a171c",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42271777119-1-b0000.tar.gz",
+        "member": "files/99/99a16addfeb7dc4389200c47d7861d93a8c2cb86c101dcb14771130a01660a9b.svg"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42271777119-1-b0000.tar.gz",
+        "member": "previews/99a16addfeb7dc4389200c47d7861d93a8c2cb86c101dcb14771130a01660a9b.png"
+      },
+      "title": "Young male researcher making a cross with arms",
+      "source": "togo",
+      "source_id": "1936",
+      "source_url": "https://doi.org/10.7875/togopic.2024.095",
+      "observations": "实验服男性双臂交叉、附X符号；袖子和人物躯干不可直接当独立的手臂采样部位。",
+      "visual_evidence": [
+        {
+          "path": "build/component-resume-20261114/role-preview-43472232666/exact-review-43472232666-1.review.png",
+          "sha256": "188b3809236726b72f77d3a82707dba8c279e583a77060e160738a0893680250"
+        },
+        {
+          "path": "build/component-resume-20261114/role-preview-43472232666/mapping.json",
+          "sha256": "99631bafdbaeb259e6e208f04563be54dfdb60459b533c8d849e848e08c3b670"
+        }
+      ],
+      "collection_disposition": "retain_existing_reusable_object_or_scene; query-specific failure does not exclude it",
+      "new_visual_inspection_performed": true,
+      "review_method": "Actual displayed fourteen-tile sheet at large resolution; exact individual preview bytes checked, not separately displayed."
+    },
+    {
+      "tile": 7,
+      "original_sha256": "c36697f69e13104a4ea1bf1558e8157a3b8c1a20dcd03a924e09fbeff1522d0a",
+      "preview_sha256": "8efc914baf13faf0b87800d705b55602e8593d1f3c678d4b51d8f9778266ea74",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42271777119-1-b0000.tar.gz",
+        "member": "files/c3/c36697f69e13104a4ea1bf1558e8157a3b8c1a20dcd03a924e09fbeff1522d0a.svg"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42271777119-1-b0000.tar.gz",
+        "member": "previews/c36697f69e13104a4ea1bf1558e8157a3b8c1a20dcd03a924e09fbeff1522d0a.png"
+      },
+      "title": "Aged male teacher making a cross with arms",
+      "source": "togo",
+      "source_id": "1930",
+      "source_url": "https://doi.org/10.7875/togopic.2024.089",
+      "observations": "年长西装男性双臂交叉、附X符号；主要对象是做手势的人物，缺独立人体手臂轮廓。",
+      "visual_evidence": [
+        {
+          "path": "build/component-resume-20261114/role-preview-43472232666/exact-review-43472232666-1.review.png",
+          "sha256": "188b3809236726b72f77d3a82707dba8c279e583a77060e160738a0893680250"
+        },
+        {
+          "path": "build/component-resume-20261114/role-preview-43472232666/mapping.json",
+          "sha256": "99631bafdbaeb259e6e208f04563be54dfdb60459b533c8d849e848e08c3b670"
+        }
+      ],
+      "collection_disposition": "retain_existing_reusable_object_or_scene; query-specific failure does not exclude it",
+      "new_visual_inspection_performed": true,
+      "review_method": "Actual displayed fourteen-tile sheet at large resolution; exact individual preview bytes checked, not separately displayed."
+    },
+    {
+      "tile": 8,
+      "original_sha256": "731100ac0da032da263ea4210869ada12dfa99e422f27914cbfc35bc82fde9cb",
+      "preview_sha256": "16018e9e947b9ad76bfb7c9cf497a4fccd2e27ce1bcccefef5bc44ba4c85131a",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42271777119-1-b0000.tar.gz",
+        "member": "files/73/731100ac0da032da263ea4210869ada12dfa99e422f27914cbfc35bc82fde9cb.svg"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42271777119-1-b0000.tar.gz",
+        "member": "previews/731100ac0da032da263ea4210869ada12dfa99e422f27914cbfc35bc82fde9cb.png"
+      },
+      "title": "Young female teacher making a cross with arms",
+      "source": "togo",
+      "source_id": "1933",
+      "source_url": "https://doi.org/10.7875/togopic.2024.092",
+      "observations": "女性双臂交叉、附X符号；衣袖、躯干和表情主导，不满足独立采样部位手臂要求。",
+      "visual_evidence": [
+        {
+          "path": "build/component-resume-20261114/role-preview-43472232666/exact-review-43472232666-1.review.png",
+          "sha256": "188b3809236726b72f77d3a82707dba8c279e583a77060e160738a0893680250"
+        },
+        {
+          "path": "build/component-resume-20261114/role-preview-43472232666/mapping.json",
+          "sha256": "99631bafdbaeb259e6e208f04563be54dfdb60459b533c8d849e848e08c3b670"
+        }
+      ],
+      "collection_disposition": "retain_existing_reusable_object_or_scene; query-specific failure does not exclude it",
+      "new_visual_inspection_performed": true,
+      "review_method": "Actual displayed fourteen-tile sheet at large resolution; exact individual preview bytes checked, not separately displayed."
+    },
+    {
+      "tile": 9,
+      "original_sha256": "42306a63017b0be2c4a6760d4e86245ac1c7b8428fa671e107b76e84d484585f",
+      "preview_sha256": "e03435bbfb5827af60ce217bd5c9a515a8f006a11258765d5abdccc37c58bd06",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/nih-bioart-42236561214-1-b0000.tar.gz",
+        "member": "files/42/42306a63017b0be2c4a6760d4e86245ac1c7b8428fa671e107b76e84d484585f.svg"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/nih-bioart-42236561214-1-b0000.tar.gz",
+        "member": "previews/42306a63017b0be2c4a6760d4e86245ac1c7b8428fa671e107b76e84d484585f.png"
+      },
+      "title": "Human Arm Bones",
+      "source": "nih-bioart",
+      "source_id": "208",
+      "source_url": "https://bioart.niaid.nih.gov/bioart/208",
+      "observations": "两套肱骨、前臂骨与手骨结构；近端肱骨在图框处截断，无完整手臂外部轮廓。这是可用骨骼素材，但不能代替本角色要求的完整独立手臂采样部位。",
+      "visual_evidence": [
+        {
+          "path": "build/component-resume-20261114/role-preview-43472232666/exact-review-43472232666-1.review.png",
+          "sha256": "188b3809236726b72f77d3a82707dba8c279e583a77060e160738a0893680250"
+        },
+        {
+          "path": "build/component-resume-20261114/role-preview-43472232666/mapping.json",
+          "sha256": "99631bafdbaeb259e6e208f04563be54dfdb60459b533c8d849e848e08c3b670"
+        }
+      ],
+      "collection_disposition": "retain_existing_reusable_object_or_scene; query-specific failure does not exclude it",
+      "new_visual_inspection_performed": true,
+      "review_method": "Actual displayed fourteen-tile sheet at large resolution; exact individual preview bytes checked, not separately displayed."
+    },
+    {
+      "tile": 10,
+      "original_sha256": "64ed57f9a4fb91a7e621e7af1f8a36bc7ff99332989c79bc9ee77ee2835240e6",
+      "preview_sha256": "e91a0e1e708e9e2e0790fd526e50904dc7e32bce612f7a9e81af72320be514e7",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42271777119-1-b0000.tar.gz",
+        "member": "files/64/64ed57f9a4fb91a7e621e7af1f8a36bc7ff99332989c79bc9ee77ee2835240e6.png"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42271777119-1-b0000.tar.gz",
+        "member": "previews/64ed57f9a4fb91a7e621e7af1f8a36bc7ff99332989c79bc9ee77ee2835240e6.png"
+      },
+      "title": "A man using a walker with arm rests",
+      "source": "togo",
+      "source_id": "1971",
+      "source_url": "https://doi.org/10.7875/togopic.2024.130",
+      "observations": "男性使用带前臂托架的助行器；人体手臂有遮挡且嵌在助行场景中，主要对象不是独立手臂。",
+      "visual_evidence": [
+        {
+          "path": "build/component-resume-20261114/role-preview-43472232666/exact-review-43472232666-1.review.png",
+          "sha256": "188b3809236726b72f77d3a82707dba8c279e583a77060e160738a0893680250"
+        },
+        {
+          "path": "build/component-resume-20261114/role-preview-43472232666/mapping.json",
+          "sha256": "99631bafdbaeb259e6e208f04563be54dfdb60459b533c8d849e848e08c3b670"
+        }
+      ],
+      "collection_disposition": "retain_existing_reusable_object_or_scene; query-specific failure does not exclude it",
+      "new_visual_inspection_performed": true,
+      "review_method": "Actual displayed fourteen-tile sheet at large resolution; exact individual preview bytes checked, not separately displayed."
+    },
+    {
+      "tile": 11,
+      "original_sha256": "e2ec71fbfd15863aeca1be8d12b2fb517b51f10d837fcd774bf48198b90fc518",
+      "preview_sha256": "4c4e913ed53c7e931ddf4feebdf2a9ad5f367a41f88bab1cee41519eb7559b63",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/nih-bioart-42236561214-1-b0000.tar.gz",
+        "member": "files/e2/e2ec71fbfd15863aeca1be8d12b2fb517b51f10d837fcd774bf48198b90fc518.svg"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/nih-bioart-42236561214-1-b0000.tar.gz",
+        "member": "previews/e2ec71fbfd15863aeca1be8d12b2fb517b51f10d837fcd774bf48198b90fc518.png"
+      },
+      "title": "Group of People",
+      "source": "nih-bioart",
+      "source_id": "185",
+      "source_url": "https://bioart.niaid.nih.gov/bioart/185",
+      "observations": "可辨的多人群体，含成人和儿童；不是无名圆点，可作中性人群示意。图中人数不等于样本量，年龄组成不代表某项研究资格。",
+      "visual_evidence": [
+        {
+          "path": "build/component-resume-20261114/role-preview-43472232666/exact-review-43472232666-1.review.png",
+          "sha256": "188b3809236726b72f77d3a82707dba8c279e583a77060e160738a0893680250"
+        },
+        {
+          "path": "build/component-resume-20261114/role-preview-43472232666/mapping.json",
+          "sha256": "99631bafdbaeb259e6e208f04563be54dfdb60459b533c8d849e848e08c3b670"
+        }
+      ],
+      "collection_disposition": "retain_existing_reusable_object_or_scene; query-specific failure does not exclude it",
+      "new_visual_inspection_performed": true,
+      "review_method": "Actual displayed fourteen-tile sheet at large resolution; exact individual preview bytes checked, not separately displayed."
+    },
+    {
+      "tile": 12,
+      "original_sha256": "b0992deefa3de0e6d82e364dcd6b425dd59e8cb84449e94e662c4cf962ba06ac",
+      "preview_sha256": "e7be3f5e32f9930f0abaf9af311de8f7d5cecf6c3fd387c371888349554a482f",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42249870031-1-b0000.tar.gz",
+        "member": "files/b0/b0992deefa3de0e6d82e364dcd6b425dd59e8cb84449e94e662c4cf962ba06ac.svg"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42249870031-1-b0000.tar.gz",
+        "member": "previews/b0992deefa3de0e6d82e364dcd6b425dd59e8cb84449e94e662c4cf962ba06ac.png"
+      },
+      "title": "NGS workstation",
+      "source": "togo",
+      "source_id": "269",
+      "source_url": "https://doi.org/10.7875/togopic.2011.45",
+      "observations": "带多孔板与机械移液头的蓝色自动化实验平台，无用于分析的电脑屏幕及输入部件；NGS工作站用途不能当成计算机工作站。",
+      "visual_evidence": [
+        {
+          "path": "build/component-resume-20261114/role-preview-43472232666/exact-review-43472232666-1.review.png",
+          "sha256": "188b3809236726b72f77d3a82707dba8c279e583a77060e160738a0893680250"
+        },
+        {
+          "path": "build/component-resume-20261114/role-preview-43472232666/mapping.json",
+          "sha256": "99631bafdbaeb259e6e208f04563be54dfdb60459b533c8d849e848e08c3b670"
+        }
+      ],
+      "collection_disposition": "retain_existing_reusable_object_or_scene; query-specific failure does not exclude it",
+      "new_visual_inspection_performed": true,
+      "review_method": "Actual displayed fourteen-tile sheet at large resolution; exact individual preview bytes checked, not separately displayed."
+    },
+    {
+      "tile": 13,
+      "original_sha256": "47afe2de00da4883bf582c3e6aef0cb6c7d3905163993640b1d0e7881b719ed2",
+      "preview_sha256": "978d4198e56157f417e01757c59449dd6bc10260efec438d239a12d9e06bcbfc",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42239971379-1-b0000.tar.gz",
+        "member": "files/47/47afe2de00da4883bf582c3e6aef0cb6c7d3905163993640b1d0e7881b719ed2.svg"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42239971379-1-b0000.tar.gz",
+        "member": "previews/47afe2de00da4883bf582c3e6aef0cb6c7d3905163993640b1d0e7881b719ed2.png"
+      },
+      "title": "workstation",
+      "source": "bioicons",
+      "source_id": "cc-0/Computer_hardware/Simon_Dürr/workstation.svg",
+      "source_url": "https://github.com/duerrsimon/bioicons/blob/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-0/Computer_hardware/Simon_D%C3%BCrr/workstation.svg",
+      "observations": "灰色立式电脑主机箱，有驱动器、接口和指示灯；未见屏幕、键盘或可用显示界面，不满足冻结角色中至少识别屏幕及机身/输入部件的要求。",
+      "visual_evidence": [
+        {
+          "path": "build/component-resume-20261114/role-preview-43472232666/exact-review-43472232666-1.review.png",
+          "sha256": "188b3809236726b72f77d3a82707dba8c279e583a77060e160738a0893680250"
+        },
+        {
+          "path": "build/component-resume-20261114/role-preview-43472232666/mapping.json",
+          "sha256": "99631bafdbaeb259e6e208f04563be54dfdb60459b533c8d849e848e08c3b670"
+        }
+      ],
+      "collection_disposition": "retain_existing_reusable_object_or_scene; query-specific failure does not exclude it",
+      "new_visual_inspection_performed": true,
+      "review_method": "Actual displayed fourteen-tile sheet at large resolution; exact individual preview bytes checked, not separately displayed."
+    },
+    {
+      "tile": 14,
+      "original_sha256": "f46c0bb6b1b78da7a285bacdaead757064ab8583bc3cfed839b757d7d4decaf2",
+      "preview_sha256": "55b377efe3aff86f909deacaaf68040e9717ac9acf26d8a2a5294ec09081b7fe",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42239971379-1-b0004.tar.gz",
+        "member": "files/f4/f46c0bb6b1b78da7a285bacdaead757064ab8583bc3cfed839b757d7d4decaf2.svg"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42239971379-1-b0004.tar.gz",
+        "member": "previews/f46c0bb6b1b78da7a285bacdaead757064ab8583bc3cfed839b757d7d4decaf2.png"
+      },
+      "title": "NGS workstation robot",
+      "source": "bioicons",
+      "source_id": "cc-by-4.0/Lab_apparatus/DBCLS/NGS-workstation-robot.svg",
+      "source_url": "https://github.com/duerrsimon/bioicons/blob/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-4.0/Lab_apparatus/DBCLS/NGS-workstation-robot.svg",
+      "observations": "蓝色NGS自动化移液机器人，有机械头和多孔板；不是分析电脑，不能因workstation命名算作计算机工作站。",
+      "visual_evidence": [
+        {
+          "path": "build/component-resume-20261114/role-preview-43472232666/exact-review-43472232666-1.review.png",
+          "sha256": "188b3809236726b72f77d3a82707dba8c279e583a77060e160738a0893680250"
+        },
+        {
+          "path": "build/component-resume-20261114/role-preview-43472232666/mapping.json",
+          "sha256": "99631bafdbaeb259e6e208f04563be54dfdb60459b533c8d849e848e08c3b670"
+        }
+      ],
+      "collection_disposition": "retain_existing_reusable_object_or_scene; query-specific failure does not exclude it",
+      "new_visual_inspection_performed": true,
+      "review_method": "Actual displayed fourteen-tile sheet at large resolution; exact individual preview bytes checked, not separately displayed."
+    }
+  ],
+  "limits": [
+    "Query relevance is separate from collection eligibility. No original edited or discarded.",
+    "No diagnosis, sampling route, randomization or statistical result inferred."
+  ]
+}

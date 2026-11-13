@@ -1,0 +1,162 @@
+{
+  "schema_version": 1,
+  "checkpoint_resumed_from": "4d6e532",
+  "status": "active_with_known_acceptance_gaps",
+  "search_version": "shared-search-3.5.1",
+  "index_version": 11,
+  "search_core_sha256": "ca87a94df30903815825f95ddc5909e971e754cfbb85e7b4d991b3d8db037f8c",
+  "catalog_sha256": "331a28608746cd36fbd4c7d69b1890b4c8519d38a9f4ede29411691eb5ff1a28",
+  "assembly_prefix": "assembly-43471098734-1",
+  "historical_original120_score": {
+    "successful": 102,
+    "total": 120,
+    "per_language": 51,
+    "unchanged": true
+  },
+  "historical_component_runs_preserved": [
+    42334004260,
+    42336054640
+  ],
+  "progress": {
+    "status": "partial_review_with_explicit_remaining_gaps_not_formal_score",
+    "retrieval_queries_executed": 142,
+    "nonempty_queries": 142,
+    "query_review_status": {
+      "complete_with_selected": 103,
+      "partly_reviewed": 11,
+      "complete_without_selected": 6,
+      "not_reviewed": 22
+    },
+    "result_positions_total": 932,
+    "result_positions_reviewed": 696,
+    "result_positions_pending": 236,
+    "task_language_unit_status": {
+      "fully_reviewed_supported": 90,
+      "pending": 24,
+      "failed_required_role": 6
+    },
+    "recorded_composition_use_true": 96,
+    "formal_component_score": null,
+    "acceptance_passed": false,
+    "website_gate": "closed",
+    "known_threshold_failure": true,
+    "verified_evidence_documents": 34
+  },
+  "known_failed_roles": [
+    "human_arm",
+    "micropipette_with_tip",
+    "computer_workstation_with_display"
+  ],
+  "experimental_category_maximum_bilingual_tasks": 3,
+  "required_minimum_bilingual_tasks_per_category": 4,
+  "formal_component_acceptance_passed": false,
+  "formal_component_score": null,
+  "formal_current_material_binding_complete": false,
+  "website_built": false,
+  "website_deployed": false,
+  "new_source_collection": false,
+  "whole_library_downloaded_locally": false,
+  "bulk_text_cleanup_performed": false,
+  "followup_skill_automatic_text_cleanup_implemented": false,
+  "references": [
+    {
+      "path": "build/component-resume-20261114/current-43471774432-reviewed.json",
+      "sha256": "d1581ee0a32641dc5420f17154bc546296c37b58755b6aead0e393f795c5735f"
+    },
+    {
+      "path": "build/component-resume-20261114/current-progress.json",
+      "sha256": "837b77e53c38987c04b305a3fe6a56c978c5ae68c73b97df39c0f0e8613b685d"
+    },
+    {
+      "path": "build/component-resume-20261114/control-review-43471802172/summary.json",
+      "sha256": "e9ce9f452564a8e3e315e87e6f901cae92d4488f261fbe554a833b87e2ca20b7"
+    },
+    {
+      "path": "build/component-resume-20261114/control-review-43471802172/supplemental-evidence.json",
+      "sha256": "0b91cc44e402dff9fed9d960ec1e383873fab9ce538613915c02bb97513a656d"
+    },
+    {
+      "path": "build/component-resume-20261114/control-review-43471802172/supplement-check.json",
+      "sha256": "122b6c796509648b9c61e1ace14df5ee6952e3353cd70f85cc3a8d6b24b87d9c"
+    },
+    {
+      "path": "build/component-resume-20261114/control-review-43471802172/negative-observations.json",
+      "sha256": "9ff17eaa9ff38aa48922b5dd7083ed088ad8c973f2d054e804f0e12fb1e7151c"
+    },
+    {
+      "path": "build/component-resume-20261114/update-43471098734/assembly-43471098734-1.report.json",
+      "sha256": "47ff95167886b10b2f6bbe52df0a322e38ec630b63b6824aff43afdc786e9d12"
+    },
+    {
+      "path": "build/component-resume-20261114/update-43471098734/science-update-43471098734.publish_manifest.json",
+      "sha256": "dd9a23971f8bf973107c322d79341bd2209e1ba3b8c55ebd1f5d61c3524d7607"
+    },
+    {
+      "path": "build/component-resume-20261114/equivalence-43471834858/restore-equivalence-43471834858-1.json",
+      "sha256": "02b83b57075505d6687af2ad74704895b321a0b1cd35f18c772b0aac1dfd4321"
+    },
+    {
+      "path": "build/component-resume-20261114/scope-43472501968/scope-metadata-audit-43472501968-1.scope-audit.json",
+      "sha256": "b1b2cecd440abf810f60672dc39637c0c90db0efe402f791034348cdd10ab7d3"
+    },
+    {
+      "path": "build/component-resume-20261114/composition-43471774432/people-oral-components.png",
+      "sha256": "280efc491748501ad3e8b02825eb2ccc54145d8693c63a0ecf08d4633badcc49"
+    },
+    {
+      "path": "data/visual-reviews/resume-zero-results-43467539792.json",
+      "sha256": "7b5f8baf1c23d4e72159454d188a3690cfc46edee8b2d20c3b81050c81c7decd"
+    },
+    {
+      "path": "data/visual-reviews/component-role-boundaries-43472232666.json",
+      "sha256": "62d73c649efa5fc9665647a8646830f176ce4015b38a40caf9d8cfb07bbc57d7"
+    }
+  ],
+  "cloud_runs": [
+    {
+      "run_id": 43467539792,
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/hujizhou35-cmd/MGA-resource/actions/runs/43467539792"
+    },
+    {
+      "run_id": 43471098734,
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/hujizhou35-cmd/MGA-resource/actions/runs/43471098734"
+    },
+    {
+      "run_id": 43471774432,
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/hujizhou35-cmd/MGA-resource/actions/runs/43471774432"
+    },
+    {
+      "run_id": 43471802172,
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/hujizhou35-cmd/MGA-resource/actions/runs/43471802172"
+    },
+    {
+      "run_id": 43471834858,
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/hujizhou35-cmd/MGA-resource/actions/runs/43471834858"
+    },
+    {
+      "run_id": 43472232666,
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/hujizhou35-cmd/MGA-resource/actions/runs/43472232666"
+    },
+    {
+      "run_id": 43472501968,
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/hujizhou35-cmd/MGA-resource/actions/runs/43472501968"
+    }
+  ],
+  "release_url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/tag/acceptance-20261107",
+  "running_evidence_jobs": [],
+  "next_step": "Inspect existing cloud catalog for complete isolated human arm, whole micropipette with tip, and computer with display; reuse current results/reviews, complete pending role/composition evidence and append current material bindings before the formal gate. Targeted acquisition only if an actual stock gap remains."
+}
