@@ -1,6 +1,13 @@
 name: Verify live API against accepted replay
 on:
   workflow_dispatch:
+    inputs:
+      resume_run:
+        type: string
+        default: '43489852220'
+      resume_sha:
+        type: string
+        default: 'a702ff557adcf721b4708c9a8e10fe893eba34391947c771d6505c5d1384d06e'
 permissions:
   contents: write
 concurrency:
@@ -16,9 +23,11 @@ jobs:
         with:
           python-version: '3.12'
       - run: python -m pip install -e .
-      - run: python scripts/verify_website_api.py
+      - run: python scripts/verify_website_api.py --resume-run "$RESUME_RUN" --resume-sha "$RESUME_SHA"
         env:
           GH_TOKEN: ${{ github.token }}
+          RESUME_RUN: ${{ inputs.resume_run }}
+          RESUME_SHA: ${{ inputs.resume_sha }}
       - uses: actions/upload-artifact@v4
         if: always()
         with:
