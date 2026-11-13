@@ -41,10 +41,13 @@ def main():
                 shard=int(obj['sha256'][:8],16)%3;target=shards[shard]/obj['path'];shutil.move(source,target);counts[shard]+=1
     require(sum(counts)+len(large)==len(expected) and max(counts)<19000,'Static file count mismatch')
     deployments=[]
+    write(out/'files-preupload.json',{'run_id':os.environ['GITHUB_RUN_ID'],'objects':len(expected),'counts':counts,'cloud_pack_reads':reads,'large_direct_files':large})
     for i,folder in enumerate(shards):
         # Every destination file was hashed after full cloud-pack verification.
-        result=subprocess.run(['npx','wrangler','pages','deploy',str(folder),'--project-name',f'mga-resource-files-{i}','--branch','main','--commit-dirty=true'],cwd=ROOT/'site',check=True,capture_output=True,text=True)
-        log=out/f'shard-{i}-deployment.txt';log.write_text(result.stdout+'\n'+result.stderr,encoding='utf8');print(result.stdout)
+        # A static-only working directory prevents the main site's Functions/config from being attached to artwork hosts.
+        result=subprocess.run(['node',str(ROOT/'site/node_modules/wrangler/bin/wrangler.js'),'pages','deploy',str(folder),'--project-name',f'mga-resource-files-{i}','--branch','main','--commit-dirty=true'],cwd=out,check=False,capture_output=True,text=True)
+        log=out/f'shard-{i}-deployment.txt';log.write_text(result.stdout+'\n'+result.stderr,encoding='utf8');print(result.stdout);print(result.stderr)
+        result.check_returncode()
         deployments.append({'project':f'mga-resource-files-{i}','objects':counts[i],'log':log.name})
     receipt={'schema_version':1,'run_id':os.environ['GITHUB_RUN_ID'],'objects':len(expected),'all_original_bytes_preserved':True,'all_object_hashes_verified_before_upload':True,'cloud_pack_reads':reads,'large_direct_files':large,'static_deployments':deployments,'http_delivery_verification':'pending separate real remote reads'}
     write(out/'files-deployment.json',receipt)

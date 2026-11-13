@@ -72,3 +72,4 @@ jobs:
             build/website/database-*.json
             build/website-files/*deployment*.txt
             build/website-files/files-deployment.json
+            build/website-files/files-preupload.json

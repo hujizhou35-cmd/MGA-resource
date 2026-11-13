@@ -4,7 +4,6 @@
   "pages_build_output_dir": "../build/website/public",
   "compatibility_date": "2026-11-14",
   "compatibility_flags": ["nodejs_compat"],
-  "account_id": "104f09363abf61ba85c8266b39593ceb",
   "d1_databases": [{
     "binding": "DB",
     "database_name": "mga-resource-search-v13",
