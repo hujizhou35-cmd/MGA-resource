@@ -1,0 +1,44 @@
+[
+  {
+    "tile": 1,
+    "id": "commons-d943a568aeb9758e977c",
+    "sha256": "eb6ab3a919268fcb1864da73b50cf2a63147cc1ec588c280ca04788bbc437fec",
+    "public": true,
+    "text_status": "absent"
+  },
+  {
+    "tile": 2,
+    "id": "commons-e9dca210ccd4ed9d1fc1",
+    "sha256": "a68bc1bcbcfdf7a95015bf99a8b16d02687e0c36c92a805a56dc350a376d6c04",
+    "public": true,
+    "text_status": "present"
+  },
+  {
+    "tile": 3,
+    "id": "commons-c5cd912e52274269536a",
+    "sha256": "977c20aa8dd1b9b4c73d3ce3b1eebed3f9558a9b5256517582cb1072edb50c98",
+    "public": true,
+    "text_status": "present"
+  },
+  {
+    "tile": 4,
+    "id": "commons-9ae4aac9f0eaf197bf7f",
+    "sha256": "62898b9d08c0821a649cb56fc979d1cf32cdc930c0313049ca53bd568e096c5d",
+    "public": true,
+    "text_status": "present"
+  },
+  {
+    "tile": 5,
+    "id": "commons-3a8b15bbbbfb2c568942",
+    "sha256": "dbb739dc66c2fed7c692556534a59d659162e148608c4eb018488fabf30d8ebe",
+    "public": false,
+    "text_status": null
+  },
+  {
+    "tile": 6,
+    "id": "commons-a31749d037ff60f2be48",
+    "sha256": "ebb9a9bd3b53c90cccf842971ca582f91b685cfc4c7d6250e4ddf43083c80190",
+    "public": false,
+    "text_status": null
+  }
+]
