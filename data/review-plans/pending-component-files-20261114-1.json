@@ -1,0 +1,684 @@
+{
+  "schema_version": 1,
+  "catalog_sha256": "331a28608746cd36fbd4c7d69b1890b4c8519d38a9f4ede29411691eb5ff1a28",
+  "purpose": "Actual current replay files with no located exact prior observation. Bounded previews only; preserve original benchmark results.",
+  "files": [
+    {
+      "source": "healthicons",
+      "source_id": "public/icons/svg/outline/people/agriculture-worker_alt.svg",
+      "asset_id": "healthicons-06fb31451e16e34134ae",
+      "title": "Person Farmer ALT",
+      "source_url": "https://github.com/resolvetosavelives/healthicons/blob/2080c1b40e4829f2f4217e03bc22908b4e402f6b/public/icons/svg/outline/people/agriculture-worker_alt.svg",
+      "format": "svg",
+      "original_sha256": "2b53e72082cfe6e5f4f975efcb3594b3d39f3542cdc59cd31468b953e4dafa47",
+      "original_archive": {
+        "member": "files/2b/2b53e72082cfe6e5f4f975efcb3594b3d39f3542cdc59cd31468b953e4dafa47.svg",
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/healthicons-42234355854-1-b0003.tar.gz"
+      },
+      "preview": {
+        "archive": {
+          "member": "previews/2b53e72082cfe6e5f4f975efcb3594b3d39f3542cdc59cd31468b953e4dafa47.png",
+          "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/healthicons-42234355854-1-b0003.tar.gz"
+        },
+        "format": "png",
+        "height": 512,
+        "path": "previews/2b53e72082cfe6e5f4f975efcb3594b3d39f3542cdc59cd31468b953e4dafa47.png",
+        "sha256": "bb4eb8d2d5969250accebbb6e629ad08ac0e6fa0b36d0f9f0ceb72e60c3c4368",
+        "size_bytes": 7366,
+        "width": 512
+      },
+      "review_question": "适合表示参与者或患者的中性人物；不要求推断病种。",
+      "actual_query_ids": [
+        "component-people-patient--primary_object--zh"
+      ],
+      "role_ids": [
+        "primary_object"
+      ]
+    },
+    {
+      "source": "nih-bioart",
+      "source_id": "743",
+      "asset_id": "nih-bioart-2d9147079e799c272572",
+      "title": "Long Hair Person in Lab Coat 3",
+      "source_url": "https://bioart.niaid.nih.gov/bioart/743",
+      "format": "svg",
+      "original_sha256": "020b208f7e1dab88f9c631f9ebf47a1d04cf136a00d72fd655c397ac3ab9e19c",
+      "original_archive": {
+        "member": "files/02/020b208f7e1dab88f9c631f9ebf47a1d04cf136a00d72fd655c397ac3ab9e19c.svg",
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/nih-bioart-42236561214-1-b0001.tar.gz"
+      },
+      "preview": {
+        "archive": {
+          "member": "previews/020b208f7e1dab88f9c631f9ebf47a1d04cf136a00d72fd655c397ac3ab9e19c.png",
+          "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/nih-bioart-42236561214-1-b0001.tar.gz"
+        },
+        "format": "png",
+        "height": 512,
+        "path": "previews/020b208f7e1dab88f9c631f9ebf47a1d04cf136a00d72fd655c397ac3ab9e19c.png",
+        "sha256": "571c195357b03c7f9e5cda9798d640dfbb4a9adb93bd4f65176136538e7e2a57",
+        "size_bytes": 22873,
+        "width": 512
+      },
+      "review_question": "适合表示参与者或患者的中性人物；不要求推断病种。 | 实际可辨的人体人物，不携带真实个人身份或研究人数；仅作为研究中人体对象的代表，不声称来源人物已入组。",
+      "actual_query_ids": [
+        "component-people-patient--primary_object--zh",
+        "component-clinical_workflow-cohort-followup--human_subject--zh",
+        "component-clinical_workflow-cohort-followup--human_subject--en"
+      ],
+      "role_ids": [
+        "primary_object",
+        "human_subject"
+      ]
+    },
+    {
+      "source": "healthicons",
+      "source_id": "public/icons/svg/filled/people/travel.svg",
+      "asset_id": "healthicons-e579b3fad0a3aed84815",
+      "title": "Person Traveller",
+      "source_url": "https://github.com/resolvetosavelives/healthicons/blob/2080c1b40e4829f2f4217e03bc22908b4e402f6b/public/icons/svg/filled/people/travel.svg",
+      "format": "svg",
+      "original_sha256": "82cc3c34611f053816fafee92f1f1b7ac2ed274bb15c3ec90c664d86fdc5e6cc",
+      "original_archive": {
+        "member": "files/82/82cc3c34611f053816fafee92f1f1b7ac2ed274bb15c3ec90c664d86fdc5e6cc.svg",
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/healthicons-42234355854-1-b0001.tar.gz"
+      },
+      "preview": {
+        "archive": {
+          "member": "previews/82cc3c34611f053816fafee92f1f1b7ac2ed274bb15c3ec90c664d86fdc5e6cc.png",
+          "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/healthicons-42234355854-1-b0001.tar.gz"
+        },
+        "format": "png",
+        "height": 512,
+        "path": "previews/82cc3c34611f053816fafee92f1f1b7ac2ed274bb15c3ec90c664d86fdc5e6cc.png",
+        "sha256": "0dd658ee248df688ba90f7cfd6571a92e54110edc2f34f08ab2e0f2ba40fb76e",
+        "size_bytes": 8295,
+        "width": 512
+      },
+      "review_question": "适合表示参与者或患者的中性人物；不要求推断病种。",
+      "actual_query_ids": [
+        "component-people-patient--primary_object--zh"
+      ],
+      "role_ids": [
+        "primary_object"
+      ]
+    },
+    {
+      "source": "healthicons",
+      "source_id": "public/icons/svg/filled-24px/people/man.svg",
+      "asset_id": "healthicons-8b56482a4dde9a89ce1a",
+      "title": "Person",
+      "source_url": "https://github.com/resolvetosavelives/healthicons/blob/2080c1b40e4829f2f4217e03bc22908b4e402f6b/public/icons/svg/filled-24px/people/man.svg",
+      "format": "svg",
+      "original_sha256": "3b97af71dbf4013f83f8a2a612d4d4d09fdea3b0ed3806596ba2ec2ab8de2540",
+      "original_archive": {
+        "member": "files/3b/3b97af71dbf4013f83f8a2a612d4d4d09fdea3b0ed3806596ba2ec2ab8de2540.svg",
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/healthicons-42234355854-1-b0000.tar.gz"
+      },
+      "preview": {
+        "archive": {
+          "member": "previews/3b97af71dbf4013f83f8a2a612d4d4d09fdea3b0ed3806596ba2ec2ab8de2540.png",
+          "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/healthicons-42234355854-1-b0000.tar.gz"
+        },
+        "format": "png",
+        "height": 512,
+        "path": "previews/3b97af71dbf4013f83f8a2a612d4d4d09fdea3b0ed3806596ba2ec2ab8de2540.png",
+        "sha256": "fcd74762c76bdc4998181a36ff78d05d9c6ef205fe6e0549b41c179c549cd456",
+        "size_bytes": 7525,
+        "width": 512
+      },
+      "review_question": "适合表示参与者或患者的中性人物；不要求推断病种。",
+      "actual_query_ids": [
+        "component-people-patient--primary_object--zh"
+      ],
+      "role_ids": [
+        "primary_object"
+      ]
+    },
+    {
+      "source": "nih-bioart",
+      "source_id": "747",
+      "asset_id": "nih-bioart-bff908acc1343a66052d",
+      "title": "Person in Hat 5",
+      "source_url": "https://bioart.niaid.nih.gov/bioart/747",
+      "format": "png",
+      "original_sha256": "0a87367439993bb93a46e6894f5251824e79381ed1c7ca0c9f38428a636ebfc0",
+      "original_archive": {
+        "member": "files/0a/0a87367439993bb93a46e6894f5251824e79381ed1c7ca0c9f38428a636ebfc0.png",
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/nih-bioart-42236561214-1-b0001.tar.gz"
+      },
+      "preview": {
+        "archive": {
+          "member": "previews/0a87367439993bb93a46e6894f5251824e79381ed1c7ca0c9f38428a636ebfc0.png",
+          "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/nih-bioart-42236561214-1-b0001.tar.gz"
+        },
+        "format": "png",
+        "height": 512,
+        "path": "previews/0a87367439993bb93a46e6894f5251824e79381ed1c7ca0c9f38428a636ebfc0.png",
+        "sha256": "4f9b08987220cd62f011f2b0f6129464388a9deee808ddc673f43f17f50fdc94",
+        "size_bytes": 56314,
+        "width": 512
+      },
+      "review_question": "适合表示参与者或患者的中性人物；不要求推断病种。 | 实际可辨的人体人物，不携带真实个人身份或研究人数；仅作为研究中人体对象的代表，不声称来源人物已入组。",
+      "actual_query_ids": [
+        "component-people-patient--primary_object--zh",
+        "component-clinical_workflow-cohort-followup--human_subject--zh",
+        "component-clinical_workflow-cohort-followup--human_subject--en"
+      ],
+      "role_ids": [
+        "primary_object",
+        "human_subject"
+      ]
+    },
+    {
+      "source": "healthicons",
+      "source_id": "public/icons/svg/outline/people/plantation-worker_alt.svg",
+      "asset_id": "healthicons-6ee310ffcb37cf7ca1cb",
+      "title": "Person Plantation Worker ALT",
+      "source_url": "https://github.com/resolvetosavelives/healthicons/blob/2080c1b40e4829f2f4217e03bc22908b4e402f6b/public/icons/svg/outline/people/plantation-worker_alt.svg",
+      "format": "svg",
+      "original_sha256": "a7aae2923647437da713ad9f65d18780b37c42ab1ff5f23236181847c84504f6",
+      "original_archive": {
+        "member": "files/a7/a7aae2923647437da713ad9f65d18780b37c42ab1ff5f23236181847c84504f6.svg",
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/healthicons-42234355854-1-b0003.tar.gz"
+      },
+      "preview": {
+        "archive": {
+          "member": "previews/a7aae2923647437da713ad9f65d18780b37c42ab1ff5f23236181847c84504f6.png",
+          "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/healthicons-42234355854-1-b0003.tar.gz"
+        },
+        "format": "png",
+        "height": 512,
+        "path": "previews/a7aae2923647437da713ad9f65d18780b37c42ab1ff5f23236181847c84504f6.png",
+        "sha256": "ec457b747fa714683d1b2af2c2cbd6162bb1d4a2de049ad1d482df9c28a1af7c",
+        "size_bytes": 10850,
+        "width": 512
+      },
+      "review_question": "适合表示参与者或患者的中性人物；不要求推断病种。",
+      "actual_query_ids": [
+        "component-people-patient--primary_object--zh"
+      ],
+      "role_ids": [
+        "primary_object"
+      ]
+    },
+    {
+      "source": "healthicons",
+      "source_id": "public/icons/svg/filled/people/factory-worker.svg",
+      "asset_id": "healthicons-41c3f86b38e488cd0473",
+      "title": "Person Factory Worker",
+      "source_url": "https://github.com/resolvetosavelives/healthicons/blob/2080c1b40e4829f2f4217e03bc22908b4e402f6b/public/icons/svg/filled/people/factory-worker.svg",
+      "format": "svg",
+      "original_sha256": "a9f950d27feacbe39c70797919959a06f755fe5c4972729f7448b1ebf42d8695",
+      "original_archive": {
+        "member": "files/a9/a9f950d27feacbe39c70797919959a06f755fe5c4972729f7448b1ebf42d8695.svg",
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/healthicons-42234355854-1-b0001.tar.gz"
+      },
+      "preview": {
+        "archive": {
+          "member": "previews/a9f950d27feacbe39c70797919959a06f755fe5c4972729f7448b1ebf42d8695.png",
+          "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/healthicons-42234355854-1-b0001.tar.gz"
+        },
+        "format": "png",
+        "height": 512,
+        "path": "previews/a9f950d27feacbe39c70797919959a06f755fe5c4972729f7448b1ebf42d8695.png",
+        "sha256": "85d5f1902794f6c8debf3ee67f5250e11ddb25efbb0d5a7c9f80687b544531da",
+        "size_bytes": 10445,
+        "width": 512
+      },
+      "review_question": "适合表示参与者或患者的中性人物；不要求推断病种。",
+      "actual_query_ids": [
+        "component-people-patient--primary_object--zh"
+      ],
+      "role_ids": [
+        "primary_object"
+      ]
+    },
+    {
+      "source": "healthicons",
+      "source_id": "public/icons/svg/filled/people/crisis-response_center_person.svg",
+      "asset_id": "healthicons-b5da82e16a342bd153fe",
+      "title": "Emergency Operations Person",
+      "source_url": "https://github.com/resolvetosavelives/healthicons/blob/2080c1b40e4829f2f4217e03bc22908b4e402f6b/public/icons/svg/filled/people/crisis-response_center_person.svg",
+      "format": "svg",
+      "original_sha256": "9ca59684525540e8d2ab5651bbe8bf144c20ad0775553321f883fa8bcd94be6e",
+      "original_archive": {
+        "member": "files/9c/9ca59684525540e8d2ab5651bbe8bf144c20ad0775553321f883fa8bcd94be6e.svg",
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/healthicons-42234355854-1-b0001.tar.gz"
+      },
+      "preview": {
+        "archive": {
+          "member": "previews/9ca59684525540e8d2ab5651bbe8bf144c20ad0775553321f883fa8bcd94be6e.png",
+          "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/healthicons-42234355854-1-b0001.tar.gz"
+        },
+        "format": "png",
+        "height": 512,
+        "path": "previews/9ca59684525540e8d2ab5651bbe8bf144c20ad0775553321f883fa8bcd94be6e.png",
+        "sha256": "312bfb82e7dedda723a24cfc7dc8b447406da8ac9d09b7d7f1ea21fff34d434f",
+        "size_bytes": 6711,
+        "width": 512
+      },
+      "review_question": "适合表示参与者或患者的中性人物；不要求推断病种。",
+      "actual_query_ids": [
+        "component-people-patient--primary_object--zh"
+      ],
+      "role_ids": [
+        "primary_object"
+      ]
+    },
+    {
+      "source": "healthicons",
+      "source_id": "public/icons/svg/outline/people/prisoner.svg",
+      "asset_id": "healthicons-f5ddb958f39e9d5ee7cd",
+      "title": "Person Prisoner",
+      "source_url": "https://github.com/resolvetosavelives/healthicons/blob/2080c1b40e4829f2f4217e03bc22908b4e402f6b/public/icons/svg/outline/people/prisoner.svg",
+      "format": "svg",
+      "original_sha256": "88c128b8f3a16206087f7bedd03d4ca58ced86bdc0173d0569737b74b729cd6c",
+      "original_archive": {
+        "member": "files/88/88c128b8f3a16206087f7bedd03d4ca58ced86bdc0173d0569737b74b729cd6c.svg",
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/healthicons-42234355854-1-b0003.tar.gz"
+      },
+      "preview": {
+        "archive": {
+          "member": "previews/88c128b8f3a16206087f7bedd03d4ca58ced86bdc0173d0569737b74b729cd6c.png",
+          "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/healthicons-42234355854-1-b0003.tar.gz"
+        },
+        "format": "png",
+        "height": 512,
+        "path": "previews/88c128b8f3a16206087f7bedd03d4ca58ced86bdc0173d0569737b74b729cd6c.png",
+        "sha256": "6eb24c347c7b3dae0f91ca4b0b8920f426e1a4f189ce2b56298d128608efc9e6",
+        "size_bytes": 8155,
+        "width": 512
+      },
+      "review_question": "适合表示参与者或患者的中性人物；不要求推断病种。",
+      "actual_query_ids": [
+        "component-people-patient--primary_object--zh"
+      ],
+      "role_ids": [
+        "primary_object"
+      ]
+    },
+    {
+      "source": "bioicons",
+      "source_id": "cc-by-4.0/Intracellular_components/Margot_Riggi/transcription-factor-rna.svg",
+      "asset_id": "bioicons-170e35aa5ff006981373",
+      "title": "transcription factor rna",
+      "source_url": "https://github.com/duerrsimon/bioicons/blob/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-4.0/Intracellular_components/Margot_Riggi/transcription-factor-rna.svg",
+      "format": "svg",
+      "original_sha256": "e6cc042a942c9a621840a2c5646b8b0753803df635c91415bef4c078b62eb6aa",
+      "original_archive": {
+        "member": "files/e6/e6cc042a942c9a621840a2c5646b8b0753803df635c91415bef4c078b62eb6aa.svg",
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42239971379-1-b0004.tar.gz"
+      },
+      "preview": {
+        "archive": {
+          "member": "previews/e6cc042a942c9a621840a2c5646b8b0753803df635c91415bef4c078b62eb6aa.png",
+          "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42239971379-1-b0004.tar.gz"
+        },
+        "format": "png",
+        "height": 289,
+        "path": "previews/e6cc042a942c9a621840a2c5646b8b0753803df635c91415bef4c078b62eb6aa.png",
+        "sha256": "fdbcb10d64a550e5dd721dac9097edd02957c737541a9c213ba8e086e8c3fa5d",
+        "size_bytes": 33266,
+        "width": 512
+      },
+      "review_question": "单链表达清楚，来源支持RNA而非DNA；不要求具体序列。 | 来源支持RNA且单链表达清楚；不以DNA双螺旋、裸线或任意波浪线冒充RNA，不要求也不编造具体序列。 | 来源支持RNA，具有可辨的分子示意；不要求某一序列或表达量，不以写有RNA的椭圆名牌代替结构对象。",
+      "actual_query_ids": [
+        "component-molecules-rna--primary_object--zh",
+        "component-molecules-rna--primary_object--en",
+        "component-omics_data-rnaseq--rna_input--zh",
+        "component-omics_data-rnaseq--rna_input--en",
+        "component-omics_data-heatmap--rna--zh",
+        "component-omics_data-heatmap--rna--en"
+      ],
+      "role_ids": [
+        "primary_object",
+        "rna_input",
+        "rna"
+      ]
+    },
+    {
+      "source": "bioicons",
+      "source_id": "cc-0/Nucleic_acids/James-Lloyd/tRNA_secondary_structure.svg",
+      "asset_id": "bioicons-a4e0591297628b7f492d",
+      "title": "t RNA secondary structure",
+      "source_url": "https://github.com/duerrsimon/bioicons/blob/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-0/Nucleic_acids/James-Lloyd/tRNA_secondary_structure.svg",
+      "format": "svg",
+      "original_sha256": "70d5046dfcaa50265db23487b6077f6359be40ac0b35d798a63f3bbb8e5ba0fc",
+      "original_archive": {
+        "member": "files/70/70d5046dfcaa50265db23487b6077f6359be40ac0b35d798a63f3bbb8e5ba0fc.svg",
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42239971379-1-b0000.tar.gz"
+      },
+      "preview": {
+        "archive": {
+          "member": "previews/70d5046dfcaa50265db23487b6077f6359be40ac0b35d798a63f3bbb8e5ba0fc.png",
+          "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42239971379-1-b0000.tar.gz"
+        },
+        "format": "png",
+        "height": 512,
+        "path": "previews/70d5046dfcaa50265db23487b6077f6359be40ac0b35d798a63f3bbb8e5ba0fc.png",
+        "sha256": "a5fb9cec0411640bd52ff5251a0ce67bdc81f1ecfb59d445bf50d64c922dc9a3",
+        "size_bytes": 19095,
+        "width": 396
+      },
+      "review_question": "单链表达清楚，来源支持RNA而非DNA；不要求具体序列。 | 来源支持RNA且单链表达清楚；不以DNA双螺旋、裸线或任意波浪线冒充RNA，不要求也不编造具体序列。 | 来源支持RNA，具有可辨的分子示意；不要求某一序列或表达量，不以写有RNA的椭圆名牌代替结构对象。",
+      "actual_query_ids": [
+        "component-molecules-rna--primary_object--zh",
+        "component-molecules-rna--primary_object--en",
+        "component-omics_data-rnaseq--rna_input--zh",
+        "component-omics_data-rnaseq--rna_input--en",
+        "component-omics_data-heatmap--rna--zh",
+        "component-omics_data-heatmap--rna--en"
+      ],
+      "role_ids": [
+        "primary_object",
+        "rna_input",
+        "rna"
+      ]
+    },
+    {
+      "source": "togo",
+      "source_id": "1075",
+      "asset_id": "togo-cf9a3c6fc99a96a9a97a",
+      "title": "8-channel pipette (black)",
+      "source_url": "https://doi.org/10.7875/togopic.2022.111",
+      "format": "svg",
+      "original_sha256": "cda1278dac454a0098233e5ee00e180b8cec04926f501437abcca3c66b389448",
+      "original_archive": {
+        "member": "files/cd/cda1278dac454a0098233e5ee00e180b8cec04926f501437abcca3c66b389448.svg",
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42249870031-1-b0002.tar.gz"
+      },
+      "preview": {
+        "archive": {
+          "member": "previews/cda1278dac454a0098233e5ee00e180b8cec04926f501437abcca3c66b389448.png",
+          "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42249870031-1-b0002.tar.gz"
+        },
+        "format": "png",
+        "height": 512,
+        "path": "previews/cda1278dac454a0098233e5ee00e180b8cec04926f501437abcca3c66b389448.png",
+        "sha256": "53d89a8496f22ff2236747822d22af4dd219a25a241ffb1aec86b25e89aee8dd",
+        "size_bytes": 10121,
+        "width": 512
+      },
+      "review_question": "移液器与枪头可识别，部件或完整器具均须明确。",
+      "actual_query_ids": [
+        "component-lab_equipment-pipette--primary_object--zh"
+      ],
+      "role_ids": [
+        "primary_object"
+      ]
+    },
+    {
+      "source": "bioicons",
+      "source_id": "cc-by-3.0/Microbiology/Servier/petri-dish-blue.svg",
+      "asset_id": "bioicons-130d0e55fa847383ea29",
+      "title": "petri dish blue",
+      "source_url": "https://github.com/duerrsimon/bioicons/blob/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-3.0/Microbiology/Servier/petri-dish-blue.svg",
+      "format": "svg",
+      "original_sha256": "1a5eb73244d5846fd0ede5a0b066de14410d71ec0d58974408ff3c3b2dc9f791",
+      "original_archive": {
+        "member": "files/1a/1a5eb73244d5846fd0ede5a0b066de14410d71ec0d58974408ff3c3b2dc9f791.svg",
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42251588741-1-b0003.tar.gz"
+      },
+      "preview": {
+        "archive": {
+          "member": "previews/1a5eb73244d5846fd0ede5a0b066de14410d71ec0d58974408ff3c3b2dc9f791.png",
+          "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42251588741-1-b0003.tar.gz"
+        },
+        "format": "png",
+        "height": 372,
+        "path": "previews/1a5eb73244d5846fd0ede5a0b066de14410d71ec0d58974408ff3c3b2dc9f791.png",
+        "sha256": "a590f27e450f97928f0941614c8c9be825c05546be5427832de690752284ae5e",
+        "size_bytes": 77420,
+        "width": 512
+      },
+      "review_question": "培养皿形态清楚；培养基/细胞等只按源图实际内容说明。",
+      "actual_query_ids": [
+        "component-lab_equipment-petri-dish--primary_object--zh",
+        "component-lab_equipment-petri-dish--primary_object--en"
+      ],
+      "role_ids": [
+        "primary_object"
+      ]
+    },
+    {
+      "source": "bioicons",
+      "source_id": "cc-by-3.0/Microbiology/Servier/petri-dish-with-bacteria-yellow.svg",
+      "asset_id": "bioicons-9ab5f180f648ebf2c01c",
+      "title": "petri dish with bacteria yellow",
+      "source_url": "https://github.com/duerrsimon/bioicons/blob/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-3.0/Microbiology/Servier/petri-dish-with-bacteria-yellow.svg",
+      "format": "svg",
+      "original_sha256": "bc8799bf29c164dbe0d124f0067a589c71a484e3f8014ec1e7b0f763768617bb",
+      "original_archive": {
+        "member": "files/bc/bc8799bf29c164dbe0d124f0067a589c71a484e3f8014ec1e7b0f763768617bb.svg",
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42251588741-1-b0003.tar.gz"
+      },
+      "preview": {
+        "archive": {
+          "member": "previews/bc8799bf29c164dbe0d124f0067a589c71a484e3f8014ec1e7b0f763768617bb.png",
+          "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42251588741-1-b0003.tar.gz"
+        },
+        "format": "png",
+        "height": 512,
+        "path": "previews/bc8799bf29c164dbe0d124f0067a589c71a484e3f8014ec1e7b0f763768617bb.png",
+        "sha256": "0bb6f7da41acf9c262f3d25070d096bb5bbe465f8c2c41deefa6f0862296a85a",
+        "size_bytes": 104341,
+        "width": 481
+      },
+      "review_question": "培养皿形态清楚；培养基/细胞等只按源图实际内容说明。",
+      "actual_query_ids": [
+        "component-lab_equipment-petri-dish--primary_object--zh",
+        "component-lab_equipment-petri-dish--primary_object--en"
+      ],
+      "role_ids": [
+        "primary_object"
+      ]
+    },
+    {
+      "source": "togo",
+      "source_id": "629",
+      "asset_id": "togo-df6a17bea34fb71ff2cd",
+      "title": "Centrifuge",
+      "source_url": "https://doi.org/10.7875/togopic.2020.42",
+      "format": "svg",
+      "original_sha256": "34041aadd17f919f913be9b6e0937d80a5d7675966594d3fd737bf48d4cd75c1",
+      "original_archive": {
+        "member": "files/34/34041aadd17f919f913be9b6e0937d80a5d7675966594d3fd737bf48d4cd75c1.svg",
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42249870031-1-b0001.tar.gz"
+      },
+      "preview": {
+        "archive": {
+          "member": "previews/34041aadd17f919f913be9b6e0937d80a5d7675966594d3fd737bf48d4cd75c1.png",
+          "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42249870031-1-b0001.tar.gz"
+        },
+        "format": "png",
+        "height": 512,
+        "path": "previews/34041aadd17f919f913be9b6e0937d80a5d7675966594d3fd737bf48d4cd75c1.png",
+        "sha256": "85b218b181086174e46c47bff0a686848817ecda9845a2e59ccf4e9279d1c66e",
+        "size_bytes": 21579,
+        "width": 512
+      },
+      "review_question": "设备可识别为实验室离心机，不能仅以旋转箭头替代器材。 | 设备用途和可见结构支持实验室离心机；旋转箭头或家电不能代替设备。",
+      "actual_query_ids": [
+        "component-lab_equipment-centrifuge--primary_object--zh",
+        "component-lab_equipment-centrifuge--primary_object--en",
+        "component-experimental_actions-centrifugation--centrifuge--zh",
+        "component-experimental_actions-centrifugation--centrifuge--en"
+      ],
+      "role_ids": [
+        "primary_object",
+        "centrifuge"
+      ]
+    },
+    {
+      "source": "togo",
+      "source_id": "2013",
+      "asset_id": "togo-6948329e1fbbe6b4c789",
+      "title": "Desktop Centrifuge Male",
+      "source_url": "https://doi.org/10.7875/togopic.2024.172",
+      "format": "png",
+      "original_sha256": "99863804166bb5e5409f919b2223d1b23acb312883f9bfff129d670b1e73b707",
+      "original_archive": {
+        "member": "files/99/99863804166bb5e5409f919b2223d1b23acb312883f9bfff129d670b1e73b707.png",
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42271777119-1-b0000.tar.gz"
+      },
+      "preview": {
+        "archive": {
+          "member": "previews/99863804166bb5e5409f919b2223d1b23acb312883f9bfff129d670b1e73b707.png",
+          "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42271777119-1-b0000.tar.gz"
+        },
+        "format": "png",
+        "height": 400,
+        "path": "previews/99863804166bb5e5409f919b2223d1b23acb312883f9bfff129d670b1e73b707.png",
+        "sha256": "28986c0d109c66a17ed43c4382fd804d54f5be3c7079fe903482678b60dba1cd",
+        "size_bytes": 22788,
+        "width": 400
+      },
+      "review_question": "设备可识别为实验室离心机，不能仅以旋转箭头替代器材。 | 设备用途和可见结构支持实验室离心机；旋转箭头或家电不能代替设备。",
+      "actual_query_ids": [
+        "component-lab_equipment-centrifuge--primary_object--zh",
+        "component-lab_equipment-centrifuge--primary_object--en",
+        "component-experimental_actions-centrifugation--centrifuge--zh",
+        "component-experimental_actions-centrifugation--centrifuge--en"
+      ],
+      "role_ids": [
+        "primary_object",
+        "centrifuge"
+      ]
+    },
+    {
+      "source": "bioicons",
+      "source_id": "cc-by-4.0/Microbiology/Andi-Wilson/Centrifuge.svg",
+      "asset_id": "bioicons-463741c38a8fcd652e58",
+      "title": "Centrifuge",
+      "source_url": "https://github.com/duerrsimon/bioicons/blob/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-4.0/Microbiology/Andi-Wilson/Centrifuge.svg",
+      "format": "svg",
+      "original_sha256": "6695ceb553ba02c160dacb7ed1044d43ce941730858a9de5a40d577a90c6abc1",
+      "original_archive": {
+        "member": "files/66/6695ceb553ba02c160dacb7ed1044d43ce941730858a9de5a40d577a90c6abc1.svg",
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42239971379-1-b0005.tar.gz"
+      },
+      "preview": {
+        "archive": {
+          "member": "previews/6695ceb553ba02c160dacb7ed1044d43ce941730858a9de5a40d577a90c6abc1.png",
+          "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42239971379-1-b0005.tar.gz"
+        },
+        "format": "png",
+        "height": 512,
+        "path": "previews/6695ceb553ba02c160dacb7ed1044d43ce941730858a9de5a40d577a90c6abc1.png",
+        "sha256": "0cba5723580f1d33ee7922c454aed9a0553caa3edb0437af28caec08201f3569",
+        "size_bytes": 46989,
+        "width": 431
+      },
+      "review_question": "设备可识别为实验室离心机，不能仅以旋转箭头替代器材。 | 设备用途和可见结构支持实验室离心机；旋转箭头或家电不能代替设备。",
+      "actual_query_ids": [
+        "component-lab_equipment-centrifuge--primary_object--zh",
+        "component-lab_equipment-centrifuge--primary_object--en",
+        "component-experimental_actions-centrifugation--centrifuge--zh",
+        "component-experimental_actions-centrifugation--centrifuge--en"
+      ],
+      "role_ids": [
+        "primary_object",
+        "centrifuge"
+      ]
+    },
+    {
+      "source": "scidraw",
+      "source_id": "0dd48af5-947a-4a43-8e5e-1d42e2bd265f",
+      "asset_id": "scidraw-91c9980d0963b2696246",
+      "title": "mouse running",
+      "source_url": "https://scidraw.io/drawing/mouse-running-afea13d3",
+      "format": "svg",
+      "original_sha256": "2d4b2ecc1b708c945a9901e97489d3cf17cf400fbb983648433711f7afb80499",
+      "original_archive": {
+        "member": "files/2d/2d4b2ecc1b708c945a9901e97489d3cf17cf400fbb983648433711f7afb80499.svg",
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scidraw-42235890704-1-b0000.tar.gz"
+      },
+      "preview": {
+        "archive": {
+          "member": "previews/2d4b2ecc1b708c945a9901e97489d3cf17cf400fbb983648433711f7afb80499.png",
+          "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scidraw-42235890704-1-b0000.tar.gz"
+        },
+        "format": "png",
+        "height": 150,
+        "path": "previews/2d4b2ecc1b708c945a9901e97489d3cf17cf400fbb983648433711f7afb80499.png",
+        "sha256": "e9c565451e33b9e2083382a928adcd8dae833fb4009920712167d3b803bca36d",
+        "size_bytes": 13936,
+        "width": 512
+      },
+      "review_question": "来源支持小鼠，完整身体、尾巴和肢体可辨；不把大鼠、鼠脑或鼠器官当完整小鼠。",
+      "actual_query_ids": [
+        "component-experimental_actions-mouse-injection--mouse--zh",
+        "component-experimental_actions-mouse-injection--mouse--en"
+      ],
+      "role_ids": [
+        "mouse"
+      ]
+    },
+    {
+      "source": "nih-bioart",
+      "source_id": "279",
+      "asset_id": "nih-bioart-4057393e2a2d5caa89f0",
+      "title": "Lab Mouse",
+      "source_url": "https://bioart.niaid.nih.gov/bioart/279",
+      "format": "png",
+      "original_sha256": "10f88d4b1750a745c496fd3190db075be10451b7c21d33f71e10d249d92b5cc1",
+      "original_archive": {
+        "member": "files/10/10f88d4b1750a745c496fd3190db075be10451b7c21d33f71e10d249d92b5cc1.png",
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/nih-bioart-42236561214-1-b0000.tar.gz"
+      },
+      "preview": {
+        "archive": {
+          "member": "previews/10f88d4b1750a745c496fd3190db075be10451b7c21d33f71e10d249d92b5cc1.png",
+          "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/nih-bioart-42236561214-1-b0000.tar.gz"
+        },
+        "format": "png",
+        "height": 315,
+        "path": "previews/10f88d4b1750a745c496fd3190db075be10451b7c21d33f71e10d249d92b5cc1.png",
+        "sha256": "97a3939a7b6da730601307771e2a661fde7ee9761e7544f989d8e160fb83e1f1",
+        "size_bytes": 65337,
+        "width": 512
+      },
+      "review_question": "来源支持小鼠，完整身体、尾巴和肢体可辨；不把大鼠、鼠脑或鼠器官当完整小鼠。",
+      "actual_query_ids": [
+        "component-experimental_actions-mouse-injection--mouse--zh",
+        "component-experimental_actions-mouse-injection--mouse--en"
+      ],
+      "role_ids": [
+        "mouse"
+      ]
+    },
+    {
+      "source": "nih-bioart",
+      "source_id": "372",
+      "asset_id": "nih-bioart-7f98def53b0dfc2c8273",
+      "title": "Mouse Silhouette",
+      "source_url": "https://bioart.niaid.nih.gov/bioart/372",
+      "format": "png",
+      "original_sha256": "3b68a752aed0e50251b6e3fdf20d444cecea92e1a0012cfac7b6391d583d741a",
+      "original_archive": {
+        "member": "files/3b/3b68a752aed0e50251b6e3fdf20d444cecea92e1a0012cfac7b6391d583d741a.png",
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/nih-bioart-42236561214-1-b0000.tar.gz"
+      },
+      "preview": {
+        "archive": {
+          "member": "previews/3b68a752aed0e50251b6e3fdf20d444cecea92e1a0012cfac7b6391d583d741a.png",
+          "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/nih-bioart-42236561214-1-b0000.tar.gz"
+        },
+        "format": "png",
+        "height": 193,
+        "path": "previews/3b68a752aed0e50251b6e3fdf20d444cecea92e1a0012cfac7b6391d583d741a.png",
+        "sha256": "2dc6a41053f4927c4640f7f59e9f832987c9548abdbff02de953c7de2e914688",
+        "size_bytes": 19124,
+        "width": 512
+      },
+      "review_question": "来源支持小鼠，完整身体、尾巴和肢体可辨；不把大鼠、鼠脑或鼠器官当完整小鼠。",
+      "actual_query_ids": [
+        "component-experimental_actions-mouse-injection--mouse--zh",
+        "component-experimental_actions-mouse-injection--mouse--en"
+      ],
+      "role_ids": [
+        "mouse"
+      ]
+    }
+  ]
+}

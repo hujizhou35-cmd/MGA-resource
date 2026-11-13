@@ -1,0 +1,667 @@
+{
+  "schema_version": 1,
+  "catalog_sha256": "331a28608746cd36fbd4c7d69b1890b4c8519d38a9f4ede29411691eb5ff1a28",
+  "purpose": "Actual current replay files with no located exact prior observation. Bounded previews only; preserve original benchmark results.",
+  "files": [
+    {
+      "source": "scidraw",
+      "source_id": "5831f0d6-f351-4d02-a6f5-f4e720ba5863",
+      "asset_id": "scidraw-91dbd3ca182189751c32",
+      "title": "mouse rearing",
+      "source_url": "https://scidraw.io/drawing/mouse-rearing-70d10ef0",
+      "format": "svg",
+      "original_sha256": "5f5b2f4cf6e9a8ff18ad3e711cf71d34a2068e071a86d6a14f170fd62792ee05",
+      "original_archive": {
+        "member": "files/5f/5f5b2f4cf6e9a8ff18ad3e711cf71d34a2068e071a86d6a14f170fd62792ee05.svg",
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scidraw-42235890704-1-b0000.tar.gz"
+      },
+      "preview": {
+        "archive": {
+          "member": "previews/5f5b2f4cf6e9a8ff18ad3e711cf71d34a2068e071a86d6a14f170fd62792ee05.png",
+          "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scidraw-42235890704-1-b0000.tar.gz"
+        },
+        "format": "png",
+        "height": 512,
+        "path": "previews/5f5b2f4cf6e9a8ff18ad3e711cf71d34a2068e071a86d6a14f170fd62792ee05.png",
+        "sha256": "879f6f31669b644a48cbe25e3efe5f85c12b69ad4ae3d09b65797ed406207d86",
+        "size_bytes": 23156,
+        "width": 466
+      },
+      "review_question": "来源支持小鼠，完整身体、尾巴和肢体可辨；不把大鼠、鼠脑或鼠器官当完整小鼠。",
+      "actual_query_ids": [
+        "component-experimental_actions-mouse-injection--mouse--zh",
+        "component-experimental_actions-mouse-injection--mouse--en"
+      ],
+      "role_ids": [
+        "mouse"
+      ]
+    },
+    {
+      "source": "scidraw",
+      "source_id": "639ae9ea-9832-4e05-a2b8-1d3dfe2fafd7",
+      "asset_id": "scidraw-b9c6cd186bf00ba62d7e",
+      "title": "Black Mouse",
+      "source_url": "https://scidraw.io/drawing/black-mouse-8a34c5d7",
+      "format": "svg",
+      "original_sha256": "084c28e77b318756785fc27e0a6ba0a404ed22c6e27bb9578e26014da6712322",
+      "original_archive": {
+        "member": "files/08/084c28e77b318756785fc27e0a6ba0a404ed22c6e27bb9578e26014da6712322.svg",
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scidraw-42235890704-1-b0000.tar.gz"
+      },
+      "preview": {
+        "archive": {
+          "member": "previews/084c28e77b318756785fc27e0a6ba0a404ed22c6e27bb9578e26014da6712322.png",
+          "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scidraw-42235890704-1-b0000.tar.gz"
+        },
+        "format": "png",
+        "height": 306,
+        "path": "previews/084c28e77b318756785fc27e0a6ba0a404ed22c6e27bb9578e26014da6712322.png",
+        "sha256": "658c900860206a199273c714795d74c75cb14fd116d43b526bbf6869f9f026f3",
+        "size_bytes": 10703,
+        "width": 512
+      },
+      "review_question": "来源支持小鼠，完整身体、尾巴和肢体可辨；不把大鼠、鼠脑或鼠器官当完整小鼠。",
+      "actual_query_ids": [
+        "component-experimental_actions-mouse-injection--mouse--zh",
+        "component-experimental_actions-mouse-injection--mouse--en"
+      ],
+      "role_ids": [
+        "mouse"
+      ]
+    },
+    {
+      "source": "nih-bioart",
+      "source_id": "371",
+      "asset_id": "nih-bioart-e86f0ca1e31010f25cc1",
+      "title": "Mouse Outline",
+      "source_url": "https://bioart.niaid.nih.gov/bioart/371",
+      "format": "png",
+      "original_sha256": "1c1b41f8294e44582dcc3666174978d007e50379be8ba02a3e9abaca97222e7e",
+      "original_archive": {
+        "member": "files/1c/1c1b41f8294e44582dcc3666174978d007e50379be8ba02a3e9abaca97222e7e.png",
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/nih-bioart-42236561214-1-b0000.tar.gz"
+      },
+      "preview": {
+        "archive": {
+          "member": "previews/1c1b41f8294e44582dcc3666174978d007e50379be8ba02a3e9abaca97222e7e.png",
+          "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/nih-bioart-42236561214-1-b0000.tar.gz"
+        },
+        "format": "png",
+        "height": 385,
+        "path": "previews/1c1b41f8294e44582dcc3666174978d007e50379be8ba02a3e9abaca97222e7e.png",
+        "sha256": "6608f47f7522bf9ca2968d89c87746a0f60d0ea7004b6aca5ddc30c1fdd00ac3",
+        "size_bytes": 64906,
+        "width": 512
+      },
+      "review_question": "来源支持小鼠，完整身体、尾巴和肢体可辨；不把大鼠、鼠脑或鼠器官当完整小鼠。",
+      "actual_query_ids": [
+        "component-experimental_actions-mouse-injection--mouse--zh",
+        "component-experimental_actions-mouse-injection--mouse--en"
+      ],
+      "role_ids": [
+        "mouse"
+      ]
+    },
+    {
+      "source": "scidraw",
+      "source_id": "c9333169-6f87-4fac-a9ca-ff21da89cb54",
+      "asset_id": "scidraw-b7d4b31b28a56c302886",
+      "title": "mouse eating",
+      "source_url": "https://scidraw.io/drawing/mouse-eating-24fbb188",
+      "format": "svg",
+      "original_sha256": "641fe3d778d116828071d5b6fb79927976b30bad2c9345d6a8b2376af4ee9526",
+      "original_archive": {
+        "member": "files/64/641fe3d778d116828071d5b6fb79927976b30bad2c9345d6a8b2376af4ee9526.svg",
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scidraw-42235890704-1-b0000.tar.gz"
+      },
+      "preview": {
+        "archive": {
+          "member": "previews/641fe3d778d116828071d5b6fb79927976b30bad2c9345d6a8b2376af4ee9526.png",
+          "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scidraw-42235890704-1-b0000.tar.gz"
+        },
+        "format": "png",
+        "height": 302,
+        "path": "previews/641fe3d778d116828071d5b6fb79927976b30bad2c9345d6a8b2376af4ee9526.png",
+        "sha256": "6028dc7bba301926021f1450ec3b590437513d6d8687cebf5e079e27a02710fc",
+        "size_bytes": 27939,
+        "width": 512
+      },
+      "review_question": "来源支持小鼠，完整身体、尾巴和肢体可辨；不把大鼠、鼠脑或鼠器官当完整小鼠。",
+      "actual_query_ids": [
+        "component-experimental_actions-mouse-injection--mouse--zh",
+        "component-experimental_actions-mouse-injection--mouse--en"
+      ],
+      "role_ids": [
+        "mouse"
+      ]
+    },
+    {
+      "source": "lab-equipment",
+      "source_id": "svg/PlasticSyringeNeedle.svg",
+      "asset_id": "lab-equipment-e030fc9857b9ebc39c60",
+      "title": "Plastic Syringe Needle",
+      "source_url": "https://github.com/KYU49/SvgCollectionOfLabEquipment/blob/702ca002ec2a7ba40c0369ef7b66075f262315b3/svg/PlasticSyringeNeedle.svg",
+      "format": "svg",
+      "original_sha256": "4dc15e4a1fb04d7b9548e6cd987a2f68b514e922a4b89fc7dd13212c4395f89e",
+      "original_archive": {
+        "member": "files/4d/4dc15e4a1fb04d7b9548e6cd987a2f68b514e922a4b89fc7dd13212c4395f89e.svg",
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/lab-equipment-42237927278-1-b0000.tar.gz"
+      },
+      "preview": {
+        "archive": {
+          "member": "previews/4dc15e4a1fb04d7b9548e6cd987a2f68b514e922a4b89fc7dd13212c4395f89e.png",
+          "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/lab-equipment-42237927278-1-b0000.tar.gz"
+        },
+        "format": "png",
+        "height": 512,
+        "path": "previews/4dc15e4a1fb04d7b9548e6cd987a2f68b514e922a4b89fc7dd13212c4395f89e.png",
+        "sha256": "d35243d96b4e03bb3fdd893e3b7ab7972ab3442d60fb44f4348b5b92c8bf71c5",
+        "size_bytes": 3149,
+        "width": 111
+      },
+      "review_question": "注射器筒、推杆与针部可识别，来源支持医疗注射器；不从刻度推断真实剂量。",
+      "actual_query_ids": [
+        "component-experimental_actions-mouse-injection--syringe--zh",
+        "component-experimental_actions-mouse-injection--syringe--en"
+      ],
+      "role_ids": [
+        "syringe"
+      ]
+    },
+    {
+      "source": "lab-equipment",
+      "source_id": "svg/GlassSyringeNeedle.svg",
+      "asset_id": "lab-equipment-89d1c8b2f180801124dc",
+      "title": "Glass Syringe Needle",
+      "source_url": "https://github.com/KYU49/SvgCollectionOfLabEquipment/blob/702ca002ec2a7ba40c0369ef7b66075f262315b3/svg/GlassSyringeNeedle.svg",
+      "format": "svg",
+      "original_sha256": "f13cac2a1b0f1358688d313a823b079132b774ef9c50ec754e214fd4c01699cb",
+      "original_archive": {
+        "member": "files/f1/f13cac2a1b0f1358688d313a823b079132b774ef9c50ec754e214fd4c01699cb.svg",
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/lab-equipment-42237927278-1-b0000.tar.gz"
+      },
+      "preview": {
+        "archive": {
+          "member": "previews/f13cac2a1b0f1358688d313a823b079132b774ef9c50ec754e214fd4c01699cb.png",
+          "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/lab-equipment-42237927278-1-b0000.tar.gz"
+        },
+        "format": "png",
+        "height": 512,
+        "path": "previews/f13cac2a1b0f1358688d313a823b079132b774ef9c50ec754e214fd4c01699cb.png",
+        "sha256": "24c298bf249f3879e0579010dd107cd78f9cce15afaf6a9f2fcd97f13588acdc",
+        "size_bytes": 3783,
+        "width": 111
+      },
+      "review_question": "注射器筒、推杆与针部可识别，来源支持医疗注射器；不从刻度推断真实剂量。",
+      "actual_query_ids": [
+        "component-experimental_actions-mouse-injection--syringe--zh",
+        "component-experimental_actions-mouse-injection--syringe--en"
+      ],
+      "role_ids": [
+        "syringe"
+      ]
+    },
+    {
+      "source": "lab-equipment",
+      "source_id": "svg/PlasticSyringeWithNeedle.svg",
+      "asset_id": "lab-equipment-15b4fc03811825e37d2d",
+      "title": "Plastic Syringe With Needle",
+      "source_url": "https://github.com/KYU49/SvgCollectionOfLabEquipment/blob/702ca002ec2a7ba40c0369ef7b66075f262315b3/svg/PlasticSyringeWithNeedle.svg",
+      "format": "svg",
+      "original_sha256": "a1fcc93ed9206b935082a003e881a6c579f94f3305e726fe7329031e98a2a660",
+      "original_archive": {
+        "member": "files/a1/a1fcc93ed9206b935082a003e881a6c579f94f3305e726fe7329031e98a2a660.svg",
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/lab-equipment-42237927278-1-b0000.tar.gz"
+      },
+      "preview": {
+        "archive": {
+          "member": "previews/a1fcc93ed9206b935082a003e881a6c579f94f3305e726fe7329031e98a2a660.png",
+          "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/lab-equipment-42237927278-1-b0000.tar.gz"
+        },
+        "format": "png",
+        "height": 512,
+        "path": "previews/a1fcc93ed9206b935082a003e881a6c579f94f3305e726fe7329031e98a2a660.png",
+        "sha256": "05f504153133287fa4e2081da0a19161c2777f463bed1b0b6eb35fe2291b6ad4",
+        "size_bytes": 7803,
+        "width": 126
+      },
+      "review_question": "注射器筒、推杆与针部可识别，来源支持医疗注射器；不从刻度推断真实剂量。",
+      "actual_query_ids": [
+        "component-experimental_actions-mouse-injection--syringe--zh",
+        "component-experimental_actions-mouse-injection--syringe--en"
+      ],
+      "role_ids": [
+        "syringe"
+      ]
+    },
+    {
+      "source": "togo",
+      "source_id": "329",
+      "asset_id": "togo-6b1e1049c7ea7eba384d",
+      "title": "needle syringe",
+      "source_url": "https://doi.org/10.7875/togopic.2013.21",
+      "format": "svg",
+      "original_sha256": "30a3d824beaa830e4d88af6571ec4a4486ef1a1a26ca95a1261feeeb3fc40147",
+      "original_archive": {
+        "member": "files/30/30a3d824beaa830e4d88af6571ec4a4486ef1a1a26ca95a1261feeeb3fc40147.svg",
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42249870031-1-b0000.tar.gz"
+      },
+      "preview": {
+        "archive": {
+          "member": "previews/30a3d824beaa830e4d88af6571ec4a4486ef1a1a26ca95a1261feeeb3fc40147.png",
+          "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42249870031-1-b0000.tar.gz"
+        },
+        "format": "png",
+        "height": 512,
+        "path": "previews/30a3d824beaa830e4d88af6571ec4a4486ef1a1a26ca95a1261feeeb3fc40147.png",
+        "sha256": "7bb3bfdb1bc3c2728d2a35b7192fd9abd40fdd457555b8122bc14357ed3dfbe4",
+        "size_bytes": 70505,
+        "width": 512
+      },
+      "review_question": "注射器筒、推杆与针部可识别，来源支持医疗注射器；不从刻度推断真实剂量。",
+      "actual_query_ids": [
+        "component-experimental_actions-mouse-injection--syringe--zh",
+        "component-experimental_actions-mouse-injection--syringe--en"
+      ],
+      "role_ids": [
+        "syringe"
+      ]
+    },
+    {
+      "source": "bioicons",
+      "source_id": "cc-by-3.0/Microbiology/Servier/culture-flask-filled-nolid.svg",
+      "asset_id": "bioicons-b3407e473194510135b2",
+      "title": "culture flask filled nolid",
+      "source_url": "https://github.com/duerrsimon/bioicons/blob/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-3.0/Microbiology/Servier/culture-flask-filled-nolid.svg",
+      "format": "svg",
+      "original_sha256": "3166f934b211a64f4aed25460b8dd906d085adbf84180e98974df29fbc2c2ceb",
+      "original_archive": {
+        "member": "files/31/3166f934b211a64f4aed25460b8dd906d085adbf84180e98974df29fbc2c2ceb.svg",
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42251588741-1-b0003.tar.gz"
+      },
+      "preview": {
+        "archive": {
+          "member": "previews/3166f934b211a64f4aed25460b8dd906d085adbf84180e98974df29fbc2c2ceb.png",
+          "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42251588741-1-b0003.tar.gz"
+        },
+        "format": "png",
+        "height": 169,
+        "path": "previews/3166f934b211a64f4aed25460b8dd906d085adbf84180e98974df29fbc2c2ceb.png",
+        "sha256": "26f3bb0b533f0aed0fcc4f6dae38b546bd9aa78bcafa830147e6171a5ada79c0",
+        "size_bytes": 21185,
+        "width": 512
+      },
+      "review_question": "来源支持用于细胞培养的培养瓶，瓶体和瓶颈结构清楚；不能把普通饮料瓶或烧杯改名。",
+      "actual_query_ids": [
+        "component-experimental_actions-cell-culture--culture_flask--zh",
+        "component-experimental_actions-cell-culture--culture_flask--en"
+      ],
+      "role_ids": [
+        "culture_flask"
+      ]
+    },
+    {
+      "source": "bioicons",
+      "source_id": "cc-by-3.0/Microbiology/Servier/culture-flask-empty.svg",
+      "asset_id": "bioicons-cb84daec3c6e653fec44",
+      "title": "culture flask empty",
+      "source_url": "https://github.com/duerrsimon/bioicons/blob/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-3.0/Microbiology/Servier/culture-flask-empty.svg",
+      "format": "svg",
+      "original_sha256": "af93f0654d885a428bb73f59ed25a7289ca05ec65ab9a1bed5588c87a57db321",
+      "original_archive": {
+        "member": "files/af/af93f0654d885a428bb73f59ed25a7289ca05ec65ab9a1bed5588c87a57db321.svg",
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42251588741-1-b0003.tar.gz"
+      },
+      "preview": {
+        "archive": {
+          "member": "previews/af93f0654d885a428bb73f59ed25a7289ca05ec65ab9a1bed5588c87a57db321.png",
+          "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42251588741-1-b0003.tar.gz"
+        },
+        "format": "png",
+        "height": 161,
+        "path": "previews/af93f0654d885a428bb73f59ed25a7289ca05ec65ab9a1bed5588c87a57db321.png",
+        "sha256": "d5d6af72edecc649f1e9fc8425f4d748cb4981c673c3edc45b0b9480d9ff7fc6",
+        "size_bytes": 22041,
+        "width": 512
+      },
+      "review_question": "来源支持用于细胞培养的培养瓶，瓶体和瓶颈结构清楚；不能把普通饮料瓶或烧杯改名。",
+      "actual_query_ids": [
+        "component-experimental_actions-cell-culture--culture_flask--zh",
+        "component-experimental_actions-cell-culture--culture_flask--en"
+      ],
+      "role_ids": [
+        "culture_flask"
+      ]
+    },
+    {
+      "source": "bioicons",
+      "source_id": "cc-by-3.0/Microbiology/Servier/culture-flask-filled-lid.svg",
+      "asset_id": "bioicons-ca978b3afddacfe08c19",
+      "title": "culture flask filled lid",
+      "source_url": "https://github.com/duerrsimon/bioicons/blob/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-3.0/Microbiology/Servier/culture-flask-filled-lid.svg",
+      "format": "svg",
+      "original_sha256": "dc9f70130454321c63c8cf6c69081942789268601e9150c788e71f04cad2a1f5",
+      "original_archive": {
+        "member": "files/dc/dc9f70130454321c63c8cf6c69081942789268601e9150c788e71f04cad2a1f5.svg",
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42251588741-1-b0003.tar.gz"
+      },
+      "preview": {
+        "archive": {
+          "member": "previews/dc9f70130454321c63c8cf6c69081942789268601e9150c788e71f04cad2a1f5.png",
+          "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42251588741-1-b0003.tar.gz"
+        },
+        "format": "png",
+        "height": 161,
+        "path": "previews/dc9f70130454321c63c8cf6c69081942789268601e9150c788e71f04cad2a1f5.png",
+        "sha256": "0d0d33030c86a7233fc484ca4122a4b8f2b3f9f45f114d03f301539ea460ea29",
+        "size_bytes": 21849,
+        "width": 512
+      },
+      "review_question": "来源支持用于细胞培养的培养瓶，瓶体和瓶颈结构清楚；不能把普通饮料瓶或烧杯改名。",
+      "actual_query_ids": [
+        "component-experimental_actions-cell-culture--culture_flask--zh",
+        "component-experimental_actions-cell-culture--culture_flask--en"
+      ],
+      "role_ids": [
+        "culture_flask"
+      ]
+    },
+    {
+      "source": "bioicons",
+      "source_id": "cc-by-3.0/Microbiology/Servier/culture-flask-stacked.svg",
+      "asset_id": "bioicons-d27de28ffa8283c85794",
+      "title": "culture flask stacked",
+      "source_url": "https://github.com/duerrsimon/bioicons/blob/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-3.0/Microbiology/Servier/culture-flask-stacked.svg",
+      "format": "svg",
+      "original_sha256": "087195be2fb40e87d27d9ad52ec43dc6b2a449a2d2e5e0962822eb39d66112e0",
+      "original_archive": {
+        "member": "files/08/087195be2fb40e87d27d9ad52ec43dc6b2a449a2d2e5e0962822eb39d66112e0.svg",
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42251588741-1-b0003.tar.gz"
+      },
+      "preview": {
+        "archive": {
+          "member": "previews/087195be2fb40e87d27d9ad52ec43dc6b2a449a2d2e5e0962822eb39d66112e0.png",
+          "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42251588741-1-b0003.tar.gz"
+        },
+        "format": "png",
+        "height": 449,
+        "path": "previews/087195be2fb40e87d27d9ad52ec43dc6b2a449a2d2e5e0962822eb39d66112e0.png",
+        "sha256": "350cbd882e1bd2987e205ee1054186a295e61a34b248fb5418362b3d35113b7a",
+        "size_bytes": 75318,
+        "width": 512
+      },
+      "review_question": "来源支持用于细胞培养的培养瓶，瓶体和瓶颈结构清楚；不能把普通饮料瓶或烧杯改名。",
+      "actual_query_ids": [
+        "component-experimental_actions-cell-culture--culture_flask--zh",
+        "component-experimental_actions-cell-culture--culture_flask--en"
+      ],
+      "role_ids": [
+        "culture_flask"
+      ]
+    },
+    {
+      "source": "togo",
+      "source_id": "1884",
+      "asset_id": "togo-3905c37d757359375261",
+      "title": "Animal cell 3D",
+      "source_url": "https://doi.org/10.7875/togopic.2024.043",
+      "format": "svg",
+      "original_sha256": "06bcfb5618058c69a80bea75e0f87daf3dca5bc990d66d3b7711d8b5f8a5262d",
+      "original_archive": {
+        "member": "files/06/06bcfb5618058c69a80bea75e0f87daf3dca5bc990d66d3b7711d8b5f8a5262d.svg",
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42261598057-1-b0001.tar.gz"
+      },
+      "preview": {
+        "archive": {
+          "member": "previews/06bcfb5618058c69a80bea75e0f87daf3dca5bc990d66d3b7711d8b5f8a5262d.png",
+          "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42261598057-1-b0001.tar.gz"
+        },
+        "format": "png",
+        "height": 512,
+        "path": "previews/06bcfb5618058c69a80bea75e0f87daf3dca5bc990d66d3b7711d8b5f8a5262d.png",
+        "sha256": "3cf0047875d6ebda4b3db4b20a5f0328218c2a10f3cc2dc6db53c0a2873ca636",
+        "size_bytes": 162158,
+        "width": 512
+      },
+      "review_question": "来源支持动物细胞，细胞边界和主体结构可辨；不得仅凭圆形猜细胞身份，不以植物细胞、细菌、器官或细胞培养结果图代替。",
+      "actual_query_ids": [
+        "component-experimental_actions-cell-culture--animal_cell--zh",
+        "component-experimental_actions-cell-culture--animal_cell--en"
+      ],
+      "role_ids": [
+        "animal_cell"
+      ]
+    },
+    {
+      "source": "bioicons",
+      "source_id": "cc-by-4.0/Microbiology/SwissBioPics/Animal_cells.svg",
+      "asset_id": "bioicons-45081cb3df7987201695",
+      "title": "Animal cells",
+      "source_url": "https://github.com/duerrsimon/bioicons/blob/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-4.0/Microbiology/SwissBioPics/Animal_cells.svg",
+      "format": "svg",
+      "original_sha256": "9a8280ab46a28c0be147902274f597cd7b05303b57dfd1efd589d6e362643523",
+      "original_archive": {
+        "member": "files/9a/9a8280ab46a28c0be147902274f597cd7b05303b57dfd1efd589d6e362643523.svg",
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42239971379-1-b0005.tar.gz"
+      },
+      "preview": {
+        "archive": {
+          "member": "previews/9a8280ab46a28c0be147902274f597cd7b05303b57dfd1efd589d6e362643523.png",
+          "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42239971379-1-b0005.tar.gz"
+        },
+        "format": "png",
+        "height": 430,
+        "path": "previews/9a8280ab46a28c0be147902274f597cd7b05303b57dfd1efd589d6e362643523.png",
+        "sha256": "8faeb7ae86041f97ddb13afc2dac6567bed1d99b6a4ee21b09b9d4df95e738a0",
+        "size_bytes": 190946,
+        "width": 512
+      },
+      "review_question": "来源支持动物细胞，细胞边界和主体结构可辨；不得仅凭圆形猜细胞身份，不以植物细胞、细菌、器官或细胞培养结果图代替。",
+      "actual_query_ids": [
+        "component-experimental_actions-cell-culture--animal_cell--zh",
+        "component-experimental_actions-cell-culture--animal_cell--en"
+      ],
+      "role_ids": [
+        "animal_cell"
+      ]
+    },
+    {
+      "source": "scidraw",
+      "source_id": "6ffe8449-2d38-4b23-a406-8e3a4b7eedcd",
+      "asset_id": "scidraw-1d3bb2ab01e70442bf10",
+      "title": "Animal Cell drawing",
+      "source_url": "https://scidraw.io/drawing/animal-cell-drawing-10b51f68",
+      "format": "png",
+      "original_sha256": "4b9cf4168e29cc7a5b51b2ebc7974873459aa70d9a2d6f81d8ba5af0d0406c85",
+      "original_archive": {
+        "member": "files/4b/4b9cf4168e29cc7a5b51b2ebc7974873459aa70d9a2d6f81d8ba5af0d0406c85.png",
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scidraw-42235890704-1-b0000.tar.gz"
+      },
+      "preview": {
+        "archive": {
+          "member": "previews/4b9cf4168e29cc7a5b51b2ebc7974873459aa70d9a2d6f81d8ba5af0d0406c85.png",
+          "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scidraw-42235890704-1-b0000.tar.gz"
+        },
+        "format": "png",
+        "height": 309,
+        "path": "previews/4b9cf4168e29cc7a5b51b2ebc7974873459aa70d9a2d6f81d8ba5af0d0406c85.png",
+        "sha256": "9e21f4db0932a433dfb8d4b7346358410a42af038e9c3933dd5ac466a5e60966",
+        "size_bytes": 114011,
+        "width": 512
+      },
+      "review_question": "来源支持动物细胞，细胞边界和主体结构可辨；不得仅凭圆形猜细胞身份，不以植物细胞、细菌、器官或细胞培养结果图代替。",
+      "actual_query_ids": [
+        "component-experimental_actions-cell-culture--animal_cell--zh",
+        "component-experimental_actions-cell-culture--animal_cell--en"
+      ],
+      "role_ids": [
+        "animal_cell"
+      ]
+    },
+    {
+      "source": "togo",
+      "source_id": "1356",
+      "asset_id": "togo-d6761659780191fd480d",
+      "title": "Centrifuge tube 1",
+      "source_url": "https://doi.org/10.7875/togopic.2022.392",
+      "format": "png",
+      "original_sha256": "30ac7956a6718c91e2c203684783ba8a09cf5aa01f6fa3e1b6f2f0048a485f79",
+      "original_archive": {
+        "member": "files/30/30ac7956a6718c91e2c203684783ba8a09cf5aa01f6fa3e1b6f2f0048a485f79.png",
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42249870031-1-b0002.tar.gz"
+      },
+      "preview": {
+        "archive": {
+          "member": "previews/30ac7956a6718c91e2c203684783ba8a09cf5aa01f6fa3e1b6f2f0048a485f79.png",
+          "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42249870031-1-b0002.tar.gz"
+        },
+        "format": "png",
+        "height": 400,
+        "path": "previews/30ac7956a6718c91e2c203684783ba8a09cf5aa01f6fa3e1b6f2f0048a485f79.png",
+        "sha256": "ca2fdde1f2b349eb676f98c6f5e88079b8a1c8cf86beb16cbb839034e39d45fa",
+        "size_bytes": 2990,
+        "width": 400
+      },
+      "review_question": "来源明确为离心管，管体与盖/开口可辨；不凭外观断言容量、最高转速或材料性能。",
+      "actual_query_ids": [
+        "component-experimental_actions-centrifugation--centrifuge_tube--zh",
+        "component-experimental_actions-centrifugation--centrifuge_tube--en"
+      ],
+      "role_ids": [
+        "centrifuge_tube"
+      ]
+    },
+    {
+      "source": "togo",
+      "source_id": "728",
+      "asset_id": "togo-1df481447a34fd3997ed",
+      "title": "Centrifuge tube",
+      "source_url": "https://doi.org/10.7875/togopic.2020.141",
+      "format": "png",
+      "original_sha256": "59d1db9b97b7d3790a112c1d2da32faf5e4f73b7606ea1a3076c0d7ec9640133",
+      "original_archive": {
+        "member": "files/59/59d1db9b97b7d3790a112c1d2da32faf5e4f73b7606ea1a3076c0d7ec9640133.png",
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42249870031-1-b0001.tar.gz"
+      },
+      "preview": {
+        "archive": {
+          "member": "previews/59d1db9b97b7d3790a112c1d2da32faf5e4f73b7606ea1a3076c0d7ec9640133.png",
+          "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42249870031-1-b0001.tar.gz"
+        },
+        "format": "png",
+        "height": 387,
+        "path": "previews/59d1db9b97b7d3790a112c1d2da32faf5e4f73b7606ea1a3076c0d7ec9640133.png",
+        "sha256": "8cb4990285fce79e8ce0a059787e73b3434d15d079b2c4c517b5d849c6de0fb8",
+        "size_bytes": 17783,
+        "width": 400
+      },
+      "review_question": "来源明确为离心管，管体与盖/开口可辨；不凭外观断言容量、最高转速或材料性能。",
+      "actual_query_ids": [
+        "component-experimental_actions-centrifugation--centrifuge_tube--zh",
+        "component-experimental_actions-centrifugation--centrifuge_tube--en"
+      ],
+      "role_ids": [
+        "centrifuge_tube"
+      ]
+    },
+    {
+      "source": "togo",
+      "source_id": "636",
+      "asset_id": "togo-143f471b8e2f420021c9",
+      "title": "Centrifuge tube",
+      "source_url": "https://doi.org/10.7875/togopic.2020.49",
+      "format": "svg",
+      "original_sha256": "4a2fd837d1be61460f50949b32ba7322f2d2a817e28e8616940e92b098338ff3",
+      "original_archive": {
+        "member": "files/4a/4a2fd837d1be61460f50949b32ba7322f2d2a817e28e8616940e92b098338ff3.svg",
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42249870031-1-b0001.tar.gz"
+      },
+      "preview": {
+        "archive": {
+          "member": "previews/4a2fd837d1be61460f50949b32ba7322f2d2a817e28e8616940e92b098338ff3.png",
+          "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42249870031-1-b0001.tar.gz"
+        },
+        "format": "png",
+        "height": 512,
+        "path": "previews/4a2fd837d1be61460f50949b32ba7322f2d2a817e28e8616940e92b098338ff3.png",
+        "sha256": "436fb3f558d64189c73a5ace3bcc43b9b69221000510f1cafef61a3d8f191e31",
+        "size_bytes": 8908,
+        "width": 512
+      },
+      "review_question": "来源明确为离心管，管体与盖/开口可辨；不凭外观断言容量、最高转速或材料性能。",
+      "actual_query_ids": [
+        "component-experimental_actions-centrifugation--centrifuge_tube--zh",
+        "component-experimental_actions-centrifugation--centrifuge_tube--en"
+      ],
+      "role_ids": [
+        "centrifuge_tube"
+      ]
+    },
+    {
+      "source": "togo",
+      "source_id": "1358",
+      "asset_id": "togo-97eb09fce1cbd99a744e",
+      "title": "Centrifuge tube 3",
+      "source_url": "https://doi.org/10.7875/togopic.2022.394",
+      "format": "svg",
+      "original_sha256": "2dd0e3e694cc5040d0b92201fa07a390145eb69681483226ba3a5318376a3494",
+      "original_archive": {
+        "member": "files/2d/2dd0e3e694cc5040d0b92201fa07a390145eb69681483226ba3a5318376a3494.svg",
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42249870031-1-b0002.tar.gz"
+      },
+      "preview": {
+        "archive": {
+          "member": "previews/2dd0e3e694cc5040d0b92201fa07a390145eb69681483226ba3a5318376a3494.png",
+          "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42249870031-1-b0002.tar.gz"
+        },
+        "format": "png",
+        "height": 512,
+        "path": "previews/2dd0e3e694cc5040d0b92201fa07a390145eb69681483226ba3a5318376a3494.png",
+        "sha256": "c0bfac6d6661679298f23a2f70c91cbdcea7f37f48c971ff3bad46bc670ea688",
+        "size_bytes": 6477,
+        "width": 512
+      },
+      "review_question": "来源明确为离心管，管体与盖/开口可辨；不凭外观断言容量、最高转速或材料性能。",
+      "actual_query_ids": [
+        "component-experimental_actions-centrifugation--centrifuge_tube--zh",
+        "component-experimental_actions-centrifugation--centrifuge_tube--en"
+      ],
+      "role_ids": [
+        "centrifuge_tube"
+      ]
+    },
+    {
+      "source": "nih-bioart",
+      "source_id": "750",
+      "asset_id": "nih-bioart-0b11becf9df7efc56f30",
+      "title": "Short Hair Person 5",
+      "source_url": "https://bioart.niaid.nih.gov/bioart/750",
+      "format": "png",
+      "original_sha256": "1014014a42ba287b7c999a6afef442866e452fe070e7ee2be566351c36385f93",
+      "original_archive": {
+        "member": "files/10/1014014a42ba287b7c999a6afef442866e452fe070e7ee2be566351c36385f93.png",
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/nih-bioart-42236561214-1-b0001.tar.gz"
+      },
+      "preview": {
+        "archive": {
+          "member": "previews/1014014a42ba287b7c999a6afef442866e452fe070e7ee2be566351c36385f93.png",
+          "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/nih-bioart-42236561214-1-b0001.tar.gz"
+        },
+        "format": "png",
+        "height": 512,
+        "path": "previews/1014014a42ba287b7c999a6afef442866e452fe070e7ee2be566351c36385f93.png",
+        "sha256": "228687349243321ca0a073df74b96693da8164bc758f1e69aedc3a7095dfc773",
+        "size_bytes": 56556,
+        "width": 512
+      },
+      "review_question": "实际可辨的人体人物，不携带真实个人身份或研究人数；仅作为研究中人体对象的代表，不声称来源人物已入组。",
+      "actual_query_ids": [
+        "component-clinical_workflow-cohort-followup--human_subject--zh",
+        "component-clinical_workflow-cohort-followup--human_subject--en"
+      ],
+      "role_ids": [
+        "human_subject"
+      ]
+    }
+  ]
+}

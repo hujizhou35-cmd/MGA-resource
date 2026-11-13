@@ -1,0 +1,435 @@
+{
+  "schema_version": 1,
+  "catalog_sha256": "331a28608746cd36fbd4c7d69b1890b4c8519d38a9f4ede29411691eb5ff1a28",
+  "purpose": "Actual current replay files with no located exact prior observation. Bounded previews only; preserve original benchmark results.",
+  "files": [
+    {
+      "source": "nih-bioart",
+      "source_id": "555",
+      "asset_id": "nih-bioart-19f29435e8610f854638",
+      "title": "Person Standing",
+      "source_url": "https://bioart.niaid.nih.gov/bioart/555",
+      "format": "png",
+      "original_sha256": "2a48235cb19306b67766697bf4b6765775d3676a89a0a404f5a75a10a04cd625",
+      "original_archive": {
+        "member": "files/2a/2a48235cb19306b67766697bf4b6765775d3676a89a0a404f5a75a10a04cd625.png",
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/nih-bioart-42236561214-1-b0001.tar.gz"
+      },
+      "preview": {
+        "archive": {
+          "member": "previews/2a48235cb19306b67766697bf4b6765775d3676a89a0a404f5a75a10a04cd625.png",
+          "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/nih-bioart-42236561214-1-b0001.tar.gz"
+        },
+        "format": "png",
+        "height": 512,
+        "path": "previews/2a48235cb19306b67766697bf4b6765775d3676a89a0a404f5a75a10a04cd625.png",
+        "sha256": "ae60060f650280544319e5dad77bcd21522cf9be599d4396f400b80c04b38134",
+        "size_bytes": 67336,
+        "width": 512
+      },
+      "review_question": "实际可辨的人体人物，不携带真实个人身份或研究人数；仅作为研究中人体对象的代表，不声称来源人物已入组。",
+      "actual_query_ids": [
+        "component-clinical_workflow-cohort-followup--human_subject--zh",
+        "component-clinical_workflow-cohort-followup--human_subject--en"
+      ],
+      "role_ids": [
+        "human_subject"
+      ]
+    },
+    {
+      "source": "healthicons",
+      "source_id": "public/icons/svg/filled/people/person.svg",
+      "asset_id": "healthicons-8ffe37b1a2391764b6f0",
+      "title": "Person",
+      "source_url": "https://github.com/resolvetosavelives/healthicons/blob/2080c1b40e4829f2f4217e03bc22908b4e402f6b/public/icons/svg/filled/people/person.svg",
+      "format": "svg",
+      "original_sha256": "2a91f269af30a8943041b5201a02756ce525fb132cca34d140bf77d3c0fd6436",
+      "original_archive": {
+        "member": "files/2a/2a91f269af30a8943041b5201a02756ce525fb132cca34d140bf77d3c0fd6436.svg",
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/healthicons-42234355854-1-b0001.tar.gz"
+      },
+      "preview": {
+        "archive": {
+          "member": "previews/2a91f269af30a8943041b5201a02756ce525fb132cca34d140bf77d3c0fd6436.png",
+          "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/healthicons-42234355854-1-b0001.tar.gz"
+        },
+        "format": "png",
+        "height": 512,
+        "path": "previews/2a91f269af30a8943041b5201a02756ce525fb132cca34d140bf77d3c0fd6436.png",
+        "sha256": "b47cb0d9876a36b99a59e51d3467ca950212fea0b6f920c23bd91f9e985a62a5",
+        "size_bytes": 6213,
+        "width": 512
+      },
+      "review_question": "实际可辨的人体人物，不携带真实个人身份或研究人数；仅作为研究中人体对象的代表，不声称来源人物已入组。",
+      "actual_query_ids": [
+        "component-clinical_workflow-cohort-followup--human_subject--zh",
+        "component-clinical_workflow-cohort-followup--human_subject--en"
+      ],
+      "role_ids": [
+        "human_subject"
+      ]
+    },
+    {
+      "source": "nih-bioart",
+      "source_id": "745",
+      "asset_id": "nih-bioart-e5390f541ddd2d73044e",
+      "title": "Long Hair Person in Lab Coat 5",
+      "source_url": "https://bioart.niaid.nih.gov/bioart/745",
+      "format": "png",
+      "original_sha256": "1820e35e410f6ef4e037864e56e2a991d573cb3c4add7dd200b2b8712d6d6c43",
+      "original_archive": {
+        "member": "files/18/1820e35e410f6ef4e037864e56e2a991d573cb3c4add7dd200b2b8712d6d6c43.png",
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/nih-bioart-42236561214-1-b0001.tar.gz"
+      },
+      "preview": {
+        "archive": {
+          "member": "previews/1820e35e410f6ef4e037864e56e2a991d573cb3c4add7dd200b2b8712d6d6c43.png",
+          "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/nih-bioart-42236561214-1-b0001.tar.gz"
+        },
+        "format": "png",
+        "height": 512,
+        "path": "previews/1820e35e410f6ef4e037864e56e2a991d573cb3c4add7dd200b2b8712d6d6c43.png",
+        "sha256": "bb978b7cd51e847edfd1cfb8bc5a548803cd97c86f4fdabae2b5bbc0b6a71674",
+        "size_bytes": 64583,
+        "width": 512
+      },
+      "review_question": "实际可辨的人体人物，不携带真实个人身份或研究人数；仅作为研究中人体对象的代表，不声称来源人物已入组。",
+      "actual_query_ids": [
+        "component-clinical_workflow-cohort-followup--human_subject--zh",
+        "component-clinical_workflow-cohort-followup--human_subject--en"
+      ],
+      "role_ids": [
+        "human_subject"
+      ]
+    },
+    {
+      "source": "nih-bioart",
+      "source_id": "751",
+      "asset_id": "nih-bioart-31deb3116b1eb9a06337",
+      "title": "Short Hair Person in Lab Coat 3",
+      "source_url": "https://bioart.niaid.nih.gov/bioart/751",
+      "format": "png",
+      "original_sha256": "17b02fc638c77d5ee9bdd1769e42cb58ff433862b86284b6059cc17cef337c56",
+      "original_archive": {
+        "member": "files/17/17b02fc638c77d5ee9bdd1769e42cb58ff433862b86284b6059cc17cef337c56.png",
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/nih-bioart-42236561214-1-b0001.tar.gz"
+      },
+      "preview": {
+        "archive": {
+          "member": "previews/17b02fc638c77d5ee9bdd1769e42cb58ff433862b86284b6059cc17cef337c56.png",
+          "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/nih-bioart-42236561214-1-b0001.tar.gz"
+        },
+        "format": "png",
+        "height": 512,
+        "path": "previews/17b02fc638c77d5ee9bdd1769e42cb58ff433862b86284b6059cc17cef337c56.png",
+        "sha256": "f0bc792e11ef3298f18a23df1e665167a96c603bc25a6db0dcb8581e60485e26",
+        "size_bytes": 59877,
+        "width": 512
+      },
+      "review_question": "实际可辨的人体人物，不携带真实个人身份或研究人数；仅作为研究中人体对象的代表，不声称来源人物已入组。",
+      "actual_query_ids": [
+        "component-clinical_workflow-cohort-followup--human_subject--zh",
+        "component-clinical_workflow-cohort-followup--human_subject--en"
+      ],
+      "role_ids": [
+        "human_subject"
+      ]
+    },
+    {
+      "source": "nih-bioart",
+      "source_id": "741",
+      "asset_id": "nih-bioart-8e79073e15120955e045",
+      "title": "Long Hair Person 4",
+      "source_url": "https://bioart.niaid.nih.gov/bioart/741",
+      "format": "svg",
+      "original_sha256": "02c261fd5f314f363c07bdfa16fcd2bd5d27c89f72d86a42d0381451a3ad5fde",
+      "original_archive": {
+        "member": "files/02/02c261fd5f314f363c07bdfa16fcd2bd5d27c89f72d86a42d0381451a3ad5fde.svg",
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/nih-bioart-42236561214-1-b0001.tar.gz"
+      },
+      "preview": {
+        "archive": {
+          "member": "previews/02c261fd5f314f363c07bdfa16fcd2bd5d27c89f72d86a42d0381451a3ad5fde.png",
+          "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/nih-bioart-42236561214-1-b0001.tar.gz"
+        },
+        "format": "png",
+        "height": 512,
+        "path": "previews/02c261fd5f314f363c07bdfa16fcd2bd5d27c89f72d86a42d0381451a3ad5fde.png",
+        "sha256": "759ab5867a0b6b4d09907aa3f08f50fda5b474829073adc6877769d6d2309bf0",
+        "size_bytes": 17557,
+        "width": 512
+      },
+      "review_question": "实际可辨的人体人物，不携带真实个人身份或研究人数；仅作为研究中人体对象的代表，不声称来源人物已入组。",
+      "actual_query_ids": [
+        "component-clinical_workflow-cohort-followup--human_subject--zh",
+        "component-clinical_workflow-cohort-followup--human_subject--en"
+      ],
+      "role_ids": [
+        "human_subject"
+      ]
+    },
+    {
+      "source": "nih-bioart",
+      "source_id": "389",
+      "asset_id": "nih-bioart-37bd132ae6824955fce4",
+      "title": "Person walking",
+      "source_url": "https://bioart.niaid.nih.gov/bioart/389",
+      "format": "png",
+      "original_sha256": "2c30b2e977c5bb17a34c6e0f45d0622c2f2328d35050c44bc1cb2879a451bdcc",
+      "original_archive": {
+        "member": "files/2c/2c30b2e977c5bb17a34c6e0f45d0622c2f2328d35050c44bc1cb2879a451bdcc.png",
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/nih-bioart-42236561214-1-b0000.tar.gz"
+      },
+      "preview": {
+        "archive": {
+          "member": "previews/2c30b2e977c5bb17a34c6e0f45d0622c2f2328d35050c44bc1cb2879a451bdcc.png",
+          "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/nih-bioart-42236561214-1-b0000.tar.gz"
+        },
+        "format": "png",
+        "height": 512,
+        "path": "previews/2c30b2e977c5bb17a34c6e0f45d0622c2f2328d35050c44bc1cb2879a451bdcc.png",
+        "sha256": "1e4fe6522e88210fcca6145ca73bc89dea9d85b55a9d6006038cb3752d21973b",
+        "size_bytes": 49427,
+        "width": 209
+      },
+      "review_question": "实际可辨的人体人物，不携带真实个人身份或研究人数；仅作为研究中人体对象的代表，不声称来源人物已入组。",
+      "actual_query_ids": [
+        "component-clinical_workflow-cohort-followup--human_subject--zh",
+        "component-clinical_workflow-cohort-followup--human_subject--en"
+      ],
+      "role_ids": [
+        "human_subject"
+      ]
+    },
+    {
+      "source": "nih-bioart",
+      "source_id": "923",
+      "asset_id": "nih-bioart-5a485f8abf10770608d7",
+      "title": "Person",
+      "source_url": "https://bioart.niaid.nih.gov/bioart/923",
+      "format": "png",
+      "original_sha256": "0bdfda4e956e5938a579c544debaec2ff97e8e6011dc635ec9c214eee23fe915",
+      "original_archive": {
+        "member": "files/0b/0bdfda4e956e5938a579c544debaec2ff97e8e6011dc635ec9c214eee23fe915.png",
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/nih-bioart-42248095929-1-b0000.tar.gz"
+      },
+      "preview": {
+        "archive": {
+          "member": "previews/0bdfda4e956e5938a579c544debaec2ff97e8e6011dc635ec9c214eee23fe915.png",
+          "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/nih-bioart-42248095929-1-b0000.tar.gz"
+        },
+        "format": "png",
+        "height": 512,
+        "path": "previews/0bdfda4e956e5938a579c544debaec2ff97e8e6011dc635ec9c214eee23fe915.png",
+        "sha256": "be63868e0e4fbbaf92dbd9f958260a4c8cdc96c0536527c1b584ff8d93e4228b",
+        "size_bytes": 51936,
+        "width": 512
+      },
+      "review_question": "实际可辨的人体人物，不携带真实个人身份或研究人数；仅作为研究中人体对象的代表，不声称来源人物已入组。",
+      "actual_query_ids": [
+        "component-clinical_workflow-cohort-followup--human_subject--zh"
+      ],
+      "role_ids": [
+        "human_subject"
+      ]
+    },
+    {
+      "source": "togo",
+      "source_id": "1590",
+      "asset_id": "bioicons-523169f43322e2389803",
+      "title": "transgenic two-spotted cricket expressing GFP(Green Fluorescent Protein) gene",
+      "source_url": "https://doi.org/10.7875/togopic.2023.026",
+      "format": "svg",
+      "original_sha256": "20b251bde975f9055c7ef9f6a6f8ebfbee760dd186d43a6a628373a958a0d6fc",
+      "original_archive": {
+        "member": "files/20/20b251bde975f9055c7ef9f6a6f8ebfbee760dd186d43a6a628373a958a0d6fc.svg",
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42239971379-1-b0004.tar.gz"
+      },
+      "preview": {
+        "archive": {
+          "member": "previews/20b251bde975f9055c7ef9f6a6f8ebfbee760dd186d43a6a628373a958a0d6fc.png",
+          "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42239971379-1-b0004.tar.gz"
+        },
+        "format": "png",
+        "height": 512,
+        "path": "previews/20b251bde975f9055c7ef9f6a6f8ebfbee760dd186d43a6a628373a958a0d6fc.png",
+        "sha256": "b7666eb2d9a877a64bb3ab8001db5cc73e5e95355bce17d5ca9127c4cac3bdf9",
+        "size_bytes": 84647,
+        "width": 512
+      },
+      "review_question": "来源支持蛋白质，图中有实际分子形状、折叠或其他结构表现；纯文字名称加框/椭圆不计，不能推断未标明功能或定量表达。",
+      "actual_query_ids": [
+        "component-omics_data-heatmap--protein--zh",
+        "component-omics_data-heatmap--protein--en"
+      ],
+      "role_ids": [
+        "protein"
+      ]
+    },
+    {
+      "source": "bioicons",
+      "source_id": "cc-by-4.0/Intracellular_components/DBCLS/Protein_primary_structure.svg",
+      "asset_id": "bioicons-89bf842d70734288a1d9",
+      "title": "Protein primary structure",
+      "source_url": "https://github.com/duerrsimon/bioicons/blob/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-4.0/Intracellular_components/DBCLS/Protein_primary_structure.svg",
+      "format": "svg",
+      "original_sha256": "442eb62c23332a886707f090be33ec70979d1cfc74ccfad1714d22044d879734",
+      "original_archive": {
+        "member": "files/44/442eb62c23332a886707f090be33ec70979d1cfc74ccfad1714d22044d879734.svg",
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42239971379-1-b0004.tar.gz"
+      },
+      "preview": {
+        "archive": {
+          "member": "previews/442eb62c23332a886707f090be33ec70979d1cfc74ccfad1714d22044d879734.png",
+          "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42239971379-1-b0004.tar.gz"
+        },
+        "format": "png",
+        "height": 512,
+        "path": "previews/442eb62c23332a886707f090be33ec70979d1cfc74ccfad1714d22044d879734.png",
+        "sha256": "88e436c444114805f815d7f85c35b7e55c301b92042cb80c3b373468503da7ef",
+        "size_bytes": 23795,
+        "width": 512
+      },
+      "review_question": "来源支持蛋白质，图中有实际分子形状、折叠或其他结构表现；纯文字名称加框/椭圆不计，不能推断未标明功能或定量表达。",
+      "actual_query_ids": [
+        "component-omics_data-heatmap--protein--zh",
+        "component-omics_data-heatmap--protein--en"
+      ],
+      "role_ids": [
+        "protein"
+      ]
+    },
+    {
+      "source": "togo",
+      "source_id": "998",
+      "asset_id": "bioicons-c3264f0e5c3743e9eb31",
+      "title": "Protein purification (monochrome)",
+      "source_url": "https://doi.org/10.7875/togopic.2022.034",
+      "format": "png",
+      "original_sha256": "561549c7770e1185f23a58e497014eeab2c236f1f050b697589fade72e3e161b",
+      "original_archive": {
+        "member": "files/56/561549c7770e1185f23a58e497014eeab2c236f1f050b697589fade72e3e161b.png",
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42249870031-1-b0001.tar.gz"
+      },
+      "preview": {
+        "archive": {
+          "member": "previews/561549c7770e1185f23a58e497014eeab2c236f1f050b697589fade72e3e161b.png",
+          "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42249870031-1-b0001.tar.gz"
+        },
+        "format": "png",
+        "height": 351,
+        "path": "previews/561549c7770e1185f23a58e497014eeab2c236f1f050b697589fade72e3e161b.png",
+        "sha256": "d983431cef5960966076f4166b081fb54001d24b37ef0fc8662d906b8dfb861f",
+        "size_bytes": 8364,
+        "width": 351
+      },
+      "review_question": "来源支持蛋白质，图中有实际分子形状、折叠或其他结构表现；纯文字名称加框/椭圆不计，不能推断未标明功能或定量表达。",
+      "actual_query_ids": [
+        "component-omics_data-heatmap--protein--zh",
+        "component-omics_data-heatmap--protein--en"
+      ],
+      "role_ids": [
+        "protein"
+      ]
+    },
+    {
+      "source": "bioicons",
+      "source_id": "cc-by-4.0/Intracellular_components/DBCLS/protein-link.svg",
+      "asset_id": "bioicons-27c479311f328d2747c7",
+      "title": "protein link",
+      "source_url": "https://github.com/duerrsimon/bioicons/blob/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-4.0/Intracellular_components/DBCLS/protein-link.svg",
+      "format": "svg",
+      "original_sha256": "91272f8c3a63aef30a1e37b3e3031b65e47ef5e7798ac9adb87e6074a4dc6399",
+      "original_archive": {
+        "member": "files/91/91272f8c3a63aef30a1e37b3e3031b65e47ef5e7798ac9adb87e6074a4dc6399.svg",
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42251588741-1-b0017.tar.gz"
+      },
+      "preview": {
+        "archive": {
+          "member": "previews/91272f8c3a63aef30a1e37b3e3031b65e47ef5e7798ac9adb87e6074a4dc6399.png",
+          "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42251588741-1-b0017.tar.gz"
+        },
+        "format": "png",
+        "height": 512,
+        "path": "previews/91272f8c3a63aef30a1e37b3e3031b65e47ef5e7798ac9adb87e6074a4dc6399.png",
+        "sha256": "68b5cc77d28e07e0df642f0b6993e55b47f64d4c8ec5bbac5b9ed2d5f73ff935",
+        "size_bytes": 67711,
+        "width": 512
+      },
+      "review_question": "来源支持蛋白质，图中有实际分子形状、折叠或其他结构表现；纯文字名称加框/椭圆不计，不能推断未标明功能或定量表达。",
+      "actual_query_ids": [
+        "component-omics_data-heatmap--protein--zh",
+        "component-omics_data-heatmap--protein--en"
+      ],
+      "role_ids": [
+        "protein"
+      ]
+    },
+    {
+      "source": "nih-bioart",
+      "source_id": "934",
+      "asset_id": "nih-bioart-373e3f6450cb4971a52c",
+      "title": "Protein Squiggle",
+      "source_url": "https://bioart.niaid.nih.gov/bioart/934",
+      "format": "png",
+      "original_sha256": "025629957d59f67e49fc419c5f8b2eef7ca6117a071aed1705e0adce375076bb",
+      "original_archive": {
+        "member": "files/02/025629957d59f67e49fc419c5f8b2eef7ca6117a071aed1705e0adce375076bb.png",
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/nih-bioart-42248095929-1-b0000.tar.gz"
+      },
+      "preview": {
+        "archive": {
+          "member": "previews/025629957d59f67e49fc419c5f8b2eef7ca6117a071aed1705e0adce375076bb.png",
+          "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/nih-bioart-42248095929-1-b0000.tar.gz"
+        },
+        "format": "png",
+        "height": 504,
+        "path": "previews/025629957d59f67e49fc419c5f8b2eef7ca6117a071aed1705e0adce375076bb.png",
+        "sha256": "19d751a972c3f14ef9c97a13704e7ea22c68edce0c033539a68d39544c383c6c",
+        "size_bytes": 40939,
+        "width": 512
+      },
+      "review_question": "来源支持蛋白质，图中有实际分子形状、折叠或其他结构表现；纯文字名称加框/椭圆不计，不能推断未标明功能或定量表达。",
+      "actual_query_ids": [
+        "component-omics_data-heatmap--protein--zh",
+        "component-omics_data-heatmap--protein--en"
+      ],
+      "role_ids": [
+        "protein"
+      ]
+    },
+    {
+      "source": "bioicons",
+      "source_id": "cc-by-3.0/Receptors_channels/Servier/exchanger-protein-green.svg",
+      "asset_id": "bioicons-c345470d3be130b5476c",
+      "title": "exchanger protein green",
+      "source_url": "https://github.com/duerrsimon/bioicons/blob/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-3.0/Receptors_channels/Servier/exchanger-protein-green.svg",
+      "format": "svg",
+      "original_sha256": "1b052cdce461f384d493dea13dee88a8d2add0048e743fc70b7faa7c317285b9",
+      "original_archive": {
+        "member": "files/1b/1b052cdce461f384d493dea13dee88a8d2add0048e743fc70b7faa7c317285b9.svg",
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42251588741-1-b0004.tar.gz"
+      },
+      "preview": {
+        "archive": {
+          "member": "previews/1b052cdce461f384d493dea13dee88a8d2add0048e743fc70b7faa7c317285b9.png",
+          "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42251588741-1-b0004.tar.gz"
+        },
+        "format": "png",
+        "height": 511,
+        "path": "previews/1b052cdce461f384d493dea13dee88a8d2add0048e743fc70b7faa7c317285b9.png",
+        "sha256": "8c43a53c72d5f66ffb5b1720cc16c852c601e5d857ace9d57c6395180e4046bc",
+        "size_bytes": 59225,
+        "width": 512
+      },
+      "review_question": "来源支持蛋白质，图中有实际分子形状、折叠或其他结构表现；纯文字名称加框/椭圆不计，不能推断未标明功能或定量表达。",
+      "actual_query_ids": [
+        "component-omics_data-heatmap--protein--zh",
+        "component-omics_data-heatmap--protein--en"
+      ],
+      "role_ids": [
+        "protein"
+      ]
+    }
+  ]
+}
