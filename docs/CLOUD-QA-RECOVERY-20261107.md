@@ -18,6 +18,8 @@
 
 **接下来第一步**：先在现有云端目录定位独立完整人体手臂、带枪头的完整移液器、含屏幕的电脑，结合精确预览判断库存与检索缺口；确实缺素材才定向补充。已有结果和观察继续复用，补余下236位置及必要组合。正式验收器还需将新版本控制／范围／恢复证据与原冻结历史证据分开绑定，不能给旧报告改版本号。只有实际结果相关的修改后再作必要复验；通过前不搭建或部署网站。
 
+这三个剩余角色已完成来源目录初查，[候选索引](../data/diagnostics/remaining-role-candidates-20261114.json)记录现有Arm、Micropipette、Computer Monitor等对象；它们只是待看图的现有库存候选，没有补入基准结果。当前61份必要元数据／脚本／组合证据已存为约6.53 MB的[云端接续包](https://github.com/hujizhou35-cmd/MGA-resource/releases/download/acceptance-20261107/component-resume-20261114-43471774432.evidence.tar.gz)，不含图库原件、全目录或SQLite；[交付回执](../data/diagnostics/component-resume-20261114-delivery.json)保存逐成员和远端SHA核对结果。
+
 ## 2026-11-07 暂停接续说明（历史）
 
 用户因额度限制要求本轮收尾后暂停；即使验收通过，也不继续网站搭建或部署。代码版本 `6043895`，检索核心 `shared-search-3.5.0`，索引版本 `10`。以下历史报告不改写为新版已通过。

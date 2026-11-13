@@ -1,0 +1,2291 @@
+{
+  "catalog_sha256": "331a28608746cd36fbd4c7d69b1890b4c8519d38a9f4ede29411691eb5ff1a28",
+  "metadata_source_catalog_sha256": "8a961c42a357147f2ae0229526f6127c955e05928721d94283e829463f738da0",
+  "current_manifest_provenance_verified": true,
+  "new_searches_executed": 0,
+  "source_inventory_sha256": "aa62a7b830ee700fb58f49ac7b25244318b1a89467314d749e9c05d38f82e04b",
+  "candidates": {
+    "human_arm": [
+      {
+        "title": "T Maze Test Mouse Placed in One Arm with Food",
+        "source": "bioicons",
+        "source_id": "cc-by-4.0/Procedures/DBCLS/T_Maze_Test_Mouse_Placed_in_One_Arm_with_Food.svg",
+        "source_url": "https://github.com/duerrsimon/bioicons/blob/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-4.0/Procedures/DBCLS/T_Maze_Test_Mouse_Placed_in_One_Arm_with_Food.svg",
+        "original_sha256": "2632ddad754952b7e2d431fa481594dadbc926f4b83c740c8eaea32ed6495fa1",
+        "preview_sha256": "7f0cdaeac297fafb9d67dadae2d79ce021ca135fa74375b91c9a6f7594788740",
+        "format": "svg",
+        "asset_id": "bioicons-5ba7731dfe486b609661"
+      },
+      {
+        "title": "T maze test mouse placed in one arm with food",
+        "source": "togo",
+        "source_id": "913",
+        "source_url": "https://doi.org/10.7875/togopic.2021.108",
+        "original_sha256": "2632ddad754952b7e2d431fa481594dadbc926f4b83c740c8eaea32ed6495fa1",
+        "preview_sha256": "7f0cdaeac297fafb9d67dadae2d79ce021ca135fa74375b91c9a6f7594788740",
+        "format": "svg",
+        "asset_id": "bioicons-5ba7731dfe486b609661"
+      },
+      {
+        "title": "T maze test mouse placed in one arm with food",
+        "source": "togo",
+        "source_id": "913",
+        "source_url": "https://doi.org/10.7875/togopic.2021.108",
+        "original_sha256": "73746320e86ea5e0fccc114bb893bca867bbac8504c538a6fcdaf18790d740f4",
+        "preview_sha256": "8104e5b06d7c7d3383e3ff51c7a16bf798b5df78d2893dea550c86e090bfe688",
+        "format": "png",
+        "asset_id": "bioicons-5ba7731dfe486b609661"
+      },
+      {
+        "title": "T Maze Test Mouse Placed in the Start Arm",
+        "source": "bioicons",
+        "source_id": "cc-by-4.0/Procedures/DBCLS/T_Maze_Test_Mouse_Placed_in_the_Start_Arm.svg",
+        "source_url": "https://github.com/duerrsimon/bioicons/blob/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-4.0/Procedures/DBCLS/T_Maze_Test_Mouse_Placed_in_the_Start_Arm.svg",
+        "original_sha256": "bc67602ee44b96beed6a4b294b15c9e8a8a8d0e6355def262c60780dc906e059",
+        "preview_sha256": "8a65043e8d13524f9c63804abeef8e5eb3242f958b9f9343d02cc89a9e78de46",
+        "format": "svg",
+        "asset_id": "bioicons-74af28ba3d9dd2450cf6"
+      },
+      {
+        "title": "T maze test mouse placed in the start arm",
+        "source": "togo",
+        "source_id": "914",
+        "source_url": "https://doi.org/10.7875/togopic.2021.109",
+        "original_sha256": "bc67602ee44b96beed6a4b294b15c9e8a8a8d0e6355def262c60780dc906e059",
+        "preview_sha256": "8a65043e8d13524f9c63804abeef8e5eb3242f958b9f9343d02cc89a9e78de46",
+        "format": "svg",
+        "asset_id": "bioicons-74af28ba3d9dd2450cf6"
+      },
+      {
+        "title": "T maze test mouse placed in the start arm",
+        "source": "togo",
+        "source_id": "914",
+        "source_url": "https://doi.org/10.7875/togopic.2021.109",
+        "original_sha256": "ab72327aa8cbe8f6191cd7ab150293d9c1f8b2ee3ba430527caf1c3c38f2dc9b",
+        "preview_sha256": "ed9ccd480af1aae4d3f442d76b3152dbc0206579014b0affd1b4e22df7959c7e",
+        "format": "png",
+        "asset_id": "bioicons-74af28ba3d9dd2450cf6"
+      },
+      {
+        "title": "Elevated Plus Maze Test Mouse Placed in the Open Arm",
+        "source": "bioicons",
+        "source_id": "cc-by-4.0/Procedures/DBCLS/Elevated_Plus_Maze_Test_Mouse_Placed_in_the_Open_Arm.svg",
+        "source_url": "https://github.com/duerrsimon/bioicons/blob/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-4.0/Procedures/DBCLS/Elevated_Plus_Maze_Test_Mouse_Placed_in_the_Open_Arm.svg",
+        "original_sha256": "fabb461e303c12c07816f35e040551518384bb4fc95adbd3e7a0fade0d0e3930",
+        "preview_sha256": "f38f3a86bb77c70b9de831540d195ec890b2f38ebbf25411048d8b9922517cfd",
+        "format": "svg",
+        "asset_id": "bioicons-80da8e19b94e9950e768"
+      },
+      {
+        "title": "Elevated plus maze test mouse placed in the open arm",
+        "source": "togo",
+        "source_id": "916",
+        "source_url": "https://doi.org/10.7875/togopic.2021.111",
+        "original_sha256": "fabb461e303c12c07816f35e040551518384bb4fc95adbd3e7a0fade0d0e3930",
+        "preview_sha256": "f38f3a86bb77c70b9de831540d195ec890b2f38ebbf25411048d8b9922517cfd",
+        "format": "svg",
+        "asset_id": "bioicons-80da8e19b94e9950e768"
+      },
+      {
+        "title": "Elevated plus maze test mouse placed in the open arm",
+        "source": "togo",
+        "source_id": "916",
+        "source_url": "https://doi.org/10.7875/togopic.2021.111",
+        "original_sha256": "899ba1e911f74e0139ec970e20248878e2dc5c538487bfcc272a6b8f3642ef4c",
+        "preview_sha256": "83f103eda358ad99e1797d042808d7e2d094460dac52dba42f1c019a21dcd8b0",
+        "format": "png",
+        "asset_id": "bioicons-80da8e19b94e9950e768"
+      },
+      {
+        "title": "Elevated Plus Maze Test Mouse Placed in the Closed Arm",
+        "source": "bioicons",
+        "source_id": "cc-by-4.0/Procedures/DBCLS/Elevated_Plus_Maze_Test_Mouse_Placed_in_the_Closed_Arm.svg",
+        "source_url": "https://github.com/duerrsimon/bioicons/blob/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-4.0/Procedures/DBCLS/Elevated_Plus_Maze_Test_Mouse_Placed_in_the_Closed_Arm.svg",
+        "original_sha256": "e201b180b9d0e6d53f1c4714ba22be120f5eafa07c4d52e3e6151a63e2a4a371",
+        "preview_sha256": "7ebbb2778fa71a12581c2fa1ada59216daab92bbe7defa68382ff6f75afa8617",
+        "format": "svg",
+        "asset_id": "bioicons-d20d6643a8654c5f0bf9"
+      },
+      {
+        "title": "Elevated plus maze test mouse placed in the closed arm",
+        "source": "togo",
+        "source_id": "915",
+        "source_url": "https://doi.org/10.7875/togopic.2021.110",
+        "original_sha256": "e201b180b9d0e6d53f1c4714ba22be120f5eafa07c4d52e3e6151a63e2a4a371",
+        "preview_sha256": "7ebbb2778fa71a12581c2fa1ada59216daab92bbe7defa68382ff6f75afa8617",
+        "format": "svg",
+        "asset_id": "bioicons-d20d6643a8654c5f0bf9"
+      },
+      {
+        "title": "Elevated plus maze test mouse placed in the closed arm",
+        "source": "togo",
+        "source_id": "915",
+        "source_url": "https://doi.org/10.7875/togopic.2021.110",
+        "original_sha256": "d377850206369cb1d2da7a7aec58c6a9388e347a4fce556ca3ab9b6baf639011",
+        "preview_sha256": "73870a7f777f88435284daabc707c4609b380bc83e9702a27d9afb5f09d54c4f",
+        "format": "png",
+        "asset_id": "bioicons-d20d6643a8654c5f0bf9"
+      },
+      {
+        "title": "Arm Circumference",
+        "source": "healthicons",
+        "source_id": "public/icons/svg/outline/symbols/arm-circumference.svg",
+        "source_url": "https://github.com/resolvetosavelives/healthicons/blob/2080c1b40e4829f2f4217e03bc22908b4e402f6b/public/icons/svg/outline/symbols/arm-circumference.svg",
+        "original_sha256": "88bc95eda72e1226f7b157210731b67d1e6c50a3b10b6cb6edcb9f10b2fe9407",
+        "preview_sha256": "4f4851c91844f081f6d6cd81a55c3fa7889634cd69e61bcf8b1ced77da8222b2",
+        "format": "svg",
+        "asset_id": "healthicons-7df0c486d78475eb1992"
+      },
+      {
+        "title": "Arm Circumference",
+        "source": "healthicons",
+        "source_id": "public/icons/svg/filled/symbols/arm-circumference.svg",
+        "source_url": "https://github.com/resolvetosavelives/healthicons/blob/2080c1b40e4829f2f4217e03bc22908b4e402f6b/public/icons/svg/filled/symbols/arm-circumference.svg",
+        "original_sha256": "a79f2111459dc46ebb7747dbd02144c68432f1887e5e3ce5ef0814616c96fabc",
+        "preview_sha256": "f41c5484bfa57495e288df6536507a1226cd6c25eed1f67c6ff19b0506cc08bd",
+        "format": "svg",
+        "asset_id": "healthicons-7df0c486d78475eb1992"
+      },
+      {
+        "title": "Arm",
+        "source": "healthicons",
+        "source_id": "public/icons/svg/outline/body/arm.svg",
+        "source_url": "https://github.com/resolvetosavelives/healthicons/blob/2080c1b40e4829f2f4217e03bc22908b4e402f6b/public/icons/svg/outline/body/arm.svg",
+        "original_sha256": "e051867bbb905c5125fec58fa45db56d6a40b1b5327f1a41ad2a13bc62d08e9b",
+        "preview_sha256": "754de8d8076be8d8294890c934659e4ef187cf9c05913584971f8d5edf2f722e",
+        "format": "svg",
+        "asset_id": "healthicons-f9dbec50d6c1c336832f"
+      },
+      {
+        "title": "Arm",
+        "source": "healthicons",
+        "source_id": "public/icons/svg/filled-24px/body/arm.svg",
+        "source_url": "https://github.com/resolvetosavelives/healthicons/blob/2080c1b40e4829f2f4217e03bc22908b4e402f6b/public/icons/svg/filled-24px/body/arm.svg",
+        "original_sha256": "41ac4210505fe6a851371d90835fd2ac7febba7443d6e6ad8160c27ab71e3baa",
+        "preview_sha256": "ca697f362af1b33e767bfdfe442726815081ddd8b3ee7129224a8833638c9c6d",
+        "format": "svg",
+        "asset_id": "healthicons-f9dbec50d6c1c336832f"
+      },
+      {
+        "title": "Arm",
+        "source": "healthicons",
+        "source_id": "public/icons/svg/outline-24px/body/arm.svg",
+        "source_url": "https://github.com/resolvetosavelives/healthicons/blob/2080c1b40e4829f2f4217e03bc22908b4e402f6b/public/icons/svg/outline-24px/body/arm.svg",
+        "original_sha256": "ae140b4f5ab5ea0a5724c5a77e9e74a9108a9749874e808f186c819243d6cc0d",
+        "preview_sha256": "9a956bcd0df2cb03fb02e02e836bea16264e7275f8e53705b21e7e19aac0d8d1",
+        "format": "svg",
+        "asset_id": "healthicons-f9dbec50d6c1c336832f"
+      },
+      {
+        "title": "Arm",
+        "source": "healthicons",
+        "source_id": "public/icons/svg/filled/body/arm.svg",
+        "source_url": "https://github.com/resolvetosavelives/healthicons/blob/2080c1b40e4829f2f4217e03bc22908b4e402f6b/public/icons/svg/filled/body/arm.svg",
+        "original_sha256": "67da2ac1e1010668322dcf8aa773d7d8c6f8ff16b9452cbb1e700d0671e6671c",
+        "preview_sha256": "0d99c78e24a99cfb546c4a0eb256204e488ab182d2caf4055def7b353a16c6b6",
+        "format": "svg",
+        "asset_id": "healthicons-f9dbec50d6c1c336832f"
+      },
+      {
+        "title": "Robot Arm",
+        "source": "nih-bioart",
+        "source_id": "457",
+        "source_url": "https://bioart.niaid.nih.gov/bioart/457",
+        "original_sha256": "c0bbdaee9b674d4320a5f4e7dc3aa55648a149e6420b621cc1054ac9310ac033",
+        "preview_sha256": "cacd5a1b2ad4c640351fda3b252da1e18e4e82945d96b44bc7682574105cd594",
+        "format": "png",
+        "asset_id": "nih-bioart-66d6c7fc5fc79ef19931"
+      },
+      {
+        "title": "Robot Arm",
+        "source": "nih-bioart",
+        "source_id": "457",
+        "source_url": "https://bioart.niaid.nih.gov/bioart/457",
+        "original_sha256": "cad5529194be313822e1718ef99aa7a4fce5777911eba1863ff1954159e08765",
+        "preview_sha256": "47458dc2eb25ab9790fa9918451a5fc068f843237480b94c5b7d64063090abd9",
+        "format": "svg",
+        "asset_id": "nih-bioart-66d6c7fc5fc79ef19931"
+      },
+      {
+        "title": "Human Arm Bones",
+        "source": "nih-bioart",
+        "source_id": "208",
+        "source_url": "https://bioart.niaid.nih.gov/bioart/208",
+        "original_sha256": "af4e3e1025b7eebf1230bca9075e1f8d14855415ec3881bda15fb23cf6939386",
+        "preview_sha256": "169e4f65ed627b568b023e6a1c34a1f9a247ac3c670ac700e4c931729a6b5090",
+        "format": "png",
+        "asset_id": "nih-bioart-c84e43af46bdfa5c0b35"
+      },
+      {
+        "title": "Human Arm Bones",
+        "source": "nih-bioart",
+        "source_id": "208",
+        "source_url": "https://bioart.niaid.nih.gov/bioart/208",
+        "original_sha256": "bee5ee48fd040ee680ea667473f49ba6674f7eddb305708739042d049f295d2d",
+        "preview_sha256": "6d9267e3fabdff632fd0496b2893a56b86aec7598fc692c95fc778da1d7cd844",
+        "format": "png",
+        "asset_id": "nih-bioart-c84e43af46bdfa5c0b35"
+      },
+      {
+        "title": "Human Arm Bones",
+        "source": "nih-bioart",
+        "source_id": "208",
+        "source_url": "https://bioart.niaid.nih.gov/bioart/208",
+        "original_sha256": "42306a63017b0be2c4a6760d4e86245ac1c7b8428fa671e107b76e84d484585f",
+        "preview_sha256": "e03435bbfb5827af60ce217bd5c9a515a8f006a11258765d5abdccc37c58bd06",
+        "format": "svg",
+        "asset_id": "nih-bioart-c84e43af46bdfa5c0b35"
+      },
+      {
+        "title": "Human Arm Bones",
+        "source": "nih-bioart",
+        "source_id": "208",
+        "source_url": "https://bioart.niaid.nih.gov/bioart/208",
+        "original_sha256": "4ae9a8eb63e7ba70c3ea71019b32be8e651e42f1d5a786911ee5e259d50401b1",
+        "preview_sha256": "60bd33acac1b000db38eb82128b204f84c61b61672be294e85175de25732f4e3",
+        "format": "svg",
+        "asset_id": "nih-bioart-c84e43af46bdfa5c0b35"
+      },
+      {
+        "title": "Monkey (arm movement)",
+        "source": "scidraw",
+        "source_id": "c7022c51-9380-4c25-9fde-4a7f5d22d0a3",
+        "source_url": "https://scidraw.io/drawing/monkey-arm-movement-b071ded9",
+        "original_sha256": "6cda95e9485aa65227e28bcdaabb2255476638bb32647df4bb953b147b8b2e40",
+        "preview_sha256": "b58f06cee37a008564a2868b99f8eba3f4b1ef4b63bcc6ecb4787d33aedfde39",
+        "format": "svg",
+        "asset_id": "scidraw-e6eea2262495bbf38f1c"
+      },
+      {
+        "title": "Side arm test tube 1",
+        "source": "togo",
+        "source_id": "1374",
+        "source_url": "https://doi.org/10.7875/togopic.2022.410",
+        "original_sha256": "752a18dc6efefc3edc4305749b476c2de0697193175b4fe10dda80c530f1b8f6",
+        "preview_sha256": "dc90495d932d425b3848e543811d7cd64414de22900a9891317ba2e4a292ddd9",
+        "format": "svg",
+        "asset_id": "togo-206f87d58c355dacca15"
+      },
+      {
+        "title": "Side arm test tube 1",
+        "source": "togo",
+        "source_id": "1374",
+        "source_url": "https://doi.org/10.7875/togopic.2022.410",
+        "original_sha256": "637c33d760d5b391d1176f057a33faa69034beb3441e33ac19ad64c9c82fc89e",
+        "preview_sha256": "319ebdcbd8a9645fe4376d689e1abd55334ee580a55456151a561554049ad25e",
+        "format": "png",
+        "asset_id": "togo-206f87d58c355dacca15"
+      },
+      {
+        "title": "Side arm flask 1",
+        "source": "togo",
+        "source_id": "1376",
+        "source_url": "https://doi.org/10.7875/togopic.2022.412",
+        "original_sha256": "61c9077dbf4e02c2d64e0a41e50a48473e1519c2e114cfebf19a4d0badadd482",
+        "preview_sha256": "05fb61c24caaed11284b228a9e1a33dd121c62382d21af1e8b37e90cf3aa563b",
+        "format": "svg",
+        "asset_id": "togo-48af0e6ff3063bbcd261"
+      },
+      {
+        "title": "Side arm flask 1",
+        "source": "togo",
+        "source_id": "1376",
+        "source_url": "https://doi.org/10.7875/togopic.2022.412",
+        "original_sha256": "9c45f946209bf7533965f3535832993d390a13313b38fdae0b81a6df399be552",
+        "preview_sha256": "cbf0f87a7caef9846260a70bf2c562afab50d222df79e058d237c728cb8e9bdf",
+        "format": "png",
+        "asset_id": "togo-48af0e6ff3063bbcd261"
+      },
+      {
+        "title": "Side arm test tube 2",
+        "source": "togo",
+        "source_id": "1375",
+        "source_url": "https://doi.org/10.7875/togopic.2022.411",
+        "original_sha256": "7eaba6376c4ede4f95ac80672aa9d4b49f0fcd12dd40df493bd7b797df790314",
+        "preview_sha256": "9750c9689747a23770c6ba3b78d7319ecb4ffb554d4f2739fb729e0e01162015",
+        "format": "svg",
+        "asset_id": "togo-dddaa548d6199c441490"
+      },
+      {
+        "title": "Side arm test tube 2",
+        "source": "togo",
+        "source_id": "1375",
+        "source_url": "https://doi.org/10.7875/togopic.2022.411",
+        "original_sha256": "fb02d764510b0daf2268ef86534faa4878995aae480a9c039ccd076f2e4462c0",
+        "preview_sha256": "13a3d79878ed5d148fea367469ffb3ebd54d29f93e9591e8cb00515f938746b0",
+        "format": "png",
+        "asset_id": "togo-dddaa548d6199c441490"
+      },
+      {
+        "title": "Side arm flask 2",
+        "source": "togo",
+        "source_id": "1377",
+        "source_url": "https://doi.org/10.7875/togopic.2022.413",
+        "original_sha256": "27e4aac10a5504e23d09f08d7d0e43b0b5c6f1eb97537408447725f10b833d6a",
+        "preview_sha256": "d360a88e5fdd097df807af2e14088e7f91b9492e6c6f022b53244588a75d69a7",
+        "format": "svg",
+        "asset_id": "togo-e1e068a98dea8d606517"
+      },
+      {
+        "title": "Side arm flask 2",
+        "source": "togo",
+        "source_id": "1377",
+        "source_url": "https://doi.org/10.7875/togopic.2022.413",
+        "original_sha256": "18e43256766cac5a726269d460818de29c0860005b52411c695b8b0d5692c516",
+        "preview_sha256": "f45fcb8d82e97adc493ded1e5b1c4df5513349eaa18145500206a8e19e37c5cd",
+        "format": "png",
+        "asset_id": "togo-e1e068a98dea8d606517"
+      },
+      {
+        "title": "Side arm flask 3",
+        "source": "togo",
+        "source_id": "1378",
+        "source_url": "https://doi.org/10.7875/togopic.2022.414",
+        "original_sha256": "f9ce61bb1572a73a63a87114103a65ca9231b6f3157b3cd485f788b1807f19c6",
+        "preview_sha256": "baa3875eddffaf7b262ce811ba341e439e0734ea8ece1f30d37862c0419de3b6",
+        "format": "svg",
+        "asset_id": "togo-ed1fff48adcfb2237a83"
+      },
+      {
+        "title": "Side arm flask 3",
+        "source": "togo",
+        "source_id": "1378",
+        "source_url": "https://doi.org/10.7875/togopic.2022.414",
+        "original_sha256": "69f59c44575f6536ffa87f3fac147d1c05985737714705dbac6ed6c8915cd4f5",
+        "preview_sha256": "3eef8af362abd2f9bd453d758eac18701be4bbf13e87549a60cce94f6ef74e8f",
+        "format": "png",
+        "asset_id": "togo-ed1fff48adcfb2237a83"
+      }
+    ],
+    "whole_micropipette": [
+      {
+        "title": "micropipette",
+        "source": "bioicons",
+        "source_id": "cc-by-3.0/Chemistry/Servier/micropipette.svg",
+        "source_url": "https://github.com/duerrsimon/bioicons/blob/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-3.0/Chemistry/Servier/micropipette.svg",
+        "original_sha256": "88029da12d315fd46e6a8804b98ae4a78a2801414ae1b35e2647817fcf46dfac",
+        "preview_sha256": "4e1ae5d9a9f3f944c09a248ddb99c869d005fafa3027201bf9d4d768cc8c6e71",
+        "format": "svg",
+        "asset_id": "bioicons-2920777ffb44dc11e36d"
+      },
+      {
+        "title": "micropipette multi",
+        "source": "bioicons",
+        "source_id": "cc-by-3.0/Chemistry/Servier/micropipette-multi.svg",
+        "source_url": "https://github.com/duerrsimon/bioicons/blob/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-3.0/Chemistry/Servier/micropipette-multi.svg",
+        "original_sha256": "25ff72a6f7f1363755d7aef2a7bbaecacc2684f3ede7a28173eb86740a06fc7f",
+        "preview_sha256": "a7aaf73528dfe178ebccbf4718df6b6ddc60182c0171ddc2e5b114326faa85c4",
+        "format": "svg",
+        "asset_id": "bioicons-ca4b1950afa6752faf6d"
+      },
+      {
+        "title": "Micropipette",
+        "source": "scisvg",
+        "source_id": "assets/laboratory/equipment/micropipette.svg",
+        "source_url": "https://github.com/SaveenaSolanki/SciSVG/blob/b8a2b60a3a5b2d9b717b1065fbcb8de9f1faf72b/assets/laboratory/equipment/micropipette.svg",
+        "original_sha256": "eb51703468824613cebafacea70c08cb8cbb5c78b192d421c995e1af9d27a1c4",
+        "preview_sha256": "858cb9870dd0ca7c354312af33390896d2956aa182a37aaa959b0062d1a7513d",
+        "format": "svg",
+        "asset_id": "scisvg-519891a4c033306eccbb"
+      },
+      {
+        "title": "Micropipette",
+        "source": "togo",
+        "source_id": "806",
+        "source_url": "https://doi.org/10.7875/togopic.2021.001",
+        "original_sha256": "6520d6901fb8af6244ab8e356a36b2eb91f3a759b6c81b3694a1e78d48670174",
+        "preview_sha256": "b91d3165d50e799e9d23da6088ab450c68ec161f97d9f347c70c5bf3fa417494",
+        "format": "svg",
+        "asset_id": "togo-122b29d01a68755a4b0f"
+      },
+      {
+        "title": "Micropipette",
+        "source": "togo",
+        "source_id": "806",
+        "source_url": "https://doi.org/10.7875/togopic.2021.001",
+        "original_sha256": "adf872a192a020596980b8bcd7e4db744c2cd259bb37de0c192245ca45b290f1",
+        "preview_sha256": "baa1630e40ac9f86637b2f1c2688f267427129cdc89dcac0fcc2a902262d1785",
+        "format": "png",
+        "asset_id": "togo-122b29d01a68755a4b0f"
+      },
+      {
+        "title": "Micropipette (mono)",
+        "source": "togo",
+        "source_id": "641",
+        "source_url": "https://doi.org/10.7875/togopic.2020.54",
+        "original_sha256": "073a43f0e5fa5dfe6437a67ff429310144ea55d68ec7eeed3910f64fe705ddb6",
+        "preview_sha256": "2ddb2c6ae9f2e40db22b5a0f6727c698734ed4a10a4adb2dbd52368693943577",
+        "format": "svg",
+        "asset_id": "togo-36bf6b14e8b945fdbcd8"
+      },
+      {
+        "title": "Micropipette (mono)",
+        "source": "togo",
+        "source_id": "641",
+        "source_url": "https://doi.org/10.7875/togopic.2020.54",
+        "original_sha256": "e565619147fa71aa12d77498f70196bc2651f3e77b69aceee899a334b197931e",
+        "preview_sha256": "a2bc892780111550335e09cb3c788dab5eac8ae3b4cf117726646f65a800155f",
+        "format": "png",
+        "asset_id": "togo-36bf6b14e8b945fdbcd8"
+      },
+      {
+        "title": "pipetman",
+        "source": "togo",
+        "source_id": "254",
+        "source_url": "https://doi.org/10.7875/togopic.2011.30",
+        "original_sha256": "140b1941d001323a03b84cec823fc2ef2bf0e056c3233b45444ddfb73223a8c0",
+        "preview_sha256": "391c9dfc05e08da7979c129cc2f29fa65cedf6fc4383b658866ec636aa6e17a3",
+        "format": "svg",
+        "asset_id": "togo-5d55cce5ce0f4b93cf32"
+      },
+      {
+        "title": "pipetman",
+        "source": "togo",
+        "source_id": "254",
+        "source_url": "https://doi.org/10.7875/togopic.2011.30",
+        "original_sha256": "96810329694a5197e988e7317130dd9840d5706ac6330f279357f0f1bec75eb8",
+        "preview_sha256": "733297bd22f57ed371ac46c440c2ca757b03036542a7b102f08c405b4fb23b8d",
+        "format": "png",
+        "asset_id": "togo-5d55cce5ce0f4b93cf32"
+      },
+      {
+        "title": "Micropipette 2",
+        "source": "togo",
+        "source_id": "1346",
+        "source_url": "https://doi.org/10.7875/togopic.2022.382",
+        "original_sha256": "8e7f880bbb7b9343976b4c09ec9fa7e5aaefedd2f4fb28be289ca8fe8752eef4",
+        "preview_sha256": "a2f539c6e535c9e47c4074d39e811e5d86418bb519fbc2f24b25b07525f15a55",
+        "format": "svg",
+        "asset_id": "togo-62454beaf4f0b3453139"
+      },
+      {
+        "title": "Micropipette 2",
+        "source": "togo",
+        "source_id": "1346",
+        "source_url": "https://doi.org/10.7875/togopic.2022.382",
+        "original_sha256": "5b764ccba10fa42ddadd48421c3ee8cb16de9ecf54c5341f306c7e824689785b",
+        "preview_sha256": "c8cb604a4f9fbd1e27def7a8177ced44950e74921f8099f60a84a29b9016fb38",
+        "format": "png",
+        "asset_id": "togo-62454beaf4f0b3453139"
+      },
+      {
+        "title": "Micropipette",
+        "source": "togo",
+        "source_id": "642",
+        "source_url": "https://doi.org/10.7875/togopic.2020.55",
+        "original_sha256": "fb47d4fd5925f456232f1bdc249c8b852f8b34d78d550cef2c1f3162ea1a5dda",
+        "preview_sha256": "51713ffd4e6073c4e57b9ce97e25f2c8dc28abcfbdb3c81b8d64422ac79c3442",
+        "format": "svg",
+        "asset_id": "togo-6ac5421fb293cb387826"
+      },
+      {
+        "title": "Micropipette",
+        "source": "togo",
+        "source_id": "642",
+        "source_url": "https://doi.org/10.7875/togopic.2020.55",
+        "original_sha256": "2c282d1b54d99b440eec86a044cf933663e4c21fdd5c07520c8fe0adffb7c474",
+        "preview_sha256": "8afea5d0d1c2a76c95eb7961f56737a13c6f5295a7daf4a97dbc45629107b3d9",
+        "format": "png",
+        "asset_id": "togo-6ac5421fb293cb387826"
+      },
+      {
+        "title": "Micropipette 1",
+        "source": "togo",
+        "source_id": "1345",
+        "source_url": "https://doi.org/10.7875/togopic.2022.381",
+        "original_sha256": "1e4019650f1c1f6d3708fb8bd343a412f56ef019458d980f29d94b1fa9166256",
+        "preview_sha256": "0c85c9f5e07cd1cac29b696dd1c1a2ce7d636df4dbdaba92f5982095df97bd48",
+        "format": "svg",
+        "asset_id": "togo-8d80e1533ac9b3b8c2fc"
+      },
+      {
+        "title": "Micropipette 1",
+        "source": "togo",
+        "source_id": "1345",
+        "source_url": "https://doi.org/10.7875/togopic.2022.381",
+        "original_sha256": "8582d6803f8d10e7e4fa40b8239c50e5b6f2124c1a25082b8f4e1f9da3bd5437",
+        "preview_sha256": "c53ec78ce111487db15a0325571fb763f415ab2f724f7e60daf0fdedd8505133",
+        "format": "png",
+        "asset_id": "togo-8d80e1533ac9b3b8c2fc"
+      },
+      {
+        "title": "Micropipette 3",
+        "source": "togo",
+        "source_id": "1347",
+        "source_url": "https://doi.org/10.7875/togopic.2022.383",
+        "original_sha256": "ca2a5e7d162db5f31b0339b1adbb4c36234328e1f2e15e362100c081530ed6b7",
+        "preview_sha256": "0c5d86767731378946423da8818aaa4825f77376dfb67719b26c9e050e95a6ab",
+        "format": "svg",
+        "asset_id": "togo-a64322fe5bcf533b3bda"
+      },
+      {
+        "title": "Micropipette 3",
+        "source": "togo",
+        "source_id": "1347",
+        "source_url": "https://doi.org/10.7875/togopic.2022.383",
+        "original_sha256": "47b972068f172d1d2bb31cbf1affdce9ceee9221f78e89e89f1a74ac4a2cc255",
+        "preview_sha256": "2e484a1a44685f59afcfb01546f81720c5a9b21f9b23f90ecea68553e4fa0c7c",
+        "format": "png",
+        "asset_id": "togo-a64322fe5bcf533b3bda"
+      },
+      {
+        "title": "Micropipette",
+        "source": "togo",
+        "source_id": "679",
+        "source_url": "https://doi.org/10.7875/togopic.2020.92",
+        "original_sha256": "066922147cb7563bf24825feac619513e3af8bb7893096a3cee5c9375301c952",
+        "preview_sha256": "04608705d460f85b2027ef607e5b31e912ef1423cb052a11ac24ed47852cbd13",
+        "format": "svg",
+        "asset_id": "togo-bc50e49722348dd4ab5f"
+      },
+      {
+        "title": "Micropipette",
+        "source": "togo",
+        "source_id": "679",
+        "source_url": "https://doi.org/10.7875/togopic.2020.92",
+        "original_sha256": "fe7eecea30428209e38dee9f0959ce8bc41ddf65c0c7479590566738e30e6c76",
+        "preview_sha256": "038d501a0eeb62d6c8785a8d2cd4f77173ef77257935e876934ba81ede558c7a",
+        "format": "png",
+        "asset_id": "togo-bc50e49722348dd4ab5f"
+      }
+    ],
+    "computer_with_display": [
+      {
+        "title": "Desktop App",
+        "source": "healthicons",
+        "source_id": "public/icons/svg/filled/objects/desktop-app.svg",
+        "source_url": "https://github.com/resolvetosavelives/healthicons/blob/2080c1b40e4829f2f4217e03bc22908b4e402f6b/public/icons/svg/filled/objects/desktop-app.svg",
+        "original_sha256": "b66b3c45352831289635f32eeb37e55727bb5476ba3b3eeb6fbd0abeb5f4c2bd",
+        "preview_sha256": "6a3a76f4999f3034babc32d301e8dddc266d2739ffbd94d605190932a39ebddd",
+        "format": "svg",
+        "asset_id": "healthicons-67312ffa7c5eb6ecbb2a"
+      },
+      {
+        "title": "Desktop App",
+        "source": "healthicons",
+        "source_id": "public/icons/svg/outline/objects/desktop-app.svg",
+        "source_url": "https://github.com/resolvetosavelives/healthicons/blob/2080c1b40e4829f2f4217e03bc22908b4e402f6b/public/icons/svg/outline/objects/desktop-app.svg",
+        "original_sha256": "3ad8cb55bdcf233ee1651e35e85aff6fde7c8e40bf3bc59d3590a13099f0d3fc",
+        "preview_sha256": "7e4d0742580351228fa4a6e69bbf92aded1f32651ed51ec26af00761d928072d",
+        "format": "svg",
+        "asset_id": "healthicons-67312ffa7c5eb6ecbb2a"
+      },
+      {
+        "title": "Computer Monitor with Blank Screen",
+        "source": "nih-bioart",
+        "source_id": "829",
+        "source_url": "https://bioart.niaid.nih.gov/bioart/829",
+        "original_sha256": "1f7aaee36f2295042a72add4446a174b85315eacb8b7a2a02653a5e12b68a499",
+        "preview_sha256": "06c8abbc784002ec9320c66d9f8741afb313084b9f5ede60a62d94a2260746d6",
+        "format": "png",
+        "asset_id": "nih-bioart-3ef21bba1a8348425966"
+      },
+      {
+        "title": "Computer Monitor with Blank Screen",
+        "source": "nih-bioart",
+        "source_id": "829",
+        "source_url": "https://bioart.niaid.nih.gov/bioart/829",
+        "original_sha256": "661af02edf70d50a5ff426ff77f05ae2a0dcdd52e2b18d83e3ac8c632148cf5f",
+        "preview_sha256": "9fd892590927582470bda109740dde47c9a1e62329ed71d4184599f18a8c397d",
+        "format": "png",
+        "asset_id": "nih-bioart-3ef21bba1a8348425966"
+      },
+      {
+        "title": "Computer Monitor with Blank Screen",
+        "source": "nih-bioart",
+        "source_id": "829",
+        "source_url": "https://bioart.niaid.nih.gov/bioart/829",
+        "original_sha256": "c496961c6b2b182b10dbcd0b3873f68913b5db19d74c365f1d96165b6dfc19a3",
+        "preview_sha256": "95ee1ac25fb1f518849945fbc89a643f1de94fbed0304802c10895a9f1e391bc",
+        "format": "png",
+        "asset_id": "nih-bioart-3ef21bba1a8348425966"
+      },
+      {
+        "title": "Computer Monitor with Blank Screen",
+        "source": "nih-bioart",
+        "source_id": "829",
+        "source_url": "https://bioart.niaid.nih.gov/bioart/829",
+        "original_sha256": "5c72a17d4fcc7cf44022ef4e59208ed395d8734593e3f1cd3433c554df17fb74",
+        "preview_sha256": "14bb346ffd73ba49ababda0309964a6566508705fce861361624570def497b18",
+        "format": "png",
+        "asset_id": "nih-bioart-3ef21bba1a8348425966"
+      },
+      {
+        "title": "Computer Monitor with Blank Screen",
+        "source": "nih-bioart",
+        "source_id": "829",
+        "source_url": "https://bioart.niaid.nih.gov/bioart/829",
+        "original_sha256": "d3e337164c19dfc3490e51c141007f6983928e0198c00816cbd1e2387e02845d",
+        "preview_sha256": "bf0a6759ac43016a6fc50a89968eafdbf13cde1e2a23c8e6e728b21492714ecc",
+        "format": "png",
+        "asset_id": "nih-bioart-3ef21bba1a8348425966"
+      },
+      {
+        "title": "Computer Monitor with Blank Screen",
+        "source": "nih-bioart",
+        "source_id": "829",
+        "source_url": "https://bioart.niaid.nih.gov/bioart/829",
+        "original_sha256": "c7f762e362621d99ffe3701d21f8a16eaba43f364bb1df6a54dea2eb887b2b1b",
+        "preview_sha256": "f5fb86ac7191bf08e74ac9b455b39e1f17b303a4c2fff39bcdf2636c6a7cbec0",
+        "format": "png",
+        "asset_id": "nih-bioart-3ef21bba1a8348425966"
+      },
+      {
+        "title": "Computer Monitor with Blank Screen",
+        "source": "nih-bioart",
+        "source_id": "829",
+        "source_url": "https://bioart.niaid.nih.gov/bioart/829",
+        "original_sha256": "32f547159ae43a8e3371233fc3a9d5fb09664caee2aeb8aa44ae0eb5bba0cf7a",
+        "preview_sha256": "591bb633691154a5d5f2705810266247be440e449ee4c13b4d56cb27deddc720",
+        "format": "png",
+        "asset_id": "nih-bioart-3ef21bba1a8348425966"
+      },
+      {
+        "title": "Computer Monitor with Blank Screen",
+        "source": "nih-bioart",
+        "source_id": "829",
+        "source_url": "https://bioart.niaid.nih.gov/bioart/829",
+        "original_sha256": "c174dbeb0de5204ff1783f0606160177dee12481d9321af2455217dde76b2b11",
+        "preview_sha256": "7ebc173f09b28fa089617ae329167a36ed37d594a363c44259dd3c860831c66b",
+        "format": "png",
+        "asset_id": "nih-bioart-3ef21bba1a8348425966"
+      },
+      {
+        "title": "Computer Monitor with Blank Screen",
+        "source": "nih-bioart",
+        "source_id": "829",
+        "source_url": "https://bioart.niaid.nih.gov/bioart/829",
+        "original_sha256": "81f031960c874b5905ddf75f7aa6bbedc687c72d7239ae941e4b7d27c9fef40d",
+        "preview_sha256": "95681a4e338457ded341c84c0e00eabae864c54c53433e4f6d024b739913b276",
+        "format": "png",
+        "asset_id": "nih-bioart-3ef21bba1a8348425966"
+      },
+      {
+        "title": "Computer Monitor with Blank Screen",
+        "source": "nih-bioart",
+        "source_id": "829",
+        "source_url": "https://bioart.niaid.nih.gov/bioart/829",
+        "original_sha256": "3fec0eaad396b7b9ff2c0eefcd67b6d3a0618cfdffa39de6352a6dfb8f1e275a",
+        "preview_sha256": "e8869e9c04bdaa3495df8d17777ddb2ef4451d179a8590588e97dab197905d97",
+        "format": "png",
+        "asset_id": "nih-bioart-3ef21bba1a8348425966"
+      },
+      {
+        "title": "Computer Monitor with Blank Screen",
+        "source": "nih-bioart",
+        "source_id": "829",
+        "source_url": "https://bioart.niaid.nih.gov/bioart/829",
+        "original_sha256": "944af07ae774cf44cbc2c7a5b8d3fb60d937176836a28e2963384125b49eea98",
+        "preview_sha256": "b78c28dab8578591db55cbacd2fbd1ee0a66d2310c8536283f76ed578748bb1a",
+        "format": "png",
+        "asset_id": "nih-bioart-3ef21bba1a8348425966"
+      },
+      {
+        "title": "Computer Monitor with Blank Screen",
+        "source": "nih-bioart",
+        "source_id": "829",
+        "source_url": "https://bioart.niaid.nih.gov/bioart/829",
+        "original_sha256": "70c25b2c73eb6b68c89a146fd7124770fb2c77b823fe2bb0d72e297824bf021b",
+        "preview_sha256": "d27de26894afa8d701928326a58b6d4361e57a9cf3499a1a515f5a3cc2d6e081",
+        "format": "png",
+        "asset_id": "nih-bioart-3ef21bba1a8348425966"
+      },
+      {
+        "title": "Computer Monitor with Blank Screen",
+        "source": "nih-bioart",
+        "source_id": "829",
+        "source_url": "https://bioart.niaid.nih.gov/bioart/829",
+        "original_sha256": "d7a416bd04c18539180626ccb4a574240600844177b21523d34889bb0995f78b",
+        "preview_sha256": "45bd79d4df8517b3ccdf141acb3f5862d50ea2955cd53999835e027619d9ace7",
+        "format": "svg",
+        "asset_id": "nih-bioart-3ef21bba1a8348425966"
+      },
+      {
+        "title": "Computer Monitor with Blank Screen",
+        "source": "nih-bioart",
+        "source_id": "829",
+        "source_url": "https://bioart.niaid.nih.gov/bioart/829",
+        "original_sha256": "b546fc829610545e8019cf5663afe13f4c6afa3d8795dc1a98a33ba585022444",
+        "preview_sha256": "91afa7d8eb205767933ec9b8bb5c8458af782485bf31eb5ba04432f8cf249eb1",
+        "format": "svg",
+        "asset_id": "nih-bioart-3ef21bba1a8348425966"
+      },
+      {
+        "title": "Computer Monitor with Blank Screen",
+        "source": "nih-bioart",
+        "source_id": "829",
+        "source_url": "https://bioart.niaid.nih.gov/bioart/829",
+        "original_sha256": "57089adf4938b01edc67c657e26adb1865de8cb6bba928468f7cdcb3792a9145",
+        "preview_sha256": "666178effa6d7f1d45eb99d37076d77e6f7c8597835da4e18c55b4d686984e1a",
+        "format": "svg",
+        "asset_id": "nih-bioart-3ef21bba1a8348425966"
+      },
+      {
+        "title": "Computer Monitor with Blank Screen",
+        "source": "nih-bioart",
+        "source_id": "829",
+        "source_url": "https://bioart.niaid.nih.gov/bioart/829",
+        "original_sha256": "da603a601fc52fe625ac88f13c909cbaa80287117dd7d318f27b6940313a08da",
+        "preview_sha256": "d29b30d7c5c84fbcfdb722d75b5d61c048ce1aa94d44dc08ee84924f78fc3166",
+        "format": "svg",
+        "asset_id": "nih-bioart-3ef21bba1a8348425966"
+      },
+      {
+        "title": "Computer Monitor with Blank Screen",
+        "source": "nih-bioart",
+        "source_id": "829",
+        "source_url": "https://bioart.niaid.nih.gov/bioart/829",
+        "original_sha256": "fcbc42d359cfb8ec5e8eed41fdad9889a56f68ec43d79dd3594c110c5c3f0fac",
+        "preview_sha256": "83a161d3bcdced043d130e1af007c0e4a01e99df5d4afd1c1d71a0a182360e2c",
+        "format": "svg",
+        "asset_id": "nih-bioart-3ef21bba1a8348425966"
+      },
+      {
+        "title": "Computer Monitor with Blank Screen",
+        "source": "nih-bioart",
+        "source_id": "829",
+        "source_url": "https://bioart.niaid.nih.gov/bioart/829",
+        "original_sha256": "3d166c02dd6645662b07033e89f109cdb565bc5218324b4678bc4e2021a7e2f1",
+        "preview_sha256": "ffa3781540381a39f1a2d2c7078e0f375ccefb58c50be1d2fa30d3ba10002dea",
+        "format": "svg",
+        "asset_id": "nih-bioart-3ef21bba1a8348425966"
+      },
+      {
+        "title": "Computer Monitor with Blank Screen",
+        "source": "nih-bioart",
+        "source_id": "829",
+        "source_url": "https://bioart.niaid.nih.gov/bioart/829",
+        "original_sha256": "67dcae24536d9c7b98face5b54394fc1f112e57ba84934206dc11b504a284a11",
+        "preview_sha256": "12a2ab4825d32190ed108bd2253f21b5817ec9c28d56c43c8de4113d74f33021",
+        "format": "svg",
+        "asset_id": "nih-bioart-3ef21bba1a8348425966"
+      },
+      {
+        "title": "Computer Monitor with Blank Screen",
+        "source": "nih-bioart",
+        "source_id": "829",
+        "source_url": "https://bioart.niaid.nih.gov/bioart/829",
+        "original_sha256": "7a4ec6662e06068e7bf31c812a48cf192258356317fa9950b5ed6faf34260ee4",
+        "preview_sha256": "3670e2f8a95ce0ee353b5fa9f6c8fd8c1772583aaf6dea9a637f9f35e57407ba",
+        "format": "svg",
+        "asset_id": "nih-bioart-3ef21bba1a8348425966"
+      },
+      {
+        "title": "Computer Monitor with Blank Screen",
+        "source": "nih-bioart",
+        "source_id": "829",
+        "source_url": "https://bioart.niaid.nih.gov/bioart/829",
+        "original_sha256": "04c3f00d919b9983a2ad7026caa59aeaa463a1695341f1132a7ca8db050e24f5",
+        "preview_sha256": "ca9cbabacf97d2618260a2f3352014e0fe33b221d71f201c0d007641bb30e6bd",
+        "format": "svg",
+        "asset_id": "nih-bioart-3ef21bba1a8348425966"
+      },
+      {
+        "title": "Computer Monitor with Blank Screen",
+        "source": "nih-bioart",
+        "source_id": "829",
+        "source_url": "https://bioart.niaid.nih.gov/bioart/829",
+        "original_sha256": "16329f382a4bb2320d104f05f33eeae5af9a3d97d378791bc610bc2f8c680960",
+        "preview_sha256": "9d340d7523da33a23b0f1ea00662a9de0831e6391e98617cf4877bd6a2c8830c",
+        "format": "svg",
+        "asset_id": "nih-bioart-3ef21bba1a8348425966"
+      },
+      {
+        "title": "Computer Monitor with Blank Screen",
+        "source": "nih-bioart",
+        "source_id": "829",
+        "source_url": "https://bioart.niaid.nih.gov/bioart/829",
+        "original_sha256": "acbb2cc4dfb32c825b15cfca9486bf605dbbd4d719824d4b02dfb5264c36b619",
+        "preview_sha256": "27343c4e5aa9dab031667ae82aadb1c590e14da6a8d1d95e8d9c2ac0dd61034a",
+        "format": "svg",
+        "asset_id": "nih-bioart-3ef21bba1a8348425966"
+      },
+      {
+        "title": "Computer Monitor with Blank Screen",
+        "source": "nih-bioart",
+        "source_id": "829",
+        "source_url": "https://bioart.niaid.nih.gov/bioart/829",
+        "original_sha256": "548fafd197cbb7adfef4bd73999b8e90cb524914fc67e0227cb28ad10189959b",
+        "preview_sha256": "d82089ae559fa37f099d40f17a7b770a9b6c7beaaea7f593bd31f18e59f6cd1d",
+        "format": "svg",
+        "asset_id": "nih-bioart-3ef21bba1a8348425966"
+      },
+      {
+        "title": "Computer Monitor with Microscopy Image",
+        "source": "nih-bioart",
+        "source_id": "830",
+        "source_url": "https://bioart.niaid.nih.gov/bioart/830",
+        "original_sha256": "bb85a7568055f8c45e4a5a6fb3a5ec1a99ec089f3e340275fd09aaace6853935",
+        "preview_sha256": "79a99a3e6d7015601cc4ebef85d74eb7f758f8691a8a0b187e20f418a2c46c5a",
+        "format": "png",
+        "asset_id": "nih-bioart-4a64bfb0a324690ce906"
+      },
+      {
+        "title": "Computer Monitor with Microscopy Image",
+        "source": "nih-bioart",
+        "source_id": "830",
+        "source_url": "https://bioart.niaid.nih.gov/bioart/830",
+        "original_sha256": "b59e798dcfec3ca968763ba4da895582fbeaf9e073a67c0a26257acf6b037e79",
+        "preview_sha256": "d07cf5959b23408eccbe586a35e479d57d233bd0871311a1a0e6bfdd37a218a6",
+        "format": "png",
+        "asset_id": "nih-bioart-4a64bfb0a324690ce906"
+      },
+      {
+        "title": "Computer Monitor with Microscopy Image",
+        "source": "nih-bioart",
+        "source_id": "830",
+        "source_url": "https://bioart.niaid.nih.gov/bioart/830",
+        "original_sha256": "34cf3c0186f4b2cd3df6a858357b20a3a2713df486eb28048cd14e2afe467de4",
+        "preview_sha256": "a9df9e4200fd7055afebf3411e75041e0c1432a2641156e9954dc8af05478cb8",
+        "format": "png",
+        "asset_id": "nih-bioart-4a64bfb0a324690ce906"
+      },
+      {
+        "title": "Computer Monitor with Microscopy Image",
+        "source": "nih-bioart",
+        "source_id": "830",
+        "source_url": "https://bioart.niaid.nih.gov/bioart/830",
+        "original_sha256": "316928eca17e1113c8cd51755c7d5b6f289894992d2dc87deb38b53c23d37c39",
+        "preview_sha256": "2106efcc5673c464ba3e4707d1b21cde39d08caf2a173f371c88b6b2638cfb14",
+        "format": "png",
+        "asset_id": "nih-bioart-4a64bfb0a324690ce906"
+      },
+      {
+        "title": "Computer Monitor with Microscopy Image",
+        "source": "nih-bioart",
+        "source_id": "830",
+        "source_url": "https://bioart.niaid.nih.gov/bioart/830",
+        "original_sha256": "481e3df715760e89ab61991111749c6f71e5f8df5dbcf787637f7537d12dd324",
+        "preview_sha256": "11c31d596287cda8f58135847462428ff142dee59ce27b6a03815277e62cd67f",
+        "format": "png",
+        "asset_id": "nih-bioart-4a64bfb0a324690ce906"
+      },
+      {
+        "title": "Computer Monitor with Microscopy Image",
+        "source": "nih-bioart",
+        "source_id": "830",
+        "source_url": "https://bioart.niaid.nih.gov/bioart/830",
+        "original_sha256": "633673ece090e63318d01faa5f5165431aeffd6ae7548bd0652db7e12754bde1",
+        "preview_sha256": "944115b04fcc5f66857e0d3466491f4f973da6cc1dc13778dfa558d0f2655804",
+        "format": "png",
+        "asset_id": "nih-bioart-4a64bfb0a324690ce906"
+      },
+      {
+        "title": "Computer Monitor with Microscopy Image",
+        "source": "nih-bioart",
+        "source_id": "830",
+        "source_url": "https://bioart.niaid.nih.gov/bioart/830",
+        "original_sha256": "8d492e02141326075683614d13eb56609551f2dcac33bcc85fdec12e0e06764e",
+        "preview_sha256": "ba4b3ce045cd9ee1e108746f5ac0211f0f7a2ea92b3cd11d645255b5ccb1ac96",
+        "format": "png",
+        "asset_id": "nih-bioart-4a64bfb0a324690ce906"
+      },
+      {
+        "title": "Computer Monitor with Microscopy Image",
+        "source": "nih-bioart",
+        "source_id": "830",
+        "source_url": "https://bioart.niaid.nih.gov/bioart/830",
+        "original_sha256": "f4b7a78f490b304e149eab57ebe92776506db5855a293cffde4f9eb04510ea88",
+        "preview_sha256": "d26e4866e472cdd4a9a62fec45739aae25fef9262c18725cd117c9ee8541532c",
+        "format": "png",
+        "asset_id": "nih-bioart-4a64bfb0a324690ce906"
+      },
+      {
+        "title": "Computer Monitor with Microscopy Image",
+        "source": "nih-bioart",
+        "source_id": "830",
+        "source_url": "https://bioart.niaid.nih.gov/bioart/830",
+        "original_sha256": "eec8b785460228972f3cb69319f8c06b295b684f8dcde02042f2342495b8909e",
+        "preview_sha256": "bc560e433284c844bea25f142f8072a83b53a20dffdc6df072bac57ddf0ae5cb",
+        "format": "png",
+        "asset_id": "nih-bioart-4a64bfb0a324690ce906"
+      },
+      {
+        "title": "Computer Monitor with Microscopy Image",
+        "source": "nih-bioart",
+        "source_id": "830",
+        "source_url": "https://bioart.niaid.nih.gov/bioart/830",
+        "original_sha256": "e64a3f64e044d96f35e91415635c981f0efdf5853fa43705268630e369bbee04",
+        "preview_sha256": "30a92d7eef3a99cbfb5c8f4c6d9d612ccffd72709ccdb97aff5941b8a05df65c",
+        "format": "png",
+        "asset_id": "nih-bioart-4a64bfb0a324690ce906"
+      },
+      {
+        "title": "Computer Monitor with Microscopy Image",
+        "source": "nih-bioart",
+        "source_id": "830",
+        "source_url": "https://bioart.niaid.nih.gov/bioart/830",
+        "original_sha256": "4ff23e60e57754fae682c83929d58354f933145222f16dda3441f0cebe6e36c6",
+        "preview_sha256": "91d3136492c62705724e9aa83ee12468a1a4c2bb05dd41754a6eb4d459d762ee",
+        "format": "png",
+        "asset_id": "nih-bioart-4a64bfb0a324690ce906"
+      },
+      {
+        "title": "Computer Monitor with Microscopy Image",
+        "source": "nih-bioart",
+        "source_id": "830",
+        "source_url": "https://bioart.niaid.nih.gov/bioart/830",
+        "original_sha256": "8dbefa8c96424fa061e6563431c07b364ff87632df5bbb6fcb4cc9ce322be2f1",
+        "preview_sha256": "3217fc60c51a9b9e40b7854d2659e4e8526340a8d0cf1f2e4838a7b68844d08e",
+        "format": "png",
+        "asset_id": "nih-bioart-4a64bfb0a324690ce906"
+      },
+      {
+        "title": "Computer Monitor with Microscopy Image",
+        "source": "nih-bioart",
+        "source_id": "830",
+        "source_url": "https://bioart.niaid.nih.gov/bioart/830",
+        "original_sha256": "c2bc1e23957901eb7acee17708684b7e69433d4e691b43d83949437b94463e84",
+        "preview_sha256": "a283422b4902091515f258c39135547e0a498955f4a02f3a3b45c48d3079dedc",
+        "format": "svg",
+        "asset_id": "nih-bioart-4a64bfb0a324690ce906"
+      },
+      {
+        "title": "Computer Monitor with Microscopy Image",
+        "source": "nih-bioart",
+        "source_id": "830",
+        "source_url": "https://bioart.niaid.nih.gov/bioart/830",
+        "original_sha256": "8026674623c7a71e310fcaf81844934ecf287aab203f10209373e96832a4c096",
+        "preview_sha256": "8b091fc9a31b84a5c9ee7d6b40f488f0459c6167ddb5e35850bfd452a49f7d84",
+        "format": "svg",
+        "asset_id": "nih-bioart-4a64bfb0a324690ce906"
+      },
+      {
+        "title": "Computer Monitor with Microscopy Image",
+        "source": "nih-bioart",
+        "source_id": "830",
+        "source_url": "https://bioart.niaid.nih.gov/bioart/830",
+        "original_sha256": "e8713a0a07e9e1ea2474fb3f6baec7449394ddbaa48c90c1d90b547851de1342",
+        "preview_sha256": "1c5d58d159eace8824c7ebc9a56115db0e776ea2c708cb4a5d6d39319338035e",
+        "format": "svg",
+        "asset_id": "nih-bioart-4a64bfb0a324690ce906"
+      },
+      {
+        "title": "Computer Monitor with Microscopy Image",
+        "source": "nih-bioart",
+        "source_id": "830",
+        "source_url": "https://bioart.niaid.nih.gov/bioart/830",
+        "original_sha256": "1f91107372b39f0dfac6c741e604481419d645a64afb2075f17e6b4e0c78a4e7",
+        "preview_sha256": "91c7759c4892b0e710b047fe0cace5e01d05b87b02e609e0395ee4c19f0747fd",
+        "format": "svg",
+        "asset_id": "nih-bioart-4a64bfb0a324690ce906"
+      },
+      {
+        "title": "Computer Monitor with Microscopy Image",
+        "source": "nih-bioart",
+        "source_id": "830",
+        "source_url": "https://bioart.niaid.nih.gov/bioart/830",
+        "original_sha256": "dccc7b3856cba42600048b1b1e19834b6896798a0ad75571967e4477eeabdd3d",
+        "preview_sha256": "fef5aab21eea1db61f3e4a64fbe46a5010b9c21e9256635d8ec9c282333b5b9c",
+        "format": "svg",
+        "asset_id": "nih-bioart-4a64bfb0a324690ce906"
+      },
+      {
+        "title": "Computer Monitor with Microscopy Image",
+        "source": "nih-bioart",
+        "source_id": "830",
+        "source_url": "https://bioart.niaid.nih.gov/bioart/830",
+        "original_sha256": "72d24e7022822c7e9f66a19033061038ce4d9d7211e1dac1dd5f49af44116a07",
+        "preview_sha256": "54e3692265e45d47e7631716468692639e8cf62a36f4ab7de61cd8735557a98e",
+        "format": "svg",
+        "asset_id": "nih-bioart-4a64bfb0a324690ce906"
+      },
+      {
+        "title": "Computer Monitor with Microscopy Image",
+        "source": "nih-bioart",
+        "source_id": "830",
+        "source_url": "https://bioart.niaid.nih.gov/bioart/830",
+        "original_sha256": "54d173ab5f47be9a712f83246b4b11e9e7b05752a8dbabf35fae2324eb8ee829",
+        "preview_sha256": "1023d21de356e20595d545595b32ffd04d5afdf876675607b76da50213841c9e",
+        "format": "svg",
+        "asset_id": "nih-bioart-4a64bfb0a324690ce906"
+      },
+      {
+        "title": "Computer Monitor with Microscopy Image",
+        "source": "nih-bioart",
+        "source_id": "830",
+        "source_url": "https://bioart.niaid.nih.gov/bioart/830",
+        "original_sha256": "eff86da2355fc7ba468d3a035be13925566b5a81feba7299e8f896a26e7038e7",
+        "preview_sha256": "911f1576e60a4635e1c4461b1089a873d389c397aada9250cfbb631b5a3135e1",
+        "format": "svg",
+        "asset_id": "nih-bioart-4a64bfb0a324690ce906"
+      },
+      {
+        "title": "Computer Monitor with Microscopy Image",
+        "source": "nih-bioart",
+        "source_id": "830",
+        "source_url": "https://bioart.niaid.nih.gov/bioart/830",
+        "original_sha256": "006fd0f994104b6e72fce9501bf2277bfe255851a7ee729bc8dfb26cfc7c260f",
+        "preview_sha256": "19342a58d7fa41c0293f816d3f71a473ca9e44e24cbbc185add9c602fea20ce8",
+        "format": "svg",
+        "asset_id": "nih-bioart-4a64bfb0a324690ce906"
+      },
+      {
+        "title": "Computer Monitor with Microscopy Image",
+        "source": "nih-bioart",
+        "source_id": "830",
+        "source_url": "https://bioart.niaid.nih.gov/bioart/830",
+        "original_sha256": "bc564d8d162705e60bbc18abc82b365f93949904d98dad900ca70fe67cb49b69",
+        "preview_sha256": "c3886550ffa073bf805c49a2d4ca0aac6f5b7f05b8a71a8201b0568334373abf",
+        "format": "svg",
+        "asset_id": "nih-bioart-4a64bfb0a324690ce906"
+      },
+      {
+        "title": "Computer Monitor with Microscopy Image",
+        "source": "nih-bioart",
+        "source_id": "830",
+        "source_url": "https://bioart.niaid.nih.gov/bioart/830",
+        "original_sha256": "3afbb5aa9f6f98d1c7894b21ebb76a04964d27a0db85fac782e3dc577fc368d8",
+        "preview_sha256": "a02b339a0adf21c91085f17f9dc575ef90c6767b8a6e951866ffd14b56d640fe",
+        "format": "svg",
+        "asset_id": "nih-bioart-4a64bfb0a324690ce906"
+      },
+      {
+        "title": "Computer Monitor with Microscopy Image",
+        "source": "nih-bioart",
+        "source_id": "830",
+        "source_url": "https://bioart.niaid.nih.gov/bioart/830",
+        "original_sha256": "16423ced3b011e71d811abdd7a7e1af5bbcb87c897d8cc42a8ed2e32736e0736",
+        "preview_sha256": "761208a6cad2b27cfb5d36bc8b83c310a8eb47ea9bd861504ba0f90e7344db92",
+        "format": "svg",
+        "asset_id": "nih-bioart-4a64bfb0a324690ce906"
+      },
+      {
+        "title": "Computer Organoid",
+        "source": "nih-bioart",
+        "source_id": "782",
+        "source_url": "https://bioart.niaid.nih.gov/bioart/782",
+        "original_sha256": "9cab4db57bb1e379a46131284412a8ecf71447ba35ab9240020d91628c1da5e7",
+        "preview_sha256": "a9b46e3c4d1d5e591ea986e5d9c2e2ad2809dc5ed6db142f234fd34c51501fe8",
+        "format": "png",
+        "asset_id": "nih-bioart-637ad98233a92b436187"
+      },
+      {
+        "title": "Computer Organoid",
+        "source": "nih-bioart",
+        "source_id": "782",
+        "source_url": "https://bioart.niaid.nih.gov/bioart/782",
+        "original_sha256": "a20b097538f71145f3831fb573c8f8e9702e480c7262adfaf563d21f7f849d3a",
+        "preview_sha256": "9db48893d66ee6dbd8fdbf364c926a709e2eda6fc1d0f20cd12351285dcc40e0",
+        "format": "png",
+        "asset_id": "nih-bioart-637ad98233a92b436187"
+      },
+      {
+        "title": "Computer Organoid",
+        "source": "nih-bioart",
+        "source_id": "782",
+        "source_url": "https://bioart.niaid.nih.gov/bioart/782",
+        "original_sha256": "c22e1cec50e67885e72ec87cd3603903a5c5a8166ef8dd3c51a059acfb10cec7",
+        "preview_sha256": "ba5c1e7cc5aa56c5c46b54b6143136e99f5c5da990079605815830ae7a79a228",
+        "format": "png",
+        "asset_id": "nih-bioart-637ad98233a92b436187"
+      },
+      {
+        "title": "Computer Organoid",
+        "source": "nih-bioart",
+        "source_id": "782",
+        "source_url": "https://bioart.niaid.nih.gov/bioart/782",
+        "original_sha256": "0e0c0ff92f8ed08b9fd9633da0b8ef7e8df8fab32852211fdf4157768789deea",
+        "preview_sha256": "faa68eeeba5ffcee6f865cdefe7971c5b6c8a22e12386457d82012123abc6d55",
+        "format": "png",
+        "asset_id": "nih-bioart-637ad98233a92b436187"
+      },
+      {
+        "title": "Computer Organoid",
+        "source": "nih-bioart",
+        "source_id": "782",
+        "source_url": "https://bioart.niaid.nih.gov/bioart/782",
+        "original_sha256": "a2688dc94e77cac76f6dd303dd21da9a3f6bcb9ee37039321050a24274d87f7e",
+        "preview_sha256": "6d759ba27eaccf6cedb66faa6e0292ff701c62b7344c71e102ce73a3fad9a765",
+        "format": "png",
+        "asset_id": "nih-bioart-637ad98233a92b436187"
+      },
+      {
+        "title": "Computer Organoid",
+        "source": "nih-bioart",
+        "source_id": "782",
+        "source_url": "https://bioart.niaid.nih.gov/bioart/782",
+        "original_sha256": "21e1ee4add949d727acc480072947957870156dfaf8ecf396b8ee7932cbc5a9b",
+        "preview_sha256": "1448114e2ba8a0ae19a917c3c12262351ccaa16dc64cd7a5391bb00ced5bb277",
+        "format": "png",
+        "asset_id": "nih-bioart-637ad98233a92b436187"
+      },
+      {
+        "title": "Computer Organoid",
+        "source": "nih-bioart",
+        "source_id": "782",
+        "source_url": "https://bioart.niaid.nih.gov/bioart/782",
+        "original_sha256": "cee0c56d21881d6828f190c910fc8069d4e59ff12e72f193529b5f1483f4d4ec",
+        "preview_sha256": "5ea402667450b92d4de3d50b9d614586f8c20f9707bc7fbe00037cee5362490b",
+        "format": "png",
+        "asset_id": "nih-bioart-637ad98233a92b436187"
+      },
+      {
+        "title": "Computer Organoid",
+        "source": "nih-bioart",
+        "source_id": "782",
+        "source_url": "https://bioart.niaid.nih.gov/bioart/782",
+        "original_sha256": "9b6d041cc43ac584bd2c16095fcacdc73c71c78fffa20aea45d0a93569247074",
+        "preview_sha256": "93e5f762e9e1e824c4892f18b620b153f0854b693e4b8ab67e089a16088cc399",
+        "format": "png",
+        "asset_id": "nih-bioart-637ad98233a92b436187"
+      },
+      {
+        "title": "Computer Organoid",
+        "source": "nih-bioart",
+        "source_id": "782",
+        "source_url": "https://bioart.niaid.nih.gov/bioart/782",
+        "original_sha256": "13de4a9737ec75f3ff50525968a3d04682a99b809275c1bb12d7151922a3401f",
+        "preview_sha256": "a401f7163cb34efdfd611d3f94bbdd15d0187317994d409c97332beea9a024f1",
+        "format": "png",
+        "asset_id": "nih-bioart-637ad98233a92b436187"
+      },
+      {
+        "title": "Computer Organoid",
+        "source": "nih-bioart",
+        "source_id": "782",
+        "source_url": "https://bioart.niaid.nih.gov/bioart/782",
+        "original_sha256": "81a57be85d5d733416d104778ce13db05a646c129cffa0a1260ce6e151274a9a",
+        "preview_sha256": "bb4fcd07a1369b692430156f68ccb4fd627deba7d1013d2b2a9f4a994c32e6b4",
+        "format": "png",
+        "asset_id": "nih-bioart-637ad98233a92b436187"
+      },
+      {
+        "title": "Computer Organoid",
+        "source": "nih-bioart",
+        "source_id": "782",
+        "source_url": "https://bioart.niaid.nih.gov/bioart/782",
+        "original_sha256": "63260a52e75c19156abba3e52a1ae620474796ac67309ce0b670e958fa9716c8",
+        "preview_sha256": "9b71bf3e89f00ff33dfc8b85a3451c310b90a1307370027f13e583c252260cb5",
+        "format": "png",
+        "asset_id": "nih-bioart-637ad98233a92b436187"
+      },
+      {
+        "title": "Computer Organoid",
+        "source": "nih-bioart",
+        "source_id": "782",
+        "source_url": "https://bioart.niaid.nih.gov/bioart/782",
+        "original_sha256": "33303f06591d4ef98b848e2c85f39b709d3c0e3245da30c8484aafcc3f2c6aef",
+        "preview_sha256": "2c625aebc0b724fb0f0bcc994cc82e2a6531cc829e2bfcd55eb11b6ce1c67339",
+        "format": "png",
+        "asset_id": "nih-bioart-637ad98233a92b436187"
+      },
+      {
+        "title": "Computer Organoid",
+        "source": "nih-bioart",
+        "source_id": "782",
+        "source_url": "https://bioart.niaid.nih.gov/bioart/782",
+        "original_sha256": "1a95a8b043e652efe638031ab45e9279dc756eb970520f29363b700effccd0e2",
+        "preview_sha256": "62fbaa469808ee79ebdad8f39c0163c89ca36a9ad4c5564c7715963a74a2b04e",
+        "format": "svg",
+        "asset_id": "nih-bioart-637ad98233a92b436187"
+      },
+      {
+        "title": "Computer Organoid",
+        "source": "nih-bioart",
+        "source_id": "782",
+        "source_url": "https://bioart.niaid.nih.gov/bioart/782",
+        "original_sha256": "d651cdaeb16c601edf2077204e0813b5f779a874d86d1e71467712e18e0fc29f",
+        "preview_sha256": "e5e5b41119fed6ceafcac69d507d8a75cdaef0e970ba67d79067e94406cd4fb6",
+        "format": "svg",
+        "asset_id": "nih-bioart-637ad98233a92b436187"
+      },
+      {
+        "title": "Computer Organoid",
+        "source": "nih-bioart",
+        "source_id": "782",
+        "source_url": "https://bioart.niaid.nih.gov/bioart/782",
+        "original_sha256": "46500402a58f6a77ddd36b934fa33c849b57da6bd6de429354f522b2fd2e551c",
+        "preview_sha256": "d3172345760ee65f3e204263a1a9b5812aa4dd985b03ac87a4faa1a149488983",
+        "format": "svg",
+        "asset_id": "nih-bioart-637ad98233a92b436187"
+      },
+      {
+        "title": "Computer Organoid",
+        "source": "nih-bioart",
+        "source_id": "782",
+        "source_url": "https://bioart.niaid.nih.gov/bioart/782",
+        "original_sha256": "be9b258efb92915a74895524690730b2fbba44d17210b6dc9de2f671b41a5ca9",
+        "preview_sha256": "5138a1ea9600cc2a27f741c3c3e5e2ae59a35b453fc0f128933483488108a2bc",
+        "format": "svg",
+        "asset_id": "nih-bioart-637ad98233a92b436187"
+      },
+      {
+        "title": "Computer Organoid",
+        "source": "nih-bioart",
+        "source_id": "782",
+        "source_url": "https://bioart.niaid.nih.gov/bioart/782",
+        "original_sha256": "57ddd503424de0b78dca0a3f8c2de2f3a08de165a99f571c7cfff8dbf1c29ab0",
+        "preview_sha256": "3f6dc5e333c68c1bf6aa1d233af13e7e0444e270d2030ebf7fa57d846edbfa90",
+        "format": "svg",
+        "asset_id": "nih-bioart-637ad98233a92b436187"
+      },
+      {
+        "title": "Computer Organoid",
+        "source": "nih-bioart",
+        "source_id": "782",
+        "source_url": "https://bioart.niaid.nih.gov/bioart/782",
+        "original_sha256": "c9a07f13bc87c28dfe54c5ec1ca658bb60764e39494708aa3a6d8a946ae68096",
+        "preview_sha256": "95d9516c98d1ac9a54119f723d15469be907a5e7b9986210b45698d9da374c4a",
+        "format": "svg",
+        "asset_id": "nih-bioart-637ad98233a92b436187"
+      },
+      {
+        "title": "Computer Organoid",
+        "source": "nih-bioart",
+        "source_id": "782",
+        "source_url": "https://bioart.niaid.nih.gov/bioart/782",
+        "original_sha256": "20bdb03c3a6c4075ab14a612401a608c99466c6618cc619abc8ff1426b1145bc",
+        "preview_sha256": "ea8f79c5dfb4c6dc5d16b5339c275d4ad0ee6c1205ea8e910bbfe253cde850d6",
+        "format": "svg",
+        "asset_id": "nih-bioart-637ad98233a92b436187"
+      },
+      {
+        "title": "Computer Organoid",
+        "source": "nih-bioart",
+        "source_id": "782",
+        "source_url": "https://bioart.niaid.nih.gov/bioart/782",
+        "original_sha256": "77d83dda00479c41545c990ea2034a6e6d92067bb2f6d870ec43daaea289c0d8",
+        "preview_sha256": "77c160f2b9a10ef329c26298bc526958f91b7a8667f5c4359fa9a962b6034af6",
+        "format": "svg",
+        "asset_id": "nih-bioart-637ad98233a92b436187"
+      },
+      {
+        "title": "Computer Organoid",
+        "source": "nih-bioart",
+        "source_id": "782",
+        "source_url": "https://bioart.niaid.nih.gov/bioart/782",
+        "original_sha256": "c13ad466224a48bf91da0db42eb09f60e289256a3a3708dc09bf87e4cfae595b",
+        "preview_sha256": "e5f8fe6262be09e020b1947b7da8cc6610e81282cce93a1934aef06fad715633",
+        "format": "svg",
+        "asset_id": "nih-bioart-637ad98233a92b436187"
+      },
+      {
+        "title": "Computer Organoid",
+        "source": "nih-bioart",
+        "source_id": "782",
+        "source_url": "https://bioart.niaid.nih.gov/bioart/782",
+        "original_sha256": "565d583082a30a405179377751c823b860f8005e8049c671c9beea459851d737",
+        "preview_sha256": "ad99d471eb61919e1b9050d546b2b0d879e6036bbdaec3ddae3bf22d5a5c633e",
+        "format": "svg",
+        "asset_id": "nih-bioart-637ad98233a92b436187"
+      },
+      {
+        "title": "Computer Organoid",
+        "source": "nih-bioart",
+        "source_id": "782",
+        "source_url": "https://bioart.niaid.nih.gov/bioart/782",
+        "original_sha256": "86a806d23ee10343802157e0379d6300ceb3eda8f1215f173835fb24127a13aa",
+        "preview_sha256": "aec9ffa527bddd974951219b807346a71f15644a74d60cf429490498acdae8ad",
+        "format": "svg",
+        "asset_id": "nih-bioart-637ad98233a92b436187"
+      },
+      {
+        "title": "Computer Organoid",
+        "source": "nih-bioart",
+        "source_id": "782",
+        "source_url": "https://bioart.niaid.nih.gov/bioart/782",
+        "original_sha256": "d13326c2ff05ac56b6039436f6195470f5d23bdcecdf37ecaab531a794736cf9",
+        "preview_sha256": "b68caaf51f44f7137dd35c6fb62705728000e3cf2844a20f58d5ea0935b83ce6",
+        "format": "svg",
+        "asset_id": "nih-bioart-637ad98233a92b436187"
+      },
+      {
+        "title": "Computer Monitor",
+        "source": "nih-bioart",
+        "source_id": "827",
+        "source_url": "https://bioart.niaid.nih.gov/bioart/827",
+        "original_sha256": "9349437ae1a2393d0d6533dfaee74de9f1faa29cece77a2cb24c80a2e7d1e000",
+        "preview_sha256": "7c0f3a0a3337d061baa5c1b0fcecfe332e0b94862dfd416cafadd9046631864b",
+        "format": "png",
+        "asset_id": "nih-bioart-8f5cd537c85ec48c18e0"
+      },
+      {
+        "title": "Computer Monitor",
+        "source": "nih-bioart",
+        "source_id": "827",
+        "source_url": "https://bioart.niaid.nih.gov/bioart/827",
+        "original_sha256": "cd46d605ab51c899b4cf9e018366a7aeb11fb7d9e46ed3f4db95fef8a14adc97",
+        "preview_sha256": "a6af387473c92955597f74c73828ad91ab20a494301b72054b396af901c74451",
+        "format": "png",
+        "asset_id": "nih-bioart-8f5cd537c85ec48c18e0"
+      },
+      {
+        "title": "Computer Monitor",
+        "source": "nih-bioart",
+        "source_id": "827",
+        "source_url": "https://bioart.niaid.nih.gov/bioart/827",
+        "original_sha256": "dae3e4052378cc907a3cce405dfa983d4e7c024fb2d55b30014cd2e829fa916a",
+        "preview_sha256": "6e756cdca518eaa5baa8b44c024593f868a1422247509b6976d8215cc6846d2d",
+        "format": "png",
+        "asset_id": "nih-bioart-8f5cd537c85ec48c18e0"
+      },
+      {
+        "title": "Computer Monitor",
+        "source": "nih-bioart",
+        "source_id": "827",
+        "source_url": "https://bioart.niaid.nih.gov/bioart/827",
+        "original_sha256": "b8ad83145df9db37a858e1fb9f53e6eb625ad2d7e4892508368c8557095e2544",
+        "preview_sha256": "ef9ad9385a60e33158df71db77e737576696178fe8ac82c20307ee2086a646e2",
+        "format": "png",
+        "asset_id": "nih-bioart-8f5cd537c85ec48c18e0"
+      },
+      {
+        "title": "Computer Monitor",
+        "source": "nih-bioart",
+        "source_id": "827",
+        "source_url": "https://bioart.niaid.nih.gov/bioart/827",
+        "original_sha256": "9a6281e2b212deb69bd56fb62b38e17d3a0db4aeadae4d0562de24a8558ddc7c",
+        "preview_sha256": "ec2a23bd55da3db206a125a224d1f9fbf47cc4135b98377ebb4e9a9829534602",
+        "format": "png",
+        "asset_id": "nih-bioart-8f5cd537c85ec48c18e0"
+      },
+      {
+        "title": "Computer Monitor",
+        "source": "nih-bioart",
+        "source_id": "827",
+        "source_url": "https://bioart.niaid.nih.gov/bioart/827",
+        "original_sha256": "6cda89d1fd384a9097437f9149999232b7296dca0ab2c1b55b565102b6f339ea",
+        "preview_sha256": "df4dfdd179a2408a680ca8dc46d93c99472dc586d09c69ef2522f5b47bce9d35",
+        "format": "png",
+        "asset_id": "nih-bioart-8f5cd537c85ec48c18e0"
+      },
+      {
+        "title": "Computer Monitor",
+        "source": "nih-bioart",
+        "source_id": "827",
+        "source_url": "https://bioart.niaid.nih.gov/bioart/827",
+        "original_sha256": "fc1edca74c119bb2756acd5e0ce6e728c7d6aa3d69ea665778427da376f4cf97",
+        "preview_sha256": "94c8db097261e81d1854ab3333a444852d06f05732b632afd5f36b9623ac32b0",
+        "format": "png",
+        "asset_id": "nih-bioart-8f5cd537c85ec48c18e0"
+      },
+      {
+        "title": "Computer Monitor",
+        "source": "nih-bioart",
+        "source_id": "827",
+        "source_url": "https://bioart.niaid.nih.gov/bioart/827",
+        "original_sha256": "85ab7b87ef684d71dffe65bc4606545af2b132cfabd15162bd4cbb5f4eb9f25b",
+        "preview_sha256": "dd6763a11d94c57d1752af1ed4da5ab2f32ee01cfd3c2a5f249eb91ec5a965d0",
+        "format": "png",
+        "asset_id": "nih-bioart-8f5cd537c85ec48c18e0"
+      },
+      {
+        "title": "Computer Monitor",
+        "source": "nih-bioart",
+        "source_id": "827",
+        "source_url": "https://bioart.niaid.nih.gov/bioart/827",
+        "original_sha256": "e653de423e5313cbeed5e495642f11be8cf53fe3e1c794b6115b7f1e077bec1a",
+        "preview_sha256": "c6dd147879e8067e44535295837e7ec0be99a0ee13f9d61bac12b2f71f3fab8a",
+        "format": "png",
+        "asset_id": "nih-bioart-8f5cd537c85ec48c18e0"
+      },
+      {
+        "title": "Computer Monitor",
+        "source": "nih-bioart",
+        "source_id": "827",
+        "source_url": "https://bioart.niaid.nih.gov/bioart/827",
+        "original_sha256": "76a04d09db0dd625dabd0c05802182999a7986c7e92f1f748bf6b3ca744a799d",
+        "preview_sha256": "df88ecd7cde97d9ff1a38382c0c2d8a18b32acb7aeffd2bc1c6778ec7167a00f",
+        "format": "png",
+        "asset_id": "nih-bioart-8f5cd537c85ec48c18e0"
+      },
+      {
+        "title": "Computer Monitor",
+        "source": "nih-bioart",
+        "source_id": "827",
+        "source_url": "https://bioart.niaid.nih.gov/bioart/827",
+        "original_sha256": "6c2e2737a0f7c0fd76c9761d1eefd464e37c2a6ee048f13ad94fb244d8fdc0bd",
+        "preview_sha256": "61f671db2116bfe4666706c7c6ca8936f246b4f2c5f8227914f2259b18aae1f5",
+        "format": "png",
+        "asset_id": "nih-bioart-8f5cd537c85ec48c18e0"
+      },
+      {
+        "title": "Computer Monitor",
+        "source": "nih-bioart",
+        "source_id": "827",
+        "source_url": "https://bioart.niaid.nih.gov/bioart/827",
+        "original_sha256": "a3673c4bb0915854713512a539be594e75200d0350a143c03bf23fa0c4a25593",
+        "preview_sha256": "c52ef6787c322078230669a933bef844fa14ccd869b93f58b9c4dfa35fb5fd4c",
+        "format": "png",
+        "asset_id": "nih-bioart-8f5cd537c85ec48c18e0"
+      },
+      {
+        "title": "Computer Monitor",
+        "source": "nih-bioart",
+        "source_id": "827",
+        "source_url": "https://bioart.niaid.nih.gov/bioart/827",
+        "original_sha256": "0939c41481d267334823eb849cc00ccc7e9fadc31d8a384058ddfe4783958a7d",
+        "preview_sha256": "0a0f1c450e99d3071e94403a7f9507de3fcb66f5e97a5e436d333c321907096b",
+        "format": "svg",
+        "asset_id": "nih-bioart-8f5cd537c85ec48c18e0"
+      },
+      {
+        "title": "Computer Monitor",
+        "source": "nih-bioart",
+        "source_id": "827",
+        "source_url": "https://bioart.niaid.nih.gov/bioart/827",
+        "original_sha256": "18c0d02d80a8170921bbb11256879e9bb796d596ad2a0032fff9b05d82259990",
+        "preview_sha256": "a329628c58f5b1ecf509dc75644f3d3542e670317cf53443b7f9cc33472d659c",
+        "format": "svg",
+        "asset_id": "nih-bioart-8f5cd537c85ec48c18e0"
+      },
+      {
+        "title": "Computer Monitor",
+        "source": "nih-bioart",
+        "source_id": "827",
+        "source_url": "https://bioart.niaid.nih.gov/bioart/827",
+        "original_sha256": "cd66f0c5103ad37de3ee157510f16b9650390814279b1a86f380e9c84ce866f9",
+        "preview_sha256": "80f39217bcf935789ae38e03d84015e335a41cf811f48996d3b725a8e1905656",
+        "format": "svg",
+        "asset_id": "nih-bioart-8f5cd537c85ec48c18e0"
+      },
+      {
+        "title": "Computer Monitor",
+        "source": "nih-bioart",
+        "source_id": "827",
+        "source_url": "https://bioart.niaid.nih.gov/bioart/827",
+        "original_sha256": "8527c90264c857bbd2486d0b3d0ef47964cc3c4bd612b6f6ca029b52ed430649",
+        "preview_sha256": "988977863482d9da65fbe167ad4d88f7012b91631d0c201539176ea2dd41de24",
+        "format": "svg",
+        "asset_id": "nih-bioart-8f5cd537c85ec48c18e0"
+      },
+      {
+        "title": "Computer Monitor",
+        "source": "nih-bioart",
+        "source_id": "827",
+        "source_url": "https://bioart.niaid.nih.gov/bioart/827",
+        "original_sha256": "01182c67fb6a022c0368b5ab4e2a905ca237ac3bd20b462cdb66459f4aa93b65",
+        "preview_sha256": "92a691d15ff25dd22db861e0d355d4b9216a4bd66a095296f555c672073e4a9f",
+        "format": "svg",
+        "asset_id": "nih-bioart-8f5cd537c85ec48c18e0"
+      },
+      {
+        "title": "Computer Monitor",
+        "source": "nih-bioart",
+        "source_id": "827",
+        "source_url": "https://bioart.niaid.nih.gov/bioart/827",
+        "original_sha256": "f2952ed3f7e6e23631e2c1445c8d08d834a2c84288769b836cb5a31b43987adf",
+        "preview_sha256": "7d06d387a1c839be5de54a507ecc642b8f704a8ec8bd9b3af18ad4540b860c84",
+        "format": "svg",
+        "asset_id": "nih-bioart-8f5cd537c85ec48c18e0"
+      },
+      {
+        "title": "Computer Monitor",
+        "source": "nih-bioart",
+        "source_id": "827",
+        "source_url": "https://bioart.niaid.nih.gov/bioart/827",
+        "original_sha256": "fb440c46d9abfd8903e0df627c2dc663e532a113dff06c2159e0cb3e3af1bbfd",
+        "preview_sha256": "dc206ed0eebc1598147346f6a789e31f27a97e46d12bc584bd58da2b45ab714d",
+        "format": "svg",
+        "asset_id": "nih-bioart-8f5cd537c85ec48c18e0"
+      },
+      {
+        "title": "Computer Monitor",
+        "source": "nih-bioart",
+        "source_id": "827",
+        "source_url": "https://bioart.niaid.nih.gov/bioart/827",
+        "original_sha256": "eed800027fc4c5cb8ee0874e870b387f2971b4e3431311f5f62efba2cbe73f29",
+        "preview_sha256": "f798469930470f7f80269a1d44b463bb686f0c6dc1e87dd47e18b67a6a94a9ff",
+        "format": "svg",
+        "asset_id": "nih-bioart-8f5cd537c85ec48c18e0"
+      },
+      {
+        "title": "Computer Monitor",
+        "source": "nih-bioart",
+        "source_id": "827",
+        "source_url": "https://bioart.niaid.nih.gov/bioart/827",
+        "original_sha256": "76715f48d5303d0dd62125ba203f5d20e7de03bf1a78908fbe7f44d08d7ad413",
+        "preview_sha256": "9925e1a1c7e6d11be07d616db9996e87091a3e1161f8c9e39ef6c55e53bf4f69",
+        "format": "svg",
+        "asset_id": "nih-bioart-8f5cd537c85ec48c18e0"
+      },
+      {
+        "title": "Computer Monitor",
+        "source": "nih-bioart",
+        "source_id": "827",
+        "source_url": "https://bioart.niaid.nih.gov/bioart/827",
+        "original_sha256": "72c676a7766bea459bea48d5b340c50381ce0ab38c8205945187ea76b6d72180",
+        "preview_sha256": "f470dbda569fd796976107614991b7e36aa61cf28ed6d857ed37493c2a3f2dad",
+        "format": "svg",
+        "asset_id": "nih-bioart-8f5cd537c85ec48c18e0"
+      },
+      {
+        "title": "Computer Monitor",
+        "source": "nih-bioart",
+        "source_id": "827",
+        "source_url": "https://bioart.niaid.nih.gov/bioart/827",
+        "original_sha256": "d5f47f7b27ee427085187559043a06199d8d2c95159dd314da1e78411aceb5f2",
+        "preview_sha256": "8eb133c4e8f12bbfd64db435d7dc3cf59102de15d23afc8fa30c42085bc4629c",
+        "format": "svg",
+        "asset_id": "nih-bioart-8f5cd537c85ec48c18e0"
+      },
+      {
+        "title": "Computer Monitor",
+        "source": "nih-bioart",
+        "source_id": "827",
+        "source_url": "https://bioart.niaid.nih.gov/bioart/827",
+        "original_sha256": "6cae831c720c73ace5a1fa67cb486dc79caa3011fcc8e09781f690c8faafcaed",
+        "preview_sha256": "e71a619961d52eb619180bf547b3f053aec3b6ccd6bfbdc25571a088fdda5bf1",
+        "format": "svg",
+        "asset_id": "nih-bioart-8f5cd537c85ec48c18e0"
+      },
+      {
+        "title": "Computer Screen",
+        "source": "nih-bioart",
+        "source_id": "855",
+        "source_url": "https://bioart.niaid.nih.gov/bioart/855",
+        "original_sha256": "42942fa11b5d74bc783e71b3033c8fda57f755a54fee6a56b49146397f1ff437",
+        "preview_sha256": "24d6cc7994611c62e64c19efaefd81f693fdfc7dd93c26ecbe2a4d73992377d8",
+        "format": "png",
+        "asset_id": "nih-bioart-9a690ba5614fd6e23027"
+      },
+      {
+        "title": "Computer Screen",
+        "source": "nih-bioart",
+        "source_id": "855",
+        "source_url": "https://bioart.niaid.nih.gov/bioart/855",
+        "original_sha256": "52318b99abc0af32c0722a88ec407c3c81725956e415cfbc63050e370c75e7eb",
+        "preview_sha256": "0dfd898cebae0c15257136fe9f7fa84fcdcebb0f1cb306783b5d811c65710fcb",
+        "format": "png",
+        "asset_id": "nih-bioart-9a690ba5614fd6e23027"
+      },
+      {
+        "title": "Computer Screen",
+        "source": "nih-bioart",
+        "source_id": "855",
+        "source_url": "https://bioart.niaid.nih.gov/bioart/855",
+        "original_sha256": "1ff7585d7a25eb3b69729114d03a750c89d1c2126f8e66dba7a2cbfc5a1488f2",
+        "preview_sha256": "7ce93c485ccc656d7000855dc569d991c8fc11ec8b9e9a441e9048badc7a19ee",
+        "format": "png",
+        "asset_id": "nih-bioart-9a690ba5614fd6e23027"
+      },
+      {
+        "title": "Computer Screen",
+        "source": "nih-bioart",
+        "source_id": "855",
+        "source_url": "https://bioart.niaid.nih.gov/bioart/855",
+        "original_sha256": "94eaf3755a2ef5ea93acbc8d2ff3c5aeb14ea26cd4d036f33be7c8ab422de100",
+        "preview_sha256": "eb88f1ca2414221befe25cec4c92867f1e721677b2c0d5d93cddb03d77ca7bac",
+        "format": "png",
+        "asset_id": "nih-bioart-9a690ba5614fd6e23027"
+      },
+      {
+        "title": "Computer Screen",
+        "source": "nih-bioart",
+        "source_id": "855",
+        "source_url": "https://bioart.niaid.nih.gov/bioart/855",
+        "original_sha256": "c2a090539bede054996a98ddef92300db0db04bc6133964b4400b33eb3339438",
+        "preview_sha256": "b415378ef3dde2865c8c5162dd6c64289eca78580deb3623512cbfad5f5c341c",
+        "format": "png",
+        "asset_id": "nih-bioart-9a690ba5614fd6e23027"
+      },
+      {
+        "title": "Computer Screen",
+        "source": "nih-bioart",
+        "source_id": "855",
+        "source_url": "https://bioart.niaid.nih.gov/bioart/855",
+        "original_sha256": "ba81f3b202d1b66a3553c56cfc2b7ff022b500af6d80bf2be25ad0098aed3486",
+        "preview_sha256": "873d05fd0fad219c3b46cf3c73239eeea32940f57afc04019d1db6352ce51f62",
+        "format": "png",
+        "asset_id": "nih-bioart-9a690ba5614fd6e23027"
+      },
+      {
+        "title": "Computer Screen",
+        "source": "nih-bioart",
+        "source_id": "855",
+        "source_url": "https://bioart.niaid.nih.gov/bioart/855",
+        "original_sha256": "eefad46a4d642b8553866c81270585b8afabe49cccd1aa41585715a19f37c68a",
+        "preview_sha256": "39d5562436f3f1cdd9f455520158212b17fb3f2c6c9ea1d87b47a31a939ca3c2",
+        "format": "png",
+        "asset_id": "nih-bioart-9a690ba5614fd6e23027"
+      },
+      {
+        "title": "Computer Screen",
+        "source": "nih-bioart",
+        "source_id": "855",
+        "source_url": "https://bioart.niaid.nih.gov/bioart/855",
+        "original_sha256": "0b3cd07b7b0be349d4a3462f32c2cf7317d2ab783ccf53b7752e95f4aa2dc7cb",
+        "preview_sha256": "0e85edd6f086f4218141fff9509284c914e7d8a006e5444f318fb77489a13a82",
+        "format": "png",
+        "asset_id": "nih-bioart-9a690ba5614fd6e23027"
+      },
+      {
+        "title": "Computer Screen",
+        "source": "nih-bioart",
+        "source_id": "855",
+        "source_url": "https://bioart.niaid.nih.gov/bioart/855",
+        "original_sha256": "9851d53cf558b314b1301311dd839f5d6748309fe0dfde3c149c638d51ebf2d3",
+        "preview_sha256": "8d8692a7d7cf843a41bf3a557b219b30de023c24025a926623f5f5f86024b400",
+        "format": "png",
+        "asset_id": "nih-bioart-9a690ba5614fd6e23027"
+      },
+      {
+        "title": "Computer Screen",
+        "source": "nih-bioart",
+        "source_id": "855",
+        "source_url": "https://bioart.niaid.nih.gov/bioart/855",
+        "original_sha256": "30ed602cfdbd569fde38beb9a00dcb8bdf4049f4b3156603a6dcb560114e12ce",
+        "preview_sha256": "fe3d90e4996fb78256d0011fdeea73d689e338f832de8790895cc4aabf34c007",
+        "format": "png",
+        "asset_id": "nih-bioart-9a690ba5614fd6e23027"
+      },
+      {
+        "title": "Computer Screen",
+        "source": "nih-bioart",
+        "source_id": "855",
+        "source_url": "https://bioart.niaid.nih.gov/bioart/855",
+        "original_sha256": "948b6f5d34294144c26e92d4bdc8d8c4a5ea71cb7832ebc13c2d46cad0dda5fa",
+        "preview_sha256": "97a564d50f68988047c0170dcb3b73e0054e76b20894bfc3591222c4c2fa96b4",
+        "format": "png",
+        "asset_id": "nih-bioart-9a690ba5614fd6e23027"
+      },
+      {
+        "title": "Computer Screen",
+        "source": "nih-bioart",
+        "source_id": "855",
+        "source_url": "https://bioart.niaid.nih.gov/bioart/855",
+        "original_sha256": "8d853bd5f46a5ad001d20a3be323a15ac497731e95ea8bce1c017f17be0cf79e",
+        "preview_sha256": "bbdde1ae2805a5ed0881e47c83ecd99d520ff68cf75fc9c0913230bdaa1f6e69",
+        "format": "svg",
+        "asset_id": "nih-bioart-9a690ba5614fd6e23027"
+      },
+      {
+        "title": "Computer Screen",
+        "source": "nih-bioart",
+        "source_id": "855",
+        "source_url": "https://bioart.niaid.nih.gov/bioart/855",
+        "original_sha256": "29cb5238e7f5ffc87a537d29f6d37ae9ae9e4d86a1d1cda86079a96edf485529",
+        "preview_sha256": "db60bb80fdee024d16a52079523c808f904bd0fd705dd8468a19c63871ce46f0",
+        "format": "svg",
+        "asset_id": "nih-bioart-9a690ba5614fd6e23027"
+      },
+      {
+        "title": "Computer Screen",
+        "source": "nih-bioart",
+        "source_id": "855",
+        "source_url": "https://bioart.niaid.nih.gov/bioart/855",
+        "original_sha256": "ddb675af0514da64c9bf37cabb757b5550776984f778c377784d8782796e4548",
+        "preview_sha256": "b28f444bbc26ced8897ee6434552d7e188b2da146f2c96b8a74adc772a71b7bc",
+        "format": "svg",
+        "asset_id": "nih-bioart-9a690ba5614fd6e23027"
+      },
+      {
+        "title": "Computer Screen",
+        "source": "nih-bioart",
+        "source_id": "855",
+        "source_url": "https://bioart.niaid.nih.gov/bioart/855",
+        "original_sha256": "3665917f8d12740a2285f49e80bf2c5290214596db1a1c0aa31ee774ee4a037a",
+        "preview_sha256": "717d8c9189e98a98cd29366eaa2fcd50982fc8ff92a5f5de5c3666d927a19eee",
+        "format": "svg",
+        "asset_id": "nih-bioart-9a690ba5614fd6e23027"
+      },
+      {
+        "title": "Computer Screen",
+        "source": "nih-bioart",
+        "source_id": "855",
+        "source_url": "https://bioart.niaid.nih.gov/bioart/855",
+        "original_sha256": "197ce3c7cdc5588c7a9f456b5e65156067527ed945a75688b31540e36c8b8fca",
+        "preview_sha256": "f83d4bfbaa303e598a96f811ee045e4471ad7e30d551986abb5d9eaa418615d2",
+        "format": "svg",
+        "asset_id": "nih-bioart-9a690ba5614fd6e23027"
+      },
+      {
+        "title": "Computer Screen",
+        "source": "nih-bioart",
+        "source_id": "855",
+        "source_url": "https://bioart.niaid.nih.gov/bioart/855",
+        "original_sha256": "e05a6880f21eb576e17805d41767181c7684d4fb8a1b1a92c9daf6fdf4f70815",
+        "preview_sha256": "db0f9dd8c05b3d0a8fe4941dc7b102f280e9b08b04b47751c44f3b81354f2d69",
+        "format": "svg",
+        "asset_id": "nih-bioart-9a690ba5614fd6e23027"
+      },
+      {
+        "title": "Computer Screen",
+        "source": "nih-bioart",
+        "source_id": "855",
+        "source_url": "https://bioart.niaid.nih.gov/bioart/855",
+        "original_sha256": "5feb23a18a47a16f9db28c2ddbca8c5329d85863338370e7b8a62d84b8ecceb0",
+        "preview_sha256": "00f5c274232099fef936e911f05ccaf00375a10280a3b5258e9a710995838634",
+        "format": "svg",
+        "asset_id": "nih-bioart-9a690ba5614fd6e23027"
+      },
+      {
+        "title": "Computer Screen",
+        "source": "nih-bioart",
+        "source_id": "855",
+        "source_url": "https://bioart.niaid.nih.gov/bioart/855",
+        "original_sha256": "38ae1c5ca5501d9d9ae2c7e24e5f04be3eb6b57b054d53b879d03697ed7b55c4",
+        "preview_sha256": "ebc434b2ee951d5078527f0253e9b75b537b9beb9dafaf4a35a18309bc8f78c3",
+        "format": "svg",
+        "asset_id": "nih-bioart-9a690ba5614fd6e23027"
+      },
+      {
+        "title": "Computer Screen",
+        "source": "nih-bioart",
+        "source_id": "855",
+        "source_url": "https://bioart.niaid.nih.gov/bioart/855",
+        "original_sha256": "1839d10ab5e61c0d7af2a3fc8585ca677ad9190cea16df55fd145ac0e8af1082",
+        "preview_sha256": "f0a2b7aa85d76c1c6dd48791a66bd8da91a625d84f31603c442d407038cb1757",
+        "format": "svg",
+        "asset_id": "nih-bioart-9a690ba5614fd6e23027"
+      },
+      {
+        "title": "Computer Screen",
+        "source": "nih-bioart",
+        "source_id": "855",
+        "source_url": "https://bioart.niaid.nih.gov/bioart/855",
+        "original_sha256": "3661da5c6fd786f4f1b8b42a6853f07977a82d1cb99d1f56c94b210f08c1bfd4",
+        "preview_sha256": "63a0d1ba9a1ac89f5096ca60027902f90ce3a97eb1ea1f42f675cfce1feda573",
+        "format": "svg",
+        "asset_id": "nih-bioart-9a690ba5614fd6e23027"
+      },
+      {
+        "title": "Computer Screen",
+        "source": "nih-bioart",
+        "source_id": "855",
+        "source_url": "https://bioart.niaid.nih.gov/bioart/855",
+        "original_sha256": "663e219195bc8895bb7881d15fc8542b615cddc3508c394851c2199856b973ee",
+        "preview_sha256": "08308f0ced79e56db2c7ba83d089d347eccc6e467b65d4c2b34fa43b30cd183e",
+        "format": "svg",
+        "asset_id": "nih-bioart-9a690ba5614fd6e23027"
+      },
+      {
+        "title": "Computer Screen",
+        "source": "nih-bioart",
+        "source_id": "855",
+        "source_url": "https://bioart.niaid.nih.gov/bioart/855",
+        "original_sha256": "33e811bce5d78869f754e3e1f1690e57f59cab77a5fc010e4e48d73dd6a663e0",
+        "preview_sha256": "44bf04ca17df3442f413e34ae39a331ced1aa0ff949a73fdb5145c98fb27b054",
+        "format": "svg",
+        "asset_id": "nih-bioart-9a690ba5614fd6e23027"
+      },
+      {
+        "title": "Computer Monitor",
+        "source": "nih-bioart",
+        "source_id": "831",
+        "source_url": "https://bioart.niaid.nih.gov/bioart/831",
+        "original_sha256": "bef1ea223135c54cd57c082142beb04df715a67e4679d9e19ef9c598a8538c63",
+        "preview_sha256": "08d20ff128dae42d03d1c394f3323f5961dc46964440ece456a2a3725fc9ecda",
+        "format": "png",
+        "asset_id": "nih-bioart-b59452836ed7622c9169"
+      },
+      {
+        "title": "Computer Monitor",
+        "source": "nih-bioart",
+        "source_id": "831",
+        "source_url": "https://bioart.niaid.nih.gov/bioart/831",
+        "original_sha256": "3a746dc5e5f1eac0fe163bf1de233a01f1e11f018a263eee5ad5af4e7dea84df",
+        "preview_sha256": "960ff11499d6328f18f8639ca4929f7a531888037ece65adc6a923747fd55a97",
+        "format": "png",
+        "asset_id": "nih-bioart-b59452836ed7622c9169"
+      },
+      {
+        "title": "Computer Monitor",
+        "source": "nih-bioart",
+        "source_id": "831",
+        "source_url": "https://bioart.niaid.nih.gov/bioart/831",
+        "original_sha256": "0e47c11993ea6a1f291b5348dfb64e9c3da5d9f75599776b57ccba4365e2d134",
+        "preview_sha256": "9f85900ee50731fd0b61547cb38b50eb34f5408299e6efb00b7c81db3b58298a",
+        "format": "png",
+        "asset_id": "nih-bioart-b59452836ed7622c9169"
+      },
+      {
+        "title": "Computer Monitor",
+        "source": "nih-bioart",
+        "source_id": "831",
+        "source_url": "https://bioart.niaid.nih.gov/bioart/831",
+        "original_sha256": "5fcf8970c13751388d03cd09007206f4da836d42d9d8a711820743a8767a70a1",
+        "preview_sha256": "c53bf856addc7a438100e354d92b42b1d1d94a0f3ad4922b60720165f7f3ac1c",
+        "format": "png",
+        "asset_id": "nih-bioart-b59452836ed7622c9169"
+      },
+      {
+        "title": "Computer Monitor",
+        "source": "nih-bioart",
+        "source_id": "831",
+        "source_url": "https://bioart.niaid.nih.gov/bioart/831",
+        "original_sha256": "85911027c1c5f93353725821344bb2cfa74dcdbdf90b62de07290522a3d093a8",
+        "preview_sha256": "df9c9c40433661c095080c093dc61e4a6f0b141ba734d343aafbf9096df8e664",
+        "format": "png",
+        "asset_id": "nih-bioart-b59452836ed7622c9169"
+      },
+      {
+        "title": "Computer Monitor",
+        "source": "nih-bioart",
+        "source_id": "831",
+        "source_url": "https://bioart.niaid.nih.gov/bioart/831",
+        "original_sha256": "e3b7f181c52843d974c9db6727ce2c25501dbe5d9a937ca2c0f20fc8f2848d58",
+        "preview_sha256": "ff0d83d7da226a759a0dff5580625f489b318f467d5e07eb76997aab231facd2",
+        "format": "png",
+        "asset_id": "nih-bioart-b59452836ed7622c9169"
+      },
+      {
+        "title": "Computer Monitor",
+        "source": "nih-bioart",
+        "source_id": "831",
+        "source_url": "https://bioart.niaid.nih.gov/bioart/831",
+        "original_sha256": "5d08b59702e1dd592b1f4b3e51ff31c002354c6e6ff2d92c12fad16b28e1f42a",
+        "preview_sha256": "9c3364a8adac4a8b3fbf44d62bbc0392001048a61cda18ba3e1106ee4a869d32",
+        "format": "png",
+        "asset_id": "nih-bioart-b59452836ed7622c9169"
+      },
+      {
+        "title": "Computer Monitor",
+        "source": "nih-bioart",
+        "source_id": "831",
+        "source_url": "https://bioart.niaid.nih.gov/bioart/831",
+        "original_sha256": "84cda789f4812ae8fcd306727e09872457bfc1633a63c589e025251d0b78a89e",
+        "preview_sha256": "f095bf9a612b833e88af750915dbcfa581603f741a6e450f00d26cd530f0f83d",
+        "format": "png",
+        "asset_id": "nih-bioart-b59452836ed7622c9169"
+      },
+      {
+        "title": "Computer Monitor",
+        "source": "nih-bioart",
+        "source_id": "831",
+        "source_url": "https://bioart.niaid.nih.gov/bioart/831",
+        "original_sha256": "8d6f6e07483cb861e23180da42bde53bb60c8502f70f0dd5a07e8d931cebe7f9",
+        "preview_sha256": "9671341a981d6a4bdc141815b8f188d7568b15aedecc5466b7bc2c8b338e8943",
+        "format": "png",
+        "asset_id": "nih-bioart-b59452836ed7622c9169"
+      },
+      {
+        "title": "Computer Monitor",
+        "source": "nih-bioart",
+        "source_id": "831",
+        "source_url": "https://bioart.niaid.nih.gov/bioart/831",
+        "original_sha256": "86e68aa31a7122c739670038b72edaa4409beec3d3b5ebfd553474b5873278aa",
+        "preview_sha256": "3897b7681b9890bc959c3247bb03abc7c538b3c23da908c366f6c1d26afbb86c",
+        "format": "png",
+        "asset_id": "nih-bioart-b59452836ed7622c9169"
+      },
+      {
+        "title": "Computer Monitor",
+        "source": "nih-bioart",
+        "source_id": "831",
+        "source_url": "https://bioart.niaid.nih.gov/bioart/831",
+        "original_sha256": "41aa40056cabe506b0d47f5179617c99b2ed25a28ccdb1b98e644b7923190dc5",
+        "preview_sha256": "d7b49a8ba8bbadc0ae25ec8be31b0cd6c76eefb9512278c1c0dd145c20f2581e",
+        "format": "png",
+        "asset_id": "nih-bioart-b59452836ed7622c9169"
+      },
+      {
+        "title": "Computer Monitor",
+        "source": "nih-bioart",
+        "source_id": "831",
+        "source_url": "https://bioart.niaid.nih.gov/bioart/831",
+        "original_sha256": "9d09801330ffd1b3b31935ef3a83b3d23d2e998b99036bb7cacaed05fe62183c",
+        "preview_sha256": "9ac84a3a3ce455fcbb5e6fe3ffa74f3c189041024be1c49698ac1de888a1433f",
+        "format": "svg",
+        "asset_id": "nih-bioart-b59452836ed7622c9169"
+      },
+      {
+        "title": "Computer Monitor",
+        "source": "nih-bioart",
+        "source_id": "831",
+        "source_url": "https://bioart.niaid.nih.gov/bioart/831",
+        "original_sha256": "d07c2d4f41960d6e41e57a913faeac6a6d5475c64a64b791551042aba6efea1d",
+        "preview_sha256": "cc37406b128ccc16a501edd3f9cd7c4024519c93ba7184c1fec5a8c470bd005c",
+        "format": "svg",
+        "asset_id": "nih-bioart-b59452836ed7622c9169"
+      },
+      {
+        "title": "Computer Monitor",
+        "source": "nih-bioart",
+        "source_id": "831",
+        "source_url": "https://bioart.niaid.nih.gov/bioart/831",
+        "original_sha256": "24c02c1e424286381f83c3b10f8e07e530c740a8e33765b73cd344c50702eec8",
+        "preview_sha256": "c4237f7d6f3f3bfa678095513e6c3486026366ec78ce9e115d33ac631ae64cf1",
+        "format": "svg",
+        "asset_id": "nih-bioart-b59452836ed7622c9169"
+      },
+      {
+        "title": "Computer Monitor",
+        "source": "nih-bioart",
+        "source_id": "831",
+        "source_url": "https://bioart.niaid.nih.gov/bioart/831",
+        "original_sha256": "e9866f50d0695257d57c9969f7e114f1660356877ae921014133c4159239f959",
+        "preview_sha256": "dff2ad922f22bdd5ed9483e9a2ea05efdf4d4b516fe046b18f1b28288fb02dc5",
+        "format": "svg",
+        "asset_id": "nih-bioart-b59452836ed7622c9169"
+      },
+      {
+        "title": "Computer Monitor",
+        "source": "nih-bioart",
+        "source_id": "831",
+        "source_url": "https://bioart.niaid.nih.gov/bioart/831",
+        "original_sha256": "a01617ca8442ac0738d68345ed21faf86b081208a7eea52c57e07d28cd682531",
+        "preview_sha256": "ca21fbcd405d31d0d1483442b44d2648459c6776596a0dfc67570b7165d8bcc1",
+        "format": "svg",
+        "asset_id": "nih-bioart-b59452836ed7622c9169"
+      },
+      {
+        "title": "Computer Monitor",
+        "source": "nih-bioart",
+        "source_id": "831",
+        "source_url": "https://bioart.niaid.nih.gov/bioart/831",
+        "original_sha256": "73fadcc6db5940e19c4def221c28b9aa0f4b05fce5ec14cc5ea9138afb596744",
+        "preview_sha256": "f722df6c603810920e453ce7af29e20fd5dc96a719d4a16f06c977ad41c3eae8",
+        "format": "svg",
+        "asset_id": "nih-bioart-b59452836ed7622c9169"
+      },
+      {
+        "title": "Computer Monitor",
+        "source": "nih-bioart",
+        "source_id": "831",
+        "source_url": "https://bioart.niaid.nih.gov/bioart/831",
+        "original_sha256": "503f98d017aec9eacaa1baff595f803787b5286264995f5b6527a929c1abb62b",
+        "preview_sha256": "9000a03bc09aed77aba588cd2f4552b04f1f775bb2b07cf06d6adce03862f697",
+        "format": "svg",
+        "asset_id": "nih-bioart-b59452836ed7622c9169"
+      },
+      {
+        "title": "Computer Monitor",
+        "source": "nih-bioart",
+        "source_id": "831",
+        "source_url": "https://bioart.niaid.nih.gov/bioart/831",
+        "original_sha256": "31e6c4b6cbcbebc839f114bc9150147dbf38f0399da4bc4700bb6610c603ba2c",
+        "preview_sha256": "a9ccaabf3466b3a226c298955458ff0746b6e3c83c82af2d87d8034094a2936e",
+        "format": "svg",
+        "asset_id": "nih-bioart-b59452836ed7622c9169"
+      },
+      {
+        "title": "Computer Monitor",
+        "source": "nih-bioart",
+        "source_id": "831",
+        "source_url": "https://bioart.niaid.nih.gov/bioart/831",
+        "original_sha256": "36f5124abacf06d76fca980489d8a5ac2bb5365cc930d5f1a93dcf19d5500773",
+        "preview_sha256": "96aef657e01866464c22c71d9c2a79cad8119670ff531813ae15971cf05f9806",
+        "format": "svg",
+        "asset_id": "nih-bioart-b59452836ed7622c9169"
+      },
+      {
+        "title": "Computer Monitor",
+        "source": "nih-bioart",
+        "source_id": "831",
+        "source_url": "https://bioart.niaid.nih.gov/bioart/831",
+        "original_sha256": "23a247120f78b9f9c809aefec0865930e62da138f8f96a53f64bd3d6749f975f",
+        "preview_sha256": "5e8a7c561834797db4895f60985cc44b835dae399b0ad0a78f8f70ffdd6b7c08",
+        "format": "svg",
+        "asset_id": "nih-bioart-b59452836ed7622c9169"
+      },
+      {
+        "title": "Computer Monitor",
+        "source": "nih-bioart",
+        "source_id": "831",
+        "source_url": "https://bioart.niaid.nih.gov/bioart/831",
+        "original_sha256": "be4c6ef2afc5cda2e7f5bbf6c1b8a136e51cd1fcc4d52182df8461d4aeec49ae",
+        "preview_sha256": "3df153c2a85a54522165bc323a2e338ca0ac1830e4643def4d89fb773bb88312",
+        "format": "svg",
+        "asset_id": "nih-bioart-b59452836ed7622c9169"
+      },
+      {
+        "title": "Computer Monitor with Blank Screen",
+        "source": "nih-bioart",
+        "source_id": "832",
+        "source_url": "https://bioart.niaid.nih.gov/bioart/832",
+        "original_sha256": "7f48c9844f61fc4bedc51a531c5fb2e54d7a91e8d96c019a897ae8eba1a1d83f",
+        "preview_sha256": "731fc8605048815b3f922b723d30a2deb9e00bf5ef71dddf7a26a78a8c84bb7c",
+        "format": "png",
+        "asset_id": "nih-bioart-c66d8a40830ca6f1233e"
+      },
+      {
+        "title": "Computer Monitor with Blank Screen",
+        "source": "nih-bioart",
+        "source_id": "832",
+        "source_url": "https://bioart.niaid.nih.gov/bioart/832",
+        "original_sha256": "5647c2da7bbc28fe023d2d816dfc12e8ddde8bd193a8022be95d622799d2ef65",
+        "preview_sha256": "37dd51545600a1b2fee029bb02ffedb79b0f10858306e8282cc1b589273fc6c9",
+        "format": "svg",
+        "asset_id": "nih-bioart-c66d8a40830ca6f1233e"
+      },
+      {
+        "title": "Computer Monitor with Microscopy Image",
+        "source": "nih-bioart",
+        "source_id": "828",
+        "source_url": "https://bioart.niaid.nih.gov/bioart/828",
+        "original_sha256": "0e8b71cf9136071b17986a7937722319cd3cfac260632fe0fb99f857956a0ae9",
+        "preview_sha256": "4e7f9f8063e533a68d7a3cf822fa5ee03f23a5722e98f15f847a97e67c6f88ba",
+        "format": "png",
+        "asset_id": "nih-bioart-ccc35aca2975b717e3b2"
+      },
+      {
+        "title": "Computer Monitor with Microscopy Image",
+        "source": "nih-bioart",
+        "source_id": "828",
+        "source_url": "https://bioart.niaid.nih.gov/bioart/828",
+        "original_sha256": "4ba35df7e50c8e0939e5c495ca2db5450b21db5493bff33aa8dfce9f1f609824",
+        "preview_sha256": "d22d37a98842a987afb25db80f5b53089f84de5e9d9245597301f06dbf8333ed",
+        "format": "png",
+        "asset_id": "nih-bioart-ccc35aca2975b717e3b2"
+      },
+      {
+        "title": "Computer Monitor with Microscopy Image",
+        "source": "nih-bioart",
+        "source_id": "828",
+        "source_url": "https://bioart.niaid.nih.gov/bioart/828",
+        "original_sha256": "deb4d2ec371927ceafe473004022c637167ca583152cb061eb7ea04b1ee0ea63",
+        "preview_sha256": "1c8f4db434638b0b721c2bb9b246c3898907d7c6c7f657b587e5a393bbd67cf3",
+        "format": "png",
+        "asset_id": "nih-bioart-ccc35aca2975b717e3b2"
+      },
+      {
+        "title": "Computer Monitor with Microscopy Image",
+        "source": "nih-bioart",
+        "source_id": "828",
+        "source_url": "https://bioart.niaid.nih.gov/bioart/828",
+        "original_sha256": "c91d63aad595dd61461f8fd644d1ab669ea95685ce6425f29b86b9405223e168",
+        "preview_sha256": "885b255dba283ed57e88dc0a0aaed15c2b8b80bd9f25eeffe68184b90927efcb",
+        "format": "png",
+        "asset_id": "nih-bioart-ccc35aca2975b717e3b2"
+      },
+      {
+        "title": "Computer Monitor with Microscopy Image",
+        "source": "nih-bioart",
+        "source_id": "828",
+        "source_url": "https://bioart.niaid.nih.gov/bioart/828",
+        "original_sha256": "099d2f48fd96062134719ca7f3e2f0d70bebfada621a5413e86eb9b829c051c7",
+        "preview_sha256": "ce1747bf6f129ac4ced8750633b4d0a084558918831121e5c29a92c83dadd0f7",
+        "format": "png",
+        "asset_id": "nih-bioart-ccc35aca2975b717e3b2"
+      },
+      {
+        "title": "Computer Monitor with Microscopy Image",
+        "source": "nih-bioart",
+        "source_id": "828",
+        "source_url": "https://bioart.niaid.nih.gov/bioart/828",
+        "original_sha256": "895db8d5f1800e47764278f186b46a0140f3c2fc42f7787d70121dc6f9bd41a2",
+        "preview_sha256": "b4583103b181c54ea8e7682f7eb39b28e36dee312b080f0e89d97426ab9121ed",
+        "format": "png",
+        "asset_id": "nih-bioart-ccc35aca2975b717e3b2"
+      },
+      {
+        "title": "Computer Monitor with Microscopy Image",
+        "source": "nih-bioart",
+        "source_id": "828",
+        "source_url": "https://bioart.niaid.nih.gov/bioart/828",
+        "original_sha256": "2836d628ca6d97b2d8d4d6438c012ae4fdef5a73701873dae10e991c8d33ca01",
+        "preview_sha256": "6e67f084f0e451d9549361725456e6d372cadf37b05b3d5d21022d692e93c375",
+        "format": "png",
+        "asset_id": "nih-bioart-ccc35aca2975b717e3b2"
+      },
+      {
+        "title": "Computer Monitor with Microscopy Image",
+        "source": "nih-bioart",
+        "source_id": "828",
+        "source_url": "https://bioart.niaid.nih.gov/bioart/828",
+        "original_sha256": "736ea492160d47902f47644ca5c2cd56072b89f66d0629c7082edc6296fa63a6",
+        "preview_sha256": "8a5a0f7ce5611602fbb0753791d4587fb7517dfbe0a54c001a63d9c89e1a3bc2",
+        "format": "png",
+        "asset_id": "nih-bioart-ccc35aca2975b717e3b2"
+      },
+      {
+        "title": "Computer Monitor with Microscopy Image",
+        "source": "nih-bioart",
+        "source_id": "828",
+        "source_url": "https://bioart.niaid.nih.gov/bioart/828",
+        "original_sha256": "9bbafaeb95cb4acddbd7aab0580c4cc5d467c07f44e6b2b0d754765900cd00e6",
+        "preview_sha256": "129ab18f12d32f6c48bf57a91a356ed960c15fc5a7a3e7469fff0af57a74cbb9",
+        "format": "png",
+        "asset_id": "nih-bioart-ccc35aca2975b717e3b2"
+      },
+      {
+        "title": "Computer Monitor with Microscopy Image",
+        "source": "nih-bioart",
+        "source_id": "828",
+        "source_url": "https://bioart.niaid.nih.gov/bioart/828",
+        "original_sha256": "52aacb27e4c98e61c0728d569c6b069336b899a217e36a33f438539e103b2287",
+        "preview_sha256": "086b71d00a1a2ecf1a682c80206d9880841708ab936b1c7743f67f78dfff53ed",
+        "format": "png",
+        "asset_id": "nih-bioart-ccc35aca2975b717e3b2"
+      },
+      {
+        "title": "Computer Monitor with Microscopy Image",
+        "source": "nih-bioart",
+        "source_id": "828",
+        "source_url": "https://bioart.niaid.nih.gov/bioart/828",
+        "original_sha256": "b23e5d39f529f2a8027be6c0b5e731135d9c3af999b59d8d24a5423dbdbd29be",
+        "preview_sha256": "69214f3bd76fce88e41ddb57e1f620c27506aabef349c500711ef41fe7709426",
+        "format": "png",
+        "asset_id": "nih-bioart-ccc35aca2975b717e3b2"
+      },
+      {
+        "title": "Computer Monitor with Microscopy Image",
+        "source": "nih-bioart",
+        "source_id": "828",
+        "source_url": "https://bioart.niaid.nih.gov/bioart/828",
+        "original_sha256": "0baf4a1e3712370f38400a50bad3c53b6aa4a16a5277fe760f21538aaf1532c8",
+        "preview_sha256": "52d68f91d619a2733d94a1059143ba1eb0695333ad58a0191ec9b6ce4a40b40b",
+        "format": "png",
+        "asset_id": "nih-bioart-ccc35aca2975b717e3b2"
+      },
+      {
+        "title": "Computer Monitor with Microscopy Image",
+        "source": "nih-bioart",
+        "source_id": "828",
+        "source_url": "https://bioart.niaid.nih.gov/bioart/828",
+        "original_sha256": "a8b66e1cda578ec856bfd0e87a20afe7ff0b9b7421cfcc862a1806cc932950c0",
+        "preview_sha256": "f46e70d7b9968e3b9b23bda91eb5baba837704d91a79fc3ad506a844860ffec5",
+        "format": "svg",
+        "asset_id": "nih-bioart-ccc35aca2975b717e3b2"
+      },
+      {
+        "title": "Computer Monitor with Microscopy Image",
+        "source": "nih-bioart",
+        "source_id": "828",
+        "source_url": "https://bioart.niaid.nih.gov/bioart/828",
+        "original_sha256": "122a64a5f087b24c181133c0950cda177df5c66a6e94de21a52e6902d115326f",
+        "preview_sha256": "a0816ae827e2d19dc7211dafc60b71635ceea74c32ed82a046ed1eed06084d22",
+        "format": "svg",
+        "asset_id": "nih-bioart-ccc35aca2975b717e3b2"
+      },
+      {
+        "title": "Computer Monitor with Microscopy Image",
+        "source": "nih-bioart",
+        "source_id": "828",
+        "source_url": "https://bioart.niaid.nih.gov/bioart/828",
+        "original_sha256": "f580a7d9082ce8deeee46c188ce4c0512b7b8efcbaf83015fb18d6bb0dbfd20b",
+        "preview_sha256": "0a02c312d4f9270753b51f60248967775bfcc37ff6040e4d2fc420ebbf4ba471",
+        "format": "svg",
+        "asset_id": "nih-bioart-ccc35aca2975b717e3b2"
+      },
+      {
+        "title": "Computer Monitor with Microscopy Image",
+        "source": "nih-bioart",
+        "source_id": "828",
+        "source_url": "https://bioart.niaid.nih.gov/bioart/828",
+        "original_sha256": "b240ff0a0dce848df16df6cece926daa5426d27da4bde458341105db6bbee9d0",
+        "preview_sha256": "797ed2df0eee56aa5cb9e7c7949415f165495e90e9aebaba1da96b74bc6aabaf",
+        "format": "svg",
+        "asset_id": "nih-bioart-ccc35aca2975b717e3b2"
+      },
+      {
+        "title": "Computer Monitor with Microscopy Image",
+        "source": "nih-bioart",
+        "source_id": "828",
+        "source_url": "https://bioart.niaid.nih.gov/bioart/828",
+        "original_sha256": "7da2e09764d61f2f390f30390a47e7558f88057dab83bd6c8e1a447121897541",
+        "preview_sha256": "d5f8a000b55057fb9c6532e39ede1703a0e2041e757983a22f930b1ece042717",
+        "format": "svg",
+        "asset_id": "nih-bioart-ccc35aca2975b717e3b2"
+      },
+      {
+        "title": "Computer Monitor with Microscopy Image",
+        "source": "nih-bioart",
+        "source_id": "828",
+        "source_url": "https://bioart.niaid.nih.gov/bioart/828",
+        "original_sha256": "c01fcdfa343e7351645f26a1d37290325dec2da881ee57454124844d579ae8a8",
+        "preview_sha256": "11f67b585e1bbbf3e092f174fa1332324dab7b4eef10aecbb13119a800cc7099",
+        "format": "svg",
+        "asset_id": "nih-bioart-ccc35aca2975b717e3b2"
+      },
+      {
+        "title": "Computer Monitor with Microscopy Image",
+        "source": "nih-bioart",
+        "source_id": "828",
+        "source_url": "https://bioart.niaid.nih.gov/bioart/828",
+        "original_sha256": "aacf08f1c145d5e2ca34cea0c37842a547d4064fc803ae83c20fb21e9f974b5a",
+        "preview_sha256": "279eb98167177831ceadf71553de4ec8b715823a77b749f7ce1a027fea5513e1",
+        "format": "svg",
+        "asset_id": "nih-bioart-ccc35aca2975b717e3b2"
+      },
+      {
+        "title": "Computer Monitor with Microscopy Image",
+        "source": "nih-bioart",
+        "source_id": "828",
+        "source_url": "https://bioart.niaid.nih.gov/bioart/828",
+        "original_sha256": "1b952aa6c68416ade7dc52b98a64fdbca2fee54b451f3f93fbe31f96208b5d34",
+        "preview_sha256": "8bdffe4932fc70e963c969d912001490db16c4b00f295bda01ae23f83c905f44",
+        "format": "svg",
+        "asset_id": "nih-bioart-ccc35aca2975b717e3b2"
+      },
+      {
+        "title": "Computer Monitor with Microscopy Image",
+        "source": "nih-bioart",
+        "source_id": "828",
+        "source_url": "https://bioart.niaid.nih.gov/bioart/828",
+        "original_sha256": "596deb7232e391aa33946d364575b098ae590a314b0bd5e9412eea2a12223046",
+        "preview_sha256": "4ae78f40724b798ffd8a12fd4422143880edfc6db483e9dd4b3c8cf7295d443c",
+        "format": "svg",
+        "asset_id": "nih-bioart-ccc35aca2975b717e3b2"
+      },
+      {
+        "title": "Computer Monitor with Microscopy Image",
+        "source": "nih-bioart",
+        "source_id": "828",
+        "source_url": "https://bioart.niaid.nih.gov/bioart/828",
+        "original_sha256": "623dbdc412e5471869e2f4b15e35f35101543a13f4d1dabb00ff5598ef85a033",
+        "preview_sha256": "469db4ce402a4f841efb7e1368de68db31d19247bd4e8ada0827aea5cb72a0e1",
+        "format": "svg",
+        "asset_id": "nih-bioart-ccc35aca2975b717e3b2"
+      },
+      {
+        "title": "Computer Monitor with Microscopy Image",
+        "source": "nih-bioart",
+        "source_id": "828",
+        "source_url": "https://bioart.niaid.nih.gov/bioart/828",
+        "original_sha256": "24a380d1445c4241f7349edb6180a821110b29c61c8d0e438a2a3792f23fed50",
+        "preview_sha256": "abdde57157d327efd962afe24dcc66c5ba252710b524dc54708515c90ec9163e",
+        "format": "svg",
+        "asset_id": "nih-bioart-ccc35aca2975b717e3b2"
+      },
+      {
+        "title": "Computer Monitor with Microscopy Image",
+        "source": "nih-bioart",
+        "source_id": "828",
+        "source_url": "https://bioart.niaid.nih.gov/bioart/828",
+        "original_sha256": "ea438e117e8d85bb96a2285540a8fc20df77ab4a57c527ea951b413dc9a0eff2",
+        "preview_sha256": "85f5637db1306b14fc81e8edd0d5c2024311826f0c89c7923fb50a66c5155ae9",
+        "format": "svg",
+        "asset_id": "nih-bioart-ccc35aca2975b717e3b2"
+      },
+      {
+        "title": "Online computer survey",
+        "source": "openclipart",
+        "source_id": "195847",
+        "source_url": "https://openclipart.org/detail/195847/online-computer-survey",
+        "original_sha256": "1b741a83f5fad9a6fdfbdf255d4455878ae2e400bf5e944c7271d4605fa4723f",
+        "preview_sha256": "af4cf34f6c966f3c91bede0d6f62c62efec828f8a6aa4ed8f8fab0b891f7cccd",
+        "format": "svg",
+        "asset_id": "openclipart-c2d02e0011c4e4c60482"
+      },
+      {
+        "title": "Activity Monitor Tube",
+        "source": "scidraw",
+        "source_id": "902450fc-5e2e-4623-8142-be8aace42895",
+        "source_url": "https://scidraw.io/drawing/activity-monitor-tube-aad8fca7",
+        "original_sha256": "910d0a9ac89112478b92634302c3f30b287fd7e59c4e1a33656338867ee7de06",
+        "preview_sha256": "aa9acc0d6cce2bee5af85bf9e696f6c6d6820fb6aac088c66d401f68413c5934",
+        "format": "svg",
+        "asset_id": "scidraw-3b1a313b427ab804a016"
+      },
+      {
+        "title": "Yellow-spotted Monitor (Varanus panoptes)",
+        "source": "scidraw",
+        "source_id": "107c55bb-7b55-4620-9929-e68e89f64725",
+        "source_url": "https://scidraw.io/drawing/yellow-spotted-monitor-varanus-panoptes-85fe90ac",
+        "original_sha256": "d726676bed38038906722adcfa82dd67df11888b157de321663f89349a7961ce",
+        "preview_sha256": "8fa69f3eba9b364b8db76a017b28edf1e2853714ee33ae8fc98301943c4f13c2",
+        "format": "png",
+        "asset_id": "scidraw-ae32bdc99bc7df32fa82"
+      }
+    ]
+  },
+  "priority_review_titles": {
+    "human_arm": [
+      "Arm",
+      "Arm Circumference"
+    ],
+    "whole_micropipette": [
+      "micropipette",
+      "Micropipette",
+      "pipetman"
+    ],
+    "computer_with_display": [
+      "Computer Monitor with Blank Screen",
+      "Computer Monitor"
+    ]
+  },
+  "qualification": "Source nominations only. Maze arms, robot/monkey arms, non-computer monitors and isolated components may be irrelevant; actual preview and purpose review are still required. No source candidate is added to frozen query results."
+}
