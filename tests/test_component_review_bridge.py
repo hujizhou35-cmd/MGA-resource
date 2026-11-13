@@ -40,3 +40,19 @@ def test_reuse_rejects_changed_task_purpose_before_copying_verdicts():
     review={'bindings':{'raw_results_sha256':'old'},'queries':[{'query_id':'one','result_judgments':[]}],'tasks':[]}
     with pytest.raises(ValueError,match='Changed request/use'):
         bridge(old,new,[(review,{'document':{},'old_raw_sha256':'old'})],{'catalog_sha256':'c','files':[]})
+
+
+def test_catalog_update_cannot_borrow_a_changed_file_observation(monkeypatch):
+    bindings={'component_benchmark_sha256':'a','legacy_benchmark_sha256':'b','catalog_sha256':'oldcat'}
+    previous=row(); previous['rank']=1
+    query={'query_id':'one','request':{'query':'rat'},'task_id':'task','component_id':'object',
+           'language':'en','review_requirements':{'required_species':'rat'},'exact_results':[previous]}
+    old={'bindings':bindings,'queries':[query]}; new=copy.deepcopy(old)
+    new['bindings']['catalog_sha256']='newcat'
+    new['queries'][0]['exact_results'][0]['selected_file']['scientific']['species']=['mouse']
+    review={'bindings':{'raw_results_sha256':'old'},'queries':[{'query_id':'one',
+        'result_judgments':[{'variant_id':'v1','verdict':'relevant'}], 'selected_variant_ids':['v1']}], 'tasks':[]}
+    monkeypatch.setattr('scripts.bridge_component_reviews._file_pair',lambda *args:None)
+    result=bridge(old,new,[(review,{'document':{},'old_raw_sha256':'old'})],{'catalog_sha256':'newcat','files':[]})
+    assert result['queries'][0]['selected_variant_ids']==[]
+    assert result['pending_results'][0]['reason']=='changed:selected_file'

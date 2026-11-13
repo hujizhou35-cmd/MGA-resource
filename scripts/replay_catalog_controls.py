@@ -20,6 +20,7 @@ sys.path.insert(0, str(ROOT / "scripts"))
 from mga_resources.catalog import search_page, search_policy_metadata
 from assemble import gh, list_release_assets
 from diagnose_search import resolve_index
+from validate_search_behavior import validate as validate_behavior
 from replay_catalog_metadata import digest, download_metadata, package_metadata, read, require, verify_producer, write
 
 APPEARANCE = ROOT / "data/appearance-reviews/appearance-42289434868-1-v1.1.0-bound-review.json"
@@ -217,9 +218,15 @@ def main():
     write(output / "appearance-filter-replay.json", appearance_results)
     history = history_replay(paths["catalog.sqlite"], ledger, output / "actual-history-replay", bindings)
     write(output / "actual-history-replay/summary.json", history)
+    behavior = validate_behavior(paths["catalog.jsonl"], paths["report.json"], output / "behavior",
+                                 index_path=paths["catalog.sqlite"])
+    functional = {row["id"]: row["passed"] for row in behavior["functional_cases"]}
+    from mga_resources.supplemental_acceptance import FUNCTIONAL_CASES
+    functional_passed = set(functional) == FUNCTIONAL_CASES and all(functional.values())
     summary = {"schema_version": 1, "status": "metadata_controls_completed_not_collection_acceptance", "run_id": run,
         "code_commit": os.environ["GITHUB_SHA"], "bindings": bindings, "input_metadata_producer": producer, "inputs": receipts,
         "negative_scenarios": len(negative["scenarios"]), "negative_visual_verdicts_added": 0,
+        "functional_cases": functional, "functional_checks_complete_and_passed": functional_passed,
         "appearance_files": len(reviewed), "appearance_filter_calls": sum(len(x["search_checks"]) for x in appearance_results["files"]),
         "history_exercise_projects": sum(x["projects"] for x in history["scenarios"]),
         "original_adoption_ledger_sha256": digest(LEDGER), "adoption_records_added": 0,
@@ -233,6 +240,8 @@ def main():
     if args.publish:
         gh("release", "upload", args.publish_tag, "--repo", repository, str(pack), str(summary_path))
     print(json.dumps(summary, ensure_ascii=False))
+    if not functional_passed:
+        raise SystemExit("Current control evidence preserved; functional requirements have failures")
 
 
 if __name__ == "__main__":

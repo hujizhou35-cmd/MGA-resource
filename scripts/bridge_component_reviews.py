@@ -48,7 +48,7 @@ def reusable_result(previous, current):
 
 
 def bridge(old_raw, new_raw, documents, manifest):
-    for key in ('component_benchmark_sha256', 'legacy_benchmark_sha256', 'catalog_sha256'):
+    for key in ('component_benchmark_sha256', 'legacy_benchmark_sha256'):
         require(old_raw['bindings'][key] == new_raw['bindings'][key], 'Changed frozen input: ' + key)
     require(manifest['catalog_sha256'] == new_raw['bindings']['catalog_sha256'], 'Manifest catalog mismatch')
     files = {f['sha256']: f for f in manifest['files']}
@@ -126,6 +126,9 @@ def bridge(old_raw, new_raw, documents, manifest):
                         composition_evidence=[])
         tasks.append(task)
     return {'queries': queries, 'tasks': tasks, 'pending_results': pending, 'audit': audit,
+            'catalog_reuse': {'previous_catalog_sha256': old_raw['bindings']['catalog_sha256'],
+                'current_catalog_sha256': new_raw['bindings']['catalog_sha256'],
+                'method': 'Every inherited row must independently retain its exact file, preview, source, science and use; a catalog version alone grants no reuse.'},
             'not_yet_reviewed_query_ids': sorted(set(after) - set(query_map))}
 
 
