@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "status": "deployment_in_progress_not_yet_accepted",
+  "formal_component_report": "data/acceptance-reports/component-43481252923.json",
+  "free_plan_evidence": "data/diagnostics/cloudflare-free-plan-20261114.json",
+  "repository_visibility_verified": "public",
+  "github_runner": "ubuntu-24.04 standard public repository runner",
+  "website_origin": "https://mga-resource-mainly-for-agent.pages.dev",
+  "static_projects": ["mga-resource-files-0", "mga-resource-files-1", "mga-resource-files-2"],
+  "database": {"name":"mga-resource-search-v13","id":"0077beb8-a3fd-47a7-87da-098b182f7d45","import_run":43487193902,"status":"success","variants":20129,"rows_written":40271,"size_bytes":196653056,"do_not_repeat_import":true},
+  "preparation": {"run_id":43485204419,"status":"success","receipt":"https://github.com/hujizhou35-cmd/MGA-resource/releases/download/acceptance-20261107/website-prepare-43485204419.json","receipt_sha256":"4b66961e61a46899ea299963cb56f7b6c3552a0206a0874fc4f7d439ec0596bf","artifact_id":14066982485,"artifact_name":"website-prepared-43485204419","artifact_size_bytes":54008705,"artifact_expires_at":"2026-12-13T18:44:07Z","sql_sha256":"571287af6611541d9a89ad47157f4d546208723cd9fc292d8a9d86c983a6d265","family_metadata_files":7838,"object_files":38748,"static_shard_counts":[12782,13009,12954]},
+  "large_originals": {"release":"https://github.com/hujizhou35-cmd/MGA-resource/releases/tag/website-files-v1","independent_files":3,"github_size_and_sha_verified":true,"original_bytes_changed":false},
+  "failed_deployments_preserved": [{"run_id":43487606317,"stage":"files","reason":"Wrangler exited before static upload; hidden subprocess error repaired to retain logs. Same site config contained unsupported account_id.","three_large_originals_uploaded":true},{"run_id":43487709962,"stage":"site","reason":"Pages configuration validation rejects account_id; account remains supplied via environment"}],
+  "fix_commit": "2eeaebcf0e5261f029462f89d9b443b348041241",
+  "replacement_runs": {"site":43488458787,"files":43488486819},
+  "checks_pending": ["deployment completion", "live API identity/order parity", "all 38748 objects via public HTTP hash verification", "actual human browsing and selected Agent preview/download", "final free service resource and failure behavior"],
+  "library_downloaded_locally": false,
+  "paid_products_enabled": false,
+  "credentials": "Temporary Pages/D1 access token stored in repository Actions secret, not in code or artifacts; refresh token not copied. Remove the temporary secret after deployment."
+}

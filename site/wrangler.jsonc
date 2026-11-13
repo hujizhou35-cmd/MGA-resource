@@ -2,7 +2,7 @@
   "$schema": "./node_modules/wrangler/config-schema.json",
   "name": "mga-resource-mainly-for-agent",
   "pages_build_output_dir": "../build/website/public",
-  "compatibility_date": "2026-11-14",
+  "compatibility_date": "2026-11-13",
   "compatibility_flags": ["nodejs_compat"],
   "d1_databases": [{
     "binding": "DB",
