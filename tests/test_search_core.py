@@ -205,7 +205,7 @@ def test_unknown_filter_and_obsolete_index_fail_explicitly(tmp_path):
         search(db, "mouse", filters={"nonsense": "true"})
     with closing(sqlite3.connect(db)) as conn:
         conn.execute("PRAGMA user_version=1")
-    with pytest.raises(ValueError, match="rebuilt as v10"):
+    with pytest.raises(ValueError, match="rebuilt as v11"):
         search(db, "mouse")
 
 
@@ -314,6 +314,22 @@ def test_oral_requirement_is_not_discarded_for_unlabelled_medication(tmp_path):
     db = database(tmp_path, [artwork(1, title="Tablet", species=None),
         artwork(2, title="Pill bug", species=None)])
     assert search(db, "oral tablet") == []
+
+
+def test_oral_form_alternatives_keep_grounded_medical_identity(tmp_path):
+    db=database(tmp_path,[
+        artwork(1,title='Drug capsule',species=None,object=['drug capsule','oral medication']),
+        artwork(2,title='Drug tablet',species=None,object=['drug tablet','oral medication']),
+        artwork(3,title='Drug tablet',species=None),
+        artwork(4,title='Bacterial capsule',species=None,tags=['oral bacteria']),
+        artwork(5,title='Tablet computer',species=None,tags=['oral presentation']),
+    ])
+    for query in ('口服片剂或胶囊插画','oral tablets capsules illustration','oral tablets or capsules'):
+        rows=search(db,query)
+        assert {r['selected_source']['source_id'] for r in rows}=={'1','2'}
+    for query in ('oral tablets and capsules','口服片剂与胶囊'):
+        assert search(db,query)==[]
+    assert {r['selected_source']['source_id'] for r in search(db,'oral capsules')}=={'1'}
 
 
 def test_whole_body_words_do_not_replace_the_primary_species_with_a_body_part(tmp_path):
@@ -593,8 +609,8 @@ def test_content_type_scope_projection_uses_only_bound_media_dimension(tmp_path)
 def test_old_ranking_index_is_rejected_even_with_unchanged_sql_schema(tmp_path):
     db = database(tmp_path, [artwork(1)])
     with closing(sqlite3.connect(db)) as conn, conn:
-        assert conn.execute("PRAGMA user_version").fetchone()[0] == 10
-        assert conn.execute("SELECT value FROM index_metadata WHERE key='ranking_version'").fetchone()[0] == "shared-search-3.5.0"
+        assert conn.execute("PRAGMA user_version").fetchone()[0] == 11
+        assert conn.execute("SELECT value FROM index_metadata WHERE key='ranking_version'").fetchone()[0] == "shared-search-3.5.1"
         conn.execute("UPDATE index_metadata SET value='shared-search-3.4.2' WHERE key='ranking_version'")
     with pytest.raises(ValueError, match="policy version.*changed; rebuild"):
         search(db, "mouse", filters={"media_type": "raster"})

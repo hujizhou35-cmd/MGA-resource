@@ -1,0 +1,68 @@
+name: Apply bounded reviewed scientific metadata
+on:
+  workflow_dispatch:
+    inputs:
+      assembly_prefix:
+        default: assembly-42335896259-1
+        required: true
+        type: string
+      catalog_sha256:
+        default: 8a961c42a357147f2ae0229526f6127c955e05928721d94283e829463f738da0
+        required: true
+        type: string
+      review:
+        default: data/visual-reviews/resume-zero-results-43467539792.json
+        required: true
+        type: string
+      review_sha256:
+        required: true
+        type: string
+      manifest_asset:
+        default: science-update-42320673266.publish_manifest.json
+        required: true
+        type: string
+      manifest_sha256:
+        default: e9cf028a56e6a3b827bad7e5e576d48599ca7e4224f4f5e7f8a7660f0dfdcbbe
+        required: true
+        type: string
+permissions:
+  contents: write
+concurrency:
+  group: reviewed-metadata
+  cancel-in-progress: false
+jobs:
+  update:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install -e '.[test]'
+      - run: python -m pytest tests/test_reviewed_metadata_update.py tests/test_scientific_reviews.py -q
+      - name: Apply exact observations and rebuild derived index
+        env:
+          GH_TOKEN: ${{ github.token }}
+          PREFIX: ${{ inputs.assembly_prefix }}
+          CATALOG_SHA: ${{ inputs.catalog_sha256 }}
+          REVIEW: ${{ inputs.review }}
+          REVIEW_SHA: ${{ inputs.review_sha256 }}
+          MANIFEST: ${{ inputs.manifest_asset }}
+          MANIFEST_SHA: ${{ inputs.manifest_sha256 }}
+        run: >-
+          python scripts/update_reviewed_metadata.py
+          --assembly-prefix "$PREFIX" --catalog-sha256 "$CATALOG_SHA"
+          --review "$REVIEW" --review-sha256 "$REVIEW_SHA"
+          --manifest-asset "$MANIFEST" --manifest-sha256 "$MANIFEST_SHA" --publish
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: reviewed-metadata-receipt-${{ github.run_id }}-${{ github.run_attempt }}
+          if-no-files-found: ignore
+          path: |
+            build/reviewed-metadata/*/checkpoint.json
+            build/reviewed-metadata/*/output/*.report.json

@@ -3,8 +3,8 @@
  */
 import vocabulary from './search-vocabulary.mjs';
 
-export const RANKING_VERSION = 'shared-search-3.5.0';
-export const INDEX_VERSION = 10;
+export const RANKING_VERSION = 'shared-search-3.5.1';
+export const INDEX_VERSION = 11;
 export const DEFAULT_CANDIDATE_POOL = 75;
 const unknown = new Set(['', 'unknown', 'unspecified', 'not_reviewed', '待确认']);
 const arr = value => value == null ? [] : Array.isArray(value) ? value : [value];
@@ -97,6 +97,9 @@ const extraConcepts = [
   ['核酸测序仪','nucleic acid sequencing instrument','nucleic acid sequencer','dna sequencer','sequencer','sequencing instrument'],
   ['dna结合蛋白','dna结合蛋白质','dna binding protein','dna-binding protein'],
   ['计算机工作站','computer workstation','workstation'],
+  ['片剂','药片','tablet','tablets','drug tablet','drug tablets'],
+  ['胶囊','capsule','capsules','drug capsule','drug capsules'],
+  ['口服药物','oral medication','oral medicine'],
 ];
 // These constrain source wording without claiming a primary depicted object.
 // In particular, adulthood and an examination are not implied by a person.
@@ -282,6 +285,16 @@ export function buildQueryPlan(query = '', filters = {}, options = {}) {
   const modifiers=matchedConcepts(remaining,lexicalConcepts);
   terms.push(...modifiers.groups);
   remaining=modifiers.remaining;
+  // Dosage forms in an oral-medication search are alternatives when listed
+  // without an explicit conjunction, or with "or". They are not permanent
+  // synonyms: "tablets and capsules" still asks for both depicted forms.
+  const dosageGroups=unique(terms.filter(group=>group.includes('tablet')||group.includes('capsule')));
+  const oralForms=dosageGroups.length>0 && terms.some(group=>group.includes('oral'));
+  if(oralForms && dosageGroups.length>1 && !/\band\b|与|和/.test(norm(query))) {
+    for(let i=terms.length-1;i>=0;i--)if(dosageGroups.includes(terms[i]))terms.splice(i,1);
+    terms.push(unique(dosageGroups.flat()));
+    for(const connector of ['or','或者','或'])remaining=removeTerm(remaining,connector);
+  }
   // Remaining historical descriptive phrases are soft preferences only.
   const softTerms = [];
   for (const [term, aliases] of Object.entries(vocabulary.legacyPresentationTerms).sort((a,b)=>b[0].length-a[0].length)) {
@@ -300,6 +313,9 @@ export function buildQueryPlan(query = '', filters = {}, options = {}) {
     requirements.object=unique(groups.flatMap(group=>group.filter(term=>animalNames.has(term))));
   }
   const objectGroups=!explicit.has('object')&&!requirements.object?primaryConceptGroups(groups,norm(query)):[];
+  // "Oral" must be a grounded medication identity, not a word in unrelated
+  // bacterial/organ-capsule context. Unknown route/form evidence stays unknown.
+  if(oralForms && !explicit.has('object'))objectGroups.push(concepts.find(group=>group.includes('oral medication')));
   if(objectGroups.length)requirements.object=unique(objectGroups.flat());
   if(!explicit.has('depiction_kind')) {
     if(groups.some(group=>actionGroups.some(action=>group.some(term=>action.includes(term)))))requirements.depiction_kind=['action'];

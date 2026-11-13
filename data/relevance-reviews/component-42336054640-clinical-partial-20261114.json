@@ -1,0 +1,595 @@
+{
+  "schema_version": 1,
+  "status": "partial_current_replay_clinical_use_review_not_formal_acceptance",
+  "reviewer": "Codex root",
+  "reviewed_at": "2026-11-13T17:06:36.529675+00:00",
+  "independent_from_metadata_matcher": true,
+  "bindings": {
+    "component_benchmark_sha256": "d4e462a631b88929bc3be419ab287599bb5a713de2e4cb0c2c84123cf5b94cef",
+    "legacy_benchmark_sha256": "ce0282afeb4afbcee8fdef1c6f937844ef569cabf16ba7909e22bf86b1096e92",
+    "catalog_sha256": "8a961c42a357147f2ae0229526f6127c955e05928721d94283e829463f738da0",
+    "sqlite_sha256": "11389f717e95efa55b35f33d579e31da24373d6d1372b1542901d4092dc1440e",
+    "assembly_report_sha256": "3c10659c7e0577b7f1e4b863360e9919fe434349aef7325b9eedb47576d1fd22",
+    "search_core_sha256": "31df33a978e9a238ce04c938d65dd59fda64ff6085b67454f68798c64b59d4b6",
+    "ranking_version": "shared-search-3.5.0",
+    "search_index_version": 10,
+    "search_vocabulary_sha256": "49c264129091681e1d38b670d8eac118e560c9ca15d39079ae25be0a36a858c8",
+    "search_cli_sha256": "b2fe91561fdb1be14225be773e0e914010a30152a76d8b5a1ee0ac989f1b6ac4",
+    "search_policy_sha256": "e62c572d05f6190abe9aa0c6a9a9a931c1178085ad7a666533bb5c7f57225464",
+    "raw_results_sha256": "5b68f3b68361e792c3b0d78d8ea22af0c37916fe35684b170fc0f92b951e2501",
+    "publish_manifest_sha256": "e9cf028a56e6a3b827bad7e5e576d48599ca7e4224f4f5e7f8a7660f0dfdcbbe"
+  },
+  "source_documents": [
+    {
+      "path": "build/component-benchmark-review/42336054640/evidence/raw-component-results.json",
+      "sha256": "5b68f3b68361e792c3b0d78d8ea22af0c37916fe35684b170fc0f92b951e2501"
+    },
+    {
+      "path": "data/relevance-reviews/component-42334004260-clinical-partial.json",
+      "sha256": "77a926f3c648678941f80cb53a5008ea32e0c978415dbb250470faf04528dad3"
+    },
+    {
+      "path": "build/science-version-acceptance-20261107/dispositions/candidate_publish_manifest.json",
+      "sha256": "e9cf028a56e6a3b827bad7e5e576d48599ca7e4224f4f5e7f8a7660f0dfdcbbe"
+    }
+  ],
+  "queries": [
+    {
+      "query_id": "component-clinical_workflow-cohort-followup--human_subject--zh",
+      "task_id": "component-clinical_workflow-cohort-followup",
+      "component_id": "human_subject",
+      "language": "zh",
+      "request": {
+        "query": "成年人物插画",
+        "filters": {},
+        "limit": 10,
+        "mode": "explore",
+        "seed": "diagnostic-fixed-project"
+      },
+      "review_requirements": {
+        "expected_concepts": [
+          "human figure"
+        ],
+        "required_species": "human",
+        "visual_requirements": "实际可辨的人体人物，不携带真实个人身份或研究人数；仅作为研究中人体对象的代表，不声称来源人物已入组。",
+        "exclude_matches": [
+          "animal",
+          "identifiable patient photograph",
+          "cohort membership inferred from appearance"
+        ]
+      },
+      "result_judgments": [],
+      "pending_results": [
+        {
+          "variant_id": "nih-bioart-2d9147079e799c272572:020b208f7e1dab88f9c631f9ebf47a1d04cf136a00d72fd655c397ac3ab9e19c:nih-bioart-0726ae13ea7daa9c772a:0",
+          "rank": 1,
+          "original_sha256": "020b208f7e1dab88f9c631f9ebf47a1d04cf136a00d72fd655c397ac3ab9e19c",
+          "reason": "This partial review covers only the exact NIH130 PNG; other results remain to be reviewed."
+        },
+        {
+          "variant_id": "nih-bioart-bff908acc1343a66052d:0a87367439993bb93a46e6894f5251824e79381ed1c7ca0c9f38428a636ebfc0:nih-bioart-b799255ded93eee0b0be:0",
+          "rank": 2,
+          "original_sha256": "0a87367439993bb93a46e6894f5251824e79381ed1c7ca0c9f38428a636ebfc0",
+          "reason": "This partial review covers only the exact NIH130 PNG; other results remain to be reviewed."
+        },
+        {
+          "variant_id": "nih-bioart-0b11becf9df7efc56f30:1014014a42ba287b7c999a6afef442866e452fe070e7ee2be566351c36385f93:nih-bioart-c6ec1a0e851863c4913d:0",
+          "rank": 3,
+          "original_sha256": "1014014a42ba287b7c999a6afef442866e452fe070e7ee2be566351c36385f93",
+          "reason": "This partial review covers only the exact NIH130 PNG; other results remain to be reviewed."
+        },
+        {
+          "variant_id": "nih-bioart-19f29435e8610f854638:2a48235cb19306b67766697bf4b6765775d3676a89a0a404f5a75a10a04cd625:nih-bioart-a7036d99e605ffa25811:0",
+          "rank": 4,
+          "original_sha256": "2a48235cb19306b67766697bf4b6765775d3676a89a0a404f5a75a10a04cd625",
+          "reason": "This partial review covers only the exact NIH130 PNG; other results remain to be reviewed."
+        },
+        {
+          "variant_id": "healthicons-8ffe37b1a2391764b6f0:2a91f269af30a8943041b5201a02756ce525fb132cca34d140bf77d3c0fd6436:healthicons-d3f8292def3dfd792937:0",
+          "rank": 5,
+          "original_sha256": "2a91f269af30a8943041b5201a02756ce525fb132cca34d140bf77d3c0fd6436",
+          "reason": "This partial review covers only the exact NIH130 PNG; other results remain to be reviewed."
+        },
+        {
+          "variant_id": "nih-bioart-e5390f541ddd2d73044e:1820e35e410f6ef4e037864e56e2a991d573cb3c4add7dd200b2b8712d6d6c43:nih-bioart-b51657e0d738c462e46c:0",
+          "rank": 6,
+          "original_sha256": "1820e35e410f6ef4e037864e56e2a991d573cb3c4add7dd200b2b8712d6d6c43",
+          "reason": "This partial review covers only the exact NIH130 PNG; other results remain to be reviewed."
+        },
+        {
+          "variant_id": "nih-bioart-31deb3116b1eb9a06337:17b02fc638c77d5ee9bdd1769e42cb58ff433862b86284b6059cc17cef337c56:nih-bioart-4939680c7865d823f6dc:0",
+          "rank": 7,
+          "original_sha256": "17b02fc638c77d5ee9bdd1769e42cb58ff433862b86284b6059cc17cef337c56",
+          "reason": "This partial review covers only the exact NIH130 PNG; other results remain to be reviewed."
+        },
+        {
+          "variant_id": "nih-bioart-8e79073e15120955e045:02c261fd5f314f363c07bdfa16fcd2bd5d27c89f72d86a42d0381451a3ad5fde:nih-bioart-91595da9cf15b50de113:0",
+          "rank": 8,
+          "original_sha256": "02c261fd5f314f363c07bdfa16fcd2bd5d27c89f72d86a42d0381451a3ad5fde",
+          "reason": "This partial review covers only the exact NIH130 PNG; other results remain to be reviewed."
+        },
+        {
+          "variant_id": "nih-bioart-37bd132ae6824955fce4:2c30b2e977c5bb17a34c6e0f45d0622c2f2328d35050c44bc1cb2879a451bdcc:nih-bioart-9ce7d59281894e9dd97a:0",
+          "rank": 9,
+          "original_sha256": "2c30b2e977c5bb17a34c6e0f45d0622c2f2328d35050c44bc1cb2879a451bdcc",
+          "reason": "This partial review covers only the exact NIH130 PNG; other results remain to be reviewed."
+        },
+        {
+          "variant_id": "nih-bioart-5a485f8abf10770608d7:0bdfda4e956e5938a579c544debaec2ff97e8e6011dc635ec9c214eee23fe915:nih-bioart-94ebbfe0217e19ca4176:0",
+          "rank": 10,
+          "original_sha256": "0bdfda4e956e5938a579c544debaec2ff97e8e6011dc635ec9c214eee23fe915",
+          "reason": "This partial review covers only the exact NIH130 PNG; other results remain to be reviewed."
+        }
+      ],
+      "all_results_reviewed": false,
+      "selected_variant_ids": [],
+      "source_checks": [],
+      "gap_reason": "The observed exact PNG is not in this result list."
+    },
+    {
+      "query_id": "component-clinical_workflow-cohort-followup--human_subject--en",
+      "task_id": "component-clinical_workflow-cohort-followup",
+      "component_id": "human_subject",
+      "language": "en",
+      "request": {
+        "query": "adult person illustration",
+        "filters": {},
+        "limit": 10,
+        "mode": "explore",
+        "seed": "diagnostic-fixed-project"
+      },
+      "review_requirements": {
+        "expected_concepts": [
+          "human figure"
+        ],
+        "required_species": "human",
+        "visual_requirements": "实际可辨的人体人物，不携带真实个人身份或研究人数；仅作为研究中人体对象的代表，不声称来源人物已入组。",
+        "exclude_matches": [
+          "animal",
+          "identifiable patient photograph",
+          "cohort membership inferred from appearance"
+        ]
+      },
+      "result_judgments": [
+        {
+          "variant_id": "nih-bioart-5b91f62cf60eb83887ef:24a5babba9a341784bfdbdbce1fdd4a73678e2ca1fa8473aa26ee72579d4c36e:nih-bioart-0b53fb554bee1aeb5633:0",
+          "rank": 3,
+          "original_sha256": "24a5babba9a341784bfdbdbce1fdd4a73678e2ca1fa8473aa26ee72579d4c36e",
+          "preview_sha256": "d5a278e9b2eb33e8c42badd66ccfd9691708143e0d9534ff4532fd59de6ceeb7",
+          "verdict": "relevant",
+          "evidence_notes": "复用既有本文件人体代表用途：清楚的人体上身、无真实身份或研究数字；不是独立全身切图。",
+          "visual_evidence": [
+            {
+              "path": "build/curated-expansion-60/preview-42320795764/review/previews/24a5babba9a341784bfdbdbce1fdd4a73678e2ca1fa8473aa26ee72579d4c36e.png",
+              "sha256": "d5a278e9b2eb33e8c42badd66ccfd9691708143e0d9534ff4532fd59de6ceeb7"
+            },
+            {
+              "path": "data/relevance-reviews/component-42334004260-clinical-partial.json",
+              "sha256": "77a926f3c648678941f80cb53a5008ea32e0c978415dbb250470faf04528dad3"
+            }
+          ],
+          "use_reused": true,
+          "new_use_reviewed": false,
+          "limits": [
+            "图面是双人咨询场景，不是独立全身人体；下缘截断上身属于原图构图限制。",
+            "人体为来源明确的Adult人物；不能推断确切年龄、真实身份、参与研究状态、疾病或检验结果。",
+            "没有实际展示身体检查、随访时间轴或分组；听诊器存在不等于已完成检查。",
+            "PNG为位图，不声明路径可编辑；文字清理、裁切、组合版面均未执行。"
+          ]
+        }
+      ],
+      "pending_results": [
+        {
+          "variant_id": "nih-bioart-2d9147079e799c272572:020b208f7e1dab88f9c631f9ebf47a1d04cf136a00d72fd655c397ac3ab9e19c:nih-bioart-0726ae13ea7daa9c772a:0",
+          "rank": 1,
+          "original_sha256": "020b208f7e1dab88f9c631f9ebf47a1d04cf136a00d72fd655c397ac3ab9e19c",
+          "reason": "This partial review covers only the exact NIH130 PNG; other results remain to be reviewed."
+        },
+        {
+          "variant_id": "nih-bioart-bff908acc1343a66052d:0a87367439993bb93a46e6894f5251824e79381ed1c7ca0c9f38428a636ebfc0:nih-bioart-b799255ded93eee0b0be:0",
+          "rank": 2,
+          "original_sha256": "0a87367439993bb93a46e6894f5251824e79381ed1c7ca0c9f38428a636ebfc0",
+          "reason": "This partial review covers only the exact NIH130 PNG; other results remain to be reviewed."
+        },
+        {
+          "variant_id": "nih-bioart-0b11becf9df7efc56f30:1014014a42ba287b7c999a6afef442866e452fe070e7ee2be566351c36385f93:nih-bioart-c6ec1a0e851863c4913d:0",
+          "rank": 4,
+          "original_sha256": "1014014a42ba287b7c999a6afef442866e452fe070e7ee2be566351c36385f93",
+          "reason": "This partial review covers only the exact NIH130 PNG; other results remain to be reviewed."
+        },
+        {
+          "variant_id": "nih-bioart-19f29435e8610f854638:2a48235cb19306b67766697bf4b6765775d3676a89a0a404f5a75a10a04cd625:nih-bioart-a7036d99e605ffa25811:0",
+          "rank": 5,
+          "original_sha256": "2a48235cb19306b67766697bf4b6765775d3676a89a0a404f5a75a10a04cd625",
+          "reason": "This partial review covers only the exact NIH130 PNG; other results remain to be reviewed."
+        },
+        {
+          "variant_id": "healthicons-8ffe37b1a2391764b6f0:2a91f269af30a8943041b5201a02756ce525fb132cca34d140bf77d3c0fd6436:healthicons-d3f8292def3dfd792937:0",
+          "rank": 6,
+          "original_sha256": "2a91f269af30a8943041b5201a02756ce525fb132cca34d140bf77d3c0fd6436",
+          "reason": "This partial review covers only the exact NIH130 PNG; other results remain to be reviewed."
+        },
+        {
+          "variant_id": "nih-bioart-e5390f541ddd2d73044e:1820e35e410f6ef4e037864e56e2a991d573cb3c4add7dd200b2b8712d6d6c43:nih-bioart-b51657e0d738c462e46c:0",
+          "rank": 7,
+          "original_sha256": "1820e35e410f6ef4e037864e56e2a991d573cb3c4add7dd200b2b8712d6d6c43",
+          "reason": "This partial review covers only the exact NIH130 PNG; other results remain to be reviewed."
+        },
+        {
+          "variant_id": "nih-bioart-31deb3116b1eb9a06337:17b02fc638c77d5ee9bdd1769e42cb58ff433862b86284b6059cc17cef337c56:nih-bioart-4939680c7865d823f6dc:0",
+          "rank": 8,
+          "original_sha256": "17b02fc638c77d5ee9bdd1769e42cb58ff433862b86284b6059cc17cef337c56",
+          "reason": "This partial review covers only the exact NIH130 PNG; other results remain to be reviewed."
+        },
+        {
+          "variant_id": "nih-bioart-8e79073e15120955e045:02c261fd5f314f363c07bdfa16fcd2bd5d27c89f72d86a42d0381451a3ad5fde:nih-bioart-91595da9cf15b50de113:0",
+          "rank": 9,
+          "original_sha256": "02c261fd5f314f363c07bdfa16fcd2bd5d27c89f72d86a42d0381451a3ad5fde",
+          "reason": "This partial review covers only the exact NIH130 PNG; other results remain to be reviewed."
+        },
+        {
+          "variant_id": "nih-bioart-37bd132ae6824955fce4:2c30b2e977c5bb17a34c6e0f45d0622c2f2328d35050c44bc1cb2879a451bdcc:nih-bioart-9ce7d59281894e9dd97a:0",
+          "rank": 10,
+          "original_sha256": "2c30b2e977c5bb17a34c6e0f45d0622c2f2328d35050c44bc1cb2879a451bdcc",
+          "reason": "This partial review covers only the exact NIH130 PNG; other results remain to be reviewed."
+        }
+      ],
+      "all_results_reviewed": false,
+      "selected_variant_ids": [
+        "nih-bioart-5b91f62cf60eb83887ef:24a5babba9a341784bfdbdbce1fdd4a73678e2ca1fa8473aa26ee72579d4c36e:nih-bioart-0b53fb554bee1aeb5633:0"
+      ],
+      "source_checks": [
+        {
+          "variant_id": "nih-bioart-5b91f62cf60eb83887ef:24a5babba9a341784bfdbdbce1fdd4a73678e2ca1fa8473aa26ee72579d4c36e:nih-bioart-0b53fb554bee1aeb5633:0",
+          "source_record": {
+            "asset_id": "nih-bioart-0b53fb554bee1aeb5633",
+            "attribution": "Doctor Patient — Ryan Kissinger, NIH BioArt Source; https://bioart.niaid.nih.gov/bioart/130; Public Domain",
+            "author": "Ryan Kissinger",
+            "categories": [],
+            "description": " Doctor consulting with patient ",
+            "distribution_status": "license_recorded",
+            "license": "Public-Domain",
+            "source": "nih-bioart",
+            "source_id": "130",
+            "source_url": "https://bioart.niaid.nih.gov/bioart/130",
+            "tags": [
+              "Adult",
+              "Female",
+              "People",
+              "Vector",
+              "clipboard",
+              "consulting",
+              "doctor patient",
+              "genetic counselling",
+              "man",
+              "people",
+              "scientist",
+              "woman"
+            ],
+            "taxonomy": [
+              "people"
+            ],
+            "title": "Doctor Patient",
+            "upstream_category": [
+              "Age (Human)",
+              "Bioart Category",
+              "Sex (Human)",
+              "Image Type"
+            ],
+            "url": "https://bioart.niaid.nih.gov/api/bioarts/130/files/629436"
+          },
+          "source_evidence": [
+            {
+              "path": "data/relevance-reviews/component-42334004260-clinical-partial.json",
+              "sha256": "77a926f3c648678941f80cb53a5008ea32e0c978415dbb250470faf04528dad3"
+            },
+            {
+              "path": "build/science-version-acceptance-20261107/dispositions/candidate_publish_manifest.json",
+              "sha256": "e9cf028a56e6a3b827bad7e5e576d48599ca7e4224f4f5e7f8a7660f0dfdcbbe"
+            }
+          ],
+          "source_evidence_checked": true,
+          "license_checked": true,
+          "species_matches": true,
+          "required_species": "human",
+          "species_basis": "实际预览清楚为人体人物；精确来源NIH130的People/Adult标签及Doctor consulting with patient描述共同支持。"
+        }
+      ],
+      "gap_reason": null
+    },
+    {
+      "query_id": "component-clinical_workflow-recruitment--clinical_conversation--zh",
+      "task_id": "component-clinical_workflow-recruitment",
+      "component_id": "clinical_conversation",
+      "language": "zh",
+      "request": {
+        "query": "医生与患者沟通场景插画",
+        "filters": {},
+        "limit": 10,
+        "mode": "explore",
+        "seed": "diagnostic-fixed-project"
+      },
+      "review_requirements": {
+        "expected_concepts": [
+          "clinical consultation",
+          "clinician",
+          "patient"
+        ],
+        "required_species": "human",
+        "visual_requirements": "图面与来源支持临床人员同另一成人面对面沟通或解释的局部场景；不能用单个人、企业会议或纯对白文字框代替。",
+        "exclude_matches": [
+          "isolated person",
+          "corporate meeting without clinical context",
+          "filled consent form",
+          "complete recruitment flowchart"
+        ]
+      },
+      "result_judgments": [
+        {
+          "variant_id": "nih-bioart-5b91f62cf60eb83887ef:24a5babba9a341784bfdbdbce1fdd4a73678e2ca1fa8473aa26ee72579d4c36e:nih-bioart-0b53fb554bee1aeb5633:0",
+          "rank": 1,
+          "original_sha256": "24a5babba9a341784bfdbdbce1fdd4a73678e2ca1fa8473aa26ee72579d4c36e",
+          "preview_sha256": "d5a278e9b2eb33e8c42badd66ccfd9691708143e0d9534ff4532fd59de6ceeb7",
+          "verdict": "relevant",
+          "evidence_notes": "本轮实看既有精确PNG：挂听诊器的临床人员持夹板与另一成年人面对面交流，人体姿势与来源consulting描述一致，符合成人临床交谈局部场景。",
+          "visual_evidence": [
+            {
+              "path": "build/curated-expansion-60/preview-42320795764/review/previews/24a5babba9a341784bfdbdbce1fdd4a73678e2ca1fa8473aa26ee72579d4c36e.png",
+              "sha256": "d5a278e9b2eb33e8c42badd66ccfd9691708143e0d9534ff4532fd59de6ceeb7"
+            },
+            {
+              "path": "data/relevance-reviews/component-42334004260-clinical-partial.json",
+              "sha256": "77a926f3c648678941f80cb53a5008ea32e0c978415dbb250470faf04528dad3"
+            }
+          ],
+          "use_reused": false,
+          "new_use_reviewed": true,
+          "limits": [
+            "图面是双人咨询场景，不是独立全身人体；下缘截断上身属于原图构图限制。",
+            "人体为来源明确的Adult人物；不能推断确切年龄、真实身份、参与研究状态、疾病或检验结果。",
+            "没有实际展示身体检查、随访时间轴或分组；听诊器存在不等于已完成检查。",
+            "PNG为位图，不声明路径可编辑；文字清理、裁切、组合版面均未执行。"
+          ]
+        }
+      ],
+      "pending_results": [],
+      "all_results_reviewed": true,
+      "selected_variant_ids": [
+        "nih-bioart-5b91f62cf60eb83887ef:24a5babba9a341784bfdbdbce1fdd4a73678e2ca1fa8473aa26ee72579d4c36e:nih-bioart-0b53fb554bee1aeb5633:0"
+      ],
+      "source_checks": [
+        {
+          "variant_id": "nih-bioart-5b91f62cf60eb83887ef:24a5babba9a341784bfdbdbce1fdd4a73678e2ca1fa8473aa26ee72579d4c36e:nih-bioart-0b53fb554bee1aeb5633:0",
+          "source_record": {
+            "asset_id": "nih-bioart-0b53fb554bee1aeb5633",
+            "attribution": "Doctor Patient — Ryan Kissinger, NIH BioArt Source; https://bioart.niaid.nih.gov/bioart/130; Public Domain",
+            "author": "Ryan Kissinger",
+            "categories": [],
+            "description": " Doctor consulting with patient ",
+            "distribution_status": "license_recorded",
+            "license": "Public-Domain",
+            "source": "nih-bioart",
+            "source_id": "130",
+            "source_url": "https://bioart.niaid.nih.gov/bioart/130",
+            "tags": [
+              "Adult",
+              "Female",
+              "People",
+              "Vector",
+              "clipboard",
+              "consulting",
+              "doctor patient",
+              "genetic counselling",
+              "man",
+              "people",
+              "scientist",
+              "woman"
+            ],
+            "taxonomy": [
+              "people"
+            ],
+            "title": "Doctor Patient",
+            "upstream_category": [
+              "Age (Human)",
+              "Bioart Category",
+              "Sex (Human)",
+              "Image Type"
+            ],
+            "url": "https://bioart.niaid.nih.gov/api/bioarts/130/files/629436"
+          },
+          "source_evidence": [
+            {
+              "path": "data/relevance-reviews/component-42334004260-clinical-partial.json",
+              "sha256": "77a926f3c648678941f80cb53a5008ea32e0c978415dbb250470faf04528dad3"
+            },
+            {
+              "path": "build/science-version-acceptance-20261107/dispositions/candidate_publish_manifest.json",
+              "sha256": "e9cf028a56e6a3b827bad7e5e576d48599ca7e4224f4f5e7f8a7660f0dfdcbbe"
+            }
+          ],
+          "source_evidence_checked": true,
+          "license_checked": true,
+          "species_matches": true,
+          "required_species": "human",
+          "species_basis": "实际预览清楚为人体人物；精确来源NIH130的People/Adult标签及Doctor consulting with patient描述共同支持。"
+        }
+      ],
+      "gap_reason": null
+    },
+    {
+      "query_id": "component-clinical_workflow-recruitment--clinical_conversation--en",
+      "task_id": "component-clinical_workflow-recruitment",
+      "component_id": "clinical_conversation",
+      "language": "en",
+      "request": {
+        "query": "clinician patient consultation illustration",
+        "filters": {},
+        "limit": 10,
+        "mode": "explore",
+        "seed": "diagnostic-fixed-project"
+      },
+      "review_requirements": {
+        "expected_concepts": [
+          "clinical consultation",
+          "clinician",
+          "patient"
+        ],
+        "required_species": "human",
+        "visual_requirements": "图面与来源支持临床人员同另一成人面对面沟通或解释的局部场景；不能用单个人、企业会议或纯对白文字框代替。",
+        "exclude_matches": [
+          "isolated person",
+          "corporate meeting without clinical context",
+          "filled consent form",
+          "complete recruitment flowchart"
+        ]
+      },
+      "result_judgments": [
+        {
+          "variant_id": "nih-bioart-5b91f62cf60eb83887ef:24a5babba9a341784bfdbdbce1fdd4a73678e2ca1fa8473aa26ee72579d4c36e:nih-bioart-0b53fb554bee1aeb5633:0",
+          "rank": 1,
+          "original_sha256": "24a5babba9a341784bfdbdbce1fdd4a73678e2ca1fa8473aa26ee72579d4c36e",
+          "preview_sha256": "d5a278e9b2eb33e8c42badd66ccfd9691708143e0d9534ff4532fd59de6ceeb7",
+          "verdict": "relevant",
+          "evidence_notes": "本轮实看既有精确PNG：挂听诊器的临床人员持夹板与另一成年人面对面交流，人体姿势与来源consulting描述一致，符合成人临床交谈局部场景。",
+          "visual_evidence": [
+            {
+              "path": "build/curated-expansion-60/preview-42320795764/review/previews/24a5babba9a341784bfdbdbce1fdd4a73678e2ca1fa8473aa26ee72579d4c36e.png",
+              "sha256": "d5a278e9b2eb33e8c42badd66ccfd9691708143e0d9534ff4532fd59de6ceeb7"
+            },
+            {
+              "path": "data/relevance-reviews/component-42334004260-clinical-partial.json",
+              "sha256": "77a926f3c648678941f80cb53a5008ea32e0c978415dbb250470faf04528dad3"
+            }
+          ],
+          "use_reused": false,
+          "new_use_reviewed": true,
+          "limits": [
+            "图面是双人咨询场景，不是独立全身人体；下缘截断上身属于原图构图限制。",
+            "人体为来源明确的Adult人物；不能推断确切年龄、真实身份、参与研究状态、疾病或检验结果。",
+            "没有实际展示身体检查、随访时间轴或分组；听诊器存在不等于已完成检查。",
+            "PNG为位图，不声明路径可编辑；文字清理、裁切、组合版面均未执行。"
+          ]
+        }
+      ],
+      "pending_results": [],
+      "all_results_reviewed": true,
+      "selected_variant_ids": [
+        "nih-bioart-5b91f62cf60eb83887ef:24a5babba9a341784bfdbdbce1fdd4a73678e2ca1fa8473aa26ee72579d4c36e:nih-bioart-0b53fb554bee1aeb5633:0"
+      ],
+      "source_checks": [
+        {
+          "variant_id": "nih-bioart-5b91f62cf60eb83887ef:24a5babba9a341784bfdbdbce1fdd4a73678e2ca1fa8473aa26ee72579d4c36e:nih-bioart-0b53fb554bee1aeb5633:0",
+          "source_record": {
+            "asset_id": "nih-bioart-0b53fb554bee1aeb5633",
+            "attribution": "Doctor Patient — Ryan Kissinger, NIH BioArt Source; https://bioart.niaid.nih.gov/bioart/130; Public Domain",
+            "author": "Ryan Kissinger",
+            "categories": [],
+            "description": " Doctor consulting with patient ",
+            "distribution_status": "license_recorded",
+            "license": "Public-Domain",
+            "source": "nih-bioart",
+            "source_id": "130",
+            "source_url": "https://bioart.niaid.nih.gov/bioart/130",
+            "tags": [
+              "Adult",
+              "Female",
+              "People",
+              "Vector",
+              "clipboard",
+              "consulting",
+              "doctor patient",
+              "genetic counselling",
+              "man",
+              "people",
+              "scientist",
+              "woman"
+            ],
+            "taxonomy": [
+              "people"
+            ],
+            "title": "Doctor Patient",
+            "upstream_category": [
+              "Age (Human)",
+              "Bioart Category",
+              "Sex (Human)",
+              "Image Type"
+            ],
+            "url": "https://bioart.niaid.nih.gov/api/bioarts/130/files/629436"
+          },
+          "source_evidence": [
+            {
+              "path": "data/relevance-reviews/component-42334004260-clinical-partial.json",
+              "sha256": "77a926f3c648678941f80cb53a5008ea32e0c978415dbb250470faf04528dad3"
+            },
+            {
+              "path": "build/science-version-acceptance-20261107/dispositions/candidate_publish_manifest.json",
+              "sha256": "e9cf028a56e6a3b827bad7e5e576d48599ca7e4224f4f5e7f8a7660f0dfdcbbe"
+            }
+          ],
+          "source_evidence_checked": true,
+          "license_checked": true,
+          "species_matches": true,
+          "required_species": "human",
+          "species_basis": "实际预览清楚为人体人物；精确来源NIH130的People/Adult标签及Doctor consulting with patient描述共同支持。"
+        }
+      ],
+      "gap_reason": null
+    }
+  ],
+  "tasks": [
+    {
+      "task_id": "component-clinical_workflow-recruitment",
+      "language": "zh",
+      "selected_roles": {
+        "clinical_conversation": [
+          "nih-bioart-5b91f62cf60eb83887ef:24a5babba9a341784bfdbdbce1fdd4a73678e2ca1fa8473aa26ee72579d4c36e:nih-bioart-0b53fb554bee1aeb5633:0"
+        ]
+      },
+      "composition_use_pass": true,
+      "composition_notes": "本任务为一个局部场景，已实际显示该精确PNG：两名成人与夹板/听诊器组合清楚，咨询关系成立，不需要从多个不相干素材推造交谈。",
+      "limitations": [
+        "不证明已经招募、知情同意或符合纳排标准。",
+        "原图只含上身；不是完整独立人体，未进行裁切、去字或原生编辑。"
+      ],
+      "composition_evidence": [
+        {
+          "path": "build/curated-expansion-60/preview-42320795764/review/previews/24a5babba9a341784bfdbdbce1fdd4a73678e2ca1fa8473aa26ee72579d4c36e.png",
+          "sha256": "d5a278e9b2eb33e8c42badd66ccfd9691708143e0d9534ff4532fd59de6ceeb7"
+        },
+        {
+          "path": "data/relevance-reviews/component-42334004260-clinical-partial.json",
+          "sha256": "77a926f3c648678941f80cb53a5008ea32e0c978415dbb250470faf04528dad3"
+        }
+      ]
+    },
+    {
+      "task_id": "component-clinical_workflow-recruitment",
+      "language": "en",
+      "selected_roles": {
+        "clinical_conversation": [
+          "nih-bioart-5b91f62cf60eb83887ef:24a5babba9a341784bfdbdbce1fdd4a73678e2ca1fa8473aa26ee72579d4c36e:nih-bioart-0b53fb554bee1aeb5633:0"
+        ]
+      },
+      "composition_use_pass": true,
+      "composition_notes": "本任务为一个局部场景，已实际显示该精确PNG：两名成人与夹板/听诊器组合清楚，咨询关系成立，不需要从多个不相干素材推造交谈。",
+      "limitations": [
+        "不证明已经招募、知情同意或符合纳排标准。",
+        "原图只含上身；不是完整独立人体，未进行裁切、去字或原生编辑。"
+      ],
+      "composition_evidence": [
+        {
+          "path": "build/curated-expansion-60/preview-42320795764/review/previews/24a5babba9a341784bfdbdbce1fdd4a73678e2ca1fa8473aa26ee72579d4c36e.png",
+          "sha256": "d5a278e9b2eb33e8c42badd66ccfd9691708143e0d9534ff4532fd59de6ceeb7"
+        },
+        {
+          "path": "data/relevance-reviews/component-42334004260-clinical-partial.json",
+          "sha256": "77a926f3c648678941f80cb53a5008ea32e0c978415dbb250470faf04528dad3"
+        }
+      ]
+    }
+  ],
+  "new_exact_preview_inspections": 1,
+  "new_preview_downloads": 0,
+  "new_searches": 0,
+  "acceptance_passed": false
+}

@@ -1,0 +1,1058 @@
+{
+  "schema_version": 1,
+  "reviewed_at": "2026-11-13T17:05:37.987302+00:00",
+  "reviewer": "Codex root; actual individual exact-preview inspection",
+  "review_method": "Displayed each of 13 exact PNG previews individually; checked source identities and scientific context separately. No title-only visual acceptance.",
+  "review_sheet_url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/acceptance-20261107/exact-review-43467539792-1.review.png",
+  "review_sheet_sha256": "e496407773b470aae984038dcaf8bb4ebe60b6aa01c5a8647ff05232cdc83c38",
+  "review_limits": [
+    "Only the 13 exact file/preview pairs are observed; nominations do not backfill the frozen replay.",
+    "Functional identities use the original named source plus listed primary references; image shape alone is not functional proof.",
+    "No original edited, no new collection, no native editing validation, no global text cleaning."
+  ],
+  "cloud_run": 43467539792,
+  "catalog_sha256": "8a961c42a357147f2ae0229526f6127c955e05928721d94283e829463f738da0",
+  "download_receipt": {
+    "path": "build/component-resume-20261114/zero-preview-43467539792/download-receipt.json",
+    "sha256": "ba8f7f259a1b7939554e8f36d9517b5c203496550a57c5cec3e300c6cae19d6a"
+  },
+  "items": [
+    {
+      "tile": 1,
+      "id": "bioicons-584b89c9a5861cf81285",
+      "title": "blood sample tube",
+      "source": "bioicons",
+      "source_id": "cc-0/Blood_Immunology/Marcel_Tisch/blood_sample_tube.svg",
+      "source_url": "https://github.com/duerrsimon/bioicons/blob/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-0/Blood_Immunology/Marcel_Tisch/blood_sample_tube.svg",
+      "source_record": {
+        "asset_id": "bioicons-584b89c9a5861cf81285",
+        "attribution": "blood sample tube — Marcel Tisch; https://twitter.com/MarcelTisch; CC0-1.0; via Bioicons",
+        "author": "Marcel Tisch",
+        "categories": [],
+        "distribution_status": "license_recorded",
+        "license": "CC0-1.0",
+        "source": "bioicons",
+        "source_id": "cc-0/Blood_Immunology/Marcel_Tisch/blood_sample_tube.svg",
+        "source_url": "https://github.com/duerrsimon/bioicons/blob/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-0/Blood_Immunology/Marcel_Tisch/blood_sample_tube.svg",
+        "tags": [
+          "Blood Immunology"
+        ],
+        "taxonomy": [
+          "tissues_vessels",
+          "lab_equipment"
+        ],
+        "title": "blood sample tube",
+        "upstream_category": "Blood_Immunology",
+        "url": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-0/Blood_Immunology/Marcel_Tisch/blood_sample_tube.svg"
+      },
+      "original_sha256": "5f34965209758c8821d190aa7c0fabee2f3f4c31f8ec8f3b318aed1b770cf025",
+      "preview_sha256": "e7f410ac26ff8ddd3edaf3eb5af9426255591f16a91f7235d588bd1f028b8773",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42239971379-1-b0000.tar.gz",
+        "member": "files/5f/5f34965209758c8821d190aa7c0fabee2f3f4c31f8ec8f3b318aed1b770cf025.svg"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42239971379-1-b0000.tar.gz",
+        "member": "previews/5f34965209758c8821d190aa7c0fabee2f3f4c31f8ec8f3b318aed1b770cf025.png"
+      },
+      "visual_verdict": "usable_as_schematic_component",
+      "observations": "橙红色有纹理管帽与细长圆底管体完整可见；蓝色管体带高光，未观察到刻度或文字。源标题明确为blood sample tube，可作血样／采血管对象。",
+      "visual_evidence": [
+        {
+          "path": "build/component-resume-20261114/zero-preview-43467539792/review/previews/5f34965209758c8821d190aa7c0fabee2f3f4c31f8ec8f3b318aed1b770cf025.png",
+          "sha256": "e7f410ac26ff8ddd3edaf3eb5af9426255591f16a91f7235d588bd1f028b8773"
+        },
+        {
+          "path": "build/component-resume-20261114/zero-preview-43467539792/review/mapping.json",
+          "sha256": "e18cd3c38dd7c43251becf6d49864b8763724d35f96dc8a75106c1bf162f9561"
+        }
+      ],
+      "scientific_assertions": {
+        "object": [
+          "blood collection tube",
+          "blood sample tube"
+        ],
+        "depiction_kind": "equipment"
+      },
+      "source_semantic_support": [],
+      "scientific_detail_validation": "limited schematic identity only; atomic detail and clinical measurements not validated",
+      "native_editability_tested": false,
+      "limits": [
+        "符合血样管对象；不能把蓝色外观当成血液颜色、内容量或添加剂事实。"
+      ],
+      "diagnostic_topic": "blood_collection_tube",
+      "nominated_role_compatible": true,
+      "frozen_query_result_added": false,
+      "component_query_pass": null,
+      "text_observation": {
+        "visible_text_in_reviewed_preview": false,
+        "scope": "Exact displayed preview only; not a full-library text-content update.",
+        "cleaning_note": "本预览未观察到可读文字；不把未审变体标为无字。"
+      }
+    },
+    {
+      "tile": 2,
+      "id": "nih-bioart-23aa4f9a90a8699a9e3a",
+      "title": "BDBlood Vial",
+      "source": "nih-bioart",
+      "source_id": "52",
+      "source_url": "https://bioart.niaid.nih.gov/bioart/52",
+      "source_record": {
+        "asset_id": "nih-bioart-67f938bf100ffc6cad55",
+        "attribution": "BDBlood Vial — Ryan Kissinger, NIH BioArt Source; https://bioart.niaid.nih.gov/bioart/52; Public Domain",
+        "author": "Ryan Kissinger",
+        "categories": [],
+        "description": " BD vial filled with blood ",
+        "distribution_status": "license_recorded",
+        "license": "Public-Domain",
+        "source": "nih-bioart",
+        "source_id": "52",
+        "source_url": "https://bioart.niaid.nih.gov/bioart/52",
+        "tags": [
+          "BD",
+          "Blood",
+          "Equipment",
+          "Lab",
+          "Labware",
+          "Vector",
+          "biology",
+          "blood",
+          "cap",
+          "equipment",
+          "lab equipment",
+          "science",
+          "tube",
+          "vial"
+        ],
+        "taxonomy": [
+          "lab_equipment"
+        ],
+        "title": "BDBlood Vial",
+        "upstream_category": [
+          "Equipment",
+          "Anatomy",
+          "Bioart Category",
+          "Image Type"
+        ],
+        "url": "https://bioart.niaid.nih.gov/api/bioarts/52/files/627964"
+      },
+      "original_sha256": "30b560694a90f859c33c43df586970569e7402f24b112a61d1d546df733c8435",
+      "preview_sha256": "bd3e1e08b66d804f9b2b33239a57eb865a2fea22895e2fdf5ecf491a36007a4c",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/nih-bioart-42236561214-1-b0000.tar.gz",
+        "member": "files/30/30b560694a90f859c33c43df586970569e7402f24b112a61d1d546df733c8435.svg"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/nih-bioart-42236561214-1-b0000.tar.gz",
+        "member": "previews/30b560694a90f859c33c43df586970569e7402f24b112a61d1d546df733c8435.png"
+      },
+      "visual_verdict": "usable_as_schematic_component",
+      "observations": "竖直圆底管、灰色纹理管帽和空白白色贴签可见，图面无可读个人信息。源标题BDBlood Vial、描述BD vial filled with blood支持血液样本容器身份。",
+      "visual_evidence": [
+        {
+          "path": "build/component-resume-20261114/zero-preview-43467539792/review/previews/30b560694a90f859c33c43df586970569e7402f24b112a61d1d546df733c8435.png",
+          "sha256": "bd3e1e08b66d804f9b2b33239a57eb865a2fea22895e2fdf5ecf491a36007a4c"
+        },
+        {
+          "path": "build/component-resume-20261114/zero-preview-43467539792/review/mapping.json",
+          "sha256": "e18cd3c38dd7c43251becf6d49864b8763724d35f96dc8a75106c1bf162f9561"
+        }
+      ],
+      "scientific_assertions": {
+        "object": [
+          "blood sample tube"
+        ],
+        "depiction_kind": "equipment"
+      },
+      "source_semantic_support": [],
+      "scientific_detail_validation": "limited schematic identity only; atomic detail and clinical measurements not validated",
+      "native_editability_tested": false,
+      "limits": [
+        "可用血样容器；不从黑灰填色推检验结果、管帽编码或采血量。"
+      ],
+      "diagnostic_topic": "blood_collection_tube",
+      "nominated_role_compatible": true,
+      "frozen_query_result_added": false,
+      "component_query_pass": null,
+      "text_observation": {
+        "visible_text_in_reviewed_preview": false,
+        "scope": "Exact displayed preview only; not a full-library text-content update.",
+        "cleaning_note": "本预览未观察到可读文字；不把未审变体标为无字。"
+      }
+    },
+    {
+      "tile": 3,
+      "id": "nih-bioart-39a8c3d73cda8e2800ee",
+      "title": "Eppendorf Tube",
+      "source": "nih-bioart",
+      "source_id": "143",
+      "source_url": "https://bioart.niaid.nih.gov/bioart/143",
+      "source_record": {
+        "asset_id": "nih-bioart-6ed8a96489da2f408670",
+        "attribution": "Eppendorf Tube — Ryan Kissinger, NIH BioArt Source; https://bioart.niaid.nih.gov/bioart/143; Public Domain",
+        "author": "Ryan Kissinger",
+        "categories": [],
+        "description": " Liquid filled eppendorf tube ",
+        "distribution_status": "license_recorded",
+        "license": "Public-Domain",
+        "source": "nih-bioart",
+        "source_id": "143",
+        "source_url": "https://bioart.niaid.nih.gov/bioart/143",
+        "tags": [
+          "Equipment",
+          "Lab",
+          "Labware",
+          "Vector",
+          "benchwork",
+          "eppendorf",
+          "filled",
+          "lab equipment",
+          "laboratory",
+          "liquid",
+          "medicine",
+          "tube"
+        ],
+        "taxonomy": [
+          "lab_equipment"
+        ],
+        "title": "Eppendorf Tube",
+        "upstream_category": [
+          "Equipment",
+          "Bioart Category",
+          "Image Type"
+        ],
+        "url": "https://bioart.niaid.nih.gov/api/bioarts/143/files/629619"
+      },
+      "original_sha256": "df6d3db8fab7e99bf39f91c586039d91dbd8a59f713e96ab70e137b1e72b7d13",
+      "preview_sha256": "cf8ac3d86b315c84794c1da054ab418f64503764d1405025da27cc131aec3062",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/nih-bioart-42236561214-1-b0000.tar.gz",
+        "member": "files/df/df6d3db8fab7e99bf39f91c586039d91dbd8a59f713e96ab70e137b1e72b7d13.svg"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/nih-bioart-42236561214-1-b0000.tar.gz",
+        "member": "previews/df6d3db8fab7e99bf39f91c586039d91dbd8a59f713e96ab70e137b1e72b7d13.png"
+      },
+      "visual_verdict": "usable_as_schematic_component",
+      "observations": "小型锥底管配相连的翻盖，盖处于打开状态，管内浅蓝液体；管口、管体和盖完整。来源明确Eppendorf Tube，与微量离心管形态相符。",
+      "visual_evidence": [
+        {
+          "path": "build/component-resume-20261114/zero-preview-43467539792/review/previews/df6d3db8fab7e99bf39f91c586039d91dbd8a59f713e96ab70e137b1e72b7d13.png",
+          "sha256": "cf8ac3d86b315c84794c1da054ab418f64503764d1405025da27cc131aec3062"
+        },
+        {
+          "path": "build/component-resume-20261114/zero-preview-43467539792/review/mapping.json",
+          "sha256": "e18cd3c38dd7c43251becf6d49864b8763724d35f96dc8a75106c1bf162f9561"
+        }
+      ],
+      "scientific_assertions": {
+        "object": [
+          "microcentrifuge tube",
+          "eppendorf tube"
+        ],
+        "depiction_kind": "equipment"
+      },
+      "source_semantic_support": [
+        {
+          "uri": "https://www.eppendorf.com/bn-en/Products/Lab-Consumables/Lab-Tubes-c-WebPSub-H-44515",
+          "checked_on": "2026-11-14",
+          "supports": "厂家目录将小型微量离心管列于实验管产品；结合本件Eppendorf Tube名称和实际小型锥底铰链盖形态判断。没有把Eppendorf品牌的所有管子一律当微量离心管。"
+        }
+      ],
+      "scientific_detail_validation": "limited schematic identity only; atomic detail and clinical measurements not validated",
+      "native_editability_tested": false,
+      "limits": [
+        "可作微量离心管，不从液面估容量或承诺离心性能；图中已有液体。"
+      ],
+      "diagnostic_topic": "microcentrifuge_tube",
+      "nominated_role_compatible": true,
+      "frozen_query_result_added": false,
+      "component_query_pass": null,
+      "text_observation": {
+        "visible_text_in_reviewed_preview": false,
+        "scope": "Exact displayed preview only; not a full-library text-content update.",
+        "cleaning_note": "本预览未观察到可读文字；不把未审变体标为无字。"
+      }
+    },
+    {
+      "tile": 4,
+      "id": "togo-f1fe0ed63b9134a928f6",
+      "title": "1.5ml tube",
+      "source": "togo",
+      "source_id": "737",
+      "source_url": "https://doi.org/10.7875/togopic.2020.150",
+      "source_record": {
+        "asset_id": "togo-4a9304a27709230b5377",
+        "attribution": "1.5ml tube — <a href=\"https://twitter.com/arabitom\" target=\"_blank\">@arabitom</a>; © 2016 DBCLS TogoTV / CC-BY-4.0; https://doi.org/10.7875/togopic.2020.150",
+        "author": "<a href=\"https://twitter.com/arabitom\" target=\"_blank\">@arabitom</a>",
+        "categories": [],
+        "distribution_status": "license_recorded",
+        "license": "CC-BY-4.0",
+        "source": "togo",
+        "source_id": "737",
+        "source_url": "https://doi.org/10.7875/togopic.2020.150",
+        "tags": [
+          "Lab equipment",
+          "Icon",
+          "Lab instruments",
+          "Lab techniques",
+          "Molecular biology",
+          "Cell culture"
+        ],
+        "taxonomy": [
+          "cells",
+          "lab_equipment",
+          "experimental_actions"
+        ],
+        "title": "1.5ml tube",
+        "url": "https://dbarchive.biosciencedbc.jp/data/togo-pic/image/202004_1.5ml_tube.svg"
+      },
+      "original_sha256": "8149553cfc1230eeea1b5b38d5708c7ae4c1d491033924f4dabc1748a42df27b",
+      "preview_sha256": "130eb8ba7cc70f5d65fb6f8322a3b935e3ff54155ce1f2b7e21185128fa14c7c",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42249870031-1-b0001.tar.gz",
+        "member": "files/81/8149553cfc1230eeea1b5b38d5708c7ae4c1d491033924f4dabc1748a42df27b.svg"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42249870031-1-b0001.tar.gz",
+        "member": "previews/8149553cfc1230eeea1b5b38d5708c7ae4c1d491033924f4dabc1748a42df27b.png"
+      },
+      "visual_verdict": "usable_as_schematic_component",
+      "observations": "简洁锥底小管、上口盖缘与浅蓝内填充可辨，轮廓完整；来源1.5ml tube支持小型实验管。",
+      "visual_evidence": [
+        {
+          "path": "build/component-resume-20261114/zero-preview-43467539792/review/previews/8149553cfc1230eeea1b5b38d5708c7ae4c1d491033924f4dabc1748a42df27b.png",
+          "sha256": "130eb8ba7cc70f5d65fb6f8322a3b935e3ff54155ce1f2b7e21185128fa14c7c"
+        },
+        {
+          "path": "build/component-resume-20261114/zero-preview-43467539792/review/mapping.json",
+          "sha256": "e18cd3c38dd7c43251becf6d49864b8763724d35f96dc8a75106c1bf162f9561"
+        }
+      ],
+      "scientific_assertions": {
+        "object": [
+          "microcentrifuge tube"
+        ],
+        "depiction_kind": "equipment"
+      },
+      "source_semantic_support": [
+        {
+          "uri": "https://www.eppendorf.com/bn-en/Products/Lab-Consumables/Lab-Tubes-c-WebPSub-H-44515",
+          "checked_on": "2026-11-14",
+          "supports": "厂家目录将小型微量离心管列于实验管产品；结合本件Eppendorf Tube名称和实际小型锥底铰链盖形态判断。没有把Eppendorf品牌的所有管子一律当微量离心管。"
+        }
+      ],
+      "scientific_detail_validation": "limited schematic identity only; atomic detail and clinical measurements not validated",
+      "native_editability_tested": false,
+      "limits": [
+        "标称容量只属于来源名称，图面无计量刻度；不将其当实际液量。"
+      ],
+      "diagnostic_topic": "microcentrifuge_tube",
+      "nominated_role_compatible": true,
+      "frozen_query_result_added": false,
+      "component_query_pass": null,
+      "text_observation": {
+        "visible_text_in_reviewed_preview": false,
+        "scope": "Exact displayed preview only; not a full-library text-content update.",
+        "cleaning_note": "本预览未观察到可读文字；不把未审变体标为无字。"
+      }
+    },
+    {
+      "tile": 5,
+      "id": "bioicons-7f79bececd11df0d3e3b",
+      "title": "Examination Man",
+      "source": "bioicons",
+      "source_id": "cc-by-4.0/People-Other/DBCLS/Examination_Man.svg",
+      "source_url": "https://github.com/duerrsimon/bioicons/blob/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-4.0/People-Other/DBCLS/Examination_Man.svg",
+      "source_record": {
+        "asset_id": "bioicons-7f79bececd11df0d3e3b",
+        "attribution": "Examination Man — DBCLS; https://togotv.dbcls.jp/en/pics.html; CC-BY-4.0; via Bioicons",
+        "author": "DBCLS",
+        "categories": [],
+        "distribution_status": "license_recorded",
+        "license": "CC-BY-4.0",
+        "source": "bioicons",
+        "source_id": "cc-by-4.0/People-Other/DBCLS/Examination_Man.svg",
+        "source_url": "https://github.com/duerrsimon/bioicons/blob/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-4.0/People-Other/DBCLS/Examination_Man.svg",
+        "tags": [
+          "People Other"
+        ],
+        "taxonomy": [
+          "people"
+        ],
+        "title": "Examination Man",
+        "upstream_category": "People-Other",
+        "url": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-4.0/People-Other/DBCLS/Examination_Man.svg"
+      },
+      "original_sha256": "36df84f24b05cf308515e7a267c400fc7a7ded3913d544c52af37d93a360bf50",
+      "preview_sha256": "f495e8345a6c254854aeb2f1bf1fd97ec734b284fe9818596e8f547e1e2ac3ac",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42251588741-1-b0032.tar.gz",
+        "member": "files/36/36df84f24b05cf308515e7a267c400fc7a7ded3913d544c52af37d93a360bf50.svg"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42251588741-1-b0032.tar.gz",
+        "member": "previews/36df84f24b05cf308515e7a267c400fc7a7ded3913d544c52af37d93a360bf50.png"
+      },
+      "visual_verdict": "usable_as_schematic_component",
+      "observations": "两名成人外观人物面对面坐着，左侧人物挂有听诊器，双手放于腿部，右侧人物坐凳上。未见听诊器接触身体或其他体检动作。",
+      "visual_evidence": [
+        {
+          "path": "build/component-resume-20261114/zero-preview-43467539792/review/previews/36df84f24b05cf308515e7a267c400fc7a7ded3913d544c52af37d93a360bf50.png",
+          "sha256": "f495e8345a6c254854aeb2f1bf1fd97ec734b284fe9818596e8f547e1e2ac3ac"
+        },
+        {
+          "path": "build/component-resume-20261114/zero-preview-43467539792/review/mapping.json",
+          "sha256": "e18cd3c38dd7c43251becf6d49864b8763724d35f96dc8a75106c1bf162f9561"
+        }
+      ],
+      "scientific_assertions": {
+        "object": [
+          "doctor",
+          "patient",
+          "clinical consultation"
+        ],
+        "depiction_kind": "clinical_consultation",
+        "species": [
+          "human"
+        ]
+      },
+      "source_semantic_support": [],
+      "scientific_detail_validation": "limited schematic identity only; atomic detail and clinical measurements not validated",
+      "native_editability_tested": false,
+      "limits": [
+        "尽管源名含Examination，本图只能确认临床对坐交流情境；不能用来证明身体检查。"
+      ],
+      "diagnostic_topic": "clinical_assessment",
+      "nominated_role_compatible": false,
+      "frozen_query_result_added": false,
+      "component_query_pass": null,
+      "text_observation": {
+        "visible_text_in_reviewed_preview": false,
+        "scope": "Exact displayed preview only; not a full-library text-content update.",
+        "cleaning_note": "本预览未观察到可读文字；不把未审变体标为无字。"
+      }
+    },
+    {
+      "tile": 6,
+      "id": "bioicons-f3db7499dbfb7689e430",
+      "title": "Examination Woman",
+      "source": "bioicons",
+      "source_id": "cc-by-4.0/People-Other/DBCLS/Examination_Woman.svg",
+      "source_url": "https://github.com/duerrsimon/bioicons/blob/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-4.0/People-Other/DBCLS/Examination_Woman.svg",
+      "source_record": {
+        "asset_id": "bioicons-f3db7499dbfb7689e430",
+        "attribution": "Examination Woman — DBCLS; https://togotv.dbcls.jp/en/pics.html; CC-BY-4.0; via Bioicons",
+        "author": "DBCLS",
+        "categories": [],
+        "distribution_status": "license_recorded",
+        "license": "CC-BY-4.0",
+        "source": "bioicons",
+        "source_id": "cc-by-4.0/People-Other/DBCLS/Examination_Woman.svg",
+        "source_url": "https://github.com/duerrsimon/bioicons/blob/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-4.0/People-Other/DBCLS/Examination_Woman.svg",
+        "tags": [
+          "People Other"
+        ],
+        "taxonomy": [
+          "people"
+        ],
+        "title": "Examination Woman",
+        "upstream_category": "People-Other",
+        "url": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-4.0/People-Other/DBCLS/Examination_Woman.svg"
+      },
+      "original_sha256": "4817fad3246313687fc900972111f7cc387a1c9064d0c23768667873cae38a60",
+      "preview_sha256": "5ab92ff62545057537a0a2faedd959d4c321365d5538caae6138c45be36143bf",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42251588741-1-b0032.tar.gz",
+        "member": "files/48/4817fad3246313687fc900972111f7cc387a1c9064d0c23768667873cae38a60.svg"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42251588741-1-b0032.tar.gz",
+        "member": "previews/4817fad3246313687fc900972111f7cc387a1c9064d0c23768667873cae38a60.png"
+      },
+      "visual_verdict": "usable_as_schematic_component",
+      "observations": "临床人员与女性外观受谈者面对面坐着，听诊器未用于接触，未见身体检查动作。",
+      "visual_evidence": [
+        {
+          "path": "build/component-resume-20261114/zero-preview-43467539792/review/previews/4817fad3246313687fc900972111f7cc387a1c9064d0c23768667873cae38a60.png",
+          "sha256": "5ab92ff62545057537a0a2faedd959d4c321365d5538caae6138c45be36143bf"
+        },
+        {
+          "path": "build/component-resume-20261114/zero-preview-43467539792/review/mapping.json",
+          "sha256": "e18cd3c38dd7c43251becf6d49864b8763724d35f96dc8a75106c1bf162f9561"
+        }
+      ],
+      "scientific_assertions": {
+        "object": [
+          "doctor",
+          "patient",
+          "clinical consultation"
+        ],
+        "depiction_kind": "clinical_consultation",
+        "species": [
+          "human"
+        ]
+      },
+      "source_semantic_support": [],
+      "scientific_detail_validation": "limited schematic identity only; atomic detail and clinical measurements not validated",
+      "native_editability_tested": false,
+      "limits": [
+        "可保留医患咨询局部场景；名称不替代动作证据，不宣称已完成检查。"
+      ],
+      "diagnostic_topic": "clinical_assessment",
+      "nominated_role_compatible": false,
+      "frozen_query_result_added": false,
+      "component_query_pass": null,
+      "text_observation": {
+        "visible_text_in_reviewed_preview": false,
+        "scope": "Exact displayed preview only; not a full-library text-content update.",
+        "cleaning_note": "本预览未观察到可读文字；不把未审变体标为无字。"
+      }
+    },
+    {
+      "tile": 7,
+      "id": "bioicons-d8694e5607d13fbd82c7",
+      "title": "ultrasonic examination",
+      "source": "bioicons",
+      "source_id": "cc-by-4.0/People-Other/DBCLS/ultrasonic-examination.svg",
+      "source_url": "https://github.com/duerrsimon/bioicons/blob/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-4.0/People-Other/DBCLS/ultrasonic-examination.svg",
+      "source_record": {
+        "asset_id": "bioicons-d8694e5607d13fbd82c7",
+        "attribution": "ultrasonic examination — DBCLS; https://togotv.dbcls.jp/en/pics.html; CC-BY-4.0; via Bioicons",
+        "author": "DBCLS",
+        "categories": [],
+        "distribution_status": "license_recorded",
+        "license": "CC-BY-4.0",
+        "source": "bioicons",
+        "source_id": "cc-by-4.0/People-Other/DBCLS/ultrasonic-examination.svg",
+        "source_url": "https://github.com/duerrsimon/bioicons/blob/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-4.0/People-Other/DBCLS/ultrasonic-examination.svg",
+        "tags": [
+          "People Other"
+        ],
+        "taxonomy": [
+          "people"
+        ],
+        "title": "ultrasonic examination",
+        "upstream_category": "People-Other",
+        "url": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-4.0/People-Other/DBCLS/ultrasonic-examination.svg"
+      },
+      "original_sha256": "3991546c44a07da3124a32f0b4f0918df77b65c0e531b56dc077e5e308fc865e",
+      "preview_sha256": "1d68afc3d118485d3c19efccc64c2341d364ddd77af24c18f9e6ea35931a4c81",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42251588741-1-b0032.tar.gz",
+        "member": "files/39/3991546c44a07da3124a32f0b4f0918df77b65c0e531b56dc077e5e308fc865e.svg"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42251588741-1-b0032.tar.gz",
+        "member": "previews/3991546c44a07da3124a32f0b4f0918df77b65c0e531b56dc077e5e308fc865e.png"
+      },
+      "visual_verdict": "usable_as_schematic_component",
+      "observations": "临床人员一手操作设备，另一手将探头放在仰卧受检者腹部；连接仪器和屏幕可见，屏幕有胎儿轮廓。实际存在超声检查动作。",
+      "visual_evidence": [
+        {
+          "path": "build/component-resume-20261114/zero-preview-43467539792/review/previews/3991546c44a07da3124a32f0b4f0918df77b65c0e531b56dc077e5e308fc865e.png",
+          "sha256": "1d68afc3d118485d3c19efccc64c2341d364ddd77af24c18f9e6ea35931a4c81"
+        },
+        {
+          "path": "build/component-resume-20261114/zero-preview-43467539792/review/mapping.json",
+          "sha256": "e18cd3c38dd7c43251becf6d49864b8763724d35f96dc8a75106c1bf162f9561"
+        }
+      ],
+      "scientific_assertions": {
+        "object": [
+          "doctor",
+          "patient",
+          "clinical examination",
+          "ultrasound examination"
+        ],
+        "depiction_kind": "clinical_examination",
+        "species": [
+          "human"
+        ]
+      },
+      "source_semantic_support": [],
+      "scientific_detail_validation": "limited schematic identity only; atomic detail and clinical measurements not validated",
+      "native_editability_tested": false,
+      "limits": [
+        "仅支持孕期／产科超声情境，不应无说明地代表所有成人随访；不推妊娠周数、胎儿性别、诊断或测量结果。"
+      ],
+      "diagnostic_topic": "clinical_assessment",
+      "nominated_role_compatible": true,
+      "frozen_query_result_added": false,
+      "component_query_pass": null,
+      "text_observation": {
+        "visible_text_in_reviewed_preview": false,
+        "scope": "Exact displayed preview only; not a full-library text-content update.",
+        "cleaning_note": "本预览未观察到可读文字；不把未审变体标为无字。"
+      }
+    },
+    {
+      "tile": 8,
+      "id": "bioicons-aac84eab601ab9662b8b",
+      "title": "drug capsule 1",
+      "source": "bioicons",
+      "source_id": "cc-by-3.0/Human_physiology/Servier/drug-capsule-1.svg",
+      "source_url": "https://github.com/duerrsimon/bioicons/blob/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-3.0/Human_physiology/Servier/drug-capsule-1.svg",
+      "source_record": {
+        "asset_id": "bioicons-aac84eab601ab9662b8b",
+        "attribution": "drug capsule 1 — Servier Medical Art by Servier; CC BY 3.0 (https://creativecommons.org/licenses/by/3.0/); fixed source: https://github.com/duerrsimon/bioicons/blob/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-3.0/Human_physiology/Servier/drug-capsule-1.svg; via Bioicons. Historical SVG copy distributed through Bioicons; no new artwork modification by MGA-resource.",
+        "author": "Servier",
+        "categories": [],
+        "distribution_status": "license_recorded",
+        "license": "CC-BY-3.0",
+        "source": "bioicons",
+        "source_id": "cc-by-3.0/Human_physiology/Servier/drug-capsule-1.svg",
+        "source_url": "https://github.com/duerrsimon/bioicons/blob/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-3.0/Human_physiology/Servier/drug-capsule-1.svg",
+        "tags": [
+          "Human physiology"
+        ],
+        "taxonomy": [],
+        "title": "drug capsule 1",
+        "upstream_category": "Human_physiology",
+        "url": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-3.0/Human_physiology/Servier/drug-capsule-1.svg"
+      },
+      "original_sha256": "bf7295587ab9b7ccc71baa3de01bb3f2177830c175ec90eff9767200655087d5",
+      "preview_sha256": "af7b5030bd5ada99c2255fb87bc6ae4add9ee3b1f0af4def13c4f308a0d081bf",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42251588741-1-b0002.tar.gz",
+        "member": "files/bf/bf7295587ab9b7ccc71baa3de01bb3f2177830c175ec90eff9767200655087d5.svg"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42251588741-1-b0002.tar.gz",
+        "member": "previews/bf7295587ab9b7ccc71baa3de01bb3f2177830c175ec90eff9767200655087d5.png"
+      },
+      "visual_verdict": "usable_as_schematic_component",
+      "observations": "红白两半胶囊外形完整，连接处与立体高光可辨，无文字。来源明确drug capsule。",
+      "visual_evidence": [
+        {
+          "path": "build/component-resume-20261114/zero-preview-43467539792/review/previews/bf7295587ab9b7ccc71baa3de01bb3f2177830c175ec90eff9767200655087d5.png",
+          "sha256": "af7b5030bd5ada99c2255fb87bc6ae4add9ee3b1f0af4def13c4f308a0d081bf"
+        },
+        {
+          "path": "build/component-resume-20261114/zero-preview-43467539792/review/mapping.json",
+          "sha256": "e18cd3c38dd7c43251becf6d49864b8763724d35f96dc8a75106c1bf162f9561"
+        }
+      ],
+      "scientific_assertions": {
+        "object": [
+          "drug capsule",
+          "oral medication"
+        ],
+        "depiction_kind": "named_object"
+      },
+      "source_semantic_support": [
+        {
+          "uri": "https://www.cancer.gov/publications/dictionaries/cancer-terms/def/capsule",
+          "checked_on": "2026-11-14",
+          "supports": "NCI区分组织被膜与药物胶囊；药物义胶囊属于经口使用的包壳剂型。此处只用来解释已由原来源明确标为drug capsule的对象，不把所有capsule都当药物。"
+        }
+      ],
+      "scientific_detail_validation": "limited schematic identity only; atomic detail and clinical measurements not validated",
+      "native_editability_tested": false,
+      "limits": [
+        "可作为来源支持的胶囊剂型；不从颜色推药名、剂量、试验组或安慰剂身份。"
+      ],
+      "diagnostic_topic": "oral_medication",
+      "nominated_role_compatible": true,
+      "frozen_query_result_added": false,
+      "component_query_pass": null,
+      "text_observation": {
+        "visible_text_in_reviewed_preview": false,
+        "scope": "Exact displayed preview only; not a full-library text-content update.",
+        "cleaning_note": "本预览未观察到可读文字；不把未审变体标为无字。"
+      }
+    },
+    {
+      "tile": 9,
+      "id": "bioicons-0056b2d6a8292850738f",
+      "title": "drug tablet 3",
+      "source": "bioicons",
+      "source_id": "cc-by-3.0/Human_physiology/Servier/drug-tablet-3.svg",
+      "source_url": "https://github.com/duerrsimon/bioicons/blob/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-3.0/Human_physiology/Servier/drug-tablet-3.svg",
+      "source_record": {
+        "asset_id": "bioicons-0056b2d6a8292850738f",
+        "attribution": "drug tablet 3 — Servier Medical Art by Servier; CC BY 3.0 (https://creativecommons.org/licenses/by/3.0/); fixed source: https://github.com/duerrsimon/bioicons/blob/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-3.0/Human_physiology/Servier/drug-tablet-3.svg; via Bioicons. Historical SVG copy distributed through Bioicons; no new artwork modification by MGA-resource.",
+        "author": "Servier",
+        "categories": [],
+        "distribution_status": "license_recorded",
+        "license": "CC-BY-3.0",
+        "source": "bioicons",
+        "source_id": "cc-by-3.0/Human_physiology/Servier/drug-tablet-3.svg",
+        "source_url": "https://github.com/duerrsimon/bioicons/blob/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-3.0/Human_physiology/Servier/drug-tablet-3.svg",
+        "tags": [
+          "Human physiology"
+        ],
+        "taxonomy": [],
+        "title": "drug tablet 3",
+        "upstream_category": "Human_physiology",
+        "url": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-3.0/Human_physiology/Servier/drug-tablet-3.svg"
+      },
+      "original_sha256": "a0c65df9976cbe75b0cf183bd697e94e44d5a9596df662da40f7f4f4f20bb801",
+      "preview_sha256": "892cd44be189c769236e8df14a14ad8ee7b4efb41592715c27181fcf1ec54929",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42251588741-1-b0002.tar.gz",
+        "member": "files/a0/a0c65df9976cbe75b0cf183bd697e94e44d5a9596df662da40f7f4f4f20bb801.svg"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42251588741-1-b0002.tar.gz",
+        "member": "previews/a0c65df9976cbe75b0cf183bd697e94e44d5a9596df662da40f7f4f4f20bb801.png"
+      },
+      "visual_verdict": "usable_as_schematic_component",
+      "observations": "浅黄色圆片、圆周边缘和明暗面完整可见，无文字或刻度；源标题明确drug tablet。",
+      "visual_evidence": [
+        {
+          "path": "build/component-resume-20261114/zero-preview-43467539792/review/previews/a0c65df9976cbe75b0cf183bd697e94e44d5a9596df662da40f7f4f4f20bb801.png",
+          "sha256": "892cd44be189c769236e8df14a14ad8ee7b4efb41592715c27181fcf1ec54929"
+        },
+        {
+          "path": "build/component-resume-20261114/zero-preview-43467539792/review/mapping.json",
+          "sha256": "e18cd3c38dd7c43251becf6d49864b8763724d35f96dc8a75106c1bf162f9561"
+        }
+      ],
+      "scientific_assertions": {
+        "object": [
+          "drug tablet"
+        ],
+        "depiction_kind": "named_object"
+      },
+      "source_semantic_support": [],
+      "scientific_detail_validation": "limited schematic identity only; atomic detail and clinical measurements not validated",
+      "native_editability_tested": false,
+      "limits": [
+        "药物片剂身份可确认；未单独断言特定给药途径、药名或药效。"
+      ],
+      "diagnostic_topic": "oral_medication",
+      "nominated_role_compatible": null,
+      "frozen_query_result_added": false,
+      "component_query_pass": null,
+      "text_observation": {
+        "visible_text_in_reviewed_preview": false,
+        "scope": "Exact displayed preview only; not a full-library text-content update.",
+        "cleaning_note": "本预览未观察到可读文字；不把未审变体标为无字。"
+      }
+    },
+    {
+      "tile": 10,
+      "id": "nih-bioart-6866f6d0d285f66a2e89",
+      "title": "Pill",
+      "source": "nih-bioart",
+      "source_id": "407",
+      "source_url": "https://bioart.niaid.nih.gov/bioart/407",
+      "source_record": {
+        "asset_id": "nih-bioart-3ba4503280a02e8e13c4",
+        "attribution": "Pill — Ryan Kissinger, NIH BioArt Source; https://bioart.niaid.nih.gov/bioart/407; Public Domain",
+        "author": "Ryan Kissinger",
+        "categories": [],
+        "description": " Pill used in therapeutics ",
+        "distribution_status": "license_recorded",
+        "license": "Public-Domain",
+        "source": "nih-bioart",
+        "source_id": "407",
+        "source_url": "https://bioart.niaid.nih.gov/bioart/407",
+        "tags": [
+          "Lab",
+          "Pill",
+          "Techniques",
+          "Vector",
+          "antiviral",
+          "biology",
+          "drug",
+          "science",
+          "techniques",
+          "therapeutics"
+        ],
+        "taxonomy": [],
+        "title": "Pill",
+        "upstream_category": [
+          "Bioart Category",
+          "Image Type"
+        ],
+        "url": "https://bioart.niaid.nih.gov/api/bioarts/407/files/633289"
+      },
+      "original_sha256": "01e0038568882628855c6b9034f88635bdfa413f01fd484baca96b349423507b",
+      "preview_sha256": "23cb4f95e5cae30c93d4d73d55b96f7a7b66b9821466c6e827c0b5caf878a0bc",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/nih-bioart-42236561214-1-b0000.tar.gz",
+        "member": "files/01/01e0038568882628855c6b9034f88635bdfa413f01fd484baca96b349423507b.svg"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/nih-bioart-42236561214-1-b0000.tar.gz",
+        "member": "previews/01e0038568882628855c6b9034f88635bdfa413f01fd484baca96b349423507b.png"
+      },
+      "visual_verdict": "usable_as_schematic_component",
+      "observations": "斜放的黄灰两段胶囊样药丸，轮廓和包壳连接可辨；源标题Pill、描述用于治疗的pill。",
+      "visual_evidence": [
+        {
+          "path": "build/component-resume-20261114/zero-preview-43467539792/review/previews/01e0038568882628855c6b9034f88635bdfa413f01fd484baca96b349423507b.png",
+          "sha256": "23cb4f95e5cae30c93d4d73d55b96f7a7b66b9821466c6e827c0b5caf878a0bc"
+        },
+        {
+          "path": "build/component-resume-20261114/zero-preview-43467539792/review/mapping.json",
+          "sha256": "e18cd3c38dd7c43251becf6d49864b8763724d35f96dc8a75106c1bf162f9561"
+        }
+      ],
+      "scientific_assertions": {
+        "object": [
+          "drug capsule",
+          "oral medication"
+        ],
+        "depiction_kind": "named_object"
+      },
+      "source_semantic_support": [
+        {
+          "uri": "https://www.cancer.gov/publications/dictionaries/cancer-terms/def/capsule",
+          "checked_on": "2026-11-14",
+          "supports": "NCI区分组织被膜与药物胶囊；药物义胶囊属于经口使用的包壳剂型。此处只用来解释已由原来源明确标为drug capsule的对象，不把所有capsule都当药物。"
+        }
+      ],
+      "scientific_detail_validation": "limited schematic identity only; atomic detail and clinical measurements not validated",
+      "native_editability_tested": false,
+      "limits": [
+        "可作常规药物剂型对象，不是设备capsule或生物被膜；不验证具体成分和给药操作。"
+      ],
+      "diagnostic_topic": "oral_medication",
+      "nominated_role_compatible": true,
+      "frozen_query_result_added": false,
+      "component_query_pass": null,
+      "text_observation": {
+        "visible_text_in_reviewed_preview": false,
+        "scope": "Exact displayed preview only; not a full-library text-content update.",
+        "cleaning_note": "本预览未观察到可读文字；不把未审变体标为无字。"
+      }
+    },
+    {
+      "tile": 11,
+      "id": "bioicons-af3aeaeb246faf90acc5",
+      "title": "histone",
+      "source": "bioicons",
+      "source_id": "cc-by-4.0/Nucleic_acids/DBCLS/histone.svg",
+      "source_url": "https://github.com/duerrsimon/bioicons/blob/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-4.0/Nucleic_acids/DBCLS/histone.svg",
+      "source_record": {
+        "asset_id": "bioicons-af3aeaeb246faf90acc5",
+        "attribution": "histone — DBCLS; https://togotv.dbcls.jp/en/pics.html; CC-BY-4.0; via Bioicons",
+        "author": "DBCLS",
+        "categories": [],
+        "distribution_status": "license_recorded",
+        "license": "CC-BY-4.0",
+        "source": "bioicons",
+        "source_id": "cc-by-4.0/Nucleic_acids/DBCLS/histone.svg",
+        "source_url": "https://github.com/duerrsimon/bioicons/blob/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-4.0/Nucleic_acids/DBCLS/histone.svg",
+        "tags": [
+          "Nucleic acids"
+        ],
+        "taxonomy": [
+          "molecules"
+        ],
+        "title": "histone",
+        "upstream_category": "Nucleic_acids",
+        "url": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-4.0/Nucleic_acids/DBCLS/histone.svg"
+      },
+      "original_sha256": "6db6951ce2dfbc83410e4c3b1f776ac1caa4854ec1fb794abaacaa0f641deaa4",
+      "preview_sha256": "3575fe42eaf706a234781e4507f4b02d142c1ea338649cf453b841b9fe4b1dbf",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42239971379-1-b0005.tar.gz",
+        "member": "files/6d/6db6951ce2dfbc83410e4c3b1f776ac1caa4854ec1fb794abaacaa0f641deaa4.svg"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42239971379-1-b0005.tar.gz",
+        "member": "previews/6db6951ce2dfbc83410e4c3b1f776ac1caa4854ec1fb794abaacaa0f641deaa4.png"
+      },
+      "visual_verdict": "usable_as_schematic_component",
+      "observations": "画面有上方紧密排列与下方疏排的黄色组蛋白／核小体样单元，深灰细链穿绕其间；无文字。它是带DNA链的复合结构示意，不是孤立单蛋白。",
+      "visual_evidence": [
+        {
+          "path": "build/component-resume-20261114/zero-preview-43467539792/review/previews/6db6951ce2dfbc83410e4c3b1f776ac1caa4854ec1fb794abaacaa0f641deaa4.png",
+          "sha256": "3575fe42eaf706a234781e4507f4b02d142c1ea338649cf453b841b9fe4b1dbf"
+        },
+        {
+          "path": "build/component-resume-20261114/zero-preview-43467539792/review/mapping.json",
+          "sha256": "e18cd3c38dd7c43251becf6d49864b8763724d35f96dc8a75106c1bf162f9561"
+        }
+      ],
+      "scientific_assertions": {
+        "object": [
+          "histone complex",
+          "nucleosome"
+        ],
+        "depiction_kind": "named_object"
+      },
+      "source_semantic_support": [
+        {
+          "uri": "https://pdb101.rcsb.org/motm/314",
+          "checked_on": "2026-11-14",
+          "supports": "RCSB PDB-101说明核心组蛋白形成八聚体，DNA围绕其形成核小体。该知识支持明确标为histone octamer的源对象的DNA结合类身份，不证明本示意图的原子构象或物种。"
+        }
+      ],
+      "scientific_detail_validation": "limited schematic identity only; atomic detail and clinical measurements not validated",
+      "native_editability_tested": false,
+      "limits": [
+        "可用核小体／组蛋白复合结构；两种排列不是已验证的染色质状态变化，细链在深底对比弱。"
+      ],
+      "diagnostic_topic": "dna_binding_protein",
+      "nominated_role_compatible": true,
+      "frozen_query_result_added": false,
+      "component_query_pass": null,
+      "text_observation": {
+        "visible_text_in_reviewed_preview": false,
+        "scope": "Exact displayed preview only; not a full-library text-content update.",
+        "cleaning_note": "本预览未观察到可读文字；不把未审变体标为无字。"
+      }
+    },
+    {
+      "tile": 12,
+      "id": "reactome-3b17416fd604099b7e0f",
+      "title": "Histone octamer 1",
+      "source": "reactome",
+      "source_id": "R-ICO-012825",
+      "source_url": "https://reactome.org/content/detail/R-ICO-012825",
+      "source_record": {
+        "asset_id": "reactome-47ca5e91688be3403349",
+        "attribution": "Histone octamer 1 — Reactome (Cold Spring Harbor Laboratory, Ontario Institute for Cancer Research, European Bioinformatics Institute); https://reactome.org/content/detail/R-ICO-012825; CC BY 4.0; original artwork unchanged",
+        "categories": [],
+        "distribution_status": "license_recorded",
+        "license": "CC-BY-4.0",
+        "source": "reactome",
+        "source_id": "R-ICO-012825",
+        "source_url": "https://reactome.org/content/detail/R-ICO-012825",
+        "tags": [
+          "Protein"
+        ],
+        "taxonomy": [
+          "molecules"
+        ],
+        "title": "Histone octamer 1",
+        "url": "https://reactome.org/icon/R-ICO-012825.svg"
+      },
+      "original_sha256": "f3e1acf6af85c0d7f6232f7cdcbeb90a42caa24a0ee33d7947937541fed6b931",
+      "preview_sha256": "6b567c3b484aa140c9f23cb3706a0b567544b8fbceeb5a48cffa047abb990519",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/reactome-42246331998-1-b0000.tar.gz",
+        "member": "files/f3/f3e1acf6af85c0d7f6232f7cdcbeb90a42caa24a0ee33d7947937541fed6b931.svg"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/reactome-42246331998-1-b0000.tar.gz",
+        "member": "previews/f3e1acf6af85c0d7f6232f7cdcbeb90a42caa24a0ee33d7947937541fed6b931.png"
+      },
+      "visual_verdict": "usable_as_schematic_component",
+      "observations": "多个不同颜色、具有明暗体积的球状亚基组成一个紧密复合体，未见文字名牌；来源确认为Histone octamer 1。",
+      "visual_evidence": [
+        {
+          "path": "build/component-resume-20261114/zero-preview-43467539792/review/previews/f3e1acf6af85c0d7f6232f7cdcbeb90a42caa24a0ee33d7947937541fed6b931.png",
+          "sha256": "6b567c3b484aa140c9f23cb3706a0b567544b8fbceeb5a48cffa047abb990519"
+        },
+        {
+          "path": "build/component-resume-20261114/zero-preview-43467539792/review/mapping.json",
+          "sha256": "e18cd3c38dd7c43251becf6d49864b8763724d35f96dc8a75106c1bf162f9561"
+        }
+      ],
+      "scientific_assertions": {
+        "object": [
+          "histone octamer",
+          "DNA-binding protein"
+        ],
+        "depiction_kind": "named_object"
+      },
+      "source_semantic_support": [
+        {
+          "uri": "https://pdb101.rcsb.org/motm/314",
+          "checked_on": "2026-11-14",
+          "supports": "RCSB PDB-101说明核心组蛋白形成八聚体，DNA围绕其形成核小体。该知识支持明确标为histone octamer的源对象的DNA结合类身份，不证明本示意图的原子构象或物种。"
+        }
+      ],
+      "scientific_detail_validation": "limited schematic identity only; atomic detail and clinical measurements not validated",
+      "native_editability_tested": false,
+      "limits": [
+        "有多亚基结构表现，适合作为组蛋白八聚体示意；不是原子分辨率构象，不推特定结合位点或物种。"
+      ],
+      "diagnostic_topic": "dna_binding_protein",
+      "nominated_role_compatible": true,
+      "frozen_query_result_added": false,
+      "component_query_pass": null,
+      "text_observation": {
+        "visible_text_in_reviewed_preview": false,
+        "scope": "Exact displayed preview only; not a full-library text-content update.",
+        "cleaning_note": "本预览未观察到可读文字；不把未审变体标为无字。"
+      }
+    },
+    {
+      "tile": 13,
+      "id": "bioicons-97ff6884adc3237ef497",
+      "title": "restriction enzyme",
+      "source": "bioicons",
+      "source_id": "cc-0/Nucleic_acids/Simon_Dürr/restriction_enzyme.svg",
+      "source_url": "https://github.com/duerrsimon/bioicons/blob/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-0/Nucleic_acids/Simon_D%C3%BCrr/restriction_enzyme.svg",
+      "source_record": {
+        "asset_id": "bioicons-97ff6884adc3237ef497",
+        "attribution": "restriction enzyme — Simon Dürr; https://twitter.com/simonduerr; CC0-1.0; via Bioicons",
+        "author": "Simon Dürr",
+        "categories": [],
+        "distribution_status": "license_recorded",
+        "license": "CC0-1.0",
+        "source": "bioicons",
+        "source_id": "cc-0/Nucleic_acids/Simon_Dürr/restriction_enzyme.svg",
+        "source_url": "https://github.com/duerrsimon/bioicons/blob/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-0/Nucleic_acids/Simon_D%C3%BCrr/restriction_enzyme.svg",
+        "tags": [
+          "Nucleic acids"
+        ],
+        "taxonomy": [
+          "molecules"
+        ],
+        "title": "restriction enzyme",
+        "upstream_category": "Nucleic_acids",
+        "url": "https://raw.githubusercontent.com/duerrsimon/bioicons/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-0/Nucleic_acids/Simon_D%C3%BCrr/restriction_enzyme.svg"
+      },
+      "original_sha256": "941c505894ab674c58c173125491eee3c4cfab7d123c78ac6aa3ec62590026d2",
+      "preview_sha256": "2a286cb9b8e62f843ebb62532cf5ceb45a0f954429a966b38b2c4b67b1f7e87d",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42239971379-1-b0000.tar.gz",
+        "member": "files/94/941c505894ab674c58c173125491eee3c4cfab7d123c78ac6aa3ec62590026d2.svg"
+      },
+      "preview_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42239971379-1-b0000.tar.gz",
+        "member": "previews/941c505894ab674c58c173125491eee3c4cfab7d123c78ac6aa3ec62590026d2.png"
+      },
+      "visual_verdict": "usable_as_schematic_component",
+      "observations": "浅蓝蛋白轮廓围绕橙色DNA双链局部，中心有两行碱基字母，另有两个红色三角切割指示。不是纯文字名牌或完整多阶段流程图。",
+      "visual_evidence": [
+        {
+          "path": "build/component-resume-20261114/zero-preview-43467539792/review/previews/941c505894ab674c58c173125491eee3c4cfab7d123c78ac6aa3ec62590026d2.png",
+          "sha256": "2a286cb9b8e62f843ebb62532cf5ceb45a0f954429a966b38b2c4b67b1f7e87d"
+        },
+        {
+          "path": "build/component-resume-20261114/zero-preview-43467539792/review/mapping.json",
+          "sha256": "e18cd3c38dd7c43251becf6d49864b8763724d35f96dc8a75106c1bf162f9561"
+        }
+      ],
+      "scientific_assertions": {
+        "object": [
+          "restriction enzyme",
+          "DNA-binding protein"
+        ],
+        "depiction_kind": "named_object"
+      },
+      "source_semantic_support": [
+        {
+          "uri": "https://pdb101.rcsb.org/motm/8",
+          "checked_on": "2026-11-14",
+          "supports": "RCSB PDB-101的限制酶条目说明限制酶与DNA结合并识别位点。这里只支持源标题restriction enzyme的功能类别；未核实该图中序列对应任何指定酶。"
+        }
+      ],
+      "scientific_detail_validation": "limited schematic identity only; atomic detail and clinical measurements not validated",
+      "native_editability_tested": false,
+      "limits": [
+        "碱基和切割指示属于科学内容，不应当普通标签批量擦除；未核实序列与任何特定酶的对应关系。"
+      ],
+      "diagnostic_topic": "dna_binding_protein",
+      "nominated_role_compatible": true,
+      "frozen_query_result_added": false,
+      "component_query_pass": null,
+      "text_observation": {
+        "visible_text_in_reviewed_preview": true,
+        "scope": "Exact displayed preview only; not a full-library text-content update.",
+        "cleaning_note": "碱基序列与切割指示涉及科学含义，按任务核实后再保留或替换。"
+      }
+    }
+  ],
+  "acceptance_passed": false,
+  "scientific_metadata_applied_to_catalog": false
+}

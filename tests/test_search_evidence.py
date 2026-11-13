@@ -72,5 +72,5 @@ def test_diagnostic_rejects_mismatched_reused_index(tmp_path, mismatch):
     with sqlite3.connect(db) as connection:
         if mismatch=="schema":connection.execute("PRAGMA user_version=8")
         else:connection.execute("UPDATE index_metadata SET value=? WHERE key=?",("wrong", "catalog_version" if mismatch=="catalog" else "ranking_version"))
-    with pytest.raises(ValueError,match={"catalog":"exact catalog","schema":"current v10","ranking":"ranking version"}[mismatch]):
+    with pytest.raises(ValueError,match={"catalog":"exact catalog","schema":"current v11","ranking":"ranking version"}[mismatch]):
         diagnostic.resolve_index(tmp_path/"catalog.jsonl",tmp_path/"unused",db)

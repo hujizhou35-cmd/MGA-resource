@@ -17,7 +17,7 @@ import sys
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
 sys.path.insert(0, str(ROOT / "scripts"))
-from mga_resources.catalog import search_page
+from mga_resources.catalog import search_page, search_policy_metadata
 from assemble import gh, list_release_assets
 from diagnose_search import resolve_index
 from replay_catalog_metadata import digest, download_metadata, package_metadata, read, require, verify_producer, write
@@ -208,7 +208,8 @@ def main():
     resolve_index(paths["catalog.jsonl"], output, paths["catalog.sqlite"])
     bindings = {"catalog_sha256": catalog_sha, "sqlite_sha256": digest(paths["catalog.sqlite"]),
         "assembly_report_sha256": digest(paths["report.json"]), "benchmark_sha256": digest(BENCHMARK),
-        "search_core_sha256": core_sha, "ranking_version": "shared-search-3.4.3", "analysis_version": assembly["appearance"]["analysis_version"]}
+        **search_policy_metadata(), "analysis_version": assembly["appearance"]["analysis_version"]}
+    require(bindings["search_core_sha256"] == core_sha, "Current control policy hash differs")
     files, reviewed = control_files(paths["catalog.jsonl"], appearance, ledger)
     negative = negative_replay(paths["catalog.sqlite"], benchmark, bindings)
     write(output / "raw-negative-results.json", negative)
