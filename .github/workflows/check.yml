@@ -1,7 +1,7 @@
 name: Check collection tooling
 on:
   push:
-    paths: ['mga_resources/**', 'scripts/**', 'tests/**', 'data/**', 'pyproject.toml', '.github/workflows/**']
+    paths: ['mga_resources/**', 'scripts/**', 'tests/**', 'data/**', 'site/**', 'pyproject.toml', '.github/workflows/**']
   workflow_dispatch:
 permissions:
   contents: read
@@ -19,3 +19,4 @@ jobs:
           python-version: '3.12'
       - run: python -m pip install -e '.[test]'
       - run: python -m pytest -q
+      - run: node --test tests/test_website_api.mjs
