@@ -1,0 +1,343 @@
+{
+  "schema_version": 1,
+  "catalog_sha256": "331a28608746cd36fbd4c7d69b1890b4c8519d38a9f4ede29411691eb5ff1a28",
+  "purpose": "Resolve three actual failed roles using existing stock only. Nominations do not backfill frozen replay.",
+  "files": [
+    {
+      "source": "healthicons",
+      "source_id": "public/icons/svg/outline/body/arm.svg",
+      "asset_id": "healthicons-f9dbec50d6c1c336832f",
+      "title": "Arm",
+      "source_url": "https://github.com/resolvetosavelives/healthicons/blob/2080c1b40e4829f2f4217e03bc22908b4e402f6b/public/icons/svg/outline/body/arm.svg",
+      "format": "svg",
+      "original_sha256": "e051867bbb905c5125fec58fa45db56d6a40b1b5327f1a41ad2a13bc62d08e9b",
+      "original_archive": {
+        "member": "files/e0/e051867bbb905c5125fec58fa45db56d6a40b1b5327f1a41ad2a13bc62d08e9b.svg",
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/healthicons-42234355854-1-b0002.tar.gz"
+      },
+      "preview": {
+        "archive": {
+          "member": "previews/e051867bbb905c5125fec58fa45db56d6a40b1b5327f1a41ad2a13bc62d08e9b.png",
+          "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/healthicons-42234355854-1-b0002.tar.gz"
+        },
+        "format": "png",
+        "height": 512,
+        "path": "previews/e051867bbb905c5125fec58fa45db56d6a40b1b5327f1a41ad2a13bc62d08e9b.png",
+        "sha256": "754de8d8076be8d8294890c934659e4ef187cf9c05913584971f8d5edf2f722e",
+        "size_bytes": 7011,
+        "width": 512
+      },
+      "review_question": "是否为主要对象是人体手臂的独立部件？可见整体轮廓、手和近远端吗？不可把臂骨、动物、机器人或姿势人物当人体手臂。",
+      "role_to_inspect": "human_arm",
+      "prior_view_reuse_note": "New role-specific detail missing from existing applicable observations."
+    },
+    {
+      "source": "healthicons",
+      "source_id": "public/icons/svg/filled/body/arm.svg",
+      "asset_id": "healthicons-f9dbec50d6c1c336832f",
+      "title": "Arm",
+      "source_url": "https://github.com/resolvetosavelives/healthicons/blob/2080c1b40e4829f2f4217e03bc22908b4e402f6b/public/icons/svg/filled/body/arm.svg",
+      "format": "svg",
+      "original_sha256": "67da2ac1e1010668322dcf8aa773d7d8c6f8ff16b9452cbb1e700d0671e6671c",
+      "original_archive": {
+        "member": "files/67/67da2ac1e1010668322dcf8aa773d7d8c6f8ff16b9452cbb1e700d0671e6671c.svg",
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/healthicons-42234355854-1-b0000.tar.gz"
+      },
+      "preview": {
+        "archive": {
+          "member": "previews/67da2ac1e1010668322dcf8aa773d7d8c6f8ff16b9452cbb1e700d0671e6671c.png",
+          "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/healthicons-42234355854-1-b0000.tar.gz"
+        },
+        "format": "png",
+        "height": 512,
+        "path": "previews/67da2ac1e1010668322dcf8aa773d7d8c6f8ff16b9452cbb1e700d0671e6671c.png",
+        "sha256": "0d99c78e24a99cfb546c4a0eb256204e488ab182d2caf4055def7b353a16c6b6",
+        "size_bytes": 4473,
+        "width": 512
+      },
+      "review_question": "是否为主要对象是人体手臂的独立部件？可见整体轮廓、手和近远端吗？不可把臂骨、动物、机器人或姿势人物当人体手臂。",
+      "role_to_inspect": "human_arm",
+      "prior_view_reuse_note": "New role-specific detail missing from existing applicable observations."
+    },
+    {
+      "source": "healthicons",
+      "source_id": "public/icons/svg/outline/symbols/arm-circumference.svg",
+      "asset_id": "healthicons-7df0c486d78475eb1992",
+      "title": "Arm Circumference",
+      "source_url": "https://github.com/resolvetosavelives/healthicons/blob/2080c1b40e4829f2f4217e03bc22908b4e402f6b/public/icons/svg/outline/symbols/arm-circumference.svg",
+      "format": "svg",
+      "original_sha256": "88bc95eda72e1226f7b157210731b67d1e6c50a3b10b6cb6edcb9f10b2fe9407",
+      "original_archive": {
+        "member": "files/88/88bc95eda72e1226f7b157210731b67d1e6c50a3b10b6cb6edcb9f10b2fe9407.svg",
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/healthicons-42234355854-1-b0003.tar.gz"
+      },
+      "preview": {
+        "archive": {
+          "member": "previews/88bc95eda72e1226f7b157210731b67d1e6c50a3b10b6cb6edcb9f10b2fe9407.png",
+          "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/healthicons-42234355854-1-b0003.tar.gz"
+        },
+        "format": "png",
+        "height": 512,
+        "path": "previews/88bc95eda72e1226f7b157210731b67d1e6c50a3b10b6cb6edcb9f10b2fe9407.png",
+        "sha256": "4f4851c91844f081f6d6cd81a55c3fa7889634cd69e61bcf8b1ced77da8222b2",
+        "size_bytes": 10031,
+        "width": 512
+      },
+      "review_question": "是否为主要对象是人体手臂的独立部件？可见整体轮廓、手和近远端吗？不可把臂骨、动物、机器人或姿势人物当人体手臂。",
+      "role_to_inspect": "human_arm",
+      "prior_view_reuse_note": "New role-specific detail missing from existing applicable observations."
+    },
+    {
+      "source": "bioicons",
+      "source_id": "cc-by-3.0/Chemistry/Servier/micropipette.svg",
+      "asset_id": "bioicons-2920777ffb44dc11e36d",
+      "title": "micropipette",
+      "source_url": "https://github.com/duerrsimon/bioicons/blob/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-3.0/Chemistry/Servier/micropipette.svg",
+      "format": "svg",
+      "original_sha256": "88029da12d315fd46e6a8804b98ae4a78a2801414ae1b35e2647817fcf46dfac",
+      "original_archive": {
+        "member": "files/88/88029da12d315fd46e6a8804b98ae4a78a2801414ae1b35e2647817fcf46dfac.svg",
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42251588741-1-b0001.tar.gz"
+      },
+      "preview": {
+        "archive": {
+          "member": "previews/88029da12d315fd46e6a8804b98ae4a78a2801414ae1b35e2647817fcf46dfac.png",
+          "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42251588741-1-b0001.tar.gz"
+        },
+        "format": "png",
+        "height": 512,
+        "path": "previews/88029da12d315fd46e6a8804b98ae4a78a2801414ae1b35e2647817fcf46dfac.png",
+        "sha256": "4e1ae5d9a9f3f944c09a248ddb99c869d005fafa3027201bf9d4d768cc8c6e71",
+        "size_bytes": 14092,
+        "width": 118
+      },
+      "review_question": "在已有可复用对象观察基础上，核对本次新角色需要的主体、按压部件、可见装配枪头；单独吸头或无枪头机身不计。",
+      "role_to_inspect": "whole_micropipette_with_tip",
+      "prior_view_reuse_note": "New role-specific detail missing from existing applicable observations."
+    },
+    {
+      "source": "scisvg",
+      "source_id": "assets/laboratory/equipment/micropipette.svg",
+      "asset_id": "scisvg-519891a4c033306eccbb",
+      "title": "Micropipette",
+      "source_url": "https://github.com/SaveenaSolanki/SciSVG/blob/b8a2b60a3a5b2d9b717b1065fbcb8de9f1faf72b/assets/laboratory/equipment/micropipette.svg",
+      "format": "svg",
+      "original_sha256": "eb51703468824613cebafacea70c08cb8cbb5c78b192d421c995e1af9d27a1c4",
+      "original_archive": {
+        "member": "files/eb/eb51703468824613cebafacea70c08cb8cbb5c78b192d421c995e1af9d27a1c4.svg",
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scisvg-42238985604-1-b0000.tar.gz"
+      },
+      "preview": {
+        "archive": {
+          "member": "previews/eb51703468824613cebafacea70c08cb8cbb5c78b192d421c995e1af9d27a1c4.png",
+          "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scisvg-42238985604-1-b0000.tar.gz"
+        },
+        "format": "png",
+        "height": 512,
+        "path": "previews/eb51703468824613cebafacea70c08cb8cbb5c78b192d421c995e1af9d27a1c4.png",
+        "sha256": "858cb9870dd0ca7c354312af33390896d2956aa182a37aaa959b0062d1a7513d",
+        "size_bytes": 8493,
+        "width": 512
+      },
+      "review_question": "在已有可复用对象观察基础上，核对本次新角色需要的主体、按压部件、可见装配枪头；单独吸头或无枪头机身不计。",
+      "role_to_inspect": "whole_micropipette_with_tip",
+      "prior_view_reuse_note": "New role-specific detail missing from existing applicable observations."
+    },
+    {
+      "source": "togo",
+      "source_id": "806",
+      "asset_id": "togo-122b29d01a68755a4b0f",
+      "title": "Micropipette",
+      "source_url": "https://doi.org/10.7875/togopic.2021.001",
+      "format": "svg",
+      "original_sha256": "6520d6901fb8af6244ab8e356a36b2eb91f3a759b6c81b3694a1e78d48670174",
+      "original_archive": {
+        "member": "files/65/6520d6901fb8af6244ab8e356a36b2eb91f3a759b6c81b3694a1e78d48670174.svg",
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42249870031-1-b0001.tar.gz"
+      },
+      "preview": {
+        "archive": {
+          "member": "previews/6520d6901fb8af6244ab8e356a36b2eb91f3a759b6c81b3694a1e78d48670174.png",
+          "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42249870031-1-b0001.tar.gz"
+        },
+        "format": "png",
+        "height": 512,
+        "path": "previews/6520d6901fb8af6244ab8e356a36b2eb91f3a759b6c81b3694a1e78d48670174.png",
+        "sha256": "b91d3165d50e799e9d23da6088ab450c68ec161f97d9f347c70c5bf3fa417494",
+        "size_bytes": 7812,
+        "width": 512
+      },
+      "review_question": "在已有可复用对象观察基础上，核对本次新角色需要的主体、按压部件、可见装配枪头；单独吸头或无枪头机身不计。",
+      "role_to_inspect": "whole_micropipette_with_tip",
+      "prior_view_reuse_note": "New role-specific detail missing from existing applicable observations."
+    },
+    {
+      "source": "togo",
+      "source_id": "254",
+      "asset_id": "togo-5d55cce5ce0f4b93cf32",
+      "title": "pipetman",
+      "source_url": "https://doi.org/10.7875/togopic.2011.30",
+      "format": "svg",
+      "original_sha256": "140b1941d001323a03b84cec823fc2ef2bf0e056c3233b45444ddfb73223a8c0",
+      "original_archive": {
+        "member": "files/14/140b1941d001323a03b84cec823fc2ef2bf0e056c3233b45444ddfb73223a8c0.svg",
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42249870031-1-b0000.tar.gz"
+      },
+      "preview": {
+        "archive": {
+          "member": "previews/140b1941d001323a03b84cec823fc2ef2bf0e056c3233b45444ddfb73223a8c0.png",
+          "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42249870031-1-b0000.tar.gz"
+        },
+        "format": "png",
+        "height": 512,
+        "path": "previews/140b1941d001323a03b84cec823fc2ef2bf0e056c3233b45444ddfb73223a8c0.png",
+        "sha256": "391c9dfc05e08da7979c129cc2f29fa65cedf6fc4383b658866ec636aa6e17a3",
+        "size_bytes": 36976,
+        "width": 362
+      },
+      "review_question": "在已有可复用对象观察基础上，核对本次新角色需要的主体、按压部件、可见装配枪头；单独吸头或无枪头机身不计。",
+      "role_to_inspect": "whole_micropipette_with_tip",
+      "prior_view_reuse_note": "Togo pipetman already has an exact old body/tip observation; included here for the new component-composition scale and identity check, not claimed as newly discovered."
+    },
+    {
+      "source": "bioicons",
+      "source_id": "cc-0/Computer_hardware/Simon_Dürr/laptop.svg",
+      "asset_id": "bioicons-fa545f22f81a760c669b",
+      "title": "laptop",
+      "source_url": "https://github.com/duerrsimon/bioicons/blob/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-0/Computer_hardware/Simon_D%C3%BCrr/laptop.svg",
+      "format": "svg",
+      "original_sha256": "7e2208b668267a80b08c439643d4876b0d8c806fe3b2ca339f36bd5957951c4f",
+      "original_archive": {
+        "member": "files/7e/7e2208b668267a80b08c439643d4876b0d8c806fe3b2ca339f36bd5957951c4f.svg",
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42239971379-1-b0000.tar.gz"
+      },
+      "preview": {
+        "archive": {
+          "member": "previews/7e2208b668267a80b08c439643d4876b0d8c806fe3b2ca339f36bd5957951c4f.png",
+          "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42239971379-1-b0000.tar.gz"
+        },
+        "format": "png",
+        "height": 325,
+        "path": "previews/7e2208b668267a80b08c439643d4876b0d8c806fe3b2ca339f36bd5957951c4f.png",
+        "sha256": "25da95cc79a6549de90921d35a253c4adc1f84da7c6ee724791af0a691b5a42e",
+        "size_bytes": 6880,
+        "width": 512
+      },
+      "review_question": "核对显示屏、机身/底座或输入部件是否同图可辨，必须是真实电脑部件而不是NGS移液机器人、只有塔式主机或纯屏幕结果图；记录是否只是显示器。",
+      "role_to_inspect": "computer_with_display",
+      "prior_view_reuse_note": "New role-specific detail missing from existing applicable observations."
+    },
+    {
+      "source": "healthicons",
+      "source_id": "public/icons/svg/filled/objects/laptop.svg",
+      "asset_id": "healthicons-54b20ffdef2e10024097",
+      "title": "Laptop",
+      "source_url": "https://github.com/resolvetosavelives/healthicons/blob/2080c1b40e4829f2f4217e03bc22908b4e402f6b/public/icons/svg/filled/objects/laptop.svg",
+      "format": "svg",
+      "original_sha256": "0081ff4027057c577b1157fdc5f8624cb4766cadc9212338f9e7ec9d89167dd7",
+      "original_archive": {
+        "member": "files/00/0081ff4027057c577b1157fdc5f8624cb4766cadc9212338f9e7ec9d89167dd7.svg",
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/healthicons-42234355854-1-b0001.tar.gz"
+      },
+      "preview": {
+        "archive": {
+          "member": "previews/0081ff4027057c577b1157fdc5f8624cb4766cadc9212338f9e7ec9d89167dd7.png",
+          "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/healthicons-42234355854-1-b0001.tar.gz"
+        },
+        "format": "png",
+        "height": 512,
+        "path": "previews/0081ff4027057c577b1157fdc5f8624cb4766cadc9212338f9e7ec9d89167dd7.png",
+        "sha256": "aa94d58d49865c7f02a251e953346f4215725a72011bc42af08ab6b255741cc3",
+        "size_bytes": 3418,
+        "width": 512
+      },
+      "review_question": "核对显示屏、机身/底座或输入部件是否同图可辨，必须是真实电脑部件而不是NGS移液机器人、只有塔式主机或纯屏幕结果图；记录是否只是显示器。",
+      "role_to_inspect": "computer_with_display",
+      "prior_view_reuse_note": "New role-specific detail missing from existing applicable observations."
+    },
+    {
+      "source": "nih-bioart",
+      "source_id": "829",
+      "asset_id": "nih-bioart-3ef21bba1a8348425966",
+      "title": "Computer Monitor with Blank Screen",
+      "source_url": "https://bioart.niaid.nih.gov/bioart/829",
+      "format": "svg",
+      "original_sha256": "d7a416bd04c18539180626ccb4a574240600844177b21523d34889bb0995f78b",
+      "original_archive": {
+        "member": "files/d7/d7a416bd04c18539180626ccb4a574240600844177b21523d34889bb0995f78b.svg",
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/nih-bioart-42248095929-1-b0000.tar.gz"
+      },
+      "preview": {
+        "archive": {
+          "member": "previews/d7a416bd04c18539180626ccb4a574240600844177b21523d34889bb0995f78b.png",
+          "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/nih-bioart-42248095929-1-b0000.tar.gz"
+        },
+        "format": "png",
+        "height": 512,
+        "path": "previews/d7a416bd04c18539180626ccb4a574240600844177b21523d34889bb0995f78b.png",
+        "sha256": "45bd79d4df8517b3ccdf141acb3f5862d50ea2955cd53999835e027619d9ace7",
+        "size_bytes": 14505,
+        "width": 512
+      },
+      "review_question": "核对显示屏、机身/底座或输入部件是否同图可辨，必须是真实电脑部件而不是NGS移液机器人、只有塔式主机或纯屏幕结果图；记录是否只是显示器。",
+      "role_to_inspect": "computer_with_display",
+      "prior_view_reuse_note": "New role-specific detail missing from existing applicable observations."
+    },
+    {
+      "source": "nih-bioart",
+      "source_id": "734",
+      "asset_id": "nih-bioart-f3566d99fce58cd91a83",
+      "title": "Laptop Open",
+      "source_url": "https://bioart.niaid.nih.gov/bioart/734",
+      "format": "svg",
+      "original_sha256": "0844b340cfa87e1c7e652151e60fb539f831c8562cf5f3f6ff2bf71d776ba64d",
+      "original_archive": {
+        "member": "files/08/0844b340cfa87e1c7e652151e60fb539f831c8562cf5f3f6ff2bf71d776ba64d.svg",
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/nih-bioart-42236561214-1-b0001.tar.gz"
+      },
+      "preview": {
+        "archive": {
+          "member": "previews/0844b340cfa87e1c7e652151e60fb539f831c8562cf5f3f6ff2bf71d776ba64d.png",
+          "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/nih-bioart-42236561214-1-b0001.tar.gz"
+        },
+        "format": "png",
+        "height": 512,
+        "path": "previews/0844b340cfa87e1c7e652151e60fb539f831c8562cf5f3f6ff2bf71d776ba64d.png",
+        "sha256": "0a7af07dd73c1a83e255d03d6914bcc95cad541c93ee04a5cbab36d6dae7bc95",
+        "size_bytes": 21283,
+        "width": 512
+      },
+      "review_question": "核对显示屏、机身/底座或输入部件是否同图可辨，必须是真实电脑部件而不是NGS移液机器人、只有塔式主机或纯屏幕结果图；记录是否只是显示器。",
+      "role_to_inspect": "computer_with_display",
+      "prior_view_reuse_note": "New role-specific detail missing from existing applicable observations."
+    },
+    {
+      "source": "togo",
+      "source_id": "492",
+      "asset_id": "togo-ffb307bcb66feb53b173",
+      "title": "Laptop (open)",
+      "source_url": "https://doi.org/10.7875/togopic.2017.26",
+      "format": "svg",
+      "original_sha256": "9c0cb4f69a6ec7449251dfa4feeb2a8e6a656cc597fdb65b78a798cfdbf9e057",
+      "original_archive": {
+        "member": "files/9c/9c0cb4f69a6ec7449251dfa4feeb2a8e6a656cc597fdb65b78a798cfdbf9e057.svg",
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42249870031-1-b0000.tar.gz"
+      },
+      "preview": {
+        "archive": {
+          "member": "previews/9c0cb4f69a6ec7449251dfa4feeb2a8e6a656cc597fdb65b78a798cfdbf9e057.png",
+          "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42249870031-1-b0000.tar.gz"
+        },
+        "format": "png",
+        "height": 512,
+        "path": "previews/9c0cb4f69a6ec7449251dfa4feeb2a8e6a656cc597fdb65b78a798cfdbf9e057.png",
+        "sha256": "679d4adb9dd10db8179f529b6677a3cc5809141354b8712b475873c07c0a4bbc",
+        "size_bytes": 36195,
+        "width": 396
+      },
+      "review_question": "核对显示屏、机身/底座或输入部件是否同图可辨，必须是真实电脑部件而不是NGS移液机器人、只有塔式主机或纯屏幕结果图；记录是否只是显示器。",
+      "role_to_inspect": "computer_with_display",
+      "prior_view_reuse_note": "New role-specific detail missing from existing applicable observations."
+    }
+  ]
+}
