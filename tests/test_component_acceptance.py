@@ -172,3 +172,47 @@ def test_raw_rank_or_missing_judgment_rejected():
     args['judgments']['queries'][0]['result_judgments'] = []
     with pytest.raises(ValueError, match='Every actual result'):
         evaluate_components(**args)
+
+
+def current_material_fixture():
+    args=fixture();old=deepcopy(args['baseline']);old_catalog=args['hashes']['catalog_sha256'];old_manifest=args['hashes']['publish_manifest_sha256']
+    args['freeze'].update(catalog_sha256=old_catalog,publish_manifest_sha256=old_manifest)
+    for key,value in [('catalog_sha256','6'*64),('search_core_sha256','7'*64),('publish_manifest_sha256','8'*64)]:
+        args['hashes'][key]=value
+        args['judgments']['bindings'][key]=value
+        if key!='publish_manifest_sha256':args['raw']['bindings'][key]=value
+    args['manifest']['catalog_sha256']='6'*64
+    args['hashes']['current_material_config_sha256']='9'*64
+    args['current_materials']={'validation_method':'existing_current_cloud_evidence_and_exact_historical_file_identity',
+        'bindings':dict(args['hashes']),'config_sha256':'9'*64,'historical_manifest_sha256':old_manifest,
+        'full_historical_file_records_equal':True,'restore_equivalence_validated':True,
+        'negative_scenarios_passed':6,'current_scope_passed':True,'missing':[]}
+    return args,old
+
+
+def test_separate_current_material_version_does_not_retag_historical_score():
+    args,old=current_material_fixture();result=evaluate_components(**args)
+    assert result['acceptance_passed'] is True
+    assert args['baseline']==old
+    assert result['historical_retrieval']['successful']==102
+    assert result['historical_acceptance_passed'] is False
+    assert args['baseline']['required_bindings']['catalog_sha256']!=result['bindings']['catalog_sha256']
+
+
+@pytest.mark.parametrize('key',['search_core_sha256','catalog_sha256','publish_manifest_sha256'])
+def test_old_material_bindings_cannot_pass_as_current(key):
+    args,_=current_material_fixture();args['current_materials']['bindings'][key]='a'*64
+    with pytest.raises(ValueError,match='Current material binding differs'):evaluate_components(**args)
+
+
+@pytest.mark.parametrize('key,value',[('restore_equivalence_validated',False),('negative_scenarios_passed',5),('current_scope_passed',False),('missing',[{'code':'not-reviewed'}])])
+def test_current_material_failure_keeps_component_gate_closed(key,value):
+    args,_=current_material_fixture();args['current_materials'][key]=value
+    result=evaluate_components(**args)
+    assert result['component_retrieval']['successful_task_language_units']==120
+    assert result['acceptance_passed'] is False
+
+
+def test_changed_historical_file_records_cannot_reuse_curated_evidence():
+    args,_=current_material_fixture();args['current_materials']['full_historical_file_records_equal']=False
+    with pytest.raises(ValueError,match='unchanged historical file'):evaluate_components(**args)

@@ -104,7 +104,7 @@ def _file_pair(row, manifest_files):
     return item
 
 
-def evaluate_components(benchmark, raw, judgments, baseline, scope, manifest, *, hashes, freeze, decision):
+def evaluate_components(benchmark, raw, judgments, baseline, scope, manifest, *, hashes, freeze, decision, current_materials=None):
     """Return independent current gate and unchanged historical score context."""
     missing = []
 
@@ -123,11 +123,29 @@ def evaluate_components(benchmark, raw, judgments, baseline, scope, manifest, *,
         require(valid_sha(hashes.get(key)) and freeze.get(key) == hashes[key], 'Frozen input evidence differs: ' + key)
     catalog_sha = manifest.get('catalog_sha256')
     require(valid_sha(catalog_sha) and catalog_sha == hashes.get('catalog_sha256'), 'Manifest catalog version differs')
-    require(baseline.get('required_bindings', {}).get('catalog_sha256') == scope.get('catalog_sha256') == catalog_sha, 'Historical material checks and current scope must bind this catalog')
-    require(baseline.get('publish_manifest_sha256') == hashes.get('publish_manifest_sha256'), 'Material checks bind another download manifest')
     require(baseline.get('required_bindings', {}).get('benchmark_sha256') == LEGACY_BENCHMARK_SHA, 'Historical result must retain the original benchmark')
-    core_sha = baseline.get('supplemental', {}).get('required_bindings', {}).get('search_core_sha256')
-    require(core_sha == hashes.get('search_core_sha256') and valid_sha(core_sha), 'Revalidate material/search supplemental evidence after a core change')
+    if current_materials is None:
+        require(baseline.get('required_bindings', {}).get('catalog_sha256') == scope.get('catalog_sha256') == catalog_sha, 'Historical material checks and current scope must bind this catalog')
+        require(baseline.get('publish_manifest_sha256') == hashes.get('publish_manifest_sha256'), 'Material checks bind another download manifest')
+        core_sha = baseline.get('supplemental', {}).get('required_bindings', {}).get('search_core_sha256')
+        require(core_sha == hashes.get('search_core_sha256') and valid_sha(core_sha), 'Revalidate material/search supplemental evidence after a core change')
+    else:
+        # CLI creates this only by validating the current documents, full
+        # manifest equivalence, actual controls and unchanged old observations.
+        require(current_materials.get('validation_method')=='existing_current_cloud_evidence_and_exact_historical_file_identity',
+                'Explicit current material validation is required')
+        require(valid_sha(hashes.get('current_material_config_sha256'))
+                and hashes['current_material_config_sha256']==current_materials.get('config_sha256'), 'Current material input configuration differs')
+        for key in ('catalog_sha256','publish_manifest_sha256','search_core_sha256'):
+            require(current_materials.get('bindings',{}).get(key)==hashes.get(key),'Current material binding differs: '+key)
+        require(current_materials.get('historical_manifest_sha256')==freeze.get('publish_manifest_sha256')
+                and current_materials.get('full_historical_file_records_equal') is True,'Curated/source evidence requires complete unchanged historical file records')
+        require(baseline['required_bindings']['catalog_sha256']==scope['catalog_sha256']==freeze['catalog_sha256'],
+                'Frozen historical material context changed')
+        need(current_materials.get('restore_equivalence_validated') is True,'materials.current_restore','Current manifest must validate against the actual independent restore')
+        need(current_materials.get('negative_scenarios_passed')==6,'materials.current_negatives','Six current reviewed negative scenarios required')
+        need(current_materials.get('current_scope_passed') is True,'materials.current_scope','Current catalog/index scope must pass')
+        need(current_materials.get('missing')==[],'materials.current_checks','Current material checks are incomplete or failed')
     need(isinstance(baseline.get('missing'), list) and all(row.get('code') in LEGACY_COVERAGE_CODES for row in baseline['missing']), 'materials.non_retrieval', 'Existing material acceptance has unresolved checks beyond historical query coverage')
     need(baseline.get('restore_passed') is True, 'materials.restore', 'Valid current recovery evidence is required')
     need(baseline.get('visual', {}).get('curated_families', 0) >= 60, 'materials.curated', 'Sixty actual curated families are required')
@@ -235,6 +253,7 @@ def evaluate_components(benchmark, raw, judgments, baseline, scope, manifest, *,
         'benchmark_version': benchmark['benchmark_version'], 'bindings': hashes,
         'historical_retrieval': baseline['retrieval'], 'historical_acceptance_passed': baseline.get('acceptance_passed'),
         'historical_missing': baseline.get('missing'), 'historical_result_modified': False,
+        'current_material_validation': current_materials,
         'component_retrieval': {'tasks': 60, 'task_language_units': 120,
             'child_queries': len(expected_queries), 'reviewed_positions': total_positions,
             'successful_task_language_units': len(successes), 'successful_by_language': languages,

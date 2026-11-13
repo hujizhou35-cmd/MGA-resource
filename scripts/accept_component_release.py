@@ -55,6 +55,8 @@ def main():
     parser.add_argument('--legacy-benchmark', type=Path, default=ROOT / 'data/benchmark.json')
     for name in ('raw-results', 'judgments', 'legacy-report', 'scope-report', 'manifest', 'output'):
         parser.add_argument('--' + name, type=Path, required=True)
+    parser.add_argument('--current-material-config',type=Path,
+        help='Exact document references for the separately validated current material version; scope-report still supplies frozen historical scope.')
     args = parser.parse_args()
     manifest, raw, judgments = read(args.manifest), read(args.raw_results), read(args.judgments)
     hashes = {key: digest(path) for key, path in (
@@ -65,8 +67,15 @@ def main():
         ('publish_manifest_sha256', args.manifest), ('search_core_sha256', ROOT / 'mga_resources/search-core.mjs'))}
     hashes['catalog_sha256'] = manifest['catalog_sha256']
     verified = verify_observation_files(judgments)
+    current_materials=None
+    if args.current_material_config:
+        from validate_current_materials import load_current_materials
+        hashes['current_material_config_sha256']=digest(args.current_material_config)
+        current_materials=load_current_materials(args.current_material_config,manifest=manifest,
+            manifest_sha256=hashes['publish_manifest_sha256'],baseline=read(args.legacy_report),
+            freeze=read(args.freeze),raw_bindings=raw['bindings'])
     report = evaluate_components(read(args.benchmark), raw, judgments, read(args.legacy_report), read(args.scope_report), manifest,
-        hashes=hashes, freeze=read(args.freeze), decision=read(args.decision))
+        hashes=hashes, freeze=read(args.freeze), decision=read(args.decision),current_materials=current_materials)
     report['verified_observation_documents'] = verified
     report['raw_replay_run'] = raw.get('metadata_run') or raw.get('run')
     args.output.mkdir(parents=True, exist_ok=True)

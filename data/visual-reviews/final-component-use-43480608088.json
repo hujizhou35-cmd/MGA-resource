@@ -1,0 +1,467 @@
+{
+  "schema_version": 1,
+  "reviewed_at": "2026-11-13T18:20:30.912798+00:00",
+  "reviewer": "Codex root; actually viewed all 15 exact tiles",
+  "cloud_run": 43480608088,
+  "items": [
+    {
+      "tile": 1,
+      "original_sha256": "0b3cd07b7b0be349d4a3462f32c2cf7317d2ab783ccf53b7752e95f4aa2dc7cb",
+      "preview_sha256": "0e85edd6f086f4218141fff9509284c914e7d8a006e5444f318fb77489a13a82",
+      "original_archive": {
+        "member": "files/0b/0b3cd07b7b0be349d4a3462f32c2cf7317d2ab783ccf53b7752e95f4aa2dc7cb.png",
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/nih-bioart-42248095929-1-b0000.tar.gz"
+      },
+      "preview_archive": {
+        "member": "previews/0b3cd07b7b0be349d4a3462f32c2cf7317d2ab783ccf53b7752e95f4aa2dc7cb.png",
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/nih-bioart-42248095929-1-b0000.tar.gz"
+      },
+      "source": "nih-bioart",
+      "source_id": "855",
+      "source_url": "https://bioart.niaid.nih.gov/bioart/855",
+      "title": "Computer Screen",
+      "observations": "显示器有边框、支架和底座，屏幕内神经细胞样图只是源图示意，不能当本研究分析结果。",
+      "role_verdict": "relevant",
+      "visual_evidence": [
+        {
+          "path": "build/component-resume-20261114/final-preview-43480608088/exact-review-43480608088-1.review.png",
+          "sha256": "20cafae6b49c0fcdf9864f43b63f480e8f95f8095d497aa3d8077def4597e317"
+        },
+        {
+          "path": "build/component-resume-20261114/final-preview-43480608088/mapping.json",
+          "sha256": "49c7ae738ccd5e1d0959678d7c73629d04d5fc8e05a2eefa641a5ea083bc6076"
+        }
+      ],
+      "new_visual_inspection_performed": true
+    },
+    {
+      "tile": 2,
+      "original_sha256": "04c3f00d919b9983a2ad7026caa59aeaa463a1695341f1132a7ca8db050e24f5",
+      "preview_sha256": "ca9cbabacf97d2618260a2f3352014e0fe33b221d71f201c0d007641bb30e6bd",
+      "original_archive": {
+        "member": "files/04/04c3f00d919b9983a2ad7026caa59aeaa463a1695341f1132a7ca8db050e24f5.svg",
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/nih-bioart-42248095929-1-b0000.tar.gz"
+      },
+      "preview_archive": {
+        "member": "previews/04c3f00d919b9983a2ad7026caa59aeaa463a1695341f1132a7ca8db050e24f5.png",
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/nih-bioart-42248095929-1-b0000.tar.gz"
+      },
+      "source": "nih-bioart",
+      "source_id": "829",
+      "source_url": "https://bioart.niaid.nih.gov/bioart/829",
+      "title": "Computer Monitor with Blank Screen",
+      "observations": "独立黑屏显示器有边框、支架和底座，满足本角色可辨屏幕与底座的最低结构；不称其已经连接主机或运行软件。",
+      "role_verdict": "relevant",
+      "visual_evidence": [
+        {
+          "path": "build/component-resume-20261114/final-preview-43480608088/exact-review-43480608088-1.review.png",
+          "sha256": "20cafae6b49c0fcdf9864f43b63f480e8f95f8095d497aa3d8077def4597e317"
+        },
+        {
+          "path": "build/component-resume-20261114/final-preview-43480608088/mapping.json",
+          "sha256": "49c7ae738ccd5e1d0959678d7c73629d04d5fc8e05a2eefa641a5ea083bc6076"
+        }
+      ],
+      "new_visual_inspection_performed": true
+    },
+    {
+      "tile": 3,
+      "original_sha256": "006fd0f994104b6e72fce9501bf2277bfe255851a7ee729bc8dfb26cfc7c260f",
+      "preview_sha256": "19342a58d7fa41c0293f816d3f71a473ca9e44e24cbbc185add9c602fea20ce8",
+      "original_archive": {
+        "member": "files/00/006fd0f994104b6e72fce9501bf2277bfe255851a7ee729bc8dfb26cfc7c260f.svg",
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/nih-bioart-42248095929-1-b0000.tar.gz"
+      },
+      "preview_archive": {
+        "member": "previews/006fd0f994104b6e72fce9501bf2277bfe255851a7ee729bc8dfb26cfc7c260f.png",
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/nih-bioart-42248095929-1-b0000.tar.gz"
+      },
+      "source": "nih-bioart",
+      "source_id": "830",
+      "source_url": "https://bioart.niaid.nih.gov/bioart/830",
+      "title": "Computer Monitor with Microscopy Image",
+      "observations": "显示器边框、支架及底座可辨，屏内绿色颗粒图不能当实际显微数据；不得凭图判断病原体种类或计数。",
+      "role_verdict": "relevant",
+      "visual_evidence": [
+        {
+          "path": "build/component-resume-20261114/final-preview-43480608088/exact-review-43480608088-1.review.png",
+          "sha256": "20cafae6b49c0fcdf9864f43b63f480e8f95f8095d497aa3d8077def4597e317"
+        },
+        {
+          "path": "build/component-resume-20261114/final-preview-43480608088/mapping.json",
+          "sha256": "49c7ae738ccd5e1d0959678d7c73629d04d5fc8e05a2eefa641a5ea083bc6076"
+        }
+      ],
+      "new_visual_inspection_performed": true
+    },
+    {
+      "tile": 4,
+      "original_sha256": "0e47c11993ea6a1f291b5348dfb64e9c3da5d9f75599776b57ccba4365e2d134",
+      "preview_sha256": "9f85900ee50731fd0b61547cb38b50eb34f5408299e6efb00b7c81db3b58298a",
+      "original_archive": {
+        "member": "files/0e/0e47c11993ea6a1f291b5348dfb64e9c3da5d9f75599776b57ccba4365e2d134.png",
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/nih-bioart-42248095929-1-b0000.tar.gz"
+      },
+      "preview_archive": {
+        "member": "previews/0e47c11993ea6a1f291b5348dfb64e9c3da5d9f75599776b57ccba4365e2d134.png",
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/nih-bioart-42248095929-1-b0000.tar.gz"
+      },
+      "source": "nih-bioart",
+      "source_id": "831",
+      "source_url": "https://bioart.niaid.nih.gov/bioart/831",
+      "title": "Computer Monitor",
+      "observations": "空白米色屏幕有灰色外壳、立柱和底座，硬件对象可辨；不声称完整工作站配置。",
+      "role_verdict": "relevant",
+      "visual_evidence": [
+        {
+          "path": "build/component-resume-20261114/final-preview-43480608088/exact-review-43480608088-1.review.png",
+          "sha256": "20cafae6b49c0fcdf9864f43b63f480e8f95f8095d497aa3d8077def4597e317"
+        },
+        {
+          "path": "build/component-resume-20261114/final-preview-43480608088/mapping.json",
+          "sha256": "49c7ae738ccd5e1d0959678d7c73629d04d5fc8e05a2eefa641a5ea083bc6076"
+        }
+      ],
+      "new_visual_inspection_performed": true
+    },
+    {
+      "tile": 5,
+      "original_sha256": "1b741a83f5fad9a6fdfbdf255d4455878ae2e400bf5e944c7271d4605fa4723f",
+      "preview_sha256": "af4cf34f6c966f3c91bede0d6f62c62efec828f8a6aa4ed8f8fab0b891f7cccd",
+      "original_archive": {
+        "member": "files/1b/1b741a83f5fad9a6fdfbdf255d4455878ae2e400bf5e944c7271d4605fa4723f.svg",
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/openclipart-42260737515-1-b0000.tar.gz"
+      },
+      "preview_archive": {
+        "member": "previews/1b741a83f5fad9a6fdfbdf255d4455878ae2e400bf5e944c7271d4605fa4723f.png",
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/openclipart-42260737515-1-b0000.tar.gz"
+      },
+      "source": "openclipart",
+      "source_id": "195847",
+      "source_url": "https://openclipart.org/detail/195847/online-computer-survey",
+      "title": "Online computer survey",
+      "observations": "SURVEY字样、条目与鼠标指针位于带支架底座的显示器内；既能表达在线问卷，也有硬件形状，但必须保留问卷界面语境，不宣称已有真实答卷。",
+      "role_verdict": "relevant",
+      "visual_evidence": [
+        {
+          "path": "build/component-resume-20261114/final-preview-43480608088/exact-review-43480608088-1.review.png",
+          "sha256": "20cafae6b49c0fcdf9864f43b63f480e8f95f8095d497aa3d8077def4597e317"
+        },
+        {
+          "path": "build/component-resume-20261114/final-preview-43480608088/mapping.json",
+          "sha256": "49c7ae738ccd5e1d0959678d7c73629d04d5fc8e05a2eefa641a5ea083bc6076"
+        }
+      ],
+      "new_visual_inspection_performed": true
+    },
+    {
+      "tile": 6,
+      "original_sha256": "0e0c0ff92f8ed08b9fd9633da0b8ef7e8df8fab32852211fdf4157768789deea",
+      "preview_sha256": "faa68eeeba5ffcee6f865cdefe7971c5b6c8a22e12386457d82012123abc6d55",
+      "original_archive": {
+        "member": "files/0e/0e0c0ff92f8ed08b9fd9633da0b8ef7e8df8fab32852211fdf4157768789deea.png",
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/nih-bioart-42236561214-1-b0001.tar.gz"
+      },
+      "preview_archive": {
+        "member": "previews/0e0c0ff92f8ed08b9fd9633da0b8ef7e8df8fab32852211fdf4157768789deea.png",
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/nih-bioart-42236561214-1-b0001.tar.gz"
+      },
+      "source": "nih-bioart",
+      "source_id": "782",
+      "source_url": "https://bioart.niaid.nih.gov/bioart/782",
+      "title": "Computer Organoid",
+      "observations": "图形一半电路纹样、一半上皮样细胞结构，整体为类器官/计算融合概念符号，无显示屏、主机或输入部件；不能作为分析电脑。",
+      "role_verdict": "irrelevant",
+      "visual_evidence": [
+        {
+          "path": "build/component-resume-20261114/final-preview-43480608088/exact-review-43480608088-1.review.png",
+          "sha256": "20cafae6b49c0fcdf9864f43b63f480e8f95f8095d497aa3d8077def4597e317"
+        },
+        {
+          "path": "build/component-resume-20261114/final-preview-43480608088/mapping.json",
+          "sha256": "49c7ae738ccd5e1d0959678d7c73629d04d5fc8e05a2eefa641a5ea083bc6076"
+        }
+      ],
+      "new_visual_inspection_performed": true
+    },
+    {
+      "tile": 7,
+      "original_sha256": "01182c67fb6a022c0368b5ab4e2a905ca237ac3bd20b462cdb66459f4aa93b65",
+      "preview_sha256": "92a691d15ff25dd22db861e0d355d4b9216a4bd66a095296f555c672073e4a9f",
+      "original_archive": {
+        "member": "files/01/01182c67fb6a022c0368b5ab4e2a905ca237ac3bd20b462cdb66459f4aa93b65.svg",
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/nih-bioart-42248095929-1-b0000.tar.gz"
+      },
+      "preview_archive": {
+        "member": "previews/01182c67fb6a022c0368b5ab4e2a905ca237ac3bd20b462cdb66459f4aa93b65.png",
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/nih-bioart-42248095929-1-b0000.tar.gz"
+      },
+      "source": "nih-bioart",
+      "source_id": "827",
+      "source_url": "https://bioart.niaid.nih.gov/bioart/827",
+      "title": "Computer Monitor",
+      "observations": "灰色空屏、深灰边框、立柱和底座清楚，来源Computer Monitor；仅为显示器硬件部件。",
+      "role_verdict": "relevant",
+      "visual_evidence": [
+        {
+          "path": "build/component-resume-20261114/final-preview-43480608088/exact-review-43480608088-1.review.png",
+          "sha256": "20cafae6b49c0fcdf9864f43b63f480e8f95f8095d497aa3d8077def4597e317"
+        },
+        {
+          "path": "build/component-resume-20261114/final-preview-43480608088/mapping.json",
+          "sha256": "49c7ae738ccd5e1d0959678d7c73629d04d5fc8e05a2eefa641a5ea083bc6076"
+        }
+      ],
+      "new_visual_inspection_performed": true
+    },
+    {
+      "tile": 8,
+      "original_sha256": "5647c2da7bbc28fe023d2d816dfc12e8ddde8bd193a8022be95d622799d2ef65",
+      "preview_sha256": "37dd51545600a1b2fee029bb02ffedb79b0f10858306e8282cc1b589273fc6c9",
+      "original_archive": {
+        "member": "files/56/5647c2da7bbc28fe023d2d816dfc12e8ddde8bd193a8022be95d622799d2ef65.svg",
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/nih-bioart-42248095929-1-b0000.tar.gz"
+      },
+      "preview_archive": {
+        "member": "previews/5647c2da7bbc28fe023d2d816dfc12e8ddde8bd193a8022be95d622799d2ef65.png",
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/nih-bioart-42248095929-1-b0000.tar.gz"
+      },
+      "source": "nih-bioart",
+      "source_id": "832",
+      "source_url": "https://bioart.niaid.nih.gov/bioart/832",
+      "title": "Computer Monitor with Blank Screen",
+      "observations": "深色空屏有边框、立柱和底座，来源Computer Monitor with Blank Screen；可作分析环节硬件示意，无已执行算法证据。",
+      "role_verdict": "relevant",
+      "visual_evidence": [
+        {
+          "path": "build/component-resume-20261114/final-preview-43480608088/exact-review-43480608088-1.review.png",
+          "sha256": "20cafae6b49c0fcdf9864f43b63f480e8f95f8095d497aa3d8077def4597e317"
+        },
+        {
+          "path": "build/component-resume-20261114/final-preview-43480608088/mapping.json",
+          "sha256": "49c7ae738ccd5e1d0959678d7c73629d04d5fc8e05a2eefa641a5ea083bc6076"
+        }
+      ],
+      "new_visual_inspection_performed": true
+    },
+    {
+      "tile": 9,
+      "original_sha256": "099d2f48fd96062134719ca7f3e2f0d70bebfada621a5413e86eb9b829c051c7",
+      "preview_sha256": "ce1747bf6f129ac4ced8750633b4d0a084558918831121e5c29a92c83dadd0f7",
+      "original_archive": {
+        "member": "files/09/099d2f48fd96062134719ca7f3e2f0d70bebfada621a5413e86eb9b829c051c7.png",
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/nih-bioart-42248095929-1-b0000.tar.gz"
+      },
+      "preview_archive": {
+        "member": "previews/099d2f48fd96062134719ca7f3e2f0d70bebfada621a5413e86eb9b829c051c7.png",
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/nih-bioart-42248095929-1-b0000.tar.gz"
+      },
+      "source": "nih-bioart",
+      "source_id": "828",
+      "source_url": "https://bioart.niaid.nih.gov/bioart/828",
+      "title": "Computer Monitor with Microscopy Image",
+      "observations": "深灰显示器带底座，屏内颗粒图为源示意，不是新研究结果；硬件结构清楚。",
+      "role_verdict": "relevant",
+      "visual_evidence": [
+        {
+          "path": "build/component-resume-20261114/final-preview-43480608088/exact-review-43480608088-1.review.png",
+          "sha256": "20cafae6b49c0fcdf9864f43b63f480e8f95f8095d497aa3d8077def4597e317"
+        },
+        {
+          "path": "build/component-resume-20261114/final-preview-43480608088/mapping.json",
+          "sha256": "49c7ae738ccd5e1d0959678d7c73629d04d5fc8e05a2eefa641a5ea083bc6076"
+        }
+      ],
+      "new_visual_inspection_performed": true
+    },
+    {
+      "tile": 10,
+      "original_sha256": "f49612e45d3410d733d44ffe58f4df3f1120923d2041352218655d5901e433c8",
+      "preview_sha256": "d050e7af80b415aa1a7bd42be51845aa2a8a42e685b903754736cbc26f470b0b",
+      "original_archive": {
+        "member": "files/f4/f49612e45d3410d733d44ffe58f4df3f1120923d2041352218655d5901e433c8.svg",
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scisvg-42238985604-1-b0000.tar.gz"
+      },
+      "preview_archive": {
+        "member": "previews/f49612e45d3410d733d44ffe58f4df3f1120923d2041352218655d5901e433c8.png",
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scisvg-42238985604-1-b0000.tar.gz"
+      },
+      "source": "scisvg",
+      "source_id": "assets/biology/dna-rna/dna-double-helix.svg",
+      "source_url": "https://github.com/SaveenaSolanki/SciSVG/blob/b8a2b60a3a5b2d9b717b1065fbcb8de9f1faf72b/assets/biology/dna-rna/dna-double-helix.svg",
+      "title": "DNA Double Helix",
+      "observations": "本轮较大预览及原DNA联系表复看显示两条近似平行起伏骨架与横杆，未清楚显示互绕/交叉的双螺旋。源名支持DNA，但不能据名称补足螺旋要求；当前双螺旋角色改为待定，不沿用旧笔记中的相互交错断言。",
+      "role_verdict": "uncertain",
+      "visual_evidence": [
+        {
+          "path": "build/component-resume-20261114/final-preview-43480608088/exact-review-43480608088-1.review.png",
+          "sha256": "20cafae6b49c0fcdf9864f43b63f480e8f95f8095d497aa3d8077def4597e317"
+        },
+        {
+          "path": "build/component-resume-20261114/final-preview-43480608088/mapping.json",
+          "sha256": "49c7ae738ccd5e1d0959678d7c73629d04d5fc8e05a2eefa641a5ea083bc6076"
+        }
+      ],
+      "new_visual_inspection_performed": true
+    },
+    {
+      "tile": 11,
+      "original_sha256": "52e1df0929577cc6e7a63e2d0d8752fe2758a20d3e4f9c31621918044aa8d920",
+      "preview_sha256": "ed24f40728c732adbde165cc0663ff2cbada9751631cb19f000e89ec54cd19d7",
+      "original_archive": {
+        "member": "files/52/52e1df0929577cc6e7a63e2d0d8752fe2758a20d3e4f9c31621918044aa8d920.svg",
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scidraw-42235890704-1-b0000.tar.gz"
+      },
+      "preview_archive": {
+        "member": "previews/52e1df0929577cc6e7a63e2d0d8752fe2758a20d3e4f9c31621918044aa8d920.png",
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scidraw-42235890704-1-b0000.tar.gz"
+      },
+      "source": "scidraw",
+      "source_id": "200532bc-f6c0-4ed5-b46b-1cdf78649ae0",
+      "source_url": "https://scidraw.io/drawing/1ml-syringe-with-25g-needle-d1185aaa",
+      "title": "1ml syringe with 25G needle",
+      "observations": "实际再看完整细长注射器，有筒体、指托、推杆、针座和细针；示意容量/针号与本任务剂量分开，缩小后刻线不可作为参数。",
+      "role_verdict": "relevant",
+      "visual_evidence": [
+        {
+          "path": "build/component-resume-20261114/final-preview-43480608088/exact-review-43480608088-1.review.png",
+          "sha256": "20cafae6b49c0fcdf9864f43b63f480e8f95f8095d497aa3d8077def4597e317"
+        },
+        {
+          "path": "build/component-resume-20261114/final-preview-43480608088/mapping.json",
+          "sha256": "49c7ae738ccd5e1d0959678d7c73629d04d5fc8e05a2eefa641a5ea083bc6076"
+        }
+      ],
+      "new_visual_inspection_performed": true
+    },
+    {
+      "tile": 12,
+      "original_sha256": "d87e9ca9f6ae35b5bb49a187f3426da3b937e0ba0eaf554557c29100f282bfac",
+      "preview_sha256": "939782f81441810d32e3ae15a2e9c0087c97520332a8f46a4970396a0fdfc278",
+      "original_archive": {
+        "member": "files/d8/d87e9ca9f6ae35b5bb49a187f3426da3b937e0ba0eaf554557c29100f282bfac.svg",
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42249870031-1-b0002.tar.gz"
+      },
+      "preview_archive": {
+        "member": "previews/d87e9ca9f6ae35b5bb49a187f3426da3b937e0ba0eaf554557c29100f282bfac.png",
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42249870031-1-b0002.tar.gz"
+      },
+      "source": "togo",
+      "source_id": "1338",
+      "source_url": "https://doi.org/10.7875/togopic.2022.374",
+      "title": "Centrifuge",
+      "observations": "实际再看开盖台式离心机，圆转子孔位和前方面板清楚，支持设备对象；不推断运转状态。",
+      "role_verdict": "relevant",
+      "visual_evidence": [
+        {
+          "path": "build/component-resume-20261114/final-preview-43480608088/exact-review-43480608088-1.review.png",
+          "sha256": "20cafae6b49c0fcdf9864f43b63f480e8f95f8095d497aa3d8077def4597e317"
+        },
+        {
+          "path": "build/component-resume-20261114/final-preview-43480608088/mapping.json",
+          "sha256": "49c7ae738ccd5e1d0959678d7c73629d04d5fc8e05a2eefa641a5ea083bc6076"
+        }
+      ],
+      "new_visual_inspection_performed": true
+    },
+    {
+      "tile": 13,
+      "original_sha256": "4f4cd7b5ea3297b13412a15b42309baf5aef46b452952222008d419a350e2625",
+      "preview_sha256": "b4f0bc36b54c958663fe0dfbcef75ffe7f5ef4c86a2f68700ec2aa98c4716bb2",
+      "original_archive": {
+        "member": "files/4f/4f4cd7b5ea3297b13412a15b42309baf5aef46b452952222008d419a350e2625.png",
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42249870031-1-b0002.tar.gz"
+      },
+      "preview_archive": {
+        "member": "previews/4f4cd7b5ea3297b13412a15b42309baf5aef46b452952222008d419a350e2625.png",
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42249870031-1-b0002.tar.gz"
+      },
+      "source": "togo",
+      "source_id": "1359",
+      "source_url": "https://doi.org/10.7875/togopic.2022.395",
+      "title": "Centrifuge tube 4",
+      "observations": "橙色盖、长管身、刻线和锥底可辨，有蓝色液体，支持来源所称离心管；不推断兼容性、容量或分离结果。",
+      "role_verdict": "relevant",
+      "visual_evidence": [
+        {
+          "path": "build/component-resume-20261114/final-preview-43480608088/exact-review-43480608088-1.review.png",
+          "sha256": "20cafae6b49c0fcdf9864f43b63f480e8f95f8095d497aa3d8077def4597e317"
+        },
+        {
+          "path": "build/component-resume-20261114/final-preview-43480608088/mapping.json",
+          "sha256": "49c7ae738ccd5e1d0959678d7c73629d04d5fc8e05a2eefa641a5ea083bc6076"
+        }
+      ],
+      "new_visual_inspection_performed": true
+    },
+    {
+      "tile": 14,
+      "original_sha256": "f545168bcda277bcac0f3eb3bf84333106ffee108cbd0581f976668a60302a9d",
+      "preview_sha256": "3d1acda52ce6ce715bd34919675efe32289f34d055ca7dd6a7220f4de4caccfa",
+      "original_archive": {
+        "member": "files/f5/f545168bcda277bcac0f3eb3bf84333106ffee108cbd0581f976668a60302a9d.svg",
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/reactome-42246331998-1-b0004.tar.gz"
+      },
+      "preview_archive": {
+        "member": "previews/f545168bcda277bcac0f3eb3bf84333106ffee108cbd0581f976668a60302a9d.png",
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/reactome-42246331998-1-b0004.tar.gz"
+      },
+      "source": "reactome",
+      "source_id": "R-ICO-014578",
+      "source_url": "https://reactome.org/content/detail/R-ICO-014578",
+      "title": "4-5nt RNA",
+      "observations": "多个互不配对的短弯带，来源4-5nt RNA明确支持短RNA；不从颜色和个数推断真实序列、浓度或样本量。",
+      "role_verdict": "relevant",
+      "visual_evidence": [
+        {
+          "path": "build/component-resume-20261114/final-preview-43480608088/exact-review-43480608088-1.review.png",
+          "sha256": "20cafae6b49c0fcdf9864f43b63f480e8f95f8095d497aa3d8077def4597e317"
+        },
+        {
+          "path": "build/component-resume-20261114/final-preview-43480608088/mapping.json",
+          "sha256": "49c7ae738ccd5e1d0959678d7c73629d04d5fc8e05a2eefa641a5ea083bc6076"
+        }
+      ],
+      "new_visual_inspection_performed": true
+    },
+    {
+      "tile": 15,
+      "original_sha256": "d082af215f7fba8f52ae3b32a90e896f910646087218d6fa2c8bff3286bf5262",
+      "preview_sha256": "4d422ed2cc0299df4b33eab52b2f82df40bd84044c881d8655918691bc0cbcfc",
+      "original_archive": {
+        "member": "files/d0/d082af215f7fba8f52ae3b32a90e896f910646087218d6fa2c8bff3286bf5262.png",
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42249870031-1-b0002.tar.gz"
+      },
+      "preview_archive": {
+        "member": "previews/d082af215f7fba8f52ae3b32a90e896f910646087218d6fa2c8bff3286bf5262.png",
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42249870031-1-b0002.tar.gz"
+      },
+      "source": "togo",
+      "source_id": "1092",
+      "source_url": "https://doi.org/10.7875/togopic.2022.128",
+      "title": "Next Generation Sequencer (Glay)",
+      "observations": "独立设备外壳、屏幕和控制部件可辨，来源Next Generation Sequencer支持测序仪身份；画风非常简化，不用外观推品牌、通量或样本输入步骤。",
+      "role_verdict": "relevant",
+      "visual_evidence": [
+        {
+          "path": "build/component-resume-20261114/final-preview-43480608088/exact-review-43480608088-1.review.png",
+          "sha256": "20cafae6b49c0fcdf9864f43b63f480e8f95f8095d497aa3d8077def4597e317"
+        },
+        {
+          "path": "build/component-resume-20261114/final-preview-43480608088/mapping.json",
+          "sha256": "49c7ae738ccd5e1d0959678d7c73629d04d5fc8e05a2eefa641a5ea083bc6076"
+        }
+      ],
+      "new_visual_inspection_performed": true
+    }
+  ],
+  "additional_actual_view": {
+    "path": "build/frozen-review-42298772894/review/concepts/molecules-dna.png",
+    "sha256": "6250fcd2a23951923d7845e6f0c23f3e571c87e935853ed6c6e03d0adad893ed"
+  },
+  "limits": [
+    "Current role judgments only; old reports and historical scores remain unchanged.",
+    "A new DNA observation explicitly limits reuse of an earlier inaccurate visual note.",
+    "No original edited; no actual research result or dose inferred."
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "catalog_sha256": "f3f869f4ed24e4582ff26c46fabb64a1e68593d2a731eff66e728ec6b280f377",
+  "purpose": "Extract the already visually reviewed exact double-helix component for a combined-use board; no new collection or search.",
+  "files": [
+    {
+      "source": "healthicons",
+      "source_id": "public/icons/svg/outline/body/dna.svg",
+      "source_url": "https://github.com/resolvetosavelives/healthicons/blob/2080c1b40e4829f2f4217e03bc22908b4e402f6b/public/icons/svg/outline/body/dna.svg",
+      "asset_id": "healthicons-1532fd39e8bc1eae21da",
+      "title": "DNA",
+      "format": "svg",
+      "original_sha256": "c52e57adfb9e3cafc9c4be27240821855411bba043862820f1cdc7e3e3308bc9",
+      "original_archive": {
+        "member": "files/c5/c52e57adfb9e3cafc9c4be27240821855411bba043862820f1cdc7e3e3308bc9.svg",
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/healthicons-42234355854-1-b0002.tar.gz"
+      },
+      "preview": {
+        "archive": {
+          "member": "previews/c52e57adfb9e3cafc9c4be27240821855411bba043862820f1cdc7e3e3308bc9.png",
+          "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/healthicons-42234355854-1-b0002.tar.gz"
+        },
+        "format": "png",
+        "height": 512,
+        "path": "previews/c52e57adfb9e3cafc9c4be27240821855411bba043862820f1cdc7e3e3308bc9.png",
+        "sha256": "773178ae935ee1affc04fd600eba1445746b9c8f52f9cee20dee9443d293fa27",
+        "size_bytes": 6921,
+        "width": 512
+      },
+      "review_question": "Place this source-bound interwoven double-helix icon beside the DNA-binding-protein component without inventing a binding mechanism."
+    }
+  ]
+}
