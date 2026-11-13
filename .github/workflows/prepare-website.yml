@@ -1,0 +1,40 @@
+name: Prepare accepted website data in cloud
+on:
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: website-prepare
+  cancel-in-progress: false
+jobs:
+  prepare:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: python -m pip install -e .
+      - name: Export accepted index without artwork acquisition
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: python scripts/prepare_website.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: website-prepared-${{ github.run_id }}
+          retention-days: 30
+          path: |
+            build/website/search.sql
+            build/website/prepare-receipt.json
+            build/website/delivery-objects.json
+            build/website/public
+      - name: Preserve preparation receipt
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          cp build/website/prepare-receipt.json build/website/website-prepare-${GITHUB_RUN_ID}.json
+          gh release upload acceptance-20261107 build/website/website-prepare-${GITHUB_RUN_ID}.json

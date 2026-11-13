@@ -1,0 +1,7 @@
+{
+  "name": "mga-resource-mainly-for-agent",
+  "private": true,
+  "type": "module",
+  "scripts": {"types": "wrangler types", "build": "wrangler pages functions build --outdir ../build/site-functions"},
+  "devDependencies": {"wrangler": "4.151.0", "@cloudflare/workers-types": "latest"}
+}
