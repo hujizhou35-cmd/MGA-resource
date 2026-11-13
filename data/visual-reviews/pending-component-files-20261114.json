@@ -1,0 +1,2645 @@
+{
+  "schema_version": 1,
+  "reviewed_at": "2026-11-13T18:07:24.320232+00:00",
+  "reviewer": "Codex root; actual three contact-sheet review",
+  "catalog_sha256": "331a28608746cd36fbd4c7d69b1890b4c8519d38a9f4ede29411691eb5ff1a28",
+  "items": [
+    {
+      "tile": 1,
+      "cloud_run": 43476542410,
+      "original_sha256": "2b53e72082cfe6e5f4f975efcb3594b3d39f3542cdc59cd31468b953e4dafa47",
+      "preview_sha256": "bb4eb8d2d5969250accebbb6e629ad08ac0e6fa0b36d0f9f0ceb72e60c3c4368",
+      "title": "Person Farmer ALT",
+      "source": "healthicons",
+      "source_id": "public/icons/svg/outline/people/agriculture-worker_alt.svg",
+      "source_url": "https://github.com/resolvetosavelives/healthicons/blob/2080c1b40e4829f2f4217e03bc22908b4e402f6b/public/icons/svg/outline/people/agriculture-worker_alt.svg",
+      "original_archive": {
+        "member": "files/2b/2b53e72082cfe6e5f4f975efcb3594b3d39f3542cdc59cd31468b953e4dafa47.svg",
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/healthicons-42234355854-1-b0003.tar.gz"
+      },
+      "preview_archive": {
+        "member": "previews/2b53e72082cfe6e5f4f975efcb3594b3d39f3542cdc59cd31468b953e4dafa47.png",
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/healthicons-42234355854-1-b0003.tar.gz"
+      },
+      "observations": "人物持农叉，职业情境明确；不作中性患者/参与者图。",
+      "default_role_verdict": "irrelevant",
+      "reviewed_uses": [
+        {
+          "query_id": "component-people-patient--primary_object--zh",
+          "component_id": "primary_object",
+          "language": "zh"
+        }
+      ],
+      "visual_evidence": [
+        {
+          "path": "build/component-resume-20261114/pending-preview-43476542410/exact-review-43476542410-1.review.png",
+          "sha256": "a7360321812885228d2db10a7bc4897b9630ece1146999bc7ca7279642a1a836"
+        },
+        {
+          "path": "build/component-resume-20261114/pending-preview-43476542410/mapping.json",
+          "sha256": "8a55737e13aded9d00d5de65d677cad0d859bed81f1588bfc86ebc6f55662005"
+        }
+      ],
+      "new_visual_inspection_performed": true,
+      "review_method": "Actually displayed and inspected this exact contact sheet; individual bytes checked, not separately displayed.",
+      "text_observation": {
+        "contains_text_or_labels": "unknown",
+        "cleanup_before_use": "task_dependent",
+        "internal_svg_text_inspected": false
+      }
+    },
+    {
+      "tile": 2,
+      "cloud_run": 43476542410,
+      "original_sha256": "020b208f7e1dab88f9c631f9ebf47a1d04cf136a00d72fd655c397ac3ab9e19c",
+      "preview_sha256": "571c195357b03c7f9e5cda9798d640dfbb4a9adb93bd4f65176136538e7e2a57",
+      "title": "Long Hair Person in Lab Coat 3",
+      "source": "nih-bioart",
+      "source_id": "743",
+      "source_url": "https://bioart.niaid.nih.gov/bioart/743",
+      "original_archive": {
+        "member": "files/02/020b208f7e1dab88f9c631f9ebf47a1d04cf136a00d72fd655c397ac3ab9e19c.svg",
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/nih-bioart-42236561214-1-b0001.tar.gz"
+      },
+      "preview_archive": {
+        "member": "previews/020b208f7e1dab88f9c631f9ebf47a1d04cf136a00d72fd655c397ac3ab9e19c.png",
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/nih-bioart-42236561214-1-b0001.tar.gz"
+      },
+      "observations": "长发人物穿白色实验服、圆形头像背景；人体身份清楚，但职业语境使其不适合作中性患者。",
+      "default_role_verdict": "irrelevant",
+      "reviewed_uses": [
+        {
+          "query_id": "component-people-patient--primary_object--zh",
+          "component_id": "primary_object",
+          "language": "zh"
+        },
+        {
+          "query_id": "component-clinical_workflow-cohort-followup--human_subject--zh",
+          "component_id": "human_subject",
+          "language": "zh"
+        },
+        {
+          "query_id": "component-clinical_workflow-cohort-followup--human_subject--en",
+          "component_id": "human_subject",
+          "language": "en"
+        }
+      ],
+      "visual_evidence": [
+        {
+          "path": "build/component-resume-20261114/pending-preview-43476542410/exact-review-43476542410-1.review.png",
+          "sha256": "a7360321812885228d2db10a7bc4897b9630ece1146999bc7ca7279642a1a836"
+        },
+        {
+          "path": "build/component-resume-20261114/pending-preview-43476542410/mapping.json",
+          "sha256": "8a55737e13aded9d00d5de65d677cad0d859bed81f1588bfc86ebc6f55662005"
+        }
+      ],
+      "new_visual_inspection_performed": true,
+      "review_method": "Actually displayed and inspected this exact contact sheet; individual bytes checked, not separately displayed.",
+      "text_observation": {
+        "contains_text_or_labels": "unknown",
+        "cleanup_before_use": "task_dependent",
+        "internal_svg_text_inspected": false
+      }
+    },
+    {
+      "tile": 3,
+      "cloud_run": 43476542410,
+      "original_sha256": "82cc3c34611f053816fafee92f1f1b7ac2ed274bb15c3ec90c664d86fdc5e6cc",
+      "preview_sha256": "0dd658ee248df688ba90f7cfd6571a92e54110edc2f34f08ab2e0f2ba40fb76e",
+      "title": "Person Traveller",
+      "source": "healthicons",
+      "source_id": "public/icons/svg/filled/people/travel.svg",
+      "source_url": "https://github.com/resolvetosavelives/healthicons/blob/2080c1b40e4829f2f4217e03bc22908b4e402f6b/public/icons/svg/filled/people/travel.svg",
+      "original_archive": {
+        "member": "files/82/82cc3c34611f053816fafee92f1f1b7ac2ed274bb15c3ec90c664d86fdc5e6cc.svg",
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/healthicons-42234355854-1-b0001.tar.gz"
+      },
+      "preview_archive": {
+        "member": "previews/82cc3c34611f053816fafee92f1f1b7ac2ed274bb15c3ec90c664d86fdc5e6cc.png",
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/healthicons-42234355854-1-b0001.tar.gz"
+      },
+      "observations": "戴帽人物持折叠地图，是旅行者场景，不能直接作为中性患者。",
+      "default_role_verdict": "irrelevant",
+      "reviewed_uses": [
+        {
+          "query_id": "component-people-patient--primary_object--zh",
+          "component_id": "primary_object",
+          "language": "zh"
+        }
+      ],
+      "visual_evidence": [
+        {
+          "path": "build/component-resume-20261114/pending-preview-43476542410/exact-review-43476542410-1.review.png",
+          "sha256": "a7360321812885228d2db10a7bc4897b9630ece1146999bc7ca7279642a1a836"
+        },
+        {
+          "path": "build/component-resume-20261114/pending-preview-43476542410/mapping.json",
+          "sha256": "8a55737e13aded9d00d5de65d677cad0d859bed81f1588bfc86ebc6f55662005"
+        }
+      ],
+      "new_visual_inspection_performed": true,
+      "review_method": "Actually displayed and inspected this exact contact sheet; individual bytes checked, not separately displayed.",
+      "text_observation": {
+        "contains_text_or_labels": "unknown",
+        "cleanup_before_use": "task_dependent",
+        "internal_svg_text_inspected": false
+      }
+    },
+    {
+      "tile": 4,
+      "cloud_run": 43476542410,
+      "original_sha256": "3b97af71dbf4013f83f8a2a612d4d4d09fdea3b0ed3806596ba2ec2ab8de2540",
+      "preview_sha256": "fcd74762c76bdc4998181a36ff78d05d9c6ef205fe6e0549b41c179c549cd456",
+      "title": "Person",
+      "source": "healthicons",
+      "source_id": "public/icons/svg/filled-24px/people/man.svg",
+      "source_url": "https://github.com/resolvetosavelives/healthicons/blob/2080c1b40e4829f2f4217e03bc22908b4e402f6b/public/icons/svg/filled-24px/people/man.svg",
+      "original_archive": {
+        "member": "files/3b/3b97af71dbf4013f83f8a2a612d4d4d09fdea3b0ed3806596ba2ec2ab8de2540.svg",
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/healthicons-42234355854-1-b0000.tar.gz"
+      },
+      "preview_archive": {
+        "member": "previews/3b97af71dbf4013f83f8a2a612d4d4d09fdea3b0ed3806596ba2ec2ab8de2540.png",
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/healthicons-42234355854-1-b0000.tar.gz"
+      },
+      "observations": "黑色全身人物符号，头、躯干及四肢可辨，没有病种、职业或治疗暗示，可作中性参与者。",
+      "default_role_verdict": "relevant",
+      "reviewed_uses": [
+        {
+          "query_id": "component-people-patient--primary_object--zh",
+          "component_id": "primary_object",
+          "language": "zh"
+        }
+      ],
+      "visual_evidence": [
+        {
+          "path": "build/component-resume-20261114/pending-preview-43476542410/exact-review-43476542410-1.review.png",
+          "sha256": "a7360321812885228d2db10a7bc4897b9630ece1146999bc7ca7279642a1a836"
+        },
+        {
+          "path": "build/component-resume-20261114/pending-preview-43476542410/mapping.json",
+          "sha256": "8a55737e13aded9d00d5de65d677cad0d859bed81f1588bfc86ebc6f55662005"
+        }
+      ],
+      "new_visual_inspection_performed": true,
+      "review_method": "Actually displayed and inspected this exact contact sheet; individual bytes checked, not separately displayed.",
+      "text_observation": {
+        "contains_text_or_labels": "unknown",
+        "cleanup_before_use": "task_dependent",
+        "internal_svg_text_inspected": false
+      }
+    },
+    {
+      "tile": 5,
+      "cloud_run": 43476542410,
+      "original_sha256": "0a87367439993bb93a46e6894f5251824e79381ed1c7ca0c9f38428a636ebfc0",
+      "preview_sha256": "4f9b08987220cd62f011f2b0f6129464388a9deee808ddc673f43f17f50fdc94",
+      "title": "Person in Hat 5",
+      "source": "nih-bioart",
+      "source_id": "747",
+      "source_url": "https://bioart.niaid.nih.gov/bioart/747",
+      "original_archive": {
+        "member": "files/0a/0a87367439993bb93a46e6894f5251824e79381ed1c7ca0c9f38428a636ebfc0.png",
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/nih-bioart-42236561214-1-b0001.tar.gz"
+      },
+      "preview_archive": {
+        "member": "previews/0a87367439993bb93a46e6894f5251824e79381ed1c7ca0c9f38428a636ebfc0.png",
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/nih-bioart-42236561214-1-b0001.tar.gz"
+      },
+      "observations": "蓝帽普通衣着人物半身头像，没有临床职业标记；可作中性人物，不推断病种或真实身份。",
+      "default_role_verdict": "relevant",
+      "reviewed_uses": [
+        {
+          "query_id": "component-people-patient--primary_object--zh",
+          "component_id": "primary_object",
+          "language": "zh"
+        },
+        {
+          "query_id": "component-clinical_workflow-cohort-followup--human_subject--zh",
+          "component_id": "human_subject",
+          "language": "zh"
+        },
+        {
+          "query_id": "component-clinical_workflow-cohort-followup--human_subject--en",
+          "component_id": "human_subject",
+          "language": "en"
+        }
+      ],
+      "visual_evidence": [
+        {
+          "path": "build/component-resume-20261114/pending-preview-43476542410/exact-review-43476542410-1.review.png",
+          "sha256": "a7360321812885228d2db10a7bc4897b9630ece1146999bc7ca7279642a1a836"
+        },
+        {
+          "path": "build/component-resume-20261114/pending-preview-43476542410/mapping.json",
+          "sha256": "8a55737e13aded9d00d5de65d677cad0d859bed81f1588bfc86ebc6f55662005"
+        }
+      ],
+      "new_visual_inspection_performed": true,
+      "review_method": "Actually displayed and inspected this exact contact sheet; individual bytes checked, not separately displayed.",
+      "text_observation": {
+        "contains_text_or_labels": "unknown",
+        "cleanup_before_use": "task_dependent",
+        "internal_svg_text_inspected": false
+      }
+    },
+    {
+      "tile": 6,
+      "cloud_run": 43476542410,
+      "original_sha256": "a7aae2923647437da713ad9f65d18780b37c42ab1ff5f23236181847c84504f6",
+      "preview_sha256": "ec457b747fa714683d1b2af2c2cbd6162bb1d4a2de049ad1d482df9c28a1af7c",
+      "title": "Person Plantation Worker ALT",
+      "source": "healthicons",
+      "source_id": "public/icons/svg/outline/people/plantation-worker_alt.svg",
+      "source_url": "https://github.com/resolvetosavelives/healthicons/blob/2080c1b40e4829f2f4217e03bc22908b4e402f6b/public/icons/svg/outline/people/plantation-worker_alt.svg",
+      "original_archive": {
+        "member": "files/a7/a7aae2923647437da713ad9f65d18780b37c42ab1ff5f23236181847c84504f6.svg",
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/healthicons-42234355854-1-b0003.tar.gz"
+      },
+      "preview_archive": {
+        "member": "previews/a7aae2923647437da713ad9f65d18780b37c42ab1ff5f23236181847c84504f6.png",
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/healthicons-42234355854-1-b0003.tar.gz"
+      },
+      "observations": "人物持农具并有植株，种植工作情境明确，不作中性患者。",
+      "default_role_verdict": "irrelevant",
+      "reviewed_uses": [
+        {
+          "query_id": "component-people-patient--primary_object--zh",
+          "component_id": "primary_object",
+          "language": "zh"
+        }
+      ],
+      "visual_evidence": [
+        {
+          "path": "build/component-resume-20261114/pending-preview-43476542410/exact-review-43476542410-1.review.png",
+          "sha256": "a7360321812885228d2db10a7bc4897b9630ece1146999bc7ca7279642a1a836"
+        },
+        {
+          "path": "build/component-resume-20261114/pending-preview-43476542410/mapping.json",
+          "sha256": "8a55737e13aded9d00d5de65d677cad0d859bed81f1588bfc86ebc6f55662005"
+        }
+      ],
+      "new_visual_inspection_performed": true,
+      "review_method": "Actually displayed and inspected this exact contact sheet; individual bytes checked, not separately displayed.",
+      "text_observation": {
+        "contains_text_or_labels": "unknown",
+        "cleanup_before_use": "task_dependent",
+        "internal_svg_text_inspected": false
+      }
+    },
+    {
+      "tile": 7,
+      "cloud_run": 43476542410,
+      "original_sha256": "a9f950d27feacbe39c70797919959a06f755fe5c4972729f7448b1ebf42d8695",
+      "preview_sha256": "85d5f1902794f6c8debf3ee67f5250e11ddb25efbb0d5a7c9f80687b544531da",
+      "title": "Person Factory Worker",
+      "source": "healthicons",
+      "source_id": "public/icons/svg/filled/people/factory-worker.svg",
+      "source_url": "https://github.com/resolvetosavelives/healthicons/blob/2080c1b40e4829f2f4217e03bc22908b4e402f6b/public/icons/svg/filled/people/factory-worker.svg",
+      "original_archive": {
+        "member": "files/a9/a9f950d27feacbe39c70797919959a06f755fe5c4972729f7448b1ebf42d8695.svg",
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/healthicons-42234355854-1-b0001.tar.gz"
+      },
+      "preview_archive": {
+        "member": "previews/a9f950d27feacbe39c70797919959a06f755fe5c4972729f7448b1ebf42d8695.png",
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/healthicons-42234355854-1-b0001.tar.gz"
+      },
+      "observations": "安全帽、工作服及扳手明确表达工人职业，不作中性患者。",
+      "default_role_verdict": "irrelevant",
+      "reviewed_uses": [
+        {
+          "query_id": "component-people-patient--primary_object--zh",
+          "component_id": "primary_object",
+          "language": "zh"
+        }
+      ],
+      "visual_evidence": [
+        {
+          "path": "build/component-resume-20261114/pending-preview-43476542410/exact-review-43476542410-1.review.png",
+          "sha256": "a7360321812885228d2db10a7bc4897b9630ece1146999bc7ca7279642a1a836"
+        },
+        {
+          "path": "build/component-resume-20261114/pending-preview-43476542410/mapping.json",
+          "sha256": "8a55737e13aded9d00d5de65d677cad0d859bed81f1588bfc86ebc6f55662005"
+        }
+      ],
+      "new_visual_inspection_performed": true,
+      "review_method": "Actually displayed and inspected this exact contact sheet; individual bytes checked, not separately displayed.",
+      "text_observation": {
+        "contains_text_or_labels": "unknown",
+        "cleanup_before_use": "task_dependent",
+        "internal_svg_text_inspected": false
+      }
+    },
+    {
+      "tile": 8,
+      "cloud_run": 43476542410,
+      "original_sha256": "9ca59684525540e8d2ab5651bbe8bf144c20ad0775553321f883fa8bcd94be6e",
+      "preview_sha256": "312bfb82e7dedda723a24cfc7dc8b447406da8ac9d09b7d7f1ea21fff34d434f",
+      "title": "Emergency Operations Person",
+      "source": "healthicons",
+      "source_id": "public/icons/svg/filled/people/crisis-response_center_person.svg",
+      "source_url": "https://github.com/resolvetosavelives/healthicons/blob/2080c1b40e4829f2f4217e03bc22908b4e402f6b/public/icons/svg/filled/people/crisis-response_center_person.svg",
+      "original_archive": {
+        "member": "files/9c/9ca59684525540e8d2ab5651bbe8bf144c20ad0775553321f883fa8bcd94be6e.svg",
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/healthicons-42234355854-1-b0001.tar.gz"
+      },
+      "preview_archive": {
+        "member": "previews/9ca59684525540e8d2ab5651bbe8bf144c20ad0775553321f883fa8bcd94be6e.png",
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/healthicons-42234355854-1-b0001.tar.gz"
+      },
+      "observations": "人物前方有警报/图表/控制板，主体是应急操作工作情境，不作中性患者。",
+      "default_role_verdict": "irrelevant",
+      "reviewed_uses": [
+        {
+          "query_id": "component-people-patient--primary_object--zh",
+          "component_id": "primary_object",
+          "language": "zh"
+        }
+      ],
+      "visual_evidence": [
+        {
+          "path": "build/component-resume-20261114/pending-preview-43476542410/exact-review-43476542410-1.review.png",
+          "sha256": "a7360321812885228d2db10a7bc4897b9630ece1146999bc7ca7279642a1a836"
+        },
+        {
+          "path": "build/component-resume-20261114/pending-preview-43476542410/mapping.json",
+          "sha256": "8a55737e13aded9d00d5de65d677cad0d859bed81f1588bfc86ebc6f55662005"
+        }
+      ],
+      "new_visual_inspection_performed": true,
+      "review_method": "Actually displayed and inspected this exact contact sheet; individual bytes checked, not separately displayed.",
+      "text_observation": {
+        "contains_text_or_labels": "unknown",
+        "cleanup_before_use": "task_dependent",
+        "internal_svg_text_inspected": false
+      }
+    },
+    {
+      "tile": 9,
+      "cloud_run": 43476542410,
+      "original_sha256": "88c128b8f3a16206087f7bedd03d4ca58ced86bdc0173d0569737b74b729cd6c",
+      "preview_sha256": "6eb24c347c7b3dae0f91ca4b0b8920f426e1a4f189ce2b56298d128608efc9e6",
+      "title": "Person Prisoner",
+      "source": "healthicons",
+      "source_id": "public/icons/svg/outline/people/prisoner.svg",
+      "source_url": "https://github.com/resolvetosavelives/healthicons/blob/2080c1b40e4829f2f4217e03bc22908b4e402f6b/public/icons/svg/outline/people/prisoner.svg",
+      "original_archive": {
+        "member": "files/88/88c128b8f3a16206087f7bedd03d4ca58ced86bdc0173d0569737b74b729cd6c.svg",
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/healthicons-42234355854-1-b0003.tar.gz"
+      },
+      "preview_archive": {
+        "member": "previews/88c128b8f3a16206087f7bedd03d4ca58ced86bdc0173d0569737b74b729cd6c.png",
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/healthicons-42234355854-1-b0003.tar.gz"
+      },
+      "observations": "条纹帽服与固定来源Person Prisoner对应，具有特定身份情境，不作中性患者。",
+      "default_role_verdict": "irrelevant",
+      "reviewed_uses": [
+        {
+          "query_id": "component-people-patient--primary_object--zh",
+          "component_id": "primary_object",
+          "language": "zh"
+        }
+      ],
+      "visual_evidence": [
+        {
+          "path": "build/component-resume-20261114/pending-preview-43476542410/exact-review-43476542410-1.review.png",
+          "sha256": "a7360321812885228d2db10a7bc4897b9630ece1146999bc7ca7279642a1a836"
+        },
+        {
+          "path": "build/component-resume-20261114/pending-preview-43476542410/mapping.json",
+          "sha256": "8a55737e13aded9d00d5de65d677cad0d859bed81f1588bfc86ebc6f55662005"
+        }
+      ],
+      "new_visual_inspection_performed": true,
+      "review_method": "Actually displayed and inspected this exact contact sheet; individual bytes checked, not separately displayed.",
+      "text_observation": {
+        "contains_text_or_labels": "unknown",
+        "cleanup_before_use": "task_dependent",
+        "internal_svg_text_inspected": false
+      }
+    },
+    {
+      "tile": 10,
+      "cloud_run": 43476542410,
+      "original_sha256": "e6cc042a942c9a621840a2c5646b8b0753803df635c91415bef4c078b62eb6aa",
+      "preview_sha256": "fdbcb10d64a550e5dd721dac9097edd02957c737541a9c213ba8e086e8c3fa5d",
+      "title": "transcription factor rna",
+      "source": "bioicons",
+      "source_id": "cc-by-4.0/Intracellular_components/Margot_Riggi/transcription-factor-rna.svg",
+      "source_url": "https://github.com/duerrsimon/bioicons/blob/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-4.0/Intracellular_components/Margot_Riggi/transcription-factor-rna.svg",
+      "original_archive": {
+        "member": "files/e6/e6cc042a942c9a621840a2c5646b8b0753803df635c91415bef4c078b62eb6aa.svg",
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42239971379-1-b0004.tar.gz"
+      },
+      "preview_archive": {
+        "member": "previews/e6cc042a942c9a621840a2c5646b8b0753803df635c91415bef4c078b62eb6aa.png",
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42239971379-1-b0004.tar.gz"
+      },
+      "observations": "双螺旋和橙色颗粒旁有一条蓝色波浪线；来源transcription factor rna未在本记录明确颜色与RNA对应，不能把旁边裸线直接认作RNA。",
+      "default_role_verdict": "uncertain",
+      "reviewed_uses": [
+        {
+          "query_id": "component-molecules-rna--primary_object--zh",
+          "component_id": "primary_object",
+          "language": "zh"
+        },
+        {
+          "query_id": "component-molecules-rna--primary_object--en",
+          "component_id": "primary_object",
+          "language": "en"
+        },
+        {
+          "query_id": "component-omics_data-rnaseq--rna_input--zh",
+          "component_id": "rna_input",
+          "language": "zh"
+        },
+        {
+          "query_id": "component-omics_data-rnaseq--rna_input--en",
+          "component_id": "rna_input",
+          "language": "en"
+        },
+        {
+          "query_id": "component-omics_data-heatmap--rna--zh",
+          "component_id": "rna",
+          "language": "zh"
+        },
+        {
+          "query_id": "component-omics_data-heatmap--rna--en",
+          "component_id": "rna",
+          "language": "en"
+        }
+      ],
+      "visual_evidence": [
+        {
+          "path": "build/component-resume-20261114/pending-preview-43476542410/exact-review-43476542410-1.review.png",
+          "sha256": "a7360321812885228d2db10a7bc4897b9630ece1146999bc7ca7279642a1a836"
+        },
+        {
+          "path": "build/component-resume-20261114/pending-preview-43476542410/mapping.json",
+          "sha256": "8a55737e13aded9d00d5de65d677cad0d859bed81f1588bfc86ebc6f55662005"
+        }
+      ],
+      "new_visual_inspection_performed": true,
+      "review_method": "Actually displayed and inspected this exact contact sheet; individual bytes checked, not separately displayed.",
+      "text_observation": {
+        "contains_text_or_labels": "unknown",
+        "cleanup_before_use": "task_dependent",
+        "internal_svg_text_inspected": false
+      }
+    },
+    {
+      "tile": 11,
+      "cloud_run": 43476542410,
+      "original_sha256": "70d5046dfcaa50265db23487b6077f6359be40ac0b35d798a63f3bbb8e5ba0fc",
+      "preview_sha256": "a5fb9cec0411640bd52ff5251a0ce67bdc81f1ecfb59d445bf50d64c922dc9a3",
+      "title": "t RNA secondary structure",
+      "source": "bioicons",
+      "source_id": "cc-0/Nucleic_acids/James-Lloyd/tRNA_secondary_structure.svg",
+      "source_url": "https://github.com/duerrsimon/bioicons/blob/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-0/Nucleic_acids/James-Lloyd/tRNA_secondary_structure.svg",
+      "original_archive": {
+        "member": "files/70/70d5046dfcaa50265db23487b6077f6359be40ac0b35d798a63f3bbb8e5ba0fc.svg",
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42239971379-1-b0000.tar.gz"
+      },
+      "preview_archive": {
+        "member": "previews/70d5046dfcaa50265db23487b6077f6359be40ac0b35d798a63f3bbb8e5ba0fc.png",
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42239971379-1-b0000.tar.gz"
+      },
+      "observations": "连续彩色带形成三叶环及较短内环、顶端有两个端部，来源t RNA secondary structure；可作折叠单链RNA示意，配色不代表真实序列。",
+      "default_role_verdict": "relevant",
+      "reviewed_uses": [
+        {
+          "query_id": "component-molecules-rna--primary_object--zh",
+          "component_id": "primary_object",
+          "language": "zh"
+        },
+        {
+          "query_id": "component-molecules-rna--primary_object--en",
+          "component_id": "primary_object",
+          "language": "en"
+        },
+        {
+          "query_id": "component-omics_data-rnaseq--rna_input--zh",
+          "component_id": "rna_input",
+          "language": "zh"
+        },
+        {
+          "query_id": "component-omics_data-rnaseq--rna_input--en",
+          "component_id": "rna_input",
+          "language": "en"
+        },
+        {
+          "query_id": "component-omics_data-heatmap--rna--zh",
+          "component_id": "rna",
+          "language": "zh"
+        },
+        {
+          "query_id": "component-omics_data-heatmap--rna--en",
+          "component_id": "rna",
+          "language": "en"
+        }
+      ],
+      "visual_evidence": [
+        {
+          "path": "build/component-resume-20261114/pending-preview-43476542410/exact-review-43476542410-1.review.png",
+          "sha256": "a7360321812885228d2db10a7bc4897b9630ece1146999bc7ca7279642a1a836"
+        },
+        {
+          "path": "build/component-resume-20261114/pending-preview-43476542410/mapping.json",
+          "sha256": "8a55737e13aded9d00d5de65d677cad0d859bed81f1588bfc86ebc6f55662005"
+        }
+      ],
+      "new_visual_inspection_performed": true,
+      "review_method": "Actually displayed and inspected this exact contact sheet; individual bytes checked, not separately displayed.",
+      "text_observation": {
+        "contains_text_or_labels": "unknown",
+        "cleanup_before_use": "task_dependent",
+        "internal_svg_text_inspected": false
+      }
+    },
+    {
+      "tile": 12,
+      "cloud_run": 43476542410,
+      "original_sha256": "cda1278dac454a0098233e5ee00e180b8cec04926f501437abcca3c66b389448",
+      "preview_sha256": "53d89a8496f22ff2236747822d22af4dd219a25a241ffb1aec86b25e89aee8dd",
+      "title": "8-channel pipette (black)",
+      "source": "togo",
+      "source_id": "1075",
+      "source_url": "https://doi.org/10.7875/togopic.2022.111",
+      "original_archive": {
+        "member": "files/cd/cda1278dac454a0098233e5ee00e180b8cec04926f501437abcca3c66b389448.svg",
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42249870031-1-b0002.tar.gz"
+      },
+      "preview_archive": {
+        "member": "previews/cda1278dac454a0098233e5ee00e180b8cec04926f501437abcca3c66b389448.png",
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42249870031-1-b0002.tar.gz"
+      },
+      "observations": "多通道移液器有上部按压头、手柄和下方成排锥形吸头，器具与部件清楚；不推断容量或计量性能。",
+      "default_role_verdict": "relevant",
+      "reviewed_uses": [
+        {
+          "query_id": "component-lab_equipment-pipette--primary_object--zh",
+          "component_id": "primary_object",
+          "language": "zh"
+        }
+      ],
+      "visual_evidence": [
+        {
+          "path": "build/component-resume-20261114/pending-preview-43476542410/exact-review-43476542410-1.review.png",
+          "sha256": "a7360321812885228d2db10a7bc4897b9630ece1146999bc7ca7279642a1a836"
+        },
+        {
+          "path": "build/component-resume-20261114/pending-preview-43476542410/mapping.json",
+          "sha256": "8a55737e13aded9d00d5de65d677cad0d859bed81f1588bfc86ebc6f55662005"
+        }
+      ],
+      "new_visual_inspection_performed": true,
+      "review_method": "Actually displayed and inspected this exact contact sheet; individual bytes checked, not separately displayed.",
+      "text_observation": {
+        "contains_text_or_labels": "unknown",
+        "cleanup_before_use": "task_dependent",
+        "internal_svg_text_inspected": false
+      }
+    },
+    {
+      "tile": 13,
+      "cloud_run": 43476542410,
+      "original_sha256": "1a5eb73244d5846fd0ede5a0b066de14410d71ec0d58974408ff3c3b2dc9f791",
+      "preview_sha256": "a590f27e450f97928f0941614c8c9be825c05546be5427832de690752284ae5e",
+      "title": "petri dish blue",
+      "source": "bioicons",
+      "source_id": "cc-by-3.0/Microbiology/Servier/petri-dish-blue.svg",
+      "source_url": "https://github.com/duerrsimon/bioicons/blob/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-3.0/Microbiology/Servier/petri-dish-blue.svg",
+      "original_archive": {
+        "member": "files/1a/1a5eb73244d5846fd0ede5a0b066de14410d71ec0d58974408ff3c3b2dc9f791.svg",
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42251588741-1-b0003.tar.gz"
+      },
+      "preview_archive": {
+        "member": "previews/1a5eb73244d5846fd0ede5a0b066de14410d71ec0d58974408ff3c3b2dc9f791.png",
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42251588741-1-b0003.tar.gz"
+      },
+      "observations": "蓝色浅圆培养皿，侧壁、底部和环形边缘可辨；液体颜色不解释为细胞或具体培养基。",
+      "default_role_verdict": "relevant",
+      "reviewed_uses": [
+        {
+          "query_id": "component-lab_equipment-petri-dish--primary_object--zh",
+          "component_id": "primary_object",
+          "language": "zh"
+        },
+        {
+          "query_id": "component-lab_equipment-petri-dish--primary_object--en",
+          "component_id": "primary_object",
+          "language": "en"
+        }
+      ],
+      "visual_evidence": [
+        {
+          "path": "build/component-resume-20261114/pending-preview-43476542410/exact-review-43476542410-1.review.png",
+          "sha256": "a7360321812885228d2db10a7bc4897b9630ece1146999bc7ca7279642a1a836"
+        },
+        {
+          "path": "build/component-resume-20261114/pending-preview-43476542410/mapping.json",
+          "sha256": "8a55737e13aded9d00d5de65d677cad0d859bed81f1588bfc86ebc6f55662005"
+        }
+      ],
+      "new_visual_inspection_performed": true,
+      "review_method": "Actually displayed and inspected this exact contact sheet; individual bytes checked, not separately displayed.",
+      "text_observation": {
+        "contains_text_or_labels": "unknown",
+        "cleanup_before_use": "task_dependent",
+        "internal_svg_text_inspected": false
+      }
+    },
+    {
+      "tile": 14,
+      "cloud_run": 43476542410,
+      "original_sha256": "bc8799bf29c164dbe0d124f0067a589c71a484e3f8014ec1e7b0f763768617bb",
+      "preview_sha256": "0bb6f7da41acf9c262f3d25070d096bb5bbe465f8c2c41deefa6f0862296a85a",
+      "title": "petri dish with bacteria yellow",
+      "source": "bioicons",
+      "source_id": "cc-by-3.0/Microbiology/Servier/petri-dish-with-bacteria-yellow.svg",
+      "source_url": "https://github.com/duerrsimon/bioicons/blob/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-3.0/Microbiology/Servier/petri-dish-with-bacteria-yellow.svg",
+      "original_archive": {
+        "member": "files/bc/bc8799bf29c164dbe0d124f0067a589c71a484e3f8014ec1e7b0f763768617bb.svg",
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42251588741-1-b0003.tar.gz"
+      },
+      "preview_archive": {
+        "member": "previews/bc8799bf29c164dbe0d124f0067a589c71a484e3f8014ec1e7b0f763768617bb.png",
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42251588741-1-b0003.tar.gz"
+      },
+      "observations": "黄色圆培养皿内有点状/条带菌落示意；来源明确petri dish with bacteria，保留细菌培养语境，不当作无菌空皿。",
+      "default_role_verdict": "relevant",
+      "reviewed_uses": [
+        {
+          "query_id": "component-lab_equipment-petri-dish--primary_object--zh",
+          "component_id": "primary_object",
+          "language": "zh"
+        },
+        {
+          "query_id": "component-lab_equipment-petri-dish--primary_object--en",
+          "component_id": "primary_object",
+          "language": "en"
+        }
+      ],
+      "visual_evidence": [
+        {
+          "path": "build/component-resume-20261114/pending-preview-43476542410/exact-review-43476542410-1.review.png",
+          "sha256": "a7360321812885228d2db10a7bc4897b9630ece1146999bc7ca7279642a1a836"
+        },
+        {
+          "path": "build/component-resume-20261114/pending-preview-43476542410/mapping.json",
+          "sha256": "8a55737e13aded9d00d5de65d677cad0d859bed81f1588bfc86ebc6f55662005"
+        }
+      ],
+      "new_visual_inspection_performed": true,
+      "review_method": "Actually displayed and inspected this exact contact sheet; individual bytes checked, not separately displayed.",
+      "text_observation": {
+        "contains_text_or_labels": "unknown",
+        "cleanup_before_use": "task_dependent",
+        "internal_svg_text_inspected": false
+      }
+    },
+    {
+      "tile": 15,
+      "cloud_run": 43476542410,
+      "original_sha256": "34041aadd17f919f913be9b6e0937d80a5d7675966594d3fd737bf48d4cd75c1",
+      "preview_sha256": "85b218b181086174e46c47bff0a686848817ecda9845a2e59ccf4e9279d1c66e",
+      "title": "Centrifuge",
+      "source": "togo",
+      "source_id": "629",
+      "source_url": "https://doi.org/10.7875/togopic.2020.42",
+      "original_archive": {
+        "member": "files/34/34041aadd17f919f913be9b6e0937d80a5d7675966594d3fd737bf48d4cd75c1.svg",
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42249870031-1-b0001.tar.gz"
+      },
+      "preview_archive": {
+        "member": "previews/34041aadd17f919f913be9b6e0937d80a5d7675966594d3fd737bf48d4cd75c1.png",
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42249870031-1-b0001.tar.gz"
+      },
+      "observations": "开盖台式机有椭圆转子及孔位、前方面板和旋钮，来源Centrifuge；结构足以识别离心机，不以转速或分离结果作推断。",
+      "default_role_verdict": "relevant",
+      "reviewed_uses": [
+        {
+          "query_id": "component-lab_equipment-centrifuge--primary_object--zh",
+          "component_id": "primary_object",
+          "language": "zh"
+        },
+        {
+          "query_id": "component-lab_equipment-centrifuge--primary_object--en",
+          "component_id": "primary_object",
+          "language": "en"
+        },
+        {
+          "query_id": "component-experimental_actions-centrifugation--centrifuge--zh",
+          "component_id": "centrifuge",
+          "language": "zh"
+        },
+        {
+          "query_id": "component-experimental_actions-centrifugation--centrifuge--en",
+          "component_id": "centrifuge",
+          "language": "en"
+        }
+      ],
+      "visual_evidence": [
+        {
+          "path": "build/component-resume-20261114/pending-preview-43476542410/exact-review-43476542410-1.review.png",
+          "sha256": "a7360321812885228d2db10a7bc4897b9630ece1146999bc7ca7279642a1a836"
+        },
+        {
+          "path": "build/component-resume-20261114/pending-preview-43476542410/mapping.json",
+          "sha256": "8a55737e13aded9d00d5de65d677cad0d859bed81f1588bfc86ebc6f55662005"
+        }
+      ],
+      "new_visual_inspection_performed": true,
+      "review_method": "Actually displayed and inspected this exact contact sheet; individual bytes checked, not separately displayed.",
+      "text_observation": {
+        "contains_text_or_labels": "unknown",
+        "cleanup_before_use": "task_dependent",
+        "internal_svg_text_inspected": false
+      }
+    },
+    {
+      "tile": 16,
+      "cloud_run": 43476542410,
+      "original_sha256": "99863804166bb5e5409f919b2223d1b23acb312883f9bfff129d670b1e73b707",
+      "preview_sha256": "28986c0d109c66a17ed43c4382fd804d54f5be3c7079fe903482678b60dba1cd",
+      "title": "Desktop Centrifuge Male",
+      "source": "togo",
+      "source_id": "2013",
+      "source_url": "https://doi.org/10.7875/togopic.2024.172",
+      "original_archive": {
+        "member": "files/99/99863804166bb5e5409f919b2223d1b23acb312883f9bfff129d670b1e73b707.png",
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42271777119-1-b0000.tar.gz"
+      },
+      "preview_archive": {
+        "member": "previews/99863804166bb5e5409f919b2223d1b23acb312883f9bfff129d670b1e73b707.png",
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42271777119-1-b0000.tar.gz"
+      },
+      "observations": "人物持样本管站在开盖离心机旁，转子孔位和箱体清楚；是设备操作场景，不声明正在运转或已分离。",
+      "default_role_verdict": "relevant",
+      "reviewed_uses": [
+        {
+          "query_id": "component-lab_equipment-centrifuge--primary_object--zh",
+          "component_id": "primary_object",
+          "language": "zh"
+        },
+        {
+          "query_id": "component-lab_equipment-centrifuge--primary_object--en",
+          "component_id": "primary_object",
+          "language": "en"
+        },
+        {
+          "query_id": "component-experimental_actions-centrifugation--centrifuge--zh",
+          "component_id": "centrifuge",
+          "language": "zh"
+        },
+        {
+          "query_id": "component-experimental_actions-centrifugation--centrifuge--en",
+          "component_id": "centrifuge",
+          "language": "en"
+        }
+      ],
+      "visual_evidence": [
+        {
+          "path": "build/component-resume-20261114/pending-preview-43476542410/exact-review-43476542410-1.review.png",
+          "sha256": "a7360321812885228d2db10a7bc4897b9630ece1146999bc7ca7279642a1a836"
+        },
+        {
+          "path": "build/component-resume-20261114/pending-preview-43476542410/mapping.json",
+          "sha256": "8a55737e13aded9d00d5de65d677cad0d859bed81f1588bfc86ebc6f55662005"
+        }
+      ],
+      "new_visual_inspection_performed": true,
+      "review_method": "Actually displayed and inspected this exact contact sheet; individual bytes checked, not separately displayed.",
+      "text_observation": {
+        "contains_text_or_labels": "unknown",
+        "cleanup_before_use": "task_dependent",
+        "internal_svg_text_inspected": false
+      }
+    },
+    {
+      "tile": 17,
+      "cloud_run": 43476542410,
+      "original_sha256": "6695ceb553ba02c160dacb7ed1044d43ce941730858a9de5a40d577a90c6abc1",
+      "preview_sha256": "0cba5723580f1d33ee7922c454aed9a0553caa3edb0437af28caec08201f3569",
+      "title": "Centrifuge",
+      "source": "bioicons",
+      "source_id": "cc-by-4.0/Microbiology/Andi-Wilson/Centrifuge.svg",
+      "source_url": "https://github.com/duerrsimon/bioicons/blob/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-4.0/Microbiology/Andi-Wilson/Centrifuge.svg",
+      "original_archive": {
+        "member": "files/66/6695ceb553ba02c160dacb7ed1044d43ce941730858a9de5a40d577a90c6abc1.svg",
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42239971379-1-b0005.tar.gz"
+      },
+      "preview_archive": {
+        "member": "previews/6695ceb553ba02c160dacb7ed1044d43ce941730858a9de5a40d577a90c6abc1.png",
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42239971379-1-b0005.tar.gz"
+      },
+      "observations": "斜视台式机开盖，内部圆转子、孔位及前方面板可辨；来源Centrifuge支持实验离心机身份。",
+      "default_role_verdict": "relevant",
+      "reviewed_uses": [
+        {
+          "query_id": "component-lab_equipment-centrifuge--primary_object--zh",
+          "component_id": "primary_object",
+          "language": "zh"
+        },
+        {
+          "query_id": "component-lab_equipment-centrifuge--primary_object--en",
+          "component_id": "primary_object",
+          "language": "en"
+        },
+        {
+          "query_id": "component-experimental_actions-centrifugation--centrifuge--zh",
+          "component_id": "centrifuge",
+          "language": "zh"
+        },
+        {
+          "query_id": "component-experimental_actions-centrifugation--centrifuge--en",
+          "component_id": "centrifuge",
+          "language": "en"
+        }
+      ],
+      "visual_evidence": [
+        {
+          "path": "build/component-resume-20261114/pending-preview-43476542410/exact-review-43476542410-1.review.png",
+          "sha256": "a7360321812885228d2db10a7bc4897b9630ece1146999bc7ca7279642a1a836"
+        },
+        {
+          "path": "build/component-resume-20261114/pending-preview-43476542410/mapping.json",
+          "sha256": "8a55737e13aded9d00d5de65d677cad0d859bed81f1588bfc86ebc6f55662005"
+        }
+      ],
+      "new_visual_inspection_performed": true,
+      "review_method": "Actually displayed and inspected this exact contact sheet; individual bytes checked, not separately displayed.",
+      "text_observation": {
+        "contains_text_or_labels": "unknown",
+        "cleanup_before_use": "task_dependent",
+        "internal_svg_text_inspected": false
+      }
+    },
+    {
+      "tile": 18,
+      "cloud_run": 43476542410,
+      "original_sha256": "2d4b2ecc1b708c945a9901e97489d3cf17cf400fbb983648433711f7afb80499",
+      "preview_sha256": "e9c565451e33b9e2083382a928adcd8dae833fb4009920712167d3b803bca36d",
+      "title": "mouse running",
+      "source": "scidraw",
+      "source_id": "0dd48af5-947a-4a43-8e5e-1d42e2bd265f",
+      "source_url": "https://scidraw.io/drawing/mouse-running-afea13d3",
+      "original_archive": {
+        "member": "files/2d/2d4b2ecc1b708c945a9901e97489d3cf17cf400fbb983648433711f7afb80499.svg",
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scidraw-42235890704-1-b0000.tar.gz"
+      },
+      "preview_archive": {
+        "member": "previews/2d4b2ecc1b708c945a9901e97489d3cf17cf400fbb983648433711f7afb80499.png",
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scidraw-42235890704-1-b0000.tar.gz"
+      },
+      "observations": "深色小鼠侧身奔跑姿态，鼻、耳、躯干、肢体与长尾可辨；来源mouse running支持小鼠，不推断品系、性别或实验状态。",
+      "default_role_verdict": "relevant",
+      "reviewed_uses": [
+        {
+          "query_id": "component-experimental_actions-mouse-injection--mouse--zh",
+          "component_id": "mouse",
+          "language": "zh"
+        },
+        {
+          "query_id": "component-experimental_actions-mouse-injection--mouse--en",
+          "component_id": "mouse",
+          "language": "en"
+        }
+      ],
+      "visual_evidence": [
+        {
+          "path": "build/component-resume-20261114/pending-preview-43476542410/exact-review-43476542410-1.review.png",
+          "sha256": "a7360321812885228d2db10a7bc4897b9630ece1146999bc7ca7279642a1a836"
+        },
+        {
+          "path": "build/component-resume-20261114/pending-preview-43476542410/mapping.json",
+          "sha256": "8a55737e13aded9d00d5de65d677cad0d859bed81f1588bfc86ebc6f55662005"
+        }
+      ],
+      "new_visual_inspection_performed": true,
+      "review_method": "Actually displayed and inspected this exact contact sheet; individual bytes checked, not separately displayed.",
+      "text_observation": {
+        "contains_text_or_labels": "unknown",
+        "cleanup_before_use": "task_dependent",
+        "internal_svg_text_inspected": false
+      }
+    },
+    {
+      "tile": 19,
+      "cloud_run": 43476542410,
+      "original_sha256": "10f88d4b1750a745c496fd3190db075be10451b7c21d33f71e10d249d92b5cc1",
+      "preview_sha256": "97a3939a7b6da730601307771e2a661fde7ee9761e7544f989d8e160fb83e1f1",
+      "title": "Lab Mouse",
+      "source": "nih-bioart",
+      "source_id": "279",
+      "source_url": "https://bioart.niaid.nih.gov/bioart/279",
+      "original_archive": {
+        "member": "files/10/10f88d4b1750a745c496fd3190db075be10451b7c21d33f71e10d249d92b5cc1.png",
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/nih-bioart-42236561214-1-b0000.tar.gz"
+      },
+      "preview_archive": {
+        "member": "previews/10f88d4b1750a745c496fd3190db075be10451b7c21d33f71e10d249d92b5cc1.png",
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/nih-bioart-42236561214-1-b0000.tar.gz"
+      },
+      "observations": "完整灰棕小鼠，头耳、身体、四肢与弯曲长尾可辨；来源Lab Mouse，不推断品系/性别。",
+      "default_role_verdict": "relevant",
+      "reviewed_uses": [
+        {
+          "query_id": "component-experimental_actions-mouse-injection--mouse--zh",
+          "component_id": "mouse",
+          "language": "zh"
+        },
+        {
+          "query_id": "component-experimental_actions-mouse-injection--mouse--en",
+          "component_id": "mouse",
+          "language": "en"
+        }
+      ],
+      "visual_evidence": [
+        {
+          "path": "build/component-resume-20261114/pending-preview-43476542410/exact-review-43476542410-1.review.png",
+          "sha256": "a7360321812885228d2db10a7bc4897b9630ece1146999bc7ca7279642a1a836"
+        },
+        {
+          "path": "build/component-resume-20261114/pending-preview-43476542410/mapping.json",
+          "sha256": "8a55737e13aded9d00d5de65d677cad0d859bed81f1588bfc86ebc6f55662005"
+        }
+      ],
+      "new_visual_inspection_performed": true,
+      "review_method": "Actually displayed and inspected this exact contact sheet; individual bytes checked, not separately displayed.",
+      "text_observation": {
+        "contains_text_or_labels": "unknown",
+        "cleanup_before_use": "task_dependent",
+        "internal_svg_text_inspected": false
+      }
+    },
+    {
+      "tile": 20,
+      "cloud_run": 43476542410,
+      "original_sha256": "3b68a752aed0e50251b6e3fdf20d444cecea92e1a0012cfac7b6391d583d741a",
+      "preview_sha256": "2dc6a41053f4927c4640f7f59e9f832987c9548abdbff02de953c7de2e914688",
+      "title": "Mouse Silhouette",
+      "source": "nih-bioart",
+      "source_id": "372",
+      "source_url": "https://bioart.niaid.nih.gov/bioart/372",
+      "original_archive": {
+        "member": "files/3b/3b68a752aed0e50251b6e3fdf20d444cecea92e1a0012cfac7b6391d583d741a.png",
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/nih-bioart-42236561214-1-b0000.tar.gz"
+      },
+      "preview_archive": {
+        "member": "previews/3b68a752aed0e50251b6e3fdf20d444cecea92e1a0012cfac7b6391d583d741a.png",
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/nih-bioart-42236561214-1-b0000.tar.gz"
+      },
+      "observations": "深色完整小鼠剪影，尾、头耳、身体及足部轮廓可辨；深底对比可能不足，不断言品系。",
+      "default_role_verdict": "relevant",
+      "reviewed_uses": [
+        {
+          "query_id": "component-experimental_actions-mouse-injection--mouse--zh",
+          "component_id": "mouse",
+          "language": "zh"
+        },
+        {
+          "query_id": "component-experimental_actions-mouse-injection--mouse--en",
+          "component_id": "mouse",
+          "language": "en"
+        }
+      ],
+      "visual_evidence": [
+        {
+          "path": "build/component-resume-20261114/pending-preview-43476542410/exact-review-43476542410-1.review.png",
+          "sha256": "a7360321812885228d2db10a7bc4897b9630ece1146999bc7ca7279642a1a836"
+        },
+        {
+          "path": "build/component-resume-20261114/pending-preview-43476542410/mapping.json",
+          "sha256": "8a55737e13aded9d00d5de65d677cad0d859bed81f1588bfc86ebc6f55662005"
+        }
+      ],
+      "new_visual_inspection_performed": true,
+      "review_method": "Actually displayed and inspected this exact contact sheet; individual bytes checked, not separately displayed.",
+      "text_observation": {
+        "contains_text_or_labels": "unknown",
+        "cleanup_before_use": "task_dependent",
+        "internal_svg_text_inspected": false
+      }
+    },
+    {
+      "tile": 1,
+      "cloud_run": 43476558082,
+      "original_sha256": "5f5b2f4cf6e9a8ff18ad3e711cf71d34a2068e071a86d6a14f170fd62792ee05",
+      "preview_sha256": "879f6f31669b644a48cbe25e3efe5f85c12b69ad4ae3d09b65797ed406207d86",
+      "title": "mouse rearing",
+      "source": "scidraw",
+      "source_id": "5831f0d6-f351-4d02-a6f5-f4e720ba5863",
+      "source_url": "https://scidraw.io/drawing/mouse-rearing-70d10ef0",
+      "original_archive": {
+        "member": "files/5f/5f5b2f4cf6e9a8ff18ad3e711cf71d34a2068e071a86d6a14f170fd62792ee05.svg",
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scidraw-42235890704-1-b0000.tar.gz"
+      },
+      "preview_archive": {
+        "member": "previews/5f5b2f4cf6e9a8ff18ad3e711cf71d34a2068e071a86d6a14f170fd62792ee05.png",
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scidraw-42235890704-1-b0000.tar.gz"
+      },
+      "observations": "白色小鼠靠角落直立，头、身体、前后肢和长尾清楚；来源mouse rearing，使用时保留行为背景，不暗示注射已发生。",
+      "default_role_verdict": "relevant",
+      "reviewed_uses": [
+        {
+          "query_id": "component-experimental_actions-mouse-injection--mouse--zh",
+          "component_id": "mouse",
+          "language": "zh"
+        },
+        {
+          "query_id": "component-experimental_actions-mouse-injection--mouse--en",
+          "component_id": "mouse",
+          "language": "en"
+        }
+      ],
+      "visual_evidence": [
+        {
+          "path": "build/component-resume-20261114/pending-preview-43476558082/exact-review-43476558082-1.review.png",
+          "sha256": "f8fd4a5b5239306ad9fa370ac6e13a5f3648b7b355cc17b6cedaf40bb5fa6ae4"
+        },
+        {
+          "path": "build/component-resume-20261114/pending-preview-43476558082/mapping.json",
+          "sha256": "72781a4677a6a49d40642529bb46069b01f9a89dc04bdc6dad8eb4c3259728bd"
+        }
+      ],
+      "new_visual_inspection_performed": true,
+      "review_method": "Actually displayed and inspected this exact contact sheet; individual bytes checked, not separately displayed.",
+      "text_observation": {
+        "contains_text_or_labels": "unknown",
+        "cleanup_before_use": "task_dependent",
+        "internal_svg_text_inspected": false
+      }
+    },
+    {
+      "tile": 2,
+      "cloud_run": 43476558082,
+      "original_sha256": "084c28e77b318756785fc27e0a6ba0a404ed22c6e27bb9578e26014da6712322",
+      "preview_sha256": "658c900860206a199273c714795d74c75cb14fd116d43b526bbf6869f9f026f3",
+      "title": "Black Mouse",
+      "source": "scidraw",
+      "source_id": "639ae9ea-9832-4e05-a2b8-1d3dfe2fafd7",
+      "source_url": "https://scidraw.io/drawing/black-mouse-8a34c5d7",
+      "original_archive": {
+        "member": "files/08/084c28e77b318756785fc27e0a6ba0a404ed22c6e27bb9578e26014da6712322.svg",
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scidraw-42235890704-1-b0000.tar.gz"
+      },
+      "preview_archive": {
+        "member": "previews/084c28e77b318756785fc27e0a6ba0a404ed22c6e27bb9578e26014da6712322.png",
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scidraw-42235890704-1-b0000.tar.gz"
+      },
+      "observations": "黑色小鼠斜视全身，耳、头、四足轮廓和长尾可辨；来源Black Mouse，不凭体型判断肥胖模型或病种。",
+      "default_role_verdict": "relevant",
+      "reviewed_uses": [
+        {
+          "query_id": "component-experimental_actions-mouse-injection--mouse--zh",
+          "component_id": "mouse",
+          "language": "zh"
+        },
+        {
+          "query_id": "component-experimental_actions-mouse-injection--mouse--en",
+          "component_id": "mouse",
+          "language": "en"
+        }
+      ],
+      "visual_evidence": [
+        {
+          "path": "build/component-resume-20261114/pending-preview-43476558082/exact-review-43476558082-1.review.png",
+          "sha256": "f8fd4a5b5239306ad9fa370ac6e13a5f3648b7b355cc17b6cedaf40bb5fa6ae4"
+        },
+        {
+          "path": "build/component-resume-20261114/pending-preview-43476558082/mapping.json",
+          "sha256": "72781a4677a6a49d40642529bb46069b01f9a89dc04bdc6dad8eb4c3259728bd"
+        }
+      ],
+      "new_visual_inspection_performed": true,
+      "review_method": "Actually displayed and inspected this exact contact sheet; individual bytes checked, not separately displayed.",
+      "text_observation": {
+        "contains_text_or_labels": "unknown",
+        "cleanup_before_use": "task_dependent",
+        "internal_svg_text_inspected": false
+      }
+    },
+    {
+      "tile": 3,
+      "cloud_run": 43476558082,
+      "original_sha256": "1c1b41f8294e44582dcc3666174978d007e50379be8ba02a3e9abaca97222e7e",
+      "preview_sha256": "6608f47f7522bf9ca2968d89c87746a0f60d0ea7004b6aca5ddc30c1fdd00ac3",
+      "title": "Mouse Outline",
+      "source": "nih-bioart",
+      "source_id": "371",
+      "source_url": "https://bioart.niaid.nih.gov/bioart/371",
+      "original_archive": {
+        "member": "files/1c/1c1b41f8294e44582dcc3666174978d007e50379be8ba02a3e9abaca97222e7e.png",
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/nih-bioart-42236561214-1-b0000.tar.gz"
+      },
+      "preview_archive": {
+        "member": "previews/1c1b41f8294e44582dcc3666174978d007e50379be8ba02a3e9abaca97222e7e.png",
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/nih-bioart-42236561214-1-b0000.tar.gz"
+      },
+      "observations": "灰色轮廓小鼠，尾、身体、耳、鼻须及肢体可辨；来源Mouse Outline，不推断品系。",
+      "default_role_verdict": "relevant",
+      "reviewed_uses": [
+        {
+          "query_id": "component-experimental_actions-mouse-injection--mouse--zh",
+          "component_id": "mouse",
+          "language": "zh"
+        },
+        {
+          "query_id": "component-experimental_actions-mouse-injection--mouse--en",
+          "component_id": "mouse",
+          "language": "en"
+        }
+      ],
+      "visual_evidence": [
+        {
+          "path": "build/component-resume-20261114/pending-preview-43476558082/exact-review-43476558082-1.review.png",
+          "sha256": "f8fd4a5b5239306ad9fa370ac6e13a5f3648b7b355cc17b6cedaf40bb5fa6ae4"
+        },
+        {
+          "path": "build/component-resume-20261114/pending-preview-43476558082/mapping.json",
+          "sha256": "72781a4677a6a49d40642529bb46069b01f9a89dc04bdc6dad8eb4c3259728bd"
+        }
+      ],
+      "new_visual_inspection_performed": true,
+      "review_method": "Actually displayed and inspected this exact contact sheet; individual bytes checked, not separately displayed.",
+      "text_observation": {
+        "contains_text_or_labels": "unknown",
+        "cleanup_before_use": "task_dependent",
+        "internal_svg_text_inspected": false
+      }
+    },
+    {
+      "tile": 4,
+      "cloud_run": 43476558082,
+      "original_sha256": "641fe3d778d116828071d5b6fb79927976b30bad2c9345d6a8b2376af4ee9526",
+      "preview_sha256": "6028dc7bba301926021f1450ec3b590437513d6d8687cebf5e079e27a02710fc",
+      "title": "mouse eating",
+      "source": "scidraw",
+      "source_id": "c9333169-6f87-4fac-a9ca-ff21da89cb54",
+      "source_url": "https://scidraw.io/drawing/mouse-eating-24fbb188",
+      "original_archive": {
+        "member": "files/64/641fe3d778d116828071d5b6fb79927976b30bad2c9345d6a8b2376af4ee9526.svg",
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scidraw-42235890704-1-b0000.tar.gz"
+      },
+      "preview_archive": {
+        "member": "previews/641fe3d778d116828071d5b6fb79927976b30bad2c9345d6a8b2376af4ee9526.png",
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scidraw-42235890704-1-b0000.tar.gz"
+      },
+      "observations": "小鼠双前爪持食物，头耳、身体、后足及尾巴清楚；来源mouse eating，仅为可取用的完整动物，不当作注射动作。",
+      "default_role_verdict": "relevant",
+      "reviewed_uses": [
+        {
+          "query_id": "component-experimental_actions-mouse-injection--mouse--zh",
+          "component_id": "mouse",
+          "language": "zh"
+        },
+        {
+          "query_id": "component-experimental_actions-mouse-injection--mouse--en",
+          "component_id": "mouse",
+          "language": "en"
+        }
+      ],
+      "visual_evidence": [
+        {
+          "path": "build/component-resume-20261114/pending-preview-43476558082/exact-review-43476558082-1.review.png",
+          "sha256": "f8fd4a5b5239306ad9fa370ac6e13a5f3648b7b355cc17b6cedaf40bb5fa6ae4"
+        },
+        {
+          "path": "build/component-resume-20261114/pending-preview-43476558082/mapping.json",
+          "sha256": "72781a4677a6a49d40642529bb46069b01f9a89dc04bdc6dad8eb4c3259728bd"
+        }
+      ],
+      "new_visual_inspection_performed": true,
+      "review_method": "Actually displayed and inspected this exact contact sheet; individual bytes checked, not separately displayed.",
+      "text_observation": {
+        "contains_text_or_labels": "unknown",
+        "cleanup_before_use": "task_dependent",
+        "internal_svg_text_inspected": false
+      }
+    },
+    {
+      "tile": 5,
+      "cloud_run": 43476558082,
+      "original_sha256": "4dc15e4a1fb04d7b9548e6cd987a2f68b514e922a4b89fc7dd13212c4395f89e",
+      "preview_sha256": "d35243d96b4e03bb3fdd893e3b7ab7972ab3442d60fb44f4348b5b92c8bf71c5",
+      "title": "Plastic Syringe Needle",
+      "source": "lab-equipment",
+      "source_id": "svg/PlasticSyringeNeedle.svg",
+      "source_url": "https://github.com/KYU49/SvgCollectionOfLabEquipment/blob/702ca002ec2a7ba40c0369ef7b66075f262315b3/svg/PlasticSyringeNeedle.svg",
+      "original_archive": {
+        "member": "files/4d/4dc15e4a1fb04d7b9548e6cd987a2f68b514e922a4b89fc7dd13212c4395f89e.svg",
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/lab-equipment-42237927278-1-b0000.tar.gz"
+      },
+      "preview_archive": {
+        "member": "previews/4dc15e4a1fb04d7b9548e6cd987a2f68b514e922a4b89fc7dd13212c4395f89e.png",
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/lab-equipment-42237927278-1-b0000.tar.gz"
+      },
+      "observations": "只有塑料接头及长针管，没有注射器筒和推杆；可用针头部件，但不满足本角色完整注射器要求。",
+      "default_role_verdict": "irrelevant",
+      "reviewed_uses": [
+        {
+          "query_id": "component-experimental_actions-mouse-injection--syringe--zh",
+          "component_id": "syringe",
+          "language": "zh"
+        },
+        {
+          "query_id": "component-experimental_actions-mouse-injection--syringe--en",
+          "component_id": "syringe",
+          "language": "en"
+        }
+      ],
+      "visual_evidence": [
+        {
+          "path": "build/component-resume-20261114/pending-preview-43476558082/exact-review-43476558082-1.review.png",
+          "sha256": "f8fd4a5b5239306ad9fa370ac6e13a5f3648b7b355cc17b6cedaf40bb5fa6ae4"
+        },
+        {
+          "path": "build/component-resume-20261114/pending-preview-43476558082/mapping.json",
+          "sha256": "72781a4677a6a49d40642529bb46069b01f9a89dc04bdc6dad8eb4c3259728bd"
+        }
+      ],
+      "new_visual_inspection_performed": true,
+      "review_method": "Actually displayed and inspected this exact contact sheet; individual bytes checked, not separately displayed.",
+      "text_observation": {
+        "contains_text_or_labels": "unknown",
+        "cleanup_before_use": "task_dependent",
+        "internal_svg_text_inspected": false
+      }
+    },
+    {
+      "tile": 6,
+      "cloud_run": 43476558082,
+      "original_sha256": "f13cac2a1b0f1358688d313a823b079132b774ef9c50ec754e214fd4c01699cb",
+      "preview_sha256": "24c298bf249f3879e0579010dd107cd78f9cce15afaf6a9f2fcd97f13588acdc",
+      "title": "Glass Syringe Needle",
+      "source": "lab-equipment",
+      "source_id": "svg/GlassSyringeNeedle.svg",
+      "source_url": "https://github.com/KYU49/SvgCollectionOfLabEquipment/blob/702ca002ec2a7ba40c0369ef7b66075f262315b3/svg/GlassSyringeNeedle.svg",
+      "original_archive": {
+        "member": "files/f1/f13cac2a1b0f1358688d313a823b079132b774ef9c50ec754e214fd4c01699cb.svg",
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/lab-equipment-42237927278-1-b0000.tar.gz"
+      },
+      "preview_archive": {
+        "member": "previews/f13cac2a1b0f1358688d313a823b079132b774ef9c50ec754e214fd4c01699cb.png",
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/lab-equipment-42237927278-1-b0000.tar.gz"
+      },
+      "observations": "玻璃针部及上端接头，主体为细长弯针，没有注射器筒与推杆；配件不能替代完整器具。",
+      "default_role_verdict": "irrelevant",
+      "reviewed_uses": [
+        {
+          "query_id": "component-experimental_actions-mouse-injection--syringe--zh",
+          "component_id": "syringe",
+          "language": "zh"
+        },
+        {
+          "query_id": "component-experimental_actions-mouse-injection--syringe--en",
+          "component_id": "syringe",
+          "language": "en"
+        }
+      ],
+      "visual_evidence": [
+        {
+          "path": "build/component-resume-20261114/pending-preview-43476558082/exact-review-43476558082-1.review.png",
+          "sha256": "f8fd4a5b5239306ad9fa370ac6e13a5f3648b7b355cc17b6cedaf40bb5fa6ae4"
+        },
+        {
+          "path": "build/component-resume-20261114/pending-preview-43476558082/mapping.json",
+          "sha256": "72781a4677a6a49d40642529bb46069b01f9a89dc04bdc6dad8eb4c3259728bd"
+        }
+      ],
+      "new_visual_inspection_performed": true,
+      "review_method": "Actually displayed and inspected this exact contact sheet; individual bytes checked, not separately displayed.",
+      "text_observation": {
+        "contains_text_or_labels": "unknown",
+        "cleanup_before_use": "task_dependent",
+        "internal_svg_text_inspected": false
+      }
+    },
+    {
+      "tile": 7,
+      "cloud_run": 43476558082,
+      "original_sha256": "a1fcc93ed9206b935082a003e881a6c579f94f3305e726fe7329031e98a2a660",
+      "preview_sha256": "05f504153133287fa4e2081da0a19161c2777f463bed1b0b6eb35fe2291b6ad4",
+      "title": "Plastic Syringe With Needle",
+      "source": "lab-equipment",
+      "source_id": "svg/PlasticSyringeWithNeedle.svg",
+      "source_url": "https://github.com/KYU49/SvgCollectionOfLabEquipment/blob/702ca002ec2a7ba40c0369ef7b66075f262315b3/svg/PlasticSyringeWithNeedle.svg",
+      "original_archive": {
+        "member": "files/a1/a1fcc93ed9206b935082a003e881a6c579f94f3305e726fe7329031e98a2a660.svg",
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/lab-equipment-42237927278-1-b0000.tar.gz"
+      },
+      "preview_archive": {
+        "member": "previews/a1fcc93ed9206b935082a003e881a6c579f94f3305e726fe7329031e98a2a660.png",
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/lab-equipment-42237927278-1-b0000.tar.gz"
+      },
+      "observations": "线描注射器可见推杆、筒体、指托、接口和长针，来源Plastic Syringe With Needle；不推断剂量或注射途径。",
+      "default_role_verdict": "relevant",
+      "reviewed_uses": [
+        {
+          "query_id": "component-experimental_actions-mouse-injection--syringe--zh",
+          "component_id": "syringe",
+          "language": "zh"
+        },
+        {
+          "query_id": "component-experimental_actions-mouse-injection--syringe--en",
+          "component_id": "syringe",
+          "language": "en"
+        }
+      ],
+      "visual_evidence": [
+        {
+          "path": "build/component-resume-20261114/pending-preview-43476558082/exact-review-43476558082-1.review.png",
+          "sha256": "f8fd4a5b5239306ad9fa370ac6e13a5f3648b7b355cc17b6cedaf40bb5fa6ae4"
+        },
+        {
+          "path": "build/component-resume-20261114/pending-preview-43476558082/mapping.json",
+          "sha256": "72781a4677a6a49d40642529bb46069b01f9a89dc04bdc6dad8eb4c3259728bd"
+        }
+      ],
+      "new_visual_inspection_performed": true,
+      "review_method": "Actually displayed and inspected this exact contact sheet; individual bytes checked, not separately displayed.",
+      "text_observation": {
+        "contains_text_or_labels": "unknown",
+        "cleanup_before_use": "task_dependent",
+        "internal_svg_text_inspected": false
+      }
+    },
+    {
+      "tile": 8,
+      "cloud_run": 43476558082,
+      "original_sha256": "30a3d824beaa830e4d88af6571ec4a4486ef1a1a26ca95a1261feeeb3fc40147",
+      "preview_sha256": "7bb3bfdb1bc3c2728d2a35b7192fd9abd40fdd457555b8122bc14357ed3dfbe4",
+      "title": "needle syringe",
+      "source": "togo",
+      "source_id": "329",
+      "source_url": "https://doi.org/10.7875/togopic.2013.21",
+      "original_archive": {
+        "member": "files/30/30a3d824beaa830e4d88af6571ec4a4486ef1a1a26ca95a1261feeeb3fc40147.svg",
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42249870031-1-b0000.tar.gz"
+      },
+      "preview_archive": {
+        "member": "previews/30a3d824beaa830e4d88af6571ec4a4486ef1a1a26ca95a1261feeeb3fc40147.png",
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42249870031-1-b0000.tar.gz"
+      },
+      "observations": "立体注射器筒、活塞推杆和细长针可辨，有刻线与SINGLE USE ONLY文字；不由刻线推断本任务剂量，标签按需清理但保留来源署名。",
+      "default_role_verdict": "relevant",
+      "reviewed_uses": [
+        {
+          "query_id": "component-experimental_actions-mouse-injection--syringe--zh",
+          "component_id": "syringe",
+          "language": "zh"
+        },
+        {
+          "query_id": "component-experimental_actions-mouse-injection--syringe--en",
+          "component_id": "syringe",
+          "language": "en"
+        }
+      ],
+      "visual_evidence": [
+        {
+          "path": "build/component-resume-20261114/pending-preview-43476558082/exact-review-43476558082-1.review.png",
+          "sha256": "f8fd4a5b5239306ad9fa370ac6e13a5f3648b7b355cc17b6cedaf40bb5fa6ae4"
+        },
+        {
+          "path": "build/component-resume-20261114/pending-preview-43476558082/mapping.json",
+          "sha256": "72781a4677a6a49d40642529bb46069b01f9a89dc04bdc6dad8eb4c3259728bd"
+        }
+      ],
+      "new_visual_inspection_performed": true,
+      "review_method": "Actually displayed and inspected this exact contact sheet; individual bytes checked, not separately displayed.",
+      "text_observation": {
+        "contains_text_or_labels": "present",
+        "cleanup_before_use": "task_dependent",
+        "internal_svg_text_inspected": false
+      }
+    },
+    {
+      "tile": 9,
+      "cloud_run": 43476558082,
+      "original_sha256": "3166f934b211a64f4aed25460b8dd906d085adbf84180e98974df29fbc2c2ceb",
+      "preview_sha256": "26f3bb0b533f0aed0fcc4f6dae38b546bd9aa78bcafa830147e6171a5ada79c0",
+      "title": "culture flask filled nolid",
+      "source": "bioicons",
+      "source_id": "cc-by-3.0/Microbiology/Servier/culture-flask-filled-nolid.svg",
+      "source_url": "https://github.com/duerrsimon/bioicons/blob/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-3.0/Microbiology/Servier/culture-flask-filled-nolid.svg",
+      "original_archive": {
+        "member": "files/31/3166f934b211a64f4aed25460b8dd906d085adbf84180e98974df29fbc2c2ceb.svg",
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42251588741-1-b0003.tar.gz"
+      },
+      "preview_archive": {
+        "member": "previews/3166f934b211a64f4aed25460b8dd906d085adbf84180e98974df29fbc2c2ceb.png",
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42251588741-1-b0003.tar.gz"
+      },
+      "observations": "扁平培养瓶、带螺纹的开口和紫色液体可辨，无瓶盖；来源culture flask filled nolid，不能说成密封或无菌培养。",
+      "default_role_verdict": "relevant",
+      "reviewed_uses": [
+        {
+          "query_id": "component-experimental_actions-cell-culture--culture_flask--zh",
+          "component_id": "culture_flask",
+          "language": "zh"
+        },
+        {
+          "query_id": "component-experimental_actions-cell-culture--culture_flask--en",
+          "component_id": "culture_flask",
+          "language": "en"
+        }
+      ],
+      "visual_evidence": [
+        {
+          "path": "build/component-resume-20261114/pending-preview-43476558082/exact-review-43476558082-1.review.png",
+          "sha256": "f8fd4a5b5239306ad9fa370ac6e13a5f3648b7b355cc17b6cedaf40bb5fa6ae4"
+        },
+        {
+          "path": "build/component-resume-20261114/pending-preview-43476558082/mapping.json",
+          "sha256": "72781a4677a6a49d40642529bb46069b01f9a89dc04bdc6dad8eb4c3259728bd"
+        }
+      ],
+      "new_visual_inspection_performed": true,
+      "review_method": "Actually displayed and inspected this exact contact sheet; individual bytes checked, not separately displayed.",
+      "text_observation": {
+        "contains_text_or_labels": "unknown",
+        "cleanup_before_use": "task_dependent",
+        "internal_svg_text_inspected": false
+      }
+    },
+    {
+      "tile": 10,
+      "cloud_run": 43476558082,
+      "original_sha256": "af93f0654d885a428bb73f59ed25a7289ca05ec65ab9a1bed5588c87a57db321",
+      "preview_sha256": "d5d6af72edecc649f1e9fc8425f4d748cb4981c673c3edc45b0b9480d9ff7fc6",
+      "title": "culture flask empty",
+      "source": "bioicons",
+      "source_id": "cc-by-3.0/Microbiology/Servier/culture-flask-empty.svg",
+      "source_url": "https://github.com/duerrsimon/bioicons/blob/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-3.0/Microbiology/Servier/culture-flask-empty.svg",
+      "original_archive": {
+        "member": "files/af/af93f0654d885a428bb73f59ed25a7289ca05ec65ab9a1bed5588c87a57db321.svg",
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42251588741-1-b0003.tar.gz"
+      },
+      "preview_archive": {
+        "member": "previews/af93f0654d885a428bb73f59ed25a7289ca05ec65ab9a1bed5588c87a57db321.png",
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42251588741-1-b0003.tar.gz"
+      },
+      "observations": "透明扁平培养瓶与橙色盖清楚，未见细胞或培养结果；来源culture flask empty，表示空培养瓶。",
+      "default_role_verdict": "relevant",
+      "reviewed_uses": [
+        {
+          "query_id": "component-experimental_actions-cell-culture--culture_flask--zh",
+          "component_id": "culture_flask",
+          "language": "zh"
+        },
+        {
+          "query_id": "component-experimental_actions-cell-culture--culture_flask--en",
+          "component_id": "culture_flask",
+          "language": "en"
+        }
+      ],
+      "visual_evidence": [
+        {
+          "path": "build/component-resume-20261114/pending-preview-43476558082/exact-review-43476558082-1.review.png",
+          "sha256": "f8fd4a5b5239306ad9fa370ac6e13a5f3648b7b355cc17b6cedaf40bb5fa6ae4"
+        },
+        {
+          "path": "build/component-resume-20261114/pending-preview-43476558082/mapping.json",
+          "sha256": "72781a4677a6a49d40642529bb46069b01f9a89dc04bdc6dad8eb4c3259728bd"
+        }
+      ],
+      "new_visual_inspection_performed": true,
+      "review_method": "Actually displayed and inspected this exact contact sheet; individual bytes checked, not separately displayed.",
+      "text_observation": {
+        "contains_text_or_labels": "unknown",
+        "cleanup_before_use": "task_dependent",
+        "internal_svg_text_inspected": false
+      }
+    },
+    {
+      "tile": 11,
+      "cloud_run": 43476558082,
+      "original_sha256": "dc9f70130454321c63c8cf6c69081942789268601e9150c788e71f04cad2a1f5",
+      "preview_sha256": "0d0d33030c86a7233fc484ca4122a4b8f2b3f9f45f114d03f301539ea460ea29",
+      "title": "culture flask filled lid",
+      "source": "bioicons",
+      "source_id": "cc-by-3.0/Microbiology/Servier/culture-flask-filled-lid.svg",
+      "source_url": "https://github.com/duerrsimon/bioicons/blob/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-3.0/Microbiology/Servier/culture-flask-filled-lid.svg",
+      "original_archive": {
+        "member": "files/dc/dc9f70130454321c63c8cf6c69081942789268601e9150c788e71f04cad2a1f5.svg",
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42251588741-1-b0003.tar.gz"
+      },
+      "preview_archive": {
+        "member": "previews/dc9f70130454321c63c8cf6c69081942789268601e9150c788e71f04cad2a1f5.png",
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42251588741-1-b0003.tar.gz"
+      },
+      "observations": "有盖扁平培养瓶内有紫色液面，瓶体/瓶颈清楚；只记录源图液体，不推断细胞种类或培养成败。",
+      "default_role_verdict": "relevant",
+      "reviewed_uses": [
+        {
+          "query_id": "component-experimental_actions-cell-culture--culture_flask--zh",
+          "component_id": "culture_flask",
+          "language": "zh"
+        },
+        {
+          "query_id": "component-experimental_actions-cell-culture--culture_flask--en",
+          "component_id": "culture_flask",
+          "language": "en"
+        }
+      ],
+      "visual_evidence": [
+        {
+          "path": "build/component-resume-20261114/pending-preview-43476558082/exact-review-43476558082-1.review.png",
+          "sha256": "f8fd4a5b5239306ad9fa370ac6e13a5f3648b7b355cc17b6cedaf40bb5fa6ae4"
+        },
+        {
+          "path": "build/component-resume-20261114/pending-preview-43476558082/mapping.json",
+          "sha256": "72781a4677a6a49d40642529bb46069b01f9a89dc04bdc6dad8eb4c3259728bd"
+        }
+      ],
+      "new_visual_inspection_performed": true,
+      "review_method": "Actually displayed and inspected this exact contact sheet; individual bytes checked, not separately displayed.",
+      "text_observation": {
+        "contains_text_or_labels": "unknown",
+        "cleanup_before_use": "task_dependent",
+        "internal_svg_text_inspected": false
+      }
+    },
+    {
+      "tile": 12,
+      "cloud_run": 43476558082,
+      "original_sha256": "087195be2fb40e87d27d9ad52ec43dc6b2a449a2d2e5e0962822eb39d66112e0",
+      "preview_sha256": "350cbd882e1bd2987e205ee1054186a295e61a34b248fb5418362b3d35113b7a",
+      "title": "culture flask stacked",
+      "source": "bioicons",
+      "source_id": "cc-by-3.0/Microbiology/Servier/culture-flask-stacked.svg",
+      "source_url": "https://github.com/duerrsimon/bioicons/blob/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-3.0/Microbiology/Servier/culture-flask-stacked.svg",
+      "original_archive": {
+        "member": "files/08/087195be2fb40e87d27d9ad52ec43dc6b2a449a2d2e5e0962822eb39d66112e0.svg",
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42251588741-1-b0003.tar.gz"
+      },
+      "preview_archive": {
+        "member": "previews/087195be2fb40e87d27d9ad52ec43dc6b2a449a2d2e5e0962822eb39d66112e0.png",
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42251588741-1-b0003.tar.gz"
+      },
+      "observations": "四个有盖培养瓶叠放，紫色液体和各瓶轮廓可辨；可作为培养瓶组，数量不代表实验重复或实际样本量。",
+      "default_role_verdict": "relevant",
+      "reviewed_uses": [
+        {
+          "query_id": "component-experimental_actions-cell-culture--culture_flask--zh",
+          "component_id": "culture_flask",
+          "language": "zh"
+        },
+        {
+          "query_id": "component-experimental_actions-cell-culture--culture_flask--en",
+          "component_id": "culture_flask",
+          "language": "en"
+        }
+      ],
+      "visual_evidence": [
+        {
+          "path": "build/component-resume-20261114/pending-preview-43476558082/exact-review-43476558082-1.review.png",
+          "sha256": "f8fd4a5b5239306ad9fa370ac6e13a5f3648b7b355cc17b6cedaf40bb5fa6ae4"
+        },
+        {
+          "path": "build/component-resume-20261114/pending-preview-43476558082/mapping.json",
+          "sha256": "72781a4677a6a49d40642529bb46069b01f9a89dc04bdc6dad8eb4c3259728bd"
+        }
+      ],
+      "new_visual_inspection_performed": true,
+      "review_method": "Actually displayed and inspected this exact contact sheet; individual bytes checked, not separately displayed.",
+      "text_observation": {
+        "contains_text_or_labels": "unknown",
+        "cleanup_before_use": "task_dependent",
+        "internal_svg_text_inspected": false
+      }
+    },
+    {
+      "tile": 13,
+      "cloud_run": 43476558082,
+      "original_sha256": "06bcfb5618058c69a80bea75e0f87daf3dca5bc990d66d3b7711d8b5f8a5262d",
+      "preview_sha256": "3cf0047875d6ebda4b3db4b20a5f0328218c2a10f3cc2dc6db53c0a2873ca636",
+      "title": "Animal cell 3D",
+      "source": "togo",
+      "source_id": "1884",
+      "source_url": "https://doi.org/10.7875/togopic.2024.043",
+      "original_archive": {
+        "member": "files/06/06bcfb5618058c69a80bea75e0f87daf3dca5bc990d66d3b7711d8b5f8a5262d.svg",
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42261598057-1-b0001.tar.gz"
+      },
+      "preview_archive": {
+        "member": "previews/06bcfb5618058c69a80bea75e0f87daf3dca5bc990d66d3b7711d8b5f8a5262d.png",
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42261598057-1-b0001.tar.gz"
+      },
+      "observations": "立体细胞剖面可见细胞边界、细胞核和内膜结构，来源Animal cell 3D；可作通用动物细胞，不断言具体细胞类型。",
+      "default_role_verdict": "relevant",
+      "reviewed_uses": [
+        {
+          "query_id": "component-experimental_actions-cell-culture--animal_cell--zh",
+          "component_id": "animal_cell",
+          "language": "zh"
+        },
+        {
+          "query_id": "component-experimental_actions-cell-culture--animal_cell--en",
+          "component_id": "animal_cell",
+          "language": "en"
+        }
+      ],
+      "visual_evidence": [
+        {
+          "path": "build/component-resume-20261114/pending-preview-43476558082/exact-review-43476558082-1.review.png",
+          "sha256": "f8fd4a5b5239306ad9fa370ac6e13a5f3648b7b355cc17b6cedaf40bb5fa6ae4"
+        },
+        {
+          "path": "build/component-resume-20261114/pending-preview-43476558082/mapping.json",
+          "sha256": "72781a4677a6a49d40642529bb46069b01f9a89dc04bdc6dad8eb4c3259728bd"
+        }
+      ],
+      "new_visual_inspection_performed": true,
+      "review_method": "Actually displayed and inspected this exact contact sheet; individual bytes checked, not separately displayed.",
+      "text_observation": {
+        "contains_text_or_labels": "unknown",
+        "cleanup_before_use": "task_dependent",
+        "internal_svg_text_inspected": false
+      }
+    },
+    {
+      "tile": 14,
+      "cloud_run": 43476558082,
+      "original_sha256": "9a8280ab46a28c0be147902274f597cd7b05303b57dfd1efd589d6e362643523",
+      "preview_sha256": "8faeb7ae86041f97ddb13afc2dac6567bed1d99b6a4ee21b09b9d4df95e738a0",
+      "title": "Animal cells",
+      "source": "bioicons",
+      "source_id": "cc-by-4.0/Microbiology/SwissBioPics/Animal_cells.svg",
+      "source_url": "https://github.com/duerrsimon/bioicons/blob/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-4.0/Microbiology/SwissBioPics/Animal_cells.svg",
+      "original_archive": {
+        "member": "files/9a/9a8280ab46a28c0be147902274f597cd7b05303b57dfd1efd589d6e362643523.svg",
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42239971379-1-b0005.tar.gz"
+      },
+      "preview_archive": {
+        "member": "previews/9a8280ab46a28c0be147902274f597cd7b05303b57dfd1efd589d6e362643523.png",
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42239971379-1-b0005.tar.gz"
+      },
+      "observations": "灰色动物细胞剖面含核、膜性结构与细密纤维，来源Animal cells；适合放大显示，小尺寸细节与浅灰对比有限，角落署名保留于记录。",
+      "default_role_verdict": "relevant",
+      "reviewed_uses": [
+        {
+          "query_id": "component-experimental_actions-cell-culture--animal_cell--zh",
+          "component_id": "animal_cell",
+          "language": "zh"
+        },
+        {
+          "query_id": "component-experimental_actions-cell-culture--animal_cell--en",
+          "component_id": "animal_cell",
+          "language": "en"
+        }
+      ],
+      "visual_evidence": [
+        {
+          "path": "build/component-resume-20261114/pending-preview-43476558082/exact-review-43476558082-1.review.png",
+          "sha256": "f8fd4a5b5239306ad9fa370ac6e13a5f3648b7b355cc17b6cedaf40bb5fa6ae4"
+        },
+        {
+          "path": "build/component-resume-20261114/pending-preview-43476558082/mapping.json",
+          "sha256": "72781a4677a6a49d40642529bb46069b01f9a89dc04bdc6dad8eb4c3259728bd"
+        }
+      ],
+      "new_visual_inspection_performed": true,
+      "review_method": "Actually displayed and inspected this exact contact sheet; individual bytes checked, not separately displayed.",
+      "text_observation": {
+        "contains_text_or_labels": "present",
+        "cleanup_before_use": "task_dependent",
+        "internal_svg_text_inspected": false
+      }
+    },
+    {
+      "tile": 15,
+      "cloud_run": 43476558082,
+      "original_sha256": "4b9cf4168e29cc7a5b51b2ebc7974873459aa70d9a2d6f81d8ba5af0d0406c85",
+      "preview_sha256": "9e21f4db0932a433dfb8d4b7346358410a42af038e9c3933dd5ac466a5e60966",
+      "title": "Animal Cell drawing",
+      "source": "scidraw",
+      "source_id": "6ffe8449-2d38-4b23-a406-8e3a4b7eedcd",
+      "source_url": "https://scidraw.io/drawing/animal-cell-drawing-10b51f68",
+      "original_archive": {
+        "member": "files/4b/4b9cf4168e29cc7a5b51b2ebc7974873459aa70d9a2d6f81d8ba5af0d0406c85.png",
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scidraw-42235890704-1-b0000.tar.gz"
+      },
+      "preview_archive": {
+        "member": "previews/4b9cf4168e29cc7a5b51b2ebc7974873459aa70d9a2d6f81d8ba5af0d0406c85.png",
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scidraw-42235890704-1-b0000.tar.gz"
+      },
+      "observations": "手绘动物细胞剖面，核、内部膜系与线粒体样结构清楚，来源Animal Cell drawing；仅作通用细胞，图形不支持特定物种/细胞系。",
+      "default_role_verdict": "relevant",
+      "reviewed_uses": [
+        {
+          "query_id": "component-experimental_actions-cell-culture--animal_cell--zh",
+          "component_id": "animal_cell",
+          "language": "zh"
+        },
+        {
+          "query_id": "component-experimental_actions-cell-culture--animal_cell--en",
+          "component_id": "animal_cell",
+          "language": "en"
+        }
+      ],
+      "visual_evidence": [
+        {
+          "path": "build/component-resume-20261114/pending-preview-43476558082/exact-review-43476558082-1.review.png",
+          "sha256": "f8fd4a5b5239306ad9fa370ac6e13a5f3648b7b355cc17b6cedaf40bb5fa6ae4"
+        },
+        {
+          "path": "build/component-resume-20261114/pending-preview-43476558082/mapping.json",
+          "sha256": "72781a4677a6a49d40642529bb46069b01f9a89dc04bdc6dad8eb4c3259728bd"
+        }
+      ],
+      "new_visual_inspection_performed": true,
+      "review_method": "Actually displayed and inspected this exact contact sheet; individual bytes checked, not separately displayed.",
+      "text_observation": {
+        "contains_text_or_labels": "unknown",
+        "cleanup_before_use": "task_dependent",
+        "internal_svg_text_inspected": false
+      }
+    },
+    {
+      "tile": 16,
+      "cloud_run": 43476558082,
+      "original_sha256": "30ac7956a6718c91e2c203684783ba8a09cf5aa01f6fa3e1b6f2f0048a485f79",
+      "preview_sha256": "ca2fdde1f2b349eb676f98c6f5e88079b8a1c8cf86beb16cbb839034e39d45fa",
+      "title": "Centrifuge tube 1",
+      "source": "togo",
+      "source_id": "1356",
+      "source_url": "https://doi.org/10.7875/togopic.2022.392",
+      "original_archive": {
+        "member": "files/30/30ac7956a6718c91e2c203684783ba8a09cf5aa01f6fa3e1b6f2f0048a485f79.png",
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42249870031-1-b0002.tar.gz"
+      },
+      "preview_archive": {
+        "member": "previews/30ac7956a6718c91e2c203684783ba8a09cf5aa01f6fa3e1b6f2f0048a485f79.png",
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42249870031-1-b0002.tar.gz"
+      },
+      "observations": "绿色盖、细长管体、锥底与刻线可辨，来源Centrifuge tube 1；不推断容量或最高转速。",
+      "default_role_verdict": "relevant",
+      "reviewed_uses": [
+        {
+          "query_id": "component-experimental_actions-centrifugation--centrifuge_tube--zh",
+          "component_id": "centrifuge_tube",
+          "language": "zh"
+        },
+        {
+          "query_id": "component-experimental_actions-centrifugation--centrifuge_tube--en",
+          "component_id": "centrifuge_tube",
+          "language": "en"
+        }
+      ],
+      "visual_evidence": [
+        {
+          "path": "build/component-resume-20261114/pending-preview-43476558082/exact-review-43476558082-1.review.png",
+          "sha256": "f8fd4a5b5239306ad9fa370ac6e13a5f3648b7b355cc17b6cedaf40bb5fa6ae4"
+        },
+        {
+          "path": "build/component-resume-20261114/pending-preview-43476558082/mapping.json",
+          "sha256": "72781a4677a6a49d40642529bb46069b01f9a89dc04bdc6dad8eb4c3259728bd"
+        }
+      ],
+      "new_visual_inspection_performed": true,
+      "review_method": "Actually displayed and inspected this exact contact sheet; individual bytes checked, not separately displayed.",
+      "text_observation": {
+        "contains_text_or_labels": "unknown",
+        "cleanup_before_use": "task_dependent",
+        "internal_svg_text_inspected": false
+      }
+    },
+    {
+      "tile": 17,
+      "cloud_run": 43476558082,
+      "original_sha256": "59d1db9b97b7d3790a112c1d2da32faf5e4f73b7606ea1a3076c0d7ec9640133",
+      "preview_sha256": "8cb4990285fce79e8ce0a059787e73b3434d15d079b2c4c517b5d849c6de0fb8",
+      "title": "Centrifuge tube",
+      "source": "togo",
+      "source_id": "728",
+      "source_url": "https://doi.org/10.7875/togopic.2020.141",
+      "original_archive": {
+        "member": "files/59/59d1db9b97b7d3790a112c1d2da32faf5e4f73b7606ea1a3076c0d7ec9640133.png",
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42249870031-1-b0001.tar.gz"
+      },
+      "preview_archive": {
+        "member": "previews/59d1db9b97b7d3790a112c1d2da32faf5e4f73b7606ea1a3076c0d7ec9640133.png",
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42249870031-1-b0001.tar.gz"
+      },
+      "observations": "斜置透明圆底带盖管，内有浅蓝液面；来源明确Centrifuge tube，管体与盖可辨，不改称锥底管或推断规格。",
+      "default_role_verdict": "relevant",
+      "reviewed_uses": [
+        {
+          "query_id": "component-experimental_actions-centrifugation--centrifuge_tube--zh",
+          "component_id": "centrifuge_tube",
+          "language": "zh"
+        },
+        {
+          "query_id": "component-experimental_actions-centrifugation--centrifuge_tube--en",
+          "component_id": "centrifuge_tube",
+          "language": "en"
+        }
+      ],
+      "visual_evidence": [
+        {
+          "path": "build/component-resume-20261114/pending-preview-43476558082/exact-review-43476558082-1.review.png",
+          "sha256": "f8fd4a5b5239306ad9fa370ac6e13a5f3648b7b355cc17b6cedaf40bb5fa6ae4"
+        },
+        {
+          "path": "build/component-resume-20261114/pending-preview-43476558082/mapping.json",
+          "sha256": "72781a4677a6a49d40642529bb46069b01f9a89dc04bdc6dad8eb4c3259728bd"
+        }
+      ],
+      "new_visual_inspection_performed": true,
+      "review_method": "Actually displayed and inspected this exact contact sheet; individual bytes checked, not separately displayed.",
+      "text_observation": {
+        "contains_text_or_labels": "unknown",
+        "cleanup_before_use": "task_dependent",
+        "internal_svg_text_inspected": false
+      }
+    },
+    {
+      "tile": 18,
+      "cloud_run": 43476558082,
+      "original_sha256": "4a2fd837d1be61460f50949b32ba7322f2d2a817e28e8616940e92b098338ff3",
+      "preview_sha256": "436fb3f558d64189c73a5ace3bcc43b9b69221000510f1cafef61a3d8f191e31",
+      "title": "Centrifuge tube",
+      "source": "togo",
+      "source_id": "636",
+      "source_url": "https://doi.org/10.7875/togopic.2020.49",
+      "original_archive": {
+        "member": "files/4a/4a2fd837d1be61460f50949b32ba7322f2d2a817e28e8616940e92b098338ff3.svg",
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42249870031-1-b0001.tar.gz"
+      },
+      "preview_archive": {
+        "member": "previews/4a2fd837d1be61460f50949b32ba7322f2d2a817e28e8616940e92b098338ff3.png",
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42249870031-1-b0001.tar.gz"
+      },
+      "observations": "粗黑轮廓带盖锥底管内有黄色液体和圆点，来源Centrifuge tube；圆点不当细胞计数或离心结果。",
+      "default_role_verdict": "relevant",
+      "reviewed_uses": [
+        {
+          "query_id": "component-experimental_actions-centrifugation--centrifuge_tube--zh",
+          "component_id": "centrifuge_tube",
+          "language": "zh"
+        },
+        {
+          "query_id": "component-experimental_actions-centrifugation--centrifuge_tube--en",
+          "component_id": "centrifuge_tube",
+          "language": "en"
+        }
+      ],
+      "visual_evidence": [
+        {
+          "path": "build/component-resume-20261114/pending-preview-43476558082/exact-review-43476558082-1.review.png",
+          "sha256": "f8fd4a5b5239306ad9fa370ac6e13a5f3648b7b355cc17b6cedaf40bb5fa6ae4"
+        },
+        {
+          "path": "build/component-resume-20261114/pending-preview-43476558082/mapping.json",
+          "sha256": "72781a4677a6a49d40642529bb46069b01f9a89dc04bdc6dad8eb4c3259728bd"
+        }
+      ],
+      "new_visual_inspection_performed": true,
+      "review_method": "Actually displayed and inspected this exact contact sheet; individual bytes checked, not separately displayed.",
+      "text_observation": {
+        "contains_text_or_labels": "unknown",
+        "cleanup_before_use": "task_dependent",
+        "internal_svg_text_inspected": false
+      }
+    },
+    {
+      "tile": 19,
+      "cloud_run": 43476558082,
+      "original_sha256": "2dd0e3e694cc5040d0b92201fa07a390145eb69681483226ba3a5318376a3494",
+      "preview_sha256": "c0bfac6d6661679298f23a2f70c91cbdcea7f37f48c971ff3bad46bc670ea688",
+      "title": "Centrifuge tube 3",
+      "source": "togo",
+      "source_id": "1358",
+      "source_url": "https://doi.org/10.7875/togopic.2022.394",
+      "original_archive": {
+        "member": "files/2d/2dd0e3e694cc5040d0b92201fa07a390145eb69681483226ba3a5318376a3494.svg",
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42249870031-1-b0002.tar.gz"
+      },
+      "preview_archive": {
+        "member": "previews/2dd0e3e694cc5040d0b92201fa07a390145eb69681483226ba3a5318376a3494.png",
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42249870031-1-b0002.tar.gz"
+      },
+      "observations": "橙盖、带刻线的管体和锥底可辨，来源Centrifuge tube 3；只支持离心管用途，不推断容量/材料性能。",
+      "default_role_verdict": "relevant",
+      "reviewed_uses": [
+        {
+          "query_id": "component-experimental_actions-centrifugation--centrifuge_tube--zh",
+          "component_id": "centrifuge_tube",
+          "language": "zh"
+        },
+        {
+          "query_id": "component-experimental_actions-centrifugation--centrifuge_tube--en",
+          "component_id": "centrifuge_tube",
+          "language": "en"
+        }
+      ],
+      "visual_evidence": [
+        {
+          "path": "build/component-resume-20261114/pending-preview-43476558082/exact-review-43476558082-1.review.png",
+          "sha256": "f8fd4a5b5239306ad9fa370ac6e13a5f3648b7b355cc17b6cedaf40bb5fa6ae4"
+        },
+        {
+          "path": "build/component-resume-20261114/pending-preview-43476558082/mapping.json",
+          "sha256": "72781a4677a6a49d40642529bb46069b01f9a89dc04bdc6dad8eb4c3259728bd"
+        }
+      ],
+      "new_visual_inspection_performed": true,
+      "review_method": "Actually displayed and inspected this exact contact sheet; individual bytes checked, not separately displayed.",
+      "text_observation": {
+        "contains_text_or_labels": "unknown",
+        "cleanup_before_use": "task_dependent",
+        "internal_svg_text_inspected": false
+      }
+    },
+    {
+      "tile": 20,
+      "cloud_run": 43476558082,
+      "original_sha256": "1014014a42ba287b7c999a6afef442866e452fe070e7ee2be566351c36385f93",
+      "preview_sha256": "228687349243321ca0a073df74b96693da8164bc758f1e69aedc3a7095dfc773",
+      "title": "Short Hair Person 5",
+      "source": "nih-bioart",
+      "source_id": "750",
+      "source_url": "https://bioart.niaid.nih.gov/bioart/750",
+      "original_archive": {
+        "member": "files/10/1014014a42ba287b7c999a6afef442866e452fe070e7ee2be566351c36385f93.png",
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/nih-bioart-42236561214-1-b0001.tar.gz"
+      },
+      "preview_archive": {
+        "member": "previews/1014014a42ba287b7c999a6afef442866e452fe070e7ee2be566351c36385f93.png",
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/nih-bioart-42236561214-1-b0001.tar.gz"
+      },
+      "observations": "普通衣着短发半身人物头像，五官简化，不携带真实身份信息；可作人体研究对象代表，不声明已入组。",
+      "default_role_verdict": "relevant",
+      "reviewed_uses": [
+        {
+          "query_id": "component-clinical_workflow-cohort-followup--human_subject--zh",
+          "component_id": "human_subject",
+          "language": "zh"
+        },
+        {
+          "query_id": "component-clinical_workflow-cohort-followup--human_subject--en",
+          "component_id": "human_subject",
+          "language": "en"
+        }
+      ],
+      "visual_evidence": [
+        {
+          "path": "build/component-resume-20261114/pending-preview-43476558082/exact-review-43476558082-1.review.png",
+          "sha256": "f8fd4a5b5239306ad9fa370ac6e13a5f3648b7b355cc17b6cedaf40bb5fa6ae4"
+        },
+        {
+          "path": "build/component-resume-20261114/pending-preview-43476558082/mapping.json",
+          "sha256": "72781a4677a6a49d40642529bb46069b01f9a89dc04bdc6dad8eb4c3259728bd"
+        }
+      ],
+      "new_visual_inspection_performed": true,
+      "review_method": "Actually displayed and inspected this exact contact sheet; individual bytes checked, not separately displayed.",
+      "text_observation": {
+        "contains_text_or_labels": "unknown",
+        "cleanup_before_use": "task_dependent",
+        "internal_svg_text_inspected": false
+      }
+    },
+    {
+      "tile": 1,
+      "cloud_run": 43476571430,
+      "original_sha256": "2a48235cb19306b67766697bf4b6765775d3676a89a0a404f5a75a10a04cd625",
+      "preview_sha256": "ae60060f650280544319e5dad77bcd21522cf9be599d4396f400b80c04b38134",
+      "title": "Person Standing",
+      "source": "nih-bioart",
+      "source_id": "555",
+      "source_url": "https://bioart.niaid.nih.gov/bioart/555",
+      "original_archive": {
+        "member": "files/2a/2a48235cb19306b67766697bf4b6765775d3676a89a0a404f5a75a10a04cd625.png",
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/nih-bioart-42236561214-1-b0001.tar.gz"
+      },
+      "preview_archive": {
+        "member": "previews/2a48235cb19306b67766697bf4b6765775d3676a89a0a404f5a75a10a04cd625.png",
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/nih-bioart-42236561214-1-b0001.tar.gz"
+      },
+      "observations": "穿灰色便装、戴帽及墨镜的完整站立人物，四肢可辨；来源Person Standing，不对应真实研究身份/人数。",
+      "default_role_verdict": "relevant",
+      "reviewed_uses": [
+        {
+          "query_id": "component-clinical_workflow-cohort-followup--human_subject--zh",
+          "component_id": "human_subject",
+          "language": "zh"
+        },
+        {
+          "query_id": "component-clinical_workflow-cohort-followup--human_subject--en",
+          "component_id": "human_subject",
+          "language": "en"
+        }
+      ],
+      "visual_evidence": [
+        {
+          "path": "build/component-resume-20261114/pending-preview-43476571430/exact-review-43476571430-1.review.png",
+          "sha256": "1f5d79a3a8d1275cd9ba6efdb197c9e7a6f8fc7fe4798122ff6832cc91179c60"
+        },
+        {
+          "path": "build/component-resume-20261114/pending-preview-43476571430/mapping.json",
+          "sha256": "dfb6eb23cf7de7600179dc161f9857ba112e33948a1146b02dcdb36f40b496f3"
+        }
+      ],
+      "new_visual_inspection_performed": true,
+      "review_method": "Actually displayed and inspected this exact contact sheet; individual bytes checked, not separately displayed.",
+      "text_observation": {
+        "contains_text_or_labels": "unknown",
+        "cleanup_before_use": "task_dependent",
+        "internal_svg_text_inspected": false
+      }
+    },
+    {
+      "tile": 2,
+      "cloud_run": 43476571430,
+      "original_sha256": "2a91f269af30a8943041b5201a02756ce525fb132cca34d140bf77d3c0fd6436",
+      "preview_sha256": "b47cb0d9876a36b99a59e51d3467ca950212fea0b6f920c23bd91f9e985a62a5",
+      "title": "Person",
+      "source": "healthicons",
+      "source_id": "public/icons/svg/filled/people/person.svg",
+      "source_url": "https://github.com/resolvetosavelives/healthicons/blob/2080c1b40e4829f2f4217e03bc22908b4e402f6b/public/icons/svg/filled/people/person.svg",
+      "original_archive": {
+        "member": "files/2a/2a91f269af30a8943041b5201a02756ce525fb132cca34d140bf77d3c0fd6436.svg",
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/healthicons-42234355854-1-b0001.tar.gz"
+      },
+      "preview_archive": {
+        "member": "previews/2a91f269af30a8943041b5201a02756ce525fb132cca34d140bf77d3c0fd6436.png",
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/healthicons-42234355854-1-b0001.tar.gz"
+      },
+      "observations": "黑色头肩人物符号，无真实身份信息或病种标记，可表示人体研究对象。",
+      "default_role_verdict": "relevant",
+      "reviewed_uses": [
+        {
+          "query_id": "component-clinical_workflow-cohort-followup--human_subject--zh",
+          "component_id": "human_subject",
+          "language": "zh"
+        },
+        {
+          "query_id": "component-clinical_workflow-cohort-followup--human_subject--en",
+          "component_id": "human_subject",
+          "language": "en"
+        }
+      ],
+      "visual_evidence": [
+        {
+          "path": "build/component-resume-20261114/pending-preview-43476571430/exact-review-43476571430-1.review.png",
+          "sha256": "1f5d79a3a8d1275cd9ba6efdb197c9e7a6f8fc7fe4798122ff6832cc91179c60"
+        },
+        {
+          "path": "build/component-resume-20261114/pending-preview-43476571430/mapping.json",
+          "sha256": "dfb6eb23cf7de7600179dc161f9857ba112e33948a1146b02dcdb36f40b496f3"
+        }
+      ],
+      "new_visual_inspection_performed": true,
+      "review_method": "Actually displayed and inspected this exact contact sheet; individual bytes checked, not separately displayed.",
+      "text_observation": {
+        "contains_text_or_labels": "unknown",
+        "cleanup_before_use": "task_dependent",
+        "internal_svg_text_inspected": false
+      }
+    },
+    {
+      "tile": 3,
+      "cloud_run": 43476571430,
+      "original_sha256": "1820e35e410f6ef4e037864e56e2a991d573cb3c4add7dd200b2b8712d6d6c43",
+      "preview_sha256": "bb978b7cd51e847edfd1cfb8bc5a548803cd97c86f4fdabae2b5bbc0b6a71674",
+      "title": "Long Hair Person in Lab Coat 5",
+      "source": "nih-bioart",
+      "source_id": "745",
+      "source_url": "https://bioart.niaid.nih.gov/bioart/745",
+      "original_archive": {
+        "member": "files/18/1820e35e410f6ef4e037864e56e2a991d573cb3c4add7dd200b2b8712d6d6c43.png",
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/nih-bioart-42236561214-1-b0001.tar.gz"
+      },
+      "preview_archive": {
+        "member": "previews/1820e35e410f6ef4e037864e56e2a991d573cb3c4add7dd200b2b8712d6d6c43.png",
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/nih-bioart-42236561214-1-b0001.tar.gz"
+      },
+      "observations": "长发白实验服人物头像，人体对象可辨；此角色允许人体代表，须保留职业衣着语境，不能断言此人已入组。",
+      "default_role_verdict": "relevant",
+      "reviewed_uses": [
+        {
+          "query_id": "component-clinical_workflow-cohort-followup--human_subject--zh",
+          "component_id": "human_subject",
+          "language": "zh"
+        },
+        {
+          "query_id": "component-clinical_workflow-cohort-followup--human_subject--en",
+          "component_id": "human_subject",
+          "language": "en"
+        }
+      ],
+      "visual_evidence": [
+        {
+          "path": "build/component-resume-20261114/pending-preview-43476571430/exact-review-43476571430-1.review.png",
+          "sha256": "1f5d79a3a8d1275cd9ba6efdb197c9e7a6f8fc7fe4798122ff6832cc91179c60"
+        },
+        {
+          "path": "build/component-resume-20261114/pending-preview-43476571430/mapping.json",
+          "sha256": "dfb6eb23cf7de7600179dc161f9857ba112e33948a1146b02dcdb36f40b496f3"
+        }
+      ],
+      "new_visual_inspection_performed": true,
+      "review_method": "Actually displayed and inspected this exact contact sheet; individual bytes checked, not separately displayed.",
+      "text_observation": {
+        "contains_text_or_labels": "unknown",
+        "cleanup_before_use": "task_dependent",
+        "internal_svg_text_inspected": false
+      }
+    },
+    {
+      "tile": 4,
+      "cloud_run": 43476571430,
+      "original_sha256": "17b02fc638c77d5ee9bdd1769e42cb58ff433862b86284b6059cc17cef337c56",
+      "preview_sha256": "f0bc792e11ef3298f18a23df1e665167a96c603bc25a6db0dcb8581e60485e26",
+      "title": "Short Hair Person in Lab Coat 3",
+      "source": "nih-bioart",
+      "source_id": "751",
+      "source_url": "https://bioart.niaid.nih.gov/bioart/751",
+      "original_archive": {
+        "member": "files/17/17b02fc638c77d5ee9bdd1769e42cb58ff433862b86284b6059cc17cef337c56.png",
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/nih-bioart-42236561214-1-b0001.tar.gz"
+      },
+      "preview_archive": {
+        "member": "previews/17b02fc638c77d5ee9bdd1769e42cb58ff433862b86284b6059cc17cef337c56.png",
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/nih-bioart-42236561214-1-b0001.tar.gz"
+      },
+      "observations": "短发白实验服人物头像，人体身份可辨；可代表人体对象，不能从实验服断言其参与者/患者身份。",
+      "default_role_verdict": "relevant",
+      "reviewed_uses": [
+        {
+          "query_id": "component-clinical_workflow-cohort-followup--human_subject--zh",
+          "component_id": "human_subject",
+          "language": "zh"
+        },
+        {
+          "query_id": "component-clinical_workflow-cohort-followup--human_subject--en",
+          "component_id": "human_subject",
+          "language": "en"
+        }
+      ],
+      "visual_evidence": [
+        {
+          "path": "build/component-resume-20261114/pending-preview-43476571430/exact-review-43476571430-1.review.png",
+          "sha256": "1f5d79a3a8d1275cd9ba6efdb197c9e7a6f8fc7fe4798122ff6832cc91179c60"
+        },
+        {
+          "path": "build/component-resume-20261114/pending-preview-43476571430/mapping.json",
+          "sha256": "dfb6eb23cf7de7600179dc161f9857ba112e33948a1146b02dcdb36f40b496f3"
+        }
+      ],
+      "new_visual_inspection_performed": true,
+      "review_method": "Actually displayed and inspected this exact contact sheet; individual bytes checked, not separately displayed.",
+      "text_observation": {
+        "contains_text_or_labels": "unknown",
+        "cleanup_before_use": "task_dependent",
+        "internal_svg_text_inspected": false
+      }
+    },
+    {
+      "tile": 5,
+      "cloud_run": 43476571430,
+      "original_sha256": "02c261fd5f314f363c07bdfa16fcd2bd5d27c89f72d86a42d0381451a3ad5fde",
+      "preview_sha256": "759ab5867a0b6b4d09907aa3f08f50fda5b474829073adc6877769d6d2309bf0",
+      "title": "Long Hair Person 4",
+      "source": "nih-bioart",
+      "source_id": "741",
+      "source_url": "https://bioart.niaid.nih.gov/bioart/741",
+      "original_archive": {
+        "member": "files/02/02c261fd5f314f363c07bdfa16fcd2bd5d27c89f72d86a42d0381451a3ad5fde.svg",
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/nih-bioart-42236561214-1-b0001.tar.gz"
+      },
+      "preview_archive": {
+        "member": "previews/02c261fd5f314f363c07bdfa16fcd2bd5d27c89f72d86a42d0381451a3ad5fde.png",
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/nih-bioart-42236561214-1-b0001.tar.gz"
+      },
+      "observations": "紫衣长发人物头像，无具体个人身份或病种，适合作人体对象代表。",
+      "default_role_verdict": "relevant",
+      "reviewed_uses": [
+        {
+          "query_id": "component-clinical_workflow-cohort-followup--human_subject--zh",
+          "component_id": "human_subject",
+          "language": "zh"
+        },
+        {
+          "query_id": "component-clinical_workflow-cohort-followup--human_subject--en",
+          "component_id": "human_subject",
+          "language": "en"
+        }
+      ],
+      "visual_evidence": [
+        {
+          "path": "build/component-resume-20261114/pending-preview-43476571430/exact-review-43476571430-1.review.png",
+          "sha256": "1f5d79a3a8d1275cd9ba6efdb197c9e7a6f8fc7fe4798122ff6832cc91179c60"
+        },
+        {
+          "path": "build/component-resume-20261114/pending-preview-43476571430/mapping.json",
+          "sha256": "dfb6eb23cf7de7600179dc161f9857ba112e33948a1146b02dcdb36f40b496f3"
+        }
+      ],
+      "new_visual_inspection_performed": true,
+      "review_method": "Actually displayed and inspected this exact contact sheet; individual bytes checked, not separately displayed.",
+      "text_observation": {
+        "contains_text_or_labels": "unknown",
+        "cleanup_before_use": "task_dependent",
+        "internal_svg_text_inspected": false
+      }
+    },
+    {
+      "tile": 6,
+      "cloud_run": 43476571430,
+      "original_sha256": "2c30b2e977c5bb17a34c6e0f45d0622c2f2328d35050c44bc1cb2879a451bdcc",
+      "preview_sha256": "1e4fe6522e88210fcca6145ca73bc89dea9d85b55a9d6006038cb3752d21973b",
+      "title": "Person walking",
+      "source": "nih-bioart",
+      "source_id": "389",
+      "source_url": "https://bioart.niaid.nih.gov/bioart/389",
+      "original_archive": {
+        "member": "files/2c/2c30b2e977c5bb17a34c6e0f45d0622c2f2328d35050c44bc1cb2879a451bdcc.png",
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/nih-bioart-42236561214-1-b0000.tar.gz"
+      },
+      "preview_archive": {
+        "member": "previews/2c30b2e977c5bb17a34c6e0f45d0622c2f2328d35050c44bc1cb2879a451bdcc.png",
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/nih-bioart-42236561214-1-b0000.tar.gz"
+      },
+      "observations": "灰阶行走人物，头、躯干及肢体可辨但足部在图框截断；人体对象角色没有全身解剖要求，不用它替代完整解剖图。",
+      "default_role_verdict": "relevant",
+      "reviewed_uses": [
+        {
+          "query_id": "component-clinical_workflow-cohort-followup--human_subject--zh",
+          "component_id": "human_subject",
+          "language": "zh"
+        },
+        {
+          "query_id": "component-clinical_workflow-cohort-followup--human_subject--en",
+          "component_id": "human_subject",
+          "language": "en"
+        }
+      ],
+      "visual_evidence": [
+        {
+          "path": "build/component-resume-20261114/pending-preview-43476571430/exact-review-43476571430-1.review.png",
+          "sha256": "1f5d79a3a8d1275cd9ba6efdb197c9e7a6f8fc7fe4798122ff6832cc91179c60"
+        },
+        {
+          "path": "build/component-resume-20261114/pending-preview-43476571430/mapping.json",
+          "sha256": "dfb6eb23cf7de7600179dc161f9857ba112e33948a1146b02dcdb36f40b496f3"
+        }
+      ],
+      "new_visual_inspection_performed": true,
+      "review_method": "Actually displayed and inspected this exact contact sheet; individual bytes checked, not separately displayed.",
+      "text_observation": {
+        "contains_text_or_labels": "unknown",
+        "cleanup_before_use": "task_dependent",
+        "internal_svg_text_inspected": false
+      }
+    },
+    {
+      "tile": 7,
+      "cloud_run": 43476571430,
+      "original_sha256": "0bdfda4e956e5938a579c544debaec2ff97e8e6011dc635ec9c214eee23fe915",
+      "preview_sha256": "be63868e0e4fbbaf92dbd9f958260a4c8cdc96c0536527c1b584ff8d93e4228b",
+      "title": "Person",
+      "source": "nih-bioart",
+      "source_id": "923",
+      "source_url": "https://bioart.niaid.nih.gov/bioart/923",
+      "original_archive": {
+        "member": "files/0b/0bdfda4e956e5938a579c544debaec2ff97e8e6011dc635ec9c214eee23fe915.png",
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/nih-bioart-42248095929-1-b0000.tar.gz"
+      },
+      "preview_archive": {
+        "member": "previews/0bdfda4e956e5938a579c544debaec2ff97e8e6011dc635ec9c214eee23fe915.png",
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/nih-bioart-42248095929-1-b0000.tar.gz"
+      },
+      "observations": "紫衣长发半身人物头像，无真实个人身份信息；适合作人体代表，不推断研究招募/随访。",
+      "default_role_verdict": "relevant",
+      "reviewed_uses": [
+        {
+          "query_id": "component-clinical_workflow-cohort-followup--human_subject--zh",
+          "component_id": "human_subject",
+          "language": "zh"
+        }
+      ],
+      "visual_evidence": [
+        {
+          "path": "build/component-resume-20261114/pending-preview-43476571430/exact-review-43476571430-1.review.png",
+          "sha256": "1f5d79a3a8d1275cd9ba6efdb197c9e7a6f8fc7fe4798122ff6832cc91179c60"
+        },
+        {
+          "path": "build/component-resume-20261114/pending-preview-43476571430/mapping.json",
+          "sha256": "dfb6eb23cf7de7600179dc161f9857ba112e33948a1146b02dcdb36f40b496f3"
+        }
+      ],
+      "new_visual_inspection_performed": true,
+      "review_method": "Actually displayed and inspected this exact contact sheet; individual bytes checked, not separately displayed.",
+      "text_observation": {
+        "contains_text_or_labels": "unknown",
+        "cleanup_before_use": "task_dependent",
+        "internal_svg_text_inspected": false
+      }
+    },
+    {
+      "tile": 8,
+      "cloud_run": 43476571430,
+      "original_sha256": "20b251bde975f9055c7ef9f6a6f8ebfbee760dd186d43a6a628373a958a0d6fc",
+      "preview_sha256": "b7666eb2d9a877a64bb3ab8001db5cc73e5e95355bce17d5ca9127c4cac3bdf9",
+      "title": "transgenic two-spotted cricket expressing GFP(Green Fluorescent Protein) gene",
+      "source": "togo",
+      "source_id": "1590",
+      "source_url": "https://doi.org/10.7875/togopic.2023.026",
+      "original_archive": {
+        "member": "files/20/20b251bde975f9055c7ef9f6a6f8ebfbee760dd186d43a6a628373a958a0d6fc.svg",
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42239971379-1-b0004.tar.gz"
+      },
+      "preview_archive": {
+        "member": "previews/20b251bde975f9055c7ef9f6a6f8ebfbee760dd186d43a6a628373a958a0d6fc.png",
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42239971379-1-b0004.tar.gz"
+      },
+      "observations": "整体是绿色蟋蟀，六肢/触角/身体清楚；GFP是来源描述的表达背景，图中没有独立蛋白结构，不能作为蛋白分子部件。",
+      "default_role_verdict": "irrelevant",
+      "reviewed_uses": [
+        {
+          "query_id": "component-omics_data-heatmap--protein--zh",
+          "component_id": "protein",
+          "language": "zh"
+        },
+        {
+          "query_id": "component-omics_data-heatmap--protein--en",
+          "component_id": "protein",
+          "language": "en"
+        }
+      ],
+      "visual_evidence": [
+        {
+          "path": "build/component-resume-20261114/pending-preview-43476571430/exact-review-43476571430-1.review.png",
+          "sha256": "1f5d79a3a8d1275cd9ba6efdb197c9e7a6f8fc7fe4798122ff6832cc91179c60"
+        },
+        {
+          "path": "build/component-resume-20261114/pending-preview-43476571430/mapping.json",
+          "sha256": "dfb6eb23cf7de7600179dc161f9857ba112e33948a1146b02dcdb36f40b496f3"
+        }
+      ],
+      "new_visual_inspection_performed": true,
+      "review_method": "Actually displayed and inspected this exact contact sheet; individual bytes checked, not separately displayed.",
+      "text_observation": {
+        "contains_text_or_labels": "unknown",
+        "cleanup_before_use": "task_dependent",
+        "internal_svg_text_inspected": false
+      }
+    },
+    {
+      "tile": 9,
+      "cloud_run": 43476571430,
+      "original_sha256": "442eb62c23332a886707f090be33ec70979d1cfc74ccfad1714d22044d879734",
+      "preview_sha256": "88e436c444114805f815d7f85c35b7e55c301b92042cb80c3b373468503da7ef",
+      "title": "Protein primary structure",
+      "source": "bioicons",
+      "source_id": "cc-by-4.0/Intracellular_components/DBCLS/Protein_primary_structure.svg",
+      "source_url": "https://github.com/duerrsimon/bioicons/blob/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-4.0/Intracellular_components/DBCLS/Protein_primary_structure.svg",
+      "original_archive": {
+        "member": "files/44/442eb62c23332a886707f090be33ec70979d1cfc74ccfad1714d22044d879734.svg",
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42239971379-1-b0004.tar.gz"
+      },
+      "preview_archive": {
+        "member": "previews/442eb62c23332a886707f090be33ec70979d1cfc74ccfad1714d22044d879734.png",
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42239971379-1-b0004.tar.gz"
+      },
+      "observations": "连续细带连接一列彩色圆形残基符号，来源Protein primary structure；是一级结构示意，不是文字名牌，不声称真实氨基酸序列。",
+      "default_role_verdict": "relevant",
+      "reviewed_uses": [
+        {
+          "query_id": "component-omics_data-heatmap--protein--zh",
+          "component_id": "protein",
+          "language": "zh"
+        },
+        {
+          "query_id": "component-omics_data-heatmap--protein--en",
+          "component_id": "protein",
+          "language": "en"
+        }
+      ],
+      "visual_evidence": [
+        {
+          "path": "build/component-resume-20261114/pending-preview-43476571430/exact-review-43476571430-1.review.png",
+          "sha256": "1f5d79a3a8d1275cd9ba6efdb197c9e7a6f8fc7fe4798122ff6832cc91179c60"
+        },
+        {
+          "path": "build/component-resume-20261114/pending-preview-43476571430/mapping.json",
+          "sha256": "dfb6eb23cf7de7600179dc161f9857ba112e33948a1146b02dcdb36f40b496f3"
+        }
+      ],
+      "new_visual_inspection_performed": true,
+      "review_method": "Actually displayed and inspected this exact contact sheet; individual bytes checked, not separately displayed.",
+      "text_observation": {
+        "contains_text_or_labels": "unknown",
+        "cleanup_before_use": "task_dependent",
+        "internal_svg_text_inspected": false
+      }
+    },
+    {
+      "tile": 10,
+      "cloud_run": 43476571430,
+      "original_sha256": "561549c7770e1185f23a58e497014eeab2c236f1f050b697589fade72e3e161b",
+      "preview_sha256": "d983431cef5960966076f4166b081fb54001d24b37ef0fc8662d906b8dfb861f",
+      "title": "Protein purification (monochrome)",
+      "source": "togo",
+      "source_id": "998",
+      "source_url": "https://doi.org/10.7875/togopic.2022.034",
+      "original_archive": {
+        "member": "files/56/561549c7770e1185f23a58e497014eeab2c236f1f050b697589fade72e3e161b.png",
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42249870031-1-b0001.tar.gz"
+      },
+      "preview_archive": {
+        "member": "previews/561549c7770e1185f23a58e497014eeab2c236f1f050b697589fade72e3e161b.png",
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42249870031-1-b0001.tar.gz"
+      },
+      "observations": "四根柱体内有形状符号及上下颗粒，来源Protein purification；主体是纯化器件/过程，无法从本记录确认哪一形状能独立作为蛋白结构。",
+      "default_role_verdict": "uncertain",
+      "reviewed_uses": [
+        {
+          "query_id": "component-omics_data-heatmap--protein--zh",
+          "component_id": "protein",
+          "language": "zh"
+        },
+        {
+          "query_id": "component-omics_data-heatmap--protein--en",
+          "component_id": "protein",
+          "language": "en"
+        }
+      ],
+      "visual_evidence": [
+        {
+          "path": "build/component-resume-20261114/pending-preview-43476571430/exact-review-43476571430-1.review.png",
+          "sha256": "1f5d79a3a8d1275cd9ba6efdb197c9e7a6f8fc7fe4798122ff6832cc91179c60"
+        },
+        {
+          "path": "build/component-resume-20261114/pending-preview-43476571430/mapping.json",
+          "sha256": "dfb6eb23cf7de7600179dc161f9857ba112e33948a1146b02dcdb36f40b496f3"
+        }
+      ],
+      "new_visual_inspection_performed": true,
+      "review_method": "Actually displayed and inspected this exact contact sheet; individual bytes checked, not separately displayed.",
+      "text_observation": {
+        "contains_text_or_labels": "unknown",
+        "cleanup_before_use": "task_dependent",
+        "internal_svg_text_inspected": false
+      }
+    },
+    {
+      "tile": 11,
+      "cloud_run": 43476571430,
+      "original_sha256": "91272f8c3a63aef30a1e37b3e3031b65e47ef5e7798ac9adb87e6074a4dc6399",
+      "preview_sha256": "68b5cc77d28e07e0df642f0b6993e55b47f64d4c8ec5bbac5b9ed2d5f73ff935",
+      "title": "protein link",
+      "source": "bioicons",
+      "source_id": "cc-by-4.0/Intracellular_components/DBCLS/protein-link.svg",
+      "source_url": "https://github.com/duerrsimon/bioicons/blob/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-4.0/Intracellular_components/DBCLS/protein-link.svg",
+      "original_archive": {
+        "member": "files/91/91272f8c3a63aef30a1e37b3e3031b65e47ef5e7798ac9adb87e6074a4dc6399.svg",
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42251588741-1-b0017.tar.gz"
+      },
+      "preview_archive": {
+        "member": "previews/91272f8c3a63aef30a1e37b3e3031b65e47ef5e7798ac9adb87e6074a4dc6399.png",
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42251588741-1-b0017.tar.gz"
+      },
+      "observations": "两侧膜结构之间有扭结状蛋白连接与成组分子形状，来源protein link；具有实际结构示意，可作有膜连接语境的蛋白部件，不编造具体分子名。",
+      "default_role_verdict": "relevant",
+      "reviewed_uses": [
+        {
+          "query_id": "component-omics_data-heatmap--protein--zh",
+          "component_id": "protein",
+          "language": "zh"
+        },
+        {
+          "query_id": "component-omics_data-heatmap--protein--en",
+          "component_id": "protein",
+          "language": "en"
+        }
+      ],
+      "visual_evidence": [
+        {
+          "path": "build/component-resume-20261114/pending-preview-43476571430/exact-review-43476571430-1.review.png",
+          "sha256": "1f5d79a3a8d1275cd9ba6efdb197c9e7a6f8fc7fe4798122ff6832cc91179c60"
+        },
+        {
+          "path": "build/component-resume-20261114/pending-preview-43476571430/mapping.json",
+          "sha256": "dfb6eb23cf7de7600179dc161f9857ba112e33948a1146b02dcdb36f40b496f3"
+        }
+      ],
+      "new_visual_inspection_performed": true,
+      "review_method": "Actually displayed and inspected this exact contact sheet; individual bytes checked, not separately displayed.",
+      "text_observation": {
+        "contains_text_or_labels": "unknown",
+        "cleanup_before_use": "task_dependent",
+        "internal_svg_text_inspected": false
+      }
+    },
+    {
+      "tile": 12,
+      "cloud_run": 43476571430,
+      "original_sha256": "025629957d59f67e49fc419c5f8b2eef7ca6117a071aed1705e0adce375076bb",
+      "preview_sha256": "19d751a972c3f14ef9c97a13704e7ea22c68edce0c033539a68d39544c383c6c",
+      "title": "Protein Squiggle",
+      "source": "nih-bioart",
+      "source_id": "934",
+      "source_url": "https://bioart.niaid.nih.gov/bioart/934",
+      "original_archive": {
+        "member": "files/02/025629957d59f67e49fc419c5f8b2eef7ca6117a071aed1705e0adce375076bb.png",
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/nih-bioart-42248095929-1-b0000.tar.gz"
+      },
+      "preview_archive": {
+        "member": "previews/025629957d59f67e49fc419c5f8b2eef7ca6117a071aed1705e0adce375076bb.png",
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/nih-bioart-42248095929-1-b0000.tar.gz"
+      },
+      "observations": "灰色粗链折弯并有一个回环，来源Protein Squiggle；为通用蛋白示意形状，无文字名牌，不声称真实折叠、物种或功能。",
+      "default_role_verdict": "relevant",
+      "reviewed_uses": [
+        {
+          "query_id": "component-omics_data-heatmap--protein--zh",
+          "component_id": "protein",
+          "language": "zh"
+        },
+        {
+          "query_id": "component-omics_data-heatmap--protein--en",
+          "component_id": "protein",
+          "language": "en"
+        }
+      ],
+      "visual_evidence": [
+        {
+          "path": "build/component-resume-20261114/pending-preview-43476571430/exact-review-43476571430-1.review.png",
+          "sha256": "1f5d79a3a8d1275cd9ba6efdb197c9e7a6f8fc7fe4798122ff6832cc91179c60"
+        },
+        {
+          "path": "build/component-resume-20261114/pending-preview-43476571430/mapping.json",
+          "sha256": "dfb6eb23cf7de7600179dc161f9857ba112e33948a1146b02dcdb36f40b496f3"
+        }
+      ],
+      "new_visual_inspection_performed": true,
+      "review_method": "Actually displayed and inspected this exact contact sheet; individual bytes checked, not separately displayed.",
+      "text_observation": {
+        "contains_text_or_labels": "unknown",
+        "cleanup_before_use": "task_dependent",
+        "internal_svg_text_inspected": false
+      }
+    },
+    {
+      "tile": 13,
+      "cloud_run": 43476571430,
+      "original_sha256": "1b052cdce461f384d493dea13dee88a8d2add0048e743fc70b7faa7c317285b9",
+      "preview_sha256": "8c43a53c72d5f66ffb5b1720cc16c852c601e5d857ace9d57c6395180e4046bc",
+      "title": "exchanger protein green",
+      "source": "bioicons",
+      "source_id": "cc-by-3.0/Receptors_channels/Servier/exchanger-protein-green.svg",
+      "source_url": "https://github.com/duerrsimon/bioicons/blob/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-3.0/Receptors_channels/Servier/exchanger-protein-green.svg",
+      "original_archive": {
+        "member": "files/1b/1b052cdce461f384d493dea13dee88a8d2add0048e743fc70b7faa7c317285b9.svg",
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42251588741-1-b0004.tar.gz"
+      },
+      "preview_archive": {
+        "member": "previews/1b052cdce461f384d493dea13dee88a8d2add0048e743fc70b7faa7c317285b9.png",
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42251588741-1-b0004.tar.gz"
+      },
+      "observations": "绿色带缺口及厚度轮廓的交换蛋白示意，中心方向箭头是机制提示，来源exchanger protein green；可作该类蛋白部件，不改称原子结构或移除意义箭头。",
+      "default_role_verdict": "relevant",
+      "reviewed_uses": [
+        {
+          "query_id": "component-omics_data-heatmap--protein--zh",
+          "component_id": "protein",
+          "language": "zh"
+        },
+        {
+          "query_id": "component-omics_data-heatmap--protein--en",
+          "component_id": "protein",
+          "language": "en"
+        }
+      ],
+      "visual_evidence": [
+        {
+          "path": "build/component-resume-20261114/pending-preview-43476571430/exact-review-43476571430-1.review.png",
+          "sha256": "1f5d79a3a8d1275cd9ba6efdb197c9e7a6f8fc7fe4798122ff6832cc91179c60"
+        },
+        {
+          "path": "build/component-resume-20261114/pending-preview-43476571430/mapping.json",
+          "sha256": "dfb6eb23cf7de7600179dc161f9857ba112e33948a1146b02dcdb36f40b496f3"
+        }
+      ],
+      "new_visual_inspection_performed": true,
+      "review_method": "Actually displayed and inspected this exact contact sheet; individual bytes checked, not separately displayed.",
+      "text_observation": {
+        "contains_text_or_labels": "unknown",
+        "cleanup_before_use": "task_dependent",
+        "internal_svg_text_inspected": false
+      }
+    }
+  ],
+  "limits": [
+    "53 existing files reviewed, no new collection or edits.",
+    "No automatic relevance from title/format/license.",
+    "These are individual roles, not composition or release acceptance."
+  ]
+}

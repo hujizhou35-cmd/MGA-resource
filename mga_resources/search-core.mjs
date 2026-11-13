@@ -3,8 +3,8 @@
  */
 import vocabulary from './search-vocabulary.mjs';
 
-export const RANKING_VERSION = 'shared-search-3.5.2';
-export const INDEX_VERSION = 12;
+export const RANKING_VERSION = 'shared-search-3.5.3';
+export const INDEX_VERSION = 13;
 export const DEFAULT_CANDIDATE_POOL = 75;
 const unknown = new Set(['', 'unknown', 'unspecified', 'not_reviewed', '待确认']);
 const arr = value => value == null ? [] : Array.isArray(value) ? value : [value];
@@ -133,6 +133,9 @@ function matchedConcepts(value, groups=concepts) {
 // A named molecular object followed by its noun class is the same requested
 // object, not a demand that the source redundantly repeat the word molecule.
 for(const group of concepts){
+  // A survey delivered on a computer is still a questionnaire. Longest-label
+  // matching keeps its delivery medium from replacing the depicted concept.
+  if(group.includes('questionnaire'))group.push('computer survey','online computer survey','online survey','digital questionnaire','电子问卷','在线问卷');
   if(group.includes('lung'))group.push('lungs');
   for(const name of ['atp','dna','rna','protein','antibody','lipid'])if(group.includes(name))group.push(`${name} molecule`,`${name}分子`,`${name} 分子`);
   if(group.includes('bone'))group.push('bone tissue','骨组织','骨 组织');
@@ -176,6 +179,7 @@ function explicitDepictionDescription(value) {
 }
 function depictionKind(title,objects,unresolvedAnimal){
   const named=matchedConcepts(title).groups;
+  if(objects.includes('questionnaire'))return 'named_object';
   // Unambiguous technical labels such as electrochemical/voltammetry also
   // establish equipment; they need not have a bilingual object alias group.
   const equipment=equipmentNames.some(term=>matches(title,term));

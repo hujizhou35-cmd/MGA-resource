@@ -205,7 +205,7 @@ def test_unknown_filter_and_obsolete_index_fail_explicitly(tmp_path):
         search(db, "mouse", filters={"nonsense": "true"})
     with closing(sqlite3.connect(db)) as conn:
         conn.execute("PRAGMA user_version=1")
-    with pytest.raises(ValueError, match="rebuilt as v12"):
+    with pytest.raises(ValueError, match="rebuilt as v13"):
         search(db, "mouse")
 
 
@@ -609,8 +609,8 @@ def test_content_type_scope_projection_uses_only_bound_media_dimension(tmp_path)
 def test_old_ranking_index_is_rejected_even_with_unchanged_sql_schema(tmp_path):
     db = database(tmp_path, [artwork(1)])
     with closing(sqlite3.connect(db)) as conn, conn:
-        assert conn.execute("PRAGMA user_version").fetchone()[0] == 12
-        assert conn.execute("SELECT value FROM index_metadata WHERE key='ranking_version'").fetchone()[0] == "shared-search-3.5.2"
+        assert conn.execute("PRAGMA user_version").fetchone()[0] == 13
+        assert conn.execute("SELECT value FROM index_metadata WHERE key='ranking_version'").fetchone()[0] == "shared-search-3.5.3"
         conn.execute("UPDATE index_metadata SET value='shared-search-3.4.2' WHERE key='ranking_version'")
     with pytest.raises(ValueError, match="policy version.*changed; rebuild"):
         search(db, "mouse", filters={"media_type": "raster"})
@@ -668,3 +668,15 @@ def test_computer_workstation_class_excludes_laboratory_robot_and_mouse(tmp_path
     # A generic computer does not become a laptop; query matching does not
     # certify that any particular returned file has a visible/open display.
     assert {r['selected_source']['source_id'] for r in search(db,'NGS workstation')} == {'8103'}
+
+
+def test_digital_questionnaire_identity_is_not_replaced_by_delivery_device(tmp_path):
+    records=[artwork(8201,title="Online computer survey",species=None,title_zh="在线问卷调查图标"),
+             artwork(8202,title="Digital questionnaire",species=None),
+             artwork(8203,title="Desktop computer",species=None),
+             artwork(8204,title="Online survey",species=None),
+             artwork(8205,title="Unknown box",species=None,tags=["questionnaire"])]
+    db=database(tmp_path,records)
+    for query in ('问卷调查素材','questionnaire survey illustration','digital questionnaire'):
+        assert {r['selected_source']['source_id'] for r in search(db,query)}=={'8201','8202','8204'}
+    assert {r['selected_source']['source_id'] for r in search(db,'computer illustration')}=={'8203'}

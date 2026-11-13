@@ -1,0 +1,397 @@
+{
+  "schema_version": 1,
+  "catalog_sha256": "f3f869f4ed24e4582ff26c46fabb64a1e68593d2a731eff66e728ec6b280f377",
+  "purpose": "Nine current computer result previews plus six already reviewed files needed for actual composition. No search replay or new source acquisition.",
+  "files": [
+    {
+      "source": "nih-bioart",
+      "source_id": "855",
+      "source_url": "https://bioart.niaid.nih.gov/bioart/855",
+      "asset_id": "nih-bioart-9a690ba5614fd6e23027",
+      "title": "Computer Screen",
+      "format": "png",
+      "original_sha256": "0b3cd07b7b0be349d4a3462f32c2cf7317d2ab783ccf53b7752e95f4aa2dc7cb",
+      "original_archive": {
+        "member": "files/0b/0b3cd07b7b0be349d4a3462f32c2cf7317d2ab783ccf53b7752e95f4aa2dc7cb.png",
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/nih-bioart-42248095929-1-b0000.tar.gz"
+      },
+      "preview": {
+        "archive": {
+          "member": "previews/0b3cd07b7b0be349d4a3462f32c2cf7317d2ab783ccf53b7752e95f4aa2dc7cb.png",
+          "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/nih-bioart-42248095929-1-b0000.tar.gz"
+        },
+        "format": "png",
+        "height": 512,
+        "path": "previews/0b3cd07b7b0be349d4a3462f32c2cf7317d2ab783ccf53b7752e95f4aa2dc7cb.png",
+        "sha256": "0e85edd6f086f4218141fff9509284c914e7d8a006e5444f318fb77489a13a82",
+        "size_bytes": 231715,
+        "width": 412
+      },
+      "review_question": "Inspect exact computer-role structure or place previously reviewed exact component into a combined-use board. No new collection."
+    },
+    {
+      "source": "nih-bioart",
+      "source_id": "829",
+      "source_url": "https://bioart.niaid.nih.gov/bioart/829",
+      "asset_id": "nih-bioart-3ef21bba1a8348425966",
+      "title": "Computer Monitor with Blank Screen",
+      "format": "svg",
+      "original_sha256": "04c3f00d919b9983a2ad7026caa59aeaa463a1695341f1132a7ca8db050e24f5",
+      "original_archive": {
+        "member": "files/04/04c3f00d919b9983a2ad7026caa59aeaa463a1695341f1132a7ca8db050e24f5.svg",
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/nih-bioart-42248095929-1-b0000.tar.gz"
+      },
+      "preview": {
+        "archive": {
+          "member": "previews/04c3f00d919b9983a2ad7026caa59aeaa463a1695341f1132a7ca8db050e24f5.png",
+          "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/nih-bioart-42248095929-1-b0000.tar.gz"
+        },
+        "format": "png",
+        "height": 512,
+        "path": "previews/04c3f00d919b9983a2ad7026caa59aeaa463a1695341f1132a7ca8db050e24f5.png",
+        "sha256": "ca9cbabacf97d2618260a2f3352014e0fe33b221d71f201c0d007641bb30e6bd",
+        "size_bytes": 15066,
+        "width": 512
+      },
+      "review_question": "Inspect exact computer-role structure or place previously reviewed exact component into a combined-use board. No new collection."
+    },
+    {
+      "source": "nih-bioart",
+      "source_id": "830",
+      "source_url": "https://bioart.niaid.nih.gov/bioart/830",
+      "asset_id": "nih-bioart-4a64bfb0a324690ce906",
+      "title": "Computer Monitor with Microscopy Image",
+      "format": "svg",
+      "original_sha256": "006fd0f994104b6e72fce9501bf2277bfe255851a7ee729bc8dfb26cfc7c260f",
+      "original_archive": {
+        "member": "files/00/006fd0f994104b6e72fce9501bf2277bfe255851a7ee729bc8dfb26cfc7c260f.svg",
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/nih-bioart-42248095929-1-b0000.tar.gz"
+      },
+      "preview": {
+        "archive": {
+          "member": "previews/006fd0f994104b6e72fce9501bf2277bfe255851a7ee729bc8dfb26cfc7c260f.png",
+          "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/nih-bioart-42248095929-1-b0000.tar.gz"
+        },
+        "format": "png",
+        "height": 512,
+        "path": "previews/006fd0f994104b6e72fce9501bf2277bfe255851a7ee729bc8dfb26cfc7c260f.png",
+        "sha256": "19342a58d7fa41c0293f816d3f71a473ca9e44e24cbbc185add9c602fea20ce8",
+        "size_bytes": 36119,
+        "width": 512
+      },
+      "review_question": "Inspect exact computer-role structure or place previously reviewed exact component into a combined-use board. No new collection."
+    },
+    {
+      "source": "nih-bioart",
+      "source_id": "831",
+      "source_url": "https://bioart.niaid.nih.gov/bioart/831",
+      "asset_id": "nih-bioart-b59452836ed7622c9169",
+      "title": "Computer Monitor",
+      "format": "png",
+      "original_sha256": "0e47c11993ea6a1f291b5348dfb64e9c3da5d9f75599776b57ccba4365e2d134",
+      "original_archive": {
+        "member": "files/0e/0e47c11993ea6a1f291b5348dfb64e9c3da5d9f75599776b57ccba4365e2d134.png",
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/nih-bioart-42248095929-1-b0000.tar.gz"
+      },
+      "preview": {
+        "archive": {
+          "member": "previews/0e47c11993ea6a1f291b5348dfb64e9c3da5d9f75599776b57ccba4365e2d134.png",
+          "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/nih-bioart-42248095929-1-b0000.tar.gz"
+        },
+        "format": "png",
+        "height": 512,
+        "path": "previews/0e47c11993ea6a1f291b5348dfb64e9c3da5d9f75599776b57ccba4365e2d134.png",
+        "sha256": "9f85900ee50731fd0b61547cb38b50eb34f5408299e6efb00b7c81db3b58298a",
+        "size_bytes": 40274,
+        "width": 414
+      },
+      "review_question": "Inspect exact computer-role structure or place previously reviewed exact component into a combined-use board. No new collection."
+    },
+    {
+      "source": "openclipart",
+      "source_id": "195847",
+      "source_url": "https://openclipart.org/detail/195847/online-computer-survey",
+      "asset_id": "openclipart-c2d02e0011c4e4c60482",
+      "title": "Online computer survey",
+      "format": "svg",
+      "original_sha256": "1b741a83f5fad9a6fdfbdf255d4455878ae2e400bf5e944c7271d4605fa4723f",
+      "original_archive": {
+        "member": "files/1b/1b741a83f5fad9a6fdfbdf255d4455878ae2e400bf5e944c7271d4605fa4723f.svg",
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/openclipart-42260737515-1-b0000.tar.gz"
+      },
+      "preview": {
+        "archive": {
+          "member": "previews/1b741a83f5fad9a6fdfbdf255d4455878ae2e400bf5e944c7271d4605fa4723f.png",
+          "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/openclipart-42260737515-1-b0000.tar.gz"
+        },
+        "format": "png",
+        "height": 512,
+        "path": "previews/1b741a83f5fad9a6fdfbdf255d4455878ae2e400bf5e944c7271d4605fa4723f.png",
+        "sha256": "af4cf34f6c966f3c91bede0d6f62c62efec828f8a6aa4ed8f8fab0b891f7cccd",
+        "size_bytes": 12923,
+        "width": 512
+      },
+      "review_question": "Inspect exact computer-role structure or place previously reviewed exact component into a combined-use board. No new collection."
+    },
+    {
+      "source": "nih-bioart",
+      "source_id": "782",
+      "source_url": "https://bioart.niaid.nih.gov/bioart/782",
+      "asset_id": "nih-bioart-637ad98233a92b436187",
+      "title": "Computer Organoid",
+      "format": "png",
+      "original_sha256": "0e0c0ff92f8ed08b9fd9633da0b8ef7e8df8fab32852211fdf4157768789deea",
+      "original_archive": {
+        "member": "files/0e/0e0c0ff92f8ed08b9fd9633da0b8ef7e8df8fab32852211fdf4157768789deea.png",
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/nih-bioart-42236561214-1-b0001.tar.gz"
+      },
+      "preview": {
+        "archive": {
+          "member": "previews/0e0c0ff92f8ed08b9fd9633da0b8ef7e8df8fab32852211fdf4157768789deea.png",
+          "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/nih-bioart-42236561214-1-b0001.tar.gz"
+        },
+        "format": "png",
+        "height": 512,
+        "path": "previews/0e0c0ff92f8ed08b9fd9633da0b8ef7e8df8fab32852211fdf4157768789deea.png",
+        "sha256": "faa68eeeba5ffcee6f865cdefe7971c5b6c8a22e12386457d82012123abc6d55",
+        "size_bytes": 143093,
+        "width": 487
+      },
+      "review_question": "Inspect exact computer-role structure or place previously reviewed exact component into a combined-use board. No new collection."
+    },
+    {
+      "source": "nih-bioart",
+      "source_id": "827",
+      "source_url": "https://bioart.niaid.nih.gov/bioart/827",
+      "asset_id": "nih-bioart-8f5cd537c85ec48c18e0",
+      "title": "Computer Monitor",
+      "format": "svg",
+      "original_sha256": "01182c67fb6a022c0368b5ab4e2a905ca237ac3bd20b462cdb66459f4aa93b65",
+      "original_archive": {
+        "member": "files/01/01182c67fb6a022c0368b5ab4e2a905ca237ac3bd20b462cdb66459f4aa93b65.svg",
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/nih-bioart-42248095929-1-b0000.tar.gz"
+      },
+      "preview": {
+        "archive": {
+          "member": "previews/01182c67fb6a022c0368b5ab4e2a905ca237ac3bd20b462cdb66459f4aa93b65.png",
+          "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/nih-bioart-42248095929-1-b0000.tar.gz"
+        },
+        "format": "png",
+        "height": 512,
+        "path": "previews/01182c67fb6a022c0368b5ab4e2a905ca237ac3bd20b462cdb66459f4aa93b65.png",
+        "sha256": "92a691d15ff25dd22db861e0d355d4b9216a4bd66a095296f555c672073e4a9f",
+        "size_bytes": 11288,
+        "width": 512
+      },
+      "review_question": "Inspect exact computer-role structure or place previously reviewed exact component into a combined-use board. No new collection."
+    },
+    {
+      "source": "nih-bioart",
+      "source_id": "832",
+      "source_url": "https://bioart.niaid.nih.gov/bioart/832",
+      "asset_id": "nih-bioart-c66d8a40830ca6f1233e",
+      "title": "Computer Monitor with Blank Screen",
+      "format": "svg",
+      "original_sha256": "5647c2da7bbc28fe023d2d816dfc12e8ddde8bd193a8022be95d622799d2ef65",
+      "original_archive": {
+        "member": "files/56/5647c2da7bbc28fe023d2d816dfc12e8ddde8bd193a8022be95d622799d2ef65.svg",
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/nih-bioart-42248095929-1-b0000.tar.gz"
+      },
+      "preview": {
+        "archive": {
+          "member": "previews/5647c2da7bbc28fe023d2d816dfc12e8ddde8bd193a8022be95d622799d2ef65.png",
+          "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/nih-bioart-42248095929-1-b0000.tar.gz"
+        },
+        "format": "png",
+        "height": 512,
+        "path": "previews/5647c2da7bbc28fe023d2d816dfc12e8ddde8bd193a8022be95d622799d2ef65.png",
+        "sha256": "37dd51545600a1b2fee029bb02ffedb79b0f10858306e8282cc1b589273fc6c9",
+        "size_bytes": 13178,
+        "width": 512
+      },
+      "review_question": "Inspect exact computer-role structure or place previously reviewed exact component into a combined-use board. No new collection."
+    },
+    {
+      "source": "nih-bioart",
+      "source_id": "828",
+      "source_url": "https://bioart.niaid.nih.gov/bioart/828",
+      "asset_id": "nih-bioart-ccc35aca2975b717e3b2",
+      "title": "Computer Monitor with Microscopy Image",
+      "format": "png",
+      "original_sha256": "099d2f48fd96062134719ca7f3e2f0d70bebfada621a5413e86eb9b829c051c7",
+      "original_archive": {
+        "member": "files/09/099d2f48fd96062134719ca7f3e2f0d70bebfada621a5413e86eb9b829c051c7.png",
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/nih-bioart-42248095929-1-b0000.tar.gz"
+      },
+      "preview": {
+        "archive": {
+          "member": "previews/099d2f48fd96062134719ca7f3e2f0d70bebfada621a5413e86eb9b829c051c7.png",
+          "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/nih-bioart-42248095929-1-b0000.tar.gz"
+        },
+        "format": "png",
+        "height": 512,
+        "path": "previews/099d2f48fd96062134719ca7f3e2f0d70bebfada621a5413e86eb9b829c051c7.png",
+        "sha256": "ce1747bf6f129ac4ced8750633b4d0a084558918831121e5c29a92c83dadd0f7",
+        "size_bytes": 69889,
+        "width": 411
+      },
+      "review_question": "Inspect exact computer-role structure or place previously reviewed exact component into a combined-use board. No new collection."
+    },
+    {
+      "source": "scisvg",
+      "source_id": "assets/biology/dna-rna/dna-double-helix.svg",
+      "source_url": "https://github.com/SaveenaSolanki/SciSVG/blob/b8a2b60a3a5b2d9b717b1065fbcb8de9f1faf72b/assets/biology/dna-rna/dna-double-helix.svg",
+      "asset_id": "scisvg-f17c9a0be6f7b611fc18",
+      "title": "DNA Double Helix",
+      "format": "svg",
+      "original_sha256": "f49612e45d3410d733d44ffe58f4df3f1120923d2041352218655d5901e433c8",
+      "original_archive": {
+        "member": "files/f4/f49612e45d3410d733d44ffe58f4df3f1120923d2041352218655d5901e433c8.svg",
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scisvg-42238985604-1-b0000.tar.gz"
+      },
+      "preview": {
+        "archive": {
+          "member": "previews/f49612e45d3410d733d44ffe58f4df3f1120923d2041352218655d5901e433c8.png",
+          "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scisvg-42238985604-1-b0000.tar.gz"
+        },
+        "format": "png",
+        "height": 512,
+        "path": "previews/f49612e45d3410d733d44ffe58f4df3f1120923d2041352218655d5901e433c8.png",
+        "sha256": "d050e7af80b415aa1a7bd42be51845aa2a8a42e685b903754736cbc26f470b0b",
+        "size_bytes": 22540,
+        "width": 512
+      },
+      "review_question": "Inspect exact computer-role structure or place previously reviewed exact component into a combined-use board. No new collection."
+    },
+    {
+      "source": "scidraw",
+      "source_id": "200532bc-f6c0-4ed5-b46b-1cdf78649ae0",
+      "source_url": "https://scidraw.io/drawing/1ml-syringe-with-25g-needle-d1185aaa",
+      "asset_id": "scidraw-366fed2b8aaf49949b17",
+      "title": "1ml syringe with 25G needle",
+      "format": "svg",
+      "original_sha256": "52e1df0929577cc6e7a63e2d0d8752fe2758a20d3e4f9c31621918044aa8d920",
+      "original_archive": {
+        "member": "files/52/52e1df0929577cc6e7a63e2d0d8752fe2758a20d3e4f9c31621918044aa8d920.svg",
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scidraw-42235890704-1-b0000.tar.gz"
+      },
+      "preview": {
+        "archive": {
+          "member": "previews/52e1df0929577cc6e7a63e2d0d8752fe2758a20d3e4f9c31621918044aa8d920.png",
+          "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/scidraw-42235890704-1-b0000.tar.gz"
+        },
+        "format": "png",
+        "height": 512,
+        "path": "previews/52e1df0929577cc6e7a63e2d0d8752fe2758a20d3e4f9c31621918044aa8d920.png",
+        "sha256": "ed24f40728c732adbde165cc0663ff2cbada9751631cb19f000e89ec54cd19d7",
+        "size_bytes": 15011,
+        "width": 396
+      },
+      "review_question": "Inspect exact computer-role structure or place previously reviewed exact component into a combined-use board. No new collection."
+    },
+    {
+      "source": "togo",
+      "source_id": "1338",
+      "source_url": "https://doi.org/10.7875/togopic.2022.374",
+      "asset_id": "togo-d10e6bb836637be74fc0",
+      "title": "Centrifuge",
+      "format": "svg",
+      "original_sha256": "d87e9ca9f6ae35b5bb49a187f3426da3b937e0ba0eaf554557c29100f282bfac",
+      "original_archive": {
+        "member": "files/d8/d87e9ca9f6ae35b5bb49a187f3426da3b937e0ba0eaf554557c29100f282bfac.svg",
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42249870031-1-b0002.tar.gz"
+      },
+      "preview": {
+        "archive": {
+          "member": "previews/d87e9ca9f6ae35b5bb49a187f3426da3b937e0ba0eaf554557c29100f282bfac.png",
+          "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42249870031-1-b0002.tar.gz"
+        },
+        "format": "png",
+        "height": 512,
+        "path": "previews/d87e9ca9f6ae35b5bb49a187f3426da3b937e0ba0eaf554557c29100f282bfac.png",
+        "sha256": "939782f81441810d32e3ae15a2e9c0087c97520332a8f46a4970396a0fdfc278",
+        "size_bytes": 18093,
+        "width": 512
+      },
+      "review_question": "Inspect exact computer-role structure or place previously reviewed exact component into a combined-use board. No new collection."
+    },
+    {
+      "source": "togo",
+      "source_id": "1359",
+      "source_url": "https://doi.org/10.7875/togopic.2022.395",
+      "asset_id": "togo-30b4739048e9e69eb4f4",
+      "title": "Centrifuge tube 4",
+      "format": "png",
+      "original_sha256": "4f4cd7b5ea3297b13412a15b42309baf5aef46b452952222008d419a350e2625",
+      "original_archive": {
+        "member": "files/4f/4f4cd7b5ea3297b13412a15b42309baf5aef46b452952222008d419a350e2625.png",
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42249870031-1-b0002.tar.gz"
+      },
+      "preview": {
+        "archive": {
+          "member": "previews/4f4cd7b5ea3297b13412a15b42309baf5aef46b452952222008d419a350e2625.png",
+          "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42249870031-1-b0002.tar.gz"
+        },
+        "format": "png",
+        "height": 400,
+        "path": "previews/4f4cd7b5ea3297b13412a15b42309baf5aef46b452952222008d419a350e2625.png",
+        "sha256": "b4f0bc36b54c958663fe0dfbcef75ffe7f5ef4c86a2f68700ec2aa98c4716bb2",
+        "size_bytes": 4123,
+        "width": 400
+      },
+      "review_question": "Inspect exact computer-role structure or place previously reviewed exact component into a combined-use board. No new collection."
+    },
+    {
+      "source": "reactome",
+      "source_id": "R-ICO-014578",
+      "source_url": "https://reactome.org/content/detail/R-ICO-014578",
+      "asset_id": "reactome-710f41745441efb63bce",
+      "title": "4-5nt RNA",
+      "format": "svg",
+      "original_sha256": "f545168bcda277bcac0f3eb3bf84333106ffee108cbd0581f976668a60302a9d",
+      "original_archive": {
+        "member": "files/f5/f545168bcda277bcac0f3eb3bf84333106ffee108cbd0581f976668a60302a9d.svg",
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/reactome-42246331998-1-b0004.tar.gz"
+      },
+      "preview": {
+        "archive": {
+          "member": "previews/f545168bcda277bcac0f3eb3bf84333106ffee108cbd0581f976668a60302a9d.png",
+          "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/reactome-42246331998-1-b0004.tar.gz"
+        },
+        "format": "png",
+        "height": 266,
+        "path": "previews/f545168bcda277bcac0f3eb3bf84333106ffee108cbd0581f976668a60302a9d.png",
+        "sha256": "3d1acda52ce6ce715bd34919675efe32289f34d055ca7dd6a7220f4de4caccfa",
+        "size_bytes": 24335,
+        "width": 512
+      },
+      "review_question": "Inspect exact computer-role structure or place previously reviewed exact component into a combined-use board. No new collection."
+    },
+    {
+      "source": "togo",
+      "source_id": "1092",
+      "source_url": "https://doi.org/10.7875/togopic.2022.128",
+      "asset_id": "togo-99156e8bfe768df3bfe9",
+      "title": "Next Generation Sequencer (Glay)",
+      "format": "png",
+      "original_sha256": "d082af215f7fba8f52ae3b32a90e896f910646087218d6fa2c8bff3286bf5262",
+      "original_archive": {
+        "member": "files/d0/d082af215f7fba8f52ae3b32a90e896f910646087218d6fa2c8bff3286bf5262.png",
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42249870031-1-b0002.tar.gz"
+      },
+      "preview": {
+        "archive": {
+          "member": "previews/d082af215f7fba8f52ae3b32a90e896f910646087218d6fa2c8bff3286bf5262.png",
+          "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42249870031-1-b0002.tar.gz"
+        },
+        "format": "png",
+        "height": 400,
+        "path": "previews/d082af215f7fba8f52ae3b32a90e896f910646087218d6fa2c8bff3286bf5262.png",
+        "sha256": "4d422ed2cc0299df4b33eab52b2f82df40bd84044c881d8655918691bc0cbcfc",
+        "size_bytes": 8784,
+        "width": 400
+      },
+      "review_question": "Inspect exact computer-role structure or place previously reviewed exact component into a combined-use board. No new collection."
+    }
+  ]
+}
