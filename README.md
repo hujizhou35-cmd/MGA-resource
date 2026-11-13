@@ -4,9 +4,9 @@ A free medical illustration library for agents and people. Scientific illustrati
 
 ## Current phase
 
-Paused at the user's request on 2026-11-07, after an acceptance checkpoint. Do not automatically continue collection, website implementation or deployment, even if a check passes. The website is not built or deployed. Resume from the short [checkpoint and next step](docs/CLOUD-QA-RECOVERY-20261107.md). Counts in upstream catalogs are candidates, not accepted artwork.
+Acceptance resumed at the user's request on 2026-11-14 from checkpoint `4d6e532`. Reuse the two existing component replays and verified observations, diagnose gaps from current source metadata, and only repeat affected checks after actual changes. Website implementation and deployment remain gated on formal acceptance. The website is not built or deployed. See the [current continuation record](docs/CLOUD-QA-RECOVERY-20261107.md).
 
-The user authorized a separate [component retrieval gate](docs/COMPONENT-ACCEPTANCE.md) under the updated collection boundary. Its 60 tasks, 71 required roles and 142 bilingual child queries were frozen before the first replay. The historical 120 questions and 102/120 result below remain unchanged. The later pause instruction takes precedence over the earlier plan to build the website after acceptance.
+The user authorized a separate [component retrieval gate](docs/COMPONENT-ACCEPTANCE.md) under the updated collection boundary. Its 60 tasks, 71 required roles and 142 bilingual child queries were frozen before the first replay. The historical 120 questions and 102/120 result below remain unchanged. The 2026-11-14 resume instruction restores the plan to build and deploy the completely free, Agent-first website after formal acceptance.
 
 The [2026-11-07 QA candidate](docs/CLOUD-QA-RECOVERY-20261107.md) has passed content-scope filtering and an independent cloud restore of 19,473 originals with their previews. The curated set now contains 60 distinct families, five per category, with actual display and use-case composition reviews and recorded limitations. These QA archives are not the formal website release.
 

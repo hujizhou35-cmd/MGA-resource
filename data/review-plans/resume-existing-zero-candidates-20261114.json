@@ -1,0 +1,371 @@
+{
+  "schema_version": 1,
+  "purpose": "Diagnose existing-source zero results with bounded exact previews; no acquisition or benchmark rerun.",
+  "catalog_sha256": "8a961c42a357147f2ae0229526f6127c955e05928721d94283e829463f738da0",
+  "files": [
+    {
+      "source": "bioicons",
+      "source_id": "cc-0/Blood_Immunology/Marcel_Tisch/blood_sample_tube.svg",
+      "asset_id": "bioicons-584b89c9a5861cf81285",
+      "title": "blood sample tube",
+      "source_url": "https://github.com/duerrsimon/bioicons/blob/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-0/Blood_Immunology/Marcel_Tisch/blood_sample_tube.svg",
+      "format": "svg",
+      "original_sha256": "5f34965209758c8821d190aa7c0fabee2f3f4c31f8ec8f3b318aed1b770cf025",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42239971379-1-b0000.tar.gz",
+        "member": "files/5f/5f34965209758c8821d190aa7c0fabee2f3f4c31f8ec8f3b318aed1b770cf025.svg"
+      },
+      "preview": {
+        "path": "previews/5f34965209758c8821d190aa7c0fabee2f3f4c31f8ec8f3b318aed1b770cf025.png",
+        "format": "png",
+        "width": 255,
+        "height": 512,
+        "sha256": "e7f410ac26ff8ddd3edaf3eb5af9426255591f16a91f7235d588bd1f028b8773",
+        "size_bytes": 26610,
+        "archive": {
+          "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42239971379-1-b0000.tar.gz",
+          "member": "previews/5f34965209758c8821d190aa7c0fabee2f3f4c31f8ec8f3b318aed1b770cf025.png"
+        }
+      },
+      "review_question": "实际是否为可复用血样/采血管对象，而不是血管、低温储存瓶或完整分离结果；对象能否独立看清，来源能支持什么用途。",
+      "diagnostic_topic": "blood_collection_tube",
+      "limits": "Existing catalog nomination only; not a query result or acceptance. Do not backfill the frozen replay."
+    },
+    {
+      "source": "nih-bioart",
+      "source_id": "52",
+      "asset_id": "nih-bioart-23aa4f9a90a8699a9e3a",
+      "title": "BDBlood Vial",
+      "source_url": "https://bioart.niaid.nih.gov/bioart/52",
+      "format": "svg",
+      "original_sha256": "30b560694a90f859c33c43df586970569e7402f24b112a61d1d546df733c8435",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/nih-bioart-42236561214-1-b0000.tar.gz",
+        "member": "files/30/30b560694a90f859c33c43df586970569e7402f24b112a61d1d546df733c8435.svg"
+      },
+      "preview": {
+        "path": "previews/30b560694a90f859c33c43df586970569e7402f24b112a61d1d546df733c8435.png",
+        "format": "png",
+        "width": 435,
+        "height": 512,
+        "sha256": "bd3e1e08b66d804f9b2b33239a57eb865a2fea22895e2fdf5ecf491a36007a4c",
+        "size_bytes": 5341,
+        "archive": {
+          "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/nih-bioart-42236561214-1-b0000.tar.gz",
+          "member": "previews/30b560694a90f859c33c43df586970569e7402f24b112a61d1d546df733c8435.png"
+        }
+      },
+      "review_question": "实际是否为可复用血样/采血管对象，而不是血管、低温储存瓶或完整分离结果；对象能否独立看清，来源能支持什么用途。",
+      "diagnostic_topic": "blood_collection_tube",
+      "limits": "Existing catalog nomination only; not a query result or acceptance. Do not backfill the frozen replay."
+    },
+    {
+      "source": "nih-bioart",
+      "source_id": "143",
+      "asset_id": "nih-bioart-39a8c3d73cda8e2800ee",
+      "title": "Eppendorf Tube",
+      "source_url": "https://bioart.niaid.nih.gov/bioart/143",
+      "format": "svg",
+      "original_sha256": "df6d3db8fab7e99bf39f91c586039d91dbd8a59f713e96ab70e137b1e72b7d13",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/nih-bioart-42236561214-1-b0000.tar.gz",
+        "member": "files/df/df6d3db8fab7e99bf39f91c586039d91dbd8a59f713e96ab70e137b1e72b7d13.svg"
+      },
+      "preview": {
+        "path": "previews/df6d3db8fab7e99bf39f91c586039d91dbd8a59f713e96ab70e137b1e72b7d13.png",
+        "format": "png",
+        "width": 512,
+        "height": 512,
+        "sha256": "cf8ac3d86b315c84794c1da054ab418f64503764d1405025da27cc131aec3062",
+        "size_bytes": 28460,
+        "archive": {
+          "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/nih-bioart-42236561214-1-b0000.tar.gz",
+          "member": "previews/df6d3db8fab7e99bf39f91c586039d91dbd8a59f713e96ab70e137b1e72b7d13.png"
+        }
+      },
+      "review_question": "实际是否为小型铰链盖微量离心管；不能把普通试管或离心机改名。记录有无样品/标注，不推具体容量/材质/性能。",
+      "diagnostic_topic": "microcentrifuge_tube",
+      "limits": "Existing catalog nomination only; not a query result or acceptance. Do not backfill the frozen replay."
+    },
+    {
+      "source": "togo",
+      "source_id": "737",
+      "asset_id": "togo-f1fe0ed63b9134a928f6",
+      "title": "1.5ml tube",
+      "source_url": "https://doi.org/10.7875/togopic.2020.150",
+      "format": "svg",
+      "original_sha256": "8149553cfc1230eeea1b5b38d5708c7ae4c1d491033924f4dabc1748a42df27b",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42249870031-1-b0001.tar.gz",
+        "member": "files/81/8149553cfc1230eeea1b5b38d5708c7ae4c1d491033924f4dabc1748a42df27b.svg"
+      },
+      "preview": {
+        "path": "previews/8149553cfc1230eeea1b5b38d5708c7ae4c1d491033924f4dabc1748a42df27b.png",
+        "format": "png",
+        "width": 233,
+        "height": 512,
+        "sha256": "130eb8ba7cc70f5d65fb6f8322a3b935e3ff54155ce1f2b7e21185128fa14c7c",
+        "size_bytes": 16282,
+        "archive": {
+          "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/togo-42249870031-1-b0001.tar.gz",
+          "member": "previews/8149553cfc1230eeea1b5b38d5708c7ae4c1d491033924f4dabc1748a42df27b.png"
+        }
+      },
+      "review_question": "实际是否为小型铰链盖微量离心管；不能把普通试管或离心机改名。记录有无样品/标注，不推具体容量/材质/性能。",
+      "diagnostic_topic": "microcentrifuge_tube",
+      "limits": "Existing catalog nomination only; not a query result or acceptance. Do not backfill the frozen replay."
+    },
+    {
+      "source": "bioicons",
+      "source_id": "cc-by-4.0/People-Other/DBCLS/Examination_Man.svg",
+      "asset_id": "bioicons-7f79bececd11df0d3e3b",
+      "title": "Examination Man",
+      "source_url": "https://github.com/duerrsimon/bioicons/blob/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-4.0/People-Other/DBCLS/Examination_Man.svg",
+      "format": "svg",
+      "original_sha256": "36df84f24b05cf308515e7a267c400fc7a7ded3913d544c52af37d93a360bf50",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42251588741-1-b0032.tar.gz",
+        "member": "files/36/36df84f24b05cf308515e7a267c400fc7a7ded3913d544c52af37d93a360bf50.svg"
+      },
+      "preview": {
+        "path": "previews/36df84f24b05cf308515e7a267c400fc7a7ded3913d544c52af37d93a360bf50.png",
+        "format": "png",
+        "width": 512,
+        "height": 512,
+        "sha256": "f495e8345a6c254854aeb2f1bf1fd97ec734b284fe9818596e8f547e1e2ac3ac",
+        "size_bytes": 41208,
+        "archive": {
+          "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42251588741-1-b0032.tar.gz",
+          "member": "previews/36df84f24b05cf308515e7a267c400fc7a7ded3913d544c52af37d93a360bf50.png"
+        }
+      },
+      "review_question": "实际是否有人体受检者与临床人员进行可辨的身体检查/评估，还是只有人物/仪器/咨询；不推诊断、入组或测量值。",
+      "diagnostic_topic": "clinical_assessment",
+      "limits": "Existing catalog nomination only; not a query result or acceptance. Do not backfill the frozen replay."
+    },
+    {
+      "source": "bioicons",
+      "source_id": "cc-by-4.0/People-Other/DBCLS/Examination_Woman.svg",
+      "asset_id": "bioicons-f3db7499dbfb7689e430",
+      "title": "Examination Woman",
+      "source_url": "https://github.com/duerrsimon/bioicons/blob/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-4.0/People-Other/DBCLS/Examination_Woman.svg",
+      "format": "svg",
+      "original_sha256": "4817fad3246313687fc900972111f7cc387a1c9064d0c23768667873cae38a60",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42251588741-1-b0032.tar.gz",
+        "member": "files/48/4817fad3246313687fc900972111f7cc387a1c9064d0c23768667873cae38a60.svg"
+      },
+      "preview": {
+        "path": "previews/4817fad3246313687fc900972111f7cc387a1c9064d0c23768667873cae38a60.png",
+        "format": "png",
+        "width": 512,
+        "height": 512,
+        "sha256": "5ab92ff62545057537a0a2faedd959d4c321365d5538caae6138c45be36143bf",
+        "size_bytes": 40885,
+        "archive": {
+          "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42251588741-1-b0032.tar.gz",
+          "member": "previews/4817fad3246313687fc900972111f7cc387a1c9064d0c23768667873cae38a60.png"
+        }
+      },
+      "review_question": "实际是否有人体受检者与临床人员进行可辨的身体检查/评估，还是只有人物/仪器/咨询；不推诊断、入组或测量值。",
+      "diagnostic_topic": "clinical_assessment",
+      "limits": "Existing catalog nomination only; not a query result or acceptance. Do not backfill the frozen replay."
+    },
+    {
+      "source": "bioicons",
+      "source_id": "cc-by-4.0/People-Other/DBCLS/ultrasonic-examination.svg",
+      "asset_id": "bioicons-d8694e5607d13fbd82c7",
+      "title": "ultrasonic examination",
+      "source_url": "https://github.com/duerrsimon/bioicons/blob/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-4.0/People-Other/DBCLS/ultrasonic-examination.svg",
+      "format": "svg",
+      "original_sha256": "3991546c44a07da3124a32f0b4f0918df77b65c0e531b56dc077e5e308fc865e",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42251588741-1-b0032.tar.gz",
+        "member": "files/39/3991546c44a07da3124a32f0b4f0918df77b65c0e531b56dc077e5e308fc865e.svg"
+      },
+      "preview": {
+        "path": "previews/3991546c44a07da3124a32f0b4f0918df77b65c0e531b56dc077e5e308fc865e.png",
+        "format": "png",
+        "width": 512,
+        "height": 512,
+        "sha256": "1d68afc3d118485d3c19efccc64c2341d364ddd77af24c18f9e6ea35931a4c81",
+        "size_bytes": 40506,
+        "archive": {
+          "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42251588741-1-b0032.tar.gz",
+          "member": "previews/3991546c44a07da3124a32f0b4f0918df77b65c0e531b56dc077e5e308fc865e.png"
+        }
+      },
+      "review_question": "实际是否有人体受检者与临床人员进行可辨的身体检查/评估，还是只有人物/仪器/咨询；不推诊断、入组或测量值。",
+      "diagnostic_topic": "clinical_assessment",
+      "limits": "Existing catalog nomination only; not a query result or acceptance. Do not backfill the frozen replay."
+    },
+    {
+      "source": "bioicons",
+      "source_id": "cc-by-3.0/Human_physiology/Servier/drug-capsule-1.svg",
+      "asset_id": "bioicons-aac84eab601ab9662b8b",
+      "title": "drug capsule 1",
+      "source_url": "https://github.com/duerrsimon/bioicons/blob/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-3.0/Human_physiology/Servier/drug-capsule-1.svg",
+      "format": "svg",
+      "original_sha256": "bf7295587ab9b7ccc71baa3de01bb3f2177830c175ec90eff9767200655087d5",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42251588741-1-b0002.tar.gz",
+        "member": "files/bf/bf7295587ab9b7ccc71baa3de01bb3f2177830c175ec90eff9767200655087d5.svg"
+      },
+      "preview": {
+        "path": "previews/bf7295587ab9b7ccc71baa3de01bb3f2177830c175ec90eff9767200655087d5.png",
+        "format": "png",
+        "width": 512,
+        "height": 205,
+        "sha256": "af7b5030bd5ada99c2255fb87bc6ae4add9ee3b1f0af4def13c4f308a0d081bf",
+        "size_bytes": 15901,
+        "archive": {
+          "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42251588741-1-b0002.tar.gz",
+          "member": "previews/bf7295587ab9b7ccc71baa3de01bb3f2177830c175ec90eff9767200655087d5.png"
+        }
+      },
+      "review_question": "实际是否为可复用药物剂型对象；记录来源对pill/tablet/capsule的支持，外形本身不能推药名、药效或具体给药事实。",
+      "diagnostic_topic": "oral_medication",
+      "limits": "Existing catalog nomination only; not a query result or acceptance. Do not backfill the frozen replay."
+    },
+    {
+      "source": "bioicons",
+      "source_id": "cc-by-3.0/Human_physiology/Servier/drug-tablet-3.svg",
+      "asset_id": "bioicons-0056b2d6a8292850738f",
+      "title": "drug tablet 3",
+      "source_url": "https://github.com/duerrsimon/bioicons/blob/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-3.0/Human_physiology/Servier/drug-tablet-3.svg",
+      "format": "svg",
+      "original_sha256": "a0c65df9976cbe75b0cf183bd697e94e44d5a9596df662da40f7f4f4f20bb801",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42251588741-1-b0002.tar.gz",
+        "member": "files/a0/a0c65df9976cbe75b0cf183bd697e94e44d5a9596df662da40f7f4f4f20bb801.svg"
+      },
+      "preview": {
+        "path": "previews/a0c65df9976cbe75b0cf183bd697e94e44d5a9596df662da40f7f4f4f20bb801.png",
+        "format": "png",
+        "width": 512,
+        "height": 484,
+        "sha256": "892cd44be189c769236e8df14a14ad8ee7b4efb41592715c27181fcf1ec54929",
+        "size_bytes": 51148,
+        "archive": {
+          "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42251588741-1-b0002.tar.gz",
+          "member": "previews/a0c65df9976cbe75b0cf183bd697e94e44d5a9596df662da40f7f4f4f20bb801.png"
+        }
+      },
+      "review_question": "实际是否为可复用药物剂型对象；记录来源对pill/tablet/capsule的支持，外形本身不能推药名、药效或具体给药事实。",
+      "diagnostic_topic": "oral_medication",
+      "limits": "Existing catalog nomination only; not a query result or acceptance. Do not backfill the frozen replay."
+    },
+    {
+      "source": "nih-bioart",
+      "source_id": "407",
+      "asset_id": "nih-bioart-6866f6d0d285f66a2e89",
+      "title": "Pill",
+      "source_url": "https://bioart.niaid.nih.gov/bioart/407",
+      "format": "svg",
+      "original_sha256": "01e0038568882628855c6b9034f88635bdfa413f01fd484baca96b349423507b",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/nih-bioart-42236561214-1-b0000.tar.gz",
+        "member": "files/01/01e0038568882628855c6b9034f88635bdfa413f01fd484baca96b349423507b.svg"
+      },
+      "preview": {
+        "path": "previews/01e0038568882628855c6b9034f88635bdfa413f01fd484baca96b349423507b.png",
+        "format": "png",
+        "width": 512,
+        "height": 403,
+        "sha256": "23cb4f95e5cae30c93d4d73d55b96f7a7b66b9821466c6e827c0b5caf878a0bc",
+        "size_bytes": 20904,
+        "archive": {
+          "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/nih-bioart-42236561214-1-b0000.tar.gz",
+          "member": "previews/01e0038568882628855c6b9034f88635bdfa413f01fd484baca96b349423507b.png"
+        }
+      },
+      "review_question": "实际是否为可复用药物剂型对象；记录来源对pill/tablet/capsule的支持，外形本身不能推药名、药效或具体给药事实。",
+      "diagnostic_topic": "oral_medication",
+      "limits": "Existing catalog nomination only; not a query result or acceptance. Do not backfill the frozen replay."
+    },
+    {
+      "source": "bioicons",
+      "source_id": "cc-by-4.0/Nucleic_acids/DBCLS/histone.svg",
+      "asset_id": "bioicons-af3aeaeb246faf90acc5",
+      "title": "histone",
+      "source_url": "https://github.com/duerrsimon/bioicons/blob/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-by-4.0/Nucleic_acids/DBCLS/histone.svg",
+      "format": "svg",
+      "original_sha256": "6db6951ce2dfbc83410e4c3b1f776ac1caa4854ec1fb794abaacaa0f641deaa4",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42239971379-1-b0005.tar.gz",
+        "member": "files/6d/6db6951ce2dfbc83410e4c3b1f776ac1caa4854ec1fb794abaacaa0f641deaa4.svg"
+      },
+      "preview": {
+        "path": "previews/6db6951ce2dfbc83410e4c3b1f776ac1caa4854ec1fb794abaacaa0f641deaa4.png",
+        "format": "png",
+        "width": 512,
+        "height": 512,
+        "sha256": "3575fe42eaf706a234781e4507f4b02d142c1ea338649cf453b841b9fe4b1dbf",
+        "size_bytes": 62684,
+        "archive": {
+          "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42239971379-1-b0005.tar.gz",
+          "member": "previews/6db6951ce2dfbc83410e4c3b1f776ac1caa4854ec1fb794abaacaa0f641deaa4.png"
+        }
+      },
+      "review_question": "实际是否有蛋白或复合体结构表现，还是纯文字名牌/流程成品；DNA结合身份必须另外有来源依据，不凭外形推功能。",
+      "diagnostic_topic": "dna_binding_protein",
+      "limits": "Existing catalog nomination only; not a query result or acceptance. Do not backfill the frozen replay."
+    },
+    {
+      "source": "reactome",
+      "source_id": "R-ICO-012825",
+      "asset_id": "reactome-3b17416fd604099b7e0f",
+      "title": "Histone octamer 1",
+      "source_url": "https://reactome.org/content/detail/R-ICO-012825",
+      "format": "svg",
+      "original_sha256": "f3e1acf6af85c0d7f6232f7cdcbeb90a42caa24a0ee33d7947937541fed6b931",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/reactome-42246331998-1-b0000.tar.gz",
+        "member": "files/f3/f3e1acf6af85c0d7f6232f7cdcbeb90a42caa24a0ee33d7947937541fed6b931.svg"
+      },
+      "preview": {
+        "path": "previews/f3e1acf6af85c0d7f6232f7cdcbeb90a42caa24a0ee33d7947937541fed6b931.png",
+        "format": "png",
+        "width": 512,
+        "height": 443,
+        "sha256": "6b567c3b484aa140c9f23cb3706a0b567544b8fbceeb5a48cffa047abb990519",
+        "size_bytes": 69742,
+        "archive": {
+          "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/reactome-42246331998-1-b0000.tar.gz",
+          "member": "previews/f3e1acf6af85c0d7f6232f7cdcbeb90a42caa24a0ee33d7947937541fed6b931.png"
+        }
+      },
+      "review_question": "实际是否有蛋白或复合体结构表现，还是纯文字名牌/流程成品；DNA结合身份必须另外有来源依据，不凭外形推功能。",
+      "diagnostic_topic": "dna_binding_protein",
+      "limits": "Existing catalog nomination only; not a query result or acceptance. Do not backfill the frozen replay."
+    },
+    {
+      "source": "bioicons",
+      "source_id": "cc-0/Nucleic_acids/Simon_Dürr/restriction_enzyme.svg",
+      "asset_id": "bioicons-97ff6884adc3237ef497",
+      "title": "restriction enzyme",
+      "source_url": "https://github.com/duerrsimon/bioicons/blob/d29e766ea7580b8063c4f47b29e872db40a4d979/static/icons/cc-0/Nucleic_acids/Simon_D%C3%BCrr/restriction_enzyme.svg",
+      "format": "svg",
+      "original_sha256": "941c505894ab674c58c173125491eee3c4cfab7d123c78ac6aa3ec62590026d2",
+      "original_archive": {
+        "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42239971379-1-b0000.tar.gz",
+        "member": "files/94/941c505894ab674c58c173125491eee3c4cfab7d123c78ac6aa3ec62590026d2.svg"
+      },
+      "preview": {
+        "path": "previews/941c505894ab674c58c173125491eee3c4cfab7d123c78ac6aa3ec62590026d2.png",
+        "format": "png",
+        "width": 512,
+        "height": 232,
+        "sha256": "2a286cb9b8e62f843ebb62532cf5ceb45a0f954429a966b38b2c4b67b1f7e87d",
+        "size_bytes": 18914,
+        "archive": {
+          "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/collection-20261106/bioicons-42239971379-1-b0000.tar.gz",
+          "member": "previews/941c505894ab674c58c173125491eee3c4cfab7d123c78ac6aa3ec62590026d2.png"
+        }
+      },
+      "review_question": "实际是否有蛋白或复合体结构表现，还是纯文字名牌/流程成品；DNA结合身份必须另外有来源依据，不凭外形推功能。",
+      "diagnostic_topic": "dna_binding_protein",
+      "limits": "Existing catalog nomination only; not a query result or acceptance. Do not backfill the frozen replay."
+    }
+  ]
+}
