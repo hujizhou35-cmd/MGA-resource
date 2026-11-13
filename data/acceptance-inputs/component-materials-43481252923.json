@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "purpose": "Current 3.5.3 material input bindings; the original 120 score and frozen historical scope stay unchanged.",
+  "documents": {
+    "historical_manifest": {
+      "path": "build/science-version-acceptance-20261107/dispositions/candidate_publish_manifest.json",
+      "sha256": "e9cf028a56e6a3b827bad7e5e576d48599ca7e4224f4f5e7f8a7660f0dfdcbbe"
+    },
+    "restored_manifest": {
+      "path": "build/cloud-recovery-20261107/frozen-42289434868-3.4.3.publish_manifest.json",
+      "sha256": "a4fe0424ee8ecc32096090ef295242bdaa04b9ce29ff4f7a80948c95516d5436"
+    },
+    "bundle": {
+      "path": "build/cloud-recovery-20261107/build-evidence/qa-20261107-42289434868-3.4.3.bundle.json",
+      "sha256": "54b055c631c5fd814a7012f176151eb86d65c66849f8b2c71ea3a53ae44dc3a0"
+    },
+    "restore": {
+      "path": "build/cloud-recovery-20261107/restore-evidence/qa-20261107-42289434868-3.4.3-42312769493-1.restore_evidence.json",
+      "sha256": "bdfdf932d22b6ce2a008de38873ac70ba8dcb1dc3235b474f40f9f8fbc9eb4dd"
+    },
+    "equivalence": {
+      "path": "build/component-resume-20261114/equivalence-43479855430/restore-equivalence-43479855430-1.json",
+      "sha256": "f4a330ee9373cfafb3ee58f7ff05c601f168162865914518f1e1324c3f812f5c"
+    },
+    "scope": {
+      "path": "build/component-resume-20261114/scope-43481373877/scope-metadata-audit-43481373877-1.scope-audit.json",
+      "sha256": "b32aec15f2731bc24e3ad8aa9928dd61e8582f2f5ff474d0377f7b01dcb0588d"
+    },
+    "supplemental": {
+      "path": "build/component-resume-20261114/control-review-43481269060/supplemental-evidence.json",
+      "sha256": "ed8c99749855e060acb82c07cf4ab9d1e3300b132d51cbce1d23f3106598c117"
+    },
+    "negatives": {
+      "path": "build/component-resume-20261114/control-review-43481269060/negative-observations.json",
+      "sha256": "9bfc0f23bf5e003c7f820864973ed053621a3a7782e7b7e25f3efa13bcc49942"
+    },
+    "controls_summary": {
+      "path": "build/component-resume-20261114/control-review-43481269060/summary.json",
+      "sha256": "a4e53cc5c3170260299ccd38fc4e5e0944cdf390023715c3731b7bddb2bebff1"
+    },
+    "negative_raw": {
+      "path": "build/component-resume-20261114/controls-43481269060/build/catalog-controls-replay/43481269060-1/evidence/raw-negative-results.json",
+      "sha256": "993a2665ecc8f5744c82b49b46c74f6492f5824923bbacdfa6a891bb58268624"
+    }
+  }
+}

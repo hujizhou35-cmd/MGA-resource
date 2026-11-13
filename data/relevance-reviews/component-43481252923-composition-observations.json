@@ -1,0 +1,781 @@
+{
+  "schema_version": 1,
+  "reviewer": "Codex root; actual nine combination boards plus exact single-role use review",
+  "reviewed_at": "2026-11-13T18:28:43.249265+00:00",
+  "raw_bindings": {
+    "component_benchmark_sha256": "d4e462a631b88929bc3be419ab287599bb5a713de2e4cb0c2c84123cf5b94cef",
+    "legacy_benchmark_sha256": "ce0282afeb4afbcee8fdef1c6f937844ef569cabf16ba7909e22bf86b1096e92",
+    "catalog_sha256": "f3f869f4ed24e4582ff26c46fabb64a1e68593d2a731eff66e728ec6b280f377",
+    "sqlite_sha256": "061659f9d4b806997dba95d644ba8f7ba1e9eff63f0d498442bc4edf5ca92939",
+    "assembly_report_sha256": "a9c236e1aa81b4f965583ad38b77421b44ba51667fbfa84e3edcb3e450275efa",
+    "search_core_sha256": "679abe5bf0b62d35f2b849d0e49a48020a6a54a2969ea9ab01dabb6c29c6e0c5",
+    "ranking_version": "shared-search-3.5.3",
+    "search_index_version": 13,
+    "search_vocabulary_sha256": "49c264129091681e1d38b670d8eac118e560c9ca15d39079ae25be0a36a858c8",
+    "search_cli_sha256": "b2fe91561fdb1be14225be773e0e914010a30152a76d8b5a1ee0ac989f1b6ac4",
+    "search_policy_sha256": "1aa7be9051f9e2cbdb3d6ecd5751dc2a1980211d189d09ac6b611084af094d55",
+    "raw_results_sha256": "e4364869d611f2411740c7317241c1078201f3d10919276ddc90c0a995054988",
+    "publish_manifest_sha256": "48dd557eeb5c20cea2eb553072ef2401d0055a18b45befa440e7f44087ad9fb3"
+  },
+  "new_combination_boards_actually_viewed": 9,
+  "items": [
+    {
+      "task_id": "component-experimental_actions-blood-collection",
+      "units": [
+        {
+          "task_id": "component-experimental_actions-blood-collection",
+          "language": "zh"
+        },
+        {
+          "task_id": "component-experimental_actions-blood-collection",
+          "language": "en"
+        }
+      ],
+      "selected_roles": {
+        "human_arm": [
+          "healthicons-f9dbec50d6c1c336832f:67da2ac1e1010668322dcf8aa773d7d8c6f8ff16b9452cbb1e700d0671e6671c:healthicons-ded31ddb6a68669012a0:0"
+        ],
+        "blood_collection_tube": [
+          "bioicons-584b89c9a5861cf81285:5f34965209758c8821d190aa7c0fabee2f3f4c31f8ec8f3b318aed1b770cf025:bioicons-584b89c9a5861cf81285:0"
+        ]
+      },
+      "composition_use_pass": true,
+      "composition_notes": "实际查看：手臂剪影与采血管分别完整、无互相遮挡；手、前臂及近端轮廓可辨。可作为采样部位与容器的概念组合，黑色剪影和有色器件画风不同，浅色背景可辨；不把图面作为静脉、穿刺点或采血路线。",
+      "limitations": [
+        "Separate components only. No puncture point, vein, blood-draw technique, route or successful sampling is shown.",
+        "未修改原件或清除标签；混合画风可辨不等于统一画风或原生编辑已验证。"
+      ],
+      "composition_evidence": [
+        {
+          "path": "build/component-resume-20261114/compositions-43481252923/01-blood-collection.png",
+          "sha256": "ed8434daed295743c23ca36806959fb9c1da290ad896796fd490fb18e48898d2"
+        },
+        {
+          "path": "build/component-resume-20261114/compositions-43481252923/review-page-1.png",
+          "sha256": "4d4b91d278c42013e5eb086f8873037de34a206481ab7929cdfafc6e595d9322"
+        },
+        {
+          "path": "build/component-resume-20261114/compositions-43481252923/mapping.json",
+          "sha256": "69929c82a890ececfbbc191ad479846a793a8065a7769cda1bb00ae946733336"
+        }
+      ],
+      "actual_visual_inspection_performed": true,
+      "review_method": "Actually displayed all three pages and inspected this row with exact-source objects; not inferred from rendering success."
+    },
+    {
+      "task_id": "component-experimental_actions-pipetting",
+      "units": [
+        {
+          "task_id": "component-experimental_actions-pipetting",
+          "language": "zh"
+        },
+        {
+          "task_id": "component-experimental_actions-pipetting",
+          "language": "en"
+        }
+      ],
+      "selected_roles": {
+        "micropipette": [
+          "bioicons-2920777ffb44dc11e36d:88029da12d315fd46e6a8804b98ae4a78a2801414ae1b35e2647817fcf46dfac:bioicons-2920777ffb44dc11e36d:0"
+        ],
+        "receiving_tube": [
+          "togo-f1fe0ed63b9134a928f6:8149553cfc1230eeea1b5b38d5708c7ae4c1d491033924f4dabc1748a42df27b:togo-4a9304a27709230b5377:0"
+        ]
+      },
+      "composition_use_pass": true,
+      "composition_notes": "实际查看：完整移液器主体、推杆/侧按部件及枪头，与另一个有开口的锥底接收管分开摆放。没有把枪头插入管内；小尺寸下刻度和按钮细节不能作为参数。满足器具组合用途，不证明体积、无菌性或兼容性。",
+      "limitations": [
+        "Separate equipment objects. No tip insertion, delivered volume, sterile technique or product compatibility is asserted.",
+        "未修改原件或清除标签；混合画风可辨不等于统一画风或原生编辑已验证。"
+      ],
+      "composition_evidence": [
+        {
+          "path": "build/component-resume-20261114/compositions-43481252923/02-pipetting.png",
+          "sha256": "f7e7ef26f65d2d0af81a40dff54d464e1bce9b669ce369cfe7b339bce335eb3c"
+        },
+        {
+          "path": "build/component-resume-20261114/compositions-43481252923/review-page-1.png",
+          "sha256": "4d4b91d278c42013e5eb086f8873037de34a206481ab7929cdfafc6e595d9322"
+        },
+        {
+          "path": "build/component-resume-20261114/compositions-43481252923/mapping.json",
+          "sha256": "69929c82a890ececfbbc191ad479846a793a8065a7769cda1bb00ae946733336"
+        }
+      ],
+      "actual_visual_inspection_performed": true,
+      "review_method": "Actually displayed all three pages and inspected this row with exact-source objects; not inferred from rendering success."
+    },
+    {
+      "task_id": "component-clinical_workflow-cohort-followup",
+      "units": [
+        {
+          "task_id": "component-clinical_workflow-cohort-followup",
+          "language": "zh"
+        },
+        {
+          "task_id": "component-clinical_workflow-cohort-followup",
+          "language": "en"
+        }
+      ],
+      "selected_roles": {
+        "human_subject": [
+          "nih-bioart-8e79073e15120955e045:02c261fd5f314f363c07bdfa16fcd2bd5d27c89f72d86a42d0381451a3ad5fde:nih-bioart-91595da9cf15b50de113:0"
+        ],
+        "clinical_assessment": [
+          "bioicons-d8694e5607d13fbd82c7:3991546c44a07da3124a32f0b4f0918df77b65c0e531b56dc077e5e308fc865e:bioicons-d8694e5607d13fbd82c7:0"
+        ]
+      },
+      "composition_use_pass": true,
+      "composition_notes": "实际查看：普通人物头像与产前超声评估场景并列，医生持探头接近腹部及屏幕胎儿示意可辨。限定为产前评估例子，不能把两处人物认定同一真实受试者，也不能据此生成所有人群通用随访方案或时间间隔。",
+      "limitations": [
+        "Prenatal-ultrasound example only. The avatar is not identified as the patient in the scene. No generic follow-up protocol, time interval or enrollment is claimed.",
+        "未修改原件或清除标签；混合画风可辨不等于统一画风或原生编辑已验证。"
+      ],
+      "composition_evidence": [
+        {
+          "path": "build/component-resume-20261114/compositions-43481252923/03-cohort-followup.png",
+          "sha256": "d66a4774206b0d0aa333d97549e785dbd46ec6c65a020b50437b3fc64c07a5d5"
+        },
+        {
+          "path": "build/component-resume-20261114/compositions-43481252923/review-page-1.png",
+          "sha256": "4d4b91d278c42013e5eb086f8873037de34a206481ab7929cdfafc6e595d9322"
+        },
+        {
+          "path": "build/component-resume-20261114/compositions-43481252923/mapping.json",
+          "sha256": "69929c82a890ececfbbc191ad479846a793a8065a7769cda1bb00ae946733336"
+        }
+      ],
+      "actual_visual_inspection_performed": true,
+      "review_method": "Actually displayed all three pages and inspected this row with exact-source objects; not inferred from rendering success."
+    },
+    {
+      "task_id": "component-omics_data-gene-network",
+      "units": [
+        {
+          "task_id": "component-omics_data-gene-network",
+          "language": "zh"
+        },
+        {
+          "task_id": "component-omics_data-gene-network",
+          "language": "en"
+        }
+      ],
+      "selected_roles": {
+        "dna": [
+          "healthicons-1532fd39e8bc1eae21da:c52e57adfb9e3cafc9c4be27240821855411bba043862820f1cdc7e3e3308bc9:healthicons-ac3970a28d9870252062:0"
+        ],
+        "dna_binding_protein": [
+          "bioicons-97ff6884adc3237ef497:941c505894ab674c58c173125491eee3c4cfab7d123c78ac6aa3ec62590026d2:bioicons-97ff6884adc3237ef497:0"
+        ]
+      },
+      "composition_use_pass": true,
+      "composition_notes": "实际查看：左侧DNA有两条互绕交叉骨架及横杆；右侧限制性内切酶源图保留蛋白轮廓、DNA与序列/切割箭头。两图独立，无新调控连线，能表达DNA及DNA结合蛋白组成；右图原有切割语境、文字和红色箭头不能随意擦除或扩写成另一机制。",
+      "limitations": [
+        "Separate molecular components, no connecting regulatory arrow. Restriction-enzyme context is retained. No new binding site, sequence or causal network is asserted.",
+        "未修改原件或清除标签；混合画风可辨不等于统一画风或原生编辑已验证。"
+      ],
+      "composition_evidence": [
+        {
+          "path": "build/component-resume-20261114/compositions-43481252923/04-gene-network.png",
+          "sha256": "09b42129db2bd18e3fffb93a54a5adfda2f08d0b3a8cf623629d73eafd4cf812"
+        },
+        {
+          "path": "build/component-resume-20261114/compositions-43481252923/review-page-2.png",
+          "sha256": "6ff35d74832ed63b0079e29eb14b37753c7f3881ffae02f26634c810e0b7646a"
+        },
+        {
+          "path": "build/component-resume-20261114/compositions-43481252923/mapping.json",
+          "sha256": "69929c82a890ececfbbc191ad479846a793a8065a7769cda1bb00ae946733336"
+        }
+      ],
+      "actual_visual_inspection_performed": true,
+      "review_method": "Actually displayed all three pages and inspected this row with exact-source objects; not inferred from rendering success."
+    },
+    {
+      "task_id": "component-experimental_actions-mouse-injection",
+      "units": [
+        {
+          "task_id": "component-experimental_actions-mouse-injection",
+          "language": "zh"
+        },
+        {
+          "task_id": "component-experimental_actions-mouse-injection",
+          "language": "en"
+        }
+      ],
+      "selected_roles": {
+        "mouse": [
+          "scidraw-91c9980d0963b2696246:2d4b2ecc1b708c945a9901e97489d3cf17cf400fbb983648433711f7afb80499:scidraw-91c9980d0963b2696246:0"
+        ],
+        "syringe": [
+          "scidraw-366fed2b8aaf49949b17:52e1df0929577cc6e7a63e2d0d8752fe2758a20d3e4f9c31621918044aa8d920:scidraw-366fed2b8aaf49949b17:0"
+        ]
+      },
+      "composition_use_pass": true,
+      "composition_notes": "实际查看：完整小鼠及注射器分别可辨，针尖未接触身体，也没有连线或穿刺路线。细长器具在缩小时更弱，应按需放大，不能从图面给出剂量、途径或已实施注射。两物体可以作为给药构图的前置组件。",
+      "limitations": [
+        "Separate animal and device. The needle does not touch the animal. No route, dose, restraint or performed injection is implied.",
+        "未修改原件或清除标签；混合画风可辨不等于统一画风或原生编辑已验证。"
+      ],
+      "composition_evidence": [
+        {
+          "path": "build/component-resume-20261114/compositions-43481252923/05-mouse-injection.png",
+          "sha256": "713e4117d1578bc115bcb701a1d2268629ecadc6ecaadc485c502311362d2377"
+        },
+        {
+          "path": "build/component-resume-20261114/compositions-43481252923/review-page-2.png",
+          "sha256": "6ff35d74832ed63b0079e29eb14b37753c7f3881ffae02f26634c810e0b7646a"
+        },
+        {
+          "path": "build/component-resume-20261114/compositions-43481252923/mapping.json",
+          "sha256": "69929c82a890ececfbbc191ad479846a793a8065a7769cda1bb00ae946733336"
+        }
+      ],
+      "actual_visual_inspection_performed": true,
+      "review_method": "Actually displayed all three pages and inspected this row with exact-source objects; not inferred from rendering success."
+    },
+    {
+      "task_id": "component-experimental_actions-cell-culture",
+      "units": [
+        {
+          "task_id": "component-experimental_actions-cell-culture",
+          "language": "zh"
+        },
+        {
+          "task_id": "component-experimental_actions-cell-culture",
+          "language": "en"
+        }
+      ],
+      "selected_roles": {
+        "culture_flask": [
+          "bioicons-b3407e473194510135b2:3166f934b211a64f4aed25460b8dd906d085adbf84180e98974df29fbc2c2ceb:bioicons-b3407e473194510135b2:0"
+        ],
+        "animal_cell": [
+          "togo-3905c37d757359375261:06bcfb5618058c69a80bea75e0f87daf3dca5bc990d66d3b7711d8b5f8a5262d:togo-d1169a537baec48c849b:0"
+        ]
+      },
+      "composition_use_pass": true,
+      "composition_notes": "实际查看：开口有液体的培养瓶和动物细胞剖面分开显示，边界完整、无遮挡；细胞画为概念放大对象，未塞入瓶内或暗示真实比例。可用于容器/细胞对象说明，不证明培养动作、细胞系或生长结果。",
+      "limitations": [
+        "Different conceptual scales. The cell is not placed inside the flask. No cell line, actual culture action or successful growth is claimed.",
+        "未修改原件或清除标签；混合画风可辨不等于统一画风或原生编辑已验证。"
+      ],
+      "composition_evidence": [
+        {
+          "path": "build/component-resume-20261114/compositions-43481252923/06-cell-culture.png",
+          "sha256": "5952f949d275463b0155f7fe413c1896f1ea7391c6e0f8ec5bb78daea7ac9105"
+        },
+        {
+          "path": "build/component-resume-20261114/compositions-43481252923/review-page-2.png",
+          "sha256": "6ff35d74832ed63b0079e29eb14b37753c7f3881ffae02f26634c810e0b7646a"
+        },
+        {
+          "path": "build/component-resume-20261114/compositions-43481252923/mapping.json",
+          "sha256": "69929c82a890ececfbbc191ad479846a793a8065a7769cda1bb00ae946733336"
+        }
+      ],
+      "actual_visual_inspection_performed": true,
+      "review_method": "Actually displayed all three pages and inspected this row with exact-source objects; not inferred from rendering success."
+    },
+    {
+      "task_id": "component-experimental_actions-centrifugation",
+      "units": [
+        {
+          "task_id": "component-experimental_actions-centrifugation",
+          "language": "zh"
+        },
+        {
+          "task_id": "component-experimental_actions-centrifugation",
+          "language": "en"
+        }
+      ],
+      "selected_roles": {
+        "centrifuge": [
+          "togo-d10e6bb836637be74fc0:d87e9ca9f6ae35b5bb49a187f3426da3b937e0ba0eaf554557c29100f282bfac:togo-e7daf9ba961083720e84:0"
+        ],
+        "centrifuge_tube": [
+          "togo-30b4739048e9e69eb4f4:4f4cd7b5ea3297b13412a15b42309baf5aef46b452952222008d419a350e2625:togo-56976ef5274038d039c7:0"
+        ]
+      },
+      "composition_use_pass": true,
+      "composition_notes": "实际查看：开盖离心机的转子孔位与独立带盖锥底管清楚，来源画风相近；没有伪造管子装入转子。设备和容器并列用途成立，兼容性、配平、转速及分离结果均未由图推断。",
+      "limitations": [
+        "Separate equipment and container. No rotor fit, loading, balance, speed or actual separation outcome is inferred.",
+        "未修改原件或清除标签；混合画风可辨不等于统一画风或原生编辑已验证。"
+      ],
+      "composition_evidence": [
+        {
+          "path": "build/component-resume-20261114/compositions-43481252923/07-centrifugation.png",
+          "sha256": "917ec5b88a074bea9ad6d88f9c394505ff122aedf6bae285dc7ff6180cef762e"
+        },
+        {
+          "path": "build/component-resume-20261114/compositions-43481252923/review-page-3.png",
+          "sha256": "10d4851030d589c3120bd9c07feced0d0e99887bc0297016fb25c0ae0baaf1b2"
+        },
+        {
+          "path": "build/component-resume-20261114/compositions-43481252923/mapping.json",
+          "sha256": "69929c82a890ececfbbc191ad479846a793a8065a7769cda1bb00ae946733336"
+        }
+      ],
+      "actual_visual_inspection_performed": true,
+      "review_method": "Actually displayed all three pages and inspected this row with exact-source objects; not inferred from rendering success."
+    },
+    {
+      "task_id": "component-omics_data-rnaseq",
+      "units": [
+        {
+          "task_id": "component-omics_data-rnaseq",
+          "language": "zh"
+        },
+        {
+          "task_id": "component-omics_data-rnaseq",
+          "language": "en"
+        }
+      ],
+      "selected_roles": {
+        "rna_input": [
+          "reactome-710f41745441efb63bce:f545168bcda277bcac0f3eb3bf84333106ffee108cbd0581f976668a60302a9d:reactome-f148dc498dafea509e57:0"
+        ],
+        "sequencing_instrument": [
+          "togo-99156e8bfe768df3bfe9:d082af215f7fba8f52ae3b32a90e896f910646087218d6fa2c8bff3286bf5262:togo-366008ba4f7413062f21:0"
+        ]
+      },
+      "composition_use_pass": true,
+      "composition_notes": "实际查看：短单链RNA示意与来源支持的测序仪独立成块，清楚处于不同概念尺度；无从RNA直指仪器的箭头。可用于核酸与测序设备的对象层说明，不能替代提取、逆转录、建库等实际方法步骤。",
+      "limitations": [
+        "Separate molecular and equipment scales. No direct feed arrow. Extraction, reverse transcription and library preparation are not supplied by these components.",
+        "未修改原件或清除标签；混合画风可辨不等于统一画风或原生编辑已验证。"
+      ],
+      "composition_evidence": [
+        {
+          "path": "build/component-resume-20261114/compositions-43481252923/08-rnaseq.png",
+          "sha256": "d4c35bdfb2332d1fbea6190af47fc7cfd163dcecf21d7930774de95112975283"
+        },
+        {
+          "path": "build/component-resume-20261114/compositions-43481252923/review-page-3.png",
+          "sha256": "10d4851030d589c3120bd9c07feced0d0e99887bc0297016fb25c0ae0baaf1b2"
+        },
+        {
+          "path": "build/component-resume-20261114/compositions-43481252923/mapping.json",
+          "sha256": "69929c82a890ececfbbc191ad479846a793a8065a7769cda1bb00ae946733336"
+        }
+      ],
+      "actual_visual_inspection_performed": true,
+      "review_method": "Actually displayed all three pages and inspected this row with exact-source objects; not inferred from rendering success."
+    },
+    {
+      "task_id": "component-omics_data-heatmap",
+      "units": [
+        {
+          "task_id": "component-omics_data-heatmap",
+          "language": "zh"
+        },
+        {
+          "task_id": "component-omics_data-heatmap",
+          "language": "en"
+        }
+      ],
+      "selected_roles": {
+        "rna": [
+          "reactome-710f41745441efb63bce:f545168bcda277bcac0f3eb3bf84333106ffee108cbd0581f976668a60302a9d:reactome-f148dc498dafea509e57:0"
+        ],
+        "protein": [
+          "bioicons-89bf842d70734288a1d9:442eb62c23332a886707f090be33ec70979d1cfc74ccfad1714d22044d879734:bioicons-89bf842d70734288a1d9:0"
+        ]
+      },
+      "composition_use_pass": true,
+      "composition_notes": "实际查看：RNA短链与蛋白一级结构彩色残基串独立显示，分子形态可辨且没有新关系箭头。色块只来自插图，不作表达量；没有热图、翻译方向或相关性结论。可作为表达分析中的生物对象组件。",
+      "limitations": [
+        "Separate molecular illustrations only. Colors are not expression values. No translation, quantitative relationship or measured heatmap is displayed.",
+        "未修改原件或清除标签；混合画风可辨不等于统一画风或原生编辑已验证。"
+      ],
+      "composition_evidence": [
+        {
+          "path": "build/component-resume-20261114/compositions-43481252923/09-heatmap.png",
+          "sha256": "2ee3814a7ff2b5ed13d9bb586900affce1df4714b4abdb73d601ce4441b04218"
+        },
+        {
+          "path": "build/component-resume-20261114/compositions-43481252923/review-page-3.png",
+          "sha256": "10d4851030d589c3120bd9c07feced0d0e99887bc0297016fb25c0ae0baaf1b2"
+        },
+        {
+          "path": "build/component-resume-20261114/compositions-43481252923/mapping.json",
+          "sha256": "69929c82a890ececfbbc191ad479846a793a8065a7769cda1bb00ae946733336"
+        }
+      ],
+      "actual_visual_inspection_performed": true,
+      "review_method": "Actually displayed all three pages and inspected this row with exact-source objects; not inferred from rendering success."
+    },
+    {
+      "task_id": "component-people-patient",
+      "units": [
+        {
+          "task_id": "component-people-patient",
+          "language": "zh"
+        }
+      ],
+      "selected_roles": {
+        "primary_object": [
+          "healthicons-8b56482a4dde9a89ce1a:3b97af71dbf4013f83f8a2a612d4d4d09fdea3b0ed3806596ba2ec2ab8de2540:healthicons-5fb5920a1f43d560a4ed:0"
+        ]
+      },
+      "composition_use_pass": true,
+      "composition_notes": "实际选中的是中性全身人物符号，无病种、职业、真实个人信息或人数断言；作为单个人物部件使用，不需从多个角色重构患者场景。已查看精确文件，保留对深底低对比的限制。",
+      "limitations": [
+        "单个对象/局部场景的用途审阅，不额外生成无必要的组合画布；依据先前实际显示的精确对象。",
+        "不证明未声明科学参数、原生编辑或按需文字清理已经实现。"
+      ],
+      "composition_evidence": [
+        {
+          "path": "build/component-resume-20261114/pending-preview-43476542410/exact-review-43476542410-1.review.png",
+          "sha256": "a7360321812885228d2db10a7bc4897b9630ece1146999bc7ca7279642a1a836"
+        },
+        {
+          "path": "build/component-resume-20261114/pending-preview-43476542410/mapping.json",
+          "sha256": "8a55737e13aded9d00d5de65d677cad0d859bed81f1588bfc86ebc6f55662005"
+        },
+        {
+          "path": "data/visual-reviews/pending-component-files-20261114.json",
+          "sha256": "2c743d0876b6781e2cb4ad260876532a3a4950f0f8e51ebdde62d7fe37c07c16"
+        }
+      ],
+      "actual_visual_inspection_performed": false,
+      "review_method": "Reused exact actual object viewing and checked this selected single-role use; no new image view claimed."
+    },
+    {
+      "task_id": "component-people-clinician",
+      "units": [
+        {
+          "task_id": "component-people-clinician",
+          "language": "zh"
+        }
+      ],
+      "selected_roles": {
+        "primary_object": [
+          "bioicons-f3db7499dbfb7689e430:4817fad3246313687fc900972111f7cc387a1c9064d0c23768667873cae38a60:bioicons-f3db7499dbfb7689e430:0"
+        ]
+      },
+      "composition_use_pass": true,
+      "composition_notes": "实际选中为医者与另一成年人交谈的局部场景，临床人物与工作关系清楚；可作为临床人员表达的场景部件，不能声称已进行体检，也不是独立全身医生切图。",
+      "limitations": [
+        "单个对象/局部场景的用途审阅，不额外生成无必要的组合画布；依据先前实际显示的精确对象。",
+        "不证明未声明科学参数、原生编辑或按需文字清理已经实现。"
+      ],
+      "composition_evidence": [
+        {
+          "path": "build/component-resume-20261114/zero-preview-43467539792/review/previews/4817fad3246313687fc900972111f7cc387a1c9064d0c23768667873cae38a60.png",
+          "sha256": "5ab92ff62545057537a0a2faedd959d4c321365d5538caae6138c45be36143bf"
+        },
+        {
+          "path": "build/component-resume-20261114/zero-preview-43467539792/review/mapping.json",
+          "sha256": "e18cd3c38dd7c43251becf6d49864b8763724d35f96dc8a75106c1bf162f9561"
+        },
+        {
+          "path": "data/visual-reviews/resume-zero-results-43467539792.json",
+          "sha256": "7b5f8baf1c23d4e72159454d188a3690cfc46edee8b2d20c3b81050c81c7decd"
+        }
+      ],
+      "actual_visual_inspection_performed": false,
+      "review_method": "Reused exact actual object viewing and checked this selected single-role use; no new image view claimed."
+    },
+    {
+      "task_id": "component-molecules-dna",
+      "units": [
+        {
+          "task_id": "component-molecules-dna",
+          "language": "zh"
+        }
+      ],
+      "selected_roles": {
+        "primary_object": [
+          "healthicons-1532fd39e8bc1eae21da:c52e57adfb9e3cafc9c4be27240821855411bba043862820f1cdc7e3e3308bc9:healthicons-ac3970a28d9870252062:0"
+        ]
+      },
+      "composition_use_pass": true,
+      "composition_notes": "已实际查看改选的Health Icons双螺旋：两条骨架互绕交叉并有横杆，无序列文字或量值；可作为双链DNA概念对象，黑色图形在深底需另作颜色/对比处理。旧SciSVG近似梯状图在当前审阅保留待定，不沿用旧不准确笔记。",
+      "limitations": [
+        "单个对象/局部场景的用途审阅，不额外生成无必要的组合画布；依据先前实际显示的精确对象。",
+        "不证明未声明科学参数、原生编辑或按需文字清理已经实现。"
+      ],
+      "composition_evidence": [
+        {
+          "path": "data/relevance-reviews/frozen-3.4.1-equipment-cells-molecules.json",
+          "sha256": "0f4105a8f1ce07412f015885c82f0db21344fe8ba5adb943fa59979c2e1dea9c"
+        },
+        {
+          "path": "build/science-version-acceptance-20261107/visual/final/judgments.json",
+          "sha256": "81f8313353d678976d47db6c42bb54ae6628abcf15b7bcff779ee60a46f776f2",
+          "json_pointer": "/queries/60/result_judgments/1"
+        },
+        {
+          "path": "build/frozen-review-42298772894/review/concepts/molecules-dna.png",
+          "sha256": "6250fcd2a23951923d7845e6f0c23f3e571c87e935853ed6c6e03d0adad893ed"
+        },
+        {
+          "path": "build/component-resume-20261114/compositions-43481252923/04-gene-network.png",
+          "sha256": "09b42129db2bd18e3fffb93a54a5adfda2f08d0b3a8cf623629d73eafd4cf812"
+        }
+      ],
+      "actual_visual_inspection_performed": false,
+      "review_method": "Reused exact actual object viewing and checked this selected single-role use; no new image view claimed."
+    },
+    {
+      "task_id": "component-molecules-dna",
+      "units": [
+        {
+          "task_id": "component-molecules-dna",
+          "language": "en"
+        }
+      ],
+      "selected_roles": {
+        "primary_object": [
+          "healthicons-1532fd39e8bc1eae21da:c52e57adfb9e3cafc9c4be27240821855411bba043862820f1cdc7e3e3308bc9:healthicons-ac3970a28d9870252062:0"
+        ]
+      },
+      "composition_use_pass": true,
+      "composition_notes": "已实际查看改选的Health Icons双螺旋：两条骨架互绕交叉并有横杆，无序列文字或量值；可作为双链DNA概念对象，黑色图形在深底需另作颜色/对比处理。旧SciSVG近似梯状图在当前审阅保留待定，不沿用旧不准确笔记。",
+      "limitations": [
+        "单个对象/局部场景的用途审阅，不额外生成无必要的组合画布；依据先前实际显示的精确对象。",
+        "不证明未声明科学参数、原生编辑或按需文字清理已经实现。"
+      ],
+      "composition_evidence": [
+        {
+          "path": "data/relevance-reviews/frozen-3.4.1-equipment-cells-molecules.json",
+          "sha256": "0f4105a8f1ce07412f015885c82f0db21344fe8ba5adb943fa59979c2e1dea9c"
+        },
+        {
+          "path": "build/science-version-acceptance-20261107/visual/final/judgments.json",
+          "sha256": "81f8313353d678976d47db6c42bb54ae6628abcf15b7bcff779ee60a46f776f2",
+          "json_pointer": "/queries/61/result_judgments/1"
+        },
+        {
+          "path": "build/frozen-review-42298772894/review/concepts/molecules-dna.png",
+          "sha256": "6250fcd2a23951923d7845e6f0c23f3e571c87e935853ed6c6e03d0adad893ed"
+        },
+        {
+          "path": "build/component-resume-20261114/compositions-43481252923/04-gene-network.png",
+          "sha256": "09b42129db2bd18e3fffb93a54a5adfda2f08d0b3a8cf623629d73eafd4cf812"
+        }
+      ],
+      "actual_visual_inspection_performed": false,
+      "review_method": "Reused exact actual object viewing and checked this selected single-role use; no new image view claimed."
+    },
+    {
+      "task_id": "component-lab_equipment-pipette",
+      "units": [
+        {
+          "task_id": "component-lab_equipment-pipette",
+          "language": "zh"
+        }
+      ],
+      "selected_roles": {
+        "primary_object": [
+          "togo-cf9a3c6fc99a96a9a97a:cda1278dac454a0098233e5ee00e180b8cec04926f501437abcca3c66b389448:togo-db7eedb2a61380138004:0"
+        ]
+      },
+      "composition_use_pass": true,
+      "composition_notes": "精确选中图中的移液器手柄、按压部件和下方枪头可辨；中文选择多通道简图、英文选择单通道简图，各自按实际结构使用。器具含义清楚，不声明真实体积、品牌/性能或已经完成移液。",
+      "limitations": [
+        "单个对象/局部场景的用途审阅，不额外生成无必要的组合画布；依据先前实际显示的精确对象。",
+        "不证明未声明科学参数、原生编辑或按需文字清理已经实现。"
+      ],
+      "composition_evidence": [
+        {
+          "path": "build/component-resume-20261114/pending-preview-43476542410/exact-review-43476542410-1.review.png",
+          "sha256": "a7360321812885228d2db10a7bc4897b9630ece1146999bc7ca7279642a1a836"
+        },
+        {
+          "path": "build/component-resume-20261114/pending-preview-43476542410/mapping.json",
+          "sha256": "8a55737e13aded9d00d5de65d677cad0d859bed81f1588bfc86ebc6f55662005"
+        },
+        {
+          "path": "data/visual-reviews/pending-component-files-20261114.json",
+          "sha256": "2c743d0876b6781e2cb4ad260876532a3a4950f0f8e51ebdde62d7fe37c07c16"
+        }
+      ],
+      "actual_visual_inspection_performed": false,
+      "review_method": "Reused exact actual object viewing and checked this selected single-role use; no new image view claimed."
+    },
+    {
+      "task_id": "component-lab_equipment-pipette",
+      "units": [
+        {
+          "task_id": "component-lab_equipment-pipette",
+          "language": "en"
+        }
+      ],
+      "selected_roles": {
+        "primary_object": [
+          "scisvg-519891a4c033306eccbb:eb51703468824613cebafacea70c08cb8cbb5c78b192d421c995e1af9d27a1c4:scisvg-519891a4c033306eccbb:0"
+        ]
+      },
+      "composition_use_pass": true,
+      "composition_notes": "精确选中图中的移液器手柄、按压部件和下方枪头可辨；中文选择多通道简图、英文选择单通道简图，各自按实际结构使用。器具含义清楚，不声明真实体积、品牌/性能或已经完成移液。",
+      "limitations": [
+        "单个对象/局部场景的用途审阅，不额外生成无必要的组合画布；依据先前实际显示的精确对象。",
+        "不证明未声明科学参数、原生编辑或按需文字清理已经实现。"
+      ],
+      "composition_evidence": [
+        {
+          "path": "build/component-resume-20261114/remaining-role-preview-43476227920/exact-review-43476227920-1.review.png",
+          "sha256": "053d25a7797a559ef487550fed44638efbf9aa6e43d68bdbba83d39c1413eaa3"
+        },
+        {
+          "path": "build/component-resume-20261114/remaining-role-preview-43476227920/mapping.json",
+          "sha256": "29436c3ad677f71562fce11f7963702d73e7c2c67dbe605de2d8561d62e4a2b7"
+        },
+        {
+          "path": "data/visual-reviews/remaining-role-details-43476227920.json",
+          "sha256": "5df25dbf6e7eaad9e83fab491113f1b209021f8243fd7c49152e98c3ea1060b3"
+        }
+      ],
+      "actual_visual_inspection_performed": false,
+      "review_method": "Reused exact actual object viewing and checked this selected single-role use; no new image view claimed."
+    },
+    {
+      "task_id": "component-lab_equipment-petri-dish",
+      "units": [
+        {
+          "task_id": "component-lab_equipment-petri-dish",
+          "language": "zh"
+        }
+      ],
+      "selected_roles": {
+        "primary_object": [
+          "bioicons-130d0e55fa847383ea29:1a5eb73244d5846fd0ede5a0b066de14410d71ec0d58974408ff3c3b2dc9f791:bioicons-130d0e55fa847383ea29:0"
+        ]
+      },
+      "composition_use_pass": true,
+      "composition_notes": "实际选中独立蓝色浅圆培养皿，边缘/侧壁完整，作为单个容器对象可直接放入构图；不将蓝色区域解释成特定培养基、细胞系或菌落结果。",
+      "limitations": [
+        "单个对象/局部场景的用途审阅，不额外生成无必要的组合画布；依据先前实际显示的精确对象。",
+        "不证明未声明科学参数、原生编辑或按需文字清理已经实现。"
+      ],
+      "composition_evidence": [
+        {
+          "path": "build/component-resume-20261114/pending-preview-43476542410/exact-review-43476542410-1.review.png",
+          "sha256": "a7360321812885228d2db10a7bc4897b9630ece1146999bc7ca7279642a1a836"
+        },
+        {
+          "path": "build/component-resume-20261114/pending-preview-43476542410/mapping.json",
+          "sha256": "8a55737e13aded9d00d5de65d677cad0d859bed81f1588bfc86ebc6f55662005"
+        },
+        {
+          "path": "data/visual-reviews/pending-component-files-20261114.json",
+          "sha256": "2c743d0876b6781e2cb4ad260876532a3a4950f0f8e51ebdde62d7fe37c07c16"
+        }
+      ],
+      "actual_visual_inspection_performed": false,
+      "review_method": "Reused exact actual object viewing and checked this selected single-role use; no new image view claimed."
+    },
+    {
+      "task_id": "component-lab_equipment-petri-dish",
+      "units": [
+        {
+          "task_id": "component-lab_equipment-petri-dish",
+          "language": "en"
+        }
+      ],
+      "selected_roles": {
+        "primary_object": [
+          "bioicons-130d0e55fa847383ea29:1a5eb73244d5846fd0ede5a0b066de14410d71ec0d58974408ff3c3b2dc9f791:bioicons-130d0e55fa847383ea29:0"
+        ]
+      },
+      "composition_use_pass": true,
+      "composition_notes": "实际选中独立蓝色浅圆培养皿，边缘/侧壁完整，作为单个容器对象可直接放入构图；不将蓝色区域解释成特定培养基、细胞系或菌落结果。",
+      "limitations": [
+        "单个对象/局部场景的用途审阅，不额外生成无必要的组合画布；依据先前实际显示的精确对象。",
+        "不证明未声明科学参数、原生编辑或按需文字清理已经实现。"
+      ],
+      "composition_evidence": [
+        {
+          "path": "build/component-resume-20261114/pending-preview-43476542410/exact-review-43476542410-1.review.png",
+          "sha256": "a7360321812885228d2db10a7bc4897b9630ece1146999bc7ca7279642a1a836"
+        },
+        {
+          "path": "build/component-resume-20261114/pending-preview-43476542410/mapping.json",
+          "sha256": "8a55737e13aded9d00d5de65d677cad0d859bed81f1588bfc86ebc6f55662005"
+        },
+        {
+          "path": "data/visual-reviews/pending-component-files-20261114.json",
+          "sha256": "2c743d0876b6781e2cb4ad260876532a3a4950f0f8e51ebdde62d7fe37c07c16"
+        }
+      ],
+      "actual_visual_inspection_performed": false,
+      "review_method": "Reused exact actual object viewing and checked this selected single-role use; no new image view claimed."
+    },
+    {
+      "task_id": "component-omics_data-forest-template",
+      "units": [
+        {
+          "task_id": "component-omics_data-forest-template",
+          "language": "zh"
+        }
+      ],
+      "selected_roles": {
+        "analysis_workstation": [
+          "nih-bioart-f3566d99fce58cd91a83:0844b340cfa87e1c7e652151e60fb539f831c8562cf5f3f6ff2bf71d776ba64d:nih-bioart-22de0ac5af69de78ab1d:0"
+        ]
+      },
+      "composition_use_pass": true,
+      "composition_notes": "实际选中打开的笔记本电脑，屏幕、机身与输入区域可辨，空白屏幕不会带入既有森林图。作为分析工具的物理对象可独立使用，不证明软件或统计模型已经运行；森林图须依据真实数据另画。",
+      "limitations": [
+        "单个对象/局部场景的用途审阅，不额外生成无必要的组合画布；依据先前实际显示的精确对象。",
+        "不证明未声明科学参数、原生编辑或按需文字清理已经实现。"
+      ],
+      "composition_evidence": [
+        {
+          "path": "build/component-resume-20261114/remaining-role-preview-43476227920/exact-review-43476227920-1.review.png",
+          "sha256": "053d25a7797a559ef487550fed44638efbf9aa6e43d68bdbba83d39c1413eaa3"
+        },
+        {
+          "path": "build/component-resume-20261114/remaining-role-preview-43476227920/mapping.json",
+          "sha256": "29436c3ad677f71562fce11f7963702d73e7c2c67dbe605de2d8561d62e4a2b7"
+        },
+        {
+          "path": "data/visual-reviews/remaining-role-details-43476227920.json",
+          "sha256": "5df25dbf6e7eaad9e83fab491113f1b209021f8243fd7c49152e98c3ea1060b3"
+        }
+      ],
+      "actual_visual_inspection_performed": false,
+      "review_method": "Reused exact actual object viewing and checked this selected single-role use; no new image view claimed."
+    },
+    {
+      "task_id": "component-omics_data-forest-template",
+      "units": [
+        {
+          "task_id": "component-omics_data-forest-template",
+          "language": "en"
+        }
+      ],
+      "selected_roles": {
+        "analysis_workstation": [
+          "nih-bioart-f3566d99fce58cd91a83:0844b340cfa87e1c7e652151e60fb539f831c8562cf5f3f6ff2bf71d776ba64d:nih-bioart-22de0ac5af69de78ab1d:0"
+        ]
+      },
+      "composition_use_pass": true,
+      "composition_notes": "实际选中打开的笔记本电脑，屏幕、机身与输入区域可辨，空白屏幕不会带入既有森林图。作为分析工具的物理对象可独立使用，不证明软件或统计模型已经运行；森林图须依据真实数据另画。",
+      "limitations": [
+        "单个对象/局部场景的用途审阅，不额外生成无必要的组合画布；依据先前实际显示的精确对象。",
+        "不证明未声明科学参数、原生编辑或按需文字清理已经实现。"
+      ],
+      "composition_evidence": [
+        {
+          "path": "build/component-resume-20261114/remaining-role-preview-43476227920/exact-review-43476227920-1.review.png",
+          "sha256": "053d25a7797a559ef487550fed44638efbf9aa6e43d68bdbba83d39c1413eaa3"
+        },
+        {
+          "path": "build/component-resume-20261114/remaining-role-preview-43476227920/mapping.json",
+          "sha256": "29436c3ad677f71562fce11f7963702d73e7c2c67dbe605de2d8561d62e4a2b7"
+        },
+        {
+          "path": "data/visual-reviews/remaining-role-details-43476227920.json",
+          "sha256": "5df25dbf6e7eaad9e83fab491113f1b209021f8243fd7c49152e98c3ea1060b3"
+        }
+      ],
+      "actual_visual_inspection_performed": false,
+      "review_method": "Reused exact actual object viewing and checked this selected single-role use; no new image view claimed."
+    }
+  ],
+  "formal_acceptance_established_by_this_document": false
+}

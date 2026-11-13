@@ -158,5 +158,7 @@
   ],
   "release_url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/tag/acceptance-20261107",
   "running_evidence_jobs": [],
-  "next_step": "Inspect existing cloud catalog for complete isolated human arm, whole micropipette with tip, and computer with display; reuse current results/reviews, complete pending role/composition evidence and append current material bindings before the formal gate. Targeted acquisition only if an actual stock gap remains."
+  "next_step": "Inspect existing cloud catalog for complete isolated human arm, whole micropipette with tip, and computer with display; reuse current results/reviews, complete pending role/composition evidence and append current material bindings before the formal gate. Targeted acquisition only if an actual stock gap remains.",
+  "snapshot_kind": "historical_3.5.1_partial_review_preserved",
+  "superseded_by": "data/diagnostics/component-formal-43481252923.json"
 }

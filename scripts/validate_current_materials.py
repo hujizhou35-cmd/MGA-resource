@@ -55,8 +55,24 @@ def load_current_materials(config_path, *, manifest, manifest_sha256, baseline, 
     for key in ('catalog_sha256','sqlite_sha256','assembly_report_sha256',*policy):
         require(bindings.get(key)==raw_bindings.get(key),'Controls and component replay differ: '+key)
     require(bindings['benchmark_sha256']==LEGACY_BENCHMARK_SHA,'Control benchmark identity changed')
+    # Supplemental schema exposes five required binding fields. The actual
+    # control summary above additionally binds SQLite, assembly and policy.
     for name in ('supplemental','negatives'):
-        require(all(docs[name]['bindings'].get(k)==v for k,v in bindings.items()),'Current control evidence binding differs: '+name)
+        keys=('catalog_sha256','benchmark_sha256','search_core_sha256','ranking_version','analysis_version') if name=='supplemental' else tuple(bindings)
+        require(all(docs[name]['bindings'].get(k)==bindings[k] for k in keys),'Current control evidence binding differs: '+name)
+    execution=docs['supplemental']['current_execution_evidence']
+    verify_local(execution['cloud_receipts']);verify_local(execution['appearance'])
+    receipts=json.loads((ROOT/execution['cloud_receipts']['path']).read_bytes())
+    require(all(r.get('github_digest_and_size_verified') is True for r in receipts),'Current cloud control receipt is incomplete')
+    members={m['member']:m for r in receipts for m in r.get('members',[])}
+    control_base=(ROOT/execution['appearance']['path']).resolve().parent
+    require(control_base.is_relative_to(ROOT.resolve()),'Current control path escapes checkout')
+    for path in control_base.rglob('*.json'):
+        suffix='/evidence/'+path.relative_to(control_base).as_posix()
+        exact=[m for key,m in members.items() if key.endswith(suffix)]
+        require(len(exact)==1 and digest(path)==exact[0]['sha256'],'Current cloud control member changed: '+path.name)
+    require(json.loads((control_base/'summary.json').read_bytes())['bindings']==bindings,
+        'Normalized controls bind a different downloaded cloud run')
     files={f['sha256']:f for f in manifest['files']}
     supplement=evaluate_supplement(docs['supplemental'],catalog_sha256=manifest['catalog_sha256'],
         benchmark_sha256=LEGACY_BENCHMARK_SHA,manifest_files=files)
