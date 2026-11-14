@@ -1,4 +1,14 @@
-# 免费网站实施方案
+# 网站架构与运行记录
+
+## 工作台升级
+
+站点继续使用同一 Free Pages 项目和 D1 v13。工作台首页、项目故事、来源目录及 Agent 指南独立；中英界面共享同一数据。/catalog-info.json 由冻结发布清单与部署 SQL 派生。`/v1/browse`、精简响应和本机项目交换均不修改目录、原件或科学属性。
+
+Cloudflare 适配层将数据库计数与排名分开，通过 IN 子查询复用词项集合，并先从 FTS 命中取变体。适配版本独立于排名版本；同一已验收输入继续绑定相同目录、排名和分页游标。实际计数和请求缓存分别记录。项目发给 API 的只有种子、筛选和匹配所需的文件标识；名称和选材备注由使用者自己管理。参考 [Workers 实践](https://developers.cloudflare.com/workers/best-practices/workers-best-practices/) 与 [D1 查询额度](https://developers.cloudflare.com/d1/platform/pricing/)。
+
+部署工作流仅从既有云端制品生成站点，预览通过冻结请求和独立控制项后才允许同一提交转生产。旧生产部署 `018c9845-7a2f-4c03-8637-8b9ba21b59be` 保留为回退目标。新工作流不含重导入数据库和上传图片站的路径。
+
+## 首次交付方案与历史实测
 
 组件正式报告 `component-43481252923.json` 和独立网站交付报告 `website-20261114.json` 均已通过。线上API142条原请求一致，38748对象实际HTTP字节／哈希全部通过。人工页和Agent入口已实际查看。
 

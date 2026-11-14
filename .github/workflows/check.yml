@@ -19,4 +19,4 @@ jobs:
           python-version: '3.12'
       - run: python -m pip install -e '.[test]'
       - run: python -m pytest -q
-      - run: node --test tests/test_website_api.mjs
+      - run: node --test tests/test_website_api.mjs tests/test_workbench.mjs

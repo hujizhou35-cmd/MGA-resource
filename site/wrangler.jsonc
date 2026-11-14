@@ -3,10 +3,25 @@
   "name": "mga-resource-mainly-for-agent",
   "pages_build_output_dir": "../build/website/public",
   "compatibility_date": "2026-11-13",
-  "compatibility_flags": ["nodejs_compat"],
-  "d1_databases": [{
-    "binding": "DB",
-    "database_name": "mga-resource-search-v13",
-    "database_id": "0077beb8-a3fd-47a7-87da-098b182f7d45"
-  }]
+  "compatibility_flags": [
+    "nodejs_compat"
+  ],
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "mga-resource-search-v13",
+      "database_id": "0077beb8-a3fd-47a7-87da-098b182f7d45"
+    }
+  ],
+  "env": {
+    "preview": {
+      "d1_databases": [
+        {
+          "binding": "DB",
+          "database_name": "mga-resource-search-v13",
+          "database_id": "0077beb8-a3fd-47a7-87da-098b182f7d45"
+        }
+      ]
+    }
+  }
 }

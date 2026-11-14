@@ -1,49 +1,45 @@
 # MGA-resource · mainly-for-agent
 
-A free medical illustration library for agents and people. Scientific illustrations and icons may be vectors, raster images, or mixed artwork. File formats and actual editing capabilities are recorded separately.
+**English** · [简体中文](docs/README.zh-CN.md)
 
-## Current phase
+A free library of reusable medical illustration components for drawing agents and researchers. Search for organs, cells, animals, clinical scenes or equipment, then get a preview, the exact original and its attribution.
 
-Formal component acceptance now passes under shared-search-3.5.3 / index 13: 120/120 task-language units, 60/60 per language and 5/5 in each of 12 categories. All 142 child queries and 952 result positions have relevance decisions; required uses and compositions were reviewed. Frozen questions and thresholds are unchanged. The historical original 120-question result remains 102/120, and intermediate failures are preserved. See the [formal report](data/acceptance-reports/component-43481252923.json) and [current continuation record](docs/CLOUD-QA-RECOVERY-20261107.md).
+**[Open the workbench](https://mga-resource-mainly-for-agent.pages.dev/) · [Agent API](https://mga-resource-mainly-for-agent.pages.dev/agent) · [Project story](https://mga-resource-mainly-for-agent.pages.dev/about) · [Sources](https://mga-resource-mainly-for-agent.pages.dev/sources)**
 
-The website is deployed and has passed separate delivery acceptance: [browse MGA-resource](https://mga-resource-mainly-for-agent.pages.dev), [Agent API guide](https://mga-resource-mainly-for-agent.pages.dev/agent), [llms.txt](https://mga-resource-mainly-for-agent.pages.dev/llms.txt), [OpenAPI](https://mga-resource-mainly-for-agent.pages.dev/openapi.json). All 142 accepted requests match the live API, and all 38,748 original/preview objects passed actual public HTTP byte/hash checks in the cloud. See the [website acceptance report](data/acceptance-reports/website-20261114.json). There are 19,473 downloadable originals across 7,838 families.
+## Why it exists
 
-Hosting uses confirmed Cloudflare Workers Free, four Pages projects, one D1 database and public GitHub Releases/standard runners. No paid products or automatic paid fallback are enabled. Broad searches can exhaust the daily free read allowance; an explicit error preserves the distinction from zero results, while static files remain accessible. Bulk artwork stays in the cloud. Label cleanup remains a future MGA-Designer capability applied to selected working copies, not a completed library-wide operation.
+MGA-Designer needs components that can be assembled into new graphical abstracts. Extracting reusable objects from existing figures takes time. Searching across scattered libraries also makes it difficult for an agent to compare styles, retrieve the exact file and keep its license attached. MGA-resource makes that workflow reproducible.
 
-The user authorized a separate [component retrieval gate](docs/COMPONENT-ACCEPTANCE.md) under the updated collection boundary. Its 60 tasks, 71 required roles and 142 bilingual child queries were frozen before the first replay. The historical 120 questions and 102/120 result below remain unchanged. The 2026-11-14 resume instruction restores the plan to build and deploy the completely free, Agent-first website after formal acceptance.
+## Start here
 
-The [2026-11-07 QA candidate](docs/CLOUD-QA-RECOVERY-20261107.md) has passed content-scope filtering and an independent cloud restore of 19,473 originals with their previews. The curated set now contains 60 distinct families, five per category, with actual display and use-case composition reviews and recorded limitations. These QA archives are not the formal website release.
+Browse by category or enter a medical object. Narrow results by color, style, format or source, inspect the actual preview, and save or download the file. A project keeps a stable seed, selected files and a style plan; changing projects or exploration rounds gives suitable alternatives a chance to appear. Export the local project to share your selections with an agent.
 
-Historical formal acceptance under search 3.4.3 records 102 query passes and 18 gaps, with 51/60 in each language. The 60-item curated set, six negative scenarios, source checks, color/style/diversity evidence and recovery verification passed for that bound version. Six checks concern query coverage: 102/120 is below 108, each language needs 54/60, and clinical workflow, experimental actions and omics each cover 2/5 concepts against a 4/5 requirement. The original questions and thresholds remain unchanged; these results are not a new score for search 3.5.0.
-
-A science-metadata update changes seven files without changing scope or artwork. Its cloud replay preserves 118 query result lists and adds one exact lysosome SVG to each of the two remaining queries. A separate cloud proof establishes complete manifest equality except for the catalog hash, allowing reuse of the historical independent artwork restore; it does not claim a fresh artwork read. The new catalog, index and internal scope records also pass cloud audit. [Current evidence and remaining failures](data/diagnostics/science-version-acceptance-42326843247.json) retain the earlier 100/120 result as history. The [60-item QA package](data/diagnostics/curated-60-42320795764.json) contains actual reviews and attribution.
-
-The data phase includes [file-level color/style descriptions and reproducible selection diversity](docs/INCREMENTAL-PLAN-visual-diversity.md). The historical 3.4.3 index passed actual replay of nine functional cases, 75 appearance-filter calls and ten adoption-history projects. Historical choices remain fixed; replay does not create new adoption or visual-review claims. The repaired 3.5.0 component run and remaining reviews are recorded separately in the checkpoint.
-
-Bulk artwork is processed on GitHub Actions cloud runners. This repository contains code, source descriptions and acceptance definitions, not the full image library. Versioned collection packages and reports are published as GitHub Release attachments. Public files use Cloudflare Free static assets, with three large originals available as individual GitHub Release files.
-
-## Collection workflow
-
-1. Discover published source metadata and pin the upstream version.
-2. Fetch artwork on a cloud runner in bounded batches.
-3. Preserve originals, inspect real media structure, create previews and retain attribution.
-4. Publish durable release packages, file hashes, source reports and failures.
-5. Aggregate all batches into a deduplicated catalog and run the bilingual coverage benchmark.
-6. Complete visual and selected Illustrator acceptance before website implementation.
-
-Run **Collect source** from the Actions tab. Standard Ubuntu runners in this public repository are used. No R2, paid AI, Git LFS, or larger runners are required.
-
-## Local development
-
-Python 3.12+:
-
-```text
-py -3.12 -m pip install -e ".[test]"
-py -3.12 -m pytest
+```sh
+curl -sS 'https://mga-resource-mainly-for-agent.pages.dev/v1/search?q=mouse&limit=5&response_profile=compact'
 ```
 
-Local development is code and tiny test fixtures only. The collection command refuses bulk artwork acquisition outside GitHub Actions.
+For an agent, inspect `preview.url`, retrieve `download.url`, verify `download.sha256` and keep `selected_source.provenance`. There is no need to navigate to the upstream gallery or unpack the catalog. [Runnable example](site/public/agent-example.mjs) · [OpenAPI](https://mga-resource-mainly-for-agent.pages.dev/openapi.json) · [Catalog and filter values](https://mga-resource-mainly-for-agent.pages.dev/catalog-info.json)
 
-## Licenses
+## How it was built
 
-Project code is MIT unless an included upstream notice states otherwise. Artwork retains its own license, author, source and attribution requirements. A project's code license does not relicense its illustrations. See `NOTICE` and `docs/SOURCES.md`.
+![Survey sources, collect in the cloud, preserve originals, index, validate and publish](site/public/workflow-en.svg)
+
+On 6 November 2026, collection began from pinned upstream revisions on cloud runners, preserving original bytes and attribution. File inspection and previews supported grouping variants into families and recording appearance. On 7 November the scope was refined using actual visual evidence: reusable labeled illustrations stayed, while complete text-led workflows, research design teaching figures and result charts went out. The library went online after separate component and website acceptance on 14 November. [Milestones and evidence](docs/CLOUD-QA-RECOVERY-20261107.md)
+
+## Where the artwork comes from
+
+**19,473 downloadable originals across 7,838 families.** Examples include detailed NIH BioArt illustrations, experimental and animal drawings from SciDraw, Health Icons, Reactome structural components, and life science illustrations from Bioicons and DBCLS Togo. Pinned historical Servier artwork distributed through Bioicons retains its specific credit and license record.
+
+[Sources, published counts and rights](docs/SOURCES.md) · [Source directory](https://mga-resource-mainly-for-agent.pages.dev/sources). A file can have more than one source record; the source counts overlap.
+
+## Evidence and limits
+
+| Evidence | Recorded result |
+| --- | --- |
+| [Component retrieval acceptance](data/acceptance-reports/component-43481252923.json) | 120/120 task-language units |
+| [Original historical benchmark](docs/CLOUD-QA-RECOVERY-20261107.md) | 102/120, a different benchmark |
+| [Initial website delivery](data/acceptance-reports/website-20261114.json) | 142 aligned requests and 38,748 original and preview objects checked by HTTP and SHA-256 |
+
+Inspect candidates for the intended scientific use. SVG is a file format; some files contain raster content. Adjust labels only on a copy, preserving scientific meaning and credit. Code is MIT unless an upstream notice specifies otherwise. Artwork keeps its own license. Free search has a daily resource limit and reports service failures separately from no matches; known static links remain accessible.
+
+[Architecture and maintainer notes](docs/WEBSITE-ARCHITECTURE.md). Bulk artwork is processed in cloud CI and served from published objects; it does not live in Git history.

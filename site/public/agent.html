@@ -1,10 +1,43 @@
-<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Agent API · MGA-resource</title><link rel="stylesheet" href="/style.css"></head><body><header><a class="brand" href="/">MGA-resource<span>mainly-for-agent</span></a><nav><a href="/">浏览素材</a><a href="/openapi.json">OpenAPI</a><a href="/llms.txt">llms.txt</a></nav></header><main class="docs"><p class="eyebrow">SEARCH → INSPECT → DOWNLOAD</p><h1>直接取得可用的医学素材。</h1><p>无需登录。JSON 检索返回本次选中的具体文件、直接预览与原件链接、SHA-256 和完整来源。页面和 Agent 使用同一检索核心。</p><h2>从一次请求开始</h2><pre>curl 'https://mga-resource-mainly-for-agent.pages.dev/v1/search?q=mouse&amp;limit=5'</pre><p>复杂条件使用 POST：</p><pre>POST /v1/search
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Agent API · MGA-resource</title><link rel="stylesheet" href="/style.css"><script type="module" src="/agent-doc.js"></script></head><body><header class="top"><a class="brand" href="/">MGA-resource<small>mainly-for-agent</small></a><nav aria-label="Main"><a href="/" data-en="Workbench" data-zh="素材工作台">Workbench</a><a href="/agent" aria-current="page">Agent API</a><a href="/about"  data-en="About" data-zh="项目介绍">About</a><a href="/sources"  data-en="Sources" data-zh="素材来源">Sources</a><button id="language" class="quiet" type="button" data-en="中文" data-zh="English">中文</button></nav></header><main class="docs">
+<p class="eyebrow">SEARCH → INSPECT → DOWNLOAD</p><h1 data-en="Retrieve the exact illustration file." data-zh="直接取得命中的具体素材。">Retrieve the exact illustration file.</h1>
+<div class="row"><a href="/openapi.json">OpenAPI</a><a href="/llms.txt">llms.txt</a><a href="/catalog-info.json" data-en="Categories and filters" data-zh="类别和筛选取值">Categories and filters</a><a href="/agent-example.mjs" download data-en="Runnable Node example" data-zh="可运行的 Node 示例">Runnable Node example</a></div>
+<h2 data-en="1. Make a request" data-zh="1. 发起检索">1. Make a request</h2>
+<pre>curl -sS 'https://mga-resource-mainly-for-agent.pages.dev/v1/search?q=mouse&amp;limit=5&amp;response_profile=compact'</pre><pre>POST /v1/search
 Content-Type: application/json
 
 {
-  "query": "小鼠",
-  "filters": {"format": "svg"},
-  "mode": "explore",
-  "seed": "my-study-01",
-  "limit": 10
-}</pre><h2>使用返回文件</h2><ol><li>读取 <code>query_plan</code>，确认实际解析的对象与硬条件。</li><li>查看 <code>results[].preview.url</code> 的图像，判断是否适合当前任务。</li><li>下载 <code>results[].download.url</code>，核对 <code>download.sha256</code>。每个链接直接指向文件，不需要解压图库或跳到原始素材网站。</li><li>保留 <code>selected_source.provenance</code> 中的许可、作者、来源和署名，以及本次修改说明。需要其他同家族变体时读取 <code>metadata_url</code>。</li></ol><h2>筛选、探索与分页</h2><p><code>filters</code> 支持 source、license、category、format、structure、content_type、species、state、view、role、object、depiction_kind、color_mode、palette_traits、representation、detail、realism、series、transparent、asset_id、family_id、file_sha256。字段列表表示其中任一种；不同字段同时满足。未知信息不能满足硬筛选。</p><p>模式为 <code>explore</code>、<code>design</code> 或 <code>exact</code>。为同一项目保留稳定 <code>seed</code>，新项目可改变 seed 探索候选；这不会放宽科学条件。<code>preferences</code> 只表示偏好。<code>project.selected</code> 可保留已选文件；<code>history.adopted</code> 只记录真实最终采用，必须带 <code>status: "adopted"</code>。</p><p>下一页沿用原请求并加入 <code>next_cursor</code> 的值作为 <code>cursor</code>。目录、规则、条件或种子改变后，旧 cursor 会拒绝使用。页大小1–20。</p><h2>文字与科学含义</h2><p>原件保持不变。选中素材后在工作副本上按需清理无关文字和引线；不能一律删除全部文字、箭头和线条。保留必要比例尺、方向、科学符号及机制关系，并实际查看编辑结果。<code>text_content</code> 的 unknown 表示未确认，不表示没有文字。</p><p>医学对象插图可带标签；完整研究流程模板、报告、结果图表与纯文字分子名牌不属于本库正式内容。历史 Servier CC BY 3.0 来源和现行 FAQ 冲突说明保留在项目资料与来源记录中。</p><h2>错误与免费额度</h2><p>400表示请求或cursor不合法；200且results为空表示无匹配；503表示暂时不可用或免费额度用尽，稍后重试。不会将服务失败伪装成零结果，也没有付费回退。静态预览和原件可以继续直接访问。</p><p><a href="/version.json">当前版本</a> · <a href="/acceptance.json">组件正式验收</a> · <a href="https://github.com/hujizhou35-cmd/MGA-resource">代码、范围规则与历史成绩</a></p></main></body></html>
+  "query": "侧视小鼠",
+  "mode": "design",
+  "seed": "study-01-0",
+  "project": {
+    "style": {
+      "representation": "line_art"
+    },
+    "selected": []
+  },
+  "history": {
+    "adopted": [
+      {
+        "family_id": "scidraw-82cdc8227d14a71e9810",
+        "status": "adopted"
+      }
+    ]
+  },
+  "filters": {
+    "format": "svg"
+  },
+  "limit": 8,
+  "response_profile": "compact"
+}</pre>
+<p data-en="Use GET or POST /v1/browse without a query. Pass filters.category to browse a category; set unclassified to true for families with no assigned category." data-zh="无需关键词时使用 GET 或 POST /v1/browse。通过 filters.category 浏览某类别；unclassified=true 用于浏览没有已分配类别的家族。">Use GET or POST /v1/browse without a query. Pass filters.category to browse a category; set unclassified to true for families with no assigned category.</p>
+<h2 data-en="2. Inspect, download and cite" data-zh="2. 查看、下载并保留署名">2. Inspect, download and cite</h2>
+<ul data-locale="en"><li>Check query_plan for parsed requirements and preview.url for the actual illustration.</li><li>Download download.url and verify download.sha256. The exact variant may differ from the first file in the family.</li><li>Keep selected_source.provenance and record any edits. Use the metadata_url or full response for more evidence.</li><li>Use response_profile: compact when you only need candidate inspection and delivery fields.</li></ul>
+<ul data-locale="zh" hidden><li>检查 query_plan 的实际要求，然后查看 preview.url 的图。</li><li>直接下载 download.url 并核对 download.sha256。不要替换成家族里的第一件文件。</li><li>保留 selected_source.provenance，另记修改；进一步证据使用 metadata_url 或完整响应。</li><li>只需要看图和取件时，使用 response_profile: compact。</li></ul>
+<h2 data-en="3. Reuse projects and page through results" data-zh="3. 复用项目和分页">3. Reuse projects and page through results</h2>
+<p data-en="Pass next_cursor as cursor with the same query, filters, project, seed and history. A new seed rotates suitable candidates in explore or design; exact keeps fixed ranking. Design applies project.style. Project pins only stay when they meet current constraints." data-zh="把 next_cursor 作为 cursor，沿用查询、筛选、项目、种子和历史。探索和项目画风模式可用新种子轮换合格候选；精确模式不轮换。项目画风由 project.style 应用，固定文件仍须符合当前条件。">Pass next_cursor as cursor with the same query, filters, project, seed and history. A new seed rotates suitable candidates in explore or design; exact keeps fixed ranking. Design applies project.style. Project pins only stay when they meet current constraints.</p>
+<pre>node agent-example.mjs search mga-project.json "mouse" candidates.json
+node agent-example.mjs adopt mga-project.json candidates.json 2 selected</pre>
+<p data-en="Review the preview before running adopt. The example verifies file bytes, saves credit notes and records explicit adoption. Browser projects can be exported and reimported. Requests are limited to 16 KiB and 1–20 results per page." data-zh="执行 adopt 前请先看预览。示例会校验文件、保存署名、记录明确采用。网页可导出和重新导入项目。请求上限 16 KiB，每页 1–20 件。">Review the preview before running adopt. The example verifies file bytes, saves credit notes and records explicit adoption. Browser projects can be exported and reimported. Requests are limited to 16 KiB and 1–20 results per page.</p>
+<h2 data-en="Errors and scientific limits" data-zh="错误与科学边界">Errors and scientific limits</h2>
+<p data-en="200 with an empty results array means no match. 400 means invalid input or a stale cursor. For 503, honor Retry-After. The largest original files are hosted on GitHub Releases and may require a direct download instead of browser cross-origin fetch." data-zh="200 且没有结果表示无匹配。400 表示输入或游标有误。503 时按 Retry-After 重试。少数大文件存于 GitHub Releases，可能需要直接下载，不能用网页跨域请求。">200 with an empty results array means no match. 400 means invalid input or a stale cursor. For 503, honor Retry-After. The largest original files are hosted on GitHub Releases and may require a direct download instead of browser cross-origin fetch.</p>
+<p data-en="Unknown text status is not absence of labels. Modify a working copy only when needed and preserve scientific meaning, scale and attribution." data-zh="文字状态未确认不等于无标签。如需处理，修改工作副本并保留科学含义、比例尺和署名。">Unknown text status is not absence of labels. Modify a working copy only when needed and preserve scientific meaning, scale and attribution.</p></main><footer class="top"><a href="https://github.com/hujizhou35-cmd/MGA-resource">GitHub</a><a href="/version.json" data-en="Catalog version" data-zh="目录版本">Catalog version</a><a href="/acceptance.json" data-en="Component acceptance" data-zh="组件验收">Component acceptance</a></footer><div id="notice" class="notice" role="status"></div></body></html>

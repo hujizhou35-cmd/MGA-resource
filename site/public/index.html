@@ -1,11 +1,30 @@
 <!doctype html>
-<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>MGA-resource · mainly-for-agent</title><meta name="description" content="可组合的医学绘图素材。直接预览、下载与Agent JSON检索。"><link rel="stylesheet" href="/style.css"><script type="module" src="/app.js"></script></head>
-<body><header><a class="brand" href="/">MGA-resource<span>mainly-for-agent</span></a><nav><a href="/agent">Agent 接口</a><a href="/llms.txt">llms.txt</a><a href="https://github.com/hujizhou35-cmd/MGA-resource">来源与项目</a></nav></header>
-<main><section class="intro"><div><p class="eyebrow">MEDICAL DRAWING COMPONENTS</p><h1>找到素材，<br>组成你的医学图像。</h1><p>器官、细胞、动物与实验部件。保留原件、来源和署名，支持中文与英文检索。</p></div><aside class="agent-note"><span>为 Agent 准备</span><code>GET /v1/search?q=mouse</code><p>一次检索，取得预览、原件和可追溯元数据。</p><a href="/agent">查看调用方法 →</a></aside></section>
-<form id="search-form"><label class="query-label" for="query">查找医学对象或实验场景</label><div class="search-line"><input id="query" name="query" type="search" placeholder="例如：小鼠、心脏、blood collection tube" value="mouse" maxlength="512" required><button type="submit">检索素材</button></div>
-<div class="filters"><label>文件<select id="format"><option value="">所有格式</option><option value="svg">SVG</option><option value="png">PNG</option><option value="jpg">JPG</option></select></label><label>颜色<select id="color"><option value="">所有颜色</option><option value="color">彩色</option><option value="black_white">黑白</option><option value="grayscale">灰度</option></select></label><label>模式<select id="mode"><option value="explore">探索素材</option><option value="exact">精确检索</option></select></label><label>项目种子<input id="seed" value="mga-browser" maxlength="256"></label><button class="quiet" id="alternate" type="button">换一组候选</button></div>
-<p class="hint">筛选依赖已有信息；未知不会冒充符合条件。SVG 也可能包含位图，请查看实际结构。</p></form>
-<section aria-label="检索结果"><div class="result-heading"><p id="status" role="status" aria-live="polite">准备检索…</p><button class="quiet" id="json-toggle" type="button" aria-expanded="false">查看 Agent JSON</button></div><pre id="json-output" hidden></pre><div id="results" class="grid"></div><button id="more" class="quiet" hidden>加载下一页</button></section>
-<section class="use-note"><h2>让素材适合当前任务</h2><p>先看图，再下载。带标签的医学对象可以保留；在工作副本上按需处理标签与引线，保留比例尺、方向和科学含义。素材许可与图中文字分开处理，署名继续保留。</p></section></main>
-<footer><span>免费 · 无需登录 · 原件保持不变</span><a href="/version.json">版本与目录</a><a href="/acceptance.json">组件验收记录</a></footer>
-<dialog id="detail"><button class="close quiet" aria-label="关闭详情">关闭 ×</button><div id="detail-content"></div></dialog></body></html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="Search and assemble reusable medical illustration components."><title>MGA-resource · mainly-for-agent</title><link rel="stylesheet" href="/style.css"><script type="module" src="/app.js"></script></head>
+<body>
+<a class="skip" href="#query">Skip to search</a>
+<header class="top"><a class="brand" href="/">MGA-resource<small>mainly-for-agent</small></a><nav aria-label="Main"><a href="/" aria-current="page" data-en="Workbench" data-zh="素材工作台">Workbench</a><a href="/agent">Agent API</a><a href="/about" data-en="About" data-zh="项目介绍">About</a><a href="/sources" data-en="Sources" data-zh="素材来源">Sources</a><button id="language" type="button" class="quiet" data-en="中文" data-zh="English">中文</button></nav></header>
+<main class="shell">
+<section class="mast">
+<div><p class="eyebrow" data-en="MEDICAL ILLUSTRATION LIBRARY" data-zh="医学绘图素材库">MEDICAL ILLUSTRATION LIBRARY</p><h1 data-en="Find a component. Build your figure." data-zh="找素材，组好你的医学图。">Find a component. Build your figure.</h1></div>
+<div class="mast-note" data-en="Open the exact file, inspect it, and keep its source attached." data-zh="查看并下载命中的具体文件，保留原始来源和署名。">Open the exact file, inspect it, and keep its source attached.</div>
+</section>
+<div class="workspace">
+<aside class="catalog">
+<details id="category-panel" open><summary data-en="Browse categories" data-zh="浏览全部类别">Browse categories</summary><p class="subtle" data-en="Counts cover the published catalog." data-zh="这里显示整个目录的家族数。">Counts cover the published catalog.</p><div id="categories"></div></details>
+</aside>
+<div class="desk">
+<form id="search-form" role="search">
+<label class="eyebrow" for="query" data-en="SEARCH COMPONENTS" data-zh="查找组件">SEARCH COMPONENTS</label>
+<div class="searchline"><input id="query" type="search" maxlength="512" autocomplete="off"><button type="submit" data-en="Search" data-zh="检索">Search</button></div>
+<div id="basic" class="filters"></div><details id="advanced"><summary data-en="More filters" data-zh="更多筛选">More filters</summary><div id="extra" class="filters"></div></details>
+</form>
+<div class="projectbar"><button type="button" class="quiet" id="project-open"></button><label for="mode" data-en="Sorting" data-zh="排序方式">Sorting</label><select id="mode"></select><button type="button" class="quiet" id="rotate" data-en="Try alternatives" data-zh="换一组候选">Try alternatives</button></div>
+<div class="resultbar"><p id="status" role="status"></p><div class="row"><button type="button" class="quiet" id="share" data-en="Share search" data-zh="分享检索">Share search</button><button type="button" class="quiet" id="agent-copy" data-en="Copy API call" data-zh="复制 Agent 调用">Copy API call</button></div></div>
+<div class="grid" id="results"></div><button type="button" id="more" hidden data-en="Next results" data-zh="加载更多">Next results</button>
+</div></div></main>
+<footer class="top"><a href="/version.json" data-en="Catalog version" data-zh="目录版本">Catalog version</a><a href="/acceptance.json" data-en="Acceptance evidence" data-zh="验收证据">Acceptance evidence</a><a href="https://github.com/hujizhou35-cmd/MGA-resource">GitHub</a></footer>
+<div id="notice" class="notice" role="status"></div><section id="compare-tray" class="tray" hidden aria-label="Comparison"></section>
+<dialog id="detail" aria-labelledby="detail-title"><div class="dialog-body" id="detail-body"></div><form method="dialog"><button data-en="Close" data-zh="关闭">Close</button></form></dialog>
+<dialog id="compare" aria-labelledby="compare-title"><div class="dialog-body" id="compare-body"></div><form method="dialog"><button data-en="Close" data-zh="关闭">Close</button></form></dialog>
+<dialog id="projects" aria-labelledby="projects-title"><div class="dialog-body" id="project-body"></div><form method="dialog"><button data-en="Close" data-zh="关闭">Close</button></form></dialog>
+</body></html>

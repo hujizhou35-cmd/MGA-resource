@@ -1,19 +1,16 @@
 # MGA-resource · mainly-for-agent
 
-Free medical drawing components. Search, inspect and download without login or source-site navigation.
+Free, bilingual, reusable medical illustration components. No sign-in.
 
-- API instructions: https://mga-resource-mainly-for-agent.pages.dev/agent
-- OpenAPI: https://mga-resource-mainly-for-agent.pages.dev/openapi.json
-- Version: https://mga-resource-mainly-for-agent.pages.dev/version.json
-- Health: https://mga-resource-mainly-for-agent.pages.dev/v1/health
-- Example: https://mga-resource-mainly-for-agent.pages.dev/v1/search?q=mouse&limit=5
+- [Agent guide](https://mga-resource-mainly-for-agent.pages.dev/agent)
+- [OpenAPI](https://mga-resource-mainly-for-agent.pages.dev/openapi.json)
+- [Categories, sources, and exact filter values](https://mga-resource-mainly-for-agent.pages.dev/catalog-info.json)
+- [Version](https://mga-resource-mainly-for-agent.pages.dev/version.json)
+- [Runnable Node example](https://mga-resource-mainly-for-agent.pages.dev/agent-example.mjs)
 
-POST /v1/search application/json supports query, filters, mode (explore/design/exact), seed, project, history, cursor, preferences, candidate_pool and limit (1–20).
-GET accepts q or query and JSON-encoded structured parameters.
-Result selected_file is the exact file selected by the query; do not replace it with the first family file.
-download.url and preview.url are direct hosted objects. Fetch the preview, inspect scientific suitability, fetch the original and verify download.sha256. metadata_url preserves full source context.
-Each artwork retains its own license. Preserve selected_source.provenance, attribution and modification notes. Historical Servier CC BY 3.0 provenance and current-FAQ conflict notes remain in catalog records.
-Record only actual final adoption in history.adopted with status=adopted. Views and trial downloads are not adoption. Use a stable project seed for reproducibility and a different seed for new project exploration.
-Unknown scientific/appearance/text fields remain unknown. A result is a candidate, not automatic task approval. Collection acceptance does not certify every possible use.
-Keep originals unchanged. On a selected working copy, remove/replace irrelevant labels and their leader lines as needed; preserve scale, directions, scientific symbols and mechanism arrows. Inspect the edited image. Library-wide text removal has not been performed; automatic skill cleanup is not implemented here.
-Empty results are genuine. Do not relax species, state, view or object constraints silently. A 503 is temporary service/quota failure, not an empty result. No paid fallback.
+Use GET or POST /v1/search with q/query. Use /v1/browse with no query, filters.category, or unclassified=true.
+POST JSON supports filters, preferences, limit (1–20), mode (explore/design/exact), seed, project, history, cursor, and response_profile (full/compact).
+Read query_plan, inspect results[].preview.url, retrieve results[].download.url and verify download.sha256. Keep selected_source.provenance. metadata_url points to the matching family; do not substitute its first variant for the returned result.
+Keep a stable seed per project; change rounds for exploration. Use project.style in design mode and project.selected for exact file pins. history.adopted must contain explicit final uses only (status=adopted). Next page: pass cursor=next_cursor with the same effective search and project inputs.
+200 with [] means no match. 400 means invalid request or cursor. 503 means temporary unavailability; honor Retry-After. All static files have direct URLs; the three large GitHub Release originals may not support browser CORS.
+Unknown label evidence remains unknown. Edit a working copy only; protect scientific arrows, scale and attribution. No library-wide text cleanup or drawing-skill automation is included.
