@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-14",
+  "method": "Actual authenticated IAB browser accessibility states and rendered screenshots, observed in this chat",
+  "origin": "https://mga-resource-mainly-for-agent.pages.dev",
+  "passed": true,
+  "checks": [
+    {
+      "action": "Desktop mouse search",
+      "observed": "12 visible cards from 38 qualifying families; actual mouse previews loaded in four-column layout"
+    },
+    {
+      "action": "Open walking mouse details",
+      "observed": "Artwork, Servier CC BY 3.0 provenance, original link, SHA-256 and unknown text status displayed"
+    },
+    {
+      "action": "Toggle Agent JSON",
+      "observed": "Structured results expand and collapse"
+    },
+    {
+      "action": "390 x 844 mobile layout",
+      "observed": "One-column cards and usable search controls; no observed horizontal clipping; viewport reset afterwards"
+    },
+    {
+      "action": "Follow Agent interface link",
+      "observed": "Agent API page loaded at /agent with GET/POST examples, direct file fields, cursor rules, label-cleanup guidance and free-quota error meaning"
+    }
+  ],
+  "limits": [
+    "Not a new scientific review of all 19473 originals",
+    "Original link target was inspected; all actual original/preview downloads are established by the separate cloud HTTP byte/hash proof, not a claimed browser save",
+    "Screenshots were viewed in tool output; no saved screenshot files are claimed"
+  ],
+  "new_skill_cleanup_implementation": false
+}

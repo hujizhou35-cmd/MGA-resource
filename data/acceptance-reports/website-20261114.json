@@ -1,0 +1,118 @@
+{
+  "schema_version": 1,
+  "accepted_date": "2026-11-14",
+  "status": "website_delivery_acceptance_passed",
+  "website": "https://mga-resource-mainly-for-agent.pages.dev",
+  "agent_documentation": "https://mga-resource-mainly-for-agent.pages.dev/agent",
+  "deployment_code_commit": "080fe263d642b8141e3b843d28de1ac79daf572b",
+  "search_version": "shared-search-3.5.3",
+  "index_version": 13,
+  "catalog_sha256": "f3f869f4ed24e4582ff26c46fabb64a1e68593d2a731eff66e728ec6b280f377",
+  "component_report": {
+    "path": "data/acceptance-reports/component-43481252923.json",
+    "sha256": "59ab4653858ebdd71c1e9b4593d413c5359a72f49e69dd92f311654341247c5b",
+    "score": "120/120",
+    "relevance_positions_reviewed": 952,
+    "composition_units_reviewed": 120
+  },
+  "historical_original120": {
+    "score": "102/120",
+    "unchanged": true
+  },
+  "live_api": {
+    "queries_checked": 142,
+    "passed": 142,
+    "pending": 0,
+    "runs": [
+      43489852220,
+      43490804868,
+      43491848540
+    ],
+    "new_queries_per_run": [
+      129,
+      10,
+      3
+    ],
+    "initial_guard_stops_preserved": [
+      43489852220,
+      43490804868
+    ],
+    "result_positions": 952,
+    "exact_file_source_order_science_bindings_match": true,
+    "new_scientific_reviews": 0,
+    "d1_read_upper_bound": 4753118
+  },
+  "download_delivery": {
+    "run_id": 43489588270,
+    "originals": 19473,
+    "unique_original_and_preview_objects": 38748,
+    "actual_cloud_HTTP_reads": 38748,
+    "passed": 38748,
+    "failed": 0,
+    "all_received_bytes_and_SHA256_verified": true,
+    "result_links_bound_to_download_proof": 1904
+  },
+  "live_contract": {
+    "run_id": 43492298953,
+    "checks": 23,
+    "passed": true,
+    "GET_and_cursor": true,
+    "commons_01_to_04": "retained, text attributes match",
+    "commons_05_and_06": "metadata and original paths return 404",
+    "d1_read_upper_bound": 32182
+  },
+  "human_browser_review": {
+    "path": "data/diagnostics/website-human-review-20261114.json",
+    "sha256": "a15f26f0aae42fe45835a91bbabee1f17f38328293a04cd22f245b63c76184d9",
+    "passed": true
+  },
+  "free_resources": {
+    "cloudflare_current_plan": "Workers Free $0; dashboard verified",
+    "plan_evidence": "data/diagnostics/cloudflare-free-plan-20261114.json",
+    "pages_projects": 4,
+    "D1_database_bytes": 196653056,
+    "D1_import_writes": 40271,
+    "github_repository": "public",
+    "runner": "standard ubuntu-24.04",
+    "paid_products_enabled": false,
+    "automatic_paid_fallback": false,
+    "static_file_requests_invoke_search_function": false
+  },
+  "scope": {
+    "excluded": 1663,
+    "held_for_review": 631,
+    "held_items_published": false,
+    "catalog_text_properties": {
+      "present": 37,
+      "absent": 1,
+      "unknown": 19436
+    },
+    "catalog_text_count_note": "These counts sum to 19474 catalog file records including one unavailable record; 19473 are downloadable originals."
+  },
+  "limitations": [
+    "Broad searches can consume much of the 5-million-row daily free D1 read allowance; 503 is explicit, static files remain available",
+    "Three originals over the Pages file-size limit use individual GitHub Release URLs; cloud download/hash checks passed, these three do not have wildcard CORS",
+    "Automatic label cleanup in MGA-Designer is not implemented or accepted; the selected-working-copy requirement is documented",
+    "631 held files remain outside the public library; unknown text fields are not assertions of no text"
+  ],
+  "credentials": {
+    "temporary_deploy_secret": "CLOUDFLARE_DEPLOY_TOKEN",
+    "removed": true,
+    "absence_verified_via_github_secret_list": true,
+    "refresh_token_uploaded": false,
+    "secrets_in_evidence": false
+  },
+  "whole_library_downloaded_locally": false,
+  "new_collection_started": false,
+  "blocking_items": [],
+  "evidence_package": {
+    "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/acceptance-20261107/website-20261114.evidence.tar.gz",
+    "sha256": "19f1505916afb950297964645424f06021e3fb2d3fa4ce224e1f82ddb3c9ffb6",
+    "size_bytes": 4224280,
+    "members": 22,
+    "contains_artwork": false,
+    "contains_full_catalog_or_sqlite": false,
+    "remote_verified": true,
+    "github_asset_id": 745750305
+  }
+}

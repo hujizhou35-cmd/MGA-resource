@@ -1,5 +1,19 @@
 # 当前候选包的云端恢复验收
 
+## 2026-11-14 网站交付完成（最新入口）
+
+网站已上线并通过独立交付验收：[人工浏览](https://mga-resource-mainly-for-agent.pages.dev)、[Agent调用说明](https://mga-resource-mainly-for-agent.pages.dev/agent)。部署代码 `080fe26`；搜索仍为 `shared-search-3.5.3`／索引13，目录仍为 `assembly-43480608326-1`。本节取代下方历史阶段的“尚未部署”状态，不改变任何历史成绩。
+
+- 原120题仍为102/120；新组件正式120/120。线上142条查询通过，分三次只接着查未完成项（129＋10＋3），没有重复跑整套组件基准。前两次免费读预算保护停止记录保留。
+- 19473原件、7838家族；38748原件／预览对象在云端逐个读取全部实际字节并核对SHA，全部通过。运行 `43489588270`；142条API结果中的1904个文件／预览链接也与该证明逐项一致。
+- 最终接口运行 `43491848540` 和网站契约运行 `43492298953` 通过；GET分页、元数据、CORS及Commons01–04保留、05–06目录／原件404均有线上证据。桌面、390px窄屏、详情、JSON切换及Agent说明已实际查看。
+- 控制台确认Workers Free（$0）。4个Pages项目、1个196.65MB D1库，素材托管没有新增付费服务。宽泛检索可能较快耗完每日免费读额度；超限显式失败，静态文件仍可访问。无自动付费回退。临时部署secret已删除并核实不存在。
+- 1663排除、631待审继续隔离。文字属性37有文字、1无文字、19436未知（含一条不可下载记录）；额外逐件观察仍在原审阅文件内。只记录了选中工作副本按需去字的调用要求，尚未实现后续skill自动清理，没有全库去字。
+
+关键文件：[网站正式报告](../data/acceptance-reports/website-20261114.json)、[部署与云端位置](../data/diagnostics/website-deployment-20261114.json)、[组件正式报告](../data/acceptance-reports/component-43481252923.json)。[网站接续证据包](https://github.com/hujizhou35-cmd/MGA-resource/releases/download/acceptance-20261107/website-20261114.evidence.tar.gz)只含报告和必要元数据，不含图库；SHA与远端核对见部署记录。所有相关云端任务已结束。
+
+**恢复后第一步**：读取网站正式报告和 `/agent`，让MGA-Designer通过 `/v1/search` 选中具体文件，直接使用 `preview.url`、`download.url` 和来源记录。需要升级时单独开新版本；不要重导D1、重跑已验收查询或下载整库。部署准备Artifact到2026-12-13过期后，如确需重新部署，可用固定云端目录和原包在云端重建准备文件；正式运行中的网站和Release证据不依赖该临时Artifact存续。
+
 ## 2026-11-14 组件正式验收完成
 
 **当前状态：组件正式验收通过，网站实施已获授权，尚未部署。** 主任务保持 active。当前搜索 `shared-search-3.5.3`／索引13，云端目录 `assembly-43480608326-1`；[正式报告](../data/acceptance-reports/component-43481252923.json)和[版本／运行记录](../data/diagnostics/component-formal-43481252923.json)是最新入口。下方3.5.1未完成状态及暂停记录保留为历史。

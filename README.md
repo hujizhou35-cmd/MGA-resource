@@ -6,7 +6,9 @@ A free medical illustration library for agents and people. Scientific illustrati
 
 Formal component acceptance now passes under shared-search-3.5.3 / index 13: 120/120 task-language units, 60/60 per language and 5/5 in each of 12 categories. All 142 child queries and 952 result positions have relevance decisions; required uses and compositions were reviewed. Frozen questions and thresholds are unchanged. The historical original 120-question result remains 102/120, and intermediate failures are preserved. See the [formal report](data/acceptance-reports/component-43481252923.json) and [current continuation record](docs/CLOUD-QA-RECOVERY-20261107.md).
 
-Website implementation and deployment are now authorized. They are not yet complete. Bulk artwork stays in the cloud; the next step is a free Agent-first API with direct preview/download, source attribution and a secondary human browser. Deployment behavior requires its own real verification; CI and the component score do not establish a live website.
+The website is deployed and has passed separate delivery acceptance: [browse MGA-resource](https://mga-resource-mainly-for-agent.pages.dev), [Agent API guide](https://mga-resource-mainly-for-agent.pages.dev/agent), [llms.txt](https://mga-resource-mainly-for-agent.pages.dev/llms.txt), [OpenAPI](https://mga-resource-mainly-for-agent.pages.dev/openapi.json). All 142 accepted requests match the live API, and all 38,748 original/preview objects passed actual public HTTP byte/hash checks in the cloud. See the [website acceptance report](data/acceptance-reports/website-20261114.json). There are 19,473 downloadable originals across 7,838 families.
+
+Hosting uses confirmed Cloudflare Workers Free, four Pages projects, one D1 database and public GitHub Releases/standard runners. No paid products or automatic paid fallback are enabled. Broad searches can exhaust the daily free read allowance; an explicit error preserves the distinction from zero results, while static files remain accessible. Bulk artwork stays in the cloud. Label cleanup remains a future MGA-Designer capability applied to selected working copies, not a completed library-wide operation.
 
 The user authorized a separate [component retrieval gate](docs/COMPONENT-ACCEPTANCE.md) under the updated collection boundary. Its 60 tasks, 71 required roles and 142 bilingual child queries were frozen before the first replay. The historical 120 questions and 102/120 result below remain unchanged. The 2026-11-14 resume instruction restores the plan to build and deploy the completely free, Agent-first website after formal acceptance.
 
@@ -18,7 +20,7 @@ A science-metadata update changes seven files without changing scope or artwork.
 
 The data phase includes [file-level color/style descriptions and reproducible selection diversity](docs/INCREMENTAL-PLAN-visual-diversity.md). The historical 3.4.3 index passed actual replay of nine functional cases, 75 appearance-filter calls and ten adoption-history projects. Historical choices remain fixed; replay does not create new adoption or visual-review claims. The repaired 3.5.0 component run and remaining reviews are recorded separately in the checkpoint.
 
-Bulk artwork is processed on GitHub Actions cloud runners. This repository contains code, source descriptions and acceptance definitions, not the full image library. Versioned collection packages and reports are published as GitHub Release attachments. Future public file delivery uses Cloudflare Free static assets.
+Bulk artwork is processed on GitHub Actions cloud runners. This repository contains code, source descriptions and acceptance definitions, not the full image library. Versioned collection packages and reports are published as GitHub Release attachments. Public files use Cloudflare Free static assets, with three large originals available as individual GitHub Release files.
 
 ## Collection workflow
 

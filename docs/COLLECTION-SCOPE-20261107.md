@@ -28,6 +28,8 @@ Commons实际预览05 CONSORT和06 Cohort/case-control是上述完整信息成�
 
 ## 后续skill规范与能力状态
 
+线上调用入口为 `https://mga-resource-mainly-for-agent.pages.dev/agent`，机器说明为 `/llms.txt` 和 `/openapi.json`。先读 `/v1/search` 的 `query_plan` 与用途不确定性，再实际查看选中文件的 `preview.url`；使用 `download.url` 直接取得原件并核对SHA，保存 `selected_source.provenance`。不得仅凭标题或候选排名认定科学相关；`metadata_url` 用于查阅完整来源与同家族变体，不需要解压整库。400为请求错误、空200为无匹配、503为服务或免费额度暂不可用，不能混为缺素材。
+
 MGA-Designer仅在选中素材后处理工作副本：按任务删除或替换不相关标签、解释段落及仅服务这些标签的引线，判断并保留必要比例尺、方向、分图对应、科学符号和结构/机制箭头。优先可编辑矢量；转曲文字和嵌入位图须选择合适方法。处理后实际看图检查残留、孤立引线、缺损、遮挡和科学含义。
 
 所需署名、来源、许可及修改说明保留在交付记录，与图内标签分开。当前仅更新调用/处理规范；没有实现或运行全库去字，也不能宣称自动清理已验收。
