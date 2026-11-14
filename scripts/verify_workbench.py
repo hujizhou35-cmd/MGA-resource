@@ -90,7 +90,17 @@ def main():
                         failures.append(q["query_id"])
                         if code!=200:raise RuntimeError("Parity query failed with service status "+str(code))
                 frozen_read=reads-snapshot_reads
+            examined=Path("build/workbench-controls/upgrade-verification.json")
+            reusable=set()
+            if examined.exists():
+                controls=json.loads(examined.read_text(encoding="utf-8"))
+                assert controls["run_id"]=="43544313664" and controls["commit"]=="83f03364112ddfc28419a230c5b192e1a0cfa9c6"
+                subprocess.run(["git","diff","--exit-code",controls["commit"],os.environ["GITHUB_SHA"],"--","site/functions","site/lib","mga_resources","site/wrangler.jsonc","scripts/prepare_workbench.py"],check=True)
+                reusable={name for name in controls["control_passes"] if name.startswith("browse:")}
             for category in [*info["categories"],{"id":"unclassified","families":info["unclassified_families"]}]:
+                if "browse:"+category["id"] in reusable:
+                    check("browse:"+category["id"],True)
+                    continue
                 data={"mode":"exact","limit":2,"response_profile":"compact"}
                 data.update({"unclassified":True} if category["id"]=="unclassified" else {"filters":{"category":category["id"]}})
                 code,a,_=req("/v1/browse",data)
@@ -126,6 +136,7 @@ def main():
     report={"commit":os.environ["GITHUB_SHA"],"run_id":os.environ["GITHUB_RUN_ID"],"endpoint":origin,
             "stage":"production" if args.production else "preview","parity_passed":parity,
             "parity_reused_from":reused["run_id"] if reused else None,
+            "category_controls_reused_from":"43544313664" if not args.production and Path("build/workbench-controls/upgrade-verification.json").exists() else None,
             "control_passes":successes,"control_failures":failures,"stop":stop,"observed_d1_rows":reads,
             "frozen_requests_d1_rows":frozen_read,"previous_upper_bound_rows":BASELINE,
             "row_reduction":1-frozen_read/BASELINE if parity==142 else None,

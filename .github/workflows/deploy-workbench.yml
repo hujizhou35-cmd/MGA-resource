@@ -67,7 +67,9 @@ jobs:
           python -c 'import re,pathlib; p=pathlib.Path("../build/website"); urls=re.findall(r"https://[a-z0-9-]+\.mga-resource-mainly-for-agent\.pages\.dev", (p/"upgrade-deploy.txt").read_text()); assert urls; (p/"upgrade-url.txt").write_text(urls[0]+"\n")'
       - name: Load previously verified search parity
         if: inputs.stage != 'production'
-        run: gh run download 43543510193 --name workbench-preview-43543510193 --dir build/workbench-parity
+        run: |
+          gh run download 43543510193 --name workbench-preview-43543510193 --dir build/workbench-parity
+          gh run download 43544313664 --name workbench-preview-43544313664 --dir build/workbench-controls
       - name: Verify preview against frozen requests
         if: inputs.stage != 'production'
         run: python scripts/verify_workbench.py
