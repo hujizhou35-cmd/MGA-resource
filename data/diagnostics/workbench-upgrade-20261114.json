@@ -1,0 +1,123 @@
+{
+  "status": "production_smoke_passed",
+  "site_commit": "22db826a674d896ce4d9a51f12aa8ac210314b21",
+  "production_url": "https://mga-resource-mainly-for-agent.pages.dev",
+  "production_deployment_url": "https://ab4c59ec.mga-resource-mainly-for-agent.pages.dev",
+  "rollback_deployment": "018c9845-7a2f-4c03-8637-8b9ba21b59be",
+  "frozen_parity_run": "43543510193",
+  "category_run": "43544313664",
+  "accepted_preview_run": "43545041622",
+  "production_run": "43545339000",
+  "prior_partial_run_failures_preserved": true,
+  "materials": {
+    "catalog_sha256": "f3f869f4ed24e4582ff26c46fabb64a1e68593d2a731eff66e728ec6b280f377",
+    "catalog_files_sha256": "1b8c94e6a5453ffce4150e9647035797322721ca2a4f38555649f64015de2d68",
+    "family_metadata_files": 7838,
+    "publish_manifest_sha256": "48dd557eeb5c20cea2eb553072ef2401d0055a18b45befa440e7f44087ad9fb3",
+    "delivery_objects_sha256": "d6ab84e4bbc9d53f957972ff82dbd277b63e765f56331c63b3a6523dbda580c4",
+    "catalog_info_sha256": "2b4e83d7b16726ca39a33d6e1e861ee3a0edf3c2daeccfc7864e4d593e34aa2c",
+    "downloadable_originals": 19473,
+    "artwork_reads": 0,
+    "database_imports": 0,
+    "source_export_run": "43485204419"
+  },
+  "performance": {
+    "baseline_observed_read_upper_bound": 4753118,
+    "new_observed_reads": 591361,
+    "decrease_relative_to_baseline_upper_bound": 0.8755846162455887,
+    "parity_passed": 142,
+    "page_cache_misses": 136,
+    "miss_p50_s": 0.13331340099999522,
+    "miss_p95_s": 0.41274109200000453,
+    "notes": "Measured on preview. Six reused full-cache responses were not included in miss latency. Broad browse requests remain significantly more costly than keyword search."
+  },
+  "preview_controls": [
+    "health",
+    "catalog_info",
+    "/",
+    "/about",
+    "/sources",
+    "/agent",
+    "/llms.txt",
+    "/openapi.json",
+    "/agent-example.mjs",
+    "browse:animals",
+    "browse:people",
+    "browse:organs",
+    "browse:tissues_vessels",
+    "browse:cells",
+    "browse:organelles",
+    "browse:molecules",
+    "browse:microbes",
+    "browse:lab_equipment",
+    "browse:experimental_actions",
+    "browse:clinical_workflow",
+    "browse:omics_data",
+    "browse:unclassified",
+    "stable_seed",
+    "cache_diagnostics",
+    "new_seed",
+    "no_duplicate_pages",
+    "pin_and_history",
+    "bilingual_file_filters",
+    "zero_is_not_unavailable",
+    "invalid_cursor"
+  ],
+  "production_controls": [
+    "health",
+    "catalog_info",
+    "/",
+    "/about",
+    "/sources",
+    "/agent",
+    "/llms.txt",
+    "/openapi.json",
+    "/agent-example.mjs",
+    "search",
+    "browse"
+  ],
+  "browser_and_agent": {
+    "preview_ui": "https://6e94b426.mga-resource-mainly-for-agent.pages.dev",
+    "same_ui_as_production": true,
+    "desktop_observed": [
+      "12 categories and unclassified",
+      "lab_equipment result returns 876 matching families",
+      "mouse actual result cards",
+      "detail modal and provenance",
+      "selected file stored before explicit adoption",
+      "recorded one explicit adoption",
+      "comparison dialog",
+      "export control invoked"
+    ],
+    "mobile_observed": {
+      "viewport_width": 390,
+      "document_scroll_width": 375,
+      "one_column": true,
+      "viewport_reset": true
+    },
+    "agent_to_web": {
+      "file_sha256": "5f5b2f4cf6e9a8ff18ad3e711cf71d34a2068e071a86d6a14f170fd62792ee05",
+      "verified_download": true,
+      "credit_json_written": true,
+      "project_import_observed": true,
+      "selected_and_adopted_count_each": 1
+    },
+    "limitations": [
+      "The export control was exercised; native save location was not observed in browser automation.",
+      "Adoption is a test record, not a completed research figure.",
+      "No claim about elimination of layout convergence."
+    ]
+  },
+  "free_tier_unchanged": true,
+  "temporary_deploy_secret_removed": true,
+  "historical_original120": "102/120",
+  "component_acceptance": "120/120",
+  "evidence": {
+    "name": "workbench-20261114.evidence.tar.gz",
+    "sha256": "3182adbdea4076360704fe1c1b07633183197c9742b42ce8c1e70a76a087e6a4",
+    "bytes": 46848,
+    "members": 18,
+    "url": "https://github.com/hujizhou35-cmd/MGA-resource/releases/download/acceptance-20261107/workbench-20261114.evidence.tar.gz",
+    "remote_digest_and_size_verified": true
+  }
+}

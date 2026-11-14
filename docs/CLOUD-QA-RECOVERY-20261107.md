@@ -1,5 +1,10 @@
 # 当前候选包的云端恢复验收
 
+## 2026-11-14 工作台更新
+
+主站和 GitHub 双语首页已更新，原有素材与两套验收成绩未变。新版部署 43545339000，回退目标 018c9845-7a2f-4c03-8637-8b9ba21b59be。冻结请求对照 142/142；浏览类别与 Agent 项目交换另行验证。完整运行与证据链接见 [更新报告](../data/diagnostics/workbench-upgrade-20261114.json) 和 [当前架构](WEBSITE-ARCHITECTURE.md)。没有未完成云端任务需要续跑。
+
+
 ## 2026-11-14 网站交付完成（最新入口）
 
 网站已上线并通过独立交付验收：[人工浏览](https://mga-resource-mainly-for-agent.pages.dev)、[Agent调用说明](https://mga-resource-mainly-for-agent.pages.dev/agent)。部署代码 `080fe26`；搜索仍为 `shared-search-3.5.3`／索引13，目录仍为 `assembly-43480608326-1`。本节取代下方历史阶段的“尚未部署”状态，不改变任何历史成绩。
