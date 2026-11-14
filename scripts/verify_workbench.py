@@ -5,6 +5,7 @@ import json
 import math
 import os
 import statistics
+import subprocess
 import tarfile
 import time
 import urllib.error
@@ -51,7 +52,7 @@ def main():
         if reads>2_500_000:
             raise RuntimeError("Free replay budget reached")
         return code,body,seconds
-    stop=None; parity=0; baseline_compatible=0
+    stop=None; parity=0; baseline_compatible=0; reused=None
     try:
         c,health,_=req("/v1/health")
         check("health",c==200 and health.get("execution_version")==WORKBENCH)
@@ -61,24 +62,34 @@ def main():
         for path in ("/","/about","/sources","/agent","/llms.txt","/openapi.json","/agent-example.mjs"):
             c,_,_=req(path);check(path,c==200)
         if not args.production:
-            bundle=cloud_asset("component-benchmark-43481252923-1.tar.gz",TAG,"60b0b4cfd0117f832d3c8ec58ea4f03c44d5e5543f7b2d2e0262da736595e017",OUT/"input")
-            with tarfile.open(bundle) as tar:
-                entries=[m for m in tar.getmembers() if m.name.endswith("/raw-component-results.json")]
-                assert len(entries)==1
-                raw=tar.extractfile(entries[0]).read()
-            assert hashlib.sha256(raw).hexdigest()=="e4364869d611f2411740c7317241c1078201f3d10919276ddc90c0a995054988"
-            snapshot_reads=reads
-            for q in json.loads(raw)["queries"]:
-                code,actual,seconds=req("/v1/search",q["request"])
-                ok=code==200 and [identity(item) for item in actual["results"]]==[identity(item) for item in q["exact_results"]] and actual["bindings"]==q["search_bindings"] and actual["next_cursor"]==q["next_cursor"]
-                parity+=int(ok)
-                if code==200 and actual["service"]["cache"]=="miss":
-                    times.append(seconds)
-                    baseline_compatible+=1
-                if not ok:
-                    failures.append(q["query_id"])
-                    if code!=200:raise RuntimeError("Parity query failed with service status "+str(code))
-            frozen_read=reads-snapshot_reads
+            prior=Path("build/workbench-parity/upgrade-verification.json")
+            if prior.exists():
+                reused=json.loads(prior.read_text(encoding="utf-8"))
+                assert reused["run_id"]=="43543510193" and reused["parity_passed"]==142
+                assert reused["commit"]=="e5c59cc528f24345fcd56a54b9897e2c224613a9"
+                paths=["site/functions","site/lib/sql-adapter.mjs","mga_resources","site/wrangler.jsonc"]
+                subprocess.run(["git","diff","--exit-code",reused["commit"],os.environ["GITHUB_SHA"],"--",*paths],check=True)
+                parity=reused["parity_passed"];frozen_read=reused["frozen_requests_d1_rows"]
+                baseline_compatible=reused["page_cache_miss_count"]
+            else:
+                bundle=cloud_asset("component-benchmark-43481252923-1.tar.gz",TAG,"60b0b4cfd0117f832d3c8ec58ea4f03c44d5e5543f7b2d2e0262da736595e017",OUT/"input")
+                with tarfile.open(bundle) as tar:
+                    entries=[m for m in tar.getmembers() if m.name.endswith("/raw-component-results.json")]
+                    assert len(entries)==1
+                    raw=tar.extractfile(entries[0]).read()
+                assert hashlib.sha256(raw).hexdigest()=="e4364869d611f2411740c7317241c1078201f3d10919276ddc90c0a995054988"
+                snapshot_reads=reads
+                for q in json.loads(raw)["queries"]:
+                    code,actual,seconds=req("/v1/search",q["request"])
+                    ok=code==200 and [identity(item) for item in actual["results"]]==[identity(item) for item in q["exact_results"]] and actual["bindings"]==q["search_bindings"] and actual["next_cursor"]==q["next_cursor"]
+                    parity+=int(ok)
+                    if code==200 and actual["service"]["cache"]=="miss":
+                        times.append(seconds)
+                        baseline_compatible+=1
+                    if not ok:
+                        failures.append(q["query_id"])
+                        if code!=200:raise RuntimeError("Parity query failed with service status "+str(code))
+                frozen_read=reads-snapshot_reads
             for category in [*info["categories"],{"id":"unclassified","families":info["unclassified_families"]}]:
                 data={"mode":"exact","limit":2,"response_profile":"compact"}
                 data.update({"unclassified":True} if category["id"]=="unclassified" else {"filters":{"category":category["id"]}})
@@ -114,13 +125,14 @@ def main():
         failures.append("execution_error")
     report={"commit":os.environ["GITHUB_SHA"],"run_id":os.environ["GITHUB_RUN_ID"],"endpoint":origin,
             "stage":"production" if args.production else "preview","parity_passed":parity,
+            "parity_reused_from":reused["run_id"] if reused else None,
             "control_passes":successes,"control_failures":failures,"stop":stop,"observed_d1_rows":reads,
             "frozen_requests_d1_rows":frozen_read,"previous_upper_bound_rows":BASELINE,
             "row_reduction":1-frozen_read/BASELINE if parity==142 else None,
             "page_cache_miss_count":baseline_compatible,
-            "miss_p50_s":statistics.median(times) if times else None,
-            "miss_p95_s":sorted(times)[math.ceil(len(times)*.95)-1] if times else None,
-            "performance_goals_met":parity==142 and frozen_read<=BASELINE*.2 and bool(times) and sorted(times)[math.ceil(len(times)*.95)-1]<=1}
+            "miss_p50_s":reused["miss_p50_s"] if reused else statistics.median(times) if times else None,
+            "miss_p95_s":reused["miss_p95_s"] if reused else sorted(times)[math.ceil(len(times)*.95)-1] if times else None,
+            "performance_goals_met":reused["performance_goals_met"] if reused else parity==142 and frozen_read<=BASELINE*.2 and bool(times) and sorted(times)[math.ceil(len(times)*.95)-1]<=1}
     (OUT/"upgrade-verification.json").write_text(json.dumps(report,indent=2)+"\n",encoding="utf-8")
     (OUT/"upgrade-http.jsonl").write_text("".join(json.dumps(x,ensure_ascii=False)+"\n" for x in evidence),encoding="utf-8")
     print(json.dumps(report))

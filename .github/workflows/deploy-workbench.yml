@@ -28,6 +28,8 @@ jobs:
       WRANGLER_SEND_METRICS: 'false'
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
@@ -63,6 +65,9 @@ jobs:
           if [[ "$STAGE" == production ]]; then branch=main; else branch=workbench-preview; fi
           npx wrangler pages deploy ../build/website/public --project-name mga-resource-mainly-for-agent --branch "$branch" --commit-hash "$GITHUB_SHA" 2>&1 | tee ../build/website/upgrade-deploy.txt
           python -c 'import re,pathlib; p=pathlib.Path("../build/website"); urls=re.findall(r"https://[a-z0-9-]+\.mga-resource-mainly-for-agent\.pages\.dev", (p/"upgrade-deploy.txt").read_text()); assert urls; (p/"upgrade-url.txt").write_text(urls[0]+"\n")'
+      - name: Load previously verified search parity
+        if: inputs.stage != 'production'
+        run: gh run download 43543510193 --name workbench-preview-43543510193 --dir build/workbench-parity
       - name: Verify preview against frozen requests
         if: inputs.stage != 'production'
         run: python scripts/verify_workbench.py

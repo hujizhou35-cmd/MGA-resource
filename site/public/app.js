@@ -3,7 +3,7 @@ import {newProject,importProject,keyOf,fileIdentity,requestContext} from './proj
 
 const storeKey='mga-workbench-v1';
 const names={source:['Source','来源'],color_mode:['Color','颜色'],format:['Format','格式'],structure:['File structure','文件结构'],representation:['Representation','表现方式'],detail:['Detail','细节'],realism:['Realism','写实程度'],series:['Style series','画风系列'],license:['License','许可'],species:['Species','物种'],state:['State','状态'],view:['View','视角'],role:['Role','用途'],depiction_kind:['Depiction','描绘对象类型'],content_type:['Content type','内容类型'],transparent:['Transparency','透明背景'],palette_traits:['Palette','配色特点']};
-const labels={color:['Color','彩色'],black_white:['Black and white','黑白'],grayscale:['Grayscale','灰阶'],pure_vector:['Vector structure','纯矢量结构'],mixed_svg:['Mixed SVG','混合 SVG'],raster:['Raster','位图'],line_art:['Line art','线稿'],silhouette:['Silhouette','剪影'],flat_fill:['Flat fill','平面填色'],shaded:['Shaded','明暗塑形'],hand_drawn:['Hand drawn','手绘'],'3d_render':['3D render','三维渲染'],minimal:['Minimal','极简'],moderate:['Moderate','适中'],detailed:['Detailed','精细'],schematic:['Schematic','示意'],semi_realistic:['Semi-realistic','半写实'],realistic:['Realistic','写实'],true:['Yes','有'],false:['No','无']};
+const labels={color:['Color','彩色'],black_white:['Black and white','黑白'],grayscale:['Grayscale','灰阶'],pure_vector:['Vector structure','纯矢量结构'],mixed:['Mixed SVG','混合 SVG'],embedded_raster:['Embedded raster','内嵌位图'],raster:['Raster','位图'],line_art:['Line art','线稿'],silhouette:['Silhouette','剪影'],flat_fill:['Flat fill','平面填色'],shaded:['Shaded','明暗塑形'],hand_drawn:['Hand drawn','手绘'],'3d_render':['3D render','三维渲染'],minimal:['Minimal','极简'],moderate:['Moderate','适中'],detailed:['Detailed','精细'],schematic:['Schematic','示意'],semi_realistic:['Semi-realistic','半写实'],realistic:['Realistic','写实'],true:['Yes','有'],false:['No','无']};
 const styleKeys=['color_mode','representation','detail','realism','series'];
 const modes={explore:['Explore','探索候选'],design:['Respect project style','使用项目画风'],exact:['Exact ranking','精确排序']};
 const params=new URL(location.href).searchParams;
@@ -119,7 +119,7 @@ function renderDetail(x){
   const textStatus={present:L('Labels recorded','已确认含文字'),absent:L('No labels recorded','已确认无文字'),unknown:L('Unconfirmed','未确认')};
   box.append(node('p',L('Text: ','文字：')+(textStatus[x.text_content?.status]||textStatus.unknown)),node('pre',x.file_sha256),webLink(L('Family metadata','完整家族元数据'),'/catalog/'+encodeURIComponent(x.asset_id)+'.json'));
 }
-function openDetail(x){renderDetail(x);openSafeDialog('#detail');}
+function openDetail(x){renderDetail(x);openSafeDialog('#asset-detail');}
 function toggleCompare(x){
   const key=keyOf(x);
   if(comparison.has(key))comparison.delete(key);
@@ -180,7 +180,7 @@ $('#share').onclick=()=>void copy(publicURL().href);
 $('#agent-copy').onclick=()=>{const r=currentRequest();const body=JSON.stringify(r.payload).replace(/'/g,"'\"'\"'");void copy("curl -sS '"+location.origin+r.url+"' -H 'Content-Type: application/json' --data-binary '"+body+"'");};
 $('#project-open').onclick=()=>{if(info){renderProjects();openSafeDialog('#projects');}};
 $('#projects').addEventListener('close',()=>{if(pendingRefresh)void search();});
-$('#detail').addEventListener('close',()=>{if(pendingRefresh)void search();});
+$('#asset-detail').addEventListener('close',()=>{if(pendingRefresh)void search();});
 async function start(){
   projectLabel();
   for(const [key,name] of Object.entries(modes)){const opt=node('option',L(...name));opt.value=key;$('#mode').append(opt);}

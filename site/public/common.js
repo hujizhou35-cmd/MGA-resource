@@ -9,12 +9,13 @@ export function mediaURL(value){
   }catch{return null;}
 }
 export function webLink(label,value){const el=node('a',label);try{const url=new URL(value,location.origin);if(url.protocol==='https:'||url.origin===location.origin){el.href=url;el.rel='noopener noreferrer';}}catch{}return el;}
-export function fileLink(label,value){return webLink(label,mediaURL(value)||'#');}
+export function fileLink(label,value){const a=webLink(label,mediaURL(value)||'#');a.target='_blank';return a;}
 export function action(label,fn,cls='quiet'){const b=node('button',label,cls);b.type='button';b.addEventListener('click',fn);return b;}
 export function localGet(key){try{return localStorage.getItem(key);}catch{return null;}}
 export function localSet(key,value){try{localStorage.setItem(key,value);return true;}catch{return false;}}
 const lang=new URL(location.href).searchParams.get('lang');
 export let language=['en','zh'].includes(lang)?lang:(localGet('mga-language')||(/^zh/i.test(navigator.language)?'zh':'en'));
+if(['en','zh'].includes(lang))localSet('mga-language',lang);
 export const L=(en,zh)=>language==='zh'?zh:en;
 document.documentElement.lang=language==='zh'?'zh-CN':'en';
 $$('[data-en][data-zh]').forEach(el=>{el.textContent=el.dataset[language];});
